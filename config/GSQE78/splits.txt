@@ -20729,11 +20729,15 @@ Game/viewport.cpp:
 	.text       start:0x801F0290 end:0x801F0518
 	.sdata2     start:0x8037A698 end:0x8037A6B8
 
-Game/scalar_constant_8037A6B8.c:
-	.sdata2     start:0x8037A6B8 end:0x8037A6BC
+Game/resource_lifetime_801F0518.cpp:
+	.text       start:0x801F0518 end:0x801F05D4
 
-original/float_remaining_fragment_8037A6BC.s:
-	.sdata2     start:0x8037A6BC end:0x8037A6C8 align:1
+Game/recovered/tu_801F05D4.cpp:
+	.text       start:0x801F05D4 end:0x801F0980
+	.sdata2     start:0x8037A6B8 end:0x8037A6C4
+
+original/float_remaining_fragment_8037A6C4.s:
+	.sdata2     start:0x8037A6C4 end:0x8037A6C8 align:1
 
 Game/scalar_constant_8037A6C8.c:
 	.sdata2     start:0x8037A6C8 end:0x8037A6D0
@@ -20743,12 +20747,6 @@ Game/scalar_constant_8037A6D0.c:
 
 Game/scalar_constant_8037A6D8.c:
 	.sdata2     start:0x8037A6D8 end:0x8037A6E0
-
-Game/resource_lifetime_801F0518.cpp:
-	.text       start:0x801F0518 end:0x801F05D4
-
-Game/fog_constructor_801F0920.cpp:
-	.text       start:0x801F0920 end:0x801F0980
 
 Game/bounds_cone_point_test_801F0980.cpp:
 	.text       start:0x801F0980 end:0x801F0A20
