@@ -23950,19 +23950,7 @@ padding/typed_table_802ED174.s:
 	.data       start:0x802ED174 end:0x802ED178 align:1
 
 Game/platform_native_method_tables_802ED178.cpp:
-	.data       start:0x802ED178 end:0x802ED6F8
-
-Game/platform_table_802ED6F8.cpp:
-	.data       start:0x802ED6F8 end:0x802ED740
-
-Game/service_table_802ED740.c:
-	.data       start:0x802ED740 end:0x802ED780
-
-Game/card_crc32_table_802ED780.c:
-	.data       start:0x802ED780 end:0x802EDB80
-
-Game/platform_table_802EDB80.cpp:
-	.data       start:0x802EDB80 end:0x802EDBE8
+	.data       start:0x802ED178 end:0x802ED540
 
 Game/leaf_late_8025E054.c:
 	.text       start:0x8025E054 end:0x8025E064
@@ -24200,48 +24188,6 @@ Game/sparse_action_owner_constructor_80263DDC.cpp:
 padding/source_extents/Game/sparse_action_owner_constructor_80263DDC.s:
 	.rodata     start:0x802AEFCD end:0x802AEFD0 align:1
 
-Game/native_readable_pools_802AEF48.cpp:
-	.rodata     start:0x802AEFD0 end:0x802AF0FA
-
-original/renderer_string_tail_802AF0FA.s:
-	.rodata     start:0x802AF0FA end:0x802AF100 align:1
-
-Game/engine_game_strings_802AF100.cpp:
-	.rodata     start:0x802AF100 end:0x802AF154
-
-padding/engine_game_strings_802AF100.s:
-	.rodata     start:0x802AF154 end:0x802AF158 align:1
-
-Game/native_readonly_pools_802AF158.cpp:
-	.rodata     start:0x802AF158 end:0x802AF340
-
-Game/engine_game_strings_802AF340.cpp:
-	.rodata     start:0x802AF340 end:0x802AF381
-
-padding/engine_game_strings_802AF340.s:
-	.rodata     start:0x802AF381 end:0x802AF388 align:1
-
-Game/engine_game_strings_802AF388.cpp:
-	.rodata     start:0x802AF388 end:0x802AF3E6
-
-padding/engine_game_strings_802AF388.s:
-	.rodata     start:0x802AF3E6 end:0x802AF3E8 align:1
-
-Game/native_readable_audio_802AF3E8.cpp:
-	.rodata     start:0x802AF3E8 end:0x802AF448
-
-Game/native_readable_audio_diagnostics_802AF448.cpp:
-	.rodata     start:0x802AF448 end:0x802AF4F0
-
-Game/engine_game_strings_802AF4F0.cpp:
-	.rodata     start:0x802AF4F0 end:0x802AF542
-
-padding/engine_game_strings_802AF4F0.s:
-	.rodata     start:0x802AF542 end:0x802AF548 align:1
-
-Game/native_readable_stream_diagnostics_802AF548.cpp:
-	.rodata     start:0x802AF548 end:0x802AF640
-
 Game/handle_key_erase.cpp:
 	.text       start:0x8026413C end:0x8026420C
 
@@ -24300,12 +24246,6 @@ padding/late-typed-constants_8037B6E7.s:
 
 Game/cached_color_constants.c:
 	.sdata2     start:0x8037B6E8 end:0x8037B6F0
-
-Game/screen_viewport_constants.c:
-	.sdata2     start:0x8037B6F0 end:0x8037B738
-
-Game/render_transform_constants.c:
-	.sdata2     start:0x8037B740 end:0x8037B758
 
 Game/six_handle_resource_status.cpp:
 	.text       start:0x80267E2C end:0x80267EFC
@@ -24621,14 +24561,68 @@ Game/render_handle_assign.cpp:
 Game/render_matrix_load.cpp:
 	.text       start:0x80272EA0 end:0x80272F14
 
-Game/depth_rectangle_clear.cpp:
-	.text       start:0x80273448 end:0x8027353C
+Game/recovered/tu_80272F14.cpp:
+	.text       start:0x80272F14 end:0x80275990
+	.rodata     start:0x802AEFD0 end:0x802AF0FA
+	.data       start:0x802ED540 end:0x802ED6E8
+	.sdata2     start:0x8037B6F0 end:0x8037B738
 
-Game/render_pipeline_flags_8027353c.cpp:
-	.text       start:0x8027353C end:0x80274448
+Game/render_transform_constants.c:
+	.sdata2     start:0x8037B740 end:0x8037B758
 
-Game/render_state_init.cpp:
-	.text       start:0x80275280 end:0x80275420
+Game/platform_native_method_tables_802ED6E8.cpp:
+	.data       start:0x802ED6E8 end:0x802ED6F8
+
+Game/platform_table_802ED6F8.cpp:
+	.data       start:0x802ED6F8 end:0x802ED740
+
+Game/service_table_802ED740.c:
+	.data       start:0x802ED740 end:0x802ED780
+
+Game/card_crc32_table_802ED780.c:
+	.data       start:0x802ED780 end:0x802EDB80
+
+Game/platform_table_802EDB80.cpp:
+	.data       start:0x802EDB80 end:0x802EDBE8
+
+original/renderer_string_tail_802AF0FA.s:
+	.rodata     start:0x802AF0FA end:0x802AF100 align:1
+
+Game/engine_game_strings_802AF100.cpp:
+	.rodata     start:0x802AF100 end:0x802AF154
+
+padding/engine_game_strings_802AF100.s:
+	.rodata     start:0x802AF154 end:0x802AF158 align:1
+
+Game/native_readonly_pools_802AF158.cpp:
+	.rodata     start:0x802AF158 end:0x802AF340
+
+Game/engine_game_strings_802AF340.cpp:
+	.rodata     start:0x802AF340 end:0x802AF381
+
+padding/engine_game_strings_802AF340.s:
+	.rodata     start:0x802AF381 end:0x802AF388 align:1
+
+Game/engine_game_strings_802AF388.cpp:
+	.rodata     start:0x802AF388 end:0x802AF3E6
+
+padding/engine_game_strings_802AF388.s:
+	.rodata     start:0x802AF3E6 end:0x802AF3E8 align:1
+
+Game/native_readable_audio_802AF3E8.cpp:
+	.rodata     start:0x802AF3E8 end:0x802AF448
+
+Game/native_readable_audio_diagnostics_802AF448.cpp:
+	.rodata     start:0x802AF448 end:0x802AF4F0
+
+Game/engine_game_strings_802AF4F0.cpp:
+	.rodata     start:0x802AF4F0 end:0x802AF542
+
+padding/engine_game_strings_802AF4F0.s:
+	.rodata     start:0x802AF542 end:0x802AF548 align:1
+
+Game/native_readable_stream_diagnostics_802AF548.cpp:
+	.rodata     start:0x802AF548 end:0x802AF640
 
 Game/render_arrays_destroy.cpp:
 	.text       start:0x80275990 end:0x80275A44
