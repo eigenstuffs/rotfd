@@ -22083,7 +22083,12 @@ padding/source_extents/Game/menu2d_parsers_80214544.s:
 Game/scalar_constant_8037AD68.c:
 	.sdata2     start:0x8037AD68 end:0x8037AD78
 
-Game/scalar_constant_8037AD78.c:
+Game/menu2d_lifecycle.cpp:
+	.text       start:0x80215870 end:0x80215B4C
+
+Game/recovered/tu_80215B4C.cpp:
+	.text       start:0x80215B4C end:0x8021693C
+	.rodata     start:0x802AE6F0 end:0x802AE710
 	.sdata2     start:0x8037AD78 end:0x8037AD90
 
 Game/scalar_constant_8037AD90.c:
@@ -22094,15 +22099,6 @@ Game/scalar_constant_8037AD98.c:
 
 Game/scalar_constant_8037ADA0.c:
 	.sdata2     start:0x8037ADA0 end:0x8037ADA8
-
-original/readable_pool_neighbor_802AE6F0.s:
-	.rodata     start:0x802AE6F0 end:0x802AE710 align:1
-
-Game/menu2d_lifecycle.cpp:
-	.text       start:0x80215870 end:0x80215B4C
-
-Game/menu2d_item_text.cpp:
-	.text       start:0x80216150 end:0x80216228
 
 Game/menu2d_color_setup.cpp:
 	.text       start:0x8021693C end:0x80216A40
@@ -22124,7 +22120,15 @@ Game/menu3d_parsers.cpp:
 Game/menu3d_pulse_constants.c:
 	.sdata2     start:0x8037AE90 end:0x8037AEA0
 
-Game/scalar_constant_8037AEA0.c:
+padding/source_extents/Game/menu3d_parsers.s:
+	.rodata     start:0x802AE867 end:0x802AE868 align:1
+
+Game/menu3d_lifecycle.cpp:
+	.text       start:0x80217FA0 end:0x8021827C
+
+Game/recovered/tu_8021827C.cpp:
+	.text       start:0x8021827C end:0x80219060
+	.rodata     start:0x802AE868 end:0x802AE888
 	.sdata2     start:0x8037AEA0 end:0x8037AEB8
 
 Game/scalar_constant_8037AEB8.c:
@@ -22138,18 +22142,6 @@ Game/scalar_constant_8037AEC8.c:
 
 original/float_remaining_fragment_8037AECC.s:
 	.sdata2     start:0x8037AECC end:0x8037AED8 align:1
-
-padding/source_extents/Game/menu3d_parsers.s:
-	.rodata     start:0x802AE867 end:0x802AE868 align:1
-
-Game/menu_group_count_template_802AE868.cpp:
-	.rodata     start:0x802AE868 end:0x802AE888
-
-Game/menu3d_lifecycle.cpp:
-	.text       start:0x80217FA0 end:0x8021827C
-
-Game/menu3d_item_text.cpp:
-	.text       start:0x80218874 end:0x8021894C
 
 Game/menu3d_color_setup.cpp:
 	.text       start:0x80219060 end:0x80219164
