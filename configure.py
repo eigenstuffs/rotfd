@@ -6474,6 +6474,9 @@ config.libs = [
             Object(Matching, 'Game/grid_cell_polygon_height_query_8024E200.cpp', mw_version='GC/1.3.2', cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,p', '-use_lmw_stmw', 'on', '-inline', 'auto', '-Cpp_exceptions', 'off', '-RTTI', 'off', '-fp_contract', 'on', '-i', 'include']),
             Object(Matching, 'Game/action_rows_time_window_collect_801F72E4.cpp', mw_version='GC/1.3.2', cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,p', '-inline', 'auto', '-Cpp_exceptions', 'off', '-use_lmw_stmw', 'on', '-bool', 'off']),
             Object(Matching, 'Game/collider_pair_record_update_8028B33C.cpp', mw_version='GC/1.3.2', cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,p', '-inline', 'auto', '-Cpp_exceptions', 'off', '-RTTI', 'off', '-use_lmw_stmw', 'on', '-fp_contract', 'off', '-i', 'include']),
+            Object(Matching, 'Game/recovered/fn_80093958.cpp', mw_version='GC/1.3.2', cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-inline', 'auto', '-use_lmw_stmw', 'on', '-i', 'include', '-i', 'src/Game', '-O4,s', '-Cpp_exceptions', 'on', '-RTTI', 'off']),
+            Object(Matching, 'Game/recovered/fn_800B6DA8.cpp', mw_version='GC/1.3.2', cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-inline', 'auto', '-use_lmw_stmw', 'on', '-i', 'include', '-i', 'src/Game', '-O4,s', '-Cpp_exceptions', 'on', '-RTTI', 'off']),
+            Object(Matching, 'Game/recovered/unit_80253250.cpp', mw_version='GC/1.3.2', cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-inline', 'auto', '-use_lmw_stmw', 'on', '-i', 'include', '-i', 'src/Game', '-O4,p', '-Cpp_exceptions', 'off', '-RTTI', 'off']),
         ],
     },
     {
