@@ -24505,30 +24505,6 @@ Game/screen_viewport_constants.c:
 Game/render_transform_constants.c:
 	.sdata2     start:0x8037B740 end:0x8037B758
 
-Game/font_atlas_constants.c:
-	.sdata2     start:0x8037B760 end:0x8037B7A8
-
-Game/text_color_constants.c:
-	.sdata2     start:0x8037B7B0 end:0x8037B7E0
-
-Game/texture_coordinate_constants.c:
-	.sdata2     start:0x8037B7E8 end:0x8037B7F8
-
-Game/texture_blend_constants.c:
-	.sdata2     start:0x8037B800 end:0x8037B808
-
-Game/particle_strip_constants.c:
-	.sdata2     start:0x8037B810 end:0x8037B820
-
-Game/particle_color_constants.c:
-	.sdata2     start:0x8037B828 end:0x8037B838
-
-Game/platform_math_trig_constants.c:
-	.sdata2     start:0x8037B838 end:0x8037B874
-
-padding/math-trig-constants_8037B874.s:
-	.sdata2     start:0x8037B874 end:0x8037B878 align:1
-
 Game/index_grid_init.cpp:
 	.text       start:0x80266758 end:0x802667F0
 
@@ -25055,8 +25031,30 @@ Game/render_transform_copy.cpp:
 Game/render_transform_parent.cpp:
 	.text       start:0x8027B508 end:0x8027B790
 
-Game/paired_buffer_destroy.cpp:
-	.text       start:0x8027BAD4 end:0x8027BB64
+Game/recovered/tu_8027B790.cpp:
+	.text       start:0x8027B790 end:0x8027C40C
+	.sdata2     start:0x8037B760 end:0x8037B7A8
+
+Game/text_color_constants.c:
+	.sdata2     start:0x8037B7B0 end:0x8037B7E0
+
+Game/texture_coordinate_constants.c:
+	.sdata2     start:0x8037B7E8 end:0x8037B7F8
+
+Game/texture_blend_constants.c:
+	.sdata2     start:0x8037B800 end:0x8037B808
+
+Game/particle_strip_constants.c:
+	.sdata2     start:0x8037B810 end:0x8037B820
+
+Game/particle_color_constants.c:
+	.sdata2     start:0x8037B828 end:0x8037B838
+
+Game/platform_math_trig_constants.c:
+	.sdata2     start:0x8037B838 end:0x8037B874
+
+padding/math-trig-constants_8037B874.s:
+	.sdata2     start:0x8037B874 end:0x8037B878 align:1
 
 Game/vector_record_reset.cpp:
 	.text       start:0x8027C40C end:0x8027C4D8
