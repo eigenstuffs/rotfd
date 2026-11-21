@@ -10188,33 +10188,6 @@ Game/owner_elapsed_scalar_constants.c:
 original/phase_float_fragment_80378DCC.s:
 	.sdata2     start:0x80378DCC end:0x80378DD8 align:1
 
-Game/owner_acceleration_scalar_constants.c:
-	.sdata2     start:0x80378DD8 end:0x80378E18
-
-Game/scalar_constant_80378E18.c:
-	.sdata2     start:0x80378E18 end:0x80378E28
-
-Game/scalar_constant_80378E28.c:
-	.sdata2     start:0x80378E28 end:0x80378E30
-
-Game/scalar_constant_80378E30.c:
-	.sdata2     start:0x80378E30 end:0x80378E34
-
-original/float_remaining_fragment_80378E34.s:
-	.sdata2     start:0x80378E34 end:0x80378E40 align:1
-
-Game/owner_motion_control_scalar_constants.c:
-	.sdata2     start:0x80378E40 end:0x80378EB8
-
-original/float_remaining_fragment_80378EB4.s:
-	.sdata2     start:0x80378EB8 end:0x80378EC0 align:1
-
-Game/menu_record_parameter_tokens_80378EC0.c:
-	.sdata2     start:0x80378EC0 end:0x80378F52
-
-padding/source_extents/Game/menu_record_parameter_tokens_80378EC0.s:
-	.sdata2     start:0x80378F52 end:0x80378F58 align:1
-
 Game/motion_vector_update_8009B50C.cpp:
 	extab       start:0x8000F930 end:0x8000F938
 	extabindex  start:0x8001B060 end:0x8001B06C
@@ -10424,18 +10397,32 @@ Game/engine_small_eh_8009DAB0.cpp:
 	extabindex  start:0x8001B210 end:0x8001B21C
 	.text       start:0x8009DAB0 end:0x8009DB34
 
-Game/owner_basis_reset_8009dbec.cpp:
-	extab       start:0x8000FB9C end:0x8000FBA4
-	extabindex  start:0x8001B228 end:0x8001B234
-	.text       start:0x8009DBEC end:0x8009DC5C
+Game/recovered/tu_8009DB34.cpp:
+	extab       start:0x8000FB94 end:0x8000FBFC
+	extabindex  start:0x8001B21C end:0x8001B24C
+	.text       start:0x8009DB34 end:0x8009E640
+	.sdata2     start:0x80378DD8 end:0x80378E28
 
-Game/leaf_8009DC5C.c:
-	.text       start:0x8009DC5C end:0x8009DC60
+Game/scalar_constant_80378E28.c:
+	.sdata2     start:0x80378E28 end:0x80378E30
 
-Game/actor_movement_step_pinned_8009DC60.cpp:
-	extab       start:0x8000FBA4 end:0x8000FBAC
-	extabindex  start:0x8001B234 end:0x8001B240
-	.text       start:0x8009DC60 end:0x8009DF78
+Game/scalar_constant_80378E30.c:
+	.sdata2     start:0x80378E30 end:0x80378E34
+
+original/float_remaining_fragment_80378E34.s:
+	.sdata2     start:0x80378E34 end:0x80378E40 align:1
+
+Game/owner_motion_control_scalar_constants.c:
+	.sdata2     start:0x80378E40 end:0x80378EB8
+
+original/float_remaining_fragment_80378EB4.s:
+	.sdata2     start:0x80378EB8 end:0x80378EC0 align:1
+
+Game/menu_record_parameter_tokens_80378EC0.c:
+	.sdata2     start:0x80378EC0 end:0x80378F52
+
+padding/source_extents/Game/menu_record_parameter_tokens_80378EC0.s:
+	.sdata2     start:0x80378F52 end:0x80378F58 align:1
 
 Game/actor_motion_control_update_8009E640.cpp:
 	extab       start:0x8000FBFC end:0x8000FC30
@@ -11963,33 +11950,6 @@ Game/scalar_constant_80379320.c:
 Game/scalar_constant_80379328.c:
 	.sdata2     start:0x80379328 end:0x80379330
 
-Game/scalar_constant_80379330.c:
-	.sdata2     start:0x80379330 end:0x80379340
-
-Game/scalar_constant_80379340.c:
-	.sdata2     start:0x80379340 end:0x80379350
-
-Game/early_actor_retained_constants.c:
-	.sdata2     start:0x80379350 end:0x8037936C
-
-original/float_remaining_fragment_8037936C.s:
-	.sdata2     start:0x8037936C end:0x80379378 align:1
-
-Game/scalar_constant_80379378.c:
-	.sdata2     start:0x80379378 end:0x80379388
-
-Game/scalar_constant_80379388.c:
-	.sdata2     start:0x80379388 end:0x80379390
-
-Game/scalar_constant_80379390.c:
-	.sdata2     start:0x80379390 end:0x80379394
-
-original/scene_reset_prefix_80379394.s:
-	.sdata2     start:0x80379394 end:0x803793A0 align:1
-
-Game/scene_resource_token_names_803793A0.c:
-	.sdata2     start:0x803793A0 end:0x803794C8
-
 Game/menu_parser_literal_pools_802A0400.cpp:
 	.rodata     start:0x802A0400 end:0x802A054A
 
@@ -12044,41 +12004,36 @@ Game/early_callback_value_control_800B3288.cpp:
 Game/scalar_early_800B3318.c:
 	.text       start:0x800B3318 end:0x800B3344
 
-Game/early_actor_record_dispatch_800b3b94.cpp:
-	extab       start:0x80011710 end:0x80011718
-	extabindex  start:0x8001BFC0 end:0x8001BFCC
-	.text       start:0x800B3B94 end:0x800B3C68
-
-Game/scene_leaf_more_control_800B3C68.cpp:
-	extab       start:0x80011718 end:0x80011720
-	extabindex  start:0x8001BFCC end:0x8001BFD8
-	.text       start:0x800B3C68 end:0x800B3C8C
-
-Game/world_menu_item_lookup_800B3C8C.cpp:
-	extab       start:0x80011720 end:0x80011728
-	extabindex  start:0x8001BFD8 end:0x8001BFE4
-	.text       start:0x800B3C8C end:0x800B3E00
+Game/recovered/tu_800B3344.cpp:
+	extab       start:0x800116F4 end:0x80011738
+	extabindex  start:0x8001BFB4 end:0x8001BFFC
+	.text       start:0x800B3344 end:0x800B4628
 	.data       start:0x802BD720 end:0x802BD740
+	.sdata2     start:0x80379330 end:0x80379350
+
+Game/early_actor_retained_constants.c:
+	.sdata2     start:0x80379350 end:0x8037936C
+
+original/float_remaining_fragment_8037936C.s:
+	.sdata2     start:0x8037936C end:0x80379378 align:1
+
+Game/scalar_constant_80379378.c:
+	.sdata2     start:0x80379378 end:0x80379388
+
+Game/scalar_constant_80379388.c:
+	.sdata2     start:0x80379388 end:0x80379390
+
+Game/scalar_constant_80379390.c:
+	.sdata2     start:0x80379390 end:0x80379394
+
+original/scene_reset_prefix_80379394.s:
+	.sdata2     start:0x80379394 end:0x803793A0 align:1
+
+Game/scene_resource_token_names_803793A0.c:
+	.sdata2     start:0x803793A0 end:0x803794C8
 
 Game/native_rtti_base_lists_802BD740.cpp:
 	.data       start:0x802BD740 end:0x802BD8B0
-
-Game/scalar_distance_query_800B3E00.cpp:
-	.text       start:0x800B3E00 end:0x800B3E58
-
-Game/scalar_early_more_800B3E58.c:
-	.text       start:0x800B3E58 end:0x800B3FC8
-
-Game/engine_scalar_last_800B3FC8.cpp:
-	.text       start:0x800B3FC8 end:0x800B409C
-
-Game/selection_record_find_800B409C.cpp:
-	extab       start:0x80011728 end:0x80011730
-	extabindex  start:0x8001BFE4 end:0x8001BFF0
-	.text       start:0x800B409C end:0x800B41A0
-
-Game/scalar_early_800B41A0.c:
-	.text       start:0x800B41A0 end:0x800B423C
 
 Game/menu_task_status_update_800B4628.cpp:
 	extab       start:0x80011738 end:0x80011750
