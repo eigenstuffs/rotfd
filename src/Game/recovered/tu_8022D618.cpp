@@ -609,6 +609,7 @@ struct BitParameterRecord{
    local record calls both original symbols (destructor flag -1). */
 struct Record_80209EA0:BitParameterRecord{
  Record_80209EA0(const Handle_801F7F10&h44,const Handle_801F7F10&h48,const Handle_801F7F10&h4C,const Handle_801F7F10&h40,const BitNativeCtorPoint&point,unsigned long long token,float a,float b):BitParameterRecord(h44,h48,h4C,h40,point,token,a,b){}
+ Record_80209EA0(const Handle_801F7F10&,unsigned long long);
  ~Record_80209EA0();
 };
 struct SpawnRecord{Vec3 velocity;Vec3 spin;float unknown18,phase1C,phase20,speed24,unknown28,range2C,range30;char unknown34[0x74];};
@@ -706,3 +707,547 @@ extern "C" void fn_8022ED80(SpawnOwner*self,const Vec3*origin,const SpawnParams*
  self->elapsed=0.0f;
 }
 
+/* a declaration here makes mwcc emit fn_8022ED80 before the next function */
+struct EmitOrderAnchor_8022ED80;
+/* ---- Game/engine_small_owner_8022F474.cpp ---- */
+namespace engine_small_owner_8022EC14 {
+extern "C" void fn_8022F474(void*self,const void*value){fn_8022ED80(self,(const char*)value+0x30,value);}
+
+}
+/* ---- Game/recovered/record_population_prefix_8022F49C.cpp ---- */
+namespace record_population_prefix_8022F49C {
+struct Handle { signed int tag:8; signed int index:24; };
+struct Vec3 { float x, y, z; Vec3() {} Vec3(const Vec3& o) : x(o.x), y(o.y), z(o.z) {} };
+struct Sphere { Vec3 center; float radius; };
+struct Node;
+struct Entry { Node* object; int unknown04, unknown08; signed char tag; char unknown0D[3]; };
+struct Manager { char unknown00[8]; Entry* entries; };
+struct Context { char unknown00[0x118]; Manager* manager; };
+struct NodeStorage { char unknown00[8]; };
+struct Node : NodeStorage {
+    virtual void s08(); virtual void s0C(); virtual void s10(); virtual void s14();
+    virtual void s18(); virtual void s1C(); virtual void s20(); virtual void s24();
+    virtual void s28(); virtual void s2C(); virtual void s30(); virtual void s34();
+    virtual void s38(); virtual void s3C(); virtual void s40(); virtual void s44();
+    virtual void s48(); virtual void s4C(); virtual void s50(); virtual void s54();
+    virtual void s58(); virtual void s5C(); virtual void s60(); virtual void s64();
+    virtual void s68(); virtual void s6C(); virtual void s70(); virtual void s74();
+    virtual void s78(); virtual void s7C(); virtual void s80(); virtual void s84();
+    virtual void s88(); virtual void s8C(); virtual void s90(); virtual void s94();
+    virtual void s98();
+    virtual Handle* s9C(int);
+    char unknown0C[0x68];
+    void* field74;
+    char unknown78[0xAC];
+    void* field124;
+    char unknown128[0x40];
+    Handle handle168;
+    char unknown16C[0x3C];
+    Handle handle1A8;
+};
+extern "C" {
+extern Context lbl_801E9D24;
+Sphere fn_80099A00(void*, void*);
+void fn_8022ED80(Node*, Vec3*, int);
+}
+struct EntryB { Node* object; int unknown04, unknown08; signed char tag; char unknown0D[3]; };
+struct ManagerB { char unknown00[8]; EntryB* entries; };
+static inline Node* resolve(const Handle& h)
+{
+    int index = h.index; signed char tag = h.tag;
+    Entry* e = &(*(Entry**)((char*)lbl_801E9D24.manager + 8))[index];
+    if (e->tag == tag) return e->object;
+    return 0;
+}
+static inline Node* resolveB(const Handle& h)
+{
+    int index = h.index; signed char tag = h.tag;
+    EntryB* e = &((ManagerB*)lbl_801E9D24.manager)->entries[index];
+    if (e->tag == tag) return e->object;
+    return 0;
+}
+static inline Node* resolveC(const Handle& h)
+{
+    EntryB* e = &((ManagerB*)lbl_801E9D24.manager)->entries[h.index];
+    signed char tag = h.tag;
+    if (e->tag == tag) return e->object;
+    return 0;
+}
+extern "C" void fn_8022F49C(Node* self, int arg)
+{
+    void* p = resolveB(resolve(self->handle1A8)->handle168)->field74;
+    if (p) {
+        Sphere s = fn_80099A00(resolveB(*resolveC(self->handle1A8)->s9C(0))->field124, p);
+        Vec3 v = s.center;
+        fn_8022ED80(self, &v, arg);
+    }
+}
+
+}
+
+/* ---- Game/owner_record_population_8022F624.cpp ---- */
+namespace owner_record_population_8022F624 {
+// Populate retained records and their scale/property arrays from selected handles.
+struct PopulateSelector;struct Manager;struct PopulateContext{char unknown00[0x118];Manager*manager;char unknown11C[0x28];PopulateSelector*selector;};extern "C"{extern PopulateContext lbl_801E9D24;void fn_801F86C8(Manager*,const void*,short);}
+
+extern "C" {extern char lbl_8028F698[];void*fn_8028FAF4(void*,void*,unsigned long,unsigned long);void*fn_8028FF24(void*,unsigned long);void fn_8028FD50(void*,void*,unsigned long);}
+struct BitRecordWords {int count,capacity;unsigned long*words;
+ void reserve(int n){if(n){if(words)words=(unsigned long*)fn_8028FAF4(lbl_8028F698,words,capacity*4,n*4);else words=(unsigned long*)fn_8028FF24(lbl_8028F698,n*4);}else if(words){fn_8028FD50(lbl_8028F698,words,capacity*4);words=0;}capacity=n;}
+ void resize(int n){if(n>count){reserve(n);for(int i=count;i<n;++i){}count=n;}else if(n<count){for(int i=count-1;i>=n;--i){}reserve(n);count=n;}}
+};
+struct BitRecordOwner {int count,capacity;char*records;BitRecordWords storage;int size,initialized,used;
+ void setSize(int n){size=n;if(n&&((n>>5)+1)>storage.count)storage.resize((size>>5)+1);}
+ void setBit(int i){storage.words[i>>5]|=1UL<<(i&31);}
+};
+struct PopulateOwner:Manipulator_Z{
+virtual void slot40();
+virtual void slot44();
+virtual void slot48();
+virtual void slot4C();
+virtual void slot50();
+virtual void slot54();
+virtual void slot58();
+virtual void slot5C();
+virtual void slot60();
+virtual void slot64();
+virtual void slot68();
+virtual void slot6C();
+virtual void slot70();
+virtual void slot74();
+virtual void slot78();
+virtual void slot7C();
+virtual void slot80();
+virtual void slot84();
+virtual void slot88();
+virtual void slot8C();
+virtual void slot90();
+virtual void slot94();
+virtual void slot98();
+virtual void slot9C();
+virtual void slotA0();
+virtual void slotA4();
+virtual void slotA8();
+virtual void slotAC();
+virtual void slotB0();
+virtual void slotB4();
+virtual void slotB8();
+virtual void slotBC();
+virtual void slotC0();
+virtual void slotC4();
+virtual void slotC8();
+virtual void slotCC();
+virtual void slotD0();
+virtual void slotD4();
+virtual void finishRecord(int);
+virtual void slotDC();
+virtual void slotE0();
+virtual void slotE4();
+virtual void slotE8();
+virtual void slotEC();
+virtual void slotF0();
+virtual void slotF4();
+virtual void slotF8();
+virtual void slotFC();
+virtual void slot100();
+virtual void slot104();
+virtual void slot108();
+virtual void slot10C();
+virtual void slot110();
+virtual void slot114();
+virtual void slot118();
+virtual void slot11C();
+virtual void reserve(int);
+char unknown20[0x160];BitRecordOwner records;u32 unknown1A4;Handle_801F7F10 related;char unknown1AC[0x14];float*scales;char unknown1C4[8];unsigned long*properties;float&getScale(int i){return scales[i];}unsigned long&getProperty(int i){return properties[i];}};
+struct PopulateObject:Manipulator_Z{char unknown20[8];Handle_801F7F10*items;char unknown2C[0x140];Handle_801F7F10 related;};
+struct BorrowedPopulateObject{PopulateObject*value;BorrowedPopulateObject(PopulateObject*p):value(p){}operator PopulateObject*()const{return value;}PopulateObject*operator->()const{return value;}};
+struct PopulateEntry{void*object;char unknown04[8];signed char generation;char unknown0D[3];signed char getGeneration()const{return generation;}};struct Manager{int count,capacity;PopulateEntry*entries;};struct PopulateSelector{char unknown00[0x94];int*selection;const int&operator[](int index)const{return selection[index];}};extern "C"{extern const char lbl_8037B1A0[6];int fn_8024A120(void*,const char*,int);int fn_802257EC(BitRecordOwner*,const Record_80209EA0*);float fn_8023BE00(void*,int);int fn_8024BCA4(void*,const Handle_801F7F10*);int fn_8024A800(void*,int);void fn_802279A0(void*);}
+inline void*resolvePopulate(const Handle_801F7F10&h){int index=h.bits.index;Manager*m=lbl_801E9D24.manager;int generation=m->entries[index].getGeneration();if(generation==h.bits.generation)return m->entries[index].object;return 0;}
+struct PopulateHandle1:Handle_801F7F10{PopulateHandle1(){value=0;}};struct PopulateCopy1:PopulateHandle1{PopulateCopy1(const Handle_801F7F10&input){value=input.value;fn_801F86C8(lbl_801E9D24.manager,&input,1);}};
+inline void assignPopulate(Handle_801F7F10&dest,const Handle_801F7F10&input){fn_801F86C8(lbl_801E9D24.manager,&dest,-1);dest.value=input.value;fn_801F86C8(lbl_801E9D24.manager,&input,1);}
+extern "C" void fn_8022F624(PopulateOwner* self, const Handle_801F7F10* input) {
+    assignPopulate(self->related, *input);
+    PopulateObject* related = static_cast<PopulateObject*>(resolvePopulate(self->related));
+    BorrowedPopulateObject object(
+        static_cast<PopulateObject*>(resolvePopulate(related->related)));
+    int count = fn_8024A120(object, lbl_8037B1A0, 1);
+    self->reserve(count);
+    for (int i = 0; i < count; ++i) {
+        PopulateCopy1 copy(object->items[(*lbl_801E9D24.selector)[i + 0x1C]]);
+        int index;
+        {
+            Record_80209EA0 record(copy, 0ULL);
+            index = fn_802257EC(&self->records, &record);
+        }
+        self->getScale(index) = fn_8023BE00(resolvePopulate(copy), 0);
+        self->getProperty(index) = fn_8024A800(object, fn_8024BCA4(object, &copy));
+        self->finishRecord(index);
+    }
+    fn_802279A0(self);
+}
+
+typedef char CheckRecord[sizeof(Record_80209EA0)==0xA8?1:-1];
+typedef char CheckHandle[sizeof(Handle_801F7F10)==4?1:-1];
+
+typedef char CheckRoot[sizeof(Manipulator_Z)==0x20?1:-1];
+typedef char CheckOwner[sizeof(PopulateOwner)==0x1D0?1:-1];
+typedef char CheckObject[sizeof(PopulateObject)==0x170?1:-1];
+typedef char CheckManager[sizeof(Manager)==0xC?1:-1];
+typedef char CheckBorrowedObject[sizeof(BorrowedPopulateObject)==4?1:-1];
+
+typedef char CheckRecordPool[sizeof(BitRecordOwner)==0x24?1:-1];
+
+}
+/* ---- Game/recovered/record_population_suffix_8022F868.cpp ---- */
+namespace record_population_suffix_8022F868 {
+struct Manager;
+struct Context { char unknown00[0x118]; Manager* manager; };
+extern "C" { extern Context lbl_801E9D24; void fn_801F86C8(Manager*, const void*, short); }
+struct PodHandle { struct { signed int tag : 8; signed int index : 24; } bits; };
+struct Handle1 : Handle_801F7F10 { Handle1() { value = 0; } ~Handle1() {} };
+struct Handle2 : Handle1 { Handle2() { value = 0; } ~Handle2() {} };
+struct HandleCopy : Handle2 {
+    HandleCopy(const PodHandle& input) { value = *(const u32*)&input; fn_801F86C8(lbl_801E9D24.manager, &input, 1); }
+    ~HandleCopy() {}
+};
+typedef PodHandle Handle;
+struct Vec3 { float x, y, z; };
+struct Sphere { float x, y, z, radius;
+    Sphere() {}
+    Sphere(const Sphere& o) : x(o.x), y(o.y), z(o.z), radius(o.radius) {}
+    Sphere& operator=(const Sphere& o) { x = o.x; y = o.y; z = o.z; radius = o.radius; return *this; }
+};
+struct Matrix { float m[16]; };
+struct Node;
+struct Entry { Node* object; int unknown04, unknown08; signed char tag; char unknown0D[3]; };
+struct Manager { char unknown00[8]; Entry* entries; };
+struct NodeStorage { char unknown00[8]; };
+struct Node : NodeStorage {
+    virtual void s08(); virtual void s0C(); virtual void s10(); virtual void s14();
+    virtual void s18(); virtual void s1C(); virtual void s20(); virtual void s24();
+    virtual void s28(); virtual void s2C(); virtual void s30(); virtual void s34();
+    virtual signed char s38(Node*, int, int);
+    virtual Sphere* s3C();
+    virtual void s40(); virtual void s44();
+    virtual void s48(); virtual void s4C(); virtual void s50(); virtual void s54();
+    virtual void s58(); virtual void s5C(); virtual void s60(); virtual void s64();
+    virtual void s68(); virtual void s6C(); virtual void s70(); virtual void s74();
+    virtual void s78(); virtual void s7C(); virtual void s80(); virtual void s84();
+    virtual void s88(); virtual void s8C();
+    virtual int s90();
+    virtual int s94(int);
+    virtual void s98();
+    virtual Handle* s9C(int);
+    char unknown0C[0x24];
+    unsigned long long flags30;
+    char unknown38[0x34];
+    Handle* array6C;
+    char unknown70[0x18];
+    Handle* array88;
+    char unknown8C[0x3C];
+    Handle* fieldC8;
+    char unknownCC[0x58];
+    Matrix* field124;
+    char unknown128[0x40];
+    Handle handle168;
+    Handle handle16C;
+    char unknown170[0x38];
+    Handle handle1A8;
+    char unknown1AC[0x20];
+    int* array1CC;
+};
+extern "C" {
+Sphere fn_80099A00(const Matrix*, const Sphere*);
+Sphere fn_801F0A20(const Sphere&, const Sphere&);
+void fn_801F1080(const Matrix*, const Matrix*, Matrix*);
+}
+struct EntryB { Node* object; int unknown04, unknown08; signed char tag; char unknown0D[3]; };
+struct ManagerB { char unknown00[8]; EntryB* entries; };
+static inline Node* resolve(const Handle& h)
+{
+    Entry* e = &lbl_801E9D24.manager->entries[h.bits.index];
+    if (e->tag == h.bits.tag) return e->object;
+    return 0;
+}
+static inline Node* resolveA(const Handle& h)
+{
+    int index = h.bits.index; signed char tag = h.bits.tag;
+    Entry* e = &(*(Entry**)((char*)lbl_801E9D24.manager + 8))[index];
+    if (e->tag == tag) return e->object;
+    return 0;
+}
+static inline Node* resolveB(const Handle& h)
+{
+    int index = h.bits.index; signed char tag = h.bits.tag;
+    EntryB* e = &((ManagerB*)lbl_801E9D24.manager)->entries[index];
+    if (e->tag == tag) return e->object;
+    return 0;
+}
+static inline Node* resolveC(const Handle& h)
+{
+    EntryB* e = &((ManagerB*)lbl_801E9D24.manager)->entries[h.bits.index];
+    signed char tag = h.bits.tag;
+    if (e->tag == tag) return e->object;
+    return 0;
+}
+static inline Node* resolveD(const Handle& h)
+{
+    EntryB* e = &((ManagerB*)lbl_801E9D24.manager)->entries[h.bits.index];
+    if (e->tag == h.bits.tag) return e->object;
+    return 0;
+}
+
+/* first owner lookup: entries pointer and result share one variable (forces the
+   entries reload at the next lookup, as in the original) */
+static inline Node* resolveQ(const Handle& h){ int index=h.bits.index; signed char tag=h.bits.tag; void* r=lbl_801E9D24.manager->entries; Entry* e=(Entry*)r+index; if(e->tag==tag) r=e->object; else r=0; return (Node*)r; }
+static inline Matrix product(const Matrix* a, const Matrix* b) { Matrix r; fn_801F1080(a, b, &r); return r; }
+extern "C" int fn_8022F868(Node* self, Sphere* out)
+{
+    int i = self->s90();
+    if (i < 0) return 0;
+    Node* a = resolve(*(const Handle*)&(const Handle_801F7F10&)HandleCopy(*resolveD(resolve(self->handle1A8)->handle168)->fieldC8));
+    Node* c = resolveB(resolveQ(self->handle1A8)->handle16C);
+    Node* d = resolveB(*resolveC(self->handle1A8)->s9C(0));
+    signed char first = 1;
+    for (; i >= 0; i = self->s94(i)) {
+        Node* n = resolve(*self->s9C(i));
+        Matrix m = product(d->field124, n->field124);
+        int k = self->array1CC[i];
+        Node* child = resolveA(c->array6C[k]);
+        if (first) {
+            *out = fn_80099A00(&m, (Sphere*)((char*)resolve(a->array88[k]) + 0xC));
+        } else {
+            *out = fn_801F0A20(fn_80099A00(&m, (Sphere*)((char*)resolve(a->array88[k]) + 0xC)), *out);
+        }
+        if (self->flags30 & 0x2000) {
+            if (child->s38(n, 0, 0)) {
+                *out = fn_801F0A20(fn_80099A00(&m, child->s3C()), *out);
+            }
+        }
+        first = 0;
+    }
+    return 1;
+}
+
+}
+/* ---- Game/owner_indexed_property_reset.cpp ---- */
+namespace owner_indexed_property_reset {
+struct PropertyHandle{signed int generation:8;signed int index:24;};
+struct PropertyStorage{char unknown00[8];};
+struct PropertyOwner:PropertyStorage{virtual void slot08();virtual void slot0C();virtual void slot10();virtual void slot14();virtual void slot18();virtual void slot1C();virtual void slot20();virtual void slot24();virtual void slot28();virtual void slot2C();virtual void slot30();virtual void slot34();virtual void slot38();virtual void slot3C();virtual void slot40();virtual void slot44();virtual void slot48();virtual void slot4C();virtual void slot50();virtual void slot54();virtual void slot58();virtual void slot5C();virtual void slot60();virtual void slot64();virtual void slot68();virtual void slot6C();virtual void slot70();virtual void slot74();virtual void slot78();virtual void slot7C();virtual void slot80();virtual void slot84();virtual void slot88();virtual void slot8C();virtual void slot90();virtual void slot94();virtual void slot98();virtual const PropertyHandle*getHandle(int);};
+struct PropertyEntry{char*object;char unknown04[8];signed char generation;char unknown0D[3];};
+struct PropertyManager{char unknown00[8];PropertyEntry*entries;};
+extern "C"{extern struct{char unknown00[0x118];PropertyManager*manager;}lbl_801E9D24;}
+static inline char*resolveProperty(const PropertyHandle&h){PropertyEntry*e=&lbl_801E9D24.manager->entries[h.index];if(e->generation==h.generation)return e->object;return 0;}
+extern "C" {void fn_8023C31C(void*,float,int);void fn_80220260(void*,int);}
+extern "C" void fn_8022FDBC(PropertyOwner*self,int index){char*object=resolveProperty(*self->getHandle(index));float*values=*(float**)((char*)self+0x1C0);fn_8023C31C(object,values[index],0);fn_80220260(self,index);}
+
+}
+
+/* ---- Game/engine_owner_arrays_resize.cpp ---- */
+inline void* operator new(unsigned long, void* address)
+{
+    return address;
+}
+namespace engine_owner_arrays_resize {
+struct OwnerArraysResizeOwner;
+
+typedef unsigned long ResizeWord;
+
+extern "C" {
+extern char lbl_8028F698[];
+void* fn_8028FAF4(void*, void*, ResizeWord, ResizeWord);
+void* fn_8028FF24(void*, ResizeWord);
+void fn_8028FD50(void*, void*, ResizeWord);
+void fn_80226AEC(void*, int);
+}
+
+
+struct OwnerResizeItem16 {
+    ResizeWord words[4];
+    OwnerResizeItem16() {}
+    ~OwnerResizeItem16() {}
+};
+
+struct OwnerResizeItem4 {
+    ResizeWord word;
+    OwnerResizeItem4() {}
+    ~OwnerResizeItem4() {}
+};
+
+template<class T> struct OwnerResizeArray {
+    int count;
+    int capacity;
+    T* items;
+
+    inline void storage(int size)
+    {
+        if (size) {
+            if (items)
+                items = (T*)fn_8028FAF4(lbl_8028F698, items,
+                    capacity * sizeof(T), size * sizeof(T));
+            else
+                items = (T*)fn_8028FF24(lbl_8028F698, size * sizeof(T));
+        } else if (items) {
+            fn_8028FD50(lbl_8028F698, items, capacity * sizeof(T));
+            items = 0;
+        }
+    }
+
+    inline void resize(int size)
+    {
+        if (size > count) {
+            storage(size);
+            capacity = size;
+            for (int i = count; i < size; ++i)
+                new (&items[i]) T;
+            count = size;
+        } else if (size < count) {
+            for (int i = count - 1; i >= size; --i)
+                items[i].~T();
+            storage(size);
+            capacity = size;
+            count = size;
+        }
+    }
+};
+
+struct OwnerArraysResizeOwner {
+    char unknown00[0x1AC];
+    OwnerResizeArray<OwnerResizeItem4> first;
+    OwnerResizeArray<OwnerResizeItem4> second;
+    OwnerResizeArray<OwnerResizeItem4> third;
+    OwnerResizeArray<OwnerResizeItem16> fourth;
+    OwnerResizeArray<OwnerResizeItem4> fifth;
+};
+
+extern "C" void fn_8022FE68(OwnerArraysResizeOwner* self, int size)
+{
+    fn_80226AEC(self, size);
+    self->fourth.resize(size);
+    self->fifth.resize(size);
+    self->first.resize(size);
+    self->second.resize(size);
+    self->third.resize(size);
+}
+
+}
+/* a declaration here makes mwcc emit fn_8022FE68 before the next function */
+struct EmitOrderAnchor_8022FE68;
+/* ---- Game/engine_small_owner_802304E0.cpp ---- */
+namespace engine_small_owner_8022EC14 {
+extern "C" void fn_802304E0(SmallOwnerAccumulation*self,float delta){self->time+=delta;fn_80226288(self,delta);}
+
+}
+/* ---- Game/owner_child_dispatch_8023050C.cpp ---- */
+namespace owner_child_dispatch_8023050C {
+// Original owner/child dispatch; typed lookup preserves the native member lifetimes.
+struct ChildDispatchObject:Manipulator_Z {
+    virtual void slot40();
+    virtual void slot44();
+    virtual void slot48();
+    virtual void slot4C();
+    virtual void slot50();
+    virtual void slot54();
+    virtual void slot58();
+    virtual void slot5C();
+    virtual void slot60();
+    virtual void slot64();
+    virtual void slot68();
+    virtual void slot6C();
+    virtual void slot70();
+    virtual void slot74();
+    virtual void slot78();
+    virtual void slot7C();
+    virtual void slot80();
+    virtual void slot84();
+    virtual void slot88();
+    virtual void slot8C();
+    virtual void slot90();
+    virtual void slot94();
+    virtual void slot98();
+    virtual const Handle_801F7F10& get(int);
+    char unknown20[0x168-0x20];
+    Handle_801F7F10 first,second;
+};
+struct ChildDispatchIndex {
+    const int value;
+    ChildDispatchIndex(int v):value(v) {
+    }
+    operator int()const {
+        return value;
+    }
+};
+struct ChildDispatchEntry {
+    ChildDispatchObject*object;
+    unsigned long key;
+    int unknown08;
+    signed char tag;
+    char unknown0D[3];
+    bool matchesTag(signed char t)const {
+        return tag==t;
+    }
+    ChildDispatchObject*getObject()const {
+        return object;
+    }
+};
+struct ChildDispatchEntries {
+    ChildDispatchEntry*p;
+    ChildDispatchEntry&operator[](const ChildDispatchIndex&i)const {
+        return p[i];
+    }
+};
+struct ChildDispatchManager {
+    int count,capacity;
+    ChildDispatchEntries entries;
+};
+struct ChildDispatchContext {
+    char unknown00[0x118];
+    ChildDispatchManager*manager;
+};
+struct ChildDispatchOwner {
+    char unknown00[0x1A8];
+    Handle_801F7F10 handle;
+};
+extern "C" {
+    extern ChildDispatchContext lbl_801E9D24;
+    extern const char lbl_8037B1A0[6],lbl_8037B1A8[6];
+    void fn_802279A0(ChildDispatchOwner*);
+    int fn_8024A120(ChildDispatchObject*,const char*,int);
+    int fn_8024A094(ChildDispatchObject*,const char*,int);
+    void fn_80246314(ChildDispatchObject*,const Handle_801F7F10&);
+} static inline ChildDispatchObject*resolveChild(const Handle_801F7F10&h) {
+    ChildDispatchManager*m=lbl_801E9D24.manager;
+    const ChildDispatchIndex i(h.bits.index);
+    const signed char tag(h.bits.generation);
+    if(m->entries[i].matchesTag(tag))return m->entries[i].getObject();
+    return 0;
+} extern "C" void fn_8023050C(ChildDispatchOwner*self) {
+    fn_802279A0(self);
+    resolveChild(self->handle)->slot34();
+    ChildDispatchObject *second=resolveChild(resolveChild(self->handle)->second);
+    ChildDispatchObject *first=resolveChild(resolveChild(self->handle)->first);
+    fn_8024A120(second,lbl_8037B1A0,1);
+    fn_8024A094(second,lbl_8037B1A8,1);
+    fn_80246314(first,resolveChild(self->handle)->get(0));
+} typedef char ChildDispatchHandleSize[(sizeof(Handle_801F7F10)==4)?1:-1];
+typedef char ChildDispatchRootSize[(sizeof(Manipulator_Z)==0x20)?1:-1];
+typedef char ChildDispatchEntrySize[(sizeof(ChildDispatchEntry)==16)?1:-1];
+typedef char ChildDispatchNodeSize[(sizeof(ChildDispatchObject)==0x170)?1:-1];
+typedef char ChildDispatchOwnerSize[(sizeof(ChildDispatchOwner)==0x1AC)?1:-1];
+
+}
+
+/* ---- Game/engine_owner_wrapper_80230700.c ---- */
+namespace engine_owner_wrapper_80230700 {
+extern "C" {
+#include "Game/engine_owner_wrappers.h"
+
+void fn_80230700(EngineOwnerWrapperFlags* self)
+{
+    fn_80230978(self);
+    self->flags |= 0x302000ULL;
+}
+
+}
+
+}
