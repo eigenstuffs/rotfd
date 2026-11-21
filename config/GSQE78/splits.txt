@@ -1414,21 +1414,6 @@ Game/scalar_constant_80378490.c:
 original/float_remaining_fragment_803784E0.s:
 	.sdata2     start:0x803784E0 end:0x803784E8 align:1
 
-Game/scalar_constant_803784E8.c:
-	.sdata2     start:0x803784E8 end:0x8037850C
-
-original/float_remaining_fragment_8037850C.s:
-	.sdata2     start:0x8037850C end:0x80378510 align:1
-
-Game/early_handle_query_constants.c:
-	.sdata2     start:0x80378510 end:0x80378518
-
-original/float_remaining_fragment_80378518.s:
-	.sdata2     start:0x80378518 end:0x80378528 align:1
-
-Game/scalar_constant_80378528.c:
-	.sdata2     start:0x80378528 end:0x8037852C
-
 Game/leaf_8002A694.c:
 	.text       start:0x8002A694 end:0x8002A6A4
 
@@ -2719,30 +2704,20 @@ Game/typed_handle_8003E120.cpp:
 	extabindex  start:0x80017400 end:0x8001740C
 	.text       start:0x8003E120 end:0x8003E198
 
-Game/console_group_binding_8003E258.cpp:
-	extab       start:0x800082EC end:0x8000837C
-	extabindex  start:0x80017418 end:0x80017424
-	.text       start:0x8003E258 end:0x8003E444
+Game/recovered/tu_8003E198.cpp:
+	extab       start:0x800082E4 end:0x80008584
+	extabindex  start:0x8001740C end:0x8001746C
+	.text       start:0x8003E198 end:0x8003F0E4
+	.sdata2     start:0x803784E8 end:0x80378510
 
-Game/engine_scene_argument_setup_8003E444.cpp:
-	extab       start:0x8000837C end:0x800083A8
-	extabindex  start:0x80017424 end:0x80017430
-	.text       start:0x8003E444 end:0x8003E56C
+Game/early_handle_query_constants.c:
+	.sdata2     start:0x80378510 end:0x80378518
 
-Game/early_misc_event_control_8003e56c.cpp:
-	extab       start:0x800083A8 end:0x800083B0
-	extabindex  start:0x80017430 end:0x8001743C
-	.text       start:0x8003E56C end:0x8003E5D0
+original/float_remaining_fragment_80378518.s:
+	.sdata2     start:0x80378518 end:0x80378528 align:1
 
-Game/engine_scene_record_stream_8003E5D0.cpp:
-	extab       start:0x800083B0 end:0x800083B8
-	extabindex  start:0x8001743C end:0x80017448
-	.text       start:0x8003E5D0 end:0x8003E630
-
-Game/early_lazy_handle_binding_8003ED18.cpp:
-	extab       start:0x80008480 end:0x8000857C
-	extabindex  start:0x80017454 end:0x80017460
-	.text       start:0x8003ED18 end:0x8003F040
+Game/scalar_constant_80378528.c:
+	.sdata2     start:0x80378528 end:0x8037852C
 
 Game/engine_scene_argument_actions_8003F0E4.cpp:
 	extab       start:0x80008584 end:0x8000858C
@@ -24913,8 +24888,22 @@ Game/recovered/tu_8027B790.cpp:
 	.text       start:0x8027B790 end:0x8027C40C
 	.sdata2     start:0x8037B760 end:0x8037B7A8
 
-Game/text_color_constants.c:
-	.sdata2     start:0x8037B7B0 end:0x8037B7E0
+Game/vector_record_reset.cpp:
+	.text       start:0x8027C40C end:0x8027C4D8
+
+Game/renderer_model_light_draw_8027C4D8.cpp:
+	.text       start:0x8027C4D8 end:0x8027C720
+
+Game/platform_cache_bind.cpp:
+	.text       start:0x8027D6B8 end:0x8027D850
+	.data       start:0x802F1490 end:0x802F14A8
+
+Game/recovered/tu_8027D850.cpp:
+	.text       start:0x8027D850 end:0x8027F178
+	.sdata2     start:0x8037B7B0 end:0x8037B7D0
+
+Game/text_color_constants_8037B7D0.c:
+	.sdata2     start:0x8037B7D0 end:0x8037B7E0
 
 Game/texture_coordinate_constants.c:
 	.sdata2     start:0x8037B7E8 end:0x8037B7F8
@@ -24933,25 +24922,6 @@ Game/platform_math_trig_constants.c:
 
 padding/math-trig-constants_8037B874.s:
 	.sdata2     start:0x8037B874 end:0x8037B878 align:1
-
-Game/vector_record_reset.cpp:
-	.text       start:0x8027C40C end:0x8027C4D8
-
-Game/renderer_model_light_draw_8027C4D8.cpp:
-	.text       start:0x8027C4D8 end:0x8027C720
-
-Game/platform_cache_bind.cpp:
-	.text       start:0x8027D6B8 end:0x8027D850
-	.data       start:0x802F1490 end:0x802F14A8
-
-Game/engine_text_display_dispatch.cpp:
-	.text       start:0x8027DC70 end:0x8027E1A0
-
-Game/leaf_late_8027E648.c:
-	.text       start:0x8027E648 end:0x8027E650
-
-Game/leaf_late_8027E810.c:
-	.text       start:0x8027E810 end:0x8027E814
 
 Game/engine_renderer_rectangle_controls.cpp:
 	.text       start:0x8027F178 end:0x8027F994
