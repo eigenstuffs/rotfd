@@ -6219,6 +6219,8 @@ config.libs = [
             Object(Matching, 'Game/recovered/tu_801ECC98.cpp', mw_version='GC/1.3.2', cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-use_lmw_stmw', 'on', '-i', 'include', '-i', 'src/Game', '-RTTI', 'off', '-O4,p', '-inline', 'auto', '-Cpp_exceptions', 'off', '-fp_contract', 'on']),
             Object(Matching, 'Game/recovered/tu_802008C8.cpp', mw_version='GC/1.3.2', cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse,readonly', '-common', 'off', '-use_lmw_stmw', 'on', '-i', 'include', '-i', 'src/Game', '-RTTI', 'off', '-O4,p', '-inline', 'auto', '-Cpp_exceptions', 'off', '-fp_contract', 'on']),
             Object(Matching, 'Game/recovered/sprite_corner_startup_80283E5C.cpp', mw_version='GC/1.3.2', cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-use_lmw_stmw', 'on', '-i', 'include', '-i', 'src/Game', '-RTTI', 'off', '-O4,p', '-inline', 'noauto', '-Cpp_exceptions', 'off', '-fp_contract', 'on']),
+            Object(Matching, 'Game/recovered/unit_8026D184.cpp', mw_version='GC/1.3.2', cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-inline', 'auto', '-use_lmw_stmw', 'on', '-i', 'include', '-i', 'src/Game', '-O4,p', '-Cpp_exceptions', 'off', '-RTTI', 'off', '-fp_contract', 'on']),
+            Object(Matching, 'Game/recovered/unit_80261870.cpp', mw_version='GC/1.3.2', cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-inline', 'auto', '-use_lmw_stmw', 'on', '-i', 'include', '-i', 'src/Game', '-O4,p', '-Cpp_exceptions', 'off', '-RTTI', 'off', '-fp_contract', 'on']),
         ],
     },
     {
