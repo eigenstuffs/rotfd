@@ -22775,33 +22775,6 @@ Game/scalar_constant_8037B3C0.c:
 original/float_remaining_fragment_8037B3C4.s:
 	.sdata2     start:0x8037B3C4 end:0x8037B3D0 align:1
 
-Game/scalar_constant_8037B3D0.c:
-	.sdata2     start:0x8037B3D0 end:0x8037B3E0
-
-Game/scalar_constant_8037B3E0.c:
-	.sdata2     start:0x8037B3E0 end:0x8037B3E4
-
-original/float_remaining_fragment_8037B3E4.s:
-	.sdata2     start:0x8037B3E4 end:0x8037B400 align:1
-
-Game/scalar_constant_8037B400.c:
-	.sdata2     start:0x8037B400 end:0x8037B408
-
-Game/scalar_constant_8037B408.c:
-	.sdata2     start:0x8037B408 end:0x8037B40C
-
-original/float_remaining_fragment_8037B40C.s:
-	.sdata2     start:0x8037B40C end:0x8037B418 align:1
-
-Game/spatial_owner_scalar_constants.c:
-	.sdata2     start:0x8037B418 end:0x8037B44C
-
-original/float_remaining_fragment_8037B44C.s:
-	.sdata2     start:0x8037B44C end:0x8037B450 align:1
-
-Game/scalar_constant_8037B450.c:
-	.sdata2     start:0x8037B450 end:0x8037B460
-
 padding/source_extents/Game/camera_bitmap_capture_80235D54.s:
 	.rodata     start:0x802AEA99 end:0x802AEAA0 align:1
 
@@ -23224,26 +23197,30 @@ Game/engine_resource_handle_clone.cpp:
 Game/engine_handle_apply_primary.cpp:
 	.text       start:0x802460F8 end:0x802461E0
 
-Game/engine_spatial_handle_ctor.cpp:
-	.text       start:0x802461E0 end:0x80246310
+Game/recovered/tu_802461E0.cpp:
+	.text       start:0x802461E0 end:0x80246F94
+	.sdata2     start:0x8037B3D0 end:0x8037B3E8
 
-Game/leaf_late_80246310.c:
-	.text       start:0x80246310 end:0x80246314
+original/float_remaining_fragment_8037B3E8.s:
+	.sdata2     start:0x8037B3E8 end:0x8037B400 align:1
 
-Game/composite_child_bounds_refresh_80246314.cpp:
-	.text       start:0x80246314 end:0x80246710
+Game/scalar_constant_8037B400.c:
+	.sdata2     start:0x8037B400 end:0x8037B408
 
-Game/scalar_late_80246710.c:
-	.text       start:0x80246710 end:0x8024673C
+Game/scalar_constant_8037B408.c:
+	.sdata2     start:0x8037B408 end:0x8037B40C
 
-Game/engine_sphere_owner_transform.cpp:
-	.text       start:0x8024673C end:0x80246798
+original/float_remaining_fragment_8037B40C.s:
+	.sdata2     start:0x8037B40C end:0x8037B418 align:1
 
-Game/recovered/unit_80246798.cpp:
-	.text       start:0x80246798 end:0x80246E14
+Game/spatial_owner_scalar_constants.c:
+	.sdata2     start:0x8037B418 end:0x8037B44C
 
-Game/engine_sphere_transform_merge.cpp:
-	.text       start:0x80246E14 end:0x80246E64
+original/float_remaining_fragment_8037B44C.s:
+	.sdata2     start:0x8037B44C end:0x8037B450 align:1
+
+Game/scalar_constant_8037B450.c:
+	.sdata2     start:0x8037B450 end:0x8037B460
 
 Game/box_sphere_child_registry_release_80246F94.cpp:
 	.text       start:0x80246F94 end:0x80247458
