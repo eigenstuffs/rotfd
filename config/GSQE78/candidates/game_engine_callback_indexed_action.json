@@ -1,0 +1,448 @@
+[
+  {
+    "status": "isolated-retained-byte-match",
+    "source": "src/Game/engine_callback_indexed_action.cpp",
+    "source_sha256": "3417181e3a31fea97c93f07b2aa6678cab7cb0e6e3f3b348011372f406848754",
+    "compiler": "GC/1.3.2",
+    "source_kind": "c++",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,p",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "off",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "off",
+      "-fp_contract",
+      "on",
+      "-i",
+      "include",
+      "-i",
+      "src/Game"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2149964592,
+        "end": 2149965344,
+        "alignment": 4
+      },
+      {
+        "name": ".data",
+        "start": 2150551400,
+        "end": 2150551428,
+        "alignment": 8
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_8025DB30",
+        "address": 2149964592,
+        "size": 752,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@54",
+        "address": 2150551400,
+        "size": 28,
+        "scope": "local",
+        "section": ".data",
+        "object_offset": 0,
+        "original_name": "jumptable_802ECF68"
+      }
+    ],
+    "unlinked_functions": [],
+    "headers": [
+      {
+        "path": "include/Game/engine_callback_indexed_action.h",
+        "sha256": "06233a4cbb06353af69fa1b0003e16f6f172beed3c6107307181542673ba6d6d"
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "lbl_802ECE30",
+        "address": 2150551088,
+        "scope": "global",
+        "section": ".data"
+      },
+      {
+        "name": "fn_8025EF34",
+        "address": 2149969716,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "fn_8025EEB4",
+        "address": 2149969588,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "fn_8025EB70",
+        "address": 2149968752,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "fn_8025F074",
+        "address": 2149970036,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "lbl_8037808C",
+        "address": 2151121036,
+        "scope": "global",
+        "section": ".sbss"
+      },
+      {
+        "name": "lbl_80378090",
+        "address": 2151121040,
+        "scope": "global",
+        "section": ".sbss"
+      },
+      {
+        "name": "lbl_80378094",
+        "address": 2151121044,
+        "scope": "global",
+        "section": ".sbss"
+      },
+      {
+        "name": "lbl_802AEC74",
+        "address": 2150296692,
+        "scope": "global",
+        "section": ".rodata"
+      },
+      {
+        "name": "fn_8025F4F4",
+        "address": 2149971188,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "fn_8025F658",
+        "address": 2149971544,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "fn_8025F694",
+        "address": 2149971604,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "fn_8025E9FC",
+        "address": 2149968380,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "fn_8025F620",
+        "address": 2149971488,
+        "scope": "global",
+        "section": ".text"
+      }
+    ],
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "c7fd7cc8b9bc1a3288874875930253d227fb3b22041b65e072d5ecf3faf299df",
+      "retained_text_bytes": 752,
+      "emitted_text_bytes": 752,
+      "unlinked_text_bytes": 0,
+      "initialized_data_bytes": 28,
+      "emitted_data_bytes": 28,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 29,
+      "unlinked_relocations": 0,
+      "weak_functions": 0,
+      "all_retained_allocated_bytes_verified": true,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true,
+      "verification_script": "/Users/brandenb/Downloads/rotfd/scratch/engine_callback_indexed_action_20261011jr/verify.py"
+    },
+    "verified_text_bytes": 752,
+    "verified_data_bytes": 28,
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 50,
+        "address": 2149964642,
+        "kind": 6,
+        "symbol": "lbl_802ECE30",
+        "target": 2150551088,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 54,
+        "address": 2149964646,
+        "kind": 4,
+        "symbol": "lbl_802ECE30",
+        "target": 2150551088,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 62,
+        "address": 2149964654,
+        "kind": 6,
+        "symbol": "@54",
+        "target": 2150551400,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 70,
+        "address": 2149964662,
+        "kind": 4,
+        "symbol": "@54",
+        "target": 2150551400,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 116,
+        "address": 2149964708,
+        "kind": 10,
+        "symbol": "fn_8025EF34",
+        "target": 2149969716,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 156,
+        "address": 2149964748,
+        "kind": 10,
+        "symbol": "fn_8025EEB4",
+        "target": 2149969588,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 196,
+        "address": 2149964788,
+        "kind": 10,
+        "symbol": "fn_8025EB70",
+        "target": 2149968752,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 260,
+        "address": 2149964852,
+        "kind": 10,
+        "symbol": "fn_8025F074",
+        "target": 2149970036,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 348,
+        "address": 2149964940,
+        "kind": 10,
+        "symbol": "fn_8025F074",
+        "target": 2149970036,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 428,
+        "address": 2149965020,
+        "kind": 109,
+        "symbol": "lbl_8037808C",
+        "target": 2151121036,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 432,
+        "address": 2149965024,
+        "kind": 109,
+        "symbol": "lbl_80378090",
+        "target": 2151121040,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 436,
+        "address": 2149965028,
+        "kind": 109,
+        "symbol": "lbl_80378094",
+        "target": 2151121044,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 454,
+        "address": 2149965046,
+        "kind": 6,
+        "symbol": "lbl_802AEC74",
+        "target": 2150296692,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 462,
+        "address": 2149965054,
+        "kind": 4,
+        "symbol": "lbl_802AEC74",
+        "target": 2150296692,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 468,
+        "address": 2149965060,
+        "kind": 10,
+        "symbol": "fn_8025F4F4",
+        "target": 2149971188,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 500,
+        "address": 2149965092,
+        "kind": 109,
+        "symbol": "lbl_80378090",
+        "target": 2151121040,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 508,
+        "address": 2149965100,
+        "kind": 10,
+        "symbol": "fn_8025F658",
+        "target": 2149971544,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 588,
+        "address": 2149965180,
+        "kind": 109,
+        "symbol": "lbl_8037808C",
+        "target": 2151121036,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 596,
+        "address": 2149965188,
+        "kind": 10,
+        "symbol": "fn_8025F694",
+        "target": 2149971604,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 612,
+        "address": 2149965204,
+        "kind": 10,
+        "symbol": "fn_8025E9FC",
+        "target": 2149968380,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 704,
+        "address": 2149965296,
+        "kind": 109,
+        "symbol": "lbl_80378090",
+        "target": 2151121040,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 712,
+        "address": 2149965304,
+        "kind": 10,
+        "symbol": "fn_8025F620",
+        "target": 2149971488,
+        "addend": 0
+      },
+      {
+        "section": ".data",
+        "at": 0,
+        "address": 2150551400,
+        "kind": 1,
+        "symbol": "fn_8025DB30",
+        "target": 2149964676,
+        "addend": 84
+      },
+      {
+        "section": ".data",
+        "at": 4,
+        "address": 2150551404,
+        "kind": 1,
+        "symbol": "fn_8025DB30",
+        "target": 2149964720,
+        "addend": 128
+      },
+      {
+        "section": ".data",
+        "at": 8,
+        "address": 2150551408,
+        "kind": 1,
+        "symbol": "fn_8025DB30",
+        "target": 2149964760,
+        "addend": 168
+      },
+      {
+        "section": ".data",
+        "at": 12,
+        "address": 2150551412,
+        "kind": 1,
+        "symbol": "fn_8025DB30",
+        "target": 2149964800,
+        "addend": 208
+      },
+      {
+        "section": ".data",
+        "at": 16,
+        "address": 2150551416,
+        "kind": 1,
+        "symbol": "fn_8025DB30",
+        "target": 2149964888,
+        "addend": 296
+      },
+      {
+        "section": ".data",
+        "at": 20,
+        "address": 2150551420,
+        "kind": 1,
+        "symbol": "fn_8025DB30",
+        "target": 2149964976,
+        "addend": 384
+      },
+      {
+        "section": ".data",
+        "at": 24,
+        "address": 2150551424,
+        "kind": 1,
+        "symbol": "fn_8025DB30",
+        "target": 2149964984,
+        "addend": 392
+      }
+    ],
+    "notes": "docs/notes/game-callback-indexed-action.md"
+  }
+]

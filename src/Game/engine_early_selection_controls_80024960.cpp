@@ -1,0 +1,3 @@
+/* Original early selection and type controls; see docs/notes/game-engine-early-selection-controls.md. */
+typedef unsigned char u8;struct PointerOwner;struct Record{char opaque00[0xC];PointerOwner*value0C;signed char active10;};struct Owner{char opaque00[0xD];u8 total0D,used0E;char opaque0F;Record*records10[1];};extern "C" int fn_801F1224(int,int);
+extern "C" PointerOwner*fn_80024960(void*object){Owner*self=(Owner*)object;if(!self->used0E)return 0;u8 selected=fn_801F1224(1,self->used0E);u8 matches=0;for(u8 i=0;i<self->total0D;++i){if(self->records10[i]->active10){++matches;if(matches==selected)return self->records10[i]->value0C;}}return 0;}

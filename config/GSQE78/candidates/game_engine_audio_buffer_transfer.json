@@ -1,0 +1,569 @@
+[
+  {
+    "status": "isolated-retained-byte-match",
+    "source": "src/Game/engine_audio_buffer_transfer.cpp",
+    "source_sha256": "c121e93e248dbd99b5e87e76e29071524ce4c0b1f0fa303441f0dcfb3456bffe",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,p",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "include"
+    ],
+    "source_kind": "c++",
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2150139440,
+        "end": 2150140884,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_80288630",
+        "address": 2150139440,
+        "size": 1444,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [],
+    "unlinked_functions": [],
+    "headers": [
+      {
+        "path": "include/Game/engine_audio_buffer_transfer.h",
+        "sha256": "8e47ff29d9497fa537e91273c71b560348548304aecbaff9840490c8bf979c3d"
+      },
+      {
+        "path": "include/Game/platform_disc_read.h",
+        "sha256": "c15d9e442a60c5e788fd0a64fe7f33d88971fe3adb70a34a2ffd87c5f3950b54"
+      }
+    ],
+    "dependency_symbols": [],
+    "validation": {
+      "relocations": 55,
+      "unlinked_relocations": 0,
+      "retained_text_bytes": 1444,
+      "unlinked_text_bytes": 0,
+      "initialized_data_bytes": 0,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0
+    },
+    "verified_text_bytes": 1444,
+    "verified_data_bytes": 0,
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 70,
+        "address": 2150139510,
+        "kind": 6,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 74,
+        "address": 2150139514,
+        "kind": 4,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 80,
+        "address": 2150139520,
+        "kind": 10,
+        "symbol": "fn_8028531C",
+        "target": 2150126364,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 132,
+        "address": 2150139572,
+        "kind": 10,
+        "symbol": "fn_8028EEEC",
+        "target": 2150166252,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 174,
+        "address": 2150139614,
+        "kind": 6,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 178,
+        "address": 2150139618,
+        "kind": 6,
+        "symbol": "lbl_802AF56C",
+        "target": 2150298988,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 182,
+        "address": 2150139622,
+        "kind": 6,
+        "symbol": "lbl_802AF57C",
+        "target": 2150299004,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 190,
+        "address": 2150139630,
+        "kind": 4,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 194,
+        "address": 2150139634,
+        "kind": 4,
+        "symbol": "lbl_802AF56C",
+        "target": 2150298988,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 198,
+        "address": 2150139638,
+        "kind": 4,
+        "symbol": "lbl_802AF57C",
+        "target": 2150299004,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 208,
+        "address": 2150139648,
+        "kind": 10,
+        "symbol": "fn_801EFA1C",
+        "target": 2149513756,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 252,
+        "address": 2150139692,
+        "kind": 10,
+        "symbol": "fn_8028EEEC",
+        "target": 2150166252,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 288,
+        "address": 2150139728,
+        "kind": 10,
+        "symbol": "fn_8028EEEC",
+        "target": 2150166252,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 312,
+        "address": 2150139752,
+        "kind": 10,
+        "symbol": "memcpy",
+        "target": 2147505440,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 318,
+        "address": 2150139758,
+        "kind": 6,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 326,
+        "address": 2150139766,
+        "kind": 4,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 328,
+        "address": 2150139768,
+        "kind": 10,
+        "symbol": "fn_801EF610",
+        "target": 2149512720,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 364,
+        "address": 2150139804,
+        "kind": 10,
+        "symbol": "memset",
+        "target": 2147505204,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 562,
+        "address": 2150140002,
+        "kind": 6,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 566,
+        "address": 2150140006,
+        "kind": 4,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 576,
+        "address": 2150140016,
+        "kind": 10,
+        "symbol": "OSEnableInterrupts",
+        "target": 2148480576,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 640,
+        "address": 2150140080,
+        "kind": 10,
+        "symbol": "fn_80288210",
+        "target": 2150138384,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 664,
+        "address": 2150140104,
+        "kind": 10,
+        "symbol": "fn_80287E48",
+        "target": 2150137416,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 672,
+        "address": 2150140112,
+        "kind": 10,
+        "symbol": "OSRestoreInterrupts",
+        "target": 2148480596,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 682,
+        "address": 2150140122,
+        "kind": 6,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 686,
+        "address": 2150140126,
+        "kind": 4,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 696,
+        "address": 2150140136,
+        "kind": 10,
+        "symbol": "OSEnableInterrupts",
+        "target": 2148480576,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 800,
+        "address": 2150140240,
+        "kind": 10,
+        "symbol": "fn_80288210",
+        "target": 2150138384,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 824,
+        "address": 2150140264,
+        "kind": 10,
+        "symbol": "fn_80287E48",
+        "target": 2150137416,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 888,
+        "address": 2150140328,
+        "kind": 10,
+        "symbol": "OSRestoreInterrupts",
+        "target": 2148480596,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 988,
+        "address": 2150140428,
+        "kind": 109,
+        "symbol": "lbl_803780D8",
+        "target": 2151121112,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 1020,
+        "address": 2150140460,
+        "kind": 10,
+        "symbol": "fn_8028EEEC",
+        "target": 2150166252,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 1026,
+        "address": 2150140466,
+        "kind": 6,
+        "symbol": "lbl_8035E9CC",
+        "target": 2151016908,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 1034,
+        "address": 2150140474,
+        "kind": 4,
+        "symbol": "lbl_8035E9CC",
+        "target": 2151016908,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 1040,
+        "address": 2150140480,
+        "kind": 10,
+        "symbol": "memcpy",
+        "target": 2147505440,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 1048,
+        "address": 2150140488,
+        "kind": 109,
+        "symbol": "lbl_803780D8",
+        "target": 2151121112,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 1058,
+        "address": 2150140498,
+        "kind": 6,
+        "symbol": "lbl_8035E9CC",
+        "target": 2151016908,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 1066,
+        "address": 2150140506,
+        "kind": 4,
+        "symbol": "lbl_8035E9CC",
+        "target": 2151016908,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 1072,
+        "address": 2150140512,
+        "kind": 10,
+        "symbol": "memcpy",
+        "target": 2147505440,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 1108,
+        "address": 2150140548,
+        "kind": 10,
+        "symbol": "memset",
+        "target": 2147505204,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 1114,
+        "address": 2150140554,
+        "kind": 6,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 1118,
+        "address": 2150140558,
+        "kind": 4,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 1128,
+        "address": 2150140568,
+        "kind": 10,
+        "symbol": "OSEnableInterrupts",
+        "target": 2148480576,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 1192,
+        "address": 2150140632,
+        "kind": 10,
+        "symbol": "fn_80288210",
+        "target": 2150138384,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 1216,
+        "address": 2150140656,
+        "kind": 10,
+        "symbol": "fn_80287E48",
+        "target": 2150137416,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 1224,
+        "address": 2150140664,
+        "kind": 10,
+        "symbol": "OSRestoreInterrupts",
+        "target": 2148480596,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 1234,
+        "address": 2150140674,
+        "kind": 6,
+        "symbol": "fn_80288BD4",
+        "target": 2150140884,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 1242,
+        "address": 2150140682,
+        "kind": 4,
+        "symbol": "fn_80288BD4",
+        "target": 2150140884,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 1260,
+        "address": 2150140700,
+        "kind": 10,
+        "symbol": "DVDReadAsyncPrio",
+        "target": 2148500660,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 1270,
+        "address": 2150140710,
+        "kind": 6,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 1274,
+        "address": 2150140714,
+        "kind": 4,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 1284,
+        "address": 2150140724,
+        "kind": 10,
+        "symbol": "OSEnableInterrupts",
+        "target": 2148480576,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 1348,
+        "address": 2150140788,
+        "kind": 10,
+        "symbol": "fn_80288210",
+        "target": 2150138384,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 1372,
+        "address": 2150140812,
+        "kind": 10,
+        "symbol": "fn_80287E48",
+        "target": 2150137416,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 1380,
+        "address": 2150140820,
+        "kind": 10,
+        "symbol": "OSRestoreInterrupts",
+        "target": 2148480596,
+        "addend": 0
+      }
+    ]
+  }
+]

@@ -1,0 +1,7 @@
+# Engine bitmap pool cleanup investigation
+
+Uncredited isolated research: native `__dt__17SlotPool_801E6FB0Fv`, 412 original bytes. No production source is published and no central metadata is changed. Scratch sources, objects, strict verifier and bounded failures are preserved in `scratch/game_engine_slot_cleanup_continuation`. The reservation is released.
+
+Private ordinary C++ declarations reconstruct the 36-byte bitmap-selected rows: name and reference words, native BitSet at +8, handle array at +0x18; pool storage header at +0, bitmap at +0xC, limit +0x1C and live count +0x20. Each occupied row destroys the handle array and native bitset, clears its occupancy bit, and decrements live count. The destructor then destroys the pool bitmap, frees storage and conditionally releases the object. The native handle hierarchy reproduces both null tests and the original destructor flag zero.
+
+The first production-shaped native C++ destructor has the exact 412-byte extent but thirteen genuine word differences: row pointer and loop byte offset use r25/r31 in the opposite roles, and the final two induction increments are reversed. Native/direct C wrapper forms, direct and helper release loops, named row references, predeclared indices and bounded optimization choices remain nonmatching. These are actual relocated instruction differences, not a masked match. No decompilation credit is claimed. The full original exception/constructor/destructor table prechecks found no references for this function.

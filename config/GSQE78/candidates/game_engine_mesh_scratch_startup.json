@@ -1,0 +1,204 @@
+{
+  "status": "isolated-retained-byte-match",
+  "source": "src/Game/engine_mesh_scratch_startup.cpp",
+  "source_sha256": "3bdaf1d47f8e29bf38049c66d793ee73408d9bdcd2659adb6c798df1cc6cea50",
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-proc",
+    "gekko",
+    "-fp",
+    "hardware",
+    "-enum",
+    "int",
+    "-str",
+    "reuse",
+    "-common",
+    "off",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-Cpp_exceptions",
+    "off",
+    "-i",
+    "include"
+  ],
+  "source_kind": "c++",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2150110836,
+      "end": 2150110928,
+      "alignment": 4
+    },
+    {
+      "name": ".ctors",
+      "start": 2150209884,
+      "end": 2150209888,
+      "alignment": 4
+    },
+    {
+      "name": ".bss",
+      "start": 2150896480,
+      "end": 2150994784,
+      "alignment": 8
+    }
+  ],
+  "functions": [
+    {
+      "name": "__sinit_engine_mesh_scratch_startup_cpp",
+      "original_symbol": "fn_80281674",
+      "address": 2150110836,
+      "size": 92,
+      "scope": "local",
+      "section": ".text",
+      "object_offset": 0
+    }
+  ],
+  "objects": [
+    {
+      "name": "lbl_80341360",
+      "original_symbol": "lbl_80341360",
+      "address": 2150896480,
+      "size": 49152,
+      "scope": "global",
+      "section": ".bss",
+      "object_offset": 0
+    },
+    {
+      "name": "lbl_8034D360",
+      "original_symbol": "lbl_8034D360",
+      "address": 2150945632,
+      "size": 49152,
+      "scope": "global",
+      "section": ".bss",
+      "object_offset": 49152
+    }
+  ],
+  "unlinked_functions": [],
+  "headers": [
+    {
+      "path": "include/Game/engine_mesh_scratch_startup.h",
+      "sha256": "a486b6feef8433290b4a3678cea61de0a87821b8cb340aee154e8f84a6d48c30"
+    }
+  ],
+  "dependency_symbols": [],
+  "validation": {
+    "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "object_sha256": "5e41d5d00b1e542f63a1d8e9de05a7337610fe0c0337e9810815a90e5c998855",
+    "relocations": 11,
+    "unlinked_relocations": 0,
+    "retained_text_bytes": 92,
+    "emitted_text_bytes": 92,
+    "unlinked_text_bytes": 0,
+    "initialized_data_bytes": 4,
+    "bss_bytes": 98304,
+    "owned_padding_bytes": 0,
+    "all_retained_allocated_bytes_verified": true,
+    "all_emitted_allocated_bytes_accounted": true,
+    "verification_script": "/Users/brandenb/Downloads/rotfd/scratch/engine_mesh_scratch_startup_20261011hc/strict.py"
+  },
+  "verified_text_bytes": 92,
+  "verified_data_bytes": 98308,
+  "actual_relocations": [
+    {
+      "section": ".text",
+      "at": 10,
+      "address": 2150110846,
+      "kind": 6,
+      "symbol": "lbl_80341360",
+      "target": 2150896480,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 14,
+      "address": 2150110850,
+      "kind": 6,
+      "symbol": "__ct__16Vector3_801D5330Fv",
+      "target": 2149405488,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 22,
+      "address": 2150110858,
+      "kind": 4,
+      "symbol": "lbl_80341360",
+      "target": 2150896480,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 30,
+      "address": 2150110866,
+      "kind": 4,
+      "symbol": "__ct__16Vector3_801D5330Fv",
+      "target": 2149405488,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 40,
+      "address": 2150110876,
+      "kind": 10,
+      "symbol": "__construct_array",
+      "target": 2148658924,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 46,
+      "address": 2150110882,
+      "kind": 6,
+      "symbol": "lbl_8034D360",
+      "target": 2150945632,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 50,
+      "address": 2150110886,
+      "kind": 6,
+      "symbol": "__ct__16Vector3_801D5330Fv",
+      "target": 2149405488,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 54,
+      "address": 2150110890,
+      "kind": 4,
+      "symbol": "lbl_8034D360",
+      "target": 2150945632,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 62,
+      "address": 2150110898,
+      "kind": 4,
+      "symbol": "__ct__16Vector3_801D5330Fv",
+      "target": 2149405488,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 72,
+      "address": 2150110908,
+      "kind": 10,
+      "symbol": "__construct_array",
+      "target": 2148658924,
+      "addend": 0
+    },
+    {
+      "section": ".ctors",
+      "at": 0,
+      "address": 2150209884,
+      "kind": 1,
+      "symbol": "__sinit_engine_mesh_scratch_startup_cpp",
+      "target": 2150110836,
+      "addend": 0
+    }
+  ],
+  "notes": "docs/notes/game-engine-mesh-scratch-startup.md"
+}

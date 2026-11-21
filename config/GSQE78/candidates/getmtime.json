@@ -1,0 +1,41 @@
+{
+  "source": "src/Python/getmtime.c",
+  "status": "integrated-byte-match",
+  "compiler": "GC/2.0",
+  "cflags": "-proc gekko -fp hardware -enum int -str reuse -common off -opt level=4,nopeephole,speed -inline auto,deferred -pool off -Cpp_exceptions off",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2149238576,
+      "end": 2149238584
+    }
+  ],
+  "functions": [
+    {
+      "name": "PyOS_GetLastModificationTime",
+      "address": 2149238576,
+      "size": 8
+    }
+  ],
+  "objects": [],
+  "symbol_scopes": {
+    "PyOS_GetLastModificationTime": "global"
+  },
+  "symbols": {
+    "PyType_Type": "0x802d68fc",
+    "PyOS_GetLastModificationTime": "0x801ac730"
+  },
+  "external_original_names": {},
+  "verified_text_bytes": 8,
+  "verified_data_bytes": 0,
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "615481f7e84c126eb57e68f01ce76b7b7b4ed394e4d885bf62b875622f686a7e",
+    "matched_code": 8,
+    "matched_functions": 1,
+    "matched_data": 0,
+    "complete_data": 0,
+    "object_path": "build/GSQE78/src/Python/getmtime.o",
+    "object_sha256": "607850dbfc78f4a8b017721589d97e3d5d60807b77dbb3d042d07bdfeb0dc53f"
+  }
+}

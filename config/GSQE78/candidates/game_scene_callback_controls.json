@@ -1,0 +1,6978 @@
+[
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/scene_callback_control_800BF598.cpp",
+    "source_sha256": "aee274141a9c220e19a533a941f50d91c6c6234466dfc7948832eaf33f587308",
+    "source_kind": "c++",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "src/Game",
+      "-i",
+      "include",
+      "-i",
+      "/Users/brandenb/Downloads/rotfd/scratch/game_motion_controller_events"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/scene_callback_controls.h",
+        "sha256": "4a399692663525be0676b6ce8c65af814a42c4134709b6678db4d020b6c0c5ed"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148267416,
+        "end": 2148267480,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147558012,
+        "end": 2147558020,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147600564,
+        "end": 2147600576,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800BF598",
+        "address": 2148267416,
+        "size": 64,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@5",
+        "address": 2147558012,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@6",
+        "address": 2147600564,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "fn_800BF5D8",
+        "section": ".text",
+        "address": 2148267480,
+        "scope": "global"
+      },
+      {
+        "name": "fn_8025ED38",
+        "section": ".text",
+        "address": 2149969208,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_8037782C",
+        "section": ".sbss",
+        "address": 2151118892,
+        "scope": "global"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 24,
+        "address": 2148267440,
+        "kind": 109,
+        "symbol": "lbl_8037782C",
+        "target": 2151118892,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 28,
+        "address": 2148267444,
+        "kind": 10,
+        "symbol": "fn_8025ED38",
+        "target": 2149969208,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 40,
+        "address": 2148267456,
+        "kind": 10,
+        "symbol": "fn_800BF5D8",
+        "target": 2148267480,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147600564,
+        "kind": 1,
+        "symbol": "fn_800BF598",
+        "target": 2148267416,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147600572,
+        "kind": 1,
+        "symbol": "@5",
+        "target": 2147558012,
+        "addend": 0
+      }
+    ],
+    "notes": "docs/notes/game-scene-callback-controls.md",
+    "original_metadata_audit": {
+      "status": "all-original-table-ownership-retained",
+      "retained_ranges": [
+        {
+          "start": 2148267416,
+          "end": 2148267480
+        }
+      ],
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "entries": 3141,
+          "scanned_slots": 3144,
+          "references_to_retained_ranges": [
+            {
+              "entry_address": 2147600564,
+              "function": 2148267416,
+              "size": 64,
+              "extab": 2147558012,
+              "ownership": "retained-source"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "entries": 19,
+          "scanned_slots": 24,
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "entries": 3,
+          "scanned_slots": 8,
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "e00d5e4896c0e7031a5b0065f5f488b1d19e82d0cd5e631d0a3c8d734109743d",
+      "retained_text_bytes": 64,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 5,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/scene_callback_control_800BF5D8.cpp",
+    "source_sha256": "65876386f9c005d8f3330eb45daa26fed7f21dc329159d6e498bf59a5945f9c3",
+    "source_kind": "c++",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "src/Game",
+      "-i",
+      "include",
+      "-i",
+      "/Users/brandenb/Downloads/rotfd/scratch/game_motion_controller_events"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/scene_callback_controls.h",
+        "sha256": "4a399692663525be0676b6ce8c65af814a42c4134709b6678db4d020b6c0c5ed"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148267480,
+        "end": 2148267544,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147558020,
+        "end": 2147558028,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147600576,
+        "end": 2147600588,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800BF5D8",
+        "address": 2148267480,
+        "size": 64,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@5",
+        "address": 2147558020,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@6",
+        "address": 2147600576,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "fn_80070E54",
+        "section": ".text",
+        "address": 2147946068,
+        "scope": "global"
+      },
+      {
+        "name": "fn_8025ED38",
+        "section": ".text",
+        "address": 2149969208,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_80377828",
+        "section": ".sbss",
+        "address": 2151118888,
+        "scope": "global"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 24,
+        "address": 2148267504,
+        "kind": 109,
+        "symbol": "lbl_80377828",
+        "target": 2151118888,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 28,
+        "address": 2148267508,
+        "kind": 10,
+        "symbol": "fn_8025ED38",
+        "target": 2149969208,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 40,
+        "address": 2148267520,
+        "kind": 10,
+        "symbol": "fn_80070E54",
+        "target": 2147946068,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147600576,
+        "kind": 1,
+        "symbol": "fn_800BF5D8",
+        "target": 2148267480,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147600584,
+        "kind": 1,
+        "symbol": "@5",
+        "target": 2147558020,
+        "addend": 0
+      }
+    ],
+    "notes": "docs/notes/game-scene-callback-controls.md",
+    "original_metadata_audit": {
+      "status": "all-original-table-ownership-retained",
+      "retained_ranges": [
+        {
+          "start": 2148267480,
+          "end": 2148267544
+        }
+      ],
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "entries": 3141,
+          "scanned_slots": 3144,
+          "references_to_retained_ranges": [
+            {
+              "entry_address": 2147600576,
+              "function": 2148267480,
+              "size": 64,
+              "extab": 2147558020,
+              "ownership": "retained-source"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "entries": 19,
+          "scanned_slots": 24,
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "entries": 3,
+          "scanned_slots": 8,
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "394067559308f9ed989619cc665e6be5310e8da1c6d5cf4a9e6af8f20f1fb0e0",
+      "retained_text_bytes": 64,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 5,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/scene_callback_control_800BF618.cpp",
+    "source_sha256": "a67c65ff03e98fc5c897517f572c5077a208aeba7296236aa32bccb0f81fd6f7",
+    "source_kind": "c++",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "src/Game",
+      "-i",
+      "include",
+      "-i",
+      "/Users/brandenb/Downloads/rotfd/scratch/game_motion_controller_events"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/scene_callback_controls.h",
+        "sha256": "4a399692663525be0676b6ce8c65af814a42c4134709b6678db4d020b6c0c5ed"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148267544,
+        "end": 2148267620,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147558028,
+        "end": 2147558036,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147600588,
+        "end": 2147600600,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800BF618",
+        "address": 2148267544,
+        "size": 76,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@7",
+        "address": 2147558028,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@8",
+        "address": 2147600588,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "fn_800BF664",
+        "section": ".text",
+        "address": 2148267620,
+        "scope": "global"
+      },
+      {
+        "name": "fn_8025E70C",
+        "section": ".text",
+        "address": 2149967628,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_8037782C",
+        "section": ".sbss",
+        "address": 2151118892,
+        "scope": "global"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 24,
+        "address": 2148267568,
+        "kind": 109,
+        "symbol": "lbl_8037782C",
+        "target": 2151118892,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 28,
+        "address": 2148267572,
+        "kind": 10,
+        "symbol": "fn_8025E70C",
+        "target": 2149967628,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 52,
+        "address": 2148267596,
+        "kind": 10,
+        "symbol": "fn_800BF664",
+        "target": 2148267620,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147600588,
+        "kind": 1,
+        "symbol": "fn_800BF618",
+        "target": 2148267544,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147600596,
+        "kind": 1,
+        "symbol": "@7",
+        "target": 2147558028,
+        "addend": 0
+      }
+    ],
+    "notes": "docs/notes/game-scene-callback-controls.md",
+    "original_metadata_audit": {
+      "status": "all-original-table-ownership-retained",
+      "retained_ranges": [
+        {
+          "start": 2148267544,
+          "end": 2148267620
+        }
+      ],
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "entries": 3141,
+          "scanned_slots": 3144,
+          "references_to_retained_ranges": [
+            {
+              "entry_address": 2147600588,
+              "function": 2148267544,
+              "size": 76,
+              "extab": 2147558028,
+              "ownership": "retained-source"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "entries": 19,
+          "scanned_slots": 24,
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "entries": 3,
+          "scanned_slots": 8,
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "a307107776dd90be6a3a35f753f4f01072f3b5354aa0331d2045f63197b27447",
+      "retained_text_bytes": 76,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 5,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/scene_callback_control_800BF664.cpp",
+    "source_sha256": "079f255e30642000e492dcb7a0bcfe7fd6822017330fe837273ea3668776fa9e",
+    "source_kind": "c++",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "src/Game",
+      "-i",
+      "include",
+      "-i",
+      "/Users/brandenb/Downloads/rotfd/scratch/game_motion_controller_events"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/scene_callback_controls.h",
+        "sha256": "4a399692663525be0676b6ce8c65af814a42c4134709b6678db4d020b6c0c5ed"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148267620,
+        "end": 2148267696,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147558036,
+        "end": 2147558044,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147600600,
+        "end": 2147600612,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800BF664",
+        "address": 2148267620,
+        "size": 76,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@7",
+        "address": 2147558036,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@8",
+        "address": 2147600600,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "fn_80070F44",
+        "section": ".text",
+        "address": 2147946308,
+        "scope": "global"
+      },
+      {
+        "name": "fn_8025E70C",
+        "section": ".text",
+        "address": 2149967628,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_80377828",
+        "section": ".sbss",
+        "address": 2151118888,
+        "scope": "global"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 24,
+        "address": 2148267644,
+        "kind": 109,
+        "symbol": "lbl_80377828",
+        "target": 2151118888,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 28,
+        "address": 2148267648,
+        "kind": 10,
+        "symbol": "fn_8025E70C",
+        "target": 2149967628,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 52,
+        "address": 2148267672,
+        "kind": 10,
+        "symbol": "fn_80070F44",
+        "target": 2147946308,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147600600,
+        "kind": 1,
+        "symbol": "fn_800BF664",
+        "target": 2148267620,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147600608,
+        "kind": 1,
+        "symbol": "@7",
+        "target": 2147558036,
+        "addend": 0
+      }
+    ],
+    "notes": "docs/notes/game-scene-callback-controls.md",
+    "original_metadata_audit": {
+      "status": "all-original-table-ownership-retained",
+      "retained_ranges": [
+        {
+          "start": 2148267620,
+          "end": 2148267696
+        }
+      ],
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "entries": 3141,
+          "scanned_slots": 3144,
+          "references_to_retained_ranges": [
+            {
+              "entry_address": 2147600600,
+              "function": 2148267620,
+              "size": 76,
+              "extab": 2147558036,
+              "ownership": "retained-source"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "entries": 19,
+          "scanned_slots": 24,
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "entries": 3,
+          "scanned_slots": 8,
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "5422f0b82964507aa4a990688225e61641d2f65c5565139a5e965ad6b7e7eeff",
+      "retained_text_bytes": 76,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 5,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/scene_callback_control_800BF73C.cpp",
+    "source_sha256": "11212f0864db31c027fe805f16e2c369b7629c0948ac490f3cfc9de748699ad5",
+    "source_kind": "c++",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "src/Game",
+      "-i",
+      "include",
+      "-i",
+      "/Users/brandenb/Downloads/rotfd/scratch/game_motion_controller_events"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/scene_callback_controls.h",
+        "sha256": "4a399692663525be0676b6ce8c65af814a42c4134709b6678db4d020b6c0c5ed"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148267836,
+        "end": 2148267900,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147558084,
+        "end": 2147558092,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147600624,
+        "end": 2147600636,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800BF73C",
+        "address": 2148267836,
+        "size": 64,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@5",
+        "address": 2147558084,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@6",
+        "address": 2147600624,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "fn_800BF5D8",
+        "section": ".text",
+        "address": 2148267480,
+        "scope": "global"
+      },
+      {
+        "name": "fn_8025ED38",
+        "section": ".text",
+        "address": 2149969208,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_80377830",
+        "section": ".sbss",
+        "address": 2151118896,
+        "scope": "global"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 24,
+        "address": 2148267860,
+        "kind": 109,
+        "symbol": "lbl_80377830",
+        "target": 2151118896,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 28,
+        "address": 2148267864,
+        "kind": 10,
+        "symbol": "fn_8025ED38",
+        "target": 2149969208,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 40,
+        "address": 2148267876,
+        "kind": 10,
+        "symbol": "fn_800BF5D8",
+        "target": 2148267480,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147600624,
+        "kind": 1,
+        "symbol": "fn_800BF73C",
+        "target": 2148267836,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147600632,
+        "kind": 1,
+        "symbol": "@5",
+        "target": 2147558084,
+        "addend": 0
+      }
+    ],
+    "notes": "docs/notes/game-scene-callback-controls.md",
+    "original_metadata_audit": {
+      "status": "all-original-table-ownership-retained",
+      "retained_ranges": [
+        {
+          "start": 2148267836,
+          "end": 2148267900
+        }
+      ],
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "entries": 3141,
+          "scanned_slots": 3144,
+          "references_to_retained_ranges": [
+            {
+              "entry_address": 2147600624,
+              "function": 2148267836,
+              "size": 64,
+              "extab": 2147558084,
+              "ownership": "retained-source"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "entries": 19,
+          "scanned_slots": 24,
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "entries": 3,
+          "scanned_slots": 8,
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "13a241872b8eec4d33ce3ec7442ddcf658b5612bae950029fc5575c26ec1d384",
+      "retained_text_bytes": 64,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 5,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/scene_callback_control_800BF77C.cpp",
+    "source_sha256": "f0a5abfc7bc5ac0ada042a4315504bb165025609faf7ce426ebe0bc5958d74eb",
+    "source_kind": "c++",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "src/Game",
+      "-i",
+      "include",
+      "-i",
+      "/Users/brandenb/Downloads/rotfd/scratch/game_motion_controller_events"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/scene_callback_controls.h",
+        "sha256": "4a399692663525be0676b6ce8c65af814a42c4134709b6678db4d020b6c0c5ed"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148267900,
+        "end": 2148267976,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147558092,
+        "end": 2147558100,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147600636,
+        "end": 2147600648,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800BF77C",
+        "address": 2148267900,
+        "size": 76,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@7",
+        "address": 2147558092,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@8",
+        "address": 2147600636,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "fn_800BF664",
+        "section": ".text",
+        "address": 2148267620,
+        "scope": "global"
+      },
+      {
+        "name": "fn_8025E70C",
+        "section": ".text",
+        "address": 2149967628,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_80377830",
+        "section": ".sbss",
+        "address": 2151118896,
+        "scope": "global"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 24,
+        "address": 2148267924,
+        "kind": 109,
+        "symbol": "lbl_80377830",
+        "target": 2151118896,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 28,
+        "address": 2148267928,
+        "kind": 10,
+        "symbol": "fn_8025E70C",
+        "target": 2149967628,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 52,
+        "address": 2148267952,
+        "kind": 10,
+        "symbol": "fn_800BF664",
+        "target": 2148267620,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147600636,
+        "kind": 1,
+        "symbol": "fn_800BF77C",
+        "target": 2148267900,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147600644,
+        "kind": 1,
+        "symbol": "@7",
+        "target": 2147558092,
+        "addend": 0
+      }
+    ],
+    "notes": "docs/notes/game-scene-callback-controls.md",
+    "original_metadata_audit": {
+      "status": "all-original-table-ownership-retained",
+      "retained_ranges": [
+        {
+          "start": 2148267900,
+          "end": 2148267976
+        }
+      ],
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "entries": 3141,
+          "scanned_slots": 3144,
+          "references_to_retained_ranges": [
+            {
+              "entry_address": 2147600636,
+              "function": 2148267900,
+              "size": 76,
+              "extab": 2147558092,
+              "ownership": "retained-source"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "entries": 19,
+          "scanned_slots": 24,
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "entries": 3,
+          "scanned_slots": 8,
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "cb60213ebaf7327bb19da4e8adcedfc5b6d75b56d66195c36cf972f96d6977b2",
+      "retained_text_bytes": 76,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 5,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/scene_callback_control_800BF854.cpp",
+    "source_sha256": "d031512a0274bb63279469d015608efde9c9a46e76344a122d4e87d25756f5b9",
+    "source_kind": "c++",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "src/Game",
+      "-i",
+      "include",
+      "-i",
+      "/Users/brandenb/Downloads/rotfd/scratch/game_motion_controller_events"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/scene_callback_controls.h",
+        "sha256": "4a399692663525be0676b6ce8c65af814a42c4134709b6678db4d020b6c0c5ed"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148268116,
+        "end": 2148268180,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147558140,
+        "end": 2147558148,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147600660,
+        "end": 2147600672,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800BF854",
+        "address": 2148268116,
+        "size": 64,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@5",
+        "address": 2147558140,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@6",
+        "address": 2147600660,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "fn_800BF5D8",
+        "section": ".text",
+        "address": 2148267480,
+        "scope": "global"
+      },
+      {
+        "name": "fn_8025ED38",
+        "section": ".text",
+        "address": 2149969208,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_80377834",
+        "section": ".sbss",
+        "address": 2151118900,
+        "scope": "global"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 24,
+        "address": 2148268140,
+        "kind": 109,
+        "symbol": "lbl_80377834",
+        "target": 2151118900,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 28,
+        "address": 2148268144,
+        "kind": 10,
+        "symbol": "fn_8025ED38",
+        "target": 2149969208,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 40,
+        "address": 2148268156,
+        "kind": 10,
+        "symbol": "fn_800BF5D8",
+        "target": 2148267480,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147600660,
+        "kind": 1,
+        "symbol": "fn_800BF854",
+        "target": 2148268116,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147600668,
+        "kind": 1,
+        "symbol": "@5",
+        "target": 2147558140,
+        "addend": 0
+      }
+    ],
+    "notes": "docs/notes/game-scene-callback-controls.md",
+    "original_metadata_audit": {
+      "status": "all-original-table-ownership-retained",
+      "retained_ranges": [
+        {
+          "start": 2148268116,
+          "end": 2148268180
+        }
+      ],
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "entries": 3141,
+          "scanned_slots": 3144,
+          "references_to_retained_ranges": [
+            {
+              "entry_address": 2147600660,
+              "function": 2148268116,
+              "size": 64,
+              "extab": 2147558140,
+              "ownership": "retained-source"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "entries": 19,
+          "scanned_slots": 24,
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "entries": 3,
+          "scanned_slots": 8,
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "70fb5ab82bdbf91821fa0029577f0360c695014d85e5aada35668b5c49570867",
+      "retained_text_bytes": 64,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 5,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/scene_callback_control_800BF894.cpp",
+    "source_sha256": "c01275d47b590e56a89c4990c92ae1cb0c89996f7ecfbd83f9bf428aeac0dd5d",
+    "source_kind": "c++",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "src/Game",
+      "-i",
+      "include",
+      "-i",
+      "/Users/brandenb/Downloads/rotfd/scratch/game_motion_controller_events"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/scene_callback_controls.h",
+        "sha256": "4a399692663525be0676b6ce8c65af814a42c4134709b6678db4d020b6c0c5ed"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148268180,
+        "end": 2148268256,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147558148,
+        "end": 2147558156,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147600672,
+        "end": 2147600684,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800BF894",
+        "address": 2148268180,
+        "size": 76,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@7",
+        "address": 2147558148,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@8",
+        "address": 2147600672,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "fn_800BF664",
+        "section": ".text",
+        "address": 2148267620,
+        "scope": "global"
+      },
+      {
+        "name": "fn_8025E70C",
+        "section": ".text",
+        "address": 2149967628,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_80377834",
+        "section": ".sbss",
+        "address": 2151118900,
+        "scope": "global"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 24,
+        "address": 2148268204,
+        "kind": 109,
+        "symbol": "lbl_80377834",
+        "target": 2151118900,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 28,
+        "address": 2148268208,
+        "kind": 10,
+        "symbol": "fn_8025E70C",
+        "target": 2149967628,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 52,
+        "address": 2148268232,
+        "kind": 10,
+        "symbol": "fn_800BF664",
+        "target": 2148267620,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147600672,
+        "kind": 1,
+        "symbol": "fn_800BF894",
+        "target": 2148268180,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147600680,
+        "kind": 1,
+        "symbol": "@7",
+        "target": 2147558148,
+        "addend": 0
+      }
+    ],
+    "notes": "docs/notes/game-scene-callback-controls.md",
+    "original_metadata_audit": {
+      "status": "all-original-table-ownership-retained",
+      "retained_ranges": [
+        {
+          "start": 2148268180,
+          "end": 2148268256
+        }
+      ],
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "entries": 3141,
+          "scanned_slots": 3144,
+          "references_to_retained_ranges": [
+            {
+              "entry_address": 2147600672,
+              "function": 2148268180,
+              "size": 76,
+              "extab": 2147558148,
+              "ownership": "retained-source"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "entries": 19,
+          "scanned_slots": 24,
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "entries": 3,
+          "scanned_slots": 8,
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "a0ec34e56be5e1fcca0e15b3b3466391de97aa6994f2deb0535c2dbf86166fbb",
+      "retained_text_bytes": 76,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 5,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/scene_callback_control_800BF96C.cpp",
+    "source_sha256": "6ba0883318cb73d406d77ccda9653ddc56b0ccd2206aad982db7078762839b97",
+    "source_kind": "c++",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "src/Game",
+      "-i",
+      "include",
+      "-i",
+      "/Users/brandenb/Downloads/rotfd/scratch/game_motion_controller_events"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/scene_callback_controls.h",
+        "sha256": "4a399692663525be0676b6ce8c65af814a42c4134709b6678db4d020b6c0c5ed"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148268396,
+        "end": 2148268460,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147558196,
+        "end": 2147558204,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147600696,
+        "end": 2147600708,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800BF96C",
+        "address": 2148268396,
+        "size": 64,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@5",
+        "address": 2147558196,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@6",
+        "address": 2147600696,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "fn_800BF5D8",
+        "section": ".text",
+        "address": 2148267480,
+        "scope": "global"
+      },
+      {
+        "name": "fn_8025ED38",
+        "section": ".text",
+        "address": 2149969208,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_80377838",
+        "section": ".sbss",
+        "address": 2151118904,
+        "scope": "global"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 24,
+        "address": 2148268420,
+        "kind": 109,
+        "symbol": "lbl_80377838",
+        "target": 2151118904,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 28,
+        "address": 2148268424,
+        "kind": 10,
+        "symbol": "fn_8025ED38",
+        "target": 2149969208,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 40,
+        "address": 2148268436,
+        "kind": 10,
+        "symbol": "fn_800BF5D8",
+        "target": 2148267480,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147600696,
+        "kind": 1,
+        "symbol": "fn_800BF96C",
+        "target": 2148268396,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147600704,
+        "kind": 1,
+        "symbol": "@5",
+        "target": 2147558196,
+        "addend": 0
+      }
+    ],
+    "notes": "docs/notes/game-scene-callback-controls.md",
+    "original_metadata_audit": {
+      "status": "all-original-table-ownership-retained",
+      "retained_ranges": [
+        {
+          "start": 2148268396,
+          "end": 2148268460
+        }
+      ],
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "entries": 3141,
+          "scanned_slots": 3144,
+          "references_to_retained_ranges": [
+            {
+              "entry_address": 2147600696,
+              "function": 2148268396,
+              "size": 64,
+              "extab": 2147558196,
+              "ownership": "retained-source"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "entries": 19,
+          "scanned_slots": 24,
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "entries": 3,
+          "scanned_slots": 8,
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "9bec5a4a49a3534f854b872e7de80bf8b74e6ee5ee8ab18a3a138747cd50e5c3",
+      "retained_text_bytes": 64,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 5,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/scene_callback_control_800BF9AC.cpp",
+    "source_sha256": "c7a1668fb7148681ab226f8cdde81c976233fdd926076627ec546e310e2e2fbc",
+    "source_kind": "c++",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "src/Game",
+      "-i",
+      "include",
+      "-i",
+      "/Users/brandenb/Downloads/rotfd/scratch/game_motion_controller_events"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/scene_callback_controls.h",
+        "sha256": "4a399692663525be0676b6ce8c65af814a42c4134709b6678db4d020b6c0c5ed"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148268460,
+        "end": 2148268536,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147558204,
+        "end": 2147558212,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147600708,
+        "end": 2147600720,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800BF9AC",
+        "address": 2148268460,
+        "size": 76,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@7",
+        "address": 2147558204,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@8",
+        "address": 2147600708,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "fn_800BF664",
+        "section": ".text",
+        "address": 2148267620,
+        "scope": "global"
+      },
+      {
+        "name": "fn_8025E70C",
+        "section": ".text",
+        "address": 2149967628,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_80377838",
+        "section": ".sbss",
+        "address": 2151118904,
+        "scope": "global"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 24,
+        "address": 2148268484,
+        "kind": 109,
+        "symbol": "lbl_80377838",
+        "target": 2151118904,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 28,
+        "address": 2148268488,
+        "kind": 10,
+        "symbol": "fn_8025E70C",
+        "target": 2149967628,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 52,
+        "address": 2148268512,
+        "kind": 10,
+        "symbol": "fn_800BF664",
+        "target": 2148267620,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147600708,
+        "kind": 1,
+        "symbol": "fn_800BF9AC",
+        "target": 2148268460,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147600716,
+        "kind": 1,
+        "symbol": "@7",
+        "target": 2147558204,
+        "addend": 0
+      }
+    ],
+    "notes": "docs/notes/game-scene-callback-controls.md",
+    "original_metadata_audit": {
+      "status": "all-original-table-ownership-retained",
+      "retained_ranges": [
+        {
+          "start": 2148268460,
+          "end": 2148268536
+        }
+      ],
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "entries": 3141,
+          "scanned_slots": 3144,
+          "references_to_retained_ranges": [
+            {
+              "entry_address": 2147600708,
+              "function": 2148268460,
+              "size": 76,
+              "extab": 2147558204,
+              "ownership": "retained-source"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "entries": 19,
+          "scanned_slots": 24,
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "entries": 3,
+          "scanned_slots": 8,
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "60dc2ecc1d86ea83a84137834d4ed8cf07b8107151d62a1cfd1816e22e99d6da",
+      "retained_text_bytes": 76,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 5,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/scene_callback_control_800BFA84.cpp",
+    "source_sha256": "91405a5a4f327d72071b424893298f412679278329398d19b9e72362e81495ec",
+    "source_kind": "c++",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "src/Game",
+      "-i",
+      "include",
+      "-i",
+      "/Users/brandenb/Downloads/rotfd/scratch/game_motion_controller_events"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/scene_callback_controls.h",
+        "sha256": "4a399692663525be0676b6ce8c65af814a42c4134709b6678db4d020b6c0c5ed"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148268676,
+        "end": 2148268740,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147558252,
+        "end": 2147558260,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147600732,
+        "end": 2147600744,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800BFA84",
+        "address": 2148268676,
+        "size": 64,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@5",
+        "address": 2147558252,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@6",
+        "address": 2147600732,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "fn_800BF5D8",
+        "section": ".text",
+        "address": 2148267480,
+        "scope": "global"
+      },
+      {
+        "name": "fn_8025ED38",
+        "section": ".text",
+        "address": 2149969208,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_8037783C",
+        "section": ".sbss",
+        "address": 2151118908,
+        "scope": "global"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 24,
+        "address": 2148268700,
+        "kind": 109,
+        "symbol": "lbl_8037783C",
+        "target": 2151118908,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 28,
+        "address": 2148268704,
+        "kind": 10,
+        "symbol": "fn_8025ED38",
+        "target": 2149969208,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 40,
+        "address": 2148268716,
+        "kind": 10,
+        "symbol": "fn_800BF5D8",
+        "target": 2148267480,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147600732,
+        "kind": 1,
+        "symbol": "fn_800BFA84",
+        "target": 2148268676,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147600740,
+        "kind": 1,
+        "symbol": "@5",
+        "target": 2147558252,
+        "addend": 0
+      }
+    ],
+    "notes": "docs/notes/game-scene-callback-controls.md",
+    "original_metadata_audit": {
+      "status": "all-original-table-ownership-retained",
+      "retained_ranges": [
+        {
+          "start": 2148268676,
+          "end": 2148268740
+        }
+      ],
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "entries": 3141,
+          "scanned_slots": 3144,
+          "references_to_retained_ranges": [
+            {
+              "entry_address": 2147600732,
+              "function": 2148268676,
+              "size": 64,
+              "extab": 2147558252,
+              "ownership": "retained-source"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "entries": 19,
+          "scanned_slots": 24,
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "entries": 3,
+          "scanned_slots": 8,
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "7f609206926d0ea3576a0e3944902c2dcb4ce0ea497388092106017a4282e387",
+      "retained_text_bytes": 64,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 5,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/scene_callback_control_800BFAC4.cpp",
+    "source_sha256": "53549e3f9110ec76b6275e24aa9fd4daccd2b6dd10a43bf9a883c8a7ca666166",
+    "source_kind": "c++",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "src/Game",
+      "-i",
+      "include",
+      "-i",
+      "/Users/brandenb/Downloads/rotfd/scratch/game_motion_controller_events"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/scene_callback_controls.h",
+        "sha256": "4a399692663525be0676b6ce8c65af814a42c4134709b6678db4d020b6c0c5ed"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148268740,
+        "end": 2148268816,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147558260,
+        "end": 2147558268,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147600744,
+        "end": 2147600756,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800BFAC4",
+        "address": 2148268740,
+        "size": 76,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@7",
+        "address": 2147558260,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@8",
+        "address": 2147600744,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "fn_800BF664",
+        "section": ".text",
+        "address": 2148267620,
+        "scope": "global"
+      },
+      {
+        "name": "fn_8025E70C",
+        "section": ".text",
+        "address": 2149967628,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_8037783C",
+        "section": ".sbss",
+        "address": 2151118908,
+        "scope": "global"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 24,
+        "address": 2148268764,
+        "kind": 109,
+        "symbol": "lbl_8037783C",
+        "target": 2151118908,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 28,
+        "address": 2148268768,
+        "kind": 10,
+        "symbol": "fn_8025E70C",
+        "target": 2149967628,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 52,
+        "address": 2148268792,
+        "kind": 10,
+        "symbol": "fn_800BF664",
+        "target": 2148267620,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147600744,
+        "kind": 1,
+        "symbol": "fn_800BFAC4",
+        "target": 2148268740,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147600752,
+        "kind": 1,
+        "symbol": "@7",
+        "target": 2147558260,
+        "addend": 0
+      }
+    ],
+    "notes": "docs/notes/game-scene-callback-controls.md",
+    "original_metadata_audit": {
+      "status": "all-original-table-ownership-retained",
+      "retained_ranges": [
+        {
+          "start": 2148268740,
+          "end": 2148268816
+        }
+      ],
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "entries": 3141,
+          "scanned_slots": 3144,
+          "references_to_retained_ranges": [
+            {
+              "entry_address": 2147600744,
+              "function": 2148268740,
+              "size": 76,
+              "extab": 2147558260,
+              "ownership": "retained-source"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "entries": 19,
+          "scanned_slots": 24,
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "entries": 3,
+          "scanned_slots": 8,
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "9a8192ff0909c40b4b8ce672c30f0c19949060a89dcf26842c5171eee9b5caf6",
+      "retained_text_bytes": 76,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 5,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/scene_callback_control_800BFB9C.cpp",
+    "source_sha256": "67892948087d1b0600efe22708fd7ac3dec601f48854c5405a775b45d125c42a",
+    "source_kind": "c++",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "src/Game",
+      "-i",
+      "include",
+      "-i",
+      "/Users/brandenb/Downloads/rotfd/scratch/game_motion_controller_events"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/scene_callback_controls.h",
+        "sha256": "4a399692663525be0676b6ce8c65af814a42c4134709b6678db4d020b6c0c5ed"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148268956,
+        "end": 2148269020,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147558308,
+        "end": 2147558316,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147600768,
+        "end": 2147600780,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800BFB9C",
+        "address": 2148268956,
+        "size": 64,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@5",
+        "address": 2147558308,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@6",
+        "address": 2147600768,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "fn_800BF5D8",
+        "section": ".text",
+        "address": 2148267480,
+        "scope": "global"
+      },
+      {
+        "name": "fn_8025ED38",
+        "section": ".text",
+        "address": 2149969208,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_80377840",
+        "section": ".sbss",
+        "address": 2151118912,
+        "scope": "global"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 24,
+        "address": 2148268980,
+        "kind": 109,
+        "symbol": "lbl_80377840",
+        "target": 2151118912,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 28,
+        "address": 2148268984,
+        "kind": 10,
+        "symbol": "fn_8025ED38",
+        "target": 2149969208,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 40,
+        "address": 2148268996,
+        "kind": 10,
+        "symbol": "fn_800BF5D8",
+        "target": 2148267480,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147600768,
+        "kind": 1,
+        "symbol": "fn_800BFB9C",
+        "target": 2148268956,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147600776,
+        "kind": 1,
+        "symbol": "@5",
+        "target": 2147558308,
+        "addend": 0
+      }
+    ],
+    "notes": "docs/notes/game-scene-callback-controls.md",
+    "original_metadata_audit": {
+      "status": "all-original-table-ownership-retained",
+      "retained_ranges": [
+        {
+          "start": 2148268956,
+          "end": 2148269020
+        }
+      ],
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "entries": 3141,
+          "scanned_slots": 3144,
+          "references_to_retained_ranges": [
+            {
+              "entry_address": 2147600768,
+              "function": 2148268956,
+              "size": 64,
+              "extab": 2147558308,
+              "ownership": "retained-source"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "entries": 19,
+          "scanned_slots": 24,
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "entries": 3,
+          "scanned_slots": 8,
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "6cc1eb4351218f08e25c6037548cec6c122b959fa7dfb70713cfff5bc490ae9b",
+      "retained_text_bytes": 64,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 5,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/scene_callback_control_800BFBDC.cpp",
+    "source_sha256": "1597b2b2943615b3cbb53b9ead8b0591da8901a2d03073356227a8b7d240ce00",
+    "source_kind": "c++",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "src/Game",
+      "-i",
+      "include",
+      "-i",
+      "/Users/brandenb/Downloads/rotfd/scratch/game_motion_controller_events"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/scene_callback_controls.h",
+        "sha256": "4a399692663525be0676b6ce8c65af814a42c4134709b6678db4d020b6c0c5ed"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148269020,
+        "end": 2148269096,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147558316,
+        "end": 2147558324,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147600780,
+        "end": 2147600792,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800BFBDC",
+        "address": 2148269020,
+        "size": 76,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@7",
+        "address": 2147558316,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@8",
+        "address": 2147600780,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "fn_800BF664",
+        "section": ".text",
+        "address": 2148267620,
+        "scope": "global"
+      },
+      {
+        "name": "fn_8025E70C",
+        "section": ".text",
+        "address": 2149967628,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_80377840",
+        "section": ".sbss",
+        "address": 2151118912,
+        "scope": "global"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 24,
+        "address": 2148269044,
+        "kind": 109,
+        "symbol": "lbl_80377840",
+        "target": 2151118912,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 28,
+        "address": 2148269048,
+        "kind": 10,
+        "symbol": "fn_8025E70C",
+        "target": 2149967628,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 52,
+        "address": 2148269072,
+        "kind": 10,
+        "symbol": "fn_800BF664",
+        "target": 2148267620,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147600780,
+        "kind": 1,
+        "symbol": "fn_800BFBDC",
+        "target": 2148269020,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147600788,
+        "kind": 1,
+        "symbol": "@7",
+        "target": 2147558316,
+        "addend": 0
+      }
+    ],
+    "notes": "docs/notes/game-scene-callback-controls.md",
+    "original_metadata_audit": {
+      "status": "all-original-table-ownership-retained",
+      "retained_ranges": [
+        {
+          "start": 2148269020,
+          "end": 2148269096
+        }
+      ],
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "entries": 3141,
+          "scanned_slots": 3144,
+          "references_to_retained_ranges": [
+            {
+              "entry_address": 2147600780,
+              "function": 2148269020,
+              "size": 76,
+              "extab": 2147558316,
+              "ownership": "retained-source"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "entries": 19,
+          "scanned_slots": 24,
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "entries": 3,
+          "scanned_slots": 8,
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "35f3781f196226e636489fe2098f29c9d5d0fd275b8ff3fe8511ae1793474fb1",
+      "retained_text_bytes": 76,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 5,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/scene_callback_control_800BFCB4.cpp",
+    "source_sha256": "65980bbab0d5447440d88beb8c3e32f26836755d3cbab02128a341c55d2501d9",
+    "source_kind": "c++",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "src/Game",
+      "-i",
+      "include",
+      "-i",
+      "/Users/brandenb/Downloads/rotfd/scratch/game_motion_controller_events"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/scene_callback_controls.h",
+        "sha256": "4a399692663525be0676b6ce8c65af814a42c4134709b6678db4d020b6c0c5ed"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148269236,
+        "end": 2148269300,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147558364,
+        "end": 2147558372,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147600804,
+        "end": 2147600816,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800BFCB4",
+        "address": 2148269236,
+        "size": 64,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@5",
+        "address": 2147558364,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@6",
+        "address": 2147600804,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "fn_800BF5D8",
+        "section": ".text",
+        "address": 2148267480,
+        "scope": "global"
+      },
+      {
+        "name": "fn_8025ED38",
+        "section": ".text",
+        "address": 2149969208,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_80377844",
+        "section": ".sbss",
+        "address": 2151118916,
+        "scope": "global"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 24,
+        "address": 2148269260,
+        "kind": 109,
+        "symbol": "lbl_80377844",
+        "target": 2151118916,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 28,
+        "address": 2148269264,
+        "kind": 10,
+        "symbol": "fn_8025ED38",
+        "target": 2149969208,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 40,
+        "address": 2148269276,
+        "kind": 10,
+        "symbol": "fn_800BF5D8",
+        "target": 2148267480,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147600804,
+        "kind": 1,
+        "symbol": "fn_800BFCB4",
+        "target": 2148269236,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147600812,
+        "kind": 1,
+        "symbol": "@5",
+        "target": 2147558364,
+        "addend": 0
+      }
+    ],
+    "notes": "docs/notes/game-scene-callback-controls.md",
+    "original_metadata_audit": {
+      "status": "all-original-table-ownership-retained",
+      "retained_ranges": [
+        {
+          "start": 2148269236,
+          "end": 2148269300
+        }
+      ],
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "entries": 3141,
+          "scanned_slots": 3144,
+          "references_to_retained_ranges": [
+            {
+              "entry_address": 2147600804,
+              "function": 2148269236,
+              "size": 64,
+              "extab": 2147558364,
+              "ownership": "retained-source"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "entries": 19,
+          "scanned_slots": 24,
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "entries": 3,
+          "scanned_slots": 8,
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "3b5b832d4f86dab7705e23d9caf00949d6f47551c47a4365e61dd3818da5f96e",
+      "retained_text_bytes": 64,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 5,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/scene_callback_control_800BFCF4.cpp",
+    "source_sha256": "860bca90fbf8e1394f555172cc26bdfe15b4ece5617cd9f56d8cd416ad60defb",
+    "source_kind": "c++",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "src/Game",
+      "-i",
+      "include",
+      "-i",
+      "/Users/brandenb/Downloads/rotfd/scratch/game_motion_controller_events"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/scene_callback_controls.h",
+        "sha256": "4a399692663525be0676b6ce8c65af814a42c4134709b6678db4d020b6c0c5ed"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148269300,
+        "end": 2148269376,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147558372,
+        "end": 2147558380,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147600816,
+        "end": 2147600828,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800BFCF4",
+        "address": 2148269300,
+        "size": 76,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@7",
+        "address": 2147558372,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@8",
+        "address": 2147600816,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "fn_800BF664",
+        "section": ".text",
+        "address": 2148267620,
+        "scope": "global"
+      },
+      {
+        "name": "fn_8025E70C",
+        "section": ".text",
+        "address": 2149967628,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_80377844",
+        "section": ".sbss",
+        "address": 2151118916,
+        "scope": "global"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 24,
+        "address": 2148269324,
+        "kind": 109,
+        "symbol": "lbl_80377844",
+        "target": 2151118916,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 28,
+        "address": 2148269328,
+        "kind": 10,
+        "symbol": "fn_8025E70C",
+        "target": 2149967628,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 52,
+        "address": 2148269352,
+        "kind": 10,
+        "symbol": "fn_800BF664",
+        "target": 2148267620,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147600816,
+        "kind": 1,
+        "symbol": "fn_800BFCF4",
+        "target": 2148269300,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147600824,
+        "kind": 1,
+        "symbol": "@7",
+        "target": 2147558372,
+        "addend": 0
+      }
+    ],
+    "notes": "docs/notes/game-scene-callback-controls.md",
+    "original_metadata_audit": {
+      "status": "all-original-table-ownership-retained",
+      "retained_ranges": [
+        {
+          "start": 2148269300,
+          "end": 2148269376
+        }
+      ],
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "entries": 3141,
+          "scanned_slots": 3144,
+          "references_to_retained_ranges": [
+            {
+              "entry_address": 2147600816,
+              "function": 2148269300,
+              "size": 76,
+              "extab": 2147558372,
+              "ownership": "retained-source"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "entries": 19,
+          "scanned_slots": 24,
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "entries": 3,
+          "scanned_slots": 8,
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "5794b23f968fae1b1e14188494348d1dffc358d274b5143f114e4b23d3f2a891",
+      "retained_text_bytes": 76,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 5,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/scene_callback_control_800BFDCC.cpp",
+    "source_sha256": "d0452a441e0eaaaa3952b4c8d03643664141b777d01f9fc7f9bc4230ab45984b",
+    "source_kind": "c++",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "src/Game",
+      "-i",
+      "include",
+      "-i",
+      "/Users/brandenb/Downloads/rotfd/scratch/game_motion_controller_events"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/scene_callback_controls.h",
+        "sha256": "4a399692663525be0676b6ce8c65af814a42c4134709b6678db4d020b6c0c5ed"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148269516,
+        "end": 2148269580,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147558420,
+        "end": 2147558428,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147600840,
+        "end": 2147600852,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800BFDCC",
+        "address": 2148269516,
+        "size": 64,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@5",
+        "address": 2147558420,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@6",
+        "address": 2147600840,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "fn_800BF5D8",
+        "section": ".text",
+        "address": 2148267480,
+        "scope": "global"
+      },
+      {
+        "name": "fn_8025ED38",
+        "section": ".text",
+        "address": 2149969208,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_80377848",
+        "section": ".sbss",
+        "address": 2151118920,
+        "scope": "global"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 24,
+        "address": 2148269540,
+        "kind": 109,
+        "symbol": "lbl_80377848",
+        "target": 2151118920,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 28,
+        "address": 2148269544,
+        "kind": 10,
+        "symbol": "fn_8025ED38",
+        "target": 2149969208,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 40,
+        "address": 2148269556,
+        "kind": 10,
+        "symbol": "fn_800BF5D8",
+        "target": 2148267480,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147600840,
+        "kind": 1,
+        "symbol": "fn_800BFDCC",
+        "target": 2148269516,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147600848,
+        "kind": 1,
+        "symbol": "@5",
+        "target": 2147558420,
+        "addend": 0
+      }
+    ],
+    "notes": "docs/notes/game-scene-callback-controls.md",
+    "original_metadata_audit": {
+      "status": "all-original-table-ownership-retained",
+      "retained_ranges": [
+        {
+          "start": 2148269516,
+          "end": 2148269580
+        }
+      ],
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "entries": 3141,
+          "scanned_slots": 3144,
+          "references_to_retained_ranges": [
+            {
+              "entry_address": 2147600840,
+              "function": 2148269516,
+              "size": 64,
+              "extab": 2147558420,
+              "ownership": "retained-source"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "entries": 19,
+          "scanned_slots": 24,
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "entries": 3,
+          "scanned_slots": 8,
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "30a9776cd730fe01ea762ba5561f52c742e73682f014bde5004b440ec4f533e9",
+      "retained_text_bytes": 64,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 5,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/scene_callback_control_800BFE0C.cpp",
+    "source_sha256": "2a50b18fd4997d7f8493149625e3eef479f035f5d2e988b0dcaae09fa591c579",
+    "source_kind": "c++",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "src/Game",
+      "-i",
+      "include",
+      "-i",
+      "/Users/brandenb/Downloads/rotfd/scratch/game_motion_controller_events"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/scene_callback_controls.h",
+        "sha256": "4a399692663525be0676b6ce8c65af814a42c4134709b6678db4d020b6c0c5ed"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148269580,
+        "end": 2148269656,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147558428,
+        "end": 2147558436,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147600852,
+        "end": 2147600864,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800BFE0C",
+        "address": 2148269580,
+        "size": 76,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@7",
+        "address": 2147558428,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@8",
+        "address": 2147600852,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "fn_800BF664",
+        "section": ".text",
+        "address": 2148267620,
+        "scope": "global"
+      },
+      {
+        "name": "fn_8025E70C",
+        "section": ".text",
+        "address": 2149967628,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_80377848",
+        "section": ".sbss",
+        "address": 2151118920,
+        "scope": "global"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 24,
+        "address": 2148269604,
+        "kind": 109,
+        "symbol": "lbl_80377848",
+        "target": 2151118920,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 28,
+        "address": 2148269608,
+        "kind": 10,
+        "symbol": "fn_8025E70C",
+        "target": 2149967628,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 52,
+        "address": 2148269632,
+        "kind": 10,
+        "symbol": "fn_800BF664",
+        "target": 2148267620,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147600852,
+        "kind": 1,
+        "symbol": "fn_800BFE0C",
+        "target": 2148269580,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147600860,
+        "kind": 1,
+        "symbol": "@7",
+        "target": 2147558428,
+        "addend": 0
+      }
+    ],
+    "notes": "docs/notes/game-scene-callback-controls.md",
+    "original_metadata_audit": {
+      "status": "all-original-table-ownership-retained",
+      "retained_ranges": [
+        {
+          "start": 2148269580,
+          "end": 2148269656
+        }
+      ],
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "entries": 3141,
+          "scanned_slots": 3144,
+          "references_to_retained_ranges": [
+            {
+              "entry_address": 2147600852,
+              "function": 2148269580,
+              "size": 76,
+              "extab": 2147558428,
+              "ownership": "retained-source"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "entries": 19,
+          "scanned_slots": 24,
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "entries": 3,
+          "scanned_slots": 8,
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "4cad1266f647e547a57d4279403902363bb2c7702c66bbe87254b61f3791dfb9",
+      "retained_text_bytes": 76,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 5,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/scene_callback_control_800BFEE4.cpp",
+    "source_sha256": "75c91e41551bbd1dacbbd856a50e14bf394c2f893785f4b3bd156bfef2b1c513",
+    "source_kind": "c++",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "src/Game",
+      "-i",
+      "include",
+      "-i",
+      "/Users/brandenb/Downloads/rotfd/scratch/game_motion_controller_events"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/scene_callback_controls.h",
+        "sha256": "4a399692663525be0676b6ce8c65af814a42c4134709b6678db4d020b6c0c5ed"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148269796,
+        "end": 2148269860,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147558476,
+        "end": 2147558484,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147600876,
+        "end": 2147600888,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800BFEE4",
+        "address": 2148269796,
+        "size": 64,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@5",
+        "address": 2147558476,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@6",
+        "address": 2147600876,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "fn_800BF5D8",
+        "section": ".text",
+        "address": 2148267480,
+        "scope": "global"
+      },
+      {
+        "name": "fn_8025ED38",
+        "section": ".text",
+        "address": 2149969208,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_8037784C",
+        "section": ".sbss",
+        "address": 2151118924,
+        "scope": "global"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 24,
+        "address": 2148269820,
+        "kind": 109,
+        "symbol": "lbl_8037784C",
+        "target": 2151118924,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 28,
+        "address": 2148269824,
+        "kind": 10,
+        "symbol": "fn_8025ED38",
+        "target": 2149969208,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 40,
+        "address": 2148269836,
+        "kind": 10,
+        "symbol": "fn_800BF5D8",
+        "target": 2148267480,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147600876,
+        "kind": 1,
+        "symbol": "fn_800BFEE4",
+        "target": 2148269796,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147600884,
+        "kind": 1,
+        "symbol": "@5",
+        "target": 2147558476,
+        "addend": 0
+      }
+    ],
+    "notes": "docs/notes/game-scene-callback-controls.md",
+    "original_metadata_audit": {
+      "status": "all-original-table-ownership-retained",
+      "retained_ranges": [
+        {
+          "start": 2148269796,
+          "end": 2148269860
+        }
+      ],
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "entries": 3141,
+          "scanned_slots": 3144,
+          "references_to_retained_ranges": [
+            {
+              "entry_address": 2147600876,
+              "function": 2148269796,
+              "size": 64,
+              "extab": 2147558476,
+              "ownership": "retained-source"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "entries": 19,
+          "scanned_slots": 24,
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "entries": 3,
+          "scanned_slots": 8,
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "9202a7eebcc31787da09493a0cb9e7dff4acc0e9a01a3e34555dfaed8c4bc45e",
+      "retained_text_bytes": 64,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 5,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/scene_callback_control_800BFF24.cpp",
+    "source_sha256": "f13b4680e4688a76e89ed5a7cea971a9bb39f25843f1f3d06e28159a8484cb4a",
+    "source_kind": "c++",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "src/Game",
+      "-i",
+      "include",
+      "-i",
+      "/Users/brandenb/Downloads/rotfd/scratch/game_motion_controller_events"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/scene_callback_controls.h",
+        "sha256": "4a399692663525be0676b6ce8c65af814a42c4134709b6678db4d020b6c0c5ed"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148269860,
+        "end": 2148269936,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147558484,
+        "end": 2147558492,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147600888,
+        "end": 2147600900,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800BFF24",
+        "address": 2148269860,
+        "size": 76,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@7",
+        "address": 2147558484,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@8",
+        "address": 2147600888,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "fn_800BF664",
+        "section": ".text",
+        "address": 2148267620,
+        "scope": "global"
+      },
+      {
+        "name": "fn_8025E70C",
+        "section": ".text",
+        "address": 2149967628,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_8037784C",
+        "section": ".sbss",
+        "address": 2151118924,
+        "scope": "global"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 24,
+        "address": 2148269884,
+        "kind": 109,
+        "symbol": "lbl_8037784C",
+        "target": 2151118924,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 28,
+        "address": 2148269888,
+        "kind": 10,
+        "symbol": "fn_8025E70C",
+        "target": 2149967628,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 52,
+        "address": 2148269912,
+        "kind": 10,
+        "symbol": "fn_800BF664",
+        "target": 2148267620,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147600888,
+        "kind": 1,
+        "symbol": "fn_800BFF24",
+        "target": 2148269860,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147600896,
+        "kind": 1,
+        "symbol": "@7",
+        "target": 2147558484,
+        "addend": 0
+      }
+    ],
+    "notes": "docs/notes/game-scene-callback-controls.md",
+    "original_metadata_audit": {
+      "status": "all-original-table-ownership-retained",
+      "retained_ranges": [
+        {
+          "start": 2148269860,
+          "end": 2148269936
+        }
+      ],
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "entries": 3141,
+          "scanned_slots": 3144,
+          "references_to_retained_ranges": [
+            {
+              "entry_address": 2147600888,
+              "function": 2148269860,
+              "size": 76,
+              "extab": 2147558484,
+              "ownership": "retained-source"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "entries": 19,
+          "scanned_slots": 24,
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "entries": 3,
+          "scanned_slots": 8,
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "65c69bb5b642372d1b712b423e8078022cbd4158b253aaacad7c6152a08fcebf",
+      "retained_text_bytes": 76,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 5,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/scene_callback_control_800BFFFC.cpp",
+    "source_sha256": "d4bef1861f637d262d90d8ee6545c483bc15fba144cc85ac112332903ca0e81d",
+    "source_kind": "c++",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "src/Game",
+      "-i",
+      "include",
+      "-i",
+      "/Users/brandenb/Downloads/rotfd/scratch/game_motion_controller_events"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/scene_callback_controls.h",
+        "sha256": "4a399692663525be0676b6ce8c65af814a42c4134709b6678db4d020b6c0c5ed"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148270076,
+        "end": 2148270140,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147558532,
+        "end": 2147558540,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147600912,
+        "end": 2147600924,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800BFFFC",
+        "address": 2148270076,
+        "size": 64,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@5",
+        "address": 2147558532,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@6",
+        "address": 2147600912,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "fn_800BF5D8",
+        "section": ".text",
+        "address": 2148267480,
+        "scope": "global"
+      },
+      {
+        "name": "fn_8025ED38",
+        "section": ".text",
+        "address": 2149969208,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_80377850",
+        "section": ".sbss",
+        "address": 2151118928,
+        "scope": "global"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 24,
+        "address": 2148270100,
+        "kind": 109,
+        "symbol": "lbl_80377850",
+        "target": 2151118928,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 28,
+        "address": 2148270104,
+        "kind": 10,
+        "symbol": "fn_8025ED38",
+        "target": 2149969208,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 40,
+        "address": 2148270116,
+        "kind": 10,
+        "symbol": "fn_800BF5D8",
+        "target": 2148267480,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147600912,
+        "kind": 1,
+        "symbol": "fn_800BFFFC",
+        "target": 2148270076,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147600920,
+        "kind": 1,
+        "symbol": "@5",
+        "target": 2147558532,
+        "addend": 0
+      }
+    ],
+    "notes": "docs/notes/game-scene-callback-controls.md",
+    "original_metadata_audit": {
+      "status": "all-original-table-ownership-retained",
+      "retained_ranges": [
+        {
+          "start": 2148270076,
+          "end": 2148270140
+        }
+      ],
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "entries": 3141,
+          "scanned_slots": 3144,
+          "references_to_retained_ranges": [
+            {
+              "entry_address": 2147600912,
+              "function": 2148270076,
+              "size": 64,
+              "extab": 2147558532,
+              "ownership": "retained-source"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "entries": 19,
+          "scanned_slots": 24,
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "entries": 3,
+          "scanned_slots": 8,
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "e0c73d13e5a81d44de4b9a686eee030f5132cec69e19198f3b76e42b80eb38e2",
+      "retained_text_bytes": 64,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 5,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/scene_callback_control_800C003C.cpp",
+    "source_sha256": "b82d17c5323d96404783bc8f81a2748bc5e8a772d26724dccd9fdbd2ee5e8585",
+    "source_kind": "c++",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "src/Game",
+      "-i",
+      "include",
+      "-i",
+      "/Users/brandenb/Downloads/rotfd/scratch/game_motion_controller_events"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/scene_callback_controls.h",
+        "sha256": "4a399692663525be0676b6ce8c65af814a42c4134709b6678db4d020b6c0c5ed"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148270140,
+        "end": 2148270216,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147558540,
+        "end": 2147558548,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147600924,
+        "end": 2147600936,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800C003C",
+        "address": 2148270140,
+        "size": 76,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@7",
+        "address": 2147558540,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@8",
+        "address": 2147600924,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "fn_800BF664",
+        "section": ".text",
+        "address": 2148267620,
+        "scope": "global"
+      },
+      {
+        "name": "fn_8025E70C",
+        "section": ".text",
+        "address": 2149967628,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_80377850",
+        "section": ".sbss",
+        "address": 2151118928,
+        "scope": "global"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 24,
+        "address": 2148270164,
+        "kind": 109,
+        "symbol": "lbl_80377850",
+        "target": 2151118928,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 28,
+        "address": 2148270168,
+        "kind": 10,
+        "symbol": "fn_8025E70C",
+        "target": 2149967628,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 52,
+        "address": 2148270192,
+        "kind": 10,
+        "symbol": "fn_800BF664",
+        "target": 2148267620,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147600924,
+        "kind": 1,
+        "symbol": "fn_800C003C",
+        "target": 2148270140,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147600932,
+        "kind": 1,
+        "symbol": "@7",
+        "target": 2147558540,
+        "addend": 0
+      }
+    ],
+    "notes": "docs/notes/game-scene-callback-controls.md",
+    "original_metadata_audit": {
+      "status": "all-original-table-ownership-retained",
+      "retained_ranges": [
+        {
+          "start": 2148270140,
+          "end": 2148270216
+        }
+      ],
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "entries": 3141,
+          "scanned_slots": 3144,
+          "references_to_retained_ranges": [
+            {
+              "entry_address": 2147600924,
+              "function": 2148270140,
+              "size": 76,
+              "extab": 2147558540,
+              "ownership": "retained-source"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "entries": 19,
+          "scanned_slots": 24,
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "entries": 3,
+          "scanned_slots": 8,
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "8f56208b56f41328761c2ed48b55216adfcf3b4e022ba3856e19c536ac0125e6",
+      "retained_text_bytes": 76,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 5,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/scene_callback_control_800C0114.cpp",
+    "source_sha256": "9404b0c1cc4d951df115916b11545169dd0fec9ec835e17539709232c45f115a",
+    "source_kind": "c++",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "src/Game",
+      "-i",
+      "include",
+      "-i",
+      "/Users/brandenb/Downloads/rotfd/scratch/game_motion_controller_events"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/scene_callback_controls.h",
+        "sha256": "4a399692663525be0676b6ce8c65af814a42c4134709b6678db4d020b6c0c5ed"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148270356,
+        "end": 2148270420,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147558588,
+        "end": 2147558596,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147600948,
+        "end": 2147600960,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800C0114",
+        "address": 2148270356,
+        "size": 64,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@5",
+        "address": 2147558588,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@6",
+        "address": 2147600948,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "fn_800BF5D8",
+        "section": ".text",
+        "address": 2148267480,
+        "scope": "global"
+      },
+      {
+        "name": "fn_8025ED38",
+        "section": ".text",
+        "address": 2149969208,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_80377854",
+        "section": ".sbss",
+        "address": 2151118932,
+        "scope": "global"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 24,
+        "address": 2148270380,
+        "kind": 109,
+        "symbol": "lbl_80377854",
+        "target": 2151118932,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 28,
+        "address": 2148270384,
+        "kind": 10,
+        "symbol": "fn_8025ED38",
+        "target": 2149969208,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 40,
+        "address": 2148270396,
+        "kind": 10,
+        "symbol": "fn_800BF5D8",
+        "target": 2148267480,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147600948,
+        "kind": 1,
+        "symbol": "fn_800C0114",
+        "target": 2148270356,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147600956,
+        "kind": 1,
+        "symbol": "@5",
+        "target": 2147558588,
+        "addend": 0
+      }
+    ],
+    "notes": "docs/notes/game-scene-callback-controls.md",
+    "original_metadata_audit": {
+      "status": "all-original-table-ownership-retained",
+      "retained_ranges": [
+        {
+          "start": 2148270356,
+          "end": 2148270420
+        }
+      ],
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "entries": 3141,
+          "scanned_slots": 3144,
+          "references_to_retained_ranges": [
+            {
+              "entry_address": 2147600948,
+              "function": 2148270356,
+              "size": 64,
+              "extab": 2147558588,
+              "ownership": "retained-source"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "entries": 19,
+          "scanned_slots": 24,
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "entries": 3,
+          "scanned_slots": 8,
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "1df989e988c3e2604c8cea66ff8a9c9c9c3018f9491ab8615b3e5ba649f959fb",
+      "retained_text_bytes": 64,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 5,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/scene_callback_control_800C0154.cpp",
+    "source_sha256": "58457e9bcec9815452c8c7b1d11825a05d7351b1106281fba6bda60dc7b8a93b",
+    "source_kind": "c++",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "src/Game",
+      "-i",
+      "include",
+      "-i",
+      "/Users/brandenb/Downloads/rotfd/scratch/game_motion_controller_events"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/scene_callback_controls.h",
+        "sha256": "4a399692663525be0676b6ce8c65af814a42c4134709b6678db4d020b6c0c5ed"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148270420,
+        "end": 2148270496,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147558596,
+        "end": 2147558604,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147600960,
+        "end": 2147600972,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800C0154",
+        "address": 2148270420,
+        "size": 76,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@7",
+        "address": 2147558596,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@8",
+        "address": 2147600960,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "fn_800BF664",
+        "section": ".text",
+        "address": 2148267620,
+        "scope": "global"
+      },
+      {
+        "name": "fn_8025E70C",
+        "section": ".text",
+        "address": 2149967628,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_80377854",
+        "section": ".sbss",
+        "address": 2151118932,
+        "scope": "global"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 24,
+        "address": 2148270444,
+        "kind": 109,
+        "symbol": "lbl_80377854",
+        "target": 2151118932,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 28,
+        "address": 2148270448,
+        "kind": 10,
+        "symbol": "fn_8025E70C",
+        "target": 2149967628,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 52,
+        "address": 2148270472,
+        "kind": 10,
+        "symbol": "fn_800BF664",
+        "target": 2148267620,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147600960,
+        "kind": 1,
+        "symbol": "fn_800C0154",
+        "target": 2148270420,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147600968,
+        "kind": 1,
+        "symbol": "@7",
+        "target": 2147558596,
+        "addend": 0
+      }
+    ],
+    "notes": "docs/notes/game-scene-callback-controls.md",
+    "original_metadata_audit": {
+      "status": "all-original-table-ownership-retained",
+      "retained_ranges": [
+        {
+          "start": 2148270420,
+          "end": 2148270496
+        }
+      ],
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "entries": 3141,
+          "scanned_slots": 3144,
+          "references_to_retained_ranges": [
+            {
+              "entry_address": 2147600960,
+              "function": 2148270420,
+              "size": 76,
+              "extab": 2147558596,
+              "ownership": "retained-source"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "entries": 19,
+          "scanned_slots": 24,
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "entries": 3,
+          "scanned_slots": 8,
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "0a69ae37505def4e9bc7b6a9f09ceb4dd46484f994d628e6e7fa65e60046c31c",
+      "retained_text_bytes": 76,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 5,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/scene_callback_control_800C022C.cpp",
+    "source_sha256": "728cb018c8009da13460f0d852508c885ad416517302c858f51febada989a7ce",
+    "source_kind": "c++",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "src/Game",
+      "-i",
+      "include",
+      "-i",
+      "/Users/brandenb/Downloads/rotfd/scratch/game_motion_controller_events"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/scene_callback_controls.h",
+        "sha256": "4a399692663525be0676b6ce8c65af814a42c4134709b6678db4d020b6c0c5ed"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148270636,
+        "end": 2148270700,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147558644,
+        "end": 2147558652,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147600984,
+        "end": 2147600996,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800C022C",
+        "address": 2148270636,
+        "size": 64,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@5",
+        "address": 2147558644,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@6",
+        "address": 2147600984,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "fn_800BF5D8",
+        "section": ".text",
+        "address": 2148267480,
+        "scope": "global"
+      },
+      {
+        "name": "fn_8025ED38",
+        "section": ".text",
+        "address": 2149969208,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_80377858",
+        "section": ".sbss",
+        "address": 2151118936,
+        "scope": "global"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 24,
+        "address": 2148270660,
+        "kind": 109,
+        "symbol": "lbl_80377858",
+        "target": 2151118936,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 28,
+        "address": 2148270664,
+        "kind": 10,
+        "symbol": "fn_8025ED38",
+        "target": 2149969208,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 40,
+        "address": 2148270676,
+        "kind": 10,
+        "symbol": "fn_800BF5D8",
+        "target": 2148267480,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147600984,
+        "kind": 1,
+        "symbol": "fn_800C022C",
+        "target": 2148270636,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147600992,
+        "kind": 1,
+        "symbol": "@5",
+        "target": 2147558644,
+        "addend": 0
+      }
+    ],
+    "notes": "docs/notes/game-scene-callback-controls.md",
+    "original_metadata_audit": {
+      "status": "all-original-table-ownership-retained",
+      "retained_ranges": [
+        {
+          "start": 2148270636,
+          "end": 2148270700
+        }
+      ],
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "entries": 3141,
+          "scanned_slots": 3144,
+          "references_to_retained_ranges": [
+            {
+              "entry_address": 2147600984,
+              "function": 2148270636,
+              "size": 64,
+              "extab": 2147558644,
+              "ownership": "retained-source"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "entries": 19,
+          "scanned_slots": 24,
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "entries": 3,
+          "scanned_slots": 8,
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "6e02774fd78cec82c185cee641247e78b56512ea148ce95bbb0d777f6d735545",
+      "retained_text_bytes": 64,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 5,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/scene_callback_control_800C026C.cpp",
+    "source_sha256": "da4aaf6e7589a9c599a37c783ede3b5d9bf6b531feb58c87743485b1d99ba7d9",
+    "source_kind": "c++",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "src/Game",
+      "-i",
+      "include",
+      "-i",
+      "/Users/brandenb/Downloads/rotfd/scratch/game_motion_controller_events"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/scene_callback_controls.h",
+        "sha256": "4a399692663525be0676b6ce8c65af814a42c4134709b6678db4d020b6c0c5ed"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148270700,
+        "end": 2148270776,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147558652,
+        "end": 2147558660,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147600996,
+        "end": 2147601008,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800C026C",
+        "address": 2148270700,
+        "size": 76,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@7",
+        "address": 2147558652,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@8",
+        "address": 2147600996,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "fn_800BF664",
+        "section": ".text",
+        "address": 2148267620,
+        "scope": "global"
+      },
+      {
+        "name": "fn_8025E70C",
+        "section": ".text",
+        "address": 2149967628,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_80377858",
+        "section": ".sbss",
+        "address": 2151118936,
+        "scope": "global"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 24,
+        "address": 2148270724,
+        "kind": 109,
+        "symbol": "lbl_80377858",
+        "target": 2151118936,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 28,
+        "address": 2148270728,
+        "kind": 10,
+        "symbol": "fn_8025E70C",
+        "target": 2149967628,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 52,
+        "address": 2148270752,
+        "kind": 10,
+        "symbol": "fn_800BF664",
+        "target": 2148267620,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147600996,
+        "kind": 1,
+        "symbol": "fn_800C026C",
+        "target": 2148270700,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147601004,
+        "kind": 1,
+        "symbol": "@7",
+        "target": 2147558652,
+        "addend": 0
+      }
+    ],
+    "notes": "docs/notes/game-scene-callback-controls.md",
+    "original_metadata_audit": {
+      "status": "all-original-table-ownership-retained",
+      "retained_ranges": [
+        {
+          "start": 2148270700,
+          "end": 2148270776
+        }
+      ],
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "entries": 3141,
+          "scanned_slots": 3144,
+          "references_to_retained_ranges": [
+            {
+              "entry_address": 2147600996,
+              "function": 2148270700,
+              "size": 76,
+              "extab": 2147558652,
+              "ownership": "retained-source"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "entries": 19,
+          "scanned_slots": 24,
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "entries": 3,
+          "scanned_slots": 8,
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "0a383a5b6bec254ca3e826115b0ee80207addbcd48802cd05c47349d1bdd35d8",
+      "retained_text_bytes": 76,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 5,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/scene_callback_control_800C0344.cpp",
+    "source_sha256": "85b5211edf8496bd2f6c16edf654a4adb801405ea52d2c41d03975d7f641f763",
+    "source_kind": "c++",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "src/Game",
+      "-i",
+      "include",
+      "-i",
+      "/Users/brandenb/Downloads/rotfd/scratch/game_motion_controller_events"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/scene_callback_controls.h",
+        "sha256": "4a399692663525be0676b6ce8c65af814a42c4134709b6678db4d020b6c0c5ed"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148270916,
+        "end": 2148270980,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147558700,
+        "end": 2147558708,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147601020,
+        "end": 2147601032,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800C0344",
+        "address": 2148270916,
+        "size": 64,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@5",
+        "address": 2147558700,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@6",
+        "address": 2147601020,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "fn_800BF5D8",
+        "section": ".text",
+        "address": 2148267480,
+        "scope": "global"
+      },
+      {
+        "name": "fn_8025ED38",
+        "section": ".text",
+        "address": 2149969208,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_8037785C",
+        "section": ".sbss",
+        "address": 2151118940,
+        "scope": "global"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 24,
+        "address": 2148270940,
+        "kind": 109,
+        "symbol": "lbl_8037785C",
+        "target": 2151118940,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 28,
+        "address": 2148270944,
+        "kind": 10,
+        "symbol": "fn_8025ED38",
+        "target": 2149969208,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 40,
+        "address": 2148270956,
+        "kind": 10,
+        "symbol": "fn_800BF5D8",
+        "target": 2148267480,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147601020,
+        "kind": 1,
+        "symbol": "fn_800C0344",
+        "target": 2148270916,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147601028,
+        "kind": 1,
+        "symbol": "@5",
+        "target": 2147558700,
+        "addend": 0
+      }
+    ],
+    "notes": "docs/notes/game-scene-callback-controls.md",
+    "original_metadata_audit": {
+      "status": "all-original-table-ownership-retained",
+      "retained_ranges": [
+        {
+          "start": 2148270916,
+          "end": 2148270980
+        }
+      ],
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "entries": 3141,
+          "scanned_slots": 3144,
+          "references_to_retained_ranges": [
+            {
+              "entry_address": 2147601020,
+              "function": 2148270916,
+              "size": 64,
+              "extab": 2147558700,
+              "ownership": "retained-source"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "entries": 19,
+          "scanned_slots": 24,
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "entries": 3,
+          "scanned_slots": 8,
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "b15b777f87827fdc78cf25b0ad99c83aacfe3b637aab8897e89f3d01a05b28d8",
+      "retained_text_bytes": 64,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 5,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/scene_callback_control_800C0384.cpp",
+    "source_sha256": "e0d0c2004522c561083f222d154b833d7ab8ab3c04f21650cf01619813452e28",
+    "source_kind": "c++",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "src/Game",
+      "-i",
+      "include",
+      "-i",
+      "/Users/brandenb/Downloads/rotfd/scratch/game_motion_controller_events"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/scene_callback_controls.h",
+        "sha256": "4a399692663525be0676b6ce8c65af814a42c4134709b6678db4d020b6c0c5ed"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148270980,
+        "end": 2148271056,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147558708,
+        "end": 2147558716,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147601032,
+        "end": 2147601044,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800C0384",
+        "address": 2148270980,
+        "size": 76,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@7",
+        "address": 2147558708,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@8",
+        "address": 2147601032,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "fn_800BF664",
+        "section": ".text",
+        "address": 2148267620,
+        "scope": "global"
+      },
+      {
+        "name": "fn_8025E70C",
+        "section": ".text",
+        "address": 2149967628,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_8037785C",
+        "section": ".sbss",
+        "address": 2151118940,
+        "scope": "global"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 24,
+        "address": 2148271004,
+        "kind": 109,
+        "symbol": "lbl_8037785C",
+        "target": 2151118940,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 28,
+        "address": 2148271008,
+        "kind": 10,
+        "symbol": "fn_8025E70C",
+        "target": 2149967628,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 52,
+        "address": 2148271032,
+        "kind": 10,
+        "symbol": "fn_800BF664",
+        "target": 2148267620,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147601032,
+        "kind": 1,
+        "symbol": "fn_800C0384",
+        "target": 2148270980,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147601040,
+        "kind": 1,
+        "symbol": "@7",
+        "target": 2147558708,
+        "addend": 0
+      }
+    ],
+    "notes": "docs/notes/game-scene-callback-controls.md",
+    "original_metadata_audit": {
+      "status": "all-original-table-ownership-retained",
+      "retained_ranges": [
+        {
+          "start": 2148270980,
+          "end": 2148271056
+        }
+      ],
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "entries": 3141,
+          "scanned_slots": 3144,
+          "references_to_retained_ranges": [
+            {
+              "entry_address": 2147601032,
+              "function": 2148270980,
+              "size": 76,
+              "extab": 2147558708,
+              "ownership": "retained-source"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "entries": 19,
+          "scanned_slots": 24,
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "entries": 3,
+          "scanned_slots": 8,
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "c0a99389d6f95d7dd84dc2016176f440e2ff67ad972f1e232a5f9a2df7911435",
+      "retained_text_bytes": 76,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 5,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/scene_callback_control_800C045C.cpp",
+    "source_sha256": "ae5308c10b8194514946bfd966c0649a32c6c4200ceb6985b13878cfa7de0c01",
+    "source_kind": "c++",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "src/Game",
+      "-i",
+      "include",
+      "-i",
+      "/Users/brandenb/Downloads/rotfd/scratch/game_motion_controller_events"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/scene_callback_controls.h",
+        "sha256": "4a399692663525be0676b6ce8c65af814a42c4134709b6678db4d020b6c0c5ed"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148271196,
+        "end": 2148271260,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147558756,
+        "end": 2147558764,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147601056,
+        "end": 2147601068,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800C045C",
+        "address": 2148271196,
+        "size": 64,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@5",
+        "address": 2147558756,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@6",
+        "address": 2147601056,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "fn_800BF5D8",
+        "section": ".text",
+        "address": 2148267480,
+        "scope": "global"
+      },
+      {
+        "name": "fn_8025ED38",
+        "section": ".text",
+        "address": 2149969208,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_80377860",
+        "section": ".sbss",
+        "address": 2151118944,
+        "scope": "global"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 24,
+        "address": 2148271220,
+        "kind": 109,
+        "symbol": "lbl_80377860",
+        "target": 2151118944,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 28,
+        "address": 2148271224,
+        "kind": 10,
+        "symbol": "fn_8025ED38",
+        "target": 2149969208,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 40,
+        "address": 2148271236,
+        "kind": 10,
+        "symbol": "fn_800BF5D8",
+        "target": 2148267480,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147601056,
+        "kind": 1,
+        "symbol": "fn_800C045C",
+        "target": 2148271196,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147601064,
+        "kind": 1,
+        "symbol": "@5",
+        "target": 2147558756,
+        "addend": 0
+      }
+    ],
+    "notes": "docs/notes/game-scene-callback-controls.md",
+    "original_metadata_audit": {
+      "status": "all-original-table-ownership-retained",
+      "retained_ranges": [
+        {
+          "start": 2148271196,
+          "end": 2148271260
+        }
+      ],
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "entries": 3141,
+          "scanned_slots": 3144,
+          "references_to_retained_ranges": [
+            {
+              "entry_address": 2147601056,
+              "function": 2148271196,
+              "size": 64,
+              "extab": 2147558756,
+              "ownership": "retained-source"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "entries": 19,
+          "scanned_slots": 24,
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "entries": 3,
+          "scanned_slots": 8,
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "e18a97f3abcb0e24cc9ea7f1c0e2dbaac411be7e830f2f87f360602f44ec4d34",
+      "retained_text_bytes": 64,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 5,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/scene_callback_control_800C049C.cpp",
+    "source_sha256": "e011c2413c1dced6d9ac5c7a14dd6d5b2ce55cb98beb4a2b6a91c52e8f30b6b3",
+    "source_kind": "c++",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "src/Game",
+      "-i",
+      "include",
+      "-i",
+      "/Users/brandenb/Downloads/rotfd/scratch/game_motion_controller_events"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/scene_callback_controls.h",
+        "sha256": "4a399692663525be0676b6ce8c65af814a42c4134709b6678db4d020b6c0c5ed"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148271260,
+        "end": 2148271336,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147558764,
+        "end": 2147558772,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147601068,
+        "end": 2147601080,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800C049C",
+        "address": 2148271260,
+        "size": 76,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@7",
+        "address": 2147558764,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@8",
+        "address": 2147601068,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "fn_800BF664",
+        "section": ".text",
+        "address": 2148267620,
+        "scope": "global"
+      },
+      {
+        "name": "fn_8025E70C",
+        "section": ".text",
+        "address": 2149967628,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_80377860",
+        "section": ".sbss",
+        "address": 2151118944,
+        "scope": "global"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 24,
+        "address": 2148271284,
+        "kind": 109,
+        "symbol": "lbl_80377860",
+        "target": 2151118944,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 28,
+        "address": 2148271288,
+        "kind": 10,
+        "symbol": "fn_8025E70C",
+        "target": 2149967628,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 52,
+        "address": 2148271312,
+        "kind": 10,
+        "symbol": "fn_800BF664",
+        "target": 2148267620,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147601068,
+        "kind": 1,
+        "symbol": "fn_800C049C",
+        "target": 2148271260,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147601076,
+        "kind": 1,
+        "symbol": "@7",
+        "target": 2147558764,
+        "addend": 0
+      }
+    ],
+    "notes": "docs/notes/game-scene-callback-controls.md",
+    "original_metadata_audit": {
+      "status": "all-original-table-ownership-retained",
+      "retained_ranges": [
+        {
+          "start": 2148271260,
+          "end": 2148271336
+        }
+      ],
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "entries": 3141,
+          "scanned_slots": 3144,
+          "references_to_retained_ranges": [
+            {
+              "entry_address": 2147601068,
+              "function": 2148271260,
+              "size": 76,
+              "extab": 2147558764,
+              "ownership": "retained-source"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "entries": 19,
+          "scanned_slots": 24,
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "entries": 3,
+          "scanned_slots": 8,
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "ea70569fc0726fd2a4a3f5bc337ee5754c45f47e4c65acf124897e98ba9dbe92",
+      "retained_text_bytes": 76,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 5,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/scene_callback_control_800C0574.cpp",
+    "source_sha256": "a107d4fe69c010bdcd6795ba040baaaf4549bbf492175de40cb03b0b9a5551f7",
+    "source_kind": "c++",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "src/Game",
+      "-i",
+      "include",
+      "-i",
+      "/Users/brandenb/Downloads/rotfd/scratch/game_motion_controller_events"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/scene_callback_controls.h",
+        "sha256": "4a399692663525be0676b6ce8c65af814a42c4134709b6678db4d020b6c0c5ed"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148271476,
+        "end": 2148271540,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147558812,
+        "end": 2147558820,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147601092,
+        "end": 2147601104,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800C0574",
+        "address": 2148271476,
+        "size": 64,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@5",
+        "address": 2147558812,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@6",
+        "address": 2147601092,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "fn_800BF5D8",
+        "section": ".text",
+        "address": 2148267480,
+        "scope": "global"
+      },
+      {
+        "name": "fn_8025ED38",
+        "section": ".text",
+        "address": 2149969208,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_80377864",
+        "section": ".sbss",
+        "address": 2151118948,
+        "scope": "global"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 24,
+        "address": 2148271500,
+        "kind": 109,
+        "symbol": "lbl_80377864",
+        "target": 2151118948,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 28,
+        "address": 2148271504,
+        "kind": 10,
+        "symbol": "fn_8025ED38",
+        "target": 2149969208,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 40,
+        "address": 2148271516,
+        "kind": 10,
+        "symbol": "fn_800BF5D8",
+        "target": 2148267480,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147601092,
+        "kind": 1,
+        "symbol": "fn_800C0574",
+        "target": 2148271476,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147601100,
+        "kind": 1,
+        "symbol": "@5",
+        "target": 2147558812,
+        "addend": 0
+      }
+    ],
+    "notes": "docs/notes/game-scene-callback-controls.md",
+    "original_metadata_audit": {
+      "status": "all-original-table-ownership-retained",
+      "retained_ranges": [
+        {
+          "start": 2148271476,
+          "end": 2148271540
+        }
+      ],
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "entries": 3141,
+          "scanned_slots": 3144,
+          "references_to_retained_ranges": [
+            {
+              "entry_address": 2147601092,
+              "function": 2148271476,
+              "size": 64,
+              "extab": 2147558812,
+              "ownership": "retained-source"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "entries": 19,
+          "scanned_slots": 24,
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "entries": 3,
+          "scanned_slots": 8,
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "af992a2ef08e6c7981e383570741580e8dc4a606002472b96e3072871f80eef4",
+      "retained_text_bytes": 64,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 5,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/scene_callback_control_800C05B4.cpp",
+    "source_sha256": "bcca59ede309ca1af9b1793f4a5f7876f977bb98173a472a3005ac261c72bb7e",
+    "source_kind": "c++",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "src/Game",
+      "-i",
+      "include",
+      "-i",
+      "/Users/brandenb/Downloads/rotfd/scratch/game_motion_controller_events"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/scene_callback_controls.h",
+        "sha256": "4a399692663525be0676b6ce8c65af814a42c4134709b6678db4d020b6c0c5ed"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148271540,
+        "end": 2148271616,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147558820,
+        "end": 2147558828,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147601104,
+        "end": 2147601116,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800C05B4",
+        "address": 2148271540,
+        "size": 76,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@7",
+        "address": 2147558820,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@8",
+        "address": 2147601104,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "fn_800BF664",
+        "section": ".text",
+        "address": 2148267620,
+        "scope": "global"
+      },
+      {
+        "name": "fn_8025E70C",
+        "section": ".text",
+        "address": 2149967628,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_80377864",
+        "section": ".sbss",
+        "address": 2151118948,
+        "scope": "global"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 24,
+        "address": 2148271564,
+        "kind": 109,
+        "symbol": "lbl_80377864",
+        "target": 2151118948,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 28,
+        "address": 2148271568,
+        "kind": 10,
+        "symbol": "fn_8025E70C",
+        "target": 2149967628,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 52,
+        "address": 2148271592,
+        "kind": 10,
+        "symbol": "fn_800BF664",
+        "target": 2148267620,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147601104,
+        "kind": 1,
+        "symbol": "fn_800C05B4",
+        "target": 2148271540,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147601112,
+        "kind": 1,
+        "symbol": "@7",
+        "target": 2147558820,
+        "addend": 0
+      }
+    ],
+    "notes": "docs/notes/game-scene-callback-controls.md",
+    "original_metadata_audit": {
+      "status": "all-original-table-ownership-retained",
+      "retained_ranges": [
+        {
+          "start": 2148271540,
+          "end": 2148271616
+        }
+      ],
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "entries": 3141,
+          "scanned_slots": 3144,
+          "references_to_retained_ranges": [
+            {
+              "entry_address": 2147601104,
+              "function": 2148271540,
+              "size": 76,
+              "extab": 2147558820,
+              "ownership": "retained-source"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "entries": 19,
+          "scanned_slots": 24,
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "entries": 3,
+          "scanned_slots": 8,
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "ac6fd285b4edab79de9ec166a734320d67f01ed004ff7cf716345602aadc2bcc",
+      "retained_text_bytes": 76,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 5,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  }
+]

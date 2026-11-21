@@ -1,0 +1,236 @@
+{
+  "source": "src/MetroTRK/targimpl_access.c",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.3.2",
+  "cflags": "-proc gekko -fp hardware -enum int -str reuse -common off -O4,p -inline auto,deferred -sdata 0 -sdata2 0 -pool off -use_lmw_stmw on -rostr -i src/MetroTRK -Cpp_exceptions off",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2148650220,
+      "end": 2148654156,
+      "alignment": 4
+    },
+    {
+      "name": ".rodata",
+      "start": 2150283568,
+      "end": 2150283704,
+      "alignment": 8
+    }
+  ],
+  "functions": [
+    {
+      "name": "TRKTargetAddExceptionInfo",
+      "address": 2148650220,
+      "size": 172
+    },
+    {
+      "name": "TRKTargetAddStopInfo",
+      "address": 2148650392,
+      "size": 292
+    },
+    {
+      "name": "TRKTargetInterrupt",
+      "address": 2148650684,
+      "size": 348
+    },
+    {
+      "name": "TRKPostInterruptEvent",
+      "address": 2148651032,
+      "size": 192
+    },
+    {
+      "name": "TRKTargetCPUType",
+      "address": 2148651224,
+      "size": 96
+    },
+    {
+      "name": "TRKTargetSupportMask",
+      "address": 2148651320,
+      "size": 164
+    },
+    {
+      "name": "TRKTargetVersions",
+      "address": 2148651484,
+      "size": 40
+    },
+    {
+      "name": "TRKTargetAccessExtended2",
+      "address": 2148651524,
+      "size": 1080
+    },
+    {
+      "name": "TRKTargetAccessExtended1",
+      "address": 2148652604,
+      "size": 368
+    },
+    {
+      "name": "TRKTargetAccessFP",
+      "address": 2148652972,
+      "size": 316
+    },
+    {
+      "name": "TRKTargetAccessDefault",
+      "address": 2148653288,
+      "size": 244
+    },
+    {
+      "name": "TRKTargetAccessMemory",
+      "address": 2148653532,
+      "size": 332
+    },
+    {
+      "name": "TRKValidMemory32",
+      "address": 2148653864,
+      "size": 292
+    }
+  ],
+  "objects": [
+    {
+      "name": "gTRKMemMap",
+      "address": 2150283568,
+      "size": 16,
+      "section": ".rodata",
+      "data_kind": "memory-map",
+      "scope": "global"
+    },
+    {
+      "name": "gTRKSPRTemplate",
+      "address": 2150283584,
+      "size": 40,
+      "section": ".rodata",
+      "data_kind": "instruction-template",
+      "original_scope": "local",
+      "scope": "global"
+    },
+    {
+      "name": "gTRKFPTemplate",
+      "address": 2150283664,
+      "size": 40,
+      "section": ".rodata",
+      "data_kind": "instruction-template",
+      "original_scope": "local",
+      "scope": "global"
+    },
+    {
+      "name": "@66",
+      "address": 2150283624,
+      "size": 40,
+      "section": ".rodata",
+      "scope": "local",
+      "compiler_assembly_name": "\"@66\"",
+      "data_kind": "instruction-template"
+    }
+  ],
+  "symbol_scopes": {
+    "TRKTargetAddExceptionInfo": "global",
+    "TRKTargetAddStopInfo": "global",
+    "TRKTargetInterrupt": "global",
+    "TRKPostInterruptEvent": "global",
+    "TRKTargetCPUType": "global",
+    "TRKTargetSupportMask": "global",
+    "TRKTargetVersions": "global",
+    "TRKTargetAccessExtended2": "global",
+    "TRKTargetAccessExtended1": "global",
+    "TRKTargetAccessFP": "global",
+    "TRKTargetAccessDefault": "global",
+    "TRKTargetAccessMemory": "global",
+    "TRKValidMemory32": "local",
+    "gTRKMemMap": "global",
+    "gTRKSPRTemplate": "global",
+    "gTRKFPTemplate": "global",
+    "@66": "local"
+  },
+  "symbols": {
+    "gTRKSPRTemplate": "0x802ab940",
+    "gTRKStepStatus": "0x802cfe3c",
+    "TRKvalue128_temp": "0x8033afec",
+    "TRKTargetAddExceptionInfo": "0x8011ccec",
+    "TRKTargetAddStopInfo": "0x8011cd98",
+    "TRKTargetInterrupt": "0x8011cebc",
+    "TRKPostInterruptEvent": "0x8011d018",
+    "TRKTargetCPUType": "0x8011d0d8",
+    "TRKTargetSupportMask": "0x8011d138",
+    "TRKTargetVersions": "0x8011d1dc",
+    "TRKTargetAccessExtended2": "0x8011d204",
+    "TRKTargetAccessExtended1": "0x8011d63c",
+    "TRKTargetAccessFP": "0x8011d7ac",
+    "TRKTargetAccessDefault": "0x8011d8e8",
+    "TRKTargetAccessMemory": "0x8011d9dc",
+    "TRKValidMemory32": "0x8011db28",
+    "gTRKMemMap": "0x802ab930",
+    "gTRKFPTemplate": "0x802ab990",
+    "gTRKExceptionStatus": "0x802cfe2c",
+    "TRKAppendBuffer1_ui32": "0x801187c8",
+    "TRKAppendBuffer1_ui16": "0x8011882c",
+    "gTRKCPUState": "0x8033ab28",
+    "TRKAppendBuffer1_ui64": "0x80118740",
+    "gTRKState": "0x8033aa84",
+    "TRKDoNotifyStopped": "0x8011c1f4",
+    "TRKConstructEvent": "0x80117c60",
+    "TRKPostEvent": "0x80117c78",
+    "TRKTargetCPUMinorType": "0x8011e120",
+    "gTRKBigEndian": "0x803390a0",
+    "TRK_flush_cache": "0x8011c2cc",
+    "TRKReadBuffer1_ui64": "0x80118348",
+    "TRKAppendBuffer_ui32": "0x80118630",
+    "gTRKRestoreFlags": "0x802cfe20",
+    "TRKReadBuffer_ui32": "0x801181c0",
+    "__TRK_get_MSR": "0x8011c3c0",
+    "__TRK_set_MSR": "0x8011c3c8",
+    "TRKPPCAccessFPRegister": "0x8011c764",
+    "TRKTargetTranslate": "0x8011dd50",
+    "TRK_ppc_memcpy": "0x8011c3d0",
+    "@66": "0x802ab968"
+  },
+  "external_original_names": {
+    "gTRKExceptionStatus": "gTRKExceptionStatus_802CFE2C",
+    "TRKAppendBuffer1_ui32": "fn_801187C8",
+    "TRKAppendBuffer1_ui16": "fn_8011882C",
+    "gTRKCPUState": "gTRKCPUState",
+    "TRKAppendBuffer1_ui64": "fn_80118740",
+    "gTRKState": "gTRKState",
+    "TRKDoNotifyStopped": "fn_8011C1F4",
+    "TRKConstructEvent": "fn_80117C60",
+    "TRKPostEvent": "fn_80117C78",
+    "TRKTargetCPUMinorType": "fn_8011E120",
+    "gTRKBigEndian": "gTRKBigEndian",
+    "TRK_flush_cache": "fn_8011C2CC",
+    "TRKReadBuffer1_ui64": "fn_80118348",
+    "TRKAppendBuffer_ui32": "fn_80118630",
+    "gTRKRestoreFlags": "gTRKRestoreFlags",
+    "TRKReadBuffer_ui32": "fn_801181C0",
+    "__TRK_get_MSR": "fn_8011C3C0",
+    "__TRK_set_MSR": "fn_8011C3C8",
+    "TRKPPCAccessFPRegister": "fn_8011C764",
+    "TRKTargetTranslate": "fn_8011DD50",
+    "TRK_ppc_memcpy": "fn_8011C3D0"
+  },
+  "verified_text_bytes": 3936,
+  "verified_data_bytes": 136,
+  "source_kind": "c",
+  "external_symbol_scopes": {
+    "gTRKStepStatus": "global",
+    "gTRKExceptionStatus": "global",
+    "gTRKSPRTemplate": "global",
+    "gTRKFPTemplate": "global"
+  },
+  "notes": "Two exact C fragments of the original target implementation. The shared SPR and FP instruction templates were compiler-local originally and are exported as named constants for fragment linkage. All original rodata belongs to the access fragment to avoid conflicting text/data link order. Instruction templates are initialized data, not recovered native assembly. All mutable target state remains original fallback. See docs/notes/MetroTRK-targimpl.md.",
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "44431f1f0dee3c206b690b0be7349ea8cdaf2acad1fd1f055473233d646035f1",
+    "matched_code": 3936,
+    "matched_functions": 13,
+    "matched_data": 136,
+    "complete_data": 136,
+    "object_path": "build/GSQE78/src/MetroTRK/targimpl_access.o",
+    "object_sha256": "3799b64cc0d3017272403afcce53dd40185c816dc4aa5d45456ce8388fd164bd"
+  },
+  "external_padding": [
+    {
+      "section": ".text",
+      "start": 2148654156,
+      "end": 2148654160,
+      "reason": "Four original zero bytes aligning the following trap stubs; not a function and not recovered C."
+    }
+  ]
+}

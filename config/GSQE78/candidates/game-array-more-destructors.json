@@ -1,0 +1,1012 @@
+[
+  {
+    "status": "isolated-byte-match",
+    "source": "src/Game/array_more_destructor_800B5E10.cpp",
+    "source_sha256": "ad2f5e5c41570fa22b0fab95376b682fa48e256c128354db5c998fed2a5e0a75",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148228624,
+        "end": 2148228808,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147555732,
+        "end": 2147555772,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147598548,
+        "end": 2147598560,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "__dt__14Array_800B5E10Fv",
+        "original_symbol": "dtor_800B5E10",
+        "address": 2148228624,
+        "size": 184,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@37",
+        "address": 2147555732,
+        "size": 40,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@38",
+        "address": 2147598548,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "headers": [],
+    "notes": "docs/notes/game-array-more-destructors.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 82,
+        "address": 2148228706,
+        "kind": 6,
+        "symbol": "lbl_8028F698",
+        "target": 2150168216,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 86,
+        "address": 2148228710,
+        "kind": 4,
+        "symbol": "lbl_8028F698",
+        "target": 2150168216,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 92,
+        "address": 2148228716,
+        "kind": 10,
+        "symbol": "fn_8028FD50",
+        "target": 2150169936,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 122,
+        "address": 2148228746,
+        "kind": 6,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 130,
+        "address": 2148228754,
+        "kind": 4,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 132,
+        "address": 2148228756,
+        "kind": 10,
+        "symbol": "fn_801EF610",
+        "target": 2149512720,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 144,
+        "address": 2148228768,
+        "kind": 10,
+        "symbol": "__unexpected",
+        "target": 2148663772,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147598548,
+        "kind": 1,
+        "symbol": "__dt__14Array_800B5E10Fv",
+        "target": 2148228624,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147598556,
+        "kind": 1,
+        "symbol": "@37",
+        "target": 2147555732,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "__unexpected",
+        "address": 2148663772,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "fn_801EF610",
+        "address": 2149512720,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "fn_8028FD50",
+        "address": 2150169936,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "lbl_801EF5C8",
+        "address": 2149512648,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "lbl_8028F698",
+        "address": 2150168216,
+        "scope": "global",
+        "section": ".text"
+      }
+    ],
+    "validation": {
+      "retained_text_bytes": 184,
+      "initialized_data_bytes": 52,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 9,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match",
+    "source": "src/Game/array_more_destructor_800B57F0.cpp",
+    "source_sha256": "c83ddd85b76f3c0ce46e9d8d1f4776019fd192b40c1c00971eae1c27c832d511",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148227056,
+        "end": 2148227240,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147555480,
+        "end": 2147555520,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147598476,
+        "end": 2147598488,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "__dt__14Array_800B57F0Fv",
+        "original_symbol": "dtor_800B57F0",
+        "address": 2148227056,
+        "size": 184,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@37",
+        "address": 2147555480,
+        "size": 40,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@38",
+        "address": 2147598476,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "headers": [],
+    "notes": "docs/notes/game-array-more-destructors.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 82,
+        "address": 2148227138,
+        "kind": 6,
+        "symbol": "lbl_8028F698",
+        "target": 2150168216,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 86,
+        "address": 2148227142,
+        "kind": 4,
+        "symbol": "lbl_8028F698",
+        "target": 2150168216,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 92,
+        "address": 2148227148,
+        "kind": 10,
+        "symbol": "fn_8028FD50",
+        "target": 2150169936,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 122,
+        "address": 2148227178,
+        "kind": 6,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 130,
+        "address": 2148227186,
+        "kind": 4,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 132,
+        "address": 2148227188,
+        "kind": 10,
+        "symbol": "fn_801EF610",
+        "target": 2149512720,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 144,
+        "address": 2148227200,
+        "kind": 10,
+        "symbol": "__unexpected",
+        "target": 2148663772,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147598476,
+        "kind": 1,
+        "symbol": "__dt__14Array_800B57F0Fv",
+        "target": 2148227056,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147598484,
+        "kind": 1,
+        "symbol": "@37",
+        "target": 2147555480,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "__unexpected",
+        "address": 2148663772,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "fn_801EF610",
+        "address": 2149512720,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "fn_8028FD50",
+        "address": 2150169936,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "lbl_801EF5C8",
+        "address": 2149512648,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "lbl_8028F698",
+        "address": 2150168216,
+        "scope": "global",
+        "section": ".text"
+      }
+    ],
+    "validation": {
+      "retained_text_bytes": 184,
+      "initialized_data_bytes": 52,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 9,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match",
+    "source": "src/Game/array_more_destructor_800B58A8.cpp",
+    "source_sha256": "c5073ae22b6c797e69cbd09779362ce23f392f8b8fbe2f219133896d78d508ef",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148227240,
+        "end": 2148227424,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147555520,
+        "end": 2147555560,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147598488,
+        "end": 2147598500,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "__dt__14Array_800B58A8Fv",
+        "original_symbol": "dtor_800B58A8",
+        "address": 2148227240,
+        "size": 184,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@37",
+        "address": 2147555520,
+        "size": 40,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@38",
+        "address": 2147598488,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "headers": [],
+    "notes": "docs/notes/game-array-more-destructors.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 82,
+        "address": 2148227322,
+        "kind": 6,
+        "symbol": "lbl_8028F698",
+        "target": 2150168216,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 86,
+        "address": 2148227326,
+        "kind": 4,
+        "symbol": "lbl_8028F698",
+        "target": 2150168216,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 92,
+        "address": 2148227332,
+        "kind": 10,
+        "symbol": "fn_8028FD50",
+        "target": 2150169936,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 122,
+        "address": 2148227362,
+        "kind": 6,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 130,
+        "address": 2148227370,
+        "kind": 4,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 132,
+        "address": 2148227372,
+        "kind": 10,
+        "symbol": "fn_801EF610",
+        "target": 2149512720,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 144,
+        "address": 2148227384,
+        "kind": 10,
+        "symbol": "__unexpected",
+        "target": 2148663772,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147598488,
+        "kind": 1,
+        "symbol": "__dt__14Array_800B58A8Fv",
+        "target": 2148227240,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147598496,
+        "kind": 1,
+        "symbol": "@37",
+        "target": 2147555520,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "__unexpected",
+        "address": 2148663772,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "fn_801EF610",
+        "address": 2149512720,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "fn_8028FD50",
+        "address": 2150169936,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "lbl_801EF5C8",
+        "address": 2149512648,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "lbl_8028F698",
+        "address": 2150168216,
+        "scope": "global",
+        "section": ".text"
+      }
+    ],
+    "validation": {
+      "retained_text_bytes": 184,
+      "initialized_data_bytes": 52,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 9,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match",
+    "source": "src/Game/array_more_destructor_800B5D58.cpp",
+    "source_sha256": "1ff1343619f31dd0965aa1c8566c285c638b13afd09b16b7a8183fc18b068227",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148228440,
+        "end": 2148228624,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147555692,
+        "end": 2147555732,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147598536,
+        "end": 2147598548,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "__dt__14Array_800B5D58Fv",
+        "original_symbol": "dtor_800B5D58",
+        "address": 2148228440,
+        "size": 184,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@37",
+        "address": 2147555692,
+        "size": 40,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@38",
+        "address": 2147598536,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "headers": [],
+    "notes": "docs/notes/game-array-more-destructors.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 82,
+        "address": 2148228522,
+        "kind": 6,
+        "symbol": "lbl_8028F698",
+        "target": 2150168216,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 86,
+        "address": 2148228526,
+        "kind": 4,
+        "symbol": "lbl_8028F698",
+        "target": 2150168216,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 92,
+        "address": 2148228532,
+        "kind": 10,
+        "symbol": "fn_8028FD50",
+        "target": 2150169936,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 122,
+        "address": 2148228562,
+        "kind": 6,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 130,
+        "address": 2148228570,
+        "kind": 4,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 132,
+        "address": 2148228572,
+        "kind": 10,
+        "symbol": "fn_801EF610",
+        "target": 2149512720,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 144,
+        "address": 2148228584,
+        "kind": 10,
+        "symbol": "__unexpected",
+        "target": 2148663772,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147598536,
+        "kind": 1,
+        "symbol": "__dt__14Array_800B5D58Fv",
+        "target": 2148228440,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147598544,
+        "kind": 1,
+        "symbol": "@37",
+        "target": 2147555692,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "__unexpected",
+        "address": 2148663772,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "fn_801EF610",
+        "address": 2149512720,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "fn_8028FD50",
+        "address": 2150169936,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "lbl_801EF5C8",
+        "address": 2149512648,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "lbl_8028F698",
+        "address": 2150168216,
+        "scope": "global",
+        "section": ".text"
+      }
+    ],
+    "validation": {
+      "retained_text_bytes": 184,
+      "initialized_data_bytes": 52,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 9,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match",
+    "source": "src/Game/array_more_destructor_800AC098.cpp",
+    "source_sha256": "5a193c33c0d4761165a625a53da9818abb023cdc036b19997a320379ddc444af",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148188312,
+        "end": 2148188496,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147552828,
+        "end": 2147552868,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147597672,
+        "end": 2147597684,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "__dt__14Array_800AC098Fv",
+        "original_symbol": "dtor_800AC098",
+        "address": 2148188312,
+        "size": 184,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@37",
+        "address": 2147552828,
+        "size": 40,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@38",
+        "address": 2147597672,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "headers": [],
+    "notes": "docs/notes/game-array-more-destructors.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 82,
+        "address": 2148188394,
+        "kind": 6,
+        "symbol": "lbl_8028F698",
+        "target": 2150168216,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 86,
+        "address": 2148188398,
+        "kind": 4,
+        "symbol": "lbl_8028F698",
+        "target": 2150168216,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 92,
+        "address": 2148188404,
+        "kind": 10,
+        "symbol": "fn_8028FD50",
+        "target": 2150169936,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 122,
+        "address": 2148188434,
+        "kind": 6,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 130,
+        "address": 2148188442,
+        "kind": 4,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 132,
+        "address": 2148188444,
+        "kind": 10,
+        "symbol": "fn_801EF610",
+        "target": 2149512720,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 144,
+        "address": 2148188456,
+        "kind": 10,
+        "symbol": "__unexpected",
+        "target": 2148663772,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147597672,
+        "kind": 1,
+        "symbol": "__dt__14Array_800AC098Fv",
+        "target": 2148188312,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147597680,
+        "kind": 1,
+        "symbol": "@37",
+        "target": 2147552828,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "__unexpected",
+        "address": 2148663772,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "fn_801EF610",
+        "address": 2149512720,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "fn_8028FD50",
+        "address": 2150169936,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "lbl_801EF5C8",
+        "address": 2149512648,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "lbl_8028F698",
+        "address": 2150168216,
+        "scope": "global",
+        "section": ".text"
+      }
+    ],
+    "validation": {
+      "retained_text_bytes": 184,
+      "initialized_data_bytes": 52,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 9,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  }
+]

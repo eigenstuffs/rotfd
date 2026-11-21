@@ -1,0 +1,163 @@
+{
+  "source": "src/Parser/tokenizer.c",
+  "status": "integrated-byte-match",
+  "compiler": "GC/2.0",
+  "cflags": [
+    "-proc gekko",
+    "-fp hardware",
+    "-enum int",
+    "-str reuse",
+    "-common off",
+    "-opt level=4,nopeephole,speed",
+    "-inline auto,deferred",
+    "-pool off",
+    "-Cpp_exceptions off"
+  ],
+  "sections": {
+    ".text": [
+      "0x801707cc",
+      "0x80171e7c"
+    ],
+    ".data": [
+      "0x802dafe0",
+      "0x802db1e8"
+    ],
+    ".sdata": [
+      "0x803765c0",
+      "0x803765ca"
+    ]
+  },
+  "functions": [
+    {
+      "name": "tok_nextc",
+      "address": "0x8017177c",
+      "size": "0x4cc",
+      "scope": "local"
+    },
+    {
+      "name": "PyToken_TwoChars",
+      "address": "0x801715a8",
+      "size": "0x1d4",
+      "scope": "global"
+    },
+    {
+      "name": "PyTokenizer_Get",
+      "address": "0x801707cc",
+      "size": "0xddc",
+      "scope": "global"
+    },
+    {
+      "name": "PyTokenizer_Free",
+      "address": "0x80171c48",
+      "size": "0x4c",
+      "scope": "global"
+    },
+    {
+      "name": "PyTokenizer_FromFile",
+      "address": "0x80171c94",
+      "size": "0x124",
+      "scope": "global"
+    },
+    {
+      "name": "PyTokenizer_FromString",
+      "address": "0x80171db8",
+      "size": "0xc4",
+      "scope": "global"
+    }
+  ],
+  "objects": [
+    {
+      "name": "tabforms$276",
+      "address": "0x802db008",
+      "size": "0x10",
+      "scope": "local"
+    }
+  ],
+  "dependency_symbols": [
+    {
+      "name": "_savegpr_23",
+      "address": "0x8011f60c"
+    },
+    {
+      "name": "Py_FatalError",
+      "address": "0x801a0234"
+    },
+    {
+      "name": "PySys_WriteStderr",
+      "address": "0x801a26a8"
+    },
+    {
+      "name": "strstr",
+      "address": "0x80128288"
+    },
+    {
+      "name": "strlen",
+      "address": "0x801285f8"
+    },
+    {
+      "name": "atoi",
+      "address": "0x80129768"
+    },
+    {
+      "name": "Py_VerboseFlag",
+      "address": "0x80377f50"
+    },
+    {
+      "name": "_restgpr_23",
+      "address": "0x8011f658"
+    },
+    {
+      "name": "_savegpr_27",
+      "address": "0x8011f61c"
+    },
+    {
+      "name": "strchr",
+      "address": "0x80128338"
+    },
+    {
+      "name": "PyOS_Readline",
+      "address": "0x80171ed4"
+    },
+    {
+      "name": "free",
+      "address": "0x8001f35c"
+    },
+    {
+      "name": "malloc",
+      "address": "0x8001f2c0"
+    },
+    {
+      "name": "realloc",
+      "address": "0x8001f308"
+    },
+    {
+      "name": "strcpy",
+      "address": "0x80128540"
+    },
+    {
+      "name": "fgets",
+      "address": "0x80124488"
+    },
+    {
+      "name": "_restgpr_27",
+      "address": "0x8011f668"
+    }
+  ],
+  "validation": {
+    "relocations": 215,
+    "text_bytes": 5808,
+    "initialized_data_bytes": 530,
+    "zero_byte_differences": true,
+    "integration_status": "verified full-DOL and objdiff"
+  },
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "f5e3cdc5db041b83f491ee40e8e5aae044bd5941aeb9f846e4ce5111dc51ee1d",
+    "matched_code": 5808,
+    "matched_functions": 6,
+    "matched_data": 530,
+    "complete_data": 530,
+    "object_path": "build/GSQE78/src/Parser/tokenizer.o",
+    "object_sha256": "08cf0e77dc0afab41a22311a013998169ef28b12c7c1735d2c5879a3c64c46d7"
+  }
+}

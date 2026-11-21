@@ -1,0 +1,2 @@
+#include "Game/early_related_record_control_views.h"
+extern "C"void fn_80057908(RelatedRecordPending*self){int event=-1;switch(self->state){case 0:event=0x1D;break;case 1:event=0x1E;break;case 2:event=0x1F;break;case 3:event=0x20;break;case 4:event=0x23;break;case 5:event=0x2A;break;}if(event!=-1){RelatedRecordHandle&handle=resolveGroup(*resolveSystemGroup(*lbl_801E9D24.system->handle)->next)->actor;fn_8007D7F4((char*)validResolve(handle)+0x318,event);}self->state=-1;}

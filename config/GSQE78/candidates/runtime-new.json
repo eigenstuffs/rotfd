@@ -1,0 +1,106 @@
+{
+  "compiler": "GC/1.3",
+  "cflags": [
+    "-proc gekko",
+    "-fp hardware",
+    "-enum int",
+    "-common off",
+    "-O4,p",
+    "-inline deferred",
+    "-Cpp_exceptions on",
+    "-RTTI on",
+    "-use_lmw_stmw on",
+    "-char signed",
+    "-str reuse,readonly",
+    "-pool off",
+    "-i src/Runtime"
+  ],
+  "source": "src/Runtime/New.cpp",
+  "status": "integrated-byte-match",
+  "dependency_symbols": [
+    {
+      "name": "__unexpected",
+      "address": "0x801201dc",
+      "original_name": "__unexpected"
+    },
+    {
+      "name": "__msl_free",
+      "address": "0x80121104",
+      "original_name": "__msl_free"
+    }
+  ],
+  "splits": [
+    {
+      "section": ".text",
+      "start": "0x8011edd4",
+      "end": "0x8011ee20"
+    },
+    {
+      "section": "extab",
+      "start": "0x80015e58",
+      "end": "0x80015e80"
+    },
+    {
+      "section": "extabindex",
+      "start": "0x8001f1d0",
+      "end": "0x8001f1dc"
+    }
+  ],
+  "scope": "Retained operator delete and its generated exception records; remainder of original New TU stays assembly/data fallback.",
+  "functions": [
+    {
+      "name": "__dl__FPv",
+      "original_name": "__dl__FPv",
+      "address": "0x8011edd4",
+      "size": "0x4c",
+      "scope": "weak"
+    }
+  ],
+  "data_symbols": [
+    {
+      "name": "@20",
+      "original_name": "@etb_80015E58",
+      "address": "0x80015e58",
+      "size": "0x28",
+      "scope": "local",
+      "section": "extab"
+    },
+    {
+      "name": "@21",
+      "original_name": "@eti_8001F1D0",
+      "address": "0x8001f1d0",
+      "size": "0xc",
+      "scope": "local",
+      "section": "extabindex"
+    }
+  ],
+  "notes": "docs/notes/runtime-new.md",
+  "validation": {
+    "verification_script": "scratch/runtime_new/verify.py",
+    "text_bytes": 76,
+    "initialized_data_bytes": 52,
+    "relocations_applied": 4,
+    "byte_differences": 0,
+    "source_sha256": "40cfb22616368bd2f53e0f826fb19bc5ccb1d677bf5bd8cd62e499844521751b",
+    "object_sha256": "129e6d124005245d2b86e773dbf80d930af260d20e0014bc84d8189fd8482457",
+    "original_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "integration_status": "verified full-DOL and objdiff"
+  },
+  "remaining_original_fallback": [
+    {
+      "start": "0x8011ee20",
+      "end": "0x8011ee74",
+      "description": "std::exception weak destructor and what, plus associated data/RTTI. Entire exact TU source emission requires further class-data ownership research."
+    }
+  ],
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "40cfb22616368bd2f53e0f826fb19bc5ccb1d677bf5bd8cd62e499844521751b",
+    "matched_code": 76,
+    "matched_functions": 1,
+    "matched_data": 52,
+    "complete_data": 52,
+    "object_path": "build/GSQE78/src/Runtime/New.o",
+    "object_sha256": "129e6d124005245d2b86e773dbf80d930af260d20e0014bc84d8189fd8482457"
+  }
+}

@@ -1,0 +1,229 @@
+[
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/audio_voice_shutdown.cpp",
+    "source_sha256": "7cb58f64eb37ac5a947d60e3121f8efaa32fdf330e3a2c0b3cfd538f7ba58708",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,p",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "off",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "off",
+      "-i",
+      "src/Game",
+      "-i",
+      "include"
+    ],
+    "headers": [],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2150135576,
+        "end": 2150135772,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_80287718",
+        "address": 2150135576,
+        "size": 196,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "AXFreeVoice",
+        "section": ".text",
+        "address": 2148537768,
+        "scope": "global"
+      },
+      {
+        "name": "AXQuit",
+        "section": ".text",
+        "address": 2148536992,
+        "scope": "global"
+      },
+      {
+        "name": "AXSetVoiceState",
+        "section": ".text",
+        "address": 2148547412,
+        "scope": "global"
+      },
+      {
+        "name": "MIXReleaseChannel",
+        "section": ".text",
+        "address": 2148552672,
+        "scope": "global"
+      },
+      {
+        "name": "fn_801FA014",
+        "section": ".text",
+        "address": 2149556244,
+        "scope": "global"
+      },
+      {
+        "name": "fn_8023BAF8",
+        "section": ".text",
+        "address": 2149825272,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_801E9D24",
+        "section": ".text",
+        "address": 2149489956,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_802AF49C",
+        "section": ".rodata",
+        "address": 2150298780,
+        "scope": "global"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 60,
+        "address": 2150135636,
+        "kind": 10,
+        "symbol": "AXSetVoiceState",
+        "target": 2148547412,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 76,
+        "address": 2150135652,
+        "kind": 10,
+        "symbol": "MIXReleaseChannel",
+        "target": 2148552672,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 92,
+        "address": 2150135668,
+        "kind": 10,
+        "symbol": "AXFreeVoice",
+        "target": 2148537768,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 124,
+        "address": 2150135700,
+        "kind": 10,
+        "symbol": "AXQuit",
+        "target": 2148536992,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 132,
+        "address": 2150135708,
+        "kind": 10,
+        "symbol": "fn_8023BAF8",
+        "target": 2149825272,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 138,
+        "address": 2150135714,
+        "kind": 6,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 142,
+        "address": 2150135718,
+        "kind": 6,
+        "symbol": "lbl_802AF49C",
+        "target": 2150298780,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 146,
+        "address": 2150135722,
+        "kind": 4,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 150,
+        "address": 2150135726,
+        "kind": 4,
+        "symbol": "lbl_802AF49C",
+        "target": 2150298780,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 160,
+        "address": 2150135736,
+        "kind": 10,
+        "symbol": "fn_801FA014",
+        "target": 2149556244,
+        "addend": 0
+      }
+    ],
+    "notes": "docs/notes/game-audio-voice-shutdown.md",
+    "original_metadata_audit": {
+      "extabindex_scan": [
+        2147573600,
+        2147611328,
+        12
+      ],
+      "matching_extabindex": [],
+      "ctors_scan": [
+        2150209824,
+        2150209920,
+        4
+      ],
+      "dtors_scan": [
+        2150209920,
+        2150209952,
+        4
+      ],
+      "ctors": [],
+      "dtors": []
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "fedf4c25d0c9842d5be7ca0148f187bc1b7136c61886a3bb35cb0a2a0b989638",
+      "retained_text_bytes": 196,
+      "initialized_data_bytes": 0,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 10,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  }
+]

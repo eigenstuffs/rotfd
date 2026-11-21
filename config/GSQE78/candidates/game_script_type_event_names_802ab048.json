@@ -1,0 +1,39 @@
+[
+  {
+    "status": "matching; original DOL hash and native allocation verification passed",
+    "source": "src/Game/script_type_event_names_802AB048.cpp",
+    "source_sha256": "b74069317da6e16d41be1fe1ba475dd032dd269236f0809d1052cd579165026c",
+    "compiler": "GC/1.3.2",
+    "cflags": "standard Game flags",
+    "source_kind": "c++",
+    "sections": [
+      {
+        "name": ".rodata",
+        "start": 2150281288,
+        "end": 2150281301,
+        "alignment": 8
+      }
+    ],
+    "functions": [],
+    "objects": [
+      {
+        "name": "lbl_802AB048",
+        "address": 2150281288,
+        "size": 13,
+        "scope": "global",
+        "section": ".rodata",
+        "object_offset": 0
+      }
+    ],
+    "original_only_trailing_padding": {
+      "start": 2150281301,
+      "end": 2150281304
+    },
+    "notes": "docs/notes/continuation-2026-10-12-flags-angle-frame.md",
+    "verification": {
+      "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "native_allocation_proof": "scratch/continuation_20261012/native-allocation-proof.json",
+      "whole_rodata_match_percent": 100
+    }
+  }
+]

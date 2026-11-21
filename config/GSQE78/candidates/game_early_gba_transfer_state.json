@@ -1,0 +1,432 @@
+[
+  {
+    "source_kind": "c++",
+    "required_extra_cflags": [
+      "-proc 750",
+      "-O4,s",
+      "-Cpp_exceptions on",
+      "-use_lmw_stmw on"
+    ],
+    "status": "isolated-byte-match-native-link-acceptance-pending",
+    "source": "src/Game/gba_transfer_poll_800C0908.cpp",
+    "source_sha256": "ec6dc98f80d88fdbd90d81bab1cf0ab3d8d6e328be126998ba21abb7e7d29b1b",
+    "header_sha256": {},
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "750",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": "extab",
+        "start": 2147558900,
+        "end": 2147558908,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147601176,
+        "end": 2147601188,
+        "alignment": 4
+      },
+      {
+        "name": ".text",
+        "start": 2148272392,
+        "end": 2148272924,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800C0908",
+        "address": 2148272392,
+        "size": 532,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@30",
+        "address": 2147558900,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@31",
+        "address": 2147601176,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "unlinked_objects": [],
+    "weak_overrides": [],
+    "unlinked_exception_groups": [],
+    "emitted_sections": [
+      {
+        "name": ".text",
+        "size": 532,
+        "raw_sha256": "0bf22b9faa4f5f87ded25c1f52753f39848706a9034e70a0f007f5426eb803bc"
+      },
+      {
+        "name": "extab",
+        "size": 8,
+        "raw_sha256": "bcc0e7d554bfb67e6dfaa82a25ef2a617173bede4c2416a211eb9600a67e9e82"
+      },
+      {
+        "name": "extabindex",
+        "size": 12,
+        "raw_sha256": "7c6811f996f771e0015be1a4c243ba2b917c9ca1c729d9297918763fa55a365c"
+      }
+    ],
+    "headers": [],
+    "notes": "docs/notes/game-gba-transfer-poll.md",
+    "original_metadata_audit": {
+      "function": "fn_800C0908",
+      "original_ranges": [
+        {
+          "name": "extab",
+          "start": 2147558900,
+          "end": 2147558908
+        },
+        {
+          "name": "extabindex",
+          "start": 2147601176,
+          "end": 2147601188
+        },
+        {
+          "name": ".text",
+          "start": 2148272392,
+          "end": 2148272924
+        }
+      ],
+      "extabindex_scan": [
+        2147573600,
+        2147611328,
+        12
+      ],
+      "matching_extabindex": [
+        {
+          "address": 2147601176,
+          "function": 2148272392,
+          "size": 532,
+          "extab": 2147558900
+        }
+      ],
+      "ctors_scan": [
+        2150209824,
+        2150209920,
+        4
+      ],
+      "dtors_scan": [
+        2150209920,
+        2150209952,
+        4
+      ],
+      "ctors": [],
+      "dtors": [],
+      "initialized_data_word_references": [
+        {
+          "address": 2147601176,
+          "section_number": 1
+        }
+      ],
+      "callable_tables": [],
+      "compiled_source_consumers_unchanged": [
+        {
+          "source": "src/Game/scene_callback_control_more_800C0874.cpp",
+          "source_sha256": "00166fde723f766a3b4f1fd597f9e8af24aae528a38a53d9f65e0ad70c5462d7",
+          "identifier_occurrences": 2
+        }
+      ]
+    },
+    "verified_text_bytes": 532,
+    "verified_data_bytes": 20,
+    "pending_compiled_consumer_migrations": [],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 22,
+        "address": 2148272414,
+        "kind": 6,
+        "symbol": "lbl_802A17D8",
+        "target": 2150242264,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 26,
+        "address": 2148272418,
+        "kind": 4,
+        "symbol": "lbl_802A17D8",
+        "target": 2150242264,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 96,
+        "address": 2148272488,
+        "kind": 10,
+        "symbol": "GBAGetStatus",
+        "target": 2148722240,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 126,
+        "address": 2148272518,
+        "kind": 6,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 134,
+        "address": 2148272526,
+        "kind": 4,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 144,
+        "address": 2148272536,
+        "kind": 10,
+        "symbol": "fn_801FA014",
+        "target": 2149556244,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 180,
+        "address": 2148272572,
+        "kind": 10,
+        "symbol": "GBAWrite",
+        "target": 2148727328,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 210,
+        "address": 2148272602,
+        "kind": 6,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 218,
+        "address": 2148272610,
+        "kind": 4,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 228,
+        "address": 2148272620,
+        "kind": 10,
+        "symbol": "fn_801FA014",
+        "target": 2149556244,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 276,
+        "address": 2148272668,
+        "kind": 10,
+        "symbol": "GBAGetStatus",
+        "target": 2148722240,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 306,
+        "address": 2148272698,
+        "kind": 6,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 314,
+        "address": 2148272706,
+        "kind": 4,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 324,
+        "address": 2148272716,
+        "kind": 10,
+        "symbol": "fn_801FA014",
+        "target": 2149556244,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 360,
+        "address": 2148272752,
+        "kind": 10,
+        "symbol": "GBARead",
+        "target": 2148726984,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 390,
+        "address": 2148272782,
+        "kind": 6,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 398,
+        "address": 2148272790,
+        "kind": 4,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 408,
+        "address": 2148272800,
+        "kind": 10,
+        "symbol": "fn_801FA014",
+        "target": 2149556244,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 466,
+        "address": 2148272858,
+        "kind": 6,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 474,
+        "address": 2148272866,
+        "kind": 4,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 488,
+        "address": 2148272880,
+        "kind": 10,
+        "symbol": "fn_801FA014",
+        "target": 2149556244,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147601176,
+        "kind": 1,
+        "symbol": "fn_800C0908",
+        "target": 2148272392,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147601184,
+        "kind": 1,
+        "symbol": "@30",
+        "target": 2147558900,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "GBAGetStatus",
+        "address": 2148722240,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "GBARead",
+        "address": 2148726984,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "GBAWrite",
+        "address": 2148727328,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_801FA014",
+        "address": 2149556244,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_801E9D24",
+        "address": 2149489956,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_802A17D8",
+        "address": 2150242264,
+        "section": ".rodata",
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "4e8d5c8e79acb68a60e641b86856f22d29284a9ca3220ca488c1185117a8e7a2",
+      "retained_text_bytes": 532,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 23,
+      "unlinked_relocations": 0,
+      "uncredited_text_bytes": 0,
+      "uncredited_metadata_bytes": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true,
+      "central_final_native_discard_required": false
+    }
+  }
+]

@@ -1,0 +1,5 @@
+# Bounded investigation: preserving C-named constructors
+
+Private evidence in scratch/game_engine_c_constructor_continuation tests the original C entry fn_800C42D8. Its callers already use that C name, so no native-symbol migration is attempted. An ordinary inline C++ Object constructor reproduces the required base/member/table sequence, but placement new emits a null-result branch before construction. Four operator-new variants (void pointer or typed storage reference, each with and without throw()) retain that branch; none matches and none receives credit. The placement operator merely returns the supplied storage.
+
+A qualified expression self->Object::Object() is accepted by the legacy compiler, but disassembly shows that it constructs and destroys a separate stack temporary; it does not invoke a constructor in the supplied storage. That experiment is unsuitable and uncredited. No accepted caller, original function, shared file, alias, thunk, or native ABI symbol is changed. The ordinary C-entry destructor approach remains valid; this constructor experiment supplies no new accepted source.

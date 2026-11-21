@@ -1,0 +1,114 @@
+{
+  "source": "src/dolphin/os/OSResetSW.c",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.2.5n",
+  "cflags": "-proc gekko -fp hardware -enum int -str reuse -common off -O4,p -inline auto -i src/dolphin/os -Cpp_exceptions off",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2148485928,
+      "end": 2148486868
+    },
+    {
+      "name": ".sbss",
+      "start": 2151119168,
+      "end": 2151119200
+    }
+  ],
+  "functions": [
+    {
+      "name": "__OSResetSWInterruptHandler",
+      "address": 2148485928,
+      "size": 244
+    },
+    {
+      "name": "OSGetResetButtonState",
+      "address": 2148486172,
+      "size": 664
+    },
+    {
+      "name": "OSGetResetSwitchState",
+      "address": 2148486836,
+      "size": 32
+    }
+  ],
+  "objects": [
+    {
+      "name": "ResetCallback",
+      "address": 2151119168,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "Down",
+      "address": 2151119172,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "LastState",
+      "address": 2151119176,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "HoldUp",
+      "address": 2151119184,
+      "size": 8,
+      "section": ".sbss"
+    },
+    {
+      "name": "HoldDown",
+      "address": 2151119192,
+      "size": 8,
+      "section": ".sbss"
+    }
+  ],
+  "symbol_scopes": {
+    "__OSResetSWInterruptHandler": "global",
+    "OSGetResetButtonState": "global",
+    "OSGetResetSwitchState": "global",
+    "ResetCallback": "local",
+    "Down": "local",
+    "LastState": "local",
+    "HoldUp": "local",
+    "HoldDown": "local"
+  },
+  "symbols": {
+    "__OSResetSWInterruptHandler": "0x800f4b28",
+    "OSGetResetButtonState": "0x800f4c1c",
+    "OSGetResetSwitchState": "0x800f4eb4",
+    "ResetCallback": "0x80377940",
+    "Down": "0x80377944",
+    "LastState": "0x80377948",
+    "HoldUp": "0x80377950",
+    "HoldDown": "0x80377958",
+    "__OSGetSystemTime": "0x800f6c14",
+    "__OSMaskInterrupts": "0x800f39f4",
+    "OSDisableInterrupts": "0x800f362c",
+    "__OSStartTime": "0x803778f8",
+    "__div2i": "0x8011f76c",
+    "OSRestoreInterrupts": "0x800f3654"
+  },
+  "external_original_names": {
+    "__OSGetSystemTime": "__OSGetSystemTime",
+    "__OSMaskInterrupts": "__OSMaskInterrupts",
+    "OSDisableInterrupts": "OSDisableInterrupts",
+    "__OSStartTime": "__OSStartTime",
+    "__div2i": "__div2i",
+    "OSRestoreInterrupts": "OSRestoreInterrupts"
+  },
+  "verified_text_bytes": 940,
+  "verified_data_bytes": 0,
+  "source_kind": "c",
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "fe381f3ed3cfca093eb59bbea52ab3d8bfbeabb266704653524ab0df2edcd82e",
+    "matched_code": 940,
+    "matched_functions": 3,
+    "matched_data": 32,
+    "complete_data": 32,
+    "object_path": "build/GSQE78/src/dolphin/os/OSResetSW.o",
+    "object_sha256": "9c9e7ea64fee5ec309127353aacccd73bfccf5d41d5fb8031818ca0784e96d5c"
+  }
+}

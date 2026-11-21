@@ -1,0 +1,492 @@
+{
+  "source": "src/Objects/longobject.c",
+  "status": "integrated-byte-match",
+  "compiler": "GC/2.0",
+  "cflags": "-proc gekko -fp hardware -enum int -str reuse -common off -opt level=4,nopeephole,speed -inline auto,deferred -pool off -Cpp_exceptions off",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2148854784,
+      "end": 2148881728
+    },
+    {
+      "name": ".data",
+      "start": 2150448848,
+      "end": 2150449478
+    },
+    {
+      "name": ".sbss",
+      "start": 2151120392,
+      "end": 2151120396
+    },
+    {
+      "name": ".sdata2",
+      "start": 2151128960,
+      "end": 2151129008
+    }
+  ],
+  "functions": [
+    {
+      "name": "long_hex",
+      "address": 2148854784,
+      "size": 40
+    },
+    {
+      "name": "long_oct",
+      "address": 2148854824,
+      "size": 40
+    },
+    {
+      "name": "long_float",
+      "address": 2148854864,
+      "size": 224
+    },
+    {
+      "name": "long_long",
+      "address": 2148855088,
+      "size": 16
+    },
+    {
+      "name": "long_int",
+      "address": 2148855104,
+      "size": 268
+    },
+    {
+      "name": "long_coerce",
+      "address": 2148855372,
+      "size": 328
+    },
+    {
+      "name": "long_or",
+      "address": 2148855700,
+      "size": 188
+    },
+    {
+      "name": "long_xor",
+      "address": 2148855888,
+      "size": 188
+    },
+    {
+      "name": "long_and",
+      "address": 2148856076,
+      "size": 188
+    },
+    {
+      "name": "long_bitwise",
+      "address": 2148856264,
+      "size": 1080
+    },
+    {
+      "name": "long_lshift",
+      "address": 2148857344,
+      "size": 1372
+    },
+    {
+      "name": "long_rshift",
+      "address": 2148858716,
+      "size": 1136
+    },
+    {
+      "name": "long_nonzero",
+      "address": 2148859852,
+      "size": 32
+    },
+    {
+      "name": "long_abs",
+      "address": 2148859884,
+      "size": 388
+    },
+    {
+      "name": "long_neg",
+      "address": 2148860272,
+      "size": 396
+    },
+    {
+      "name": "long_pos",
+      "address": 2148860668,
+      "size": 16
+    },
+    {
+      "name": "long_invert",
+      "address": 2148860684,
+      "size": 340
+    },
+    {
+      "name": "long_pow",
+      "address": 2148861024,
+      "size": 1756
+    },
+    {
+      "name": "long_divmod",
+      "address": 2148862780,
+      "size": 432
+    },
+    {
+      "name": "long_mod",
+      "address": 2148863212,
+      "size": 328
+    },
+    {
+      "name": "long_div",
+      "address": 2148863540,
+      "size": 328
+    },
+    {
+      "name": "l_divmod",
+      "address": 2148863868,
+      "size": 732
+    },
+    {
+      "name": "long_mul",
+      "address": 2148864600,
+      "size": 2016
+    },
+    {
+      "name": "long_sub",
+      "address": 2148866616,
+      "size": 2112
+    },
+    {
+      "name": "long_add",
+      "address": 2148868728,
+      "size": 2116
+    },
+    {
+      "name": "x_sub",
+      "address": 2148870844,
+      "size": 1128
+    },
+    {
+      "name": "long_hash",
+      "address": 2148871972,
+      "size": 112
+    },
+    {
+      "name": "long_compare",
+      "address": 2148872084,
+      "size": 248
+    },
+    {
+      "name": "long_str",
+      "address": 2148872332,
+      "size": 40
+    },
+    {
+      "name": "long_repr",
+      "address": 2148872372,
+      "size": 40
+    },
+    {
+      "name": "long_dealloc",
+      "address": 2148872412,
+      "size": 32
+    },
+    {
+      "name": "x_divrem",
+      "address": 2148872444,
+      "size": 2344
+    },
+    {
+      "name": "long_divrem",
+      "address": 2148874788,
+      "size": 840
+    },
+    {
+      "name": "PyLong_FromUnicode",
+      "address": 2148875628,
+      "size": 116
+    },
+    {
+      "name": "PyLong_FromString",
+      "address": 2148875744,
+      "size": 1296
+    },
+    {
+      "name": "long_format",
+      "address": 2148877040,
+      "size": 1412
+    },
+    {
+      "name": "convert_binop",
+      "address": 2148878452,
+      "size": 672
+    },
+    {
+      "name": "PyLong_AsLongLong",
+      "address": 2148879124,
+      "size": 284
+    },
+    {
+      "name": "PyLong_FromLongLong",
+      "address": 2148879408,
+      "size": 904
+    },
+    {
+      "name": "PyLong_FromVoidPtr",
+      "address": 2148880312,
+      "size": 32
+    },
+    {
+      "name": "PyLong_AsDouble",
+      "address": 2148880344,
+      "size": 220
+    },
+    {
+      "name": "PyLong_AsLong",
+      "address": 2148880564,
+      "size": 232
+    },
+    {
+      "name": "PyLong_FromDouble",
+      "address": 2148880796,
+      "size": 596
+    },
+    {
+      "name": "PyLong_FromLong",
+      "address": 2148881392,
+      "size": 252
+    },
+    {
+      "name": "_PyLong_New",
+      "address": 2148881644,
+      "size": 84
+    }
+  ],
+  "objects": [
+    {
+      "name": "long_as_number",
+      "address": 2150448848,
+      "size": 136,
+      "section": ".data"
+    },
+    {
+      "name": "PyLong_Type",
+      "address": 2150448996,
+      "size": 108,
+      "section": ".data"
+    },
+    {
+      "name": "ticker",
+      "address": 2151120392,
+      "size": 4,
+      "section": ".sbss"
+    }
+  ],
+  "symbol_scopes": {
+    "long_hex": "local",
+    "long_oct": "local",
+    "long_float": "local",
+    "long_long": "local",
+    "long_int": "local",
+    "long_coerce": "local",
+    "long_or": "local",
+    "long_xor": "local",
+    "long_and": "local",
+    "long_bitwise": "local",
+    "long_lshift": "local",
+    "long_rshift": "local",
+    "long_nonzero": "local",
+    "long_abs": "local",
+    "long_neg": "local",
+    "long_pos": "local",
+    "long_invert": "local",
+    "long_pow": "local",
+    "long_divmod": "local",
+    "long_mod": "local",
+    "long_div": "local",
+    "l_divmod": "local",
+    "long_mul": "local",
+    "long_sub": "local",
+    "long_add": "local",
+    "x_sub": "local",
+    "long_hash": "local",
+    "long_compare": "local",
+    "long_str": "local",
+    "long_repr": "local",
+    "long_dealloc": "local",
+    "x_divrem": "local",
+    "long_divrem": "local",
+    "PyLong_FromUnicode": "global",
+    "PyLong_FromString": "global",
+    "long_format": "local",
+    "convert_binop": "local",
+    "PyLong_AsLongLong": "global",
+    "PyLong_FromLongLong": "global",
+    "PyLong_FromVoidPtr": "global",
+    "PyLong_AsDouble": "global",
+    "PyLong_AsLong": "global",
+    "PyLong_FromDouble": "global",
+    "PyLong_FromLong": "global",
+    "_PyLong_New": "global",
+    "long_as_number": "local",
+    "PyLong_Type": "global",
+    "ticker": "local"
+  },
+  "symbols": {
+    "PyType_Type": "0x802d68fc",
+    "long_hex": "0x8014ec00",
+    "long_oct": "0x8014ec28",
+    "long_float": "0x8014ec50",
+    "long_long": "0x8014ed30",
+    "long_int": "0x8014ed40",
+    "long_coerce": "0x8014ee4c",
+    "long_or": "0x8014ef94",
+    "long_xor": "0x8014f050",
+    "long_and": "0x8014f10c",
+    "long_bitwise": "0x8014f1c8",
+    "long_lshift": "0x8014f600",
+    "long_rshift": "0x8014fb5c",
+    "long_nonzero": "0x8014ffcc",
+    "long_abs": "0x8014ffec",
+    "long_neg": "0x80150170",
+    "long_pos": "0x801502fc",
+    "long_invert": "0x8015030c",
+    "long_pow": "0x80150460",
+    "long_divmod": "0x80150b3c",
+    "long_mod": "0x80150cec",
+    "long_div": "0x80150e34",
+    "l_divmod": "0x80150f7c",
+    "long_mul": "0x80151258",
+    "long_sub": "0x80151a38",
+    "long_add": "0x80152278",
+    "x_sub": "0x80152abc",
+    "long_hash": "0x80152f24",
+    "long_compare": "0x80152f94",
+    "long_str": "0x8015308c",
+    "long_repr": "0x801530b4",
+    "long_dealloc": "0x801530dc",
+    "x_divrem": "0x801530fc",
+    "long_divrem": "0x80153a24",
+    "PyLong_FromUnicode": "0x80153d6c",
+    "PyLong_FromString": "0x80153de0",
+    "long_format": "0x801542f0",
+    "convert_binop": "0x80154874",
+    "PyLong_AsLongLong": "0x80154b14",
+    "PyLong_FromLongLong": "0x80154c30",
+    "PyLong_FromVoidPtr": "0x80154fb8",
+    "PyLong_AsDouble": "0x80154fd8",
+    "PyLong_AsLong": "0x801550b4",
+    "PyLong_FromDouble": "0x8015519c",
+    "PyLong_FromLong": "0x801553f0",
+    "_PyLong_New": "0x801554ec",
+    "long_as_number": "0x802d3ed0",
+    "PyLong_Type": "0x802d3f64",
+    "ticker": "0x80377e08",
+    "_PyErr_BadInternalCall": "0x80190194",
+    "PyFloat_FromDouble": "0x801458c0",
+    "PyExc_OverflowError": "0x80377ec8",
+    "PyErr_SetString": "0x801911b0",
+    "PyErr_Occurred": "0x8019118c",
+    "PyInt_FromLong": "0x80149b9c",
+    "PyInt_Type": "0x802d3518",
+    "malloc": "0x8001f2c0",
+    "PyObject_InitVar": "0x80159770",
+    "_Py_NotImplementedStruct": "0x80376298",
+    "_savegpr_22": "0x8011f608",
+    "_restgpr_22": "0x8011f654",
+    "_savegpr_27": "0x8011f61c",
+    "PyExc_ValueError": "0x80377e9c",
+    "_restgpr_27": "0x8011f668",
+    "_savegpr_25": "0x8011f614",
+    "_restgpr_25": "0x8011f660",
+    "_savegpr_24": "0x8011f610",
+    "_Py_NoneStruct": "0x80376290",
+    "PyExc_ZeroDivisionError": "0x80377e98",
+    "_restgpr_24": "0x8011f65c",
+    "PyTuple_New": "0x80164d2c",
+    "PyTuple_SetItem": "0x80164b3c",
+    "PyErr_CheckSignals": "0x801abd18",
+    "_savegpr_26": "0x8011f618",
+    "_restgpr_26": "0x8011f664",
+    "free": "0x8001f35c",
+    "_savegpr_17": "0x8011f5f4",
+    "_restgpr_17": "0x8011f640",
+    "_savegpr_23": "0x8011f60c",
+    "_restgpr_23": "0x8011f658",
+    "PyUnicode_EncodeDecimal": "0x8016c2b0",
+    "_savegpr_19": "0x8011f5fc",
+    "__ctype_map": "0x802d0260",
+    "PyErr_Format": "0x8018fc28",
+    "_restgpr_19": "0x8011f648",
+    "PyString_FromStringAndSize": "0x80163c18",
+    "_PyString_Resize": "0x8015d474",
+    "frexp": "0x8012d38c",
+    "ldexp": "0x8012d418"
+  },
+  "external_original_names": {
+    "_PyErr_BadInternalCall": "_PyErr_BadInternalCall",
+    "PyFloat_FromDouble": "PyFloat_FromDouble",
+    "PyExc_OverflowError": "PyExc_OverflowError",
+    "PyErr_SetString": "PyErr_SetString",
+    "PyErr_Occurred": "PyErr_Occurred",
+    "PyInt_FromLong": "PyInt_FromLong",
+    "PyInt_Type": "PyInt_Type",
+    "malloc": "malloc",
+    "PyObject_InitVar": "PyObject_InitVar",
+    "_Py_NotImplementedStruct": "_Py_NotImplementedStruct",
+    "_savegpr_22": "_savegpr_22",
+    "_restgpr_22": "_restgpr_22",
+    "_savegpr_27": "_savegpr_27",
+    "PyExc_ValueError": "PyExc_ValueError",
+    "_restgpr_27": "_restgpr_27",
+    "_savegpr_25": "_savegpr_25",
+    "_restgpr_25": "_restgpr_25",
+    "_savegpr_24": "_savegpr_24",
+    "_Py_NoneStruct": "_Py_NoneStruct",
+    "PyExc_ZeroDivisionError": "PyExc_ZeroDivisionError",
+    "_restgpr_24": "_restgpr_24",
+    "PyTuple_New": "PyTuple_New",
+    "PyTuple_SetItem": "PyTuple_SetItem",
+    "PyErr_CheckSignals": "PyErr_CheckSignals",
+    "_savegpr_26": "_savegpr_26",
+    "_restgpr_26": "_restgpr_26",
+    "free": "free",
+    "_savegpr_17": "_savegpr_17",
+    "_restgpr_17": "_restgpr_17",
+    "_savegpr_23": "_savegpr_23",
+    "_restgpr_23": "_restgpr_23",
+    "PyUnicode_EncodeDecimal": "PyUnicode_EncodeDecimal",
+    "_savegpr_19": "_savegpr_19",
+    "__ctype_map": "__ctype_map",
+    "PyErr_Format": "PyErr_Format",
+    "_restgpr_19": "_restgpr_19",
+    "PyString_FromStringAndSize": "PyString_FromStringAndSize",
+    "_PyString_Resize": "fn_8015D474",
+    "frexp": "frexp",
+    "ldexp": "fn_8012D418"
+  },
+  "verified_text_bytes": 26944,
+  "verified_data_bytes": 680,
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "c97aacfb69e6d21d3bc86af7802b4b32c8fe4a858ff99f432fffb2515f92f052",
+    "matched_code": 26944,
+    "matched_functions": 45,
+    "matched_data": 682,
+    "complete_data": 682,
+    "object_path": "build/GSQE78/src/Objects/longobject.o",
+    "object_sha256": "7648c08b85907747cb7778a3267d3da91064dca7e1c5d3d5ca0f07872a99d5b8"
+  },
+  "external_padding": [
+    {
+      "source": "src/Objects/longobject.c",
+      "unit": "main/Objects/longobject",
+      "section": ".data",
+      "start": "0x802d4146",
+      "end": "0x802d4148",
+      "size": 2,
+      "alignment": 1,
+      "symbol": "gap_07_802D4146_data",
+      "original_owner": "padding/source_extents/Objects/longobject.s",
+      "source_section_start": "0x802d3ed0",
+      "source_section_bytes": 630,
+      "previous_split_bytes": 632,
+      "description": "Original linker alignment beyond emitted source section; no source credit."
+    }
+  ],
+  "source_extent_audit": {
+    "data_credit_correction": 2,
+    "evidence": "config/GSQE78/source_padding.json",
+    "description": "Source and original bytes unchanged; trailing original padding moved to NonMatching ownership."
+  }
+}

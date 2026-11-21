@@ -1,0 +1,2 @@
+#include "Game/early_actor_reflection_control_views.h"
+extern "C"ReflectionControlOwner*fn_800854F0(ReflectionControlOwner*self,ReflectionControlActor*actor,void*controller){fn_80090084(self);self->vtable=lbl_802B92B0;self->actor=0;self->controller=0;self->actor=actor;self->controller=controller;self->vtable=lbl_802B8EA4;self->vector=game_vec3_zero;self->speed=lbl_80378AD0;self->enabled=1;self->speed=self->actor->speed;return self;}

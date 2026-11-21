@@ -1,0 +1,10 @@
+/* Partial original text: only observed empty hooks and scalar results. */
+/* Original provisional entry identities are preserved; class identities remain unknown. */
+
+void fn_801CC748(void* receiver) { (void)receiver; }
+
+extern const float lbl_8037A458;
+float fn_801CC74C(void *receiver) {
+    (void)receiver;
+    return lbl_8037A458;
+}

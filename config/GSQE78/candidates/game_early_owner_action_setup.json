@@ -1,0 +1,350 @@
+[
+  {
+    "source_kind": "c++",
+    "required_extra_cflags": [
+      "-proc gekko",
+      "-O4,s",
+      "-Cpp_exceptions on",
+      "-use_lmw_stmw on"
+    ],
+    "status": "isolated-byte-match-native-link-acceptance-pending",
+    "source": "src/Game/early_owner_action_setup_8002A164.cpp",
+    "source_sha256": "2e88b161cf950a853012c7bbc550821cf43347cc24a50ff7c72b8adf5ffbc814",
+    "header_sha256": {},
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": "extab",
+        "start": 2147510532,
+        "end": 2147510540,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147576048,
+        "end": 2147576060,
+        "alignment": 4
+      },
+      {
+        "name": ".text",
+        "start": 2147656036,
+        "end": 2147657036,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_8002A164",
+        "address": 2147656036,
+        "size": 1000,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@108",
+        "address": 2147510532,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@109",
+        "address": 2147576048,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "unlinked_objects": [],
+    "weak_overrides": [],
+    "unlinked_exception_groups": [],
+    "emitted_sections": [
+      {
+        "name": ".text",
+        "size": 1000,
+        "raw_sha256": "18bd2f95106743ecdaea2a0aa1b89e12020f7c98c2f88ea2fb1b570c4a1a0b0a"
+      },
+      {
+        "name": "extab",
+        "size": 8,
+        "raw_sha256": "b6318cd7f9813fe7a886d07dc3b2242e1f9254b7b1f2b52188bc703dfc04f63f"
+      },
+      {
+        "name": "extabindex",
+        "size": 12,
+        "raw_sha256": "1dbf595975a7597010512dc1a625a4671d3ebb898cf96400e84709c40a08d608"
+      }
+    ],
+    "headers": [],
+    "notes": "docs/notes/game-early-owner-action-setup.md",
+    "original_metadata_audit": {
+      "function": "fn_8002A164",
+      "original_ranges": [
+        {
+          "name": "extab",
+          "start": 2147510532,
+          "end": 2147510540
+        },
+        {
+          "name": "extabindex",
+          "start": 2147576048,
+          "end": 2147576060
+        },
+        {
+          "name": ".text",
+          "start": 2147656036,
+          "end": 2147657036
+        }
+      ],
+      "extabindex_scan": [
+        2147573600,
+        2147611328,
+        12
+      ],
+      "matching_extabindex": [
+        {
+          "address": 2147576048,
+          "function": 2147656036,
+          "size": 1000,
+          "extab": 2147510532
+        }
+      ],
+      "ctors_scan": [
+        2150209824,
+        2150209920,
+        4
+      ],
+      "dtors_scan": [
+        2150209920,
+        2150209952,
+        4
+      ],
+      "ctors": [],
+      "dtors": [],
+      "initialized_data_word_references": [
+        {
+          "address": 2147576048,
+          "section_number": 1
+        },
+        {
+          "address": 2150306400,
+          "section_number": 5
+        }
+      ],
+      "callable_tables": [
+        {
+          "symbol": "lbl_802B1220",
+          "section": ".data",
+          "address": 2150306336,
+          "size": 128,
+          "entry_address": 2150306400,
+          "entry_target": 2147656036,
+          "ownership": "original assembly remains unchanged"
+        }
+      ],
+      "compiled_source_consumers_unchanged": []
+    },
+    "verified_text_bytes": 1000,
+    "verified_data_bytes": 20,
+    "pending_compiled_consumer_migrations": [],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 10,
+        "address": 2147656046,
+        "kind": 6,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 14,
+        "address": 2147656050,
+        "kind": 6,
+        "symbol": "lbl_80299E6C",
+        "target": 2150211180,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 22,
+        "address": 2147656058,
+        "kind": 4,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 26,
+        "address": 2147656062,
+        "kind": 4,
+        "symbol": "lbl_80299E6C",
+        "target": 2150211180,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 52,
+        "address": 2147656088,
+        "kind": 10,
+        "symbol": "fn_801FA014",
+        "target": 2149556244,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 64,
+        "address": 2147656100,
+        "kind": 10,
+        "symbol": "fn_8025A0A4",
+        "target": 2149949604,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 70,
+        "address": 2147656106,
+        "kind": 6,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 78,
+        "address": 2147656114,
+        "kind": 4,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 192,
+        "address": 2147656228,
+        "kind": 10,
+        "symbol": "fn_80056668",
+        "target": 2147837544,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 448,
+        "address": 2147656484,
+        "kind": 10,
+        "symbol": "fn_801F7EB8",
+        "target": 2149547704,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 768,
+        "address": 2147656804,
+        "kind": 10,
+        "symbol": "fn_801F7EB8",
+        "target": 2149547704,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147576048,
+        "kind": 1,
+        "symbol": "fn_8002A164",
+        "target": 2147656036,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147576056,
+        "kind": 1,
+        "symbol": "@108",
+        "target": 2147510532,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "fn_80056668",
+        "address": 2147837544,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_801F7EB8",
+        "address": 2149547704,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_801FA014",
+        "address": 2149556244,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_8025A0A4",
+        "address": 2149949604,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_801E9D24",
+        "address": 2149489956,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_80299E6C",
+        "address": 2150211180,
+        "section": ".rodata",
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "d8e0c041c686ae4bced5ba5f5ca67babdfdd4063ed2b67c0767bc07ab0b8a288",
+      "retained_text_bytes": 1000,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 13,
+      "unlinked_relocations": 0,
+      "uncredited_text_bytes": 0,
+      "uncredited_metadata_bytes": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true,
+      "central_final_native_discard_required": false
+    }
+  }
+]

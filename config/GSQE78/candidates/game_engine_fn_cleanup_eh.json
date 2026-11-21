@@ -1,0 +1,1605 @@
+[
+  {
+    "status": "isolated-byte-match",
+    "source": "src/Game/engine_fn_cleanup_eh_80024ECC.cpp",
+    "source_sha256": "0ba4c1fb064b9bfd5e2ceef7b153f3f8cd1c4a876d8dfb3b864f9fb5741bfb0c",
+    "header_sha256": {},
+    "headers": [],
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2147634892,
+        "end": 2147635024,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147508120,
+        "end": 2147508160,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147574692,
+        "end": 2147574704,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_80024ECC",
+        "address": 2147634892,
+        "size": 132,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@21",
+        "section": "extab",
+        "object_offset": 0,
+        "address": 2147508120,
+        "size": 40,
+        "scope": "local"
+      },
+      {
+        "name": "@22",
+        "section": "extabindex",
+        "object_offset": 0,
+        "address": 2147574692,
+        "size": 12,
+        "scope": "local"
+      }
+    ],
+    "unlinked_functions": [],
+    "verified_text_bytes": 132,
+    "verified_data_bytes": 52,
+    "notes": "docs/notes/game-engine-fn-cleanup-eh.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 34,
+        "address": 2147634926,
+        "kind": 6,
+        "symbol": "lbl_802B0510",
+        "target": 2150302992,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 42,
+        "address": 2147634934,
+        "kind": 4,
+        "symbol": "lbl_802B0510",
+        "target": 2150302992,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 56,
+        "address": 2147634948,
+        "kind": 10,
+        "symbol": "__dt__17LodAgent_802EC8A8Fv",
+        "target": 2147634768,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 70,
+        "address": 2147634962,
+        "kind": 6,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 78,
+        "address": 2147634970,
+        "kind": 4,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 80,
+        "address": 2147634972,
+        "kind": 10,
+        "symbol": "fn_801EF610",
+        "target": 2149512720,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 92,
+        "address": 2147634984,
+        "kind": 10,
+        "symbol": "__unexpected",
+        "target": 2148663772,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147574692,
+        "kind": 1,
+        "symbol": "fn_80024ECC",
+        "target": 2147634892,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147574700,
+        "kind": 1,
+        "symbol": "@21",
+        "target": 2147508120,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "__unexpected",
+        "address": 2148663772,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "__dt__17LodAgent_802EC8A8Fv",
+        "address": 2147634768,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_801EF610",
+        "address": 2149512720,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_801EF5C8",
+        "address": 2149512648,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_802B0510",
+        "address": 2150302992,
+        "section": ".data",
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "retained_text_bytes": 132,
+      "initialized_data_bytes": 52,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 9,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    },
+    "identifier_migration_provenance": {
+      "proof": "/Users/brandenb/Downloads/rotfd/scratch/engine_agent_native_identity_route_20261011ko/proof.json",
+      "previous_canonical": "/Users/brandenb/Downloads/rotfd/scratch/engine_agent_native_identity_route_20261011ko/before/config/GSQE78/candidates/game_engine_fn_cleanup_eh.json",
+      "previous_canonical_sha256": "35af1ef33ae82d4bb2b1ac356d65b238465c181a3aabcb38bb62d11a3336bd02"
+    }
+  },
+  {
+    "status": "isolated-byte-match",
+    "source": "src/Game/engine_fn_cleanup_eh_80065CB0.cpp",
+    "source_sha256": "79b7d1c529ec064ce43e2f3870fc850ab9e5958928d78bb43fff1de41c130df7",
+    "header_sha256": {},
+    "headers": [],
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2147900592,
+        "end": 2147900724,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147531156,
+        "end": 2147531196,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147584352,
+        "end": 2147584364,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_80065CB0",
+        "address": 2147900592,
+        "size": 132,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@21",
+        "section": "extab",
+        "object_offset": 0,
+        "address": 2147531156,
+        "size": 40,
+        "scope": "local"
+      },
+      {
+        "name": "@22",
+        "section": "extabindex",
+        "object_offset": 0,
+        "address": 2147584352,
+        "size": 12,
+        "scope": "local"
+      }
+    ],
+    "unlinked_functions": [],
+    "verified_text_bytes": 132,
+    "verified_data_bytes": 52,
+    "notes": "docs/notes/game-engine-fn-cleanup-eh.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 34,
+        "address": 2147900626,
+        "kind": 6,
+        "symbol": "lbl_802B7098",
+        "target": 2150330520,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 42,
+        "address": 2147900634,
+        "kind": 4,
+        "symbol": "lbl_802B7098",
+        "target": 2150330520,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 56,
+        "address": 2147900648,
+        "kind": 10,
+        "symbol": "__dt__14Agent_80062E18Fv",
+        "target": 2147889060,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 70,
+        "address": 2147900662,
+        "kind": 6,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 78,
+        "address": 2147900670,
+        "kind": 4,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 80,
+        "address": 2147900672,
+        "kind": 10,
+        "symbol": "fn_801EF610",
+        "target": 2149512720,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 92,
+        "address": 2147900684,
+        "kind": 10,
+        "symbol": "__unexpected",
+        "target": 2148663772,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147584352,
+        "kind": 1,
+        "symbol": "fn_80065CB0",
+        "target": 2147900592,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147584360,
+        "kind": 1,
+        "symbol": "@21",
+        "target": 2147531156,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "__dt__14Agent_80062E18Fv",
+        "address": 2147889060,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "__unexpected",
+        "address": 2148663772,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_801EF610",
+        "address": 2149512720,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_801EF5C8",
+        "address": 2149512648,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_802B7098",
+        "address": 2150330520,
+        "section": ".data",
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "retained_text_bytes": 132,
+      "initialized_data_bytes": 52,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 9,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match",
+    "source": "src/Game/engine_fn_cleanup_eh_80065960.cpp",
+    "source_sha256": "38b6e19b7f6164dfa0931698cd4251ccf5f27afc4ff9a0bc487a178249dec1e1",
+    "header_sha256": {},
+    "headers": [],
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2147899744,
+        "end": 2147899876,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147531028,
+        "end": 2147531068,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147584232,
+        "end": 2147584244,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_80065960",
+        "address": 2147899744,
+        "size": 132,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@21",
+        "section": "extab",
+        "object_offset": 0,
+        "address": 2147531028,
+        "size": 40,
+        "scope": "local"
+      },
+      {
+        "name": "@22",
+        "section": "extabindex",
+        "object_offset": 0,
+        "address": 2147584232,
+        "size": 12,
+        "scope": "local"
+      }
+    ],
+    "unlinked_functions": [],
+    "verified_text_bytes": 132,
+    "verified_data_bytes": 52,
+    "notes": "docs/notes/game-engine-fn-cleanup-eh.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 34,
+        "address": 2147899778,
+        "kind": 6,
+        "symbol": "lbl_802B6D40",
+        "target": 2150329664,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 42,
+        "address": 2147899786,
+        "kind": 4,
+        "symbol": "lbl_802B6D40",
+        "target": 2150329664,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 56,
+        "address": 2147899800,
+        "kind": 10,
+        "symbol": "__dt__14Agent_80062E18Fv",
+        "target": 2147889060,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 70,
+        "address": 2147899814,
+        "kind": 6,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 78,
+        "address": 2147899822,
+        "kind": 4,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 80,
+        "address": 2147899824,
+        "kind": 10,
+        "symbol": "fn_801EF610",
+        "target": 2149512720,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 92,
+        "address": 2147899836,
+        "kind": 10,
+        "symbol": "__unexpected",
+        "target": 2148663772,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147584232,
+        "kind": 1,
+        "symbol": "fn_80065960",
+        "target": 2147899744,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147584240,
+        "kind": 1,
+        "symbol": "@21",
+        "target": 2147531028,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "__dt__14Agent_80062E18Fv",
+        "address": 2147889060,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "__unexpected",
+        "address": 2148663772,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_801EF610",
+        "address": 2149512720,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_801EF5C8",
+        "address": 2149512648,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_802B6D40",
+        "address": 2150329664,
+        "section": ".data",
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "retained_text_bytes": 132,
+      "initialized_data_bytes": 52,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 9,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match",
+    "source": "src/Game/engine_fn_cleanup_eh_800656AC.cpp",
+    "source_sha256": "bdc112c0c6642153280946c66359ef657aaaab5c600d9ac8be79a66169c0b881",
+    "header_sha256": {},
+    "headers": [],
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2147899052,
+        "end": 2147899184,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147530900,
+        "end": 2147530940,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147584112,
+        "end": 2147584124,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800656AC",
+        "address": 2147899052,
+        "size": 132,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@21",
+        "section": "extab",
+        "object_offset": 0,
+        "address": 2147530900,
+        "size": 40,
+        "scope": "local"
+      },
+      {
+        "name": "@22",
+        "section": "extabindex",
+        "object_offset": 0,
+        "address": 2147584112,
+        "size": 12,
+        "scope": "local"
+      }
+    ],
+    "unlinked_functions": [],
+    "verified_text_bytes": 132,
+    "verified_data_bytes": 52,
+    "notes": "docs/notes/game-engine-fn-cleanup-eh.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 34,
+        "address": 2147899086,
+        "kind": 6,
+        "symbol": "lbl_802B69E8",
+        "target": 2150328808,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 42,
+        "address": 2147899094,
+        "kind": 4,
+        "symbol": "lbl_802B69E8",
+        "target": 2150328808,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 56,
+        "address": 2147899108,
+        "kind": 10,
+        "symbol": "__dt__14Agent_80062E18Fv",
+        "target": 2147889060,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 70,
+        "address": 2147899122,
+        "kind": 6,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 78,
+        "address": 2147899130,
+        "kind": 4,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 80,
+        "address": 2147899132,
+        "kind": 10,
+        "symbol": "fn_801EF610",
+        "target": 2149512720,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 92,
+        "address": 2147899144,
+        "kind": 10,
+        "symbol": "__unexpected",
+        "target": 2148663772,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147584112,
+        "kind": 1,
+        "symbol": "fn_800656AC",
+        "target": 2147899052,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147584120,
+        "kind": 1,
+        "symbol": "@21",
+        "target": 2147530900,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "__dt__14Agent_80062E18Fv",
+        "address": 2147889060,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "__unexpected",
+        "address": 2148663772,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_801EF610",
+        "address": 2149512720,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_801EF5C8",
+        "address": 2149512648,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_802B69E8",
+        "address": 2150328808,
+        "section": ".data",
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "retained_text_bytes": 132,
+      "initialized_data_bytes": 52,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 9,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match",
+    "source": "src/Game/engine_fn_cleanup_eh_8009A8AC.cpp",
+    "source_sha256": "24c6f607208fd5b92c01044bffe38207c56435e41974e18a0dc51cb4dadb14ee",
+    "header_sha256": {},
+    "headers": [],
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148116652,
+        "end": 2148116784,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147547248,
+        "end": 2147547288,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147594204,
+        "end": 2147594216,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_8009A8AC",
+        "address": 2148116652,
+        "size": 132,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@21",
+        "section": "extab",
+        "object_offset": 0,
+        "address": 2147547248,
+        "size": 40,
+        "scope": "local"
+      },
+      {
+        "name": "@22",
+        "section": "extabindex",
+        "object_offset": 0,
+        "address": 2147594204,
+        "size": 12,
+        "scope": "local"
+      }
+    ],
+    "unlinked_functions": [],
+    "verified_text_bytes": 132,
+    "verified_data_bytes": 52,
+    "notes": "docs/notes/game-engine-fn-cleanup-eh.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 34,
+        "address": 2148116686,
+        "kind": 6,
+        "symbol": "lbl_802BAE04",
+        "target": 2150346244,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 42,
+        "address": 2148116694,
+        "kind": 4,
+        "symbol": "lbl_802BAE04",
+        "target": 2150346244,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 56,
+        "address": 2148116708,
+        "kind": 10,
+        "symbol": "__dt__15Object_8009AA98Fv",
+        "target": 2148117144,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 70,
+        "address": 2148116722,
+        "kind": 6,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 78,
+        "address": 2148116730,
+        "kind": 4,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 80,
+        "address": 2148116732,
+        "kind": 10,
+        "symbol": "fn_801EF610",
+        "target": 2149512720,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 92,
+        "address": 2148116744,
+        "kind": 10,
+        "symbol": "__unexpected",
+        "target": 2148663772,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147594204,
+        "kind": 1,
+        "symbol": "fn_8009A8AC",
+        "target": 2148116652,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147594212,
+        "kind": 1,
+        "symbol": "@21",
+        "target": 2147547248,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "__dt__15Object_8009AA98Fv",
+        "address": 2148117144,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "__unexpected",
+        "address": 2148663772,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_801EF610",
+        "address": 2149512720,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_801EF5C8",
+        "address": 2149512648,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_802BAE04",
+        "address": 2150346244,
+        "section": ".data",
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "retained_text_bytes": 132,
+      "initialized_data_bytes": 52,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 9,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match",
+    "source": "src/Game/engine_fn_cleanup_eh_8009009C.cpp",
+    "source_sha256": "c821cbd5dfc5abedca1ea7ddd0010de809edfc5e26179639e70e071f7b62a199",
+    "header_sha256": {},
+    "headers": [],
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148073628,
+        "end": 2148073740,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147544744,
+        "end": 2147544784,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147592476,
+        "end": 2147592488,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_8009009C",
+        "address": 2148073628,
+        "size": 112,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@21",
+        "section": "extab",
+        "object_offset": 0,
+        "address": 2147544744,
+        "size": 40,
+        "scope": "local"
+      },
+      {
+        "name": "@22",
+        "section": "extabindex",
+        "object_offset": 0,
+        "address": 2147592476,
+        "size": 12,
+        "scope": "local"
+      }
+    ],
+    "unlinked_functions": [],
+    "verified_text_bytes": 112,
+    "verified_data_bytes": 52,
+    "notes": "docs/notes/game-engine-fn-cleanup-eh.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 30,
+        "address": 2148073658,
+        "kind": 6,
+        "symbol": "lbl_802B92D0",
+        "target": 2150339280,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 38,
+        "address": 2148073666,
+        "kind": 4,
+        "symbol": "lbl_802B92D0",
+        "target": 2150339280,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 50,
+        "address": 2148073678,
+        "kind": 6,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 58,
+        "address": 2148073686,
+        "kind": 4,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 60,
+        "address": 2148073688,
+        "kind": 10,
+        "symbol": "fn_801EF610",
+        "target": 2149512720,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 72,
+        "address": 2148073700,
+        "kind": 10,
+        "symbol": "__unexpected",
+        "target": 2148663772,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147592476,
+        "kind": 1,
+        "symbol": "fn_8009009C",
+        "target": 2148073628,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147592484,
+        "kind": 1,
+        "symbol": "@21",
+        "target": 2147544744,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "__unexpected",
+        "address": 2148663772,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_801EF610",
+        "address": 2149512720,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_801EF5C8",
+        "address": 2149512648,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_802B92D0",
+        "address": 2150339280,
+        "section": ".data",
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "retained_text_bytes": 112,
+      "initialized_data_bytes": 52,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 8,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match",
+    "source": "src/Game/engine_fn_cleanup_eh_80052454.cpp",
+    "source_sha256": "c30a964e008b2050127045e45c21b57b3a779fe1db88e44d8e4b5a09f96254a8",
+    "header_sha256": {},
+    "headers": [],
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2147820628,
+        "end": 2147820728,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147523472,
+        "end": 2147523512,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147581688,
+        "end": 2147581700,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_80052454",
+        "address": 2147820628,
+        "size": 100,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@21",
+        "section": "extab",
+        "object_offset": 0,
+        "address": 2147523472,
+        "size": 40,
+        "scope": "local"
+      },
+      {
+        "name": "@22",
+        "section": "extabindex",
+        "object_offset": 0,
+        "address": 2147581688,
+        "size": 12,
+        "scope": "local"
+      }
+    ],
+    "unlinked_functions": [],
+    "verified_text_bytes": 100,
+    "verified_data_bytes": 52,
+    "notes": "docs/notes/game-engine-fn-cleanup-eh.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 38,
+        "address": 2147820666,
+        "kind": 6,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 46,
+        "address": 2147820674,
+        "kind": 4,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 48,
+        "address": 2147820676,
+        "kind": 10,
+        "symbol": "fn_801EF610",
+        "target": 2149512720,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 60,
+        "address": 2147820688,
+        "kind": 10,
+        "symbol": "__unexpected",
+        "target": 2148663772,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147581688,
+        "kind": 1,
+        "symbol": "fn_80052454",
+        "target": 2147820628,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147581696,
+        "kind": 1,
+        "symbol": "@21",
+        "target": 2147523472,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "__unexpected",
+        "address": 2148663772,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_801EF610",
+        "address": 2149512720,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_801EF5C8",
+        "address": 2149512648,
+        "section": ".text",
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "retained_text_bytes": 100,
+      "initialized_data_bytes": 52,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 6,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match",
+    "source": "src/Game/engine_fn_cleanup_eh_8002B6EC.cpp",
+    "source_sha256": "e931beee2621ba832e44045723284dc3c2b8f96e1a2cb9aab02dac3b57d33b75",
+    "header_sha256": {},
+    "headers": [],
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2147661548,
+        "end": 2147661696,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147510872,
+        "end": 2147510912,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147576336,
+        "end": 2147576348,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "__dt__14Agent_8002B5F4Fv",
+        "address": 2147661548,
+        "size": 148,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@21",
+        "section": "extab",
+        "object_offset": 0,
+        "address": 2147510872,
+        "size": 40,
+        "scope": "local"
+      },
+      {
+        "name": "@22",
+        "section": "extabindex",
+        "object_offset": 0,
+        "address": 2147576336,
+        "size": 12,
+        "scope": "local"
+      }
+    ],
+    "unlinked_functions": [],
+    "verified_text_bytes": 148,
+    "verified_data_bytes": 52,
+    "notes": "docs/notes/game-engine-fn-cleanup-eh.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 34,
+        "address": 2147661582,
+        "kind": 6,
+        "symbol": "lbl_802B170C",
+        "target": 2150307596,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 42,
+        "address": 2147661590,
+        "kind": 4,
+        "symbol": "lbl_802B170C",
+        "target": 2150307596,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 60,
+        "address": 2147661608,
+        "kind": 10,
+        "symbol": "__dt__15Handle_801F7F10Fv",
+        "target": 2149547792,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 72,
+        "address": 2147661620,
+        "kind": 10,
+        "symbol": "__dt__17LodAgent_802EC8A8Fv",
+        "target": 2147634768,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 86,
+        "address": 2147661634,
+        "kind": 6,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 94,
+        "address": 2147661642,
+        "kind": 4,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 96,
+        "address": 2147661644,
+        "kind": 10,
+        "symbol": "fn_801EF610",
+        "target": 2149512720,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 108,
+        "address": 2147661656,
+        "kind": 10,
+        "symbol": "__unexpected",
+        "target": 2148663772,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147576336,
+        "kind": 1,
+        "symbol": "__dt__14Agent_8002B5F4Fv",
+        "target": 2147661548,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147576344,
+        "kind": 1,
+        "symbol": "@21",
+        "target": 2147510872,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "__dt__15Handle_801F7F10Fv",
+        "address": 2149547792,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "__unexpected",
+        "address": 2148663772,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "__dt__17LodAgent_802EC8A8Fv",
+        "address": 2147634768,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_801EF610",
+        "address": 2149512720,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_801EF5C8",
+        "address": 2149512648,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_802B170C",
+        "address": 2150307596,
+        "section": ".data",
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "retained_text_bytes": 148,
+      "initialized_data_bytes": 52,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 10,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    },
+    "identifier_migration_provenance": {
+      "proof": "/Users/brandenb/Downloads/rotfd/scratch/engine_agent_native_identity_route_20261011ko/proof.json",
+      "previous_canonical": "/Users/brandenb/Downloads/rotfd/scratch/engine_agent_native_identity_route_20261011ko/before/config/GSQE78/candidates/game_engine_fn_cleanup_eh.json",
+      "previous_canonical_sha256": "35af1ef33ae82d4bb2b1ac356d65b238465c181a3aabcb38bb62d11a3336bd02"
+    }
+  }
+]

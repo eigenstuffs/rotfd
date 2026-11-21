@@ -1,0 +1,120 @@
+{
+  "source": "src/dolphin/gx/GXTransform_viewport.c",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.2.5n",
+  "cflags": "-proc gekko -fp hardware -enum int -str reuse -common off -O4,p -inline auto -i src/dolphin/gx -Cpp_exceptions off",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2148626488,
+      "end": 2148627164
+    },
+    {
+      "name": ".sdata2",
+      "start": 2151127352,
+      "end": 2151127364
+    }
+  ],
+  "functions": [
+    {
+      "name": "GXSetViewportJitter",
+      "address": 2148626488,
+      "size": 260
+    },
+    {
+      "name": "GXSetViewport",
+      "address": 2148626748,
+      "size": 36
+    },
+    {
+      "name": "GXSetScissor",
+      "address": 2148626784,
+      "size": 144
+    },
+    {
+      "name": "GXSetScissorBoxOffset",
+      "address": 2148626928,
+      "size": 64
+    },
+    {
+      "name": "GXSetClipMode",
+      "address": 2148626992,
+      "size": 40
+    },
+    {
+      "name": "__GXSetMatrixIndex",
+      "address": 2148627032,
+      "size": 132
+    }
+  ],
+  "objects": [
+    {
+      "name": "@37",
+      "address": 2151127352,
+      "size": 4,
+      "section": ".sdata2",
+      "scope": "local",
+      "compiler_assembly_name": "\"@37\"",
+      "data_kind": "float"
+    },
+    {
+      "name": "@38",
+      "address": 2151127356,
+      "size": 4,
+      "section": ".sdata2",
+      "scope": "local",
+      "compiler_assembly_name": "\"@38\"",
+      "data_kind": "float"
+    },
+    {
+      "name": "@39",
+      "address": 2151127360,
+      "size": 4,
+      "section": ".sdata2",
+      "scope": "local",
+      "compiler_assembly_name": "\"@39\"",
+      "data_kind": "float"
+    }
+  ],
+  "symbol_scopes": {
+    "GXSetViewportJitter": "global",
+    "GXSetViewport": "global",
+    "GXSetScissor": "global",
+    "GXSetScissorBoxOffset": "global",
+    "GXSetClipMode": "global",
+    "__GXSetMatrixIndex": "global",
+    "@37": "local",
+    "@38": "local",
+    "@39": "local"
+  },
+  "symbols": {
+    "GXSetViewportJitter": "0x80117038",
+    "GXSetViewport": "0x8011713c",
+    "GXSetScissor": "0x80117160",
+    "GXSetScissorBoxOffset": "0x801171f0",
+    "GXSetClipMode": "0x80117230",
+    "__GXSetMatrixIndex": "0x80117258",
+    "gx": "0x803798a8",
+    "__GXSetRange": "0x80116b28",
+    "@37": "0x80379938",
+    "@38": "0x8037993c",
+    "@39": "0x80379940"
+  },
+  "external_original_names": {
+    "gx": "gx",
+    "__GXSetRange": "fn_80116B28"
+  },
+  "verified_text_bytes": 676,
+  "verified_data_bytes": 12,
+  "source_kind": "c",
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "0b9edf462406cf05213b1e41ddea7d0f800eff44f3366876aeb108afda81b0f9",
+    "matched_code": 676,
+    "matched_functions": 6,
+    "matched_data": 12,
+    "complete_data": 12,
+    "object_path": "build/GSQE78/src/dolphin/gx/GXTransform_viewport.o",
+    "object_sha256": "124450bbf4da3aa9b99f52293102c734b956aad3e95084379e03d67dfcf1ea9e"
+  }
+}

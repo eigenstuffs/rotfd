@@ -1,0 +1,23 @@
+/* Original Python argument formats. See docs/notes/game-additional-python-format-strings.md. */
+extern "C" const char lbl_802A5980[24] = "O:ParticlesAgent_Z_Init";
+extern "C" const char lbl_802A5998[28] = "OO:ParticlesAgent_Z_UseNode";
+extern "C" const char lbl_802A59B4[27] = "O:ParticlesAgent_Z_Suspend";
+extern "C" const char lbl_802A59D0[27] = "O:ParticlesAgent_Z_Restore";
+extern "C" const char lbl_802A59EC[31] = "O:ParticlesAgent_Z_MarkHandles";
+extern "C" const char lbl_802A5A0C[37] = "OO:ParticlesAgent_Z_SetPlayParticles";
+extern "C" const char lbl_802A5A34[36] = "O:ParticlesAgent_Z_GetPlayParticles";
+extern "C" const char lbl_802A5A58[36] = "O:ParticlesAgent_Z_GetParticlesName";
+extern "C" const char lbl_802A5A7C[37] = "OO:ParticlesAgent_Z_RegisterWithGame";
+extern "C" const char lbl_802A5AA4[39] = "OO:ParticlesAgent_Z_UnRegisterFromGame";
+extern "C" const char lbl_802A5ACC[28] = "O:ParticlesAgent_Z_DoFollow";
+extern "C" const char lbl_802A5AE8[28] = "O:ParticlesAgent_Z_IsPaused";
+extern "C" const char lbl_802A5B04[25] = "O:ParticlesAgent_Z_Reset";
+extern "C" const char lbl_802A5B20[25] = "O:ParticlesAgent_Z_Pause";
+extern "C" const char lbl_802A5B3C[26] = "O:ParticlesAgent_Z_Resume";
+extern "C" const char lbl_802A5B58[26] = "O:ParticlesAgent_Z_Replay";
+extern "C" const char lbl_802A5B74[25] = "OO:VolumeAgent_Z_UseNode";
+extern "C" const char lbl_802A5B90[33] = "O:VolumeAgent_Z_GetVolumeNodeHdl";
+extern "C" const char lbl_802A5BB4[31] = "OO:VolumeAgent_Z_GetFloatParam";
+extern "C" const char lbl_802A5BD4[30] = "OO:VolumeAgent_Z_GetNodeParam";
+extern "C" const char lbl_802A5BF4[] = "PythonInterpreter_Z_StoreObject";
+extern "C" const char lbl_802A5C14[] = "PythonInterpreter_Z_GetStoredObject";

@@ -1,0 +1,87 @@
+{
+  "source": "src/Objects/sliceobject.c",
+  "status": "integrated-byte-match",
+  "sections": {
+    ".text": [
+      "0x8015A80C",
+      "0x8015AC30"
+    ],
+    ".data": [
+      "0x802D4960",
+      "0x802D4A59"
+    ],
+    ".sdata": [
+      "0x803762F8",
+      "0x80376336"
+    ]
+  },
+  "symbols": {
+    "PyObject_Cmp": 2148748776,
+    "strcmp": 2148697000,
+    "Py_BuildValue": 2149181760,
+    "PyErr_SetString": 2149126576,
+    "PyString_FromString": 2148940464,
+    "PyObject_Repr": 2148897464,
+    "PyString_ConcatAndDel": 2148914540,
+    "PyString_Concat": 2148915048,
+    "free": 2147611484,
+    "malloc": 2147611328,
+    "PyObject_Init": 2148898808,
+    "slice_compare": 2148902924,
+    "slice_getattr": 2148903132,
+    "slice_repr": 2148903352,
+    "slice_dealloc": 2148903572,
+    "PySlice_New": 2148903752,
+    "ellipsis_repr": 2148903944,
+    "PyEllipsis_Type": 2150451564,
+    "PySlice_Type": 2150451672,
+    "_Py_EllipsisObject": 2151113464
+  },
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "7fa117073c231c686b9a12c0a40898351ad52b6a26d3f25f98330ee31002357d",
+    "matched_code": 1060,
+    "matched_functions": 6,
+    "matched_data": 311,
+    "complete_data": 311,
+    "object_path": "build/GSQE78/src/Objects/sliceobject.o",
+    "object_sha256": "7bc4b26dec53e5ff1f45b0590acee691ec0a0f2c7ce668c04472c28d87aed57f"
+  },
+  "external_padding": [
+    {
+      "source": "src/Objects/sliceobject.c",
+      "unit": "main/Objects/sliceobject",
+      "section": ".data",
+      "start": "0x802d4a59",
+      "end": "0x802d4a5c",
+      "size": 3,
+      "alignment": 1,
+      "symbol": "gap_07_802D4A59_data",
+      "original_owner": "padding/source_extents/Objects/sliceobject.s",
+      "source_section_start": "0x802d4960",
+      "source_section_bytes": 249,
+      "previous_split_bytes": 252,
+      "description": "Original linker alignment beyond emitted source section; no source credit."
+    },
+    {
+      "source": "src/Objects/sliceobject.c",
+      "unit": "main/Objects/sliceobject",
+      "section": ".sdata",
+      "start": "0x80376336",
+      "end": "0x80376338",
+      "size": 2,
+      "alignment": 1,
+      "symbol": "gap_09_80376336_sdata",
+      "original_owner": "padding/source_extents/Objects/sliceobject.s",
+      "source_section_start": "0x803762f8",
+      "source_section_bytes": 62,
+      "previous_split_bytes": 64,
+      "description": "Original linker alignment beyond emitted source section; no source credit."
+    }
+  ],
+  "source_extent_audit": {
+    "data_credit_correction": 5,
+    "evidence": "config/GSQE78/source_padding.json",
+    "description": "Source and original bytes unchanged; trailing original padding moved to NonMatching ownership."
+  }
+}

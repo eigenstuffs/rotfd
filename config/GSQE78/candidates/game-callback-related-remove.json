@@ -1,0 +1,309 @@
+{
+  "status": "isolated-byte-match",
+  "source": "src/Game/callback_related_remove.cpp",
+  "source_sha256": "3c2ff7aecdeadf73246b145eb0a76054fb07730b316189529a67ca438e610d8e",
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-proc",
+    "gekko",
+    "-fp",
+    "hardware",
+    "-enum",
+    "int",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-Cpp_exceptions",
+    "off",
+    "-RTTI",
+    "off",
+    "-str",
+    "reuse",
+    "-common",
+    "off",
+    "-use_lmw_stmw",
+    "on",
+    "-i",
+    "include"
+  ],
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2149919208,
+      "end": 2149919572,
+      "alignment": 4
+    }
+  ],
+  "functions": [
+    {
+      "name": "fn_802529E8",
+      "address": 2149919208,
+      "size": 364,
+      "scope": "global",
+      "section": ".text",
+      "object_offset": 0
+    }
+  ],
+  "objects": [],
+  "unlinked_functions": [
+    {
+      "name": "__dt__17RelatedRemoveCopyFv",
+      "section": ".text",
+      "object_offset": 364,
+      "size": 92,
+      "binding": "weak",
+      "raw_sha256": "1dc191d0563978ed38f7b2c78ac2b807d3ddfa53c98db4560ab0ced43640ab02"
+    },
+    {
+      "name": "__dt__17RelatedRemoveZeroFv",
+      "section": ".text",
+      "object_offset": 456,
+      "size": 88,
+      "binding": "weak",
+      "raw_sha256": "ee3203a188e9d7282273427bfc26c6917510fc7b7c574c24cca0331f00873d1f"
+    },
+    {
+      "name": "__dt__19RelatedRemoveNativeFv",
+      "section": ".text",
+      "object_offset": 544,
+      "size": 84,
+      "binding": "weak",
+      "raw_sha256": "fdd9fcf5ab58f46f986c50b59ae57e9c65a7b53acdde19888e0e8987b285adb0"
+    }
+  ],
+  "headers": [
+    {
+      "path": "include/Game/callback_related_dispatch_internal.h",
+      "sha256": "d57172d480f7eee85c829a2603b1c3820abbb633d55862670ea220a71a22c2cb"
+    }
+  ],
+  "dependency_symbols": [
+    {
+      "name": "__ct__15Handle_801F7F10Fv",
+      "address": 2149547780,
+      "scope": "global",
+      "section": ".text"
+    },
+    {
+      "name": "__dl__FPv",
+      "address": 2148658644,
+      "scope": "global",
+      "section": ".text"
+    },
+    {
+      "name": "__dt__15Handle_801F7F10Fv",
+      "address": 2149547792,
+      "scope": "global",
+      "section": ".text"
+    },
+    {
+      "name": "fn_801F7EB8",
+      "address": 2149547704,
+      "scope": "global",
+      "section": ".text"
+    },
+    {
+      "name": "fn_801F86C8",
+      "address": 2149549768,
+      "scope": "global",
+      "section": ".text"
+    },
+    {
+      "name": "fn_8023A5DC",
+      "address": 2149819868,
+      "scope": "global",
+      "section": ".text"
+    },
+    {
+      "name": "lbl_801E9D24",
+      "address": 2149489956,
+      "scope": "global",
+      "section": ".text"
+    },
+    {
+      "name": "slot1C__12BaseObject_ZFv",
+      "address": 2149610324,
+      "scope": "global",
+      "section": ".text"
+    }
+  ],
+  "validation": {
+    "relocations": 11,
+    "unlinked_relocations": 6,
+    "retained_text_bytes": 364,
+    "unlinked_text_bytes": 264,
+    "initialized_data_bytes": 0,
+    "bss_bytes": 0,
+    "owned_padding_bytes": 0
+  },
+  "actual_relocations": [
+    {
+      "section": ".text",
+      "at": 28,
+      "address": 2149919236,
+      "kind": 10,
+      "symbol": "slot1C__12BaseObject_ZFv",
+      "target": 2149610324,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 52,
+      "address": 2149919260,
+      "kind": 10,
+      "symbol": "fn_801F7EB8",
+      "target": 2149547704,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 66,
+      "address": 2149919274,
+      "kind": 6,
+      "symbol": "lbl_801E9D24",
+      "target": 2149489956,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 74,
+      "address": 2149919282,
+      "kind": 4,
+      "symbol": "lbl_801E9D24",
+      "target": 2149489956,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 80,
+      "address": 2149919288,
+      "kind": 10,
+      "symbol": "fn_8023A5DC",
+      "target": 2149819868,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 100,
+      "address": 2149919308,
+      "kind": 10,
+      "symbol": "__ct__15Handle_801F7F10Fv",
+      "target": 2149547780,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 110,
+      "address": 2149919318,
+      "kind": 6,
+      "symbol": "lbl_801E9D24",
+      "target": 2149489956,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 118,
+      "address": 2149919326,
+      "kind": 4,
+      "symbol": "lbl_801E9D24",
+      "target": 2149489956,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 140,
+      "address": 2149919348,
+      "kind": 10,
+      "symbol": "fn_801F86C8",
+      "target": 2149549768,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 228,
+      "address": 2149919436,
+      "kind": 10,
+      "symbol": "fn_801F7EB8",
+      "target": 2149547704,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 328,
+      "address": 2149919536,
+      "kind": 10,
+      "symbol": "__dt__15Handle_801F7F10Fv",
+      "target": 2149547792,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 408,
+      "address": 2149919616,
+      "kind": 10,
+      "symbol": "__dt__15Handle_801F7F10Fv",
+      "target": 2149547792,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 424,
+      "address": 2149919632,
+      "kind": 10,
+      "symbol": "__dl__FPv",
+      "target": 2148658644,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 496,
+      "address": 2149919704,
+      "kind": 10,
+      "symbol": "__dt__15Handle_801F7F10Fv",
+      "target": 2149547792,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 512,
+      "address": 2149919720,
+      "kind": 10,
+      "symbol": "__dl__FPv",
+      "target": 2148658644,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 580,
+      "address": 2149919788,
+      "kind": 10,
+      "symbol": "__dt__15Handle_801F7F10Fv",
+      "target": 2149547792,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 596,
+      "address": 2149919804,
+      "kind": 10,
+      "symbol": "__dl__FPv",
+      "target": 2148658644,
+      "addend": 0
+    }
+  ],
+  "notes": "docs/notes/game-callback-related-remove.md",
+  "memcard_native_identity_migration": {
+    "description": "Current canonical identities and hashes verified after native CGCMemCardManipulator/CFSM ownership integration; original evidence is retained in immutable backups and explicit previous receipts.",
+    "production_verification": "scratch/memcard_native_vtable_20261020_parallel/production-verification.json",
+    "production_verification_sha256": "96e50e874bd53c148cd6395f670c040416c34699787d56726d8cfb010c340f31",
+    "migration_object_audit": "scratch/memcard_native_vtable_20261020_parallel/migration_object_audit.json",
+    "migration_object_audit_sha256": "b809560bf7212a505b2ea749256bef5263b4784d066bb311015e10928e90db9d",
+    "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "unchanged_caller_objects": 344,
+    "native_objects": 6,
+    "native_actual_relocations": 281,
+    "previous_canonical_sha256": "f2698cdcdc53ca0e3eac3c17f41482fc1bc1251023e9580a5be4552558ff6428",
+    "previous_canonical": "scratch/memcard_canonical_refresh_20261020_parallel/backups/config/GSQE78/candidates/game-callback-related-remove.json",
+    "previous_entry_json_pointer": ""
+  }
+}

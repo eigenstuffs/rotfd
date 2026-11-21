@@ -1,0 +1,571 @@
+{
+  "status": "integrated-byte-match",
+  "new_code_credit": 8,
+  "new_function_credit": 1,
+  "existing_code_preserved": 244,
+  "existing_EH_preserved": 72,
+  "source_files": [
+    {
+      "path": "/Users/brandenb/Downloads/rotfd/scratch/resource_finder_inline_20261020/native_owner_adjustor_80096524/overlay/src/Game/resource_owner_destructor_80095F4C.cpp",
+      "sha256": "ab94c4a4565d77ecf4c45101a6a563a7a1de6030fa37d3ac38c2c93e83d91070"
+    },
+    {
+      "path": "/Users/brandenb/Downloads/rotfd/scratch/resource_finder_inline_20261020/native_owner_adjustor_80096524/overlay/src/Game/leaf_80096514.cpp",
+      "sha256": "8d15f856f71311391c41300517ed23d9feed4427dc0e06df0cb40f4a31693803"
+    },
+    {
+      "path": "/Users/brandenb/Downloads/rotfd/scratch/resource_finder_inline_20261020/native_owner_adjustor_80096524/overlay/include/Game/owner_cleanup_virtual_view_80095F4C.h",
+      "sha256": "ae3ffd2d97d5000e4ab8180b1014b8b47093a443667261387237145b263e3404"
+    }
+  ],
+  "compiler": "build/compilers/GC/1.3.2/mwcceppc.exe",
+  "compiler_sha256": "7cbae0a5bd81e07d7fa8975bbc4e969b5dea265cc29c5ee6bae0453a6e25f225",
+  "flags": [
+    "-proc",
+    "gekko",
+    "-fp",
+    "hardware",
+    "-enum",
+    "int",
+    "-str",
+    "reuse",
+    "-common",
+    "off",
+    "-O4,s",
+    "-inline",
+    "auto",
+    "-Cpp_exceptions",
+    "on",
+    "-use_lmw_stmw",
+    "on",
+    "-RTTI",
+    "off",
+    "-i",
+    "/Users/brandenb/Downloads/rotfd/scratch/resource_finder_inline_20261020/native_owner_adjustor_80096524/overlay/include",
+    "-i",
+    "include"
+  ],
+  "rename_mapping": [
+    {
+      "old": "__dt__15Object_80095F4CFv",
+      "new": "cleanup__32OwnerCleanupVirtualView_80095F4CFi",
+      "address": 2148097868,
+      "size": 228,
+      "scope": "global"
+    },
+    {
+      "old": "hook_80096518__29OwnerHookVirtualView_80096518Fv",
+      "new": "hook_80096518__32OwnerCleanupVirtualView_80095F4CFv",
+      "address": 2148099352,
+      "size": 4,
+      "scope": "global"
+    },
+    {
+      "old": "@792@hook_80096518__29OwnerHookVirtualView_80096518Fv",
+      "new": "@792@hook_80096518__32OwnerCleanupVirtualView_80095F4CFv",
+      "address": 2148099356,
+      "size": 8,
+      "scope": "weak"
+    },
+    {
+      "old": "fn_80096524",
+      "new": "@792@cleanup__32OwnerCleanupVirtualView_80095F4CFi",
+      "address": 2148099364,
+      "size": 8,
+      "scope": "weak"
+    }
+  ],
+  "cleanup": {
+    "object": "/Users/brandenb/Downloads/rotfd/scratch/resource_finder_inline_20261020/native_owner_adjustor_80096524/resource_owner_destructor_80095F4C.o",
+    "sha256": "9e08fe139bcbf00710b33a57a67874acb6800b2124993090a967f5b44910761e",
+    "sections": [
+      {
+        "name": ".text",
+        "address": 2148097868,
+        "size": 228,
+        "bytes_sha256": "1f7afd7e100ead9fe6ad0f99327ad1337db87c1875a31a60546e68f9628bff14"
+      },
+      {
+        "name": "extab",
+        "address": 2147545980,
+        "size": 60,
+        "bytes_sha256": "20a540195acfc31e260185923343ad5143b3c9bcadde878ffa35b5d550f89f48"
+      },
+      {
+        "name": "extabindex",
+        "address": 2147593268,
+        "size": 12,
+        "bytes_sha256": "6db5d25bad9c1438582be63d79ea91afa8941ca2bc6b8a5aabfb8e50c778d7ba"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 34,
+        "address": 2148097902,
+        "kind": 6,
+        "symbol": "lbl_802B995C",
+        "target": 2150340956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 42,
+        "address": 2148097910,
+        "kind": 4,
+        "symbol": "lbl_802B995C",
+        "target": 2150340956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 114,
+        "address": 2148097982,
+        "kind": 6,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 122,
+        "address": 2148097990,
+        "kind": 4,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 124,
+        "address": 2148097992,
+        "kind": 10,
+        "symbol": "fn_801EF610",
+        "target": 2149512720,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 136,
+        "address": 2148098004,
+        "kind": 10,
+        "symbol": "__unexpected",
+        "target": 2148663772,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 152,
+        "address": 2148098020,
+        "kind": 10,
+        "symbol": "__dt__15Object_80098A70Fv",
+        "target": 2148108912,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 166,
+        "address": 2148098034,
+        "kind": 6,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 174,
+        "address": 2148098042,
+        "kind": 4,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 176,
+        "address": 2148098044,
+        "kind": 10,
+        "symbol": "fn_801EF610",
+        "target": 2149512720,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 188,
+        "address": 2148098056,
+        "kind": 10,
+        "symbol": "__unexpected",
+        "target": 2148663772,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147593268,
+        "kind": 1,
+        "symbol": "cleanup__32OwnerCleanupVirtualView_80095F4CFi",
+        "target": 2148097868,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147593276,
+        "kind": 1,
+        "symbol": "@42",
+        "target": 2147545980,
+        "addend": 0
+      }
+    ],
+    "metadata_relocations": 1,
+    "raw_symbols": [
+      {
+        "name": "",
+        "offset": 0,
+        "size": 0,
+        "binding": 0,
+        "type": 0,
+        "section_index": 0,
+        "section": ""
+      },
+      {
+        "name": "resource_owner_destructor_80095F4C.cpp",
+        "offset": 0,
+        "size": 0,
+        "binding": 0,
+        "type": 4,
+        "section_index": 65521,
+        "section": 65521
+      },
+      {
+        "name": "",
+        "offset": 0,
+        "size": 0,
+        "binding": 0,
+        "type": 3,
+        "section_index": 1,
+        "section": ".text"
+      },
+      {
+        "name": "",
+        "offset": 0,
+        "size": 0,
+        "binding": 0,
+        "type": 3,
+        "section_index": 2,
+        "section": "extab"
+      },
+      {
+        "name": "",
+        "offset": 0,
+        "size": 0,
+        "binding": 0,
+        "type": 3,
+        "section_index": 3,
+        "section": "extabindex"
+      },
+      {
+        "name": "",
+        "offset": 0,
+        "size": 0,
+        "binding": 0,
+        "type": 3,
+        "section_index": 4,
+        "section": ".mwcats.text"
+      },
+      {
+        "name": "@42",
+        "offset": 0,
+        "size": 60,
+        "binding": 0,
+        "type": 1,
+        "section_index": 2,
+        "section": "extab"
+      },
+      {
+        "name": "@43",
+        "offset": 0,
+        "size": 12,
+        "binding": 0,
+        "type": 1,
+        "section_index": 3,
+        "section": "extabindex"
+      },
+      {
+        "name": "lbl_802B995C",
+        "offset": 0,
+        "size": 0,
+        "binding": 1,
+        "type": 0,
+        "section_index": 0,
+        "section": ""
+      },
+      {
+        "name": "lbl_801EF5C8",
+        "offset": 0,
+        "size": 0,
+        "binding": 1,
+        "type": 0,
+        "section_index": 0,
+        "section": ""
+      },
+      {
+        "name": "fn_801EF610",
+        "offset": 0,
+        "size": 0,
+        "binding": 1,
+        "type": 0,
+        "section_index": 0,
+        "section": ""
+      },
+      {
+        "name": "__dt__15Object_80098A70Fv",
+        "offset": 0,
+        "size": 0,
+        "binding": 1,
+        "type": 0,
+        "section_index": 0,
+        "section": ""
+      },
+      {
+        "name": "cleanup__32OwnerCleanupVirtualView_80095F4CFi",
+        "offset": 0,
+        "size": 228,
+        "binding": 1,
+        "type": 2,
+        "section_index": 1,
+        "section": ".text"
+      },
+      {
+        "name": "__unexpected",
+        "offset": 0,
+        "size": 0,
+        "binding": 1,
+        "type": 0,
+        "section_index": 0,
+        "section": ""
+      }
+    ]
+  },
+  "hook": {
+    "object": "/Users/brandenb/Downloads/rotfd/scratch/resource_finder_inline_20261020/native_owner_adjustor_80096524/leaf_80096514.o",
+    "sha256": "317dae73d74c26261368f337f65ba58269b5f3b716e2ed13f10a2a8de67f1de0",
+    "allocations": [
+      {
+        "name": ".text",
+        "size": 24,
+        "alignment": 4,
+        "bytes_sha256": "2946a3d25d0659511fe41ea332e2db7b379f21b11ac67f69a91994c232451253"
+      },
+      {
+        "name": ".data",
+        "size": 32,
+        "alignment": 8,
+        "bytes_sha256": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925"
+      }
+    ],
+    "raw_symbols": [
+      {
+        "name": "",
+        "value": 0,
+        "size": 0,
+        "binding": 0,
+        "type": 0,
+        "section": 0
+      },
+      {
+        "name": "leaf_80096514.cpp",
+        "value": 0,
+        "size": 0,
+        "binding": 0,
+        "type": 4,
+        "section": 65521
+      },
+      {
+        "name": "",
+        "value": 0,
+        "size": 0,
+        "binding": 0,
+        "type": 3,
+        "section": 1
+      },
+      {
+        "name": "",
+        "value": 0,
+        "size": 0,
+        "binding": 0,
+        "type": 3,
+        "section": 2
+      },
+      {
+        "name": "",
+        "value": 0,
+        "size": 0,
+        "binding": 0,
+        "type": 3,
+        "section": 3
+      },
+      {
+        "name": "fn_80096514",
+        "value": 0,
+        "size": 4,
+        "binding": 1,
+        "type": 2,
+        "section": 1
+      },
+      {
+        "name": "hook_80096518__32OwnerCleanupVirtualView_80095F4CFv",
+        "value": 4,
+        "size": 4,
+        "binding": 1,
+        "type": 2,
+        "section": 1
+      },
+      {
+        "name": "__vt__32OwnerCleanupVirtualView_80095F4C",
+        "value": 0,
+        "size": 32,
+        "binding": 1,
+        "type": 1,
+        "section": 2
+      },
+      {
+        "name": "@792@hook_80096518__32OwnerCleanupVirtualView_80095F4CFv",
+        "value": 8,
+        "size": 8,
+        "binding": 2,
+        "type": 2,
+        "section": 1
+      },
+      {
+        "name": "@792@cleanup__32OwnerCleanupVirtualView_80095F4CFi",
+        "value": 16,
+        "size": 8,
+        "binding": 2,
+        "type": 2,
+        "section": 1
+      },
+      {
+        "name": "cleanup__32OwnerCleanupVirtualView_80095F4CFi",
+        "value": 0,
+        "size": 0,
+        "binding": 1,
+        "type": 0,
+        "section": 0
+      }
+    ],
+    "actual_text_relocations": [
+      {
+        "section": ".text",
+        "offset": 12,
+        "kind": 10,
+        "symbol": "hook_80096518__32OwnerCleanupVirtualView_80095F4CFv",
+        "addend": 0,
+        "address": 2148099360,
+        "target": 2148099352
+      },
+      {
+        "section": ".text",
+        "offset": 20,
+        "kind": 10,
+        "symbol": "cleanup__32OwnerCleanupVirtualView_80095F4CFi",
+        "addend": 0,
+        "address": 2148099368,
+        "target": 2148097868
+      }
+    ],
+    "metadata_relocations": [
+      {
+        "section": ".mwcats.text",
+        "offset": 4,
+        "kind": 1,
+        "symbol": "fn_80096514",
+        "addend": 0
+      },
+      {
+        "section": ".mwcats.text",
+        "offset": 12,
+        "kind": 1,
+        "symbol": "hook_80096518__32OwnerCleanupVirtualView_80095F4CFv",
+        "addend": 0
+      },
+      {
+        "section": ".mwcats.text",
+        "offset": 20,
+        "kind": 1,
+        "symbol": "@792@hook_80096518__32OwnerCleanupVirtualView_80095F4CFv",
+        "addend": 0
+      },
+      {
+        "section": ".mwcats.text",
+        "offset": 28,
+        "kind": 1,
+        "symbol": "@792@cleanup__32OwnerCleanupVirtualView_80095F4CFi",
+        "addend": 0
+      }
+    ],
+    "discarded_table_relocations": [
+      {
+        "section": ".data",
+        "offset": 24,
+        "kind": 1,
+        "symbol": "@792@hook_80096518__32OwnerCleanupVirtualView_80095F4CFv",
+        "addend": 0,
+        "target": 2148099356
+      },
+      {
+        "section": ".data",
+        "offset": 20,
+        "kind": 1,
+        "symbol": "@792@cleanup__32OwnerCleanupVirtualView_80095F4CFi",
+        "addend": 0,
+        "target": 2148099364
+      },
+      {
+        "section": ".data",
+        "offset": 8,
+        "kind": 1,
+        "symbol": "cleanup__32OwnerCleanupVirtualView_80095F4CFi",
+        "addend": 0,
+        "target": 2148097868
+      },
+      {
+        "section": ".data",
+        "offset": 28,
+        "kind": 1,
+        "symbol": "hook_80096518__32OwnerCleanupVirtualView_80095F4CFv",
+        "addend": 0,
+        "target": 2148099352
+      }
+    ]
+  },
+  "uncredited_discarded_table": {
+    "name": "__vt__32OwnerCleanupVirtualView_80095F4C",
+    "size": 32,
+    "section": ".data",
+    "reason": "partial virtual interface; no retained source reference; original complete 428-byte table remains authoritative"
+  },
+  "original_table": {
+    "name": "lbl_802B995C",
+    "address": 2150340956,
+    "size": 428,
+    "sha256": "4f9c41b6cb7b2226779e495e964c24f61dbdcced3edec243516ec3b2d07cd1cc"
+  },
+  "original_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+  "evidence_manifest": "scratch/resource_finder_inline_20261020/native_owner_adjustor_80096524/manifest.json",
+  "evidence_manifest_sha256": "5e3613a06d18cebdc0caa1ceb0b2f8274beb798b5affb13d3ab5a1cdf7d5d082",
+  "production_sources": [
+    "src/Game/resource_owner_destructor_80095F4C.cpp",
+    "src/Game/leaf_80096514.cpp",
+    "include/Game/owner_cleanup_virtual_view_80095F4C.h"
+  ],
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "native_elf_sha256": "8eb9d5e88ace242eaa3fc41b92b11a47b41676cbec60b4b8fda2fefdadf6a48b",
+    "proof": "scratch/owner_adjustor_80096524_integration_20261020/production-verification.json",
+    "proof_sha256": "3ac886480116648a7ceb5daff1f3c34686de8b642648c78c756ffa757f762cbf",
+    "baseline_regressions": 0,
+    "tests": 66,
+    "source_extents": "PASS"
+  }
+}

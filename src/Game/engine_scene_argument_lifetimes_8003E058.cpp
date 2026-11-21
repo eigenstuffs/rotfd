@@ -1,0 +1,9 @@
+/* Original scene argument Handle lifetimes; see docs/notes/game-engine-scene-argument-lifetimes.md. */
+typedef unsigned long u32;struct Handle_801F7F10{union{u32 word;struct{signed int tag:8,index:24;}bits;};Handle_801F7F10();~Handle_801F7F10();};
+extern "C"{extern char lbl_801EF5C8[];void fn_801EF610(void*,void*);}
+struct Arguments{char opaque00[0x8A5];signed char present8A5;char opaque8A6[0x12];float number8B8;};struct Target{char opaque00[0x210];short state210;};struct Scene{char opaque00[0x15058];Target*first15058;Target*second1505C;Target*first(){return first15058;}};struct Service{char opaque00[0x50];signed char flag50;};struct Entry{Target*object;u32 opaque04,opaque08;signed char generation0C;char opaque0D[3];};struct Manager{char opaque00[8];Entry*entries;};extern "C" struct Global{char opaque00[0x110];Arguments*args;char opaque114[4];Manager*manager;char opaque11C[8];Scene*scene;char opaque128[0x3C];Service*service;}lbl_801E9D24;
+inline Target*resolve(const Handle_801F7F10&h){Entry*e=&lbl_801E9D24.manager->entries[h.bits.index];return e->generation0C==h.bits.tag?e->object:0;}
+template<int D>struct Layer_E058:Layer_E058<D-1>{~Layer_E058(){}};template<>struct Layer_E058<1>:Handle_801F7F10{~Layer_E058(){}};
+struct Handle_8003E120:Layer_E058<2>{~Handle_8003E120(){}static void operator delete(void*p)throw(){fn_801EF610(lbl_801EF5C8,p);}};
+extern "C"{Handle_8003E120 fn_800BCEF8(Scene*);void fn_80030E9C(Target*,int,int);void fn_800E8700(Target*);}
+extern "C" int fn_8003E058(){if(lbl_801E9D24.scene->first()->state210==1){fn_80030E9C(resolve(fn_800BCEF8(lbl_801E9D24.scene)),0,4);return 1;}if(!lbl_801E9D24.service->flag50)fn_800E8700(lbl_801E9D24.scene->second1505C);return 1;}

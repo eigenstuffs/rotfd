@@ -1,0 +1,94 @@
+{
+  "source": "src/Game/handle_pool_setup.cpp",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.3.2",
+  "cflags": "-proc gekko -fp hardware -enum int -str reuse -common off -O4,p -inline auto -Cpp_exceptions off -use_lmw_stmw on -bool off",
+  "splits": [
+    {
+      "section": ".text",
+      "start": "0x801f93fc",
+      "end": "0x801f948c"
+    },
+    {
+      "section": ".data",
+      "start": "0x802eaab8",
+      "end": "0x802eaad0"
+    }
+  ],
+  "functions": [
+    {
+      "name": "fn_801F93FC",
+      "section": ".text",
+      "address": "0x801f93fc",
+      "size": "0x24",
+      "scope": "global",
+      "original_name": "fn_801F93FC"
+    },
+    {
+      "name": "fn_801F9420",
+      "section": ".text",
+      "address": "0x801f9420",
+      "size": "0x6c",
+      "scope": "global",
+      "original_name": "fn_801F9420"
+    }
+  ],
+  "data_symbols": [
+    {
+      "name": "lbl_802EAAB8",
+      "section": ".data",
+      "address": "0x802eaab8",
+      "size": "0x18",
+      "scope": "global",
+      "original_name": "lbl_802EAAB8"
+    }
+  ],
+  "section_anchors": [],
+  "dependency_symbols": [
+    {
+      "name": "fn_801F7914",
+      "address": "0x801f7914"
+    },
+    {
+      "name": "fn_801F88AC",
+      "address": "0x801f88ac"
+    },
+    {
+      "name": "fn_801B4BF0",
+      "address": "0x801b4bf0"
+    },
+    {
+      "name": "fn_801F9140",
+      "address": "0x801f9140"
+    },
+    {
+      "name": "fn_801F8D50",
+      "address": "0x801f8d50"
+    }
+  ],
+  "notes": "docs/notes/game-handles.md",
+  "split_notes": [
+    "Handle attachment wrapper and observed pool initializer. Explicit typed array layout and vtable data reproduce the observed C++ ABI without claiming an original full class identity. Owns all24 vtable bytes, including compiler-style terminator."
+  ],
+  "validation": {
+    "code_bytes": 144,
+    "emitted_data_bytes": 24,
+    "bss_layout_bytes": 0,
+    "relocations_applied": 7,
+    "byte_differences": 0,
+    "source_sha256": "8c18e079ffec1dd084a026c08b1b2b1a170e1fc90202311d7b672da6b616bb6b",
+    "object_sha256": "57675474e12e800e2d404fc9b8bce41469a9c845731696f4d41b520137927b39",
+    "original_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "integration_status": "verified full-DOL and objdiff"
+  },
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "8c18e079ffec1dd084a026c08b1b2b1a170e1fc90202311d7b672da6b616bb6b",
+    "matched_code": 144,
+    "matched_functions": 2,
+    "matched_data": 24,
+    "complete_data": 24,
+    "object_path": "build/GSQE78/src/Game/handle_pool_setup.o",
+    "object_sha256": "57675474e12e800e2d404fc9b8bce41469a9c845731696f4d41b520137927b39"
+  }
+}

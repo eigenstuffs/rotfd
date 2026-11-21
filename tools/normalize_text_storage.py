@@ -1,0 +1,110 @@
+"""Correct one DTK-generated function extent over original allocator storage.
+
+Splitting the preceding constructor exposes eleven original zero words. DTK
+adds a synthetic .text function there, although the original function inventory
+contains none. Keep the entire fallback unit, its bytes and original global
+label. Only the synthetic local symbol becomes a zero-sized NOTYPE marker.
+Neither original executable input nor the native objdiff report is edited.
+"""
+
+import argparse
+import hashlib
+import json
+from pathlib import Path
+import struct
+
+
+def normalize(data, contract):
+    """Return a pinned original object with only synthetic metadata corrected."""
+    digest = hashlib.sha256(data).hexdigest()
+    if digest not in (contract["generated_sha256"], contract["normalized_sha256"]):
+        raise ValueError("Unexpected generated storage object SHA-256")
+    if data[:7] != b"\x7fELF\x01\x02\x01" or len(data) < 52:
+        raise ValueError("Expected a big-endian ELF32 object")
+    if struct.unpack_from(">HH", data, 16) != (1, 20):
+        raise ValueError("Expected a relocatable PowerPC object")
+    table = struct.unpack_from(">I", data, 32)[0]
+    stride, count, names_index = struct.unpack_from(">HHH", data, 46)
+    if stride != 40 or names_index >= count or table + count * stride > len(data):
+        raise ValueError("Invalid ELF section table")
+    sections = [struct.unpack_from(">10I", data, table + i * stride) for i in range(count)]
+    for s in sections:
+        if s[1] != 8 and s[4] + s[5] > len(data):
+            raise ValueError("Truncated ELF section")
+    names = sections[names_index]
+    strings = data[names[4]:names[4] + names[5]]
+
+    def name(pool, offset):
+        end = pool.find(b"\0", offset)
+        if offset >= len(pool) or end < 0:
+            raise ValueError("Invalid ELF string")
+        return pool[offset:end].decode("utf-8")
+
+    text = [(i, s) for i, s in enumerate(sections) if name(strings, s[0]) == ".text"]
+    if len(text) != 1:
+        raise ValueError("Expected exactly one .text section")
+    text_index, section = text[0]
+    if (section[1], section[2], section[5], section[8]) != (1, 6, contract["size"], 4):
+        raise ValueError("Unexpected original storage section extent or flags")
+    if any(data[section[4]:section[4] + section[5]]):
+        raise ValueError("Original storage must contain only zero words")
+    if any(s[1] in (4, 9) and s[5] for s in sections):
+        raise ValueError("Storage object must have no relocations")
+    tables = [s for s in sections if s[1] == 2]
+    if len(tables) != 1 or tables[0][9] != 16 or tables[0][5] % 16:
+        raise ValueError("Invalid ELF symbol table")
+    symtab = tables[0]
+    if symtab[6] >= count:
+        raise ValueError("Invalid ELF symbol strings")
+    strings_section = sections[symtab[6]]
+    symbol_strings = data[strings_section[4]:strings_section[4] + strings_section[5]]
+    symbols = {}
+    for at in range(symtab[4], symtab[4] + symtab[5], 16):
+        fields = struct.unpack_from(">IIIBBH", data, at)
+        symbol_name = name(symbol_strings, fields[0])
+        if symbol_name in (contract["original_label"], contract["synthetic_symbol"]):
+            if symbol_name in symbols:
+                raise ValueError("Duplicate storage symbol")
+            symbols[symbol_name] = (at, fields)
+    if set(symbols) != {contract["original_label"], contract["synthetic_symbol"]}:
+        raise ValueError("Missing original or synthetic storage symbol")
+    _, label = symbols[contract["original_label"]]
+    if label[1:] != (0, 0, 0x10, 0, text_index):
+        raise ValueError("Original global label metadata changed")
+    at, pad = symbols[contract["synthetic_symbol"]]
+    before = (0, contract["size"], 2, 0, text_index)
+    after = (0, 0, 0, 0, text_index)
+    if pad[1:] != (after if digest == contract["normalized_sha256"] else before):
+        raise ValueError("Unexpected synthetic symbol metadata")
+    result = bytearray(data)
+    struct.pack_into(">I", result, at + 8, 0)
+    result[at + 12] = 0
+    result = bytes(result)
+    if hashlib.sha256(result).hexdigest() != contract["normalized_sha256"]:
+        raise ValueError("Normalized storage object SHA-256 mismatch")
+    return result
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("build_dir", type=Path)
+    parser.add_argument("--contract", type=Path, default=Path("config/GSQE78/text_storage.json"))
+    args = parser.parse_args()
+    contract = json.loads(args.contract.read_text())
+    if (contract["schema"], contract["game_id"], contract["address"], contract["size"]) != (
+            "original-text-storage-metadata-v1", "GSQE78", 0x801EF5C8, 44):
+        raise ValueError("Unsupported original storage contract")
+    config = json.loads((args.build_dir / "config.json").read_text())
+    units = [u for u in config["units"] if u["name"] == contract["unit"]]
+    if len(units) != 1 or not units[0]["autogenerated"]:
+        raise ValueError("Expected the original generated storage fallback unit")
+    obj = Path(units[0]["object"])
+    data = obj.read_bytes()
+    corrected = normalize(data, contract)
+    if corrected != data:
+        obj.write_bytes(corrected)
+    print("Preserved original allocator storage and fallback unit; corrected synthetic function metadata")
+
+
+if __name__ == "__main__":
+    main()

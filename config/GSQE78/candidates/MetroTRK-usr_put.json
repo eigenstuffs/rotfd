@@ -1,0 +1,55 @@
+{
+  "source": "src/MetroTRK/usr_put.c",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.3.2",
+  "cflags": "-proc gekko -fp hardware -enum int -str reuse -common off -O4,p -inline auto,deferred -sdata 0 -sdata2 0 -pool off -use_lmw_stmw on -rostr -i src/MetroTRK -Cpp_exceptions off",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2148634552,
+      "end": 2148634692
+    }
+  ],
+  "functions": [
+    {
+      "name": "usr_put_initialize",
+      "address": 2148634552,
+      "size": 4
+    },
+    {
+      "name": "usr_puts_serial",
+      "address": 2148634556,
+      "size": 136
+    }
+  ],
+  "objects": [],
+  "symbol_scopes": {
+    "usr_put_initialize": "global",
+    "usr_puts_serial": "global"
+  },
+  "symbols": {
+    "usr_put_initialize": "0x80118fb8",
+    "usr_puts_serial": "0x80118fbc",
+    "GetTRKConnected": "0x8011b930",
+    "SetTRKConnected": "0x8011b924",
+    "OSReport": "0x800f2f28"
+  },
+  "external_original_names": {
+    "GetTRKConnected": "fn_8011B930",
+    "SetTRKConnected": "fn_8011B924",
+    "OSReport": "OSReport"
+  },
+  "verified_text_bytes": 140,
+  "verified_data_bytes": 0,
+  "source_kind": "c",
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "253fe1a14fa8f57ad0cbe1d80c80acedc9b74ce20217739b2ca998825d0b59ac",
+    "matched_code": 140,
+    "matched_functions": 2,
+    "matched_data": 0,
+    "complete_data": 0,
+    "object_path": "build/GSQE78/src/MetroTRK/usr_put.o",
+    "object_sha256": "a662b59734f7b5942c325051d8dbe2679a431c8521d3793138d0d3ad7885e5b2"
+  }
+}

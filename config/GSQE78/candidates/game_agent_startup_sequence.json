@@ -1,0 +1,1697 @@
+[
+  {
+    "status": "isolated-byte-match-native-link-acceptance-pending",
+    "source": "src/Game/agent_startup_sequence_80061404.cpp",
+    "source_sha256": "1d5fa2bc3e1fe6f7937ec1c2193e57b2735cae549752c9df619f352da5ec78fb",
+    "header_sha256": {},
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": "extab",
+        "start": 2147529204,
+        "end": 2147529212,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147583188,
+        "end": 2147583200,
+        "alignment": 4
+      },
+      {
+        "name": ".text",
+        "start": 2147881988,
+        "end": 2147882096,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_80061404",
+        "address": 2147881988,
+        "size": 108,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@20",
+        "address": 2147529204,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@21",
+        "address": 2147583188,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "unlinked_objects": [],
+    "weak_overrides": [],
+    "unlinked_exception_groups": [],
+    "emitted_sections": [
+      {
+        "name": ".text",
+        "size": 108,
+        "raw_sha256": "4ebb598b569e63721d10532c9da1028b4f0fed077f423bab3dd882fe730b7d7a"
+      },
+      {
+        "name": "extab",
+        "size": 8,
+        "raw_sha256": "8191cd68605104a22123bf9c69bf764bd7afb3053626cdb1eec15185dc20f1d8"
+      },
+      {
+        "name": "extabindex",
+        "size": 12,
+        "raw_sha256": "2af09f2e295d33aefa4c10f23ec0d784126e48e917763cae6d8484eb6493ff30"
+      }
+    ],
+    "headers": [],
+    "notes": "docs/notes/game-agent-startup-sequence.md",
+    "original_metadata_audit": {
+      "function": "fn_80061404",
+      "original_ranges": [
+        {
+          "name": "extab",
+          "start": 2147529204,
+          "end": 2147529212
+        },
+        {
+          "name": "extabindex",
+          "start": 2147583188,
+          "end": 2147583200
+        },
+        {
+          "name": ".text",
+          "start": 2147881988,
+          "end": 2147882096
+        }
+      ],
+      "extabindex_scan": [
+        2147573600,
+        2147611328,
+        12
+      ],
+      "matching_extabindex": [
+        {
+          "address": 2147583188,
+          "function": 2147881988,
+          "size": 108,
+          "extab": 2147529204
+        }
+      ],
+      "ctors_scan": [
+        2150209824,
+        2150209920,
+        4
+      ],
+      "dtors_scan": [
+        2150209920,
+        2150209952,
+        4
+      ],
+      "ctors": [],
+      "dtors": [],
+      "initialized_data_word_references": [
+        {
+          "address": 2147583188,
+          "section_number": 1
+        }
+      ],
+      "callable_tables": [],
+      "compiled_source_consumers_unchanged": [
+        {
+          "source": "src/Game/agent_type_registry.cpp",
+          "source_sha256": "68eec30f152c14a69f260a3b564c8c4720e7a0fd9aef332f960c7fdd1ebbaf5c",
+          "identifier_occurrences": 2
+        }
+      ]
+    },
+    "verified_text_bytes": 108,
+    "verified_data_bytes": 20,
+    "pending_compiled_consumer_migrations": [],
+    "dependency_symbols": [
+      {
+        "name": "__ct__14Agent_8002B5F4Fv",
+        "address": 2147661300,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "__dt__14Agent_8002B5F4Fv",
+        "address": 2147661548,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_8002B58C",
+        "address": 2147661196,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_80061470",
+        "address": 2147882096,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_800614C0",
+        "address": 2147882176,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_802B5F74",
+        "address": 2150326132,
+        "section": ".data",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_803776F8",
+        "address": 2151118584,
+        "section": ".sbss",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_803776FC",
+        "address": 2151118588,
+        "section": ".sbss",
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "3bd9a9677dde193623146a7a6d6ab62de834c43e55b95c12488c6500ae4e1880",
+      "retained_text_bytes": 108,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 11,
+      "unlinked_relocations": 0,
+      "uncredited_text_bytes": 0,
+      "uncredited_metadata_bytes": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true,
+      "central_final_native_discard_required": false
+    },
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 16,
+        "address": 2147882004,
+        "kind": 109,
+        "symbol": "lbl_803776FC",
+        "target": 2151118588,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 20,
+        "address": 2147882008,
+        "kind": 109,
+        "symbol": "lbl_803776F8",
+        "target": 2151118584,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 24,
+        "address": 2147882012,
+        "kind": 10,
+        "symbol": "fn_8002B58C",
+        "target": 2147661196,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 32,
+        "address": 2147882020,
+        "kind": 10,
+        "symbol": "__ct__14Agent_8002B5F4Fv",
+        "target": 2147661300,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 38,
+        "address": 2147882026,
+        "kind": 6,
+        "symbol": "lbl_802B5F74",
+        "target": 2150326132,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 46,
+        "address": 2147882034,
+        "kind": 4,
+        "symbol": "lbl_802B5F74",
+        "target": 2150326132,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 68,
+        "address": 2147882056,
+        "kind": 10,
+        "symbol": "__dt__14Agent_8002B5F4Fv",
+        "target": 2147661548,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 76,
+        "address": 2147882064,
+        "kind": 10,
+        "symbol": "fn_80061470",
+        "target": 2147882096,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 88,
+        "address": 2147882076,
+        "kind": 10,
+        "symbol": "fn_800614C0",
+        "target": 2147882176,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147583188,
+        "kind": 1,
+        "symbol": "fn_80061404",
+        "target": 2147881988,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147583196,
+        "kind": 1,
+        "symbol": "@20",
+        "target": 2147529204,
+        "addend": 0
+      }
+    ]
+  },
+  {
+    "status": "isolated-byte-match-native-link-acceptance-pending",
+    "source": "src/Game/agent_startup_sequence_8006F8A4.cpp",
+    "source_sha256": "af74882c1454d820e023f3473410d6e300d2577265b5eeb42600b30417d4ea12",
+    "header_sha256": {},
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": "extab",
+        "start": 2147534124,
+        "end": 2147534132,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147586188,
+        "end": 2147586200,
+        "alignment": 4
+      },
+      {
+        "name": ".text",
+        "start": 2147940516,
+        "end": 2147940636,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_8006F8A4",
+        "address": 2147940516,
+        "size": 120,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@21",
+        "address": 2147534124,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@22",
+        "address": 2147586188,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "unlinked_objects": [],
+    "weak_overrides": [],
+    "unlinked_exception_groups": [],
+    "emitted_sections": [
+      {
+        "name": ".text",
+        "size": 120,
+        "raw_sha256": "a1d5551f49f05efb5b6a3bc377bcda6c34d9e85e35944d3e36161d1f47b4a5fb"
+      },
+      {
+        "name": "extab",
+        "size": 8,
+        "raw_sha256": "ece3a8b3f8b3a0d857991f277beec8085837772db66766084799cab7d27c632b"
+      },
+      {
+        "name": "extabindex",
+        "size": 12,
+        "raw_sha256": "f2ca9ba5deb77b2503c9662a5b18a580575ec4706740ba82d1abaedb5f379d29"
+      }
+    ],
+    "headers": [],
+    "notes": "docs/notes/game-agent-startup-sequence.md",
+    "original_metadata_audit": {
+      "function": "fn_8006F8A4",
+      "original_ranges": [
+        {
+          "name": "extab",
+          "start": 2147534124,
+          "end": 2147534132
+        },
+        {
+          "name": "extabindex",
+          "start": 2147586188,
+          "end": 2147586200
+        },
+        {
+          "name": ".text",
+          "start": 2147940516,
+          "end": 2147940636
+        }
+      ],
+      "extabindex_scan": [
+        2147573600,
+        2147611328,
+        12
+      ],
+      "matching_extabindex": [
+        {
+          "address": 2147586188,
+          "function": 2147940516,
+          "size": 120,
+          "extab": 2147534124
+        }
+      ],
+      "ctors_scan": [
+        2150209824,
+        2150209920,
+        4
+      ],
+      "dtors_scan": [
+        2150209920,
+        2150209952,
+        4
+      ],
+      "ctors": [],
+      "dtors": [],
+      "initialized_data_word_references": [
+        {
+          "address": 2147586188,
+          "section_number": 1
+        }
+      ],
+      "callable_tables": [],
+      "compiled_source_consumers_unchanged": [
+        {
+          "source": "src/Game/agent_type_registry.cpp",
+          "source_sha256": "68eec30f152c14a69f260a3b564c8c4720e7a0fd9aef332f960c7fdd1ebbaf5c",
+          "identifier_occurrences": 2
+        }
+      ]
+    },
+    "verified_text_bytes": 120,
+    "verified_data_bytes": 20,
+    "pending_compiled_consumer_migrations": [],
+    "dependency_symbols": [
+      {
+        "name": "__ct__14Agent_8002B5F4Fv",
+        "address": 2147661300,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "__dt__14Agent_8002B5F4Fv",
+        "address": 2147661548,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_8002B58C",
+        "address": 2147661196,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_8006F91C",
+        "address": 2147940636,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_8006F978",
+        "address": 2147940728,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_802B780C",
+        "address": 2150332428,
+        "section": ".data",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_80377730",
+        "address": 2151118640,
+        "section": ".sbss",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_80377734",
+        "address": 2151118644,
+        "section": ".sbss",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_803788A8",
+        "address": 2151123112,
+        "section": ".sdata2",
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "b83abca22db912e6ea43cb1d75f337ac60983ce4da19e391ce2e3693c128eafd",
+      "retained_text_bytes": 120,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 12,
+      "unlinked_relocations": 0,
+      "uncredited_text_bytes": 0,
+      "uncredited_metadata_bytes": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true,
+      "central_final_native_discard_required": false
+    },
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 16,
+        "address": 2147940532,
+        "kind": 109,
+        "symbol": "lbl_80377734",
+        "target": 2151118644,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 20,
+        "address": 2147940536,
+        "kind": 109,
+        "symbol": "lbl_80377730",
+        "target": 2151118640,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 24,
+        "address": 2147940540,
+        "kind": 10,
+        "symbol": "fn_8002B58C",
+        "target": 2147661196,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 32,
+        "address": 2147940548,
+        "kind": 10,
+        "symbol": "__ct__14Agent_8002B5F4Fv",
+        "target": 2147661300,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 38,
+        "address": 2147940554,
+        "kind": 6,
+        "symbol": "lbl_802B780C",
+        "target": 2150332428,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 40,
+        "address": 2147940556,
+        "kind": 109,
+        "symbol": "lbl_803788A8",
+        "target": 2151123112,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 46,
+        "address": 2147940562,
+        "kind": 4,
+        "symbol": "lbl_802B780C",
+        "target": 2150332428,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 80,
+        "address": 2147940596,
+        "kind": 10,
+        "symbol": "__dt__14Agent_8002B5F4Fv",
+        "target": 2147661548,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 88,
+        "address": 2147940604,
+        "kind": 10,
+        "symbol": "fn_8006F91C",
+        "target": 2147940636,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 100,
+        "address": 2147940616,
+        "kind": 10,
+        "symbol": "fn_8006F978",
+        "target": 2147940728,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147586188,
+        "kind": 1,
+        "symbol": "fn_8006F8A4",
+        "target": 2147940516,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147586196,
+        "kind": 1,
+        "symbol": "@21",
+        "target": 2147534124,
+        "addend": 0
+      }
+    ]
+  },
+  {
+    "status": "isolated-byte-match-native-link-acceptance-pending",
+    "source": "src/Game/agent_startup_sequence_8006FC40.cpp",
+    "source_sha256": "220fda81fc8eb071ac14077500569a6246f0e11cef1bc02a176a9aceb8a372ca",
+    "header_sha256": {},
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": "extab",
+        "start": 2147534204,
+        "end": 2147534212,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147586236,
+        "end": 2147586248,
+        "alignment": 4
+      },
+      {
+        "name": ".text",
+        "start": 2147941440,
+        "end": 2147941560,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_8006FC40",
+        "address": 2147941440,
+        "size": 120,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@21",
+        "address": 2147534204,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@22",
+        "address": 2147586236,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "unlinked_objects": [],
+    "weak_overrides": [],
+    "unlinked_exception_groups": [],
+    "emitted_sections": [
+      {
+        "name": ".text",
+        "size": 120,
+        "raw_sha256": "a1d5551f49f05efb5b6a3bc377bcda6c34d9e85e35944d3e36161d1f47b4a5fb"
+      },
+      {
+        "name": "extab",
+        "size": 8,
+        "raw_sha256": "ece3a8b3f8b3a0d857991f277beec8085837772db66766084799cab7d27c632b"
+      },
+      {
+        "name": "extabindex",
+        "size": 12,
+        "raw_sha256": "f2ca9ba5deb77b2503c9662a5b18a580575ec4706740ba82d1abaedb5f379d29"
+      }
+    ],
+    "headers": [],
+    "notes": "docs/notes/game-agent-startup-sequence.md",
+    "original_metadata_audit": {
+      "function": "fn_8006FC40",
+      "original_ranges": [
+        {
+          "name": "extab",
+          "start": 2147534204,
+          "end": 2147534212
+        },
+        {
+          "name": "extabindex",
+          "start": 2147586236,
+          "end": 2147586248
+        },
+        {
+          "name": ".text",
+          "start": 2147941440,
+          "end": 2147941560
+        }
+      ],
+      "extabindex_scan": [
+        2147573600,
+        2147611328,
+        12
+      ],
+      "matching_extabindex": [
+        {
+          "address": 2147586236,
+          "function": 2147941440,
+          "size": 120,
+          "extab": 2147534204
+        }
+      ],
+      "ctors_scan": [
+        2150209824,
+        2150209920,
+        4
+      ],
+      "dtors_scan": [
+        2150209920,
+        2150209952,
+        4
+      ],
+      "ctors": [],
+      "dtors": [],
+      "initialized_data_word_references": [
+        {
+          "address": 2147586236,
+          "section_number": 1
+        }
+      ],
+      "callable_tables": [],
+      "compiled_source_consumers_unchanged": [
+        {
+          "source": "src/Game/agent_type_registry.cpp",
+          "source_sha256": "68eec30f152c14a69f260a3b564c8c4720e7a0fd9aef332f960c7fdd1ebbaf5c",
+          "identifier_occurrences": 2
+        }
+      ]
+    },
+    "verified_text_bytes": 120,
+    "verified_data_bytes": 20,
+    "pending_compiled_consumer_migrations": [],
+    "dependency_symbols": [
+      {
+        "name": "__ct__14Agent_8002B5F4Fv",
+        "address": 2147661300,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "__dt__14Agent_8002B5F4Fv",
+        "address": 2147661548,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_8002B58C",
+        "address": 2147661196,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_8006FCB8",
+        "address": 2147941560,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_8006FD14",
+        "address": 2147941652,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_802B780C",
+        "address": 2150332428,
+        "section": ".data",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_80377730",
+        "address": 2151118640,
+        "section": ".sbss",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_80377738",
+        "address": 2151118648,
+        "section": ".sbss",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_803788A8",
+        "address": 2151123112,
+        "section": ".sdata2",
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "5cace9227e99410546c61bb4976b037505a7c1444d779cac7bec289c2a3c50de",
+      "retained_text_bytes": 120,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 12,
+      "unlinked_relocations": 0,
+      "uncredited_text_bytes": 0,
+      "uncredited_metadata_bytes": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true,
+      "central_final_native_discard_required": false
+    },
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 16,
+        "address": 2147941456,
+        "kind": 109,
+        "symbol": "lbl_80377738",
+        "target": 2151118648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 20,
+        "address": 2147941460,
+        "kind": 109,
+        "symbol": "lbl_80377730",
+        "target": 2151118640,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 24,
+        "address": 2147941464,
+        "kind": 10,
+        "symbol": "fn_8002B58C",
+        "target": 2147661196,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 32,
+        "address": 2147941472,
+        "kind": 10,
+        "symbol": "__ct__14Agent_8002B5F4Fv",
+        "target": 2147661300,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 38,
+        "address": 2147941478,
+        "kind": 6,
+        "symbol": "lbl_802B780C",
+        "target": 2150332428,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 40,
+        "address": 2147941480,
+        "kind": 109,
+        "symbol": "lbl_803788A8",
+        "target": 2151123112,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 46,
+        "address": 2147941486,
+        "kind": 4,
+        "symbol": "lbl_802B780C",
+        "target": 2150332428,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 80,
+        "address": 2147941520,
+        "kind": 10,
+        "symbol": "__dt__14Agent_8002B5F4Fv",
+        "target": 2147661548,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 88,
+        "address": 2147941528,
+        "kind": 10,
+        "symbol": "fn_8006FCB8",
+        "target": 2147941560,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 100,
+        "address": 2147941540,
+        "kind": 10,
+        "symbol": "fn_8006FD14",
+        "target": 2147941652,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147586236,
+        "kind": 1,
+        "symbol": "fn_8006FC40",
+        "target": 2147941440,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147586244,
+        "kind": 1,
+        "symbol": "@21",
+        "target": 2147534204,
+        "addend": 0
+      }
+    ]
+  },
+  {
+    "status": "isolated-byte-match-native-link-acceptance-pending",
+    "source": "src/Game/agent_startup_sequence_8006FFDC.cpp",
+    "source_sha256": "23642d42d60c3562c78c569a14d535a0e8ff6fff5b1a595ef823b0bd1031ddf7",
+    "header_sha256": {},
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": "extab",
+        "start": 2147534284,
+        "end": 2147534292,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147586284,
+        "end": 2147586296,
+        "alignment": 4
+      },
+      {
+        "name": ".text",
+        "start": 2147942364,
+        "end": 2147942484,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_8006FFDC",
+        "address": 2147942364,
+        "size": 120,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@21",
+        "address": 2147534284,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@22",
+        "address": 2147586284,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "unlinked_objects": [],
+    "weak_overrides": [],
+    "unlinked_exception_groups": [],
+    "emitted_sections": [
+      {
+        "name": ".text",
+        "size": 120,
+        "raw_sha256": "a1d5551f49f05efb5b6a3bc377bcda6c34d9e85e35944d3e36161d1f47b4a5fb"
+      },
+      {
+        "name": "extab",
+        "size": 8,
+        "raw_sha256": "ece3a8b3f8b3a0d857991f277beec8085837772db66766084799cab7d27c632b"
+      },
+      {
+        "name": "extabindex",
+        "size": 12,
+        "raw_sha256": "f2ca9ba5deb77b2503c9662a5b18a580575ec4706740ba82d1abaedb5f379d29"
+      }
+    ],
+    "headers": [],
+    "notes": "docs/notes/game-agent-startup-sequence.md",
+    "original_metadata_audit": {
+      "function": "fn_8006FFDC",
+      "original_ranges": [
+        {
+          "name": "extab",
+          "start": 2147534284,
+          "end": 2147534292
+        },
+        {
+          "name": "extabindex",
+          "start": 2147586284,
+          "end": 2147586296
+        },
+        {
+          "name": ".text",
+          "start": 2147942364,
+          "end": 2147942484
+        }
+      ],
+      "extabindex_scan": [
+        2147573600,
+        2147611328,
+        12
+      ],
+      "matching_extabindex": [
+        {
+          "address": 2147586284,
+          "function": 2147942364,
+          "size": 120,
+          "extab": 2147534284
+        }
+      ],
+      "ctors_scan": [
+        2150209824,
+        2150209920,
+        4
+      ],
+      "dtors_scan": [
+        2150209920,
+        2150209952,
+        4
+      ],
+      "ctors": [],
+      "dtors": [],
+      "initialized_data_word_references": [
+        {
+          "address": 2147586284,
+          "section_number": 1
+        }
+      ],
+      "callable_tables": [],
+      "compiled_source_consumers_unchanged": [
+        {
+          "source": "src/Game/agent_type_registry.cpp",
+          "source_sha256": "68eec30f152c14a69f260a3b564c8c4720e7a0fd9aef332f960c7fdd1ebbaf5c",
+          "identifier_occurrences": 2
+        }
+      ]
+    },
+    "verified_text_bytes": 120,
+    "verified_data_bytes": 20,
+    "pending_compiled_consumer_migrations": [],
+    "dependency_symbols": [
+      {
+        "name": "__ct__14Agent_8002B5F4Fv",
+        "address": 2147661300,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "__dt__14Agent_8002B5F4Fv",
+        "address": 2147661548,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_8002B58C",
+        "address": 2147661196,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_80070054",
+        "address": 2147942484,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_800700B0",
+        "address": 2147942576,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_802B780C",
+        "address": 2150332428,
+        "section": ".data",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_80377730",
+        "address": 2151118640,
+        "section": ".sbss",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_8037773C",
+        "address": 2151118652,
+        "section": ".sbss",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_803788A8",
+        "address": 2151123112,
+        "section": ".sdata2",
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "3bbd48fde6008e304e496efa2cc0f95336c7cce6db31249feb1b59aa8f0ce7de",
+      "retained_text_bytes": 120,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 12,
+      "unlinked_relocations": 0,
+      "uncredited_text_bytes": 0,
+      "uncredited_metadata_bytes": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true,
+      "central_final_native_discard_required": false
+    },
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 16,
+        "address": 2147942380,
+        "kind": 109,
+        "symbol": "lbl_8037773C",
+        "target": 2151118652,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 20,
+        "address": 2147942384,
+        "kind": 109,
+        "symbol": "lbl_80377730",
+        "target": 2151118640,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 24,
+        "address": 2147942388,
+        "kind": 10,
+        "symbol": "fn_8002B58C",
+        "target": 2147661196,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 32,
+        "address": 2147942396,
+        "kind": 10,
+        "symbol": "__ct__14Agent_8002B5F4Fv",
+        "target": 2147661300,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 38,
+        "address": 2147942402,
+        "kind": 6,
+        "symbol": "lbl_802B780C",
+        "target": 2150332428,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 40,
+        "address": 2147942404,
+        "kind": 109,
+        "symbol": "lbl_803788A8",
+        "target": 2151123112,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 46,
+        "address": 2147942410,
+        "kind": 4,
+        "symbol": "lbl_802B780C",
+        "target": 2150332428,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 80,
+        "address": 2147942444,
+        "kind": 10,
+        "symbol": "__dt__14Agent_8002B5F4Fv",
+        "target": 2147661548,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 88,
+        "address": 2147942452,
+        "kind": 10,
+        "symbol": "fn_80070054",
+        "target": 2147942484,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 100,
+        "address": 2147942464,
+        "kind": 10,
+        "symbol": "fn_800700B0",
+        "target": 2147942576,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147586284,
+        "kind": 1,
+        "symbol": "fn_8006FFDC",
+        "target": 2147942364,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147586292,
+        "kind": 1,
+        "symbol": "@21",
+        "target": 2147534284,
+        "addend": 0
+      }
+    ]
+  },
+  {
+    "status": "isolated-byte-match-native-link-acceptance-pending",
+    "source": "src/Game/agent_startup_sequence_80070378.cpp",
+    "source_sha256": "61ddbcc11d98def4ea384f1d30d615fa864a946f50bdf16c0ddea9a150a0e975",
+    "header_sha256": {},
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": "extab",
+        "start": 2147534364,
+        "end": 2147534372,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147586332,
+        "end": 2147586344,
+        "alignment": 4
+      },
+      {
+        "name": ".text",
+        "start": 2147943288,
+        "end": 2147943408,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_80070378",
+        "address": 2147943288,
+        "size": 120,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@21",
+        "address": 2147534364,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@22",
+        "address": 2147586332,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "unlinked_objects": [],
+    "weak_overrides": [],
+    "unlinked_exception_groups": [],
+    "emitted_sections": [
+      {
+        "name": ".text",
+        "size": 120,
+        "raw_sha256": "073c4cbb4a610371d2b627a560b7988f494ef37e08016940ca58b878910e569b"
+      },
+      {
+        "name": "extab",
+        "size": 8,
+        "raw_sha256": "ece3a8b3f8b3a0d857991f277beec8085837772db66766084799cab7d27c632b"
+      },
+      {
+        "name": "extabindex",
+        "size": 12,
+        "raw_sha256": "f2ca9ba5deb77b2503c9662a5b18a580575ec4706740ba82d1abaedb5f379d29"
+      }
+    ],
+    "headers": [],
+    "notes": "docs/notes/game-agent-startup-sequence.md",
+    "original_metadata_audit": {
+      "function": "fn_80070378",
+      "original_ranges": [
+        {
+          "name": "extab",
+          "start": 2147534364,
+          "end": 2147534372
+        },
+        {
+          "name": "extabindex",
+          "start": 2147586332,
+          "end": 2147586344
+        },
+        {
+          "name": ".text",
+          "start": 2147943288,
+          "end": 2147943408
+        }
+      ],
+      "extabindex_scan": [
+        2147573600,
+        2147611328,
+        12
+      ],
+      "matching_extabindex": [
+        {
+          "address": 2147586332,
+          "function": 2147943288,
+          "size": 120,
+          "extab": 2147534364
+        }
+      ],
+      "ctors_scan": [
+        2150209824,
+        2150209920,
+        4
+      ],
+      "dtors_scan": [
+        2150209920,
+        2150209952,
+        4
+      ],
+      "ctors": [],
+      "dtors": [],
+      "initialized_data_word_references": [
+        {
+          "address": 2147586332,
+          "section_number": 1
+        }
+      ],
+      "callable_tables": [],
+      "compiled_source_consumers_unchanged": [
+        {
+          "source": "src/Game/agent_type_registry.cpp",
+          "source_sha256": "68eec30f152c14a69f260a3b564c8c4720e7a0fd9aef332f960c7fdd1ebbaf5c",
+          "identifier_occurrences": 2
+        }
+      ]
+    },
+    "verified_text_bytes": 120,
+    "verified_data_bytes": 20,
+    "pending_compiled_consumer_migrations": [],
+    "dependency_symbols": [
+      {
+        "name": "__ct__14Agent_8002B5F4Fv",
+        "address": 2147661300,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "__dt__14Agent_8002B5F4Fv",
+        "address": 2147661548,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_8002B58C",
+        "address": 2147661196,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "__ct__14Agent_800703F0Fv",
+        "address": 2147943408,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_80070474",
+        "address": 2147943540,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_802B780C",
+        "address": 2150332428,
+        "section": ".data",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_80377730",
+        "address": 2151118640,
+        "section": ".sbss",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_80377740",
+        "address": 2151118656,
+        "section": ".sbss",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_803788A8",
+        "address": 2151123112,
+        "section": ".sdata2",
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "2e066ecfa797b3a722d0020afbba5ece64c3694b2b67bf2f257f15e2a42a8b4e",
+      "retained_text_bytes": 120,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 12,
+      "unlinked_relocations": 0,
+      "uncredited_text_bytes": 0,
+      "uncredited_metadata_bytes": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true,
+      "central_final_native_discard_required": false
+    },
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 16,
+        "address": 2147943304,
+        "kind": 109,
+        "symbol": "lbl_80377740",
+        "target": 2151118656,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 20,
+        "address": 2147943308,
+        "kind": 109,
+        "symbol": "lbl_80377730",
+        "target": 2151118640,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 24,
+        "address": 2147943312,
+        "kind": 10,
+        "symbol": "fn_8002B58C",
+        "target": 2147661196,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 32,
+        "address": 2147943320,
+        "kind": 10,
+        "symbol": "__ct__14Agent_8002B5F4Fv",
+        "target": 2147661300,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 38,
+        "address": 2147943326,
+        "kind": 6,
+        "symbol": "lbl_802B780C",
+        "target": 2150332428,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 40,
+        "address": 2147943328,
+        "kind": 109,
+        "symbol": "lbl_803788A8",
+        "target": 2151123112,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 46,
+        "address": 2147943334,
+        "kind": 4,
+        "symbol": "lbl_802B780C",
+        "target": 2150332428,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 80,
+        "address": 2147943368,
+        "kind": 10,
+        "symbol": "__dt__14Agent_8002B5F4Fv",
+        "target": 2147661548,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 88,
+        "address": 2147943376,
+        "kind": 10,
+        "symbol": "__ct__14Agent_800703F0Fv",
+        "target": 2147943408,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 100,
+        "address": 2147943388,
+        "kind": 10,
+        "symbol": "fn_80070474",
+        "target": 2147943540,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147586332,
+        "kind": 1,
+        "symbol": "fn_80070378",
+        "target": 2147943288,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147586340,
+        "kind": 1,
+        "symbol": "@21",
+        "target": 2147534364,
+        "addend": 0
+      }
+    ],
+    "source_refinement_provenance": {
+      "proof": "/Users/brandenb/Downloads/rotfd/scratch/continuation_20261010/reefblower-startup-storage-refinement/proof.json",
+      "new_code_credit_bytes": 0,
+      "reason": "Factory allocation and derived constructor writes establish B8; automatic stack frame already provides B8 capacity"
+    },
+    "identifier_migration_provenance": {
+      "proof": "scratch/continuation_20261010/reefblower-constructor-consumers/proof.json",
+      "previous_canonical": "scratch/continuation_20261010/reefblower-constructor-consumers/before/config/GSQE78/candidates/game_agent_startup_sequence.json",
+      "previous_canonical_sha256": "dd0dce0da4e9c309aad2574932aba9e07fe9a39104d3452585931a1d81d3c27f"
+    }
+  }
+]

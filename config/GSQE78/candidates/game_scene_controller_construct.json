@@ -1,0 +1,324 @@
+[
+  {
+    "status": "isolated-byte-match-parent-native-constructor-migration-and-full-DOL-pending",
+    "source": "src/Game/scene_controller_construct_8005E0D4.cpp",
+    "source_sha256": "1fd9aa58a8e64a96855d0554d44f50b3953e048aff50341e2104a04f3cec3a69",
+    "headers": [],
+    "header_sha256": {},
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2147868884,
+        "end": 2147869248,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147528524,
+        "end": 2147528552,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147582708,
+        "end": 2147582720,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "__ct__15Object_8005E258Fv",
+        "original_symbol": "fn_8005E0D4",
+        "address": 2147868884,
+        "size": 364,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@14",
+        "section": "extab",
+        "object_offset": 0,
+        "address": 2147528524,
+        "size": 28,
+        "scope": "local"
+      },
+      {
+        "name": "@15",
+        "section": "extabindex",
+        "object_offset": 0,
+        "address": 2147582708,
+        "size": 12,
+        "scope": "local"
+      }
+    ],
+    "unlinked_functions": [],
+    "verified_text_bytes": 364,
+    "verified_data_bytes": 40,
+    "notes": "docs/notes/game-scene-controller-construction.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 10,
+        "address": 2147868894,
+        "kind": 6,
+        "symbol": "lbl_802B5748",
+        "target": 2150324040,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 30,
+        "address": 2147868914,
+        "kind": 4,
+        "symbol": "lbl_802B5748",
+        "target": 2150324040,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 56,
+        "address": 2147868940,
+        "kind": 10,
+        "symbol": "__ct__15Handle_801F7F10Fv",
+        "target": 2149547780,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 66,
+        "address": 2147868950,
+        "kind": 6,
+        "symbol": "fn_8005E240",
+        "target": 2147869248,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 74,
+        "address": 2147868958,
+        "kind": 4,
+        "symbol": "fn_8005E240",
+        "target": 2147869248,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 76,
+        "address": 2147868960,
+        "kind": 109,
+        "symbol": "lbl_80378650",
+        "target": 2151122512,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 184,
+        "address": 2147869068,
+        "kind": 10,
+        "symbol": "__construct_array",
+        "target": 2148658924,
+        "addend": 0
+      },
+      {
+        "section": "extab",
+        "at": 24,
+        "address": 2147528548,
+        "kind": 1,
+        "symbol": "__dt__15Handle_80021B54Fv",
+        "target": 2147621716,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147582708,
+        "kind": 1,
+        "symbol": "__ct__15Object_8005E258Fv",
+        "target": 2147868884,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147582716,
+        "kind": 1,
+        "symbol": "@14",
+        "target": 2147528524,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "__construct_array",
+        "section": ".text",
+        "address": 2148658924,
+        "scope": "global"
+      },
+      {
+        "name": "__ct__15Handle_801F7F10Fv",
+        "section": ".text",
+        "address": 2149547780,
+        "scope": "global"
+      },
+      {
+        "name": "__dt__15Handle_80021B54Fv",
+        "section": ".text",
+        "address": 2147621716,
+        "scope": "global"
+      },
+      {
+        "name": "fn_8005E240",
+        "section": ".text",
+        "address": 2147869248,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_802B5748",
+        "section": ".data",
+        "address": 2150324040,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_80378650",
+        "section": ".sdata2",
+        "address": 2151122512,
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "object_sha256": "87d12433bf798ae49ba1e843c2daba95b28ccc3ba6e1d61a80ca7a124e62414e",
+      "retained_text_bytes": 364,
+      "initialized_data_bytes": 40,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 10,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    },
+    "pending_compiled_consumer_migrations": [
+      {
+        "source": "src/Game/engine_local_setup_800230EC.cpp",
+        "source_sha256": "48b4c231781e8910c37edfe1920a1fb3a0c602a8fd70a064abeab4edb0b5207d",
+        "canonical_manifest": "config/GSQE78/candidates/game_engine_local_setup.json",
+        "canonical_manifest_sha256": "6c8fb5d007d4d40947a0fd7234440c81fbc3b11b1a89d8192d534941b4c636c5",
+        "original_symbol": "fn_8005E0D4",
+        "name": "__ct__15Object_8005E258Fv",
+        "identifier_occurrences": 1
+      },
+      {
+        "source": "src/Game/engine_local_setup_80022ECC.cpp",
+        "source_sha256": "1b5f72e55a28a53071bfbfd5bcd0a04bafe36dd4e1e6f32526053afd660e5375",
+        "canonical_manifest": "config/GSQE78/candidates/game_engine_local_setup.json",
+        "canonical_manifest_sha256": "6c8fb5d007d4d40947a0fd7234440c81fbc3b11b1a89d8192d534941b4c636c5",
+        "original_symbol": "fn_8005E0D4",
+        "name": "__ct__15Object_8005E258Fv",
+        "identifier_occurrences": 1
+      },
+      {
+        "source": "src/Game/engine_local_setup_80022A8C.cpp",
+        "source_sha256": "ba0c575dda84d1acc9f9994b080d317e2db692e6e7de7116c6d095ac4c10944b",
+        "canonical_manifest": "config/GSQE78/candidates/game_engine_local_setup.json",
+        "canonical_manifest_sha256": "6c8fb5d007d4d40947a0fd7234440c81fbc3b11b1a89d8192d534941b4c636c5",
+        "original_symbol": "fn_8005E0D4",
+        "name": "__ct__15Object_8005E258Fv",
+        "identifier_occurrences": 1
+      },
+      {
+        "source": "src/Game/engine_inline_base_construct_8004FAE8.cpp",
+        "source_sha256": "925c0ffa0e4a03099db4eea4456c516cb400186992c4194edb4d3240043b8707",
+        "canonical_manifest": "config/GSQE78/candidates/game_engine_inline_base_construct.json",
+        "canonical_manifest_sha256": "ec58a90333609012682016bd201bfde85cbbb46a72e9ab8ed812a68887eb86db",
+        "original_symbol": "fn_8005E0D4",
+        "name": "__ct__15Object_8005E258Fv",
+        "identifier_occurrences": 1
+      },
+      {
+        "source": "src/Game/engine_early_member_setup_80062E18.cpp",
+        "source_sha256": "11d3d8d79de1be8ed8d502f960601bd721fb84c7760f05270bee7ce878d69116",
+        "canonical_manifest": "config/GSQE78/candidates/game_engine_early_member_setup.json",
+        "canonical_manifest_sha256": "2f743abf0c3a74fefb91f4223744d20c613b0bbd342eea4746900ae5d3adca01",
+        "original_symbol": "fn_8005E0D4",
+        "name": "__ct__15Object_8005E258Fv",
+        "identifier_occurrences": 2
+      },
+      {
+        "source": "src/Game/engine_early_member_setup_80021260.cpp",
+        "source_sha256": "51cff69890e780969d8bc4056254b1c6e0807f69b990ebd87fec892cc0efd448",
+        "canonical_manifest": "config/GSQE78/candidates/game_engine_early_member_setup.json",
+        "canonical_manifest_sha256": "2f743abf0c3a74fefb91f4223744d20c613b0bbd342eea4746900ae5d3adca01",
+        "original_symbol": "fn_8005E0D4",
+        "name": "__ct__15Object_8005E258Fv",
+        "identifier_occurrences": 1
+      },
+      {
+        "source": "src/Game/engine_local_setup_8002352C.cpp",
+        "source_sha256": "35ceda5045f88995e2eb0a5e963a6c9dd4edc3322346e748e3f90efa81c91e9d",
+        "canonical_manifest": "config/GSQE78/candidates/game_engine_local_setup.json",
+        "canonical_manifest_sha256": "6c8fb5d007d4d40947a0fd7234440c81fbc3b11b1a89d8192d534941b4c636c5",
+        "original_symbol": "fn_8005E0D4",
+        "name": "__ct__15Object_8005E258Fv",
+        "identifier_occurrences": 1
+      },
+      {
+        "source": "src/Game/engine_local_setup_8002330C.cpp",
+        "source_sha256": "55d83318cb83a859e866e8b0893fa2d90b72e82c7e8eb4db5e66d0cfd33eadab",
+        "canonical_manifest": "config/GSQE78/candidates/game_engine_local_setup.json",
+        "canonical_manifest_sha256": "6c8fb5d007d4d40947a0fd7234440c81fbc3b11b1a89d8192d534941b4c636c5",
+        "original_symbol": "fn_8005E0D4",
+        "name": "__ct__15Object_8005E258Fv",
+        "identifier_occurrences": 1
+      },
+      {
+        "source": "src/Game/engine_inline_base_construct_8004E90C.cpp",
+        "source_sha256": "1ba17110ca52c320a17fba0a8d4c9ba8ed5055622c25a1ddfdfb8d1b9327d977",
+        "canonical_manifest": "config/GSQE78/candidates/game_engine_inline_base_construct.json",
+        "canonical_manifest_sha256": "ec58a90333609012682016bd201bfde85cbbb46a72e9ab8ed812a68887eb86db",
+        "original_symbol": "fn_8005E0D4",
+        "name": "__ct__15Object_8005E258Fv",
+        "identifier_occurrences": 1
+      },
+      {
+        "source": "src/Game/engine_early_flag_construct_80061AC0.cpp",
+        "source_sha256": "36aac97bf75b1a38d0c3f2ac8476e92f44bab038e76c04e3cd64198313fe4a9d",
+        "canonical_manifest": "config/GSQE78/candidates/game_engine_early_flag_construct.json",
+        "canonical_manifest_sha256": "6944b948c59090f6e93886e087659232508c2ab9f9c786cf063c3402639b6257",
+        "original_symbol": "fn_8005E0D4",
+        "name": "__ct__15Object_8005E258Fv",
+        "identifier_occurrences": 2
+      },
+      {
+        "source": "src/Game/engine_local_setup_80022CAC.cpp",
+        "source_sha256": "0449ac331c8807a194b1a5bbc64099f937642d9d4596685888758c6ef1d24892",
+        "canonical_manifest": "config/GSQE78/candidates/game_engine_local_setup.json",
+        "canonical_manifest_sha256": "6c8fb5d007d4d40947a0fd7234440c81fbc3b11b1a89d8192d534941b4c636c5",
+        "original_symbol": "fn_8005E0D4",
+        "name": "__ct__15Object_8005E258Fv",
+        "identifier_occurrences": 1
+      }
+    ]
+  }
+]

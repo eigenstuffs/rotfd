@@ -1,0 +1,2 @@
+#include "Game/owner_motion_control_views.h"
+extern "C" void fn_800A06C0(MotionControlAction*self,float delta){self->agent->forward=1;if(!fn_8009F170(self->agent)){fn_801F9D68(lbl_801E9D24.diagnostics,lbl_8029E588);return;}MotionControlVec2 v;float bearing=fn_8009F3E8(self->agent,fn_8009F170(self->agent),&v);float distance=self->agent->distance;if(fn_8009F684(self->agent)>distance)fn_8007D6A0(self->agent->controls,6);else if(bearing>self->agent->threshold)fn_8007D6A0(self->agent->controls,0);else applyMotionControl(self,delta,MotionControlVec3(-v.x,lbl_80378E40,-v.y));}

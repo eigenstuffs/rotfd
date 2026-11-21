@@ -1,0 +1,84 @@
+{
+  "source": "src/Game/registry_destructor.cpp",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.3.2",
+  "cflags": "-proc gekko -fp hardware -enum int -str reuse -common off -O4,p -inline auto -Cpp_exceptions off -use_lmw_stmw on -bool off",
+  "splits": [
+    {
+      "section": ".text",
+      "start": "0x801f5944",
+      "end": "0x801f5c04"
+    }
+  ],
+  "functions": [
+    {
+      "name": "fn_801F5944",
+      "section": ".text",
+      "address": "0x801f5944",
+      "size": "0x2c0",
+      "scope": "global",
+      "original_name": "fn_801F5944"
+    }
+  ],
+  "data_symbols": [],
+  "section_anchors": [],
+  "dependency_symbols": [
+    {
+      "name": "lbl_802EAA80",
+      "address": "0x802eaa80"
+    },
+    {
+      "name": "fn_80287BEC",
+      "address": "0x80287bec"
+    },
+    {
+      "name": "fn_801F551C",
+      "address": "0x801f551c"
+    },
+    {
+      "name": "lbl_8028F698",
+      "address": "0x8028f698"
+    },
+    {
+      "name": "fn_8028FD50",
+      "address": "0x8028fd50"
+    },
+    {
+      "name": "fn_801F56A8",
+      "address": "0x801f56a8"
+    },
+    {
+      "name": "lbl_801EF5C8",
+      "address": "0x801ef5c8"
+    },
+    {
+      "name": "fn_801EF610",
+      "address": "0x801ef610"
+    }
+  ],
+  "notes": "docs/notes/game-registry-lookup.md",
+  "split_notes": [
+    "Reconstructed ordinary registry lookup/cleanup routines, verified against all owned text bytes. Original class names and full translation-unit extent are not claimed; intervening removal and constructor routines remain fallback."
+  ],
+  "validation": {
+    "code_bytes": 704,
+    "emitted_data_bytes": 0,
+    "bss_layout_bytes": 0,
+    "relocations_applied": 20,
+    "byte_differences": 0,
+    "source_sha256": "a5e8025ffbd26f53567c0116f172e60fdf5df46d68e769a1e72ba35e4fe37c02",
+    "object_sha256": "ccae425f8df68d9332e3b4c7cb0b083c0d9ac330f2e870aa375d825a8fd1268e",
+    "original_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "integration_status": "verified full-DOL and objdiff"
+  },
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "a5e8025ffbd26f53567c0116f172e60fdf5df46d68e769a1e72ba35e4fe37c02",
+    "matched_code": 704,
+    "matched_functions": 1,
+    "matched_data": 0,
+    "complete_data": 0,
+    "object_path": "build/GSQE78/src/Game/registry_destructor.o",
+    "object_sha256": "ccae425f8df68d9332e3b4c7cb0b083c0d9ac330f2e870aa375d825a8fd1268e"
+  }
+}

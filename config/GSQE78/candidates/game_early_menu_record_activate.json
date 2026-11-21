@@ -1,0 +1,619 @@
+[
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/early_menu_record_activate_800ac70c.cpp",
+    "source_sha256": "6836caf66ad1ab1ef5a393f0168d11f8ee8914614b5a8f2c5ac0c0062f0e8604",
+    "source_kind": "c++",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "src/Game",
+      "-i",
+      "include"
+    ],
+    "required_extra_cflags": [
+      "-O4,s",
+      "-Cpp_exceptions on",
+      "-use_lmw_stmw on"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/early_menu_record_activate_views.h",
+        "sha256": "eee06bf1b1d453ff77aad29928444eeca9891b315ebcb3ec2e98a24cc002255c"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148189964,
+        "end": 2148191036,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147552916,
+        "end": 2147552924,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147597708,
+        "end": 2147597720,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800AC70C",
+        "address": 2148189964,
+        "size": 1072,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0,
+        "sha256": "6b44cd7c0703f0b023f91aaaec40c3bfa447e60d53ef626b1dade44c84add50e"
+      }
+    ],
+    "objects": [
+      {
+        "name": "@170",
+        "address": 2147552916,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0,
+        "sha256": "b6318cd7f9813fe7a886d07dc3b2242e1f9254b7b1f2b52188bc703dfc04f63f"
+      },
+      {
+        "name": "@171",
+        "address": 2147597708,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0,
+        "sha256": "daba543abd2545ccff804b9a5dd4b0643838238ae3292b850b95adf5ce784ca6"
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "fn_8002C130",
+        "address": 2147664176,
+        "scope": "global"
+      },
+      {
+        "name": "fn_80057100",
+        "address": 2147840256,
+        "scope": "global"
+      },
+      {
+        "name": "fn_8007705C",
+        "address": 2147971164,
+        "scope": "global"
+      },
+      {
+        "name": "fn_8007D074",
+        "address": 2147995764,
+        "scope": "global"
+      },
+      {
+        "name": "fn_8007D604",
+        "address": 2147997188,
+        "scope": "global"
+      },
+      {
+        "name": "fn_8007D6A0",
+        "address": 2147997344,
+        "scope": "global"
+      },
+      {
+        "name": "fn_80092844",
+        "address": 2148083780,
+        "scope": "global"
+      },
+      {
+        "name": "fn_800A64E0",
+        "address": 2148164832,
+        "scope": "global"
+      },
+      {
+        "name": "fn_800AC2B4",
+        "address": 2148188852,
+        "scope": "global"
+      },
+      {
+        "name": "fn_800AD54C",
+        "address": 2148193612,
+        "scope": "global"
+      },
+      {
+        "name": "fn_800B6C84",
+        "address": 2148232324,
+        "scope": "global"
+      },
+      {
+        "name": "fn_801F7EB8",
+        "address": 2149547704,
+        "scope": "global"
+      },
+      {
+        "name": "fn_801FA014",
+        "address": 2149556244,
+        "scope": "global"
+      },
+      {
+        "name": "game_vec3_zero",
+        "address": 2150894420,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_801E9D24",
+        "address": 2149489956,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_8029EFF8",
+        "address": 2150232056,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_803777B0",
+        "address": 2151118768,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_803777CC",
+        "address": 2151118796,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_803790B8",
+        "address": 2151125176,
+        "scope": "global"
+      }
+    ],
+    "original_metadata_audit": {
+      "status": "all-original-table-ownership-retained",
+      "retained_ranges": [
+        {
+          "start": 2148189964,
+          "end": 2148191036
+        }
+      ],
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "entries": 3141,
+          "scanned_slots": 3144,
+          "references_to_retained_ranges": [
+            {
+              "entry_address": 2147597708,
+              "function": 2148189964,
+              "size": 1072,
+              "extab": 2147552916,
+              "ownership": "retained-source"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "entries": 19,
+          "scanned_slots": 24,
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "entries": 3,
+          "scanned_slots": 8,
+          "references_to_retained_ranges": []
+        }
+      ],
+      "initialized_data_word_references": [
+        {
+          "address": 2147597708,
+          "section_number": 1
+        }
+      ],
+      "initialized_data_words_scanned": 125360,
+      "callable_tables": [],
+      "compiled_source_consumers_unchanged": []
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "83b6f0e489ec5c7b2e055e1d98abed313691bcc5dc9f3b190feaa2baf4b2c0ee",
+      "retained_text_bytes": 1072,
+      "emitted_text_bytes": 1072,
+      "exception_table_bytes": 20,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "weak_functions": 0,
+      "unlinked_text_bytes": 0,
+      "relocations": 38,
+      "text_relocations": 36,
+      "exception_table_relocations": 2,
+      "unlinked_relocations": 0,
+      "nonallocated_metadata_relocations": 1,
+      "all_retained_allocated_bytes_verified": true,
+      "all_emitted_allocated_bytes_accounted": true,
+      "all_original_exception_ownership_retained": true,
+      "zero_byte_differences": true,
+      "verification_script": "/Users/brandenb/Downloads/rotfd/scratch/game_early_menu_record_activate/production_800ac70c/verify.py"
+    },
+    "notes": "docs/notes/game-early-menu-record-activate.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 120,
+        "address": 2148190084,
+        "kind": 109,
+        "symbol": "lbl_803790B8",
+        "target": 2151125176,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 162,
+        "address": 2148190126,
+        "kind": 6,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 166,
+        "address": 2148190130,
+        "kind": 4,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 198,
+        "address": 2148190162,
+        "kind": 6,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 202,
+        "address": 2148190166,
+        "kind": 6,
+        "symbol": "lbl_8029EFF8",
+        "target": 2150232056,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 206,
+        "address": 2148190170,
+        "kind": 4,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 214,
+        "address": 2148190178,
+        "kind": 4,
+        "symbol": "lbl_8029EFF8",
+        "target": 2150232056,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 224,
+        "address": 2148190188,
+        "kind": 10,
+        "symbol": "fn_801FA014",
+        "target": 2149556244,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 232,
+        "address": 2148190196,
+        "kind": 10,
+        "symbol": "fn_800AD54C",
+        "target": 2148193612,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 260,
+        "address": 2148190224,
+        "kind": 10,
+        "symbol": "fn_800AC2B4",
+        "target": 2148188852,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 298,
+        "address": 2148190262,
+        "kind": 6,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 302,
+        "address": 2148190266,
+        "kind": 4,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 384,
+        "address": 2148190348,
+        "kind": 10,
+        "symbol": "fn_800A64E0",
+        "target": 2148164832,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 390,
+        "address": 2148190354,
+        "kind": 6,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 392,
+        "address": 2148190356,
+        "kind": 109,
+        "symbol": "lbl_803777CC",
+        "target": 2151118796,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 398,
+        "address": 2148190362,
+        "kind": 4,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 420,
+        "address": 2148190384,
+        "kind": 109,
+        "symbol": "lbl_803777B0",
+        "target": 2151118768,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 428,
+        "address": 2148190392,
+        "kind": 10,
+        "symbol": "fn_800B6C84",
+        "target": 2148232324,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 434,
+        "address": 2148190398,
+        "kind": 6,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 438,
+        "address": 2148190402,
+        "kind": 4,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 584,
+        "address": 2148190548,
+        "kind": 10,
+        "symbol": "fn_801F7EB8",
+        "target": 2149547704,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 676,
+        "address": 2148190640,
+        "kind": 10,
+        "symbol": "fn_8007D604",
+        "target": 2147997188,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 696,
+        "address": 2148190660,
+        "kind": 10,
+        "symbol": "fn_8007D604",
+        "target": 2147997188,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 716,
+        "address": 2148190680,
+        "kind": 10,
+        "symbol": "fn_8007D604",
+        "target": 2147997188,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 736,
+        "address": 2148190700,
+        "kind": 10,
+        "symbol": "fn_8007D604",
+        "target": 2147997188,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 764,
+        "address": 2148190728,
+        "kind": 10,
+        "symbol": "fn_80092844",
+        "target": 2148083780,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 780,
+        "address": 2148190744,
+        "kind": 10,
+        "symbol": "fn_8007D6A0",
+        "target": 2147997344,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 952,
+        "address": 2148190916,
+        "kind": 10,
+        "symbol": "fn_8002C130",
+        "target": 2147664176,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 958,
+        "address": 2148190922,
+        "kind": 6,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 966,
+        "address": 2148190930,
+        "kind": 4,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 980,
+        "address": 2148190944,
+        "kind": 10,
+        "symbol": "fn_80057100",
+        "target": 2147840256,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 984,
+        "address": 2148190948,
+        "kind": 10,
+        "symbol": "fn_8007D074",
+        "target": 2147995764,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 1000,
+        "address": 2148190964,
+        "kind": 10,
+        "symbol": "fn_8007D074",
+        "target": 2147995764,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 1020,
+        "address": 2148190984,
+        "kind": 10,
+        "symbol": "fn_8007705C",
+        "target": 2147971164,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 1026,
+        "address": 2148190990,
+        "kind": 6,
+        "symbol": "game_vec3_zero",
+        "target": 2150894420,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 1030,
+        "address": 2148190994,
+        "kind": 4,
+        "symbol": "game_vec3_zero",
+        "target": 2150894420,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147597708,
+        "kind": 1,
+        "symbol": "fn_800AC70C",
+        "target": 2148189964,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147597716,
+        "kind": 1,
+        "symbol": "@170",
+        "target": 2147552916,
+        "addend": 0
+      }
+    ]
+  }
+]

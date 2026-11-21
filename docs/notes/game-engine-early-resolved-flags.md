@@ -1,0 +1,15 @@
+# Early resolved flags and facing controls
+
+Accepted matching source: the production build passes the original DOL hash,
+strict allocated-byte/extent and actual-relocation checks, baseline regression
+checks, generated progress verification and all 26 repository tests.
+
+Four ordinary C++ units recover576 original text bytes and80 original exception/index bytes in strict fresh production-source recompiles. All emitted allocations, symbols, compiler categories and actual relocation targets are verified; no weak backups, extra data, aliases, migrations or new gates are emitted. Parent integration must still pass the full original DOL hash and regression checks.
+
+fn_80027E38 (148 bytes) queries whether the resolved target's word+0x120 has any requested bits. fn_80027F54 and fn_80027FE4 (144 bytes each) set or clear those bits. All three obtain a const Handle reference from original virtual slot9C, with the caller's index argument, and use the established signed tag/index Handle, global manager+118, entries+8 and16-byte record stride with object+0/generation+C. The owner has an opaque8-byte prefix and vptr+8. Query uses a named loaded flags word followed by an integer ternary; the direct bool-to-int comparison emitted an extra narrowing instruction, and a direct ternary differed in the sole commutative AND operand order. Reversing direct operands did not fix it; the ordinary named field value closes all bytes. Those rejected probes are preserved and uncredited.
+
+fn_80027C58 (140 bytes) forwards the three original FacingPoint pointers, integer index and float delta to existing fn_80222CFC. If the nested component at+318 has nonnegative state+8 and disabled byte+3D clear, it obtains the existing controller and forwards the same arguments to original virtual slot18. This preserves the established typed facing ABI of the accepted callee. Private component storage, state and flag offsets derive directly from original accesses; no full original class reconstruction is asserted. Its saved FPR/GPR metadata is exact.
+
+Every unit owns its original8-byte exception record and12-byte index. Full extabindex80015F60..8001F2C0, constructor80299920..80299980 and destructor80299980..802999A0 scans show no additional startup/termination entries. All original initialized-data pointers and source/header consumers are inventoried; existing C entry names and original tables, globals and data owners remain unchanged. The three forwards/setters matched on their first probes; only the flag query required the bounded ordinary source refinement above.
+
+GC1.3.2 uses established -O4,s -inline auto -Cpp_exceptions on -use_lmw_stmw on flags. final_integration.json pins exact source hashes, original ranges and actual undefined ELF dependencies; allocated_inventory.json pins raw allocations, symbols, compiler categories and relocations. verify.py recompiles final production sources and verifies code plus metadata without masking. New sources have no quoted headers. Central configuration, shared declarations, accepted source, frozen old handoffs and verifier cores are untouched; config/split snippets remain proposals only.

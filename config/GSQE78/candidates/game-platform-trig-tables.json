@@ -1,0 +1,99 @@
+{
+  "status": "integrated-byte-match",
+  "source": "src/Game/platform_trig_tables.cpp",
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-proc",
+    "gekko",
+    "-fp",
+    "hardware",
+    "-enum",
+    "int",
+    "-str",
+    "reuse",
+    "-common",
+    "off",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-Cpp_exceptions",
+    "off",
+    "-RTTI",
+    "off",
+    "-use_lmw_stmw",
+    "on",
+    "-i",
+    "include",
+    "-i",
+    "src/Game"
+  ],
+  "source_kind": "c++",
+  "sections": [
+    {
+      "name": ".bss",
+      "start": 2151011232,
+      "end": 2151011620,
+      "alignment": 8
+    }
+  ],
+  "functions": [],
+  "objects": [
+    {
+      "name": "lbl_8035D3A0",
+      "address": 2151011232,
+      "size": 256,
+      "section": ".bss",
+      "scope": "global",
+      "object_offset": 0,
+      "sha256": "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1"
+    },
+    {
+      "name": "lbl_8035D4A0",
+      "address": 2151011488,
+      "size": 132,
+      "section": ".bss",
+      "scope": "global",
+      "object_offset": 256,
+      "sha256": "115bad14f1c9f2c027a84de21b107015722cb76be8d0abf3760ad8e00d6c24a5"
+    }
+  ],
+  "unlinked_functions": [],
+  "dependency_symbols": [],
+  "source_sha256": "c8712279b8b4e75be560517eb47f38b119b0658888e857edfabd6ba26ae36f26",
+  "headers": [
+    {
+      "path": "include/Game/platform_trig_tables_internal.h",
+      "sha256": "dc303f2391d10d7fea75780e03077ac661be1987389bdedd0244d49828536fae"
+    }
+  ],
+  "validation": {
+    "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "object_sha256": "69fbbf14abc6f2a3e18fae168f5208eeca0c96316980487d26230853c838702c",
+    "retained_text_bytes": 0,
+    "emitted_text_bytes": 0,
+    "initialized_data_bytes": 0,
+    "bss_bytes": 388,
+    "emitted_data_bytes": 388,
+    "unlinked_text_bytes": 0,
+    "weak_functions": 0,
+    "relocations": 0,
+    "zero_byte_differences": true,
+    "all_retained_allocated_bytes_verified": true,
+    "all_emitted_allocated_bytes_accounted": true,
+    "owned_padding_bytes": 0,
+    "verification_script": "scratch/game_platform_trig_tables/verify.py",
+    "bss_validation": "Exact NOBITS type, extent, alignment and strong array symbols; wholly inside original DOL zero-initialized BSS; four-byte tail excluded.",
+    "integration_status": "verified full-DOL and objdiff"
+  },
+  "notes": "docs/notes/game-platform-trig-tables.md",
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "c8712279b8b4e75be560517eb47f38b119b0658888e857edfabd6ba26ae36f26",
+    "matched_code": 0,
+    "matched_functions": 0,
+    "matched_data": 388,
+    "complete_data": 388,
+    "object_path": "build/GSQE78/src/Game/platform_trig_tables.o",
+    "object_sha256": "69fbbf14abc6f2a3e18fae168f5208eeca0c96316980487d26230853c838702c"
+  }
+}

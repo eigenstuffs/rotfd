@@ -1,0 +1,86 @@
+{
+  "source": "src/Game/class_lifetime_800C4F40.cpp",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-proc",
+    "gekko",
+    "-fp",
+    "hardware",
+    "-enum",
+    "int",
+    "-str",
+    "reuse",
+    "-common",
+    "off",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-Cpp_exceptions",
+    "on",
+    "-use_lmw_stmw",
+    "on",
+    "-i",
+    "src/Game"
+  ],
+  "sections": {
+    "extab": [
+      2147560440,
+      2147560448
+    ],
+    "extabindex": [
+      2147601920,
+      2147601932
+    ],
+    ".text": [
+      2148290368,
+      2148290428
+    ]
+  },
+  "functions": [
+    {
+      "name": "fn_800C4F40",
+      "address": 2148290368,
+      "size": 60,
+      "section": ".text",
+      "scope": "global"
+    }
+  ],
+  "objects": [
+    {
+      "name": "@5",
+      "address": 2147560440,
+      "size": 8,
+      "section": "extab",
+      "scope": "local"
+    },
+    {
+      "name": "@6",
+      "address": 2147601920,
+      "size": 12,
+      "section": "extabindex",
+      "scope": "local"
+    }
+  ],
+  "source_kind": "c++",
+  "dependency_symbols": [],
+  "notes": "docs/notes/game-class-registry.md",
+  "source_sha256": "89a500437662120f075a2d7d7266a2f7c62386bb333c4714b6c516562c316857",
+  "validation": {
+    "relocations": 6,
+    "text_bytes": 60,
+    "initialized_data_bytes": 20,
+    "zero_byte_differences": true,
+    "integration_status": "verified full-DOL and objdiff"
+  },
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "89a500437662120f075a2d7d7266a2f7c62386bb333c4714b6c516562c316857",
+    "matched_code": 60,
+    "matched_functions": 1,
+    "matched_data": 20,
+    "complete_data": 20,
+    "object_path": "build/GSQE78/src/Game/class_lifetime_800C4F40.o",
+    "object_sha256": "2ef69df499779218bd0cb863845e72c7db9f245f5bbd2dd6b0abee86eab06fd9"
+  }
+}

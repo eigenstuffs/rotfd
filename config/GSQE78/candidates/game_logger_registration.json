@@ -1,0 +1,98 @@
+{
+  "source": "src/Game/logger_registration.cpp",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.3.2",
+  "cflags": "-proc gekko -fp hardware -enum int -str reuse,readonly -common off -O4,p -inline deferred -Cpp_exceptions off -RTTI off -use_lmw_stmw on",
+  "splits": [
+    {
+      "section": ".text",
+      "start": "0x801fac64",
+      "end": "0x801fadd0"
+    },
+    {
+      "section": ".rodata",
+      "start": "0x802ad598",
+      "end": "0x802ad5bd"
+    }
+  ],
+  "functions": [
+    {
+      "name": "fn_801FAC64",
+      "section": ".text",
+      "address": "0x801fac64",
+      "size": "0x16c",
+      "scope": "global",
+      "original_name": "fn_801FAC64"
+    }
+  ],
+  "data_symbols": [
+    {
+      "name": "lbl_802AD598",
+      "section": ".rodata",
+      "address": "0x802ad598",
+      "size": "0xe",
+      "scope": "global",
+      "original_name": "lbl_802AD598"
+    },
+    {
+      "name": "lbl_802AD5A8",
+      "section": ".rodata",
+      "address": "0x802ad5a8",
+      "size": "0x15",
+      "scope": "global",
+      "original_name": "lbl_802AD5A8"
+    }
+  ],
+  "section_anchors": [],
+  "dependency_symbols": [
+    {
+      "name": "lbl_801EF5C8",
+      "address": "0x801ef5c8"
+    },
+    {
+      "name": "fn_801EFA1C",
+      "address": "0x801efa1c"
+    },
+    {
+      "name": "strcpy",
+      "address": "0x80128540"
+    },
+    {
+      "name": "strlen",
+      "address": "0x801285f8"
+    },
+    {
+      "name": "strcmp",
+      "address": "0x801283a8"
+    },
+    {
+      "name": "fn_801EF610",
+      "address": "0x801ef610"
+    }
+  ],
+  "notes": "docs/notes/game-console-commands.md",
+  "split_notes": [
+    "Ordinary console-command registration with an observed220-byte node. The fixed16-byte abbreviation buffer uses a C++ indexing helper; all source code and allocation metadata bytes are exact. The three trailing original padding bytes remain outside ownership."
+  ],
+  "validation": {
+    "code_bytes": 364,
+    "emitted_data_bytes": 37,
+    "bss_layout_bytes": 0,
+    "relocations_applied": 14,
+    "byte_differences": 0,
+    "source_sha256": "2e6445945bcd5dde3e611c335fba9faae22652ed417aa8a25a8d25e851107e80",
+    "object_sha256": "6299809f6703c671df5801414e4923e21bc622398a02e15d0da2eea389b9bd8e",
+    "original_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "integration_status": "verified full-DOL and objdiff"
+  },
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "2e6445945bcd5dde3e611c335fba9faae22652ed417aa8a25a8d25e851107e80",
+    "matched_code": 364,
+    "matched_functions": 1,
+    "matched_data": 37,
+    "complete_data": 37,
+    "object_path": "build/GSQE78/src/Game/logger_registration.o",
+    "object_sha256": "6299809f6703c671df5801414e4923e21bc622398a02e15d0da2eea389b9bd8e"
+  }
+}

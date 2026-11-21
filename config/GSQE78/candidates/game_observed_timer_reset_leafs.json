@@ -1,0 +1,1393 @@
+[
+  {
+    "status": "isolated-byte-match-parent-integration-pending",
+    "source": "src/Game/observed_timer_reset_80027C14.cpp",
+    "source_sha256": "d029f20aba74a57bc15785b1cc38c143c59904a4dedd566c47b61e7609b4daf6",
+    "headers": [],
+    "header_sha256": {},
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "750",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2147646484,
+        "end": 2147646552,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147509628,
+        "end": 2147509636,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147575244,
+        "end": 2147575256,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_80027C14",
+        "address": 2147646484,
+        "size": 68,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@5",
+        "section": "extab",
+        "object_offset": 0,
+        "address": 2147509628,
+        "size": 8,
+        "scope": "local"
+      },
+      {
+        "name": "@6",
+        "section": "extabindex",
+        "object_offset": 0,
+        "address": 2147575244,
+        "size": 12,
+        "scope": "local"
+      }
+    ],
+    "unlinked_functions": [],
+    "verified_text_bytes": 68,
+    "verified_data_bytes": 20,
+    "notes": "docs/notes/game-observed-timer-reset-leafs.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 28,
+        "address": 2147646512,
+        "kind": 10,
+        "symbol": "fn_80222E44",
+        "target": 2149723716,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 40,
+        "address": 2147646524,
+        "kind": 10,
+        "symbol": "fn_8007DA74",
+        "target": 2147998324,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147575244,
+        "kind": 1,
+        "symbol": "fn_80027C14",
+        "target": 2147646484,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147575252,
+        "kind": 1,
+        "symbol": "@5",
+        "target": 2147509628,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "fn_8007DA74",
+        "section": ".text",
+        "address": 2147998324,
+        "scope": "global"
+      },
+      {
+        "name": "fn_80222E44",
+        "section": ".text",
+        "address": 2149723716,
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "object_sha256": "1a613a17964aca45a7fb0e2812de5970c9c742b1e30924514dc5cc0e897c3147",
+      "retained_text_bytes": 68,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 4,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match-parent-integration-pending",
+    "source": "src/Game/observed_timer_reset_80073AF8.cpp",
+    "source_sha256": "1b10248d936fee8f1c680a8eea61bb7bafb744f820657b0f723c06ded6cb08ae",
+    "headers": [],
+    "header_sha256": {},
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2147957496,
+        "end": 2147957560,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147535200,
+        "end": 2147535208,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147586920,
+        "end": 2147586932,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_80073AF8",
+        "address": 2147957496,
+        "size": 64,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@5",
+        "section": "extab",
+        "object_offset": 0,
+        "address": 2147535200,
+        "size": 8,
+        "scope": "local"
+      },
+      {
+        "name": "@6",
+        "section": "extabindex",
+        "object_offset": 0,
+        "address": 2147586920,
+        "size": 12,
+        "scope": "local"
+      }
+    ],
+    "unlinked_functions": [],
+    "verified_text_bytes": 64,
+    "verified_data_bytes": 20,
+    "notes": "docs/notes/game-observed-timer-reset-leafs.md",
+    "actual_relocations": [
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147586920,
+        "kind": 1,
+        "symbol": "fn_80073AF8",
+        "target": 2147957496,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147586928,
+        "kind": 1,
+        "symbol": "@5",
+        "target": 2147535200,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [],
+    "validation": {
+      "object_sha256": "8aa0e1a9ce67ff38bb6684288c5000837da4869cc7f69a75ed7960ab5252b0d9",
+      "retained_text_bytes": 64,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 2,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match-parent-integration-pending",
+    "source": "src/Game/observed_timer_reset_800746AC.cpp",
+    "source_sha256": "7496277b308aa488db105e51188ff16de6cec0e8c3a34734f8617fb657a6ffe4",
+    "headers": [],
+    "header_sha256": {},
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2147960492,
+        "end": 2147960584,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147535420,
+        "end": 2147535428,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147587076,
+        "end": 2147587088,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800746AC",
+        "address": 2147960492,
+        "size": 92,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@5",
+        "section": "extab",
+        "object_offset": 0,
+        "address": 2147535420,
+        "size": 8,
+        "scope": "local"
+      },
+      {
+        "name": "@6",
+        "section": "extabindex",
+        "object_offset": 0,
+        "address": 2147587076,
+        "size": 12,
+        "scope": "local"
+      }
+    ],
+    "unlinked_functions": [],
+    "verified_text_bytes": 92,
+    "verified_data_bytes": 20,
+    "notes": "docs/notes/game-observed-timer-reset-leafs.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 8,
+        "address": 2147960500,
+        "kind": 109,
+        "symbol": "lbl_80378968",
+        "target": 2151123304,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 32,
+        "address": 2147960524,
+        "kind": 10,
+        "symbol": "fn_801F1200",
+        "target": 2149519872,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 36,
+        "address": 2147960528,
+        "kind": 109,
+        "symbol": "lbl_8037896C",
+        "target": 2151123308,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147587076,
+        "kind": 1,
+        "symbol": "fn_800746AC",
+        "target": 2147960492,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147587084,
+        "kind": 1,
+        "symbol": "@5",
+        "target": 2147535420,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "fn_801F1200",
+        "section": ".text",
+        "address": 2149519872,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_80378968",
+        "section": ".sdata2",
+        "address": 2151123304,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_8037896C",
+        "section": ".sdata2",
+        "address": 2151123308,
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "object_sha256": "ff840b7a274f59ec71138607ba44a9bac3b001d096861a26c80764d32a40ac75",
+      "retained_text_bytes": 92,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 5,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match-parent-integration-pending",
+    "source": "src/Game/observed_timer_reset_80084264.cpp",
+    "source_sha256": "edbf2a7d51c3c8b1b3acf212a7325764b5f59bee954d9109ecf6f3aca67f0b5d",
+    "headers": [],
+    "header_sha256": {},
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148024932,
+        "end": 2148025008,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147539952,
+        "end": 2147539960,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147589824,
+        "end": 2147589836,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_80084264",
+        "address": 2148024932,
+        "size": 76,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@8",
+        "section": "extab",
+        "object_offset": 0,
+        "address": 2147539952,
+        "size": 8,
+        "scope": "local"
+      },
+      {
+        "name": "@9",
+        "section": "extabindex",
+        "object_offset": 0,
+        "address": 2147589824,
+        "size": 12,
+        "scope": "local"
+      }
+    ],
+    "unlinked_functions": [],
+    "verified_text_bytes": 76,
+    "verified_data_bytes": 20,
+    "notes": "docs/notes/game-observed-timer-reset-leafs.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 36,
+        "address": 2148024968,
+        "kind": 10,
+        "symbol": "fn_80092844",
+        "target": 2148083780,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 52,
+        "address": 2148024984,
+        "kind": 10,
+        "symbol": "fn_8007D6A0",
+        "target": 2147997344,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147589824,
+        "kind": 1,
+        "symbol": "fn_80084264",
+        "target": 2148024932,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147589832,
+        "kind": 1,
+        "symbol": "@8",
+        "target": 2147539952,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "fn_8007D6A0",
+        "section": ".text",
+        "address": 2147997344,
+        "scope": "global"
+      },
+      {
+        "name": "fn_80092844",
+        "section": ".text",
+        "address": 2148083780,
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "object_sha256": "a4e4eebc92e1ee70fcfe6e29c25322be03da7c76c65d76de275b6a4d84525d89",
+      "retained_text_bytes": 76,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 4,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match-parent-integration-pending",
+    "source": "src/Game/observed_timer_reset_8008452C.cpp",
+    "source_sha256": "31913045e0ffd31849c66564a40c9a5644e1b33235b787a3fe9a030c2fccbef2",
+    "headers": [],
+    "header_sha256": {},
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148025644,
+        "end": 2148025720,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147540000,
+        "end": 2147540008,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147589872,
+        "end": 2147589884,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_8008452C",
+        "address": 2148025644,
+        "size": 76,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@8",
+        "section": "extab",
+        "object_offset": 0,
+        "address": 2147540000,
+        "size": 8,
+        "scope": "local"
+      },
+      {
+        "name": "@9",
+        "section": "extabindex",
+        "object_offset": 0,
+        "address": 2147589872,
+        "size": 12,
+        "scope": "local"
+      }
+    ],
+    "unlinked_functions": [],
+    "verified_text_bytes": 76,
+    "verified_data_bytes": 20,
+    "notes": "docs/notes/game-observed-timer-reset-leafs.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 36,
+        "address": 2148025680,
+        "kind": 10,
+        "symbol": "fn_80092844",
+        "target": 2148083780,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 52,
+        "address": 2148025696,
+        "kind": 10,
+        "symbol": "fn_8007D6A0",
+        "target": 2147997344,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147589872,
+        "kind": 1,
+        "symbol": "fn_8008452C",
+        "target": 2148025644,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147589880,
+        "kind": 1,
+        "symbol": "@8",
+        "target": 2147540000,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "fn_8007D6A0",
+        "section": ".text",
+        "address": 2147997344,
+        "scope": "global"
+      },
+      {
+        "name": "fn_80092844",
+        "section": ".text",
+        "address": 2148083780,
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "object_sha256": "95fa68d6f3472a00274a421152eef245ab9124b7b1269c939332ab5c6c686187",
+      "retained_text_bytes": 76,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 4,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match-parent-integration-pending",
+    "source": "src/Game/observed_timer_reset_80087F84.cpp",
+    "source_sha256": "b499d562f4573a80646f9fc8716225e3e13d64dc134db570e65c0b6a3dea885e",
+    "headers": [],
+    "header_sha256": {},
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "750",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148040580,
+        "end": 2148040676,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147541000,
+        "end": 2147541008,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147590628,
+        "end": 2147590640,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_80087F84",
+        "address": 2148040580,
+        "size": 96,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@7",
+        "section": "extab",
+        "object_offset": 0,
+        "address": 2147541000,
+        "size": 8,
+        "scope": "local"
+      },
+      {
+        "name": "@8",
+        "section": "extabindex",
+        "object_offset": 0,
+        "address": 2147590628,
+        "size": 12,
+        "scope": "local"
+      }
+    ],
+    "unlinked_functions": [],
+    "verified_text_bytes": 96,
+    "verified_data_bytes": 20,
+    "notes": "docs/notes/game-observed-timer-reset-leafs.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 32,
+        "address": 2148040612,
+        "kind": 10,
+        "symbol": "fn_80092844",
+        "target": 2148083780,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 56,
+        "address": 2148040636,
+        "kind": 10,
+        "symbol": "fn_8007D6A0",
+        "target": 2147997344,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 68,
+        "address": 2148040648,
+        "kind": 10,
+        "symbol": "fn_80092DAC",
+        "target": 2148085164,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147590628,
+        "kind": 1,
+        "symbol": "fn_80087F84",
+        "target": 2148040580,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147590636,
+        "kind": 1,
+        "symbol": "@7",
+        "target": 2147541000,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "fn_8007D6A0",
+        "section": ".text",
+        "address": 2147997344,
+        "scope": "global"
+      },
+      {
+        "name": "fn_80092844",
+        "section": ".text",
+        "address": 2148083780,
+        "scope": "global"
+      },
+      {
+        "name": "fn_80092DAC",
+        "section": ".text",
+        "address": 2148085164,
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "object_sha256": "c0125ac0af3744ee57fd263cfcc68f2ac74dde5f9d625122e3aa9b5c538280ab",
+      "retained_text_bytes": 96,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 5,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match-parent-integration-pending",
+    "source": "src/Game/observed_timer_reset_80088E94.cpp",
+    "source_sha256": "1eadb4482d66e6e1e8e8390bc54d3e9ac64c685e1ace9bd62e5e34bdf459e8d9",
+    "headers": [],
+    "header_sha256": {},
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148044436,
+        "end": 2148044512,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147541408,
+        "end": 2147541416,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147590880,
+        "end": 2147590892,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_80088E94",
+        "address": 2148044436,
+        "size": 76,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@8",
+        "section": "extab",
+        "object_offset": 0,
+        "address": 2147541408,
+        "size": 8,
+        "scope": "local"
+      },
+      {
+        "name": "@9",
+        "section": "extabindex",
+        "object_offset": 0,
+        "address": 2147590880,
+        "size": 12,
+        "scope": "local"
+      }
+    ],
+    "unlinked_functions": [],
+    "verified_text_bytes": 76,
+    "verified_data_bytes": 20,
+    "notes": "docs/notes/game-observed-timer-reset-leafs.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 24,
+        "address": 2148044460,
+        "kind": 10,
+        "symbol": "fn_80092DAC",
+        "target": 2148085164,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 52,
+        "address": 2148044488,
+        "kind": 10,
+        "symbol": "fn_8007D6A0",
+        "target": 2147997344,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147590880,
+        "kind": 1,
+        "symbol": "fn_80088E94",
+        "target": 2148044436,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147590888,
+        "kind": 1,
+        "symbol": "@8",
+        "target": 2147541408,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "fn_8007D6A0",
+        "section": ".text",
+        "address": 2147997344,
+        "scope": "global"
+      },
+      {
+        "name": "fn_80092DAC",
+        "section": ".text",
+        "address": 2148085164,
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "object_sha256": "f57144e635308d37fc3fab9064bf4966f0bed932fbb8a6b7f1a6f1a9b8c6fc23",
+      "retained_text_bytes": 76,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 4,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match-parent-integration-pending",
+    "source": "src/Game/observed_timer_reset_8009C708.cpp",
+    "source_sha256": "e446d9e504532107641ead1efcc6dbfb3276c099f78d4a2e3e71bb74e1873f76",
+    "headers": [],
+    "header_sha256": {},
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148124424,
+        "end": 2148124500,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147547644,
+        "end": 2147547652,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147594516,
+        "end": 2147594528,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_8009C708",
+        "address": 2148124424,
+        "size": 76,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@7",
+        "section": "extab",
+        "object_offset": 0,
+        "address": 2147547644,
+        "size": 8,
+        "scope": "local"
+      },
+      {
+        "name": "@8",
+        "section": "extabindex",
+        "object_offset": 0,
+        "address": 2147594516,
+        "size": 12,
+        "scope": "local"
+      }
+    ],
+    "unlinked_functions": [],
+    "verified_text_bytes": 76,
+    "verified_data_bytes": 20,
+    "notes": "docs/notes/game-observed-timer-reset-leafs.md",
+    "actual_relocations": [
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147594516,
+        "kind": 1,
+        "symbol": "fn_8009C708",
+        "target": 2148124424,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147594524,
+        "kind": 1,
+        "symbol": "@7",
+        "target": 2147547644,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [],
+    "validation": {
+      "object_sha256": "f2bcbc31a54347248777ef18884128a80025c10cf4a4724e7ceb22bda01fd409",
+      "retained_text_bytes": 76,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 2,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match-parent-integration-pending",
+    "source": "src/Game/observed_timer_reset_800B50DC.cpp",
+    "source_sha256": "90d128907362e01b8e51384e971813ba7547f73ec21d1166d37d9b5c67f226ad",
+    "headers": [],
+    "header_sha256": {},
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148225244,
+        "end": 2148225332,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147555296,
+        "end": 2147555304,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147598404,
+        "end": 2147598416,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800B50DC",
+        "address": 2148225244,
+        "size": 88,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@7",
+        "section": "extab",
+        "object_offset": 0,
+        "address": 2147555296,
+        "size": 8,
+        "scope": "local"
+      },
+      {
+        "name": "@8",
+        "section": "extabindex",
+        "object_offset": 0,
+        "address": 2147598404,
+        "size": 12,
+        "scope": "local"
+      }
+    ],
+    "unlinked_functions": [],
+    "verified_text_bytes": 88,
+    "verified_data_bytes": 20,
+    "notes": "docs/notes/game-observed-timer-reset-leafs.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 30,
+        "address": 2148225274,
+        "kind": 6,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 38,
+        "address": 2148225282,
+        "kind": 4,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147598404,
+        "kind": 1,
+        "symbol": "fn_800B50DC",
+        "target": 2148225244,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147598412,
+        "kind": 1,
+        "symbol": "@7",
+        "target": 2147555296,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "lbl_801E9D24",
+        "section": ".text",
+        "address": 2149489956,
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "object_sha256": "d1bb474ecce45a8ea17812c4f77c93836ede97a201a9ba4a4d916e37fca6c74d",
+      "retained_text_bytes": 88,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 4,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match-parent-integration-pending",
+    "source": "src/Game/observed_timer_reset_800B5134.cpp",
+    "source_sha256": "a64c613d08ec437a2d8b29a5e004d5767461f4f1a87b38b274eca8bc27970d7e",
+    "headers": [],
+    "header_sha256": {},
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148225332,
+        "end": 2148225416,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147555304,
+        "end": 2147555312,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147598416,
+        "end": 2147598428,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800B5134",
+        "address": 2148225332,
+        "size": 84,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@5",
+        "section": "extab",
+        "object_offset": 0,
+        "address": 2147555304,
+        "size": 8,
+        "scope": "local"
+      },
+      {
+        "name": "@6",
+        "section": "extabindex",
+        "object_offset": 0,
+        "address": 2147598416,
+        "size": 12,
+        "scope": "local"
+      }
+    ],
+    "unlinked_functions": [],
+    "verified_text_bytes": 84,
+    "verified_data_bytes": 20,
+    "notes": "docs/notes/game-observed-timer-reset-leafs.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 10,
+        "address": 2148225342,
+        "kind": 6,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 12,
+        "address": 2148225344,
+        "kind": 109,
+        "symbol": "lbl_80379354",
+        "target": 2151125844,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 26,
+        "address": 2148225358,
+        "kind": 4,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147598416,
+        "kind": 1,
+        "symbol": "fn_800B5134",
+        "target": 2148225332,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147598424,
+        "kind": 1,
+        "symbol": "@5",
+        "target": 2147555304,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "lbl_801E9D24",
+        "section": ".text",
+        "address": 2149489956,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_80379354",
+        "section": ".sdata2",
+        "address": 2151125844,
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "object_sha256": "448a1a6b7d2efe6f856b57b7fbebe2ff47c477de2fb16dae4123d1882b93302d",
+      "retained_text_bytes": 84,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 5,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  }
+]

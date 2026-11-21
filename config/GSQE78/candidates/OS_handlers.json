@@ -1,0 +1,54 @@
+{
+  "source": "src/dolphin/os/OS_handlers.c",
+  "status": "integrated-byte-match",
+  "source_kind": "c",
+  "compiler": "GC/1.2.5n",
+  "cflags": "-proc gekko -fp hardware -enum int -str reuse -common off -O4,p -opt nopeephole -inline auto -Cpp_exceptions off -i src/dolphin/os -i src/dolphin/dvd",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2148472616,
+      "end": 2148472664
+    }
+  ],
+  "functions": [
+    {
+      "name": "__OSSetExceptionHandler",
+      "address": 2148472616,
+      "size": 28
+    },
+    {
+      "name": "__OSGetExceptionHandler",
+      "address": 2148472644,
+      "size": 20
+    }
+  ],
+  "objects": [],
+  "symbol_scopes": {
+    "__OSSetExceptionHandler": "global",
+    "__OSGetExceptionHandler": "global"
+  },
+  "symbols": {
+    "__OSSetExceptionHandler": "0x800f1728",
+    "__OSGetExceptionHandler": "0x800f1744",
+    "OSExceptionTable": "0x803778e4"
+  },
+  "external_original_names": {
+    "OSExceptionTable": "OSExceptionTable_803778E4"
+  },
+  "verified_text_bytes": 48,
+  "verified_data_bytes": 0,
+  "section_alignments": {
+    ".text": 4
+  },
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "8f3ca414a21c190147d4d35381fb599396649b78ef0768de4ec3b0136579e8ee",
+    "matched_code": 48,
+    "matched_functions": 2,
+    "matched_data": 0,
+    "complete_data": 0,
+    "object_path": "build/GSQE78/src/dolphin/os/OS_handlers.o",
+    "object_sha256": "1d653a7838a33941f7b948c0c1f40c5d7dfc6fc8dfb73e0197388db5495fbdad"
+  }
+}

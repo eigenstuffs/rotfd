@@ -1,0 +1,231 @@
+{
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-lang c++",
+    "-proc gekko",
+    "-fp hardware",
+    "-enum int",
+    "-str reuse",
+    "-common off",
+    "-O4,p",
+    "-inline auto",
+    "-Cpp_exceptions off",
+    "-use_lmw_stmw on",
+    "-i src/Game"
+  ],
+  "source": "src/Game/hierarchy_camera_setup.cpp",
+  "headers": [
+    "src/Game/hierarchy_camera_setup_internal.h"
+  ],
+  "status": "near-match-unregistered",
+  "scope": "One observed hierarchy setup/list-construction method. Original TU and complete shared string-pool extent are not established; all referenced constants remain original.",
+  "splits": [
+    {
+      "section": ".text",
+      "start": "0x80202a18",
+      "end": "0x802030c4"
+    }
+  ],
+  "functions": [
+    {
+      "name": "fn_80202A18",
+      "original_name": "fn_80202A18",
+      "address": "0x80202a18",
+      "size": "0x6ac",
+      "scope": "global"
+    }
+  ],
+  "unlinked_functions": [
+    {
+      "name": "__dt__19SetupOwnedHandle<1>Fv",
+      "object_offset": "0x6ac",
+      "size": "0x58",
+      "binding": "weak",
+      "reason": "Unreferenced compiler-generated destructor body; excluded from the retained candidate and progress."
+    },
+    {
+      "name": "__dt__19SetupOwnedHandle<2>Fv",
+      "object_offset": "0x704",
+      "size": "0x5c",
+      "binding": "weak",
+      "reason": "Unreferenced compiler-generated destructor body; excluded from the retained candidate and progress."
+    },
+    {
+      "name": "__dt__24HierarchyResizeHandle<2>Fv",
+      "object_offset": "0x760",
+      "size": "0x58",
+      "binding": "weak",
+      "reason": "Unreferenced compiler-generated destructor body; excluded from the retained candidate and progress."
+    },
+    {
+      "name": "__dt__11FoundHandleFv",
+      "object_offset": "0x7b8",
+      "size": "0x54",
+      "binding": "weak",
+      "reason": "Unreferenced compiler-generated destructor body; excluded from the retained candidate and progress."
+    },
+    {
+      "name": "__dt__24HierarchyResizeHandle<1>Fv",
+      "object_offset": "0x80c",
+      "size": "0x54",
+      "binding": "weak",
+      "reason": "Unreferenced compiler-generated destructor body; excluded from the retained candidate and progress."
+    }
+  ],
+  "data_symbols": [],
+  "dependency_symbols": [
+    {
+      "name": "lbl_802AD8F8",
+      "address": "0x802AD8F8",
+      "section": ".rodata"
+    },
+    {
+      "name": "lbl_8028F698",
+      "address": "0x8028F698",
+      "section": ".text"
+    },
+    {
+      "name": "lbl_801E9D24",
+      "address": "0x801E9D24",
+      "section": ".text"
+    },
+    {
+      "name": "lbl_8037A904",
+      "address": "0x8037A904",
+      "section": ".sdata2"
+    },
+    {
+      "name": "lbl_8037A8DC",
+      "address": "0x8037A8DC",
+      "section": ".sdata2"
+    },
+    {
+      "name": "lbl_8037A90C",
+      "address": "0x8037A90C",
+      "section": ".sdata2"
+    },
+    {
+      "name": "lbl_8037A910",
+      "address": "0x8037A910",
+      "section": ".sdata2"
+    },
+    {
+      "name": "fn_802032B8",
+      "address": "0x802032B8",
+      "section": ".text"
+    },
+    {
+      "name": "fn_802030C4",
+      "address": "0x802030C4",
+      "section": ".text"
+    },
+    {
+      "name": "fn_8028FAF4",
+      "address": "0x8028FAF4",
+      "section": ".text"
+    },
+    {
+      "name": "fn_8028FF24",
+      "address": "0x8028FF24",
+      "section": ".text"
+    },
+    {
+      "name": "fn_8028FD50",
+      "address": "0x8028FD50",
+      "section": ".text"
+    },
+    {
+      "name": "__ct__15Handle_801F7F10Fv",
+      "address": "0x801F7F04",
+      "section": ".text"
+    },
+    {
+      "name": "__dt__15Handle_801F7F10Fv",
+      "address": "0x801F7F10",
+      "section": ".text"
+    },
+    {
+      "name": "fn_80260868",
+      "address": "0x80260868",
+      "section": ".text"
+    },
+    {
+      "name": "fn_801F86C8",
+      "address": "0x801F86C8",
+      "section": ".text"
+    },
+    {
+      "name": "fn_801F7EB8",
+      "address": "0x801F7EB8",
+      "section": ".text"
+    },
+    {
+      "name": "fn_801F948C",
+      "address": "0x801F948C",
+      "section": ".text"
+    },
+    {
+      "name": "fn_801FC998",
+      "address": "0x801FC998",
+      "section": ".text"
+    },
+    {
+      "name": "fn_801BA714",
+      "address": "0x801BA714",
+      "section": ".text"
+    },
+    {
+      "name": "fn_801B550C",
+      "address": "0x801B550C",
+      "section": ".text"
+    },
+    {
+      "name": "fn_8023D648",
+      "address": "0x8023D648",
+      "section": ".text"
+    },
+    {
+      "name": "fn_802408BC",
+      "address": "0x802408BC",
+      "section": ".text"
+    },
+    {
+      "name": "fn_80269FE0",
+      "address": "0x80269FE0",
+      "section": ".text"
+    },
+    {
+      "name": "__dl__FPv",
+      "address": "0x8011EDD4",
+      "section": ".text"
+    }
+  ],
+  "notes": "docs/notes/game-hierarchy-camera-setup.md",
+  "validation": {
+    "verification_script": "scratch/game_hierarchy_setup/verify.py",
+    "text_bytes": 1708,
+    "data_bytes": 0,
+    "original_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "integration_status": "not integrated; strict byte verification must pass before source credit",
+    "unlinked_function_count": 5,
+    "unlinked_text_bytes": 436,
+    "byte_differences": 11,
+    "relocations_applied": 71,
+    "unlinked_relocations": 10,
+    "source_sha256": "a5ba4967565c3505c171e693c450a37ec95ee697ba4b9b4ebadba3b42f539761",
+    "header_sha256": {
+      "src/Game/hierarchy_camera_setup_internal.h": "c7d9d2addf63c2d1133865d9791fa51d5496eeca6c838d907bfc943396a8793c"
+    },
+    "object_sha256": "b1a9b9182597e5138f981978ef797468bd18ebb51bfb7b0b673576dc2a9c4121",
+    "matched_code_credit": 0,
+    "matched_data_credit": 0,
+    "remaining_instruction_addresses": [
+      "0x80202b0c",
+      "0x80202b18",
+      "0x80202b20",
+      "0x80202b28",
+      "0x80202b2c",
+      "0x80202b30"
+    ]
+  }
+}

@@ -1,0 +1,2 @@
+#include "Game/early_nested_state_control_views.h"
+extern "C"signed char fn_80056668(NestedSelection*self,NestedNode*node,const NestedVector&position){if(!self->groups[self->group].disabled){self->position=position;self->node=node;self->groups[self->group].records[self->record].enabled=1;if(self->groups[self->group].controlled)resolveNested(resolveIntermediate(self->node->owner)->related)->slot15(-1);return 1;}else{self->position=game_vec3_zero;self->node=0;self->groups[self->group].records[self->record].enabled=0;return 0;}}

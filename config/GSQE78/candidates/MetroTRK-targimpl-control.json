@@ -1,0 +1,121 @@
+{
+  "source": "src/MetroTRK/targimpl_control.c",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.3.2",
+  "cflags": "-proc gekko -fp hardware -enum int -str reuse -common off -O4,p -inline auto,deferred -sdata 0 -sdata2 0 -pool off -use_lmw_stmw on -rostr -i src/MetroTRK -Cpp_exceptions off",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2148648788,
+      "end": 2148649972,
+      "alignment": 4
+    }
+  ],
+  "functions": [
+    {
+      "name": "TRKTargetSetInputPendingPtr",
+      "address": 2148648788,
+      "size": 16
+    },
+    {
+      "name": "TRKPPCAccessFPRegister",
+      "address": 2148648804,
+      "size": 540
+    },
+    {
+      "name": "TRKTargetStop",
+      "address": 2148649344,
+      "size": 24
+    },
+    {
+      "name": "TRKTargetSetStopped",
+      "address": 2148649368,
+      "size": 16
+    },
+    {
+      "name": "TRKTargetStopped",
+      "address": 2148649384,
+      "size": 16
+    },
+    {
+      "name": "TRKTargetFlushCache",
+      "address": 2148649400,
+      "size": 60
+    },
+    {
+      "name": "TRKTargetSupportRequest",
+      "address": 2148649460,
+      "size": 496
+    },
+    {
+      "name": "TRKTargetGetPC",
+      "address": 2148649956,
+      "size": 16
+    }
+  ],
+  "objects": [],
+  "symbol_scopes": {
+    "TRKTargetSetInputPendingPtr": "global",
+    "TRKPPCAccessFPRegister": "global",
+    "TRKTargetStop": "global",
+    "TRKTargetSetStopped": "global",
+    "TRKTargetStopped": "global",
+    "TRKTargetFlushCache": "global",
+    "TRKTargetSupportRequest": "global",
+    "TRKTargetGetPC": "global"
+  },
+  "symbols": {
+    "gTRKFPTemplate": "0x802ab990",
+    "gTRKSPRTemplate": "0x802ab940",
+    "gTRKStepStatus": "0x802cfe3c",
+    "TRKvalue128_temp": "0x8033afec",
+    "TRKTargetSetInputPendingPtr": "0x8011c754",
+    "TRKPPCAccessFPRegister": "0x8011c764",
+    "TRKTargetStop": "0x8011c980",
+    "TRKTargetSetStopped": "0x8011c998",
+    "TRKTargetStopped": "0x8011c9a8",
+    "TRKTargetFlushCache": "0x8011c9b8",
+    "TRKTargetSupportRequest": "0x8011c9f4",
+    "TRKTargetGetPC": "0x8011cbe4",
+    "gTRKState": "0x8033aa84",
+    "TRK_flush_cache": "0x8011c2cc",
+    "gTRKCPUState": "0x8033ab28",
+    "TRKConstructEvent": "0x80117c60",
+    "TRKPostEvent": "0x80117c78",
+    "HandleOpenFileSupportRequest": "0x8011bbcc",
+    "HandleCloseFileSupportRequest": "0x8011baac",
+    "HandlePositionFileSupportRequest": "0x8011b940",
+    "TRKSuppAccessFile": "0x8011bf18"
+  },
+  "external_original_names": {
+    "gTRKState": "gTRKState",
+    "TRK_flush_cache": "fn_8011C2CC",
+    "gTRKCPUState": "gTRKCPUState",
+    "TRKConstructEvent": "fn_80117C60",
+    "TRKPostEvent": "fn_80117C78",
+    "HandleOpenFileSupportRequest": "fn_8011BBCC",
+    "HandleCloseFileSupportRequest": "fn_8011BAAC",
+    "HandlePositionFileSupportRequest": "fn_8011B940",
+    "TRKSuppAccessFile": "fn_8011BF18"
+  },
+  "verified_text_bytes": 1184,
+  "verified_data_bytes": 0,
+  "source_kind": "c",
+  "external_symbol_scopes": {
+    "gTRKStepStatus": "global",
+    "gTRKExceptionStatus": "global",
+    "gTRKSPRTemplate": "global",
+    "gTRKFPTemplate": "global"
+  },
+  "notes": "Two exact C fragments of the original target implementation. The shared SPR and FP instruction templates were compiler-local originally and are exported as named constants for fragment linkage. All original rodata belongs to the access fragment to avoid conflicting text/data link order. Instruction templates are initialized data, not recovered native assembly. All mutable target state remains original fallback. See docs/notes/MetroTRK-targimpl.md.",
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "97c9ad8bbdce1f16b44c6fc253aeb38651e9dbfae46290fbbf10f979e4e28c29",
+    "matched_code": 1184,
+    "matched_functions": 8,
+    "matched_data": 0,
+    "complete_data": 0,
+    "object_path": "build/GSQE78/src/MetroTRK/targimpl_control.o",
+    "object_sha256": "88b0b3275e43a7c8ec401b867d5c11a8b8df11acd1be950a11bd651f973d372f"
+  }
+}

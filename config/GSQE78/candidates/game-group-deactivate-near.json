@@ -1,0 +1,123 @@
+{
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-lang c++",
+    "-proc gekko",
+    "-fp hardware",
+    "-enum int",
+    "-str reuse",
+    "-common off",
+    "-O4,p",
+    "-inline auto",
+    "-Cpp_exceptions off",
+    "-use_lmw_stmw on"
+  ],
+  "source": "scratch/game_group_state/deactivate_near.cpp",
+  "headers": [],
+  "status": "near-match",
+  "scope": "Unregistered deactivation method; semantic reconstruction with remaining register-allocation differences. Zero source credit.",
+  "splits": [
+    {
+      "section": ".text",
+      "start": "0x801fee10",
+      "end": "0x801fef6c"
+    }
+  ],
+  "functions": [
+    {
+      "name": "fn_801FEE10",
+      "original_name": "fn_801FEE10",
+      "address": "0x801fee10",
+      "size": "0x15c",
+      "scope": "global"
+    }
+  ],
+  "unlinked_functions": [
+    {
+      "name": "__dt__11StateHandleFv",
+      "object_offset": "0x15c",
+      "size": "0x58",
+      "binding": "weak",
+      "reason": "Unreferenced compiler-generated destructor body; ordinary dead stripping, zero source credit."
+    },
+    {
+      "name": "__dt__15StateZeroHandleFv",
+      "object_offset": "0x1b4",
+      "size": "0x54",
+      "binding": "weak",
+      "reason": "Unreferenced compiler-generated destructor body; ordinary dead stripping, zero source credit."
+    }
+  ],
+  "data_symbols": [],
+  "dependency_symbols": [
+    {
+      "name": "lbl_801E9D24",
+      "address": "0x801E9D24",
+      "section": ".text"
+    },
+    {
+      "name": "fn_801E1658",
+      "address": "0x801E1658",
+      "section": ".text"
+    },
+    {
+      "name": "__ct__15Handle_801F7F10Fv",
+      "address": "0x801F7F04",
+      "section": ".text"
+    },
+    {
+      "name": "fn_801F86C8",
+      "address": "0x801F86C8",
+      "section": ".text"
+    },
+    {
+      "name": "fn_8003125C",
+      "address": "0x8003125C",
+      "section": ".text"
+    },
+    {
+      "name": "__dt__15Handle_801F7F10Fv",
+      "address": "0x801F7F10",
+      "section": ".text"
+    },
+    {
+      "name": "fn_8020279C",
+      "address": "0x8020279C",
+      "section": ".text"
+    },
+    {
+      "name": "__dl__FPv",
+      "address": "0x8011EDD4",
+      "section": ".text"
+    },
+    {
+      "name": "fn_80202464",
+      "address": "0x80202464",
+      "section": ".text"
+    },
+    {
+      "name": "fn_801FEF6C",
+      "address": "0x801FEF6C",
+      "section": ".text"
+    }
+  ],
+  "notes": "docs/notes/game-group-deactivate-near.md",
+  "validation": {
+    "verification_script": "scratch/game_group_state/verify_deactivate.py",
+    "text_bytes": 348,
+    "data_bytes": 0,
+    "credited_code_bytes": 0,
+    "credited_data_bytes": 0,
+    "integration_status": "unregistered near-match; no source credit",
+    "unlinked_function_count": 2,
+    "unlinked_text_bytes": 172,
+    "byte_differences": 55,
+    "relocations_applied": 10,
+    "unlinked_relocations": 4,
+    "source_sha256": "11f2ce093e0c30f045716640018bae6ca79ffa06dd6c979cda6a5f5ed5c73484",
+    "header_sha256": {},
+    "object_sha256": "eaacd3a10c380623258e2c094d68fc7d4cceaba80038acb29a0631bc543fb376",
+    "allocated_text_bytes": 520,
+    "original_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5"
+  }
+}

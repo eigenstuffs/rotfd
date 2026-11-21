@@ -1,0 +1,1032 @@
+[
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/runtime_registration_8006c118.cpp",
+    "source_sha256": "5bedb5dd4ca6ac771d976dc49a11eecf17d5cc2feef1ce23221007da04ebe990",
+    "source_kind": "c++",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,p",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "src/Game",
+      "-i",
+      "include"
+    ],
+    "required_extra_cflags": [
+      "-Cpp_exceptions on"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/resource_runtime_update_views.h",
+        "sha256": "17e2455b2f89394a9dc511b45a277aa8dfdf073c92881177f0fa0c67c2852d5b"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2147926296,
+        "end": 2147926420,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147533232,
+        "end": 2147533240,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147585672,
+        "end": 2147585684,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_8006C118",
+        "address": 2147926296,
+        "size": 124,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0,
+        "sha256": "c8471746bb9308b78b2ac4b085db0d68cc5fc180799aebb125b05d769e76d7bf"
+      }
+    ],
+    "objects": [
+      {
+        "name": "@20",
+        "address": 2147533232,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0,
+        "sha256": "a4fa9bceb8fdd0cdbbfa34eeab479dd97534b72b57d16163fc440ce57b419605"
+      },
+      {
+        "name": "@21",
+        "address": 2147585672,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0,
+        "sha256": "a993aac181c5ce00c7b4598e02c633d5aefd21571c915349eae34f9437717adb"
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "lbl_803776B8",
+        "address": 2151118520,
+        "scope": "global"
+      }
+    ],
+    "original_metadata_audit": {
+      "status": "all-original-table-ownership-retained",
+      "retained_ranges": [
+        {
+          "start": 2147926296,
+          "end": 2147926420
+        }
+      ],
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "entries": 3141,
+          "scanned_slots": 3144,
+          "references_to_retained_ranges": [
+            {
+              "entry_address": 2147585672,
+              "function": 2147926296,
+              "size": 124,
+              "extab": 2147533232,
+              "ownership": "retained-source"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "entries": 19,
+          "scanned_slots": 24,
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "entries": 3,
+          "scanned_slots": 8,
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "f1355ae9b198f8051d26e3f728b802b80a9684c0a45e906754ebf6f4424918f4",
+      "retained_text_bytes": 124,
+      "emitted_text_bytes": 124,
+      "exception_table_bytes": 20,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "weak_functions": 0,
+      "unlinked_text_bytes": 0,
+      "relocations": 3,
+      "text_relocations": 1,
+      "exception_table_relocations": 2,
+      "unlinked_relocations": 0,
+      "nonallocated_metadata_relocations": 1,
+      "all_retained_allocated_bytes_verified": true,
+      "all_emitted_allocated_bytes_accounted": true,
+      "all_original_exception_ownership_retained": true,
+      "zero_byte_differences": true,
+      "verification_script": "/Users/brandenb/Downloads/rotfd/scratch/game_resource_runtime_updates/runtime_registration_8006c118/verify.py"
+    },
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 48,
+        "address": 2147926344,
+        "kind": 109,
+        "symbol": "lbl_803776B8",
+        "target": 2151118520,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147585672,
+        "kind": 1,
+        "symbol": "fn_8006C118",
+        "target": 2147926296,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147585680,
+        "kind": 1,
+        "symbol": "@20",
+        "target": 2147533232,
+        "addend": 0
+      }
+    ]
+  },
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/resource_inhibit_8006c78c.cpp",
+    "source_sha256": "178ef8acb9c9428890f956e1ebe8df7c79db5c6ef62e1af7e2877e83325b8995",
+    "source_kind": "c++",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,p",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "src/Game",
+      "-i",
+      "include"
+    ],
+    "required_extra_cflags": [
+      "-Cpp_exceptions on"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/resource_runtime_update_views.h",
+        "sha256": "17e2455b2f89394a9dc511b45a277aa8dfdf073c92881177f0fa0c67c2852d5b"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2147927948,
+        "end": 2147928072,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147533324,
+        "end": 2147533332,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147585756,
+        "end": 2147585768,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_8006C78C",
+        "address": 2147927948,
+        "size": 124,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0,
+        "sha256": "1f98eb8ac5f454a6202204adf204e032dce384c552560df6b72174af96e7cac2"
+      }
+    ],
+    "objects": [
+      {
+        "name": "@13",
+        "address": 2147533324,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0,
+        "sha256": "8191cd68605104a22123bf9c69bf764bd7afb3053626cdb1eec15185dc20f1d8"
+      },
+      {
+        "name": "@14",
+        "address": 2147585756,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0,
+        "sha256": "ad2c8cbd890ba7572f74e66a481c9fb668589cfa973fc84af87c906178d0d4a8"
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [],
+    "original_metadata_audit": {
+      "status": "all-original-table-ownership-retained",
+      "retained_ranges": [
+        {
+          "start": 2147927948,
+          "end": 2147928072
+        }
+      ],
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "entries": 3141,
+          "scanned_slots": 3144,
+          "references_to_retained_ranges": [
+            {
+              "entry_address": 2147585756,
+              "function": 2147927948,
+              "size": 124,
+              "extab": 2147533324,
+              "ownership": "retained-source"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "entries": 19,
+          "scanned_slots": 24,
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "entries": 3,
+          "scanned_slots": 8,
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "c935b1e69ddd9c11ba05890e7317611f38aaaa36e436de23eebefce5ed43c902",
+      "retained_text_bytes": 124,
+      "emitted_text_bytes": 124,
+      "exception_table_bytes": 20,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "weak_functions": 0,
+      "unlinked_text_bytes": 0,
+      "relocations": 2,
+      "text_relocations": 0,
+      "exception_table_relocations": 2,
+      "unlinked_relocations": 0,
+      "nonallocated_metadata_relocations": 1,
+      "all_retained_allocated_bytes_verified": true,
+      "all_emitted_allocated_bytes_accounted": true,
+      "all_original_exception_ownership_retained": true,
+      "zero_byte_differences": true,
+      "verification_script": "/Users/brandenb/Downloads/rotfd/scratch/game_resource_runtime_updates/resource_inhibit_8006c78c/verify.py"
+    },
+    "actual_relocations": [
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147585756,
+        "kind": 1,
+        "symbol": "fn_8006C78C",
+        "target": 2147927948,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147585764,
+        "kind": 1,
+        "symbol": "@13",
+        "target": 2147533324,
+        "addend": 0
+      }
+    ]
+  },
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/owner_option_8006c808.cpp",
+    "source_sha256": "1d25cb915625aeda9e4514baf3d8e702d93675eb7dd54f676dc76b4cb912d982",
+    "source_kind": "c++",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,p",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "src/Game",
+      "-i",
+      "include"
+    ],
+    "required_extra_cflags": [
+      "-Cpp_exceptions on"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/resource_runtime_update_views.h",
+        "sha256": "17e2455b2f89394a9dc511b45a277aa8dfdf073c92881177f0fa0c67c2852d5b"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2147928072,
+        "end": 2147928204,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147533332,
+        "end": 2147533340,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147585768,
+        "end": 2147585780,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_8006C808",
+        "address": 2147928072,
+        "size": 132,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0,
+        "sha256": "269cca756967934b306183b4d54b290075ff8655ac2fb6d370b8990a9d87a937"
+      }
+    ],
+    "objects": [
+      {
+        "name": "@15",
+        "address": 2147533332,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0,
+        "sha256": "a4fa9bceb8fdd0cdbbfa34eeab479dd97534b72b57d16163fc440ce57b419605"
+      },
+      {
+        "name": "@16",
+        "address": 2147585768,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0,
+        "sha256": "a038ae83d8212321c9dc59c049e6b689dae0b544b211f9be255af80f6653c1bb"
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "lbl_801E9D24",
+        "address": 2149489956,
+        "scope": "global"
+      }
+    ],
+    "original_metadata_audit": {
+      "status": "all-original-table-ownership-retained",
+      "retained_ranges": [
+        {
+          "start": 2147928072,
+          "end": 2147928204
+        }
+      ],
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "entries": 3141,
+          "scanned_slots": 3144,
+          "references_to_retained_ranges": [
+            {
+              "entry_address": 2147585768,
+              "function": 2147928072,
+              "size": 132,
+              "extab": 2147533332,
+              "ownership": "retained-source"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "entries": 19,
+          "scanned_slots": 24,
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "entries": 3,
+          "scanned_slots": 8,
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "ac4759245d1ac18e346a234f130cc6cf22f739fa5ac6a30824351143c54bbaaf",
+      "retained_text_bytes": 132,
+      "emitted_text_bytes": 132,
+      "exception_table_bytes": 20,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "weak_functions": 0,
+      "unlinked_text_bytes": 0,
+      "relocations": 4,
+      "text_relocations": 2,
+      "exception_table_relocations": 2,
+      "unlinked_relocations": 0,
+      "nonallocated_metadata_relocations": 1,
+      "all_retained_allocated_bytes_verified": true,
+      "all_emitted_allocated_bytes_accounted": true,
+      "all_original_exception_ownership_retained": true,
+      "zero_byte_differences": true,
+      "verification_script": "/Users/brandenb/Downloads/rotfd/scratch/game_resource_runtime_updates/owner_option_8006c808/verify.py"
+    },
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 38,
+        "address": 2147928110,
+        "kind": 6,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 46,
+        "address": 2147928118,
+        "kind": 4,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147585768,
+        "kind": 1,
+        "symbol": "fn_8006C808",
+        "target": 2147928072,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147585776,
+        "kind": 1,
+        "symbol": "@15",
+        "target": 2147533332,
+        "addend": 0
+      }
+    ]
+  },
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/owner_byte_8006ec64.cpp",
+    "source_sha256": "0934ddc2c5338dee0076bf88469296323d76c302d63ca50cfe19020cf71108df",
+    "source_kind": "c++",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,p",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "src/Game",
+      "-i",
+      "include"
+    ],
+    "required_extra_cflags": [
+      "-Cpp_exceptions on"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/resource_runtime_update_views.h",
+        "sha256": "17e2455b2f89394a9dc511b45a277aa8dfdf073c92881177f0fa0c67c2852d5b"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2147937380,
+        "end": 2147937512,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147533772,
+        "end": 2147533780,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147586032,
+        "end": 2147586044,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_8006EC64",
+        "address": 2147937380,
+        "size": 132,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0,
+        "sha256": "14f306f9c5435bd10cab517cb626db0c6dab0ca01dbafec8e5b796d8b1f96445"
+      }
+    ],
+    "objects": [
+      {
+        "name": "@15",
+        "address": 2147533772,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0,
+        "sha256": "a4fa9bceb8fdd0cdbbfa34eeab479dd97534b72b57d16163fc440ce57b419605"
+      },
+      {
+        "name": "@16",
+        "address": 2147586032,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0,
+        "sha256": "20f90f9f18ae1256a28f1e9dafc0ffcaa95bae165aff0cf3fde7f2ecbfb53792"
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "lbl_801E9D24",
+        "address": 2149489956,
+        "scope": "global"
+      }
+    ],
+    "original_metadata_audit": {
+      "status": "all-original-table-ownership-retained",
+      "retained_ranges": [
+        {
+          "start": 2147937380,
+          "end": 2147937512
+        }
+      ],
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "entries": 3141,
+          "scanned_slots": 3144,
+          "references_to_retained_ranges": [
+            {
+              "entry_address": 2147586032,
+              "function": 2147937380,
+              "size": 132,
+              "extab": 2147533772,
+              "ownership": "retained-source"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "entries": 19,
+          "scanned_slots": 24,
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "entries": 3,
+          "scanned_slots": 8,
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "909d1f6a71ead85964f19092792ef03fda45c0a5f84f247a16785d687bac276f",
+      "retained_text_bytes": 132,
+      "emitted_text_bytes": 132,
+      "exception_table_bytes": 20,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "weak_functions": 0,
+      "unlinked_text_bytes": 0,
+      "relocations": 4,
+      "text_relocations": 2,
+      "exception_table_relocations": 2,
+      "unlinked_relocations": 0,
+      "nonallocated_metadata_relocations": 1,
+      "all_retained_allocated_bytes_verified": true,
+      "all_emitted_allocated_bytes_accounted": true,
+      "all_original_exception_ownership_retained": true,
+      "zero_byte_differences": true,
+      "verification_script": "/Users/brandenb/Downloads/rotfd/scratch/game_resource_runtime_updates/owner_byte_8006ec64/verify.py"
+    },
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 38,
+        "address": 2147937418,
+        "kind": 6,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 46,
+        "address": 2147937426,
+        "kind": 4,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147586032,
+        "kind": 1,
+        "symbol": "fn_8006EC64",
+        "target": 2147937380,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147586040,
+        "kind": 1,
+        "symbol": "@15",
+        "target": 2147533772,
+        "addend": 0
+      }
+    ]
+  },
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/runtime_sentinel_8006edcc.cpp",
+    "source_sha256": "ad81fc664b1ccb5f56db9bfd7f22f0e12e9c17f3588f3bc16158253d39dc1d87",
+    "source_kind": "c++",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,p",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "src/Game",
+      "-i",
+      "include"
+    ],
+    "required_extra_cflags": [
+      "-Cpp_exceptions on"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/resource_runtime_update_views.h",
+        "sha256": "17e2455b2f89394a9dc511b45a277aa8dfdf073c92881177f0fa0c67c2852d5b"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2147937740,
+        "end": 2147937976,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147533876,
+        "end": 2147533884,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147586056,
+        "end": 2147586068,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_8006EDCC",
+        "address": 2147937740,
+        "size": 236,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0,
+        "sha256": "a4d0ccbef61ac6c099b27e2f7c5cd34768f04fe3a93990773dd08e21c68a2bdf"
+      }
+    ],
+    "objects": [
+      {
+        "name": "@23",
+        "address": 2147533876,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0,
+        "sha256": "8191cd68605104a22123bf9c69bf764bd7afb3053626cdb1eec15185dc20f1d8"
+      },
+      {
+        "name": "@24",
+        "address": 2147586056,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0,
+        "sha256": "45859b841ec593d63ebc5e801215b7c333e2daa2735bd6aba1653fe196ca4790"
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "lbl_801E9D24",
+        "address": 2149489956,
+        "scope": "global"
+      }
+    ],
+    "original_metadata_audit": {
+      "status": "all-original-table-ownership-retained",
+      "retained_ranges": [
+        {
+          "start": 2147937740,
+          "end": 2147937976
+        }
+      ],
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "entries": 3141,
+          "scanned_slots": 3144,
+          "references_to_retained_ranges": [
+            {
+              "entry_address": 2147586056,
+              "function": 2147937740,
+              "size": 236,
+              "extab": 2147533876,
+              "ownership": "retained-source"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "entries": 19,
+          "scanned_slots": 24,
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "entries": 3,
+          "scanned_slots": 8,
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "887199ed6ec06c7f1a1ccfab158c2c40c5d075ed947477df40c880db662ac45f",
+      "retained_text_bytes": 236,
+      "emitted_text_bytes": 236,
+      "exception_table_bytes": 20,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "weak_functions": 0,
+      "unlinked_text_bytes": 0,
+      "relocations": 6,
+      "text_relocations": 4,
+      "exception_table_relocations": 2,
+      "unlinked_relocations": 0,
+      "nonallocated_metadata_relocations": 1,
+      "all_retained_allocated_bytes_verified": true,
+      "all_emitted_allocated_bytes_accounted": true,
+      "all_original_exception_ownership_retained": true,
+      "zero_byte_differences": true,
+      "verification_script": "/Users/brandenb/Downloads/rotfd/scratch/game_resource_runtime_updates/runtime_sentinel_8006edcc/verify.py"
+    },
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 42,
+        "address": 2147937782,
+        "kind": 6,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 50,
+        "address": 2147937790,
+        "kind": 4,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 142,
+        "address": 2147937882,
+        "kind": 6,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 150,
+        "address": 2147937890,
+        "kind": 4,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147586056,
+        "kind": 1,
+        "symbol": "fn_8006EDCC",
+        "target": 2147937740,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147586064,
+        "kind": 1,
+        "symbol": "@23",
+        "target": 2147533876,
+        "addend": 0
+      }
+    ]
+  }
+]

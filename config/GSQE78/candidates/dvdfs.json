@@ -1,0 +1,224 @@
+{
+  "source": "src/dolphin/dvd/dvdfs.c",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.2.5n",
+  "cflags": "-proc gekko -fp hardware -enum int -str reuse -common off -O4,p -inline auto -i src/dolphin/dvd -Cpp_exceptions off",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2148498948,
+      "end": 2148500900
+    },
+    {
+      "name": ".data",
+      "start": 2150408512,
+      "end": 2150408820
+    },
+    {
+      "name": ".sdata",
+      "start": 2151111928,
+      "end": 2151111936
+    },
+    {
+      "name": ".sbss",
+      "start": 2151119288,
+      "end": 2151119320
+    }
+  ],
+  "functions": [
+    {
+      "name": "__DVDFSInit",
+      "address": 2148498948,
+      "size": 56
+    },
+    {
+      "name": "DVDConvertPathToEntrynum",
+      "address": 2148499004,
+      "size": 756
+    },
+    {
+      "name": "DVDFastOpen",
+      "address": 2148499760,
+      "size": 116
+    },
+    {
+      "name": "DVDOpen",
+      "address": 2148499876,
+      "size": 200
+    },
+    {
+      "name": "DVDClose",
+      "address": 2148500076,
+      "size": 36
+    },
+    {
+      "name": "entryToPath",
+      "address": 2148500112,
+      "size": 352
+    },
+    {
+      "name": "DVDGetCurrentDir",
+      "address": 2148500464,
+      "size": 196
+    },
+    {
+      "name": "DVDReadAsyncPrio",
+      "address": 2148500660,
+      "size": 192
+    },
+    {
+      "name": "cbForReadAsync",
+      "address": 2148500852,
+      "size": 48
+    }
+  ],
+  "objects": [
+    {
+      "name": "BootInfo",
+      "address": 2151119288,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "FstStart",
+      "address": 2151119292,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "FstStringStart",
+      "address": 2151119296,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "MaxEntryNum",
+      "address": 2151119300,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "currentDirectory",
+      "address": 2151119304,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "__DVDLongFileNameFlag",
+      "address": 2151119308,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "__DVDThreadQueue",
+      "address": 2151119312,
+      "size": 8,
+      "section": ".sbss"
+    },
+    {
+      "name": "@114",
+      "address": 2150408512,
+      "size": 200,
+      "section": ".data",
+      "scope": "local",
+      "compiler_assembly_name": "\"@114\"",
+      "data_kind": "string"
+    },
+    {
+      "name": "@135",
+      "address": 2150408712,
+      "size": 55,
+      "section": ".data",
+      "scope": "local",
+      "compiler_assembly_name": "\"@135\"",
+      "data_kind": "string"
+    },
+    {
+      "name": "@204",
+      "address": 2150408768,
+      "size": 52,
+      "section": ".data",
+      "scope": "local",
+      "compiler_assembly_name": "\"@204\"",
+      "data_kind": "string"
+    },
+    {
+      "name": "@113",
+      "address": 2151111928,
+      "size": 8,
+      "section": ".sdata",
+      "scope": "local",
+      "compiler_assembly_name": "\"@113\"",
+      "data_kind": "string"
+    }
+  ],
+  "symbol_scopes": {
+    "__DVDFSInit": "global",
+    "DVDConvertPathToEntrynum": "global",
+    "DVDFastOpen": "global",
+    "DVDOpen": "global",
+    "DVDClose": "global",
+    "entryToPath": "local",
+    "DVDGetCurrentDir": "global",
+    "DVDReadAsyncPrio": "global",
+    "cbForReadAsync": "local",
+    "BootInfo": "local",
+    "FstStart": "local",
+    "FstStringStart": "local",
+    "MaxEntryNum": "local",
+    "currentDirectory": "local",
+    "__DVDLongFileNameFlag": "global",
+    "__DVDThreadQueue": "global",
+    "@114": "local",
+    "@135": "local",
+    "@204": "local",
+    "@113": "local"
+  },
+  "symbols": {
+    "__DVDFSInit": "0x800f7e04",
+    "DVDConvertPathToEntrynum": "0x800f7e3c",
+    "DVDFastOpen": "0x800f8130",
+    "DVDOpen": "0x800f81a4",
+    "DVDClose": "0x800f826c",
+    "entryToPath": "0x800f8290",
+    "DVDGetCurrentDir": "0x800f83f0",
+    "DVDReadAsyncPrio": "0x800f84b4",
+    "cbForReadAsync": "0x800f8574",
+    "BootInfo": "0x803779b8",
+    "FstStart": "0x803779bc",
+    "FstStringStart": "0x803779c0",
+    "MaxEntryNum": "0x803779c4",
+    "currentDirectory": "0x803779c8",
+    "__DVDLongFileNameFlag": "0x803779cc",
+    "__DVDThreadQueue": "0x803779d0",
+    "OSPanic": "0x800f2fa8",
+    "tolower": "0x801246b0",
+    "OSReport": "0x800f2f28",
+    "DVDCancel": "0x800fa9b4",
+    "DVDReadAbsAsyncPrio": "0x800fa190",
+    "@114": "0x802ca140",
+    "@135": "0x802ca208",
+    "@204": "0x802ca240",
+    "@113": "0x80375cf8"
+  },
+  "external_original_names": {
+    "OSPanic": "OSPanic",
+    "tolower": "fn_801246B0",
+    "OSReport": "OSReport",
+    "DVDCancel": "fn_800FA9B4",
+    "DVDReadAbsAsyncPrio": "fn_800FA190"
+  },
+  "verified_text_bytes": 1952,
+  "verified_data_bytes": 316,
+  "source_kind": "c",
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "2a142227ccb59d187ef02445587b9237a31860e392bb7d5deda6350fd95e4a04",
+    "matched_code": 1952,
+    "matched_functions": 9,
+    "matched_data": 348,
+    "complete_data": 348,
+    "object_path": "build/GSQE78/src/dolphin/dvd/dvdfs.o",
+    "object_sha256": "72a32371cbfd4a24e43d6a6967f60de854cd9afaf20bdd3750746898e2a22d2a"
+  }
+}

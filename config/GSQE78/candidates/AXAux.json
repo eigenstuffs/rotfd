@@ -1,0 +1,263 @@
+{
+  "source": "src/dolphin/ax/AXAux.c",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.2.5n",
+  "cflags": "-proc gekko -fp hardware -enum int -str reuse -common off -O4,p -inline auto -i src/dolphin/ax -Cpp_exceptions off",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2148538268,
+      "end": 2148539428
+    },
+    {
+      "name": ".bss",
+      "start": 2150734368,
+      "end": 2150745888
+    },
+    {
+      "name": ".sbss",
+      "start": 2151119696,
+      "end": 2151119748
+    }
+  ],
+  "functions": [
+    {
+      "name": "__AXAuxInit",
+      "address": 2148538268,
+      "size": 228
+    },
+    {
+      "name": "__AXAuxQuit",
+      "address": 2148538496,
+      "size": 16
+    },
+    {
+      "name": "__AXGetAuxAInput",
+      "address": 2148538512,
+      "size": 52
+    },
+    {
+      "name": "__AXGetAuxAInputDpl2",
+      "address": 2148538564,
+      "size": 32
+    },
+    {
+      "name": "__AXGetAuxAOutput",
+      "address": 2148538596,
+      "size": 28
+    },
+    {
+      "name": "__AXGetAuxAOutputDpl2R",
+      "address": 2148538624,
+      "size": 32
+    },
+    {
+      "name": "__AXGetAuxAOutputDpl2Ls",
+      "address": 2148538656,
+      "size": 32
+    },
+    {
+      "name": "__AXGetAuxAOutputDpl2Rs",
+      "address": 2148538688,
+      "size": 32
+    },
+    {
+      "name": "__AXGetAuxBInput",
+      "address": 2148538720,
+      "size": 52
+    },
+    {
+      "name": "__AXGetAuxBOutput",
+      "address": 2148538772,
+      "size": 28
+    },
+    {
+      "name": "__AXGetAuxBForDPL2",
+      "address": 2148538800,
+      "size": 28
+    },
+    {
+      "name": "__AXGetAuxBOutputDPL2",
+      "address": 2148538828,
+      "size": 28
+    },
+    {
+      "name": "__AXProcessAux",
+      "address": 2148538856,
+      "size": 572
+    }
+  ],
+  "objects": [
+    {
+      "name": "__AXBufferAuxA",
+      "address": 2150734368,
+      "size": 5760,
+      "section": ".bss"
+    },
+    {
+      "name": "__AXBufferAuxB",
+      "address": 2150740128,
+      "size": 5760,
+      "section": ".bss"
+    },
+    {
+      "name": "__AXCallbackAuxA",
+      "address": 2151119696,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "__AXCallbackAuxB",
+      "address": 2151119700,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "__AXContextAuxA",
+      "address": 2151119704,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "__AXContextAuxB",
+      "address": 2151119708,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "__AXAuxADspWrite",
+      "address": 2151119712,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "__AXAuxADspRead",
+      "address": 2151119716,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "__AXAuxBDspWrite",
+      "address": 2151119720,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "__AXAuxBDspRead",
+      "address": 2151119724,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "__AXAuxDspWritePosition",
+      "address": 2151119728,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "__AXAuxDspReadPosition",
+      "address": 2151119732,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "__AXAuxDspWritePositionDpl2",
+      "address": 2151119736,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "__AXAuxDspReadPositionDpl2",
+      "address": 2151119740,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "__AXAuxCpuReadWritePosition",
+      "address": 2151119744,
+      "size": 4,
+      "section": ".sbss"
+    }
+  ],
+  "symbol_scopes": {
+    "__AXAuxInit": "global",
+    "__AXAuxQuit": "global",
+    "__AXGetAuxAInput": "global",
+    "__AXGetAuxAInputDpl2": "global",
+    "__AXGetAuxAOutput": "global",
+    "__AXGetAuxAOutputDpl2R": "global",
+    "__AXGetAuxAOutputDpl2Ls": "global",
+    "__AXGetAuxAOutputDpl2Rs": "global",
+    "__AXGetAuxBInput": "global",
+    "__AXGetAuxBOutput": "global",
+    "__AXGetAuxBForDPL2": "global",
+    "__AXGetAuxBOutputDPL2": "global",
+    "__AXProcessAux": "global",
+    "__AXBufferAuxA": "local",
+    "__AXBufferAuxB": "local",
+    "__AXCallbackAuxA": "local",
+    "__AXCallbackAuxB": "local",
+    "__AXContextAuxA": "local",
+    "__AXContextAuxB": "local",
+    "__AXAuxADspWrite": "local",
+    "__AXAuxADspRead": "local",
+    "__AXAuxBDspWrite": "local",
+    "__AXAuxBDspRead": "local",
+    "__AXAuxDspWritePosition": "local",
+    "__AXAuxDspReadPosition": "local",
+    "__AXAuxDspWritePositionDpl2": "local",
+    "__AXAuxDspReadPositionDpl2": "local",
+    "__AXAuxCpuReadWritePosition": "local"
+  },
+  "symbols": {
+    "__AXAuxInit": "0x8010179c",
+    "__AXAuxQuit": "0x80101880",
+    "__AXGetAuxAInput": "0x80101890",
+    "__AXGetAuxAInputDpl2": "0x801018c4",
+    "__AXGetAuxAOutput": "0x801018e4",
+    "__AXGetAuxAOutputDpl2R": "0x80101900",
+    "__AXGetAuxAOutputDpl2Ls": "0x80101920",
+    "__AXGetAuxAOutputDpl2Rs": "0x80101940",
+    "__AXGetAuxBInput": "0x80101960",
+    "__AXGetAuxBOutput": "0x80101994",
+    "__AXGetAuxBForDPL2": "0x801019b0",
+    "__AXGetAuxBOutputDPL2": "0x801019cc",
+    "__AXProcessAux": "0x801019e8",
+    "__AXBufferAuxA": "0x80319a20",
+    "__AXBufferAuxB": "0x8031b0a0",
+    "__AXCallbackAuxA": "0x80377b50",
+    "__AXCallbackAuxB": "0x80377b54",
+    "__AXContextAuxA": "0x80377b58",
+    "__AXContextAuxB": "0x80377b5c",
+    "__AXAuxADspWrite": "0x80377b60",
+    "__AXAuxADspRead": "0x80377b64",
+    "__AXAuxBDspWrite": "0x80377b68",
+    "__AXAuxBDspRead": "0x80377b6c",
+    "__AXAuxDspWritePosition": "0x80377b70",
+    "__AXAuxDspReadPosition": "0x80377b74",
+    "__AXAuxDspWritePositionDpl2": "0x80377b78",
+    "__AXAuxDspReadPositionDpl2": "0x80377b7c",
+    "__AXAuxCpuReadWritePosition": "0x80377b80",
+    "__AXClMode": "0x80377b98",
+    "DCInvalidateRange": "0x800f223c",
+    "DCFlushRangeNoSync": "0x800f22c8"
+  },
+  "external_original_names": {
+    "__AXClMode": "lbl_80377B98",
+    "DCInvalidateRange": "DCInvalidateRange",
+    "DCFlushRangeNoSync": "DCFlushRangeNoSync"
+  },
+  "verified_text_bytes": 1160,
+  "verified_data_bytes": 0,
+  "source_kind": "c",
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "c7c608a9d7f018b3540cb8e944b814025d3feaddead69ccaf86c36bc310e57f6",
+    "matched_code": 1160,
+    "matched_functions": 13,
+    "matched_data": 11572,
+    "complete_data": 11572,
+    "object_path": "build/GSQE78/src/dolphin/ax/AXAux.o",
+    "object_sha256": "8c1e0a3cd1ee3c0f5f16a65861f19364498d15c2a301968d9d1e9dd98779abd0"
+  }
+}

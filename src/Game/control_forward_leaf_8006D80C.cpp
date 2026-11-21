@@ -1,0 +1,2 @@
+/* Original control forwarding and predicates; see docs/notes/game-control-forward-leafs.md. */
+struct Control{char opaque00[0xD0];int state;char opaqueD4[0x154];int active;};extern "C"{Control*fn_8007D074();void fn_8007705C(Control*);}extern "C"void fn_8006D80C(void*ignored,unsigned char ignoredValue){Control*c=fn_8007D074();if(c->state==1||c->state==2)fn_8007705C(c);c->active=0;}

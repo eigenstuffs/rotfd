@@ -1,0 +1,73 @@
+/* Actor vertical motion reset and named effect preparation.
+ * See docs/notes/game-actor-vertical-effect-reset.md. */
+typedef unsigned long Word;typedef unsigned long long Wide;
+struct Handle_801F7F10{union{Word word;struct{signed int tag:8,index:24;}bits;};Handle_801F7F10();~Handle_801F7F10();};
+struct Point{float x,y,z;Point(){}Point(float a,float b,float c):x(a),y(b),z(c){}void set(float a,float b,float c){x=a;y=b;z=c;}Point&operator=(const Point&p){x=p.x;y=p.y;z=p.z;return *this;}Point&operator+=(const Point&p){x+=p.x;y+=p.y;z+=p.z;return *this;}};
+struct Prefix{char unknown00[8];};struct Actor:Prefix{virtual void v08();
+virtual void v0C();
+virtual void v10();
+virtual void v14();
+virtual void v18();
+virtual void v1C();
+virtual void v20();
+virtual void v24();
+virtual void v28();
+virtual void v2C();
+virtual void v30();
+virtual void v34();
+virtual void v38();
+virtual void v3C();
+virtual void v40();
+virtual void v44();
+virtual void v48();
+virtual void v4C();
+virtual void v50();
+virtual void v54();
+virtual void v58();
+virtual void v5C();
+virtual void v60();
+virtual void v64();
+virtual void v68();
+virtual void v6C();
+virtual void v70();
+virtual void v74();
+virtual void v78();
+virtual void v7C();
+virtual void v80();
+virtual void v84();
+virtual void v88();
+virtual void v8C();
+virtual void v90();
+virtual void v94();
+virtual void v98();
+virtual void v9C();
+virtual void vA0();
+virtual void vA4();
+virtual void vA8();
+virtual void vAC();
+virtual Point getPosition(int);
+char unknown0C[0x24];Wide flags;char unknown38[0x10C];Point velocity;char unknown150[0xC];Point previous;char unknown168[0x1B8];int key;char unknown324[0x34];Point acceleration;char unknown364[0x8C];float speed;};
+struct Effect:Prefix{virtual void v08();
+virtual void v0C();
+virtual void v10();
+virtual void v14();
+virtual void v18();
+virtual void v1C();
+virtual void v20();
+virtual void v24();
+virtual void v28();
+virtual void v2C();
+virtual void v30();
+virtual void v34();
+virtual void activate();
+char unknown0C[0x2C];Wide flags;};
+struct Entry{Effect*object;char unknown04[8];signed char tag;char unknown0D[3];signed char getTag()const{return tag;}};struct Manager{char unknown00[8];Entry*entries;};struct Controller{char unknown00[0xF0];int state;};struct Panel{char unknown00[0x15058];Controller*controller;};extern "C"struct Global{char unknown00[0x118];Manager*manager;char unknown11C[8];Panel*panel;}lbl_801E9D24;
+struct Monitor{char unknown00[0x130];void*target;};struct Self{char unknown00[8];Actor*actor;void*effects;};
+struct Returned_82C18:Handle_801F7F10{Returned_82C18();~Returned_82C18(){}};
+struct Name{Word value;Name(const char*);};extern "C"Word fn_801F948C(Name*,const char*);inline Name::Name(const char*s){value=fn_801F948C(this,s);}
+extern "C"{extern Point game_vec3_zero;extern const float lbl_80378AD0;extern const char lbl_8029D680[],lbl_8029D690[];extern Monitor*lbl_803776B8;void fn_80257828(void*,int,int,int);void fn_80255D88(void*,int,int,int,int);Returned_82C18 fn_80058778(Controller*,const Name&,int);void fn_80254BB4(Effect*,const Point&);void fn_802554F4(Effect*);void fn_8006803C(Monitor*,int);}
+inline Effect*resolve(const Handle_801F7F10&h){int index=h.bits.index;Manager*m=lbl_801E9D24.manager;int tag=m->entries[index].getTag();if(tag==h.bits.tag)return m->entries[index].object;return 0;}
+extern "C"void fn_80082C18(Self*self){float speed=self->actor->speed;self->actor->previous.set(self->actor->previous.x,lbl_80378AD0,self->actor->previous.z);self->actor->velocity.set(self->actor->velocity.x,lbl_80378AD0,self->actor->velocity.z);self->actor->acceleration=game_vec3_zero;self->actor->acceleration+=Point(lbl_80378AD0,speed,lbl_80378AD0);self->actor->flags&=~0x1000000000ULL;self->actor->flags&=~0x8000000000ULL;fn_80257828(self->effects,0x19,0x77,0);fn_80255D88(self->effects,4,15,0,0);
+ {Effect*effect=resolve(fn_80058778(lbl_801E9D24.panel->controller,Name(lbl_8029D680),0));if(effect){effect->activate();fn_80254BB4(effect,self->actor->getPosition(0));fn_802554F4(effect);effect->flags|=0x20000ULL;}}
+ if(lbl_801E9D24.panel->controller->state!=6){Effect*effect=resolve(fn_80058778(lbl_801E9D24.panel->controller,Name(lbl_8029D690),0));if(effect){effect->activate();fn_80254BB4(effect,self->actor->getPosition(0));fn_802554F4(effect);effect->flags|=0x20000ULL;}}
+ if(lbl_803776B8&&lbl_803776B8->target)fn_8006803C(lbl_803776B8,self->actor->key);}

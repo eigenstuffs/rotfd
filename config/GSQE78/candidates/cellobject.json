@@ -1,0 +1,98 @@
+{
+  "source": "src/Objects/cellobject.c",
+  "status": "integrated-byte-match",
+  "compiler": "GC/2.0",
+  "cflags": [
+    "-proc gekko",
+    "-fp hardware",
+    "-enum int",
+    "-str reuse",
+    "-common off",
+    "-opt level=4,nopeephole,speed",
+    "-inline auto,deferred",
+    "-pool off",
+    "-Cpp_exceptions off"
+  ],
+  "sections": {
+    ".text": [
+      "0x801359FC",
+      "0x80135D2C"
+    ],
+    ".data": [
+      "0x802D14A0",
+      "0x802D1551"
+    ],
+    ".sdata": [
+      "0x80375ED8",
+      "0x80375EDD"
+    ]
+  },
+  "symbols": {
+    "PyCell_Type": "0x802D14A0",
+    "cell_clear": "0x801359fc",
+    "cell_traverse": "0x80135a64",
+    "cell_repr": "0x80135aa4",
+    "cell_compare": "0x80135b0c",
+    "cell_dealloc": "0x80135b68",
+    "PyCell_Set": "0x80135bcc",
+    "PyCell_Get": "0x80135c7c",
+    "PyCell_New": "0x80135ce0"
+  },
+  "symbol_scopes": {
+    "cell_clear": "local",
+    "cell_traverse": "local",
+    "cell_repr": "local",
+    "cell_compare": "local",
+    "cell_dealloc": "local",
+    "PyCell_Set": "global",
+    "PyCell_Get": "global",
+    "PyCell_New": "global"
+  },
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "bab3a1573af1a38ef5de0ec08bbab2f8550116cfe128bb8fd9986288af6a2706",
+    "matched_code": 816,
+    "matched_functions": 8,
+    "matched_data": 182,
+    "complete_data": 182,
+    "object_path": "build/GSQE78/src/Objects/cellobject.o",
+    "object_sha256": "1ecf4970f04aa82a1637e57e72fbda1d6b4ee39d0704b55282641dda30ffafa4"
+  },
+  "external_padding": [
+    {
+      "source": "src/Objects/cellobject.c",
+      "unit": "main/Objects/cellobject",
+      "section": ".data",
+      "start": "0x802d1551",
+      "end": "0x802d1554",
+      "size": 3,
+      "alignment": 1,
+      "symbol": "gap_07_802D1551_data",
+      "original_owner": "padding/source_extents/Objects/cellobject.s",
+      "source_section_start": "0x802d14a0",
+      "source_section_bytes": 177,
+      "previous_split_bytes": 180,
+      "description": "Original linker alignment beyond emitted source section; no source credit."
+    },
+    {
+      "source": "src/Objects/cellobject.c",
+      "unit": "main/Objects/cellobject",
+      "section": ".sdata",
+      "start": "0x80375edd",
+      "end": "0x80375ee0",
+      "size": 3,
+      "alignment": 1,
+      "symbol": "gap_09_80375EDD_sdata",
+      "original_owner": "padding/source_extents/Objects/cellobject.s",
+      "source_section_start": "0x80375ed8",
+      "source_section_bytes": 5,
+      "previous_split_bytes": 8,
+      "description": "Original linker alignment beyond emitted source section; no source credit."
+    }
+  ],
+  "source_extent_audit": {
+    "data_credit_correction": 6,
+    "evidence": "config/GSQE78/source_padding.json",
+    "description": "Source and original bytes unchanged; trailing original padding moved to NonMatching ownership."
+  }
+}

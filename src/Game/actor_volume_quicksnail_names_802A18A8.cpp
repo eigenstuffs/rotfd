@@ -1,0 +1,19 @@
+/* Extra-health, projectile, volume and quick-snail native names and diagnostics. */
+extern "C" const char lbl_802A18A8[] = "Registering Extra Health";
+extern "C" const char lbl_802A18C4[] = "PANTS_COUNT";
+extern "C" const char lbl_802A18D0[] = "ExtraHealth";
+extern "C" const char lbl_802A18DC[] = "BaseObject_Z";
+extern "C" const char lbl_802A18EC[] = "ABC_Agent";
+extern "C" const char lbl_802A18F8[] = "AnimatedMsgAgent_Z";
+extern "C" const char lbl_802A190C[] = "AnimatedAgent_Z";
+extern "C" const char lbl_802A191C[] = "MovingAgent_Z";
+extern "C" const char lbl_802A192C[] = "CCollectableAgent";
+extern "C" const char lbl_802A1940[] = "CDBombMove";
+extern "C" const char lbl_802A194C[] = "BaseObject_Z";
+extern "C" const char lbl_802A195C[] = "Activable_Z";
+extern "C" const char lbl_802A1968[] = "Manipulator_Z";
+extern "C" const char lbl_802A1978[] = "ObjectMove_Z";
+extern "C" const char lbl_802A1988[] = "ObjectThrow_Z";
+extern "C" const char lbl_802A1998[] = "LodMove_Z";
+extern "C" const char lbl_802A19A4[] = "CProjectileMove";
+extern "C" const char lbl_802A19B4[] = "CBombMove";

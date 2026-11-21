@@ -1,0 +1,256 @@
+{
+  "status": "isolated-retained-byte-match",
+  "source": "src/Game/named_owner_property_copy.cpp",
+  "source_sha256": "91c4c51a0fedc61409d6038a91ea722c4b3d15f9e04c17b956111e751e3f3f63",
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-proc",
+    "gekko",
+    "-fp",
+    "hardware",
+    "-enum",
+    "int",
+    "-str",
+    "reuse",
+    "-common",
+    "off",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-Cpp_exceptions",
+    "off",
+    "-i",
+    "include",
+    "-use_lmw_stmw",
+    "on"
+  ],
+  "source_kind": "c++",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2149814116,
+      "end": 2149815384,
+      "alignment": 4
+    }
+  ],
+  "functions": [
+    {
+      "name": "fn_80238F64",
+      "address": 2149814116,
+      "size": 1268,
+      "scope": "global",
+      "section": ".text",
+      "object_offset": 0
+    }
+  ],
+  "objects": [],
+  "unlinked_functions": [
+    {
+      "name": "__dt__19NamedOwnerCopyOwnedFv",
+      "section": ".text",
+      "object_offset": 1268,
+      "size": 88,
+      "binding": "weak",
+      "raw_sha256": "ee3203a188e9d7282273427bfc26c6917510fc7b7c574c24cca0331f00873d1f"
+    },
+    {
+      "name": "__dt__18NamedOwnerCopyZeroFv",
+      "section": ".text",
+      "object_offset": 1356,
+      "size": 84,
+      "binding": "weak",
+      "raw_sha256": "fdd9fcf5ab58f46f986c50b59ae57e9c65a7b53acdde19888e0e8987b285adb0"
+    }
+  ],
+  "headers": [
+    {
+      "path": "include/Game/named_owner_property_copy.h",
+      "sha256": "557cabd2de3aae3794ded2729539dce3a445101b11b7e97d06f566d213324c34"
+    }
+  ],
+  "dependency_symbols": [],
+  "validation": {
+    "relocations": 15,
+    "unlinked_relocations": 4,
+    "retained_text_bytes": 1268,
+    "unlinked_text_bytes": 172,
+    "initialized_data_bytes": 0,
+    "bss_bytes": 0,
+    "owned_padding_bytes": 0
+  },
+  "verified_text_bytes": 1268,
+  "verified_data_bytes": 0,
+  "actual_relocations": [
+    {
+      "section": ".text",
+      "at": 10,
+      "address": 2149814126,
+      "kind": 6,
+      "symbol": "lbl_802AEA90",
+      "target": 2150296208,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 18,
+      "address": 2149814134,
+      "kind": 4,
+      "symbol": "lbl_802AEA90",
+      "target": 2150296208,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 40,
+      "address": 2149814156,
+      "kind": 10,
+      "symbol": "fn_801F948C",
+      "target": 2149553292,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 46,
+      "address": 2149814162,
+      "kind": 6,
+      "symbol": "lbl_801E9D24",
+      "target": 2149489956,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 54,
+      "address": 2149814170,
+      "kind": 4,
+      "symbol": "lbl_801E9D24",
+      "target": 2149489956,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 72,
+      "address": 2149814188,
+      "kind": 10,
+      "symbol": "fn_801B550C",
+      "target": 2149274892,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 84,
+      "address": 2149814200,
+      "kind": 10,
+      "symbol": "__ct__15Handle_801F7F10Fv",
+      "target": 2149547780,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 116,
+      "address": 2149814232,
+      "kind": 10,
+      "symbol": "fn_801F86C8",
+      "target": 2149549768,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 132,
+      "address": 2149814248,
+      "kind": 10,
+      "symbol": "fn_801F86C8",
+      "target": 2149549768,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 156,
+      "address": 2149814272,
+      "kind": 10,
+      "symbol": "fn_801F86C8",
+      "target": 2149549768,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 168,
+      "address": 2149814284,
+      "kind": 10,
+      "symbol": "__dt__15Handle_801F7F10Fv",
+      "target": 2149547792,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 180,
+      "address": 2149814296,
+      "kind": 10,
+      "symbol": "__dt__15Handle_801F7F10Fv",
+      "target": 2149547792,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 256,
+      "address": 2149814372,
+      "kind": 10,
+      "symbol": "fn_802072D4",
+      "target": 2149610196,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 352,
+      "address": 2149814468,
+      "kind": 10,
+      "symbol": "fn_801F86C8",
+      "target": 2149549768,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 376,
+      "address": 2149814492,
+      "kind": 10,
+      "symbol": "fn_801F86C8",
+      "target": 2149549768,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 1308,
+      "address": 2149815424,
+      "kind": 10,
+      "symbol": "__dt__15Handle_801F7F10Fv",
+      "target": 2149547792,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 1324,
+      "address": 2149815440,
+      "kind": 10,
+      "symbol": "__dl__FPv",
+      "target": 2148658644,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 1392,
+      "address": 2149815508,
+      "kind": 10,
+      "symbol": "__dt__15Handle_801F7F10Fv",
+      "target": 2149547792,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 1408,
+      "address": 2149815524,
+      "kind": 10,
+      "symbol": "__dl__FPv",
+      "target": 2148658644,
+      "addend": 0
+    }
+  ]
+}

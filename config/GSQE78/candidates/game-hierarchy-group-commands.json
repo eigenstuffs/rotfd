@@ -1,0 +1,186 @@
+{
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-lang c++",
+    "-proc gekko",
+    "-fp hardware",
+    "-enum int",
+    "-str reuse",
+    "-common off",
+    "-O4,p",
+    "-inline auto",
+    "-Cpp_exceptions off",
+    "-use_lmw_stmw on",
+    "-i src/Game"
+  ],
+  "source": "src/Game/hierarchy_group_commands.cpp",
+  "headers": [
+    "src/Game/hierarchy_commands_internal.h"
+  ],
+  "status": "integrated-byte-match",
+  "scope": "Three adjacent observed named-object group commands; wider original TU boundary unknown. All shared constants remain external original storage.",
+  "splits": [
+    {
+      "section": ".text",
+      "start": "0x802055a8",
+      "end": "0x80205964"
+    }
+  ],
+  "functions": [
+    {
+      "name": "fn_802055A8",
+      "original_name": "fn_802055A8",
+      "address": "0x802055a8",
+      "size": "0x134",
+      "scope": "global"
+    },
+    {
+      "name": "fn_802056DC",
+      "original_name": "fn_802056DC",
+      "address": "0x802056dc",
+      "size": "0x134",
+      "scope": "global"
+    },
+    {
+      "name": "fn_80205810",
+      "original_name": "fn_80205810",
+      "address": "0x80205810",
+      "size": "0x154",
+      "scope": "global"
+    }
+  ],
+  "unlinked_functions": [
+    {
+      "name": "__dt__18CommandOwnedHandleFv",
+      "object_offset": "0x134",
+      "size": "0x58",
+      "binding": "weak",
+      "reason": "Unreferenced compiler-generated destructor body; ordinary dead stripping, zero source credit."
+    },
+    {
+      "name": "__dt__17CommandZeroHandleFv",
+      "object_offset": "0x18c",
+      "size": "0x54",
+      "binding": "weak",
+      "reason": "Unreferenced compiler-generated destructor body; ordinary dead stripping, zero source credit."
+    }
+  ],
+  "data_symbols": [],
+  "dependency_symbols": [
+    {
+      "name": "lbl_801E9D24",
+      "address": "0x801E9D24",
+      "section": ".text"
+    },
+    {
+      "name": "lbl_8037A918",
+      "address": "0x8037A918",
+      "section": ".sdata2"
+    },
+    {
+      "name": "fn_801F948C",
+      "address": "0x801F948C",
+      "section": ".text"
+    },
+    {
+      "name": "fn_801B5054",
+      "address": "0x801B5054",
+      "section": ".text"
+    },
+    {
+      "name": "__ct__15Handle_801F7F10Fv",
+      "address": "0x801F7F04",
+      "section": ".text"
+    },
+    {
+      "name": "fn_801F86C8",
+      "address": "0x801F86C8",
+      "section": ".text"
+    },
+    {
+      "name": "__dt__15Handle_801F7F10Fv",
+      "address": "0x801F7F10",
+      "section": ".text"
+    },
+    {
+      "name": "fn_801F7EB8",
+      "address": "0x801F7EB8",
+      "section": ".text"
+    },
+    {
+      "name": "fn_801FE99C",
+      "address": "0x801FE99C",
+      "section": ".text"
+    },
+    {
+      "name": "fn_801FEE10",
+      "address": "0x801FEE10",
+      "section": ".text"
+    },
+    {
+      "name": "__dl__FPv",
+      "address": "0x8011EDD4",
+      "section": ".text"
+    },
+    {
+      "name": "fn_801FEF6C",
+      "address": "0x801FEF6C",
+      "section": ".text"
+    },
+    {
+      "name": "fn_801FEC4C",
+      "address": "0x801FEC4C",
+      "section": ".text"
+    }
+  ],
+  "notes": "docs/notes/game-hierarchy-group-commands.md",
+  "validation": {
+    "verification_script": "scratch/game_hierarchy_group_commands/verify.py",
+    "text_bytes": 956,
+    "data_bytes": 0,
+    "original_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "integration_status": "verified full-DOL and objdiff",
+    "unlinked_function_count": 2,
+    "unlinked_text_bytes": 172,
+    "byte_differences": 0,
+    "relocations_applied": 57,
+    "unlinked_relocations": 4,
+    "source_sha256": "b0750ecdb76148cc40135ca053bddc10d8e54aa8453faa3cb1a8f3c247fd8159",
+    "header_sha256": {
+      "src/Game/hierarchy_commands_internal.h": "723cab6522d0d074333c1f86d0648127c851346e35c07fdb37d213967fd072ca"
+    },
+    "object_sha256": "cc96776d24814d9d0a21479cdd5d119d52eeba2bea238aef271b555b3b3057c6",
+    "allocated_text_bytes": 1128,
+    "console_argument_refinement": {
+      "whole_compiled_object_identical": true,
+      "proof": "scratch/console_argument_names/verification.json"
+    }
+  },
+  "command_bindings": [
+    {
+      "function": "fn_802055A8",
+      "command": "DeactivateGame",
+      "string_address": "0x802ad9fc"
+    },
+    {
+      "function": "fn_802056DC",
+      "command": "ActivateGame",
+      "string_address": "0x802ad9e0"
+    },
+    {
+      "function": "fn_80205810",
+      "command": "SwitchGameToMUlti",
+      "string_address": "0x802ada44"
+    }
+  ],
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "b0750ecdb76148cc40135ca053bddc10d8e54aa8453faa3cb1a8f3c247fd8159",
+    "matched_code": 956,
+    "matched_functions": 3,
+    "matched_data": 0,
+    "complete_data": 0,
+    "object_path": "build/GSQE78/src/Game/hierarchy_group_commands.o",
+    "object_sha256": "cc96776d24814d9d0a21479cdd5d119d52eeba2bea238aef271b555b3b3057c6"
+  }
+}

@@ -1,0 +1,4 @@
+/* Original scene record stream controls; see docs/notes/game-engine-scene-record-stream.md. */
+struct Prefix{char opaque00[8];};struct Object:Prefix{virtual void v08();virtual void v0C();virtual void v10();virtual void v14();virtual void v18();virtual void v1C();virtual void v20();virtual void v24();virtual void v28();virtual void v2C();virtual void v30();virtual void v34();virtual void v38();virtual void v3C();virtual void v40();virtual void v44();virtual void v48();virtual void v4C();virtual void v50();virtual void v54();virtual void v58();virtual void v5C();virtual void v60();virtual void v64();virtual void v68();virtual void v6C();virtual void v70();virtual void v74();virtual void v78();virtual void v7C();virtual void v80();};
+extern "C"{void fn_8002B820(Object*);void fn_800410E0(Object*);void fn_80257490(Object*);}
+extern "C" void fn_800401FC(Object*self){fn_8002B820(self);self->v80();fn_800410E0(self);fn_80257490(self);}

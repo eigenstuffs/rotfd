@@ -1,0 +1,46 @@
+{
+  "source": "src/MSL/getenv.c",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.3",
+  "cflags": "-proc gekko -fp hardware -enum int -str reuse -common off -O4,p -inline deferred -pool off -Cpp_exceptions off",
+  "splits": [
+    {
+      "section": ".text",
+      "start": "0x80129cec",
+      "end": "0x80129cf4"
+    }
+  ],
+  "functions": [
+    {
+      "name": "getenv",
+      "original_name": "getenv",
+      "address": "0x80129cec",
+      "size": "0x8",
+      "scope": "global"
+    }
+  ],
+  "data_symbols": [],
+  "validation": {
+    "code_bytes": 8,
+    "relocations_applied": 0,
+    "byte_differences": 0,
+    "source_sha256": "2b4e0244ed8868ed5f1dffd0136c5231a172c2603e0e6ec50bd1836eb200ff5d",
+    "object_sha256": "042766008752fed434ef96e06495e164a135cee2dd0f094a548e6bf97a5455d8",
+    "original_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "integration_status": "verified full-DOL and objdiff"
+  },
+  "notes": "docs/notes/msl-getenv.md",
+  "split_notes": [
+    "Only the retained getenv stub is owned; the original encompassing translation-unit extent is not established."
+  ],
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "2b4e0244ed8868ed5f1dffd0136c5231a172c2603e0e6ec50bd1836eb200ff5d",
+    "matched_code": 8,
+    "matched_functions": 1,
+    "matched_data": 0,
+    "complete_data": 0,
+    "object_path": "build/GSQE78/src/MSL/getenv.o",
+    "object_sha256": "042766008752fed434ef96e06495e164a135cee2dd0f094a548e6bf97a5455d8"
+  }
+}

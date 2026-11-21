@@ -1,0 +1,5 @@
+# Engine member setup investigation
+
+Uncredited isolated research: `fn_801C9210` (128 original bytes). Existing external names must be preserved because accepted factories call the current `fn_` symbols. No production source, symbol rename or central changes. Reservation of this function and unprobed `fn_801C822C` is released.
+
+Ordinary inline native-handle initialization at owner +0x124 reproduces both zero stores but collapses the persistent member pointer into the owner base, producing 116 bytes instead of the original 128. Named member references/pointers do not retain that original register lifetime. Genuine placement construction retains an extra null branch. The same constructor AST distinction is documented by earlier setup investigations; no assembly alias/thunk or code credit is introduced. Bounded sources/objects/failures remain in `scratch/game_engine_member_setup_continuation`. Full original exception/constructor/destructor table prechecks found no reference to the target.

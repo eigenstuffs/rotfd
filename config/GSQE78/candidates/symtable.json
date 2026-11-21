@@ -1,0 +1,151 @@
+{
+  "source": "src/Python/symtable.c",
+  "status": "integrated-byte-match",
+  "compiler": "GC/2.0",
+  "cflags": "-proc gekko -fp hardware -enum int -str reuse -common off -opt level=4,nopeephole,speed -inline auto,deferred -pool off -Cpp_exceptions off",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2149196560,
+      "end": 2149197480
+    },
+    {
+      "name": ".data",
+      "start": 2150512344,
+      "end": 2150512702
+    },
+    {
+      "name": ".sdata",
+      "start": 2151116856,
+      "end": 2151116899
+    }
+  ],
+  "functions": [
+    {
+      "name": "ste_getattr",
+      "address": 2149196560,
+      "size": 44
+    },
+    {
+      "name": "ste_dealloc",
+      "address": 2149196604,
+      "size": 316
+    },
+    {
+      "name": "ste_repr",
+      "address": 2149196920,
+      "size": 80
+    },
+    {
+      "name": "PySymtableEntry_New",
+      "address": 2149197000,
+      "size": 480
+    }
+  ],
+  "objects": [
+    {
+      "name": "ste_memberlist",
+      "address": 2150512380,
+      "size": 160,
+      "section": ".data"
+    },
+    {
+      "name": "PySymtableEntry_Type",
+      "address": 2150512556,
+      "size": 108,
+      "section": ".data"
+    }
+  ],
+  "symbol_scopes": {
+    "ste_getattr": "local",
+    "ste_dealloc": "local",
+    "ste_repr": "local",
+    "PySymtableEntry_New": "global",
+    "ste_memberlist": "local",
+    "PySymtableEntry_Type": "global"
+  },
+  "symbols": {
+    "PyType_Type": "0x802d68fc",
+    "ste_getattr": "0x801a2310",
+    "ste_dealloc": "0x801a233c",
+    "ste_repr": "0x801a2478",
+    "PySymtableEntry_New": "0x801a24c8",
+    "ste_memberlist": "0x802e36fc",
+    "PySymtableEntry_Type": "0x802e37ac",
+    "PyMember_Get": "0x801aba0c",
+    "_PyObject_Del": "0x80159704",
+    "sprintf": "0x80125b10",
+    "PyString_FromString": "0x80163ab0",
+    "_savegpr_26": "0x8011f618",
+    "PyInt_FromLong": "0x80149b9c",
+    "PyDict_GetItem": "0x80140b74",
+    "_PyObject_New": "0x80159724",
+    "PyDict_New": "0x80141230",
+    "PyList_New": "0x8014ea58",
+    "PyDict_SetItem": "0x80140948",
+    "_restgpr_26": "0x8011f664"
+  },
+  "external_original_names": {
+    "PyMember_Get": "PyMember_Get",
+    "_PyObject_Del": "_PyObject_Del",
+    "sprintf": "sprintf",
+    "PyString_FromString": "PyString_FromString",
+    "_savegpr_26": "_savegpr_26",
+    "PyInt_FromLong": "PyInt_FromLong",
+    "PyDict_GetItem": "PyDict_GetItem",
+    "_PyObject_New": "_PyObject_New",
+    "PyDict_New": "PyDict_New",
+    "PyList_New": "PyList_New",
+    "PyDict_SetItem": "PyDict_SetItem",
+    "_restgpr_26": "_restgpr_26"
+  },
+  "verified_text_bytes": 920,
+  "verified_data_bytes": 401,
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "fcac06c825beae7301be2fa11043ecb9a45abf48caf5290624af5e3cecb2383d",
+    "matched_code": 920,
+    "matched_functions": 4,
+    "matched_data": 401,
+    "complete_data": 401,
+    "object_path": "build/GSQE78/src/Python/symtable.o",
+    "object_sha256": "22037c01169db6503dba57d92347c39aed7c674be57e596655f51267d4ddda64"
+  },
+  "external_padding": [
+    {
+      "source": "src/Python/symtable.c",
+      "unit": "main/Python/symtable",
+      "section": ".data",
+      "start": "0x802e383e",
+      "end": "0x802e3840",
+      "size": 2,
+      "alignment": 1,
+      "symbol": "gap_07_802E383E_data",
+      "original_owner": "padding/source_extents/Python/symtable.s",
+      "source_section_start": "0x802e36d8",
+      "source_section_bytes": 358,
+      "previous_split_bytes": 360,
+      "description": "Original linker alignment beyond emitted source section; no source credit."
+    },
+    {
+      "source": "src/Python/symtable.c",
+      "unit": "main/Python/symtable",
+      "section": ".sdata",
+      "start": "0x80377063",
+      "end": "0x80377064",
+      "size": 1,
+      "alignment": 1,
+      "symbol": "gap_09_80377063_sdata",
+      "original_owner": "padding/source_extents/Python/symtable.s",
+      "source_section_start": "0x80377038",
+      "source_section_bytes": 43,
+      "previous_split_bytes": 44,
+      "description": "Original linker alignment beyond emitted source section; no source credit."
+    }
+  ],
+  "source_extent_audit": {
+    "data_credit_correction": 3,
+    "evidence": "config/GSQE78/source_padding.json",
+    "description": "Source and original bytes unchanged; trailing original padding moved to NonMatching ownership."
+  }
+}

@@ -1,0 +1,64 @@
+/* Service slot key registrations; see docs/notes/game-early-service-slot-registration.md. */
+struct ServiceSlotContext{char unknown00[0x164];void*service;};
+extern "C"{
+extern ServiceSlotContext lbl_801E9D24;
+extern int lbl_803777AC,lbl_803777B0,lbl_803777B4,lbl_803777B8,lbl_803777BC,lbl_803777C0,lbl_803777C4,lbl_803777C8,lbl_803777CC;
+int fn_800B6B70(void*);
+void fn_800B633C(void*,int,int,int);
+void fn_800B6358(void*,int,int,int);
+void fn_800B6C84(void*,int,int);
+}
+extern "C" void fn_800BC8DC(void*){
+ void*service=lbl_801E9D24.service;
+ lbl_803777AC=fn_800B6B70(service);
+ fn_800B633C(service,lbl_803777AC,11,0x5F);
+ fn_800B633C(service,lbl_803777AC,2,0x5F);
+ fn_800B6358(service,lbl_803777AC,12,0x74);
+ lbl_803777BC=fn_800B6B70(service);
+ fn_800B633C(service,lbl_803777BC,6,0x59);
+ fn_800B633C(service,lbl_803777BC,9,0x58);
+ fn_800B633C(service,lbl_803777BC,7,0x5A);
+ fn_800B633C(service,lbl_803777BC,8,0x5B);
+ fn_800B633C(service,lbl_803777BC,2,0x5C);
+ fn_800B633C(service,lbl_803777BC,11,0x5D);
+ fn_800B633C(service,lbl_803777BC,0,0x5D);
+ lbl_803777B8=fn_800B6B70(service);
+ fn_800B633C(service,lbl_803777B8,2,0x5C);
+ lbl_803777B0=fn_800B6B70(service);
+ fn_800B6358(service,lbl_803777B0,2,0x6C);
+ fn_800B633C(service,lbl_803777B0,2,0x6D);
+ fn_800B6358(service,lbl_803777B0,13,0x70);
+ fn_800B633C(service,lbl_803777B0,13,0x71);
+ fn_800B6358(service,lbl_803777B0,1,0x72);
+ fn_800B633C(service,lbl_803777B0,1,0x73);
+ fn_800B6358(service,lbl_803777B0,3,0x6E);
+ fn_800B633C(service,lbl_803777B0,3,0x6F);
+ fn_800B6358(service,lbl_803777B0,12,0x74);
+ fn_800B633C(service,lbl_803777B0,12,0x75);
+ fn_800B6358(service,lbl_803777B0,10,0xCD);
+ fn_800B633C(service,lbl_803777B0,0,0x63);
+ fn_800B633C(service,lbl_803777B0,11,0x55);
+ lbl_803777C0=fn_800B6B70(service);
+ fn_800B633C(service,lbl_803777C0,6,0x6B);
+ fn_800B633C(service,lbl_803777C0,9,0x6A);
+ fn_800B633C(service,lbl_803777C0,8,0x68);
+ fn_800B633C(service,lbl_803777C0,7,0x69);
+ fn_800B6358(service,lbl_803777C0,15,0x67);
+ lbl_803777C4=fn_800B6B70(service);
+ fn_800B633C(service,lbl_803777C4,2,0xC4);
+ fn_800B633C(service,lbl_803777C4,1,0xC5);
+ fn_800B633C(service,lbl_803777C4,8,0xDA);
+ fn_800B633C(service,lbl_803777C4,7,0xDB);
+ lbl_803777C8=fn_800B6B70(service);
+ fn_800B633C(service,lbl_803777C8,2,0xC4);
+ fn_800B633C(service,lbl_803777C8,1,0xC5);
+ fn_800B633C(service,lbl_803777C8,8,0xDA);
+ fn_800B633C(service,lbl_803777C8,7,0xDB);
+ lbl_803777CC=fn_800B6B70(service);
+ fn_800B633C(service,lbl_803777CC,2,0xD3);
+ fn_800B633C(service,lbl_803777CC,3,0xD2);
+ fn_800B633C(service,lbl_803777CC,0,0xD5);
+ fn_800B633C(service,lbl_803777CC,1,0xD4);
+ lbl_803777B4=fn_800B6B70(service);
+ fn_800B6C84(service,0,lbl_803777B0);
+}

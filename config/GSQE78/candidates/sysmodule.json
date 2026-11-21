@@ -1,0 +1,544 @@
+{
+  "compiler": "GC/2.0",
+  "cflags": [
+    "-proc gekko",
+    "-fp hardware",
+    "-enum int",
+    "-str reuse",
+    "-common off",
+    "-opt level=4,nopeephole,speed",
+    "-inline auto,deferred",
+    "-pool off",
+    "-Cpp_exceptions off"
+  ],
+  "source": "src/Python/sysmodule.c",
+  "dependency_symbols": [
+    {
+      "name": "vfprintf",
+      "address": "0x80125c68",
+      "original_name": "fn_80125C68",
+      "section": ".text",
+      "size": "0x70",
+      "scope": "global"
+    },
+    {
+      "name": "vsprintf",
+      "address": "0x80125bf0",
+      "original_name": "fn_80125BF0",
+      "section": ".text",
+      "size": "0x78",
+      "scope": "global"
+    },
+    {
+      "name": "Py_GetVersion",
+      "address": "0x801952dc",
+      "original_name": "fn_801952DC",
+      "section": ".text",
+      "size": "0x5C",
+      "scope": "global"
+    },
+    {
+      "name": "Py_GetCopyright",
+      "address": "0x801952c4",
+      "original_name": "fn_801952C4",
+      "section": ".text",
+      "size": "0xC",
+      "scope": "global"
+    },
+    {
+      "name": "Py_GetPlatform",
+      "address": "0x801952d0",
+      "original_name": "fn_801952D0",
+      "section": ".text",
+      "size": "0xC",
+      "scope": "global"
+    },
+    {
+      "name": "Py_GetProgramFullPath",
+      "address": "0x801ac738",
+      "original_name": "fn_801AC738",
+      "section": ".text",
+      "size": "0x28",
+      "scope": "global"
+    },
+    {
+      "name": "Py_GetPrefix",
+      "address": "0x801ac788",
+      "original_name": "fn_801AC788",
+      "section": ".text",
+      "size": "0x28",
+      "scope": "global"
+    },
+    {
+      "name": "Py_GetExecPrefix",
+      "address": "0x801ac760",
+      "original_name": "fn_801AC760",
+      "section": ".text",
+      "size": "0x28",
+      "scope": "global"
+    },
+    {
+      "name": "PyImport_Inittab",
+      "address": "0x80376ea4",
+      "original_name": "lbl_80376EA4",
+      "section": ".sdata",
+      "size": "0x4",
+      "scope": "global"
+    },
+    {
+      "name": "PyUnicode_SetDefaultEncoding",
+      "address": "0x8016f8b0",
+      "original_name": "fn_8016F8B0",
+      "section": ".text",
+      "size": "0x78",
+      "scope": "global"
+    },
+    {
+      "name": "PyExc_SystemExit",
+      "address": "0x80377eac",
+      "original_name": "lbl_80377EAC",
+      "section": ".sbss",
+      "size": "0x4",
+      "scope": "global"
+    },
+    {
+      "name": "PyErr_Display",
+      "address": "0x801a0c38",
+      "original_name": "fn_801A0C38",
+      "section": ".text",
+      "size": "0x35C",
+      "scope": "global"
+    }
+  ],
+  "splits": [
+    {
+      "section": ".text",
+      "start": "0x801a26a8",
+      "end": "0x801a387c"
+    },
+    {
+      "section": ".data",
+      "start": "0x802e3840",
+      "end": "0x802E51D4"
+    },
+    {
+      "section": ".sdata",
+      "start": "0x80377068",
+      "end": "0x803770E2"
+    },
+    {
+      "section": ".sbss",
+      "start": "0x80377f58",
+      "end": "0x80377f5c"
+    }
+  ],
+  "functions": [
+    {
+      "name": "PySys_WriteStderr",
+      "original_name": "PySys_WriteStderr",
+      "address": "0x801a26a8",
+      "size": "0x160",
+      "scope": "global"
+    },
+    {
+      "name": "PySys_SetPath",
+      "original_name": "fn_801A2808",
+      "address": "0x801a2808",
+      "size": "0x1b8",
+      "scope": "global"
+    },
+    {
+      "name": "_PySys_Init",
+      "original_name": "fn_801A29C0",
+      "address": "0x801a29c0",
+      "size": "0x6fc",
+      "scope": "global"
+    },
+    {
+      "name": "sys_getframe",
+      "original_name": "fn_801A30BC",
+      "address": "0x801a30bc",
+      "size": "0xc0",
+      "scope": "local"
+    },
+    {
+      "name": "sys_getrefcount",
+      "original_name": "fn_801A317C",
+      "address": "0x801a317c",
+      "size": "0x50",
+      "scope": "local"
+    },
+    {
+      "name": "sys_getrecursionlimit",
+      "original_name": "fn_801A31CC",
+      "address": "0x801a31cc",
+      "size": "0x48",
+      "scope": "local"
+    },
+    {
+      "name": "sys_setrecursionlimit",
+      "original_name": "fn_801A3214",
+      "address": "0x801a3214",
+      "size": "0x7c",
+      "scope": "local"
+    },
+    {
+      "name": "sys_setcheckinterval",
+      "original_name": "fn_801A3290",
+      "address": "0x801a3290",
+      "size": "0x6c",
+      "scope": "local"
+    },
+    {
+      "name": "sys_setprofile",
+      "original_name": "fn_801A32FC",
+      "address": "0x801a32fc",
+      "size": "0xa8",
+      "scope": "local"
+    },
+    {
+      "name": "sys_settrace",
+      "original_name": "fn_801A33A4",
+      "address": "0x801a33a4",
+      "size": "0xa8",
+      "scope": "local"
+    },
+    {
+      "name": "sys_setdefaultencoding",
+      "original_name": "fn_801A344C",
+      "address": "0x801a344c",
+      "size": "0x6c",
+      "scope": "local"
+    },
+    {
+      "name": "sys_getdefaultencoding",
+      "original_name": "fn_801A34B8",
+      "address": "0x801a34b8",
+      "size": "0x48",
+      "scope": "local"
+    },
+    {
+      "name": "sys_exit",
+      "original_name": "fn_801A3500",
+      "address": "0x801a3500",
+      "size": "0x28",
+      "scope": "local"
+    },
+    {
+      "name": "sys_exc_info",
+      "original_name": "fn_801A3528",
+      "address": "0x801a3528",
+      "size": "0x8c",
+      "scope": "local"
+    },
+    {
+      "name": "sys_excepthook",
+      "original_name": "fn_801A35B4",
+      "address": "0x801a35b4",
+      "size": "0x6c",
+      "scope": "local"
+    },
+    {
+      "name": "sys_displayhook",
+      "original_name": "fn_801A3620",
+      "address": "0x801a3620",
+      "size": "0x184",
+      "scope": "local"
+    },
+    {
+      "name": "PySys_SetObject",
+      "original_name": "PySys_SetObject",
+      "address": "0x801a37a4",
+      "size": "0x8c",
+      "scope": "global"
+    },
+    {
+      "name": "PySys_GetObject",
+      "original_name": "PySys_GetObject",
+      "address": "0x801a3830",
+      "size": "0x4c",
+      "scope": "global"
+    }
+  ],
+  "data_symbols": [
+    {
+      "name": "displayhook_doc",
+      "original_name": "lbl_802E3840",
+      "address": "0x802e3840",
+      "size": "0x5e",
+      "scope": "local",
+      "section": ".data"
+    },
+    {
+      "name": "excepthook_doc",
+      "original_name": "lbl_802E38A0",
+      "address": "0x802e38a0",
+      "size": "0x75",
+      "scope": "local",
+      "section": ".data"
+    },
+    {
+      "name": "exc_info_doc",
+      "original_name": "lbl_802E3918",
+      "address": "0x802e3918",
+      "size": "0xa9",
+      "scope": "local",
+      "section": ".data"
+    },
+    {
+      "name": "exit_doc",
+      "original_name": "lbl_802E39C4",
+      "address": "0x802e39c4",
+      "size": "0x139",
+      "scope": "local",
+      "section": ".data"
+    },
+    {
+      "name": "getdefaultencoding_doc",
+      "original_name": "lbl_802E3B00",
+      "address": "0x802e3b00",
+      "size": "0x70",
+      "scope": "local",
+      "section": ".data"
+    },
+    {
+      "name": "setdefaultencoding_doc",
+      "original_name": "lbl_802E3B70",
+      "address": "0x802e3b70",
+      "size": "0x6a",
+      "scope": "local",
+      "section": ".data"
+    },
+    {
+      "name": "settrace_doc",
+      "original_name": "lbl_802E3BDC",
+      "address": "0x802e3bdc",
+      "size": "0x96",
+      "scope": "local",
+      "section": ".data"
+    },
+    {
+      "name": "setprofile_doc",
+      "original_name": "lbl_802E3C74",
+      "address": "0x802e3c74",
+      "size": "0x98",
+      "scope": "local",
+      "section": ".data"
+    },
+    {
+      "name": "setcheckinterval_doc",
+      "original_name": "lbl_802E3D0C",
+      "address": "0x802e3d0c",
+      "size": "0x9c",
+      "scope": "local",
+      "section": ".data"
+    },
+    {
+      "name": "setrecursionlimit_doc",
+      "original_name": "lbl_802E3DA8",
+      "address": "0x802e3da8",
+      "size": "0xeb",
+      "scope": "local",
+      "section": ".data"
+    },
+    {
+      "name": "getrecursionlimit_doc",
+      "original_name": "lbl_802E3E94",
+      "address": "0x802e3e94",
+      "size": "0xde",
+      "scope": "local",
+      "section": ".data"
+    },
+    {
+      "name": "getrefcount_doc",
+      "original_name": "lbl_802E3F74",
+      "address": "0x802e3f74",
+      "size": "0xa5",
+      "scope": "local",
+      "section": ".data"
+    },
+    {
+      "name": "getframe_doc",
+      "original_name": "lbl_802E401C",
+      "address": "0x802e401c",
+      "size": "0x190",
+      "scope": "local",
+      "section": ".data"
+    },
+    {
+      "name": "sys_methods",
+      "original_name": "lbl_802E4264",
+      "address": "0x802e4264",
+      "size": "0xe0",
+      "scope": "local",
+      "section": ".data"
+    },
+    {
+      "name": "sys_doc",
+      "original_name": "lbl_802E4344",
+      "address": "0x802e4344",
+      "size": "0xc4c",
+      "scope": "local",
+      "section": ".data"
+    },
+    {
+      "name": "sys_string_exit",
+      "original_name": "lbl_80377068",
+      "address": "0x80377068",
+      "size": "0x5",
+      "scope": "local",
+      "section": ".sdata"
+    },
+    {
+      "name": "sys_string_stderr",
+      "original_name": "lbl_80377070",
+      "address": "0x80377070",
+      "size": "0x7",
+      "scope": "local",
+      "section": ".sdata"
+    },
+    {
+      "name": "sys_string_stdout",
+      "original_name": "lbl_80377078",
+      "address": "0x80377078",
+      "size": "0x7",
+      "scope": "local",
+      "section": ".sdata"
+    },
+    {
+      "name": "sys_string_path",
+      "original_name": "lbl_80377080",
+      "address": "0x80377080",
+      "size": "0x5",
+      "scope": "local",
+      "section": ".sdata"
+    },
+    {
+      "name": "sys_string_sys",
+      "original_name": "lbl_80377088",
+      "address": "0x80377088",
+      "size": "0x4",
+      "scope": "local",
+      "section": ".sdata"
+    },
+    {
+      "name": "sys_string_stdin_repr",
+      "original_name": "lbl_8037708C",
+      "address": "0x8037708c",
+      "size": "0x8",
+      "scope": "local",
+      "section": ".sdata"
+    },
+    {
+      "name": "sys_string_r",
+      "original_name": "lbl_80377094",
+      "address": "0x80377094",
+      "size": "0x2",
+      "scope": "local",
+      "section": ".sdata"
+    },
+    {
+      "name": "sys_string_w",
+      "original_name": "lbl_80377098",
+      "address": "0x80377098",
+      "size": "0x2",
+      "scope": "local",
+      "section": ".sdata"
+    },
+    {
+      "name": "sys_string_stdin",
+      "original_name": "lbl_8037709C",
+      "address": "0x8037709c",
+      "size": "0x6",
+      "scope": "local",
+      "section": ".sdata"
+    },
+    {
+      "name": "sys_string_version",
+      "original_name": "lbl_803770A4",
+      "address": "0x803770a4",
+      "size": "0x8",
+      "scope": "local",
+      "section": ".sdata"
+    },
+    {
+      "name": "warnoptions",
+      "original_name": "lbl_80377F58",
+      "address": "0x80377f58",
+      "size": "0x4",
+      "scope": "local",
+      "section": ".sbss"
+    }
+  ],
+  "status": "integrated-byte-match",
+  "split_notes": [
+    "The entire linked text has 18 functions. PySys_GetFile, PySys_ResetWarnOptions, PySys_AddWarnOption, PySys_SetArgv, and PySys_WriteStdout have no bodies in this linked TU and are omitted.",
+    "warnoptions owns four SBSS bytes at 0x80377F58..0x80377F5C. Existing lbl_80377F58 size 0x8 includes following padding; shrink to 0x4 and preserve 0x80377F5C..0x80377F60 separately.",
+    "Ten named char arrays retain the original reused small-data string order, including stdout from the unlinked stdout writer. Remaining compiler literals preserve their original emission order.",
+    "The frame back pointer is at byte offset 8. This follows the original fixed-object frame header, not a variable-object header.",
+    "Initialized data ends at 0x802E51D4, followed by four zero padding bytes. Small data ends at 0x803770E2, followed by six zero padding bytes."
+  ],
+  "validation": {
+    "text_bytes": 4564,
+    "data_bytes": 6548,
+    "data_padding_bytes": 4,
+    "sdata_bytes": 122,
+    "sdata_padding_bytes": 6,
+    "sbss_bytes": 4,
+    "relocations_applied": 306,
+    "section_byte_differences": 0,
+    "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "ac52699ce76946a550e8d22667aa3daf23465741c37b2da1f6abbb0a13df5a08",
+    "object_sha256": "a40cf9c94b857cdaa9dca9b992828af280fadc2e49b441361400041b1e7cb8f0",
+    "verification_script": "scratch/sysmodule/verify.py",
+    "integration_status": "verified full-DOL and objdiff"
+  },
+  "notes": "docs/notes/sysmodule.md",
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "ac52699ce76946a550e8d22667aa3daf23465741c37b2da1f6abbb0a13df5a08",
+    "matched_code": 4564,
+    "matched_functions": 18,
+    "matched_data": 6674,
+    "complete_data": 6674,
+    "object_path": "build/GSQE78/src/Python/sysmodule.o",
+    "object_sha256": "a40cf9c94b857cdaa9dca9b992828af280fadc2e49b441361400041b1e7cb8f0"
+  },
+  "external_padding": [
+    {
+      "source": "src/Python/sysmodule.c",
+      "unit": "main/Python/sysmodule",
+      "section": ".data",
+      "start": "0x802e51d4",
+      "end": "0x802e51d8",
+      "size": 4,
+      "alignment": 1,
+      "symbol": "gap_07_802E51D4_data",
+      "original_owner": "padding/source_extents/Python/sysmodule.s",
+      "source_section_start": "0x802e3840",
+      "source_section_bytes": 6548,
+      "previous_split_bytes": 6552,
+      "description": "Original linker alignment beyond emitted source section; no source credit."
+    },
+    {
+      "source": "src/Python/sysmodule.c",
+      "unit": "main/Python/sysmodule",
+      "section": ".sdata",
+      "start": "0x803770e2",
+      "end": "0x803770e8",
+      "size": 6,
+      "alignment": 1,
+      "symbol": "gap_09_803770E2_sdata",
+      "original_owner": "padding/source_extents/Python/sysmodule.s",
+      "source_section_start": "0x80377068",
+      "source_section_bytes": 122,
+      "previous_split_bytes": 128,
+      "description": "Original linker alignment beyond emitted source section; no source credit."
+    }
+  ],
+  "source_extent_audit": {
+    "data_credit_correction": 10,
+    "evidence": "config/GSQE78/source_padding.json",
+    "description": "Source and original bytes unchanged; trailing original padding moved to NonMatching ownership."
+  }
+}

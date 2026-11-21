@@ -1,0 +1,17 @@
+/* Retained GSQE78 MSL misc_io.c. Pinned Strikers source and proof:
+ * docs/notes/msl-misc-io.md. */
+#include "stdio_internal.h"
+extern void (*__stdio_exit)(void);
+
+
+void clearerr(FILE* file)
+{
+    file->file_state.eof = 0;
+    file->file_state.error = 0;
+}
+
+
+void __stdio_atexit(void)
+{
+    __stdio_exit = __close_all;
+}

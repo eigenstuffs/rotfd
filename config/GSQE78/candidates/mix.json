@@ -1,0 +1,202 @@
+{
+  "source": "src/dolphin/mix/mix.c",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.2.5n",
+  "cflags": "-proc gekko -fp hardware -enum int -str reuse -common off -O4,p -inline auto -i src/dolphin/mix -Cpp_exceptions off",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2148548584,
+      "end": 2148557072
+    },
+    {
+      "name": ".data",
+      "start": 2150425664,
+      "end": 2150428670
+    },
+    {
+      "name": ".bss",
+      "start": 2150836608,
+      "end": 2150842752
+    },
+    {
+      "name": ".sbss",
+      "start": 2151119880,
+      "end": 2151119892
+    }
+  ],
+  "functions": [
+    {
+      "name": "__MIXSetPan",
+      "address": 2148548584,
+      "size": 188
+    },
+    {
+      "name": "MIXInit",
+      "address": 2148548772,
+      "size": 200
+    },
+    {
+      "name": "MIXInitChannel",
+      "address": 2148548972,
+      "size": 3700
+    },
+    {
+      "name": "MIXReleaseChannel",
+      "address": 2148552672,
+      "size": 32
+    },
+    {
+      "name": "MIXSetInput",
+      "address": 2148552704,
+      "size": 40
+    },
+    {
+      "name": "MIXSetPan",
+      "address": 2148552744,
+      "size": 108
+    },
+    {
+      "name": "MIXUpdateSettings",
+      "address": 2148552852,
+      "size": 4220
+    }
+  ],
+  "objects": [
+    {
+      "name": "__MIXVolumeTable",
+      "address": 2150425664,
+      "size": 1930,
+      "section": ".data"
+    },
+    {
+      "name": "__MIXPanTable",
+      "address": 2150427596,
+      "size": 512,
+      "section": ".data"
+    },
+    {
+      "name": "__MIX_DPL2_front",
+      "address": 2150428108,
+      "size": 256,
+      "section": ".data"
+    },
+    {
+      "name": "__MIX_DPL2_rear",
+      "address": 2150428364,
+      "size": 256,
+      "section": ".data"
+    },
+    {
+      "name": "__MIXAIVolumeTable",
+      "address": 2150428620,
+      "size": 50,
+      "section": ".data"
+    },
+    {
+      "name": "__MIXChannel",
+      "address": 2150836608,
+      "size": 6144,
+      "section": ".bss"
+    },
+    {
+      "name": "__MIXDvdStreamAttenCurrent",
+      "address": 2151119880,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "__MIXDvdStreamAttenUser",
+      "address": 2151119884,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "__MIXSoundMode",
+      "address": 2151119888,
+      "size": 4,
+      "section": ".sbss"
+    }
+  ],
+  "symbol_scopes": {
+    "__MIXSetPan": "local",
+    "MIXInit": "global",
+    "MIXInitChannel": "global",
+    "MIXReleaseChannel": "global",
+    "MIXSetInput": "global",
+    "MIXSetPan": "global",
+    "MIXUpdateSettings": "global",
+    "__MIXVolumeTable": "global",
+    "__MIXPanTable": "global",
+    "__MIX_DPL2_front": "global",
+    "__MIX_DPL2_rear": "global",
+    "__MIXAIVolumeTable": "global",
+    "__MIXChannel": "local",
+    "__MIXDvdStreamAttenCurrent": "local",
+    "__MIXDvdStreamAttenUser": "local",
+    "__MIXSoundMode": "local"
+  },
+  "symbols": {
+    "__MIXSetPan": "0x80103fe8",
+    "MIXInit": "0x801040a4",
+    "MIXInitChannel": "0x8010416c",
+    "MIXReleaseChannel": "0x80104fe0",
+    "MIXSetInput": "0x80105000",
+    "MIXSetPan": "0x80105028",
+    "MIXUpdateSettings": "0x80105094",
+    "__MIXVolumeTable": "0x802ce440",
+    "__MIXPanTable": "0x802cebcc",
+    "__MIX_DPL2_front": "0x802cedcc",
+    "__MIX_DPL2_rear": "0x802ceecc",
+    "__MIXAIVolumeTable": "0x802cefcc",
+    "__MIXChannel": "0x80332980",
+    "__MIXDvdStreamAttenCurrent": "0x80377c08",
+    "__MIXDvdStreamAttenUser": "0x80377c0c",
+    "__MIXSoundMode": "0x80377c10",
+    "OSDisableInterrupts": "0x800f362c",
+    "OSRestoreInterrupts": "0x800f3654",
+    "AISetStreamVolLeft": "0x800feef0",
+    "AISetStreamVolRight": "0x800fef1c"
+  },
+  "external_original_names": {
+    "OSDisableInterrupts": "OSDisableInterrupts",
+    "OSRestoreInterrupts": "OSRestoreInterrupts",
+    "AISetStreamVolLeft": "fn_800FEEF0",
+    "AISetStreamVolRight": "fn_800FEF1C"
+  },
+  "verified_text_bytes": 8488,
+  "verified_data_bytes": 3008,
+  "source_kind": "c",
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "04171c010ba7217660b962384513332c6371a67537b824e4dbd3315701d16d23",
+    "matched_code": 8488,
+    "matched_functions": 7,
+    "matched_data": 9162,
+    "complete_data": 9162,
+    "object_path": "build/GSQE78/src/dolphin/mix/mix.o",
+    "object_sha256": "d8d0aa557e0bcc5be01bca3a4c4cc8f7fa3bd47bc9b708eeb128b82810a62da5"
+  },
+  "external_padding": [
+    {
+      "source": "src/dolphin/mix/mix.c",
+      "unit": "main/dolphin/mix/mix",
+      "section": ".data",
+      "start": "0x802ceffe",
+      "end": "0x802cf000",
+      "size": 2,
+      "alignment": 1,
+      "symbol": "gap_07_802CEFFE_data",
+      "original_owner": "padding/source_extents/dolphin/mix/mix.s",
+      "source_section_start": "0x802ce440",
+      "source_section_bytes": 3006,
+      "previous_split_bytes": 3008,
+      "description": "Original linker alignment beyond emitted source section; no source credit."
+    }
+  ],
+  "source_extent_audit": {
+    "data_credit_correction": 2,
+    "evidence": "config/GSQE78/source_padding.json",
+    "description": "Source and original bytes unchanged; trailing original padding moved to NonMatching ownership."
+  }
+}

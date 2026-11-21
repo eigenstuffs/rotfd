@@ -1,0 +1,56 @@
+{
+  "compiler": "GC/1.3",
+  "cflags": [
+    "-proc gekko",
+    "-fp hardware",
+    "-enum int",
+    "-common off",
+    "-O4,p",
+    "-inline deferred",
+    "-Cpp_exceptions off",
+    "-RTTI off",
+    "-use_lmw_stmw on",
+    "-char signed"
+  ],
+  "source": "src/Runtime/__va_arg.c",
+  "status": "integrated-byte-match",
+  "dependency_symbols": [],
+  "splits": [
+    {
+      "section": ".text",
+      "start": "0x8011ec7c",
+      "end": "0x8011ed44"
+    }
+  ],
+  "functions": [
+    {
+      "name": "__va_arg",
+      "original_name": "__va_arg",
+      "address": "0x8011ec7c",
+      "size": "0xc8",
+      "scope": "global"
+    }
+  ],
+  "data_symbols": [],
+  "notes": "docs/notes/runtime-va-arg.md",
+  "validation": {
+    "verification_script": "scratch/runtime_va_arg/verify.py",
+    "text_bytes": 200,
+    "relocations_applied": 0,
+    "byte_differences": 0,
+    "source_sha256": "f2a60bf5f14795d1047d39440b8c3bead34e5140698fa573a9ed7b7d6e7f1d64",
+    "object_sha256": "c02b64111d3126abd68129ec5472ae38b80114a11bdbdbb810506266b4d2ae02",
+    "original_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "integration_status": "verified full-DOL and objdiff"
+  },
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "f2a60bf5f14795d1047d39440b8c3bead34e5140698fa573a9ed7b7d6e7f1d64",
+    "matched_code": 200,
+    "matched_functions": 1,
+    "matched_data": 0,
+    "complete_data": 0,
+    "object_path": "build/GSQE78/src/Runtime/__va_arg.o",
+    "object_sha256": "af611ecd1b6b0339730d45e3d31707d1d97f6a76bc22bc2b257ed2495323517b"
+  }
+}

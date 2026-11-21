@@ -1,0 +1,50 @@
+struct ActiveMotionHandle{signed int generation:8;signed int index:24;};struct ActiveMotionPoint{float x,y,z;ActiveMotionPoint(){}ActiveMotionPoint(float a,float b,float c):x(a),y(b),z(c){}ActiveMotionPoint(const ActiveMotionPoint&v):x(v.x),y(v.y),z(v.z){}ActiveMotionPoint operator+(const ActiveMotionPoint&v)const{return ActiveMotionPoint(x+v.x,y+v.y,z+v.z);}};
+struct ActiveMotionStorage{char unknown00[8];};struct ActiveMotionOwner:ActiveMotionStorage{
+virtual void slot8();
+virtual void slotC();
+virtual void slot10();
+virtual void slot14();
+virtual void slot18();
+virtual void slot1C();
+virtual void slot20();
+virtual void slot24();
+virtual void slot28();
+virtual void slot2C();
+virtual void slot30();
+virtual void slot34();
+virtual void slot38();
+virtual void slot3C();
+virtual void apply(float,ActiveMotionPoint*,ActiveMotionPoint*,ActiveMotionPoint*,int);
+virtual void prepare(float,ActiveMotionPoint*,ActiveMotionPoint*,ActiveMotionPoint*,int);
+virtual void step(float,int);
+virtual void collide(float,void*,ActiveMotionPoint*,ActiveMotionPoint*,ActiveMotionPoint*,ActiveMotionPoint*,int);
+virtual void finish(int);
+virtual void slot54();
+virtual void visit(float,void*,int);
+virtual void slot5C();
+virtual void slot60();
+virtual void slot64();
+virtual void slot68();
+virtual void slot6C();
+virtual void slot70();
+virtual void slot74();
+virtual void slot78();
+virtual void slot7C();
+virtual void slot80();
+virtual void slot84();
+virtual void slot88();
+virtual void slot8C();
+virtual void slot90();
+virtual void slot94();
+virtual void slot98();
+virtual const ActiveMotionHandle*getHandle(int);
+virtual void slotA0();
+virtual void slotA4();
+virtual void slotA8();
+virtual void slotAC();
+virtual ActiveMotionPoint getPosition(int);
+char unknown0C[0x24];unsigned long long flags;};
+struct ActiveMotionSelf{char unknown00[0x2C];int count;char unknown30[4];ActiveMotionHandle*items;char unknown38[8];unsigned long*flags;char unknown44[8];unsigned long*words;};
+struct ActiveMotionEntry{char*object;char unknown04[8];signed char generation;char unknown0D[3];signed char getGeneration()const{return generation;}};struct ActiveMotionManager{char unknown00[8];ActiveMotionEntry*entries;};extern "C"{extern struct{char unknown00[0x118];ActiveMotionManager*manager;}lbl_801E9D24;void fn_8023DE28(void*);extern const float lbl_8037B180;}
+inline char*resolveActiveMotion(const ActiveMotionHandle&h){int index=h.index;ActiveMotionManager*m=lbl_801E9D24.manager;int generation=m->entries[index].getGeneration();if(generation==h.generation)return m->entries[index].object;return 0;}
+extern "C" void fn_8022A560(ActiveMotionSelf*self,void*input,float delta){ActiveMotionOwner*owner;int offset;int count=self->count;int i;for(i=0,offset=0;i<count;offset+=4,++i){if(!(*(unsigned long*)((char*)self->flags+offset)&2)&&(self->words[i>>5]&(1U<<(i&31)))){owner=(ActiveMotionOwner*)resolveActiveMotion(*(ActiveMotionHandle*)((char*)self->items+offset));char*object=resolveActiveMotion(*owner->getHandle(0));ActiveMotionPoint position(owner->getPosition(0));ActiveMotionPoint a,b;if(owner->flags&0x800000000000ULL)owner->prepare(lbl_8037B180,&position,&a,&b,0);else owner->prepare(delta,&position,&a,&b,0);ActiveMotionPoint sum=a+b;owner->step(delta,0);owner->collide(delta,input,&position,&a,&sum,&b,0);owner->apply(delta,&position,&a,&sum,0);fn_8023DE28(object);owner->visit(delta,input,0);owner->finish(0);}}}

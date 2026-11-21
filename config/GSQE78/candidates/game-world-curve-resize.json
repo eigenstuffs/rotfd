@@ -1,0 +1,201 @@
+{
+  "status": "integrated-byte-match",
+  "source": "src/Game/world_curve_resize.cpp",
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-proc",
+    "gekko",
+    "-fp",
+    "hardware",
+    "-enum",
+    "int",
+    "-str",
+    "reuse",
+    "-common",
+    "off",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-Cpp_exceptions",
+    "off",
+    "-RTTI",
+    "off",
+    "-use_lmw_stmw",
+    "on",
+    "-i",
+    "src/Game"
+  ],
+  "source_kind": "c++",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2149464772,
+      "end": 2149465324,
+      "alignment": 4
+    }
+  ],
+  "functions": [
+    {
+      "name": "fn_801E3AC4",
+      "address": 2149464772,
+      "size": 552,
+      "scope": "global",
+      "section": ".text",
+      "object_offset": 0,
+      "sha256": "86fee8ddec774bfc2920383e0843838ac728c866570f609104c45ab8038ae906"
+    }
+  ],
+  "objects": [],
+  "unlinked_functions": [
+    {
+      "name": "__dt__14WorldCurve<16>Fv",
+      "offset": 552,
+      "size": 228,
+      "binding": 2,
+      "type": 2,
+      "section_index": 1,
+      "section": ".text"
+    },
+    {
+      "name": "__dt__36WorldCurveArray<17WorldCurveKey<16>>Fv",
+      "offset": 780,
+      "size": 208,
+      "binding": 2,
+      "type": 2,
+      "section_index": 1,
+      "section": ".text"
+    },
+    {
+      "name": "__dt__14WorldCurve<20>Fv",
+      "offset": 988,
+      "size": 228,
+      "binding": 2,
+      "type": 2,
+      "section_index": 1,
+      "section": ".text"
+    },
+    {
+      "name": "__dt__36WorldCurveArray<17WorldCurveKey<20>>Fv",
+      "offset": 1216,
+      "size": 208,
+      "binding": 2,
+      "type": 2,
+      "section_index": 1,
+      "section": ".text"
+    }
+  ],
+  "unlinked_objects": [
+    {
+      "name": "__vt__22CurveRecord3C_802EA7E4",
+      "address": 2150541284,
+      "size": 12,
+      "section": ".data",
+      "binding": "weak",
+      "reason": "Overridden by existing original strong table; no source credit."
+    }
+  ],
+  "dependency_symbols": [
+    {
+      "name": "__ct__18CurveBase_801B1088Fv",
+      "address": 2149257352,
+      "scope": "global"
+    },
+    {
+      "name": "__dt__22CurveRecord3C_802EA7E4Fv",
+      "address": 2149465324,
+      "scope": "global"
+    },
+    {
+      "name": "__vt__22CurveRecord3C_802EA7E4",
+      "address": 2150541284,
+      "scope": "global"
+    },
+    {
+      "name": "__vt__24CurveRecordBase_802E9E08",
+      "address": 2150538760,
+      "scope": "global"
+    },
+    {
+      "name": "fn_8028FAF4",
+      "address": 2150169332,
+      "scope": "global"
+    },
+    {
+      "name": "fn_8028FD50",
+      "address": 2150169936,
+      "scope": "global"
+    },
+    {
+      "name": "fn_8028FF24",
+      "address": 2150170404,
+      "scope": "global"
+    },
+    {
+      "name": "lbl_8028F698",
+      "address": 2150168216,
+      "scope": "global"
+    },
+    {
+      "name": "reset__24CurveRecordBase_802E9E08Fv",
+      "address": 2149268004,
+      "scope": "global"
+    }
+  ],
+  "source_sha256": "b4cde16cfac52166e52b70eed4eeaa37d6144c6e9baced384f61ae08e4bb8ebd",
+  "headers": [
+    {
+      "path": "src/Game/world_curve_arrays_internal.h",
+      "sha256": "050e16c320d4842599d51bba0b0275eb60bf6d10d3e8dd0c39986012f31baf2c"
+    },
+    {
+      "path": "src/Game/objects_owner_internal.h",
+      "sha256": "f2f3ed38fa07c4439af53617df67a59cd5fa686733430f307e91fb0d8d8a7d3c"
+    }
+  ],
+  "validation": {
+    "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "object_sha256": "14165ea43de3739ee81d8c274aad383d0e26bf3077665c110c6cedffd6dbf60d",
+    "retained_text_bytes": 552,
+    "emitted_text_bytes": 1424,
+    "initialized_data_bytes": 0,
+    "bss_bytes": 0,
+    "emitted_data_bytes": 12,
+    "unlinked_data_bytes": 12,
+    "unlinked_text_bytes": 872,
+    "weak_functions": 4,
+    "relocations": 26,
+    "unlinked_relocations": 19,
+    "zero_byte_differences": true,
+    "weak_table_bytes_verified": true,
+    "all_retained_allocated_bytes_verified": true,
+    "all_emitted_allocated_bytes_accounted": true,
+    "owned_padding_bytes": 0,
+    "verification_script": "scratch/game_world_curve_arrays/verify.py",
+    "integration_status": "verified full-DOL and objdiff"
+  },
+  "notes": "docs/notes/game-world-curve-arrays.md",
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "b4cde16cfac52166e52b70eed4eeaa37d6144c6e9baced384f61ae08e4bb8ebd",
+    "matched_code": 552,
+    "matched_functions": 1,
+    "matched_data": 0,
+    "complete_data": 0,
+    "object_path": "build/GSQE78/src/Game/world_curve_resize.o",
+    "object_sha256": "14165ea43de3739ee81d8c274aad383d0e26bf3077665c110c6cedffd6dbf60d"
+  },
+  "memcard_native_identity_migration": {
+    "description": "Current canonical identities and hashes verified after native CGCMemCardManipulator/CFSM ownership integration; original evidence is retained in immutable backups and explicit previous receipts.",
+    "production_verification": "scratch/memcard_native_vtable_20261020_parallel/production-verification.json",
+    "production_verification_sha256": "96e50e874bd53c148cd6395f670c040416c34699787d56726d8cfb010c340f31",
+    "migration_object_audit": "scratch/memcard_native_vtable_20261020_parallel/migration_object_audit.json",
+    "migration_object_audit_sha256": "b809560bf7212a505b2ea749256bef5263b4784d066bb311015e10928e90db9d",
+    "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "unchanged_caller_objects": 344,
+    "native_objects": 6,
+    "native_actual_relocations": 281,
+    "previous_canonical_sha256": "c2a61d2069edf39559632ad644d76c2d4c0c3bd419079f0d6dc8d87bd33b0dff",
+    "previous_canonical": "scratch/memcard_canonical_refresh_20261020_parallel/backups/config/GSQE78/candidates/game-world-curve-resize.json",
+    "previous_entry_json_pointer": ""
+  }
+}

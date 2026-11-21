@@ -1,0 +1,369 @@
+{
+  "status": "isolated-retained-byte-match",
+  "source": "src/Game/engine_single_callback_startup.cpp",
+  "source_sha256": "ae4ecc39863535cf9644da7fbd1f1499f8939f190fb0efb0cb9f7f2ae7786783",
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-proc",
+    "gekko",
+    "-fp",
+    "hardware",
+    "-enum",
+    "int",
+    "-str",
+    "reuse",
+    "-common",
+    "off",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-Cpp_exceptions",
+    "off",
+    "-i",
+    "include"
+  ],
+  "source_kind": "c++",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2149951792,
+      "end": 2149951968,
+      "alignment": 4
+    }
+  ],
+  "functions": [
+    {
+      "name": "fn_8025A930",
+      "address": 2149951792,
+      "size": 176,
+      "scope": "global",
+      "section": ".text",
+      "object_offset": 0
+    }
+  ],
+  "objects": [],
+  "unlinked_functions": [
+    {
+      "name": "__dt__20SingleStartupHandle3Fv",
+      "section": ".text",
+      "object_offset": 176,
+      "size": 92,
+      "binding": "weak",
+      "raw_sha256": "1dc191d0563978ed38f7b2c78ac2b807d3ddfa53c98db4560ab0ced43640ab02"
+    },
+    {
+      "name": "__dt__20SingleStartupHandle2Fv",
+      "section": ".text",
+      "object_offset": 268,
+      "size": 88,
+      "binding": "weak",
+      "raw_sha256": "ee3203a188e9d7282273427bfc26c6917510fc7b7c574c24cca0331f00873d1f"
+    },
+    {
+      "name": "__dt__20SingleStartupHandle1Fv",
+      "section": ".text",
+      "object_offset": 356,
+      "size": 84,
+      "binding": "weak",
+      "raw_sha256": "fdd9fcf5ab58f46f986c50b59ae57e9c65a7b53acdde19888e0e8987b285adb0"
+    },
+    {
+      "name": "__dt__21CallbackPair_802EC798Fv",
+      "section": ".text",
+      "object_offset": 440,
+      "size": 368,
+      "binding": "weak",
+      "raw_sha256": "6227d567924c324ac181eadb286bc152dc1f028d6cdc6f7ca9a509a08e0bc0ea"
+    }
+  ],
+  "headers": [
+    {
+      "path": "include/Game/engine_single_callback_startup.h",
+      "sha256": "8d1dd96c561126d7917d434a68c519a636448b36657b406be7e4893447f325b6"
+    }
+  ],
+  "dependency_symbols": [],
+  "validation": {
+    "relocations": 10,
+    "unlinked_relocations": 20,
+    "retained_text_bytes": 176,
+    "unlinked_text_bytes": 632,
+    "initialized_data_bytes": 0,
+    "bss_bytes": 0,
+    "owned_padding_bytes": 0
+  },
+  "verified_text_bytes": 176,
+  "verified_data_bytes": 0,
+  "actual_relocations": [
+    {
+      "section": ".text",
+      "at": 20,
+      "address": 2149951812,
+      "kind": 109,
+      "symbol": "lbl_80378050",
+      "target": 2151120976,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 24,
+      "address": 2149951816,
+      "kind": 10,
+      "symbol": "fn_80258948",
+      "target": 2149943624,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 36,
+      "address": 2149951828,
+      "kind": 10,
+      "symbol": "__ct__21CallbackPair_802EC798Fv",
+      "target": 2149943456,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 42,
+      "address": 2149951834,
+      "kind": 6,
+      "symbol": "lbl_802ECA18",
+      "target": 2150550040,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 50,
+      "address": 2149951842,
+      "kind": 4,
+      "symbol": "lbl_802ECA18",
+      "target": 2150550040,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 60,
+      "address": 2149951852,
+      "kind": 10,
+      "symbol": "__ct__15Handle_801F7F10Fv",
+      "target": 2149547780,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 70,
+      "address": 2149951862,
+      "kind": 6,
+      "symbol": "lbl_802EC9D0",
+      "target": 2150549968,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 78,
+      "address": 2149951870,
+      "kind": 4,
+      "symbol": "lbl_802EC9D0",
+      "target": 2150549968,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 140,
+      "address": 2149951932,
+      "kind": 10,
+      "symbol": "fn_8025E714",
+      "target": 2149967636,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 152,
+      "address": 2149951944,
+      "kind": 10,
+      "symbol": "__dt__15Object_80021064Fv",
+      "target": 2147618916,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 220,
+      "address": 2149952012,
+      "kind": 10,
+      "symbol": "__dt__15Handle_801F7F10Fv",
+      "target": 2149547792,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 236,
+      "address": 2149952028,
+      "kind": 10,
+      "symbol": "__dl__FPv",
+      "target": 2148658644,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 308,
+      "address": 2149952100,
+      "kind": 10,
+      "symbol": "__dt__15Handle_801F7F10Fv",
+      "target": 2149547792,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 324,
+      "address": 2149952116,
+      "kind": 10,
+      "symbol": "__dl__FPv",
+      "target": 2148658644,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 392,
+      "address": 2149952184,
+      "kind": 10,
+      "symbol": "__dt__15Handle_801F7F10Fv",
+      "target": 2149547792,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 408,
+      "address": 2149952200,
+      "kind": 10,
+      "symbol": "__dl__FPv",
+      "target": 2148658644,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 474,
+      "address": 2149952266,
+      "kind": 6,
+      "symbol": "lbl_802EC798",
+      "target": 2150549400,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 482,
+      "address": 2149952274,
+      "kind": 4,
+      "symbol": "lbl_802EC798",
+      "target": 2150549400,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 516,
+      "address": 2149952308,
+      "kind": 10,
+      "symbol": "__dt__15Handle_801F7F10Fv",
+      "target": 2149547792,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 544,
+      "address": 2149952336,
+      "kind": 10,
+      "symbol": "__dt__15Handle_801F7F10Fv",
+      "target": 2149547792,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 558,
+      "address": 2149952350,
+      "kind": 6,
+      "symbol": "lbl_802ED000",
+      "target": 2150551552,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 562,
+      "address": 2149952354,
+      "kind": 4,
+      "symbol": "lbl_802ED000",
+      "target": 2150551552,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 574,
+      "address": 2149952366,
+      "kind": 6,
+      "symbol": "lbl_802EC720",
+      "target": 2150549280,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 582,
+      "address": 2149952374,
+      "kind": 4,
+      "symbol": "lbl_802EC720",
+      "target": 2150549280,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 608,
+      "address": 2149952400,
+      "kind": 10,
+      "symbol": "__dt__15Handle_801F7F10Fv",
+      "target": 2149547792,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 722,
+      "address": 2149952514,
+      "kind": 6,
+      "symbol": "lbl_8028F698",
+      "target": 2150168216,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 726,
+      "address": 2149952518,
+      "kind": 4,
+      "symbol": "lbl_8028F698",
+      "target": 2150168216,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 732,
+      "address": 2149952524,
+      "kind": 10,
+      "symbol": "fn_8028FD50",
+      "target": 2150169936,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 760,
+      "address": 2149952552,
+      "kind": 10,
+      "symbol": "__dt__15Object_8025F0D8Fv",
+      "target": 2149970136,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 776,
+      "address": 2149952568,
+      "kind": 10,
+      "symbol": "__dl__FPv",
+      "target": 2148658644,
+      "addend": 0
+    }
+  ]
+}

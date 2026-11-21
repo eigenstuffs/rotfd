@@ -1,0 +1,90 @@
+[
+  {
+    "source": "src/Game/engine_handle_property.c",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,p",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "off",
+      "-i",
+      "include"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2149878956,
+        "end": 2149879072
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_80248CAC",
+        "address": 2149878956,
+        "size": 116,
+        "scope": "global",
+        "kind": "handle-array-property",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "verified_text_bytes": 116,
+    "verified_data_bytes": 0,
+    "relocations": [
+      {
+        "section": ".text",
+        "offset": 2,
+        "symbol": "lbl_801E9D24",
+        "target": "0x801e9d24",
+        "kind": 6
+      },
+      {
+        "section": ".text",
+        "offset": 10,
+        "symbol": "lbl_801E9D24",
+        "target": "0x801e9d24",
+        "kind": 4
+      }
+    ],
+    "source_sha256": "2d3d3590764ef29f1675c44a3a9fb591a521538a489770bed9f129e4473e2c69",
+    "objects": [],
+    "unlinked_functions": [],
+    "headers": [
+      {
+        "path": "include/Game/engine_handle_property.h",
+        "sha256": "843913b4f2e8b02309bf2107dbc5044aa2ddab4f81e43cb8aecd9013e970a70f"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 2,
+        "address": 2149878958,
+        "kind": 6,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 10,
+        "address": 2149878966,
+        "kind": 4,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      }
+    ]
+  }
+]

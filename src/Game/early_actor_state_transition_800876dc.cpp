@@ -1,0 +1,2 @@
+#include "Game/early_actor_state_transition_views.h"
+extern "C" void fn_800876DC(StateOwner*self,float delta){self->timer+=delta;if(self->actor->flags&0x8000000000ULL){self->timer=lbl_80378AD0;fn_8007D6A0(&self->actor->record,fn_80092844(self->actor));}else if(self->timer>lbl_80378B10){self->timer=lbl_80378AD0;fn_8007D6A0(&self->actor->record,0xC);}fn_80092BF4(self->actor,5,delta);fn_80092DAC(self->actor,delta);}

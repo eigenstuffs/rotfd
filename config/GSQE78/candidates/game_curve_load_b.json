@@ -1,0 +1,104 @@
+{
+  "source": "src/Game/curve_load_b.cpp",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-proc gekko",
+    "-fp hardware",
+    "-enum int",
+    "-str reuse",
+    "-common off",
+    "-O4,p",
+    "-inline auto",
+    "-use_lmw_stmw on",
+    "-Cpp_exceptions off"
+  ],
+  "sections": {
+    ".text": [
+      "0x801b1a14",
+      "0x801b252c"
+    ]
+  },
+  "functions": [
+    {
+      "name": "fn_801B1A14",
+      "address": "0x801b1a14",
+      "size": "0x1d8",
+      "scope": "global"
+    },
+    {
+      "name": "fn_801B1BEC",
+      "address": "0x801b1bec",
+      "size": "0x1d8",
+      "scope": "global"
+    },
+    {
+      "name": "fn_801B1DC4",
+      "address": "0x801b1dc4",
+      "size": "0x1e0",
+      "scope": "global"
+    },
+    {
+      "name": "fn_801B1FA4",
+      "address": "0x801b1fa4",
+      "size": "0x1d8",
+      "scope": "global"
+    },
+    {
+      "name": "fn_801B217C",
+      "address": "0x801b217c",
+      "size": "0x1d8",
+      "scope": "global"
+    },
+    {
+      "name": "fn_801B2354",
+      "address": "0x801b2354",
+      "size": "0x1d8",
+      "scope": "global"
+    }
+  ],
+  "objects": [],
+  "dependency_symbols": [
+    {
+      "name": "fn_801E9F40",
+      "address": "0x801e9f40"
+    },
+    {
+      "name": "fn_8028FAF4",
+      "address": "0x8028faf4"
+    },
+    {
+      "name": "fn_8028FF24",
+      "address": "0x8028ff24"
+    },
+    {
+      "name": "fn_8028FD50",
+      "address": "0x8028fd50"
+    },
+    {
+      "name": "lbl_8037A218",
+      "address": "0x8037a218"
+    }
+  ],
+  "split_notes": [
+    "Partial key-array loader unit, based on original assembly; original names and full TU boundary unknown. Reconstructed template allocator and placement construction."
+  ],
+  "notes": "docs/notes/game-curves.md",
+  "validation": {
+    "relocations": 127,
+    "text_bytes": 2840,
+    "initialized_data_bytes": 0,
+    "zero_byte_differences": true,
+    "integration_status": "verified full-DOL and objdiff"
+  },
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "8454a7d5c8c770e4d28d646471369469ac5166fd6762355809b98ae3d5b7fe93",
+    "matched_code": 2840,
+    "matched_functions": 6,
+    "matched_data": 0,
+    "complete_data": 0,
+    "object_path": "build/GSQE78/src/Game/curve_load_b.o",
+    "object_sha256": "a57d63a9e66bb99da3eece2593cbe1dc5f70bcf881b974be645fb2c60a8865fc"
+  }
+}

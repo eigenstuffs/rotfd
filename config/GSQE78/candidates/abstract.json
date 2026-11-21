@@ -1,0 +1,835 @@
+{
+  "source": "src/Objects/abstract.c",
+  "status": "integrated-byte-match",
+  "compiler": "GC/2.0",
+  "cflags": [
+    "-proc gekko",
+    "-fp hardware",
+    "-enum int",
+    "-str reuse",
+    "-common off",
+    "-opt level=4,nopeephole,speed",
+    "-inline auto,deferred",
+    "-pool off",
+    "-Cpp_exceptions off"
+  ],
+  "sections": {
+    ".text": [
+      "0x80130084",
+      "0x80134e70"
+    ],
+    ".data": [
+      "0x802d0d78",
+      "0x802d122e"
+    ],
+    ".sdata": [
+      "0x80375e80",
+      "0x80375ece"
+    ],
+    ".sbss": [
+      "0x80377d48",
+      "0x80377d50"
+    ]
+  },
+  "functions": [
+    {
+      "name": "abstract_issubclass",
+      "address": "0x80130264",
+      "size": "0x1f4",
+      "scope": "local"
+    },
+    {
+      "name": "ternary_op",
+      "address": "0x80133c54",
+      "size": "0x480",
+      "scope": "local"
+    },
+    {
+      "name": "binary_op1",
+      "address": "0x801340d4",
+      "size": "0x264",
+      "scope": "local"
+    },
+    {
+      "name": "PyObject_IsSubclass",
+      "address": "0x80130084",
+      "size": "0x6c",
+      "scope": "global"
+    },
+    {
+      "name": "PyObject_IsInstance",
+      "address": "0x801300f0",
+      "size": "0x174",
+      "scope": "global"
+    },
+    {
+      "name": "PyObject_CallMethod",
+      "address": "0x80130458",
+      "size": "0x278",
+      "scope": "global"
+    },
+    {
+      "name": "PyObject_CallFunction",
+      "address": "0x801306d0",
+      "size": "0x1e4",
+      "scope": "global"
+    },
+    {
+      "name": "fn_801308B4",
+      "address": "0x801308b4",
+      "size": "0xc0",
+      "scope": "global"
+    },
+    {
+      "name": "PyObject_CallObject",
+      "address": "0x80130974",
+      "size": "0xac",
+      "scope": "global"
+    },
+    {
+      "name": "PyMapping_HasKeyString",
+      "address": "0x80130a20",
+      "size": "0x348",
+      "scope": "global"
+    },
+    {
+      "name": "PyMapping_SetItemString",
+      "address": "0x80130d68",
+      "size": "0x314",
+      "scope": "global"
+    },
+    {
+      "name": "PyMapping_GetItemString",
+      "address": "0x8013107c",
+      "size": "0x30c",
+      "scope": "global"
+    },
+    {
+      "name": "PySequence_Contains",
+      "address": "0x80131388",
+      "size": "0x14c",
+      "scope": "global"
+    },
+    {
+      "name": "PySequence_Tuple",
+      "address": "0x80131810",
+      "size": "0x240",
+      "scope": "global"
+    },
+    {
+      "name": "PySequence_Fast",
+      "address": "0x801314d4",
+      "size": "0xd0",
+      "scope": "global"
+    },
+    {
+      "name": "PySequence_List",
+      "address": "0x801315a4",
+      "size": "0x26c",
+      "scope": "global"
+    },
+    {
+      "name": "PySequence_DelSlice",
+      "address": "0x80131a50",
+      "size": "0x114",
+      "scope": "global"
+    },
+    {
+      "name": "PySequence_SetSlice",
+      "address": "0x80131b64",
+      "size": "0x240",
+      "scope": "global"
+    },
+    {
+      "name": "PySequence_DelItem",
+      "address": "0x80131da4",
+      "size": "0xe4",
+      "scope": "global"
+    },
+    {
+      "name": "PySequence_GetSlice",
+      "address": "0x80131e88",
+      "size": "0x234",
+      "scope": "global"
+    },
+    {
+      "name": "PySequence_GetItem",
+      "address": "0x801320bc",
+      "size": "0xe0",
+      "scope": "global"
+    },
+    {
+      "name": "PySequence_Size",
+      "address": "0x8013219c",
+      "size": "0x84",
+      "scope": "global"
+    },
+    {
+      "name": "PySequence_Check",
+      "address": "0x80132220",
+      "size": "0x28",
+      "scope": "global"
+    },
+    {
+      "name": "PyNumber_Float",
+      "address": "0x80132248",
+      "size": "0xa8",
+      "scope": "global"
+    },
+    {
+      "name": "PyNumber_Long",
+      "address": "0x801322f0",
+      "size": "0x2dc",
+      "scope": "global"
+    },
+    {
+      "name": "PyNumber_Int",
+      "address": "0x801325cc",
+      "size": "0x2dc",
+      "scope": "global"
+    },
+    {
+      "name": "PyNumber_Absolute",
+      "address": "0x801328a8",
+      "size": "0x84",
+      "scope": "global"
+    },
+    {
+      "name": "PyNumber_Invert",
+      "address": "0x8013292c",
+      "size": "0x84",
+      "scope": "global"
+    },
+    {
+      "name": "PyNumber_Positive",
+      "address": "0x801329b0",
+      "size": "0x84",
+      "scope": "global"
+    },
+    {
+      "name": "PyNumber_Negative",
+      "address": "0x80132a34",
+      "size": "0x84",
+      "scope": "global"
+    },
+    {
+      "name": "PyNumber_InPlacePower",
+      "address": "0x80132ab8",
+      "size": "0x64",
+      "scope": "global"
+    },
+    {
+      "name": "PyNumber_InPlaceRemainder",
+      "address": "0x80132b1c",
+      "size": "0x138",
+      "scope": "global"
+    },
+    {
+      "name": "PyNumber_InPlaceMultiply",
+      "address": "0x80132c54",
+      "size": "0x1c4",
+      "scope": "global"
+    },
+    {
+      "name": "PyNumber_InPlaceAdd",
+      "address": "0x80132e18",
+      "size": "0x15c",
+      "scope": "global"
+    },
+    {
+      "name": "PyNumber_InPlaceDivide",
+      "address": "0x80132f74",
+      "size": "0x108",
+      "scope": "global"
+    },
+    {
+      "name": "PyNumber_InPlaceSubtract",
+      "address": "0x8013307c",
+      "size": "0x108",
+      "scope": "global"
+    },
+    {
+      "name": "PyNumber_InPlaceRshift",
+      "address": "0x80133184",
+      "size": "0x108",
+      "scope": "global"
+    },
+    {
+      "name": "PyNumber_InPlaceLshift",
+      "address": "0x8013328c",
+      "size": "0x108",
+      "scope": "global"
+    },
+    {
+      "name": "PyNumber_InPlaceAnd",
+      "address": "0x80133394",
+      "size": "0x108",
+      "scope": "global"
+    },
+    {
+      "name": "PyNumber_InPlaceXor",
+      "address": "0x8013349c",
+      "size": "0x108",
+      "scope": "global"
+    },
+    {
+      "name": "PyNumber_InPlaceOr",
+      "address": "0x801335a4",
+      "size": "0x108",
+      "scope": "global"
+    },
+    {
+      "name": "PyNumber_Power",
+      "address": "0x801336ac",
+      "size": "0x2c",
+      "scope": "global"
+    },
+    {
+      "name": "PyNumber_Remainder",
+      "address": "0x801336d8",
+      "size": "0xa8",
+      "scope": "global"
+    },
+    {
+      "name": "PyNumber_Add",
+      "address": "0x80133780",
+      "size": "0xbc",
+      "scope": "global"
+    },
+    {
+      "name": "PyNumber_Divmod",
+      "address": "0x8013383c",
+      "size": "0x78",
+      "scope": "global"
+    },
+    {
+      "name": "PyNumber_Divide",
+      "address": "0x801338b4",
+      "size": "0x74",
+      "scope": "global"
+    },
+    {
+      "name": "PyNumber_Multiply",
+      "address": "0x80133928",
+      "size": "0x74",
+      "scope": "global"
+    },
+    {
+      "name": "PyNumber_Subtract",
+      "address": "0x8013399c",
+      "size": "0x74",
+      "scope": "global"
+    },
+    {
+      "name": "PyNumber_Rshift",
+      "address": "0x80133a10",
+      "size": "0x74",
+      "scope": "global"
+    },
+    {
+      "name": "PyNumber_Lshift",
+      "address": "0x80133a84",
+      "size": "0x74",
+      "scope": "global"
+    },
+    {
+      "name": "PyNumber_And",
+      "address": "0x80133af8",
+      "size": "0x74",
+      "scope": "global"
+    },
+    {
+      "name": "PyNumber_Xor",
+      "address": "0x80133b6c",
+      "size": "0x74",
+      "scope": "global"
+    },
+    {
+      "name": "PyNumber_Or",
+      "address": "0x80133be0",
+      "size": "0x74",
+      "scope": "global"
+    },
+    {
+      "name": "PyObject_AsReadBuffer",
+      "address": "0x80134338",
+      "size": "0x120",
+      "scope": "global"
+    },
+    {
+      "name": "PyObject_AsCharBuffer",
+      "address": "0x80134458",
+      "size": "0x120",
+      "scope": "global"
+    },
+    {
+      "name": "PyObject_DelItem",
+      "address": "0x80134578",
+      "size": "0x288",
+      "scope": "global"
+    },
+    {
+      "name": "PyObject_SetItem",
+      "address": "0x80134800",
+      "size": "0x298",
+      "scope": "global"
+    },
+    {
+      "name": "PyObject_GetItem",
+      "address": "0x80134a98",
+      "size": "0x27c",
+      "scope": "global"
+    },
+    {
+      "name": "PyObject_Size",
+      "address": "0x80134d14",
+      "size": "0xd4",
+      "scope": "global"
+    },
+    {
+      "name": "PyObject_Cmp",
+      "address": "0x80134de8",
+      "size": "0x88",
+      "scope": "global"
+    }
+  ],
+  "objects": [
+    {
+      "name": "__class__",
+      "address": "0x80377d48",
+      "size": "0x4",
+      "scope": "local"
+    },
+    {
+      "name": "__bases__",
+      "address": "0x80377d4c",
+      "size": "0x4",
+      "scope": "local"
+    },
+    {
+      "name": "abstract_class_attribute",
+      "address": "0x802d0d78",
+      "size": "0x14",
+      "scope": "local"
+    },
+    {
+      "name": "abstract_isinstance_class",
+      "address": "0x802d0d8c",
+      "size": "0x2b",
+      "scope": "local"
+    },
+    {
+      "name": "abstract_bases_attribute",
+      "address": "0x802d0db8",
+      "size": "0x14",
+      "scope": "local"
+    },
+    {
+      "name": "abstract_issubclass_arg2",
+      "address": "0x802d0dcc",
+      "size": "0x23",
+      "scope": "local"
+    },
+    {
+      "name": "abstract_issubclass_arg1",
+      "address": "0x802d0df0",
+      "size": "0x23",
+      "scope": "local"
+    },
+    {
+      "name": "abstract_null_argument",
+      "address": "0x802d0e14",
+      "size": "0x22",
+      "scope": "local"
+    },
+    {
+      "name": "abstract_noncallable_attribute",
+      "address": "0x802d0e38",
+      "size": "0x1f",
+      "scope": "local"
+    },
+    {
+      "name": "abstract_unindexable",
+      "address": "0x802d0e58",
+      "size": "0x13",
+      "scope": "local"
+    },
+    {
+      "name": "abstract_integer_index",
+      "address": "0x802d0e6c",
+      "size": "0x1f",
+      "scope": "local"
+    },
+    {
+      "name": "abstract_unsubscriptable",
+      "address": "0x802d0e8c",
+      "size": "0x17",
+      "scope": "local"
+    },
+    {
+      "name": "abstract_no_assignment",
+      "address": "0x802d0ea4",
+      "size": "0x27",
+      "scope": "local"
+    },
+    {
+      "name": "abstract_no_item_assignment",
+      "address": "0x802d0ecc",
+      "size": "0x28",
+      "scope": "local"
+    },
+    {
+      "name": "abstract_unsized_object",
+      "address": "0x802d0ef4",
+      "size": "0x18",
+      "scope": "local"
+    },
+    {
+      "name": "abstract_contains_sequence",
+      "address": "0x802d0f0c",
+      "size": "0x2f",
+      "scope": "local"
+    },
+    {
+      "name": "abstract_list_sequence",
+      "address": "0x802d0f3c",
+      "size": "0x23",
+      "scope": "local"
+    },
+    {
+      "name": "abstract_tuple_sequence",
+      "address": "0x802d0f60",
+      "size": "0x24",
+      "scope": "local"
+    },
+    {
+      "name": "abstract_no_slice_deletion",
+      "address": "0x802d0f84",
+      "size": "0x26",
+      "scope": "local"
+    },
+    {
+      "name": "abstract_no_slice_assignment",
+      "address": "0x802d0fac",
+      "size": "0x28",
+      "scope": "local"
+    },
+    {
+      "name": "abstract_no_item_deletion",
+      "address": "0x802d0fd4",
+      "size": "0x25",
+      "scope": "local"
+    },
+    {
+      "name": "abstract_unsliceable",
+      "address": "0x802d0ffc",
+      "size": "0x13",
+      "scope": "local"
+    },
+    {
+      "name": "abstract_long_null_byte",
+      "address": "0x802d1010",
+      "size": "0x21",
+      "scope": "local"
+    },
+    {
+      "name": "abstract_character_buffer",
+      "address": "0x802d1034",
+      "size": "0x23",
+      "scope": "local"
+    },
+    {
+      "name": "abstract_single_segment",
+      "address": "0x802d1058",
+      "size": "0x28",
+      "scope": "local"
+    },
+    {
+      "name": "abstract_no_long_conversion",
+      "address": "0x802d1080",
+      "size": "0x22",
+      "scope": "local"
+    },
+    {
+      "name": "abstract_int_null_byte",
+      "address": "0x802d10a4",
+      "size": "0x20",
+      "scope": "local"
+    },
+    {
+      "name": "abstract_no_int_conversion",
+      "address": "0x802d10c4",
+      "size": "0x21",
+      "scope": "local"
+    },
+    {
+      "name": "abstract_abs_operand",
+      "address": "0x802d10e8",
+      "size": "0x1b",
+      "scope": "local"
+    },
+    {
+      "name": "abstract_invert_operand",
+      "address": "0x802d1104",
+      "size": "0x1d",
+      "scope": "local"
+    },
+    {
+      "name": "abstract_positive_operand",
+      "address": "0x802d1124",
+      "size": "0x1d",
+      "scope": "local"
+    },
+    {
+      "name": "abstract_negative_operand",
+      "address": "0x802d1144",
+      "size": "0x1d",
+      "scope": "local"
+    },
+    {
+      "name": "abstract_binary_operands",
+      "address": "0x802d1164",
+      "size": "0x23",
+      "scope": "local"
+    },
+    {
+      "name": "abstract_multiply_nonint",
+      "address": "0x802d1188",
+      "size": "0x23",
+      "scope": "local"
+    },
+    {
+      "name": "abstract_power_operator",
+      "address": "0x802d11ac",
+      "size": "0xc",
+      "scope": "local"
+    },
+    {
+      "name": "abstract_add_operands",
+      "address": "0x802d11b8",
+      "size": "0x20",
+      "scope": "local"
+    },
+    {
+      "name": "abstract_divmod_operator",
+      "address": "0x802d11d8",
+      "size": "0x9",
+      "scope": "local"
+    },
+    {
+      "name": "abstract_readable_buffer",
+      "address": "0x802d11e4",
+      "size": "0x22",
+      "scope": "local"
+    },
+    {
+      "name": "abstract_no_mapping_deletion",
+      "address": "0x802d1208",
+      "size": "0x26",
+      "scope": "local"
+    }
+  ],
+  "dependency_symbols": [
+    {
+      "name": "PyClass_IsSubclass",
+      "address": "0x8013af60"
+    },
+    {
+      "name": "PyString_FromString",
+      "address": "0x80163ab0"
+    },
+    {
+      "name": "PyObject_GetAttr",
+      "address": "0x8015719c"
+    },
+    {
+      "name": "PyExc_TypeError",
+      "address": "0x80377ea0"
+    },
+    {
+      "name": "PyErr_ExceptionMatches",
+      "address": "0x80190d5c"
+    },
+    {
+      "name": "PyErr_SetString",
+      "address": "0x801911b0"
+    },
+    {
+      "name": "_savegpr_26",
+      "address": "0x8011f618"
+    },
+    {
+      "name": "_restgpr_26",
+      "address": "0x8011f664"
+    },
+    {
+      "name": "PyErr_Occurred",
+      "address": "0x8019118c"
+    },
+    {
+      "name": "PyExc_SystemError",
+      "address": "0x80377eb0"
+    },
+    {
+      "name": "PyObject_GetAttrString",
+      "address": "0x80157540"
+    },
+    {
+      "name": "PyExc_AttributeError",
+      "address": "0x80377ef8"
+    },
+    {
+      "name": "PyCallable_Check",
+      "address": "0x80156994"
+    },
+    {
+      "name": "Py_VaBuildValue",
+      "address": "0x8019e6a4"
+    },
+    {
+      "name": "PyTuple_New",
+      "address": "0x80164d2c"
+    },
+    {
+      "name": "PyTuple_SetItem",
+      "address": "0x80164b3c"
+    },
+    {
+      "name": "PyEval_CallObjectWithKeywords",
+      "address": "0x80176120"
+    },
+    {
+      "name": "PyInt_AsLong",
+      "address": "0x80149a98"
+    },
+    {
+      "name": "PyLong_AsLong",
+      "address": "0x801550b4"
+    },
+    {
+      "name": "PyErr_Clear",
+      "address": "0x80190870"
+    },
+    {
+      "name": "_savegpr_27",
+      "address": "0x8011f61c"
+    },
+    {
+      "name": "_restgpr_27",
+      "address": "0x8011f668"
+    },
+    {
+      "name": "PyExc_IndexError",
+      "address": "0x80377edc"
+    },
+    {
+      "name": "PyObject_RichCompareBool",
+      "address": "0x80157884"
+    },
+    {
+      "name": "PyList_GetSlice",
+      "address": "0x8014d9f4"
+    },
+    {
+      "name": "PyList_New",
+      "address": "0x8014ea58"
+    },
+    {
+      "name": "PyList_Append",
+      "address": "0x8014e474"
+    },
+    {
+      "name": "PyList_SetSlice",
+      "address": "0x8014ccdc"
+    },
+    {
+      "name": "PyList_AsTuple",
+      "address": "0x8014a360"
+    },
+    {
+      "name": "_PyTuple_Resize",
+      "address": "0x80163e3c"
+    },
+    {
+      "name": "PyInt_FromLong",
+      "address": "0x80149b9c"
+    },
+    {
+      "name": "PySlice_New",
+      "address": "0x8015ab48"
+    },
+    {
+      "name": "PyFloat_FromString",
+      "address": "0x801455bc"
+    },
+    {
+      "name": "PyLong_FromString",
+      "address": "0x80153de0"
+    },
+    {
+      "name": "PyExc_ValueError",
+      "address": "0x80377e9c"
+    },
+    {
+      "name": "PyLong_FromUnicode",
+      "address": "0x80153d6c"
+    },
+    {
+      "name": "PyInt_FromString",
+      "address": "0x801497dc"
+    },
+    {
+      "name": "PyInt_FromUnicode",
+      "address": "0x80149768"
+    },
+    {
+      "name": "PyString_Format",
+      "address": "0x8015b12c"
+    },
+    {
+      "name": "PyUnicode_Format",
+      "address": "0x80165d00"
+    },
+    {
+      "name": "_Py_NotImplementedStruct",
+      "address": "0x80376298"
+    },
+    {
+      "name": "PyErr_Format",
+      "address": "0x8018fc28"
+    },
+    {
+      "name": "_Py_NoneStruct",
+      "address": "0x80376290"
+    },
+    {
+      "name": "PyNumber_Coerce",
+      "address": "0x80156b48"
+    },
+    {
+      "name": "PyNumber_CoerceEx",
+      "address": "0x80156c5c"
+    },
+    {
+      "name": "PyObject_Compare",
+      "address": "0x8015820c"
+    }
+  ],
+  "validation": {
+    "relocations": 934,
+    "text_bytes": 19948,
+    "initialized_data_bytes": 1284,
+    "zero_byte_differences": true,
+    "integration_status": "verified full-DOL and objdiff"
+  },
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "acd78c78c289c4ed563a084defb079e22cb340e3ad27b42dd7069ee4db57c0bc",
+    "matched_code": 19948,
+    "matched_functions": 60,
+    "matched_data": 1292,
+    "complete_data": 1292,
+    "object_path": "build/GSQE78/src/Objects/abstract.o",
+    "object_sha256": "b65c6db401c5b7b2929f6354d2433c15317a41b60be549727f6a9ee664b2e6bf"
+  }
+}

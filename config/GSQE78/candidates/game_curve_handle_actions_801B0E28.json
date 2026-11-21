@@ -1,0 +1,156 @@
+[
+  {
+    "source_kind": "c++",
+    "required_extra_cflags": [
+      "-proc gekko",
+      "-O4,p",
+      "-Cpp_exceptions off",
+      "-use_lmw_stmw on"
+    ],
+    "status": "isolated-byte-match-native-link-acceptance-pending",
+    "source": "src/Game/curve_handle_actions_801B0E28.cpp",
+    "source_sha256": "b1f1714104253851d8714e9caf6d0e6a79630ae505a1f2a43ef88035be746a3f",
+    "header_sha256": {},
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,p",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "off",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2149256744,
+        "end": 2149256888,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_801B0E28",
+        "address": 2149256744,
+        "size": 144,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [],
+    "unlinked_functions": [],
+    "unlinked_objects": [],
+    "weak_overrides": [],
+    "unlinked_exception_groups": [],
+    "emitted_sections": [
+      {
+        "name": ".text",
+        "size": 144,
+        "raw_sha256": "8490f0422c3d698f01d8c35565577af491a6a367781d35959e3e8a868f82d207"
+      }
+    ],
+    "headers": [],
+    "notes": "docs/notes/game-curve-handle-encoding.md",
+    "original_metadata_audit": {
+      "function": "fn_801B0E28",
+      "original_ranges": [
+        {
+          "name": ".text",
+          "start": 2149256744,
+          "end": 2149256888
+        }
+      ],
+      "extabindex_scan": [
+        2147573600,
+        2147611328,
+        12
+      ],
+      "matching_extabindex": [],
+      "ctors_scan": [
+        2150209824,
+        2150209920,
+        4
+      ],
+      "dtors_scan": [
+        2150209920,
+        2150209952,
+        4
+      ],
+      "ctors": [],
+      "dtors": [],
+      "compiled_source_consumers_unchanged": [
+        {
+          "source": "src/Game/engine_vector_ops_80239C80.cpp",
+          "source_sha256": "19b9613c549d5e7193675eb73fbffb2c1df249302c9ae521bc69233c0bf53f98",
+          "identifier_occurrences": 1
+        },
+        {
+          "source": "include/Game/engine_vector_ops.h",
+          "source_sha256": "b51c60408958ef1d87aca7057269eb64033a40aded0a0e4c638bfce413e2eb75",
+          "identifier_occurrences": 1
+        }
+      ],
+      "original_data_ownership": "none; all tables/pointers/dependencies retain their existing external original ownership"
+    },
+    "verified_text_bytes": 144,
+    "verified_data_bytes": 0,
+    "pending_compiled_consumer_migrations": [],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 52,
+        "address": 2149256796,
+        "kind": 10,
+        "symbol": "fn_801F7EB8",
+        "target": 2149547704,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 76,
+        "address": 2149256820,
+        "kind": 10,
+        "symbol": "fn_801F7EB8",
+        "target": 2149547704,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "fn_801F7EB8",
+        "address": 2149547704,
+        "section": ".text",
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "7783ac59bb8a7a4bfd7144faf22ead9a5fb58ad0f0de03c0d08a73a45bba0a4b",
+      "retained_text_bytes": 144,
+      "initialized_data_bytes": 0,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 2,
+      "unlinked_relocations": 0,
+      "uncredited_text_bytes": 0,
+      "uncredited_metadata_bytes": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true,
+      "central_final_native_discard_required": false
+    }
+  }
+]

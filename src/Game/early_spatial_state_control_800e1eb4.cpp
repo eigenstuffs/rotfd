@@ -1,0 +1,2 @@
+#include "Game/early_spatial_state_default_views.h"
+extern "C"void fn_800E1EB4(ForwardSpatialPointerOwner*self){ForwardSpatialHandle&handle=resolveGroup(*resolveSystemGroup(*lbl_801E9D24.system->handle)->next)->actor;ForwardSpatialTransform*transform=resolveActor(*validResolve(handle)->slot37(0))->transform;ForwardSpatialVector position(transform->position.x,transform->position.y,transform->position.z);self->actor->slot45(position,0);self->actor->setVelocity(ForwardSpatialVector(lbl_80379784,lbl_80379794,lbl_80379788));self->actor->slot37(0);}

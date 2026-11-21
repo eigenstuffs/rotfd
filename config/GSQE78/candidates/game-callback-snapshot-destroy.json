@@ -1,0 +1,175 @@
+{
+  "status": "isolated-byte-match",
+  "source": "src/Game/callback_snapshot_destroy.cpp",
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-proc",
+    "gekko",
+    "-fp",
+    "hardware",
+    "-enum",
+    "int",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-Cpp_exceptions",
+    "off",
+    "-RTTI",
+    "off",
+    "-str",
+    "reuse",
+    "-common",
+    "off",
+    "-use_lmw_stmw",
+    "on",
+    "-i",
+    "include"
+  ],
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2149971700,
+      "end": 2149971964,
+      "alignment": 4
+    }
+  ],
+  "functions": [
+    {
+      "name": "fn_8025F6F4",
+      "address": 2149971700,
+      "size": 264,
+      "scope": "global",
+      "section": ".text",
+      "object_offset": 0
+    }
+  ],
+  "objects": [],
+  "unlinked_functions": [],
+  "source_sha256": "7ca635db4bd8b0e060d0c9e872c40aae23853ff99bd27e90bda6f93e451e3a58",
+  "headers": [
+    {
+      "path": "include/Game/callback_cycle_internal.h",
+      "sha256": "ef419730b776a145f7b9fd790953cea1655c5c69962ca9c732bf20380ebaf480"
+    },
+    {
+      "path": "include/Game/callback_snapshot_internal.h",
+      "sha256": "e8a0b632c8bf2e588ca771b0b2f43bd698e20021854f3b6b1eb8844b36f495ca"
+    }
+  ],
+  "actual_relocations": [
+    {
+      "section": ".text",
+      "at": 34,
+      "address": 2149971734,
+      "kind": 6,
+      "symbol": "lbl_802ED0B0",
+      "target": 2150551728,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 38,
+      "address": 2149971738,
+      "kind": 4,
+      "symbol": "lbl_802ED0B0",
+      "target": 2150551728,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 58,
+      "address": 2149971758,
+      "kind": 6,
+      "symbol": "lbl_801EF5C8",
+      "target": 2149512648,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 66,
+      "address": 2149971766,
+      "kind": 4,
+      "symbol": "lbl_801EF5C8",
+      "target": 2149512648,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 68,
+      "address": 2149971768,
+      "kind": 10,
+      "symbol": "fn_801EF610",
+      "target": 2149512720,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 182,
+      "address": 2149971882,
+      "kind": 6,
+      "symbol": "lbl_8028F698",
+      "target": 2150168216,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 186,
+      "address": 2149971886,
+      "kind": 4,
+      "symbol": "lbl_8028F698",
+      "target": 2150168216,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 192,
+      "address": 2149971892,
+      "kind": 10,
+      "symbol": "fn_8028FD50",
+      "target": 2150169936,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 222,
+      "address": 2149971922,
+      "kind": 6,
+      "symbol": "lbl_801EF5C8",
+      "target": 2149512648,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 230,
+      "address": 2149971930,
+      "kind": 4,
+      "symbol": "lbl_801EF5C8",
+      "target": 2149512648,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 232,
+      "address": 2149971932,
+      "kind": 10,
+      "symbol": "fn_801EF610",
+      "target": 2149512720,
+      "addend": 0
+    }
+  ],
+  "dependency_symbols": [
+    {
+      "name": "lbl_802ED0B0",
+      "address": 2150551728,
+      "scope": "global"
+    }
+  ],
+  "validation": {
+    "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "zero_byte_differences": true,
+    "retained_text_bytes": 264,
+    "relocations": 11,
+    "metadata_relocations": 1
+  },
+  "notes": "docs/notes/game-callback-snapshot-destroy.md"
+}

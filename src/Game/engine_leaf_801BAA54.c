@@ -1,0 +1,6 @@
+/* Original indexed records, engine setup and allocation-header routines.
+ * See docs/notes/game-engine-leaf.md. */
+
+static inline int append(void *object) {if(*(int *)((char *)object+0x84c)>=8)return 7;++*(int *)((char *)object+0x84c);return *(int *)((char *)object+0x84c)-1;}
+
+void fn_801BAA54(void *object,const float *a,const float *b,float f1,float f2,float f3,float f4,float f5) {if(*((signed char *)object+0x18)){int index=append(object);char *out=(char *)object+index*44;*(float *)(out+0x6ec)=a[0];*(float *)(out+0x6f0)=a[1];*(float *)(out+0x6f4)=a[2];*(float *)(out+0x6f8)=b[0];*(float *)(out+0x6fc)=b[1];*(float *)(out+0x700)=b[2];*(float *)(out+0x704)=f1;*(float *)(out+0x708)=f2;*(float *)(out+0x70c)=f3;*(float *)(out+0x710)=f4;*(float *)(out+0x714)=f5;}}

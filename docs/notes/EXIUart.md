@@ -1,0 +1,9 @@
+# Dolphin EXI UART output
+
+Both surviving C functions from `EXIUart.c` match exactly at `80297D2C..80297FB8`: `InitializeUART` (112 bytes) and `WriteUARTN` (540 bytes), for 652 total. The original inline queue-length reader remains an ordinary `static inline` helper. Every instruction and branch/address relocation is verified against the original DOL with GC/1.2.5n, `-O4,p -inline auto`, normal peephole optimization.
+
+The retained MKDD SDK source is the algorithm reference. The target initializes its enabled marker before the channel/device variables; that source order reproduces the original stores. The later reference's Barnacle detection routines and input stub have no surviving code in this unit and are not emitted. The original release retains four small-BSS words: `Chan`, `Dev`, `Enabled`, and `BarnacleEnabled`, at `80378190..803781A0`, aligned to eight. The final flag remains present in the original initialization check even though the code that sets it is absent from this linked executable. No unused dummy storage is added.
+
+UART transmission preserves the original behavior: it acquires the EXI lock, converts line feeds to carriage returns in the caller's buffer, checks queue space, writes chunks, and releases the lock/interrupt state. The reference's nominally const buffer declaration is retained along with its observed mutation. There are no initialized data objects and no assembly routines in this source range. The new source reads the existing private EXI ABI without modifying it.
+
+`EXIUart.json` records all functions and exact small-BSS word sizes/local scopes. `scratch/exi/compile_uart.py EXIUart` and `scratch/exi/verify_uart.py` reproduce isolated verification. The full-game link passes byte equality, native objdiff code/data checks and the original-source regression audit. Source URL and content hash are recorded in `reference/mkdd-sdk/PROVENANCE.md`.

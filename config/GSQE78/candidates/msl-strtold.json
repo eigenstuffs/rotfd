@@ -1,0 +1,191 @@
+{
+  "source": "src/MSL/strtold.c",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.3",
+  "cflags": [
+    "-proc gekko",
+    "-fp hardware",
+    "-enum int",
+    "-str reuse",
+    "-common off",
+    "-O4,p",
+    "-inline auto,deferred",
+    "-use_lmw_stmw on",
+    "-pool off",
+    "-Cpp_exceptions off",
+    "-char signed"
+  ],
+  "splits": [
+    {
+      "section": ".text",
+      "start": "0x80128614",
+      "end": "0x80129768"
+    },
+    {
+      "section": ".rodata",
+      "start": "0x802abf70",
+      "end": "0x802abfa5"
+    },
+    {
+      "section": ".sdata2",
+      "start": "0x80379988",
+      "end": "0x803799a0"
+    }
+  ],
+  "functions": [
+    {
+      "name": "atof",
+      "original_name": "atof",
+      "address": "0x80128614",
+      "size": "0x8c",
+      "scope": "global"
+    },
+    {
+      "name": "strtod",
+      "original_name": "strtod",
+      "address": "0x801286a0",
+      "size": "0xbc",
+      "scope": "global"
+    },
+    {
+      "name": "__strtold",
+      "original_name": "fn_8012875C",
+      "address": "0x8012875c",
+      "size": "0x100c",
+      "scope": "global"
+    }
+  ],
+  "data_symbols": [],
+  "compiler_local_symbols": [
+    {
+      "name": "@7",
+      "original_name": "lbl_802ABF70",
+      "address": "0x802abf70",
+      "size": "0x2a",
+      "scope": "local",
+      "section": ".rodata"
+    },
+    {
+      "name": "@22",
+      "original_name": "lbl_802ABF9C",
+      "address": "0x802abf9c",
+      "size": "0x9",
+      "scope": "local",
+      "section": ".rodata"
+    },
+    {
+      "name": "@36",
+      "original_name": "lbl_80379988",
+      "address": "0x80379988",
+      "size": "0x5",
+      "scope": "local",
+      "section": ".sdata2"
+    },
+    {
+      "name": "@247",
+      "original_name": "lbl_80379990",
+      "address": "0x80379990",
+      "size": "0x8",
+      "scope": "local",
+      "section": ".sdata2"
+    },
+    {
+      "name": "@555",
+      "original_name": "lbl_80379998",
+      "address": "0x80379998",
+      "size": "0x8",
+      "scope": "local",
+      "section": ".sdata2"
+    }
+  ],
+  "dependency_symbols": [
+    {
+      "name": "__float_nan",
+      "address": "0x80375e48"
+    },
+    {
+      "name": "__float_huge",
+      "address": "0x80375e4c"
+    },
+    {
+      "name": "__double_min",
+      "address": "0x80375e50"
+    },
+    {
+      "name": "__double_max",
+      "address": "0x80375e58"
+    },
+    {
+      "name": "__double_huge",
+      "address": "0x80375e60"
+    },
+    {
+      "name": "__long_double_min",
+      "address": "0x80375e68"
+    },
+    {
+      "name": "__long_double_max",
+      "address": "0x80375e70"
+    },
+    {
+      "name": "__lconv",
+      "address": "0x802d0560"
+    },
+    {
+      "name": "__dec2num",
+      "address": "0x801221ec"
+    }
+  ],
+  "validation": {
+    "functions": 3,
+    "code_bytes": 4436,
+    "emitted_data_bytes": 77,
+    "owned_data_bytes": 77,
+    "relocations_applied": 96,
+    "byte_differences": 0,
+    "original_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "983bcf9d266fdb4c11cbfa5edd68cce3e5dc928e031b616c2ecf2597a51a61b9",
+    "object_sha256": "973fa0d1ce987585fcdc81ec53b7a2be8bb47f09d29ff778e23e44f37f36df05",
+    "verification_script": "scratch/msl_strtod/check_object.py",
+    "integration_status": "verified full-DOL and objdiff",
+    "external_padding_bytes": 3
+  },
+  "reference": "https://github.com/doldecomp/mkdd/blob/2a9eb75fefd75c649c0488742db931571cbd7812/libs/PowerPC_EABI_Support/src/MSL_C/MSL_Common/strtold.c",
+  "notes": "docs/notes/msl-strtold.md",
+  "split_notes": [
+    "GC/1.3 must use -char signed. GC/1.3.2 gives an eight-byte register/scheduling mismatch in the zero-digit insertion block.",
+    "The complete retained TU consists of atof, strtod, and __strtold. No standalone strtold wrapper is retained.",
+    "The 42-byte decimal initializer, INFINITY and NAN model strings, and two distinct floating zero constants are compiler-generated local objects. The source owns 53 emitted rodata bytes; the following three zero alignment bytes are separate original padding with no source credit.",
+    "Shared float limit objects, locale, character tables, __StringRead and __dec2num remain external and are not owned by this split.",
+    "Padding audit correction: 0x802abfa5..0x802abfa8 is external original storage, excluded from this source split and its 77-byte data ownership; preserve gap_06_802ABFA5_rodata with explicit align:1."
+  ],
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "983bcf9d266fdb4c11cbfa5edd68cce3e5dc928e031b616c2ecf2597a51a61b9",
+    "matched_code": 4436,
+    "matched_functions": 3,
+    "matched_data": 77,
+    "complete_data": 77,
+    "object_path": "build/GSQE78/src/MSL/strtold.o",
+    "object_sha256": "973fa0d1ce987585fcdc81ec53b7a2be8bb47f09d29ff778e23e44f37f36df05"
+  },
+  "external_padding": [
+    {
+      "section": ".rodata",
+      "start": "0x802abfa5",
+      "end": "0x802abfa8",
+      "size": 3,
+      "name": "gap_06_802ABFA5_rodata",
+      "scope": "global",
+      "alignment": 1,
+      "description": "Original alignment outside the compiler-emitted section; preserve as separate NonMatching data with no source credit."
+    }
+  ],
+  "padding_correction": {
+    "audit": "scratch/source_padding_audit.json",
+    "previous_matched_data": 80,
+    "source_emitted_data": 77,
+    "data_credit_reduction": 3,
+    "status": "verified full-DOL and native objdiff"
+  }
+}

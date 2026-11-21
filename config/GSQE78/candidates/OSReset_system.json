@@ -1,0 +1,86 @@
+{
+  "source": "src/dolphin/os/OSReset_system.c",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.2.5n",
+  "cflags": "-proc gekko -fp hardware -enum int -str reuse -common off -O4,p -opt nopeephole -inline auto -i src/dolphin/os -Cpp_exceptions off",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2148485176,
+      "end": 2148485928
+    }
+  ],
+  "functions": [
+    {
+      "name": "__OSDoHotReset",
+      "address": 2148485176,
+      "size": 72
+    },
+    {
+      "name": "OSResetSystem",
+      "address": 2148485248,
+      "size": 632
+    },
+    {
+      "name": "OSGetResetCode",
+      "address": 2148485880,
+      "size": 48
+    }
+  ],
+  "objects": [],
+  "symbol_scopes": {
+    "__OSDoHotReset": "global",
+    "OSResetSystem": "global",
+    "OSGetResetCode": "global",
+    "OSResetFunctionQueue": "global",
+    "OSResetHardware": "global"
+  },
+  "symbols": {
+    "OSResetFunctionQueue": "0x80377938",
+    "__OSDoHotReset": "0x800f4838",
+    "OSResetSystem": "0x800f4880",
+    "OSGetResetCode": "0x800f4af8",
+    "OSDisableInterrupts": "0x800f362c",
+    "ICFlashInvalidate": "0x800f2380",
+    "OSResetHardware": "0x800f47c8",
+    "OSDisableScheduler": "0x800f5b10",
+    "__OSStopAudioSystem": "0x800f2150",
+    "__PADDisableRecalibration": "0x800feaa0",
+    "__OSSyncSram": "0x800f5588",
+    "__OSLockSram": "0x800f5180",
+    "__OSUnlockSram": "0x800f5540",
+    "LCDisable": "0x800f23a4",
+    "OSCancelThread": "0x800f63a4",
+    "OSEnableScheduler": "0x800f5b50",
+    "__OSReboot": "0x800f43f8",
+    "memset": "0x80005434"
+  },
+  "external_original_names": {
+    "OSDisableInterrupts": "OSDisableInterrupts",
+    "ICFlashInvalidate": "ICFlashInvalidate",
+    "OSResetHardware": "Reset",
+    "OSDisableScheduler": "OSDisableScheduler",
+    "__OSStopAudioSystem": "__OSStopAudioSystem",
+    "__PADDisableRecalibration": "__PADDisableRecalibration",
+    "__OSSyncSram": "__OSSyncSram",
+    "__OSLockSram": "__OSLockSram",
+    "__OSUnlockSram": "__OSUnlockSram",
+    "LCDisable": "LCDisable",
+    "OSCancelThread": "OSCancelThread",
+    "OSEnableScheduler": "OSEnableScheduler",
+    "__OSReboot": "__OSReboot",
+    "memset": "memset"
+  },
+  "verified_text_bytes": 752,
+  "verified_data_bytes": 0,
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "1a4f71e1e2f17d9c87d3eca0bbea046a087315183ea76b834bd41cec50ed4055",
+    "matched_code": 752,
+    "matched_functions": 3,
+    "matched_data": 0,
+    "complete_data": 0,
+    "object_path": "build/GSQE78/src/dolphin/os/OSReset_system.o",
+    "object_sha256": "8ca7c69571a819f9039179f96a3e2c02a3d7f283c31e1c8a3196d488219efd8f"
+  }
+}

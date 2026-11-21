@@ -1,0 +1,385 @@
+{
+  "source": "src/Objects/floatobject.c",
+  "status": "integrated-byte-match",
+  "compiler": "GC/2.0",
+  "cflags": "-proc gekko -fp hardware -enum int -str reuse -common off -opt level=4,nopeephole,speed -inline auto,deferred -pool off -Cpp_exceptions off",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2148807936,
+      "end": 2148817276
+    },
+    {
+      "name": ".data",
+      "start": 2150444184,
+      "end": 2150444922
+    },
+    {
+      "name": ".sdata",
+      "start": 2151113032,
+      "end": 2151113065
+    },
+    {
+      "name": ".sbss",
+      "start": 2151120360,
+      "end": 2151120368
+    },
+    {
+      "name": ".sdata2",
+      "start": 2151128896,
+      "end": 2151128952
+    }
+  ],
+  "functions": [
+    {
+      "name": "PyFloat_Fini",
+      "address": 2148807936,
+      "size": 736
+    },
+    {
+      "name": "float_float",
+      "address": 2148808672,
+      "size": 16
+    },
+    {
+      "name": "float_long",
+      "address": 2148808688,
+      "size": 236
+    },
+    {
+      "name": "float_int",
+      "address": 2148808924,
+      "size": 340
+    },
+    {
+      "name": "float_coerce",
+      "address": 2148809264,
+      "size": 508
+    },
+    {
+      "name": "float_nonzero",
+      "address": 2148809772,
+      "size": 28
+    },
+    {
+      "name": "float_abs",
+      "address": 2148809800,
+      "size": 220
+    },
+    {
+      "name": "float_pos",
+      "address": 2148810020,
+      "size": 16
+    },
+    {
+      "name": "float_neg",
+      "address": 2148810036,
+      "size": 192
+    },
+    {
+      "name": "float_pow",
+      "address": 2148810228,
+      "size": 1712
+    },
+    {
+      "name": "float_divmod",
+      "address": 2148811940,
+      "size": 548
+    },
+    {
+      "name": "float_rem",
+      "address": 2148812488,
+      "size": 624
+    },
+    {
+      "name": "float_div",
+      "address": 2148813112,
+      "size": 564
+    },
+    {
+      "name": "float_mul",
+      "address": 2148813676,
+      "size": 528
+    },
+    {
+      "name": "float_sub",
+      "address": 2148814204,
+      "size": 528
+    },
+    {
+      "name": "float_add",
+      "address": 2148814732,
+      "size": 528
+    },
+    {
+      "name": "float_hash",
+      "address": 2148815260,
+      "size": 36
+    },
+    {
+      "name": "float_compare",
+      "address": 2148815296,
+      "size": 44
+    },
+    {
+      "name": "float_str",
+      "address": 2148815340,
+      "size": 172
+    },
+    {
+      "name": "float_repr",
+      "address": 2148815512,
+      "size": 172
+    },
+    {
+      "name": "float_print",
+      "address": 2148815684,
+      "size": 212
+    },
+    {
+      "name": "PyFloat_AsString",
+      "address": 2148815896,
+      "size": 172
+    },
+    {
+      "name": "PyFloat_AsDouble",
+      "address": 2148816068,
+      "size": 232
+    },
+    {
+      "name": "float_dealloc",
+      "address": 2148816300,
+      "size": 16
+    },
+    {
+      "name": "PyFloat_FromString",
+      "address": 2148816316,
+      "size": 772
+    },
+    {
+      "name": "PyFloat_FromDouble",
+      "address": 2148817088,
+      "size": 188
+    }
+  ],
+  "objects": [
+    {
+      "name": "float_as_number",
+      "address": 2150444184,
+      "size": 136,
+      "section": ".data"
+    },
+    {
+      "name": "PyFloat_Type",
+      "address": 2150444320,
+      "size": 108,
+      "section": ".data"
+    },
+    {
+      "name": "block_list",
+      "address": 2151120360,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "free_list",
+      "address": 2151120364,
+      "size": 4,
+      "section": ".sbss"
+    }
+  ],
+  "symbols": {
+    "PyType_Type": "0x802d68fc",
+    "PyFloat_Fini": "0x80143500",
+    "float_float": "0x801437e0",
+    "float_long": "0x801437f0",
+    "float_int": "0x801438dc",
+    "float_coerce": "0x80143a30",
+    "float_nonzero": "0x80143c2c",
+    "float_abs": "0x80143c48",
+    "float_pos": "0x80143d24",
+    "float_neg": "0x80143d34",
+    "float_pow": "0x80143df4",
+    "float_divmod": "0x801444a4",
+    "float_rem": "0x801446c8",
+    "float_div": "0x80144938",
+    "float_mul": "0x80144b6c",
+    "float_sub": "0x80144d7c",
+    "float_add": "0x80144f8c",
+    "float_hash": "0x8014519c",
+    "float_compare": "0x801451c0",
+    "float_str": "0x801451ec",
+    "float_repr": "0x80145298",
+    "float_print": "0x80145344",
+    "PyFloat_AsString": "0x80145418",
+    "PyFloat_AsDouble": "0x801454c4",
+    "float_dealloc": "0x801455ac",
+    "PyFloat_FromString": "0x801455bc",
+    "PyFloat_FromDouble": "0x801458c0",
+    "float_as_number": "0x802d2c98",
+    "PyFloat_Type": "0x802d2d20",
+    "block_list": "0x80377de8",
+    "free_list": "0x80377dec",
+    "_savegpr_26": "0x8011f618",
+    "free": "0x8001f35c",
+    "Py_VerboseFlag": "0x80377f50",
+    "__files": "0x802cffb8",
+    "fprintf": "0x80125d54",
+    "sprintf": "0x80125b10",
+    "__ctype_map": "0x802d0260",
+    "_restgpr_26": "0x8011f664",
+    "PyErr_BadArgument": "0x80190718",
+    "PyExc_TypeError": "0x80377ea0",
+    "PyErr_SetString": "0x801911b0",
+    "PyLong_FromDouble": "0x8015519c",
+    "ceil": "0x8012d004",
+    "floor": "0x8012d244",
+    "PyExc_OverflowError": "0x80377ec8",
+    "PyInt_FromLong": "0x80149b9c",
+    "PyInt_Type": "0x802d3518",
+    "PyInt_AsLong": "0x80149a98",
+    "malloc": "0x8001f2c0",
+    "PyErr_NoMemory": "0x80190524",
+    "PyLong_Type": "0x802d3f64",
+    "PyLong_AsDouble": "0x80154fd8",
+    "_Py_NotImplementedStruct": "0x80376298",
+    "_Py_NoneStruct": "0x80376290",
+    "fmod": "0x8012da2c",
+    "PyExc_ZeroDivisionError": "0x80377e98",
+    "errno": "0x80377d10",
+    "PyExc_ValueError": "0x80377e9c",
+    "pow": "0x8012da8c",
+    "__double_huge": "0x80375e60",
+    "PyErr_SetFromErrno": "0x801901cc",
+    "Py_BuildValue": "0x8019e940",
+    "_Py_HashDouble": "0x801576ac",
+    "PyString_FromString": "0x80163ab0",
+    "fputs": "0x80124184",
+    "PyString_Type": "0x802d6030",
+    "PyUnicode_Type": "0x802da418",
+    "PyUnicode_EncodeDecimal": "0x8016c2b0",
+    "strlen": "0x801285f8",
+    "PyObject_AsCharBuffer": "0x80134458",
+    "strtod": "0x801286a0",
+    "atof": "0x80128614"
+  },
+  "external_original_names": {
+    "_savegpr_26": "_savegpr_26",
+    "free": "free",
+    "Py_VerboseFlag": "Py_VerboseFlag",
+    "__files": "__files",
+    "fprintf": "fprintf",
+    "sprintf": "sprintf",
+    "__ctype_map": "lbl_802D0260",
+    "_restgpr_26": "_restgpr_26",
+    "PyErr_BadArgument": "PyErr_BadArgument",
+    "PyExc_TypeError": "PyExc_TypeError",
+    "PyErr_SetString": "PyErr_SetString",
+    "PyLong_FromDouble": "PyLong_FromDouble",
+    "ceil": "fn_8012D004",
+    "floor": "fn_8012D244",
+    "PyExc_OverflowError": "PyExc_OverflowError",
+    "PyInt_FromLong": "PyInt_FromLong",
+    "PyInt_Type": "lbl_802D3518",
+    "PyInt_AsLong": "PyInt_AsLong",
+    "malloc": "malloc",
+    "PyErr_NoMemory": "PyErr_NoMemory",
+    "PyLong_Type": "lbl_802D3F64",
+    "PyLong_AsDouble": "fn_80154FD8",
+    "_Py_NotImplementedStruct": "_Py_NotImplementedStruct",
+    "_Py_NoneStruct": "_Py_NoneStruct",
+    "fmod": "fn_8012DA2C",
+    "PyExc_ZeroDivisionError": "lbl_80377E98",
+    "errno": "lbl_80377D10",
+    "PyExc_ValueError": "PyExc_ValueError",
+    "pow": "fn_8012DA8C",
+    "__double_huge": "lbl_80375E60",
+    "PyErr_SetFromErrno": "PyErr_SetFromErrno",
+    "Py_BuildValue": "Py_BuildValue",
+    "_Py_HashDouble": "_Py_HashDouble",
+    "PyString_FromString": "PyString_FromString",
+    "fputs": "fn_80124184",
+    "PyString_Type": "PyString_Type",
+    "PyUnicode_Type": "PyUnicode_Type",
+    "PyUnicode_EncodeDecimal": "fn_8016C2B0",
+    "strlen": "strlen",
+    "PyObject_AsCharBuffer": "fn_80134458",
+    "strtod": "fn_801286A0",
+    "atof": "fn_80128614"
+  },
+  "verified_text_bytes": 9340,
+  "verified_data_bytes": 832,
+  "symbol_scopes": {
+    "float_float": "local",
+    "float_long": "local",
+    "float_int": "local",
+    "float_coerce": "local",
+    "float_nonzero": "local",
+    "float_abs": "local",
+    "float_pos": "local",
+    "float_neg": "local",
+    "float_pow": "local",
+    "float_divmod": "local",
+    "float_rem": "local",
+    "float_div": "local",
+    "float_mul": "local",
+    "float_sub": "local",
+    "float_add": "local",
+    "float_hash": "local",
+    "float_compare": "local",
+    "float_str": "local",
+    "float_repr": "local",
+    "float_print": "local",
+    "float_dealloc": "local",
+    "float_as_number": "local",
+    "block_list": "local",
+    "free_list": "local"
+  },
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "ef60f1a344972ca452cd3ce517742758f812f7b37c587e3b45f6bf5852773150",
+    "matched_code": 9340,
+    "matched_functions": 26,
+    "matched_data": 835,
+    "complete_data": 835,
+    "object_path": "build/GSQE78/src/Objects/floatobject.o",
+    "object_sha256": "7342b3bd6c5af7cd5040b9f1e60c09c4982b2a5cc1763e067b4f07e3459b16f3"
+  },
+  "external_padding": [
+    {
+      "source": "src/Objects/floatobject.c",
+      "unit": "main/Objects/floatobject",
+      "section": ".data",
+      "start": "0x802d2f7a",
+      "end": "0x802d2f7c",
+      "size": 2,
+      "alignment": 1,
+      "symbol": "gap_07_802D2F7A_data",
+      "original_owner": "padding/source_extents/Objects/floatobject.s",
+      "source_section_start": "0x802d2c98",
+      "source_section_bytes": 738,
+      "previous_split_bytes": 740,
+      "description": "Original linker alignment beyond emitted source section; no source credit."
+    },
+    {
+      "source": "src/Objects/floatobject.c",
+      "unit": "main/Objects/floatobject",
+      "section": ".sdata",
+      "start": "0x80376169",
+      "end": "0x8037616c",
+      "size": 3,
+      "alignment": 1,
+      "symbol": "gap_09_80376169_sdata",
+      "original_owner": "padding/source_extents/Objects/floatobject.s",
+      "source_section_start": "0x80376148",
+      "source_section_bytes": 33,
+      "previous_split_bytes": 36,
+      "description": "Original linker alignment beyond emitted source section; no source credit."
+    }
+  ],
+  "source_extent_audit": {
+    "data_credit_correction": 5,
+    "evidence": "config/GSQE78/source_padding.json",
+    "description": "Source and original bytes unchanged; trailing original padding moved to NonMatching ownership."
+  }
+}

@@ -1,0 +1,58 @@
+# IDE folders
+.idea/
+.vs/
+
+# Caches
+__pycache__
+.mypy_cache
+.cache/
+
+# Original files
+*.iso
+*.gcm
+*.rvz
+*.wbfs
+orig/*/*
+!orig/*/.gitkeep
+*.dol
+*.rel
+*.elf
+*.o
+*.map
+*.MAP
+
+# Build files
+build/
+.ninja_*
+build.ninja
+
+# decompctx output
+ctx.*
+*.ctx
+
+# Generated configs
+objdiff.json
+compile_commands.json
+
+# Miscellaneous
+*.exe
+
+# Machine-local
+.gcwatch_port
+.DS_Store
+.gcwatch*.csv
+*.dylib
+
+# Downloaded native tools (configure.py can fetch pinned builds)
+tools/dtk
+tools/objdiff-cli
+
+# Disc extraction and exploratory analysis outputs
+extracted/
+decomp/
+ghidra_project/
+pycs/
+pycs_all/
+python_src/
+python_src_all/
+nested/

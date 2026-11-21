@@ -1,0 +1,213 @@
+{
+  "status": "isolated-byte-match",
+  "source": "src/Game/memory_card_init.cpp",
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-proc",
+    "gekko",
+    "-fp",
+    "hardware",
+    "-enum",
+    "int",
+    "-str",
+    "reuse",
+    "-common",
+    "off",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-Cpp_exceptions",
+    "off",
+    "-RTTI",
+    "off",
+    "-use_lmw_stmw",
+    "on",
+    "-i",
+    "src/Game",
+    "-i",
+    "include"
+  ],
+  "source_kind": "c++",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2150076484,
+      "end": 2150076672,
+      "alignment": 4
+    }
+  ],
+  "functions": [
+    {
+      "name": "fn_80279044",
+      "address": 2150076484,
+      "size": 188,
+      "scope": "global",
+      "section": ".text",
+      "object_offset": 0,
+      "sha256": "a0c5d7ecad1363cf27c4c694d02805de576192a8923bfc462cdc2754fa3c05f3"
+    }
+  ],
+  "objects": [],
+  "unlinked_functions": [],
+  "dependency_symbols": [
+    {
+      "name": "lbl_802EDC48",
+      "address": 2150554696,
+      "scope": "global"
+    },
+    {
+      "name": "lbl_802EDB80",
+      "address": 2150554496,
+      "scope": "global"
+    },
+    {
+      "name": "memset",
+      "address": 2147505204,
+      "scope": "global"
+    },
+    {
+      "name": "lbl_802AF32C",
+      "address": 2150298412,
+      "scope": "global"
+    },
+    {
+      "name": "strcpy",
+      "address": 2148697408,
+      "scope": "global"
+    }
+  ],
+  "source_sha256": "cebb06a27baa20a9dfbf959de3a6a39b0e409735c2e6f672b656e9cdd4426040",
+  "headers": [
+    {
+      "path": "include/Game/memory_card_init_internal.h",
+      "sha256": "0bec1e5788584dd9101cb91c71aa57b6b791b3dce3ac788811b159151312604d"
+    }
+  ],
+  "validation": {
+    "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "object_sha256": "dfd7f54118a0dafd1dbc9680627898c894396f2c4ead159d6eedb8a72a98070e",
+    "retained_text_bytes": 188,
+    "emitted_text_bytes": 188,
+    "initialized_data_bytes": 0,
+    "bss_bytes": 0,
+    "emitted_data_bytes": 0,
+    "unlinked_text_bytes": 0,
+    "weak_functions": 0,
+    "relocations": 8,
+    "zero_byte_differences": true,
+    "all_retained_allocated_bytes_verified": true,
+    "all_emitted_allocated_bytes_accounted": true,
+    "owned_padding_bytes": 0,
+    "verification_script": "scratch/game_memory_card_init/verify.py"
+  },
+  "notes": "docs/notes/game-memory-card-init.md",
+  "original_metadata_audit": {
+    "status": "no-original-table-ownership",
+    "retained_ranges": [
+      {
+        "start": 2150076484,
+        "end": 2150076672
+      }
+    ],
+    "tables": [
+      {
+        "section": "extabindex",
+        "start": 2147573600,
+        "end": 2147611324,
+        "sha256": "64f3b619f96f16f327bc2805af02977009d3270075a236e9bed2e7b960641585",
+        "entries": 3141,
+        "references_to_retained_ranges": []
+      },
+      {
+        "section": ".ctors",
+        "start": 2150209824,
+        "end": 2150209904,
+        "sha256": "c535bceb8aef25702ac3b853c78b5499ab00b445fb657e84883dc324ab71e9df",
+        "entries": 19,
+        "references_to_retained_ranges": []
+      },
+      {
+        "section": ".dtors",
+        "start": 2150209920,
+        "end": 2150209936,
+        "sha256": "f9aca20c726bf82fc897d6a1cfdb6e48dea8a9b97d3a9e68694a58dd94646195",
+        "entries": 3,
+        "references_to_retained_ranges": []
+      }
+    ]
+  },
+  "actual_relocations": [
+    {
+      "section": ".text",
+      "at": 10,
+      "address": 2150076494,
+      "kind": 6,
+      "symbol": "lbl_802EDC48",
+      "target": 2150554696,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 22,
+      "address": 2150076506,
+      "kind": 4,
+      "symbol": "lbl_802EDC48",
+      "target": 2150554696,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 42,
+      "address": 2150076526,
+      "kind": 6,
+      "symbol": "lbl_802EDB80",
+      "target": 2150554496,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 50,
+      "address": 2150076534,
+      "kind": 4,
+      "symbol": "lbl_802EDB80",
+      "target": 2150554496,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 116,
+      "address": 2150076600,
+      "kind": 10,
+      "symbol": "memset",
+      "target": 2147505204,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 122,
+      "address": 2150076606,
+      "kind": 6,
+      "symbol": "lbl_802AF32C",
+      "target": 2150298412,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 130,
+      "address": 2150076614,
+      "kind": 4,
+      "symbol": "lbl_802AF32C",
+      "target": 2150298412,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 132,
+      "address": 2150076616,
+      "kind": 10,
+      "symbol": "strcpy",
+      "target": 2148697408,
+      "addend": 0
+    }
+  ]
+}

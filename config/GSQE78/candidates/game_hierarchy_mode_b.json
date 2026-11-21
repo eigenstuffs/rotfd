@@ -1,0 +1,80 @@
+{
+  "source": "src/Game/hierarchy_mode_b.cpp",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-proc",
+    "gekko",
+    "-fp",
+    "hardware",
+    "-enum",
+    "int",
+    "-str",
+    "reuse",
+    "-common",
+    "off",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-Cpp_exceptions",
+    "off",
+    "-use_lmw_stmw",
+    "on",
+    "-i",
+    "src/Game"
+  ],
+  "sections": {
+    ".text": [
+      2149606620,
+      2149606692
+    ]
+  },
+  "functions": [
+    {
+      "name": "fn_802064DC",
+      "address": 2149606620,
+      "size": 36,
+      "section": ".text",
+      "scope": "global"
+    },
+    {
+      "name": "fn_80206500",
+      "address": 2149606656,
+      "size": 36,
+      "section": ".text",
+      "scope": "global"
+    }
+  ],
+  "objects": [],
+  "source_kind": "c++",
+  "dependency_symbols": [],
+  "notes": "docs/notes/game-hierarchy-wrappers.md",
+  "source_sha256": "12d432dfa9b6a828e9092a0ff05a80de7d119c42c1dddde3702c718079b97599",
+  "validation": {
+    "relocations": 2,
+    "text_bytes": 72,
+    "initialized_data_bytes": 0,
+    "zero_byte_differences": true,
+    "verification_script": "scratch/game_hierarchy_wrappers/verify.py",
+    "private_header_sha256": "1ba4d2f9c740af16f37202e50bfaab376485368df177d73faabe5d8e1eb87189",
+    "integration_status": "verified full-DOL and objdiff",
+    "abi_refinement": {
+      "callee": "fn_802062F4",
+      "signature": "signed char(signed char)",
+      "evidence": "Matches the reconstructed creation-command definition and forwarded signed shared-mode parameter. Constant 0/1 wrappers ignore its return.",
+      "before_object_sha256": "bce6d44ff7dcd0174385f4cbce98f9fd7a494e6d97daf5249a3cc39d5bb9b78d",
+      "after_object_sha256": "bce6d44ff7dcd0174385f4cbce98f9fd7a494e6d97daf5249a3cc39d5bb9b78d",
+      "whole_object_unchanged": true
+    }
+  },
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "12d432dfa9b6a828e9092a0ff05a80de7d119c42c1dddde3702c718079b97599",
+    "matched_code": 72,
+    "matched_functions": 2,
+    "matched_data": 0,
+    "complete_data": 0,
+    "object_path": "build/GSQE78/src/Game/hierarchy_mode_b.o",
+    "object_sha256": "bce6d44ff7dcd0174385f4cbce98f9fd7a494e6d97daf5249a3cc39d5bb9b78d"
+  }
+}

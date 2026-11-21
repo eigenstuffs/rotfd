@@ -1,0 +1,125 @@
+{
+  "source": "src/Game/controller_cleanup.cpp",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-proc gekko",
+    "-fp hardware",
+    "-enum int",
+    "-str reuse",
+    "-common off",
+    "-O4,p",
+    "-inline auto",
+    "-Cpp_exceptions off"
+  ],
+  "sections": {
+    ".text": [
+      "0x801f00b0",
+      "0x801f0290"
+    ]
+  },
+  "functions": [
+    {
+      "name": "fn_801F00B0",
+      "address": "0x801f00b0",
+      "size": "0xf8",
+      "scope": "global"
+    },
+    {
+      "name": "fn_801F01A8",
+      "address": "0x801f01a8",
+      "size": "0x4",
+      "scope": "global"
+    },
+    {
+      "name": "fn_801F01AC",
+      "address": "0x801f01ac",
+      "size": "0x10",
+      "scope": "global"
+    },
+    {
+      "name": "fn_801F01BC",
+      "address": "0x801f01bc",
+      "size": "0x10",
+      "scope": "global"
+    },
+    {
+      "name": "fn_801F01CC",
+      "address": "0x801f01cc",
+      "size": "0x78",
+      "scope": "global"
+    },
+    {
+      "name": "fn_801F0244",
+      "address": "0x801f0244",
+      "size": "0x4",
+      "scope": "global"
+    },
+    {
+      "name": "fn_801F0248",
+      "address": "0x801f0248",
+      "size": "0x48",
+      "scope": "global"
+    }
+  ],
+  "objects": [],
+  "dependency_symbols": [
+    {
+      "name": "fn_8028FD50",
+      "address": "0x8028fd50"
+    },
+    {
+      "name": "fn_801FB1E8",
+      "address": "0x801fb1e8"
+    },
+    {
+      "name": "fn_801EF610",
+      "address": "0x801ef610"
+    },
+    {
+      "name": "strlen",
+      "address": "0x801285f8"
+    },
+    {
+      "name": "lbl_8037A690",
+      "address": "0x8037a690"
+    },
+    {
+      "name": "OSReport",
+      "address": "0x800f2f28"
+    },
+    {
+      "name": "memset",
+      "address": "0x80005434"
+    },
+    {
+      "name": "fn_801EFE3C",
+      "address": "0x801efe3c"
+    }
+  ],
+  "split_notes": [
+    "Partial game/controller cleanup and output routines. Original names and full class hierarchy remain unknown; storage views preserve accessed field offsets and the observed destructor ABI. No owned data or BSS."
+  ],
+  "notes": "docs/notes/game-controller-cleanup.md",
+  "validation": {
+    "relocations": 14,
+    "text_bytes": 480,
+    "initialized_data_bytes": 0,
+    "zero_byte_differences": true,
+    "header_sha256": "3b649f12ab4ba8a145b0775b47eca32f4137c9d4b9f277fd3df5695865f1360a",
+    "integration_status": "verified full-DOL and objdiff"
+  },
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "b45dad425a505e008700708ffb57306e40e5ec98b758884441ccf85184a978e1",
+    "matched_code": 480,
+    "matched_functions": 7,
+    "matched_data": 0,
+    "complete_data": 0,
+    "object_path": "build/GSQE78/src/Game/controller_cleanup.o",
+    "object_sha256": "17045a326eef9f9341803d513f7683455cd9aa3ac79f9c9d510190b412c0447e"
+  },
+  "headers": [
+    "include/game_controller.h"
+  ]
+}

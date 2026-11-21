@@ -1,0 +1,73 @@
+{
+  "source": "src/Game/name_default_constructor.cpp",
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-proc",
+    "gekko",
+    "-fp",
+    "hardware",
+    "-enum",
+    "int",
+    "-str",
+    "reuse",
+    "-common",
+    "off",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-Cpp_exceptions",
+    "off",
+    "-use_lmw_stmw",
+    "on"
+  ],
+  "source_kind": "c++",
+  "status": "integrated-byte-match",
+  "sections": {
+    ".text": [
+      2148162004,
+      2148162016
+    ]
+  },
+  "section_alignments": {
+    ".text": 4
+  },
+  "functions": [
+    {
+      "name": "__ct__13Name_800A59D4Fv",
+      "original_name": "fn_800A59D4",
+      "address": 2148162004,
+      "size": 12,
+      "section": ".text",
+      "scope": "global"
+    }
+  ],
+  "objects": [],
+  "dependency_symbols": [],
+  "source_sha256": "d0a0bb75715e87008d628c24d84e6f1b28f77f7d51130a001c63ad9918a8dd8b",
+  "notes": "docs/notes/game-name-default-constructor.md",
+  "validation": {
+    "verification_script": "scratch/game_name_default_constructor/verify.py",
+    "verification_mode": "--production",
+    "object_sha256": "ff607e616513c6e4dd92f95d5d3b0529bbb19e5478ebe01ffb9ff5d0e4ffe29e",
+    "text_bytes": 12,
+    "functions": 1,
+    "relocations": 0,
+    "data_bytes": 0,
+    "zero_byte_differences": true,
+    "all_allocated_sections_verified": true,
+    "retained_binding": "STB_GLOBAL/STT_FUNC",
+    "unlinked_text_bytes": 0,
+    "original_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "integration_status": "verified full-DOL and objdiff"
+  },
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "d0a0bb75715e87008d628c24d84e6f1b28f77f7d51130a001c63ad9918a8dd8b",
+    "matched_code": 12,
+    "matched_functions": 1,
+    "matched_data": 0,
+    "complete_data": 0,
+    "object_path": "build/GSQE78/src/Game/name_default_constructor.o",
+    "object_sha256": "ff607e616513c6e4dd92f95d5d3b0529bbb19e5478ebe01ffb9ff5d0e4ffe29e"
+  }
+}

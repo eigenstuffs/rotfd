@@ -1,0 +1,251 @@
+{
+  "source": "src/dolphin/OdemuExi2/DebuggerDriver.c",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.2.5",
+  "cflags": "-proc gekko -fp hardware -enum int -str reuse -common off -O4,p -inline auto -Cpp_exceptions off",
+  "splits": [
+    {
+      "section": ".text",
+      "start": "0x8012db08",
+      "end": "0x8012e588"
+    },
+    {
+      "section": ".sdata",
+      "start": "0x80375e78",
+      "end": "0x80375E79"
+    },
+    {
+      "section": ".sbss",
+      "start": "0x80377d28",
+      "end": "0x80377D3D"
+    }
+  ],
+  "functions": [
+    {
+      "name": "DBGEXIImm",
+      "original_name": "fn_8012DB08",
+      "address": "0x8012db08",
+      "size": "0x298",
+      "scope": "local"
+    },
+    {
+      "name": "DBGReadMailbox",
+      "original_name": "fn_8012DDA0",
+      "address": "0x8012dda0",
+      "size": "0xac",
+      "scope": "local"
+    },
+    {
+      "name": "DBGRead",
+      "original_name": "fn_8012DE4C",
+      "address": "0x8012de4c",
+      "size": "0xdc",
+      "scope": "local"
+    },
+    {
+      "name": "DBGWrite",
+      "original_name": "fn_8012DF28",
+      "address": "0x8012df28",
+      "size": "0xdc",
+      "scope": "local"
+    },
+    {
+      "name": "DBGReadStatus",
+      "original_name": "fn_8012E004",
+      "address": "0x8012e004",
+      "size": "0xac",
+      "scope": "local"
+    },
+    {
+      "name": "MWCallback",
+      "original_name": "fn_8012E0B0",
+      "address": "0x8012e0b0",
+      "size": "0x3c",
+      "scope": "local"
+    },
+    {
+      "name": "DBGHandler",
+      "original_name": "fn_8012E0EC",
+      "address": "0x8012e0ec",
+      "size": "0x40",
+      "scope": "local"
+    },
+    {
+      "name": "DBInitComm",
+      "original_name": "fn_8012E12C",
+      "address": "0x8012e12c",
+      "size": "0x78",
+      "scope": "global"
+    },
+    {
+      "name": "DBInitInterrupts",
+      "original_name": "fn_8012E1A4",
+      "address": "0x8012e1a4",
+      "size": "0x54",
+      "scope": "global"
+    },
+    {
+      "name": "DBQueryData",
+      "original_name": "fn_8012E1F8",
+      "address": "0x8012e1f8",
+      "size": "0x9c",
+      "scope": "global"
+    },
+    {
+      "name": "DBRead",
+      "original_name": "fn_8012E294",
+      "address": "0x8012e294",
+      "size": "0x8c",
+      "scope": "global"
+    },
+    {
+      "name": "DBWrite",
+      "original_name": "fn_8012E320",
+      "address": "0x8012e320",
+      "size": "0x260",
+      "scope": "global"
+    },
+    {
+      "name": "DBOpen",
+      "original_name": "fn_8012E580",
+      "address": "0x8012e580",
+      "size": "0x4",
+      "scope": "global"
+    },
+    {
+      "name": "DBClose",
+      "original_name": "fn_8012E584",
+      "address": "0x8012e584",
+      "size": "0x4",
+      "scope": "global"
+    }
+  ],
+  "data_symbols": [
+    {
+      "name": "SendCount",
+      "section": ".sdata",
+      "scope": "local",
+      "original_name": "lbl_80375E78",
+      "address": "0x80375e78",
+      "size": "0x1"
+    },
+    {
+      "name": "MTRCallback",
+      "section": ".sbss",
+      "scope": "local",
+      "original_name": "lbl_80377D28",
+      "address": "0x80377d28",
+      "size": "0x4"
+    },
+    {
+      "name": "DBGCallback",
+      "section": ".sbss",
+      "scope": "local",
+      "original_name": "lbl_80377D2C",
+      "address": "0x80377d2c",
+      "size": "0x4"
+    },
+    {
+      "name": "SendMailData",
+      "section": ".sbss",
+      "scope": "local",
+      "original_name": "lbl_80377D30",
+      "address": "0x80377d30",
+      "size": "0x4"
+    },
+    {
+      "name": "RecvDataLeng",
+      "section": ".sbss",
+      "scope": "local",
+      "original_name": "lbl_80377D34",
+      "address": "0x80377d34",
+      "size": "0x4"
+    },
+    {
+      "name": "pEXIInputFlag",
+      "section": ".sbss",
+      "scope": "local",
+      "original_name": "lbl_80377D38",
+      "address": "0x80377d38",
+      "size": "0x4"
+    },
+    {
+      "name": "EXIInputFlag",
+      "section": ".sbss",
+      "scope": "local",
+      "original_name": "lbl_80377D3C",
+      "address": "0x80377d3c",
+      "size": "0x1"
+    }
+  ],
+  "discarded_functions": [
+    "DBGEXIInit",
+    "DBGEXISelect",
+    "DBGEXIDeselect",
+    "DBGEXISync",
+    "DBGWriteMailbox",
+    "CheckMailBox"
+  ],
+  "validation": {
+    "code_bytes": 2688,
+    "emitted_data_bytes": 1,
+    "bss_layout_bytes": 21,
+    "relocations_applied": 57,
+    "byte_differences": 0,
+    "source_sha256": "f4b5673dc3d23b3e30e08432e44e4479c70680baf8d034be1e758e7f8b8de2bb",
+    "object_sha256": "bd478fa0b136d43cc74c0602844acce6c886e680e17d0f901922b5b007742b72",
+    "original_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "integration_status": "verified full-DOL and objdiff"
+  },
+  "notes": "docs/notes/debugger-driver.md",
+  "split_notes": [
+    ".sdata emits SendCount (one byte), with seven original zero padding bytes before the next unit. .sbss emits 21 bytes plus three tail padding bytes. Six faithful normal helper bodies are emitted by the compiler and removed by ordinary linker dead stripping; they are not counted as retained functions. Absolute MMIO symbols do not own DOL sections."
+  ],
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "f4b5673dc3d23b3e30e08432e44e4479c70680baf8d034be1e758e7f8b8de2bb",
+    "matched_code": 2688,
+    "matched_functions": 14,
+    "matched_data": 22,
+    "complete_data": 22,
+    "object_path": "build/GSQE78/src/dolphin/OdemuExi2/DebuggerDriver.o",
+    "object_sha256": "bd478fa0b136d43cc74c0602844acce6c886e680e17d0f901922b5b007742b72"
+  },
+  "external_padding": [
+    {
+      "source": "src/dolphin/OdemuExi2/DebuggerDriver.c",
+      "unit": "main/dolphin/OdemuExi2/DebuggerDriver",
+      "section": ".sdata",
+      "start": "0x80375e79",
+      "end": "0x80375e80",
+      "size": 7,
+      "alignment": 1,
+      "symbol": "gap_09_80375E79_sdata",
+      "original_owner": "padding/source_extents/dolphin/OdemuExi2/DebuggerDriver.s",
+      "source_section_start": "0x80375e78",
+      "source_section_bytes": 1,
+      "previous_split_bytes": 8,
+      "description": "Original linker alignment beyond emitted source section; no source credit."
+    },
+    {
+      "source": "src/dolphin/OdemuExi2/DebuggerDriver.c",
+      "unit": "main/dolphin/OdemuExi2/DebuggerDriver",
+      "section": ".sbss",
+      "start": "0x80377d3d",
+      "end": "0x80377d40",
+      "size": 3,
+      "alignment": 1,
+      "symbol": "gap_10_80377D3D_sbss",
+      "original_owner": "padding/source_extents/dolphin/OdemuExi2/DebuggerDriver.s",
+      "source_section_start": "0x80377d28",
+      "source_section_bytes": 21,
+      "previous_split_bytes": 24,
+      "description": "Original linker alignment beyond emitted source section; no source credit."
+    }
+  ],
+  "source_extent_audit": {
+    "data_credit_correction": 10,
+    "evidence": "config/GSQE78/source_padding.json",
+    "description": "Source and original bytes unchanged; trailing original padding moved to NonMatching ownership."
+  }
+}

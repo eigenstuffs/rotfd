@@ -1,0 +1,88 @@
+{
+  "source": "src/dolphin/dvd/dvdqueue.c",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.2.5n",
+  "cflags": "-proc gekko -fp hardware -enum int -str reuse -common off -O4,p -inline auto -i src/dolphin/dvd -Cpp_exceptions off",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2148511236,
+      "end": 2148511740
+    },
+    {
+      "name": ".bss",
+      "start": 2150733560,
+      "end": 2150733592
+    }
+  ],
+  "functions": [
+    {
+      "name": "__DVDClearWaitingQueue",
+      "address": 2148511236,
+      "size": 56
+    },
+    {
+      "name": "__DVDPushWaitingQueue",
+      "address": 2148511292,
+      "size": 104
+    },
+    {
+      "name": "__DVDPopWaitingQueue",
+      "address": 2148511396,
+      "size": 160
+    },
+    {
+      "name": "__DVDCheckWaitingQueue",
+      "address": 2148511556,
+      "size": 88
+    },
+    {
+      "name": "__DVDDequeueWaitingQueue",
+      "address": 2148511644,
+      "size": 96
+    }
+  ],
+  "objects": [
+    {
+      "name": "WaitingQueue",
+      "address": 2150733560,
+      "size": 32,
+      "section": ".bss"
+    }
+  ],
+  "symbol_scopes": {
+    "__DVDClearWaitingQueue": "global",
+    "__DVDPushWaitingQueue": "global",
+    "__DVDPopWaitingQueue": "global",
+    "__DVDCheckWaitingQueue": "global",
+    "__DVDDequeueWaitingQueue": "global",
+    "WaitingQueue": "local"
+  },
+  "symbols": {
+    "__DVDClearWaitingQueue": "0x800fae04",
+    "__DVDPushWaitingQueue": "0x800fae3c",
+    "__DVDPopWaitingQueue": "0x800faea4",
+    "__DVDCheckWaitingQueue": "0x800faf44",
+    "__DVDDequeueWaitingQueue": "0x800faf9c",
+    "WaitingQueue": "0x803196f8",
+    "OSDisableInterrupts": "0x800f362c",
+    "OSRestoreInterrupts": "0x800f3654"
+  },
+  "external_original_names": {
+    "OSDisableInterrupts": "OSDisableInterrupts",
+    "OSRestoreInterrupts": "OSRestoreInterrupts"
+  },
+  "verified_text_bytes": 504,
+  "verified_data_bytes": 0,
+  "source_kind": "c",
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "b98834f4c660fb9a9d138560ec5b57d788eca5beee8dea17c53a06ab3ef66436",
+    "matched_code": 504,
+    "matched_functions": 5,
+    "matched_data": 32,
+    "complete_data": 32,
+    "object_path": "build/GSQE78/src/dolphin/dvd/dvdqueue.o",
+    "object_sha256": "2b5a2f3061cd5d77af9b3d0d3cd9f519a7daad75cab50ec4f25e5d2033c133ec"
+  }
+}

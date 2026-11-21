@@ -1,0 +1,13 @@
+// Native array destruction; element fields outside lifetime behavior remain opaque.
+typedef unsigned long u32;
+extern "C" {extern char lbl_801EF5C8[],lbl_8028F698[];void fn_801EF610(void*,void*);void fn_8028FD50(void*,void*,int);}
+struct Handle_801F7F10 {u32 value;~Handle_801F7F10();};
+struct ArrayEHHandle1:Handle_801F7F10{};
+struct ArrayEHHandle2:ArrayEHHandle1{};
+template<int N>struct ArrayEHElement{char unknown[N];~ArrayEHElement(){}};
+struct Array_800278D4 {
+int count,capacity;ArrayEHElement<12>*data;
+~Array_800278D4();
+static void operator delete(void*p)throw(){fn_801EF610(lbl_801EF5C8,p);}
+};
+Array_800278D4::~Array_800278D4(){if(data){for(int i=0;i<count;++i)data[i].~ArrayEHElement<12>();if(data){fn_8028FD50(lbl_8028F698,data,capacity*sizeof(ArrayEHElement<12>));data=0;}data=0;}}

@@ -1,0 +1,332 @@
+{
+  "status": "isolated-retained-byte-match",
+  "source": "src/Game/owner_handle_event_visit.cpp",
+  "source_sha256": "f3479d26acfef565939c755c53d208038b4fa3e1cb0e6b1b403577258373b266",
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-proc",
+    "gekko",
+    "-fp",
+    "hardware",
+    "-enum",
+    "int",
+    "-str",
+    "reuse",
+    "-common",
+    "off",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-Cpp_exceptions",
+    "off",
+    "-RTTI",
+    "off",
+    "-use_lmw_stmw",
+    "on",
+    "-i",
+    "src/Game",
+    "-i",
+    "include"
+  ],
+  "source_kind": "c++",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2149711492,
+      "end": 2149712164,
+      "alignment": 4
+    },
+    {
+      "name": ".sdata2",
+      "start": 2151133328,
+      "end": 2151133336,
+      "alignment": 8
+    }
+  ],
+  "functions": [
+    {
+      "name": "fn_8021FE84",
+      "address": 2149711492,
+      "size": 672,
+      "scope": "global",
+      "section": ".text",
+      "object_offset": 0,
+      "sha256": "8d4a708fb56d5f3f24a2b396996aa36b6cd4d87859515e08c49b023d6054dac0"
+    }
+  ],
+  "objects": [
+    {
+      "name": "@110",
+      "original_name": "lbl_8037B090",
+      "address": 2151133328,
+      "size": 8,
+      "scope": "local",
+      "section": ".sdata2",
+      "object_offset": 0,
+      "alignment": 8,
+      "sha256": "07af8387624cf8f36152797d2f561246f21237d1d22b5c13006eacfa6f475e43"
+    }
+  ],
+  "unlinked_functions": [
+    {
+      "name": "__dt__15EventVisitArrayFv",
+      "object_offset": 672,
+      "size": 212,
+      "scope": "weak",
+      "section": ".text",
+      "binding": "weak",
+      "raw_sha256": "c34201a8958dbcb57bfd9a685b668a3fee6742e3a35017e20be636bcea87d312",
+      "reason": "unreferenced inline array destructor backup; must be absent from final ELF"
+    }
+  ],
+  "dependency_symbols": [
+    {
+      "name": "__dt__15Handle_801F7F10Fv",
+      "address": 2149547792,
+      "scope": "global"
+    },
+    {
+      "name": "fn_801F7EB8",
+      "address": 2149547704,
+      "scope": "global"
+    },
+    {
+      "name": "fn_802073E8",
+      "address": 2149610472,
+      "scope": "global"
+    },
+    {
+      "name": "fn_8023F744",
+      "address": 2149840708,
+      "scope": "global"
+    },
+    {
+      "name": "fn_8028FD50",
+      "address": 2150169936,
+      "scope": "global"
+    },
+    {
+      "name": "lbl_801E9D24",
+      "address": 2149489956,
+      "scope": "global"
+    },
+    {
+      "name": "lbl_8028F698",
+      "address": 2150168216,
+      "scope": "global"
+    }
+  ],
+  "headers": [],
+  "original_metadata_audit": {
+    "status": "no-original-table-ownership",
+    "retained_ranges": [
+      {
+        "start": 2149711492,
+        "end": 2149712164
+      }
+    ],
+    "tables": [
+      {
+        "section": "extabindex",
+        "start": 2147573600,
+        "end": 2147611328,
+        "stride": 12,
+        "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+        "entries": 3141,
+        "scanned_slots": 3144,
+        "references_to_retained_ranges": []
+      },
+      {
+        "section": ".ctors",
+        "start": 2150209824,
+        "end": 2150209920,
+        "stride": 4,
+        "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+        "entries": 19,
+        "scanned_slots": 24,
+        "references_to_retained_ranges": []
+      },
+      {
+        "section": ".dtors",
+        "start": 2150209920,
+        "end": 2150209952,
+        "stride": 4,
+        "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+        "entries": 3,
+        "scanned_slots": 8,
+        "references_to_retained_ranges": []
+      }
+    ]
+  },
+  "original_literal_audit": {
+    "status": "exclusive-original-literal-ownership",
+    "start": 2151133328,
+    "end": 2151133336,
+    "direct_sda2_consumers": [
+      {
+        "address": 2149711980,
+        "target": 2151133328,
+        "word": 3357716176
+      }
+    ],
+    "aligned_absolute_dol_pointers": [],
+    "original_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5"
+  },
+  "validation": {
+    "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "object_sha256": "25457c7cecdbf7b4d897d4cfd5655995d8fe6dc46ec292d04a8218a68556782c",
+    "retained_text_bytes": 672,
+    "emitted_text_bytes": 884,
+    "unlinked_text_bytes": 212,
+    "weak_functions": 1,
+    "relocations": 10,
+    "unlinked_relocations": 5,
+    "nonallocated_metadata_relocations": 2,
+    "zero_byte_differences": true,
+    "all_retained_allocated_bytes_verified": true,
+    "all_emitted_allocated_bytes_accounted": true,
+    "no_retained_references_to_discarded_helpers": true,
+    "owned_padding_bytes": 0,
+    "initialized_data_bytes": 8,
+    "bss_bytes": 0,
+    "verification_script": "/Users/brandenb/Downloads/rotfd/scratch/game_owner_handle_event_visit/verify.py",
+    "central_final_elf_absence_required": true
+  },
+  "actual_relocations": [
+    {
+      "section": ".text",
+      "at": 32,
+      "address": 2149711524,
+      "kind": 10,
+      "symbol": "fn_801F7EB8",
+      "target": 2149547704,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 50,
+      "address": 2149711542,
+      "kind": 6,
+      "symbol": "lbl_801E9D24",
+      "target": 2149489956,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 58,
+      "address": 2149711550,
+      "kind": 4,
+      "symbol": "lbl_801E9D24",
+      "target": 2149489956,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 136,
+      "address": 2149711628,
+      "kind": 10,
+      "symbol": "fn_8023F744",
+      "target": 2149840708,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 488,
+      "address": 2149711980,
+      "kind": 109,
+      "symbol": "@110",
+      "target": 2151133328,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 508,
+      "address": 2149712000,
+      "kind": 10,
+      "symbol": "fn_802073E8",
+      "target": 2149610472,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 580,
+      "address": 2149712072,
+      "kind": 10,
+      "symbol": "__dt__15Handle_801F7F10Fv",
+      "target": 2149547792,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 622,
+      "address": 2149712114,
+      "kind": 6,
+      "symbol": "lbl_8028F698",
+      "target": 2150168216,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 626,
+      "address": 2149712118,
+      "kind": 4,
+      "symbol": "lbl_8028F698",
+      "target": 2150168216,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 632,
+      "address": 2149712124,
+      "kind": 10,
+      "symbol": "fn_8028FD50",
+      "target": 2150169936,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 760,
+      "address": 2149712252,
+      "kind": 10,
+      "symbol": "__dt__15Handle_801F7F10Fv",
+      "target": 2149547792,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 802,
+      "address": 2149712294,
+      "kind": 6,
+      "symbol": "lbl_8028F698",
+      "target": 2150168216,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 806,
+      "address": 2149712298,
+      "kind": 4,
+      "symbol": "lbl_8028F698",
+      "target": 2150168216,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 812,
+      "address": 2149712304,
+      "kind": 10,
+      "symbol": "fn_8028FD50",
+      "target": 2150169936,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 844,
+      "address": 2149712336,
+      "kind": 10,
+      "symbol": "__dl__FPv",
+      "target": 2148658644,
+      "addend": 0
+    }
+  ]
+}

@@ -1,0 +1,716 @@
+[
+  {
+    "status": "isolated-byte-match-native-link-acceptance-pending",
+    "source": "src/Game/early_scene_nested_state_8005112C.cpp",
+    "source_sha256": "7fc056202eed25193d6ff49a3d1de6cdbd4eae7a2b80433becae563998595459",
+    "headers": [],
+    "header_sha256": {},
+    "source_kind": "c++",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "required_extra_cflags": [
+      "-O4,s",
+      "-Cpp_exceptions on",
+      "-use_lmw_stmw on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2147815724,
+        "end": 2147815996,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147523216,
+        "end": 2147523224,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147581304,
+        "end": 2147581316,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_8005112C",
+        "address": 2147815724,
+        "size": 272,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@52",
+        "section": "extab",
+        "object_offset": 0,
+        "size": 8,
+        "address": 2147523216,
+        "scope": "local"
+      },
+      {
+        "name": "@53",
+        "section": "extabindex",
+        "object_offset": 0,
+        "size": 12,
+        "address": 2147581304,
+        "scope": "local"
+      }
+    ],
+    "unlinked_functions": [
+      {
+        "name": "__dt__21NestedReturn_8005112CFv",
+        "section": ".text",
+        "object_offset": 272,
+        "size": 76,
+        "scope": "weak",
+        "binding": "weak",
+        "raw_sha256": "44922a4b051c2b271cd493dd589d65b21582604ff326c020361fa4f0f6a8d0ae"
+      }
+    ],
+    "unlinked_objects": [
+      {
+        "name": "@56",
+        "section": "extab",
+        "object_offset": 8,
+        "size": 8,
+        "scope": "local",
+        "binding": "local",
+        "raw_sha256": "bcc0e7d554bfb67e6dfaa82a25ef2a617173bede4c2416a211eb9600a67e9e82"
+      },
+      {
+        "name": "@57",
+        "section": "extabindex",
+        "object_offset": 12,
+        "size": 12,
+        "scope": "local",
+        "binding": "local",
+        "raw_sha256": "571672201c6ed03c781e3e4b7f637ebc37b0e48ce66534b3dbfec4ba927b0e0b"
+      }
+    ],
+    "weak_overrides": [],
+    "weak_override_audit": {
+      "primary": "fn_8005112C",
+      "retained_sections": [
+        {
+          "name": ".text",
+          "address": 2147815724,
+          "size": 272
+        },
+        {
+          "name": "extab",
+          "address": 2147523216,
+          "size": 8
+        },
+        {
+          "name": "extabindex",
+          "address": 2147581304,
+          "size": 12
+        }
+      ],
+      "emitted_sections": [
+        {
+          "name": ".text",
+          "size": 348,
+          "raw_sha256": "26383af4fab2e2927c72ca1d6612b7d59b88710a396425c763cd6b2c85873c59"
+        },
+        {
+          "name": "extab",
+          "size": 16,
+          "raw_sha256": "5ddb16d44cbf70eb73771099892260efc0eadc466a7c75ac527fcbfb782be5fd"
+        },
+        {
+          "name": "extabindex",
+          "size": 24,
+          "raw_sha256": "ca7752c83d2a48e52c7a1d809477f9b0c0b8fa6ec90675618ed1dd54db6173fa"
+        }
+      ],
+      "allocated_inventory": [
+        {
+          "name": "@52",
+          "section": "extab",
+          "object_offset": 0,
+          "size": 8,
+          "binding": 0,
+          "type": 1,
+          "symbol_index": 6,
+          "role": "retained",
+          "raw_sha256": "bcc0e7d554bfb67e6dfaa82a25ef2a617173bede4c2416a211eb9600a67e9e82"
+        },
+        {
+          "name": "@53",
+          "section": "extabindex",
+          "object_offset": 0,
+          "size": 12,
+          "binding": 0,
+          "type": 1,
+          "symbol_index": 7,
+          "role": "retained",
+          "raw_sha256": "d56beba3541322a8eccc1398c72300cdf301ecccd4fc978d1f343141a63d4b86"
+        },
+        {
+          "name": "@56",
+          "section": "extab",
+          "object_offset": 8,
+          "size": 8,
+          "binding": 0,
+          "type": 1,
+          "symbol_index": 8,
+          "role": "linker-discarded-backup",
+          "raw_sha256": "bcc0e7d554bfb67e6dfaa82a25ef2a617173bede4c2416a211eb9600a67e9e82"
+        },
+        {
+          "name": "@57",
+          "section": "extabindex",
+          "object_offset": 12,
+          "size": 12,
+          "binding": 0,
+          "type": 1,
+          "symbol_index": 9,
+          "role": "linker-discarded-backup",
+          "raw_sha256": "571672201c6ed03c781e3e4b7f637ebc37b0e48ce66534b3dbfec4ba927b0e0b"
+        },
+        {
+          "name": "fn_8005112C",
+          "section": ".text",
+          "object_offset": 0,
+          "size": 272,
+          "binding": 1,
+          "type": 2,
+          "symbol_index": 13,
+          "role": "retained",
+          "raw_sha256": "85a9441961b92a4292b9c3bf53c61339dc569fbc58dadec3eae35e6782fbc7f0"
+        },
+        {
+          "name": "__dt__21NestedReturn_8005112CFv",
+          "section": ".text",
+          "object_offset": 272,
+          "size": 76,
+          "binding": 2,
+          "type": 2,
+          "symbol_index": 15,
+          "role": "linker-discarded-backup",
+          "raw_sha256": "44922a4b051c2b271cd493dd589d65b21582604ff326c020361fa4f0f6a8d0ae"
+        }
+      ],
+      "groups": [
+        {
+          "function": "fn_8005112C",
+          "role": "retained",
+          "text": {
+            "name": "fn_8005112C",
+            "section": ".text",
+            "object_offset": 0,
+            "size": 272,
+            "binding": 1,
+            "type": 2,
+            "symbol_index": 13,
+            "role": "retained",
+            "raw_sha256": "85a9441961b92a4292b9c3bf53c61339dc569fbc58dadec3eae35e6782fbc7f0"
+          },
+          "extab": {
+            "name": "@52",
+            "section": "extab",
+            "object_offset": 0,
+            "size": 8,
+            "binding": 0,
+            "type": 1,
+            "symbol_index": 6,
+            "role": "retained",
+            "raw_sha256": "bcc0e7d554bfb67e6dfaa82a25ef2a617173bede4c2416a211eb9600a67e9e82"
+          },
+          "extabindex": {
+            "name": "@53",
+            "section": "extabindex",
+            "object_offset": 0,
+            "size": 12,
+            "binding": 0,
+            "type": 1,
+            "symbol_index": 7,
+            "role": "retained",
+            "raw_sha256": "d56beba3541322a8eccc1398c72300cdf301ecccd4fc978d1f343141a63d4b86"
+          }
+        },
+        {
+          "function": "__dt__21NestedReturn_8005112CFv",
+          "role": "linker-discarded-backup",
+          "text": {
+            "name": "__dt__21NestedReturn_8005112CFv",
+            "section": ".text",
+            "object_offset": 272,
+            "size": 76,
+            "binding": 2,
+            "type": 2,
+            "symbol_index": 15,
+            "role": "linker-discarded-backup",
+            "raw_sha256": "44922a4b051c2b271cd493dd589d65b21582604ff326c020361fa4f0f6a8d0ae"
+          },
+          "extab": {
+            "name": "@56",
+            "section": "extab",
+            "object_offset": 8,
+            "size": 8,
+            "binding": 0,
+            "type": 1,
+            "symbol_index": 8,
+            "role": "linker-discarded-backup",
+            "raw_sha256": "bcc0e7d554bfb67e6dfaa82a25ef2a617173bede4c2416a211eb9600a67e9e82"
+          },
+          "extabindex": {
+            "name": "@57",
+            "section": "extabindex",
+            "object_offset": 12,
+            "size": 12,
+            "binding": 0,
+            "type": 1,
+            "symbol_index": 9,
+            "role": "linker-discarded-backup",
+            "raw_sha256": "571672201c6ed03c781e3e4b7f637ebc37b0e48ce66534b3dbfec4ba927b0e0b"
+          }
+        }
+      ],
+      "actual_relocations": [
+        {
+          "section": ".text",
+          "at": 10,
+          "kind": 6,
+          "symbol_index": 10,
+          "symbol": "lbl_801E9D24",
+          "addend": 0,
+          "binding": 1,
+          "defined_section": "",
+          "defined_offset": 0,
+          "role": "retained",
+          "resolution": "undefined-original",
+          "target": 2149489956
+        },
+        {
+          "section": ".text",
+          "at": 22,
+          "kind": 4,
+          "symbol_index": 10,
+          "symbol": "lbl_801E9D24",
+          "addend": 0,
+          "binding": 1,
+          "defined_section": "",
+          "defined_offset": 0,
+          "role": "retained",
+          "resolution": "undefined-original",
+          "target": 2149489956
+        },
+        {
+          "section": ".text",
+          "at": 168,
+          "kind": 10,
+          "symbol_index": 11,
+          "symbol": "fn_8004A6C8",
+          "addend": 0,
+          "binding": 1,
+          "defined_section": "",
+          "defined_offset": 0,
+          "role": "retained",
+          "resolution": "undefined-original",
+          "target": 2147788488
+        },
+        {
+          "section": ".text",
+          "at": 248,
+          "kind": 10,
+          "symbol_index": 12,
+          "symbol": "__dt__15Handle_801F7F10Fv",
+          "addend": 0,
+          "binding": 1,
+          "defined_section": "",
+          "defined_offset": 0,
+          "role": "retained",
+          "resolution": "undefined-original",
+          "target": 2149547792
+        },
+        {
+          "section": ".text",
+          "at": 304,
+          "kind": 10,
+          "symbol_index": 12,
+          "symbol": "__dt__15Handle_801F7F10Fv",
+          "addend": 0,
+          "binding": 1,
+          "defined_section": "",
+          "defined_offset": 0,
+          "role": "discarded",
+          "resolution": "undefined-original",
+          "target": 2149547792
+        },
+        {
+          "section": ".text",
+          "at": 320,
+          "kind": 10,
+          "symbol_index": 14,
+          "symbol": "__dl__FPv",
+          "addend": 0,
+          "binding": 1,
+          "defined_section": "",
+          "defined_offset": 0,
+          "role": "discarded",
+          "resolution": "undefined-original",
+          "target": 2148658644
+        },
+        {
+          "section": "extabindex",
+          "at": 0,
+          "kind": 1,
+          "symbol_index": 13,
+          "symbol": "fn_8005112C",
+          "addend": 0,
+          "binding": 1,
+          "defined_section": ".text",
+          "defined_offset": 0,
+          "role": "retained",
+          "resolution": "retained-local",
+          "target": 2147815724
+        },
+        {
+          "section": "extabindex",
+          "at": 8,
+          "kind": 1,
+          "symbol_index": 6,
+          "symbol": "@52",
+          "addend": 0,
+          "binding": 0,
+          "defined_section": "extab",
+          "defined_offset": 0,
+          "role": "retained",
+          "resolution": "retained-local",
+          "target": 2147523216
+        },
+        {
+          "section": "extabindex",
+          "at": 12,
+          "kind": 1,
+          "symbol_index": 15,
+          "symbol": "__dt__21NestedReturn_8005112CFv",
+          "addend": 0,
+          "binding": 2,
+          "defined_section": ".text",
+          "defined_offset": 272,
+          "role": "discarded",
+          "resolution": "discarded-local"
+        },
+        {
+          "section": "extabindex",
+          "at": 20,
+          "kind": 1,
+          "symbol_index": 8,
+          "symbol": "@56",
+          "addend": 0,
+          "binding": 0,
+          "defined_section": "extab",
+          "defined_offset": 8,
+          "role": "discarded",
+          "resolution": "discarded-local"
+        }
+      ],
+      "retained_strong_overrides": [],
+      "metadata_relocations": [
+        {
+          "section": ".mwcats.text",
+          "at": 4,
+          "kind": 1,
+          "symbol_index": 13,
+          "symbol": "fn_8005112C",
+          "addend": 0,
+          "binding": 1,
+          "defined_section": ".text",
+          "defined_offset": 0
+        },
+        {
+          "section": ".mwcats.text",
+          "at": 12,
+          "kind": 1,
+          "symbol_index": 15,
+          "symbol": "__dt__21NestedReturn_8005112CFv",
+          "addend": 0,
+          "binding": 2,
+          "defined_section": ".text",
+          "defined_offset": 272
+        }
+      ],
+      "validation": {
+        "retained_text_bytes": 272,
+        "retained_data_bytes": 20,
+        "uncredited_backup_text_bytes": 76,
+        "uncredited_backup_data_bytes": 20,
+        "retained_relocations": 6,
+        "backup_relocations": 4,
+        "all_allocated_bytes_accounted": true,
+        "all_retained_original_bytes_exact": true
+      },
+      "schema": "production-defined-weak-eh-override-v1",
+      "fixture_source": "src/Game/early_scene_nested_state_8005112C.cpp",
+      "fixture_source_sha256": "7fc056202eed25193d6ff49a3d1de6cdbd4eae7a2b80433becae563998595459",
+      "fixture_object": "/Users/brandenb/Downloads/rotfd/scratch/game_early_scene_nested_state_continuation/production.o",
+      "fixture_object_sha256": "a619e4282555cc090d42b37bc5384b287f9ab5ef01b591144c068ffc7fda9c25",
+      "strong_owners": []
+    },
+    "unlinked_exception_groups": [
+      {
+        "function": "__dt__21NestedReturn_8005112CFv",
+        "role": "linker-discarded-backup",
+        "text": {
+          "name": "__dt__21NestedReturn_8005112CFv",
+          "section": ".text",
+          "object_offset": 272,
+          "size": 76,
+          "binding": 2,
+          "type": 2,
+          "symbol_index": 15,
+          "role": "linker-discarded-backup",
+          "raw_sha256": "44922a4b051c2b271cd493dd589d65b21582604ff326c020361fa4f0f6a8d0ae"
+        },
+        "extab": {
+          "name": "@56",
+          "section": "extab",
+          "object_offset": 8,
+          "size": 8,
+          "binding": 0,
+          "type": 1,
+          "symbol_index": 8,
+          "role": "linker-discarded-backup",
+          "raw_sha256": "bcc0e7d554bfb67e6dfaa82a25ef2a617173bede4c2416a211eb9600a67e9e82"
+        },
+        "extabindex": {
+          "name": "@57",
+          "section": "extabindex",
+          "object_offset": 12,
+          "size": 12,
+          "binding": 0,
+          "type": 1,
+          "symbol_index": 9,
+          "role": "linker-discarded-backup",
+          "raw_sha256": "571672201c6ed03c781e3e4b7f637ebc37b0e48ce66534b3dbfec4ba927b0e0b"
+        }
+      }
+    ],
+    "emitted_sections": [
+      {
+        "name": ".text",
+        "size": 348,
+        "raw_sha256": "26383af4fab2e2927c72ca1d6612b7d59b88710a396425c763cd6b2c85873c59"
+      },
+      {
+        "name": "extab",
+        "size": 16,
+        "raw_sha256": "5ddb16d44cbf70eb73771099892260efc0eadc466a7c75ac527fcbfb782be5fd"
+      },
+      {
+        "name": "extabindex",
+        "size": 24,
+        "raw_sha256": "ca7752c83d2a48e52c7a1d809477f9b0c0b8fa6ec90675618ed1dd54db6173fa"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 10,
+        "kind": 6,
+        "symbol_index": 10,
+        "symbol": "lbl_801E9D24",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "undefined-original",
+        "target": 2149489956
+      },
+      {
+        "section": ".text",
+        "at": 22,
+        "kind": 4,
+        "symbol_index": 10,
+        "symbol": "lbl_801E9D24",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "undefined-original",
+        "target": 2149489956
+      },
+      {
+        "section": ".text",
+        "at": 168,
+        "kind": 10,
+        "symbol_index": 11,
+        "symbol": "fn_8004A6C8",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "undefined-original",
+        "target": 2147788488
+      },
+      {
+        "section": ".text",
+        "at": 248,
+        "kind": 10,
+        "symbol_index": 12,
+        "symbol": "__dt__15Handle_801F7F10Fv",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "undefined-original",
+        "target": 2149547792
+      },
+      {
+        "section": ".text",
+        "at": 304,
+        "kind": 10,
+        "symbol_index": 12,
+        "symbol": "__dt__15Handle_801F7F10Fv",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "discarded",
+        "resolution": "undefined-original",
+        "target": 2149547792
+      },
+      {
+        "section": ".text",
+        "at": 320,
+        "kind": 10,
+        "symbol_index": 14,
+        "symbol": "__dl__FPv",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "discarded",
+        "resolution": "undefined-original",
+        "target": 2148658644
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "kind": 1,
+        "symbol_index": 13,
+        "symbol": "fn_8005112C",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": ".text",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "retained-local",
+        "target": 2147815724
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "kind": 1,
+        "symbol_index": 6,
+        "symbol": "@52",
+        "addend": 0,
+        "binding": 0,
+        "defined_section": "extab",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "retained-local",
+        "target": 2147523216
+      },
+      {
+        "section": "extabindex",
+        "at": 12,
+        "kind": 1,
+        "symbol_index": 15,
+        "symbol": "__dt__21NestedReturn_8005112CFv",
+        "addend": 0,
+        "binding": 2,
+        "defined_section": ".text",
+        "defined_offset": 272,
+        "role": "discarded",
+        "resolution": "discarded-local"
+      },
+      {
+        "section": "extabindex",
+        "at": 20,
+        "kind": 1,
+        "symbol_index": 8,
+        "symbol": "@56",
+        "addend": 0,
+        "binding": 0,
+        "defined_section": "extab",
+        "defined_offset": 8,
+        "role": "discarded",
+        "resolution": "discarded-local"
+      }
+    ],
+    "notes": "docs/notes/game-early-scene-nested-state.md",
+    "verified_text_bytes": 272,
+    "verified_data_bytes": 20,
+    "dependency_symbols": [
+      {
+        "name": "__dl__FPv",
+        "section": ".text",
+        "address": 2148658644,
+        "scope": "global"
+      },
+      {
+        "name": "__dt__15Handle_801F7F10Fv",
+        "section": ".text",
+        "address": 2149547792,
+        "scope": "global"
+      },
+      {
+        "name": "fn_8004A6C8",
+        "section": ".text",
+        "address": 2147788488,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_801E9D24",
+        "section": ".text",
+        "address": 2149489956,
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "object_sha256": "a619e4282555cc090d42b37bc5384b287f9ab5ef01b591144c068ffc7fda9c25",
+      "retained_text_bytes": 272,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 6,
+      "unlinked_relocations": 4,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true,
+      "uncredited_text_bytes": 76,
+      "uncredited_metadata_bytes": 20
+    },
+    "canonical_manifest": "config/GSQE78/candidates/game_early_scene_nested_state.json"
+  }
+]

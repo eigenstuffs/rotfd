@@ -1,0 +1,722 @@
+{
+  "source": "src/Python/import.c",
+  "status": "integrated-byte-match",
+  "compiler": "GC/2.0",
+  "cflags": "-proc gekko -fp hardware -enum int -str reuse -common off -opt level=4,nopeephole,speed -inline auto,deferred -pool off -Cpp_exceptions off",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2149143352,
+      "end": 2149160660
+    },
+    {
+      "name": ".rodata",
+      "start": 2150287256,
+      "end": 2150287292
+    },
+    {
+      "name": ".data",
+      "start": 2150506128,
+      "end": 2150509619
+    },
+    {
+      "name": ".sdata",
+      "start": 2151116448,
+      "end": 2151116649
+    },
+    {
+      "name": ".sbss",
+      "start": 2151120656,
+      "end": 2151120684
+    }
+  ],
+  "functions": [
+    {
+      "name": "initimp",
+      "address": 2149143352,
+      "size": 908
+    },
+    {
+      "name": "imp_new_module",
+      "address": 2149144260,
+      "size": 76
+    },
+    {
+      "name": "imp_load_package",
+      "address": 2149144336,
+      "size": 84
+    },
+    {
+      "name": "imp_load_module",
+      "address": 2149144420,
+      "size": 356
+    },
+    {
+      "name": "imp_load_source",
+      "address": 2149144776,
+      "size": 252
+    },
+    {
+      "name": "imp_load_compiled",
+      "address": 2149145028,
+      "size": 556
+    },
+    {
+      "name": "imp_is_frozen",
+      "address": 2149145584,
+      "size": 160
+    },
+    {
+      "name": "imp_is_builtin",
+      "address": 2149145744,
+      "size": 196
+    },
+    {
+      "name": "imp_get_frozen_object",
+      "address": 2149145940,
+      "size": 200
+    },
+    {
+      "name": "imp_init_frozen",
+      "address": 2149146140,
+      "size": 388
+    },
+    {
+      "name": "imp_init_builtin",
+      "address": 2149146528,
+      "size": 1256
+    },
+    {
+      "name": "imp_find_module",
+      "address": 2149147784,
+      "size": 92
+    },
+    {
+      "name": "call_find_module",
+      "address": 2149147876,
+      "size": 264
+    },
+    {
+      "name": "imp_get_suffixes",
+      "address": 2149148140,
+      "size": 372
+    },
+    {
+      "name": "imp_get_magic",
+      "address": 2149148512,
+      "size": 128
+    },
+    {
+      "name": "PyImport_Import",
+      "address": 2149148640,
+      "size": 540
+    },
+    {
+      "name": "PyImport_ReloadModule",
+      "address": 2149149180,
+      "size": 568
+    },
+    {
+      "name": "import_submodule",
+      "address": 2149149748,
+      "size": 480
+    },
+    {
+      "name": "ensure_fromlist",
+      "address": 2149150228,
+      "size": 716
+    },
+    {
+      "name": "load_next",
+      "address": 2149150944,
+      "size": 608
+    },
+    {
+      "name": "get_parent",
+      "address": 2149151552,
+      "size": 488
+    },
+    {
+      "name": "PyImport_ImportModuleEx",
+      "address": 2149152040,
+      "size": 32
+    },
+    {
+      "name": "import_module_ex",
+      "address": 2149152072,
+      "size": 528
+    },
+    {
+      "name": "PyImport_ImportModule",
+      "address": 2149152600,
+      "size": 104
+    },
+    {
+      "name": "PyImport_ImportFrozenModule",
+      "address": 2149152704,
+      "size": 812
+    },
+    {
+      "name": "load_module",
+      "address": 2149153516,
+      "size": 1652
+    },
+    {
+      "name": "find_module",
+      "address": 2149155168,
+      "size": 900
+    },
+    {
+      "name": "load_package",
+      "address": 2149156068,
+      "size": 736
+    },
+    {
+      "name": "load_source_module",
+      "address": 2149156804,
+      "size": 992
+    },
+    {
+      "name": "PyImport_ExecCodeModuleEx",
+      "address": 2149157796,
+      "size": 664
+    },
+    {
+      "name": "PyImport_ExecCodeModule",
+      "address": 2149158460,
+      "size": 36
+    },
+    {
+      "name": "PyImport_AddModule",
+      "address": 2149158496,
+      "size": 280
+    },
+    {
+      "name": "_PyImport_FixupExtension",
+      "address": 2149158776,
+      "size": 316
+    },
+    {
+      "name": "PyImport_Cleanup",
+      "address": 2149159092,
+      "size": 1168
+    },
+    {
+      "name": "_PyImport_Fini",
+      "address": 2149160260,
+      "size": 104
+    },
+    {
+      "name": "_PyImport_Init",
+      "address": 2149160364,
+      "size": 296
+    }
+  ],
+  "objects": [
+    {
+      "name": "_PyImport_StandardFiletab",
+      "address": 2150287256,
+      "size": 36,
+      "section": ".rodata"
+    },
+    {
+      "name": "sys_deletes",
+      "address": 2150506220,
+      "size": 48,
+      "section": ".data"
+    },
+    {
+      "name": "sys_files",
+      "address": 2150506304,
+      "size": 28,
+      "section": ".data"
+    },
+    {
+      "name": "fd_frozen$364",
+      "address": 2150506332,
+      "size": 12,
+      "section": ".data"
+    },
+    {
+      "name": "fd_builtin$366",
+      "address": 2150506344,
+      "size": 12,
+      "section": ".data"
+    },
+    {
+      "name": "doc_imp",
+      "address": 2150506356,
+      "size": 121,
+      "section": ".data"
+    },
+    {
+      "name": "doc_find_module",
+      "address": 2150506480,
+      "size": 327,
+      "section": ".data"
+    },
+    {
+      "name": "doc_load_module",
+      "address": 2150506808,
+      "size": 186,
+      "section": ".data"
+    },
+    {
+      "name": "doc_get_magic",
+      "address": 2150506996,
+      "size": 70,
+      "section": ".data"
+    },
+    {
+      "name": "doc_get_suffixes",
+      "address": 2150507068,
+      "size": 142,
+      "section": ".data"
+    },
+    {
+      "name": "doc_new_module",
+      "address": 2150507212,
+      "size": 141,
+      "section": ".data"
+    },
+    {
+      "name": "imp_methods",
+      "address": 2150507536,
+      "size": 224,
+      "section": ".data"
+    },
+    {
+      "name": "pyc_magic",
+      "address": 2151116448,
+      "size": 4,
+      "section": ".sdata"
+    },
+    {
+      "name": "PyImport_Inittab",
+      "address": 2151116452,
+      "size": 4,
+      "section": ".sdata"
+    },
+    {
+      "name": "extensions",
+      "address": 2151120656,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "silly_list$750",
+      "address": 2151120660,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "builtins_str$751",
+      "address": 2151120664,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "import_str$752",
+      "address": 2151120668,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "namestr$567",
+      "address": 2151120672,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "pathstr$566",
+      "address": 2151120676,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "_PyImport_Filetab",
+      "address": 2151120680,
+      "size": 4,
+      "section": ".sbss"
+    }
+  ],
+  "symbol_scopes": {
+    "initimp": "global",
+    "imp_new_module": "local",
+    "imp_load_package": "local",
+    "imp_load_module": "local",
+    "imp_load_source": "local",
+    "imp_load_compiled": "local",
+    "imp_is_frozen": "local",
+    "imp_is_builtin": "local",
+    "imp_get_frozen_object": "local",
+    "imp_init_frozen": "local",
+    "imp_init_builtin": "local",
+    "imp_find_module": "local",
+    "call_find_module": "local",
+    "imp_get_suffixes": "local",
+    "imp_get_magic": "local",
+    "PyImport_Import": "global",
+    "PyImport_ReloadModule": "global",
+    "import_submodule": "local",
+    "ensure_fromlist": "local",
+    "load_next": "local",
+    "get_parent": "local",
+    "PyImport_ImportModuleEx": "global",
+    "import_module_ex": "local",
+    "PyImport_ImportModule": "global",
+    "PyImport_ImportFrozenModule": "global",
+    "load_module": "local",
+    "find_module": "local",
+    "load_package": "local",
+    "load_source_module": "local",
+    "PyImport_ExecCodeModuleEx": "global",
+    "PyImport_ExecCodeModule": "global",
+    "PyImport_AddModule": "global",
+    "_PyImport_FixupExtension": "global",
+    "PyImport_Cleanup": "global",
+    "_PyImport_Fini": "global",
+    "_PyImport_Init": "global",
+    "_PyImport_StandardFiletab": "local",
+    "sys_deletes": "local",
+    "sys_files": "local",
+    "fd_frozen$364": "local",
+    "fd_builtin$366": "local",
+    "doc_imp": "local",
+    "doc_find_module": "local",
+    "doc_load_module": "local",
+    "doc_get_magic": "local",
+    "doc_get_suffixes": "local",
+    "doc_new_module": "local",
+    "imp_methods": "local",
+    "pyc_magic": "local",
+    "PyImport_Inittab": "global",
+    "extensions": "local",
+    "silly_list$750": "local",
+    "builtins_str$751": "local",
+    "import_str$752": "local",
+    "namestr$567": "local",
+    "pathstr$566": "local",
+    "_PyImport_Filetab": "global"
+  },
+  "symbols": {
+    "PyType_Type": "0x802d68fc",
+    "initimp": "0x80195338",
+    "imp_new_module": "0x801956c4",
+    "imp_load_package": "0x80195710",
+    "imp_load_module": "0x80195764",
+    "imp_load_source": "0x801958c8",
+    "imp_load_compiled": "0x801959c4",
+    "imp_is_frozen": "0x80195bf0",
+    "imp_is_builtin": "0x80195c90",
+    "imp_get_frozen_object": "0x80195d54",
+    "imp_init_frozen": "0x80195e1c",
+    "imp_init_builtin": "0x80195fa0",
+    "imp_find_module": "0x80196488",
+    "call_find_module": "0x801964e4",
+    "imp_get_suffixes": "0x801965ec",
+    "imp_get_magic": "0x80196760",
+    "PyImport_Import": "0x801967e0",
+    "PyImport_ReloadModule": "0x801969fc",
+    "import_submodule": "0x80196c34",
+    "ensure_fromlist": "0x80196e14",
+    "load_next": "0x801970e0",
+    "get_parent": "0x80197340",
+    "PyImport_ImportModuleEx": "0x80197528",
+    "import_module_ex": "0x80197548",
+    "PyImport_ImportModule": "0x80197758",
+    "PyImport_ImportFrozenModule": "0x801977c0",
+    "load_module": "0x80197aec",
+    "find_module": "0x80198160",
+    "load_package": "0x801984e4",
+    "load_source_module": "0x801987c4",
+    "PyImport_ExecCodeModuleEx": "0x80198ba4",
+    "PyImport_ExecCodeModule": "0x80198e3c",
+    "PyImport_AddModule": "0x80198e60",
+    "_PyImport_FixupExtension": "0x80198f78",
+    "PyImport_Cleanup": "0x801990b4",
+    "_PyImport_Fini": "0x80199544",
+    "_PyImport_Init": "0x801995ac",
+    "_PyImport_StandardFiletab": "0x802ac798",
+    "sys_deletes": "0x802e1eec",
+    "sys_files": "0x802e1f40",
+    "fd_frozen$364": "0x802e1f5c",
+    "fd_builtin$366": "0x802e1f68",
+    "doc_imp": "0x802e1f74",
+    "doc_find_module": "0x802e1ff0",
+    "doc_load_module": "0x802e2138",
+    "doc_get_magic": "0x802e21f4",
+    "doc_get_suffixes": "0x802e223c",
+    "doc_new_module": "0x802e22cc",
+    "imp_methods": "0x802e2410",
+    "pyc_magic": "0x80376ea0",
+    "PyImport_Inittab": "0x80376ea4",
+    "extensions": "0x80377f10",
+    "silly_list$750": "0x80377f14",
+    "builtins_str$751": "0x80377f18",
+    "import_str$752": "0x80377f1c",
+    "namestr$567": "0x80377f20",
+    "pathstr$566": "0x80377f24",
+    "_PyImport_Filetab": "0x80377f28",
+    "Py_InitModule4": "0x8019f73c",
+    "PyModule_GetDict": "0x801563f0",
+    "PyInt_FromLong": "0x80149b9c",
+    "PyDict_SetItemString": "0x8013e2fc",
+    "PyArg_ParseTuple": "0x801951b4",
+    "PyModule_New": "0x8015643c",
+    "strchr": "0x80128338",
+    "PyExc_ValueError": "0x80377e9c",
+    "PyErr_Format": "0x8018fc28",
+    "_Py_NoneStruct": "0x80376290",
+    "PyFile_Type": "0x802d2a48",
+    "PyErr_SetString": "0x801911b0",
+    "fopen": "0x80125050",
+    "PyExc_IOError": "0x80377ee8",
+    "PyErr_SetFromErrno": "0x801901cc",
+    "PyFile_AsFile": "0x801434d4",
+    "fclose": "0x801251d0",
+    "PyMarshal_ReadLongFromFile": "0x80199d1c",
+    "PyExc_ImportError": "0x80377ee0",
+    "PyMarshal_ReadLastObjectFromFile": "0x80199c88",
+    "PyCode_Type": "0x802dc258",
+    "PyErr_Occurred": "0x8019118c",
+    "Py_VerboseFlag": "0x80377f50",
+    "PySys_WriteStderr": "0x801a26a8",
+    "PyImport_FrozenModules": "0x803767c0",
+    "strcmp": "0x801283a8",
+    "PyMarshal_ReadObjectFromString": "0x80199c04",
+    "PyThreadState_Get": "0x8019fc08",
+    "Py_FatalError": "0x801a0234",
+    "PyDict_GetItemString": "0x8013e580",
+    "PyModule_Type": "0x802d4280",
+    "PyObject_CallMethod": "0x80130458",
+    "PyDict_New": "0x80141230",
+    "PyExc_SystemError": "0x80377eb0",
+    "PyFile_FromFile": "0x80143398",
+    "Py_BuildValue": "0x8019e940",
+    "PyList_New": "0x8014ea58",
+    "PyList_Append": "0x8014e474",
+    "PyString_FromStringAndSize": "0x80163c18",
+    "_savegpr_27": "0x8011f61c",
+    "PyString_InternFromString": "0x8015ad60",
+    "PyEval_GetGlobals": "0x8017634c",
+    "PyObject_GetItem": "0x80134a98",
+    "PyErr_Clear": "0x80190870",
+    "PyDict_Type": "0x802d280c",
+    "PyObject_GetAttr": "0x8015719c",
+    "PyObject_CallFunction": "0x801306d0",
+    "_restgpr_27": "0x8011f668",
+    "PyExc_TypeError": "0x80377ea0",
+    "PyModule_GetName": "0x8015636c",
+    "strrchr": "0x801282f0",
+    "PyDict_GetItem": "0x80140b74",
+    "PyObject_GetAttrString": "0x80157540",
+    "PyErr_ExceptionMatches": "0x80190d5c",
+    "PyObject_SetAttrString": "0x8015730c",
+    "_savegpr_22": "0x8011f608",
+    "PyObject_HasAttrString": "0x80157418",
+    "PyString_Type": "0x802d6030",
+    "PySequence_GetItem": "0x801320bc",
+    "PyExc_IndexError": "0x80377edc",
+    "PyObject_HasAttr": "0x80156ff0",
+    "strlen": "0x801285f8",
+    "strcpy": "0x80128540",
+    "_restgpr_22": "0x8011f654",
+    "_savegpr_24": "0x8011f610",
+    "strncpy": "0x801284fc",
+    "_restgpr_24": "0x8011f65c",
+    "PyObject_IsTrue": "0x80156d50",
+    "PyString_FromString": "0x80163ab0",
+    "_savegpr_20": "0x8011f600",
+    "PyExc_OverflowError": "0x80377ec8",
+    "PyString_Size": "0x80163974",
+    "PyString_AsString": "0x80163858",
+    "strcat": "0x801284d0",
+    "PySys_GetObject": "0x801a3830",
+    "PyList_Type": "0x802d3b14",
+    "PyList_Size": "0x8014ea0c",
+    "PyList_GetItem": "0x8014e974",
+    "_restgpr_20": "0x8011f64c",
+    "_savegpr_25": "0x8011f614",
+    "PyOS_GetLastModificationTime": "0x801ac730",
+    "Py_OptimizeFlag": "0x80377e78",
+    "PyParser_SimpleParseFile": "0x801a0500",
+    "PyNode_Compile": "0x8018112c",
+    "PyNode_Free": "0x801724c0",
+    "PyMarshal_WriteLongToFile": "0x8019c2f0",
+    "PyMarshal_WriteObjectToFile": "0x8019c2bc",
+    "unlink": "0x801ac7d8",
+    "fseek": "0x80125290",
+    "fflush": "0x80125098",
+    "_restgpr_25": "0x8011f660",
+    "_savegpr_26": "0x8011f618",
+    "PyEval_GetBuiltins": "0x801763cc",
+    "PyEval_EvalCode": "0x8017ba0c",
+    "_restgpr_26": "0x8011f664",
+    "_PyModule_Clear": "0x801561ec",
+    "PyDict_SetItem": "0x80140948",
+    "PyDict_Next": "0x80140620",
+    "PyDict_Clear": "0x801406e4",
+    "free": "0x8001f35c",
+    "_PyImport_DynLoadFiletab": "0x802ac7c0",
+    "malloc": "0x8001f2c0",
+    "memcpy": "0x80005520",
+    "Py_UnicodeFlag": "0x80377f40",
+    "_PyImport_Inittab": "0x802e95f4"
+  },
+  "external_original_names": {
+    "Py_InitModule4": "fn_8019F73C",
+    "PyModule_GetDict": "fn_801563F0",
+    "PyInt_FromLong": "fn_80149B9C",
+    "PyDict_SetItemString": "fn_8013E2FC",
+    "PyArg_ParseTuple": "fn_801951B4",
+    "PyModule_New": "fn_8015643C",
+    "strchr": "strchr",
+    "PyExc_ValueError": "lbl_80377E9C",
+    "PyErr_Format": "fn_8018FC28",
+    "_Py_NoneStruct": "lbl_80376290",
+    "PyFile_Type": "lbl_802D2A48",
+    "PyErr_SetString": "PyErr_SetString",
+    "fopen": "fn_80125050",
+    "PyExc_IOError": "lbl_80377EE8",
+    "PyErr_SetFromErrno": "fn_801901CC",
+    "PyFile_AsFile": "fn_801434D4",
+    "fclose": "fn_801251D0",
+    "PyMarshal_ReadLongFromFile": "fn_80199D1C",
+    "PyExc_ImportError": "lbl_80377EE0",
+    "PyMarshal_ReadLastObjectFromFile": "fn_80199C88",
+    "PyCode_Type": "lbl_802DC258",
+    "PyErr_Occurred": "fn_8019118C",
+    "Py_VerboseFlag": "lbl_80377F50",
+    "PySys_WriteStderr": "fn_801A26A8",
+    "PyImport_FrozenModules": "lbl_803767C0",
+    "strcmp": "fn_801283A8",
+    "PyMarshal_ReadObjectFromString": "fn_80199C04",
+    "PyThreadState_Get": "fn_8019FC08",
+    "Py_FatalError": "fn_801A0234",
+    "PyDict_GetItemString": "fn_8013E580",
+    "PyModule_Type": "lbl_802D4280",
+    "PyObject_CallMethod": "fn_80130458",
+    "PyDict_New": "fn_80141230",
+    "PyExc_SystemError": "lbl_80377EB0",
+    "PyFile_FromFile": "fn_80143398",
+    "Py_BuildValue": "fn_8019E940",
+    "PyList_New": "fn_8014EA58",
+    "PyList_Append": "fn_8014E474",
+    "PyString_FromStringAndSize": "fn_80163C18",
+    "_savegpr_27": "_savegpr_27",
+    "PyString_InternFromString": "fn_8015AD60",
+    "PyEval_GetGlobals": "fn_8017634C",
+    "PyObject_GetItem": "fn_80134A98",
+    "PyErr_Clear": "fn_80190870",
+    "PyDict_Type": "lbl_802D280C",
+    "PyObject_GetAttr": "fn_8015719C",
+    "PyObject_CallFunction": "fn_801306D0",
+    "_restgpr_27": "_restgpr_27",
+    "PyExc_TypeError": "lbl_80377EA0",
+    "PyModule_GetName": "fn_8015636C",
+    "strrchr": "fn_801282F0",
+    "PyDict_GetItem": "fn_80140B74",
+    "PyObject_GetAttrString": "fn_80157540",
+    "PyErr_ExceptionMatches": "fn_80190D5C",
+    "PyObject_SetAttrString": "fn_8015730C",
+    "_savegpr_22": "_savegpr_22",
+    "PyObject_HasAttrString": "fn_80157418",
+    "PyString_Type": "lbl_802D6030",
+    "PySequence_GetItem": "fn_801320BC",
+    "PyExc_IndexError": "PyExc_IndexError",
+    "PyObject_HasAttr": "fn_80156FF0",
+    "strlen": "strlen",
+    "strcpy": "fn_80128540",
+    "_restgpr_22": "_restgpr_22",
+    "_savegpr_24": "_savegpr_24",
+    "strncpy": "fn_801284FC",
+    "_restgpr_24": "_restgpr_24",
+    "PyObject_IsTrue": "fn_80156D50",
+    "PyString_FromString": "fn_80163AB0",
+    "_savegpr_20": "_savegpr_20",
+    "PyExc_OverflowError": "lbl_80377EC8",
+    "PyString_Size": "fn_80163974",
+    "PyString_AsString": "fn_80163858",
+    "strcat": "fn_801284D0",
+    "PySys_GetObject": "fn_801A3830",
+    "PyList_Type": "lbl_802D3B14",
+    "PyList_Size": "fn_8014EA0C",
+    "PyList_GetItem": "fn_8014E974",
+    "_restgpr_20": "_restgpr_20",
+    "_savegpr_25": "_savegpr_25",
+    "PyOS_GetLastModificationTime": "fn_801AC730",
+    "Py_OptimizeFlag": "lbl_80377E78",
+    "PyParser_SimpleParseFile": "fn_801A0500",
+    "PyNode_Compile": "fn_8018112C",
+    "PyNode_Free": "fn_801724C0",
+    "PyMarshal_WriteLongToFile": "fn_8019C2F0",
+    "PyMarshal_WriteObjectToFile": "fn_8019C2BC",
+    "unlink": "fn_801AC7D8",
+    "fseek": "fseek",
+    "fflush": "fn_80125098",
+    "_restgpr_25": "_restgpr_25",
+    "_savegpr_26": "_savegpr_26",
+    "PyEval_GetBuiltins": "fn_801763CC",
+    "PyEval_EvalCode": "fn_8017BA0C",
+    "_restgpr_26": "_restgpr_26",
+    "_PyModule_Clear": "fn_801561EC",
+    "PyDict_SetItem": "fn_80140948",
+    "PyDict_Next": "fn_80140620",
+    "PyDict_Clear": "fn_801406E4",
+    "free": "fn_8001F35C",
+    "_PyImport_DynLoadFiletab": "lbl_802AC7C0",
+    "malloc": "fn_8001F2C0",
+    "memcpy": "memcpy",
+    "Py_UnicodeFlag": "lbl_80377F40"
+  },
+  "verified_text_bytes": 17308,
+  "verified_data_bytes": 3732,
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "2e44e0eae9a04c9de71c5d3d1716cf22fd0126afab38c35fea74f53a033f6689",
+    "matched_code": 17308,
+    "matched_functions": 36,
+    "matched_data": 3756,
+    "complete_data": 3756,
+    "object_path": "build/GSQE78/src/Python/import.o",
+    "object_sha256": "30c57a464199acee23a0ff6b752e7526ca170450a2ba778f5419dd4a9a43f216"
+  },
+  "external_padding": [
+    {
+      "source": "src/Python/import.c",
+      "unit": "main/Python/import",
+      "section": ".data",
+      "start": "0x802e2c33",
+      "end": "0x802e2c34",
+      "size": 1,
+      "alignment": 1,
+      "symbol": "gap_07_802E2C33_data",
+      "original_owner": "padding/source_extents/Python/import.s",
+      "source_section_start": "0x802e1e90",
+      "source_section_bytes": 3491,
+      "previous_split_bytes": 3492,
+      "description": "Original linker alignment beyond emitted source section; no source credit."
+    },
+    {
+      "source": "src/Python/import.c",
+      "unit": "main/Python/import",
+      "section": ".sdata",
+      "start": "0x80376f69",
+      "end": "0x80376f6c",
+      "size": 3,
+      "alignment": 1,
+      "symbol": "gap_09_80376F69_sdata",
+      "original_owner": "padding/source_extents/Python/import.s",
+      "source_section_start": "0x80376ea0",
+      "source_section_bytes": 201,
+      "previous_split_bytes": 204,
+      "description": "Original linker alignment beyond emitted source section; no source credit."
+    }
+  ],
+  "source_extent_audit": {
+    "data_credit_correction": 4,
+    "evidence": "config/GSQE78/source_padding.json",
+    "description": "Source and original bytes unchanged; trailing original padding moved to NonMatching ownership."
+  }
+}

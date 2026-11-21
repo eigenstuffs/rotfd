@@ -1,0 +1,24 @@
+/* Original memory-card state names. See docs/notes/game-memory-card-state-names.md. */
+extern "C" const char lbl_802AB638[21] = "CStateDeleteComplete";
+extern "C" const char lbl_802AB650[24] = "CStateDeleteCorruptFile";
+extern "C" const char lbl_802AB668[26] = "CStateCardCorruptUserData";
+extern "C" const char lbl_802AB684[27] = "CStateCardFormatSuccessful";
+extern "C" const char lbl_802AB6A0[21] = "CStateCardFormatting";
+extern "C" const char lbl_802AB6B8[21] = "CStateCardWarnFormat";
+extern "C" const char lbl_802AB6D0[25] = "CStateCardSelectNoFormat";
+extern "C" const char lbl_802AB6EC[23] = "CStateCardNotFormatted";
+extern "C" const char lbl_802AB704[32] = "CStateMemCardInsufficientMemory";
+extern "C" const char lbl_802AB724[26] = "CStateMemCardSaveComplete";
+extern "C" const char lbl_802AB740[20] = "CStateMemCardSaving";
+extern "C" const char lbl_802AB754[29] = "CStateMemCardOverwriteNoCard";
+extern "C" const char lbl_802AB774[23] = "CStateCheckMemCardSave";
+extern "C" const char lbl_802AB78C[21] = "CStateMemCardLoading";
+extern "C" const char lbl_802AB7A4[26] = "CStateMemCardCheckLoading";
+extern "C" const char lbl_802AB7C0[18] = "CStateDamagedCard";
+extern "C" const char lbl_802AB7D4[18] = "CStateNotAMemCard";
+extern "C" const char lbl_802AB7E8[27] = "CStateGCNoCardFoundLoading";
+extern "C" const char lbl_802AB804[20] = "CStateGCNoCardFound";
+extern "C" const char lbl_802AB818[21] = "CStateCGInitialCheck";
+extern "C" const char lbl_802AB830[31] = "CStateMemCardWaitForUpdateText";
+extern "C" const char lbl_802AB850[24] = "CStateMemCardUpdateText";
+extern "C" const char lbl_802AB868[18] = "CStateGCDoNothing";

@@ -1,0 +1,148 @@
+{
+  "status": "isolated-byte-match",
+  "source": "src/Game/owner_property_transform.cpp",
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-proc",
+    "gekko",
+    "-fp",
+    "hardware",
+    "-enum",
+    "int",
+    "-str",
+    "reuse",
+    "-common",
+    "off",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-Cpp_exceptions",
+    "off",
+    "-RTTI",
+    "off",
+    "-use_lmw_stmw",
+    "on",
+    "-i",
+    "src/Game",
+    "-i",
+    "include"
+  ],
+  "source_kind": "c++",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2149737720,
+      "end": 2149737884,
+      "alignment": 4
+    }
+  ],
+  "functions": [
+    {
+      "name": "fn_802264F8",
+      "address": 2149737720,
+      "size": 164,
+      "scope": "global",
+      "section": ".text",
+      "object_offset": 0,
+      "sha256": "bef9fee2d143517b4bcc19c6be34af5f59852a223f93ae81bb0e9ab2f4870c23"
+    }
+  ],
+  "objects": [],
+  "unlinked_functions": [],
+  "dependency_symbols": [
+    {
+      "name": "lbl_801E9D24",
+      "address": 2149489956,
+      "scope": "global"
+    },
+    {
+      "name": "fn_8023CD38",
+      "address": 2149829944,
+      "scope": "global"
+    }
+  ],
+  "source_sha256": "712d90ef87fea6340c27a8deb1c8cac85d6ca3786286006480ebf2eb92c40f60",
+  "headers": [],
+  "validation": {
+    "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "object_sha256": "5ce98efe16929b00a34053868aca6a50438c576a7e41f403eb674b7382a2a448",
+    "retained_text_bytes": 164,
+    "emitted_text_bytes": 164,
+    "initialized_data_bytes": 0,
+    "bss_bytes": 0,
+    "emitted_data_bytes": 0,
+    "unlinked_text_bytes": 0,
+    "weak_functions": 0,
+    "relocations": 3,
+    "zero_byte_differences": true,
+    "all_retained_allocated_bytes_verified": true,
+    "all_emitted_allocated_bytes_accounted": true,
+    "owned_padding_bytes": 0,
+    "verification_script": "scratch/game_owner_property_transform/verify.py"
+  },
+  "notes": "docs/notes/game-owner-property-transform.md",
+  "original_metadata_audit": {
+    "status": "no-original-table-ownership",
+    "retained_ranges": [
+      {
+        "start": 2149737720,
+        "end": 2149737884
+      }
+    ],
+    "tables": [
+      {
+        "section": "extabindex",
+        "start": 2147573600,
+        "end": 2147611324,
+        "sha256": "64f3b619f96f16f327bc2805af02977009d3270075a236e9bed2e7b960641585",
+        "entries": 3141,
+        "references_to_retained_ranges": []
+      },
+      {
+        "section": ".ctors",
+        "start": 2150209824,
+        "end": 2150209904,
+        "sha256": "c535bceb8aef25702ac3b853c78b5499ab00b445fb657e84883dc324ab71e9df",
+        "entries": 19,
+        "references_to_retained_ranges": []
+      },
+      {
+        "section": ".dtors",
+        "start": 2150209920,
+        "end": 2150209936,
+        "sha256": "f9aca20c726bf82fc897d6a1cfdb6e48dea8a9b97d3a9e68694a58dd94646195",
+        "entries": 3,
+        "references_to_retained_ranges": []
+      }
+    ]
+  },
+  "actual_relocations": [
+    {
+      "section": ".text",
+      "at": 54,
+      "address": 2149737774,
+      "kind": 6,
+      "symbol": "lbl_801E9D24",
+      "target": 2149489956,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 62,
+      "address": 2149737782,
+      "kind": 4,
+      "symbol": "lbl_801E9D24",
+      "target": 2149489956,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 136,
+      "address": 2149737856,
+      "kind": 10,
+      "symbol": "fn_8023CD38",
+      "target": 2149829944,
+      "addend": 0
+    }
+  ]
+}

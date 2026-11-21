@@ -1,0 +1,114 @@
+{
+  "source": "src/Game/menu2d_root_callback.cpp",
+  "source_kind": "c++",
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-proc",
+    "gekko",
+    "-fp",
+    "hardware",
+    "-enum",
+    "int",
+    "-str",
+    "reuse",
+    "-common",
+    "off",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-Cpp_exceptions",
+    "off",
+    "-RTTI",
+    "off",
+    "-use_lmw_stmw",
+    "on",
+    "-i",
+    "src/Game"
+  ],
+  "status": "integrated-byte-match",
+  "sections": {
+    ".text": [
+      2149674108,
+      2149674140
+    ]
+  },
+  "section_alignments": {
+    ".text": 4
+  },
+  "functions": [
+    {
+      "name": "fn_80216C7C",
+      "address": 2149674108,
+      "size": 32,
+      "object_offset": 0,
+      "section": ".text",
+      "scope": "global",
+      "sha256": "8dd41a26f8f87c4d6173e5e2a147a10b496e44bde8ba3a0fbaf53ed58fbaf7b3"
+    }
+  ],
+  "objects": [],
+  "dependency_symbols": [
+    {
+      "name": "slot1C__12BaseObject_ZFv",
+      "address": 2149610324,
+      "scope": "global"
+    }
+  ],
+  "headers": [
+    {
+      "path": "src/Game/objects_owner_internal.h",
+      "sha256": "f2f3ed38fa07c4439af53617df67a59cd5fa686733430f307e91fb0d8d8a7d3c"
+    }
+  ],
+  "source_sha256": "dae3ffa807c94a531bcf1b5b5b55f9ad9390919348e3345dd3f7c487ce079123",
+  "notes": "docs/notes/game-menu2d-item-append.md",
+  "validation": {
+    "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "object_sha256": "14500263b5970b8ced2679c3cc577d502ad2e18a22fc9ebc218ecf8eb9a38227",
+    "retained_text_bytes": 32,
+    "emitted_text_bytes": 32,
+    "initialized_data_bytes": 0,
+    "bss_bytes": 0,
+    "relocations": 1,
+    "relocations_by_type": {
+      "10": 1
+    },
+    "unlinked_text_bytes": 0,
+    "unlinked_relocations": 0,
+    "weak_functions": 0,
+    "zero_byte_differences": true,
+    "all_allocated_sections_accounted": true,
+    "all_retained_allocated_bytes_verified": true,
+    "owned_padding_bytes": 0,
+    "verification_script": "scratch/game_menu_item_append/verify.py",
+    "integration_status": "verified full-DOL and objdiff"
+  },
+  "integration_notes": [
+    "Original Menu2D table802EB240 slot1C points to this function, which directly invokes Root_80207414::slot1C and preserves its signed-char result.",
+    "Existing objects_owner_internal.h is included read-only; no new vtable or weak output is emitted."
+  ],
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "dae3ffa807c94a531bcf1b5b5b55f9ad9390919348e3345dd3f7c487ce079123",
+    "matched_code": 32,
+    "matched_functions": 1,
+    "matched_data": 0,
+    "complete_data": 0,
+    "object_path": "build/GSQE78/src/Game/menu2d_root_callback.o",
+    "object_sha256": "14500263b5970b8ced2679c3cc577d502ad2e18a22fc9ebc218ecf8eb9a38227"
+  },
+  "memcard_native_identity_migration": {
+    "description": "Current canonical identities and hashes verified after native CGCMemCardManipulator/CFSM ownership integration; original evidence is retained in immutable backups and explicit previous receipts.",
+    "production_verification": "scratch/memcard_native_vtable_20261020_parallel/production-verification.json",
+    "production_verification_sha256": "96e50e874bd53c148cd6395f670c040416c34699787d56726d8cfb010c340f31",
+    "migration_object_audit": "scratch/memcard_native_vtable_20261020_parallel/migration_object_audit.json",
+    "migration_object_audit_sha256": "b809560bf7212a505b2ea749256bef5263b4784d066bb311015e10928e90db9d",
+    "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "unchanged_caller_objects": 344,
+    "native_objects": 6,
+    "native_actual_relocations": 281,
+    "previous_canonical_sha256": "d20684f36e6e393d9f6428834ea446cf753358c7c43b2ad1705caf21ae8d2fa9",
+    "previous_canonical": "scratch/memcard_canonical_refresh_20261020_parallel/backups/config/GSQE78/candidates/game-menu2d-root-callback.json",
+    "previous_entry_json_pointer": ""
+  }
+}

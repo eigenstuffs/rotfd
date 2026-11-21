@@ -1,0 +1,92 @@
+{
+  "status": "isolated-byte-match",
+  "source": "src/Game/callback_quaternion_chain.cpp",
+  "source_sha256": "ace22f2fcacf1ffcdda655b1e82e1874faea25f996e9003acfcdb21808c040a4",
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-proc",
+    "gekko",
+    "-fp",
+    "hardware",
+    "-enum",
+    "int",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-Cpp_exceptions",
+    "off",
+    "-RTTI",
+    "off",
+    "-str",
+    "reuse",
+    "-common",
+    "off",
+    "-use_lmw_stmw",
+    "on",
+    "-i",
+    "include"
+  ],
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2149917876,
+      "end": 2149918192,
+      "alignment": 4
+    }
+  ],
+  "functions": [
+    {
+      "name": "fn_802524B4",
+      "address": 2149917876,
+      "size": 316,
+      "scope": "global",
+      "section": ".text",
+      "object_offset": 0
+    }
+  ],
+  "objects": [],
+  "unlinked_functions": [],
+  "headers": [],
+  "notes": "docs/notes/game-callback-quaternion-chain.md",
+  "actual_relocations": [
+    {
+      "section": ".text",
+      "at": 92,
+      "address": 2149917968,
+      "kind": 109,
+      "symbol": "lbl_8037B500",
+      "target": 2151134464,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 180,
+      "address": 2149918056,
+      "kind": 10,
+      "symbol": "fn_801F0A20",
+      "target": 2149517856,
+      "addend": 0
+    }
+  ],
+  "dependency_symbols": [
+    {
+      "name": "fn_801F0A20",
+      "address": 2149517856,
+      "scope": "global",
+      "section": ".text"
+    },
+    {
+      "name": "lbl_8037B500",
+      "address": 2151134464,
+      "scope": "global",
+      "section": ".sdata2"
+    }
+  ],
+  "validation": {
+    "retained_text_bytes": 316,
+    "relocations": 2,
+    "initialized_data_bytes": 0,
+    "bss_bytes": 0,
+    "owned_padding_bytes": 0
+  }
+}

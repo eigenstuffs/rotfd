@@ -1,0 +1,265 @@
+[
+  {
+    "source_kind": "c++",
+    "required_extra_cflags": [
+      "-proc gekko",
+      "-O4,p",
+      "-Cpp_exceptions off",
+      "-use_lmw_stmw on"
+    ],
+    "status": "isolated-byte-match-native-link-acceptance-pending",
+    "source": "src/Game/record_curve_stream_read_801ADF58.cpp",
+    "source_sha256": "2448f7a31e95fe7b54f02d3a4dc8db9a10f4d0bbc9fbc893fa82fd3aa73acac8",
+    "header_sha256": {},
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,p",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "off",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2149244760,
+        "end": 2149244952,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_801ADF58",
+        "address": 2149244760,
+        "size": 192,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [],
+    "unlinked_functions": [],
+    "unlinked_objects": [],
+    "weak_overrides": [],
+    "unlinked_exception_groups": [],
+    "emitted_sections": [
+      {
+        "name": ".text",
+        "size": 192,
+        "raw_sha256": "15d576e6d19bb00ca06e907a8f94d655c50ad0bba9afa25be06cb2f5b533822f"
+      }
+    ],
+    "headers": [],
+    "notes": "docs/notes/game-record-curve-stream-family.md",
+    "original_metadata_audit": {
+      "function": "fn_801ADF58",
+      "original_ranges": [
+        {
+          "name": ".text",
+          "start": 2149244760,
+          "end": 2149244952
+        }
+      ],
+      "extabindex_scan": [
+        2147573600,
+        2147611328,
+        12
+      ],
+      "matching_extabindex": [],
+      "ctors_scan": [
+        2150209824,
+        2150209920,
+        4
+      ],
+      "dtors_scan": [
+        2150209920,
+        2150209952,
+        4
+      ],
+      "ctors": [],
+      "dtors": [],
+      "compiled_source_consumers_unchanged": [
+        {
+          "source": "src/Game/engine_streams_801B311C.c",
+          "source_sha256": "229fa46c60362690a55ff71dc59c6d19ca27b75ff10bb526303a08db4e8ca355",
+          "identifier_occurrences": 2
+        }
+      ],
+      "original_data_ownership": "none; all tables/pointers/dependencies retain their existing external original ownership"
+    },
+    "verified_text_bytes": 192,
+    "verified_data_bytes": 0,
+    "pending_compiled_consumer_migrations": [],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 10,
+        "address": 2149244770,
+        "kind": 6,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 26,
+        "address": 2149244786,
+        "kind": 4,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 48,
+        "address": 2149244808,
+        "kind": 10,
+        "symbol": "fn_801B41F4",
+        "target": 2149270004,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 64,
+        "address": 2149244824,
+        "kind": 10,
+        "symbol": "fn_801E9F40",
+        "target": 2149490496,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 80,
+        "address": 2149244840,
+        "kind": 10,
+        "symbol": "fn_801B2354",
+        "target": 2149262164,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 92,
+        "address": 2149244852,
+        "kind": 10,
+        "symbol": "fn_801B2354",
+        "target": 2149262164,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 104,
+        "address": 2149244864,
+        "kind": 10,
+        "symbol": "fn_801B2354",
+        "target": 2149262164,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 116,
+        "address": 2149244876,
+        "kind": 10,
+        "symbol": "fn_801B2354",
+        "target": 2149262164,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 128,
+        "address": 2149244888,
+        "kind": 10,
+        "symbol": "fn_801B2354",
+        "target": 2149262164,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 140,
+        "address": 2149244900,
+        "kind": 10,
+        "symbol": "fn_801B217C",
+        "target": 2149261692,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 152,
+        "address": 2149244912,
+        "kind": 10,
+        "symbol": "fn_801B217C",
+        "target": 2149261692,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 164,
+        "address": 2149244924,
+        "kind": 10,
+        "symbol": "fn_801B2354",
+        "target": 2149262164,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "fn_801B217C",
+        "address": 2149261692,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_801B2354",
+        "address": 2149262164,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_801B41F4",
+        "address": 2149270004,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_801E9F40",
+        "address": 2149490496,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_801E9D24",
+        "address": 2149489956,
+        "section": ".text",
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "94e6ed748382e49fcf16a635d64a39695bbfebf91ecfe43f4f0d63b180437b5e",
+      "retained_text_bytes": 192,
+      "initialized_data_bytes": 0,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 12,
+      "unlinked_relocations": 0,
+      "uncredited_text_bytes": 0,
+      "uncredited_metadata_bytes": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true,
+      "central_final_native_discard_required": false
+    }
+  }
+]

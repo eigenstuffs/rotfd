@@ -1,0 +1,159 @@
+[
+  {
+    "status": "isolated-byte-match-parent-full-native-acceptance-pending",
+    "source": "src/Game/engine_timer_dispatch_801EDB54.cpp",
+    "source_sha256": "bcc0baa87fbf9fc2ed8a59cb3581b94c3e82072b1b3ed32319ed0598c1f6c100",
+    "headers": [],
+    "header_sha256": {},
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,p",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "off",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2149505876,
+        "end": 2149506444,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_801EDB54",
+        "address": 2149505876,
+        "size": 568,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [],
+    "unlinked_functions": [],
+    "unlinked_objects": [],
+    "notes": "docs/notes/game-engine-timer-dispatch.md",
+    "verified_text_bytes": 568,
+    "verified_data_bytes": 0,
+    "dependency_symbols": [
+      {
+        "name": "fn_801ECC98",
+        "section": ".text",
+        "address": 2149502104,
+        "scope": "global"
+      },
+      {
+        "name": "fn_801ED468",
+        "section": ".text",
+        "address": 2149504104,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_801E9D24",
+        "section": ".text",
+        "address": 2149489956,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_8037A648",
+        "section": ".sdata2",
+        "address": 2151130696,
+        "scope": "global"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 26,
+        "address": 2149505902,
+        "kind": 6,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 30,
+        "address": 2149505906,
+        "kind": 4,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 212,
+        "address": 2149506088,
+        "kind": 109,
+        "symbol": "lbl_8037A648",
+        "target": 2151130696,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 376,
+        "address": 2149506252,
+        "kind": 109,
+        "symbol": "lbl_8037A648",
+        "target": 2151130696,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 396,
+        "address": 2149506272,
+        "kind": 10,
+        "symbol": "fn_801EDB54",
+        "target": 2149505876,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 528,
+        "address": 2149506404,
+        "kind": 10,
+        "symbol": "fn_801ECC98",
+        "target": 2149502104,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 540,
+        "address": 2149506416,
+        "kind": 10,
+        "symbol": "fn_801ED468",
+        "target": 2149504104,
+        "addend": 0
+      }
+    ],
+    "validation": {
+      "object_sha256": "2b88dabe533b4036beb91c42da243edd15b056a118802d1186e70e5de72e845a",
+      "retained_text_bytes": 568,
+      "initialized_data_bytes": 0,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 7,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true,
+      "uncredited_text_bytes": 0,
+      "uncredited_metadata_bytes": 0
+    }
+  }
+]

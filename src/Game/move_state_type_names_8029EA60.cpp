@@ -1,0 +1,24 @@
+/* Simple, medium and complex move-state/type names and attack diagnostics. */
+extern "C" const char lbl_8029EA60[] = "CStateMediumFlee";
+extern "C" const char lbl_8029EA74[] = "CStateScriptBase";
+extern "C" const char lbl_8029EA88[] = "CStateMediumBase";
+extern "C" const char lbl_8029EA9C[] = "CStateMediumAttack";
+extern "C" const char lbl_8029EAB0[] = "CStateMediumWalk";
+extern "C" const char lbl_8029EAC4[] = "CStateMediumIdle";
+extern "C" const char lbl_8029EAD8[] = "Anonymous New";
+extern "C" const char lbl_8029EAE8[] = "ComplexMove.cpp";
+extern "C" const char lbl_8029EAF8[] = "CComplexMove";
+extern "C" const char lbl_8029EB08[] = "BaseObject_Z";
+extern "C" const char lbl_8029EB18[] = "Activable_Z";
+extern "C" const char lbl_8029EB24[] = "Manipulator_Z";
+extern "C" const char lbl_8029EB34[] = "ObjectMove_Z";
+extern "C" const char lbl_8029EB44[] = "ObjectThrow_Z";
+extern "C" const char lbl_8029EB54[] = "LodMove_Z";
+extern "C" const char lbl_8029EB60[] = "CActorMove";
+extern "C" const char lbl_8029EB6C[] = "CScriptMove";
+extern "C" const char lbl_8029EB78[] = "CStateMediumBase";
+extern "C" const char lbl_8029EB8C[] = "CStateScriptBase";
+extern "C" const char lbl_8029EBA0[] = "CStateSimpleBase";
+extern "C" const char lbl_8029EBB4[] = "CStateScriptBase";
+extern "C" const char lbl_8029EBC8[] = "CStateComplexBase";
+extern "C" const char lbl_8029EBDC[] = "CStateScriptBase";

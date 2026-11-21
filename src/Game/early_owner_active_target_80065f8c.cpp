@@ -1,0 +1,2 @@
+#include "Game/early_owner_predicate_views.h"
+extern "C" signed char fn_80065F8C(PredicateResource*self,PredicateResource*other){if(fn_801F7EB8(&fn_8005E90C()->selected)||fn_800665D8(self,0x18)||fn_800665D8(self,0x19)||fn_800665D8(self,0x1A)||fn_800665D8(self,0x1B)){PredicateResource*object=resolvePredicate(fn_8005E90C()->selected);if(!object)return 0;if(other==resolvePredicate(*object->getHandle(0)))return 1;}return 0;}

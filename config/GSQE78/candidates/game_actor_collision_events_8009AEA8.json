@@ -1,0 +1,558 @@
+{
+  "status": "matching-native-dol-accepted",
+  "source": "src/Game/actor_collision_events_8009AEA8.cpp",
+  "proposed_source": "src/Game/actor_collision_events_8009AEA8.cpp",
+  "source_sha256": "25002a009c7ba3be102fd6742fefd110181c84964f760df5480829fd9161d05c",
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-proc",
+    "gekko",
+    "-fp",
+    "hardware",
+    "-enum",
+    "int",
+    "-str",
+    "reuse",
+    "-common",
+    "off",
+    "-O4,s",
+    "-inline",
+    "auto",
+    "-Cpp_exceptions",
+    "on",
+    "-RTTI",
+    "off",
+    "-use_lmw_stmw",
+    "on",
+    "-fp_contract",
+    "on"
+  ],
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2148118184,
+      "end": 2148119820,
+      "alignment": 4
+    },
+    {
+      "name": ".sdata2",
+      "start": 2151124312,
+      "end": 2151124344,
+      "alignment": 8
+    },
+    {
+      "name": "extab",
+      "start": 2147547432,
+      "end": 2147547440,
+      "alignment": 4
+    },
+    {
+      "name": "extabindex",
+      "start": 2147594324,
+      "end": 2147594336,
+      "alignment": 4
+    }
+  ],
+  "functions": [
+    {
+      "name": "fn_8009AEA8",
+      "address": 2148118184,
+      "size": 1636,
+      "scope": "global",
+      "section": ".text",
+      "object_offset": 0
+    }
+  ],
+  "objects": [
+    {
+      "name": "@152",
+      "address": 2151124336,
+      "size": 8,
+      "scope": "local",
+      "section": ".sdata2",
+      "object_offset": 24
+    },
+    {
+      "name": "@153",
+      "address": 2147547432,
+      "size": 8,
+      "scope": "local",
+      "section": "extab",
+      "object_offset": 0
+    },
+    {
+      "name": "@154",
+      "address": 2147594324,
+      "size": 12,
+      "scope": "local",
+      "section": "extabindex",
+      "object_offset": 0
+    },
+    {
+      "name": "lbl_80378D58",
+      "address": 2151124312,
+      "size": 4,
+      "scope": "global",
+      "section": ".sdata2",
+      "object_offset": 0
+    },
+    {
+      "name": "lbl_80378D5C",
+      "address": 2151124316,
+      "size": 4,
+      "scope": "global",
+      "section": ".sdata2",
+      "object_offset": 4
+    },
+    {
+      "name": "lbl_80378D60",
+      "address": 2151124320,
+      "size": 4,
+      "scope": "global",
+      "section": ".sdata2",
+      "object_offset": 8
+    },
+    {
+      "name": "lbl_80378D64",
+      "address": 2151124324,
+      "size": 4,
+      "scope": "global",
+      "section": ".sdata2",
+      "object_offset": 12
+    },
+    {
+      "name": "lbl_80378D68",
+      "address": 2151124328,
+      "size": 4,
+      "scope": "global",
+      "section": ".sdata2",
+      "object_offset": 16
+    }
+  ],
+  "headers": [],
+  "dependency_symbols": [
+    {
+      "name": "game_vec4_zero",
+      "section": ".bss",
+      "address": 2150894432,
+      "scope": "global"
+    },
+    {
+      "name": "lbl_801E9D24",
+      "section": ".text",
+      "address": 2149489956,
+      "scope": "global"
+    },
+    {
+      "name": "fn_80268794",
+      "section": ".text",
+      "address": 2150008724,
+      "scope": "global"
+    },
+    {
+      "name": "fn_802073E8",
+      "section": ".text",
+      "address": 2149610472,
+      "scope": "global"
+    },
+    {
+      "name": "fn_80243384",
+      "section": ".text",
+      "address": 2149856132,
+      "scope": "global"
+    }
+  ],
+  "actual_relocations": [
+    {
+      "section": ".text",
+      "at": 26,
+      "address": 2148118210,
+      "kind": 6,
+      "symbol": "game_vec4_zero",
+      "target": 2150894432,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 30,
+      "address": 2148118214,
+      "kind": 4,
+      "symbol": "game_vec4_zero",
+      "target": 2150894432,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 32,
+      "address": 2148118216,
+      "kind": 109,
+      "symbol": "lbl_80378D60",
+      "target": 2151124320,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 122,
+      "address": 2148118306,
+      "kind": 6,
+      "symbol": "lbl_801E9D24",
+      "target": 2149489956,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 130,
+      "address": 2148118314,
+      "kind": 4,
+      "symbol": "lbl_801E9D24",
+      "target": 2149489956,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 278,
+      "address": 2148118462,
+      "kind": 6,
+      "symbol": "lbl_801E9D24",
+      "target": 2149489956,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 286,
+      "address": 2148118470,
+      "kind": 4,
+      "symbol": "lbl_801E9D24",
+      "target": 2149489956,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 620,
+      "address": 2148118804,
+      "kind": 109,
+      "symbol": "lbl_80378D5C",
+      "target": 2151124316,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 664,
+      "address": 2148118848,
+      "kind": 10,
+      "symbol": "fn_80268794",
+      "target": 2150008724,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 692,
+      "address": 2148118876,
+      "kind": 109,
+      "symbol": "@152",
+      "target": 2151124336,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 856,
+      "address": 2148119040,
+      "kind": 10,
+      "symbol": "fn_802073E8",
+      "target": 2149610472,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 908,
+      "address": 2148119092,
+      "kind": 10,
+      "symbol": "fn_802073E8",
+      "target": 2149610472,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 1064,
+      "address": 2148119248,
+      "kind": 10,
+      "symbol": "fn_802073E8",
+      "target": 2149610472,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 1168,
+      "address": 2148119352,
+      "kind": 10,
+      "symbol": "fn_802073E8",
+      "target": 2149610472,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 1220,
+      "address": 2148119404,
+      "kind": 10,
+      "symbol": "fn_802073E8",
+      "target": 2149610472,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 1376,
+      "address": 2148119560,
+      "kind": 10,
+      "symbol": "fn_802073E8",
+      "target": 2149610472,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 1484,
+      "address": 2148119668,
+      "kind": 10,
+      "symbol": "fn_80243384",
+      "target": 2149856132,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 1512,
+      "address": 2148119696,
+      "kind": 10,
+      "symbol": "fn_802073E8",
+      "target": 2149610472,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 1564,
+      "address": 2148119748,
+      "kind": 10,
+      "symbol": "fn_802073E8",
+      "target": 2149610472,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 1588,
+      "address": 2148119772,
+      "kind": 10,
+      "symbol": "fn_802073E8",
+      "target": 2149610472,
+      "addend": 0
+    },
+    {
+      "section": "extabindex",
+      "at": 0,
+      "address": 2147594324,
+      "kind": 1,
+      "symbol": "fn_8009AEA8",
+      "target": 2148118184,
+      "addend": 0
+    },
+    {
+      "section": "extabindex",
+      "at": 8,
+      "address": 2147594332,
+      "kind": 1,
+      "symbol": "@153",
+      "target": 2147547432,
+      "addend": 0
+    }
+  ],
+  "undefined_symbol_audit": [
+    {
+      "name": "game_vec4_zero",
+      "offset": 0,
+      "size": 0,
+      "binding": 1,
+      "type": 0,
+      "section_index": 0,
+      "section": ""
+    },
+    {
+      "name": "lbl_801E9D24",
+      "offset": 0,
+      "size": 0,
+      "binding": 1,
+      "type": 0,
+      "section_index": 0,
+      "section": ""
+    },
+    {
+      "name": "fn_80268794",
+      "offset": 0,
+      "size": 0,
+      "binding": 1,
+      "type": 0,
+      "section_index": 0,
+      "section": ""
+    },
+    {
+      "name": "fn_802073E8",
+      "offset": 0,
+      "size": 0,
+      "binding": 1,
+      "type": 0,
+      "section_index": 0,
+      "section": ""
+    },
+    {
+      "name": "fn_80243384",
+      "offset": 0,
+      "size": 0,
+      "binding": 1,
+      "type": 0,
+      "section_index": 0,
+      "section": ""
+    }
+  ],
+  "original_metadata_audit": {
+    "extabindex_scan": [
+      2147573600,
+      2147611328,
+      12
+    ],
+    "extabindex_matches": [
+      {
+        "address": 2147594324,
+        "function": 2148118184,
+        "size": 1636,
+        "extab": 2147547432
+      }
+    ],
+    "ctors_scan": [
+      2150209824,
+      2150209920,
+      4
+    ],
+    "ctors_matches": [],
+    "dtors_scan": [
+      2150209920,
+      2150209952,
+      4
+    ],
+    "dtors_matches": []
+  },
+  "validation": {
+    "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "object_sha256": "bdd230fb79b7232b12d09de9bb32a9480074532c7f49a8506821b7d5b4dc7ad8",
+    "retained_text_bytes": 1636,
+    "initialized_data_bytes": 28,
+    "exception_bytes": 20,
+    "bss_bytes": 0,
+    "owned_padding_bytes": 4,
+    "relocations": 22,
+    "unlinked_relocations": 0,
+    "metadata_relocations": 1,
+    "uncredited_text_bytes": 0,
+    "uncredited_metadata_bytes": 0,
+    "all_emitted_allocated_bytes_accounted": true,
+    "zero_retained_byte_differences": true,
+    "undefined_symbols_global": true
+  },
+  "migration": {
+    "retire_build_unit": "Game/actor_vector_interpolation_scalar_constants.c",
+    "old_data_owner_start": 2151124312,
+    "old_data_owner_end": 2151124344,
+    "new_data_owner_start": 2151124312,
+    "new_data_owner_end": 2151124344,
+    "old_bias_name": "lbl_80378D70",
+    "new_bias_name": "@152",
+    "new_bias_scope": "local",
+    "retained_global_scalars": [
+      "lbl_80378D58",
+      "lbl_80378D5C",
+      "lbl_80378D60",
+      "lbl_80378D64",
+      "lbl_80378D68"
+    ],
+    "native_padding_preserved": true,
+    "scalar_retirement_audit": "scalar-retirement-audit.json"
+  },
+  "candidate_source": "/Users/brandenb/Downloads/rotfd/scratch/actor_collision_events_8009AEA8_20261020/actor_collision_events_constants_8009AEA8.cpp",
+  "isolated_receipt": {
+    "status": "isolated-exact-complete-data-owner-native-link-pending",
+    "source": "/Users/brandenb/Downloads/rotfd/scratch/actor_collision_events_8009AEA8_20261020/actor_collision_events_constants_8009AEA8.cpp",
+    "source_sha256": "25002a009c7ba3be102fd6742fefd110181c84964f760df5480829fd9161d05c",
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "bdd230fb79b7232b12d09de9bb32a9480074532c7f49a8506821b7d5b4dc7ad8",
+      "retained_text_bytes": 1636,
+      "initialized_data_bytes": 28,
+      "exception_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 4,
+      "relocations": 22,
+      "unlinked_relocations": 0,
+      "metadata_relocations": 1,
+      "uncredited_text_bytes": 0,
+      "uncredited_metadata_bytes": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_retained_byte_differences": true,
+      "undefined_symbols_global": true
+    }
+  },
+  "production_object": "build/GSQE78/src/Game/actor_collision_events_8009AEA8.o",
+  "production_object_sha256": "17b24b09ef6d48110ef0f5d6763ecb2827bdfd3cf07fb1016001fc8077ce2a6a",
+  "undefined_symbols": [
+    {
+      "name": "game_vec4_zero",
+      "offset": 0,
+      "size": 0,
+      "binding": 1,
+      "type": 0,
+      "section_index": 0,
+      "section": ""
+    },
+    {
+      "name": "lbl_801E9D24",
+      "offset": 0,
+      "size": 0,
+      "binding": 1,
+      "type": 0,
+      "section_index": 0,
+      "section": ""
+    },
+    {
+      "name": "fn_80268794",
+      "offset": 0,
+      "size": 0,
+      "binding": 1,
+      "type": 0,
+      "section_index": 0,
+      "section": ""
+    },
+    {
+      "name": "fn_802073E8",
+      "offset": 0,
+      "size": 0,
+      "binding": 1,
+      "type": 0,
+      "section_index": 0,
+      "section": ""
+    },
+    {
+      "name": "fn_80243384",
+      "offset": 0,
+      "size": 0,
+      "binding": 1,
+      "type": 0,
+      "section_index": 0,
+      "section": ""
+    }
+  ],
+  "metadata_relocations": 1,
+  "integration": {
+    "proof": "scratch/actor_collision_integration_20261020/production-verification.json",
+    "note": "docs/notes/game-actor-collision-events-8009aea8.md",
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "regressions": 0,
+    "source_extents": "5768 linked source units,6742 data/BSS sections PASS",
+    "tests": "66 passed",
+    "retired_unit": "Game/actor_vector_interpolation_scalar_constants.c",
+    "retired_source_preserved": true
+  }
+}

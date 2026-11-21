@@ -1,0 +1,2396 @@
+[
+  {
+    "source": "src/Game/engine_reset_poll_801EBB9C.cpp",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,p",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "off"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2149497756,
+        "end": 2149498056
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_801EBB9C",
+        "address": 2149497756,
+        "size": 300,
+        "scope": "global",
+        "kind": "reset-switch-poll-and-dispatch",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "verified_text_bytes": 300,
+    "verified_data_bytes": 0,
+    "unlinked_functions": [],
+    "objects": [],
+    "unlinked_relocations": [],
+    "validation": {
+      "relocations": 28,
+      "unlinked_relocations": 0,
+      "retained_text_bytes": 300,
+      "unlinked_text_bytes": 0,
+      "emitted_text_bytes": 300,
+      "initialized_data_bytes": 0,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "all_emitted_allocated_bytes_accounted": true
+    },
+    "relocations": [
+      {
+        "section": ".text",
+        "offset": 16,
+        "symbol": "OSGetResetSwitchState",
+        "target": "0x800f4eb4",
+        "kind": 10
+      },
+      {
+        "section": ".text",
+        "offset": 20,
+        "symbol": "lbl_80377FC9",
+        "target": "0x80377fc9",
+        "kind": 109
+      },
+      {
+        "section": ".text",
+        "offset": 40,
+        "symbol": "lbl_80377FC0",
+        "target": "0x80377fc0",
+        "kind": 109
+      },
+      {
+        "section": ".text",
+        "offset": 52,
+        "symbol": "lbl_803780C0",
+        "target": "0x803780c0",
+        "kind": 109
+      },
+      {
+        "section": ".text",
+        "offset": 72,
+        "symbol": "lbl_80377FC0",
+        "target": "0x80377fc0",
+        "kind": 109
+      },
+      {
+        "section": ".text",
+        "offset": 94,
+        "symbol": "lbl_801E9D24",
+        "target": "0x801e9d24",
+        "kind": 6
+      },
+      {
+        "section": ".text",
+        "offset": 98,
+        "symbol": "platform_type_registry_End_Frame_required_a_SoftReset",
+        "target": "0x802acf00",
+        "kind": 6
+      },
+      {
+        "section": ".text",
+        "offset": 102,
+        "symbol": "lbl_801E9D24",
+        "target": "0x801e9d24",
+        "kind": 4
+      },
+      {
+        "section": ".text",
+        "offset": 106,
+        "symbol": "platform_type_registry_End_Frame_required_a_SoftReset",
+        "target": "0x802acf00",
+        "kind": 4
+      },
+      {
+        "section": ".text",
+        "offset": 116,
+        "symbol": "fn_801FA014",
+        "target": "0x801fa014",
+        "kind": 10
+      },
+      {
+        "section": ".text",
+        "offset": 124,
+        "symbol": "VISetBlack",
+        "target": "0x800fcd08",
+        "kind": 10
+      },
+      {
+        "section": ".text",
+        "offset": 128,
+        "symbol": "VIFlush",
+        "target": "0x800fcb6c",
+        "kind": 10
+      },
+      {
+        "section": ".text",
+        "offset": 132,
+        "symbol": "VIWaitForRetrace",
+        "target": "0x800fbe7c",
+        "kind": 10
+      },
+      {
+        "section": ".text",
+        "offset": 136,
+        "symbol": "GXDrawDone",
+        "target": "0x801135b4",
+        "kind": 10
+      },
+      {
+        "section": ".text",
+        "offset": 140,
+        "symbol": "GXAbortFrame",
+        "target": "0x80113500",
+        "kind": 10
+      },
+      {
+        "section": ".text",
+        "offset": 144,
+        "symbol": "LCDisable",
+        "target": "0x800f23a4",
+        "kind": 10
+      },
+      {
+        "section": ".text",
+        "offset": 152,
+        "symbol": "__PADDisableRecalibration",
+        "target": "0x800feaa0",
+        "kind": 10
+      },
+      {
+        "section": ".text",
+        "offset": 156,
+        "symbol": "DVDCheckDisk",
+        "target": "0x800fabf0",
+        "kind": 10
+      },
+      {
+        "section": ".text",
+        "offset": 172,
+        "symbol": "VISetBlack",
+        "target": "0x800fcd08",
+        "kind": 10
+      },
+      {
+        "section": ".text",
+        "offset": 188,
+        "symbol": "OSResetSystem",
+        "target": "0x800f4880",
+        "kind": 10
+      },
+      {
+        "section": ".text",
+        "offset": 200,
+        "symbol": "VISetBlack",
+        "target": "0x800fcd08",
+        "kind": 10
+      },
+      {
+        "section": ".text",
+        "offset": 216,
+        "symbol": "OSResetSystem",
+        "target": "0x800f4880",
+        "kind": 10
+      },
+      {
+        "section": ".text",
+        "offset": 220,
+        "symbol": "lbl_80377FC9",
+        "target": "0x80377fc9",
+        "kind": 109
+      },
+      {
+        "section": ".text",
+        "offset": 224,
+        "symbol": "lbl_80377FC9",
+        "target": "0x80377fc9",
+        "kind": 109
+      },
+      {
+        "section": ".text",
+        "offset": 248,
+        "symbol": "lbl_803780C0",
+        "target": "0x803780c0",
+        "kind": 109
+      },
+      {
+        "section": ".text",
+        "offset": 264,
+        "symbol": "lbl_80377FC0",
+        "target": "0x80377fc0",
+        "kind": 109
+      },
+      {
+        "section": ".text",
+        "offset": 268,
+        "symbol": "lbl_80377FC8",
+        "target": "0x80377fc8",
+        "kind": 109
+      },
+      {
+        "section": ".text",
+        "offset": 276,
+        "symbol": "lbl_80377FC8",
+        "target": "0x80377fc8",
+        "kind": 109
+      }
+    ],
+    "source_sha256": "88b84769e61f4ccca470247042f17e57696f6bc1859bb7d3d1caf17e7a29b6bc",
+    "header_sha256": {},
+    "dependency_symbols": [
+      {
+        "name": "DVDCheckDisk",
+        "address": 2148510704,
+        "section": ".text"
+      },
+      {
+        "name": "GXAbortFrame",
+        "address": 2148611328,
+        "section": ".text"
+      },
+      {
+        "name": "GXDrawDone",
+        "address": 2148611508,
+        "section": ".text"
+      },
+      {
+        "name": "LCDisable",
+        "address": 2148475812,
+        "section": ".text"
+      },
+      {
+        "name": "OSGetResetSwitchState",
+        "address": 2148486836,
+        "section": ".text"
+      },
+      {
+        "name": "OSResetSystem",
+        "address": 2148485248,
+        "section": ".text"
+      },
+      {
+        "name": "VIFlush",
+        "address": 2148518764,
+        "section": ".text"
+      },
+      {
+        "name": "VISetBlack",
+        "address": 2148519176,
+        "section": ".text"
+      },
+      {
+        "name": "VIWaitForRetrace",
+        "address": 2148515452,
+        "section": ".text"
+      },
+      {
+        "name": "__PADDisableRecalibration",
+        "address": 2148526752,
+        "section": ".text"
+      },
+      {
+        "name": "fn_801FA014",
+        "address": 2149556244,
+        "section": ".text"
+      },
+      {
+        "name": "lbl_801E9D24",
+        "address": 2149489956,
+        "section": ".text"
+      },
+      {
+        "name": "lbl_80377FC0",
+        "address": 2151120832,
+        "section": ".sbss"
+      },
+      {
+        "name": "lbl_80377FC8",
+        "address": 2151120840,
+        "section": ".sbss"
+      },
+      {
+        "name": "lbl_80377FC9",
+        "address": 2151120841,
+        "section": ".sbss"
+      },
+      {
+        "name": "lbl_803780C0",
+        "address": 2151121088,
+        "section": ".sbss"
+      },
+      {
+        "name": "platform_type_registry_End_Frame_required_a_SoftReset",
+        "address": 2150289152,
+        "section": ".rodata"
+      }
+    ],
+    "headers": [],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 16,
+        "address": 2149497772,
+        "kind": 10,
+        "symbol": "OSGetResetSwitchState",
+        "target": 2148486836,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 20,
+        "address": 2149497776,
+        "kind": 109,
+        "symbol": "lbl_80377FC9",
+        "target": 2151120841,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 40,
+        "address": 2149497796,
+        "kind": 109,
+        "symbol": "lbl_80377FC0",
+        "target": 2151120832,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 52,
+        "address": 2149497808,
+        "kind": 109,
+        "symbol": "lbl_803780C0",
+        "target": 2151121088,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 72,
+        "address": 2149497828,
+        "kind": 109,
+        "symbol": "lbl_80377FC0",
+        "target": 2151120832,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 94,
+        "address": 2149497850,
+        "kind": 6,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 98,
+        "address": 2149497854,
+        "kind": 6,
+        "symbol": "platform_type_registry_End_Frame_required_a_SoftReset",
+        "target": 2150289152,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 102,
+        "address": 2149497858,
+        "kind": 4,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 106,
+        "address": 2149497862,
+        "kind": 4,
+        "symbol": "platform_type_registry_End_Frame_required_a_SoftReset",
+        "target": 2150289152,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 116,
+        "address": 2149497872,
+        "kind": 10,
+        "symbol": "fn_801FA014",
+        "target": 2149556244,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 124,
+        "address": 2149497880,
+        "kind": 10,
+        "symbol": "VISetBlack",
+        "target": 2148519176,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 128,
+        "address": 2149497884,
+        "kind": 10,
+        "symbol": "VIFlush",
+        "target": 2148518764,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 132,
+        "address": 2149497888,
+        "kind": 10,
+        "symbol": "VIWaitForRetrace",
+        "target": 2148515452,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 136,
+        "address": 2149497892,
+        "kind": 10,
+        "symbol": "GXDrawDone",
+        "target": 2148611508,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 140,
+        "address": 2149497896,
+        "kind": 10,
+        "symbol": "GXAbortFrame",
+        "target": 2148611328,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 144,
+        "address": 2149497900,
+        "kind": 10,
+        "symbol": "LCDisable",
+        "target": 2148475812,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 152,
+        "address": 2149497908,
+        "kind": 10,
+        "symbol": "__PADDisableRecalibration",
+        "target": 2148526752,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 156,
+        "address": 2149497912,
+        "kind": 10,
+        "symbol": "DVDCheckDisk",
+        "target": 2148510704,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 172,
+        "address": 2149497928,
+        "kind": 10,
+        "symbol": "VISetBlack",
+        "target": 2148519176,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 188,
+        "address": 2149497944,
+        "kind": 10,
+        "symbol": "OSResetSystem",
+        "target": 2148485248,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 200,
+        "address": 2149497956,
+        "kind": 10,
+        "symbol": "VISetBlack",
+        "target": 2148519176,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 216,
+        "address": 2149497972,
+        "kind": 10,
+        "symbol": "OSResetSystem",
+        "target": 2148485248,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 220,
+        "address": 2149497976,
+        "kind": 109,
+        "symbol": "lbl_80377FC9",
+        "target": 2151120841,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 224,
+        "address": 2149497980,
+        "kind": 109,
+        "symbol": "lbl_80377FC9",
+        "target": 2151120841,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 248,
+        "address": 2149498004,
+        "kind": 109,
+        "symbol": "lbl_803780C0",
+        "target": 2151121088,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 264,
+        "address": 2149498020,
+        "kind": 109,
+        "symbol": "lbl_80377FC0",
+        "target": 2151120832,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 268,
+        "address": 2149498024,
+        "kind": 109,
+        "symbol": "lbl_80377FC8",
+        "target": 2151120840,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 276,
+        "address": 2149498032,
+        "kind": 109,
+        "symbol": "lbl_80377FC8",
+        "target": 2151120840,
+        "addend": 0
+      }
+    ]
+  },
+  {
+    "source": "src/Game/engine_reset_poll_801EBCC8.cpp",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,p",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "off"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2149498056,
+        "end": 2149498388
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_801EBCC8",
+        "address": 2149498056,
+        "size": 332,
+        "scope": "global",
+        "kind": "reset-switch-poll-and-dispatch",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "verified_text_bytes": 332,
+    "verified_data_bytes": 0,
+    "unlinked_functions": [],
+    "objects": [],
+    "unlinked_relocations": [],
+    "validation": {
+      "relocations": 31,
+      "unlinked_relocations": 0,
+      "retained_text_bytes": 332,
+      "unlinked_text_bytes": 0,
+      "emitted_text_bytes": 332,
+      "initialized_data_bytes": 0,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "all_emitted_allocated_bytes_accounted": true
+    },
+    "relocations": [
+      {
+        "section": ".text",
+        "offset": 16,
+        "symbol": "lbl_80377FC1",
+        "target": "0x80377fc1",
+        "kind": 109
+      },
+      {
+        "section": ".text",
+        "offset": 32,
+        "symbol": "VIWaitForRetrace",
+        "target": "0x800fbe7c",
+        "kind": 10
+      },
+      {
+        "section": ".text",
+        "offset": 36,
+        "symbol": "lbl_80377FC1",
+        "target": "0x80377fc1",
+        "kind": 109
+      },
+      {
+        "section": ".text",
+        "offset": 48,
+        "symbol": "OSGetResetSwitchState",
+        "target": "0x800f4eb4",
+        "kind": 10
+      },
+      {
+        "section": ".text",
+        "offset": 52,
+        "symbol": "lbl_80377FC9",
+        "target": "0x80377fc9",
+        "kind": 109
+      },
+      {
+        "section": ".text",
+        "offset": 72,
+        "symbol": "lbl_80377FC0",
+        "target": "0x80377fc0",
+        "kind": 109
+      },
+      {
+        "section": ".text",
+        "offset": 84,
+        "symbol": "lbl_803780C0",
+        "target": "0x803780c0",
+        "kind": 109
+      },
+      {
+        "section": ".text",
+        "offset": 104,
+        "symbol": "lbl_80377FC0",
+        "target": "0x80377fc0",
+        "kind": 109
+      },
+      {
+        "section": ".text",
+        "offset": 126,
+        "symbol": "lbl_801E9D24",
+        "target": "0x801e9d24",
+        "kind": 6
+      },
+      {
+        "section": ".text",
+        "offset": 130,
+        "symbol": "platform_type_registry_End_Frame_required_a_SoftReset",
+        "target": "0x802acf00",
+        "kind": 6
+      },
+      {
+        "section": ".text",
+        "offset": 134,
+        "symbol": "lbl_801E9D24",
+        "target": "0x801e9d24",
+        "kind": 4
+      },
+      {
+        "section": ".text",
+        "offset": 138,
+        "symbol": "platform_type_registry_End_Frame_required_a_SoftReset",
+        "target": "0x802acf00",
+        "kind": 4
+      },
+      {
+        "section": ".text",
+        "offset": 148,
+        "symbol": "fn_801FA014",
+        "target": "0x801fa014",
+        "kind": 10
+      },
+      {
+        "section": ".text",
+        "offset": 156,
+        "symbol": "VISetBlack",
+        "target": "0x800fcd08",
+        "kind": 10
+      },
+      {
+        "section": ".text",
+        "offset": 160,
+        "symbol": "VIFlush",
+        "target": "0x800fcb6c",
+        "kind": 10
+      },
+      {
+        "section": ".text",
+        "offset": 164,
+        "symbol": "VIWaitForRetrace",
+        "target": "0x800fbe7c",
+        "kind": 10
+      },
+      {
+        "section": ".text",
+        "offset": 168,
+        "symbol": "GXDrawDone",
+        "target": "0x801135b4",
+        "kind": 10
+      },
+      {
+        "section": ".text",
+        "offset": 172,
+        "symbol": "GXAbortFrame",
+        "target": "0x80113500",
+        "kind": 10
+      },
+      {
+        "section": ".text",
+        "offset": 176,
+        "symbol": "LCDisable",
+        "target": "0x800f23a4",
+        "kind": 10
+      },
+      {
+        "section": ".text",
+        "offset": 184,
+        "symbol": "__PADDisableRecalibration",
+        "target": "0x800feaa0",
+        "kind": 10
+      },
+      {
+        "section": ".text",
+        "offset": 188,
+        "symbol": "DVDCheckDisk",
+        "target": "0x800fabf0",
+        "kind": 10
+      },
+      {
+        "section": ".text",
+        "offset": 204,
+        "symbol": "VISetBlack",
+        "target": "0x800fcd08",
+        "kind": 10
+      },
+      {
+        "section": ".text",
+        "offset": 220,
+        "symbol": "OSResetSystem",
+        "target": "0x800f4880",
+        "kind": 10
+      },
+      {
+        "section": ".text",
+        "offset": 232,
+        "symbol": "VISetBlack",
+        "target": "0x800fcd08",
+        "kind": 10
+      },
+      {
+        "section": ".text",
+        "offset": 248,
+        "symbol": "OSResetSystem",
+        "target": "0x800f4880",
+        "kind": 10
+      },
+      {
+        "section": ".text",
+        "offset": 252,
+        "symbol": "lbl_80377FC9",
+        "target": "0x80377fc9",
+        "kind": 109
+      },
+      {
+        "section": ".text",
+        "offset": 256,
+        "symbol": "lbl_80377FC9",
+        "target": "0x80377fc9",
+        "kind": 109
+      },
+      {
+        "section": ".text",
+        "offset": 280,
+        "symbol": "lbl_803780C0",
+        "target": "0x803780c0",
+        "kind": 109
+      },
+      {
+        "section": ".text",
+        "offset": 296,
+        "symbol": "lbl_80377FC0",
+        "target": "0x80377fc0",
+        "kind": 109
+      },
+      {
+        "section": ".text",
+        "offset": 300,
+        "symbol": "lbl_80377FC8",
+        "target": "0x80377fc8",
+        "kind": 109
+      },
+      {
+        "section": ".text",
+        "offset": 308,
+        "symbol": "lbl_80377FC8",
+        "target": "0x80377fc8",
+        "kind": 109
+      }
+    ],
+    "source_sha256": "181cc29b35143f18e164b992f5d22044df1314725ab41f397b302cb28ebb326f",
+    "header_sha256": {},
+    "dependency_symbols": [
+      {
+        "name": "DVDCheckDisk",
+        "address": 2148510704,
+        "section": ".text"
+      },
+      {
+        "name": "GXAbortFrame",
+        "address": 2148611328,
+        "section": ".text"
+      },
+      {
+        "name": "GXDrawDone",
+        "address": 2148611508,
+        "section": ".text"
+      },
+      {
+        "name": "LCDisable",
+        "address": 2148475812,
+        "section": ".text"
+      },
+      {
+        "name": "OSGetResetSwitchState",
+        "address": 2148486836,
+        "section": ".text"
+      },
+      {
+        "name": "OSResetSystem",
+        "address": 2148485248,
+        "section": ".text"
+      },
+      {
+        "name": "VIFlush",
+        "address": 2148518764,
+        "section": ".text"
+      },
+      {
+        "name": "VISetBlack",
+        "address": 2148519176,
+        "section": ".text"
+      },
+      {
+        "name": "VIWaitForRetrace",
+        "address": 2148515452,
+        "section": ".text"
+      },
+      {
+        "name": "__PADDisableRecalibration",
+        "address": 2148526752,
+        "section": ".text"
+      },
+      {
+        "name": "fn_801FA014",
+        "address": 2149556244,
+        "section": ".text"
+      },
+      {
+        "name": "lbl_801E9D24",
+        "address": 2149489956,
+        "section": ".text"
+      },
+      {
+        "name": "lbl_80377FC0",
+        "address": 2151120832,
+        "section": ".sbss"
+      },
+      {
+        "name": "lbl_80377FC1",
+        "address": 2151120833,
+        "section": ".sbss"
+      },
+      {
+        "name": "lbl_80377FC8",
+        "address": 2151120840,
+        "section": ".sbss"
+      },
+      {
+        "name": "lbl_80377FC9",
+        "address": 2151120841,
+        "section": ".sbss"
+      },
+      {
+        "name": "lbl_803780C0",
+        "address": 2151121088,
+        "section": ".sbss"
+      },
+      {
+        "name": "platform_type_registry_End_Frame_required_a_SoftReset",
+        "address": 2150289152,
+        "section": ".rodata"
+      }
+    ],
+    "headers": [],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 16,
+        "address": 2149498072,
+        "kind": 109,
+        "symbol": "lbl_80377FC1",
+        "target": 2151120833,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 32,
+        "address": 2149498088,
+        "kind": 10,
+        "symbol": "VIWaitForRetrace",
+        "target": 2148515452,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 36,
+        "address": 2149498092,
+        "kind": 109,
+        "symbol": "lbl_80377FC1",
+        "target": 2151120833,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 48,
+        "address": 2149498104,
+        "kind": 10,
+        "symbol": "OSGetResetSwitchState",
+        "target": 2148486836,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 52,
+        "address": 2149498108,
+        "kind": 109,
+        "symbol": "lbl_80377FC9",
+        "target": 2151120841,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 72,
+        "address": 2149498128,
+        "kind": 109,
+        "symbol": "lbl_80377FC0",
+        "target": 2151120832,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 84,
+        "address": 2149498140,
+        "kind": 109,
+        "symbol": "lbl_803780C0",
+        "target": 2151121088,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 104,
+        "address": 2149498160,
+        "kind": 109,
+        "symbol": "lbl_80377FC0",
+        "target": 2151120832,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 126,
+        "address": 2149498182,
+        "kind": 6,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 130,
+        "address": 2149498186,
+        "kind": 6,
+        "symbol": "platform_type_registry_End_Frame_required_a_SoftReset",
+        "target": 2150289152,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 134,
+        "address": 2149498190,
+        "kind": 4,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 138,
+        "address": 2149498194,
+        "kind": 4,
+        "symbol": "platform_type_registry_End_Frame_required_a_SoftReset",
+        "target": 2150289152,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 148,
+        "address": 2149498204,
+        "kind": 10,
+        "symbol": "fn_801FA014",
+        "target": 2149556244,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 156,
+        "address": 2149498212,
+        "kind": 10,
+        "symbol": "VISetBlack",
+        "target": 2148519176,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 160,
+        "address": 2149498216,
+        "kind": 10,
+        "symbol": "VIFlush",
+        "target": 2148518764,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 164,
+        "address": 2149498220,
+        "kind": 10,
+        "symbol": "VIWaitForRetrace",
+        "target": 2148515452,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 168,
+        "address": 2149498224,
+        "kind": 10,
+        "symbol": "GXDrawDone",
+        "target": 2148611508,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 172,
+        "address": 2149498228,
+        "kind": 10,
+        "symbol": "GXAbortFrame",
+        "target": 2148611328,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 176,
+        "address": 2149498232,
+        "kind": 10,
+        "symbol": "LCDisable",
+        "target": 2148475812,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 184,
+        "address": 2149498240,
+        "kind": 10,
+        "symbol": "__PADDisableRecalibration",
+        "target": 2148526752,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 188,
+        "address": 2149498244,
+        "kind": 10,
+        "symbol": "DVDCheckDisk",
+        "target": 2148510704,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 204,
+        "address": 2149498260,
+        "kind": 10,
+        "symbol": "VISetBlack",
+        "target": 2148519176,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 220,
+        "address": 2149498276,
+        "kind": 10,
+        "symbol": "OSResetSystem",
+        "target": 2148485248,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 232,
+        "address": 2149498288,
+        "kind": 10,
+        "symbol": "VISetBlack",
+        "target": 2148519176,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 248,
+        "address": 2149498304,
+        "kind": 10,
+        "symbol": "OSResetSystem",
+        "target": 2148485248,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 252,
+        "address": 2149498308,
+        "kind": 109,
+        "symbol": "lbl_80377FC9",
+        "target": 2151120841,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 256,
+        "address": 2149498312,
+        "kind": 109,
+        "symbol": "lbl_80377FC9",
+        "target": 2151120841,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 280,
+        "address": 2149498336,
+        "kind": 109,
+        "symbol": "lbl_803780C0",
+        "target": 2151121088,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 296,
+        "address": 2149498352,
+        "kind": 109,
+        "symbol": "lbl_80377FC0",
+        "target": 2151120832,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 300,
+        "address": 2149498356,
+        "kind": 109,
+        "symbol": "lbl_80377FC8",
+        "target": 2151120840,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 308,
+        "address": 2149498364,
+        "kind": 109,
+        "symbol": "lbl_80377FC8",
+        "target": 2151120840,
+        "addend": 0
+      }
+    ]
+  },
+  {
+    "source": "src/Game/engine_reset_poll_801EBE64.cpp",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,p",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "off"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2149498468,
+        "end": 2149498900
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_801EBE64",
+        "address": 2149498468,
+        "size": 432,
+        "scope": "global",
+        "kind": "reset-save-region-and-restart",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "verified_text_bytes": 432,
+    "verified_data_bytes": 0,
+    "unlinked_functions": [],
+    "objects": [],
+    "unlinked_relocations": [],
+    "validation": {
+      "relocations": 38,
+      "unlinked_relocations": 0,
+      "retained_text_bytes": 432,
+      "unlinked_text_bytes": 0,
+      "emitted_text_bytes": 432,
+      "initialized_data_bytes": 0,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "all_emitted_allocated_bytes_accounted": true
+    },
+    "relocations": [
+      {
+        "section": ".text",
+        "offset": 10,
+        "symbol": "platform_type_registry_End_Frame_required_a_SoftReset",
+        "target": "0x802acf00",
+        "kind": 6
+      },
+      {
+        "section": ".text",
+        "offset": 22,
+        "symbol": "platform_type_registry_End_Frame_required_a_SoftReset",
+        "target": "0x802acf00",
+        "kind": 4
+      },
+      {
+        "section": ".text",
+        "offset": 40,
+        "symbol": "OSGetArenaHi",
+        "target": "0x800f1f74",
+        "kind": 10
+      },
+      {
+        "section": ".text",
+        "offset": 56,
+        "symbol": "lbl_80377FB0",
+        "target": "0x80377fb0",
+        "kind": 109
+      },
+      {
+        "section": ".text",
+        "offset": 80,
+        "symbol": "lbl_80377FB0",
+        "target": "0x80377fb0",
+        "kind": 109
+      },
+      {
+        "section": ".text",
+        "offset": 96,
+        "symbol": "memcpy",
+        "target": "0x80005520",
+        "kind": 10
+      },
+      {
+        "section": ".text",
+        "offset": 106,
+        "symbol": "lbl_801E9D24",
+        "target": "0x801e9d24",
+        "kind": 6
+      },
+      {
+        "section": ".text",
+        "offset": 114,
+        "symbol": "lbl_801E9D24",
+        "target": "0x801e9d24",
+        "kind": 4
+      },
+      {
+        "section": ".text",
+        "offset": 124,
+        "symbol": "fn_801FA014",
+        "target": "0x801fa014",
+        "kind": 10
+      },
+      {
+        "section": ".text",
+        "offset": 128,
+        "symbol": "lbl_80377FB0",
+        "target": "0x80377fb0",
+        "kind": 109
+      },
+      {
+        "section": ".text",
+        "offset": 148,
+        "symbol": "memset",
+        "target": "0x80005434",
+        "kind": 10
+      },
+      {
+        "section": ".text",
+        "offset": 154,
+        "symbol": "lbl_801E9D24",
+        "target": "0x801e9d24",
+        "kind": 6
+      },
+      {
+        "section": ".text",
+        "offset": 162,
+        "symbol": "lbl_801E9D24",
+        "target": "0x801e9d24",
+        "kind": 4
+      },
+      {
+        "section": ".text",
+        "offset": 180,
+        "symbol": "fn_801FA014",
+        "target": "0x801fa014",
+        "kind": 10
+      },
+      {
+        "section": ".text",
+        "offset": 192,
+        "symbol": "strcpy",
+        "target": "0x80128540",
+        "kind": 10
+      },
+      {
+        "section": ".text",
+        "offset": 204,
+        "symbol": "DVDOpen",
+        "target": "0x800f81a4",
+        "kind": 10
+      },
+      {
+        "section": ".text",
+        "offset": 218,
+        "symbol": "lbl_80340A90",
+        "target": "0x80340a90",
+        "kind": 6
+      },
+      {
+        "section": ".text",
+        "offset": 226,
+        "symbol": "lbl_80340A90",
+        "target": "0x80340a90",
+        "kind": 4
+      },
+      {
+        "section": ".text",
+        "offset": 240,
+        "symbol": "fn_8028EEEC",
+        "target": "0x8028eeec",
+        "kind": 10
+      },
+      {
+        "section": ".text",
+        "offset": 246,
+        "symbol": "lbl_801E9D24",
+        "target": "0x801e9d24",
+        "kind": 6
+      },
+      {
+        "section": ".text",
+        "offset": 254,
+        "symbol": "lbl_801E9D24",
+        "target": "0x801e9d24",
+        "kind": 4
+      },
+      {
+        "section": ".text",
+        "offset": 256,
+        "symbol": "lbl_80377FC8",
+        "target": "0x80377fc8",
+        "kind": 109
+      },
+      {
+        "section": ".text",
+        "offset": 274,
+        "symbol": "lbl_801EF5C8",
+        "target": "0x801ef5c8",
+        "kind": 6
+      },
+      {
+        "section": ".text",
+        "offset": 278,
+        "symbol": "lbl_801EF5C8",
+        "target": "0x801ef5c8",
+        "kind": 4
+      },
+      {
+        "section": ".text",
+        "offset": 280,
+        "symbol": "fn_801EF610",
+        "target": "0x801ef610",
+        "kind": 10
+      },
+      {
+        "section": ".text",
+        "offset": 296,
+        "symbol": "VISetBlack",
+        "target": "0x800fcd08",
+        "kind": 10
+      },
+      {
+        "section": ".text",
+        "offset": 300,
+        "symbol": "VIFlush",
+        "target": "0x800fcb6c",
+        "kind": 10
+      },
+      {
+        "section": ".text",
+        "offset": 304,
+        "symbol": "VIWaitForRetrace",
+        "target": "0x800fbe7c",
+        "kind": 10
+      },
+      {
+        "section": ".text",
+        "offset": 308,
+        "symbol": "GXDrawDone",
+        "target": "0x801135b4",
+        "kind": 10
+      },
+      {
+        "section": ".text",
+        "offset": 312,
+        "symbol": "GXAbortFrame",
+        "target": "0x80113500",
+        "kind": 10
+      },
+      {
+        "section": ".text",
+        "offset": 316,
+        "symbol": "OSGetArenaHi",
+        "target": "0x800f1f74",
+        "kind": 10
+      },
+      {
+        "section": ".text",
+        "offset": 324,
+        "symbol": "OSGetArenaHi",
+        "target": "0x800f1f74",
+        "kind": 10
+      },
+      {
+        "section": ".text",
+        "offset": 340,
+        "symbol": "OSSetSaveRegion",
+        "target": "0x800f4738",
+        "kind": 10
+      },
+      {
+        "section": ".text",
+        "offset": 348,
+        "symbol": "__PADDisableRecalibration",
+        "target": "0x800feaa0",
+        "kind": 10
+      },
+      {
+        "section": ".text",
+        "offset": 352,
+        "symbol": "LCDisable",
+        "target": "0x800f23a4",
+        "kind": 10
+      },
+      {
+        "section": ".text",
+        "offset": 356,
+        "symbol": "DVDCheckDisk",
+        "target": "0x800fabf0",
+        "kind": 10
+      },
+      {
+        "section": ".text",
+        "offset": 380,
+        "symbol": "OSResetSystem",
+        "target": "0x800f4880",
+        "kind": 10
+      },
+      {
+        "section": ".text",
+        "offset": 400,
+        "symbol": "OSResetSystem",
+        "target": "0x800f4880",
+        "kind": 10
+      }
+    ],
+    "source_sha256": "b87769906f4b7df0ae5e14b066336cd9e8432af0b04f5b6168866595df524ead",
+    "header_sha256": {},
+    "dependency_symbols": [
+      {
+        "name": "DVDCheckDisk",
+        "address": 2148510704,
+        "section": ".text"
+      },
+      {
+        "name": "DVDOpen",
+        "address": 2148499876,
+        "section": ".text"
+      },
+      {
+        "name": "GXAbortFrame",
+        "address": 2148611328,
+        "section": ".text"
+      },
+      {
+        "name": "GXDrawDone",
+        "address": 2148611508,
+        "section": ".text"
+      },
+      {
+        "name": "LCDisable",
+        "address": 2148475812,
+        "section": ".text"
+      },
+      {
+        "name": "OSGetArenaHi",
+        "address": 2148474740,
+        "section": ".text"
+      },
+      {
+        "name": "OSResetSystem",
+        "address": 2148485248,
+        "section": ".text"
+      },
+      {
+        "name": "OSSetSaveRegion",
+        "address": 2148484920,
+        "section": ".text"
+      },
+      {
+        "name": "VIFlush",
+        "address": 2148518764,
+        "section": ".text"
+      },
+      {
+        "name": "VISetBlack",
+        "address": 2148519176,
+        "section": ".text"
+      },
+      {
+        "name": "VIWaitForRetrace",
+        "address": 2148515452,
+        "section": ".text"
+      },
+      {
+        "name": "__PADDisableRecalibration",
+        "address": 2148526752,
+        "section": ".text"
+      },
+      {
+        "name": "fn_801EF610",
+        "address": 2149512720,
+        "section": ".text"
+      },
+      {
+        "name": "fn_801FA014",
+        "address": 2149556244,
+        "section": ".text"
+      },
+      {
+        "name": "fn_8028EEEC",
+        "address": 2150166252,
+        "section": ".text"
+      },
+      {
+        "name": "lbl_801E9D24",
+        "address": 2149489956,
+        "section": ".text"
+      },
+      {
+        "name": "lbl_801EF5C8",
+        "address": 2149512648,
+        "section": ".text"
+      },
+      {
+        "name": "lbl_80340A90",
+        "address": 2150894224,
+        "section": ".bss"
+      },
+      {
+        "name": "lbl_80377FB0",
+        "address": 2151120816,
+        "section": ".sbss"
+      },
+      {
+        "name": "lbl_80377FC8",
+        "address": 2151120840,
+        "section": ".sbss"
+      },
+      {
+        "name": "memcpy",
+        "address": 2147505440,
+        "section": ".init"
+      },
+      {
+        "name": "memset",
+        "address": 2147505204,
+        "section": ".init"
+      },
+      {
+        "name": "platform_type_registry_End_Frame_required_a_SoftReset",
+        "address": 2150289152,
+        "section": ".rodata"
+      },
+      {
+        "name": "strcpy",
+        "address": 2148697408,
+        "section": ".text"
+      }
+    ],
+    "headers": [],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 10,
+        "address": 2149498478,
+        "kind": 6,
+        "symbol": "platform_type_registry_End_Frame_required_a_SoftReset",
+        "target": 2150289152,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 22,
+        "address": 2149498490,
+        "kind": 4,
+        "symbol": "platform_type_registry_End_Frame_required_a_SoftReset",
+        "target": 2150289152,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 40,
+        "address": 2149498508,
+        "kind": 10,
+        "symbol": "OSGetArenaHi",
+        "target": 2148474740,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 56,
+        "address": 2149498524,
+        "kind": 109,
+        "symbol": "lbl_80377FB0",
+        "target": 2151120816,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 80,
+        "address": 2149498548,
+        "kind": 109,
+        "symbol": "lbl_80377FB0",
+        "target": 2151120816,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 96,
+        "address": 2149498564,
+        "kind": 10,
+        "symbol": "memcpy",
+        "target": 2147505440,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 106,
+        "address": 2149498574,
+        "kind": 6,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 114,
+        "address": 2149498582,
+        "kind": 4,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 124,
+        "address": 2149498592,
+        "kind": 10,
+        "symbol": "fn_801FA014",
+        "target": 2149556244,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 128,
+        "address": 2149498596,
+        "kind": 109,
+        "symbol": "lbl_80377FB0",
+        "target": 2151120816,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 148,
+        "address": 2149498616,
+        "kind": 10,
+        "symbol": "memset",
+        "target": 2147505204,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 154,
+        "address": 2149498622,
+        "kind": 6,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 162,
+        "address": 2149498630,
+        "kind": 4,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 180,
+        "address": 2149498648,
+        "kind": 10,
+        "symbol": "fn_801FA014",
+        "target": 2149556244,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 192,
+        "address": 2149498660,
+        "kind": 10,
+        "symbol": "strcpy",
+        "target": 2148697408,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 204,
+        "address": 2149498672,
+        "kind": 10,
+        "symbol": "DVDOpen",
+        "target": 2148499876,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 218,
+        "address": 2149498686,
+        "kind": 6,
+        "symbol": "lbl_80340A90",
+        "target": 2150894224,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 226,
+        "address": 2149498694,
+        "kind": 4,
+        "symbol": "lbl_80340A90",
+        "target": 2150894224,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 240,
+        "address": 2149498708,
+        "kind": 10,
+        "symbol": "fn_8028EEEC",
+        "target": 2150166252,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 246,
+        "address": 2149498714,
+        "kind": 6,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 254,
+        "address": 2149498722,
+        "kind": 4,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 256,
+        "address": 2149498724,
+        "kind": 109,
+        "symbol": "lbl_80377FC8",
+        "target": 2151120840,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 274,
+        "address": 2149498742,
+        "kind": 6,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 278,
+        "address": 2149498746,
+        "kind": 4,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 280,
+        "address": 2149498748,
+        "kind": 10,
+        "symbol": "fn_801EF610",
+        "target": 2149512720,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 296,
+        "address": 2149498764,
+        "kind": 10,
+        "symbol": "VISetBlack",
+        "target": 2148519176,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 300,
+        "address": 2149498768,
+        "kind": 10,
+        "symbol": "VIFlush",
+        "target": 2148518764,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 304,
+        "address": 2149498772,
+        "kind": 10,
+        "symbol": "VIWaitForRetrace",
+        "target": 2148515452,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 308,
+        "address": 2149498776,
+        "kind": 10,
+        "symbol": "GXDrawDone",
+        "target": 2148611508,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 312,
+        "address": 2149498780,
+        "kind": 10,
+        "symbol": "GXAbortFrame",
+        "target": 2148611328,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 316,
+        "address": 2149498784,
+        "kind": 10,
+        "symbol": "OSGetArenaHi",
+        "target": 2148474740,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 324,
+        "address": 2149498792,
+        "kind": 10,
+        "symbol": "OSGetArenaHi",
+        "target": 2148474740,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 340,
+        "address": 2149498808,
+        "kind": 10,
+        "symbol": "OSSetSaveRegion",
+        "target": 2148484920,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 348,
+        "address": 2149498816,
+        "kind": 10,
+        "symbol": "__PADDisableRecalibration",
+        "target": 2148526752,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 352,
+        "address": 2149498820,
+        "kind": 10,
+        "symbol": "LCDisable",
+        "target": 2148475812,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 356,
+        "address": 2149498824,
+        "kind": 10,
+        "symbol": "DVDCheckDisk",
+        "target": 2148510704,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 380,
+        "address": 2149498848,
+        "kind": 10,
+        "symbol": "OSResetSystem",
+        "target": 2148485248,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 400,
+        "address": 2149498868,
+        "kind": 10,
+        "symbol": "OSResetSystem",
+        "target": 2148485248,
+        "addend": 0
+      }
+    ]
+  },
+  {
+    "source": "src/Game/engine_reset_poll_801EC044.cpp",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,p",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "off"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2149498948,
+        "end": 2149499176
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_801EC044",
+        "address": 2149498948,
+        "size": 228,
+        "scope": "global",
+        "kind": "reset-save-region-restore",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "verified_text_bytes": 228,
+    "verified_data_bytes": 0,
+    "unlinked_functions": [],
+    "objects": [],
+    "unlinked_relocations": [],
+    "validation": {
+      "relocations": 16,
+      "unlinked_relocations": 0,
+      "retained_text_bytes": 228,
+      "unlinked_text_bytes": 0,
+      "emitted_text_bytes": 228,
+      "initialized_data_bytes": 0,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "all_emitted_allocated_bytes_accounted": true
+    },
+    "relocations": [
+      {
+        "section": ".text",
+        "offset": 32,
+        "symbol": "OSGetArenaHi",
+        "target": "0x800f1f74",
+        "kind": 10
+      },
+      {
+        "section": ".text",
+        "offset": 44,
+        "symbol": "lbl_80377FB0",
+        "target": "0x80377fb0",
+        "kind": 109
+      },
+      {
+        "section": ".text",
+        "offset": 74,
+        "symbol": "lbl_801E9D24",
+        "target": "0x801e9d24",
+        "kind": 6
+      },
+      {
+        "section": ".text",
+        "offset": 78,
+        "symbol": "lbl_802AD16C",
+        "target": "0x802ad16c",
+        "kind": 6
+      },
+      {
+        "section": ".text",
+        "offset": 82,
+        "symbol": "lbl_801E9D24",
+        "target": "0x801e9d24",
+        "kind": 4
+      },
+      {
+        "section": ".text",
+        "offset": 86,
+        "symbol": "lbl_802AD16C",
+        "target": "0x802ad16c",
+        "kind": 4
+      },
+      {
+        "section": ".text",
+        "offset": 96,
+        "symbol": "fn_801FA014",
+        "target": "0x801fa014",
+        "kind": 10
+      },
+      {
+        "section": ".text",
+        "offset": 110,
+        "symbol": "lbl_801E9D24",
+        "target": "0x801e9d24",
+        "kind": 6
+      },
+      {
+        "section": ".text",
+        "offset": 114,
+        "symbol": "lbl_802AD1AC",
+        "target": "0x802ad1ac",
+        "kind": 6
+      },
+      {
+        "section": ".text",
+        "offset": 118,
+        "symbol": "lbl_801E9D24",
+        "target": "0x801e9d24",
+        "kind": 4
+      },
+      {
+        "section": ".text",
+        "offset": 126,
+        "symbol": "lbl_802AD1AC",
+        "target": "0x802ad1ac",
+        "kind": 4
+      },
+      {
+        "section": ".text",
+        "offset": 140,
+        "symbol": "fn_801FA014",
+        "target": "0x801fa014",
+        "kind": 10
+      },
+      {
+        "section": ".text",
+        "offset": 152,
+        "symbol": "lbl_80377FB0",
+        "target": "0x80377fb0",
+        "kind": 109
+      },
+      {
+        "section": ".text",
+        "offset": 168,
+        "symbol": "memcpy",
+        "target": "0x80005520",
+        "kind": 10
+      },
+      {
+        "section": ".text",
+        "offset": 176,
+        "symbol": "lbl_80377FB0",
+        "target": "0x80377fb0",
+        "kind": 109
+      },
+      {
+        "section": ".text",
+        "offset": 192,
+        "symbol": "memcpy",
+        "target": "0x80005520",
+        "kind": 10
+      }
+    ],
+    "source_sha256": "e1d052e3b8ee11236624c11d3c203fbaaab6c3175598e25cb27b79ea4faff073",
+    "header_sha256": {},
+    "dependency_symbols": [
+      {
+        "name": "OSGetArenaHi",
+        "address": 2148474740,
+        "section": ".text"
+      },
+      {
+        "name": "fn_801FA014",
+        "address": 2149556244,
+        "section": ".text"
+      },
+      {
+        "name": "lbl_801E9D24",
+        "address": 2149489956,
+        "section": ".text"
+      },
+      {
+        "name": "lbl_802AD16C",
+        "address": 2150289772,
+        "section": ".rodata"
+      },
+      {
+        "name": "lbl_802AD1AC",
+        "address": 2150289836,
+        "section": ".rodata"
+      },
+      {
+        "name": "lbl_80377FB0",
+        "address": 2151120816,
+        "section": ".sbss"
+      },
+      {
+        "name": "memcpy",
+        "address": 2147505440,
+        "section": ".init"
+      }
+    ],
+    "headers": [],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 32,
+        "address": 2149498980,
+        "kind": 10,
+        "symbol": "OSGetArenaHi",
+        "target": 2148474740,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 44,
+        "address": 2149498992,
+        "kind": 109,
+        "symbol": "lbl_80377FB0",
+        "target": 2151120816,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 74,
+        "address": 2149499022,
+        "kind": 6,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 78,
+        "address": 2149499026,
+        "kind": 6,
+        "symbol": "lbl_802AD16C",
+        "target": 2150289772,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 82,
+        "address": 2149499030,
+        "kind": 4,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 86,
+        "address": 2149499034,
+        "kind": 4,
+        "symbol": "lbl_802AD16C",
+        "target": 2150289772,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 96,
+        "address": 2149499044,
+        "kind": 10,
+        "symbol": "fn_801FA014",
+        "target": 2149556244,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 110,
+        "address": 2149499058,
+        "kind": 6,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 114,
+        "address": 2149499062,
+        "kind": 6,
+        "symbol": "lbl_802AD1AC",
+        "target": 2150289836,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 118,
+        "address": 2149499066,
+        "kind": 4,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 126,
+        "address": 2149499074,
+        "kind": 4,
+        "symbol": "lbl_802AD1AC",
+        "target": 2150289836,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 140,
+        "address": 2149499088,
+        "kind": 10,
+        "symbol": "fn_801FA014",
+        "target": 2149556244,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 152,
+        "address": 2149499100,
+        "kind": 109,
+        "symbol": "lbl_80377FB0",
+        "target": 2151120816,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 168,
+        "address": 2149499116,
+        "kind": 10,
+        "symbol": "memcpy",
+        "target": 2147505440,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 176,
+        "address": 2149499124,
+        "kind": 109,
+        "symbol": "lbl_80377FB0",
+        "target": 2151120816,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 192,
+        "address": 2149499140,
+        "kind": 10,
+        "symbol": "memcpy",
+        "target": 2147505440,
+        "addend": 0
+      }
+    ]
+  }
+]

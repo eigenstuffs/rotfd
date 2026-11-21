@@ -1,0 +1,231 @@
+{
+  "source": "src/dolphin/dsp/dsp_task.c",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.2.5n",
+  "cflags": "-proc gekko -fp hardware -enum int -str reuse -common off -O4,p -inline auto -i src/dolphin/dsp -Cpp_exceptions off",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2148557896,
+      "end": 2148560076
+    },
+    {
+      "name": ".data",
+      "start": 2150428800,
+      "end": 2150429069
+    },
+    {
+      "name": ".sbss",
+      "start": 2151119904,
+      "end": 2151119928
+    }
+  ],
+  "functions": [
+    {
+      "name": "__DSPHandler",
+      "address": 2148557896,
+      "size": 1060
+    },
+    {
+      "name": "__DSP_exec_task",
+      "address": 2148558956,
+      "size": 416
+    },
+    {
+      "name": "__DSP_boot_task",
+      "address": 2148559372,
+      "size": 396
+    },
+    {
+      "name": "__DSP_insert_task",
+      "address": 2148559768,
+      "size": 160
+    },
+    {
+      "name": "__DSP_remove_task",
+      "address": 2148559928,
+      "size": 148
+    }
+  ],
+  "objects": [
+    {
+      "name": "__DSP_rude_task_pending",
+      "address": 2151119904,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "__DSP_rude_task",
+      "address": 2151119908,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "__DSP_tmp_task",
+      "address": 2151119912,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "__DSP_last_task",
+      "address": 2151119916,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "__DSP_first_task",
+      "address": 2151119920,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "__DSP_curr_task",
+      "address": 2151119924,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "@266",
+      "address": 2150428800,
+      "size": 29,
+      "section": ".data",
+      "scope": "local",
+      "compiler_assembly_name": "\"@266\"",
+      "data_kind": "string"
+    },
+    {
+      "name": "@267",
+      "address": 2150428832,
+      "size": 45,
+      "section": ".data",
+      "scope": "local",
+      "compiler_assembly_name": "\"@267\"",
+      "data_kind": "string"
+    },
+    {
+      "name": "@268",
+      "address": 2150428880,
+      "size": 45,
+      "section": ".data",
+      "scope": "local",
+      "compiler_assembly_name": "\"@268\"",
+      "data_kind": "string"
+    },
+    {
+      "name": "@269",
+      "address": 2150428928,
+      "size": 45,
+      "section": ".data",
+      "scope": "local",
+      "compiler_assembly_name": "\"@269\"",
+      "data_kind": "string"
+    },
+    {
+      "name": "@270",
+      "address": 2150428976,
+      "size": 45,
+      "section": ".data",
+      "scope": "local",
+      "compiler_assembly_name": "\"@270\"",
+      "data_kind": "string"
+    },
+    {
+      "name": "@271",
+      "address": 2150429024,
+      "size": 45,
+      "section": ".data",
+      "scope": "local",
+      "compiler_assembly_name": "\"@271\"",
+      "data_kind": "string"
+    }
+  ],
+  "symbol_scopes": {
+    "__DSPHandler": "global",
+    "__DSP_exec_task": "global",
+    "__DSP_boot_task": "global",
+    "__DSP_insert_task": "global",
+    "__DSP_remove_task": "global",
+    "__DSP_rude_task_pending": "global",
+    "__DSP_rude_task": "global",
+    "__DSP_tmp_task": "global",
+    "__DSP_last_task": "global",
+    "__DSP_first_task": "global",
+    "__DSP_curr_task": "global",
+    "@266": "local",
+    "@267": "local",
+    "@268": "local",
+    "@269": "local",
+    "@270": "local",
+    "@271": "local"
+  },
+  "symbols": {
+    "__DSPHandler": "0x80106448",
+    "__DSP_exec_task": "0x8010686c",
+    "__DSP_boot_task": "0x80106a0c",
+    "__DSP_insert_task": "0x80106b98",
+    "__DSP_remove_task": "0x80106c38",
+    "__DSP_rude_task_pending": "0x80377c20",
+    "__DSP_rude_task": "0x80377c24",
+    "__DSP_tmp_task": "0x80377c28",
+    "__DSP_last_task": "0x80377c2c",
+    "__DSP_first_task": "0x80377c30",
+    "__DSP_curr_task": "0x80377c34",
+    "OSClearContext": "0x800f2ad4",
+    "OSSetCurrentContext": "0x800f290c",
+    "DSPCheckMailFromDSP": "0x80106120",
+    "DSPReadMailFromDSP": "0x80106130",
+    "DSPSendMailToDSP": "0x80106148",
+    "DSPCheckMailToDSP": "0x80106110",
+    "__DSP_debug_printf": "0x801063f8",
+    "@266": "0x802cf080",
+    "@267": "0x802cf0a0",
+    "@268": "0x802cf0d0",
+    "@269": "0x802cf100",
+    "@270": "0x802cf130",
+    "@271": "0x802cf160"
+  },
+  "external_original_names": {
+    "OSClearContext": "OSClearContext",
+    "OSSetCurrentContext": "OSSetCurrentContext",
+    "DSPCheckMailFromDSP": "fn_80106120",
+    "DSPReadMailFromDSP": "fn_80106130",
+    "DSPSendMailToDSP": "fn_80106148",
+    "DSPCheckMailToDSP": "fn_80106110",
+    "__DSP_debug_printf": "fn_801063F8"
+  },
+  "verified_text_bytes": 2180,
+  "verified_data_bytes": 272,
+  "source_kind": "c",
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "e71abf8c70b79e6e253969031f6cbdc1ad612d116d427830e69d18554d764a3d",
+    "matched_code": 2180,
+    "matched_functions": 5,
+    "matched_data": 293,
+    "complete_data": 293,
+    "object_path": "build/GSQE78/src/dolphin/dsp/dsp_task.o",
+    "object_sha256": "cc88a92955a8aaf52fba8d6e0a4572d33ccf145a1ed87ffd5d1ea0ecfe985927"
+  },
+  "external_padding": [
+    {
+      "source": "src/dolphin/dsp/dsp_task.c",
+      "unit": "main/dolphin/dsp/dsp_task",
+      "section": ".data",
+      "start": "0x802cf18d",
+      "end": "0x802cf190",
+      "size": 3,
+      "alignment": 1,
+      "symbol": "gap_07_802CF18D_data",
+      "original_owner": "padding/source_extents/dolphin/dsp/dsp_task.s",
+      "source_section_start": "0x802cf080",
+      "source_section_bytes": 269,
+      "previous_split_bytes": 272,
+      "description": "Original linker alignment beyond emitted source section; no source credit."
+    }
+  ],
+  "source_extent_audit": {
+    "data_credit_correction": 3,
+    "evidence": "config/GSQE78/source_padding.json",
+    "description": "Source and original bytes unchanged; trailing original padding moved to NonMatching ownership."
+  }
+}

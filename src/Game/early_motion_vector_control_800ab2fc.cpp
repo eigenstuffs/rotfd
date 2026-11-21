@@ -1,0 +1,2 @@
+#include "Game/early_motion_vector_control_views.h"
+extern "C" void fn_800AB2FC(MotionVectorTimed*self,float delta){self->velocity=fn_800AB440(self);self->time+=self->rate*delta;self->actor->velocity=self->velocity;self->group->status->active=1;if(self->time>self->duration){self->actor->originActive=1;fn_8007D6A0(self->actor->controller,0);const MotionVector&source=resolveResource(*self->actor->slot37(0))->transform->position;self->actor->position=MotionVector(source.x,source.y,source.z);}}

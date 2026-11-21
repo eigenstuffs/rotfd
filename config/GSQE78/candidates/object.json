@@ -1,0 +1,497 @@
+{
+  "source": "src/Objects/object.c",
+  "status": "integrated-byte-match",
+  "compiler": "GC/2.0",
+  "cflags": "-proc gekko -fp hardware -enum int -str reuse -common off -opt level=4,nopeephole,speed -inline auto,deferred -pool off -Cpp_exceptions off",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2148885888,
+      "end": 2148898940
+    },
+    {
+      "name": ".data",
+      "start": 2150450184,
+      "end": 2150450992
+    },
+    {
+      "name": ".sdata",
+      "start": 2151113352,
+      "end": 2151113414
+    },
+    {
+      "name": ".sbss",
+      "start": 2151120408,
+      "end": 2151120424
+    },
+    {
+      "name": ".sdata2",
+      "start": 2151129008,
+      "end": 2151129064
+    }
+  ],
+  "functions": [
+    {
+      "name": "_PyTrash_destroy_chain",
+      "address": 2148885888,
+      "size": 244
+    },
+    {
+      "name": "_PyTrash_deposit_object",
+      "address": 2148886132,
+      "size": 184
+    },
+    {
+      "name": "Py_ReprLeave",
+      "address": 2148886316,
+      "size": 156
+    },
+    {
+      "name": "Py_ReprEnter",
+      "address": 2148886472,
+      "size": 272
+    },
+    {
+      "name": "empty_clear_weak_refs",
+      "address": 2148886744,
+      "size": 4
+    },
+    {
+      "name": "PyMem_Free",
+      "address": 2148886748,
+      "size": 32
+    },
+    {
+      "name": "PyMem_Malloc",
+      "address": 2148886780,
+      "size": 44
+    },
+    {
+      "name": "NotImplemented_repr",
+      "address": 2148886824,
+      "size": 40
+    },
+    {
+      "name": "none_dealloc",
+      "address": 2148886864,
+      "size": 32
+    },
+    {
+      "name": "none_repr",
+      "address": 2148886896,
+      "size": 36
+    },
+    {
+      "name": "PyCallable_Check",
+      "address": 2148886932,
+      "size": 436
+    },
+    {
+      "name": "PyNumber_Coerce",
+      "address": 2148887368,
+      "size": 276
+    },
+    {
+      "name": "PyNumber_CoerceEx",
+      "address": 2148887644,
+      "size": 244
+    },
+    {
+      "name": "PyObject_IsTrue",
+      "address": 2148887888,
+      "size": 176
+    },
+    {
+      "name": "PyObject_SetAttr",
+      "address": 2148888064,
+      "size": 496
+    },
+    {
+      "name": "PyObject_HasAttr",
+      "address": 2148888560,
+      "size": 428
+    },
+    {
+      "name": "PyObject_GetAttr",
+      "address": 2148888988,
+      "size": 368
+    },
+    {
+      "name": "PyObject_SetAttrString",
+      "address": 2148889356,
+      "size": 268
+    },
+    {
+      "name": "PyObject_HasAttrString",
+      "address": 2148889624,
+      "size": 296
+    },
+    {
+      "name": "PyObject_GetAttrString",
+      "address": 2148889920,
+      "size": 232
+    },
+    {
+      "name": "PyObject_Hash",
+      "address": 2148890152,
+      "size": 128
+    },
+    {
+      "name": "_Py_HashPointer",
+      "address": 2148890280,
+      "size": 4
+    },
+    {
+      "name": "_Py_HashDouble",
+      "address": 2148890284,
+      "size": 472
+    },
+    {
+      "name": "PyObject_RichCompareBool",
+      "address": 2148890756,
+      "size": 280
+    },
+    {
+      "name": "PyObject_RichCompare",
+      "address": 2148891036,
+      "size": 2160
+    },
+    {
+      "name": "PyObject_Compare",
+      "address": 2148893196,
+      "size": 660
+    },
+    {
+      "name": "check_recursion",
+      "address": 2148893856,
+      "size": 668
+    },
+    {
+      "name": "do_cmp",
+      "address": 2148894524,
+      "size": 1148
+    },
+    {
+      "name": "try_3way_compare",
+      "address": 2148895672,
+      "size": 844
+    },
+    {
+      "name": "PyObject_Str",
+      "address": 2148896516,
+      "size": 948
+    },
+    {
+      "name": "PyObject_Repr",
+      "address": 2148897464,
+      "size": 364
+    },
+    {
+      "name": "PyObject_Print",
+      "address": 2148897828,
+      "size": 736
+    },
+    {
+      "name": "_PyObject_Del",
+      "address": 2148898564,
+      "size": 32
+    },
+    {
+      "name": "_PyObject_New",
+      "address": 2148898596,
+      "size": 76
+    },
+    {
+      "name": "PyObject_InitVar",
+      "address": 2148898672,
+      "size": 136
+    },
+    {
+      "name": "PyObject_Init",
+      "address": 2148898808,
+      "size": 132
+    }
+  ],
+  "objects": [
+    {
+      "name": "swapped_op",
+      "address": 2150450184,
+      "size": 24,
+      "section": ".data"
+    },
+    {
+      "name": "tries$148",
+      "address": 2150450208,
+      "size": 24,
+      "section": ".data"
+    },
+    {
+      "name": "PyNothing_Type",
+      "address": 2150450232,
+      "size": 108,
+      "section": ".data"
+    },
+    {
+      "name": "PyNotImplemented_Type",
+      "address": 2150450356,
+      "size": 108,
+      "section": ".data"
+    },
+    {
+      "name": "_Py_NoneStruct",
+      "address": 2151113360,
+      "size": 8,
+      "section": ".sdata"
+    },
+    {
+      "name": "_Py_NotImplementedStruct",
+      "address": 2151113368,
+      "size": 8,
+      "section": ".sdata"
+    },
+    {
+      "name": "PyObject_ClearWeakRefs",
+      "address": 2151113376,
+      "size": 4,
+      "section": ".sdata"
+    },
+    {
+      "name": "compare_nesting",
+      "address": 2151120408,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "_PyTrash_delete_nesting",
+      "address": 2151120412,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "_PyTrash_delete_later",
+      "address": 2151120416,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "key$239",
+      "address": 2151120420,
+      "size": 4,
+      "section": ".sbss"
+    }
+  ],
+  "symbols": {
+    "PyType_Type": "0x802d68fc",
+    "_PyTrash_destroy_chain": "0x80156580",
+    "_PyTrash_deposit_object": "0x80156674",
+    "Py_ReprLeave": "0x8015672c",
+    "Py_ReprEnter": "0x801567c8",
+    "empty_clear_weak_refs": "0x801568d8",
+    "PyMem_Free": "0x801568dc",
+    "PyMem_Malloc": "0x801568fc",
+    "NotImplemented_repr": "0x80156928",
+    "none_dealloc": "0x80156950",
+    "none_repr": "0x80156970",
+    "PyCallable_Check": "0x80156994",
+    "PyNumber_Coerce": "0x80156b48",
+    "PyNumber_CoerceEx": "0x80156c5c",
+    "PyObject_IsTrue": "0x80156d50",
+    "PyObject_SetAttr": "0x80156e00",
+    "PyObject_HasAttr": "0x80156ff0",
+    "PyObject_GetAttr": "0x8015719c",
+    "PyObject_SetAttrString": "0x8015730c",
+    "PyObject_HasAttrString": "0x80157418",
+    "PyObject_GetAttrString": "0x80157540",
+    "PyObject_Hash": "0x80157628",
+    "_Py_HashPointer": "0x801576a8",
+    "_Py_HashDouble": "0x801576ac",
+    "PyObject_RichCompareBool": "0x80157884",
+    "PyObject_RichCompare": "0x8015799c",
+    "PyObject_Compare": "0x8015820c",
+    "check_recursion": "0x801584a0",
+    "do_cmp": "0x8015873c",
+    "try_3way_compare": "0x80158bb8",
+    "PyObject_Str": "0x80158f04",
+    "PyObject_Repr": "0x801592b8",
+    "PyObject_Print": "0x80159424",
+    "_PyObject_Del": "0x80159704",
+    "_PyObject_New": "0x80159724",
+    "PyObject_InitVar": "0x80159770",
+    "PyObject_Init": "0x801597f8",
+    "swapped_op": "0x802d4408",
+    "tries$148": "0x802d4420",
+    "PyNothing_Type": "0x802d4438",
+    "PyNotImplemented_Type": "0x802d44b4",
+    "_Py_NoneStruct": "0x80376290",
+    "_Py_NotImplementedStruct": "0x80376298",
+    "PyObject_ClearWeakRefs": "0x803762a0",
+    "compare_nesting": "0x80377e18",
+    "_PyTrash_delete_nesting": "0x80377e1c",
+    "_PyTrash_delete_later": "0x80377e20",
+    "key$239": "0x80377e24",
+    "PyTuple_Type": "0x802d67d8",
+    "PyList_Type": "0x802d3b14",
+    "PyDict_Type": "0x802d280c",
+    "PyFrame_Type": "0x802d30b8",
+    "PyTraceBack_Type": "0x802db380",
+    "Py_FatalError": "0x801a0234",
+    "PyThreadState_GetDict": "0x8019fba0",
+    "PyDict_GetItemString": "0x8013e580",
+    "PyList_SetSlice": "0x8014ccdc",
+    "PyList_New": "0x8014ea58",
+    "PyDict_SetItemString": "0x8013e2fc",
+    "PyList_Append": "0x8014e474",
+    "free": "0x8001f35c",
+    "malloc": "0x8001f2c0",
+    "PyString_FromString": "0x80163ab0",
+    "abort": "0x8012107c",
+    "PyFunction_Type": "0x802d32b4",
+    "PyMethod_Type": "0x802d17cc",
+    "PyCFunction_Type": "0x802d4164",
+    "PyClass_Type": "0x802d1558",
+    "PyInstance_Type": "0x802d16bc",
+    "PyString_InternFromString": "0x8015ad60",
+    "PyExc_AttributeError": "0x80377ef8",
+    "PyErr_Format": "0x8018fc28",
+    "PyErr_Clear": "0x80190870",
+    "PyExc_TypeError": "0x80377ea0",
+    "PyErr_SetString": "0x801911b0",
+    "PyUnicode_Type": "0x802da418",
+    "PyUnicode_AsEncodedString": "0x8016f99c",
+    "PyString_Type": "0x802d6030",
+    "PyString_InternInPlace": "0x8015afec",
+    "_PyUnicode_AsDefaultEncodedString": "0x8016f934",
+    "modf": "0x8012d5dc",
+    "PyLong_FromDouble": "0x8015519c",
+    "frexp": "0x8012d38c",
+    "_savegpr_27": "0x8011f61c",
+    "_Py_TrueStruct": "0x802d3484",
+    "_Py_ZeroStruct": "0x802d3478",
+    "PyExc_ValueError": "0x80377e9c",
+    "PyUnicode_Compare": "0x8016a324",
+    "PyErr_Occurred": "0x8019118c",
+    "PyErr_ExceptionMatches": "0x80190d5c",
+    "strcmp": "0x801283a8",
+    "_PyErr_BadInternalCall": "0x80190194",
+    "PyDict_GetItem": "0x80140b74",
+    "PyDict_New": "0x80141230",
+    "PyDict_SetItem": "0x80140948",
+    "PyDict_DelItem": "0x801407e4",
+    "_restgpr_27": "0x8011f668",
+    "_savegpr_26": "0x8011f618",
+    "PyTuple_New": "0x80164d2c",
+    "PyLong_FromVoidPtr": "0x80154fb8",
+    "PyInt_FromLong": "0x80149b9c",
+    "_restgpr_26": "0x8011f664",
+    "PyErr_CheckSignals": "0x801abd18",
+    "sprintf": "0x80125b10",
+    "PyUnicode_AsUnicodeEscapeString": "0x8016e01c",
+    "PyEval_CallObjectWithKeywords": "0x80176120",
+    "clearerr": "0x80125b00",
+    "fprintf": "0x80125d54",
+    "PyExc_IOError": "0x80377ee8",
+    "PyErr_SetFromErrno": "0x801901cc",
+    "PyErr_NoMemory": "0x80190524",
+    "PyExc_SystemError": "0x80377eb0"
+  },
+  "external_original_names": {
+    "PyTuple_Type": "PyTuple_Type",
+    "PyList_Type": "PyList_Type",
+    "PyDict_Type": "PyDict_Type",
+    "PyFrame_Type": "PyFrame_Type",
+    "PyTraceBack_Type": "PyTraceBack_Type",
+    "Py_FatalError": "Py_FatalError",
+    "PyThreadState_GetDict": "PyThreadState_GetDict",
+    "PyDict_GetItemString": "PyDict_GetItemString",
+    "PyList_SetSlice": "PyList_SetSlice",
+    "PyList_New": "PyList_New",
+    "PyDict_SetItemString": "PyDict_SetItemString",
+    "PyList_Append": "PyList_Append",
+    "free": "free",
+    "malloc": "malloc",
+    "PyString_FromString": "PyString_FromString",
+    "abort": "abort",
+    "PyFunction_Type": "PyFunction_Type",
+    "PyMethod_Type": "PyMethod_Type",
+    "PyCFunction_Type": "PyCFunction_Type",
+    "PyClass_Type": "PyClass_Type",
+    "PyInstance_Type": "PyInstance_Type",
+    "PyString_InternFromString": "PyString_InternFromString",
+    "PyExc_AttributeError": "PyExc_AttributeError",
+    "PyErr_Format": "PyErr_Format",
+    "PyErr_Clear": "PyErr_Clear",
+    "PyExc_TypeError": "PyExc_TypeError",
+    "PyErr_SetString": "PyErr_SetString",
+    "PyUnicode_Type": "PyUnicode_Type",
+    "PyUnicode_AsEncodedString": "PyUnicode_AsEncodedString",
+    "PyString_Type": "PyString_Type",
+    "PyString_InternInPlace": "PyString_InternInPlace",
+    "_PyUnicode_AsDefaultEncodedString": "_PyUnicode_AsDefaultEncodedString",
+    "modf": "fn_8012D5DC",
+    "PyLong_FromDouble": "fn_8015519C",
+    "frexp": "fn_8012D38C",
+    "_savegpr_27": "_savegpr_27",
+    "_Py_TrueStruct": "_Py_TrueStruct",
+    "_Py_ZeroStruct": "_Py_ZeroStruct",
+    "PyExc_ValueError": "lbl_80377E9C",
+    "PyUnicode_Compare": "fn_8016A324",
+    "PyErr_Occurred": "PyErr_Occurred",
+    "PyErr_ExceptionMatches": "PyErr_ExceptionMatches",
+    "strcmp": "strcmp",
+    "_PyErr_BadInternalCall": "_PyErr_BadInternalCall",
+    "PyDict_GetItem": "fn_80140B74",
+    "PyDict_New": "PyDict_New",
+    "PyDict_SetItem": "PyDict_SetItem",
+    "PyDict_DelItem": "fn_801407E4",
+    "_restgpr_27": "_restgpr_27",
+    "_savegpr_26": "_savegpr_26",
+    "PyTuple_New": "PyTuple_New",
+    "PyLong_FromVoidPtr": "fn_80154FB8",
+    "PyInt_FromLong": "PyInt_FromLong",
+    "_restgpr_26": "_restgpr_26",
+    "PyErr_CheckSignals": "fn_801ABD18",
+    "sprintf": "sprintf",
+    "PyUnicode_AsUnicodeEscapeString": "fn_8016E01C",
+    "PyEval_CallObjectWithKeywords": "fn_80176120",
+    "clearerr": "fn_80125B00",
+    "fprintf": "fprintf",
+    "PyExc_IOError": "lbl_80377EE8",
+    "PyErr_SetFromErrno": "fn_801901CC",
+    "PyErr_NoMemory": "PyErr_NoMemory",
+    "PyExc_SystemError": "PyExc_SystemError"
+  },
+  "verified_text_bytes": 13052,
+  "verified_data_bytes": 928,
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "2e6c8d323fbc428e2dd43dcb62c015d44dffe1808ea1afd0fdd4397de94be215",
+    "matched_code": 13052,
+    "matched_functions": 36,
+    "matched_data": 942,
+    "complete_data": 942,
+    "object_path": "build/GSQE78/src/Objects/object.o",
+    "object_sha256": "140c34accbf33ef3bd9e40ef36200401220ae941b5e3495d29931b68010d1aa4"
+  },
+  "external_padding": [
+    {
+      "source": "src/Objects/object.c",
+      "unit": "main/Objects/object",
+      "section": ".sdata",
+      "start": "0x803762c6",
+      "end": "0x803762c8",
+      "size": 2,
+      "alignment": 1,
+      "symbol": "gap_09_803762C6_sdata",
+      "original_owner": "padding/source_extents/Objects/object.s",
+      "source_section_start": "0x80376288",
+      "source_section_bytes": 62,
+      "previous_split_bytes": 64,
+      "description": "Original linker alignment beyond emitted source section; no source credit."
+    }
+  ],
+  "source_extent_audit": {
+    "data_credit_correction": 2,
+    "evidence": "config/GSQE78/source_padding.json",
+    "description": "Source and original bytes unchanged; trailing original padding moved to NonMatching ownership."
+  }
+}

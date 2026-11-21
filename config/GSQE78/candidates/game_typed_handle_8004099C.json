@@ -1,0 +1,87 @@
+{
+  "source": "src/Game/typed_handle_8004099C.cpp",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-proc",
+    "gekko",
+    "-fp",
+    "hardware",
+    "-enum",
+    "int",
+    "-str",
+    "reuse",
+    "-common",
+    "off",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-Cpp_exceptions",
+    "on",
+    "-use_lmw_stmw",
+    "on",
+    "-i",
+    "src/Game",
+    "-O4,s"
+  ],
+  "sections": {
+    ".text": [
+      2147748252,
+      2147748392
+    ],
+    "extab": [
+      2147518552,
+      2147518592
+    ],
+    "extabindex": [
+      2147579336,
+      2147579348
+    ]
+  },
+  "functions": [
+    {
+      "name": "__dt__15Handle_8004099CFv",
+      "address": 2147748252,
+      "size": 140,
+      "section": ".text",
+      "scope": "global"
+    }
+  ],
+  "objects": [
+    {
+      "name": "@45",
+      "address": 2147518552,
+      "size": 40,
+      "section": "extab",
+      "scope": "local"
+    },
+    {
+      "name": "@46",
+      "address": 2147579336,
+      "size": 12,
+      "section": "extabindex",
+      "scope": "local"
+    }
+  ],
+  "source_kind": "c++",
+  "dependency_symbols": [],
+  "notes": "docs/notes/game-typed-handle-layers.md",
+  "source_sha256": "94cf409713a91cb0ff5713dba4037b3baea5cd8f1f76f90ea2177d262a361804",
+  "validation": {
+    "relocations": 7,
+    "text_bytes": 140,
+    "initialized_data_bytes": 52,
+    "zero_byte_differences": true,
+    "integration_status": "verified full-DOL and objdiff"
+  },
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "94cf409713a91cb0ff5713dba4037b3baea5cd8f1f76f90ea2177d262a361804",
+    "matched_code": 140,
+    "matched_functions": 1,
+    "matched_data": 52,
+    "complete_data": 52,
+    "object_path": "build/GSQE78/src/Game/typed_handle_8004099C.o",
+    "object_sha256": "df57f09c94aca7db96820560f3b7b2c9060f59d46ab8da64f9cf84d699f62ad0"
+  }
+}

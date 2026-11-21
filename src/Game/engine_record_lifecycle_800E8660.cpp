@@ -1,0 +1,4 @@
+/* Original record resource lifecycle; see docs/notes/game-engine-record-lifecycle.md. */
+typedef unsigned long u32;struct Prefix{char opaque00[0x30];};struct Service:Prefix{virtual void slot08();virtual void slot0C();virtual void slot10();virtual void slot14();virtual void slot18();virtual void slot1C();virtual void slot20();virtual void slot24();virtual void slot28();virtual void slot2C();virtual void slot30();virtual void slot34();virtual void slot38();virtual void slot3C();virtual u32 slot40();};
+struct View{char opaque00[0xB2E8];Service*memberB2E8;char opaqueB2EC[8];u32 fieldB2F4;};
+extern "C" u32 fn_800E8660(View*self){self->memberB2E8->slot3C();self->fieldB2F4=self->memberB2E8->slot40();return self->fieldB2F4;}

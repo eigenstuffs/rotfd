@@ -1,0 +1,265 @@
+{
+  "source": "src/Game/factory_8020A608.cpp",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-proc",
+    "gekko",
+    "-fp",
+    "hardware",
+    "-enum",
+    "int",
+    "-str",
+    "reuse",
+    "-common",
+    "off",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-Cpp_exceptions",
+    "off",
+    "-use_lmw_stmw",
+    "on",
+    "-i",
+    "src/Game"
+  ],
+  "sections": {
+    ".text": [
+      2149623304,
+      2149623436
+    ]
+  },
+  "functions": [
+    {
+      "name": "fn_8020A608",
+      "address": 2149623304,
+      "size": 132,
+      "section": ".text",
+      "scope": "global"
+    }
+  ],
+  "objects": [],
+  "source_kind": "c++",
+  "dependency_symbols": [
+    {
+      "name": "__ct__12BaseObject_ZFv",
+      "address": 2149610668,
+      "scope": "global"
+    },
+    {
+      "name": "__vt__12Txt_802E9E50",
+      "address": 2150538832,
+      "scope": "global"
+    },
+    {
+      "name": "__vt__17Resource_802E9E20",
+      "address": 2150538784,
+      "scope": "global"
+    },
+    {
+      "name": "fn_801EFA1C",
+      "address": 2149513756,
+      "scope": "global"
+    },
+    {
+      "name": "__ct__13File_801F3E1CFv",
+      "address": 2149531400,
+      "scope": "global"
+    },
+    {
+      "name": "lbl_801EF5C8",
+      "address": 2149512648,
+      "scope": "global"
+    },
+    {
+      "name": "lbl_802AE024",
+      "address": 2150293540,
+      "scope": "global"
+    },
+    {
+      "name": "lbl_8037AA4C",
+      "address": 2151131724,
+      "scope": "global"
+    }
+  ],
+  "notes": "docs/notes/game-txt-factory.md",
+  "source_sha256": "d4bcafcef94b85ba65cbee78e1c2eb00165890ac0e9d7728d2deded8b0223650",
+  "validation": {
+    "relocations": 12,
+    "text_bytes": 132,
+    "initialized_data_bytes": 0,
+    "zero_byte_differences": true,
+    "original_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "object_sha256": "f02364d80706b567b522b2d7662ce9e586f69498cc084f366eddd9a50ffd4bc9",
+    "unlinked_text_bytes": 0,
+    "unlinked_relocations": 0,
+    "verification_script": "scratch/game_txt_factory/verify.py",
+    "integration_status": "verified full-DOL and objdiff"
+  },
+  "external_objects": [
+    {
+      "name": "lbl_801EF5C8",
+      "address": 2149512648,
+      "ownership": "original shared allocator; no source credit"
+    },
+    {
+      "name": "lbl_802AE024",
+      "address": 2150293540,
+      "referenced_prefix_bytes": 14,
+      "ownership": "original shared Anonymous New string including NUL; no source credit"
+    },
+    {
+      "name": "lbl_8037AA4C",
+      "address": 2151131724,
+      "size": 8,
+      "ownership": "original Txt_Z.h string including NUL; no source credit"
+    },
+    {
+      "name": "__vt__17Resource_802E9E20",
+      "address": 2150538784,
+      "original_name": "lbl_802E9E20",
+      "ownership": "existing original external Resource vtable; no source credit"
+    },
+    {
+      "name": "__vt__12Txt_802E9E50",
+      "address": 2150538832,
+      "original_name": "lbl_802E9E50",
+      "ownership": "existing original external Txt vtable; no source credit"
+    }
+  ],
+  "unlinked_functions": [],
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "d4bcafcef94b85ba65cbee78e1c2eb00165890ac0e9d7728d2deded8b0223650",
+    "matched_code": 132,
+    "matched_functions": 1,
+    "matched_data": 0,
+    "complete_data": 0,
+    "object_path": "build/GSQE78/src/Game/factory_8020A608.o",
+    "object_sha256": "f02364d80706b567b522b2d7662ce9e586f69498cc084f366eddd9a50ffd4bc9"
+  },
+  "actual_relocations": [
+    {
+      "section": ".text",
+      "at": 10,
+      "address": 2149623314,
+      "kind": 6,
+      "symbol": "lbl_801EF5C8",
+      "target": 2149512648,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 14,
+      "address": 2149623318,
+      "kind": 6,
+      "symbol": "lbl_802AE024",
+      "target": 2150293540,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 22,
+      "address": 2149623326,
+      "kind": 4,
+      "symbol": "lbl_801EF5C8",
+      "target": 2149512648,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 30,
+      "address": 2149623334,
+      "kind": 4,
+      "symbol": "lbl_802AE024",
+      "target": 2150293540,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 36,
+      "address": 2149623340,
+      "kind": 109,
+      "symbol": "lbl_8037AA4C",
+      "target": 2151131724,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 52,
+      "address": 2149623356,
+      "kind": 10,
+      "symbol": "fn_801EFA1C",
+      "target": 2149513756,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 68,
+      "address": 2149623372,
+      "kind": 10,
+      "symbol": "__ct__12BaseObject_ZFv",
+      "target": 2149610668,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 74,
+      "address": 2149623378,
+      "kind": 6,
+      "symbol": "__vt__17Resource_802E9E20",
+      "target": 2150538784,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 78,
+      "address": 2149623382,
+      "kind": 6,
+      "symbol": "__vt__12Txt_802E9E50",
+      "target": 2150538832,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 82,
+      "address": 2149623386,
+      "kind": 4,
+      "symbol": "__vt__17Resource_802E9E20",
+      "target": 2150538784,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 94,
+      "address": 2149623398,
+      "kind": 4,
+      "symbol": "__vt__12Txt_802E9E50",
+      "target": 2150538832,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 100,
+      "address": 2149623404,
+      "kind": 10,
+      "symbol": "__ct__13File_801F3E1CFv",
+      "target": 2149531400,
+      "addend": 0
+    }
+  ],
+  "memcard_native_identity_migration": {
+    "description": "Current canonical identities and hashes verified after native CGCMemCardManipulator/CFSM ownership integration; original evidence is retained in immutable backups and explicit previous receipts.",
+    "production_verification": "scratch/memcard_native_vtable_20261020_parallel/production-verification.json",
+    "production_verification_sha256": "96e50e874bd53c148cd6395f670c040416c34699787d56726d8cfb010c340f31",
+    "migration_object_audit": "scratch/memcard_native_vtable_20261020_parallel/migration_object_audit.json",
+    "migration_object_audit_sha256": "b809560bf7212a505b2ea749256bef5263b4784d066bb311015e10928e90db9d",
+    "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "unchanged_caller_objects": 344,
+    "native_objects": 6,
+    "native_actual_relocations": 281,
+    "previous_canonical_sha256": "7e842888c66eeb364b5bbe28579967318f8e4c2398dc8c9687df73f76905eafe",
+    "previous_canonical": "scratch/memcard_canonical_refresh_20261020_parallel/backups/config/GSQE78/candidates/game_txt_factory.json",
+    "previous_entry_json_pointer": ""
+  }
+}

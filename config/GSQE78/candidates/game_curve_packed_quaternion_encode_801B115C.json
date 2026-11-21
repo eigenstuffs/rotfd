@@ -1,0 +1,136 @@
+[
+  {
+    "source_kind": "c++",
+    "required_extra_cflags": [
+      "-proc gekko",
+      "-O4,p",
+      "-Cpp_exceptions off",
+      "-use_lmw_stmw on"
+    ],
+    "status": "isolated-byte-match-native-link-acceptance-pending",
+    "source": "src/Game/curve_packed_quaternion_encode_801B115C.cpp",
+    "source_sha256": "952dfaed8e1a9e2808c37baaa1dedcf286eac04ebcf847de079c1eecab841815",
+    "header_sha256": {},
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,p",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "off",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2149257564,
+        "end": 2149257708,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_801B115C",
+        "address": 2149257564,
+        "size": 144,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [],
+    "unlinked_functions": [],
+    "unlinked_objects": [],
+    "weak_overrides": [],
+    "unlinked_exception_groups": [],
+    "emitted_sections": [
+      {
+        "name": ".text",
+        "size": 144,
+        "raw_sha256": "5a8ad64fdc6b1e5dae8005da55d4bbfc665996e9713741f13271b0101e82b60f"
+      }
+    ],
+    "headers": [],
+    "notes": "docs/notes/game-curve-handle-encoding.md",
+    "original_metadata_audit": {
+      "function": "fn_801B115C",
+      "original_ranges": [
+        {
+          "name": ".text",
+          "start": 2149257564,
+          "end": 2149257708
+        }
+      ],
+      "extabindex_scan": [
+        2147573600,
+        2147611328,
+        12
+      ],
+      "matching_extabindex": [],
+      "ctors_scan": [
+        2150209824,
+        2150209920,
+        4
+      ],
+      "dtors_scan": [
+        2150209920,
+        2150209952,
+        4
+      ],
+      "ctors": [],
+      "dtors": [],
+      "compiled_source_consumers_unchanged": [],
+      "original_data_ownership": "none; all tables/pointers/dependencies retain their existing external original ownership"
+    },
+    "verified_text_bytes": 144,
+    "verified_data_bytes": 0,
+    "pending_compiled_consumer_migrations": [],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 4,
+        "address": 2149257568,
+        "kind": 109,
+        "symbol": "lbl_8037A210",
+        "target": 2151129616,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "lbl_8037A210",
+        "address": 2151129616,
+        "section": ".sdata2",
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "4126f8d9dfdd5820fc6581e8447151580816db2e1482b4636cef4fb2b827f9f5",
+      "retained_text_bytes": 144,
+      "initialized_data_bytes": 0,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 1,
+      "unlinked_relocations": 0,
+      "uncredited_text_bytes": 0,
+      "uncredited_metadata_bytes": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true,
+      "central_final_native_discard_required": false
+    }
+  }
+]

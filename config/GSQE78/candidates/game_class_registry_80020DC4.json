@@ -1,0 +1,97 @@
+{
+  "source": "src/Game/class_registry_80020DC4.cpp",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-proc",
+    "gekko",
+    "-fp",
+    "hardware",
+    "-enum",
+    "int",
+    "-str",
+    "reuse",
+    "-common",
+    "off",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-Cpp_exceptions",
+    "on",
+    "-use_lmw_stmw",
+    "on",
+    "-i",
+    "src/Game"
+  ],
+  "sections": {
+    "extab": [
+      2147506472,
+      2147506496
+    ],
+    "extabindex": [
+      2147573888,
+      2147573900
+    ],
+    ".text": [
+      2147618244,
+      2147618392
+    ]
+  },
+  "functions": [
+    {
+      "name": "fn_80020DC4",
+      "address": 2147618244,
+      "size": 148,
+      "section": ".text",
+      "scope": "global"
+    }
+  ],
+  "objects": [
+    {
+      "name": "@12",
+      "address": 2147506472,
+      "size": 24,
+      "section": "extab",
+      "scope": "local"
+    },
+    {
+      "name": "@13",
+      "address": 2147573888,
+      "size": 12,
+      "section": "extabindex",
+      "scope": "local"
+    }
+  ],
+  "source_kind": "c++",
+  "dependency_symbols": [
+    {
+      "name": "__ct__14Agent_80021260Fv",
+      "address": 2147619424,
+      "scope": "global"
+    },
+    {
+      "name": "__dt__14Agent_80021260Fv",
+      "address": 2147618392,
+      "scope": "global"
+    }
+  ],
+  "notes": "docs/notes/game-class-registry.md",
+  "source_sha256": "1acd032fe5b27e33258ad7b69fa5613149e1a9dca7e561a422c7a6ae95f12dce",
+  "validation": {
+    "relocations": 13,
+    "text_bytes": 148,
+    "initialized_data_bytes": 36,
+    "zero_byte_differences": true,
+    "integration_status": "verified full-DOL and objdiff"
+  },
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "1acd032fe5b27e33258ad7b69fa5613149e1a9dca7e561a422c7a6ae95f12dce",
+    "matched_code": 148,
+    "matched_functions": 1,
+    "matched_data": 36,
+    "complete_data": 36,
+    "object_path": "build/GSQE78/src/Game/class_registry_80020DC4.o",
+    "object_sha256": "2f52038fef550023ba696cd5622d1d585ecdc73a50ebb82ab4615ea5ffba0e25"
+  }
+}

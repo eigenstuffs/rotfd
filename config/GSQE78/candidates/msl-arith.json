@@ -1,0 +1,69 @@
+{
+  "compiler": "GC/1.3",
+  "cflags": [
+    "-proc gekko",
+    "-fp hardware",
+    "-enum int",
+    "-str reuse",
+    "-common off",
+    "-O4,p",
+    "-inline deferred",
+    "-pool off",
+    "-Cpp_exceptions off",
+    "-use_lmw_stmw off",
+    "-i src/MSL"
+  ],
+  "source": "src/MSL/arith.c",
+  "status": "integrated-byte-match",
+  "dependency_symbols": [],
+  "splits": [
+    {
+      "section": ".text",
+      "start": "0x80123e58",
+      "end": "0x80123e78"
+    }
+  ],
+  "functions": [
+    {
+      "name": "labs",
+      "original_name": "fn_80123E58",
+      "address": "0x80123e58",
+      "size": "0x10",
+      "scope": "global"
+    },
+    {
+      "name": "abs",
+      "original_name": "fn_80123E68",
+      "address": "0x80123e68",
+      "size": "0x10",
+      "scope": "global"
+    }
+  ],
+  "data_symbols": [],
+  "compiler_local_symbols": [],
+  "split_notes": [
+    "The retained arith.c routines contain labs then abs in emitted order. Both implement32-bit signed absolute value under this ABI; name attribution follows the original reference declaration order and the matching compiler emission order.",
+    "Neither div nor llabs is retained in this contiguous unit; there is no owned data."
+  ],
+  "notes": "docs/notes/msl-arith.md",
+  "validation": {
+    "verification_script": "scratch/msl_arith/verify.py",
+    "text_bytes": 32,
+    "relocations_applied": 0,
+    "byte_differences": 0,
+    "original_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "d55ebae87cd996a8fdb7555d843bb8f6f84971c4a923889b38e84ee5a36c8830",
+    "object_sha256": "b617fe485b5139633854c90f759279c12ea6d15dcc48d9483e6ba2e3c14ceed1",
+    "integration_status": "verified full-DOL and objdiff"
+  },
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "d55ebae87cd996a8fdb7555d843bb8f6f84971c4a923889b38e84ee5a36c8830",
+    "matched_code": 32,
+    "matched_functions": 2,
+    "matched_data": 0,
+    "complete_data": 0,
+    "object_path": "build/GSQE78/src/MSL/arith.o",
+    "object_sha256": "b617fe485b5139633854c90f759279c12ea6d15dcc48d9483e6ba2e3c14ceed1"
+  }
+}

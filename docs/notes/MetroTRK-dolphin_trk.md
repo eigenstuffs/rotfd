@@ -1,0 +1,9 @@
+# MetroTRK Dolphin target C fragment
+
+`src/MetroTRK/dolphin_trk_target.c` recovers three C functions at 0x8011DD04..0x8011DDB0: TRKInitializeTarget (76 bytes), TRKTargetTranslate (64 bytes) and EnableMetroTRKInterrupts (32 bytes). The source follows the [Melee Dolphin target implementation](https://github.com/doldecomp/melee/blob/master/src/MetroTRK/dolphin_trk.c), with its native startup routine excluded.
+
+Initialization marks the target stopped, records the machine-state register, and sets the locked-cache base to 0xE0000000. Translation preserves addresses inside its 16 KiB window only when DBAT3U marks that mapping valid; other addresses are mapped into cached main memory. The interrupt wrapper invokes the selected transport's interrupt setup. All referenced native register/state helpers remain original fallback.
+
+The fragment owns the four-byte gTRKLockedCacheBase at 0x8033B000..0x8033B004 with BSS section alignment 8. The following four bytes to 0x8033B008 are original external alignment padding, not part of the C object. No initialized data is owned. Existing target register-state objects are external. The reference's address-specific name MTRK_NubInit_804A50C8 is replaced by a descriptive identity for the observed locked-cache base.
+
+GC/1.3.2 with the ordinary MetroTRK flags and `-inline auto,deferred` reproduces all 172 text bytes, function boundaries and relocations. Isolated scripts are scratch/MetroTRK/compile_dolphin_trk_target.py and verify_dolphin_trk_target.py; config/GSQE78/candidates/MetroTRK-dolphin_trk_target.json records the complete mapping. InitMetroTRK, TRKSaveExtended1Block and TRKRestoreExtended1Block are native assembly outside this C fragment. The integrated source passes whole-DOL byte equality, native objdiff code/data checks, and the original-source regression audit.

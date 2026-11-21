@@ -1,0 +1,141 @@
+{
+  "source": "src/Objects/bufferobject.c",
+  "status": "integrated-byte-match",
+  "sections": {
+    ".text": [
+      "0x80134E70",
+      "0x801359FC"
+    ],
+    ".data": [
+      "0x802D1230",
+      "0x802D14A0"
+    ],
+    ".sdata": [
+      "0x80375ED0",
+      "0x80375ED7"
+    ]
+  },
+  "extra_cflags": [
+    "-inline auto,deferred",
+    "-pool off"
+  ],
+  "symbols": {
+    "buffer_getcharbuf": 2148748912,
+    "buffer_getsegcount": 2148748984,
+    "buffer_getwritebuf": 2148749008,
+    "buffer_getreadbuf": 2148749116,
+    "buffer_ass_slice": 2148749188,
+    "buffer_ass_item": 2148749568,
+    "buffer_slice": 2148749928,
+    "buffer_item": 2148750056,
+    "buffer_repeat": 2148750144,
+    "buffer_concat": 2148750296,
+    "buffer_length": 2148750644,
+    "buffer_str": 2148750652,
+    "buffer_hash": 2148750696,
+    "buffer_repr": 2148750868,
+    "buffer_compare": 2148751016,
+    "buffer_dealloc": 2148751152,
+    "PyBuffer_FromMemory": 2148751252,
+    "PyBuffer_FromObject": 2148751412,
+    "buffer_as_sequence": 2150437424,
+    "buffer_as_buffer": 2150437464,
+    "PyBuffer_Type": 2150437480,
+    "PyExc_ValueError": 2151120540,
+    "PyString_FromStringAndSize": 2148940824,
+    "memcmp": 2148685472
+  },
+  "symbol_sizes": {
+    "buffer_getcharbuf": 72,
+    "buffer_getsegcount": 24,
+    "buffer_getwritebuf": 108,
+    "buffer_getreadbuf": 72,
+    "buffer_ass_slice": 380,
+    "buffer_ass_item": 360,
+    "buffer_slice": 128,
+    "buffer_item": 88,
+    "buffer_repeat": 152,
+    "buffer_concat": 348,
+    "buffer_length": 8,
+    "buffer_str": 44,
+    "buffer_hash": 172,
+    "buffer_repr": 148,
+    "buffer_compare": 136,
+    "buffer_dealloc": 100,
+    "PyBuffer_FromMemory": 160,
+    "PyBuffer_FromObject": 456,
+    "buffer_as_sequence": 40,
+    "buffer_as_buffer": 16,
+    "PyBuffer_Type": 108
+  },
+  "symbol_scopes": {
+    "buffer_getcharbuf": "local",
+    "buffer_getsegcount": "local",
+    "buffer_getwritebuf": "local",
+    "buffer_getreadbuf": "local",
+    "buffer_ass_slice": "local",
+    "buffer_ass_item": "local",
+    "buffer_slice": "local",
+    "buffer_item": "local",
+    "buffer_repeat": "local",
+    "buffer_concat": "local",
+    "buffer_length": "local",
+    "buffer_str": "local",
+    "buffer_hash": "local",
+    "buffer_repr": "local",
+    "buffer_compare": "local",
+    "buffer_dealloc": "local",
+    "PyBuffer_FromMemory": "global",
+    "PyBuffer_FromObject": "global",
+    "buffer_as_sequence": "local",
+    "buffer_as_buffer": "local",
+    "PyBuffer_Type": "global"
+  },
+  "validation": {
+    "text_bytes": 2956,
+    "data_bytes": 624,
+    "sdata_emitted_bytes": 7,
+    "sdata_padded_bytes": 8,
+    "relocation_count": 139,
+    "mismatching_initialized_bytes": 0,
+    "command": "python3 scratch/bufferobject/check_object.py",
+    "integration_status": "verified full-DOL and objdiff"
+  },
+  "reference": "reference/cpython-2.1/Objects/bufferobject.c",
+  "configuration": [
+    "CACHE_HASH enabled",
+    "Unused PyBuffer_New and read-write constructor bodies omitted; no corresponding linked functions observed."
+  ],
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "ee86483904f29f9500ed6bab98ef4bcecada0764a2c5d3401939dfc95df79d49",
+    "matched_code": 2956,
+    "matched_functions": 18,
+    "matched_data": 631,
+    "complete_data": 631,
+    "object_path": "build/GSQE78/src/Objects/bufferobject.o",
+    "object_sha256": "3d8a0a17e682cfc631784f3876292d71a975d6f4ba7b7c89a610e54a604a4e89"
+  },
+  "external_padding": [
+    {
+      "source": "src/Objects/bufferobject.c",
+      "unit": "main/Objects/bufferobject",
+      "section": ".sdata",
+      "start": "0x80375ed7",
+      "end": "0x80375ed8",
+      "size": 1,
+      "alignment": 1,
+      "symbol": "gap_09_80375ED7_sdata",
+      "original_owner": "padding/source_extents/Objects/bufferobject.s",
+      "source_section_start": "0x80375ed0",
+      "source_section_bytes": 7,
+      "previous_split_bytes": 8,
+      "description": "Original linker alignment beyond emitted source section; no source credit."
+    }
+  ],
+  "source_extent_audit": {
+    "data_credit_correction": 1,
+    "evidence": "config/GSQE78/source_padding.json",
+    "description": "Source and original bytes unchanged; trailing original padding moved to NonMatching ownership."
+  }
+}

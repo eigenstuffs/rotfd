@@ -1,0 +1,291 @@
+{
+  "status": "isolated-retained-byte-match",
+  "source": "src/Game/engine_bitmap_convert.cpp",
+  "source_sha256": "2c16a10aaa4441822d37bd32e444262ced39f5f71861e91cc4f0b1f4da95d964",
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-proc",
+    "gekko",
+    "-fp",
+    "hardware",
+    "-enum",
+    "int",
+    "-str",
+    "reuse",
+    "-common",
+    "off",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-Cpp_exceptions",
+    "off",
+    "-i",
+    "include",
+    "-use_lmw_stmw",
+    "on"
+  ],
+  "source_kind": "c++",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2149809312,
+      "end": 2149810384,
+      "alignment": 4
+    },
+    {
+      "name": ".data",
+      "start": 2150547200,
+      "end": 2150547256,
+      "alignment": 4
+    }
+  ],
+  "functions": [
+    {
+      "name": "fn_80237CA0",
+      "address": 2149809312,
+      "size": 1072,
+      "scope": "global",
+      "section": ".text",
+      "object_offset": 0
+    }
+  ],
+  "objects": [
+    {
+      "name": "@84",
+      "original_symbol": "jumptable_802EBF00",
+      "address": 2150547200,
+      "size": 56,
+      "scope": "local",
+      "section": ".data",
+      "object_offset": 0
+    }
+  ],
+  "unlinked_functions": [],
+  "headers": [
+    {
+      "path": "include/Game/engine_bitmap_convert.h",
+      "sha256": "0ba576c60567d2dc03cc5e0fd86ec5c0d9d137d0eeff1ce8acab559bccfc7c52"
+    }
+  ],
+  "dependency_symbols": [],
+  "validation": {
+    "relocations": 23,
+    "unlinked_relocations": 0,
+    "retained_text_bytes": 1072,
+    "unlinked_text_bytes": 0,
+    "initialized_data_bytes": 56,
+    "bss_bytes": 0,
+    "owned_padding_bytes": 0
+  },
+  "verified_text_bytes": 1072,
+  "verified_data_bytes": 56,
+  "actual_relocations": [
+    {
+      "section": ".text",
+      "at": 10,
+      "address": 2149809322,
+      "kind": 6,
+      "symbol": "lbl_802AEA60",
+      "target": 2150296160,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 14,
+      "address": 2149809326,
+      "kind": 6,
+      "symbol": "lbl_802AEA70",
+      "target": 2150296176,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 22,
+      "address": 2149809334,
+      "kind": 4,
+      "symbol": "lbl_802AEA60",
+      "target": 2150296160,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 42,
+      "address": 2149809354,
+      "kind": 6,
+      "symbol": "lbl_801EF5C8",
+      "target": 2149512648,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 46,
+      "address": 2149809358,
+      "kind": 4,
+      "symbol": "lbl_801EF5C8",
+      "target": 2149512648,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 62,
+      "address": 2149809374,
+      "kind": 4,
+      "symbol": "lbl_802AEA70",
+      "target": 2150296176,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 68,
+      "address": 2149809380,
+      "kind": 10,
+      "symbol": "fn_801EFA1C",
+      "target": 2149513756,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 86,
+      "address": 2149809398,
+      "kind": 6,
+      "symbol": "@84",
+      "target": 2150547200,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 94,
+      "address": 2149809406,
+      "kind": 4,
+      "symbol": "@84",
+      "target": 2150547200,
+      "addend": 0
+    },
+    {
+      "section": ".data",
+      "at": 0,
+      "address": 2150547200,
+      "kind": 1,
+      "symbol": "fn_80237CA0",
+      "target": 2149810364,
+      "addend": 1052
+    },
+    {
+      "section": ".data",
+      "at": 4,
+      "address": 2150547204,
+      "kind": 1,
+      "symbol": "fn_80237CA0",
+      "target": 2149809420,
+      "addend": 108
+    },
+    {
+      "section": ".data",
+      "at": 8,
+      "address": 2150547208,
+      "kind": 1,
+      "symbol": "fn_80237CA0",
+      "target": 2149809616,
+      "addend": 304
+    },
+    {
+      "section": ".data",
+      "at": 12,
+      "address": 2150547212,
+      "kind": 1,
+      "symbol": "fn_80237CA0",
+      "target": 2149810364,
+      "addend": 1052
+    },
+    {
+      "section": ".data",
+      "at": 16,
+      "address": 2150547216,
+      "kind": 1,
+      "symbol": "fn_80237CA0",
+      "target": 2149810364,
+      "addend": 1052
+    },
+    {
+      "section": ".data",
+      "at": 20,
+      "address": 2150547220,
+      "kind": 1,
+      "symbol": "fn_80237CA0",
+      "target": 2149810364,
+      "addend": 1052
+    },
+    {
+      "section": ".data",
+      "at": 24,
+      "address": 2150547224,
+      "kind": 1,
+      "symbol": "fn_80237CA0",
+      "target": 2149810364,
+      "addend": 1052
+    },
+    {
+      "section": ".data",
+      "at": 28,
+      "address": 2150547228,
+      "kind": 1,
+      "symbol": "fn_80237CA0",
+      "target": 2149809924,
+      "addend": 612
+    },
+    {
+      "section": ".data",
+      "at": 32,
+      "address": 2150547232,
+      "kind": 1,
+      "symbol": "fn_80237CA0",
+      "target": 2149810028,
+      "addend": 716
+    },
+    {
+      "section": ".data",
+      "at": 36,
+      "address": 2150547236,
+      "kind": 1,
+      "symbol": "fn_80237CA0",
+      "target": 2149810364,
+      "addend": 1052
+    },
+    {
+      "section": ".data",
+      "at": 40,
+      "address": 2150547240,
+      "kind": 1,
+      "symbol": "fn_80237CA0",
+      "target": 2149810124,
+      "addend": 812
+    },
+    {
+      "section": ".data",
+      "at": 44,
+      "address": 2150547244,
+      "kind": 1,
+      "symbol": "fn_80237CA0",
+      "target": 2149810364,
+      "addend": 1052
+    },
+    {
+      "section": ".data",
+      "at": 48,
+      "address": 2150547248,
+      "kind": 1,
+      "symbol": "fn_80237CA0",
+      "target": 2149810308,
+      "addend": 996
+    },
+    {
+      "section": ".data",
+      "at": 52,
+      "address": 2150547252,
+      "kind": 1,
+      "symbol": "fn_80237CA0",
+      "target": 2149810224,
+      "addend": 912
+    }
+  ]
+}

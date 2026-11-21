@@ -1,0 +1,94 @@
+{
+  "source": "src/Modules/getbuildinfo.c",
+  "status": "integrated-byte-match",
+  "sections": {
+    ".text": [
+      "0x801A9090",
+      "0x801A90E0"
+    ],
+    ".data": [
+      "0x802E8B78",
+      "0x802E8BA1"
+    ],
+    ".bss": [
+      "0x8033E500",
+      "0x8033E532"
+    ]
+  },
+  "extra_cflags": [
+    "-inline auto,deferred",
+    "-pool off"
+  ],
+  "symbols": {
+    "buildinfo$4": 2150884608,
+    "Py_GetBuildInfo": 2149224592
+  },
+  "symbol_sizes": {
+    "buildinfo$4": 50,
+    "Py_GetBuildInfo": 80
+  },
+  "symbol_scopes": {
+    "buildinfo$4": "local",
+    "Py_GetBuildInfo": "global"
+  },
+  "validation": {
+    "functions": 1,
+    "text_bytes": 80,
+    "text_bytes_emitted": 80,
+    "data_bytes_emitted": 41,
+    "bss_bytes_emitted": 50,
+    "relocations_resolved": 11,
+    "mismatching_initialized_bytes": 0,
+    "source_sha256": "f62a75e13b40620f7637f82d0abaa81b6b45f6e79e5b76a124b20849456740bc",
+    "command": "python3 scratch/getbuildinfo/check_object.py",
+    "integration_status": "verified full-DOL and objdiff"
+  },
+  "reference": "reference/cpython-2.1/Modules/getbuildinfo.c",
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "f62a75e13b40620f7637f82d0abaa81b6b45f6e79e5b76a124b20849456740bc",
+    "matched_code": 80,
+    "matched_functions": 1,
+    "matched_data": 91,
+    "complete_data": 91,
+    "object_path": "build/GSQE78/src/Modules/getbuildinfo.o",
+    "object_sha256": "24f4b26d6f006f78553c97991b71aa46fcc25c7909ed9d5e5accc7166af10267"
+  },
+  "external_padding": [
+    {
+      "source": "src/Modules/getbuildinfo.c",
+      "unit": "main/Modules/getbuildinfo",
+      "section": ".data",
+      "start": "0x802e8ba1",
+      "end": "0x802e8ba8",
+      "size": 7,
+      "alignment": 1,
+      "symbol": "gap_07_802E8BA1_data",
+      "original_owner": "padding/source_extents/Modules/getbuildinfo.s",
+      "source_section_start": "0x802e8b78",
+      "source_section_bytes": 41,
+      "previous_split_bytes": 48,
+      "description": "Original linker alignment beyond emitted source section; no source credit."
+    },
+    {
+      "source": "src/Modules/getbuildinfo.c",
+      "unit": "main/Modules/getbuildinfo",
+      "section": ".bss",
+      "start": "0x8033e532",
+      "end": "0x8033e538",
+      "size": 6,
+      "alignment": 1,
+      "symbol": "gap_08_8033E532_bss",
+      "original_owner": "padding/source_extents/Modules/getbuildinfo.s",
+      "source_section_start": "0x8033e500",
+      "source_section_bytes": 50,
+      "previous_split_bytes": 56,
+      "description": "Original linker alignment beyond emitted source section; no source credit."
+    }
+  ],
+  "source_extent_audit": {
+    "data_credit_correction": 13,
+    "evidence": "config/GSQE78/source_padding.json",
+    "description": "Source and original bytes unchanged; trailing original padding moved to NonMatching ownership."
+  }
+}

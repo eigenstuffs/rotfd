@@ -1,0 +1,974 @@
+[
+  {
+    "status": "isolated-byte-match",
+    "source": "src/Game/callback_return_dispatch_802575cc.cpp",
+    "source_sha256": "20fec44ad4a41a5f7c8a44955567b0ad1164598fe3dafa5833180c1b5c1417a3",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-O4,p",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "off",
+      "-RTTI",
+      "off",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "include"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2149938636,
+        "end": 2149938944,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_802575CC",
+        "address": 2149938636,
+        "size": 308,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [],
+    "unlinked_functions": [
+      {
+        "name": "__dt__18DispatchHandleCopyFv",
+        "section": ".text",
+        "object_offset": 308,
+        "size": 92,
+        "binding": "weak",
+        "raw_sha256": "1dc191d0563978ed38f7b2c78ac2b807d3ddfa53c98db4560ab0ced43640ab02"
+      },
+      {
+        "name": "__dt__19DispatchHandleLayerFv",
+        "section": ".text",
+        "object_offset": 400,
+        "size": 88,
+        "binding": "weak",
+        "raw_sha256": "ee3203a188e9d7282273427bfc26c6917510fc7b7c574c24cca0331f00873d1f"
+      },
+      {
+        "name": "__dt__20DispatchNativeHandleFv",
+        "section": ".text",
+        "object_offset": 488,
+        "size": 84,
+        "binding": "weak",
+        "raw_sha256": "fdd9fcf5ab58f46f986c50b59ae57e9c65a7b53acdde19888e0e8987b285adb0"
+      },
+      {
+        "name": "__dt__20DispatchReturnHandleFv",
+        "section": ".text",
+        "object_offset": 572,
+        "size": 84,
+        "binding": "weak",
+        "raw_sha256": "fdd9fcf5ab58f46f986c50b59ae57e9c65a7b53acdde19888e0e8987b285adb0"
+      }
+    ],
+    "headers": [
+      {
+        "path": "include/Game/callback_return_dispatch_internal.h",
+        "sha256": "c06bd3d008370a5767a8ed77fc2673ae6066e610b5fb945f2ec04de292383ff6"
+      },
+      {
+        "path": "include/Game/callback_related_dispatch_internal.h",
+        "sha256": "d57172d480f7eee85c829a2603b1c3820abbb633d55862670ea220a71a22c2cb"
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "__ct__15Handle_801F7F10Fv",
+        "address": 2149547780,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "__dl__FPv",
+        "address": 2148658644,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "__dt__15Handle_801F7F10Fv",
+        "address": 2149547792,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "fn_801F7EB8",
+        "address": 2149547704,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "fn_801F86C8",
+        "address": 2149549768,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "fn_80257B70",
+        "address": 2149940080,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "lbl_801E9D24",
+        "address": 2149489956,
+        "scope": "global",
+        "section": ".text"
+      }
+    ],
+    "validation": {
+      "relocations": 10,
+      "unlinked_relocations": 8,
+      "retained_text_bytes": 308,
+      "unlinked_text_bytes": 348,
+      "initialized_data_bytes": 0,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0
+    },
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 48,
+        "address": 2149938684,
+        "kind": 10,
+        "symbol": "fn_801F7EB8",
+        "target": 2149547704,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 72,
+        "address": 2149938708,
+        "kind": 10,
+        "symbol": "fn_80257B70",
+        "target": 2149940080,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 84,
+        "address": 2149938720,
+        "kind": 10,
+        "symbol": "__ct__15Handle_801F7F10Fv",
+        "target": 2149547780,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 94,
+        "address": 2149938730,
+        "kind": 6,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 102,
+        "address": 2149938738,
+        "kind": 4,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 124,
+        "address": 2149938760,
+        "kind": 10,
+        "symbol": "fn_801F86C8",
+        "target": 2149549768,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 136,
+        "address": 2149938772,
+        "kind": 10,
+        "symbol": "__dt__15Handle_801F7F10Fv",
+        "target": 2149547792,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 144,
+        "address": 2149938780,
+        "kind": 10,
+        "symbol": "fn_801F7EB8",
+        "target": 2149547704,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 164,
+        "address": 2149938800,
+        "kind": 10,
+        "symbol": "__dt__15Handle_801F7F10Fv",
+        "target": 2149547792,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 272,
+        "address": 2149938908,
+        "kind": 10,
+        "symbol": "__dt__15Handle_801F7F10Fv",
+        "target": 2149547792,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 352,
+        "address": 2149938988,
+        "kind": 10,
+        "symbol": "__dt__15Handle_801F7F10Fv",
+        "target": 2149547792,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 368,
+        "address": 2149939004,
+        "kind": 10,
+        "symbol": "__dl__FPv",
+        "target": 2148658644,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 440,
+        "address": 2149939076,
+        "kind": 10,
+        "symbol": "__dt__15Handle_801F7F10Fv",
+        "target": 2149547792,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 456,
+        "address": 2149939092,
+        "kind": 10,
+        "symbol": "__dl__FPv",
+        "target": 2148658644,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 524,
+        "address": 2149939160,
+        "kind": 10,
+        "symbol": "__dt__15Handle_801F7F10Fv",
+        "target": 2149547792,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 540,
+        "address": 2149939176,
+        "kind": 10,
+        "symbol": "__dl__FPv",
+        "target": 2148658644,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 608,
+        "address": 2149939244,
+        "kind": 10,
+        "symbol": "__dt__15Handle_801F7F10Fv",
+        "target": 2149547792,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 624,
+        "address": 2149939260,
+        "kind": 10,
+        "symbol": "__dl__FPv",
+        "target": 2148658644,
+        "addend": 0
+      }
+    ],
+    "notes": "docs/notes/game-callback-return-dispatch.md",
+    "memcard_native_identity_migration": {
+      "description": "Current canonical identities and hashes verified after native CGCMemCardManipulator/CFSM ownership integration; original evidence is retained in immutable backups and explicit previous receipts.",
+      "production_verification": "scratch/memcard_native_vtable_20261020_parallel/production-verification.json",
+      "production_verification_sha256": "96e50e874bd53c148cd6395f670c040416c34699787d56726d8cfb010c340f31",
+      "migration_object_audit": "scratch/memcard_native_vtable_20261020_parallel/migration_object_audit.json",
+      "migration_object_audit_sha256": "b809560bf7212a505b2ea749256bef5263b4784d066bb311015e10928e90db9d",
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "unchanged_caller_objects": 344,
+      "native_objects": 6,
+      "native_actual_relocations": 281,
+      "previous_canonical_sha256": "3612a0d59d7cf1d6f84590eb1de4a052de1b62630288e61b37098e7f8ca99b74",
+      "previous_canonical": "scratch/memcard_canonical_refresh_20261020_parallel/backups/config/GSQE78/candidates/game-callback-return-dispatch.json",
+      "previous_entry_json_pointer": "/0"
+    }
+  },
+  {
+    "status": "isolated-byte-match",
+    "source": "src/Game/callback_return_dispatch_80257700.cpp",
+    "source_sha256": "1b233298c8c3ee80585df80030d0bbd883ee9c1dc4f29267abd2cd10251ee40d",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-O4,p",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "off",
+      "-RTTI",
+      "off",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "include"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2149938944,
+        "end": 2149939240,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_80257700",
+        "address": 2149938944,
+        "size": 296,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [],
+    "unlinked_functions": [
+      {
+        "name": "__dt__18DispatchHandleCopyFv",
+        "section": ".text",
+        "object_offset": 296,
+        "size": 92,
+        "binding": "weak",
+        "raw_sha256": "1dc191d0563978ed38f7b2c78ac2b807d3ddfa53c98db4560ab0ced43640ab02"
+      },
+      {
+        "name": "__dt__19DispatchHandleLayerFv",
+        "section": ".text",
+        "object_offset": 388,
+        "size": 88,
+        "binding": "weak",
+        "raw_sha256": "ee3203a188e9d7282273427bfc26c6917510fc7b7c574c24cca0331f00873d1f"
+      },
+      {
+        "name": "__dt__20DispatchNativeHandleFv",
+        "section": ".text",
+        "object_offset": 476,
+        "size": 84,
+        "binding": "weak",
+        "raw_sha256": "fdd9fcf5ab58f46f986c50b59ae57e9c65a7b53acdde19888e0e8987b285adb0"
+      },
+      {
+        "name": "__dt__20DispatchReturnHandleFv",
+        "section": ".text",
+        "object_offset": 560,
+        "size": 84,
+        "binding": "weak",
+        "raw_sha256": "fdd9fcf5ab58f46f986c50b59ae57e9c65a7b53acdde19888e0e8987b285adb0"
+      }
+    ],
+    "headers": [
+      {
+        "path": "include/Game/callback_return_dispatch_internal.h",
+        "sha256": "c06bd3d008370a5767a8ed77fc2673ae6066e610b5fb945f2ec04de292383ff6"
+      },
+      {
+        "path": "include/Game/callback_related_dispatch_internal.h",
+        "sha256": "d57172d480f7eee85c829a2603b1c3820abbb633d55862670ea220a71a22c2cb"
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "__ct__15Handle_801F7F10Fv",
+        "address": 2149547780,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "__dl__FPv",
+        "address": 2148658644,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "__dt__15Handle_801F7F10Fv",
+        "address": 2149547792,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "fn_801F7EB8",
+        "address": 2149547704,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "fn_801F86C8",
+        "address": 2149549768,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "fn_80257B70",
+        "address": 2149940080,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "lbl_801E9D24",
+        "address": 2149489956,
+        "scope": "global",
+        "section": ".text"
+      }
+    ],
+    "validation": {
+      "relocations": 10,
+      "unlinked_relocations": 8,
+      "retained_text_bytes": 296,
+      "unlinked_text_bytes": 348,
+      "initialized_data_bytes": 0,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0
+    },
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 40,
+        "address": 2149938984,
+        "kind": 10,
+        "symbol": "fn_801F7EB8",
+        "target": 2149547704,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 64,
+        "address": 2149939008,
+        "kind": 10,
+        "symbol": "fn_80257B70",
+        "target": 2149940080,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 76,
+        "address": 2149939020,
+        "kind": 10,
+        "symbol": "__ct__15Handle_801F7F10Fv",
+        "target": 2149547780,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 86,
+        "address": 2149939030,
+        "kind": 6,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 94,
+        "address": 2149939038,
+        "kind": 4,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 116,
+        "address": 2149939060,
+        "kind": 10,
+        "symbol": "fn_801F86C8",
+        "target": 2149549768,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 128,
+        "address": 2149939072,
+        "kind": 10,
+        "symbol": "__dt__15Handle_801F7F10Fv",
+        "target": 2149547792,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 136,
+        "address": 2149939080,
+        "kind": 10,
+        "symbol": "fn_801F7EB8",
+        "target": 2149547704,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 156,
+        "address": 2149939100,
+        "kind": 10,
+        "symbol": "__dt__15Handle_801F7F10Fv",
+        "target": 2149547792,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 264,
+        "address": 2149939208,
+        "kind": 10,
+        "symbol": "__dt__15Handle_801F7F10Fv",
+        "target": 2149547792,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 340,
+        "address": 2149939284,
+        "kind": 10,
+        "symbol": "__dt__15Handle_801F7F10Fv",
+        "target": 2149547792,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 356,
+        "address": 2149939300,
+        "kind": 10,
+        "symbol": "__dl__FPv",
+        "target": 2148658644,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 428,
+        "address": 2149939372,
+        "kind": 10,
+        "symbol": "__dt__15Handle_801F7F10Fv",
+        "target": 2149547792,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 444,
+        "address": 2149939388,
+        "kind": 10,
+        "symbol": "__dl__FPv",
+        "target": 2148658644,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 512,
+        "address": 2149939456,
+        "kind": 10,
+        "symbol": "__dt__15Handle_801F7F10Fv",
+        "target": 2149547792,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 528,
+        "address": 2149939472,
+        "kind": 10,
+        "symbol": "__dl__FPv",
+        "target": 2148658644,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 596,
+        "address": 2149939540,
+        "kind": 10,
+        "symbol": "__dt__15Handle_801F7F10Fv",
+        "target": 2149547792,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 612,
+        "address": 2149939556,
+        "kind": 10,
+        "symbol": "__dl__FPv",
+        "target": 2148658644,
+        "addend": 0
+      }
+    ],
+    "notes": "docs/notes/game-callback-return-dispatch.md",
+    "memcard_native_identity_migration": {
+      "description": "Current canonical identities and hashes verified after native CGCMemCardManipulator/CFSM ownership integration; original evidence is retained in immutable backups and explicit previous receipts.",
+      "production_verification": "scratch/memcard_native_vtable_20261020_parallel/production-verification.json",
+      "production_verification_sha256": "96e50e874bd53c148cd6395f670c040416c34699787d56726d8cfb010c340f31",
+      "migration_object_audit": "scratch/memcard_native_vtable_20261020_parallel/migration_object_audit.json",
+      "migration_object_audit_sha256": "b809560bf7212a505b2ea749256bef5263b4784d066bb311015e10928e90db9d",
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "unchanged_caller_objects": 344,
+      "native_objects": 6,
+      "native_actual_relocations": 281,
+      "previous_canonical_sha256": "3612a0d59d7cf1d6f84590eb1de4a052de1b62630288e61b37098e7f8ca99b74",
+      "previous_canonical": "scratch/memcard_canonical_refresh_20261020_parallel/backups/config/GSQE78/candidates/game-callback-return-dispatch.json",
+      "previous_entry_json_pointer": "/1"
+    }
+  },
+  {
+    "status": "isolated-byte-match",
+    "source": "src/Game/callback_return_dispatch_80257828.cpp",
+    "source_sha256": "0fbb3cb034f06f7fbb1ba66e2de9f513d0f3df9a74daa2388882986332ae2ad1",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-O4,p",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "off",
+      "-RTTI",
+      "off",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "include"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2149939240,
+        "end": 2149939548,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_80257828",
+        "address": 2149939240,
+        "size": 308,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [],
+    "unlinked_functions": [
+      {
+        "name": "__dt__18DispatchHandleCopyFv",
+        "section": ".text",
+        "object_offset": 308,
+        "size": 92,
+        "binding": "weak",
+        "raw_sha256": "1dc191d0563978ed38f7b2c78ac2b807d3ddfa53c98db4560ab0ced43640ab02"
+      },
+      {
+        "name": "__dt__19DispatchHandleLayerFv",
+        "section": ".text",
+        "object_offset": 400,
+        "size": 88,
+        "binding": "weak",
+        "raw_sha256": "ee3203a188e9d7282273427bfc26c6917510fc7b7c574c24cca0331f00873d1f"
+      },
+      {
+        "name": "__dt__20DispatchNativeHandleFv",
+        "section": ".text",
+        "object_offset": 488,
+        "size": 84,
+        "binding": "weak",
+        "raw_sha256": "fdd9fcf5ab58f46f986c50b59ae57e9c65a7b53acdde19888e0e8987b285adb0"
+      },
+      {
+        "name": "__dt__20DispatchReturnHandleFv",
+        "section": ".text",
+        "object_offset": 572,
+        "size": 84,
+        "binding": "weak",
+        "raw_sha256": "fdd9fcf5ab58f46f986c50b59ae57e9c65a7b53acdde19888e0e8987b285adb0"
+      }
+    ],
+    "headers": [
+      {
+        "path": "include/Game/callback_return_dispatch_internal.h",
+        "sha256": "c06bd3d008370a5767a8ed77fc2673ae6066e610b5fb945f2ec04de292383ff6"
+      },
+      {
+        "path": "include/Game/callback_related_dispatch_internal.h",
+        "sha256": "d57172d480f7eee85c829a2603b1c3820abbb633d55862670ea220a71a22c2cb"
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "__ct__15Handle_801F7F10Fv",
+        "address": 2149547780,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "__dl__FPv",
+        "address": 2148658644,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "__dt__15Handle_801F7F10Fv",
+        "address": 2149547792,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "fn_801F7EB8",
+        "address": 2149547704,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "fn_801F86C8",
+        "address": 2149549768,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "fn_80257B70",
+        "address": 2149940080,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "lbl_801E9D24",
+        "address": 2149489956,
+        "scope": "global",
+        "section": ".text"
+      }
+    ],
+    "validation": {
+      "relocations": 10,
+      "unlinked_relocations": 8,
+      "retained_text_bytes": 308,
+      "unlinked_text_bytes": 348,
+      "initialized_data_bytes": 0,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0
+    },
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 48,
+        "address": 2149939288,
+        "kind": 10,
+        "symbol": "fn_801F7EB8",
+        "target": 2149547704,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 72,
+        "address": 2149939312,
+        "kind": 10,
+        "symbol": "fn_80257B70",
+        "target": 2149940080,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 84,
+        "address": 2149939324,
+        "kind": 10,
+        "symbol": "__ct__15Handle_801F7F10Fv",
+        "target": 2149547780,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 94,
+        "address": 2149939334,
+        "kind": 6,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 102,
+        "address": 2149939342,
+        "kind": 4,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 124,
+        "address": 2149939364,
+        "kind": 10,
+        "symbol": "fn_801F86C8",
+        "target": 2149549768,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 136,
+        "address": 2149939376,
+        "kind": 10,
+        "symbol": "__dt__15Handle_801F7F10Fv",
+        "target": 2149547792,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 144,
+        "address": 2149939384,
+        "kind": 10,
+        "symbol": "fn_801F7EB8",
+        "target": 2149547704,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 164,
+        "address": 2149939404,
+        "kind": 10,
+        "symbol": "__dt__15Handle_801F7F10Fv",
+        "target": 2149547792,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 272,
+        "address": 2149939512,
+        "kind": 10,
+        "symbol": "__dt__15Handle_801F7F10Fv",
+        "target": 2149547792,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 352,
+        "address": 2149939592,
+        "kind": 10,
+        "symbol": "__dt__15Handle_801F7F10Fv",
+        "target": 2149547792,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 368,
+        "address": 2149939608,
+        "kind": 10,
+        "symbol": "__dl__FPv",
+        "target": 2148658644,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 440,
+        "address": 2149939680,
+        "kind": 10,
+        "symbol": "__dt__15Handle_801F7F10Fv",
+        "target": 2149547792,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 456,
+        "address": 2149939696,
+        "kind": 10,
+        "symbol": "__dl__FPv",
+        "target": 2148658644,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 524,
+        "address": 2149939764,
+        "kind": 10,
+        "symbol": "__dt__15Handle_801F7F10Fv",
+        "target": 2149547792,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 540,
+        "address": 2149939780,
+        "kind": 10,
+        "symbol": "__dl__FPv",
+        "target": 2148658644,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 608,
+        "address": 2149939848,
+        "kind": 10,
+        "symbol": "__dt__15Handle_801F7F10Fv",
+        "target": 2149547792,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 624,
+        "address": 2149939864,
+        "kind": 10,
+        "symbol": "__dl__FPv",
+        "target": 2148658644,
+        "addend": 0
+      }
+    ],
+    "notes": "docs/notes/game-callback-return-dispatch.md",
+    "memcard_native_identity_migration": {
+      "description": "Current canonical identities and hashes verified after native CGCMemCardManipulator/CFSM ownership integration; original evidence is retained in immutable backups and explicit previous receipts.",
+      "production_verification": "scratch/memcard_native_vtable_20261020_parallel/production-verification.json",
+      "production_verification_sha256": "96e50e874bd53c148cd6395f670c040416c34699787d56726d8cfb010c340f31",
+      "migration_object_audit": "scratch/memcard_native_vtable_20261020_parallel/migration_object_audit.json",
+      "migration_object_audit_sha256": "b809560bf7212a505b2ea749256bef5263b4784d066bb311015e10928e90db9d",
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "unchanged_caller_objects": 344,
+      "native_objects": 6,
+      "native_actual_relocations": 281,
+      "previous_canonical_sha256": "3612a0d59d7cf1d6f84590eb1de4a052de1b62630288e61b37098e7f8ca99b74",
+      "previous_canonical": "scratch/memcard_canonical_refresh_20261020_parallel/backups/config/GSQE78/candidates/game-callback-return-dispatch.json",
+      "previous_entry_json_pointer": "/2"
+    }
+  }
+]

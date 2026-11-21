@@ -1,0 +1,169 @@
+{
+  "source": "src/Runtime.PPCEABI.H/__init_cpp_exceptions.cpp",
+  "source_kind": "cpp",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-nodefaults -proc gekko -align powerpc -enum int -fp hardware        -Cpp_exceptions off -O4,p -inline auto -pragma \"cats off\" -pragma        \"warn_notinlined off\" -maxerrors 1 -nosyspath -RTTI off -fp_contract        on -str reuse -multibyte -i include -i build/GSQE78/include        -DBUILD_VERSION=0 -DVERSION_GSQE78 -DNDEBUG=1 -use_lmw_stmw on -str        reuse,pool,readonly -gccinc -common off -inline auto -lang=c++"
+  ],
+  "splits": [
+    {
+      "section": ".text",
+      "start": "0x8011facc",
+      "end": "0x8011fb40",
+      "alignment": 4
+    },
+    {
+      "section": ".ctors",
+      "start": "0x80299920",
+      "end": "0x80299924",
+      "alignment": 4
+    },
+    {
+      "section": ".dtors",
+      "start": "0x80299980",
+      "end": "0x80299988",
+      "alignment": 4
+    },
+    {
+      "section": ".sdata",
+      "start": "0x80375e20",
+      "end": "0x80375e24",
+      "alignment": 8
+    }
+  ],
+  "functions": [
+    {
+      "name": "__fini_cpp_exceptions",
+      "original_name": "__fini_cpp_exceptions",
+      "address": "0x8011facc",
+      "size": "0x34",
+      "scope": "global"
+    },
+    {
+      "name": "__init_cpp_exceptions",
+      "original_name": "__init_cpp_exceptions",
+      "address": "0x8011fb00",
+      "size": "0x40",
+      "scope": "global"
+    }
+  ],
+  "data_symbols": [
+    {
+      "name": "__init_cpp_exceptions_reference",
+      "original_name": "__init_cpp_exceptions_reference",
+      "address": "0x80299920",
+      "size": "0x4",
+      "scope": "local",
+      "section": ".ctors",
+      "data_kind": "4byte"
+    },
+    {
+      "name": "__destroy_global_chain_reference",
+      "original_name": "__destroy_global_chain_reference",
+      "address": "0x80299980",
+      "size": "0x4",
+      "scope": "local",
+      "section": ".dtors",
+      "data_kind": "4byte"
+    },
+    {
+      "name": "__fini_cpp_exceptions_reference",
+      "original_name": "__fini_cpp_exceptions_reference",
+      "address": "0x80299984",
+      "size": "0x4",
+      "scope": "local",
+      "section": ".dtors",
+      "data_kind": "4byte"
+    },
+    {
+      "name": "fragmentID",
+      "original_name": "fragmentID",
+      "address": "0x80375e20",
+      "size": "0x4",
+      "scope": "local",
+      "section": ".sdata",
+      "data_kind": "4byte"
+    }
+  ],
+  "dependency_symbols": [
+    {
+      "name": "GetR2__Fv",
+      "address": "0x8011fac4",
+      "original_name": "GetR2__Fv"
+    },
+    {
+      "name": "_eti_init_info",
+      "address": "0x8001f29c",
+      "original_name": "_eti_init_info"
+    },
+    {
+      "name": "__register_fragment",
+      "address": "0x80120f70",
+      "original_name": "__register_fragment"
+    },
+    {
+      "name": "__unregister_fragment",
+      "address": "0x80120f3c",
+      "original_name": "__unregister_fragment"
+    },
+    {
+      "name": "__destroy_global_chain",
+      "address": "0x8011ed44",
+      "original_name": "__destroy_global_chain"
+    }
+  ],
+  "symbol_scopes": {
+    "GetR2__Fv": "global",
+    "__fini_cpp_exceptions": "global",
+    "__init_cpp_exceptions": "global",
+    "__init_cpp_exceptions_reference": "local",
+    "__destroy_global_chain_reference": "local",
+    "__fini_cpp_exceptions_reference": "local",
+    "fragmentID": "local"
+  },
+  "external_padding": [
+    {
+      "section": ".sdata",
+      "start": "0x80375e24",
+      "end": "0x80375e28",
+      "size": 4,
+      "alignment": 4,
+      "description": "Original linker alignment; no source credit."
+    }
+  ],
+  "remaining_original_fallback": [
+    {
+      "section": ".text",
+      "start": "0x8011fac4",
+      "end": "0x8011facc",
+      "name": "GetR2__Fv",
+      "size": 8,
+      "scope": "global",
+      "source_kind": "native_assembly",
+      "description": "Original two-instruction r2 accessor; originally static. Global only to connect C-only split."
+    }
+  ],
+  "notes": "docs/notes/runtime-init-cpp-exceptions.md",
+  "validation": {
+    "verification_script": "scratch/runtime_init_cpp/verify.py",
+    "text_bytes": 116,
+    "initialized_data_bytes": 16,
+    "relocations_applied": 12,
+    "byte_differences": 0,
+    "source_sha256": "025316c802e24844cccd8b7a28ef7216cbc91d968950d2fab4936d320bcc9c37",
+    "object_sha256": "2495e1544346d5fff02e07fd985645484e0e85d95cd2b71f1de128e693b2c8c0",
+    "original_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "integration_status": "verified full-DOL and objdiff"
+  },
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "025316c802e24844cccd8b7a28ef7216cbc91d968950d2fab4936d320bcc9c37",
+    "matched_code": 116,
+    "matched_functions": 2,
+    "matched_data": 16,
+    "complete_data": 16,
+    "object_path": "build/GSQE78/src/Runtime.PPCEABI.H/__init_cpp_exceptions.o",
+    "object_sha256": "2495e1544346d5fff02e07fd985645484e0e85d95cd2b71f1de128e693b2c8c0"
+  }
+}

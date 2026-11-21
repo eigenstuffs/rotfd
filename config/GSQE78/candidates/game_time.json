@@ -1,0 +1,130 @@
+{
+  "source": "src/Game/time.cpp",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.3.2",
+  "cflags": "-proc gekko -fp hardware -enum int -str reuse -common off -O4,p -inline auto -Cpp_exceptions off -use_lmw_stmw on -bool off",
+  "splits": [
+    {
+      "section": ".text",
+      "start": "0x801f45d8",
+      "end": "0x801f4728"
+    },
+    {
+      "section": ".sdata2",
+      "start": "0x8037a740",
+      "end": "0x8037a768"
+    }
+  ],
+  "functions": [
+    {
+      "name": "fn_801F45D8",
+      "section": ".text",
+      "address": "0x801f45d8",
+      "size": "0x64",
+      "scope": "global",
+      "original_name": "fn_801F45D8"
+    },
+    {
+      "name": "fn_801F463C",
+      "section": ".text",
+      "address": "0x801f463c",
+      "size": "0xec",
+      "scope": "global",
+      "original_name": "fn_801F463C"
+    }
+  ],
+  "data_symbols": [
+    {
+      "name": "@11",
+      "section": ".sdata2",
+      "address": "0x8037a740",
+      "size": "0x4",
+      "scope": "local",
+      "original_name": "lbl_8037A740"
+    },
+    {
+      "name": "@13",
+      "section": ".sdata2",
+      "address": "0x8037a748",
+      "size": "0x8",
+      "scope": "local",
+      "original_name": "lbl_8037A748"
+    },
+    {
+      "name": "@29",
+      "section": ".sdata2",
+      "address": "0x8037a750",
+      "size": "0x4",
+      "scope": "local",
+      "original_name": "lbl_8037A750"
+    },
+    {
+      "name": "@30",
+      "section": ".sdata2",
+      "address": "0x8037a754",
+      "size": "0x4",
+      "scope": "local",
+      "original_name": "lbl_8037A754"
+    },
+    {
+      "name": "@31",
+      "section": ".sdata2",
+      "address": "0x8037a758",
+      "size": "0x4",
+      "scope": "local",
+      "original_name": "lbl_8037A758"
+    },
+    {
+      "name": "@32",
+      "section": ".sdata2",
+      "address": "0x8037a75c",
+      "size": "0x4",
+      "scope": "local",
+      "original_name": "lbl_8037A75C"
+    },
+    {
+      "name": "@35",
+      "section": ".sdata2",
+      "address": "0x8037a760",
+      "size": "0x8",
+      "scope": "local",
+      "original_name": "lbl_8037A760"
+    }
+  ],
+  "section_anchors": [],
+  "dependency_symbols": [
+    {
+      "name": "OSGetTick",
+      "address": "0x800f6c0c"
+    },
+    {
+      "name": "__cvt_fp2unsigned",
+      "address": "0x8011f4f4"
+    }
+  ],
+  "notes": "docs/notes/game-time.md",
+  "split_notes": [
+    "Two contiguous ordinary game timing routines. Exact tick and bus-clock arithmetic plus forty bytes of emitted float/double literals; original full TU extent and method names are not claimed."
+  ],
+  "validation": {
+    "code_bytes": 336,
+    "emitted_data_bytes": 40,
+    "bss_layout_bytes": 0,
+    "relocations_applied": 16,
+    "byte_differences": 0,
+    "source_sha256": "9ef2f9dd6db293879327ed6cc60c9cc086467c20ade6a2821088ab1b440f122f",
+    "object_sha256": "49507af800c3b349603dd22449c5aa1ba641ca8042a6b5bd25426780117b5170",
+    "original_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "integration_status": "verified full-DOL and objdiff"
+  },
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "9ef2f9dd6db293879327ed6cc60c9cc086467c20ade6a2821088ab1b440f122f",
+    "matched_code": 336,
+    "matched_functions": 2,
+    "matched_data": 40,
+    "complete_data": 40,
+    "object_path": "build/GSQE78/src/Game/time.o",
+    "object_sha256": "c350e68f9c7541cae381a954117119b024303a11f053b9a7f05d534d5243003f"
+  }
+}

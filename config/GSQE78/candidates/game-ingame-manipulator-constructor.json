@@ -1,0 +1,173 @@
+{
+  "source": "src/Game/ingame_manipulator_constructor.cpp",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-proc",
+    "gekko",
+    "-fp",
+    "hardware",
+    "-enum",
+    "int",
+    "-str",
+    "reuse",
+    "-common",
+    "off",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-Cpp_exceptions",
+    "off",
+    "-use_lmw_stmw",
+    "on",
+    "-i",
+    "src/Game",
+    "-RTTI",
+    "off"
+  ],
+  "sections": {
+    ".text": [
+      2149656736,
+      2149656836
+    ]
+  },
+  "functions": [
+    {
+      "name": "__ct__33InGameObjectsManipulator_802128A0Fv",
+      "address": 2149656736,
+      "size": 100,
+      "section": ".text",
+      "scope": "global",
+      "original_name": "fn_802128A0"
+    }
+  ],
+  "objects": [],
+  "source_kind": "c++",
+  "dependency_symbols": [
+    {
+      "name": "__ct__15Handle_801F7F10Fv",
+      "address": 2149547780,
+      "scope": "global"
+    },
+    {
+      "name": "__ct__13Manipulator_ZFv",
+      "address": 2149662396,
+      "scope": "global"
+    },
+    {
+      "name": "__vt__33InGameObjectsManipulator_802128A0",
+      "address": 2150543744,
+      "scope": "global"
+    }
+  ],
+  "notes": "docs/notes/game-ingame-manipulator-interface.md",
+  "source_sha256": "9cf7b0b5add0b812089b028a14f20d45dc6556090cbd91eb709348af88721174",
+  "validation": {
+    "relocations": 4,
+    "text_bytes": 100,
+    "initialized_data_bytes": 0,
+    "zero_initialized_bytes": 0,
+    "zero_byte_differences": true,
+    "original_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "object_sha256": "8d6316107e75a3f49793989ba448e4d33ec87d03d08dc158b8fdbbeb105c5e88",
+    "retained_function_binding": "all STB_GLOBAL, STT_FUNC",
+    "all_allocated_sections_verified": true,
+    "section_sha256": {
+      ".text": "c7f1cc69714661fefcdf0db194a104e621d1ad145f4e658ea1acbbbb04747434"
+    },
+    "retained_references_to_weak_output": 0,
+    "owned_padding_bytes": 0,
+    "unlinked_text_bytes": 464,
+    "unlinked_relocations": 14,
+    "verification_script": "scratch/game_ingame_manipulator_interface/verify.py",
+    "verification_mode": "--production",
+    "integration_status": "verified full-DOL and objdiff"
+  },
+  "section_alignments": {
+    ".text": 4
+  },
+  "external_padding": [],
+  "external_objects": [],
+  "original_external_bytes": [],
+  "headers": [
+    {
+      "path": "src/Game/objects_owner_internal.h",
+      "sha256": "f2f3ed38fa07c4439af53617df67a59cd5fa686733430f307e91fb0d8d8a7d3c"
+    },
+    {
+      "path": "src/Game/manipulator_callbacks_internal.h",
+      "sha256": "522523c41d004cce80d74af908711cf1dd59677978019eece74625990c716b40"
+    },
+    {
+      "path": "src/Game/ingame_manipulator_native_internal.h",
+      "sha256": "e265384d1454c526106b244745d4373338d771601061cd5fa96e8c613c963b44"
+    }
+  ],
+  "unlinked_functions": [
+    {
+      "name": "__dt__13InGameHandle1Fv",
+      "object_offset": 376,
+      "size": 84,
+      "binding": "weak",
+      "reason": "Unreferenced generated handle wrapper destructor; ordinary linker dead stripping.",
+      "raw_body_sha256": "fdd9fcf5ab58f46f986c50b59ae57e9c65a7b53acdde19888e0e8987b285adb0"
+    },
+    {
+      "name": "__dt__13InGameHandle2Fv",
+      "object_offset": 288,
+      "size": 88,
+      "binding": "weak",
+      "reason": "Unreferenced generated handle wrapper destructor; ordinary linker dead stripping.",
+      "raw_body_sha256": "ee3203a188e9d7282273427bfc26c6917510fc7b7c574c24cca0331f00873d1f"
+    },
+    {
+      "name": "__dt__13InGameHandle3Fv",
+      "object_offset": 196,
+      "size": 92,
+      "binding": "weak",
+      "reason": "Unreferenced generated handle wrapper destructor; ordinary linker dead stripping.",
+      "raw_body_sha256": "1dc191d0563978ed38f7b2c78ac2b807d3ddfa53c98db4560ab0ced43640ab02"
+    },
+    {
+      "name": "__dt__13InGameHandle4Fv",
+      "object_offset": 100,
+      "size": 96,
+      "binding": "weak",
+      "reason": "Unreferenced generated handle wrapper destructor; ordinary linker dead stripping.",
+      "raw_body_sha256": "4f6332623785bae9625330c6c92b1c477538430a6387c5a5d24433f5957a05d7"
+    },
+    {
+      "name": "__dt__13Manipulator_ZFv",
+      "object_offset": 460,
+      "size": 104,
+      "binding": "weak",
+      "reason": "Unreferenced O4,p / exceptions-off weak inline upper destructor; current strong 124-byte definition prevails, no duplicate source credit.",
+      "raw_body_sha256": "45003178ca8c4364d213801f20825fe977c1f8544a543d37a2736341692d0c5a"
+    }
+  ],
+  "previous_candidate": "scratch/ingame_native_interface_before/config/GSQE78/candidates/game-ingame-manipulator-constructor.json",
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "9cf7b0b5add0b812089b028a14f20d45dc6556090cbd91eb709348af88721174",
+    "matched_code": 100,
+    "matched_functions": 1,
+    "matched_data": 0,
+    "complete_data": 0,
+    "object_path": "build/GSQE78/src/Game/ingame_manipulator_constructor.o",
+    "object_sha256": "8d6316107e75a3f49793989ba448e4d33ec87d03d08dc158b8fdbbeb105c5e88"
+  },
+  "memcard_native_identity_migration": {
+    "description": "Current canonical identities and hashes verified after native CGCMemCardManipulator/CFSM ownership integration; original evidence is retained in immutable backups and explicit previous receipts.",
+    "production_verification": "scratch/memcard_native_vtable_20261020_parallel/production-verification.json",
+    "production_verification_sha256": "96e50e874bd53c148cd6395f670c040416c34699787d56726d8cfb010c340f31",
+    "migration_object_audit": "scratch/memcard_native_vtable_20261020_parallel/migration_object_audit.json",
+    "migration_object_audit_sha256": "b809560bf7212a505b2ea749256bef5263b4784d066bb311015e10928e90db9d",
+    "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "unchanged_caller_objects": 344,
+    "native_objects": 6,
+    "native_actual_relocations": 281,
+    "previous_canonical_sha256": "4d402cdc04210e25e08b91944c2ec460a4d0e0b488050fe9d36f87ba1b72513e",
+    "previous_canonical": "scratch/memcard_canonical_refresh_20261020_parallel/backups/config/GSQE78/candidates/game-ingame-manipulator-constructor.json",
+    "previous_entry_json_pointer": ""
+  }
+}

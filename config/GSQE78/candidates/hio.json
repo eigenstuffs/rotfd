@@ -1,0 +1,150 @@
+{
+  "source": "src/dolphin/hio/hio.c",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.2.5n",
+  "cflags": "-proc gekko -fp hardware -enum int -str reuse -common off -O4,p -inline auto -i src/dolphin/hio -Cpp_exceptions off",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2148586512,
+      "end": 2148588764
+    },
+    {
+      "name": ".sdata",
+      "start": 2151112096,
+      "end": 2151112100
+    },
+    {
+      "name": ".sbss",
+      "start": 2151119936,
+      "end": 2151119948
+    }
+  ],
+  "functions": [
+    {
+      "name": "TxHandler",
+      "address": 2148586512,
+      "size": 64
+    },
+    {
+      "name": "RxHandler",
+      "address": 2148586576,
+      "size": 64
+    },
+    {
+      "name": "HIOWriteMailbox",
+      "address": 2148586640,
+      "size": 300
+    },
+    {
+      "name": "HIORead",
+      "address": 2148586940,
+      "size": 380
+    },
+    {
+      "name": "HIOWrite",
+      "address": 2148587320,
+      "size": 380
+    },
+    {
+      "name": "HIOReadAsync",
+      "address": 2148587700,
+      "size": 352
+    },
+    {
+      "name": "HIOWriteAsync",
+      "address": 2148588052,
+      "size": 352
+    },
+    {
+      "name": "HIOReadStatus",
+      "address": 2148588404,
+      "size": 360
+    }
+  ],
+  "objects": [
+    {
+      "name": "Chan",
+      "address": 2151112096,
+      "size": 4,
+      "section": ".sdata"
+    },
+    {
+      "name": "Dev",
+      "address": 2151119936,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "TxCallback",
+      "address": 2151119940,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "RxCallback",
+      "address": 2151119944,
+      "size": 4,
+      "section": ".sbss"
+    }
+  ],
+  "symbol_scopes": {
+    "TxHandler": "local",
+    "RxHandler": "local",
+    "HIOWriteMailbox": "global",
+    "HIORead": "global",
+    "HIOWrite": "global",
+    "HIOReadAsync": "global",
+    "HIOWriteAsync": "global",
+    "HIOReadStatus": "global",
+    "Chan": "local",
+    "Dev": "local",
+    "TxCallback": "local",
+    "RxCallback": "local"
+  },
+  "symbols": {
+    "TxHandler": "0x8010d410",
+    "RxHandler": "0x8010d450",
+    "HIOWriteMailbox": "0x8010d490",
+    "HIORead": "0x8010d5bc",
+    "HIOWrite": "0x8010d738",
+    "HIOReadAsync": "0x8010d8b4",
+    "HIOWriteAsync": "0x8010da14",
+    "HIOReadStatus": "0x8010db74",
+    "Chan": "0x80375da0",
+    "Dev": "0x80377c40",
+    "TxCallback": "0x80377c44",
+    "RxCallback": "0x80377c48",
+    "EXIDeselect": "0x80297148",
+    "EXIUnlock": "0x80297860",
+    "__OSGetDIConfig": "0x800f1884",
+    "EXILock": "0x8029776c",
+    "EXISelect": "0x8029701c",
+    "EXIImm": "0x802964b4",
+    "EXISync": "0x8029689c",
+    "EXIDma": "0x802967b0"
+  },
+  "external_original_names": {
+    "EXIDeselect": "EXIDeselect",
+    "EXIUnlock": "EXIUnlock",
+    "__OSGetDIConfig": "fn_800F1884",
+    "EXILock": "EXILock",
+    "EXISelect": "EXISelect",
+    "EXIImm": "EXIImm",
+    "EXISync": "EXISync",
+    "EXIDma": "EXIDma"
+  },
+  "verified_text_bytes": 2252,
+  "verified_data_bytes": 4,
+  "source_kind": "c",
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "3b5308d8c6bb3a32546fcf05a4e0bcc85d12b63062ca4425627840aeed7a149a",
+    "matched_code": 2252,
+    "matched_functions": 8,
+    "matched_data": 16,
+    "complete_data": 16,
+    "object_path": "build/GSQE78/src/dolphin/hio/hio.o",
+    "object_sha256": "773f4d15427dbb50d2072200bae3bb077fc118f52b23adf2c6ee9a826d7cf282"
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "source": "src/Python/getcopyright.c",
+  "status": "integrated-byte-match",
+  "sections": {
+    ".text": [
+      "0x801952C4",
+      "0x801952D0"
+    ],
+    ".data": [
+      "0x802DF118",
+      "0x802DF247"
+    ]
+  },
+  "extra_cflags": [
+    "-inline auto,deferred",
+    "-pool off"
+  ],
+  "symbols": {
+    "cprt": 2150494488,
+    "Py_GetCopyright": 2149143236
+  },
+  "symbol_sizes": {
+    "cprt": 303,
+    "Py_GetCopyright": 12
+  },
+  "symbol_scopes": {
+    "cprt": "local",
+    "Py_GetCopyright": "global"
+  },
+  "validation": {
+    "functions": 1,
+    "text_bytes": 12,
+    "text_bytes_emitted": 12,
+    "data_bytes_emitted": 303,
+    "relocations_resolved": 2,
+    "mismatching_initialized_bytes": 0,
+    "source_sha256": "42c715f029de0790d68c0f3a55420399bad7da43d1da85a32e070633073896ab",
+    "command": "python3 scratch/getcopyright/check_object.py",
+    "integration_status": "verified full-DOL and objdiff"
+  },
+  "reference": "reference/cpython-2.1/Python/getcopyright.c",
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "42c715f029de0790d68c0f3a55420399bad7da43d1da85a32e070633073896ab",
+    "matched_code": 12,
+    "matched_functions": 1,
+    "matched_data": 303,
+    "complete_data": 303,
+    "object_path": "build/GSQE78/src/Python/getcopyright.o",
+    "object_sha256": "8d73ccdb86d074563cbee954aa315c97ef092d92e546eee4bec85f472a757873"
+  },
+  "external_padding": [
+    {
+      "source": "src/Python/getcopyright.c",
+      "unit": "main/Python/getcopyright",
+      "section": ".data",
+      "start": "0x802df247",
+      "end": "0x802df248",
+      "size": 1,
+      "alignment": 1,
+      "symbol": "gap_07_802DF247_data",
+      "original_owner": "padding/source_extents/Python/getcopyright.s",
+      "source_section_start": "0x802df118",
+      "source_section_bytes": 303,
+      "previous_split_bytes": 304,
+      "description": "Original linker alignment beyond emitted source section; no source credit."
+    }
+  ],
+  "source_extent_audit": {
+    "data_credit_correction": 1,
+    "evidence": "config/GSQE78/source_padding.json",
+    "description": "Source and original bytes unchanged; trailing original padding moved to NonMatching ownership."
+  }
+}

@@ -1,0 +1,2 @@
+#include "Game/early_selection_event_control_views.h"
+extern "C"void fn_80024A5C(SelectionResetOwner*self,SelectionActor*actor){actor->ownerFlags|=0x800000000000ULL;actor->recordIndex=self->count;self->records[self->count]=new(fn_801EFA1C(lbl_801EF5C8,sizeof(SelectionResetRecord),lbl_80299C4C,lbl_80299C5C,0x162,4))SelectionResetRecord;self->records[self->count]->actor=actor;self->records[self->count]->position=resolveActor(actor->handle)->origin;self->records[self->count]->enabled=0;fn_80068FE4((char*)self->records[self->count]->actor+0x90,0);++self->count;}

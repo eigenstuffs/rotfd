@@ -1,0 +1,2 @@
+/* Original control forwarding and predicates; see docs/notes/game-control-forward-leafs.md. */
+typedef unsigned long Word;struct Handle{Word word;};struct Control{char opaque00[0x230];Handle handle;};struct Manager;struct Context{char opaque00[0x118];Manager*manager;};extern "C"{extern Context lbl_801E9D24;void fn_801F86C8(Manager*,const Handle*,int);}extern "C"void fn_80027D6C(Control*self,const Handle&source){fn_801F86C8(lbl_801E9D24.manager,&self->handle,-1);self->handle.word=source.word;fn_801F86C8(lbl_801E9D24.manager,&source,1);}

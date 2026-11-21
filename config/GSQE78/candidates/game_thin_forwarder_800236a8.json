@@ -1,0 +1,126 @@
+{
+  "status": "strict-isolated-byte-and-relocation-match",
+  "source": "src/Game/thin_forwarder_800236a8.cpp",
+  "source_sha256": "eb451c8d7370dde6df63f27ee4d48f4743d6f8f1554234b6c417faffb8703355",
+  "headers": [],
+  "source_kind": "c++",
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-proc",
+    "750",
+    "-fp",
+    "hardware",
+    "-enum",
+    "int",
+    "-str",
+    "reuse",
+    "-common",
+    "off",
+    "-O4,s",
+    "-inline",
+    "auto",
+    "-Cpp_exceptions",
+    "on",
+    "-use_lmw_stmw",
+    "on",
+    "-Iinclude"
+  ],
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2147628712,
+      "end": 2147628744,
+      "alignment": 4
+    },
+    {
+      "name": "extab",
+      "start": 2147507864,
+      "end": 2147507872,
+      "alignment": 4
+    },
+    {
+      "name": "extabindex",
+      "start": 2147574404,
+      "end": 2147574416,
+      "alignment": 4
+    }
+  ],
+  "functions": [
+    {
+      "name": "fn_800236A8",
+      "section": ".text",
+      "object_offset": 0,
+      "address": 2147628712,
+      "size": 32,
+      "scope": "global"
+    }
+  ],
+  "objects": [
+    {
+      "name": "@5",
+      "section": "extab",
+      "object_offset": 0,
+      "address": 2147507864,
+      "size": 8,
+      "scope": "local"
+    },
+    {
+      "name": "@6",
+      "section": "extabindex",
+      "object_offset": 0,
+      "address": 2147574404,
+      "size": 12,
+      "scope": "local"
+    }
+  ],
+  "unlinked_functions": [],
+  "dependency_symbols": [
+    {
+      "name": "fn_80020DC4",
+      "section": ".text",
+      "address": 2147618244,
+      "scope": "global"
+    }
+  ],
+  "verified_text_bytes": 32,
+  "verified_data_bytes": 20,
+  "actual_relocations": [
+    {
+      "section": ".text",
+      "at": 12,
+      "address": 2147628724,
+      "kind": 10,
+      "symbol": "fn_80020DC4",
+      "target": 2147618244,
+      "addend": 0
+    },
+    {
+      "section": "extabindex",
+      "at": 0,
+      "address": 2147574404,
+      "kind": 1,
+      "symbol": "fn_800236A8",
+      "target": 2147628712,
+      "addend": 0
+    },
+    {
+      "section": "extabindex",
+      "at": 8,
+      "address": 2147574412,
+      "kind": 1,
+      "symbol": "@5",
+      "target": 2147507864,
+      "addend": 0
+    }
+  ],
+  "notes": "docs/notes/game-thin-forwarder-800236a8.md",
+  "validation": {
+    "retained_text_bytes": 32,
+    "initialized_data_bytes": 20,
+    "bss_bytes": 0,
+    "owned_padding_bytes": 0,
+    "relocations": 3,
+    "unlinked_relocations": 0,
+    "object_sha256": "61c437dd4d880804d8871ecbd3dbce140d72bc12fb2f87d2040ca7f834405bcb"
+  }
+}

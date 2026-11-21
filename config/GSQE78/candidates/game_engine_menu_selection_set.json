@@ -1,0 +1,120 @@
+{
+  "status": "isolated-retained-byte-match",
+  "source": "src/Game/engine_menu_selection_set.cpp",
+  "source_sha256": "351c090a5f20bf46574aac99b96fc6e8c236afb4a29de46de33b4f655f31df81",
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-proc",
+    "gekko",
+    "-fp",
+    "hardware",
+    "-enum",
+    "int",
+    "-str",
+    "reuse",
+    "-common",
+    "off",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-Cpp_exceptions",
+    "off",
+    "-i",
+    "include"
+  ],
+  "source_kind": "c++",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2149698988,
+      "end": 2149699516,
+      "alignment": 4
+    }
+  ],
+  "functions": [
+    {
+      "name": "fn_8021CDAC",
+      "address": 2149698988,
+      "size": 528,
+      "scope": "global",
+      "section": ".text",
+      "object_offset": 0
+    }
+  ],
+  "objects": [],
+  "unlinked_functions": [],
+  "headers": [
+    {
+      "path": "include/Game/engine_menu_selection_set.h",
+      "sha256": "8adb18fb9d4b951f2a63572deb1ad33fd04e85a10ef6ffb86190bb127342e38c"
+    }
+  ],
+  "dependency_symbols": [],
+  "validation": {
+    "relocations": 6,
+    "unlinked_relocations": 0,
+    "retained_text_bytes": 528,
+    "unlinked_text_bytes": 0,
+    "initialized_data_bytes": 0,
+    "bss_bytes": 0,
+    "owned_padding_bytes": 0
+  },
+  "verified_text_bytes": 528,
+  "verified_data_bytes": 0,
+  "actual_relocations": [
+    {
+      "section": ".text",
+      "at": 136,
+      "address": 2149699124,
+      "kind": 10,
+      "symbol": "fn_8021DA0C",
+      "target": 2149702156,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 438,
+      "address": 2149699426,
+      "kind": 6,
+      "symbol": "lbl_801E9D24",
+      "target": 2149489956,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 442,
+      "address": 2149699430,
+      "kind": 6,
+      "symbol": "lbl_802AE918",
+      "target": 2150295832,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 446,
+      "address": 2149699434,
+      "kind": 4,
+      "symbol": "lbl_801E9D24",
+      "target": 2149489956,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 450,
+      "address": 2149699438,
+      "kind": 4,
+      "symbol": "lbl_802AE918",
+      "target": 2150295832,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 460,
+      "address": 2149699448,
+      "kind": 10,
+      "symbol": "fn_801FA014",
+      "target": 2149556244,
+      "addend": 0
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+# Dolphin debugger C fragments
+
+The four C functions in `db.c` are exact in isolated compilation: `DBInit` and `__DBExceptionDestinationAux` occupy `800F0E90..800F0F00` (112 bytes), while `__DBIsExceptionMarked` and `DBPrintf` occupy `800F0F10..800F0F7C` (108 bytes). The intervening sixteen-byte exception-entry wrapper changes MSR and branches into the auxiliary C function; it remains native fallback.
+
+The Melee SDK reconstruction supplies the matching interface layout and C algorithms. Its unrelated unreferenced debug-stack objects and debugger-present/mutation routines are absent here and are not emitted. `DBPrintf` is intentionally empty in that reference and in the original release code: the compiler emits its 80-byte variadic calling-convention prologue and epilogue without any output operation. This is a verified original stub, not replacement behavior for an unresolved function.
+
+Both fragments compile with GC/1.2.5n, `-O4,p -inline auto -schedule on`, with normal peephole optimization. Scheduling alone does not reproduce the original auxiliary handler's interleaved address setup/prologue when peephole optimization is disabled. The initialization fragment owns the exact 24-byte string at `802C9738..802C9750`, `.data` aligned to eight, and two four-byte small-BSS objects (`__DBInterface` and `DBVerbose`) at `803778C8..803778D0`, also aligned to eight. The query fragment references the same original interface and owns no data.
+
+All 220 text bytes, branch/address relocations and 24 initialized bytes compare exactly to the original DOL in `scratch/db/verify.py`; each fragment was independently compiled. Candidates list its literal size and linkage. The integrated fragments pass whole-DOL byte equality, native objdiff code/data checks and the original-source regression audit. Reference URLs and hashes are in `reference/melee-sdk/PROVENANCE.md`.

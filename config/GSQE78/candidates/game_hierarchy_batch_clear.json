@@ -1,0 +1,76 @@
+{
+  "source": "src/Game/hierarchy_batch_clear.cpp",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-proc",
+    "gekko",
+    "-fp",
+    "hardware",
+    "-enum",
+    "int",
+    "-str",
+    "reuse",
+    "-common",
+    "off",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-Cpp_exceptions",
+    "off",
+    "-use_lmw_stmw",
+    "on",
+    "-i",
+    "src/Game"
+  ],
+  "sections": {
+    ".text": [
+      2149590116,
+      2149590940
+    ]
+  },
+  "functions": [
+    {
+      "name": "fn_80202464",
+      "address": 2149590116,
+      "size": 824,
+      "section": ".text",
+      "scope": "global"
+    }
+  ],
+  "objects": [],
+  "source_kind": "c++",
+  "dependency_symbols": [],
+  "notes": "docs/notes/game-hierarchy-batch-actions.md",
+  "source_sha256": "107485eac5b05806c3bbea570f3cb5016e0ce16096c25cac110dfa28d91ccd92",
+  "validation": {
+    "relocations": 7,
+    "text_bytes": 824,
+    "initialized_data_bytes": 0,
+    "zero_byte_differences": true,
+    "private_header_sha256": {
+      "src/Game/group_runtime_internal.h": "1ba4d2f9c740af16f37202e50bfaab376485368df177d73faabe5d8e1eb87189",
+      "src/Game/hierarchy_batch_internal.h": "0639f54e6b24a450b6b6f1c374999779c2576addb9dd2269a818dd13fe174ee9"
+    },
+    "verification_script": "scratch/game_hierarchy_batch_actions/verify_batch_clear.py",
+    "integration_status": "verified full-DOL and objdiff"
+  },
+  "private_headers": [
+    "src/Game/group_runtime_internal.h",
+    "src/Game/hierarchy_batch_internal.h"
+  ],
+  "symbol_scopes": {
+    "fn_80202464": "global"
+  },
+  "external_padding": [],
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "107485eac5b05806c3bbea570f3cb5016e0ce16096c25cac110dfa28d91ccd92",
+    "matched_code": 824,
+    "matched_functions": 1,
+    "matched_data": 0,
+    "complete_data": 0,
+    "object_path": "build/GSQE78/src/Game/hierarchy_batch_clear.o",
+    "object_sha256": "549ae39ec88d48df8c0d763caf26ab50903376f6e2e062209e6141d40e9dffec"
+  }
+}

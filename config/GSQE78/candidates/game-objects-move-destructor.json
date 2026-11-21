@@ -1,0 +1,219 @@
+{
+  "status": "isolated-byte-match",
+  "source": "src/Game/objects_move_destructor.cpp",
+  "source_sha256": "4aad06fde7ecf59cab58db03d22552a4e4c3d90b4f709157f64978e4dedf87fc",
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-proc",
+    "gekko",
+    "-fp",
+    "hardware",
+    "-enum",
+    "int",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-Cpp_exceptions",
+    "off",
+    "-RTTI",
+    "off",
+    "-str",
+    "reuse",
+    "-common",
+    "off",
+    "-use_lmw_stmw",
+    "on",
+    "-i",
+    "include"
+  ],
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2149743368,
+      "end": 2149743664,
+      "alignment": 4
+    }
+  ],
+  "functions": [
+    {
+      "name": "__dt__11ObjectsMoveFv",
+      "address": 2149743368,
+      "size": 296,
+      "scope": "global",
+      "section": ".text",
+      "object_offset": 0
+    }
+  ],
+  "objects": [],
+  "unlinked_functions": [],
+  "headers": [],
+  "notes": "docs/notes/game-objects-move-destructor.md",
+  "actual_relocations": [
+    {
+      "section": ".text",
+      "at": 38,
+      "address": 2149743406,
+      "kind": 6,
+      "symbol": "__vt__11ObjectsMove",
+      "target": 2150545032,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 42,
+      "address": 2149743410,
+      "kind": 4,
+      "symbol": "__vt__11ObjectsMove",
+      "target": 2150545032,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 62,
+      "address": 2149743430,
+      "kind": 6,
+      "symbol": "lbl_801E9D24",
+      "target": 2149489956,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 66,
+      "address": 2149743434,
+      "kind": 4,
+      "symbol": "lbl_801E9D24",
+      "target": 2149489956,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 164,
+      "address": 2149743532,
+      "kind": 10,
+      "symbol": "fn_801E5EA4",
+      "target": 2149473956,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 176,
+      "address": 2149743544,
+      "kind": 10,
+      "symbol": "__dt__19RecordPool_80209D30Fv",
+      "target": 2149621040,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 204,
+      "address": 2149743572,
+      "kind": 10,
+      "symbol": "__dt__15Handle_801F7F10Fv",
+      "target": 2149547792,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 224,
+      "address": 2149743592,
+      "kind": 10,
+      "symbol": "__dt__15Handle_801F7F10Fv",
+      "target": 2149547792,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 236,
+      "address": 2149743604,
+      "kind": 10,
+      "symbol": "__dt__20ObjectsBase_802EB3F8Fv",
+      "target": 2147643176,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 250,
+      "address": 2149743618,
+      "kind": 6,
+      "symbol": "lbl_801EF5C8",
+      "target": 2149512648,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 258,
+      "address": 2149743626,
+      "kind": 4,
+      "symbol": "lbl_801EF5C8",
+      "target": 2149512648,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 260,
+      "address": 2149743628,
+      "kind": 10,
+      "symbol": "fn_801EF610",
+      "target": 2149512720,
+      "addend": 0
+    }
+  ],
+  "dependency_symbols": [
+    {
+      "name": "__dt__15Handle_801F7F10Fv",
+      "address": 2149547792,
+      "scope": "global",
+      "section": ".text"
+    },
+    {
+      "name": "__dt__19RecordPool_80209D30Fv",
+      "address": 2149621040,
+      "scope": "global",
+      "section": ".text"
+    },
+    {
+      "name": "__dt__20ObjectsBase_802EB3F8Fv",
+      "address": 2147643176,
+      "scope": "global",
+      "section": ".text",
+      "original_symbol": "dtor_80026F28"
+    },
+    {
+      "name": "__vt__11ObjectsMove",
+      "address": 2150545032,
+      "scope": "global",
+      "section": ".data"
+    },
+    {
+      "name": "fn_801E5EA4",
+      "address": 2149473956,
+      "scope": "global",
+      "section": ".text"
+    },
+    {
+      "name": "fn_801EF610",
+      "address": 2149512720,
+      "scope": "global",
+      "section": ".text"
+    },
+    {
+      "name": "lbl_801E9D24",
+      "address": 2149489956,
+      "scope": "global",
+      "section": ".text"
+    },
+    {
+      "name": "lbl_801EF5C8",
+      "address": 2149512648,
+      "scope": "global",
+      "section": ".text"
+    }
+  ],
+  "validation": {
+    "retained_text_bytes": 296,
+    "relocations": 12,
+    "initialized_data_bytes": 0,
+    "bss_bytes": 0,
+    "owned_padding_bytes": 0
+  }
+}

@@ -1,0 +1,2 @@
+/* Original short control delegates; see docs/notes/game-short-control-delegates.md. */
+struct Object{char opaque00[0x318];};struct Record{char opaque00[0x84];int count;};struct Control{char opaque00[8];Object*object;Record*record;};extern "C"void fn_8007D7F4(void*,int);extern "C"void fn_8008A064(Control*self){if(self->record->count>1)fn_8007D7F4((char*)self->object+0x318,0x22);}

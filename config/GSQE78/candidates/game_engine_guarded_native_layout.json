@@ -1,0 +1,222 @@
+[
+  {
+    "status": "isolated-byte-match",
+    "source": "src/Game/engine_guarded_native_layout_800C42D8.cpp",
+    "source_sha256": "ae79e136319bf410ea0a8d8e7c7510ca1f086b4bd723eb8c8e7f5c9295be883d",
+    "header_sha256": {},
+    "headers": [],
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": "extab",
+        "start": 2147560100,
+        "end": 2147560128,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147601692,
+        "end": 2147601704,
+        "alignment": 4
+      },
+      {
+        "name": ".text",
+        "start": 2148287192,
+        "end": 2148287284,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "__ct__15Object_800C42D8Fv",
+        "address": 2148287192,
+        "size": 92,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0,
+        "original_symbol": "fn_800C42D8"
+      }
+    ],
+    "objects": [
+      {
+        "name": "@9",
+        "section": "extab",
+        "object_offset": 0,
+        "address": 2147560100,
+        "size": 28,
+        "scope": "local"
+      },
+      {
+        "name": "@10",
+        "section": "extabindex",
+        "object_offset": 0,
+        "address": 2147601692,
+        "size": 12,
+        "scope": "local"
+      }
+    ],
+    "unlinked_functions": [],
+    "verified_text_bytes": 92,
+    "verified_data_bytes": 40,
+    "notes": "docs/notes/game-engine-guarded-native-layout.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 20,
+        "address": 2148287212,
+        "kind": 10,
+        "symbol": "__ct__13Manipulator_ZFv",
+        "target": 2149662396,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 26,
+        "address": 2148287218,
+        "kind": 6,
+        "symbol": "lbl_802BF7DC",
+        "target": 2150365148,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 34,
+        "address": 2148287226,
+        "kind": 4,
+        "symbol": "lbl_802BF7DC",
+        "target": 2150365148,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 44,
+        "address": 2148287236,
+        "kind": 10,
+        "symbol": "__ct__15Handle_801F7F10Fv",
+        "target": 2149547780,
+        "addend": 0
+      },
+      {
+        "section": "extab",
+        "at": 24,
+        "address": 2147560124,
+        "kind": 1,
+        "symbol": "__dt__13Manipulator_ZFv",
+        "target": 2147645836,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147601692,
+        "kind": 1,
+        "symbol": "__ct__15Object_800C42D8Fv",
+        "target": 2148287192,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147601700,
+        "kind": 1,
+        "symbol": "@9",
+        "target": 2147560100,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "__ct__15Handle_801F7F10Fv",
+        "address": 2149547780,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "__ct__13Manipulator_ZFv",
+        "address": 2149662396,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "__dt__13Manipulator_ZFv",
+        "address": 2147645836,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_802BF7DC",
+        "address": 2150365148,
+        "section": ".data",
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "retained_text_bytes": 92,
+      "initialized_data_bytes": 40,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 7,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    },
+    "applied_compiled_consumer_migration": {
+      "proof": "scratch/continuation_20261010/factory-c42d8-consumer-migration/proof.json",
+      "proof_sha256": "fb6a27abe8f949cfe62b6a43fd33119748dcdfc4f776912f421d98813b5c1a28",
+      "consumers": [
+        "src/Game/factories_8007E160.cpp"
+      ],
+      "after_sha256": {
+        "config/GSQE78/candidates/game_factories_8007E160.json": "cb04c0ce30eaacbe21a492290c224b0e0cef04ec243b96f73b27704f7494b7f9",
+        "src/Game/factories_8007E160.cpp": "39804402e095b9fab12b5623308081f590beb13759dd5f9f9b8f925fb96cfb40"
+      },
+      "original_snapshots_preserved": true,
+      "allocated_bytes_and_resolved_targets_unchanged": true
+    },
+    "superseded_unintegrated_source": "src/Game/engine_guarded_native_construct_800C42D8.cpp",
+    "previous_pending_compiled_consumer_migrations": [
+      {
+        "source": "src/Game/factories_8007E160.cpp",
+        "source_sha256": "2672d58c8b5ebb66f4b9334d4e33d8896a25f2004dd1cce7ac6a30c02e469333",
+        "canonical_manifest": "config/GSQE78/candidates/game_factories_8007E160.json",
+        "canonical_manifest_sha256": "8db32392dda57fcdacab6be770112b8cab2bae73629326e5ccfc0d074a9f21ea",
+        "original_symbol": "fn_800C42D8",
+        "name": "__ct__15Object_800C42D8Fv",
+        "identifier_occurrences": 2
+      }
+    ],
+    "memcard_native_identity_migration": {
+      "description": "Current canonical identities and hashes verified after native CGCMemCardManipulator/CFSM ownership integration; original evidence is retained in immutable backups and explicit previous receipts.",
+      "production_verification": "scratch/memcard_native_vtable_20261020_parallel/production-verification.json",
+      "production_verification_sha256": "96e50e874bd53c148cd6395f670c040416c34699787d56726d8cfb010c340f31",
+      "migration_object_audit": "scratch/memcard_native_vtable_20261020_parallel/migration_object_audit.json",
+      "migration_object_audit_sha256": "b809560bf7212a505b2ea749256bef5263b4784d066bb311015e10928e90db9d",
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "unchanged_caller_objects": 344,
+      "native_objects": 6,
+      "native_actual_relocations": 281,
+      "previous_canonical_sha256": "261ad8d14b1327d51ee1cb2ea159d6449a4ecc29b5945799deb9e3456e7b7415",
+      "previous_canonical": "scratch/memcard_canonical_refresh_20261020_parallel/backups/config/GSQE78/candidates/game_engine_guarded_native_layout.json",
+      "previous_entry_json_pointer": "/0"
+    }
+  }
+]

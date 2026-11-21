@@ -1,0 +1,32 @@
+/* Original record setup with observed private scalar fields.
+ * See docs/notes/game-record-setup-late.md. */
+extern const float lbl_8037B3E8;
+extern const unsigned char lbl_802EC210[];
+extern void fn_80243F28(void *object);
+void *fn_80247458(void *object) {
+    fn_80243F28(object);
+    *(const void * *)((char *)object+8)=lbl_802EC210;
+    *(unsigned int *)((char *)object+192)=0;
+    *(unsigned int *)((char *)object+196)=0;
+    *(unsigned int *)((char *)object+200)=0;
+    *(unsigned short *)((char *)object+108)=5;
+    *(unsigned short *)((char *)object+188)=0;
+    *(unsigned int *)((char *)object+116)=0;
+    *(unsigned int *)((char *)object+124)=0;
+    *(unsigned int *)((char *)object+128)=0;
+    *(unsigned int *)((char *)object+132)=0;
+    *(unsigned int *)((char *)object+136)=0;
+    *(unsigned int *)((char *)object+140)=0;
+    *(unsigned int *)((char *)object+144)=0;
+    *(unsigned int *)((char *)object+148)=0;
+    *(unsigned int *)((char *)object+152)=0;
+    *(unsigned int *)((char *)object+156)=0;
+    *(unsigned int *)((char *)object+160)=0;
+    *(unsigned int *)((char *)object+164)=0;
+    *(unsigned int *)((char *)object+168)=0;
+    *(unsigned int *)((char *)object+172)=0;
+    *(unsigned int *)((char *)object+176)=0;
+    *(unsigned int *)((char *)object+120)=0;
+    *(float *)((char *)object+184)=lbl_8037B3E8;
+    return object;
+}

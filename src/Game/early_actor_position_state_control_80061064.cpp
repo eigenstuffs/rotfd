@@ -1,0 +1,2 @@
+#include "Game/early_actor_position_state_control_views.h"
+extern "C"void fn_80061064(PositionStateActor*self,int value){fn_801FA014(lbl_801E9D24.logger,lbl_8029B9C8);fn_8002B824(self,value);fn_8007D6A0((char*)resolveActor(self->actor)+0x318,0);const PositionStateVector&source=resolveActor(*resolveActor(self->actor)->slot37(0))->transform->position;PositionStateVector position(source.x,source.y,source.z);PositionStateActor*target=resolveActor(self->actor);target->targetPosition=position;target->targetPosition.y=lbl_803786C0;}

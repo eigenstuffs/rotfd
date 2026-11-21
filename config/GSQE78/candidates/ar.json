@@ -1,0 +1,198 @@
+{
+  "source": "src/dolphin/ar/ar.c",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.2.5n",
+  "cflags": "-proc gekko -fp hardware -enum int -str reuse -common off -O4,p -inline auto -i src/dolphin/ar -Cpp_exceptions off",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2148529188,
+      "end": 2148535952
+    },
+    {
+      "name": ".data",
+      "start": 2150410528,
+      "end": 2150410596
+    },
+    {
+      "name": ".sdata",
+      "start": 2151112032,
+      "end": 2151112036
+    },
+    {
+      "name": ".sbss",
+      "start": 2151119616,
+      "end": 2151119648
+    }
+  ],
+  "functions": [
+    {
+      "name": "ARRegisterDMACallback",
+      "address": 2148529188,
+      "size": 68
+    },
+    {
+      "name": "ARStartDMA",
+      "address": 2148529256,
+      "size": 240
+    },
+    {
+      "name": "ARInit",
+      "address": 2148529496,
+      "size": 196
+    },
+    {
+      "name": "ARGetBaseAddress",
+      "address": 2148529692,
+      "size": 8
+    },
+    {
+      "name": "__ARHandler",
+      "address": 2148529700,
+      "size": 120
+    },
+    {
+      "name": "__ARChecksize",
+      "address": 2148529820,
+      "size": 6132
+    }
+  ],
+  "objects": [
+    {
+      "name": "__ARVersion",
+      "address": 2151112032,
+      "size": 4,
+      "section": ".sdata"
+    },
+    {
+      "name": "__AR_Callback",
+      "address": 2151119616,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "__AR_Size",
+      "address": 2151119620,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "__AR_InternalSize",
+      "address": 2151119624,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "__AR_ExpansionSize",
+      "address": 2151119628,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "__AR_StackPointer",
+      "address": 2151119632,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "__AR_FreeBlocks",
+      "address": 2151119636,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "__AR_BlockLength",
+      "address": 2151119640,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "__AR_init_flag",
+      "address": 2151119644,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "@1",
+      "address": 2150410528,
+      "size": 68,
+      "section": ".data",
+      "scope": "local",
+      "compiler_assembly_name": "\"@1\"",
+      "data_kind": "string"
+    }
+  ],
+  "symbol_scopes": {
+    "ARRegisterDMACallback": "global",
+    "ARStartDMA": "global",
+    "ARInit": "global",
+    "ARGetBaseAddress": "global",
+    "__ARHandler": "local",
+    "__ARChecksize": "local",
+    "__ARVersion": "global",
+    "__AR_Callback": "local",
+    "__AR_Size": "local",
+    "__AR_InternalSize": "local",
+    "__AR_ExpansionSize": "local",
+    "__AR_StackPointer": "local",
+    "__AR_FreeBlocks": "local",
+    "__AR_BlockLength": "local",
+    "__AR_init_flag": "local",
+    "@1": "local"
+  },
+  "symbols": {
+    "ARRegisterDMACallback": "0x800ff424",
+    "ARStartDMA": "0x800ff468",
+    "ARInit": "0x800ff558",
+    "ARGetBaseAddress": "0x800ff61c",
+    "__ARHandler": "0x800ff624",
+    "__ARChecksize": "0x800ff69c",
+    "__ARVersion": "0x80375d60",
+    "__AR_Callback": "0x80377b00",
+    "__AR_Size": "0x80377b04",
+    "__AR_InternalSize": "0x80377b08",
+    "__AR_ExpansionSize": "0x80377b0c",
+    "__AR_StackPointer": "0x80377b10",
+    "__AR_FreeBlocks": "0x80377b14",
+    "__AR_BlockLength": "0x80377b18",
+    "__AR_init_flag": "0x80377b1c",
+    "OSDisableInterrupts": "0x800f362c",
+    "OSRestoreInterrupts": "0x800f3654",
+    "OSRegisterVersion": "0x800f1898",
+    "__OSSetInterruptHandler": "0x800f3678",
+    "__OSUnmaskInterrupts": "0x800f3a7c",
+    "OSClearContext": "0x800f2ad4",
+    "OSSetCurrentContext": "0x800f290c",
+    "DCFlushRange": "0x800f2268",
+    "DCInvalidateRange": "0x800f223c",
+    "PPCSync": "0x800f0dd8",
+    "memset": "0x80005434",
+    "@1": "0x802ca920"
+  },
+  "external_original_names": {
+    "OSDisableInterrupts": "OSDisableInterrupts",
+    "OSRestoreInterrupts": "OSRestoreInterrupts",
+    "OSRegisterVersion": "OSRegisterVersion",
+    "__OSSetInterruptHandler": "__OSSetInterruptHandler",
+    "__OSUnmaskInterrupts": "__OSUnmaskInterrupts",
+    "OSClearContext": "OSClearContext",
+    "OSSetCurrentContext": "OSSetCurrentContext",
+    "DCFlushRange": "DCFlushRange",
+    "DCInvalidateRange": "DCInvalidateRange",
+    "PPCSync": "fn_800F0DD8",
+    "memset": "memset"
+  },
+  "verified_text_bytes": 6764,
+  "verified_data_bytes": 72,
+  "source_kind": "c",
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "4d7fa064bafd6adf62c77f6261e739470e5fde4a790c852e548010015360645c",
+    "matched_code": 6764,
+    "matched_functions": 6,
+    "matched_data": 104,
+    "complete_data": 104,
+    "object_path": "build/GSQE78/src/dolphin/ar/ar.o",
+    "object_sha256": "28397518b434b06b9b37c4b4cb8209389c94df65867a67c72d0b3aedc2fbd6b9"
+  }
+}

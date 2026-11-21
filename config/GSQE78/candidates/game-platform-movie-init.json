@@ -1,0 +1,158 @@
+{
+  "status": "integrated-byte-match",
+  "source": "src/Game/platform_movie_init.cpp",
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-proc",
+    "gekko",
+    "-fp",
+    "hardware",
+    "-enum",
+    "int",
+    "-str",
+    "reuse",
+    "-common",
+    "off",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-Cpp_exceptions",
+    "off",
+    "-RTTI",
+    "off",
+    "-use_lmw_stmw",
+    "on",
+    "-fp_contract",
+    "on",
+    "-i",
+    "src/Game",
+    "-i",
+    "include",
+    "-i",
+    "src/dolphin",
+    "-i",
+    "src/dolphin/ax"
+  ],
+  "source_kind": "c++",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2150160236,
+      "end": 2150160404,
+      "alignment": 4
+    }
+  ],
+  "functions": [
+    {
+      "name": "fn_8028D76C",
+      "address": 2150160236,
+      "size": 168,
+      "scope": "global",
+      "section": ".text",
+      "object_offset": 0,
+      "sha256": "114b9e30d7120bc34c9a338c3a920195ea8201940751c5f9514616d133b4af57"
+    }
+  ],
+  "objects": [],
+  "unlinked_functions": [],
+  "dependency_symbols": [
+    {
+      "name": "GXNtsc480Int",
+      "address": 2150431156,
+      "scope": "global"
+    },
+    {
+      "name": "VIGetTvFormat",
+      "address": 2148519724,
+      "scope": "global"
+    },
+    {
+      "name": "fn_801C9AC0",
+      "address": 2149358272,
+      "scope": "global"
+    },
+    {
+      "name": "fn_801EFA1C",
+      "address": 2149513756,
+      "scope": "global"
+    },
+    {
+      "name": "lbl_801EF5C8",
+      "address": 2149512648,
+      "scope": "global"
+    },
+    {
+      "name": "lbl_802AF7A0",
+      "address": 2150299552,
+      "scope": "global"
+    },
+    {
+      "name": "lbl_802AF7B0",
+      "address": 2150299568,
+      "scope": "global"
+    },
+    {
+      "name": "lbl_80378104",
+      "address": 2151121156,
+      "scope": "global"
+    },
+    {
+      "name": "lbl_80378120",
+      "address": 2151121184,
+      "scope": "global"
+    }
+  ],
+  "source_sha256": "7caafb1e73dadacc5b68608b88d6429685049a569e63fb489b7c63d5fbfca549",
+  "headers": [
+    {
+      "path": "include/Game/platform_movie_init_internal.h",
+      "sha256": "5976ccbc80193edc213fb19ce7cdf4e5c66f63caf160f4802b041fe21bc350ee"
+    },
+    {
+      "path": "include/Game/platform_video_resume_internal.h",
+      "sha256": "1e7d9bbf62090be4bed2f7bf39fe343712e14414b1958466e42e4642b75b7943"
+    },
+    {
+      "path": "include/Game/platform_disc_wait_internal.h",
+      "sha256": "acdb63e4a68a0e7101cadf0197b7921bd374573f41e464063b13a17dc4807812"
+    },
+    {
+      "path": "include/Game/platform_disc_read.h",
+      "sha256": "c15d9e442a60c5e788fd0a64fe7f33d88971fe3adb70a34a2ffd87c5f3950b54"
+    },
+    {
+      "path": "include/Game/platform_disc_status.h",
+      "sha256": "d4cdaa60f78753f186a4addd883f27a891abd8dfdb834bcb8f3bd4b3e20d8910"
+    }
+  ],
+  "validation": {
+    "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "object_sha256": "389d2c60b5dad75d71f42ec2094b9bb7a1981006c71b066177d3560e83c7c4e3",
+    "retained_text_bytes": 168,
+    "emitted_text_bytes": 168,
+    "initialized_data_bytes": 0,
+    "bss_bytes": 0,
+    "emitted_data_bytes": 0,
+    "unlinked_text_bytes": 0,
+    "weak_functions": 0,
+    "relocations": 13,
+    "emitted_relocations": 13,
+    "zero_byte_differences": true,
+    "all_retained_allocated_bytes_verified": true,
+    "all_emitted_allocated_bytes_accounted": true,
+    "owned_padding_bytes": 0,
+    "verification_script": "scratch/game_movie_platform/verify_init.py",
+    "integration_status": "verified full-DOL and objdiff"
+  },
+  "notes": "docs/notes/game-platform-movie-init.md",
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "7caafb1e73dadacc5b68608b88d6429685049a569e63fb489b7c63d5fbfca549",
+    "matched_code": 168,
+    "matched_functions": 1,
+    "matched_data": 0,
+    "complete_data": 0,
+    "object_path": "build/GSQE78/src/Game/platform_movie_init.o",
+    "object_sha256": "389d2c60b5dad75d71f42ec2094b9bb7a1981006c71b066177d3560e83c7c4e3"
+  }
+}

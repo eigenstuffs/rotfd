@@ -1,0 +1,71 @@
+{
+  "source": "src/dolphin/os/OSAudioSystem.c",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.2.5n",
+  "cflags": "-proc gekko -fp hardware -enum int -str reuse -common off -O4,p -inline auto -Cpp_exceptions off",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2148474772,
+      "end": 2148475432
+    },
+    {
+      "name": ".data",
+      "start": 2150406488,
+      "end": 2150406616
+    }
+  ],
+  "functions": [
+    {
+      "name": "__OSInitAudioSystem",
+      "address": 2148474772,
+      "size": 444
+    },
+    {
+      "name": "__OSStopAudioSystem",
+      "address": 2148475216,
+      "size": 216
+    }
+  ],
+  "objects": [
+    {
+      "name": "DSPInitCode",
+      "address": 2150406488,
+      "size": 128,
+      "section": ".data"
+    }
+  ],
+  "symbol_scopes": {
+    "__OSInitAudioSystem": "global",
+    "__OSStopAudioSystem": "global",
+    "DSPInitCode": "local"
+  },
+  "symbols": {
+    "PyType_Type": "0x802d68fc",
+    "__OSInitAudioSystem": "0x800f1f94",
+    "__OSStopAudioSystem": "0x800f2150",
+    "DSPInitCode": "0x802c9958",
+    "OSGetArenaHi": "0x800f1f74",
+    "memcpy": "0x80005520",
+    "DCFlushRange": "0x800f2268",
+    "OSGetTick": "0x800f6c0c"
+  },
+  "external_original_names": {
+    "OSGetArenaHi": "OSGetArenaHi",
+    "memcpy": "memcpy",
+    "DCFlushRange": "DCFlushRange",
+    "OSGetTick": "OSGetTick"
+  },
+  "verified_text_bytes": 660,
+  "verified_data_bytes": 128,
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "4d97de3b8897d83a108e72fdffea317960324117d187f2fac18c15e09ffcba49",
+    "matched_code": 660,
+    "matched_functions": 2,
+    "matched_data": 128,
+    "complete_data": 128,
+    "object_path": "build/GSQE78/src/dolphin/os/OSAudioSystem.o",
+    "object_sha256": "43763d825e462b13e3462b5b07cab3ef946d01457b95e802d87ce6483f33057e"
+  }
+}

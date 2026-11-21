@@ -1,0 +1,9 @@
+# Early controller operation selection
+
+Batch90 frozen isolated exact handoff, pending central integration. `src/Game/early_controller_operation_select_8005db90.cpp` reconstructs fn8005DB90, text8005DB90..8005DD14 (388 bytes), extab8000AF24..8000AF2C (8), index800182B8..800182C4 (12). Its only shared declaration consumer is `include/Game/early_controller_operation_select_views.h`.
+
+The ordinary source logs the transition using the original external string, forwards its input to the owner update, resolves the generation-checked controller handle at70, and calls its observed virtual binding slot1A4. It then queries the scene selector at15058, starts operation5 on success or4 otherwise, and writes the returned selection to owner90. Loading the selector into an ordinary local before initializing the result to-1 preserves the native scheduling of the stack store; the initial direct argument source had four scheduling differences.
+
+GC/1.3.2 with `-O4,s -Cpp_exceptions on` emits exactly the three retained sections. The strict verifier resolves all15 retained ELF relocations and compares every allocated byte against the original DOL; one nonallocated compiler category reference is accounted for. Actual local EH names/extents are frozen in the emission reference. No weak code, compiler-owned literals, BSS, padding, aliases, native identity migrations, or original constructor/destructor references are introduced. The external string remains with its original owner.
+
+The complete original extabindex80015F60..8001F2C0, .ctors80299920..80299980 and .dtors80299980..802999A0 tables were audited. Run `scratch/game_early_controller_operation_select/early_controller_operation_select_8005db90/verify.py`. Original DOL SHA1 is5da8295a79bf297ab62c620e6ac66210be1c6ef5. Source/header/evidence are frozen; matching credit requires central original-hash acceptance.

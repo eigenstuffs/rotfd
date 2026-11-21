@@ -1,0 +1,7 @@
+# MetroTRK initialization
+
+`src/MetroTRK/nubinit.c` recovers TRKNubWelcome, TRKTerminateNub and TRKInitializeNub at 0x80117E64..0x80117FE4 (384 code bytes). The [Melee reference](https://github.com/doldecomp/melee/blob/master/src/MetroTRK/nubinit.c) supplies the endian check and staged initialization of events, buffers, dispatcher, UART, serial handler and target support. The endian helper is static inline, matching its original inlined body. Source order follows the target.
+
+The original greeting identifies this target's debugger as `MetroTRK for GAMECUBE v0.9`; the reference has the older Dolphin v0.8 greeting. The exact 27-byte target string occupies .rodata:0x802AB8F0..0x802AB90B (alignment 8), followed by five external alignment bytes. gTRKBigEndian occupies .bss:0x803390A0..0x803390A4 (4 bytes, alignment 8), followed by four external alignment bytes. There are no additional owned data objects.
+
+GC/1.3.2 with `-proc gekko -fp hardware -enum int -str reuse -common off -O4,p -inline on,noauto -sdata 0 -sdata2 0 -pool off -use_lmw_stmw on -rostr -i src/MetroTRK -Cpp_exceptions off` reproduces all 384 code bytes and 27 initialized bytes after relocation against the original DOL. The shared TRK ABI only gained external function declarations; mainloop and nubevent were recompiled and remained byte-identical. Scripts and manifests record all original external identities. No assembly is introduced; full-DOL and native objdiff remain integration checks.

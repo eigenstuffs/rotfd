@@ -1,0 +1,316 @@
+{
+  "source": "src/dolphin/ai/ai.c",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.2.5n",
+  "cflags": "-proc gekko -fp hardware -enum int -str reuse -common off -O4,p -inline auto -i src/dolphin/ai -Cpp_exceptions off",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2148526876,
+      "end": 2148528616
+    },
+    {
+      "name": ".data",
+      "start": 2150410456,
+      "end": 2150410524
+    },
+    {
+      "name": ".sdata",
+      "start": 2151112024,
+      "end": 2151112028
+    },
+    {
+      "name": ".sbss",
+      "start": 2151119552,
+      "end": 2151119616
+    }
+  ],
+  "functions": [
+    {
+      "name": "AIRegisterDMACallback",
+      "address": 2148526876,
+      "size": 68
+    },
+    {
+      "name": "AIInitDMA",
+      "address": 2148526944,
+      "size": 136
+    },
+    {
+      "name": "AIStartDMA",
+      "address": 2148527080,
+      "size": 24
+    },
+    {
+      "name": "AIStopDMA",
+      "address": 2148527104,
+      "size": 24
+    },
+    {
+      "name": "AIGetDMABytesLeft",
+      "address": 2148527128,
+      "size": 16
+    },
+    {
+      "name": "AICheckInit",
+      "address": 2148527144,
+      "size": 8
+    },
+    {
+      "name": "AISetStreamPlayState",
+      "address": 2148527152,
+      "size": 216
+    },
+    {
+      "name": "AIGetStreamPlayState",
+      "address": 2148527368,
+      "size": 16
+    },
+    {
+      "name": "AISetDSPSampleRate",
+      "address": 2148527384,
+      "size": 224
+    },
+    {
+      "name": "AIGetDSPSampleRate",
+      "address": 2148527608,
+      "size": 20
+    },
+    {
+      "name": "__AI_set_stream_sample_rate",
+      "address": 2148527628,
+      "size": 212
+    },
+    {
+      "name": "AIGetStreamSampleRate",
+      "address": 2148527840,
+      "size": 16
+    },
+    {
+      "name": "AISetStreamVolLeft",
+      "address": 2148527856,
+      "size": 28
+    },
+    {
+      "name": "AIGetStreamVolLeft",
+      "address": 2148527884,
+      "size": 16
+    },
+    {
+      "name": "AISetStreamVolRight",
+      "address": 2148527900,
+      "size": 28
+    },
+    {
+      "name": "AIGetStreamVolRight",
+      "address": 2148527928,
+      "size": 16
+    },
+    {
+      "name": "AIInit",
+      "address": 2148527944,
+      "size": 364
+    },
+    {
+      "name": "AIReset",
+      "address": 2148528308,
+      "size": 12
+    },
+    {
+      "name": "__AISHandler",
+      "address": 2148528320,
+      "size": 124
+    },
+    {
+      "name": "__AIDHandler",
+      "address": 2148528444,
+      "size": 172
+    }
+  ],
+  "objects": [
+    {
+      "name": "__AIVersion",
+      "address": 2151112024,
+      "size": 4,
+      "section": ".sdata"
+    },
+    {
+      "name": "__AIS_Callback",
+      "address": 2151119552,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "__AID_Callback",
+      "address": 2151119556,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "__CallbackStack",
+      "address": 2151119560,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "__OldStack",
+      "address": 2151119564,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "__AI_init_flag",
+      "address": 2151119568,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "__AID_Active",
+      "address": 2151119572,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "bound_32KHz",
+      "address": 2151119576,
+      "size": 8,
+      "section": ".sbss"
+    },
+    {
+      "name": "bound_48KHz",
+      "address": 2151119584,
+      "size": 8,
+      "section": ".sbss"
+    },
+    {
+      "name": "min_wait",
+      "address": 2151119592,
+      "size": 8,
+      "section": ".sbss"
+    },
+    {
+      "name": "max_wait",
+      "address": 2151119600,
+      "size": 8,
+      "section": ".sbss"
+    },
+    {
+      "name": "buffer",
+      "address": 2151119608,
+      "size": 8,
+      "section": ".sbss"
+    },
+    {
+      "name": "@1",
+      "address": 2150410456,
+      "size": 68,
+      "section": ".data",
+      "scope": "local",
+      "compiler_assembly_name": "\"@1\"",
+      "data_kind": "string"
+    }
+  ],
+  "symbol_scopes": {
+    "AIRegisterDMACallback": "global",
+    "AIInitDMA": "global",
+    "AIStartDMA": "global",
+    "AIStopDMA": "global",
+    "AIGetDMABytesLeft": "global",
+    "AICheckInit": "global",
+    "AISetStreamPlayState": "global",
+    "AIGetStreamPlayState": "global",
+    "AISetDSPSampleRate": "global",
+    "AIGetDSPSampleRate": "global",
+    "__AI_set_stream_sample_rate": "local",
+    "AIGetStreamSampleRate": "global",
+    "AISetStreamVolLeft": "global",
+    "AIGetStreamVolLeft": "global",
+    "AISetStreamVolRight": "global",
+    "AIGetStreamVolRight": "global",
+    "AIInit": "global",
+    "AIReset": "global",
+    "__AISHandler": "local",
+    "__AIDHandler": "local",
+    "__AIVersion": "global",
+    "__AIS_Callback": "local",
+    "__AID_Callback": "local",
+    "__CallbackStack": "global",
+    "__OldStack": "global",
+    "__AI_init_flag": "local",
+    "__AID_Active": "local",
+    "bound_32KHz": "global",
+    "bound_48KHz": "global",
+    "min_wait": "global",
+    "max_wait": "global",
+    "buffer": "global",
+    "@1": "local"
+  },
+  "symbols": {
+    "AIRegisterDMACallback": "0x800feb1c",
+    "AIInitDMA": "0x800feb60",
+    "AIStartDMA": "0x800febe8",
+    "AIStopDMA": "0x800fec00",
+    "AIGetDMABytesLeft": "0x800fec18",
+    "AICheckInit": "0x800fec28",
+    "AISetStreamPlayState": "0x800fec30",
+    "AIGetStreamPlayState": "0x800fed08",
+    "AISetDSPSampleRate": "0x800fed18",
+    "AIGetDSPSampleRate": "0x800fedf8",
+    "__AI_set_stream_sample_rate": "0x800fee0c",
+    "AIGetStreamSampleRate": "0x800feee0",
+    "AISetStreamVolLeft": "0x800feef0",
+    "AIGetStreamVolLeft": "0x800fef0c",
+    "AISetStreamVolRight": "0x800fef1c",
+    "AIGetStreamVolRight": "0x800fef38",
+    "AIInit": "0x800fef48",
+    "AIReset": "0x800ff0b4",
+    "__AISHandler": "0x800ff0c0",
+    "__AIDHandler": "0x800ff13c",
+    "__AIVersion": "0x80375d58",
+    "__AIS_Callback": "0x80377ac0",
+    "__AID_Callback": "0x80377ac4",
+    "__CallbackStack": "0x80377ac8",
+    "__OldStack": "0x80377acc",
+    "__AI_init_flag": "0x80377ad0",
+    "__AID_Active": "0x80377ad4",
+    "bound_32KHz": "0x80377ad8",
+    "bound_48KHz": "0x80377ae0",
+    "min_wait": "0x80377ae8",
+    "max_wait": "0x80377af0",
+    "buffer": "0x80377af8",
+    "OSDisableInterrupts": "0x800f362c",
+    "OSRestoreInterrupts": "0x800f3654",
+    "__AI_SRC_INIT": "0x800ff240",
+    "OSRegisterVersion": "0x800f1898",
+    "__OSSetInterruptHandler": "0x800f3678",
+    "__OSUnmaskInterrupts": "0x800f3a7c",
+    "OSClearContext": "0x800f2ad4",
+    "OSSetCurrentContext": "0x800f290c",
+    "__AICallbackStackSwitch": "0x800ff1e8",
+    "@1": "0x802ca8d8"
+  },
+  "external_original_names": {
+    "OSDisableInterrupts": "OSDisableInterrupts",
+    "OSRestoreInterrupts": "OSRestoreInterrupts",
+    "__AI_SRC_INIT": "fn_800FF240",
+    "OSRegisterVersion": "OSRegisterVersion",
+    "__OSSetInterruptHandler": "__OSSetInterruptHandler",
+    "__OSUnmaskInterrupts": "__OSUnmaskInterrupts",
+    "OSClearContext": "OSClearContext",
+    "OSSetCurrentContext": "OSSetCurrentContext",
+    "__AICallbackStackSwitch": "fn_800FF1E8"
+  },
+  "verified_text_bytes": 1740,
+  "verified_data_bytes": 72,
+  "source_kind": "c",
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "2917b42c252e55c4ae213231641e6ac643c64c241522c40d58dc73f788113eeb",
+    "matched_code": 1740,
+    "matched_functions": 20,
+    "matched_data": 136,
+    "complete_data": 136,
+    "object_path": "build/GSQE78/src/dolphin/ai/ai.o",
+    "object_sha256": "2468f36e4d75d9cdcc631c6d34b27c11fe1248794dc53f5170c4fba104046586"
+  }
+}

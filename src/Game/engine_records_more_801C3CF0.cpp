@@ -1,0 +1,7 @@
+/* Original engine records and resource lifetime routines.
+ * See docs/notes/game-engine-records-more.md. */
+struct ObjectStorage_801C3CF0 {char pad[8];};struct Object_801C3CF0:ObjectStorage_801C3CF0 {virtual void slot08();virtual void slot0C();virtual void slot10();virtual void slot14();virtual void slot18();virtual void slot1C();};
+extern "C" {
+struct Handle_801C3CF0 {signed int tag:8;signed int index:24;};struct Entry_801C3CF0 {void *object;char pad[8];signed char tag;char tail[3];};struct Manager_801C3CF0 {char pad[8];struct Entry_801C3CF0 *entries;};extern struct {char pad[0x118];struct Manager_801C3CF0 *manager;} lbl_801E9D24;static inline void *resolve(const struct Handle_801C3CF0 *handle) {struct Entry_801C3CF0 *entry=&lbl_801E9D24.manager->entries[handle->index];if(entry->tag==handle->tag)return entry->object;return 0;}extern signed char slot1C__12BaseObject_ZFv(void *);extern void *fn_801F7EB8(void *);
+int fn_801C3CF0(void *object) {if(!slot1C__12BaseObject_ZFv(object))return 0;if(fn_801F7EB8((char *)object+0x30)){Object_801C3CF0 *resolved=(Object_801C3CF0 *)resolve((struct Handle_801C3CF0 *)((char *)object+0x30));resolved->slot1C();}return 1;}
+}

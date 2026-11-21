@@ -1,0 +1,138 @@
+[
+  {
+    "source": "src/Game/engine_record_clear.c",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,p",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "off",
+      "-i",
+      "include"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2149885620,
+        "end": 2149885952
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_8024A6B4",
+        "address": 2149885620,
+        "size": 332,
+        "scope": "global",
+        "kind": "record-flag-reset",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "verified_text_bytes": 332,
+    "verified_data_bytes": 0,
+    "relocations": [
+      {
+        "section": ".text",
+        "offset": 14,
+        "symbol": "lbl_801E9D24",
+        "target": "0x801e9d24",
+        "kind": 6
+      },
+      {
+        "section": ".text",
+        "offset": 38,
+        "symbol": "lbl_801E9D24",
+        "target": "0x801e9d24",
+        "kind": 4
+      },
+      {
+        "section": ".text",
+        "offset": 292,
+        "symbol": "lbl_8037B438",
+        "target": "0x8037b438",
+        "kind": 109
+      },
+      {
+        "section": ".text",
+        "offset": 300,
+        "symbol": "fn_8024A120",
+        "target": "0x8024a120",
+        "kind": 10
+      },
+      {
+        "section": ".text",
+        "offset": 308,
+        "symbol": "fn_8024C5D4",
+        "target": "0x8024c5d4",
+        "kind": 10
+      }
+    ],
+    "source_sha256": "1ebf6600ad7f295570dc2670311518b0f07a9c0c2d55441cfa30451b7a7c39d6",
+    "objects": [],
+    "unlinked_functions": [],
+    "headers": [
+      {
+        "path": "include/Game/engine_record_clear.h",
+        "sha256": "a703fe2aaac058e3f7f3a8a6b04a1af0906329c8eaf308696f789ecf59609bc7"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 14,
+        "address": 2149885634,
+        "kind": 6,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 38,
+        "address": 2149885658,
+        "kind": 4,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 292,
+        "address": 2149885912,
+        "kind": 109,
+        "symbol": "lbl_8037B438",
+        "target": 2151134264,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 300,
+        "address": 2149885920,
+        "kind": 10,
+        "symbol": "fn_8024A120",
+        "target": 2149884192,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 308,
+        "address": 2149885928,
+        "kind": 10,
+        "symbol": "fn_8024C5D4",
+        "target": 2149893588,
+        "addend": 0
+      }
+    ]
+  }
+]

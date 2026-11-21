@@ -1,0 +1,2 @@
+#include "Game/scene_callbacks_more.h"
+extern "C" void fn_800C2474(SceneCallbacksMore::Owner*self,void*value){void*child=fn_801EFA1C(lbl_801EF5C8,24,"Anonymous New","MessageBox.cpp",0x8A,4);if(child)child=fn_800C1A08(child);self->child=child;fn_800C1B58(self->child,value);self->current=self->data64;self->count=1;if(!self->service)self->service=lbl_801E9D24.service->value;if(!self->service)fn_801FA014(lbl_801E9D24.logger,"Message Box: No font, incorrect initialization !");}

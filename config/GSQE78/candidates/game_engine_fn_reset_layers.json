@@ -1,0 +1,4953 @@
+[
+  {
+    "status": "isolated-byte-match",
+    "source": "src/Game/engine_fn_reset_layers_80025E24.cpp",
+    "source_sha256": "3ea89b49fe4ad163e92e0b925207fef880dae072fe01826d6c9753c92ee308c9",
+    "header_sha256": {},
+    "headers": [],
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2147638820,
+        "end": 2147638956,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147508440,
+        "end": 2147508480,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147574848,
+        "end": 2147574860,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "__dt__15Object_80025E24Fv",
+        "address": 2147638820,
+        "size": 136,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0,
+        "original_symbol": "fn_80025E24"
+      }
+    ],
+    "objects": [
+      {
+        "name": "@16",
+        "section": "extab",
+        "object_offset": 0,
+        "address": 2147508440,
+        "size": 40,
+        "scope": "local"
+      },
+      {
+        "name": "@17",
+        "section": "extabindex",
+        "object_offset": 0,
+        "address": 2147574848,
+        "size": 12,
+        "scope": "local"
+      }
+    ],
+    "unlinked_functions": [],
+    "verified_text_bytes": 136,
+    "verified_data_bytes": 52,
+    "notes": "docs/notes/game-engine-fn-reset-layers.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 34,
+        "address": 2147638854,
+        "kind": 6,
+        "symbol": "lbl_802B062C",
+        "target": 2150303276,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 42,
+        "address": 2147638862,
+        "kind": 4,
+        "symbol": "lbl_802B062C",
+        "target": 2150303276,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 60,
+        "address": 2147638880,
+        "kind": 10,
+        "symbol": "fn_8009009C",
+        "target": 2148073628,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 74,
+        "address": 2147638894,
+        "kind": 6,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 82,
+        "address": 2147638902,
+        "kind": 4,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 84,
+        "address": 2147638904,
+        "kind": 10,
+        "symbol": "fn_801EF610",
+        "target": 2149512720,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 96,
+        "address": 2147638916,
+        "kind": 10,
+        "symbol": "__unexpected",
+        "target": 2148663772,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147574848,
+        "kind": 1,
+        "symbol": "__dt__15Object_80025E24Fv",
+        "target": 2147638820,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147574856,
+        "kind": 1,
+        "symbol": "@16",
+        "target": 2147508440,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "__unexpected",
+        "address": 2148663772,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_8009009C",
+        "address": 2148073628,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_801EF610",
+        "address": 2149512720,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_801EF5C8",
+        "address": 2149512648,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_802B062C",
+        "address": 2150303276,
+        "section": ".data",
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "retained_text_bytes": 136,
+      "initialized_data_bytes": 52,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 9,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match",
+    "source": "src/Game/engine_fn_reset_layers_80026A78.cpp",
+    "source_sha256": "a9ab5b6e7c991154528f30192455c2c0b2a072e782b3909bcf2165245441f54a",
+    "header_sha256": {},
+    "headers": [],
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2147641976,
+        "end": 2147642128,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147508552,
+        "end": 2147508592,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147574968,
+        "end": 2147574980,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "__dt__15Object_80026A78Fv",
+        "address": 2147641976,
+        "size": 152,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0,
+        "original_symbol": "fn_80026A78"
+      }
+    ],
+    "objects": [
+      {
+        "name": "@20",
+        "section": "extab",
+        "object_offset": 0,
+        "address": 2147508552,
+        "size": 40,
+        "scope": "local"
+      },
+      {
+        "name": "@21",
+        "section": "extabindex",
+        "object_offset": 0,
+        "address": 2147574968,
+        "size": 12,
+        "scope": "local"
+      }
+    ],
+    "unlinked_functions": [],
+    "verified_text_bytes": 152,
+    "verified_data_bytes": 52,
+    "notes": "docs/notes/game-engine-fn-reset-layers.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 34,
+        "address": 2147642010,
+        "kind": 6,
+        "symbol": "lbl_802B05E0",
+        "target": 2150303200,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 38,
+        "address": 2147642014,
+        "kind": 4,
+        "symbol": "lbl_802B05E0",
+        "target": 2150303200,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 50,
+        "address": 2147642026,
+        "kind": 6,
+        "symbol": "lbl_802B062C",
+        "target": 2150303276,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 58,
+        "address": 2147642034,
+        "kind": 4,
+        "symbol": "lbl_802B062C",
+        "target": 2150303276,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 76,
+        "address": 2147642052,
+        "kind": 10,
+        "symbol": "fn_8009009C",
+        "target": 2148073628,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 90,
+        "address": 2147642066,
+        "kind": 6,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 98,
+        "address": 2147642074,
+        "kind": 4,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 100,
+        "address": 2147642076,
+        "kind": 10,
+        "symbol": "fn_801EF610",
+        "target": 2149512720,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 112,
+        "address": 2147642088,
+        "kind": 10,
+        "symbol": "__unexpected",
+        "target": 2148663772,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147574968,
+        "kind": 1,
+        "symbol": "__dt__15Object_80026A78Fv",
+        "target": 2147641976,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147574976,
+        "kind": 1,
+        "symbol": "@20",
+        "target": 2147508552,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "__unexpected",
+        "address": 2148663772,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_8009009C",
+        "address": 2148073628,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_801EF610",
+        "address": 2149512720,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_801EF5C8",
+        "address": 2149512648,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_802B05E0",
+        "address": 2150303200,
+        "section": ".data",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_802B062C",
+        "address": 2150303276,
+        "section": ".data",
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "retained_text_bytes": 152,
+      "initialized_data_bytes": 52,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 11,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match",
+    "source": "src/Game/engine_fn_reset_layers_80026B10.cpp",
+    "source_sha256": "7cd9eef495983ebd1c97b5eca379ac9588e57002fee8cf9c0b253891712776ba",
+    "header_sha256": {},
+    "headers": [],
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2147642128,
+        "end": 2147642280,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147508592,
+        "end": 2147508632,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147574980,
+        "end": 2147574992,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "__dt__15Object_80026B10Fv",
+        "address": 2147642128,
+        "size": 152,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0,
+        "original_symbol": "fn_80026B10"
+      }
+    ],
+    "objects": [
+      {
+        "name": "@20",
+        "section": "extab",
+        "object_offset": 0,
+        "address": 2147508592,
+        "size": 40,
+        "scope": "local"
+      },
+      {
+        "name": "@21",
+        "section": "extabindex",
+        "object_offset": 0,
+        "address": 2147574980,
+        "size": 12,
+        "scope": "local"
+      }
+    ],
+    "unlinked_functions": [],
+    "verified_text_bytes": 152,
+    "verified_data_bytes": 52,
+    "notes": "docs/notes/game-engine-fn-reset-layers.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 34,
+        "address": 2147642162,
+        "kind": 6,
+        "symbol": "lbl_802B0610",
+        "target": 2150303248,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 38,
+        "address": 2147642166,
+        "kind": 4,
+        "symbol": "lbl_802B0610",
+        "target": 2150303248,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 50,
+        "address": 2147642178,
+        "kind": 6,
+        "symbol": "lbl_802B062C",
+        "target": 2150303276,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 58,
+        "address": 2147642186,
+        "kind": 4,
+        "symbol": "lbl_802B062C",
+        "target": 2150303276,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 76,
+        "address": 2147642204,
+        "kind": 10,
+        "symbol": "fn_8009009C",
+        "target": 2148073628,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 90,
+        "address": 2147642218,
+        "kind": 6,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 98,
+        "address": 2147642226,
+        "kind": 4,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 100,
+        "address": 2147642228,
+        "kind": 10,
+        "symbol": "fn_801EF610",
+        "target": 2149512720,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 112,
+        "address": 2147642240,
+        "kind": 10,
+        "symbol": "__unexpected",
+        "target": 2148663772,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147574980,
+        "kind": 1,
+        "symbol": "__dt__15Object_80026B10Fv",
+        "target": 2147642128,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147574988,
+        "kind": 1,
+        "symbol": "@20",
+        "target": 2147508592,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "__unexpected",
+        "address": 2148663772,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_8009009C",
+        "address": 2148073628,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_801EF610",
+        "address": 2149512720,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_801EF5C8",
+        "address": 2149512648,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_802B0610",
+        "address": 2150303248,
+        "section": ".data",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_802B062C",
+        "address": 2150303276,
+        "section": ".data",
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "retained_text_bytes": 152,
+      "initialized_data_bytes": 52,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 11,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match",
+    "source": "src/Game/engine_fn_reset_layers_80094A2C.cpp",
+    "source_sha256": "dc96796e5e867e8943461b4489d448c8126c4549f91797d72da066f0d44068a6",
+    "header_sha256": {},
+    "headers": [],
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148092460,
+        "end": 2148092596,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147545292,
+        "end": 2147545332,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147592848,
+        "end": 2147592860,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "__dt__15Object_80094A2CFv",
+        "address": 2148092460,
+        "size": 136,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0,
+        "original_symbol": "fn_80094A2C"
+      }
+    ],
+    "objects": [
+      {
+        "name": "@16",
+        "section": "extab",
+        "object_offset": 0,
+        "address": 2147545292,
+        "size": 40,
+        "scope": "local"
+      },
+      {
+        "name": "@17",
+        "section": "extabindex",
+        "object_offset": 0,
+        "address": 2147592848,
+        "size": 12,
+        "scope": "local"
+      }
+    ],
+    "unlinked_functions": [],
+    "verified_text_bytes": 136,
+    "verified_data_bytes": 52,
+    "notes": "docs/notes/game-engine-fn-reset-layers.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 34,
+        "address": 2148092494,
+        "kind": 6,
+        "symbol": "lbl_802B96F4",
+        "target": 2150340340,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 42,
+        "address": 2148092502,
+        "kind": 4,
+        "symbol": "lbl_802B96F4",
+        "target": 2150340340,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 60,
+        "address": 2148092520,
+        "kind": 10,
+        "symbol": "fn_8009009C",
+        "target": 2148073628,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 74,
+        "address": 2148092534,
+        "kind": 6,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 82,
+        "address": 2148092542,
+        "kind": 4,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 84,
+        "address": 2148092544,
+        "kind": 10,
+        "symbol": "fn_801EF610",
+        "target": 2149512720,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 96,
+        "address": 2148092556,
+        "kind": 10,
+        "symbol": "__unexpected",
+        "target": 2148663772,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147592848,
+        "kind": 1,
+        "symbol": "__dt__15Object_80094A2CFv",
+        "target": 2148092460,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147592856,
+        "kind": 1,
+        "symbol": "@16",
+        "target": 2147545292,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "__unexpected",
+        "address": 2148663772,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_8009009C",
+        "address": 2148073628,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_801EF610",
+        "address": 2149512720,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_801EF5C8",
+        "address": 2149512648,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_802B96F4",
+        "address": 2150340340,
+        "section": ".data",
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "retained_text_bytes": 136,
+      "initialized_data_bytes": 52,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 9,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match",
+    "source": "src/Game/engine_fn_reset_layers_80095378.cpp",
+    "source_sha256": "b4a1b7d74c2aafff460eaa5ba07f4baf50cf207183a72a8169ebcd73f5258e8e",
+    "header_sha256": {},
+    "headers": [],
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148094840,
+        "end": 2148094992,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147545488,
+        "end": 2147545528,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147593040,
+        "end": 2147593052,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "__dt__15Object_80095378Fv",
+        "address": 2148094840,
+        "size": 152,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0,
+        "original_symbol": "fn_80095378"
+      }
+    ],
+    "objects": [
+      {
+        "name": "@20",
+        "section": "extab",
+        "object_offset": 0,
+        "address": 2147545488,
+        "size": 40,
+        "scope": "local"
+      },
+      {
+        "name": "@21",
+        "section": "extabindex",
+        "object_offset": 0,
+        "address": 2147593040,
+        "size": 12,
+        "scope": "local"
+      }
+    ],
+    "unlinked_functions": [],
+    "verified_text_bytes": 152,
+    "verified_data_bytes": 52,
+    "notes": "docs/notes/game-engine-fn-reset-layers.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 34,
+        "address": 2148094874,
+        "kind": 6,
+        "symbol": "lbl_802B95B8",
+        "target": 2150340024,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 38,
+        "address": 2148094878,
+        "kind": 4,
+        "symbol": "lbl_802B95B8",
+        "target": 2150340024,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 50,
+        "address": 2148094890,
+        "kind": 6,
+        "symbol": "lbl_802B96F4",
+        "target": 2150340340,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 58,
+        "address": 2148094898,
+        "kind": 4,
+        "symbol": "lbl_802B96F4",
+        "target": 2150340340,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 76,
+        "address": 2148094916,
+        "kind": 10,
+        "symbol": "fn_8009009C",
+        "target": 2148073628,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 90,
+        "address": 2148094930,
+        "kind": 6,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 98,
+        "address": 2148094938,
+        "kind": 4,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 100,
+        "address": 2148094940,
+        "kind": 10,
+        "symbol": "fn_801EF610",
+        "target": 2149512720,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 112,
+        "address": 2148094952,
+        "kind": 10,
+        "symbol": "__unexpected",
+        "target": 2148663772,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147593040,
+        "kind": 1,
+        "symbol": "__dt__15Object_80095378Fv",
+        "target": 2148094840,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147593048,
+        "kind": 1,
+        "symbol": "@20",
+        "target": 2147545488,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "__unexpected",
+        "address": 2148663772,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_8009009C",
+        "address": 2148073628,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_801EF610",
+        "address": 2149512720,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_801EF5C8",
+        "address": 2149512648,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_802B95B8",
+        "address": 2150340024,
+        "section": ".data",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_802B96F4",
+        "address": 2150340340,
+        "section": ".data",
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "retained_text_bytes": 152,
+      "initialized_data_bytes": 52,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 11,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match",
+    "source": "src/Game/engine_fn_reset_layers_80095414.cpp",
+    "source_sha256": "00535ae9dcb2fe31e632b3db345a05af83d53bdcae1305f4b6f73e6f79c88a67",
+    "header_sha256": {},
+    "headers": [],
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148094996,
+        "end": 2148095148,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147545528,
+        "end": 2147545568,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147593052,
+        "end": 2147593064,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "__dt__15Object_80095414Fv",
+        "address": 2148094996,
+        "size": 152,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0,
+        "original_symbol": "fn_80095414"
+      }
+    ],
+    "objects": [
+      {
+        "name": "@20",
+        "section": "extab",
+        "object_offset": 0,
+        "address": 2147545528,
+        "size": 40,
+        "scope": "local"
+      },
+      {
+        "name": "@21",
+        "section": "extabindex",
+        "object_offset": 0,
+        "address": 2147593052,
+        "size": 12,
+        "scope": "local"
+      }
+    ],
+    "unlinked_functions": [],
+    "verified_text_bytes": 152,
+    "verified_data_bytes": 52,
+    "notes": "docs/notes/game-engine-fn-reset-layers.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 34,
+        "address": 2148095030,
+        "kind": 6,
+        "symbol": "lbl_802B95E8",
+        "target": 2150340072,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 38,
+        "address": 2148095034,
+        "kind": 4,
+        "symbol": "lbl_802B95E8",
+        "target": 2150340072,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 50,
+        "address": 2148095046,
+        "kind": 6,
+        "symbol": "lbl_802B96F4",
+        "target": 2150340340,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 58,
+        "address": 2148095054,
+        "kind": 4,
+        "symbol": "lbl_802B96F4",
+        "target": 2150340340,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 76,
+        "address": 2148095072,
+        "kind": 10,
+        "symbol": "fn_8009009C",
+        "target": 2148073628,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 90,
+        "address": 2148095086,
+        "kind": 6,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 98,
+        "address": 2148095094,
+        "kind": 4,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 100,
+        "address": 2148095096,
+        "kind": 10,
+        "symbol": "fn_801EF610",
+        "target": 2149512720,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 112,
+        "address": 2148095108,
+        "kind": 10,
+        "symbol": "__unexpected",
+        "target": 2148663772,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147593052,
+        "kind": 1,
+        "symbol": "__dt__15Object_80095414Fv",
+        "target": 2148094996,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147593060,
+        "kind": 1,
+        "symbol": "@20",
+        "target": 2147545528,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "__unexpected",
+        "address": 2148663772,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_8009009C",
+        "address": 2148073628,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_801EF610",
+        "address": 2149512720,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_801EF5C8",
+        "address": 2149512648,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_802B95E8",
+        "address": 2150340072,
+        "section": ".data",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_802B96F4",
+        "address": 2150340340,
+        "section": ".data",
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "retained_text_bytes": 152,
+      "initialized_data_bytes": 52,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 11,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match",
+    "source": "src/Game/engine_fn_reset_layers_800954AC.cpp",
+    "source_sha256": "02073b375f7aa8e7293a8ec004b5d04b01e8f730bf7c9bb78d3613ed6dfaa491",
+    "header_sha256": {},
+    "headers": [],
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148095148,
+        "end": 2148095300,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147545568,
+        "end": 2147545608,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147593064,
+        "end": 2147593076,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "__dt__15Object_800954ACFv",
+        "address": 2148095148,
+        "size": 152,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0,
+        "original_symbol": "fn_800954AC"
+      }
+    ],
+    "objects": [
+      {
+        "name": "@20",
+        "section": "extab",
+        "object_offset": 0,
+        "address": 2147545568,
+        "size": 40,
+        "scope": "local"
+      },
+      {
+        "name": "@21",
+        "section": "extabindex",
+        "object_offset": 0,
+        "address": 2147593064,
+        "size": 12,
+        "scope": "local"
+      }
+    ],
+    "unlinked_functions": [],
+    "verified_text_bytes": 152,
+    "verified_data_bytes": 52,
+    "notes": "docs/notes/game-engine-fn-reset-layers.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 34,
+        "address": 2148095182,
+        "kind": 6,
+        "symbol": "lbl_802B9618",
+        "target": 2150340120,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 38,
+        "address": 2148095186,
+        "kind": 4,
+        "symbol": "lbl_802B9618",
+        "target": 2150340120,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 50,
+        "address": 2148095198,
+        "kind": 6,
+        "symbol": "lbl_802B96F4",
+        "target": 2150340340,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 58,
+        "address": 2148095206,
+        "kind": 4,
+        "symbol": "lbl_802B96F4",
+        "target": 2150340340,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 76,
+        "address": 2148095224,
+        "kind": 10,
+        "symbol": "fn_8009009C",
+        "target": 2148073628,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 90,
+        "address": 2148095238,
+        "kind": 6,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 98,
+        "address": 2148095246,
+        "kind": 4,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 100,
+        "address": 2148095248,
+        "kind": 10,
+        "symbol": "fn_801EF610",
+        "target": 2149512720,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 112,
+        "address": 2148095260,
+        "kind": 10,
+        "symbol": "__unexpected",
+        "target": 2148663772,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147593064,
+        "kind": 1,
+        "symbol": "__dt__15Object_800954ACFv",
+        "target": 2148095148,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147593072,
+        "kind": 1,
+        "symbol": "@20",
+        "target": 2147545568,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "__unexpected",
+        "address": 2148663772,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_8009009C",
+        "address": 2148073628,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_801EF610",
+        "address": 2149512720,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_801EF5C8",
+        "address": 2149512648,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_802B9618",
+        "address": 2150340120,
+        "section": ".data",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_802B96F4",
+        "address": 2150340340,
+        "section": ".data",
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "retained_text_bytes": 152,
+      "initialized_data_bytes": 52,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 11,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match",
+    "source": "src/Game/engine_fn_reset_layers_80095544.cpp",
+    "source_sha256": "eb3da018436807fed6fd9f872e6252bd4a621abb9b3d4cd27c7e24c95ec01e69",
+    "header_sha256": {},
+    "headers": [],
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148095300,
+        "end": 2148095452,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147545608,
+        "end": 2147545648,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147593076,
+        "end": 2147593088,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "__dt__15Object_80095544Fv",
+        "address": 2148095300,
+        "size": 152,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0,
+        "original_symbol": "fn_80095544"
+      }
+    ],
+    "objects": [
+      {
+        "name": "@20",
+        "section": "extab",
+        "object_offset": 0,
+        "address": 2147545608,
+        "size": 40,
+        "scope": "local"
+      },
+      {
+        "name": "@21",
+        "section": "extabindex",
+        "object_offset": 0,
+        "address": 2147593076,
+        "size": 12,
+        "scope": "local"
+      }
+    ],
+    "unlinked_functions": [],
+    "verified_text_bytes": 152,
+    "verified_data_bytes": 52,
+    "notes": "docs/notes/game-engine-fn-reset-layers.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 34,
+        "address": 2148095334,
+        "kind": 6,
+        "symbol": "lbl_802B9648",
+        "target": 2150340168,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 38,
+        "address": 2148095338,
+        "kind": 4,
+        "symbol": "lbl_802B9648",
+        "target": 2150340168,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 50,
+        "address": 2148095350,
+        "kind": 6,
+        "symbol": "lbl_802B96F4",
+        "target": 2150340340,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 58,
+        "address": 2148095358,
+        "kind": 4,
+        "symbol": "lbl_802B96F4",
+        "target": 2150340340,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 76,
+        "address": 2148095376,
+        "kind": 10,
+        "symbol": "fn_8009009C",
+        "target": 2148073628,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 90,
+        "address": 2148095390,
+        "kind": 6,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 98,
+        "address": 2148095398,
+        "kind": 4,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 100,
+        "address": 2148095400,
+        "kind": 10,
+        "symbol": "fn_801EF610",
+        "target": 2149512720,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 112,
+        "address": 2148095412,
+        "kind": 10,
+        "symbol": "__unexpected",
+        "target": 2148663772,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147593076,
+        "kind": 1,
+        "symbol": "__dt__15Object_80095544Fv",
+        "target": 2148095300,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147593084,
+        "kind": 1,
+        "symbol": "@20",
+        "target": 2147545608,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "__unexpected",
+        "address": 2148663772,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_8009009C",
+        "address": 2148073628,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_801EF610",
+        "address": 2149512720,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_801EF5C8",
+        "address": 2149512648,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_802B9648",
+        "address": 2150340168,
+        "section": ".data",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_802B96F4",
+        "address": 2150340340,
+        "section": ".data",
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "retained_text_bytes": 152,
+      "initialized_data_bytes": 52,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 11,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match",
+    "source": "src/Game/engine_fn_reset_layers_800955DC.cpp",
+    "source_sha256": "3cbfd4c1d8b0a75749f5d0bba19d5635f021c636dcf31629c43adc0ec3309654",
+    "header_sha256": {},
+    "headers": [],
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148095452,
+        "end": 2148095604,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147545648,
+        "end": 2147545688,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147593088,
+        "end": 2147593100,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "__dt__15Object_800955DCFv",
+        "address": 2148095452,
+        "size": 152,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0,
+        "original_symbol": "fn_800955DC"
+      }
+    ],
+    "objects": [
+      {
+        "name": "@20",
+        "section": "extab",
+        "object_offset": 0,
+        "address": 2147545648,
+        "size": 40,
+        "scope": "local"
+      },
+      {
+        "name": "@21",
+        "section": "extabindex",
+        "object_offset": 0,
+        "address": 2147593088,
+        "size": 12,
+        "scope": "local"
+      }
+    ],
+    "unlinked_functions": [],
+    "verified_text_bytes": 152,
+    "verified_data_bytes": 52,
+    "notes": "docs/notes/game-engine-fn-reset-layers.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 34,
+        "address": 2148095486,
+        "kind": 6,
+        "symbol": "lbl_802B9678",
+        "target": 2150340216,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 38,
+        "address": 2148095490,
+        "kind": 4,
+        "symbol": "lbl_802B9678",
+        "target": 2150340216,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 50,
+        "address": 2148095502,
+        "kind": 6,
+        "symbol": "lbl_802B96F4",
+        "target": 2150340340,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 58,
+        "address": 2148095510,
+        "kind": 4,
+        "symbol": "lbl_802B96F4",
+        "target": 2150340340,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 76,
+        "address": 2148095528,
+        "kind": 10,
+        "symbol": "fn_8009009C",
+        "target": 2148073628,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 90,
+        "address": 2148095542,
+        "kind": 6,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 98,
+        "address": 2148095550,
+        "kind": 4,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 100,
+        "address": 2148095552,
+        "kind": 10,
+        "symbol": "fn_801EF610",
+        "target": 2149512720,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 112,
+        "address": 2148095564,
+        "kind": 10,
+        "symbol": "__unexpected",
+        "target": 2148663772,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147593088,
+        "kind": 1,
+        "symbol": "__dt__15Object_800955DCFv",
+        "target": 2148095452,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147593096,
+        "kind": 1,
+        "symbol": "@20",
+        "target": 2147545648,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "__unexpected",
+        "address": 2148663772,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_8009009C",
+        "address": 2148073628,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_801EF610",
+        "address": 2149512720,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_801EF5C8",
+        "address": 2149512648,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_802B9678",
+        "address": 2150340216,
+        "section": ".data",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_802B96F4",
+        "address": 2150340340,
+        "section": ".data",
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "retained_text_bytes": 152,
+      "initialized_data_bytes": 52,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 11,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match",
+    "source": "src/Game/engine_fn_reset_layers_80095674.cpp",
+    "source_sha256": "1e57126a9948e24d213efd0dd57cda7db215037788d5d139f648abbfc76b5af6",
+    "header_sha256": {},
+    "headers": [],
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148095604,
+        "end": 2148095756,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147545688,
+        "end": 2147545728,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147593100,
+        "end": 2147593112,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "__dt__15Object_80095674Fv",
+        "address": 2148095604,
+        "size": 152,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0,
+        "original_symbol": "fn_80095674"
+      }
+    ],
+    "objects": [
+      {
+        "name": "@20",
+        "section": "extab",
+        "object_offset": 0,
+        "address": 2147545688,
+        "size": 40,
+        "scope": "local"
+      },
+      {
+        "name": "@21",
+        "section": "extabindex",
+        "object_offset": 0,
+        "address": 2147593100,
+        "size": 12,
+        "scope": "local"
+      }
+    ],
+    "unlinked_functions": [],
+    "verified_text_bytes": 152,
+    "verified_data_bytes": 52,
+    "notes": "docs/notes/game-engine-fn-reset-layers.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 34,
+        "address": 2148095638,
+        "kind": 6,
+        "symbol": "lbl_802B96A8",
+        "target": 2150340264,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 38,
+        "address": 2148095642,
+        "kind": 4,
+        "symbol": "lbl_802B96A8",
+        "target": 2150340264,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 50,
+        "address": 2148095654,
+        "kind": 6,
+        "symbol": "lbl_802B96F4",
+        "target": 2150340340,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 58,
+        "address": 2148095662,
+        "kind": 4,
+        "symbol": "lbl_802B96F4",
+        "target": 2150340340,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 76,
+        "address": 2148095680,
+        "kind": 10,
+        "symbol": "fn_8009009C",
+        "target": 2148073628,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 90,
+        "address": 2148095694,
+        "kind": 6,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 98,
+        "address": 2148095702,
+        "kind": 4,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 100,
+        "address": 2148095704,
+        "kind": 10,
+        "symbol": "fn_801EF610",
+        "target": 2149512720,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 112,
+        "address": 2148095716,
+        "kind": 10,
+        "symbol": "__unexpected",
+        "target": 2148663772,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147593100,
+        "kind": 1,
+        "symbol": "__dt__15Object_80095674Fv",
+        "target": 2148095604,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147593108,
+        "kind": 1,
+        "symbol": "@20",
+        "target": 2147545688,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "__unexpected",
+        "address": 2148663772,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_8009009C",
+        "address": 2148073628,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_801EF610",
+        "address": 2149512720,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_801EF5C8",
+        "address": 2149512648,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_802B96A8",
+        "address": 2150340264,
+        "section": ".data",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_802B96F4",
+        "address": 2150340340,
+        "section": ".data",
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "retained_text_bytes": 152,
+      "initialized_data_bytes": 52,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 11,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match",
+    "source": "src/Game/engine_fn_reset_layers_8009570C.cpp",
+    "source_sha256": "f6a0f7fad3f4a4682a39573da536c7639f7a4a7d0dc5d722068e8bbe5a381839",
+    "header_sha256": {},
+    "headers": [],
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148095756,
+        "end": 2148095908,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147545728,
+        "end": 2147545768,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147593112,
+        "end": 2147593124,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "__dt__15Object_8009570CFv",
+        "address": 2148095756,
+        "size": 152,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0,
+        "original_symbol": "fn_8009570C"
+      }
+    ],
+    "objects": [
+      {
+        "name": "@20",
+        "section": "extab",
+        "object_offset": 0,
+        "address": 2147545728,
+        "size": 40,
+        "scope": "local"
+      },
+      {
+        "name": "@21",
+        "section": "extabindex",
+        "object_offset": 0,
+        "address": 2147593112,
+        "size": 12,
+        "scope": "local"
+      }
+    ],
+    "unlinked_functions": [],
+    "verified_text_bytes": 152,
+    "verified_data_bytes": 52,
+    "notes": "docs/notes/game-engine-fn-reset-layers.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 34,
+        "address": 2148095790,
+        "kind": 6,
+        "symbol": "lbl_802B96D8",
+        "target": 2150340312,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 38,
+        "address": 2148095794,
+        "kind": 4,
+        "symbol": "lbl_802B96D8",
+        "target": 2150340312,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 50,
+        "address": 2148095806,
+        "kind": 6,
+        "symbol": "lbl_802B96F4",
+        "target": 2150340340,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 58,
+        "address": 2148095814,
+        "kind": 4,
+        "symbol": "lbl_802B96F4",
+        "target": 2150340340,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 76,
+        "address": 2148095832,
+        "kind": 10,
+        "symbol": "fn_8009009C",
+        "target": 2148073628,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 90,
+        "address": 2148095846,
+        "kind": 6,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 98,
+        "address": 2148095854,
+        "kind": 4,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 100,
+        "address": 2148095856,
+        "kind": 10,
+        "symbol": "fn_801EF610",
+        "target": 2149512720,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 112,
+        "address": 2148095868,
+        "kind": 10,
+        "symbol": "__unexpected",
+        "target": 2148663772,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147593112,
+        "kind": 1,
+        "symbol": "__dt__15Object_8009570CFv",
+        "target": 2148095756,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147593120,
+        "kind": 1,
+        "symbol": "@20",
+        "target": 2147545728,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "__unexpected",
+        "address": 2148663772,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_8009009C",
+        "address": 2148073628,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_801EF610",
+        "address": 2149512720,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_801EF5C8",
+        "address": 2149512648,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_802B96D8",
+        "address": 2150340312,
+        "section": ".data",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_802B96F4",
+        "address": 2150340340,
+        "section": ".data",
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "retained_text_bytes": 152,
+      "initialized_data_bytes": 52,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 11,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match",
+    "source": "src/Game/engine_fn_reset_layers_800CBC80.cpp",
+    "source_sha256": "3d88af9b2cd93a0c8762c7b768c9a5d54e84fba3cc82ba291cf89c55e9089ec1",
+    "header_sha256": {},
+    "headers": [],
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148318336,
+        "end": 2148318472,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147562864,
+        "end": 2147562904,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147602988,
+        "end": 2147603000,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "__dt__15Object_800CBC80Fv",
+        "address": 2148318336,
+        "size": 136,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0,
+        "original_symbol": "fn_800CBC80"
+      }
+    ],
+    "objects": [
+      {
+        "name": "@16",
+        "section": "extab",
+        "object_offset": 0,
+        "address": 2147562864,
+        "size": 40,
+        "scope": "local"
+      },
+      {
+        "name": "@17",
+        "section": "extabindex",
+        "object_offset": 0,
+        "address": 2147602988,
+        "size": 12,
+        "scope": "local"
+      }
+    ],
+    "unlinked_functions": [],
+    "verified_text_bytes": 136,
+    "verified_data_bytes": 52,
+    "notes": "docs/notes/game-engine-fn-reset-layers.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 34,
+        "address": 2148318370,
+        "kind": 6,
+        "symbol": "lbl_802C191C",
+        "target": 2150373660,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 42,
+        "address": 2148318378,
+        "kind": 4,
+        "symbol": "lbl_802C191C",
+        "target": 2150373660,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 60,
+        "address": 2148318396,
+        "kind": 10,
+        "symbol": "fn_8009009C",
+        "target": 2148073628,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 74,
+        "address": 2148318410,
+        "kind": 6,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 82,
+        "address": 2148318418,
+        "kind": 4,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 84,
+        "address": 2148318420,
+        "kind": 10,
+        "symbol": "fn_801EF610",
+        "target": 2149512720,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 96,
+        "address": 2148318432,
+        "kind": 10,
+        "symbol": "__unexpected",
+        "target": 2148663772,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147602988,
+        "kind": 1,
+        "symbol": "__dt__15Object_800CBC80Fv",
+        "target": 2148318336,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147602996,
+        "kind": 1,
+        "symbol": "@16",
+        "target": 2147562864,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "__unexpected",
+        "address": 2148663772,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_8009009C",
+        "address": 2148073628,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_801EF610",
+        "address": 2149512720,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_801EF5C8",
+        "address": 2149512648,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_802C191C",
+        "address": 2150373660,
+        "section": ".data",
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "retained_text_bytes": 136,
+      "initialized_data_bytes": 52,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 9,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match",
+    "source": "src/Game/engine_fn_reset_layers_800CBD74.cpp",
+    "source_sha256": "85170672543db6bfca117995d389a2a68109ca5a9fef16e89ae577672d7ba46d",
+    "header_sha256": {},
+    "headers": [],
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148318580,
+        "end": 2148318732,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147562912,
+        "end": 2147562952,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147603012,
+        "end": 2147603024,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "__dt__15Object_800CBD74Fv",
+        "address": 2148318580,
+        "size": 152,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0,
+        "original_symbol": "fn_800CBD74"
+      }
+    ],
+    "objects": [
+      {
+        "name": "@20",
+        "section": "extab",
+        "object_offset": 0,
+        "address": 2147562912,
+        "size": 40,
+        "scope": "local"
+      },
+      {
+        "name": "@21",
+        "section": "extabindex",
+        "object_offset": 0,
+        "address": 2147603012,
+        "size": 12,
+        "scope": "local"
+      }
+    ],
+    "unlinked_functions": [],
+    "verified_text_bytes": 152,
+    "verified_data_bytes": 52,
+    "notes": "docs/notes/game-engine-fn-reset-layers.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 34,
+        "address": 2148318614,
+        "kind": 6,
+        "symbol": "lbl_802C1900",
+        "target": 2150373632,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 38,
+        "address": 2148318618,
+        "kind": 4,
+        "symbol": "lbl_802C1900",
+        "target": 2150373632,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 50,
+        "address": 2148318630,
+        "kind": 6,
+        "symbol": "lbl_802C191C",
+        "target": 2150373660,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 58,
+        "address": 2148318638,
+        "kind": 4,
+        "symbol": "lbl_802C191C",
+        "target": 2150373660,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 76,
+        "address": 2148318656,
+        "kind": 10,
+        "symbol": "fn_8009009C",
+        "target": 2148073628,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 90,
+        "address": 2148318670,
+        "kind": 6,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 98,
+        "address": 2148318678,
+        "kind": 4,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 100,
+        "address": 2148318680,
+        "kind": 10,
+        "symbol": "fn_801EF610",
+        "target": 2149512720,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 112,
+        "address": 2148318692,
+        "kind": 10,
+        "symbol": "__unexpected",
+        "target": 2148663772,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147603012,
+        "kind": 1,
+        "symbol": "__dt__15Object_800CBD74Fv",
+        "target": 2148318580,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147603020,
+        "kind": 1,
+        "symbol": "@20",
+        "target": 2147562912,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "__unexpected",
+        "address": 2148663772,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_8009009C",
+        "address": 2148073628,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_801EF610",
+        "address": 2149512720,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_801EF5C8",
+        "address": 2149512648,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_802C1900",
+        "address": 2150373632,
+        "section": ".data",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_802C191C",
+        "address": 2150373660,
+        "section": ".data",
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "retained_text_bytes": 152,
+      "initialized_data_bytes": 52,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 11,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match",
+    "source": "src/Game/engine_fn_reset_layers_800CBF50.cpp",
+    "source_sha256": "7a561e6526d3163185ce5457447ee63364186ee7dad5b688577fcbbe962524a5",
+    "header_sha256": {},
+    "headers": [],
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148319056,
+        "end": 2148319208,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147562968,
+        "end": 2147563008,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147603048,
+        "end": 2147603060,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "__dt__15Object_800CBF50Fv",
+        "address": 2148319056,
+        "size": 152,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0,
+        "original_symbol": "fn_800CBF50"
+      }
+    ],
+    "objects": [
+      {
+        "name": "@20",
+        "section": "extab",
+        "object_offset": 0,
+        "address": 2147562968,
+        "size": 40,
+        "scope": "local"
+      },
+      {
+        "name": "@21",
+        "section": "extabindex",
+        "object_offset": 0,
+        "address": 2147603048,
+        "size": 12,
+        "scope": "local"
+      }
+    ],
+    "unlinked_functions": [],
+    "verified_text_bytes": 152,
+    "verified_data_bytes": 52,
+    "notes": "docs/notes/game-engine-fn-reset-layers.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 34,
+        "address": 2148319090,
+        "kind": 6,
+        "symbol": "lbl_802C18D0",
+        "target": 2150373584,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 38,
+        "address": 2148319094,
+        "kind": 4,
+        "symbol": "lbl_802C18D0",
+        "target": 2150373584,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 50,
+        "address": 2148319106,
+        "kind": 6,
+        "symbol": "lbl_802C191C",
+        "target": 2150373660,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 58,
+        "address": 2148319114,
+        "kind": 4,
+        "symbol": "lbl_802C191C",
+        "target": 2150373660,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 76,
+        "address": 2148319132,
+        "kind": 10,
+        "symbol": "fn_8009009C",
+        "target": 2148073628,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 90,
+        "address": 2148319146,
+        "kind": 6,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 98,
+        "address": 2148319154,
+        "kind": 4,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 100,
+        "address": 2148319156,
+        "kind": 10,
+        "symbol": "fn_801EF610",
+        "target": 2149512720,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 112,
+        "address": 2148319168,
+        "kind": 10,
+        "symbol": "__unexpected",
+        "target": 2148663772,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147603048,
+        "kind": 1,
+        "symbol": "__dt__15Object_800CBF50Fv",
+        "target": 2148319056,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147603056,
+        "kind": 1,
+        "symbol": "@20",
+        "target": 2147562968,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "__unexpected",
+        "address": 2148663772,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_8009009C",
+        "address": 2148073628,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_801EF610",
+        "address": 2149512720,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_801EF5C8",
+        "address": 2149512648,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_802C18D0",
+        "address": 2150373584,
+        "section": ".data",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_802C191C",
+        "address": 2150373660,
+        "section": ".data",
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "retained_text_bytes": 152,
+      "initialized_data_bytes": 52,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 11,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match",
+    "source": "src/Game/engine_fn_reset_layers_800CC08C.cpp",
+    "source_sha256": "146f14024d650da8027369194cd44eeeabd201f43c7529e4978c48fbe80245d3",
+    "header_sha256": {},
+    "headers": [],
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148319372,
+        "end": 2148319524,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147563024,
+        "end": 2147563064,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147603084,
+        "end": 2147603096,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "__dt__15Object_800CC08CFv",
+        "address": 2148319372,
+        "size": 152,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0,
+        "original_symbol": "fn_800CC08C"
+      }
+    ],
+    "objects": [
+      {
+        "name": "@20",
+        "section": "extab",
+        "object_offset": 0,
+        "address": 2147563024,
+        "size": 40,
+        "scope": "local"
+      },
+      {
+        "name": "@21",
+        "section": "extabindex",
+        "object_offset": 0,
+        "address": 2147603084,
+        "size": 12,
+        "scope": "local"
+      }
+    ],
+    "unlinked_functions": [],
+    "verified_text_bytes": 152,
+    "verified_data_bytes": 52,
+    "notes": "docs/notes/game-engine-fn-reset-layers.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 34,
+        "address": 2148319406,
+        "kind": 6,
+        "symbol": "lbl_802C18A0",
+        "target": 2150373536,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 38,
+        "address": 2148319410,
+        "kind": 4,
+        "symbol": "lbl_802C18A0",
+        "target": 2150373536,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 50,
+        "address": 2148319422,
+        "kind": 6,
+        "symbol": "lbl_802C191C",
+        "target": 2150373660,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 58,
+        "address": 2148319430,
+        "kind": 4,
+        "symbol": "lbl_802C191C",
+        "target": 2150373660,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 76,
+        "address": 2148319448,
+        "kind": 10,
+        "symbol": "fn_8009009C",
+        "target": 2148073628,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 90,
+        "address": 2148319462,
+        "kind": 6,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 98,
+        "address": 2148319470,
+        "kind": 4,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 100,
+        "address": 2148319472,
+        "kind": 10,
+        "symbol": "fn_801EF610",
+        "target": 2149512720,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 112,
+        "address": 2148319484,
+        "kind": 10,
+        "symbol": "__unexpected",
+        "target": 2148663772,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147603084,
+        "kind": 1,
+        "symbol": "__dt__15Object_800CC08CFv",
+        "target": 2148319372,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147603092,
+        "kind": 1,
+        "symbol": "@20",
+        "target": 2147563024,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "__unexpected",
+        "address": 2148663772,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_8009009C",
+        "address": 2148073628,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_801EF610",
+        "address": 2149512720,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_801EF5C8",
+        "address": 2149512648,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_802C18A0",
+        "address": 2150373536,
+        "section": ".data",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_802C191C",
+        "address": 2150373660,
+        "section": ".data",
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "retained_text_bytes": 152,
+      "initialized_data_bytes": 52,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 11,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match",
+    "source": "src/Game/engine_fn_reset_layers_800CC4C0.cpp",
+    "source_sha256": "1058f5134652b0f632b7fe43c13975ebd219fd6c131b250a4420d4abbc2ec2d0",
+    "header_sha256": {},
+    "headers": [],
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148320448,
+        "end": 2148320600,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147563088,
+        "end": 2147563128,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147603132,
+        "end": 2147603144,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "__dt__15Object_800CC4C0Fv",
+        "address": 2148320448,
+        "size": 152,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0,
+        "original_symbol": "fn_800CC4C0"
+      }
+    ],
+    "objects": [
+      {
+        "name": "@20",
+        "section": "extab",
+        "object_offset": 0,
+        "address": 2147563088,
+        "size": 40,
+        "scope": "local"
+      },
+      {
+        "name": "@21",
+        "section": "extabindex",
+        "object_offset": 0,
+        "address": 2147603132,
+        "size": 12,
+        "scope": "local"
+      }
+    ],
+    "unlinked_functions": [],
+    "verified_text_bytes": 152,
+    "verified_data_bytes": 52,
+    "notes": "docs/notes/game-engine-fn-reset-layers.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 34,
+        "address": 2148320482,
+        "kind": 6,
+        "symbol": "lbl_802C1870",
+        "target": 2150373488,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 38,
+        "address": 2148320486,
+        "kind": 4,
+        "symbol": "lbl_802C1870",
+        "target": 2150373488,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 50,
+        "address": 2148320498,
+        "kind": 6,
+        "symbol": "lbl_802C191C",
+        "target": 2150373660,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 58,
+        "address": 2148320506,
+        "kind": 4,
+        "symbol": "lbl_802C191C",
+        "target": 2150373660,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 76,
+        "address": 2148320524,
+        "kind": 10,
+        "symbol": "fn_8009009C",
+        "target": 2148073628,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 90,
+        "address": 2148320538,
+        "kind": 6,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 98,
+        "address": 2148320546,
+        "kind": 4,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 100,
+        "address": 2148320548,
+        "kind": 10,
+        "symbol": "fn_801EF610",
+        "target": 2149512720,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 112,
+        "address": 2148320560,
+        "kind": 10,
+        "symbol": "__unexpected",
+        "target": 2148663772,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147603132,
+        "kind": 1,
+        "symbol": "__dt__15Object_800CC4C0Fv",
+        "target": 2148320448,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147603140,
+        "kind": 1,
+        "symbol": "@20",
+        "target": 2147563088,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "__unexpected",
+        "address": 2148663772,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_8009009C",
+        "address": 2148073628,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_801EF610",
+        "address": 2149512720,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_801EF5C8",
+        "address": 2149512648,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_802C1870",
+        "address": 2150373488,
+        "section": ".data",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_802C191C",
+        "address": 2150373660,
+        "section": ".data",
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "retained_text_bytes": 152,
+      "initialized_data_bytes": 52,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 11,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match",
+    "source": "src/Game/engine_fn_reset_layers_800E04CC.cpp",
+    "source_sha256": "a773734da0a7ffd964486143d4fe8f8918edb761b39f8e3f838762badaaf2536",
+    "header_sha256": {},
+    "headers": [],
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148402380,
+        "end": 2148402516,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147566640,
+        "end": 2147566680,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147607956,
+        "end": 2147607968,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "__dt__15Object_800E04CCFv",
+        "address": 2148402380,
+        "size": 136,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0,
+        "original_symbol": "fn_800E04CC"
+      }
+    ],
+    "objects": [
+      {
+        "name": "@16",
+        "section": "extab",
+        "object_offset": 0,
+        "address": 2147566640,
+        "size": 40,
+        "scope": "local"
+      },
+      {
+        "name": "@17",
+        "section": "extabindex",
+        "object_offset": 0,
+        "address": 2147607956,
+        "size": 12,
+        "scope": "local"
+      }
+    ],
+    "unlinked_functions": [],
+    "verified_text_bytes": 136,
+    "verified_data_bytes": 52,
+    "notes": "docs/notes/game-engine-fn-reset-layers.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 34,
+        "address": 2148402414,
+        "kind": 6,
+        "symbol": "lbl_802C82AC",
+        "target": 2150400684,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 42,
+        "address": 2148402422,
+        "kind": 4,
+        "symbol": "lbl_802C82AC",
+        "target": 2150400684,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 60,
+        "address": 2148402440,
+        "kind": 10,
+        "symbol": "fn_8009009C",
+        "target": 2148073628,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 74,
+        "address": 2148402454,
+        "kind": 6,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 82,
+        "address": 2148402462,
+        "kind": 4,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 84,
+        "address": 2148402464,
+        "kind": 10,
+        "symbol": "fn_801EF610",
+        "target": 2149512720,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 96,
+        "address": 2148402476,
+        "kind": 10,
+        "symbol": "__unexpected",
+        "target": 2148663772,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147607956,
+        "kind": 1,
+        "symbol": "__dt__15Object_800E04CCFv",
+        "target": 2148402380,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147607964,
+        "kind": 1,
+        "symbol": "@16",
+        "target": 2147566640,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "__unexpected",
+        "address": 2148663772,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_8009009C",
+        "address": 2148073628,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_801EF610",
+        "address": 2149512720,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_801EF5C8",
+        "address": 2149512648,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_802C82AC",
+        "address": 2150400684,
+        "section": ".data",
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "retained_text_bytes": 136,
+      "initialized_data_bytes": 52,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 9,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match",
+    "source": "src/Game/engine_fn_reset_layers_800E0DA4.cpp",
+    "source_sha256": "ba7b8f68e46c6a488d85cdeb8cca3f824cc3d0b65c9b73383d2e92e7b8171020",
+    "header_sha256": {},
+    "headers": [],
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148404644,
+        "end": 2148404796,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147566756,
+        "end": 2147566796,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147608028,
+        "end": 2147608040,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "__dt__15Object_800E0DA4Fv",
+        "address": 2148404644,
+        "size": 152,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0,
+        "original_symbol": "fn_800E0DA4"
+      }
+    ],
+    "objects": [
+      {
+        "name": "@20",
+        "section": "extab",
+        "object_offset": 0,
+        "address": 2147566756,
+        "size": 40,
+        "scope": "local"
+      },
+      {
+        "name": "@21",
+        "section": "extabindex",
+        "object_offset": 0,
+        "address": 2147608028,
+        "size": 12,
+        "scope": "local"
+      }
+    ],
+    "unlinked_functions": [],
+    "verified_text_bytes": 152,
+    "verified_data_bytes": 52,
+    "notes": "docs/notes/game-engine-fn-reset-layers.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 34,
+        "address": 2148404678,
+        "kind": 6,
+        "symbol": "lbl_802C8260",
+        "target": 2150400608,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 38,
+        "address": 2148404682,
+        "kind": 4,
+        "symbol": "lbl_802C8260",
+        "target": 2150400608,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 50,
+        "address": 2148404694,
+        "kind": 6,
+        "symbol": "lbl_802C82AC",
+        "target": 2150400684,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 58,
+        "address": 2148404702,
+        "kind": 4,
+        "symbol": "lbl_802C82AC",
+        "target": 2150400684,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 76,
+        "address": 2148404720,
+        "kind": 10,
+        "symbol": "fn_8009009C",
+        "target": 2148073628,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 90,
+        "address": 2148404734,
+        "kind": 6,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 98,
+        "address": 2148404742,
+        "kind": 4,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 100,
+        "address": 2148404744,
+        "kind": 10,
+        "symbol": "fn_801EF610",
+        "target": 2149512720,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 112,
+        "address": 2148404756,
+        "kind": 10,
+        "symbol": "__unexpected",
+        "target": 2148663772,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147608028,
+        "kind": 1,
+        "symbol": "__dt__15Object_800E0DA4Fv",
+        "target": 2148404644,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147608036,
+        "kind": 1,
+        "symbol": "@20",
+        "target": 2147566756,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "__unexpected",
+        "address": 2148663772,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_8009009C",
+        "address": 2148073628,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_801EF610",
+        "address": 2149512720,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_801EF5C8",
+        "address": 2149512648,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_802C8260",
+        "address": 2150400608,
+        "section": ".data",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_802C82AC",
+        "address": 2150400684,
+        "section": ".data",
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "retained_text_bytes": 152,
+      "initialized_data_bytes": 52,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 11,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match",
+    "source": "src/Game/engine_fn_reset_layers_800E0E40.cpp",
+    "source_sha256": "da685f2ab354c68480612080018aaf41f3b83ff2b73a5e2a789a30a9aaed0ebb",
+    "header_sha256": {},
+    "headers": [],
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148404800,
+        "end": 2148404952,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147566796,
+        "end": 2147566836,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147608040,
+        "end": 2147608052,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "__dt__15Object_800E0E40Fv",
+        "address": 2148404800,
+        "size": 152,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0,
+        "original_symbol": "fn_800E0E40"
+      }
+    ],
+    "objects": [
+      {
+        "name": "@20",
+        "section": "extab",
+        "object_offset": 0,
+        "address": 2147566796,
+        "size": 40,
+        "scope": "local"
+      },
+      {
+        "name": "@21",
+        "section": "extabindex",
+        "object_offset": 0,
+        "address": 2147608040,
+        "size": 12,
+        "scope": "local"
+      }
+    ],
+    "unlinked_functions": [],
+    "verified_text_bytes": 152,
+    "verified_data_bytes": 52,
+    "notes": "docs/notes/game-engine-fn-reset-layers.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 34,
+        "address": 2148404834,
+        "kind": 6,
+        "symbol": "lbl_802C8290",
+        "target": 2150400656,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 38,
+        "address": 2148404838,
+        "kind": 4,
+        "symbol": "lbl_802C8290",
+        "target": 2150400656,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 50,
+        "address": 2148404850,
+        "kind": 6,
+        "symbol": "lbl_802C82AC",
+        "target": 2150400684,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 58,
+        "address": 2148404858,
+        "kind": 4,
+        "symbol": "lbl_802C82AC",
+        "target": 2150400684,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 76,
+        "address": 2148404876,
+        "kind": 10,
+        "symbol": "fn_8009009C",
+        "target": 2148073628,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 90,
+        "address": 2148404890,
+        "kind": 6,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 98,
+        "address": 2148404898,
+        "kind": 4,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 100,
+        "address": 2148404900,
+        "kind": 10,
+        "symbol": "fn_801EF610",
+        "target": 2149512720,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 112,
+        "address": 2148404912,
+        "kind": 10,
+        "symbol": "__unexpected",
+        "target": 2148663772,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147608040,
+        "kind": 1,
+        "symbol": "__dt__15Object_800E0E40Fv",
+        "target": 2148404800,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147608048,
+        "kind": 1,
+        "symbol": "@20",
+        "target": 2147566796,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "__unexpected",
+        "address": 2148663772,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_8009009C",
+        "address": 2148073628,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_801EF610",
+        "address": 2149512720,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_801EF5C8",
+        "address": 2149512648,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_802C8290",
+        "address": 2150400656,
+        "section": ".data",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_802C82AC",
+        "address": 2150400684,
+        "section": ".data",
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "retained_text_bytes": 152,
+      "initialized_data_bytes": 52,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 11,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match",
+    "source": "src/Game/engine_fn_reset_layers_800E1820.cpp",
+    "source_sha256": "ea156ff905d79b302821a116b48b46f97a26ba182da7dbfa5150dd340e250ab0",
+    "header_sha256": {},
+    "headers": [],
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148407328,
+        "end": 2148407480,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147567288,
+        "end": 2147567328,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147608232,
+        "end": 2147608244,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "__dt__15Object_800E1820Fv",
+        "address": 2148407328,
+        "size": 152,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0,
+        "original_symbol": "fn_800E1820"
+      }
+    ],
+    "objects": [
+      {
+        "name": "@20",
+        "section": "extab",
+        "object_offset": 0,
+        "address": 2147567288,
+        "size": 40,
+        "scope": "local"
+      },
+      {
+        "name": "@21",
+        "section": "extabindex",
+        "object_offset": 0,
+        "address": 2147608232,
+        "size": 12,
+        "scope": "local"
+      }
+    ],
+    "unlinked_functions": [],
+    "verified_text_bytes": 152,
+    "verified_data_bytes": 52,
+    "notes": "docs/notes/game-engine-fn-reset-layers.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 34,
+        "address": 2148407362,
+        "kind": 6,
+        "symbol": "lbl_802C8660",
+        "target": 2150401632,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 38,
+        "address": 2148407366,
+        "kind": 4,
+        "symbol": "lbl_802C8660",
+        "target": 2150401632,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 50,
+        "address": 2148407378,
+        "kind": 6,
+        "symbol": "lbl_802C867C",
+        "target": 2150401660,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 58,
+        "address": 2148407386,
+        "kind": 4,
+        "symbol": "lbl_802C867C",
+        "target": 2150401660,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 76,
+        "address": 2148407404,
+        "kind": 10,
+        "symbol": "fn_8009009C",
+        "target": 2148073628,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 90,
+        "address": 2148407418,
+        "kind": 6,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 98,
+        "address": 2148407426,
+        "kind": 4,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 100,
+        "address": 2148407428,
+        "kind": 10,
+        "symbol": "fn_801EF610",
+        "target": 2149512720,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 112,
+        "address": 2148407440,
+        "kind": 10,
+        "symbol": "__unexpected",
+        "target": 2148663772,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147608232,
+        "kind": 1,
+        "symbol": "__dt__15Object_800E1820Fv",
+        "target": 2148407328,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147608240,
+        "kind": 1,
+        "symbol": "@20",
+        "target": 2147567288,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "__unexpected",
+        "address": 2148663772,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_8009009C",
+        "address": 2148073628,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_801EF610",
+        "address": 2149512720,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_801EF5C8",
+        "address": 2149512648,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_802C8660",
+        "address": 2150401632,
+        "section": ".data",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_802C867C",
+        "address": 2150401660,
+        "section": ".data",
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "retained_text_bytes": 152,
+      "initialized_data_bytes": 52,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 11,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match",
+    "source": "src/Game/engine_fn_reset_layers_800E1E1C.cpp",
+    "source_sha256": "d3bd74f5355c8ebf055dd6586632e67d5df9df89b604e0b3c8fb15550f331117",
+    "header_sha256": {},
+    "headers": [],
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148408860,
+        "end": 2148409012,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147567452,
+        "end": 2147567492,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147608328,
+        "end": 2147608340,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "__dt__15Object_800E1E1CFv",
+        "address": 2148408860,
+        "size": 152,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0,
+        "original_symbol": "fn_800E1E1C"
+      }
+    ],
+    "objects": [
+      {
+        "name": "@20",
+        "section": "extab",
+        "object_offset": 0,
+        "address": 2147567452,
+        "size": 40,
+        "scope": "local"
+      },
+      {
+        "name": "@21",
+        "section": "extabindex",
+        "object_offset": 0,
+        "address": 2147608328,
+        "size": 12,
+        "scope": "local"
+      }
+    ],
+    "unlinked_functions": [],
+    "verified_text_bytes": 152,
+    "verified_data_bytes": 52,
+    "notes": "docs/notes/game-engine-fn-reset-layers.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 34,
+        "address": 2148408894,
+        "kind": 6,
+        "symbol": "lbl_802C8600",
+        "target": 2150401536,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 38,
+        "address": 2148408898,
+        "kind": 4,
+        "symbol": "lbl_802C8600",
+        "target": 2150401536,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 50,
+        "address": 2148408910,
+        "kind": 6,
+        "symbol": "lbl_802C867C",
+        "target": 2150401660,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 58,
+        "address": 2148408918,
+        "kind": 4,
+        "symbol": "lbl_802C867C",
+        "target": 2150401660,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 76,
+        "address": 2148408936,
+        "kind": 10,
+        "symbol": "fn_8009009C",
+        "target": 2148073628,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 90,
+        "address": 2148408950,
+        "kind": 6,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 98,
+        "address": 2148408958,
+        "kind": 4,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 100,
+        "address": 2148408960,
+        "kind": 10,
+        "symbol": "fn_801EF610",
+        "target": 2149512720,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 112,
+        "address": 2148408972,
+        "kind": 10,
+        "symbol": "__unexpected",
+        "target": 2148663772,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147608328,
+        "kind": 1,
+        "symbol": "__dt__15Object_800E1E1CFv",
+        "target": 2148408860,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147608336,
+        "kind": 1,
+        "symbol": "@20",
+        "target": 2147567452,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "__unexpected",
+        "address": 2148663772,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_8009009C",
+        "address": 2148073628,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_801EF610",
+        "address": 2149512720,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_801EF5C8",
+        "address": 2149512648,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_802C8600",
+        "address": 2150401536,
+        "section": ".data",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_802C867C",
+        "address": 2150401660,
+        "section": ".data",
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "retained_text_bytes": 152,
+      "initialized_data_bytes": 52,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 11,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match",
+    "source": "src/Game/engine_fn_reset_layers_800E2288.cpp",
+    "source_sha256": "d630e3ea5e4b027d0afe7c24a95500933e5cc416f32eb538a59b97c022ab7168",
+    "header_sha256": {
+      "include/Game/scene_vector_owner_800E2288.h": "cf4923de4beb1be89e7c04b45a811e194e00445c4c5b38b227f449cb3b26022e"
+    },
+    "headers": [
+      {
+        "path": "include/Game/scene_vector_owner_800E2288.h",
+        "sha256": "cf4923de4beb1be89e7c04b45a811e194e00445c4c5b38b227f449cb3b26022e"
+      }
+    ],
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "include"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148409992,
+        "end": 2148410144,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147567516,
+        "end": 2147567556,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147608376,
+        "end": 2147608388,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "__dt__15Object_800E2288Fv",
+        "address": 2148409992,
+        "size": 152,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0,
+        "original_symbol": "fn_800E2288"
+      }
+    ],
+    "objects": [
+      {
+        "name": "@20",
+        "section": "extab",
+        "object_offset": 0,
+        "address": 2147567516,
+        "size": 40,
+        "scope": "local"
+      },
+      {
+        "name": "@21",
+        "section": "extabindex",
+        "object_offset": 0,
+        "address": 2147608376,
+        "size": 12,
+        "scope": "local"
+      }
+    ],
+    "unlinked_functions": [],
+    "verified_text_bytes": 152,
+    "verified_data_bytes": 52,
+    "notes": "docs/notes/game-engine-fn-reset-layers.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 34,
+        "address": 2148410026,
+        "kind": 6,
+        "symbol": "lbl_802C85D0",
+        "target": 2150401488,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 38,
+        "address": 2148410030,
+        "kind": 4,
+        "symbol": "lbl_802C85D0",
+        "target": 2150401488,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 50,
+        "address": 2148410042,
+        "kind": 6,
+        "symbol": "lbl_802C867C",
+        "target": 2150401660,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 58,
+        "address": 2148410050,
+        "kind": 4,
+        "symbol": "lbl_802C867C",
+        "target": 2150401660,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 76,
+        "address": 2148410068,
+        "kind": 10,
+        "symbol": "fn_8009009C",
+        "target": 2148073628,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 90,
+        "address": 2148410082,
+        "kind": 6,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 98,
+        "address": 2148410090,
+        "kind": 4,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 100,
+        "address": 2148410092,
+        "kind": 10,
+        "symbol": "fn_801EF610",
+        "target": 2149512720,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 112,
+        "address": 2148410104,
+        "kind": 10,
+        "symbol": "__unexpected",
+        "target": 2148663772,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147608376,
+        "kind": 1,
+        "symbol": "__dt__15Object_800E2288Fv",
+        "target": 2148409992,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147608384,
+        "kind": 1,
+        "symbol": "@20",
+        "target": 2147567516,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "__unexpected",
+        "address": 2148663772,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_8009009C",
+        "address": 2148073628,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_801EF610",
+        "address": 2149512720,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_801EF5C8",
+        "address": 2149512648,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_802C85D0",
+        "address": 2150401488,
+        "section": ".data",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_802C867C",
+        "address": 2150401660,
+        "section": ".data",
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "retained_text_bytes": 152,
+      "initialized_data_bytes": 52,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 11,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  }
+]

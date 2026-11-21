@@ -1,0 +1,17 @@
+# Menu scale and slide transitions
+
+Accepted matching source: the production build passes the original DOL hash,
+strict allocated-byte/extent and actual-relocation checks, baseline regression
+checks, generated progress verification and all 26 repository tests.
+
+**Isolated exact handoff, awaiting central acceptance.** Ordinary C++ `fn_8021C030` (`8021C030..8021C248`, 536 bytes) and `fn_8021C248` (`8021C248..8021C504`, 700 bytes) match all 1,236 original text bytes and 37 resolved relocations. New production units are `src/Game/engine_menu_transition_scale.cpp` and `engine_menu_transition_slide.cpp`, using the dedicated partial views in `include/Game/engine_menu_transition.h`. The scale routine uses standard GC1.3.2 Game flags; the slide routine additionally enables `-use_lmw_stmw on` to reproduce the original five-register save/restore.
+
+Both functions advance the elapsed time and resolve the current and target native packed handles through the context manager. The scale transition adds a uniform delta to the current node's scale. On the first time threshold it reverses a negative speed, restores position/scale defaults, transfers the target handle with decrement/copy/increment reference operations and resets time. On the later phase it restores scale, dispatches event 47 through the resource handle and clears the active byte.
+
+The slide transition resolves the target's parent and computes three translation deltas and an angular delta. It moves both current and target nodes, adjusts their angles in opposite directions through the existing angle getter/setter, and at the threshold restores positions, takes the parent's angle, transfers the current handle and dispatches the same completion event. It updates both nodes' transforms on every path. No inferred null guards or clamps were added.
+
+Ordinary C++ structure reproduces the compiler scheduling: a vector addition operator returns a constructed three-component value, and scalar setters preserve float register allocation in the scale reset. A byte-addressed manager view for the second handle resolution keeps the original entry-base reload; the subsequent parent lookup reuses that same byte view. The event helper resolves its handle through a typed integer return before conversion to the node pointer, matching argument setup without forced registers. The external two-float extent of `lbl_8037AFD0` preserves its small-data relocation. These helpers are fully inlined, with no emitted backup functions or data.
+
+The compiler emits exactly the two complete text allocations. No initialized data, BSS, weak function, exception, startup or padding bytes are claimed. The full original extabindex `80015F60..8001F2C0`, constructors `80299920..80299980` and destructors `80299980..802999A0` are scanned, including descriptors, padding and trailing zeros; none refers to either retained range. Original constants, vector storage, context, adjacent routines and all other allocations retain their owners.
+
+The complete frozen manifest list is `scratch/engine_menu_transition_20261011dc/final_integration.json`. `verify.py` recompiles both production files, verifies every allocated byte and actual relocation target, checks the complete symbol inventory and frozen source/header/evidence hashes, and repeats the full original-table audit. No identifier or consumer migration is needed. Root registration begins NonMatching, and full original DOL hash/regression acceptance is required before credit. All bounded vector, handle and scheduling alternatives are preserved separately.

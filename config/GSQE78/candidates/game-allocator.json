@@ -1,0 +1,206 @@
+{
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-proc gekko",
+    "-fp hardware",
+    "-enum int",
+    "-str reuse,readonly",
+    "-common off",
+    "-O4,p",
+    "-inline deferred",
+    "-Cpp_exceptions off",
+    "-RTTI off",
+    "-use_lmw_stmw on",
+    "-i src/Game"
+  ],
+  "source": "src/Game/allocator.c",
+  "status": "integrated-byte-match",
+  "splits": [
+    {
+      "section": ".text",
+      "start": "0x801ef6e0",
+      "end": "0x801efc24"
+    },
+    {
+      "section": ".rodata",
+      "start": "0x802ad3d0",
+      "end": "0x802AD47F"
+    }
+  ],
+  "dependency_symbols": [
+    {
+      "name": "lbl_801E9D24",
+      "address": "0x801e9d24",
+      "original_name": "lbl_801E9D24"
+    },
+    {
+      "name": "fn_801FA014",
+      "address": "0x801fa014",
+      "original_name": "fn_801FA014"
+    },
+    {
+      "name": "fn_801EFCBC",
+      "address": "0x801efcbc",
+      "original_name": "fn_801EFCBC"
+    },
+    {
+      "name": "fn_801EF5F4",
+      "address": "0x801ef5f4",
+      "original_name": "fn_801EF5F4"
+    },
+    {
+      "name": "fn_801EF610",
+      "address": "0x801ef610",
+      "original_name": "fn_801EF610"
+    },
+    {
+      "name": "lbl_801EF5C8",
+      "address": "0x801ef5c8",
+      "original_name": "lbl_801EF5C8"
+    },
+    {
+      "name": "memset",
+      "address": "0x80005434",
+      "original_name": "memset"
+    }
+  ],
+  "scope": "Six retained heap methods and their diagnostic literals; adjacent copy and release routines handled independently.",
+  "functions": [
+    {
+      "name": "fn_801EF6E0",
+      "original_name": "fn_801EF6E0",
+      "address": "0x801ef6e0",
+      "size": "0x15c",
+      "scope": "global"
+    },
+    {
+      "name": "fn_801EF83C",
+      "original_name": "fn_801EF83C",
+      "address": "0x801ef83c",
+      "size": "0x24",
+      "scope": "global"
+    },
+    {
+      "name": "fn_801EF860",
+      "original_name": "fn_801EF860",
+      "address": "0x801ef860",
+      "size": "0x1bc",
+      "scope": "global"
+    },
+    {
+      "name": "fn_801EFA1C",
+      "original_name": "fn_801EFA1C",
+      "address": "0x801efa1c",
+      "size": "0x60",
+      "scope": "global"
+    },
+    {
+      "name": "fn_801EFA7C",
+      "original_name": "fn_801EFA7C",
+      "address": "0x801efa7c",
+      "size": "0x48",
+      "scope": "global"
+    },
+    {
+      "name": "fn_801EFAC4",
+      "original_name": "fn_801EFAC4",
+      "address": "0x801efac4",
+      "size": "0x160",
+      "scope": "global"
+    }
+  ],
+  "data_symbols": [
+    {
+      "name": "lbl_802AD3D0",
+      "original_name": "lbl_802AD3D0",
+      "address": "0x802ad3d0",
+      "size": "0x1a",
+      "scope": "global",
+      "section": ".rodata"
+    },
+    {
+      "name": "lbl_802AD3EC",
+      "original_name": "lbl_802AD3EC",
+      "address": "0x802ad3ec",
+      "size": "0x1c",
+      "scope": "global",
+      "section": ".rodata"
+    },
+    {
+      "name": "lbl_802AD408",
+      "original_name": "lbl_802AD408",
+      "address": "0x802ad408",
+      "size": "0x2b",
+      "scope": "global",
+      "section": ".rodata"
+    },
+    {
+      "name": "lbl_802AD434",
+      "original_name": "lbl_802AD434",
+      "address": "0x802ad434",
+      "size": "0x1a",
+      "scope": "global",
+      "section": ".rodata"
+    },
+    {
+      "name": "lbl_802AD450",
+      "original_name": "lbl_802AD450",
+      "address": "0x802ad450",
+      "size": "0x2f",
+      "scope": "global",
+      "section": ".rodata"
+    }
+  ],
+  "notes": "docs/notes/game-allocator.md",
+  "split_notes": [
+    "Manager at0x801EF5C8 is a44-byte original structure stored in the .text segment; this partial only declares it and leaves its original storage unchanged.",
+    "Do not overlap src/Game/memory_hooks.c at0x801EFC24..0x801EFD30.",
+    "The alignment argument is retained in the ABI, but original allocation hardcodes32-byte alignment.",
+    "The final diagnostic literal includes three %d fields (size,alignment,heap size); both allocator and backing hooks require all three arguments.",
+    "Recovered boundary groups are evidence-based partials; original translation-unit and class names remain unknown."
+  ],
+  "validation": {
+    "verification_script": "scratch/game_allocator/verify_core.py",
+    "text_bytes": 1348,
+    "initialized_data_bytes": 175,
+    "relocations_applied": 31,
+    "byte_differences": 0,
+    "original_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "ae5e204a1efe4ba6ea570966638dc54e83172ddef9084ec2eeafa29ca0fd9126",
+    "header_sha256": "7c7d6eddb0087fa871b19c590e8226bf694ffae5db860ab8fb2d5309d93be2be",
+    "object_sha256": "39679237a5db04c598638bbb0deee20d96db1866bd458be4618d790bde65c0d1",
+    "integration_status": "verified full-DOL and objdiff"
+  },
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "ae5e204a1efe4ba6ea570966638dc54e83172ddef9084ec2eeafa29ca0fd9126",
+    "matched_code": 1348,
+    "matched_functions": 6,
+    "matched_data": 175,
+    "complete_data": 175,
+    "object_path": "build/GSQE78/src/Game/allocator.o",
+    "object_sha256": "39679237a5db04c598638bbb0deee20d96db1866bd458be4618d790bde65c0d1"
+  },
+  "external_padding": [
+    {
+      "source": "src/Game/allocator.c",
+      "unit": "main/Game/allocator",
+      "section": ".rodata",
+      "start": "0x802ad47f",
+      "end": "0x802ad480",
+      "size": 1,
+      "alignment": 1,
+      "symbol": "gap_06_802AD47F_rodata",
+      "original_owner": "padding/source_extents/Game/allocator.s",
+      "source_section_start": "0x802ad3d0",
+      "source_section_bytes": 175,
+      "previous_split_bytes": 176,
+      "description": "Original linker alignment beyond emitted source section; no source credit."
+    }
+  ],
+  "source_extent_audit": {
+    "data_credit_correction": 1,
+    "evidence": "config/GSQE78/source_padding.json",
+    "description": "Source and original bytes unchanged; trailing original padding moved to NonMatching ownership."
+  }
+}

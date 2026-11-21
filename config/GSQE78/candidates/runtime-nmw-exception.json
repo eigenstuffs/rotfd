@@ -1,0 +1,295 @@
+{
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-proc gekko",
+    "-fp hardware",
+    "-enum int",
+    "-str reuse,pool,readonly",
+    "-common off",
+    "-O4,p",
+    "-inline auto,deferred",
+    "-pool off",
+    "-Cpp_exceptions on",
+    "-RTTI off",
+    "-use_lmw_stmw on",
+    "-char signed"
+  ],
+  "source": "src/Runtime/NMWException.cpp",
+  "status": "integrated-byte-match",
+  "dependency_symbols": [
+    {
+      "name": "__dl__FPv",
+      "address": "0x8011edd4",
+      "original_name": "fn_8011EDD4"
+    },
+    {
+      "name": "abort",
+      "address": "0x8012107c",
+      "original_name": "abort"
+    }
+  ],
+  "splits": [
+    {
+      "section": ".text",
+      "start": "0x8011ee74",
+      "end": "0x8011f460"
+    },
+    {
+      "section": "extab",
+      "start": "0x80015e88",
+      "end": "0x80015ee8"
+    },
+    {
+      "section": "extabindex",
+      "start": "0x8001f1e8",
+      "end": "0x8001f248"
+    },
+    {
+      "section": ".sdata",
+      "start": "0x80375e18",
+      "end": "0x80375e20"
+    }
+  ],
+  "functions": [
+    {
+      "name": "__destroy_arr",
+      "original_name": "fn_8011EE74",
+      "address": "0x8011ee74",
+      "size": "0x78",
+      "scope": "global"
+    },
+    {
+      "name": "__construct_array",
+      "original_name": "fn_8011EEEC",
+      "address": "0x8011eeec",
+      "size": "0xf8",
+      "scope": "global"
+    },
+    {
+      "name": "__dt__26__partial_array_destructorFv",
+      "original_name": "dtor_8011EFE4",
+      "address": "0x8011efe4",
+      "size": "0xb8",
+      "scope": "weak"
+    },
+    {
+      "name": "__construct_new_array",
+      "original_name": "fn_8011F09C",
+      "address": "0x8011f09c",
+      "size": "0x100",
+      "scope": "global"
+    },
+    {
+      "name": "__throw_catch_compare",
+      "original_name": "fn_8011F19C",
+      "address": "0x8011f19c",
+      "size": "0x22c",
+      "scope": "global"
+    },
+    {
+      "name": "unexpected__3stdFv",
+      "original_name": "fn_8011F3C8",
+      "address": "0x8011f3c8",
+      "size": "0x28",
+      "scope": "global"
+    },
+    {
+      "name": "terminate__3stdFv",
+      "original_name": "fn_8011F3F0",
+      "address": "0x8011f3f0",
+      "size": "0x28",
+      "scope": "global"
+    },
+    {
+      "name": "duhandler__3stdFv",
+      "original_name": "fn_8011F418",
+      "address": "0x8011f418",
+      "size": "0x28",
+      "scope": "local"
+    },
+    {
+      "name": "dthandler__3stdFv",
+      "original_name": "fn_8011F440",
+      "address": "0x8011f440",
+      "size": "0x20",
+      "scope": "local"
+    }
+  ],
+  "data_symbols": [],
+  "compiler_local_symbols": [
+    {
+      "name": "thandler__3std",
+      "original_name": "lbl_80375E18",
+      "address": "0x80375e18",
+      "size": "0x4",
+      "scope": "local",
+      "section": ".sdata"
+    },
+    {
+      "name": "uhandler__3std",
+      "original_name": "lbl_80375E1C",
+      "address": "0x80375e1c",
+      "size": "0x4",
+      "scope": "local",
+      "section": ".sdata"
+    },
+    {
+      "name": "@125",
+      "original_name": "@etb_80015E88",
+      "address": "0x80015e88",
+      "size": "0x8",
+      "scope": "local",
+      "section": "extab"
+    },
+    {
+      "name": "@126",
+      "original_name": "@eti_8001F1E8",
+      "address": "0x8001f1e8",
+      "size": "0xc",
+      "scope": "local",
+      "section": "extabindex"
+    },
+    {
+      "name": "@146",
+      "original_name": "@etb_80015E90",
+      "address": "0x80015e90",
+      "size": "0x18",
+      "scope": "local",
+      "section": "extab"
+    },
+    {
+      "name": "@147",
+      "original_name": "@eti_8001F1F4",
+      "address": "0x8001f1f4",
+      "size": "0xc",
+      "scope": "local",
+      "section": "extabindex"
+    },
+    {
+      "name": "@154",
+      "original_name": "@etb_80015EA8",
+      "address": "0x80015ea8",
+      "size": "0x8",
+      "scope": "local",
+      "section": "extab"
+    },
+    {
+      "name": "@155",
+      "original_name": "@eti_8001F200",
+      "address": "0x8001f200",
+      "size": "0xc",
+      "scope": "local",
+      "section": "extabindex"
+    },
+    {
+      "name": "@177",
+      "original_name": "@etb_80015EB0",
+      "address": "0x80015eb0",
+      "size": "0x18",
+      "scope": "local",
+      "section": "extab"
+    },
+    {
+      "name": "@178",
+      "original_name": "@eti_8001F20C",
+      "address": "0x8001f20c",
+      "size": "0xc",
+      "scope": "local",
+      "section": "extabindex"
+    },
+    {
+      "name": "@261",
+      "original_name": "@etb_80015EC8",
+      "address": "0x80015ec8",
+      "size": "0x8",
+      "scope": "local",
+      "section": "extab"
+    },
+    {
+      "name": "@262",
+      "original_name": "@eti_8001F218",
+      "address": "0x8001f218",
+      "size": "0xc",
+      "scope": "local",
+      "section": "extabindex"
+    },
+    {
+      "name": "@264",
+      "original_name": "@etb_80015ED0",
+      "address": "0x80015ed0",
+      "size": "0x8",
+      "scope": "local",
+      "section": "extab"
+    },
+    {
+      "name": "@265",
+      "original_name": "@eti_8001F224",
+      "address": "0x8001f224",
+      "size": "0xc",
+      "scope": "local",
+      "section": "extabindex"
+    },
+    {
+      "name": "@268",
+      "original_name": "@etb_80015ED8",
+      "address": "0x80015ed8",
+      "size": "0x8",
+      "scope": "local",
+      "section": "extab"
+    },
+    {
+      "name": "@269",
+      "original_name": "@eti_8001F230",
+      "address": "0x8001f230",
+      "size": "0xc",
+      "scope": "local",
+      "section": "extabindex"
+    },
+    {
+      "name": "@271",
+      "original_name": "@etb_80015EE0",
+      "address": "0x80015ee0",
+      "size": "0x8",
+      "scope": "local",
+      "section": "extab"
+    },
+    {
+      "name": "@272",
+      "original_name": "@eti_8001F23C",
+      "address": "0x8001f23c",
+      "size": "0xc",
+      "scope": "local",
+      "section": "extabindex"
+    }
+  ],
+  "notes": "docs/notes/runtime-nmw-exception.md",
+  "split_notes": [
+    "The full retained NMWException TU owns nine routines at0x8011EE74..0x8011F460, including array construction/destruction, throw/catch type comparison, and termination handlers.",
+    "The compiler generates96-byte extab and96-byte extabindex sections directly from C++ object lifetimes and exception metadata; no explicit binary tables or assembly substitutions are used.",
+    "Two static std handler pointers occupy8 sdata bytes at0x80375E18. No BSS or rodata is owned.",
+    "The target does not retain set_terminate, set_unexpected, or destroy-new-array bodies in this TU. The previously matched global destructor-chain and exception initialization units are separate and unchanged."
+  ],
+  "validation": {
+    "verification_script": "scratch/runtime_nmw_exception/verify.py",
+    "text_bytes": 1516,
+    "extab_bytes": 96,
+    "extabindex_bytes": 96,
+    "sdata_bytes": 8,
+    "relocations_applied": 25,
+    "byte_differences": 0,
+    "original_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "275cc85a80773b1b5ef5ce9429ce688a367646c3e9b998706922d9c842d7bc94",
+    "object_sha256": "73e4721c54ef88591577ee5785bb9ae8034b7fe5ad51abfe1b1df61ba5afe9ca",
+    "integration_status": "verified full-DOL and objdiff"
+  },
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "275cc85a80773b1b5ef5ce9429ce688a367646c3e9b998706922d9c842d7bc94",
+    "matched_code": 1516,
+    "matched_functions": 9,
+    "matched_data": 200,
+    "complete_data": 200,
+    "object_path": "build/GSQE78/src/Runtime/NMWException.o",
+    "object_sha256": "73e4721c54ef88591577ee5785bb9ae8034b7fe5ad51abfe1b1df61ba5afe9ca"
+  }
+}

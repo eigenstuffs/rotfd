@@ -1,0 +1,11 @@
+# Handle array stream resize
+
+Isolated ordinary C++ proof: fn802642C4 at802642C4..8026464C,904 retained text bytes. Source/header are src/Game/engine_handle_array_stream_resize.cpp and include/Game/engine_handle_array_stream_resize.h. This handoff awaits full central DOL acceptance.
+
+The entry explicitly calls the existing native Root stream method, reads a count, performs the two observed Handle-array resize stages, then asks the manager to read each Handle. Both resize stages are preserved. Growth reserves capacity and placement-constructs two zero-initializing Handle layers; shrinkage destroys elements in reverse order before resizing storage. Sharing one signed index variable across the two branches reproduces the original saved-register choices in both inline copies.
+
+GC/1.3.2 standardO4,p/exceptions-off flags plus -use_lmw_stmw on reproduce every retained byte and all45actual primary relocations. One trailing84-byte weak HandleStreamZero destructor with two actual relocations is completely inventoried and unreferenced by retained code; it must be discarded and earns no credit. The production object emits no data/BSS/literals or retained exception/constructor/destructor metadata. Complete original table scans, including descriptors/padding/trailing zero slots, find no associated metadata.
+
+The Root declaration is a partial three-word storage view used for an explicitly qualified call to its accepted native slot0C method. All three native method/Handle constructor/destructor identities have accepted strong target/source object and canonical/source/header proofs inventoried. The new unused weak identity has no prior active binding. The whole active census scanned9,758ELFs and inventoried1,574object records for this entry/dependencies. One original initialized-data pointer is the function entry; no interior pointers or branch targets exist. Both adjacent accepted functions8026464C/802646EC remain unchanged, as do all accepted consumers and shared metadata.
+
+Frozen proposal: scratch/engine_handle_array_stream_resize_20261011hj/final_integration.json. Strict production recompile, complete allocation/dependency inventories, original table and consumer evidence, and failed variants are preserved alongside it.

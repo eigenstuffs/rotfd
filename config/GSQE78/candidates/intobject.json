@@ -1,0 +1,444 @@
+{
+  "source": "src/Objects/intobject.c",
+  "compiler": "GC/2.0",
+  "cflags": [
+    "-proc gekko",
+    "-fp hardware",
+    "-enum int",
+    "-str reuse",
+    "-common off",
+    "-opt level=4,nopeephole,speed",
+    "-inline auto,deferred",
+    "-pool off",
+    "-Cpp_exceptions off"
+  ],
+  "dependency_symbols": [
+    {
+      "name": "__ctype_map",
+      "address": "0x802d0260",
+      "original_name": "__ctype_map",
+      "size": "0x100",
+      "section": ".data",
+      "scope": "global"
+    },
+    {
+      "name": "errno",
+      "address": "0x80377d10",
+      "original_name": "errno",
+      "size": "0x8",
+      "section": ".sbss",
+      "scope": "global"
+    },
+    {
+      "name": "PyOS_strtoul",
+      "address": "0x8019f9c4",
+      "original_name": "fn_8019F9C4",
+      "size": "0x1DC",
+      "section": ".text",
+      "scope": "global"
+    },
+    {
+      "name": "PyOS_strtol",
+      "address": "0x8019f914",
+      "original_name": "fn_8019F914",
+      "size": "0xB0",
+      "section": ".text",
+      "scope": "global"
+    },
+    {
+      "name": "PyUnicode_EncodeDecimal",
+      "address": "0x8016c2b0",
+      "original_name": "PyUnicode_EncodeDecimal",
+      "size": "0x144",
+      "section": ".text",
+      "scope": "global"
+    },
+    {
+      "name": "PyLong_FromLong",
+      "address": "0x801553f0",
+      "original_name": "fn_801553F0",
+      "size": "0xFC",
+      "section": ".text",
+      "scope": "global"
+    },
+    {
+      "name": "PyFloat_FromDouble",
+      "address": "0x801458c0",
+      "original_name": "PyFloat_FromDouble",
+      "size": "0xBC",
+      "section": ".text",
+      "scope": "global"
+    },
+    {
+      "name": "strcpy",
+      "address": "0x80128540",
+      "original_name": "fn_80128540",
+      "size": "0xB8",
+      "section": ".text",
+      "scope": "global"
+    },
+    {
+      "name": "PyExc_ZeroDivisionError",
+      "address": "0x80377E98",
+      "original_name": "PyExc_ZeroDivisionError",
+      "size": "0x4",
+      "section": ".sbss",
+      "scope": "global"
+    }
+  ],
+  "status": "integrated-byte-match",
+  "splits": [
+    {
+      "section": ".text",
+      "start": "0x80147184",
+      "end": "0x80149cd0"
+    },
+    {
+      "section": ".data",
+      "start": "0x802d3478",
+      "end": "0x802d37d0"
+    },
+    {
+      "section": ".bss",
+      "start": "0x8033dae0",
+      "end": "0x8033dc74"
+    },
+    {
+      "section": ".sdata",
+      "start": "0x803761a8",
+      "end": "0x803761d8"
+    },
+    {
+      "section": ".sbss",
+      "start": "0x80377df8",
+      "end": "0x80377e00"
+    },
+    {
+      "section": ".sdata2",
+      "start": "0x80379f78",
+      "end": "0x80379f80"
+    }
+  ],
+  "functions": [
+    {
+      "name": "PyInt_Fini",
+      "original_name": "fn_80147184",
+      "address": "0x80147184",
+      "size": "0x354",
+      "scope": "global"
+    },
+    {
+      "name": "int_hex",
+      "original_name": "fn_801474D8",
+      "address": "0x801474d8",
+      "size": "0x3c",
+      "scope": "local"
+    },
+    {
+      "name": "int_oct",
+      "original_name": "fn_80147514",
+      "address": "0x80147514",
+      "size": "0x50",
+      "scope": "local"
+    },
+    {
+      "name": "int_float",
+      "original_name": "fn_80147564",
+      "address": "0x80147564",
+      "size": "0x40",
+      "scope": "local"
+    },
+    {
+      "name": "int_long",
+      "original_name": "fn_801475A4",
+      "address": "0x801475a4",
+      "size": "0x24",
+      "scope": "local"
+    },
+    {
+      "name": "int_int",
+      "original_name": "fn_801475C8",
+      "address": "0x801475c8",
+      "size": "0x10",
+      "scope": "local"
+    },
+    {
+      "name": "int_or",
+      "original_name": "fn_801475D8",
+      "address": "0x801475d8",
+      "size": "0x180",
+      "scope": "local"
+    },
+    {
+      "name": "int_xor",
+      "original_name": "fn_80147758",
+      "address": "0x80147758",
+      "size": "0x180",
+      "scope": "local"
+    },
+    {
+      "name": "int_and",
+      "original_name": "fn_801478D8",
+      "address": "0x801478d8",
+      "size": "0x180",
+      "scope": "local"
+    },
+    {
+      "name": "int_rshift",
+      "original_name": "fn_80147A58",
+      "address": "0x80147a58",
+      "size": "0x1e0",
+      "scope": "local"
+    },
+    {
+      "name": "int_lshift",
+      "original_name": "fn_80147C38",
+      "address": "0x80147c38",
+      "size": "0x298",
+      "scope": "local"
+    },
+    {
+      "name": "int_invert",
+      "original_name": "fn_80147ED0",
+      "address": "0x80147ed0",
+      "size": "0x12c",
+      "scope": "local"
+    },
+    {
+      "name": "int_nonzero",
+      "original_name": "fn_80147FFC",
+      "address": "0x80147ffc",
+      "size": "0x14",
+      "scope": "local"
+    },
+    {
+      "name": "int_abs",
+      "original_name": "fn_80148010",
+      "address": "0x80148010",
+      "size": "0x168",
+      "scope": "local"
+    },
+    {
+      "name": "int_pos",
+      "original_name": "fn_80148178",
+      "address": "0x80148178",
+      "size": "0x10",
+      "scope": "local"
+    },
+    {
+      "name": "int_neg",
+      "original_name": "fn_80148188",
+      "address": "0x80148188",
+      "size": "0x154",
+      "scope": "local"
+    },
+    {
+      "name": "int_pow",
+      "original_name": "fn_801482DC",
+      "address": "0x801482dc",
+      "size": "0x3a4",
+      "scope": "local"
+    },
+    {
+      "name": "int_divmod",
+      "original_name": "fn_80148680",
+      "address": "0x80148680",
+      "size": "0x170",
+      "scope": "local"
+    },
+    {
+      "name": "int_mod",
+      "original_name": "fn_801487F0",
+      "address": "0x801487f0",
+      "size": "0x24c",
+      "scope": "local"
+    },
+    {
+      "name": "int_div",
+      "original_name": "fn_80148A3C",
+      "address": "0x80148a3c",
+      "size": "0x24c",
+      "scope": "local"
+    },
+    {
+      "name": "int_mul",
+      "original_name": "fn_80148C88",
+      "address": "0x80148c88",
+      "size": "0x6cc",
+      "scope": "local"
+    },
+    {
+      "name": "int_sub",
+      "original_name": "fn_80149354",
+      "address": "0x80149354",
+      "size": "0x1b0",
+      "scope": "local"
+    },
+    {
+      "name": "int_add",
+      "original_name": "fn_80149504",
+      "address": "0x80149504",
+      "size": "0x1b0",
+      "scope": "local"
+    },
+    {
+      "name": "int_hash",
+      "original_name": "fn_801496B4",
+      "address": "0x801496b4",
+      "size": "0x14",
+      "scope": "local"
+    },
+    {
+      "name": "int_compare",
+      "original_name": "fn_801496C8",
+      "address": "0x801496c8",
+      "size": "0x2c",
+      "scope": "local"
+    },
+    {
+      "name": "int_repr",
+      "original_name": "fn_801496F4",
+      "address": "0x801496f4",
+      "size": "0x3c",
+      "scope": "local"
+    },
+    {
+      "name": "int_print",
+      "original_name": "fn_80149730",
+      "address": "0x80149730",
+      "size": "0x38",
+      "scope": "local"
+    },
+    {
+      "name": "PyInt_FromUnicode",
+      "original_name": "fn_80149768",
+      "address": "0x80149768",
+      "size": "0x74",
+      "scope": "global"
+    },
+    {
+      "name": "PyInt_FromString",
+      "original_name": "fn_801497DC",
+      "address": "0x801497dc",
+      "size": "0x2bc",
+      "scope": "global"
+    },
+    {
+      "name": "PyInt_AsLong",
+      "original_name": "PyInt_AsLong",
+      "address": "0x80149a98",
+      "size": "0xf4",
+      "scope": "global"
+    },
+    {
+      "name": "int_dealloc",
+      "original_name": "fn_80149B8C",
+      "address": "0x80149b8c",
+      "size": "0x10",
+      "scope": "local"
+    },
+    {
+      "name": "PyInt_FromLong",
+      "original_name": "PyInt_FromLong",
+      "address": "0x80149b9c",
+      "size": "0x128",
+      "scope": "global"
+    },
+    {
+      "name": "PyInt_GetMax",
+      "original_name": "PyInt_GetMax",
+      "address": "0x80149cc4",
+      "size": "0xc",
+      "scope": "global"
+    }
+  ],
+  "data_symbols": [
+    {
+      "name": "block_list",
+      "original_name": "lbl_80377DF8",
+      "address": "0x80377df8",
+      "size": "0x4",
+      "scope": "local",
+      "section": ".sbss"
+    },
+    {
+      "name": "free_list",
+      "original_name": "lbl_80377DFC",
+      "address": "0x80377dfc",
+      "size": "0x4",
+      "scope": "local",
+      "section": ".sbss"
+    },
+    {
+      "name": "int_as_number",
+      "original_name": "lbl_802D3490",
+      "address": "0x802d3490",
+      "size": "0x88",
+      "scope": "local",
+      "section": ".data"
+    },
+    {
+      "name": "small_ints",
+      "original_name": "lbl_8033DAE0",
+      "address": "0x8033dae0",
+      "size": "0x194",
+      "scope": "local",
+      "section": ".bss"
+    },
+    {
+      "name": "_Py_ZeroStruct",
+      "original_name": "_Py_ZeroStruct",
+      "address": "0x802d3478",
+      "size": "0xc",
+      "scope": "global",
+      "section": ".data"
+    },
+    {
+      "name": "PyInt_Type",
+      "original_name": "PyInt_Type",
+      "address": "0x802d3518",
+      "size": "0x6c",
+      "scope": "global",
+      "section": ".data"
+    },
+    {
+      "name": "_Py_TrueStruct",
+      "original_name": "_Py_TrueStruct",
+      "address": "0x802d3484",
+      "size": "0xc",
+      "scope": "global",
+      "section": ".data"
+    }
+  ],
+  "split_notes": [
+    "small_ints owns exactly 0x194 bytes at 0x8033DAE0..0x8033DC74. Existing lbl_8033DAE0 size0x198 includes four following BSS padding bytes; shrink to0x194 and retain 0x8033DC74..0x8033DC78 as separate padding.",
+    "block_list and free_list each own four SBSS bytes, at0x80377DF8 and0x80377DFC respectively.",
+    "All six allocated sections match the complete translation unit. No raw assembly or constant instruction substitutes are used."
+  ],
+  "validation": {
+    "text_bytes": 11084,
+    "data_bytes": 856,
+    "sdata_bytes": 48,
+    "sdata2_bytes": 8,
+    "bss_bytes": 404,
+    "sbss_bytes": 8,
+    "relocations_applied": 604,
+    "section_byte_differences": 0,
+    "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "verification_script": "scratch/intobject/verify.py",
+    "integration_status": "verified full-DOL and objdiff",
+    "source_sha256": "9cb64a974646f7d5c34577b56f9dba467c3baea9b263e8177ba290f50ec41f62",
+    "object_sha256": "6c0891f43db81934943f69e4086165a63c982b9f2b69310e19cdb9d2a3e66e34"
+  },
+  "notes": "docs/notes/intobject.md",
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "9cb64a974646f7d5c34577b56f9dba467c3baea9b263e8177ba290f50ec41f62",
+    "matched_code": 11084,
+    "matched_functions": 33,
+    "matched_data": 1324,
+    "complete_data": 1324,
+    "object_path": "build/GSQE78/src/Objects/intobject.o",
+    "object_sha256": "6c0891f43db81934943f69e4086165a63c982b9f2b69310e19cdb9d2a3e66e34"
+  }
+}

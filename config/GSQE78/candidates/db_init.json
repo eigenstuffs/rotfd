@@ -1,0 +1,110 @@
+{
+  "source": "src/dolphin/db/db_init.c",
+  "status": "integrated-byte-match",
+  "source_kind": "c",
+  "compiler": "GC/1.2.5n",
+  "cflags": "-proc gekko -fp hardware -enum int -str reuse -common off -O4,p -schedule on -inline auto -Cpp_exceptions off -i src/dolphin/os -i src/dolphin/db",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2148470416,
+      "end": 2148470528
+    },
+    {
+      "name": ".data",
+      "start": 2150405944,
+      "end": 2150405968
+    },
+    {
+      "name": ".sbss",
+      "start": 2151119048,
+      "end": 2151119056
+    }
+  ],
+  "functions": [
+    {
+      "name": "DBInit",
+      "address": 2148470416,
+      "size": 40
+    },
+    {
+      "name": "__DBExceptionDestinationAux",
+      "address": 2148470456,
+      "size": 72
+    }
+  ],
+  "objects": [
+    {
+      "name": "@3",
+      "address": 2150405944,
+      "size": 24,
+      "section": ".data",
+      "scope": "local",
+      "compiler_assembly_name": "\"@3\"",
+      "data_kind": "string"
+    },
+    {
+      "name": "__DBInterface",
+      "address": 2151119048,
+      "size": 4,
+      "section": ".sbss",
+      "scope": "global"
+    },
+    {
+      "name": "DBVerbose",
+      "address": 2151119052,
+      "size": 4,
+      "section": ".sbss",
+      "scope": "global"
+    }
+  ],
+  "symbol_scopes": {
+    "DBInit": "global",
+    "__DBExceptionDestinationAux": "global",
+    "@3": "local",
+    "__DBInterface": "global",
+    "DBVerbose": "global"
+  },
+  "symbols": {
+    "DBInit": "0x800f0e90",
+    "__DBExceptionDestinationAux": "0x800f0eb8",
+    "@3": "0x802c9738",
+    "__DBInterface": "0x803778c8",
+    "DBVerbose": "0x803778cc",
+    "__DBExceptionDestination": "0x800f0f00",
+    "OSReport": "0x800f2f28",
+    "OSDumpContext": "0x800f2bb4",
+    "PPCHalt": "0x800f0de0"
+  },
+  "external_original_names": {
+    "__DBExceptionDestination": "__DBExceptionDestination",
+    "OSReport": "OSReport",
+    "OSDumpContext": "OSDumpContext",
+    "PPCHalt": "PPCHalt"
+  },
+  "verified_text_bytes": 112,
+  "verified_data_bytes": 24,
+  "section_alignments": {
+    ".text": 4,
+    ".data": 8,
+    ".sbss": 8
+  },
+  "external_padding": [],
+  "native_fallback_ranges": [
+    {
+      "start": 2148470528,
+      "end": 2148470544,
+      "description": "Native DB exception-entry wrapper"
+    }
+  ],
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "b27a4e653455512b623c4d58783267b86e9a42a8fac704490d1a5b0ba2c90002",
+    "matched_code": 112,
+    "matched_functions": 2,
+    "matched_data": 32,
+    "complete_data": 32,
+    "object_path": "build/GSQE78/src/dolphin/db/db_init.o",
+    "object_sha256": "31f7437f4cbf217c26461135132749f6bd423f139aab3d030e5eb2d1693e2991"
+  }
+}

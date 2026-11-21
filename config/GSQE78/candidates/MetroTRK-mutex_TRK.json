@@ -1,0 +1,55 @@
+{
+  "source": "src/MetroTRK/mutex_TRK.c",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.3.2",
+  "cflags": "-proc gekko -fp hardware -enum int -str reuse -common off -O4,p -inline auto,deferred -sdata 0 -sdata2 0 -pool off -use_lmw_stmw on -rostr -i src/MetroTRK -Cpp_exceptions off",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2148647388,
+      "end": 2148647412
+    }
+  ],
+  "functions": [
+    {
+      "name": "TRKReleaseMutex",
+      "address": 2148647388,
+      "size": 8
+    },
+    {
+      "name": "TRKAcquireMutex",
+      "address": 2148647396,
+      "size": 8
+    },
+    {
+      "name": "TRKInitializeMutex",
+      "address": 2148647404,
+      "size": 8
+    }
+  ],
+  "objects": [],
+  "symbol_scopes": {
+    "TRKReleaseMutex": "global",
+    "TRKAcquireMutex": "global",
+    "TRKInitializeMutex": "global"
+  },
+  "symbols": {
+    "TRKReleaseMutex": "0x8011c1dc",
+    "TRKAcquireMutex": "0x8011c1e4",
+    "TRKInitializeMutex": "0x8011c1ec"
+  },
+  "external_original_names": {},
+  "verified_text_bytes": 24,
+  "verified_data_bytes": 0,
+  "source_kind": "c",
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "31dce6ff774ae3269d8b0686f3c7fb061433a2396886f04290b15008a9528065",
+    "matched_code": 24,
+    "matched_functions": 3,
+    "matched_data": 0,
+    "complete_data": 0,
+    "object_path": "build/GSQE78/src/MetroTRK/mutex_TRK.o",
+    "object_sha256": "cd0addded4b51fca5abb9983504d2d38f595806c2068203b813d2bea14fdfc3c"
+  }
+}

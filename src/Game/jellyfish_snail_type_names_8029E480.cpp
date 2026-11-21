@@ -1,0 +1,19 @@
+/* Jellyfish and snail reflected type/state names; see docs/notes/game-jellyfish-snail-type-names.md. */
+extern "C" const char lbl_8029E480[14] = "Anonymous New";
+extern "C" const char lbl_8029E490[18] = "WildSnailMove.cpp";
+extern "C" const char lbl_8029E4A4[15] = "CWildSnailMove";
+extern "C" const char lbl_8029E4B4[13] = "BaseObject_Z";
+extern "C" const char lbl_8029E4C4[12] = "Activable_Z";
+extern "C" const char lbl_8029E4D0[14] = "Manipulator_Z";
+extern "C" const char lbl_8029E4E0[13] = "ObjectMove_Z";
+extern "C" const char lbl_8029E4F0[14] = "ObjectThrow_Z";
+extern "C" const char lbl_8029E500[10] = "LodMove_Z";
+extern "C" const char lbl_8029E50C[11] = "CActorMove";
+extern "C" const char lbl_8029E518[12] = "CScriptMove";
+extern "C" const char lbl_8029E524[13] = "BaseObject_Z";
+extern "C" const char lbl_8029E534[12] = "Activable_Z";
+extern "C" const char lbl_8029E540[14] = "Manipulator_Z";
+extern "C" const char lbl_8029E550[13] = "ObjectMove_Z";
+extern "C" const char lbl_8029E560[14] = "ObjectThrow_Z";
+extern "C" const char lbl_8029E570[10] = "LodMove_Z";
+extern "C" const char lbl_8029E57C[11] = "CActorMove";

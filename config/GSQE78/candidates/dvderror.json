@@ -1,0 +1,67 @@
+{
+  "source": "src/dolphin/dvd/dvderror.c",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.2.5n",
+  "cflags": "-proc gekko -fp hardware -enum int -str reuse -common off -O4,p -inline auto -i src/dolphin/dvd -Cpp_exceptions off",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2148511740,
+      "end": 2148512148
+    },
+    {
+      "name": ".data",
+      "start": 2150409208,
+      "end": 2150409280
+    }
+  ],
+  "functions": [
+    {
+      "name": "ErrorCode2Num",
+      "address": 2148511740,
+      "size": 284
+    },
+    {
+      "name": "__DVDStoreErrorCode",
+      "address": 2148512024,
+      "size": 124
+    }
+  ],
+  "objects": [
+    {
+      "name": "ErrorTable",
+      "address": 2150409208,
+      "size": 72,
+      "section": ".data"
+    }
+  ],
+  "symbol_scopes": {
+    "ErrorCode2Num": "local",
+    "__DVDStoreErrorCode": "global",
+    "ErrorTable": "global"
+  },
+  "symbols": {
+    "ErrorCode2Num": "0x800faffc",
+    "__DVDStoreErrorCode": "0x800fb118",
+    "ErrorTable": "0x802ca3f8",
+    "__OSLockSramEx": "0x800f51dc",
+    "__OSUnlockSramEx": "0x800f5564"
+  },
+  "external_original_names": {
+    "__OSLockSramEx": "__OSLockSramEx",
+    "__OSUnlockSramEx": "__OSUnlockSramEx"
+  },
+  "verified_text_bytes": 408,
+  "verified_data_bytes": 72,
+  "source_kind": "c",
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "e306a8e591c55547a9bdfff9be3cf4621eb38dc0b1e56a5828bec347d60dd0f2",
+    "matched_code": 408,
+    "matched_functions": 2,
+    "matched_data": 72,
+    "complete_data": 72,
+    "object_path": "build/GSQE78/src/dolphin/dvd/dvderror.o",
+    "object_sha256": "874235ca741d4241e295817eee4f8c995c5c89238e2c86836d465f6f67e1fe98"
+  }
+}

@@ -1,0 +1,368 @@
+{
+  "source": "src/Game/derived_factories_800B94C8.cpp",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-proc",
+    "gekko",
+    "-fp",
+    "hardware",
+    "-enum",
+    "int",
+    "-str",
+    "reuse",
+    "-common",
+    "off",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-Cpp_exceptions",
+    "on",
+    "-i",
+    "include"
+  ],
+  "sections": {
+    ".text": [
+      2148242632,
+      2148242840
+    ],
+    "extab": [
+      2147556464,
+      2147556480
+    ],
+    "extabindex": [
+      2147598884,
+      2147598908
+    ]
+  },
+  "functions": [
+    {
+      "name": "fn_800B94C8",
+      "address": 2148242632,
+      "size": 104,
+      "section": ".text",
+      "scope": "global"
+    },
+    {
+      "name": "fn_800B9530",
+      "address": 2148242736,
+      "size": 104,
+      "section": ".text",
+      "scope": "global"
+    }
+  ],
+  "objects": [
+    {
+      "name": "@7",
+      "address": 2147556464,
+      "size": 8,
+      "section": "extab",
+      "scope": "local"
+    },
+    {
+      "name": "@8",
+      "address": 2147598884,
+      "size": 12,
+      "section": "extabindex",
+      "scope": "local"
+    },
+    {
+      "name": "@15",
+      "address": 2147556472,
+      "size": 8,
+      "section": "extab",
+      "scope": "local"
+    },
+    {
+      "name": "@16",
+      "address": 2147598896,
+      "size": 12,
+      "section": "extabindex",
+      "scope": "local"
+    }
+  ],
+  "source_kind": "c++",
+  "factory_evidence": [
+    {
+      "address": 2148242632,
+      "name": "fn_800B94C8",
+      "code_size": 104,
+      "manager": "lbl_801EF5C8",
+      "label": "lbl_802A0E78",
+      "filename": "lbl_802A0EC0",
+      "header": "DamageAgent.h",
+      "size": 144,
+      "line": 36,
+      "alignment": 4,
+      "constructor": "__ct__14Agent_8002B5F4Fv",
+      "vtable": "lbl_802C1DC4",
+      "vtable_offset": 8,
+      "extab": 2147556464,
+      "extabindex": 2147598884
+    },
+    {
+      "address": 2148242736,
+      "name": "fn_800B9530",
+      "code_size": 104,
+      "manager": "lbl_801EF5C8",
+      "label": "lbl_802A0E78",
+      "filename": "lbl_802A0ED0",
+      "header": "ParticlesAlwaysOn.h",
+      "size": 112,
+      "line": 10,
+      "alignment": 4,
+      "constructor": "__ct__23ContainerLayer_802EC6A0Fv",
+      "vtable": "lbl_802BFA00",
+      "vtable_offset": 8,
+      "extab": 2147556472,
+      "extabindex": 2147598896
+    }
+  ],
+  "notes": "docs/notes/game-factories.md",
+  "source_sha256": "aab059d19b8c810ff4462bba714f0c04f3f1b168ef940026305c8c5be668ca5b",
+  "validation": {
+    "relocations": 24,
+    "text_bytes": 208,
+    "initialized_data_bytes": 40,
+    "zero_byte_differences": true,
+    "integration_status": "verified full-DOL and objdiff"
+  },
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "aab059d19b8c810ff4462bba714f0c04f3f1b168ef940026305c8c5be668ca5b",
+    "matched_code": 208,
+    "matched_functions": 2,
+    "matched_data": 40,
+    "complete_data": 40,
+    "object_path": "build/GSQE78/src/Game/derived_factories_800B94C8.o",
+    "object_sha256": "3a0125c846e4f62a5d07c3626ce0108da6629f54668632ee1cf07c5f37a24e30"
+  },
+  "source_hash_provenance": {
+    "previous_candidate": "scratch/native_objects_candidate_metadata_before/game_derived_factories_800B94C8.json",
+    "description": "Earlier isolated source/object hashes are retained in this snapshot. Current source hash and canonical object are verified by the complete DOL and native objdiff."
+  },
+  "headers": [],
+  "actual_relocations": [
+    {
+      "section": ".text",
+      "at": 10,
+      "address": 2148242642,
+      "kind": 6,
+      "symbol": "lbl_801EF5C8",
+      "target": 2149512648,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 14,
+      "address": 2148242646,
+      "kind": 6,
+      "symbol": "lbl_802A0E78",
+      "target": 2150239864,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 22,
+      "address": 2148242654,
+      "kind": 6,
+      "symbol": "lbl_802A0EC0",
+      "target": 2150239936,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 30,
+      "address": 2148242662,
+      "kind": 4,
+      "symbol": "lbl_801EF5C8",
+      "target": 2149512648,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 38,
+      "address": 2148242670,
+      "kind": 4,
+      "symbol": "lbl_802A0E78",
+      "target": 2150239864,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 42,
+      "address": 2148242674,
+      "kind": 4,
+      "symbol": "lbl_802A0EC0",
+      "target": 2150239936,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 52,
+      "address": 2148242684,
+      "kind": 10,
+      "symbol": "fn_801EFA1C",
+      "target": 2149513756,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 64,
+      "address": 2148242696,
+      "kind": 10,
+      "symbol": "__ct__14Agent_8002B5F4Fv",
+      "target": 2147661300,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 70,
+      "address": 2148242702,
+      "kind": 6,
+      "symbol": "lbl_802C1DC4",
+      "target": 2150374852,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 74,
+      "address": 2148242706,
+      "kind": 4,
+      "symbol": "lbl_802C1DC4",
+      "target": 2150374852,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 114,
+      "address": 2148242746,
+      "kind": 6,
+      "symbol": "lbl_801EF5C8",
+      "target": 2149512648,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 118,
+      "address": 2148242750,
+      "kind": 6,
+      "symbol": "lbl_802A0E78",
+      "target": 2150239864,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 126,
+      "address": 2148242758,
+      "kind": 6,
+      "symbol": "lbl_802A0ED0",
+      "target": 2150239952,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 134,
+      "address": 2148242766,
+      "kind": 4,
+      "symbol": "lbl_801EF5C8",
+      "target": 2149512648,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 142,
+      "address": 2148242774,
+      "kind": 4,
+      "symbol": "lbl_802A0E78",
+      "target": 2150239864,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 146,
+      "address": 2148242778,
+      "kind": 4,
+      "symbol": "lbl_802A0ED0",
+      "target": 2150239952,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 156,
+      "address": 2148242788,
+      "kind": 10,
+      "symbol": "fn_801EFA1C",
+      "target": 2149513756,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 168,
+      "address": 2148242800,
+      "kind": 10,
+      "symbol": "__ct__23ContainerLayer_802EC6A0Fv",
+      "target": 2149931068,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 174,
+      "address": 2148242806,
+      "kind": 6,
+      "symbol": "lbl_802BFA00",
+      "target": 2150365696,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 178,
+      "address": 2148242810,
+      "kind": 4,
+      "symbol": "lbl_802BFA00",
+      "target": 2150365696,
+      "addend": 0
+    },
+    {
+      "section": "extabindex",
+      "at": 0,
+      "address": 2147598884,
+      "kind": 1,
+      "symbol": "fn_800B94C8",
+      "target": 2148242632,
+      "addend": 0
+    },
+    {
+      "section": "extabindex",
+      "at": 8,
+      "address": 2147598892,
+      "kind": 1,
+      "symbol": "@7",
+      "target": 2147556464,
+      "addend": 0
+    },
+    {
+      "section": "extabindex",
+      "at": 12,
+      "address": 2147598896,
+      "kind": 1,
+      "symbol": "fn_800B9530",
+      "target": 2148242736,
+      "addend": 0
+    },
+    {
+      "section": "extabindex",
+      "at": 20,
+      "address": 2147598904,
+      "kind": 1,
+      "symbol": "@15",
+      "target": 2147556472,
+      "addend": 0
+    }
+  ],
+  "identifier_migration_provenance": {
+    "proof": "scratch/continuation_20261010/layered-return-consumer-migration/proof.json",
+    "previous_canonical": "scratch/continuation_20261010/layered-return-consumer-migration/before/config/GSQE78/candidates/game_derived_factories_800B94C8.json",
+    "previous_canonical_sha256": "f3e8c291084ec18b28d8c3e0ba4950603a18fa0b92dfe68438532121d4c26b8c"
+  }
+}

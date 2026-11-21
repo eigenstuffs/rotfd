@@ -1,0 +1,129 @@
+{
+  "source": "src/Game/menu3d_item_text.cpp",
+  "source_kind": "c++",
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-proc",
+    "gekko",
+    "-fp",
+    "hardware",
+    "-enum",
+    "int",
+    "-str",
+    "reuse",
+    "-common",
+    "off",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-Cpp_exceptions",
+    "off",
+    "-RTTI",
+    "off",
+    "-use_lmw_stmw",
+    "on",
+    "-i",
+    "src/Game"
+  ],
+  "status": "integrated-byte-match",
+  "sections": {
+    ".text": [
+      2149681268,
+      2149681484
+    ]
+  },
+  "section_alignments": {
+    ".text": 4
+  },
+  "functions": [
+    {
+      "name": "fn_80218874",
+      "address": 2149681268,
+      "size": 216,
+      "object_offset": 0,
+      "section": ".text",
+      "scope": "global",
+      "sha256": "8a527e00286c2b3d134851028ab63c72ecbadbb0fc229e18432ded73437c7f94"
+    }
+  ],
+  "objects": [],
+  "dependency_symbols": [
+    {
+      "name": "fn_801F44DC",
+      "address": 2149532892,
+      "scope": "global"
+    },
+    {
+      "name": "lbl_801E9D24",
+      "address": 2149489956,
+      "scope": "global"
+    }
+  ],
+  "headers": [
+    {
+      "path": "src/Game/menu_item_text_internal.h",
+      "sha256": "6a877920b153c893718713311f8a48b6da0d7eb7721ada9871b8d0c75db8d6a9"
+    },
+    {
+      "path": "src/Game/objects_owner_internal.h",
+      "sha256": "f2f3ed38fa07c4439af53617df67a59cd5fa686733430f307e91fb0d8d8a7d3c"
+    },
+    {
+      "path": "src/Game/menu2d_item_append_internal.h",
+      "sha256": "7305dae0060c4b143c18418da37f21a693fb112682dc2b6cef8784f4a44968c3"
+    }
+  ],
+  "source_sha256": "ab0a3926570a2481f36cd8f0576ea5dcc05bd42918a939ce96ac1b64797862ec",
+  "notes": "docs/notes/game-menu-item-text.md",
+  "validation": {
+    "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "object_sha256": "2c2d20ef7bbf75eee3565e9a44ab92273472e9f5638807b10ce1aa82eed1b1cb",
+    "retained_text_bytes": 216,
+    "emitted_text_bytes": 216,
+    "initialized_data_bytes": 0,
+    "bss_bytes": 0,
+    "relocations": 3,
+    "relocations_by_type": {
+      "6": 1,
+      "4": 1,
+      "10": 1
+    },
+    "unlinked_text_bytes": 0,
+    "unlinked_relocations": 0,
+    "weak_functions": 0,
+    "zero_byte_differences": true,
+    "all_allocated_sections_accounted": true,
+    "all_retained_allocated_bytes_verified": true,
+    "owned_padding_bytes": 0,
+    "verification_script": "scratch/game_menu_item_text/verify.py",
+    "verification_mode": "--production",
+    "integration_status": "verified full-DOL and objdiff"
+  },
+  "integration_notes": [
+    "Resolve each parameter through native virtual slot70 using the item keyword and parameter hash, then format the item name with the returned machine-word arguments. Original tables and allocator storage remain external."
+  ],
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "ab0a3926570a2481f36cd8f0576ea5dcc05bd42918a939ce96ac1b64797862ec",
+    "matched_code": 216,
+    "matched_functions": 1,
+    "matched_data": 0,
+    "complete_data": 0,
+    "object_path": "build/GSQE78/src/Game/menu3d_item_text.o",
+    "object_sha256": "2c2d20ef7bbf75eee3565e9a44ab92273472e9f5638807b10ce1aa82eed1b1cb"
+  },
+  "memcard_native_identity_migration": {
+    "description": "Current canonical identities and hashes verified after native CGCMemCardManipulator/CFSM ownership integration; original evidence is retained in immutable backups and explicit previous receipts.",
+    "production_verification": "scratch/memcard_native_vtable_20261020_parallel/production-verification.json",
+    "production_verification_sha256": "96e50e874bd53c148cd6395f670c040416c34699787d56726d8cfb010c340f31",
+    "migration_object_audit": "scratch/memcard_native_vtable_20261020_parallel/migration_object_audit.json",
+    "migration_object_audit_sha256": "b809560bf7212a505b2ea749256bef5263b4784d066bb311015e10928e90db9d",
+    "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "unchanged_caller_objects": 344,
+    "native_objects": 6,
+    "native_actual_relocations": 281,
+    "previous_canonical_sha256": "2fc8d77a2fd66fd1fa288fe70290d80fe6760a26e1df1487aef2c33e9e227e95",
+    "previous_canonical": "scratch/memcard_canonical_refresh_20261020_parallel/backups/config/GSQE78/candidates/game-menu3d-item-text.json",
+    "previous_entry_json_pointer": ""
+  }
+}

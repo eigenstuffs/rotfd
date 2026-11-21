@@ -1,0 +1,15 @@
+# Actor mode preparation (8007626C)
+
+`src/Game/actor_mode_prepare_8007626C.cpp` reconstructs the five-mode transition setup at `8007626C..8007682C` (1,472 bytes). It retains the original C entry. The isolated source and complete owned exception metadata match; full-game placement and original-DOL acceptance remain the integrator's requirements.
+
+The routine ignores an unchanged mode, then updates scalar transition state. Modes 0, 2 and 3 resolve a virtual child Handle, retain its native Handle27528 copy, perform a child virtual action, and destroy the copy normally. Modes 1 and 4 copy the current position into the previous-position field. Mode 2 obtains a point through the existing output-parameter callback, raises its Y component, copies it into the target and current position, and updates the child flag around the virtual action.
+
+The ordinary `Node::getHandle() const` accessor preserves the original retained source-address lifetime across native Handle construction. A local `Vec target(point)` followed by `target.y += height` reproduces the original floating-point allocation without adding stack stores. The direct constructor expression used a different result register; modifying the output point in place introduced extra stores. The successful source uses GC1.3.2 O4,s with exceptions and native multiple-register saves.
+
+Owned metadata is `extab8000CF28..8000CF9C` (116 bytes) and `extabindex80019590..8001959C` (12 bytes). Two compiler weak destructor backups, Handle1FF78 (112 bytes) and Handle27528 (116 bytes), plus each complete 40-byte extab and 12-byte index remain uncredited. The unchanged standard retained-EH gate proves six actual primary references select their accepted individual GLOBAL strong definitions. Fresh recompiles of both strong owners match their current production objects. An actual isolated MWLD link selects both strong owners and discards all six backup allocations.
+
+The production object has 42 retained and 14 discarded actual allocated relocations, plus three compiler category relocations. All 1,472 native primary bytes are checked again after the actual isolated link, and all retained metadata bytes and pointers are checked by the unchanged native verifier. Eleven adverse object cases and four native ELF/map cases reject.
+
+No literal, jump table, BSS, startup or padding allocation is emitted. Nine original GLOBAL float objects remain borrowed. Full original exception/startup tables and initialized data pointers are audited; the sole initialized pointer is the owned exception-index entry. A complete original/current input census scans 10,385 ELF inputs, 203,919 allocated relocation records and 501,416 initialized DOL data byte positions. Existing original and compiled consumers retain the same C entry and target, with no identifier migration.
+
+Frozen producer evidence: `scratch/game_actor_mode_prepare_305/handoff.json`. This note is adoption evidence; immutable source/compiler/core authorization does not require pinning future documentation updates.

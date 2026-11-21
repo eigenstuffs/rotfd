@@ -1,0 +1,186 @@
+[
+  {
+    "status": "isolated-retained-byte-match",
+    "source": "src/Game/state_pair_initialize.cpp",
+    "source_sha256": "f1a5f440546d40469d18808476c8a1db9a3c61e923aebd6e684e27ffc4ec2f12",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,p",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "off",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-fp_contract",
+      "on",
+      "-i",
+      "include",
+      "-i",
+      "src/Game"
+    ],
+    "source_kind": "c++",
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2149800108,
+        "end": 2149800168,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_802358AC",
+        "address": 2149800108,
+        "size": 60,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [],
+    "unlinked_functions": [],
+    "headers": [
+      {
+        "path": "include/Game/state_collision_controls.h",
+        "sha256": "493fd575c9ddd087da08828a2ad154832390607fb40794c470a18ca67a4ab069"
+      }
+    ],
+    "dependency_symbols": [],
+    "validation": {
+      "relocations": 2,
+      "unlinked_relocations": 0,
+      "retained_text_bytes": 60,
+      "unlinked_text_bytes": 0,
+      "initialized_data_bytes": 0,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0
+    },
+    "verified_text_bytes": 60,
+    "verified_data_bytes": 0,
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 24,
+        "address": 2149800132,
+        "kind": 10,
+        "symbol": "fn_801F6A7C",
+        "target": 2149542524,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 32,
+        "address": 2149800140,
+        "kind": 10,
+        "symbol": "fn_802358E8",
+        "target": 2149800168,
+        "addend": 0
+      }
+    ]
+  },
+  {
+    "status": "isolated-retained-byte-match",
+    "source": "src/Game/collision_mesh_dispatch.cpp",
+    "source_sha256": "a46a93508a9f917484eb58ef832f9ceeb48c5fe4ea28e89448f11391cb6148b3",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,p",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "off",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-fp_contract",
+      "on",
+      "-i",
+      "include",
+      "-i",
+      "src/Game"
+    ],
+    "source_kind": "c++",
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2149854260,
+        "end": 2149854320,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_80242C34",
+        "address": 2149854260,
+        "size": 60,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [],
+    "unlinked_functions": [],
+    "headers": [
+      {
+        "path": "include/Game/state_collision_controls.h",
+        "sha256": "493fd575c9ddd087da08828a2ad154832390607fb40794c470a18ca67a4ab069"
+      }
+    ],
+    "dependency_symbols": [],
+    "validation": {
+      "relocations": 2,
+      "unlinked_relocations": 0,
+      "retained_text_bytes": 60,
+      "unlinked_text_bytes": 0,
+      "initialized_data_bytes": 0,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0
+    },
+    "verified_text_bytes": 60,
+    "verified_data_bytes": 0,
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 32,
+        "address": 2149854292,
+        "kind": 10,
+        "symbol": "fn_80242A24",
+        "target": 2149853732,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 40,
+        "address": 2149854300,
+        "kind": 10,
+        "symbol": "fn_8024222C",
+        "target": 2149851692,
+        "addend": 0
+      }
+    ]
+  }
+]

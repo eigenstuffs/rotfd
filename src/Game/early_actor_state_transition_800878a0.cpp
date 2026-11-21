@@ -1,0 +1,2 @@
+#include "Game/early_actor_state_transition_views.h"
+extern "C" void fn_800878A0(StateOwner*self){if(self->actor->state==0x13)fn_80257828(self->controller,0x45,0x7B,0);else if(self->actor->state==5)fn_80257828(self->controller,0x6F,0x7B,0);else if(self->actor->state==0x2B)fn_80257828(self->controller,0x45,0x7B,0);self->actor->enabled408=0;if(lbl_803776B8&&lbl_803776B8->first)fn_8006803C(lbl_803776B8,self->actor->record.key);}

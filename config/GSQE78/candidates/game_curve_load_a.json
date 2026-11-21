@@ -1,0 +1,76 @@
+{
+  "source": "src/Game/curve_load_a.cpp",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-proc gekko",
+    "-fp hardware",
+    "-enum int",
+    "-str reuse",
+    "-common off",
+    "-O4,p",
+    "-inline auto",
+    "-use_lmw_stmw on",
+    "-Cpp_exceptions off"
+  ],
+  "sections": {
+    ".text": [
+      "0x801b1440",
+      "0x801b17f0"
+    ]
+  },
+  "functions": [
+    {
+      "name": "fn_801B1440",
+      "address": "0x801b1440",
+      "size": "0x1d8",
+      "scope": "global"
+    },
+    {
+      "name": "fn_801B1618",
+      "address": "0x801b1618",
+      "size": "0x1d8",
+      "scope": "global"
+    }
+  ],
+  "objects": [],
+  "dependency_symbols": [
+    {
+      "name": "fn_801E9F40",
+      "address": "0x801e9f40"
+    },
+    {
+      "name": "fn_8028FAF4",
+      "address": "0x8028faf4"
+    },
+    {
+      "name": "fn_8028FF24",
+      "address": "0x8028ff24"
+    },
+    {
+      "name": "fn_8028FD50",
+      "address": "0x8028fd50"
+    }
+  ],
+  "split_notes": [
+    "Partial key-array loader unit, based on original assembly; original names and full TU boundary unknown. Reconstructed template allocator and placement construction."
+  ],
+  "notes": "docs/notes/game-curves.md",
+  "validation": {
+    "relocations": 42,
+    "text_bytes": 944,
+    "initialized_data_bytes": 0,
+    "zero_byte_differences": true,
+    "integration_status": "verified full-DOL and objdiff"
+  },
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "ebedcf06b22d5125302500f1651bbb8ff9be96b0a87116e2d354a5c3b6431488",
+    "matched_code": 944,
+    "matched_functions": 2,
+    "matched_data": 0,
+    "complete_data": 0,
+    "object_path": "build/GSQE78/src/Game/curve_load_a.o",
+    "object_sha256": "986421cdb402a24a089b295467292786944fd360999c7a58b52e0cebec22f115"
+  }
+}

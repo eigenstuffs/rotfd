@@ -1,0 +1,293 @@
+{
+  "compiler": "GC/2.0",
+  "cflags": [
+    "-proc gekko",
+    "-fp hardware",
+    "-enum int",
+    "-str reuse",
+    "-common off",
+    "-opt level=4,nopeephole,speed",
+    "-inline auto,deferred",
+    "-pool off",
+    "-Cpp_exceptions off"
+  ],
+  "source": "src/Python/errors.c",
+  "dependency_symbols": [
+    {
+      "name": "PyExc_RuntimeWarning",
+      "address": "0x80377e80",
+      "original_name": "lbl_80377E80",
+      "size": "0x4",
+      "section": ".sbss",
+      "scope": "global"
+    },
+    {
+      "name": "PyExc_Exception",
+      "address": "0x80377f0c",
+      "original_name": "lbl_80377F0C",
+      "size": "0x4",
+      "section": ".sbss",
+      "scope": "global"
+    },
+    {
+      "name": "strerror",
+      "address": "0x80128260",
+      "original_name": "fn_80128260",
+      "size": "0x28",
+      "section": ".text",
+      "scope": "global"
+    },
+    {
+      "name": "PyExc_MemoryError",
+      "address": "0x80377ed0",
+      "original_name": "lbl_80377ED0",
+      "size": "0x4",
+      "section": ".sbss",
+      "scope": "global"
+    },
+    {
+      "name": "PyExc_MemoryErrorInst",
+      "address": "0x80377e94",
+      "original_name": "lbl_80377E94",
+      "size": "0x4",
+      "section": ".sbss",
+      "scope": "global"
+    }
+  ],
+  "splits": [
+    {
+      "section": ".text",
+      "start": "0x8018ee70",
+      "end": "0x80191618"
+    },
+    {
+      "section": ".data",
+      "start": "0x802dcfa0",
+      "end": "0x802DD0C4"
+    },
+    {
+      "section": ".sdata",
+      "start": "0x803766f0",
+      "end": "0x80376743"
+    }
+  ],
+  "status": "integrated-byte-match",
+  "functions": [
+    {
+      "name": "PyErr_ProgramText",
+      "original_name": "fn_8018EE70",
+      "address": "0x8018ee70",
+      "size": "0x108",
+      "scope": "global"
+    },
+    {
+      "name": "PyErr_SyntaxLocation",
+      "original_name": "fn_8018EF78",
+      "address": "0x8018ef78",
+      "size": "0x5e8",
+      "scope": "global"
+    },
+    {
+      "name": "PyErr_WarnExplicit",
+      "original_name": "fn_8018F560",
+      "address": "0x8018f560",
+      "size": "0x18c",
+      "scope": "global"
+    },
+    {
+      "name": "PyErr_WriteUnraisable",
+      "original_name": "PyErr_WriteUnraisable",
+      "address": "0x8018f6ec",
+      "size": "0x224",
+      "scope": "global"
+    },
+    {
+      "name": "PyErr_NewException",
+      "original_name": "fn_8018F910",
+      "address": "0x8018f910",
+      "size": "0x318",
+      "scope": "global"
+    },
+    {
+      "name": "PyErr_Format",
+      "original_name": "PyErr_Format",
+      "address": "0x8018fc28",
+      "size": "0x56c",
+      "scope": "global"
+    },
+    {
+      "name": "_PyErr_BadInternalCall",
+      "original_name": "_PyErr_BadInternalCall",
+      "address": "0x80190194",
+      "size": "0x38",
+      "scope": "global"
+    },
+    {
+      "name": "PyErr_SetFromErrno",
+      "original_name": "PyErr_SetFromErrno",
+      "address": "0x801901cc",
+      "size": "0x198",
+      "scope": "global"
+    },
+    {
+      "name": "PyErr_SetFromErrnoWithFilename",
+      "original_name": "PyErr_SetFromErrnoWithFilename",
+      "address": "0x80190364",
+      "size": "0x1c0",
+      "scope": "global"
+    },
+    {
+      "name": "PyErr_NoMemory",
+      "original_name": "PyErr_NoMemory",
+      "address": "0x80190524",
+      "size": "0x1f4",
+      "scope": "global"
+    },
+    {
+      "name": "PyErr_BadArgument",
+      "original_name": "PyErr_BadArgument",
+      "address": "0x80190718",
+      "size": "0x158",
+      "scope": "global"
+    },
+    {
+      "name": "PyErr_Clear",
+      "original_name": "PyErr_Clear",
+      "address": "0x80190870",
+      "size": "0xd8",
+      "scope": "global"
+    },
+    {
+      "name": "PyErr_Fetch",
+      "original_name": "PyErr_Fetch",
+      "address": "0x80190948",
+      "size": "0x6c",
+      "scope": "global"
+    },
+    {
+      "name": "PyErr_NormalizeException",
+      "original_name": "fn_801909B4",
+      "address": "0x801909b4",
+      "size": "0x3a8",
+      "scope": "global"
+    },
+    {
+      "name": "PyErr_ExceptionMatches",
+      "original_name": "PyErr_ExceptionMatches",
+      "address": "0x80190d5c",
+      "size": "0x38",
+      "scope": "global"
+    },
+    {
+      "name": "PyErr_GivenExceptionMatches",
+      "original_name": "fn_80190D94",
+      "address": "0x80190d94",
+      "size": "0x3f8",
+      "scope": "global"
+    },
+    {
+      "name": "PyErr_Occurred",
+      "original_name": "PyErr_Occurred",
+      "address": "0x8019118c",
+      "size": "0x24",
+      "scope": "global"
+    },
+    {
+      "name": "PyErr_SetString",
+      "original_name": "PyErr_SetString",
+      "address": "0x801911b0",
+      "size": "0x150",
+      "scope": "global"
+    },
+    {
+      "name": "PyErr_SetNone",
+      "original_name": "fn_80191300",
+      "address": "0x80191300",
+      "size": "0xf0",
+      "scope": "global"
+    },
+    {
+      "name": "PyErr_SetObject",
+      "original_name": "PyErr_SetObject",
+      "address": "0x801913f0",
+      "size": "0x104",
+      "scope": "global"
+    },
+    {
+      "name": "PyErr_Restore",
+      "original_name": "PyErr_Restore",
+      "address": "0x801914f4",
+      "size": "0x124",
+      "scope": "global"
+    }
+  ],
+  "data_symbols": [],
+  "split_notes": [
+    "The data payload ends0x802DD0C4; four verified zero bytes align the following TU through0x802DD0C8.",
+    "The sdata payload ends0x80376743; five verified zero bytes align the following TU through0x80376748.",
+    "The linked warning API is PyErr_WarnExplicit at0x8018F560. PyErr_Warn and legacy PyErr_BadInternalCall are absent from the linked original and omitted; _PyErr_BadInternalCall remains.",
+    "The unit owns no BSS. All data are compiler-generated diagnostic strings and format strings."
+  ],
+  "validation": {
+    "text_bytes": 10152,
+    "data_bytes": 292,
+    "data_padding_bytes": 4,
+    "sdata_bytes": 83,
+    "sdata_padding_bytes": 5,
+    "relocations_applied": 244,
+    "section_byte_differences": 0,
+    "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "b9613d91a755c9d7e7a0cf85bdafaee8f094737f3ecf2c9a12b76c5daaefe6ff",
+    "object_sha256": "eaa76d7c13db397af59e42f342f4e153822521ad4c3762b7007e455f6f650c67",
+    "verification_script": "scratch/errors/verify.py",
+    "integration_status": "verified full-DOL and objdiff"
+  },
+  "notes": "docs/notes/errors.md",
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "b9613d91a755c9d7e7a0cf85bdafaee8f094737f3ecf2c9a12b76c5daaefe6ff",
+    "matched_code": 10152,
+    "matched_functions": 21,
+    "matched_data": 375,
+    "complete_data": 375,
+    "object_path": "build/GSQE78/src/Python/errors.o",
+    "object_sha256": "eaa76d7c13db397af59e42f342f4e153822521ad4c3762b7007e455f6f650c67"
+  },
+  "external_padding": [
+    {
+      "source": "src/Python/errors.c",
+      "unit": "main/Python/errors",
+      "section": ".data",
+      "start": "0x802dd0c4",
+      "end": "0x802dd0c8",
+      "size": 4,
+      "alignment": 1,
+      "symbol": "gap_07_802DD0C4_data",
+      "original_owner": "padding/source_extents/Python/errors.s",
+      "source_section_start": "0x802dcfa0",
+      "source_section_bytes": 292,
+      "previous_split_bytes": 296,
+      "description": "Original linker alignment beyond emitted source section; no source credit."
+    },
+    {
+      "source": "src/Python/errors.c",
+      "unit": "main/Python/errors",
+      "section": ".sdata",
+      "start": "0x80376743",
+      "end": "0x80376748",
+      "size": 5,
+      "alignment": 1,
+      "symbol": "gap_09_80376743_sdata",
+      "original_owner": "padding/source_extents/Python/errors.s",
+      "source_section_start": "0x803766f0",
+      "source_section_bytes": 83,
+      "previous_split_bytes": 88,
+      "description": "Original linker alignment beyond emitted source section; no source credit."
+    }
+  ],
+  "source_extent_audit": {
+    "data_credit_correction": 9,
+    "evidence": "config/GSQE78/source_padding.json",
+    "description": "Source and original bytes unchanged; trailing original padding moved to NonMatching ownership."
+  }
+}

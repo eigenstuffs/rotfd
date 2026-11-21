@@ -1,0 +1,2 @@
+/* Original actor phase delegates; see docs/notes/game-actor-phase-delegate-leafs.md. */
+struct Actor{char opaque00[0x30];unsigned long long flags;char opaque38[0x394];int state3CC;char opaque3D0;unsigned char enabled3D1,enabled3D2;};struct Owner{char opaque00[8];Actor*actor;};extern "C"{signed char fn_8009FABC(Actor*,int);void fn_800A4E30(Owner*);void fn_800A4E50(Owner*);}extern "C"void fn_8009FF18(Owner*self){fn_8009FABC(self->actor,1);fn_800A4E30(self);}

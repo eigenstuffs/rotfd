@@ -1,0 +1,194 @@
+{
+  "source": "src/Objects/unicodectype.c",
+  "status": "integrated-byte-match",
+  "compiler": "GC/2.0",
+  "cflags": "-proc gekko -fp hardware -enum int -str reuse -common off -opt level=4,nopeephole,speed -inline auto,deferred -pool off -Cpp_exceptions off",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2148945936,
+      "end": 2148948964
+    },
+    {
+      "name": ".rodata",
+      "start": 2150286064,
+      "end": 2150287254
+    },
+    {
+      "name": ".data",
+      "start": 2150459792,
+      "end": 2150468656
+    },
+    {
+      "name": ".sdata2",
+      "start": 2151129072,
+      "end": 2151129464
+    }
+  ],
+  "functions": [
+    {
+      "name": "_PyUnicode_IsAlpha",
+      "address": 2148945936,
+      "size": 108
+    },
+    {
+      "name": "_PyUnicode_ToLowercase",
+      "address": 2148946044,
+      "size": 104
+    },
+    {
+      "name": "_PyUnicode_ToUppercase",
+      "address": 2148946148,
+      "size": 104
+    },
+    {
+      "name": "_PyUnicode_IsUppercase",
+      "address": 2148946252,
+      "size": 108
+    },
+    {
+      "name": "_PyUnicode_IsLowercase",
+      "address": 2148946360,
+      "size": 108
+    },
+    {
+      "name": "_PyUnicode_IsWhitespace",
+      "address": 2148946468,
+      "size": 108
+    },
+    {
+      "name": "_PyUnicode_IsNumeric",
+      "address": 2148946576,
+      "size": 56
+    },
+    {
+      "name": "_PyUnicode_ToNumeric",
+      "address": 2148946632,
+      "size": 1588
+    },
+    {
+      "name": "_PyUnicode_IsDigit",
+      "address": 2148948220,
+      "size": 140
+    },
+    {
+      "name": "_PyUnicode_IsDecimalDigit",
+      "address": 2148948360,
+      "size": 140
+    },
+    {
+      "name": "_PyUnicode_ToDecimalDigit",
+      "address": 2148948500,
+      "size": 120
+    },
+    {
+      "name": "_PyUnicode_IsTitlecase",
+      "address": 2148948620,
+      "size": 108
+    },
+    {
+      "name": "_PyUnicode_ToTitlecase",
+      "address": 2148948728,
+      "size": 128
+    },
+    {
+      "name": "_PyUnicode_IsLinebreak",
+      "address": 2148948856,
+      "size": 108
+    }
+  ],
+  "objects": [
+    {
+      "name": "_PyUnicode_TypeRecords",
+      "address": 2150286064,
+      "size": 1190,
+      "section": ".rodata"
+    },
+    {
+      "name": "index1",
+      "address": 2150459792,
+      "size": 2048,
+      "section": ".data"
+    },
+    {
+      "name": "index2",
+      "address": 2150461840,
+      "size": 6816,
+      "section": ".data"
+    }
+  ],
+  "symbol_scopes": {
+    "_PyUnicode_IsAlpha": "global",
+    "_PyUnicode_ToLowercase": "global",
+    "_PyUnicode_ToUppercase": "global",
+    "_PyUnicode_IsUppercase": "global",
+    "_PyUnicode_IsLowercase": "global",
+    "_PyUnicode_IsWhitespace": "global",
+    "_PyUnicode_IsNumeric": "global",
+    "_PyUnicode_ToNumeric": "global",
+    "_PyUnicode_IsDigit": "global",
+    "_PyUnicode_IsDecimalDigit": "global",
+    "_PyUnicode_ToDecimalDigit": "global",
+    "_PyUnicode_IsTitlecase": "global",
+    "_PyUnicode_ToTitlecase": "global",
+    "_PyUnicode_IsLinebreak": "global",
+    "_PyUnicode_TypeRecords": "global",
+    "index1": "local",
+    "index2": "local"
+  },
+  "symbols": {
+    "PyType_Type": "0x802d68fc",
+    "_PyUnicode_IsAlpha": "0x80165010",
+    "_PyUnicode_ToLowercase": "0x8016507c",
+    "_PyUnicode_ToUppercase": "0x801650e4",
+    "_PyUnicode_IsUppercase": "0x8016514c",
+    "_PyUnicode_IsLowercase": "0x801651b8",
+    "_PyUnicode_IsWhitespace": "0x80165224",
+    "_PyUnicode_IsNumeric": "0x80165290",
+    "_PyUnicode_ToNumeric": "0x801652c8",
+    "_PyUnicode_IsDigit": "0x801658fc",
+    "_PyUnicode_IsDecimalDigit": "0x80165988",
+    "_PyUnicode_ToDecimalDigit": "0x80165a14",
+    "_PyUnicode_IsTitlecase": "0x80165a8c",
+    "_PyUnicode_ToTitlecase": "0x80165af8",
+    "_PyUnicode_IsLinebreak": "0x80165b78",
+    "_PyUnicode_TypeRecords": "0x802ac2f0",
+    "index1": "0x802d6990",
+    "index2": "0x802d7190"
+  },
+  "external_original_names": {},
+  "verified_text_bytes": 3028,
+  "verified_data_bytes": 10446,
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "a07f14a12b3d50a1c0a3a1f569d6c0433819d28c287d47f4d82bff1dbce0368e",
+    "matched_code": 3028,
+    "matched_functions": 14,
+    "matched_data": 10446,
+    "complete_data": 10446,
+    "object_path": "build/GSQE78/src/Objects/unicodectype.o",
+    "object_sha256": "b6a978af37b90c7fd4dd0e8672e75d8e388f844e39f5e95f14cef5ea175f24d4"
+  },
+  "external_padding": [
+    {
+      "source": "src/Objects/unicodectype.c",
+      "unit": "main/Objects/unicodectype",
+      "section": ".rodata",
+      "start": "0x802ac796",
+      "end": "0x802ac798",
+      "size": 2,
+      "alignment": 1,
+      "symbol": "gap_06_802AC796_rodata",
+      "original_owner": "padding/source_extents/Objects/unicodectype.s",
+      "source_section_start": "0x802ac2f0",
+      "source_section_bytes": 1190,
+      "previous_split_bytes": 1192,
+      "description": "Original linker alignment beyond emitted source section; no source credit."
+    }
+  ],
+  "source_extent_audit": {
+    "data_credit_correction": 2,
+    "evidence": "config/GSQE78/source_padding.json",
+    "description": "Source and original bytes unchanged; trailing original padding moved to NonMatching ownership."
+  }
+}

@@ -1,0 +1,16 @@
+/* Jellyfish and snail reflected type/state names; see docs/notes/game-jellyfish-snail-type-names.md. */
+extern "C" const char lbl_8029E338[9] = "CNPCMove";
+extern "C" const char lbl_8029E344[13] = "BaseObject_Z";
+extern "C" const char lbl_8029E354[12] = "Activable_Z";
+extern "C" const char lbl_8029E360[14] = "Manipulator_Z";
+extern "C" const char lbl_8029E370[13] = "ObjectMove_Z";
+extern "C" const char lbl_8029E380[14] = "ObjectThrow_Z";
+extern "C" const char lbl_8029E390[10] = "LodMove_Z";
+extern "C" const char lbl_8029E39C[11] = "CActorMove";
+extern "C" const char lbl_8029E3A8[11] = "CActorMove";
+extern "C" const char lbl_8029E3B4[13] = "BaseObject_Z";
+extern "C" const char lbl_8029E3C4[12] = "Activable_Z";
+extern "C" const char lbl_8029E3D0[14] = "Manipulator_Z";
+extern "C" const char lbl_8029E3E0[13] = "ObjectMove_Z";
+extern "C" const char lbl_8029E3F0[14] = "ObjectThrow_Z";
+extern "C" const char lbl_8029E400[10] = "LodMove_Z";

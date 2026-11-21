@@ -1,0 +1,13 @@
+/* Native indexed pointer wrapper; see docs/notes/game-python-indexed-pointer-bindings.md. */
+#include "Game/python_indexed_pointer_encoding.h"
+extern "C" const char lbl_802A2E48[];
+extern "C" long PyInt_AsLong(FactoryPyObject*);
+struct Owner{char unknown[152];unsigned long*values;};
+extern "C" FactoryPyObject*fn_800CF430(FactoryPyObject*,FactoryPyObject*args){
+ void*self;FactoryPyObject*parsed=0;FactoryPyObject*indexObject=0;
+ if(!PyArg_ParseTuple(args,lbl_802A2E48,&parsed,&indexObject))return 0;
+ if(fn_800CD864(parsed,&self,lbl_80318988[0x1c/4],1)==-1)return 0;
+ long index=PyInt_AsLong(indexObject);
+ unsigned long*pointer=&((Owner*)self)->values[index];
+return indexedPointerObject(pointer,lbl_80318988[188/4]);
+}

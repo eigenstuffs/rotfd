@@ -1,0 +1,226 @@
+[
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/render_display_list_call.cpp",
+    "source_sha256": "bada054ccf73affc77c73e421574741d681a3bfa6035fddc7e3d65141a05859d",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,p",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "off",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "src/Game",
+      "-i",
+      "include"
+    ],
+    "headers": [],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2150115580,
+        "end": 2150115724,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_802828FC",
+        "address": 2150115580,
+        "size": 144,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "GXCallDisplayList",
+        "section": ".text",
+        "address": 2148625608,
+        "scope": "global"
+      },
+      {
+        "name": "GXClearVtxDesc",
+        "section": ".text",
+        "address": 2148608180,
+        "scope": "global"
+      },
+      {
+        "name": "GXDrawDone",
+        "section": ".text",
+        "address": 2148611508,
+        "scope": "global"
+      },
+      {
+        "name": "GXGetVtxDescv",
+        "section": ".text",
+        "address": 2148608036,
+        "scope": "global"
+      },
+      {
+        "name": "GXInvalidateVtxCache",
+        "section": ".text",
+        "address": 2148610276,
+        "scope": "global"
+      },
+      {
+        "name": "GXSetArray",
+        "section": ".text",
+        "address": 2148610136,
+        "scope": "global"
+      },
+      {
+        "name": "GXSetVtxDesc",
+        "section": ".text",
+        "address": 2148605492,
+        "scope": "global"
+      },
+      {
+        "name": "GXSetVtxDescv",
+        "section": ".text",
+        "address": 2148606340,
+        "scope": "global"
+      },
+      {
+        "name": "PPCSync",
+        "section": ".text",
+        "address": 2148470232,
+        "scope": "global"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 32,
+        "address": 2150115612,
+        "kind": 10,
+        "symbol": "GXGetVtxDescv",
+        "target": 2148608036,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 36,
+        "address": 2150115616,
+        "kind": 10,
+        "symbol": "GXClearVtxDesc",
+        "target": 2148608180,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 48,
+        "address": 2150115628,
+        "kind": 10,
+        "symbol": "GXSetVtxDesc",
+        "target": 2148605492,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 52,
+        "address": 2150115632,
+        "kind": 10,
+        "symbol": "PPCSync",
+        "target": 2148470232,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 56,
+        "address": 2150115636,
+        "kind": 10,
+        "symbol": "GXInvalidateVtxCache",
+        "target": 2148610276,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 72,
+        "address": 2150115652,
+        "kind": 10,
+        "symbol": "GXSetArray",
+        "target": 2148610136,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 104,
+        "address": 2150115684,
+        "kind": 10,
+        "symbol": "GXCallDisplayList",
+        "target": 2148625608,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 108,
+        "address": 2150115688,
+        "kind": 10,
+        "symbol": "GXDrawDone",
+        "target": 2148611508,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 116,
+        "address": 2150115696,
+        "kind": 10,
+        "symbol": "GXSetVtxDescv",
+        "target": 2148606340,
+        "addend": 0
+      }
+    ],
+    "notes": "docs/notes/game-render-display-list-call.md",
+    "original_metadata_audit": {
+      "extabindex_scan": [
+        2147573600,
+        2147611328,
+        12
+      ],
+      "matching_extabindex": [],
+      "ctors_scan": [
+        2150209824,
+        2150209920,
+        4
+      ],
+      "dtors_scan": [
+        2150209920,
+        2150209952,
+        4
+      ],
+      "ctors": [],
+      "dtors": []
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "89d2cd5f61e634e7e6b3f4a3d1cc5abc1c9937749a4520357b8e1fd1d3ceb14a",
+      "retained_text_bytes": 144,
+      "initialized_data_bytes": 0,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 9,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  }
+]

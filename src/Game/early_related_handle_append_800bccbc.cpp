@@ -1,0 +1,2 @@
+#include "Game/early_related_handle_append_views.h"
+extern "C" void fn_800BCCBC(RelatedAppendOwner*self,const RelatedAppendHandle&child,const RelatedAppendHandle&parent){int i;for(i=0;i<self->count;++i)if(resolveRelatedAppend(self->data[i])==resolveRelatedAppend(child))break;if(i<self->count)return;resolveRelatedAppend(child)->setParent(parent);if(self->count+1>self->capacity){self->grow(self->capacity+8);self->capacity+=8;}new(&self->data[self->count++])RelatedAppendHandle(child);}

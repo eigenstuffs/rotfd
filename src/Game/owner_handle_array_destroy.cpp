@@ -1,0 +1,3 @@
+struct HandleArrayDestroyOwner {char unknown00[8];void*table;char unknown0C[0x54];unsigned long handles[32];};
+extern "C" {extern char __vt__20QueueGroups_802EBDA0[],lbl_801EF5C8[];void fn_8023106C(void*,int);void fn_801EF610(void*,void*);void __dt__15Handle_801F7F10Fv(void*,int);void __destroy_arr(void*,void(*)(void*,int),unsigned long,unsigned long);}
+extern "C" HandleArrayDestroyOwner*fn_8023183C(HandleArrayDestroyOwner*self,int deleting){if(self){self->table=__vt__20QueueGroups_802EBDA0;__destroy_arr(self->handles,__dt__15Handle_801F7F10Fv,4,32);fn_8023106C(self,0);if((short)deleting>0)fn_801EF610(lbl_801EF5C8,self);}return self;}

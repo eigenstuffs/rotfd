@@ -1,0 +1,89 @@
+// Partial native screen controls, packed handles and camera state.
+struct ScreenIndex {
+    int value;
+    ScreenIndex(int v) : value(v) {}
+    operator const int&() const { return value; }
+};
+struct ScreenControlHandle { struct { signed int tag : 8; signed int index : 24; } bits; };
+struct ScreenControlEntry {
+    void* object;
+    char unknown04[8];
+    signed char tag;
+    char unknown0D[3];
+    bool matchesTag(signed char expected) const { return tag == expected; }
+};
+struct ScreenEntryArray {
+    ScreenControlEntry* data;
+    ScreenControlEntry& operator[](int index) const { return data[index]; }
+};
+struct ScreenControlManager { int count, capacity; ScreenEntryArray entries; };
+struct ScreenControlScreen { char unknown00[0x60]; ScreenControlHandle handle; };
+struct ScreenControlWorld { char unknown00[0x15058]; ScreenControlScreen* screen; };
+struct ScreenControlContext {
+    char unknown00[0x118]; ScreenControlManager* manager;
+    char unknown11C[8]; ScreenControlWorld* world;
+};
+extern "C" ScreenControlContext lbl_801E9D24;
+inline void* resolveScreenControl(const ScreenControlHandle& handle) {
+    ScreenControlManager* manager = lbl_801E9D24.manager;
+    ScreenIndex index(handle.bits.index);
+    signed char generation = handle.bits.tag;
+    if (manager->entries[index].matchesTag(generation))
+        return manager->entries[index].object;
+    return 0;
+}
+extern "C" unsigned long fn_801F948C(void*, const char*);
+struct ScreenControlName {
+    unsigned long value;
+    ScreenControlName(const char* text) { value = fn_801F948C(this, text); }
+    ScreenControlName(const ScreenControlName& name) : value(name.value) {}
+};
+struct ScreenControlVector {
+    float x, y, z;
+    ScreenControlVector& operator=(const ScreenControlVector& other) {
+        x = other.x; y = other.y; z = other.z; return *this;
+    }
+};
+struct ScreenControlCamera {
+    char unknown00[0xD0]; int type;
+    char unknownD4[0x120]; ScreenControlVector from, to, velocity;
+    char unknown218[0x10]; int mode;
+};
+struct ScreenActorController {};
+struct ScreenActor {
+    char unknown00[0x1AC]; ScreenControlHandle target;
+    char unknown1B0[0x168]; ScreenActorController controller;
+};
+extern "C" {
+    void* fn_8005E90C();
+    signed char fn_8007D604(ScreenActorController*, int);
+    signed char fn_8007D6A0(ScreenActorController*, int);
+    void fn_800A64E0(void*, signed char);
+    void fn_800A6234(void*, signed char, ScreenControlName);
+    ScreenControlCamera* fn_8007D074(void* ignored);
+    void fn_8007626C(ScreenControlCamera*, int);
+    void fn_8007705C(ScreenControlCamera*);
+    void* fn_801F7EB8(ScreenControlHandle*);
+    extern const char lbl_80378810[4];
+    extern ScreenControlVector game_vec3_zero;
+}
+inline ScreenActor* currentScreenActor() {
+    return static_cast<ScreenActor*>(fn_8005E90C());
+}
+
+extern "C" void fn_8006D684(unsigned long ignored) {
+    ScreenControlCamera* camera = fn_8007D074(reinterpret_cast<void*>(ignored));
+    camera->mode = 2;
+    if (camera->type == 4) {
+        fn_8007705C(camera);
+        camera->velocity = game_vec3_zero;
+    }
+    if (fn_801F7EB8(&currentScreenActor()->target))
+        fn_8007D6A0(&currentScreenActor()->controller, 0x18);
+    else
+        fn_8007D6A0(&currentScreenActor()->controller, 0);
+    fn_800A64E0(resolveScreenControl(lbl_801E9D24.world->screen->handle), 0);
+    void* owner = resolveScreenControl(lbl_801E9D24.world->screen->handle);
+    ScreenControlName name(lbl_80378810);
+    fn_800A6234(owner, 0, name);
+}

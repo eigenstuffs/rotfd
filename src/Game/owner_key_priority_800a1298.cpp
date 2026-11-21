@@ -1,0 +1,2 @@
+#include "Game/owner_motion_control_views.h"
+extern "C" void fn_800A1298(MotionControlAction*self){if(fn_8009C12C(self->agent,0x1B))fn_8009FABC(self->agent,0x1B);else if(fn_8009C12C(self->agent,0x10))fn_8009FABC(self->agent,0x10);else if(fn_8009C12C(self->agent,0xC))fn_8009FABC(self->agent,0xC);else if(fn_8009C12C(self->agent,1))fn_8009FABC(self->agent,1);self->agent->previous=self->agent->selector;fn_800A4E30(self);}

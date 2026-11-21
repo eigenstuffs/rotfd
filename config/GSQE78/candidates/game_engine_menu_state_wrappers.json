@@ -1,0 +1,197 @@
+[
+  {
+    "status": "isolated-retained-byte-match",
+    "source": "src/Game/engine_menu_root_enabled.cpp",
+    "source_sha256": "3184cf08235e2bc98d9b74fb73fafef7e424ba09ff25af2cf74860cab9e197d2",
+    "compiler": "GC/1.3.2",
+    "source_kind": "c++",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,p",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "off",
+      "-i",
+      "include"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2149692540,
+        "end": 2149692592,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_8021B47C",
+        "address": 2149692540,
+        "size": 52,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [],
+    "unlinked_functions": [],
+    "headers": [
+      {
+        "path": "include/Game/engine_menu_state_wrappers.h",
+        "sha256": "0bce0ca2d7687451cb1e28a5cc8cff2393dad33e23bf471d3a1acf4b44dd70ae"
+      }
+    ],
+    "dependency_symbols": [],
+    "validation": {
+      "retained_text_bytes": 52,
+      "relocations": 1,
+      "unlinked_text_bytes": 0,
+      "unlinked_relocations": 0,
+      "initialized_data_bytes": 0,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0
+    },
+    "verified_text_bytes": 52,
+    "verified_data_bytes": 0,
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 12,
+        "address": 2149692552,
+        "kind": 10,
+        "symbol": "slot1C__12BaseObject_ZFv",
+        "target": 2149610324,
+        "addend": 0
+      }
+    ],
+    "memcard_native_identity_migration": {
+      "description": "Current canonical identities and hashes verified after native CGCMemCardManipulator/CFSM ownership integration; original evidence is retained in immutable backups and explicit previous receipts.",
+      "production_verification": "scratch/memcard_native_vtable_20261020_parallel/production-verification.json",
+      "production_verification_sha256": "96e50e874bd53c148cd6395f670c040416c34699787d56726d8cfb010c340f31",
+      "migration_object_audit": "scratch/memcard_native_vtable_20261020_parallel/migration_object_audit.json",
+      "migration_object_audit_sha256": "b809560bf7212a505b2ea749256bef5263b4784d066bb311015e10928e90db9d",
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "unchanged_caller_objects": 344,
+      "native_objects": 6,
+      "native_actual_relocations": 281,
+      "previous_canonical_sha256": "ecc462f06a7962161194675b0b6ef097aee42717bd082056eb57a9355d67d55d",
+      "previous_canonical": "scratch/memcard_canonical_refresh_20261020_parallel/backups/config/GSQE78/candidates/game_engine_menu_state_wrappers.json",
+      "previous_entry_json_pointer": "/0"
+    }
+  },
+  {
+    "status": "isolated-retained-byte-match",
+    "source": "src/Game/engine_menu_flag_refresh.cpp",
+    "source_sha256": "222d531413442a8f4e7e8c43b8e3f097a06db0c2d6b33fb2146e9703b7fe7653",
+    "compiler": "GC/1.3.2",
+    "source_kind": "c++",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,p",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "off",
+      "-i",
+      "include"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2149693372,
+        "end": 2149693440,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_8021B7BC",
+        "address": 2149693372,
+        "size": 36,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      },
+      {
+        "name": "fn_8021B7E0",
+        "address": 2149693408,
+        "size": 32,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 36
+      }
+    ],
+    "objects": [],
+    "unlinked_functions": [],
+    "headers": [
+      {
+        "path": "include/Game/engine_menu_state_wrappers.h",
+        "sha256": "0bce0ca2d7687451cb1e28a5cc8cff2393dad33e23bf471d3a1acf4b44dd70ae"
+      }
+    ],
+    "dependency_symbols": [],
+    "validation": {
+      "retained_text_bytes": 68,
+      "relocations": 2,
+      "unlinked_text_bytes": 0,
+      "unlinked_relocations": 0,
+      "initialized_data_bytes": 0,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0
+    },
+    "verified_text_bytes": 68,
+    "verified_data_bytes": 0,
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 16,
+        "address": 2149693388,
+        "kind": 10,
+        "symbol": "fn_80213A18",
+        "target": 2149661208,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 48,
+        "address": 2149693420,
+        "kind": 10,
+        "symbol": "fn_802139D8",
+        "target": 2149661144,
+        "addend": 0
+      }
+    ],
+    "memcard_native_identity_migration": {
+      "description": "Current canonical identities and hashes verified after native CGCMemCardManipulator/CFSM ownership integration; original evidence is retained in immutable backups and explicit previous receipts.",
+      "production_verification": "scratch/memcard_native_vtable_20261020_parallel/production-verification.json",
+      "production_verification_sha256": "96e50e874bd53c148cd6395f670c040416c34699787d56726d8cfb010c340f31",
+      "migration_object_audit": "scratch/memcard_native_vtable_20261020_parallel/migration_object_audit.json",
+      "migration_object_audit_sha256": "b809560bf7212a505b2ea749256bef5263b4784d066bb311015e10928e90db9d",
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "unchanged_caller_objects": 344,
+      "native_objects": 6,
+      "native_actual_relocations": 281,
+      "previous_canonical_sha256": "ecc462f06a7962161194675b0b6ef097aee42717bd082056eb57a9355d67d55d",
+      "previous_canonical": "scratch/memcard_canonical_refresh_20261020_parallel/backups/config/GSQE78/candidates/game_engine_menu_state_wrappers.json",
+      "previous_entry_json_pointer": "/1"
+    }
+  }
+]

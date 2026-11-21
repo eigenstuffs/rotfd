@@ -1,0 +1,6 @@
+/* Original indexed records, engine setup and allocation-header routines.
+ * See docs/notes/game-engine-leaf.md. */
+
+int fn_801C0DCC(void *object,void *unused,int index) {*(int *)(*(char **)((char *)object+0x188)+index*168+0x50)=0;return 1;}
+
+int fn_801C0DE8(void *object,float *position,float *direction,void *unused,int index) {const float *from;char *record;int offset=index*168;record=*(char **)((char *)object+0x188)+offset;position[0]=*(float *)(record+0x54);position[1]=*(float *)(record+0x58);position[2]=*(float *)(record+0x5c);from=(const float *)(*(char **)((char *)object+0x188)+offset+0x6c);direction[0]=from[0];direction[1]=from[1];direction[2]=from[2];return *(int *)(*(char **)((char *)object+0x188)+offset+0x50);}

@@ -1,0 +1,148 @@
+{
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-lang c++",
+    "-proc gekko",
+    "-fp hardware",
+    "-enum int",
+    "-str reuse",
+    "-common off",
+    "-O4,p",
+    "-inline auto",
+    "-Cpp_exceptions off",
+    "-use_lmw_stmw on",
+    "-i src/Game"
+  ],
+  "source": "src/Game/hierarchy_selection_vector.cpp",
+  "status": "integrated-byte-match",
+  "scope": "Single observed hierarchy selection vector command; independent source fragment preserves native retained-function order.",
+  "splits": [
+    {
+      "section": ".text",
+      "start": "0x80204aa8",
+      "end": "0x80204cc0"
+    }
+  ],
+  "functions": [
+    {
+      "name": "fn_80204AA8",
+      "original_name": "fn_80204AA8",
+      "address": "0x80204aa8",
+      "size": "0x218",
+      "scope": "global"
+    }
+  ],
+  "data_symbols": [],
+  "dependency_symbols": [
+    {
+      "name": "lbl_801E9D24",
+      "address": "0x801e9d24",
+      "section": ".text"
+    },
+    {
+      "name": "__ct__15Handle_801F7F10Fv",
+      "address": "0x801f7f04",
+      "section": ".text"
+    },
+    {
+      "name": "fn_801FE6BC",
+      "address": "0x801fe6bc",
+      "section": ".text"
+    },
+    {
+      "name": "fn_801F7EB8",
+      "address": "0x801f7eb8",
+      "section": ".text"
+    },
+    {
+      "name": "__dt__15Handle_801F7F10Fv",
+      "address": "0x801f7f10",
+      "section": ".text"
+    },
+    {
+      "name": "__dl__FPv",
+      "address": "0x8011edd4",
+      "section": ".text"
+    }
+  ],
+  "notes": "docs/notes/game-hierarchy-selection-transform.md",
+  "validation": {
+    "verification_script": "scratch/game_hierarchy_selection_transform/verify.py",
+    "verification_argument": "vector",
+    "text_bytes": 536,
+    "data_bytes": 0,
+    "byte_differences": 0,
+    "original_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "integration_status": "verified full-DOL and objdiff",
+    "unlinked_function_count": 6,
+    "unlinked_text_bytes": 564,
+    "source_sha256": "eab66a891328084317fe86cde709d3aa56d2bd1e9de96c5e1bf44c0da298a997",
+    "object_sha256": "6afbaf37f05c4f9ca3c2978267d05b30e247644f4d92c00f1459631d2dca421d",
+    "relocations_applied": 19,
+    "unlinked_relocations": 12,
+    "console_argument_refinement": {
+      "whole_compiled_object_identical": true,
+      "proof": "scratch/console_argument_names/verification.json"
+    }
+  },
+  "unlinked_functions": [
+    {
+      "name": "__dt__16SelectionHandle5Fv",
+      "object_offset": "0x218",
+      "size": "0x68",
+      "binding": "weak",
+      "reason": "Unreferenced generated C++ handle destructor; ordinary linker dead stripping."
+    },
+    {
+      "name": "__dt__16SelectionHandle4Fv",
+      "object_offset": "0x280",
+      "size": "0x64",
+      "binding": "weak",
+      "reason": "Unreferenced generated C++ handle destructor; ordinary linker dead stripping."
+    },
+    {
+      "name": "__dt__16SelectionHandle3Fv",
+      "object_offset": "0x2e4",
+      "size": "0x60",
+      "binding": "weak",
+      "reason": "Unreferenced generated C++ handle destructor; ordinary linker dead stripping."
+    },
+    {
+      "name": "__dt__16SelectionHandle2Fv",
+      "object_offset": "0x344",
+      "size": "0x5c",
+      "binding": "weak",
+      "reason": "Unreferenced generated C++ handle destructor; ordinary linker dead stripping."
+    },
+    {
+      "name": "__dt__16SelectionHandle1Fv",
+      "object_offset": "0x3a0",
+      "size": "0x58",
+      "binding": "weak",
+      "reason": "Unreferenced generated C++ handle destructor; ordinary linker dead stripping."
+    },
+    {
+      "name": "__dt__16SelectionHandle0Fv",
+      "object_offset": "0x3f8",
+      "size": "0x54",
+      "binding": "weak",
+      "reason": "Unreferenced generated C++ handle destructor; ordinary linker dead stripping."
+    }
+  ],
+  "headers": [
+    {
+      "path": "src/Game/hierarchy_selection_transform_internal.h",
+      "sha256": "de51d1c7440ff1af900bb0be5ba930b8634b764f51c97e9a0d538b3b39bb11bc"
+    }
+  ],
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "eab66a891328084317fe86cde709d3aa56d2bd1e9de96c5e1bf44c0da298a997",
+    "matched_code": 536,
+    "matched_functions": 1,
+    "matched_data": 0,
+    "complete_data": 0,
+    "object_path": "build/GSQE78/src/Game/hierarchy_selection_vector.o",
+    "object_sha256": "6afbaf37f05c4f9ca3c2978267d05b30e247644f4d92c00f1459631d2dca421d"
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "status": "isolated-byte-match",
+  "source": "src/Game/callback_indexed_vector.cpp",
+  "source_sha256": "3a2b2e791ce4b8893e8fc5281329a25b6e2b48a31a6bfe3f448510502fdcf9c0",
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-proc",
+    "gekko",
+    "-fp",
+    "hardware",
+    "-enum",
+    "int",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-Cpp_exceptions",
+    "off",
+    "-RTTI",
+    "off",
+    "-str",
+    "reuse",
+    "-common",
+    "off",
+    "-use_lmw_stmw",
+    "on",
+    "-i",
+    "include"
+  ],
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2149934708,
+      "end": 2149935068,
+      "alignment": 4
+    }
+  ],
+  "functions": [
+    {
+      "name": "fn_80256674",
+      "address": 2149934708,
+      "size": 360,
+      "scope": "global",
+      "section": ".text",
+      "object_offset": 0
+    }
+  ],
+  "objects": [],
+  "unlinked_functions": [],
+  "headers": [],
+  "notes": "docs/notes/game-callback-indexed-vector.md",
+  "actual_relocations": [
+    {
+      "section": ".text",
+      "at": 44,
+      "address": 2149934752,
+      "kind": 10,
+      "symbol": "fn_801F7EB8",
+      "target": 2149547704,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 58,
+      "address": 2149934766,
+      "kind": 6,
+      "symbol": "lbl_801E9D24",
+      "target": 2149489956,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 66,
+      "address": 2149934774,
+      "kind": 4,
+      "symbol": "lbl_801E9D24",
+      "target": 2149489956,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 228,
+      "address": 2149934936,
+      "kind": 10,
+      "symbol": "fn_801F7EB8",
+      "target": 2149547704,
+      "addend": 0
+    }
+  ],
+  "dependency_symbols": [
+    {
+      "name": "fn_801F7EB8",
+      "address": 2149547704,
+      "scope": "global",
+      "section": ".text"
+    },
+    {
+      "name": "lbl_801E9D24",
+      "address": 2149489956,
+      "scope": "global",
+      "section": ".text"
+    }
+  ],
+  "validation": {
+    "retained_text_bytes": 360,
+    "relocations": 4,
+    "initialized_data_bytes": 0,
+    "bss_bytes": 0,
+    "owned_padding_bytes": 0
+  }
+}

@@ -1,0 +1,357 @@
+{
+  "source": "src/Game/file_lifecycle.cpp",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.3.2",
+  "cflags": "-proc gekko -fp hardware -enum int -str reuse -common off -O4,p -inline auto -Cpp_exceptions off -use_lmw_stmw on",
+  "splits": [
+    {
+      "section": ".text",
+      "start": "0x801f3c70",
+      "end": "0x801f3f30"
+    }
+  ],
+  "functions": [
+    {
+      "name": "fn_801F3C70",
+      "section": ".text",
+      "address": "0x801f3c70",
+      "size": "0x78",
+      "scope": "global",
+      "original_name": "fn_801F3C70"
+    },
+    {
+      "name": "fn_801F3CE8",
+      "section": ".text",
+      "address": "0x801f3ce8",
+      "size": "0x134",
+      "scope": "global",
+      "original_name": "fn_801F3CE8"
+    },
+    {
+      "name": "__dt__13File_801F3E1CFv",
+      "section": ".text",
+      "address": "0x801f3e1c",
+      "size": "0xec",
+      "scope": "global",
+      "original_name": "__dt__13File_801F3E1CFv"
+    },
+    {
+      "name": "__ct__13File_801F3E1CFv",
+      "section": ".text",
+      "address": "0x801f3f08",
+      "size": "0x28",
+      "scope": "global",
+      "original_name": "__ct__13File_801F3E1CFv"
+    }
+  ],
+  "data_symbols": [],
+  "section_anchors": [],
+  "dependency_symbols": [
+    {
+      "name": "lbl_802AD4B0",
+      "address": "0x802ad4b0"
+    },
+    {
+      "name": "lbl_801EF5C8",
+      "address": "0x801ef5c8"
+    },
+    {
+      "name": "lbl_802AD4A0",
+      "address": "0x802ad4a0"
+    },
+    {
+      "name": "fn_801EFA1C",
+      "address": "0x801efa1c"
+    },
+    {
+      "name": "memcpy",
+      "address": "0x80005520"
+    },
+    {
+      "name": "lbl_801E9D24",
+      "address": "0x801e9d24"
+    },
+    {
+      "name": "FIOFclose",
+      "address": "0x8010f6b0"
+    },
+    {
+      "name": "fclose",
+      "address": "0x801251d0"
+    },
+    {
+      "name": "DVDClose",
+      "address": "0x800f826c"
+    },
+    {
+      "name": "fn_801EF610",
+      "address": "0x801ef610"
+    }
+  ],
+  "notes": "docs/notes/game-file-io.md",
+  "split_notes": [
+    "Four contiguous file-object lifecycle functions. The internal closeBacking helper mirrors the integrated file I/O close operation and is fully inlined in the destructor. Shared string data remain external; no original translation-unit extent is claimed."
+  ],
+  "validation": {
+    "code_bytes": 704,
+    "emitted_data_bytes": 0,
+    "bss_layout_bytes": 0,
+    "relocations_applied": 26,
+    "byte_differences": 0,
+    "source_sha256": "38af8270eb4885395f7404d24fa0a533bf28d178599604ab2135b68679ecd536",
+    "object_sha256": "e2ad01a4097215925df49ea67a6e47eceea2926215f2f09925b69858037bf300",
+    "original_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "integration_status": "verified full-DOL and objdiff"
+  },
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "38af8270eb4885395f7404d24fa0a533bf28d178599604ab2135b68679ecd536",
+    "matched_code": 704,
+    "matched_functions": 4,
+    "matched_data": 0,
+    "complete_data": 0,
+    "object_path": "build/GSQE78/src/Game/file_lifecycle.o",
+    "object_sha256": "e2ad01a4097215925df49ea67a6e47eceea2926215f2f09925b69858037bf300"
+  },
+  "source_hash_provenance": {
+    "previous_candidate": "scratch/native_objects_candidate_metadata_before/game_file_lifecycle.json",
+    "description": "Earlier isolated source/object hashes are retained in this snapshot. Current source hash and canonical object are verified by the complete DOL and native objdiff."
+  },
+  "source_sha256": "38af8270eb4885395f7404d24fa0a533bf28d178599604ab2135b68679ecd536",
+  "actual_relocations": [
+    {
+      "section": ".text",
+      "at": 10,
+      "address": 2149530746,
+      "kind": 6,
+      "symbol": "lbl_802AD4B0",
+      "target": 2150290608,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 22,
+      "address": 2149530758,
+      "kind": 4,
+      "symbol": "lbl_802AD4B0",
+      "target": 2150290608,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 38,
+      "address": 2149530774,
+      "kind": 6,
+      "symbol": "lbl_801EF5C8",
+      "target": 2149512648,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 46,
+      "address": 2149530782,
+      "kind": 6,
+      "symbol": "lbl_802AD4A0",
+      "target": 2150290592,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 50,
+      "address": 2149530786,
+      "kind": 4,
+      "symbol": "lbl_802AD4A0",
+      "target": 2150290592,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 54,
+      "address": 2149530790,
+      "kind": 4,
+      "symbol": "lbl_801EF5C8",
+      "target": 2149512648,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 60,
+      "address": 2149530796,
+      "kind": 10,
+      "symbol": "fn_801EFA1C",
+      "target": 2149513756,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 346,
+      "address": 2149531082,
+      "kind": 6,
+      "symbol": "lbl_801EF5C8",
+      "target": 2149512648,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 350,
+      "address": 2149531086,
+      "kind": 6,
+      "symbol": "lbl_802AD4A0",
+      "target": 2150290592,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 354,
+      "address": 2149531090,
+      "kind": 6,
+      "symbol": "lbl_802AD4B0",
+      "target": 2150290608,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 362,
+      "address": 2149531098,
+      "kind": 4,
+      "symbol": "lbl_801EF5C8",
+      "target": 2149512648,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 366,
+      "address": 2149531102,
+      "kind": 4,
+      "symbol": "lbl_802AD4A0",
+      "target": 2150290592,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 370,
+      "address": 2149531106,
+      "kind": 4,
+      "symbol": "lbl_802AD4B0",
+      "target": 2150290608,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 376,
+      "address": 2149531112,
+      "kind": 10,
+      "symbol": "fn_801EFA1C",
+      "target": 2149513756,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 396,
+      "address": 2149531132,
+      "kind": 10,
+      "symbol": "memcpy",
+      "target": 2147505440,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 478,
+      "address": 2149531214,
+      "kind": 6,
+      "symbol": "lbl_801E9D24",
+      "target": 2149489956,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 482,
+      "address": 2149531218,
+      "kind": 4,
+      "symbol": "lbl_801E9D24",
+      "target": 2149489956,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 500,
+      "address": 2149531236,
+      "kind": 10,
+      "symbol": "FIOFclose",
+      "target": 2148595376,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 532,
+      "address": 2149531268,
+      "kind": 10,
+      "symbol": "fclose",
+      "target": 2148684240,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 564,
+      "address": 2149531300,
+      "kind": 10,
+      "symbol": "DVDClose",
+      "target": 2148500076,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 590,
+      "address": 2149531326,
+      "kind": 6,
+      "symbol": "lbl_801EF5C8",
+      "target": 2149512648,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 594,
+      "address": 2149531330,
+      "kind": 4,
+      "symbol": "lbl_801EF5C8",
+      "target": 2149512648,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 596,
+      "address": 2149531332,
+      "kind": 10,
+      "symbol": "fn_801EF610",
+      "target": 2149512720,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 622,
+      "address": 2149531358,
+      "kind": 6,
+      "symbol": "lbl_801EF5C8",
+      "target": 2149512648,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 630,
+      "address": 2149531366,
+      "kind": 4,
+      "symbol": "lbl_801EF5C8",
+      "target": 2149512648,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 632,
+      "address": 2149531368,
+      "kind": 10,
+      "symbol": "fn_801EF610",
+      "target": 2149512720,
+      "addend": 0
+    }
+  ]
+}

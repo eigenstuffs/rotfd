@@ -1,0 +1,2 @@
+/* Original observed timer and reset leaves; see docs/notes/game-observed-timer-reset-leafs.md. */
+struct Component;struct Owner;extern "C"{void fn_80222E44(Owner*,float);signed char fn_8007DA74(Component*,float);}extern "C"void fn_80027C14(Owner*self,float delta){fn_80222E44(self,delta);fn_8007DA74((Component*)((char*)self+0x318),delta);}

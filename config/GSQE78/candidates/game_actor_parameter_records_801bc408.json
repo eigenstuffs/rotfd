@@ -1,0 +1,515 @@
+{
+  "source": "src/Game/actor_parameter_records_801bc408.cpp",
+  "source_sha256": "2158f61aa9242b92a61b458060b6980ea8824fce86861987682ab8c90232ce86",
+  "cflags": [
+    "-proc",
+    "gekko",
+    "-fp",
+    "hardware",
+    "-enum",
+    "int",
+    "-str",
+    "reuse,readonly",
+    "-pool",
+    "on",
+    "-common",
+    "off",
+    "-O4,p",
+    "-use_lmw_stmw",
+    "on",
+    "-inline",
+    "auto",
+    "-Cpp_exceptions",
+    "off",
+    "-RTTI",
+    "off",
+    "-fp_contract",
+    "on"
+  ],
+  "status": "isolated-complete-retained-byte-match",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2149303304,
+      "end": 2149304284,
+      "alignment": 4
+    },
+    {
+      "name": ".rodata",
+      "start": 2150287944,
+      "end": 2150287992,
+      "alignment": 8
+    },
+    {
+      "name": ".sdata2",
+      "start": 2151129808,
+      "end": 2151129816,
+      "alignment": 8
+    }
+  ],
+  "functions": [
+    {
+      "name": "fn_801BC408",
+      "section": ".text",
+      "address": 2149303304,
+      "size": 980,
+      "scope": "global",
+      "object_offset": 0
+    }
+  ],
+  "objects": [
+    {
+      "name": "dynamicXFilter_801BC408",
+      "section": ".rodata",
+      "address": 2150287944,
+      "size": 16,
+      "scope": "local",
+      "object_offset": 0
+    },
+    {
+      "name": "dynamicYFilter_801BC408",
+      "section": ".rodata",
+      "address": 2150287960,
+      "size": 16,
+      "scope": "local",
+      "object_offset": 16
+    },
+    {
+      "name": "dynamicTension_801BC408",
+      "section": ".rodata",
+      "address": 2150287976,
+      "size": 16,
+      "scope": "local",
+      "object_offset": 32
+    },
+    {
+      "name": "@175",
+      "section": ".sdata2",
+      "address": 2151129808,
+      "size": 8,
+      "scope": "local",
+      "object_offset": 0
+    }
+  ],
+  "validation": {
+    "relocations": 31,
+    "category_relocations": 1,
+    "object_sha256": "faa19bf81d69974fbb8c91ed5dfd7fe64c6346b816d7a35a985ee9bcb1d1ea73",
+    "retained_bytes": 1036,
+    "allocated_sections": {
+      ".text": 980,
+      ".rodata": 48,
+      ".sdata2": 8
+    },
+    "literal_pool_objects": 3,
+    "literal_pool_anchor": "...rodata.0",
+    "literal_pool_bytes": 48,
+    "signed_bias_bytes": 8,
+    "full_static_production_report": "scratch/sdk_actor_parameter_records_producer_801bc408_20261011/production_static_v1/report.json",
+    "native_original_provider_link": "scratch/sdk_actor_parameter_records_producer_801bc408_20261011/native_v2/report.json",
+    "compiler_layout": "scratch/sdk_actor_parameter_records_producer_801bc408_20261011/layout_v1/report.json",
+    "unlinked_functions": 0,
+    "unlinked_objects": 0,
+    "full_original_tables": "scratch/sdk_actor_parameter_records_producer_801bc408_20261011/original_full_tables.json",
+    "unlinked_relocations": 0,
+    "unlinked_metadata_relocations": 0,
+    "consumer_audit": "/Users/brandenb/Downloads/rotfd/scratch/sdk_actor_parameter_records_current_801bc408_20261011/released-union-v2/consumer_audit.json",
+    "consumer_audit_sha256": "d696e044ca47b8116be74687c7be709b9ade8040b0c48971d26748bdd23bf442",
+    "consumer_inputs": "/Users/brandenb/Downloads/rotfd/scratch/sdk_actor_parameter_records_current_801bc408_20261011/released-union-v2/consumer-input-hashes.json",
+    "consumer_inputs_sha256": "2dc118d51660fa9c3d8643d50203eae134adc4a47a4c6dde9e519caa191b597c",
+    "current_native_identities": "/Users/brandenb/Downloads/rotfd/scratch/sdk_actor_parameter_records_current_801bc408_20261011/current_native_identities.json",
+    "current_native_identities_sha256": "268ecff67bb8fc738683d804f3d20c6c5258fd6e415ed78cfaaf8eb3aae483e7",
+    "ownership_transition": "/Users/brandenb/Downloads/rotfd/scratch/sdk_actor_parameter_records_current_801bc408_20261011/ownership_transition_current.json",
+    "ownership_transition_sha256": "d50fd0d0f93761a35e9b0ed66c6b19f75b4c7ebc0ce22ea2e83a75838ce7c006",
+    "original_active_union_inputs": 10575,
+    "allocated_relocations_scanned": 204882,
+    "initialized_data_positions_scanned": 501416,
+    "primary_union_references": 1,
+    "primary_initialized_pointer_words": 1,
+    "owned_data_external_references": 0,
+    "original_report_both_GLOBALs_preserved": true,
+    "active_native_retirement_pending_root_integration": true
+  },
+  "dependency_symbols": [
+    {
+      "name": "atoi",
+      "section": ".text",
+      "address": 2148702056,
+      "size": 192,
+      "scope": "global",
+      "binding": 1,
+      "type": 2
+    },
+    {
+      "name": "fn_802530C8",
+      "section": ".text",
+      "address": 2149920968,
+      "size": 196,
+      "scope": "global",
+      "binding": 1,
+      "type": 2
+    },
+    {
+      "name": "fn_8025318C",
+      "section": ".text",
+      "address": 2149921164,
+      "size": 196,
+      "scope": "global",
+      "binding": 1,
+      "type": 2
+    },
+    {
+      "name": "game_vec3_zero",
+      "section": ".bss",
+      "address": 2150894420,
+      "size": 12,
+      "scope": "global",
+      "binding": 1,
+      "type": 1
+    },
+    {
+      "name": "lbl_801E9D24",
+      "section": ".text",
+      "address": 2149489956,
+      "size": 0,
+      "scope": "global",
+      "binding": 1,
+      "type": 0
+    },
+    {
+      "name": "lbl_8037A2A0",
+      "section": ".sdata2",
+      "address": 2151129760,
+      "size": 4,
+      "scope": "global",
+      "binding": 1,
+      "type": 1
+    },
+    {
+      "name": "lbl_8037A2A4",
+      "section": ".sdata2",
+      "address": 2151129764,
+      "size": 4,
+      "scope": "global",
+      "binding": 1,
+      "type": 1
+    },
+    {
+      "name": "lbl_8037A2C0",
+      "section": ".sdata2",
+      "address": 2151129792,
+      "size": 4,
+      "scope": "global",
+      "binding": 1,
+      "type": 1
+    },
+    {
+      "name": "strlen",
+      "section": ".text",
+      "address": 2148697592,
+      "size": 28,
+      "scope": "global",
+      "binding": 1,
+      "type": 2
+    },
+    {
+      "name": "strncmp",
+      "section": ".text",
+      "address": 2148696936,
+      "size": 64,
+      "scope": "global",
+      "binding": 1,
+      "type": 2
+    }
+  ],
+  "compiler": "GC/1.3.2",
+  "source_kind": "c++",
+  "headers": [],
+  "unlinked_functions": [],
+  "unlinked_objects": [],
+  "unlinked_exception_groups": [],
+  "weak_overrides": [],
+  "actual_relocations": [
+    {
+      "section": ".text",
+      "at": 30,
+      "address": 2149303334,
+      "kind": 6,
+      "symbol": "...rodata.0",
+      "target": 2150287944,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 34,
+      "address": 2149303338,
+      "kind": 4,
+      "symbol": "...rodata.0",
+      "target": 2150287944,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 96,
+      "address": 2149303400,
+      "kind": 109,
+      "symbol": "lbl_8037A2A0",
+      "target": 2151129760,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 126,
+      "address": 2149303430,
+      "kind": 6,
+      "symbol": "lbl_801E9D24",
+      "target": 2149489956,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 130,
+      "address": 2149303434,
+      "kind": 6,
+      "symbol": "game_vec3_zero",
+      "target": 2150894420,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 134,
+      "address": 2149303438,
+      "kind": 4,
+      "symbol": "lbl_801E9D24",
+      "target": 2149489956,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 142,
+      "address": 2149303446,
+      "kind": 4,
+      "symbol": "game_vec3_zero",
+      "target": 2150894420,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 290,
+      "address": 2149303594,
+      "kind": 6,
+      "symbol": "game_vec3_zero",
+      "target": 2150894420,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 292,
+      "address": 2149303596,
+      "kind": 109,
+      "symbol": "lbl_8037A2A4",
+      "target": 2151129764,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 434,
+      "address": 2149303738,
+      "kind": 4,
+      "symbol": "game_vec3_zero",
+      "target": 2150894420,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 528,
+      "address": 2149303832,
+      "kind": 109,
+      "symbol": "lbl_8037A2A0",
+      "target": 2151129760,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 564,
+      "address": 2149303868,
+      "kind": 10,
+      "symbol": "fn_8025318C",
+      "target": 2149921164,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 580,
+      "address": 2149303884,
+      "kind": 10,
+      "symbol": "strlen",
+      "target": 2148697592,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 596,
+      "address": 2149303900,
+      "kind": 10,
+      "symbol": "strncmp",
+      "target": 2148696936,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 612,
+      "address": 2149303916,
+      "kind": 10,
+      "symbol": "strlen",
+      "target": 2148697592,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 620,
+      "address": 2149303924,
+      "kind": 10,
+      "symbol": "atoi",
+      "target": 2148702056,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 660,
+      "address": 2149303964,
+      "kind": 109,
+      "symbol": "@175",
+      "target": 2151129808,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 668,
+      "address": 2149303972,
+      "kind": 109,
+      "symbol": "lbl_8037A2C0",
+      "target": 2151129792,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 692,
+      "address": 2149303996,
+      "kind": 10,
+      "symbol": "strlen",
+      "target": 2148697592,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 708,
+      "address": 2149304012,
+      "kind": 10,
+      "symbol": "strncmp",
+      "target": 2148696936,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 724,
+      "address": 2149304028,
+      "kind": 10,
+      "symbol": "strlen",
+      "target": 2148697592,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 732,
+      "address": 2149304036,
+      "kind": 10,
+      "symbol": "atoi",
+      "target": 2148702056,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 772,
+      "address": 2149304076,
+      "kind": 109,
+      "symbol": "@175",
+      "target": 2151129808,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 780,
+      "address": 2149304084,
+      "kind": 109,
+      "symbol": "lbl_8037A2C0",
+      "target": 2151129792,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 804,
+      "address": 2149304108,
+      "kind": 10,
+      "symbol": "strlen",
+      "target": 2148697592,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 820,
+      "address": 2149304124,
+      "kind": 10,
+      "symbol": "strncmp",
+      "target": 2148696936,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 836,
+      "address": 2149304140,
+      "kind": 10,
+      "symbol": "strlen",
+      "target": 2148697592,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 844,
+      "address": 2149304148,
+      "kind": 10,
+      "symbol": "atoi",
+      "target": 2148702056,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 884,
+      "address": 2149304188,
+      "kind": 109,
+      "symbol": "@175",
+      "target": 2151129808,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 892,
+      "address": 2149304196,
+      "kind": 109,
+      "symbol": "lbl_8037A2C0",
+      "target": 2151129792,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 920,
+      "address": 2149304224,
+      "kind": 10,
+      "symbol": "fn_802530C8",
+      "target": 2149920968,
+      "addend": 0
+    }
+  ],
+  "verified_text_bytes": 980,
+  "verified_data_bytes": 56
+}

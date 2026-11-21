@@ -1,0 +1,15 @@
+# Menu record switch
+
+Accepted matching source: the production build passes the original DOL hash,
+strict allocated-byte/extent and actual-relocation checks, baseline regression
+checks, generated progress verification and all 26 repository tests.
+
+**Isolated exact handoff, awaiting central acceptance.** Ordinary C++ `fn_8021ACD8`, `8021ACD8..8021AFE0`, matches all 776 original text bytes and 18 actual retained relocations with standard GC1.3.2 Game flags. New source is `src/Game/engine_menu_record_switch.cpp`, with dedicated partial declarations in `include/Game/engine_menu_record_switch.h`.
+
+The routine runs only when the secondary handle resolves and the previous selection differs from the current one. A native Handle with two ordinary zero-initializing derived layers forms the local output. The old selected record is detached through its key and the secondary object's second handle. A successful current-record lookup replaces the secondary object's first and second handles with decrement/copy/increment reference operations and refreshes it after each replacement. The primary object's child transform is updated, and event 48 is dispatched to the secondary object's parent before the local handle is destroyed.
+
+A named reference to the previous 156-byte record preserves the original record address and manager lifetime. A staged integer-return handle resolver reads the entry generation through an ordinary getter; casting its result back to the object pointer reproduces the remaining seven physical-register differences. The same helper reproduces the final dispatch arguments. The byte-addressed alternate resolution preserves the nested child's original entry-base reload. All other source uses the established ordinary Handle, record and manager shapes, without register directives or assembly.
+
+The compiler emits 172 trailing unused weak destructor bytes in two fully inventoried functions, with four actual relocations. Neither has any retained reference, and both remain unlinked. No initialized data, BSS, exception, startup or padding allocation is claimed. The complete original extabindex `80015F60..8001F2C0`, constructors `80299920..80299980` and destructors `80299980..802999A0` are audited, including descriptors, padding and trailing zeros; none refers to this retained range. Original external state, handle lifecycle/record operations, virtual tables and adjacent routines retain their owners.
+
+The frozen complete manifest is `scratch/engine_menu_record_switch_20261011dd/final_integration.json`. `verify.py` recompiles production source, checks every allocated emission and symbol, compares all retained bytes with real relocation targets, inventories the unused weak bytes, repeats the full original-table audit and verifies frozen source/header/evidence hashes. The entry identity is unchanged and no consumer migration is required. Root registration begins NonMatching; original DOL hash and regression acceptance remain required before crediting the unit. All bounded source alternatives are preserved separately.

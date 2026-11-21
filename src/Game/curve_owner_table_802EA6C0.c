@@ -1,0 +1,22 @@
+#include "Game/curve_owner_operations_table.h"
+extern struct CurveOwner_BAF8 * fn_801DBAF8(struct CurveOwner_BAF8 *, short);
+extern void fn_801DC4E0(void *, void **);
+extern void fn_801DC4AC(void *);
+extern void fn_801DC3F4(struct Object_801DC3F4 *);
+extern void fn_801CAB28(void *);
+extern signed char fn_802529E8(struct RelatedRemoveOwner *);
+extern void fn_801CFC8C(void *);
+extern void fn_801CAB2C(void *);
+extern void fn_801CAB30(void *);
+extern float fn_801CAB34(void *);
+extern void fn_801CAB3C(void *);
+extern void fn_801CAB40(void *);
+extern int fn_801CAB44(void *);
+extern int fn_801CAB4C(void *);
+extern int fn_801CAB54(void *);
+extern int fn_801BD948(void *);
+extern int fn_801CAB5C(void *);
+extern int fn_801CAB64(void *);
+extern int fn_801CAB6C(void *);
+CurveOwnerOperationsTable lbl_802EA6C0 = { 0, 0, fn_801DBAF8, fn_801DC4E0, fn_801DC4AC, fn_801DC3F4, fn_801CAB28, fn_802529E8, fn_801CFC8C, fn_801CAB2C, fn_801CAB30, fn_801CAB34, fn_801CAB3C, fn_801CAB40, fn_801CAB44, fn_801CAB4C, fn_801CAB54, fn_801BD948, fn_801CAB5C, fn_801CAB64, fn_801CAB6C };
+typedef char CurveOwnerTableSize[sizeof(CurveOwnerOperationsTable) == 84 ? 1 : -1];

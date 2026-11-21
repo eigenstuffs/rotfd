@@ -1,0 +1,64 @@
+{
+  "source": "src/Game/handle_access.cpp",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.3.2",
+  "cflags": "-proc gekko -fp hardware -enum int -str reuse -common off -O4,p -inline auto -Cpp_exceptions off -use_lmw_stmw on -bool off",
+  "splits": [
+    {
+      "section": ".text",
+      "start": "0x801f7eb8",
+      "end": "0x801f7f10"
+    }
+  ],
+  "functions": [
+    {
+      "name": "fn_801F7EB8",
+      "section": ".text",
+      "address": "0x801f7eb8",
+      "size": "0x4c",
+      "scope": "global",
+      "original_name": "fn_801F7EB8"
+    },
+    {
+      "name": "__ct__15Handle_801F7F10Fv",
+      "section": ".text",
+      "address": "0x801f7f04",
+      "size": "0xc",
+      "scope": "global",
+      "original_name": "__ct__15Handle_801F7F10Fv"
+    }
+  ],
+  "data_symbols": [],
+  "section_anchors": [],
+  "dependency_symbols": [
+    {
+      "name": "lbl_801E9D24",
+      "address": "0x801e9d24"
+    }
+  ],
+  "notes": "docs/notes/game-handles.md",
+  "split_notes": [
+    "Two contiguous ordinary handle routines: object lookup and the actual C++ default constructor. The four-byte packed representation is cleared as one word. Shared registry storage remains external; original full TU extent is not claimed."
+  ],
+  "validation": {
+    "code_bytes": 88,
+    "emitted_data_bytes": 0,
+    "bss_layout_bytes": 0,
+    "relocations_applied": 2,
+    "byte_differences": 0,
+    "source_sha256": "60f960058388cc5b8545c5979b4357d46e6a54baccc164e22c318dfeef480b76",
+    "object_sha256": "bcfe21759afe1aea9ea9892574212d87328a342813eaaa1bea6ffefd20f0e864",
+    "original_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "integration_status": "verified full-DOL and objdiff"
+  },
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "60f960058388cc5b8545c5979b4357d46e6a54baccc164e22c318dfeef480b76",
+    "matched_code": 88,
+    "matched_functions": 2,
+    "matched_data": 0,
+    "complete_data": 0,
+    "object_path": "build/GSQE78/src/Game/handle_access.o",
+    "object_sha256": "bcfe21759afe1aea9ea9892574212d87328a342813eaaa1bea6ffefd20f0e864"
+  }
+}

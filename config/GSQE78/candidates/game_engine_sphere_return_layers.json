@@ -1,0 +1,163 @@
+[
+  {
+    "status": "strict-isolated-byte-and-relocation-match",
+    "source": "src/Game/engine_sphere_owner_transform.cpp",
+    "source_sha256": "82b533b63dc36d2b4f14ed55672ea98470b6e9fc02b126b89ded76c165a535e3",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,p",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "off",
+      "-i",
+      "include"
+    ],
+    "source_kind": "c++",
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2149869372,
+        "end": 2149869464,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_8024673C",
+        "address": 2149869372,
+        "size": 92,
+        "section": ".text",
+        "scope": "global",
+        "object_offset": 0
+      }
+    ],
+    "objects": [],
+    "unlinked_functions": [],
+    "headers": [
+      {
+        "path": "include/Game/engine_sphere_return_layers.h",
+        "sha256": "cf6462cceacabe0a1c072a89e3e13e4920da01f14f0887d6f6f558647f7293d0"
+      }
+    ],
+    "dependency_symbols": [],
+    "validation": {
+      "retained_text_bytes": 92,
+      "unlinked_text_bytes": 0,
+      "initialized_data_bytes": 0,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 1,
+      "unlinked_relocations": 0,
+      "object_sha256": "2861f530dc3cd48cb69dab687dc62d9985fa440997da1bf240de0bdd7eb3affa"
+    },
+    "verified_text_bytes": 92,
+    "verified_data_bytes": 0,
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 32,
+        "address": 2149869404,
+        "kind": 10,
+        "symbol": "fn_80099A00",
+        "target": 2148112896,
+        "addend": 0
+      }
+    ]
+  },
+  {
+    "status": "strict-isolated-byte-and-relocation-match",
+    "source": "src/Game/engine_sphere_transform_merge.cpp",
+    "source_sha256": "dfa7e70cfdde95662c3d6a7ed4b392548356db144a2cf665664f3a2963e58064",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,p",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "off",
+      "-i",
+      "include"
+    ],
+    "source_kind": "c++",
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2149871124,
+        "end": 2149871204,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_80246E14",
+        "address": 2149871124,
+        "size": 80,
+        "section": ".text",
+        "scope": "global",
+        "object_offset": 0
+      }
+    ],
+    "objects": [],
+    "unlinked_functions": [],
+    "headers": [
+      {
+        "path": "include/Game/engine_sphere_return_layers.h",
+        "sha256": "cf6462cceacabe0a1c072a89e3e13e4920da01f14f0887d6f6f558647f7293d0"
+      }
+    ],
+    "dependency_symbols": [],
+    "validation": {
+      "retained_text_bytes": 80,
+      "unlinked_text_bytes": 0,
+      "initialized_data_bytes": 0,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 2,
+      "unlinked_relocations": 0,
+      "object_sha256": "9c23f10516c87feefbb66244b828dda36c1a7a75e87b46cbd0675ac4b720b67d"
+    },
+    "verified_text_bytes": 80,
+    "verified_data_bytes": 0,
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 36,
+        "address": 2149871160,
+        "kind": 10,
+        "symbol": "fn_80246E64",
+        "target": 2149871204,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 52,
+        "address": 2149871176,
+        "kind": 10,
+        "symbol": "fn_801F0A20",
+        "target": 2149517856,
+        "addend": 0
+      }
+    ]
+  }
+]

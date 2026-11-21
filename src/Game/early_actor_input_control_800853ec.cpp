@@ -1,0 +1,2 @@
+#include "Game/early_actor_input_control_views.h"
+extern "C" void fn_800853EC(InputOwner*self){if(self->active){fn_80255CBC(self->controller,0x80,0);self->active=0;}lbl_801E9D24.feedback->feedback(0,0,0);self->actor->enabled412=0;InputResource*target=resolveInput(self->bound);fn_800C3D44(target,self->controller->slot38());if(lbl_803776B8&&lbl_803776B8->second)fn_80068158(lbl_803776B8,self->actor->record.key);}

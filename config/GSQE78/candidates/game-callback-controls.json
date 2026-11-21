@@ -1,0 +1,252 @@
+[
+  {
+    "status": "isolated-byte-match",
+    "source": "src/Game/callback_clear_active.cpp",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-O4,p",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "off",
+      "-RTTI",
+      "off",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "include"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2149968752,
+        "end": 2149968880,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_8025EB70",
+        "address": 2149968752,
+        "size": 128,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [],
+    "unlinked_functions": [],
+    "source_sha256": "1be9c9e6b3e3cedd0356f377c0b3c63437318b5ca0e5d525594f1178b109e1f4",
+    "headers": [
+      {
+        "path": "include/Game/callback_cycle_internal.h",
+        "sha256": "ef419730b776a145f7b9fd790953cea1655c5c69962ca9c732bf20380ebaf480"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 56,
+        "address": 2149968808,
+        "kind": 10,
+        "symbol": "__ptmf_cmpr",
+        "target": 2148660368,
+        "addend": 0
+      }
+    ],
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "zero_byte_differences": true,
+      "retained_text_bytes": 128,
+      "relocations": 1,
+      "metadata_relocations": 1
+    },
+    "notes": "docs/notes/game-callback-controls.md"
+  },
+  {
+    "status": "isolated-byte-match",
+    "source": "src/Game/callback_pending_append.cpp",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-O4,p",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "off",
+      "-RTTI",
+      "off",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "include"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2149968560,
+        "end": 2149968752,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_8025EAB0",
+        "address": 2149968560,
+        "size": 192,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [],
+    "unlinked_functions": [],
+    "source_sha256": "190627290a1fb967c11297f0e85256ba56b82ed4a238fdafd2657d5cd9279637",
+    "headers": [
+      {
+        "path": "include/Game/callback_cycle_internal.h",
+        "sha256": "ef419730b776a145f7b9fd790953cea1655c5c69962ca9c732bf20380ebaf480"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 52,
+        "address": 2149968612,
+        "kind": 10,
+        "symbol": "fn_802861C4",
+        "target": 2150130116,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 68,
+        "address": 2149968628,
+        "kind": 10,
+        "symbol": "fn_801F7914",
+        "target": 2149546260,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 74,
+        "address": 2149968634,
+        "kind": 6,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 78,
+        "address": 2149968638,
+        "kind": 4,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      }
+    ],
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "zero_byte_differences": true,
+      "retained_text_bytes": 192,
+      "relocations": 4,
+      "metadata_relocations": 1
+    },
+    "notes": "docs/notes/game-callback-controls.md",
+    "dependency_symbols": [
+      {
+        "name": "fn_802861C4",
+        "address": 2150130116,
+        "scope": "global"
+      }
+    ]
+  },
+  {
+    "status": "isolated-byte-match",
+    "source": "src/Game/callback_key_disable.cpp",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-O4,p",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "off",
+      "-RTTI",
+      "off",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "include"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2149969112,
+        "end": 2149969208,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_8025ECD8",
+        "address": 2149969112,
+        "size": 96,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [],
+    "unlinked_functions": [],
+    "source_sha256": "87502116b04d611b2604d779784c184ed9e842f0603d04990d5e06cc69292795",
+    "headers": [
+      {
+        "path": "include/Game/callback_cycle_internal.h",
+        "sha256": "ef419730b776a145f7b9fd790953cea1655c5c69962ca9c732bf20380ebaf480"
+      },
+      {
+        "path": "include/Game/callback_key_internal.h",
+        "sha256": "43aa57a82f26526bd4da57f7778dc3836370b709d0098188c5a52b0cb2abd7ce"
+      }
+    ],
+    "actual_relocations": [],
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "zero_byte_differences": true,
+      "retained_text_bytes": 96,
+      "relocations": 0,
+      "metadata_relocations": 1
+    },
+    "notes": "docs/notes/game-callback-controls.md"
+  }
+]

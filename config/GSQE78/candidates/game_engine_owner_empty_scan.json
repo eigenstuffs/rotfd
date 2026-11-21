@@ -1,0 +1,67 @@
+{
+  "status": "isolated-retained-byte-match",
+  "source": "src/Game/engine_owner_empty_scan.cpp",
+  "source_sha256": "b4b3cd254c09ac0958ade90f932252d77a35c7cfd39b7456abddbd37f3bf8239",
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-proc",
+    "gekko",
+    "-fp",
+    "hardware",
+    "-enum",
+    "int",
+    "-str",
+    "reuse",
+    "-common",
+    "off",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-Cpp_exceptions",
+    "off",
+    "-i",
+    "include",
+    "-opt",
+    "nopropagation"
+  ],
+  "source_kind": "c++",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2149883968,
+      "end": 2149884052,
+      "alignment": 4
+    }
+  ],
+  "functions": [
+    {
+      "name": "fn_8024A040",
+      "address": 2149883968,
+      "size": 84,
+      "scope": "global",
+      "section": ".text",
+      "object_offset": 0
+    }
+  ],
+  "objects": [],
+  "unlinked_functions": [],
+  "headers": [
+    {
+      "path": "include/Game/engine_owner_small_loops.h",
+      "sha256": "b3c0893dd4bb5bea175c04a358707150e2b57ede2e7aaf6ad6645d1265fd90ac"
+    }
+  ],
+  "dependency_symbols": [],
+  "validation": {
+    "relocations": 0,
+    "unlinked_relocations": 0,
+    "retained_text_bytes": 84,
+    "unlinked_text_bytes": 0,
+    "initialized_data_bytes": 0,
+    "bss_bytes": 0,
+    "owned_padding_bytes": 0
+  },
+  "verified_text_bytes": 84,
+  "verified_data_bytes": 0,
+  "actual_relocations": []
+}

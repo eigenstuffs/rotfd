@@ -1,0 +1,339 @@
+{
+  "source": "src/Game/factories_8020AC68.cpp",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-proc",
+    "gekko",
+    "-fp",
+    "hardware",
+    "-enum",
+    "int",
+    "-str",
+    "reuse",
+    "-common",
+    "off",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-Cpp_exceptions",
+    "off",
+    "-i",
+    "include"
+  ],
+  "sections": {
+    ".text": [
+      2149624936,
+      2149625200
+    ]
+  },
+  "functions": [
+    {
+      "name": "fn_8020AC68",
+      "address": 2149624936,
+      "size": 88,
+      "section": ".text",
+      "scope": "global"
+    },
+    {
+      "name": "fn_8020ACC0",
+      "address": 2149625024,
+      "size": 88,
+      "section": ".text",
+      "scope": "global"
+    },
+    {
+      "name": "fn_8020AD18",
+      "address": 2149625112,
+      "size": 88,
+      "section": ".text",
+      "scope": "global"
+    }
+  ],
+  "objects": [],
+  "source_kind": "c++",
+  "factory_evidence": [
+    {
+      "address": 2149624936,
+      "name": "fn_8020AC68",
+      "manager": "lbl_801EF5C8",
+      "label": "lbl_802AE024",
+      "filename": "lbl_802AE2D4",
+      "header": "SplineZone_Z.h",
+      "size": 216,
+      "line": 115,
+      "alignment": 4,
+      "constructor": "fn_8024E5CC"
+    },
+    {
+      "address": 2149625024,
+      "name": "fn_8020ACC0",
+      "manager": "lbl_801EF5C8",
+      "label": "lbl_802AE024",
+      "filename": "lbl_802AE2E4",
+      "header": "Spline_Z.h",
+      "size": 160,
+      "line": 118,
+      "alignment": 4,
+      "constructor": "fn_8024E18C"
+    },
+    {
+      "address": 2149625112,
+      "name": "fn_8020AD18",
+      "manager": "lbl_801EF5C8",
+      "label": "lbl_802AE024",
+      "filename": "lbl_802AE2F0",
+      "header": "MaterialAnim_Z.h",
+      "size": 188,
+      "line": 77,
+      "alignment": 4,
+      "constructor": "__ct__21MaterialAnim_802EC000Fv"
+    }
+  ],
+  "notes": "docs/notes/game-factories.md",
+  "source_sha256": "de86157f08491d2d47e9be0d95c9ece861f4feea66a7fabcdff709fd4b07b3ce",
+  "validation": {
+    "relocations": 24,
+    "text_bytes": 264,
+    "initialized_data_bytes": 0,
+    "zero_byte_differences": true,
+    "integration_status": "verified full-DOL and objdiff"
+  },
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "de86157f08491d2d47e9be0d95c9ece861f4feea66a7fabcdff709fd4b07b3ce",
+    "matched_code": 264,
+    "matched_functions": 3,
+    "matched_data": 0,
+    "complete_data": 0,
+    "object_path": "build/GSQE78/src/Game/factories_8020AC68.o",
+    "object_sha256": "ec6b1ca727b635a568b28765fc473d8e8978f4e8487364dd33dfd2b431ff376b"
+  },
+  "source_hash_provenance": {
+    "previous_candidate": "scratch/native_objects_candidate_metadata_before/game_factories_8020AC68.json",
+    "description": "Earlier isolated source/object hashes are retained in this snapshot. Current source hash and canonical object are verified by the complete DOL and native objdiff."
+  },
+  "actual_relocations": [
+    {
+      "section": ".text",
+      "at": 10,
+      "address": 2149624946,
+      "kind": 6,
+      "symbol": "lbl_801EF5C8",
+      "target": 2149512648,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 14,
+      "address": 2149624950,
+      "kind": 6,
+      "symbol": "lbl_802AE024",
+      "target": 2150293540,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 18,
+      "address": 2149624954,
+      "kind": 6,
+      "symbol": "lbl_802AE2D4",
+      "target": 2150294228,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 30,
+      "address": 2149624966,
+      "kind": 4,
+      "symbol": "lbl_801EF5C8",
+      "target": 2149512648,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 34,
+      "address": 2149624970,
+      "kind": 4,
+      "symbol": "lbl_802AE024",
+      "target": 2150293540,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 38,
+      "address": 2149624974,
+      "kind": 4,
+      "symbol": "lbl_802AE2D4",
+      "target": 2150294228,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 48,
+      "address": 2149624984,
+      "kind": 10,
+      "symbol": "fn_801EFA1C",
+      "target": 2149513756,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 60,
+      "address": 2149624996,
+      "kind": 10,
+      "symbol": "__ct__19SplineZone_8024E5CCFv",
+      "target": 2149901772,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 98,
+      "address": 2149625034,
+      "kind": 6,
+      "symbol": "lbl_801EF5C8",
+      "target": 2149512648,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 102,
+      "address": 2149625038,
+      "kind": 6,
+      "symbol": "lbl_802AE024",
+      "target": 2150293540,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 106,
+      "address": 2149625042,
+      "kind": 6,
+      "symbol": "lbl_802AE2E4",
+      "target": 2150294244,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 118,
+      "address": 2149625054,
+      "kind": 4,
+      "symbol": "lbl_801EF5C8",
+      "target": 2149512648,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 122,
+      "address": 2149625058,
+      "kind": 4,
+      "symbol": "lbl_802AE024",
+      "target": 2150293540,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 126,
+      "address": 2149625062,
+      "kind": 4,
+      "symbol": "lbl_802AE2E4",
+      "target": 2150294244,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 136,
+      "address": 2149625072,
+      "kind": 10,
+      "symbol": "fn_801EFA1C",
+      "target": 2149513756,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 148,
+      "address": 2149625084,
+      "kind": 10,
+      "symbol": "fn_8024E18C",
+      "target": 2149900684,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 186,
+      "address": 2149625122,
+      "kind": 6,
+      "symbol": "lbl_801EF5C8",
+      "target": 2149512648,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 190,
+      "address": 2149625126,
+      "kind": 6,
+      "symbol": "lbl_802AE024",
+      "target": 2150293540,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 194,
+      "address": 2149625130,
+      "kind": 6,
+      "symbol": "lbl_802AE2F0",
+      "target": 2150294256,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 206,
+      "address": 2149625142,
+      "kind": 4,
+      "symbol": "lbl_801EF5C8",
+      "target": 2149512648,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 210,
+      "address": 2149625146,
+      "kind": 4,
+      "symbol": "lbl_802AE024",
+      "target": 2150293540,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 214,
+      "address": 2149625150,
+      "kind": 4,
+      "symbol": "lbl_802AE2F0",
+      "target": 2150294256,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 224,
+      "address": 2149625160,
+      "kind": 10,
+      "symbol": "fn_801EFA1C",
+      "target": 2149513756,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 236,
+      "address": 2149625172,
+      "kind": 10,
+      "symbol": "__ct__21MaterialAnim_802EC000Fv",
+      "target": 2149819404,
+      "addend": 0
+    }
+  ],
+  "identifier_migration_provenance": {
+    "proof": "scratch/continuation_20261010/factory-native-consumer-migration/proof.json",
+    "previous_canonical": "scratch/continuation_20261010/factory-native-consumer-migration/before/config/GSQE78/candidates/game_factories_8020AC68.json",
+    "previous_canonical_sha256": "93f268f66863f6175b5f766da58ce6e4b874f54a6dfdc5cedbc3ad8956f31d96"
+  }
+}

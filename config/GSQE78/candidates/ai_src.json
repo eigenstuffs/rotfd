@@ -1,0 +1,54 @@
+{
+  "source": "src/dolphin/ai/ai_src.c",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.2.5n",
+  "cflags": "-proc gekko -fp hardware -enum int -str reuse -common off -O4,p -opt nopeephole -inline auto -i src/dolphin/ai -Cpp_exceptions off",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2148528704,
+      "end": 2148529188
+    }
+  ],
+  "functions": [
+    {
+      "name": "__AI_SRC_INIT",
+      "address": 2148528704,
+      "size": 484
+    }
+  ],
+  "objects": [],
+  "symbol_scopes": {
+    "__AI_SRC_INIT": "global"
+  },
+  "symbols": {
+    "__AI_SRC_INIT": "0x800ff240",
+    "OSGetTime": "0x800f6bf4",
+    "bound_32KHz": "0x80377ad8",
+    "buffer": "0x80377af8",
+    "min_wait": "0x80377ae8",
+    "bound_48KHz": "0x80377ae0",
+    "max_wait": "0x80377af0"
+  },
+  "external_original_names": {
+    "OSGetTime": "OSGetTime",
+    "bound_32KHz": "lbl_80377AD8",
+    "buffer": "lbl_80377AF8",
+    "min_wait": "lbl_80377AE8",
+    "bound_48KHz": "lbl_80377AE0",
+    "max_wait": "lbl_80377AF0"
+  },
+  "verified_text_bytes": 484,
+  "verified_data_bytes": 0,
+  "source_kind": "c",
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "78035ca222ee246c10e7053c9e88d9674d340b2cc12e9a9848b5b9be869bbe95",
+    "matched_code": 484,
+    "matched_functions": 1,
+    "matched_data": 0,
+    "complete_data": 0,
+    "object_path": "build/GSQE78/src/dolphin/ai/ai_src.o",
+    "object_sha256": "06e3d66bd49161ade42ca146b42e212c70b66db9b54616f5a9911e0f93455878"
+  }
+}

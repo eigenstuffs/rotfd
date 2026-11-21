@@ -1,0 +1,90 @@
+{
+  "status": "integrated-byte-match",
+  "source": "src/Game/movie_dpcm_tables.c",
+  "compiler": "GC/1.2.5",
+  "cflags": [
+    "-proc",
+    "gekko",
+    "-fp",
+    "hardware",
+    "-enum",
+    "int",
+    "-str",
+    "reuse",
+    "-common",
+    "off",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-Cpp_exceptions",
+    "off",
+    "-RTTI",
+    "off",
+    "-use_lmw_stmw",
+    "on",
+    "-fp_contract",
+    "on",
+    "-i",
+    "include"
+  ],
+  "source_kind": "c",
+  "sections": [
+    {
+      "name": ".data",
+      "start": 2150572960,
+      "end": 2150576520,
+      "alignment": 8
+    }
+  ],
+  "functions": [],
+  "objects": [
+    {
+      "name": "lbl_802F23A0",
+      "address": 2150572960,
+      "size": 3560,
+      "scope": "global",
+      "section": ".data",
+      "object_offset": 0,
+      "sha256": "3543122a547d9e5706bf91ebce1b9ae155ba6f48f285e928bb73e28f187e84ed"
+    }
+  ],
+  "unlinked_functions": [],
+  "dependency_symbols": [],
+  "source_sha256": "9e42ebae53760e588dfbedcedc8fa2da2839ea9240cdc2b5cfaecfd9bec39ccc",
+  "headers": [
+    {
+      "path": "include/Game/movie_dpcm_tables.h",
+      "sha256": "75bb9bc6303b7716e43392541b5564088262ca41e0f5bd7dbe9a6a5de9170681"
+    }
+  ],
+  "validation": {
+    "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "object_sha256": "6d237ae774c1814282d2e170035b132f750fac9eb80f9974c215f77e07d01373",
+    "retained_text_bytes": 0,
+    "emitted_text_bytes": 0,
+    "initialized_data_bytes": 3560,
+    "bss_bytes": 0,
+    "emitted_data_bytes": 3560,
+    "unlinked_text_bytes": 0,
+    "weak_functions": 0,
+    "relocations": 0,
+    "emitted_relocations": 0,
+    "zero_byte_differences": true,
+    "all_retained_allocated_bytes_verified": true,
+    "all_emitted_allocated_bytes_accounted": true,
+    "owned_padding_bytes": 0,
+    "verification_script": "scratch/game_movie_platform/verify_dpcm_tables.py",
+    "integration_status": "verified full-DOL and objdiff"
+  },
+  "notes": "docs/notes/game-movie-dpcm-tables.md",
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "9e42ebae53760e588dfbedcedc8fa2da2839ea9240cdc2b5cfaecfd9bec39ccc",
+    "matched_code": 0,
+    "matched_functions": 0,
+    "matched_data": 3560,
+    "complete_data": 3560,
+    "object_path": "build/GSQE78/src/Game/movie_dpcm_tables.o",
+    "object_sha256": "6d237ae774c1814282d2e170035b132f750fac9eb80f9974c215f77e07d01373"
+  }
+}

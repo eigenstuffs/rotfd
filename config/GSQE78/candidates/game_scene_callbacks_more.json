@@ -1,0 +1,1334 @@
+[
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/scene_callback_more_800C3934.cpp",
+    "source_sha256": "0b3890020b5595de77ff7c86a4492e06e0799d57d7b6a9c66ecc039d806929dc",
+    "source_kind": "c++",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "src/Game",
+      "-i",
+      "include",
+      "-i",
+      "/Users/brandenb/Downloads/rotfd/scratch/game_motion_controller_events"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/scene_callbacks_more.h",
+        "sha256": "6959b610504682fdc7b0c0d04ad2d5b2785dffb1686f40a1964432542ecfa025"
+      },
+      {
+        "path": "include/Game/python_owner_factories.h",
+        "sha256": "8d06b6d2211fc18a8d911f3483da4ac122467ddc9f96d62031c730c08547e32b"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148284724,
+        "end": 2148284948,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147559768,
+        "end": 2147559776,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147601608,
+        "end": 2147601620,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800C3934",
+        "address": 2148284724,
+        "size": 224,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@34",
+        "address": 2147559768,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@35",
+        "address": 2147601608,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "fn_800C1B0C",
+        "section": ".text",
+        "address": 2148277004,
+        "scope": "global"
+      },
+      {
+        "name": "fn_800C2CB8",
+        "section": ".text",
+        "address": 2148281528,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_802A2364",
+        "section": ".rodata",
+        "address": 2150245220,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_8037957C",
+        "section": ".sdata2",
+        "address": 2151126396,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_80379584",
+        "section": ".sdata2",
+        "address": 2151126404,
+        "scope": "global"
+      },
+      {
+        "name": "sprintf",
+        "section": ".text",
+        "address": 2148686608,
+        "scope": "global"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 56,
+        "address": 2148284780,
+        "kind": 10,
+        "symbol": "fn_800C1B0C",
+        "target": 2148277004,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 96,
+        "address": 2148284820,
+        "kind": 109,
+        "symbol": "lbl_8037957C",
+        "target": 2151126396,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 104,
+        "address": 2148284828,
+        "kind": 10,
+        "symbol": "sprintf",
+        "target": 2148686608,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 120,
+        "address": 2148284844,
+        "kind": 109,
+        "symbol": "lbl_80379584",
+        "target": 2151126404,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 128,
+        "address": 2148284852,
+        "kind": 10,
+        "symbol": "sprintf",
+        "target": 2148686608,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 144,
+        "address": 2148284868,
+        "kind": 10,
+        "symbol": "fn_800C2CB8",
+        "target": 2148281528,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 164,
+        "address": 2148284888,
+        "kind": 10,
+        "symbol": "fn_800C2CB8",
+        "target": 2148281528,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 174,
+        "address": 2148284898,
+        "kind": 6,
+        "symbol": "lbl_802A2364",
+        "target": 2150245220,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 182,
+        "address": 2148284906,
+        "kind": 4,
+        "symbol": "lbl_802A2364",
+        "target": 2150245220,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 188,
+        "address": 2148284912,
+        "kind": 10,
+        "symbol": "fn_800C2CB8",
+        "target": 2148281528,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147601608,
+        "kind": 1,
+        "symbol": "fn_800C3934",
+        "target": 2148284724,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147601616,
+        "kind": 1,
+        "symbol": "@34",
+        "target": 2147559768,
+        "addend": 0
+      }
+    ],
+    "notes": "docs/notes/game-scene-callbacks-more.md",
+    "original_metadata_audit": {
+      "status": "all-original-table-ownership-retained",
+      "retained_ranges": [
+        {
+          "start": 2148284724,
+          "end": 2148284948
+        }
+      ],
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "entries": 3141,
+          "scanned_slots": 3144,
+          "references_to_retained_ranges": [
+            {
+              "entry_address": 2147601608,
+              "function": 2148284724,
+              "size": 224,
+              "extab": 2147559768,
+              "ownership": "retained-source"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "entries": 19,
+          "scanned_slots": 24,
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "entries": 3,
+          "scanned_slots": 8,
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "12ddcc207c2160581b2c30b36c14744c3e55bdccc7d3a2929b652ef03e49f5a6",
+      "retained_text_bytes": 224,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 12,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/scene_callback_more_800CBE0C.cpp",
+    "source_sha256": "23f2b1a7f1d24d7d9dba3c551a6eb70ec5daeb246850e1645412b185ac9e925c",
+    "source_kind": "c++",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "src/Game",
+      "-i",
+      "include",
+      "-i",
+      "/Users/brandenb/Downloads/rotfd/scratch/game_motion_controller_events"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/scene_callbacks_more.h",
+        "sha256": "6959b610504682fdc7b0c0d04ad2d5b2785dffb1686f40a1964432542ecfa025"
+      },
+      {
+        "path": "include/Game/python_owner_factories.h",
+        "sha256": "8d06b6d2211fc18a8d911f3483da4ac122467ddc9f96d62031c730c08547e32b"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148318732,
+        "end": 2148318940,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147562952,
+        "end": 2147562960,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147603024,
+        "end": 2147603036,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800CBE0C",
+        "address": 2148318732,
+        "size": 208,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@27",
+        "address": 2147562952,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@28",
+        "address": 2147603024,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "fn_801F1224",
+        "section": ".text",
+        "address": 2149519908,
+        "scope": "global"
+      },
+      {
+        "name": "fn_8025795C",
+        "section": ".text",
+        "address": 2149939548,
+        "scope": "global"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 68,
+        "address": 2148318800,
+        "kind": 10,
+        "symbol": "fn_801F1224",
+        "target": 2149519908,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 124,
+        "address": 2148318856,
+        "kind": 10,
+        "symbol": "fn_8025795C",
+        "target": 2149939548,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 144,
+        "address": 2148318876,
+        "kind": 10,
+        "symbol": "fn_8025795C",
+        "target": 2149939548,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 164,
+        "address": 2148318896,
+        "kind": 10,
+        "symbol": "fn_8025795C",
+        "target": 2149939548,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 184,
+        "address": 2148318916,
+        "kind": 10,
+        "symbol": "fn_8025795C",
+        "target": 2149939548,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147603024,
+        "kind": 1,
+        "symbol": "fn_800CBE0C",
+        "target": 2148318732,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147603032,
+        "kind": 1,
+        "symbol": "@27",
+        "target": 2147562952,
+        "addend": 0
+      }
+    ],
+    "notes": "docs/notes/game-scene-callbacks-more.md",
+    "original_metadata_audit": {
+      "status": "all-original-table-ownership-retained",
+      "retained_ranges": [
+        {
+          "start": 2148318732,
+          "end": 2148318940
+        }
+      ],
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "entries": 3141,
+          "scanned_slots": 3144,
+          "references_to_retained_ranges": [
+            {
+              "entry_address": 2147603024,
+              "function": 2148318732,
+              "size": 208,
+              "extab": 2147562952,
+              "ownership": "retained-source"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "entries": 19,
+          "scanned_slots": 24,
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "entries": 3,
+          "scanned_slots": 8,
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "293786e349d0353942754ad69e8e6367b63bf8e5967cb3eeaca50029ff8ea298",
+      "retained_text_bytes": 208,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 7,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/scene_callback_more_800CC584.cpp",
+    "source_sha256": "59f21a23cb45e08431dad825ccbabaf2235e7379be89144593caaac0ef10aa2b",
+    "source_kind": "c++",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "src/Game",
+      "-i",
+      "include",
+      "-i",
+      "/Users/brandenb/Downloads/rotfd/scratch/game_motion_controller_events"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/scene_callbacks_more.h",
+        "sha256": "6959b610504682fdc7b0c0d04ad2d5b2785dffb1686f40a1964432542ecfa025"
+      },
+      {
+        "path": "include/Game/python_owner_factories.h",
+        "sha256": "8d06b6d2211fc18a8d911f3483da4ac122467ddc9f96d62031c730c08547e32b"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148320644,
+        "end": 2148320816,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147563136,
+        "end": 2147563144,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147603156,
+        "end": 2147603168,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800CC584",
+        "address": 2148320644,
+        "size": 172,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@28",
+        "address": 2147563136,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@29",
+        "address": 2147603156,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "fn_800CCCEC",
+        "section": ".text",
+        "address": 2148322540,
+        "scope": "global"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 88,
+        "address": 2148320732,
+        "kind": 10,
+        "symbol": "fn_800CCCEC",
+        "target": 2148322540,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147603156,
+        "kind": 1,
+        "symbol": "fn_800CC584",
+        "target": 2148320644,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147603164,
+        "kind": 1,
+        "symbol": "@28",
+        "target": 2147563136,
+        "addend": 0
+      }
+    ],
+    "notes": "docs/notes/game-scene-callbacks-more.md",
+    "original_metadata_audit": {
+      "status": "all-original-table-ownership-retained",
+      "retained_ranges": [
+        {
+          "start": 2148320644,
+          "end": 2148320816
+        }
+      ],
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "entries": 3141,
+          "scanned_slots": 3144,
+          "references_to_retained_ranges": [
+            {
+              "entry_address": 2147603156,
+              "function": 2148320644,
+              "size": 172,
+              "extab": 2147563136,
+              "ownership": "retained-source"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "entries": 19,
+          "scanned_slots": 24,
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "entries": 3,
+          "scanned_slots": 8,
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "81ec81405f02ea6ed1643fdf31fbabf6cc8f15227d2e86088d40c9260fcacb4b",
+      "retained_text_bytes": 172,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 3,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/scene_callback_more_800CC958.cpp",
+    "source_sha256": "0aed027d5f8364d4e7aa6ac152263343cc5c3041977197548e9cec3280356942",
+    "source_kind": "c++",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "src/Game",
+      "-i",
+      "include",
+      "-i",
+      "/Users/brandenb/Downloads/rotfd/scratch/game_motion_controller_events"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/scene_callbacks_more.h",
+        "sha256": "6959b610504682fdc7b0c0d04ad2d5b2785dffb1686f40a1964432542ecfa025"
+      },
+      {
+        "path": "include/Game/python_owner_factories.h",
+        "sha256": "8d06b6d2211fc18a8d911f3483da4ac122467ddc9f96d62031c730c08547e32b"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148321624,
+        "end": 2148321844,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147563256,
+        "end": 2147563264,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147603228,
+        "end": 2147603240,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800CC958",
+        "address": 2148321624,
+        "size": 220,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@30",
+        "address": 2147563256,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@31",
+        "address": 2147603228,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "fn_8007D604",
+        "section": ".text",
+        "address": 2147997188,
+        "scope": "global"
+      },
+      {
+        "name": "fn_8007D6A0",
+        "section": ".text",
+        "address": 2147997344,
+        "scope": "global"
+      },
+      {
+        "name": "fn_8007DA74",
+        "section": ".text",
+        "address": 2147998324,
+        "scope": "global"
+      },
+      {
+        "name": "fn_800A905C",
+        "section": ".text",
+        "address": 2148175964,
+        "scope": "global"
+      },
+      {
+        "name": "fn_800CCCEC",
+        "section": ".text",
+        "address": 2148322540,
+        "scope": "global"
+      },
+      {
+        "name": "fn_801F1224",
+        "section": ".text",
+        "address": 2149519908,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_803796B0",
+        "section": ".sdata2",
+        "address": 2151126704,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_803796BC",
+        "section": ".sdata2",
+        "address": 2151126716,
+        "scope": "global"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 36,
+        "address": 2148321660,
+        "kind": 109,
+        "symbol": "lbl_803796BC",
+        "target": 2151126716,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 64,
+        "address": 2148321688,
+        "kind": 109,
+        "symbol": "lbl_803796B0",
+        "target": 2151126704,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 80,
+        "address": 2148321704,
+        "kind": 10,
+        "symbol": "fn_801F1224",
+        "target": 2149519908,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 100,
+        "address": 2148321724,
+        "kind": 10,
+        "symbol": "fn_8007D604",
+        "target": 2147997188,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 116,
+        "address": 2148321740,
+        "kind": 10,
+        "symbol": "fn_800CCCEC",
+        "target": 2148322540,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 128,
+        "address": 2148321752,
+        "kind": 10,
+        "symbol": "fn_8007D6A0",
+        "target": 2147997344,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 144,
+        "address": 2148321768,
+        "kind": 10,
+        "symbol": "fn_8007D604",
+        "target": 2147997188,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 164,
+        "address": 2148321788,
+        "kind": 10,
+        "symbol": "fn_8007D6A0",
+        "target": 2147997344,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 176,
+        "address": 2148321800,
+        "kind": 10,
+        "symbol": "fn_8007DA74",
+        "target": 2147998324,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 188,
+        "address": 2148321812,
+        "kind": 10,
+        "symbol": "fn_800A905C",
+        "target": 2148175964,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147603228,
+        "kind": 1,
+        "symbol": "fn_800CC958",
+        "target": 2148321624,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147603236,
+        "kind": 1,
+        "symbol": "@30",
+        "target": 2147563256,
+        "addend": 0
+      }
+    ],
+    "notes": "docs/notes/game-scene-callbacks-more.md",
+    "original_metadata_audit": {
+      "status": "all-original-table-ownership-retained",
+      "retained_ranges": [
+        {
+          "start": 2148321624,
+          "end": 2148321844
+        }
+      ],
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "entries": 3141,
+          "scanned_slots": 3144,
+          "references_to_retained_ranges": [
+            {
+              "entry_address": 2147603228,
+              "function": 2148321624,
+              "size": 220,
+              "extab": 2147563256,
+              "ownership": "retained-source"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "entries": 19,
+          "scanned_slots": 24,
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "entries": 3,
+          "scanned_slots": 8,
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "ef938161daa31261e6c90ab73c833fcdc8965fdc88871b30737e59f92debc718",
+      "retained_text_bytes": 220,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 12,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/scene_callback_more_800CD6DC.cpp",
+    "source_sha256": "6f7d57b6bae92cb833fc0bbb1fe2ef8ba7582dce42783d8b17b7196ae6c050ff",
+    "source_kind": "c++",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "src/Game",
+      "-i",
+      "include",
+      "-i",
+      "/Users/brandenb/Downloads/rotfd/scratch/game_motion_controller_events"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/scene_callbacks_more.h",
+        "sha256": "6959b610504682fdc7b0c0d04ad2d5b2785dffb1686f40a1964432542ecfa025"
+      },
+      {
+        "path": "include/Game/python_owner_factories.h",
+        "sha256": "8d06b6d2211fc18a8d911f3483da4ac122467ddc9f96d62031c730c08547e32b"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148325084,
+        "end": 2148325236,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147563472,
+        "end": 2147563480,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147603348,
+        "end": 2147603360,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800CD6DC",
+        "address": 2148325084,
+        "size": 152,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@29",
+        "address": 2147563472,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@30",
+        "address": 2147603348,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "fprintf",
+        "section": ".text",
+        "address": 2148687188,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_802A2AB4",
+        "section": ".rodata",
+        "address": 2150247092,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_803796F0",
+        "section": ".sdata2",
+        "address": 2151126768,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_803796F4",
+        "section": ".sdata2",
+        "address": 2151126772,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_803796F8",
+        "section": ".sdata2",
+        "address": 2151126776,
+        "scope": "global"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 10,
+        "address": 2148325094,
+        "kind": 6,
+        "symbol": "lbl_802A2AB4",
+        "target": 2150247092,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 30,
+        "address": 2148325114,
+        "kind": 4,
+        "symbol": "lbl_802A2AB4",
+        "target": 2150247092,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 40,
+        "address": 2148325124,
+        "kind": 10,
+        "symbol": "fprintf",
+        "target": 2148687188,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 60,
+        "address": 2148325144,
+        "kind": 109,
+        "symbol": "lbl_803796F0",
+        "target": 2151126768,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 68,
+        "address": 2148325152,
+        "kind": 10,
+        "symbol": "fprintf",
+        "target": 2148687188,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 88,
+        "address": 2148325172,
+        "kind": 109,
+        "symbol": "lbl_803796F4",
+        "target": 2151126772,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 96,
+        "address": 2148325180,
+        "kind": 10,
+        "symbol": "fprintf",
+        "target": 2148687188,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 116,
+        "address": 2148325200,
+        "kind": 109,
+        "symbol": "lbl_803796F8",
+        "target": 2151126776,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 124,
+        "address": 2148325208,
+        "kind": 10,
+        "symbol": "fprintf",
+        "target": 2148687188,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147603348,
+        "kind": 1,
+        "symbol": "fn_800CD6DC",
+        "target": 2148325084,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147603356,
+        "kind": 1,
+        "symbol": "@29",
+        "target": 2147563472,
+        "addend": 0
+      }
+    ],
+    "notes": "docs/notes/game-scene-callbacks-more.md",
+    "original_metadata_audit": {
+      "status": "all-original-table-ownership-retained",
+      "retained_ranges": [
+        {
+          "start": 2148325084,
+          "end": 2148325236
+        }
+      ],
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "entries": 3141,
+          "scanned_slots": 3144,
+          "references_to_retained_ranges": [
+            {
+              "entry_address": 2147603348,
+              "function": 2148325084,
+              "size": 152,
+              "extab": 2147563472,
+              "ownership": "retained-source"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "entries": 19,
+          "scanned_slots": 24,
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "entries": 3,
+          "scanned_slots": 8,
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "17ea4bee0cdb055378450feaf634adc757bbc7a5558daf043ad4a2db2f35d824",
+      "retained_text_bytes": 152,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 11,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  }
+]

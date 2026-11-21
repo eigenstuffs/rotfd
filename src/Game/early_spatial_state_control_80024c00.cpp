@@ -1,0 +1,2 @@
+#include "Game/early_spatial_state_copy_views.h"
+extern "C"void fn_80024C00(ResetSpatialResetOwner*self){self->pending=0;for(unsigned char i=0;i<self->count;++i){fn_80068FE4((char*)self->records[i]->actor+0x90,0);self->records[i]->enabled=0;self->records[i]->position=resolveActor(*self->records[i]->actor->slot74())->origin;resolveActor(*self->records[i]->actor->slot74())->setVelocity(game_vec3_zero);}self->state=0;self->time=lbl_80378240;self->enabled=0;}

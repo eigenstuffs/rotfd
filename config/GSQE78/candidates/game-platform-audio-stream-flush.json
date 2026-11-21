@@ -1,0 +1,127 @@
+{
+  "status": "integrated-byte-match",
+  "source": "src/Game/platform_audio_stream_flush.cpp",
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-proc",
+    "gekko",
+    "-fp",
+    "hardware",
+    "-enum",
+    "int",
+    "-str",
+    "reuse",
+    "-common",
+    "off",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-Cpp_exceptions",
+    "off",
+    "-RTTI",
+    "off",
+    "-use_lmw_stmw",
+    "on",
+    "-fp_contract",
+    "on",
+    "-i",
+    "src/Game",
+    "-i",
+    "include",
+    "-i",
+    "src/dolphin",
+    "-i",
+    "src/dolphin/ax"
+  ],
+  "source_kind": "c++",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2150133752,
+      "end": 2150133788,
+      "alignment": 4
+    }
+  ],
+  "functions": [
+    {
+      "name": "fn_80286FF8",
+      "address": 2150133752,
+      "size": 36,
+      "scope": "global",
+      "section": ".text",
+      "object_offset": 0,
+      "sha256": "b43ba08d22eb292968f25f929ee282af27cf9ff3c90f8286f20e116a30a21298"
+    }
+  ],
+  "objects": [],
+  "unlinked_functions": [],
+  "dependency_symbols": [
+    {
+      "name": "fn_8028A7DC",
+      "address": 2150148060,
+      "scope": "global"
+    }
+  ],
+  "source_sha256": "295a5bdccba867084abfc83c59b7cbd99cbced0a21ec7b2db921e081efadf5a0",
+  "headers": [
+    {
+      "path": "include/Game/platform_audio_internal.h",
+      "sha256": "5c94ef6913a873fda9338fa302d5dafe40f29c8b65563f7da2be001b3b9d7ce6"
+    },
+    {
+      "path": "src/Game/objects_owner_internal.h",
+      "sha256": "f2f3ed38fa07c4439af53617df67a59cd5fa686733430f307e91fb0d8d8a7d3c"
+    },
+    {
+      "path": "src/dolphin/ax/ax_abi.h",
+      "sha256": "6667cfbd1fb1bf12bacf4ec80d14b6c6c2f59d7d5a4634846727a3fe0700af6f"
+    },
+    {
+      "path": "src/dolphin/os/OSContext_abi.h",
+      "sha256": "d27524694f97e4142289604d71e0c8b41d3afa70274d8e17a53f048e8f368eb8"
+    }
+  ],
+  "validation": {
+    "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "object_sha256": "2b907030517358ef2e3687b8c5f71b3a73904929f1f322123eba8fb1877ec177",
+    "retained_text_bytes": 36,
+    "emitted_text_bytes": 36,
+    "initialized_data_bytes": 0,
+    "bss_bytes": 0,
+    "emitted_data_bytes": 0,
+    "unlinked_text_bytes": 0,
+    "weak_functions": 0,
+    "relocations": 1,
+    "zero_byte_differences": true,
+    "all_retained_allocated_bytes_verified": true,
+    "all_emitted_allocated_bytes_accounted": true,
+    "owned_padding_bytes": 0,
+    "verification_script": "scratch/game_platform_audio_update/verify.py",
+    "integration_status": "verified full-DOL and objdiff"
+  },
+  "notes": "docs/notes/game-platform-audio-update.md",
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "295a5bdccba867084abfc83c59b7cbd99cbced0a21ec7b2db921e081efadf5a0",
+    "matched_code": 36,
+    "matched_functions": 1,
+    "matched_data": 0,
+    "complete_data": 0,
+    "object_path": "build/GSQE78/src/Game/platform_audio_stream_flush.o",
+    "object_sha256": "2b907030517358ef2e3687b8c5f71b3a73904929f1f322123eba8fb1877ec177"
+  },
+  "memcard_native_identity_migration": {
+    "description": "Current canonical identities and hashes verified after native CGCMemCardManipulator/CFSM ownership integration; original evidence is retained in immutable backups and explicit previous receipts.",
+    "production_verification": "scratch/memcard_native_vtable_20261020_parallel/production-verification.json",
+    "production_verification_sha256": "96e50e874bd53c148cd6395f670c040416c34699787d56726d8cfb010c340f31",
+    "migration_object_audit": "scratch/memcard_native_vtable_20261020_parallel/migration_object_audit.json",
+    "migration_object_audit_sha256": "b809560bf7212a505b2ea749256bef5263b4784d066bb311015e10928e90db9d",
+    "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "unchanged_caller_objects": 344,
+    "native_objects": 6,
+    "native_actual_relocations": 281,
+    "previous_canonical_sha256": "797e2e927e404a9fcb1a832ee4f77c7ec4644745f5943412b0fd4882ff83babc",
+    "previous_canonical": "scratch/memcard_canonical_refresh_20261020_parallel/backups/config/GSQE78/candidates/game-platform-audio-stream-flush.json",
+    "previous_entry_json_pointer": ""
+  }
+}

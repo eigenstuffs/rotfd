@@ -1,0 +1,7186 @@
+[
+  {
+    "status": "isolated-byte-match",
+    "source": "src/Game/python_long_input_800CF87C.cpp",
+    "source_sha256": "d7daaa4ba053d614ca64ec4c058acf5f7e3d747a99bd5542701409502b686571",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "include"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148333692,
+        "end": 2148333864,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147563776,
+        "end": 2147563784,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147603804,
+        "end": 2147603816,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800CF87C",
+        "address": 2148333692,
+        "size": 172,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@22",
+        "address": 2147563776,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@23",
+        "address": 2147603804,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "headers": [
+      {
+        "path": "include/Game/python_scalar_bindings.h",
+        "sha256": "da4256555d2d970654f3ecaf9b9acfead7467b6eb2506f3b7c350553e339e166"
+      },
+      {
+        "path": "include/Game/python_owner_factories.h",
+        "sha256": "8d06b6d2211fc18a8d911f3483da4ac122467ddc9f96d62031c730c08547e32b"
+      }
+    ],
+    "unlinked_functions": [],
+    "notes": "docs/notes/game-python-long-inputs.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 14,
+        "address": 2148333706,
+        "kind": 6,
+        "symbol": "lbl_802A2EC4",
+        "target": 2150248132,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 22,
+        "address": 2148333714,
+        "kind": 4,
+        "symbol": "lbl_802A2EC4",
+        "target": 2150248132,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 52,
+        "address": 2148333744,
+        "kind": 10,
+        "symbol": "PyArg_ParseTuple",
+        "target": 2149142964,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 74,
+        "address": 2148333766,
+        "kind": 6,
+        "symbol": "lbl_80318988",
+        "target": 2150730120,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 82,
+        "address": 2148333774,
+        "kind": 4,
+        "symbol": "lbl_80318988",
+        "target": 2150730120,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 96,
+        "address": 2148333788,
+        "kind": 10,
+        "symbol": "fn_800CD864",
+        "target": 2148325476,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 120,
+        "address": 2148333812,
+        "kind": 10,
+        "symbol": "PyInt_AsLong",
+        "target": 2148833944,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 136,
+        "address": 2148333828,
+        "kind": 10,
+        "symbol": "fn_80201B14",
+        "target": 2149587732,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 140,
+        "address": 2148333832,
+        "kind": 109,
+        "symbol": "_Py_NoneStruct",
+        "target": 2151113360,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 144,
+        "address": 2148333836,
+        "kind": 109,
+        "symbol": "_Py_NoneStruct",
+        "target": 2151113360,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 152,
+        "address": 2148333844,
+        "kind": 109,
+        "symbol": "_Py_NoneStruct",
+        "target": 2151113360,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147603804,
+        "kind": 1,
+        "symbol": "fn_800CF87C",
+        "target": 2148333692,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147603812,
+        "kind": 1,
+        "symbol": "@22",
+        "target": 2147563776,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "PyArg_ParseTuple",
+        "address": 2149142964,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "PyInt_AsLong",
+        "address": 2148833944,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "_Py_NoneStruct",
+        "address": 2151113360,
+        "scope": "global",
+        "section": ".sdata"
+      },
+      {
+        "name": "fn_800CD864",
+        "address": 2148325476,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "fn_80201B14",
+        "address": 2149587732,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "lbl_802A2EC4",
+        "address": 2150248132,
+        "scope": "global",
+        "section": ".rodata"
+      },
+      {
+        "name": "lbl_80318988",
+        "address": 2150730120,
+        "scope": "global",
+        "section": ".bss"
+      }
+    ],
+    "original_metadata_audit": {
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "references_to_retained_ranges": [
+            {
+              "address": 2147603804,
+              "target": 2148333692,
+              "words": "800cf87c000000ac80013900"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "2d4ed1a3cd66809e87fb41cc82e47fadd9d9e49cd8845785e323ddfd5a229b5a",
+      "retained_text_bytes": 172,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 13,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match",
+    "source": "src/Game/python_long_input_800CF928.cpp",
+    "source_sha256": "c6ed5ac402d6c32e076d301fa2bdebac77879c31a3d8e1a0fd2c141f4557d76f",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "include"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148333864,
+        "end": 2148334036,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147563784,
+        "end": 2147563792,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147603816,
+        "end": 2147603828,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800CF928",
+        "address": 2148333864,
+        "size": 172,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@22",
+        "address": 2147563784,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@23",
+        "address": 2147603816,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "headers": [
+      {
+        "path": "include/Game/python_scalar_bindings.h",
+        "sha256": "da4256555d2d970654f3ecaf9b9acfead7467b6eb2506f3b7c350553e339e166"
+      },
+      {
+        "path": "include/Game/python_owner_factories.h",
+        "sha256": "8d06b6d2211fc18a8d911f3483da4ac122467ddc9f96d62031c730c08547e32b"
+      }
+    ],
+    "unlinked_functions": [],
+    "notes": "docs/notes/game-python-long-inputs.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 14,
+        "address": 2148333878,
+        "kind": 6,
+        "symbol": "lbl_802A2EE0",
+        "target": 2150248160,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 22,
+        "address": 2148333886,
+        "kind": 4,
+        "symbol": "lbl_802A2EE0",
+        "target": 2150248160,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 52,
+        "address": 2148333916,
+        "kind": 10,
+        "symbol": "PyArg_ParseTuple",
+        "target": 2149142964,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 74,
+        "address": 2148333938,
+        "kind": 6,
+        "symbol": "lbl_80318988",
+        "target": 2150730120,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 82,
+        "address": 2148333946,
+        "kind": 4,
+        "symbol": "lbl_80318988",
+        "target": 2150730120,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 96,
+        "address": 2148333960,
+        "kind": 10,
+        "symbol": "fn_800CD864",
+        "target": 2148325476,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 120,
+        "address": 2148333984,
+        "kind": 10,
+        "symbol": "PyInt_AsLong",
+        "target": 2148833944,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 136,
+        "address": 2148334000,
+        "kind": 10,
+        "symbol": "fn_80201A14",
+        "target": 2149587476,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 140,
+        "address": 2148334004,
+        "kind": 109,
+        "symbol": "_Py_NoneStruct",
+        "target": 2151113360,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 144,
+        "address": 2148334008,
+        "kind": 109,
+        "symbol": "_Py_NoneStruct",
+        "target": 2151113360,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 152,
+        "address": 2148334016,
+        "kind": 109,
+        "symbol": "_Py_NoneStruct",
+        "target": 2151113360,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147603816,
+        "kind": 1,
+        "symbol": "fn_800CF928",
+        "target": 2148333864,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147603824,
+        "kind": 1,
+        "symbol": "@22",
+        "target": 2147563784,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "PyArg_ParseTuple",
+        "address": 2149142964,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "PyInt_AsLong",
+        "address": 2148833944,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "_Py_NoneStruct",
+        "address": 2151113360,
+        "scope": "global",
+        "section": ".sdata"
+      },
+      {
+        "name": "fn_800CD864",
+        "address": 2148325476,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "fn_80201A14",
+        "address": 2149587476,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "lbl_802A2EE0",
+        "address": 2150248160,
+        "scope": "global",
+        "section": ".rodata"
+      },
+      {
+        "name": "lbl_80318988",
+        "address": 2150730120,
+        "scope": "global",
+        "section": ".bss"
+      }
+    ],
+    "original_metadata_audit": {
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "references_to_retained_ranges": [
+            {
+              "address": 2147603816,
+              "target": 2148333864,
+              "words": "800cf928000000ac80013908"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "62b51fd29294b89ac13546b40743be81f00acfe0fbfd23b13d224c43ce551f9f",
+      "retained_text_bytes": 172,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 13,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match",
+    "source": "src/Game/python_long_input_800D0F78.cpp",
+    "source_sha256": "130a3773a266a5e1a6c940c7dda427ec282ec8968a85b52d93090da78ace0afb",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "include"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148339576,
+        "end": 2148339748,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147564064,
+        "end": 2147564072,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147604092,
+        "end": 2147604104,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800D0F78",
+        "address": 2148339576,
+        "size": 172,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@22",
+        "address": 2147564064,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@23",
+        "address": 2147604092,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "headers": [
+      {
+        "path": "include/Game/python_scalar_bindings.h",
+        "sha256": "da4256555d2d970654f3ecaf9b9acfead7467b6eb2506f3b7c350553e339e166"
+      },
+      {
+        "path": "include/Game/python_owner_factories.h",
+        "sha256": "8d06b6d2211fc18a8d911f3483da4ac122467ddc9f96d62031c730c08547e32b"
+      }
+    ],
+    "unlinked_functions": [],
+    "notes": "docs/notes/game-python-long-inputs.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 14,
+        "address": 2148339590,
+        "kind": 6,
+        "symbol": "lbl_802A31E8",
+        "target": 2150248936,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 22,
+        "address": 2148339598,
+        "kind": 4,
+        "symbol": "lbl_802A31E8",
+        "target": 2150248936,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 52,
+        "address": 2148339628,
+        "kind": 10,
+        "symbol": "PyArg_ParseTuple",
+        "target": 2149142964,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 74,
+        "address": 2148339650,
+        "kind": 6,
+        "symbol": "lbl_80318988",
+        "target": 2150730120,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 82,
+        "address": 2148339658,
+        "kind": 4,
+        "symbol": "lbl_80318988",
+        "target": 2150730120,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 96,
+        "address": 2148339672,
+        "kind": 10,
+        "symbol": "fn_800CD864",
+        "target": 2148325476,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 120,
+        "address": 2148339696,
+        "kind": 10,
+        "symbol": "PyInt_AsLong",
+        "target": 2148833944,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 136,
+        "address": 2148339712,
+        "kind": 10,
+        "symbol": "fn_802008C8",
+        "target": 2149583048,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 140,
+        "address": 2148339716,
+        "kind": 109,
+        "symbol": "_Py_NoneStruct",
+        "target": 2151113360,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 144,
+        "address": 2148339720,
+        "kind": 109,
+        "symbol": "_Py_NoneStruct",
+        "target": 2151113360,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 152,
+        "address": 2148339728,
+        "kind": 109,
+        "symbol": "_Py_NoneStruct",
+        "target": 2151113360,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147604092,
+        "kind": 1,
+        "symbol": "fn_800D0F78",
+        "target": 2148339576,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147604100,
+        "kind": 1,
+        "symbol": "@22",
+        "target": 2147564064,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "PyArg_ParseTuple",
+        "address": 2149142964,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "PyInt_AsLong",
+        "address": 2148833944,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "_Py_NoneStruct",
+        "address": 2151113360,
+        "scope": "global",
+        "section": ".sdata"
+      },
+      {
+        "name": "fn_800CD864",
+        "address": 2148325476,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "fn_802008C8",
+        "address": 2149583048,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "lbl_802A31E8",
+        "address": 2150248936,
+        "scope": "global",
+        "section": ".rodata"
+      },
+      {
+        "name": "lbl_80318988",
+        "address": 2150730120,
+        "scope": "global",
+        "section": ".bss"
+      }
+    ],
+    "original_metadata_audit": {
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "references_to_retained_ranges": [
+            {
+              "address": 2147604092,
+              "target": 2148339576,
+              "words": "800d0f78000000ac80013a20"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "ba634e1de8e36c6d268d1415f4389fbb295151c74ac7e07eb766eb4a7245c8d8",
+      "retained_text_bytes": 172,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 13,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match",
+    "source": "src/Game/python_long_input_800D1B10.cpp",
+    "source_sha256": "71f2067e5a36997352a4c4a58b21aabdb0e1d81193930c75fa5ac56d3c7f1c3d",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "include"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148342544,
+        "end": 2148342704,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147564224,
+        "end": 2147564232,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147604332,
+        "end": 2147604344,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800D1B10",
+        "address": 2148342544,
+        "size": 160,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@22",
+        "address": 2147564224,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@23",
+        "address": 2147604332,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "headers": [
+      {
+        "path": "include/Game/python_scalar_bindings.h",
+        "sha256": "da4256555d2d970654f3ecaf9b9acfead7467b6eb2506f3b7c350553e339e166"
+      },
+      {
+        "path": "include/Game/python_owner_factories.h",
+        "sha256": "8d06b6d2211fc18a8d911f3483da4ac122467ddc9f96d62031c730c08547e32b"
+      }
+    ],
+    "unlinked_functions": [],
+    "notes": "docs/notes/game-python-long-inputs.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 14,
+        "address": 2148342558,
+        "kind": 6,
+        "symbol": "lbl_802A34BC",
+        "target": 2150249660,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 22,
+        "address": 2148342566,
+        "kind": 4,
+        "symbol": "lbl_802A34BC",
+        "target": 2150249660,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 52,
+        "address": 2148342596,
+        "kind": 10,
+        "symbol": "PyArg_ParseTuple",
+        "target": 2149142964,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 74,
+        "address": 2148342618,
+        "kind": 6,
+        "symbol": "lbl_80318988",
+        "target": 2150730120,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 82,
+        "address": 2148342626,
+        "kind": 4,
+        "symbol": "lbl_80318988",
+        "target": 2150730120,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 96,
+        "address": 2148342640,
+        "kind": 10,
+        "symbol": "fn_800CD864",
+        "target": 2148325476,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 120,
+        "address": 2148342664,
+        "kind": 10,
+        "symbol": "PyInt_AsLong",
+        "target": 2148833944,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 132,
+        "address": 2148342676,
+        "kind": 10,
+        "symbol": "fn_80067480",
+        "target": 2147906688,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 140,
+        "address": 2148342684,
+        "kind": 10,
+        "symbol": "PyInt_FromLong",
+        "target": 2148834204,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147604332,
+        "kind": 1,
+        "symbol": "fn_800D1B10",
+        "target": 2148342544,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147604340,
+        "kind": 1,
+        "symbol": "@22",
+        "target": 2147564224,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "PyArg_ParseTuple",
+        "address": 2149142964,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "PyInt_AsLong",
+        "address": 2148833944,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "PyInt_FromLong",
+        "address": 2148834204,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "fn_80067480",
+        "address": 2147906688,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "fn_800CD864",
+        "address": 2148325476,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "lbl_802A34BC",
+        "address": 2150249660,
+        "scope": "global",
+        "section": ".rodata"
+      },
+      {
+        "name": "lbl_80318988",
+        "address": 2150730120,
+        "scope": "global",
+        "section": ".bss"
+      }
+    ],
+    "original_metadata_audit": {
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "references_to_retained_ranges": [
+            {
+              "address": 2147604332,
+              "target": 2148342544,
+              "words": "800d1b10000000a080013ac0"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "52ef7fd044712ae399ca85ac917eb6ca2fcc73abcc7e900ce2fe4c28f2fc2807",
+      "retained_text_bytes": 160,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 11,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match",
+    "source": "src/Game/python_long_input_800D1BB0.cpp",
+    "source_sha256": "43f31478141183bc0d0adac6a1f21bee390222f477dbcdb9cf226e68ca438665",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "include"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148342704,
+        "end": 2148342864,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147564232,
+        "end": 2147564240,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147604344,
+        "end": 2147604356,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800D1BB0",
+        "address": 2148342704,
+        "size": 160,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@22",
+        "address": 2147564232,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@23",
+        "address": 2147604344,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "headers": [
+      {
+        "path": "include/Game/python_scalar_bindings.h",
+        "sha256": "da4256555d2d970654f3ecaf9b9acfead7467b6eb2506f3b7c350553e339e166"
+      },
+      {
+        "path": "include/Game/python_owner_factories.h",
+        "sha256": "8d06b6d2211fc18a8d911f3483da4ac122467ddc9f96d62031c730c08547e32b"
+      }
+    ],
+    "unlinked_functions": [],
+    "notes": "docs/notes/game-python-long-inputs.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 14,
+        "address": 2148342718,
+        "kind": 6,
+        "symbol": "lbl_802A34E4",
+        "target": 2150249700,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 22,
+        "address": 2148342726,
+        "kind": 4,
+        "symbol": "lbl_802A34E4",
+        "target": 2150249700,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 52,
+        "address": 2148342756,
+        "kind": 10,
+        "symbol": "PyArg_ParseTuple",
+        "target": 2149142964,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 74,
+        "address": 2148342778,
+        "kind": 6,
+        "symbol": "lbl_80318988",
+        "target": 2150730120,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 82,
+        "address": 2148342786,
+        "kind": 4,
+        "symbol": "lbl_80318988",
+        "target": 2150730120,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 96,
+        "address": 2148342800,
+        "kind": 10,
+        "symbol": "fn_800CD864",
+        "target": 2148325476,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 120,
+        "address": 2148342824,
+        "kind": 10,
+        "symbol": "PyInt_AsLong",
+        "target": 2148833944,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 132,
+        "address": 2148342836,
+        "kind": 10,
+        "symbol": "fn_80067238",
+        "target": 2147906104,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 140,
+        "address": 2148342844,
+        "kind": 10,
+        "symbol": "PyInt_FromLong",
+        "target": 2148834204,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147604344,
+        "kind": 1,
+        "symbol": "fn_800D1BB0",
+        "target": 2148342704,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147604352,
+        "kind": 1,
+        "symbol": "@22",
+        "target": 2147564232,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "PyArg_ParseTuple",
+        "address": 2149142964,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "PyInt_AsLong",
+        "address": 2148833944,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "PyInt_FromLong",
+        "address": 2148834204,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "fn_80067238",
+        "address": 2147906104,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "fn_800CD864",
+        "address": 2148325476,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "lbl_802A34E4",
+        "address": 2150249700,
+        "scope": "global",
+        "section": ".rodata"
+      },
+      {
+        "name": "lbl_80318988",
+        "address": 2150730120,
+        "scope": "global",
+        "section": ".bss"
+      }
+    ],
+    "original_metadata_audit": {
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "references_to_retained_ranges": [
+            {
+              "address": 2147604344,
+              "target": 2148342704,
+              "words": "800d1bb0000000a080013ac8"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "7df6359d029714361dc903aea0664e4462694cc114d83e48e86090f01409a1c2",
+      "retained_text_bytes": 160,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 11,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match",
+    "source": "src/Game/python_long_input_800D1C50.cpp",
+    "source_sha256": "7b60488236ac11288b38621c4a51c2eb3a165009d69f0e804784a59b5e886e54",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "include"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148342864,
+        "end": 2148343024,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147564240,
+        "end": 2147564248,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147604356,
+        "end": 2147604368,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800D1C50",
+        "address": 2148342864,
+        "size": 160,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@22",
+        "address": 2147564240,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@23",
+        "address": 2147604356,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "headers": [
+      {
+        "path": "include/Game/python_scalar_bindings.h",
+        "sha256": "da4256555d2d970654f3ecaf9b9acfead7467b6eb2506f3b7c350553e339e166"
+      },
+      {
+        "path": "include/Game/python_owner_factories.h",
+        "sha256": "8d06b6d2211fc18a8d911f3483da4ac122467ddc9f96d62031c730c08547e32b"
+      }
+    ],
+    "unlinked_functions": [],
+    "notes": "docs/notes/game-python-long-inputs.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 14,
+        "address": 2148342878,
+        "kind": 6,
+        "symbol": "lbl_802A3508",
+        "target": 2150249736,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 22,
+        "address": 2148342886,
+        "kind": 4,
+        "symbol": "lbl_802A3508",
+        "target": 2150249736,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 52,
+        "address": 2148342916,
+        "kind": 10,
+        "symbol": "PyArg_ParseTuple",
+        "target": 2149142964,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 74,
+        "address": 2148342938,
+        "kind": 6,
+        "symbol": "lbl_80318988",
+        "target": 2150730120,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 82,
+        "address": 2148342946,
+        "kind": 4,
+        "symbol": "lbl_80318988",
+        "target": 2150730120,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 96,
+        "address": 2148342960,
+        "kind": 10,
+        "symbol": "fn_800CD864",
+        "target": 2148325476,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 120,
+        "address": 2148342984,
+        "kind": 10,
+        "symbol": "PyInt_AsLong",
+        "target": 2148833944,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 132,
+        "address": 2148342996,
+        "kind": 10,
+        "symbol": "fn_8006727C",
+        "target": 2147906172,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 140,
+        "address": 2148343004,
+        "kind": 10,
+        "symbol": "PyInt_FromLong",
+        "target": 2148834204,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147604356,
+        "kind": 1,
+        "symbol": "fn_800D1C50",
+        "target": 2148342864,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147604364,
+        "kind": 1,
+        "symbol": "@22",
+        "target": 2147564240,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "PyArg_ParseTuple",
+        "address": 2149142964,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "PyInt_AsLong",
+        "address": 2148833944,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "PyInt_FromLong",
+        "address": 2148834204,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "fn_8006727C",
+        "address": 2147906172,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "fn_800CD864",
+        "address": 2148325476,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "lbl_802A3508",
+        "address": 2150249736,
+        "scope": "global",
+        "section": ".rodata"
+      },
+      {
+        "name": "lbl_80318988",
+        "address": 2150730120,
+        "scope": "global",
+        "section": ".bss"
+      }
+    ],
+    "original_metadata_audit": {
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "references_to_retained_ranges": [
+            {
+              "address": 2147604356,
+              "target": 2148342864,
+              "words": "800d1c50000000a080013ad0"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "7a24bebc095bdfe9d0dabb423a4eb8619771c273a9244c15fe67a182787d18e2",
+      "retained_text_bytes": 160,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 11,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match",
+    "source": "src/Game/python_long_input_800D1DB4.cpp",
+    "source_sha256": "d885f1df7abec41eb2bd3786e591996a9d6f82cc8158207a4d11ebc7e950cc38",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "include"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148343220,
+        "end": 2148343380,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147564256,
+        "end": 2147564264,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147604380,
+        "end": 2147604392,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800D1DB4",
+        "address": 2148343220,
+        "size": 160,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@22",
+        "address": 2147564256,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@23",
+        "address": 2147604380,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "headers": [
+      {
+        "path": "include/Game/python_scalar_bindings.h",
+        "sha256": "da4256555d2d970654f3ecaf9b9acfead7467b6eb2506f3b7c350553e339e166"
+      },
+      {
+        "path": "include/Game/python_owner_factories.h",
+        "sha256": "8d06b6d2211fc18a8d911f3483da4ac122467ddc9f96d62031c730c08547e32b"
+      }
+    ],
+    "unlinked_functions": [],
+    "notes": "docs/notes/game-python-long-inputs.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 14,
+        "address": 2148343234,
+        "kind": 6,
+        "symbol": "lbl_802A3550",
+        "target": 2150249808,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 22,
+        "address": 2148343242,
+        "kind": 4,
+        "symbol": "lbl_802A3550",
+        "target": 2150249808,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 52,
+        "address": 2148343272,
+        "kind": 10,
+        "symbol": "PyArg_ParseTuple",
+        "target": 2149142964,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 74,
+        "address": 2148343294,
+        "kind": 6,
+        "symbol": "lbl_80318988",
+        "target": 2150730120,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 82,
+        "address": 2148343302,
+        "kind": 4,
+        "symbol": "lbl_80318988",
+        "target": 2150730120,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 96,
+        "address": 2148343316,
+        "kind": 10,
+        "symbol": "fn_800CD864",
+        "target": 2148325476,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 120,
+        "address": 2148343340,
+        "kind": 10,
+        "symbol": "PyInt_AsLong",
+        "target": 2148833944,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 132,
+        "address": 2148343352,
+        "kind": 10,
+        "symbol": "fn_80065ED4",
+        "target": 2147901140,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 140,
+        "address": 2148343360,
+        "kind": 10,
+        "symbol": "PyInt_FromLong",
+        "target": 2148834204,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147604380,
+        "kind": 1,
+        "symbol": "fn_800D1DB4",
+        "target": 2148343220,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147604388,
+        "kind": 1,
+        "symbol": "@22",
+        "target": 2147564256,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "PyArg_ParseTuple",
+        "address": 2149142964,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "PyInt_AsLong",
+        "address": 2148833944,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "PyInt_FromLong",
+        "address": 2148834204,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "fn_80065ED4",
+        "address": 2147901140,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "fn_800CD864",
+        "address": 2148325476,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "lbl_802A3550",
+        "address": 2150249808,
+        "scope": "global",
+        "section": ".rodata"
+      },
+      {
+        "name": "lbl_80318988",
+        "address": 2150730120,
+        "scope": "global",
+        "section": ".bss"
+      }
+    ],
+    "original_metadata_audit": {
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "references_to_retained_ranges": [
+            {
+              "address": 2147604380,
+              "target": 2148343220,
+              "words": "800d1db4000000a080013ae0"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "2030866cd3b936020db87d1789b200bad52106f6cb4391d44e205a4a211bb495",
+      "retained_text_bytes": 160,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 11,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match",
+    "source": "src/Game/python_long_input_800D3B90.cpp",
+    "source_sha256": "0348c21509736580c0a51a843997ac80f3788b39f477f9cb03339b365c851e24",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "include"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148350864,
+        "end": 2148351024,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147564592,
+        "end": 2147564600,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147604884,
+        "end": 2147604896,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800D3B90",
+        "address": 2148350864,
+        "size": 160,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@22",
+        "address": 2147564592,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@23",
+        "address": 2147604884,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "headers": [
+      {
+        "path": "include/Game/python_scalar_bindings.h",
+        "sha256": "da4256555d2d970654f3ecaf9b9acfead7467b6eb2506f3b7c350553e339e166"
+      },
+      {
+        "path": "include/Game/python_owner_factories.h",
+        "sha256": "8d06b6d2211fc18a8d911f3483da4ac122467ddc9f96d62031c730c08547e32b"
+      }
+    ],
+    "unlinked_functions": [],
+    "notes": "docs/notes/game-python-long-inputs.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 14,
+        "address": 2148350878,
+        "kind": 6,
+        "symbol": "lbl_802A3B94",
+        "target": 2150251412,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 22,
+        "address": 2148350886,
+        "kind": 4,
+        "symbol": "lbl_802A3B94",
+        "target": 2150251412,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 52,
+        "address": 2148350916,
+        "kind": 10,
+        "symbol": "PyArg_ParseTuple",
+        "target": 2149142964,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 74,
+        "address": 2148350938,
+        "kind": 6,
+        "symbol": "lbl_80318988",
+        "target": 2150730120,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 82,
+        "address": 2148350946,
+        "kind": 4,
+        "symbol": "lbl_80318988",
+        "target": 2150730120,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 96,
+        "address": 2148350960,
+        "kind": 10,
+        "symbol": "fn_800CD864",
+        "target": 2148325476,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 120,
+        "address": 2148350984,
+        "kind": 10,
+        "symbol": "PyInt_AsLong",
+        "target": 2148833944,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 132,
+        "address": 2148350996,
+        "kind": 10,
+        "symbol": "fn_80067754",
+        "target": 2147907412,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 140,
+        "address": 2148351004,
+        "kind": 10,
+        "symbol": "PyInt_FromLong",
+        "target": 2148834204,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147604884,
+        "kind": 1,
+        "symbol": "fn_800D3B90",
+        "target": 2148350864,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147604892,
+        "kind": 1,
+        "symbol": "@22",
+        "target": 2147564592,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "PyArg_ParseTuple",
+        "address": 2149142964,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "PyInt_AsLong",
+        "address": 2148833944,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "PyInt_FromLong",
+        "address": 2148834204,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "fn_80067754",
+        "address": 2147907412,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "fn_800CD864",
+        "address": 2148325476,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "lbl_802A3B94",
+        "address": 2150251412,
+        "scope": "global",
+        "section": ".rodata"
+      },
+      {
+        "name": "lbl_80318988",
+        "address": 2150730120,
+        "scope": "global",
+        "section": ".bss"
+      }
+    ],
+    "original_metadata_audit": {
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "references_to_retained_ranges": [
+            {
+              "address": 2147604884,
+              "target": 2148350864,
+              "words": "800d3b90000000a080013c30"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "4096851d799cb7754055a9024f50d691f0ff4ab43ee0906ec897fbd16232b459",
+      "retained_text_bytes": 160,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 11,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match",
+    "source": "src/Game/python_long_input_800D4150.cpp",
+    "source_sha256": "19598e8b53b073490e43c74d2579a709ff03c7cf8d9a5afcaa9608131ab27cbf",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "include"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148352336,
+        "end": 2148352496,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147564664,
+        "end": 2147564672,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147604992,
+        "end": 2147605004,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800D4150",
+        "address": 2148352336,
+        "size": 160,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@22",
+        "address": 2147564664,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@23",
+        "address": 2147604992,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "headers": [
+      {
+        "path": "include/Game/python_scalar_bindings.h",
+        "sha256": "da4256555d2d970654f3ecaf9b9acfead7467b6eb2506f3b7c350553e339e166"
+      },
+      {
+        "path": "include/Game/python_owner_factories.h",
+        "sha256": "8d06b6d2211fc18a8d911f3483da4ac122467ddc9f96d62031c730c08547e32b"
+      }
+    ],
+    "unlinked_functions": [],
+    "notes": "docs/notes/game-python-long-inputs.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 14,
+        "address": 2148352350,
+        "kind": 6,
+        "symbol": "lbl_802A3CD0",
+        "target": 2150251728,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 22,
+        "address": 2148352358,
+        "kind": 4,
+        "symbol": "lbl_802A3CD0",
+        "target": 2150251728,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 52,
+        "address": 2148352388,
+        "kind": 10,
+        "symbol": "PyArg_ParseTuple",
+        "target": 2149142964,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 74,
+        "address": 2148352410,
+        "kind": 6,
+        "symbol": "lbl_80318988",
+        "target": 2150730120,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 82,
+        "address": 2148352418,
+        "kind": 4,
+        "symbol": "lbl_80318988",
+        "target": 2150730120,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 96,
+        "address": 2148352432,
+        "kind": 10,
+        "symbol": "fn_800CD864",
+        "target": 2148325476,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 120,
+        "address": 2148352456,
+        "kind": 10,
+        "symbol": "PyInt_AsLong",
+        "target": 2148833944,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 132,
+        "address": 2148352468,
+        "kind": 10,
+        "symbol": "fn_80068D5C",
+        "target": 2147913052,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 140,
+        "address": 2148352476,
+        "kind": 10,
+        "symbol": "PyInt_FromLong",
+        "target": 2148834204,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147604992,
+        "kind": 1,
+        "symbol": "fn_800D4150",
+        "target": 2148352336,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147605000,
+        "kind": 1,
+        "symbol": "@22",
+        "target": 2147564664,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "PyArg_ParseTuple",
+        "address": 2149142964,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "PyInt_AsLong",
+        "address": 2148833944,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "PyInt_FromLong",
+        "address": 2148834204,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "fn_80068D5C",
+        "address": 2147913052,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "fn_800CD864",
+        "address": 2148325476,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "lbl_802A3CD0",
+        "address": 2150251728,
+        "scope": "global",
+        "section": ".rodata"
+      },
+      {
+        "name": "lbl_80318988",
+        "address": 2150730120,
+        "scope": "global",
+        "section": ".bss"
+      }
+    ],
+    "original_metadata_audit": {
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "references_to_retained_ranges": [
+            {
+              "address": 2147604992,
+              "target": 2148352336,
+              "words": "800d4150000000a080013c78"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "baf885a4ca3b44b8e1dd94b936152863f0688d7fb563ad23c9e8ba66298f0086",
+      "retained_text_bytes": 160,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 11,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match",
+    "source": "src/Game/python_long_input_800D41F0.cpp",
+    "source_sha256": "3120c7ea1c8bc01f25b9f9152187194ce4a712eb28b7779537ee14b1702ed84b",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "include"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148352496,
+        "end": 2148352656,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147564672,
+        "end": 2147564680,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147605004,
+        "end": 2147605016,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800D41F0",
+        "address": 2148352496,
+        "size": 160,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@22",
+        "address": 2147564672,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@23",
+        "address": 2147605004,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "headers": [
+      {
+        "path": "include/Game/python_scalar_bindings.h",
+        "sha256": "da4256555d2d970654f3ecaf9b9acfead7467b6eb2506f3b7c350553e339e166"
+      },
+      {
+        "path": "include/Game/python_owner_factories.h",
+        "sha256": "8d06b6d2211fc18a8d911f3483da4ac122467ddc9f96d62031c730c08547e32b"
+      }
+    ],
+    "unlinked_functions": [],
+    "notes": "docs/notes/game-python-long-inputs.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 14,
+        "address": 2148352510,
+        "kind": 6,
+        "symbol": "lbl_802A3CF8",
+        "target": 2150251768,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 22,
+        "address": 2148352518,
+        "kind": 4,
+        "symbol": "lbl_802A3CF8",
+        "target": 2150251768,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 52,
+        "address": 2148352548,
+        "kind": 10,
+        "symbol": "PyArg_ParseTuple",
+        "target": 2149142964,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 74,
+        "address": 2148352570,
+        "kind": 6,
+        "symbol": "lbl_80318988",
+        "target": 2150730120,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 82,
+        "address": 2148352578,
+        "kind": 4,
+        "symbol": "lbl_80318988",
+        "target": 2150730120,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 96,
+        "address": 2148352592,
+        "kind": 10,
+        "symbol": "fn_800CD864",
+        "target": 2148325476,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 120,
+        "address": 2148352616,
+        "kind": 10,
+        "symbol": "PyInt_AsLong",
+        "target": 2148833944,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 132,
+        "address": 2148352628,
+        "kind": 10,
+        "symbol": "fn_80068FE4",
+        "target": 2147913700,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 140,
+        "address": 2148352636,
+        "kind": 10,
+        "symbol": "PyInt_FromLong",
+        "target": 2148834204,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147605004,
+        "kind": 1,
+        "symbol": "fn_800D41F0",
+        "target": 2148352496,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147605012,
+        "kind": 1,
+        "symbol": "@22",
+        "target": 2147564672,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "PyArg_ParseTuple",
+        "address": 2149142964,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "PyInt_AsLong",
+        "address": 2148833944,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "PyInt_FromLong",
+        "address": 2148834204,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "fn_80068FE4",
+        "address": 2147913700,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "fn_800CD864",
+        "address": 2148325476,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "lbl_802A3CF8",
+        "address": 2150251768,
+        "scope": "global",
+        "section": ".rodata"
+      },
+      {
+        "name": "lbl_80318988",
+        "address": 2150730120,
+        "scope": "global",
+        "section": ".bss"
+      }
+    ],
+    "original_metadata_audit": {
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "references_to_retained_ranges": [
+            {
+              "address": 2147605004,
+              "target": 2148352496,
+              "words": "800d41f0000000a080013c80"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "47fffd1c385715bc5dc1eb017d49c15e7cddef5bc1ec919f06df43706a78cdcd",
+      "retained_text_bytes": 160,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 11,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match",
+    "source": "src/Game/python_long_input_800D4290.cpp",
+    "source_sha256": "6a84f0748df38ab8e63453cf5f9e419f4c2beba7da9e7e28c13bb764d8c4ebc7",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "include"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148352656,
+        "end": 2148352816,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147564680,
+        "end": 2147564688,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147605016,
+        "end": 2147605028,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800D4290",
+        "address": 2148352656,
+        "size": 160,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@22",
+        "address": 2147564680,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@23",
+        "address": 2147605016,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "headers": [
+      {
+        "path": "include/Game/python_scalar_bindings.h",
+        "sha256": "da4256555d2d970654f3ecaf9b9acfead7467b6eb2506f3b7c350553e339e166"
+      },
+      {
+        "path": "include/Game/python_owner_factories.h",
+        "sha256": "8d06b6d2211fc18a8d911f3483da4ac122467ddc9f96d62031c730c08547e32b"
+      }
+    ],
+    "unlinked_functions": [],
+    "notes": "docs/notes/game-python-long-inputs.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 14,
+        "address": 2148352670,
+        "kind": 6,
+        "symbol": "lbl_802A3D1C",
+        "target": 2150251804,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 22,
+        "address": 2148352678,
+        "kind": 4,
+        "symbol": "lbl_802A3D1C",
+        "target": 2150251804,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 52,
+        "address": 2148352708,
+        "kind": 10,
+        "symbol": "PyArg_ParseTuple",
+        "target": 2149142964,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 74,
+        "address": 2148352730,
+        "kind": 6,
+        "symbol": "lbl_80318988",
+        "target": 2150730120,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 82,
+        "address": 2148352738,
+        "kind": 4,
+        "symbol": "lbl_80318988",
+        "target": 2150730120,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 96,
+        "address": 2148352752,
+        "kind": 10,
+        "symbol": "fn_800CD864",
+        "target": 2148325476,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 120,
+        "address": 2148352776,
+        "kind": 10,
+        "symbol": "PyInt_AsLong",
+        "target": 2148833944,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 132,
+        "address": 2148352788,
+        "kind": 10,
+        "symbol": "fn_80069078",
+        "target": 2147913848,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 140,
+        "address": 2148352796,
+        "kind": 10,
+        "symbol": "PyInt_FromLong",
+        "target": 2148834204,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147605016,
+        "kind": 1,
+        "symbol": "fn_800D4290",
+        "target": 2148352656,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147605024,
+        "kind": 1,
+        "symbol": "@22",
+        "target": 2147564680,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "PyArg_ParseTuple",
+        "address": 2149142964,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "PyInt_AsLong",
+        "address": 2148833944,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "PyInt_FromLong",
+        "address": 2148834204,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "fn_80069078",
+        "address": 2147913848,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "fn_800CD864",
+        "address": 2148325476,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "lbl_802A3D1C",
+        "address": 2150251804,
+        "scope": "global",
+        "section": ".rodata"
+      },
+      {
+        "name": "lbl_80318988",
+        "address": 2150730120,
+        "scope": "global",
+        "section": ".bss"
+      }
+    ],
+    "original_metadata_audit": {
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "references_to_retained_ranges": [
+            {
+              "address": 2147605016,
+              "target": 2148352656,
+              "words": "800d4290000000a080013c88"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "d8f7290461daf4eabef4b27da509420cf9393b419f7b55d19a897324f2779fe7",
+      "retained_text_bytes": 160,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 11,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match",
+    "source": "src/Game/python_long_input_800D57DC.cpp",
+    "source_sha256": "fc2cfde9d2d77ea2b1ce563d34c4b7f9ccd42f85b466114ee80254b24245bb2c",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "include"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148358108,
+        "end": 2148358268,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147564936,
+        "end": 2147564944,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147605400,
+        "end": 2147605412,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800D57DC",
+        "address": 2148358108,
+        "size": 160,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@22",
+        "address": 2147564936,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@23",
+        "address": 2147605400,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "headers": [
+      {
+        "path": "include/Game/python_scalar_bindings.h",
+        "sha256": "da4256555d2d970654f3ecaf9b9acfead7467b6eb2506f3b7c350553e339e166"
+      },
+      {
+        "path": "include/Game/python_owner_factories.h",
+        "sha256": "8d06b6d2211fc18a8d911f3483da4ac122467ddc9f96d62031c730c08547e32b"
+      }
+    ],
+    "unlinked_functions": [],
+    "notes": "docs/notes/game-python-long-inputs.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 14,
+        "address": 2148358122,
+        "kind": 6,
+        "symbol": "lbl_802A41A0",
+        "target": 2150252960,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 22,
+        "address": 2148358130,
+        "kind": 4,
+        "symbol": "lbl_802A41A0",
+        "target": 2150252960,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 52,
+        "address": 2148358160,
+        "kind": 10,
+        "symbol": "PyArg_ParseTuple",
+        "target": 2149142964,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 74,
+        "address": 2148358182,
+        "kind": 6,
+        "symbol": "lbl_80318988",
+        "target": 2150730120,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 82,
+        "address": 2148358190,
+        "kind": 4,
+        "symbol": "lbl_80318988",
+        "target": 2150730120,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 96,
+        "address": 2148358204,
+        "kind": 10,
+        "symbol": "fn_800CD864",
+        "target": 2148325476,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 120,
+        "address": 2148358228,
+        "kind": 10,
+        "symbol": "PyInt_AsLong",
+        "target": 2148833944,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 132,
+        "address": 2148358240,
+        "kind": 10,
+        "symbol": "fn_8006C194",
+        "target": 2147926420,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 140,
+        "address": 2148358248,
+        "kind": 10,
+        "symbol": "PyInt_FromLong",
+        "target": 2148834204,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147605400,
+        "kind": 1,
+        "symbol": "fn_800D57DC",
+        "target": 2148358108,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147605408,
+        "kind": 1,
+        "symbol": "@22",
+        "target": 2147564936,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "PyArg_ParseTuple",
+        "address": 2149142964,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "PyInt_AsLong",
+        "address": 2148833944,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "PyInt_FromLong",
+        "address": 2148834204,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "fn_8006C194",
+        "address": 2147926420,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "fn_800CD864",
+        "address": 2148325476,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "lbl_802A41A0",
+        "address": 2150252960,
+        "scope": "global",
+        "section": ".rodata"
+      },
+      {
+        "name": "lbl_80318988",
+        "address": 2150730120,
+        "scope": "global",
+        "section": ".bss"
+      }
+    ],
+    "original_metadata_audit": {
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "references_to_retained_ranges": [
+            {
+              "address": 2147605400,
+              "target": 2148358108,
+              "words": "800d57dc000000a080013d88"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "3190f52cf9551c8f2091bb2aa9627aab94add297d0d5306d95bfd3ac9ac62ee4",
+      "retained_text_bytes": 160,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 11,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match",
+    "source": "src/Game/python_long_input_800D5F30.cpp",
+    "source_sha256": "c345406d56217758740f87b84e256ae1d6a294c2d2258f4b0c0f70239749a9dc",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "include"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148359984,
+        "end": 2148360152,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147565032,
+        "end": 2147565040,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147605544,
+        "end": 2147605556,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800D5F30",
+        "address": 2148359984,
+        "size": 168,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@22",
+        "address": 2147565032,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@23",
+        "address": 2147605544,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "headers": [
+      {
+        "path": "include/Game/python_scalar_bindings.h",
+        "sha256": "da4256555d2d970654f3ecaf9b9acfead7467b6eb2506f3b7c350553e339e166"
+      },
+      {
+        "path": "include/Game/python_owner_factories.h",
+        "sha256": "8d06b6d2211fc18a8d911f3483da4ac122467ddc9f96d62031c730c08547e32b"
+      }
+    ],
+    "unlinked_functions": [],
+    "notes": "docs/notes/game-python-long-inputs.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 14,
+        "address": 2148359998,
+        "kind": 6,
+        "symbol": "lbl_802A4368",
+        "target": 2150253416,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 22,
+        "address": 2148360006,
+        "kind": 4,
+        "symbol": "lbl_802A4368",
+        "target": 2150253416,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 52,
+        "address": 2148360036,
+        "kind": 10,
+        "symbol": "PyArg_ParseTuple",
+        "target": 2149142964,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 74,
+        "address": 2148360058,
+        "kind": 6,
+        "symbol": "lbl_80318988",
+        "target": 2150730120,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 82,
+        "address": 2148360066,
+        "kind": 4,
+        "symbol": "lbl_80318988",
+        "target": 2150730120,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 96,
+        "address": 2148360080,
+        "kind": 10,
+        "symbol": "fn_800CD864",
+        "target": 2148325476,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 120,
+        "address": 2148360104,
+        "kind": 10,
+        "symbol": "PyInt_AsLong",
+        "target": 2148833944,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 132,
+        "address": 2148360116,
+        "kind": 10,
+        "symbol": "fn_80069464",
+        "target": 2147914852,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 136,
+        "address": 2148360120,
+        "kind": 109,
+        "symbol": "_Py_NoneStruct",
+        "target": 2151113360,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 140,
+        "address": 2148360124,
+        "kind": 109,
+        "symbol": "_Py_NoneStruct",
+        "target": 2151113360,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 148,
+        "address": 2148360132,
+        "kind": 109,
+        "symbol": "_Py_NoneStruct",
+        "target": 2151113360,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147605544,
+        "kind": 1,
+        "symbol": "fn_800D5F30",
+        "target": 2148359984,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147605552,
+        "kind": 1,
+        "symbol": "@22",
+        "target": 2147565032,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "PyArg_ParseTuple",
+        "address": 2149142964,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "PyInt_AsLong",
+        "address": 2148833944,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "_Py_NoneStruct",
+        "address": 2151113360,
+        "scope": "global",
+        "section": ".sdata"
+      },
+      {
+        "name": "fn_80069464",
+        "address": 2147914852,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "fn_800CD864",
+        "address": 2148325476,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "lbl_802A4368",
+        "address": 2150253416,
+        "scope": "global",
+        "section": ".rodata"
+      },
+      {
+        "name": "lbl_80318988",
+        "address": 2150730120,
+        "scope": "global",
+        "section": ".bss"
+      }
+    ],
+    "original_metadata_audit": {
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "references_to_retained_ranges": [
+            {
+              "address": 2147605544,
+              "target": 2148359984,
+              "words": "800d5f30000000a880013de8"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "bdade6a54d649629f19a35c380c33b404febac9460b9ea7c070020bb6e80118d",
+      "retained_text_bytes": 168,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 13,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match",
+    "source": "src/Game/python_long_input_800D68C0.cpp",
+    "source_sha256": "ed5e1ef880e8c08fc27a1f1d139762aabaa1697644d3539f4e985303646dd1f6",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "include"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148362432,
+        "end": 2148362600,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147565136,
+        "end": 2147565144,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147605700,
+        "end": 2147605712,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800D68C0",
+        "address": 2148362432,
+        "size": 168,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@22",
+        "address": 2147565136,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@23",
+        "address": 2147605700,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "headers": [
+      {
+        "path": "include/Game/python_scalar_bindings.h",
+        "sha256": "da4256555d2d970654f3ecaf9b9acfead7467b6eb2506f3b7c350553e339e166"
+      },
+      {
+        "path": "include/Game/python_owner_factories.h",
+        "sha256": "8d06b6d2211fc18a8d911f3483da4ac122467ddc9f96d62031c730c08547e32b"
+      }
+    ],
+    "unlinked_functions": [],
+    "notes": "docs/notes/game-python-long-inputs.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 14,
+        "address": 2148362446,
+        "kind": 6,
+        "symbol": "lbl_802A452C",
+        "target": 2150253868,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 22,
+        "address": 2148362454,
+        "kind": 4,
+        "symbol": "lbl_802A452C",
+        "target": 2150253868,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 52,
+        "address": 2148362484,
+        "kind": 10,
+        "symbol": "PyArg_ParseTuple",
+        "target": 2149142964,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 74,
+        "address": 2148362506,
+        "kind": 6,
+        "symbol": "lbl_80318988",
+        "target": 2150730120,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 82,
+        "address": 2148362514,
+        "kind": 4,
+        "symbol": "lbl_80318988",
+        "target": 2150730120,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 96,
+        "address": 2148362528,
+        "kind": 10,
+        "symbol": "fn_800CD864",
+        "target": 2148325476,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 120,
+        "address": 2148362552,
+        "kind": 10,
+        "symbol": "PyInt_AsLong",
+        "target": 2148833944,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 132,
+        "address": 2148362564,
+        "kind": 10,
+        "symbol": "fn_8006C78C",
+        "target": 2147927948,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 136,
+        "address": 2148362568,
+        "kind": 109,
+        "symbol": "_Py_NoneStruct",
+        "target": 2151113360,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 140,
+        "address": 2148362572,
+        "kind": 109,
+        "symbol": "_Py_NoneStruct",
+        "target": 2151113360,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 148,
+        "address": 2148362580,
+        "kind": 109,
+        "symbol": "_Py_NoneStruct",
+        "target": 2151113360,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147605700,
+        "kind": 1,
+        "symbol": "fn_800D68C0",
+        "target": 2148362432,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147605708,
+        "kind": 1,
+        "symbol": "@22",
+        "target": 2147565136,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "PyArg_ParseTuple",
+        "address": 2149142964,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "PyInt_AsLong",
+        "address": 2148833944,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "_Py_NoneStruct",
+        "address": 2151113360,
+        "scope": "global",
+        "section": ".sdata"
+      },
+      {
+        "name": "fn_8006C78C",
+        "address": 2147927948,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "fn_800CD864",
+        "address": 2148325476,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "lbl_802A452C",
+        "address": 2150253868,
+        "scope": "global",
+        "section": ".rodata"
+      },
+      {
+        "name": "lbl_80318988",
+        "address": 2150730120,
+        "scope": "global",
+        "section": ".bss"
+      }
+    ],
+    "original_metadata_audit": {
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "references_to_retained_ranges": [
+            {
+              "address": 2147605700,
+              "target": 2148362432,
+              "words": "800d68c0000000a880013e50"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "8ff4531abcadfbdcf1b77d1fabd82a2f0dbfba7a6bb60e21be56d7d9ec3a8e42",
+      "retained_text_bytes": 168,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 13,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match",
+    "source": "src/Game/python_long_input_800D6968.cpp",
+    "source_sha256": "2204498435163a9184615741c152022177770b26f9e99b602016cf96256914b3",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "include"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148362600,
+        "end": 2148362768,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147565144,
+        "end": 2147565152,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147605712,
+        "end": 2147605724,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800D6968",
+        "address": 2148362600,
+        "size": 168,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@22",
+        "address": 2147565144,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@23",
+        "address": 2147605712,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "headers": [
+      {
+        "path": "include/Game/python_scalar_bindings.h",
+        "sha256": "da4256555d2d970654f3ecaf9b9acfead7467b6eb2506f3b7c350553e339e166"
+      },
+      {
+        "path": "include/Game/python_owner_factories.h",
+        "sha256": "8d06b6d2211fc18a8d911f3483da4ac122467ddc9f96d62031c730c08547e32b"
+      }
+    ],
+    "unlinked_functions": [],
+    "notes": "docs/notes/game-python-long-inputs.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 14,
+        "address": 2148362614,
+        "kind": 6,
+        "symbol": "lbl_802A4550",
+        "target": 2150253904,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 22,
+        "address": 2148362622,
+        "kind": 4,
+        "symbol": "lbl_802A4550",
+        "target": 2150253904,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 52,
+        "address": 2148362652,
+        "kind": 10,
+        "symbol": "PyArg_ParseTuple",
+        "target": 2149142964,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 74,
+        "address": 2148362674,
+        "kind": 6,
+        "symbol": "lbl_80318988",
+        "target": 2150730120,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 82,
+        "address": 2148362682,
+        "kind": 4,
+        "symbol": "lbl_80318988",
+        "target": 2150730120,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 96,
+        "address": 2148362696,
+        "kind": 10,
+        "symbol": "fn_800CD864",
+        "target": 2148325476,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 120,
+        "address": 2148362720,
+        "kind": 10,
+        "symbol": "PyInt_AsLong",
+        "target": 2148833944,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 132,
+        "address": 2148362732,
+        "kind": 10,
+        "symbol": "fn_8006C808",
+        "target": 2147928072,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 136,
+        "address": 2148362736,
+        "kind": 109,
+        "symbol": "_Py_NoneStruct",
+        "target": 2151113360,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 140,
+        "address": 2148362740,
+        "kind": 109,
+        "symbol": "_Py_NoneStruct",
+        "target": 2151113360,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 148,
+        "address": 2148362748,
+        "kind": 109,
+        "symbol": "_Py_NoneStruct",
+        "target": 2151113360,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147605712,
+        "kind": 1,
+        "symbol": "fn_800D6968",
+        "target": 2148362600,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147605720,
+        "kind": 1,
+        "symbol": "@22",
+        "target": 2147565144,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "PyArg_ParseTuple",
+        "address": 2149142964,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "PyInt_AsLong",
+        "address": 2148833944,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "_Py_NoneStruct",
+        "address": 2151113360,
+        "scope": "global",
+        "section": ".sdata"
+      },
+      {
+        "name": "fn_8006C808",
+        "address": 2147928072,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "fn_800CD864",
+        "address": 2148325476,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "lbl_802A4550",
+        "address": 2150253904,
+        "scope": "global",
+        "section": ".rodata"
+      },
+      {
+        "name": "lbl_80318988",
+        "address": 2150730120,
+        "scope": "global",
+        "section": ".bss"
+      }
+    ],
+    "original_metadata_audit": {
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "references_to_retained_ranges": [
+            {
+              "address": 2147605712,
+              "target": 2148362600,
+              "words": "800d6968000000a880013e58"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "52cd61a536f2baca55afc0a7a880c2024e3419753212d859ab0fae9f325e4a6d",
+      "retained_text_bytes": 168,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 13,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match",
+    "source": "src/Game/python_long_input_800D6CF8.cpp",
+    "source_sha256": "9462a7d458d0c5eda586175e5f87c588c1023f871b44a0a73dfba64d8773aa83",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "include"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148363512,
+        "end": 2148363680,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147565184,
+        "end": 2147565192,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147605772,
+        "end": 2147605784,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800D6CF8",
+        "address": 2148363512,
+        "size": 168,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@22",
+        "address": 2147565184,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@23",
+        "address": 2147605772,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "headers": [
+      {
+        "path": "include/Game/python_scalar_bindings.h",
+        "sha256": "da4256555d2d970654f3ecaf9b9acfead7467b6eb2506f3b7c350553e339e166"
+      },
+      {
+        "path": "include/Game/python_owner_factories.h",
+        "sha256": "8d06b6d2211fc18a8d911f3483da4ac122467ddc9f96d62031c730c08547e32b"
+      }
+    ],
+    "unlinked_functions": [],
+    "notes": "docs/notes/game-python-long-inputs.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 14,
+        "address": 2148363526,
+        "kind": 6,
+        "symbol": "lbl_802A4604",
+        "target": 2150254084,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 22,
+        "address": 2148363534,
+        "kind": 4,
+        "symbol": "lbl_802A4604",
+        "target": 2150254084,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 52,
+        "address": 2148363564,
+        "kind": 10,
+        "symbol": "PyArg_ParseTuple",
+        "target": 2149142964,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 74,
+        "address": 2148363586,
+        "kind": 6,
+        "symbol": "lbl_80318988",
+        "target": 2150730120,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 82,
+        "address": 2148363594,
+        "kind": 4,
+        "symbol": "lbl_80318988",
+        "target": 2150730120,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 96,
+        "address": 2148363608,
+        "kind": 10,
+        "symbol": "fn_800CD864",
+        "target": 2148325476,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 120,
+        "address": 2148363632,
+        "kind": 10,
+        "symbol": "PyInt_AsLong",
+        "target": 2148833944,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 132,
+        "address": 2148363644,
+        "kind": 10,
+        "symbol": "fn_8006CB18",
+        "target": 2147928856,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 136,
+        "address": 2148363648,
+        "kind": 109,
+        "symbol": "_Py_NoneStruct",
+        "target": 2151113360,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 140,
+        "address": 2148363652,
+        "kind": 109,
+        "symbol": "_Py_NoneStruct",
+        "target": 2151113360,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 148,
+        "address": 2148363660,
+        "kind": 109,
+        "symbol": "_Py_NoneStruct",
+        "target": 2151113360,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147605772,
+        "kind": 1,
+        "symbol": "fn_800D6CF8",
+        "target": 2148363512,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147605780,
+        "kind": 1,
+        "symbol": "@22",
+        "target": 2147565184,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "PyArg_ParseTuple",
+        "address": 2149142964,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "PyInt_AsLong",
+        "address": 2148833944,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "_Py_NoneStruct",
+        "address": 2151113360,
+        "scope": "global",
+        "section": ".sdata"
+      },
+      {
+        "name": "fn_8006CB18",
+        "address": 2147928856,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "fn_800CD864",
+        "address": 2148325476,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "lbl_802A4604",
+        "address": 2150254084,
+        "scope": "global",
+        "section": ".rodata"
+      },
+      {
+        "name": "lbl_80318988",
+        "address": 2150730120,
+        "scope": "global",
+        "section": ".bss"
+      }
+    ],
+    "original_metadata_audit": {
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "references_to_retained_ranges": [
+            {
+              "address": 2147605772,
+              "target": 2148363512,
+              "words": "800d6cf8000000a880013e80"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "85ada2afa6916930ceb3f83a0096e706385e593d73d12ca2bcaaab0de95820bd",
+      "retained_text_bytes": 168,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 13,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match",
+    "source": "src/Game/python_long_input_800D7150.cpp",
+    "source_sha256": "fcf3b7932865b56d151089e864f2bb90487d7fa12a87c259eafc56075a153711",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "include"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148364624,
+        "end": 2148364792,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147565240,
+        "end": 2147565248,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147605856,
+        "end": 2147605868,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800D7150",
+        "address": 2148364624,
+        "size": 168,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@22",
+        "address": 2147565240,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@23",
+        "address": 2147605856,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "headers": [
+      {
+        "path": "include/Game/python_scalar_bindings.h",
+        "sha256": "da4256555d2d970654f3ecaf9b9acfead7467b6eb2506f3b7c350553e339e166"
+      },
+      {
+        "path": "include/Game/python_owner_factories.h",
+        "sha256": "8d06b6d2211fc18a8d911f3483da4ac122467ddc9f96d62031c730c08547e32b"
+      }
+    ],
+    "unlinked_functions": [],
+    "notes": "docs/notes/game-python-long-inputs.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 14,
+        "address": 2148364638,
+        "kind": 6,
+        "symbol": "lbl_802A4708",
+        "target": 2150254344,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 22,
+        "address": 2148364646,
+        "kind": 4,
+        "symbol": "lbl_802A4708",
+        "target": 2150254344,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 52,
+        "address": 2148364676,
+        "kind": 10,
+        "symbol": "PyArg_ParseTuple",
+        "target": 2149142964,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 74,
+        "address": 2148364698,
+        "kind": 6,
+        "symbol": "lbl_80318988",
+        "target": 2150730120,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 82,
+        "address": 2148364706,
+        "kind": 4,
+        "symbol": "lbl_80318988",
+        "target": 2150730120,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 96,
+        "address": 2148364720,
+        "kind": 10,
+        "symbol": "fn_800CD864",
+        "target": 2148325476,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 120,
+        "address": 2148364744,
+        "kind": 10,
+        "symbol": "PyInt_AsLong",
+        "target": 2148833944,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 132,
+        "address": 2148364756,
+        "kind": 10,
+        "symbol": "fn_8006CF1C",
+        "target": 2147929884,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 136,
+        "address": 2148364760,
+        "kind": 109,
+        "symbol": "_Py_NoneStruct",
+        "target": 2151113360,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 140,
+        "address": 2148364764,
+        "kind": 109,
+        "symbol": "_Py_NoneStruct",
+        "target": 2151113360,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 148,
+        "address": 2148364772,
+        "kind": 109,
+        "symbol": "_Py_NoneStruct",
+        "target": 2151113360,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147605856,
+        "kind": 1,
+        "symbol": "fn_800D7150",
+        "target": 2148364624,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147605864,
+        "kind": 1,
+        "symbol": "@22",
+        "target": 2147565240,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "PyArg_ParseTuple",
+        "address": 2149142964,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "PyInt_AsLong",
+        "address": 2148833944,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "_Py_NoneStruct",
+        "address": 2151113360,
+        "scope": "global",
+        "section": ".sdata"
+      },
+      {
+        "name": "fn_8006CF1C",
+        "address": 2147929884,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "fn_800CD864",
+        "address": 2148325476,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "lbl_802A4708",
+        "address": 2150254344,
+        "scope": "global",
+        "section": ".rodata"
+      },
+      {
+        "name": "lbl_80318988",
+        "address": 2150730120,
+        "scope": "global",
+        "section": ".bss"
+      }
+    ],
+    "original_metadata_audit": {
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "references_to_retained_ranges": [
+            {
+              "address": 2147605856,
+              "target": 2148364624,
+              "words": "800d7150000000a880013eb8"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "ae0b044958a9082a1c6fc0fe8290f37517ad5638e838428eb664bd356e4ebb38",
+      "retained_text_bytes": 168,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 13,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match",
+    "source": "src/Game/python_long_input_800D76F8.cpp",
+    "source_sha256": "d45805688b0e2bb0267f2e4eb0e9dfa548284bef026326b9292cdabef2626ba0",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "include"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148366072,
+        "end": 2148366240,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147565296,
+        "end": 2147565304,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147605940,
+        "end": 2147605952,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800D76F8",
+        "address": 2148366072,
+        "size": 168,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@22",
+        "address": 2147565296,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@23",
+        "address": 2147605940,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "headers": [
+      {
+        "path": "include/Game/python_scalar_bindings.h",
+        "sha256": "da4256555d2d970654f3ecaf9b9acfead7467b6eb2506f3b7c350553e339e166"
+      },
+      {
+        "path": "include/Game/python_owner_factories.h",
+        "sha256": "8d06b6d2211fc18a8d911f3483da4ac122467ddc9f96d62031c730c08547e32b"
+      }
+    ],
+    "unlinked_functions": [],
+    "notes": "docs/notes/game-python-long-inputs.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 14,
+        "address": 2148366086,
+        "kind": 6,
+        "symbol": "lbl_802A481C",
+        "target": 2150254620,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 22,
+        "address": 2148366094,
+        "kind": 4,
+        "symbol": "lbl_802A481C",
+        "target": 2150254620,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 52,
+        "address": 2148366124,
+        "kind": 10,
+        "symbol": "PyArg_ParseTuple",
+        "target": 2149142964,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 74,
+        "address": 2148366146,
+        "kind": 6,
+        "symbol": "lbl_80318988",
+        "target": 2150730120,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 82,
+        "address": 2148366154,
+        "kind": 4,
+        "symbol": "lbl_80318988",
+        "target": 2150730120,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 96,
+        "address": 2148366168,
+        "kind": 10,
+        "symbol": "fn_800CD864",
+        "target": 2148325476,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 120,
+        "address": 2148366192,
+        "kind": 10,
+        "symbol": "PyInt_AsLong",
+        "target": 2148833944,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 132,
+        "address": 2148366204,
+        "kind": 10,
+        "symbol": "fn_8006E7BC",
+        "target": 2147936188,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 136,
+        "address": 2148366208,
+        "kind": 109,
+        "symbol": "_Py_NoneStruct",
+        "target": 2151113360,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 140,
+        "address": 2148366212,
+        "kind": 109,
+        "symbol": "_Py_NoneStruct",
+        "target": 2151113360,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 148,
+        "address": 2148366220,
+        "kind": 109,
+        "symbol": "_Py_NoneStruct",
+        "target": 2151113360,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147605940,
+        "kind": 1,
+        "symbol": "fn_800D76F8",
+        "target": 2148366072,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147605948,
+        "kind": 1,
+        "symbol": "@22",
+        "target": 2147565296,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "PyArg_ParseTuple",
+        "address": 2149142964,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "PyInt_AsLong",
+        "address": 2148833944,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "_Py_NoneStruct",
+        "address": 2151113360,
+        "scope": "global",
+        "section": ".sdata"
+      },
+      {
+        "name": "fn_8006E7BC",
+        "address": 2147936188,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "fn_800CD864",
+        "address": 2148325476,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "lbl_802A481C",
+        "address": 2150254620,
+        "scope": "global",
+        "section": ".rodata"
+      },
+      {
+        "name": "lbl_80318988",
+        "address": 2150730120,
+        "scope": "global",
+        "section": ".bss"
+      }
+    ],
+    "original_metadata_audit": {
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "references_to_retained_ranges": [
+            {
+              "address": 2147605940,
+              "target": 2148366072,
+              "words": "800d76f8000000a880013ef0"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "74577c23cc9bb2810f7a11bff70db6cbe349164ff54ec5d3c133687bf2064d43",
+      "retained_text_bytes": 168,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 13,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match",
+    "source": "src/Game/python_long_input_800D77A0.cpp",
+    "source_sha256": "dbf24e59123d329839b51bf1fb9c08012263f8c4859e0521afc44ae0b7afef43",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "include"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148366240,
+        "end": 2148366408,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147565304,
+        "end": 2147565312,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147605952,
+        "end": 2147605964,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800D77A0",
+        "address": 2148366240,
+        "size": 168,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@22",
+        "address": 2147565304,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@23",
+        "address": 2147605952,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "headers": [
+      {
+        "path": "include/Game/python_scalar_bindings.h",
+        "sha256": "da4256555d2d970654f3ecaf9b9acfead7467b6eb2506f3b7c350553e339e166"
+      },
+      {
+        "path": "include/Game/python_owner_factories.h",
+        "sha256": "8d06b6d2211fc18a8d911f3483da4ac122467ddc9f96d62031c730c08547e32b"
+      }
+    ],
+    "unlinked_functions": [],
+    "notes": "docs/notes/game-python-long-inputs.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 14,
+        "address": 2148366254,
+        "kind": 6,
+        "symbol": "lbl_802A4840",
+        "target": 2150254656,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 22,
+        "address": 2148366262,
+        "kind": 4,
+        "symbol": "lbl_802A4840",
+        "target": 2150254656,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 52,
+        "address": 2148366292,
+        "kind": 10,
+        "symbol": "PyArg_ParseTuple",
+        "target": 2149142964,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 74,
+        "address": 2148366314,
+        "kind": 6,
+        "symbol": "lbl_80318988",
+        "target": 2150730120,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 82,
+        "address": 2148366322,
+        "kind": 4,
+        "symbol": "lbl_80318988",
+        "target": 2150730120,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 96,
+        "address": 2148366336,
+        "kind": 10,
+        "symbol": "fn_800CD864",
+        "target": 2148325476,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 120,
+        "address": 2148366360,
+        "kind": 10,
+        "symbol": "PyInt_AsLong",
+        "target": 2148833944,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 132,
+        "address": 2148366372,
+        "kind": 10,
+        "symbol": "fn_8006D144",
+        "target": 2147930436,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 136,
+        "address": 2148366376,
+        "kind": 109,
+        "symbol": "_Py_NoneStruct",
+        "target": 2151113360,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 140,
+        "address": 2148366380,
+        "kind": 109,
+        "symbol": "_Py_NoneStruct",
+        "target": 2151113360,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 148,
+        "address": 2148366388,
+        "kind": 109,
+        "symbol": "_Py_NoneStruct",
+        "target": 2151113360,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147605952,
+        "kind": 1,
+        "symbol": "fn_800D77A0",
+        "target": 2148366240,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147605960,
+        "kind": 1,
+        "symbol": "@22",
+        "target": 2147565304,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "PyArg_ParseTuple",
+        "address": 2149142964,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "PyInt_AsLong",
+        "address": 2148833944,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "_Py_NoneStruct",
+        "address": 2151113360,
+        "scope": "global",
+        "section": ".sdata"
+      },
+      {
+        "name": "fn_8006D144",
+        "address": 2147930436,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "fn_800CD864",
+        "address": 2148325476,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "lbl_802A4840",
+        "address": 2150254656,
+        "scope": "global",
+        "section": ".rodata"
+      },
+      {
+        "name": "lbl_80318988",
+        "address": 2150730120,
+        "scope": "global",
+        "section": ".bss"
+      }
+    ],
+    "original_metadata_audit": {
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "references_to_retained_ranges": [
+            {
+              "address": 2147605952,
+              "target": 2148366240,
+              "words": "800d77a0000000a880013ef8"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "8fd4bd7e6f6fd4814049c9cdbdcce52243c50df52508ce5f78a1600a9a477e42",
+      "retained_text_bytes": 168,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 13,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match",
+    "source": "src/Game/python_long_input_800D7A1C.cpp",
+    "source_sha256": "e388b099d78f235c3213561abcb09251ffeba3b6aa51d608bdc3043bc30b23ed",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "include"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148366876,
+        "end": 2148367044,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147565336,
+        "end": 2147565344,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147606000,
+        "end": 2147606012,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800D7A1C",
+        "address": 2148366876,
+        "size": 168,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@22",
+        "address": 2147565336,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@23",
+        "address": 2147606000,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "headers": [
+      {
+        "path": "include/Game/python_scalar_bindings.h",
+        "sha256": "da4256555d2d970654f3ecaf9b9acfead7467b6eb2506f3b7c350553e339e166"
+      },
+      {
+        "path": "include/Game/python_owner_factories.h",
+        "sha256": "8d06b6d2211fc18a8d911f3483da4ac122467ddc9f96d62031c730c08547e32b"
+      }
+    ],
+    "unlinked_functions": [],
+    "notes": "docs/notes/game-python-long-inputs.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 14,
+        "address": 2148366890,
+        "kind": 6,
+        "symbol": "lbl_802A48DC",
+        "target": 2150254812,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 22,
+        "address": 2148366898,
+        "kind": 4,
+        "symbol": "lbl_802A48DC",
+        "target": 2150254812,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 52,
+        "address": 2148366928,
+        "kind": 10,
+        "symbol": "PyArg_ParseTuple",
+        "target": 2149142964,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 74,
+        "address": 2148366950,
+        "kind": 6,
+        "symbol": "lbl_80318988",
+        "target": 2150730120,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 82,
+        "address": 2148366958,
+        "kind": 4,
+        "symbol": "lbl_80318988",
+        "target": 2150730120,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 96,
+        "address": 2148366972,
+        "kind": 10,
+        "symbol": "fn_800CD864",
+        "target": 2148325476,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 120,
+        "address": 2148366996,
+        "kind": 10,
+        "symbol": "PyInt_AsLong",
+        "target": 2148833944,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 132,
+        "address": 2148367008,
+        "kind": 10,
+        "symbol": "fn_8006E860",
+        "target": 2147936352,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 136,
+        "address": 2148367012,
+        "kind": 109,
+        "symbol": "_Py_NoneStruct",
+        "target": 2151113360,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 140,
+        "address": 2148367016,
+        "kind": 109,
+        "symbol": "_Py_NoneStruct",
+        "target": 2151113360,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 148,
+        "address": 2148367024,
+        "kind": 109,
+        "symbol": "_Py_NoneStruct",
+        "target": 2151113360,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147606000,
+        "kind": 1,
+        "symbol": "fn_800D7A1C",
+        "target": 2148366876,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147606008,
+        "kind": 1,
+        "symbol": "@22",
+        "target": 2147565336,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "PyArg_ParseTuple",
+        "address": 2149142964,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "PyInt_AsLong",
+        "address": 2148833944,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "_Py_NoneStruct",
+        "address": 2151113360,
+        "scope": "global",
+        "section": ".sdata"
+      },
+      {
+        "name": "fn_8006E860",
+        "address": 2147936352,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "fn_800CD864",
+        "address": 2148325476,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "lbl_802A48DC",
+        "address": 2150254812,
+        "scope": "global",
+        "section": ".rodata"
+      },
+      {
+        "name": "lbl_80318988",
+        "address": 2150730120,
+        "scope": "global",
+        "section": ".bss"
+      }
+    ],
+    "original_metadata_audit": {
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "references_to_retained_ranges": [
+            {
+              "address": 2147606000,
+              "target": 2148366876,
+              "words": "800d7a1c000000a880013f18"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "ba8b1ec1649cc9d977269da44bb83687c34f812305ebacae973fa10c225ad97f",
+      "retained_text_bytes": 168,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 13,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match",
+    "source": "src/Game/python_long_input_800D7DA8.cpp",
+    "source_sha256": "eaf9e0f2ab519529b2f0fcbd516ee8f317d143f9a8107c1cebcf740797816721",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "include"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148367784,
+        "end": 2148367952,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147565376,
+        "end": 2147565384,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147606060,
+        "end": 2147606072,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800D7DA8",
+        "address": 2148367784,
+        "size": 168,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@22",
+        "address": 2147565376,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@23",
+        "address": 2147606060,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "headers": [
+      {
+        "path": "include/Game/python_scalar_bindings.h",
+        "sha256": "da4256555d2d970654f3ecaf9b9acfead7467b6eb2506f3b7c350553e339e166"
+      },
+      {
+        "path": "include/Game/python_owner_factories.h",
+        "sha256": "8d06b6d2211fc18a8d911f3483da4ac122467ddc9f96d62031c730c08547e32b"
+      }
+    ],
+    "unlinked_functions": [],
+    "notes": "docs/notes/game-python-long-inputs.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 14,
+        "address": 2148367798,
+        "kind": 6,
+        "symbol": "lbl_802A499C",
+        "target": 2150255004,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 22,
+        "address": 2148367806,
+        "kind": 4,
+        "symbol": "lbl_802A499C",
+        "target": 2150255004,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 52,
+        "address": 2148367836,
+        "kind": 10,
+        "symbol": "PyArg_ParseTuple",
+        "target": 2149142964,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 74,
+        "address": 2148367858,
+        "kind": 6,
+        "symbol": "lbl_80318988",
+        "target": 2150730120,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 82,
+        "address": 2148367866,
+        "kind": 4,
+        "symbol": "lbl_80318988",
+        "target": 2150730120,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 96,
+        "address": 2148367880,
+        "kind": 10,
+        "symbol": "fn_800CD864",
+        "target": 2148325476,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 120,
+        "address": 2148367904,
+        "kind": 10,
+        "symbol": "PyInt_AsLong",
+        "target": 2148833944,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 132,
+        "address": 2148367916,
+        "kind": 10,
+        "symbol": "fn_8006EDCC",
+        "target": 2147937740,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 136,
+        "address": 2148367920,
+        "kind": 109,
+        "symbol": "_Py_NoneStruct",
+        "target": 2151113360,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 140,
+        "address": 2148367924,
+        "kind": 109,
+        "symbol": "_Py_NoneStruct",
+        "target": 2151113360,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 148,
+        "address": 2148367932,
+        "kind": 109,
+        "symbol": "_Py_NoneStruct",
+        "target": 2151113360,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147606060,
+        "kind": 1,
+        "symbol": "fn_800D7DA8",
+        "target": 2148367784,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147606068,
+        "kind": 1,
+        "symbol": "@22",
+        "target": 2147565376,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "PyArg_ParseTuple",
+        "address": 2149142964,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "PyInt_AsLong",
+        "address": 2148833944,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "_Py_NoneStruct",
+        "address": 2151113360,
+        "scope": "global",
+        "section": ".sdata"
+      },
+      {
+        "name": "fn_8006EDCC",
+        "address": 2147937740,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "fn_800CD864",
+        "address": 2148325476,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "lbl_802A499C",
+        "address": 2150255004,
+        "scope": "global",
+        "section": ".rodata"
+      },
+      {
+        "name": "lbl_80318988",
+        "address": 2150730120,
+        "scope": "global",
+        "section": ".bss"
+      }
+    ],
+    "original_metadata_audit": {
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "references_to_retained_ranges": [
+            {
+              "address": 2147606060,
+              "target": 2148367784,
+              "words": "800d7da8000000a880013f40"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "ccb3934fe3f0d47a055f5c161a22ed82ea2c3d0b93741989648547567e36356f",
+      "retained_text_bytes": 168,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 13,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match",
+    "source": "src/Game/python_long_input_800D7E50.cpp",
+    "source_sha256": "97462af8b1bbe630e41b5784132cc858a8de7cd19f2cd5765d6bc99a2ccb496e",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "include"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148367952,
+        "end": 2148368120,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147565384,
+        "end": 2147565392,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147606072,
+        "end": 2147606084,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800D7E50",
+        "address": 2148367952,
+        "size": 168,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@22",
+        "address": 2147565384,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@23",
+        "address": 2147606072,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "headers": [
+      {
+        "path": "include/Game/python_scalar_bindings.h",
+        "sha256": "da4256555d2d970654f3ecaf9b9acfead7467b6eb2506f3b7c350553e339e166"
+      },
+      {
+        "path": "include/Game/python_owner_factories.h",
+        "sha256": "8d06b6d2211fc18a8d911f3483da4ac122467ddc9f96d62031c730c08547e32b"
+      }
+    ],
+    "unlinked_functions": [],
+    "notes": "docs/notes/game-python-long-inputs.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 14,
+        "address": 2148367966,
+        "kind": 6,
+        "symbol": "lbl_802A49C4",
+        "target": 2150255044,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 22,
+        "address": 2148367974,
+        "kind": 4,
+        "symbol": "lbl_802A49C4",
+        "target": 2150255044,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 52,
+        "address": 2148368004,
+        "kind": 10,
+        "symbol": "PyArg_ParseTuple",
+        "target": 2149142964,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 74,
+        "address": 2148368026,
+        "kind": 6,
+        "symbol": "lbl_80318988",
+        "target": 2150730120,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 82,
+        "address": 2148368034,
+        "kind": 4,
+        "symbol": "lbl_80318988",
+        "target": 2150730120,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 96,
+        "address": 2148368048,
+        "kind": 10,
+        "symbol": "fn_800CD864",
+        "target": 2148325476,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 120,
+        "address": 2148368072,
+        "kind": 10,
+        "symbol": "PyInt_AsLong",
+        "target": 2148833944,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 132,
+        "address": 2148368084,
+        "kind": 10,
+        "symbol": "fn_8006EEB8",
+        "target": 2147937976,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 136,
+        "address": 2148368088,
+        "kind": 109,
+        "symbol": "_Py_NoneStruct",
+        "target": 2151113360,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 140,
+        "address": 2148368092,
+        "kind": 109,
+        "symbol": "_Py_NoneStruct",
+        "target": 2151113360,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 148,
+        "address": 2148368100,
+        "kind": 109,
+        "symbol": "_Py_NoneStruct",
+        "target": 2151113360,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147606072,
+        "kind": 1,
+        "symbol": "fn_800D7E50",
+        "target": 2148367952,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147606080,
+        "kind": 1,
+        "symbol": "@22",
+        "target": 2147565384,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "PyArg_ParseTuple",
+        "address": 2149142964,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "PyInt_AsLong",
+        "address": 2148833944,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "_Py_NoneStruct",
+        "address": 2151113360,
+        "scope": "global",
+        "section": ".sdata"
+      },
+      {
+        "name": "fn_8006EEB8",
+        "address": 2147937976,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "fn_800CD864",
+        "address": 2148325476,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "lbl_802A49C4",
+        "address": 2150255044,
+        "scope": "global",
+        "section": ".rodata"
+      },
+      {
+        "name": "lbl_80318988",
+        "address": 2150730120,
+        "scope": "global",
+        "section": ".bss"
+      }
+    ],
+    "original_metadata_audit": {
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "references_to_retained_ranges": [
+            {
+              "address": 2147606072,
+              "target": 2148367952,
+              "words": "800d7e50000000a880013f48"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "cc0792185a30bddda319478ad90748bbd1b30672a26fc1e5abfb2760b26c7926",
+      "retained_text_bytes": 168,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 13,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match",
+    "source": "src/Game/python_long_input_800D7FD8.cpp",
+    "source_sha256": "bf579d5a269608a3036422918902021cbed04348e088d94bdd256a1d78e4da65",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "include"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148368344,
+        "end": 2148368508,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147565408,
+        "end": 2147565416,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147606108,
+        "end": 2147606120,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800D7FD8",
+        "address": 2148368344,
+        "size": 164,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@22",
+        "address": 2147565408,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@23",
+        "address": 2147606108,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "headers": [
+      {
+        "path": "include/Game/python_scalar_bindings.h",
+        "sha256": "da4256555d2d970654f3ecaf9b9acfead7467b6eb2506f3b7c350553e339e166"
+      },
+      {
+        "path": "include/Game/python_owner_factories.h",
+        "sha256": "8d06b6d2211fc18a8d911f3483da4ac122467ddc9f96d62031c730c08547e32b"
+      }
+    ],
+    "unlinked_functions": [],
+    "notes": "docs/notes/game-python-long-inputs.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 14,
+        "address": 2148368358,
+        "kind": 6,
+        "symbol": "lbl_802A4A20",
+        "target": 2150255136,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 22,
+        "address": 2148368366,
+        "kind": 4,
+        "symbol": "lbl_802A4A20",
+        "target": 2150255136,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 52,
+        "address": 2148368396,
+        "kind": 10,
+        "symbol": "PyArg_ParseTuple",
+        "target": 2149142964,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 74,
+        "address": 2148368418,
+        "kind": 6,
+        "symbol": "lbl_80318988",
+        "target": 2150730120,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 82,
+        "address": 2148368426,
+        "kind": 4,
+        "symbol": "lbl_80318988",
+        "target": 2150730120,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 96,
+        "address": 2148368440,
+        "kind": 10,
+        "symbol": "fn_800CD864",
+        "target": 2148325476,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 120,
+        "address": 2148368464,
+        "kind": 10,
+        "symbol": "PyInt_AsLong",
+        "target": 2148833944,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 136,
+        "address": 2148368480,
+        "kind": 10,
+        "symbol": "fn_8025E9FC",
+        "target": 2149968380,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 144,
+        "address": 2148368488,
+        "kind": 10,
+        "symbol": "PyInt_FromLong",
+        "target": 2148834204,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147606108,
+        "kind": 1,
+        "symbol": "fn_800D7FD8",
+        "target": 2148368344,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147606116,
+        "kind": 1,
+        "symbol": "@22",
+        "target": 2147565408,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "PyArg_ParseTuple",
+        "address": 2149142964,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "PyInt_AsLong",
+        "address": 2148833944,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "PyInt_FromLong",
+        "address": 2148834204,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "fn_800CD864",
+        "address": 2148325476,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "fn_8025E9FC",
+        "address": 2149968380,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "lbl_802A4A20",
+        "address": 2150255136,
+        "scope": "global",
+        "section": ".rodata"
+      },
+      {
+        "name": "lbl_80318988",
+        "address": 2150730120,
+        "scope": "global",
+        "section": ".bss"
+      }
+    ],
+    "original_metadata_audit": {
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "references_to_retained_ranges": [
+            {
+              "address": 2147606108,
+              "target": 2148368344,
+              "words": "800d7fd8000000a480013f60"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "08e3d0f2844f3885630579a6c6fbce992e9ac7f0f87657f8bba07376cde269fb",
+      "retained_text_bytes": 164,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 11,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match",
+    "source": "src/Game/python_long_input_800D807C.cpp",
+    "source_sha256": "399054e46404354dede661383771385f689a05ba0ac0e1709692d44ef8f3c10e",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "include"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148368508,
+        "end": 2148368672,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147565416,
+        "end": 2147565424,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147606120,
+        "end": 2147606132,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800D807C",
+        "address": 2148368508,
+        "size": 164,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@22",
+        "address": 2147565416,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@23",
+        "address": 2147606120,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "headers": [
+      {
+        "path": "include/Game/python_scalar_bindings.h",
+        "sha256": "da4256555d2d970654f3ecaf9b9acfead7467b6eb2506f3b7c350553e339e166"
+      },
+      {
+        "path": "include/Game/python_owner_factories.h",
+        "sha256": "8d06b6d2211fc18a8d911f3483da4ac122467ddc9f96d62031c730c08547e32b"
+      }
+    ],
+    "unlinked_functions": [],
+    "notes": "docs/notes/game-python-long-inputs.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 14,
+        "address": 2148368522,
+        "kind": 6,
+        "symbol": "lbl_802A4A38",
+        "target": 2150255160,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 22,
+        "address": 2148368530,
+        "kind": 4,
+        "symbol": "lbl_802A4A38",
+        "target": 2150255160,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 52,
+        "address": 2148368560,
+        "kind": 10,
+        "symbol": "PyArg_ParseTuple",
+        "target": 2149142964,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 74,
+        "address": 2148368582,
+        "kind": 6,
+        "symbol": "lbl_80318988",
+        "target": 2150730120,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 82,
+        "address": 2148368590,
+        "kind": 4,
+        "symbol": "lbl_80318988",
+        "target": 2150730120,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 96,
+        "address": 2148368604,
+        "kind": 10,
+        "symbol": "fn_800CD864",
+        "target": 2148325476,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 120,
+        "address": 2148368628,
+        "kind": 10,
+        "symbol": "PyInt_AsLong",
+        "target": 2148833944,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 136,
+        "address": 2148368644,
+        "kind": 10,
+        "symbol": "fn_80286058",
+        "target": 2150129752,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 144,
+        "address": 2148368652,
+        "kind": 10,
+        "symbol": "PyInt_FromLong",
+        "target": 2148834204,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147606120,
+        "kind": 1,
+        "symbol": "fn_800D807C",
+        "target": 2148368508,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147606128,
+        "kind": 1,
+        "symbol": "@22",
+        "target": 2147565416,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "PyArg_ParseTuple",
+        "address": 2149142964,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "PyInt_AsLong",
+        "address": 2148833944,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "PyInt_FromLong",
+        "address": 2148834204,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "fn_800CD864",
+        "address": 2148325476,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "fn_80286058",
+        "address": 2150129752,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "lbl_802A4A38",
+        "address": 2150255160,
+        "scope": "global",
+        "section": ".rodata"
+      },
+      {
+        "name": "lbl_80318988",
+        "address": 2150730120,
+        "scope": "global",
+        "section": ".bss"
+      }
+    ],
+    "original_metadata_audit": {
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "references_to_retained_ranges": [
+            {
+              "address": 2147606120,
+              "target": 2148368508,
+              "words": "800d807c000000a480013f68"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "0a51eb1786f72c271472670d372735d46846c796451766d4d618b5feb870bc16",
+      "retained_text_bytes": 164,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 11,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match",
+    "source": "src/Game/python_long_input_800DFE5C.cpp",
+    "source_sha256": "1e92ef85ddf6f5ed8c1b65df817d352c3c2d74dcce6ca5d6d81610547d24cc1c",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "include"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148400732,
+        "end": 2148400892,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147566616,
+        "end": 2147566624,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147607920,
+        "end": 2147607932,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800DFE5C",
+        "address": 2148400732,
+        "size": 160,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@22",
+        "address": 2147566616,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@23",
+        "address": 2147607920,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "headers": [
+      {
+        "path": "include/Game/python_scalar_bindings.h",
+        "sha256": "da4256555d2d970654f3ecaf9b9acfead7467b6eb2506f3b7c350553e339e166"
+      },
+      {
+        "path": "include/Game/python_owner_factories.h",
+        "sha256": "8d06b6d2211fc18a8d911f3483da4ac122467ddc9f96d62031c730c08547e32b"
+      }
+    ],
+    "unlinked_functions": [],
+    "notes": "docs/notes/game-python-long-inputs.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 14,
+        "address": 2148400746,
+        "kind": 6,
+        "symbol": "lbl_802A5BB4",
+        "target": 2150259636,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 22,
+        "address": 2148400754,
+        "kind": 4,
+        "symbol": "lbl_802A5BB4",
+        "target": 2150259636,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 52,
+        "address": 2148400784,
+        "kind": 10,
+        "symbol": "PyArg_ParseTuple",
+        "target": 2149142964,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 74,
+        "address": 2148400806,
+        "kind": 6,
+        "symbol": "lbl_80318988",
+        "target": 2150730120,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 82,
+        "address": 2148400814,
+        "kind": 4,
+        "symbol": "lbl_80318988",
+        "target": 2150730120,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 96,
+        "address": 2148400828,
+        "kind": 10,
+        "symbol": "fn_800CD864",
+        "target": 2148325476,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 120,
+        "address": 2148400852,
+        "kind": 10,
+        "symbol": "PyInt_AsLong",
+        "target": 2148833944,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 136,
+        "address": 2148400868,
+        "kind": 10,
+        "symbol": "fn_8025E268",
+        "target": 2149966440,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 140,
+        "address": 2148400872,
+        "kind": 10,
+        "symbol": "PyFloat_FromDouble",
+        "target": 2148817088,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147607920,
+        "kind": 1,
+        "symbol": "fn_800DFE5C",
+        "target": 2148400732,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147607928,
+        "kind": 1,
+        "symbol": "@22",
+        "target": 2147566616,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "PyArg_ParseTuple",
+        "address": 2149142964,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "PyFloat_FromDouble",
+        "address": 2148817088,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "PyInt_AsLong",
+        "address": 2148833944,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "fn_800CD864",
+        "address": 2148325476,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "fn_8025E268",
+        "address": 2149966440,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "lbl_802A5BB4",
+        "address": 2150259636,
+        "scope": "global",
+        "section": ".rodata"
+      },
+      {
+        "name": "lbl_80318988",
+        "address": 2150730120,
+        "scope": "global",
+        "section": ".bss"
+      }
+    ],
+    "original_metadata_audit": {
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "references_to_retained_ranges": [
+            {
+              "address": 2147607920,
+              "target": 2148400732,
+              "words": "800dfe5c000000a080014418"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "7901460546475bdf5cc8fa6a1557d95c857be5921864e95de3bc2315ccbc4cce",
+      "retained_text_bytes": 160,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 11,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  }
+]

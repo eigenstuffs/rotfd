@@ -1,0 +1,396 @@
+{
+  "source": "src/Game/script_file_open.cpp",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.3.2",
+  "cflags": "-proc gekko -fp hardware -enum int -str reuse -common off -O4,p -inline auto -Cpp_exceptions off -use_lmw_stmw on -bool off",
+  "splits": [
+    {
+      "section": ".text",
+      "start": "0x801f9ad4",
+      "end": "0x801f9d0c"
+    }
+  ],
+  "functions": [
+    {
+      "name": "fn_801F9AD4",
+      "section": ".text",
+      "address": "0x801f9ad4",
+      "size": "0x238",
+      "scope": "global",
+      "original_name": "fn_801F9AD4"
+    }
+  ],
+  "data_symbols": [],
+  "section_anchors": [],
+  "dependency_symbols": [
+    {
+      "name": "__ct__13File_801F3E1CFv",
+      "address": "0x801f3f08"
+    },
+    {
+      "name": "fn_801F3918",
+      "address": "0x801f3918"
+    },
+    {
+      "name": "lbl_801E9D24",
+      "address": "0x801e9d24"
+    },
+    {
+      "name": "lbl_802AD544",
+      "address": "0x802ad544"
+    },
+    {
+      "name": "fn_801FA014",
+      "address": "0x801fa014"
+    },
+    {
+      "name": "strncpy",
+      "address": "0x801284fc"
+    },
+    {
+      "name": "lbl_8028F698",
+      "address": "0x8028f698"
+    },
+    {
+      "name": "fn_8028FAF4",
+      "address": "0x8028faf4"
+    },
+    {
+      "name": "fn_8028FF24",
+      "address": "0x8028ff24"
+    },
+    {
+      "name": "fn_8028FD50",
+      "address": "0x8028fd50"
+    },
+    {
+      "name": "fn_801F3CE8",
+      "address": "0x801f3ce8"
+    },
+    {
+      "name": "fn_80213A18",
+      "address": "0x80213a18"
+    },
+    {
+      "name": "lbl_8037A830",
+      "address": "0x8037a830"
+    },
+    {
+      "name": "lbl_802AD55C",
+      "address": "0x802ad55c"
+    },
+    {
+      "name": "fn_801F9D68",
+      "address": "0x801f9d68"
+    },
+    {
+      "name": "__dt__13File_801F3E1CFv",
+      "address": "0x801f3e1c"
+    }
+  ],
+  "notes": "docs/notes/game-script-files.md",
+  "split_notes": [
+    "Ordinary script-file interpreter destructor or loader. Shared typed dynamic array and file-record lifetimes preserve the observed ABI. Original full class identity and translation-unit extent are not claimed; shared vtable and diagnostics remain external."
+  ],
+  "validation": {
+    "code_bytes": 568,
+    "emitted_data_bytes": 0,
+    "bss_layout_bytes": 0,
+    "relocations_applied": 26,
+    "byte_differences": 0,
+    "source_sha256": "0bf5de7689b23d5e0e012bd5467a0ba2a84fdf2e8702603d89e0ec18627c8109",
+    "object_sha256": "662e4d7812abe347df75a0a8e8b79dcce8fbbfea21ff4dd991490e2aabcb6c6f",
+    "original_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "integration_status": "verified full-DOL and objdiff"
+  },
+  "unretained_functions": [
+    {
+      "name": "__dt__10FileRecordFv",
+      "size": "0x54",
+      "object_offset": "0x238",
+      "reason": "Unreferenced compiler-emitted inline destructor; expected ordinary linker dead stripping."
+    }
+  ],
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "0bf5de7689b23d5e0e012bd5467a0ba2a84fdf2e8702603d89e0ec18627c8109",
+    "matched_code": 568,
+    "matched_functions": 1,
+    "matched_data": 0,
+    "complete_data": 0,
+    "object_path": "build/GSQE78/src/Game/script_file_open.o",
+    "object_sha256": "662e4d7812abe347df75a0a8e8b79dcce8fbbfea21ff4dd991490e2aabcb6c6f"
+  },
+  "source_hash_provenance": {
+    "previous_candidate": "scratch/activable_candidate_metadata_before/game_script_file_open.json",
+    "description": "Canonical external-symbol renames preserve original behavior. The earlier isolated source/object hashes are retained in this snapshot. Current source/object hashes are tied to the verified full DOL and native objdiff by the integration block."
+  },
+  "actual_relocations": [
+    {
+      "section": ".text",
+      "at": 36,
+      "address": 2149554936,
+      "kind": 10,
+      "symbol": "__ct__13File_801F3E1CFv",
+      "target": 2149531400,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 72,
+      "address": 2149554972,
+      "kind": 10,
+      "symbol": "fn_801F3918",
+      "target": 2149529880,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 86,
+      "address": 2149554986,
+      "kind": 6,
+      "symbol": "lbl_801E9D24",
+      "target": 2149489956,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 90,
+      "address": 2149554990,
+      "kind": 6,
+      "symbol": "lbl_802AD544",
+      "target": 2150290756,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 94,
+      "address": 2149554994,
+      "kind": 4,
+      "symbol": "lbl_801E9D24",
+      "target": 2149489956,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 102,
+      "address": 2149555002,
+      "kind": 4,
+      "symbol": "lbl_802AD544",
+      "target": 2150290756,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 112,
+      "address": 2149555012,
+      "kind": 10,
+      "symbol": "fn_801FA014",
+      "target": 2149556244,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 128,
+      "address": 2149555028,
+      "kind": 10,
+      "symbol": "strncpy",
+      "target": 2148697340,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 178,
+      "address": 2149555078,
+      "kind": 6,
+      "symbol": "lbl_8028F698",
+      "target": 2150168216,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 182,
+      "address": 2149555082,
+      "kind": 4,
+      "symbol": "lbl_8028F698",
+      "target": 2150168216,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 188,
+      "address": 2149555088,
+      "kind": 10,
+      "symbol": "fn_8028FAF4",
+      "target": 2150169332,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 206,
+      "address": 2149555106,
+      "kind": 6,
+      "symbol": "lbl_8028F698",
+      "target": 2150168216,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 210,
+      "address": 2149555110,
+      "kind": 4,
+      "symbol": "lbl_8028F698",
+      "target": 2150168216,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 212,
+      "address": 2149555112,
+      "kind": 10,
+      "symbol": "fn_8028FF24",
+      "target": 2150170404,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 242,
+      "address": 2149555142,
+      "kind": 6,
+      "symbol": "lbl_8028F698",
+      "target": 2150168216,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 246,
+      "address": 2149555146,
+      "kind": 4,
+      "symbol": "lbl_8028F698",
+      "target": 2150168216,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 248,
+      "address": 2149555148,
+      "kind": 10,
+      "symbol": "fn_8028FD50",
+      "target": 2150169936,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 308,
+      "address": 2149555208,
+      "kind": 10,
+      "symbol": "fn_801F3CE8",
+      "target": 2149530856,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 464,
+      "address": 2149555364,
+      "kind": 10,
+      "symbol": "fn_80213A18",
+      "target": 2149661208,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 472,
+      "address": 2149555372,
+      "kind": 109,
+      "symbol": "lbl_8037A830",
+      "target": 2151131184,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 498,
+      "address": 2149555398,
+      "kind": 6,
+      "symbol": "lbl_801E9D24",
+      "target": 2149489956,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 502,
+      "address": 2149555402,
+      "kind": 6,
+      "symbol": "lbl_802AD55C",
+      "target": 2150290780,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 506,
+      "address": 2149555406,
+      "kind": 4,
+      "symbol": "lbl_801E9D24",
+      "target": 2149489956,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 514,
+      "address": 2149555414,
+      "kind": 4,
+      "symbol": "lbl_802AD55C",
+      "target": 2150290780,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 524,
+      "address": 2149555424,
+      "kind": 10,
+      "symbol": "fn_801F9D68",
+      "target": 2149555560,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 536,
+      "address": 2149555436,
+      "kind": 10,
+      "symbol": "__dt__13File_801F3E1CFv",
+      "target": 2149531164,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 604,
+      "address": 2149555504,
+      "kind": 10,
+      "symbol": "__dt__13File_801F3E1CFv",
+      "target": 2149531164,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 620,
+      "address": 2149555520,
+      "kind": 10,
+      "symbol": "__dl__FPv",
+      "target": 2148658644,
+      "addend": 0
+    }
+  ],
+  "memcard_native_identity_migration": {
+    "description": "Current canonical identities and hashes verified after native CGCMemCardManipulator/CFSM ownership integration; original evidence is retained in immutable backups and explicit previous receipts.",
+    "production_verification": "scratch/memcard_native_vtable_20261020_parallel/production-verification.json",
+    "production_verification_sha256": "96e50e874bd53c148cd6395f670c040416c34699787d56726d8cfb010c340f31",
+    "migration_object_audit": "scratch/memcard_native_vtable_20261020_parallel/migration_object_audit.json",
+    "migration_object_audit_sha256": "b809560bf7212a505b2ea749256bef5263b4784d066bb311015e10928e90db9d",
+    "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "unchanged_caller_objects": 344,
+    "native_objects": 6,
+    "native_actual_relocations": 281,
+    "previous_canonical_sha256": "501ffacde06a942aa634eca71c604fffbb58816f2e20cc51c258291da46d191a",
+    "previous_canonical": "scratch/memcard_canonical_refresh_20261020_parallel/backups/config/GSQE78/candidates/game_script_file_open.json",
+    "previous_entry_json_pointer": ""
+  }
+}

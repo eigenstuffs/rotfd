@@ -1,0 +1,348 @@
+[
+  {
+    "status": "isolated-byte-match-full-checkpoint-pending",
+    "source": "src/Game/actor_launch_reset_80088CC0.cpp",
+    "source_kind": "c++",
+    "source_sha256": "7d4073e975d95395d41ae1f5c9aeee82242cbbb8087e26acbd7add098b45b819",
+    "headers": [],
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-fp_contract",
+      "on",
+      "-i",
+      "include"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148043968,
+        "end": 2148044436,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147541400,
+        "end": 2147541408,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147590868,
+        "end": 2147590880,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_80088CC0",
+        "address": 2148043968,
+        "size": 468,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@38",
+        "section": "extab",
+        "object_offset": 0,
+        "address": 2147541400,
+        "size": 8,
+        "scope": "local"
+      },
+      {
+        "name": "@39",
+        "section": "extabindex",
+        "object_offset": 0,
+        "address": 2147590868,
+        "size": 12,
+        "scope": "local"
+      }
+    ],
+    "unlinked_functions": [],
+    "unlinked_objects": [],
+    "weak_overrides": [],
+    "unlinked_exception_groups": [],
+    "verified_text_bytes": 468,
+    "verified_data_bytes": 20,
+    "notes": "docs/notes/game-actor-launch-reset.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 82,
+        "address": 2148044050,
+        "kind": 6,
+        "symbol": "game_vec3_zero",
+        "target": 2150894420,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 84,
+        "address": 2148044052,
+        "kind": 109,
+        "symbol": "lbl_80378B38",
+        "target": 2151123768,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 88,
+        "address": 2148044056,
+        "kind": 109,
+        "symbol": "lbl_80378AD0",
+        "target": 2151123664,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 130,
+        "address": 2148044098,
+        "kind": 4,
+        "symbol": "game_vec3_zero",
+        "target": 2150894420,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 206,
+        "address": 2148044174,
+        "kind": 6,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 214,
+        "address": 2148044182,
+        "kind": 4,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 278,
+        "address": 2148044246,
+        "kind": 6,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 282,
+        "address": 2148044250,
+        "kind": 4,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 296,
+        "address": 2148044264,
+        "kind": 10,
+        "symbol": "fn_80057E40",
+        "target": 2147843648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 316,
+        "address": 2148044284,
+        "kind": 10,
+        "symbol": "fn_80257828",
+        "target": 2149939240,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 348,
+        "address": 2148044316,
+        "kind": 10,
+        "symbol": "fn_8007D6A0",
+        "target": 2147997344,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 372,
+        "address": 2148044340,
+        "kind": 10,
+        "symbol": "fn_800BE2B0",
+        "target": 2148262576,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 388,
+        "address": 2148044356,
+        "kind": 10,
+        "symbol": "fn_800BE2B0",
+        "target": 2148262576,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 400,
+        "address": 2148044368,
+        "kind": 109,
+        "symbol": "lbl_80378AE0",
+        "target": 2151123680,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 408,
+        "address": 2148044376,
+        "kind": 10,
+        "symbol": "fn_802073E8",
+        "target": 2149610472,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 412,
+        "address": 2148044380,
+        "kind": 109,
+        "symbol": "lbl_803776B8",
+        "target": 2151118520,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 444,
+        "address": 2148044412,
+        "kind": 10,
+        "symbol": "fn_8006803C",
+        "target": 2147909692,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147590868,
+        "kind": 1,
+        "symbol": "fn_80088CC0",
+        "target": 2148043968,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147590876,
+        "kind": 1,
+        "symbol": "@38",
+        "target": 2147541400,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "fn_80057E40",
+        "section": ".text",
+        "address": 2147843648,
+        "scope": "global"
+      },
+      {
+        "name": "fn_8006803C",
+        "section": ".text",
+        "address": 2147909692,
+        "scope": "global"
+      },
+      {
+        "name": "fn_8007D6A0",
+        "section": ".text",
+        "address": 2147997344,
+        "scope": "global"
+      },
+      {
+        "name": "fn_800BE2B0",
+        "section": ".text",
+        "address": 2148262576,
+        "scope": "global"
+      },
+      {
+        "name": "fn_802073E8",
+        "section": ".text",
+        "address": 2149610472,
+        "scope": "global"
+      },
+      {
+        "name": "fn_80257828",
+        "section": ".text",
+        "address": 2149939240,
+        "scope": "global"
+      },
+      {
+        "name": "game_vec3_zero",
+        "section": ".bss",
+        "address": 2150894420,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_801E9D24",
+        "section": ".text",
+        "address": 2149489956,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_803776B8",
+        "section": ".sbss",
+        "address": 2151118520,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_80378AD0",
+        "section": ".sdata2",
+        "address": 2151123664,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_80378AE0",
+        "section": ".sdata2",
+        "address": 2151123680,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_80378B38",
+        "section": ".sdata2",
+        "address": 2151123768,
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "object_sha256": "1eddb7359e9f77b923f3907460818c247a9468bbeb13bf7d74c99c03eb980e69",
+      "retained_text_bytes": 468,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 19,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  }
+]

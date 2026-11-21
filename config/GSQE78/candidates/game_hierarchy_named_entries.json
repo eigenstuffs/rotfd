@@ -1,0 +1,185 @@
+{
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-lang c++",
+    "-proc gekko",
+    "-fp hardware",
+    "-enum int",
+    "-str reuse",
+    "-common off",
+    "-O4,p",
+    "-inline auto",
+    "-Cpp_exceptions off",
+    "-use_lmw_stmw on",
+    "-i src/Game"
+  ],
+  "source": "src/Game/hierarchy_named_entries.cpp",
+  "status": "integrated-byte-match",
+  "scope": "Four contiguous observed named-object group and entry commands; complete original TU boundary unestablished.",
+  "splits": [
+    {
+      "section": ".text",
+      "start": "0x80205964",
+      "end": "0x80205f1c"
+    }
+  ],
+  "functions": [
+    {
+      "name": "fn_80205964",
+      "original_name": "fn_80205964",
+      "address": "0x80205964",
+      "size": "0x134",
+      "scope": "global"
+    },
+    {
+      "name": "fn_80205A98",
+      "original_name": "fn_80205A98",
+      "address": "0x80205a98",
+      "size": "0x180",
+      "scope": "global"
+    },
+    {
+      "name": "fn_80205C18",
+      "original_name": "fn_80205C18",
+      "address": "0x80205c18",
+      "size": "0x180",
+      "scope": "global"
+    },
+    {
+      "name": "fn_80205D98",
+      "original_name": "fn_80205D98",
+      "address": "0x80205d98",
+      "size": "0x184",
+      "scope": "global"
+    }
+  ],
+  "data_symbols": [],
+  "dependency_symbols": [
+    {
+      "name": "lbl_801E9D24",
+      "address": "0x801e9d24",
+      "section": ".text"
+    },
+    {
+      "name": "lbl_8037A918",
+      "address": "0x8037a918",
+      "section": ".sdata2"
+    },
+    {
+      "name": "fn_801F948C",
+      "address": "0x801f948c",
+      "section": ".text"
+    },
+    {
+      "name": "fn_801B5054",
+      "address": "0x801b5054",
+      "section": ".text"
+    },
+    {
+      "name": "__ct__15Handle_801F7F10Fv",
+      "address": "0x801f7f04",
+      "section": ".text"
+    },
+    {
+      "name": "fn_801F86C8",
+      "address": "0x801f86c8",
+      "section": ".text"
+    },
+    {
+      "name": "__dt__15Handle_801F7F10Fv",
+      "address": "0x801f7f10",
+      "section": ".text"
+    },
+    {
+      "name": "fn_801F7EB8",
+      "address": "0x801f7eb8",
+      "section": ".text"
+    },
+    {
+      "name": "fn_801FE99C",
+      "address": "0x801fe99c",
+      "section": ".text"
+    },
+    {
+      "name": "fn_801FED04",
+      "address": "0x801fed04",
+      "section": ".text"
+    },
+    {
+      "name": "__dl__FPv",
+      "address": "0x8011edd4",
+      "section": ".text"
+    },
+    {
+      "name": "fn_801FEADC",
+      "address": "0x801feadc",
+      "section": ".text"
+    },
+    {
+      "name": "fn_80201A14",
+      "address": "0x80201a14",
+      "section": ".text"
+    },
+    {
+      "name": "fn_80201B14",
+      "address": "0x80201b14",
+      "section": ".text"
+    },
+    {
+      "name": "fn_80200CBC",
+      "address": "0x80200cbc",
+      "section": ".text"
+    }
+  ],
+  "notes": "docs/notes/game-hierarchy-named-entries.md",
+  "validation": {
+    "verification_script": "scratch/game_hierarchy_named_entries/verify.py",
+    "text_bytes": 1464,
+    "data_bytes": 0,
+    "byte_differences": 0,
+    "original_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "integration_status": "verified full-DOL and objdiff",
+    "unlinked_function_count": 2,
+    "unlinked_text_bytes": 172,
+    "source_sha256": "1b85baccc8b500077c9f6591c488b95b05286021767cb1750cb1b2524d7a7754",
+    "object_sha256": "48d8a69f0568213377a0826d3351fcd1f708512798d41ef4339620cc663d32f7",
+    "relocations_applied": 67,
+    "unlinked_relocations": 4,
+    "console_argument_refinement": {
+      "whole_compiled_object_identical": true,
+      "proof": "scratch/console_argument_names/verification.json"
+    }
+  },
+  "unlinked_functions": [
+    {
+      "name": "__dt__18CommandOwnedHandleFv",
+      "object_offset": "0x134",
+      "size": "0x58",
+      "binding": "weak",
+      "reason": "Unreferenced generated C++ handle destructor; ordinary linker dead stripping."
+    },
+    {
+      "name": "__dt__17CommandZeroHandleFv",
+      "object_offset": "0x18c",
+      "size": "0x54",
+      "binding": "weak",
+      "reason": "Unreferenced generated C++ handle destructor; ordinary linker dead stripping."
+    }
+  ],
+  "headers": [
+    {
+      "path": "src/Game/hierarchy_named_entries_internal.h",
+      "sha256": "765329399650c3f8c5f93637e211d1980c0747e234f93cf4d40482f3da0b299a"
+    }
+  ],
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "1b85baccc8b500077c9f6591c488b95b05286021767cb1750cb1b2524d7a7754",
+    "matched_code": 1464,
+    "matched_functions": 4,
+    "matched_data": 0,
+    "complete_data": 0,
+    "object_path": "build/GSQE78/src/Game/hierarchy_named_entries.o",
+    "object_sha256": "48d8a69f0568213377a0826d3351fcd1f708512798d41ef4339620cc663d32f7"
+  }
+}

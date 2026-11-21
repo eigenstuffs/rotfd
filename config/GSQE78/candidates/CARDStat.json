@@ -1,0 +1,85 @@
+{
+  "source": "src/dolphin/card/CARDStat.c",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.2.5n",
+  "cflags": "-proc gekko -fp hardware -enum int -str reuse -common off -O4,p -inline auto -i src/dolphin/card -Cpp_exceptions off",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2148585264,
+      "end": 2148586512
+    }
+  ],
+  "functions": [
+    {
+      "name": "UpdateIconOffsets",
+      "address": 2148585264,
+      "size": 504
+    },
+    {
+      "name": "CARDGetStatus",
+      "address": 2148585768,
+      "size": 300
+    },
+    {
+      "name": "CARDSetStatusAsync",
+      "address": 2148586068,
+      "size": 372
+    },
+    {
+      "name": "CARDSetStatus",
+      "address": 2148586440,
+      "size": 72
+    }
+  ],
+  "objects": [],
+  "symbol_scopes": {
+    "UpdateIconOffsets": "local",
+    "CARDGetStatus": "global",
+    "CARDSetStatusAsync": "global",
+    "CARDSetStatus": "global"
+  },
+  "symbols": {
+    "UpdateIconOffsets": "0x8010cf30",
+    "CARDGetStatus": "0x8010d128",
+    "CARDSetStatusAsync": "0x8010d254",
+    "CARDSetStatus": "0x8010d3c8",
+    "__CARDGetControlBlock": "0x80107c2c",
+    "__CARDGetDirBlock": "0x801098e8",
+    "__CARDAccess": "0x8010be04",
+    "__CARDIsPublic": "0x8010be9c",
+    "memcpy": "0x80005520",
+    "__CARDPutControlBlock": "0x80107ce4",
+    "OSGetTime": "0x800f6bf4",
+    "__div2i": "0x8011f76c",
+    "__CARDUpdateDir": "0x80109a88",
+    "__CARDSyncCallback": "0x80106cd0",
+    "__CARDSync": "0x80107f1c"
+  },
+  "external_original_names": {
+    "__CARDGetControlBlock": "fn_80107C2C",
+    "__CARDGetDirBlock": "fn_801098E8",
+    "__CARDAccess": "fn_8010BE04",
+    "__CARDIsPublic": "fn_8010BE9C",
+    "memcpy": "memcpy",
+    "__CARDPutControlBlock": "fn_80107CE4",
+    "OSGetTime": "OSGetTime",
+    "__div2i": "__div2i",
+    "__CARDUpdateDir": "fn_80109A88",
+    "__CARDSyncCallback": "fn_80106CD0",
+    "__CARDSync": "fn_80107F1C"
+  },
+  "verified_text_bytes": 1248,
+  "verified_data_bytes": 0,
+  "source_kind": "c",
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "67b4d04584dccd56880ade6dad81fd3331ebac88b70b37d1f73536d7f40b11c8",
+    "matched_code": 1248,
+    "matched_functions": 4,
+    "matched_data": 0,
+    "complete_data": 0,
+    "object_path": "build/GSQE78/src/dolphin/card/CARDStat.o",
+    "object_sha256": "238440f3cf1e3fe63534dcd90b6e6a171dbf5568aa3efec2a02ea5450685299f"
+  }
+}

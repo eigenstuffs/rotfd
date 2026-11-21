@@ -1,0 +1,125 @@
+{
+  "source": "src/dolphin/mcc/tty.c",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.2.5n",
+  "cflags": "-proc gekko -fp hardware -enum int -str reuse -common off -O4,p -inline auto -i src/dolphin/mcc -Cpp_exceptions off",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2148597780,
+      "end": 2148598552
+    },
+    {
+      "name": ".bss",
+      "start": 2150852064,
+      "end": 2150860256
+    },
+    {
+      "name": ".sbss",
+      "start": 2151120008,
+      "end": 2151120028
+    }
+  ],
+  "functions": [
+    {
+      "name": "TTYPrintf",
+      "address": 2148597780,
+      "size": 568
+    },
+    {
+      "name": "ttyWrite",
+      "address": 2148598348,
+      "size": 80
+    },
+    {
+      "name": "ttyFlush",
+      "address": 2148598428,
+      "size": 124
+    }
+  ],
+  "objects": [
+    {
+      "name": "gBuf",
+      "address": 2150852064,
+      "size": 8192,
+      "section": ".bss"
+    },
+    {
+      "name": "gChID",
+      "address": 2151120008,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "gReadDone",
+      "address": 2151120012,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "gPrintfID",
+      "address": 2151120016,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "gBufHead",
+      "address": 2151120020,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "gBufTail",
+      "address": 2151120024,
+      "size": 4,
+      "section": ".sbss"
+    }
+  ],
+  "symbol_scopes": {
+    "TTYPrintf": "global",
+    "ttyWrite": "local",
+    "ttyFlush": "local",
+    "gBuf": "local",
+    "gChID": "local",
+    "gReadDone": "local",
+    "gPrintfID": "local",
+    "gBufHead": "local",
+    "gBufTail": "local"
+  },
+  "symbols": {
+    "TTYPrintf": "0x80110014",
+    "ttyWrite": "0x8011024c",
+    "ttyFlush": "0x8011029c",
+    "gBuf": "0x803365e0",
+    "gChID": "0x80377c88",
+    "gReadDone": "0x80377c8c",
+    "gPrintfID": "0x80377c90",
+    "gBufHead": "0x80377c94",
+    "gBufTail": "0x80377c98",
+    "strlen": "0x801285f8",
+    "vsprintf": "0x80125bf0",
+    "strchr": "0x80128338",
+    "MCCWrite": "0x8010f070",
+    "MCCNotify": "0x8010e740"
+  },
+  "external_original_names": {
+    "strlen": "strlen",
+    "vsprintf": "vsprintf",
+    "strchr": "strchr",
+    "MCCWrite": "fn_8010F070",
+    "MCCNotify": "fn_8010E740"
+  },
+  "verified_text_bytes": 772,
+  "verified_data_bytes": 0,
+  "source_kind": "c",
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "bb73adef3e2ba0e98d1ed94db640bc54248412e4e5defb91f9f89cc3a21f59cc",
+    "matched_code": 772,
+    "matched_functions": 3,
+    "matched_data": 8212,
+    "complete_data": 8212,
+    "object_path": "build/GSQE78/src/dolphin/mcc/tty.o",
+    "object_sha256": "251cfc6e77acccae8b462f98c9ea95d73e2a8f532deb3ed0390f0f020916952b"
+  }
+}

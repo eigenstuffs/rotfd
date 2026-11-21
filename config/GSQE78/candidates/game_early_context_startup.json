@@ -1,0 +1,914 @@
+[
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/early_context_startup_8007ef60.cpp",
+    "source_sha256": "bcc5af76ce249dedeb8e4e9e66b8daebaa92c6f3f06dd150ef9437ed7c746bc0",
+    "source_kind": "c++",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "src/Game",
+      "-i",
+      "include"
+    ],
+    "required_extra_cflags": [
+      "-O4,s",
+      "-Cpp_exceptions on"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/early_context_startup_views.h",
+        "sha256": "bb8f84cfc2357c534b7d5773d2c512e8bf03b02935513f935f97c108feaf9dc9"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148003680,
+        "end": 2148003880,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147538680,
+        "end": 2147538688,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147588636,
+        "end": 2147588648,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_8007EF60",
+        "address": 2148003680,
+        "size": 200,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0,
+        "sha256": "0607b699b4ebdc568b35f1f49aa3df2a318580f2a383a4da0a1c08c07e505925"
+      }
+    ],
+    "objects": [
+      {
+        "name": "@19",
+        "address": 2147538680,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0,
+        "sha256": "a4fa9bceb8fdd0cdbbfa34eeab479dd97534b72b57d16163fc440ce57b419605"
+      },
+      {
+        "name": "@20",
+        "address": 2147588636,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0,
+        "sha256": "7467310e18aa22d04d9a3034778e4e69fed0d63bda87742c0e24eeaf6d3b489b"
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "fn_8001F38C",
+        "address": 2147611532,
+        "scope": "global"
+      },
+      {
+        "name": "fn_8001F518",
+        "address": 2147611928,
+        "scope": "global"
+      },
+      {
+        "name": "fn_8001F754",
+        "address": 2147612500,
+        "scope": "global"
+      },
+      {
+        "name": "fn_8001F834",
+        "address": 2147612724,
+        "scope": "global"
+      },
+      {
+        "name": "fn_801EFA1C",
+        "address": 2149513756,
+        "scope": "global"
+      },
+      {
+        "name": "fn_801FA014",
+        "address": 2149556244,
+        "scope": "global"
+      },
+      {
+        "name": "game_type_registry_SpongeBob___RegisterGameClasses",
+        "address": 2150223216,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_801E9D24",
+        "address": 2149489956,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_801EF5C8",
+        "address": 2149512648,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_80377760",
+        "address": 2151118688,
+        "scope": "global"
+      }
+    ],
+    "original_metadata_audit": {
+      "status": "all-original-table-ownership-retained",
+      "retained_ranges": [
+        {
+          "start": 2148003680,
+          "end": 2148003880
+        }
+      ],
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "entries": 3141,
+          "scanned_slots": 3144,
+          "references_to_retained_ranges": [
+            {
+              "entry_address": 2147588636,
+              "function": 2148003680,
+              "size": 200,
+              "extab": 2147538680,
+              "ownership": "retained-source"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "entries": 19,
+          "scanned_slots": 24,
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "entries": 3,
+          "scanned_slots": 8,
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "41efba3cc2eda154978e83b068f58d2b371d65c15ad853c0603cdc03036c6be6",
+      "retained_text_bytes": 200,
+      "emitted_text_bytes": 200,
+      "exception_table_bytes": 20,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "weak_functions": 0,
+      "unlinked_text_bytes": 0,
+      "relocations": 19,
+      "text_relocations": 17,
+      "exception_table_relocations": 2,
+      "unlinked_relocations": 0,
+      "nonallocated_metadata_relocations": 1,
+      "all_retained_allocated_bytes_verified": true,
+      "all_emitted_allocated_bytes_accounted": true,
+      "all_original_exception_ownership_retained": true,
+      "zero_byte_differences": true,
+      "verification_script": "/Users/brandenb/Downloads/rotfd/scratch/game_early_context_startup/early_context_startup_8007ef60/verify.py"
+    },
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 10,
+        "address": 2148003690,
+        "kind": 6,
+        "symbol": "game_type_registry_SpongeBob___RegisterGameClasses",
+        "target": 2150223216,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 22,
+        "address": 2148003702,
+        "kind": 4,
+        "symbol": "game_type_registry_SpongeBob___RegisterGameClasses",
+        "target": 2150223216,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 24,
+        "address": 2148003704,
+        "kind": 10,
+        "symbol": "fn_8001F834",
+        "target": 2147612724,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 28,
+        "address": 2148003708,
+        "kind": 109,
+        "symbol": "lbl_80377760",
+        "target": 2151118688,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 44,
+        "address": 2148003724,
+        "kind": 10,
+        "symbol": "fn_8001F518",
+        "target": 2147611928,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 52,
+        "address": 2148003732,
+        "kind": 109,
+        "symbol": "lbl_80377760",
+        "target": 2151118688,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 56,
+        "address": 2148003736,
+        "kind": 109,
+        "symbol": "lbl_80377760",
+        "target": 2151118688,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 70,
+        "address": 2148003750,
+        "kind": 6,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 78,
+        "address": 2148003758,
+        "kind": 4,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 96,
+        "address": 2148003776,
+        "kind": 10,
+        "symbol": "fn_801EFA1C",
+        "target": 2149513756,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 108,
+        "address": 2148003788,
+        "kind": 10,
+        "symbol": "fn_8001F38C",
+        "target": 2147611532,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 116,
+        "address": 2148003796,
+        "kind": 109,
+        "symbol": "lbl_80377760",
+        "target": 2151118688,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 122,
+        "address": 2148003802,
+        "kind": 6,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 126,
+        "address": 2148003806,
+        "kind": 4,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 156,
+        "address": 2148003836,
+        "kind": 10,
+        "symbol": "fn_801FA014",
+        "target": 2149556244,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 168,
+        "address": 2148003848,
+        "kind": 109,
+        "symbol": "lbl_80377760",
+        "target": 2151118688,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 176,
+        "address": 2148003856,
+        "kind": 10,
+        "symbol": "fn_8001F754",
+        "target": 2147612500,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147588636,
+        "kind": 1,
+        "symbol": "fn_8007EF60",
+        "target": 2148003680,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147588644,
+        "kind": 1,
+        "symbol": "@19",
+        "target": 2147538680,
+        "addend": 0
+      }
+    ],
+    "identifier_migration_provenance": {
+      "proof": "scratch/continuation_20261010/pool-owner-constructor-header-migration/proof.json",
+      "previous_canonical": "scratch/continuation_20261010/pool-owner-constructor-header-migration/before/config/GSQE78/candidates/game_early_context_startup.json",
+      "previous_canonical_sha256": "baa5bbdea0cf3726d11dd5b35ab2d96eb200ed11914cc71f590ebed38785aea2"
+    }
+  },
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/early_context_startup_8007f33c.cpp",
+    "source_sha256": "93a389cc3d7e7e73ed358cf1332d379413a79e123d069918047f36babe076012",
+    "source_kind": "c++",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "src/Game",
+      "-i",
+      "include"
+    ],
+    "required_extra_cflags": [
+      "-O4,s",
+      "-Cpp_exceptions on"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/early_context_startup_views.h",
+        "sha256": "bb8f84cfc2357c534b7d5773d2c512e8bf03b02935513f935f97c108feaf9dc9"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148004668,
+        "end": 2148004828,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147538696,
+        "end": 2147538704,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147588660,
+        "end": 2147588672,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_8007F33C",
+        "address": 2148004668,
+        "size": 160,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0,
+        "sha256": "2d37b69551628373f203f09b8d2694fafa23b75bfa9471cb9f681ef7ae8e79f5"
+      }
+    ],
+    "objects": [
+      {
+        "name": "@19",
+        "address": 2147538696,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0,
+        "sha256": "bcc0e7d554bfb67e6dfaa82a25ef2a617173bede4c2416a211eb9600a67e9e82"
+      },
+      {
+        "name": "@20",
+        "address": 2147588660,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0,
+        "sha256": "0dba7af963d0d631535abe01123ee782bb49dc0bd0309e8e37cbad105022af00"
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "fn_801FA014",
+        "address": 2149556244,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_801E9D24",
+        "address": 2149489956,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_8029D524",
+        "address": 2150225188,
+        "scope": "global"
+      }
+    ],
+    "original_metadata_audit": {
+      "status": "all-original-table-ownership-retained",
+      "retained_ranges": [
+        {
+          "start": 2148004668,
+          "end": 2148004828
+        }
+      ],
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "entries": 3141,
+          "scanned_slots": 3144,
+          "references_to_retained_ranges": [
+            {
+              "entry_address": 2147588660,
+              "function": 2148004668,
+              "size": 160,
+              "extab": 2147538696,
+              "ownership": "retained-source"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "entries": 19,
+          "scanned_slots": 24,
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "entries": 3,
+          "scanned_slots": 8,
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "5cb9c20e9190ada20244107d4aea6c684187f3ec3b029a3be143cefb7b904944",
+      "retained_text_bytes": 160,
+      "emitted_text_bytes": 160,
+      "exception_table_bytes": 20,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "weak_functions": 0,
+      "unlinked_text_bytes": 0,
+      "relocations": 11,
+      "text_relocations": 9,
+      "exception_table_relocations": 2,
+      "unlinked_relocations": 0,
+      "nonallocated_metadata_relocations": 1,
+      "all_retained_allocated_bytes_verified": true,
+      "all_emitted_allocated_bytes_accounted": true,
+      "all_original_exception_ownership_retained": true,
+      "zero_byte_differences": true,
+      "verification_script": "/Users/brandenb/Downloads/rotfd/scratch/game_early_context_startup/early_context_startup_8007f33c/verify.py"
+    },
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 10,
+        "address": 2148004678,
+        "kind": 6,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 14,
+        "address": 2148004682,
+        "kind": 6,
+        "symbol": "lbl_8029D524",
+        "target": 2150225188,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 22,
+        "address": 2148004690,
+        "kind": 4,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 26,
+        "address": 2148004694,
+        "kind": 4,
+        "symbol": "lbl_8029D524",
+        "target": 2150225188,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 40,
+        "address": 2148004708,
+        "kind": 10,
+        "symbol": "fn_801FA014",
+        "target": 2149556244,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 46,
+        "address": 2148004714,
+        "kind": 6,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 50,
+        "address": 2148004718,
+        "kind": 4,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 86,
+        "address": 2148004754,
+        "kind": 6,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 94,
+        "address": 2148004762,
+        "kind": 4,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147588660,
+        "kind": 1,
+        "symbol": "fn_8007F33C",
+        "target": 2148004668,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147588668,
+        "kind": 1,
+        "symbol": "@19",
+        "target": 2147538696,
+        "addend": 0
+      }
+    ],
+    "identifier_migration_provenance": {
+      "proof": "scratch/continuation_20261010/pool-owner-constructor-header-migration/proof.json",
+      "previous_canonical": "scratch/continuation_20261010/pool-owner-constructor-header-migration/before/config/GSQE78/candidates/game_early_context_startup.json",
+      "previous_canonical_sha256": "baa5bbdea0cf3726d11dd5b35ab2d96eb200ed11914cc71f590ebed38785aea2"
+    }
+  },
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/early_context_startup_8007f8a8.cpp",
+    "source_sha256": "54ff4d6a6c470f58e4c9a9b2ae0b09752ec8f863157a2354f7e2d7ecc61b4c62",
+    "source_kind": "c++",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "src/Game",
+      "-i",
+      "include"
+    ],
+    "required_extra_cflags": [
+      "-O4,s",
+      "-Cpp_exceptions on"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/early_context_startup_views.h",
+        "sha256": "bb8f84cfc2357c534b7d5773d2c512e8bf03b02935513f935f97c108feaf9dc9"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148006056,
+        "end": 2148006288,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147538896,
+        "end": 2147538904,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147588744,
+        "end": 2147588756,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_8007F8A8",
+        "address": 2148006056,
+        "size": 232,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0,
+        "sha256": "dd5c8fd0ef2c5007fa52d282a9198a3ef1b7494890c38baabdbbdf01581f416d"
+      }
+    ],
+    "objects": [
+      {
+        "name": "@17",
+        "address": 2147538896,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0,
+        "sha256": "c60efe9431955491cc4357ff26ec0685a3c0c9ccdb9b2d9d029f4aab60a48868"
+      },
+      {
+        "name": "@18",
+        "address": 2147588744,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0,
+        "sha256": "4216fd4391dd1fb54c2e9fdf528e9412ce21d766b0246ed4373d08f52a8b3f31"
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "fn_8022993C",
+        "address": 2149751100,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_801E9D24",
+        "address": 2149489956,
+        "scope": "global"
+      }
+    ],
+    "original_metadata_audit": {
+      "status": "all-original-table-ownership-retained",
+      "retained_ranges": [
+        {
+          "start": 2148006056,
+          "end": 2148006288
+        }
+      ],
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "entries": 3141,
+          "scanned_slots": 3144,
+          "references_to_retained_ranges": [
+            {
+              "entry_address": 2147588744,
+              "function": 2148006056,
+              "size": 232,
+              "extab": 2147538896,
+              "ownership": "retained-source"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "entries": 19,
+          "scanned_slots": 24,
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "entries": 3,
+          "scanned_slots": 8,
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "1866283322c7770c8706edd92ec40242bef61ce5705403b9d43644e777a7214f",
+      "retained_text_bytes": 232,
+      "emitted_text_bytes": 232,
+      "exception_table_bytes": 20,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "weak_functions": 0,
+      "unlinked_text_bytes": 0,
+      "relocations": 5,
+      "text_relocations": 3,
+      "exception_table_relocations": 2,
+      "unlinked_relocations": 0,
+      "nonallocated_metadata_relocations": 1,
+      "all_retained_allocated_bytes_verified": true,
+      "all_emitted_allocated_bytes_accounted": true,
+      "all_original_exception_ownership_retained": true,
+      "zero_byte_differences": true,
+      "verification_script": "/Users/brandenb/Downloads/rotfd/scratch/game_early_context_startup/early_context_startup_8007f8a8/verify.py"
+    },
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 66,
+        "address": 2148006122,
+        "kind": 6,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 74,
+        "address": 2148006130,
+        "kind": 4,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 172,
+        "address": 2148006228,
+        "kind": 10,
+        "symbol": "fn_8022993C",
+        "target": 2149751100,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147588744,
+        "kind": 1,
+        "symbol": "fn_8007F8A8",
+        "target": 2148006056,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147588752,
+        "kind": 1,
+        "symbol": "@17",
+        "target": 2147538896,
+        "addend": 0
+      }
+    ],
+    "identifier_migration_provenance": {
+      "proof": "scratch/continuation_20261010/pool-owner-constructor-header-migration/proof.json",
+      "previous_canonical": "scratch/continuation_20261010/pool-owner-constructor-header-migration/before/config/GSQE78/candidates/game_early_context_startup.json",
+      "previous_canonical_sha256": "baa5bbdea0cf3726d11dd5b35ab2d96eb200ed11914cc71f590ebed38785aea2"
+    }
+  }
+]

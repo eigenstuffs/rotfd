@@ -1,0 +1,77 @@
+{
+  "source": "src/MetroTRK/dolphin_trk_reset.c",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.3.2",
+  "cflags": "-proc gekko -fp hardware -enum int -str reuse -common off -O4,p -inline auto,deferred -sdata 0 -sdata2 0 -pool off -use_lmw_stmw on -rostr -i src/MetroTRK -Cpp_exceptions off",
+  "sections": [
+    {
+      "name": ".init",
+      "start": 2147504944,
+      "end": 2147505204,
+      "alignment": 4
+    },
+    {
+      "name": ".data",
+      "start": 2150432336,
+      "end": 2150432396,
+      "alignment": 8
+    }
+  ],
+  "functions": [
+    {
+      "name": "__TRK_reset",
+      "address": 2147504944,
+      "size": 260
+    }
+  ],
+  "objects": [
+    {
+      "name": "TRK_ISR_OFFSETS",
+      "address": 2150432336,
+      "size": 60,
+      "section": ".data"
+    }
+  ],
+  "symbol_scopes": {
+    "__TRK_reset": "global",
+    "TRK_ISR_OFFSETS": "local"
+  },
+  "symbols": {
+    "__TRK_reset": "0x80005330",
+    "TRK_ISR_OFFSETS": "0x802cfe50",
+    "gTRKLockedCacheBase": "0x8033b000",
+    "gTRKCPUState": "0x8033ab28",
+    "gTRKInterruptVectorTable": "0x800033fc",
+    "TRK_memcpy": "0x800033d8",
+    "TRK_flush_cache": "0x8011c2cc"
+  },
+  "external_original_names": {
+    "gTRKLockedCacheBase": "gTRKLockedCacheBase",
+    "gTRKCPUState": "gTRKCPUState",
+    "gTRKInterruptVectorTable": "gTRKInterruptVectorTable",
+    "TRK_memcpy": "TRK_memcpy",
+    "TRK_flush_cache": "TRK_flush_cache"
+  },
+  "verified_text_bytes": 260,
+  "verified_data_bytes": 60,
+  "source_kind": "c",
+  "external_padding": [
+    {
+      "section": ".data",
+      "start": 2150432396,
+      "end": 2150432400,
+      "reason": "Original external alignment before the transport table."
+    }
+  ],
+  "notes": "One C function in .init; inlined source helpers install selected original exception vectors. Native vector machine code remains fallback. Existing gTRKInterruptVectorTableEnd boundary label shares __TRK_reset start.",
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "abad1f052a4c1e77c4027bc87aa51bf8ae19f93a63cf8a9037c50943e1831848",
+    "matched_code": 260,
+    "matched_functions": 1,
+    "matched_data": 60,
+    "complete_data": 60,
+    "object_path": "build/GSQE78/src/MetroTRK/dolphin_trk_reset.o",
+    "object_sha256": "8a446f91b596cc3e9d5d17ef1f8a69f99138f74b9b925d98ac3fff5fcf8f8829"
+  }
+}

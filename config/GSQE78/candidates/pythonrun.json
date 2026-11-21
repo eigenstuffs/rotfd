@@ -1,0 +1,538 @@
+{
+  "compiler": "GC/2.0",
+  "cflags": [
+    "-proc gekko",
+    "-fp hardware",
+    "-enum int",
+    "-str reuse",
+    "-common off",
+    "-opt level=4,nopeephole,speed",
+    "-inline auto,deferred",
+    "-pool off",
+    "-Cpp_exceptions off"
+  ],
+  "source": "src/Python/pythonrun.c",
+  "dependency_symbols": [
+    {
+      "name": "signal",
+      "address": "0x80127dcc",
+      "original_name": "fn_80127DCC",
+      "section": ".text",
+      "size": "0x3C",
+      "scope": "global"
+    },
+    {
+      "name": "PyExc_SyntaxError",
+      "address": "0x80377ebc",
+      "original_name": "lbl_80377EBC",
+      "section": ".sbss",
+      "size": "0x4",
+      "scope": "global"
+    },
+    {
+      "name": "PyExc_IndentationError",
+      "address": "0x80377eb8",
+      "original_name": "lbl_80377EB8",
+      "section": ".sbss",
+      "size": "0x4",
+      "scope": "global"
+    },
+    {
+      "name": "PyExc_KeyboardInterrupt",
+      "address": "0x80377ed4",
+      "original_name": "lbl_80377ED4",
+      "section": ".sbss",
+      "size": "0x4",
+      "scope": "global"
+    },
+    {
+      "name": "PyExc_TabError",
+      "address": "0x80377eb4",
+      "original_name": "lbl_80377EB4",
+      "section": ".sbss",
+      "size": "0x4",
+      "scope": "global"
+    },
+    {
+      "name": "PyParser_ParseFile",
+      "address": "0x80172d64",
+      "original_name": "fn_80172D64",
+      "section": ".text",
+      "size": "0xE0",
+      "scope": "global"
+    },
+    {
+      "name": "PyParser_ParseString",
+      "address": "0x80172e44",
+      "original_name": "fn_80172E44",
+      "section": ".text",
+      "size": "0xE4",
+      "scope": "global"
+    },
+    {
+      "name": "PyNode_CompileFlags",
+      "address": "0x80181104",
+      "original_name": "fn_80181104",
+      "section": ".text",
+      "size": "0x28",
+      "scope": "global"
+    },
+    {
+      "name": "PyNode_Free",
+      "address": "0x801724c0",
+      "original_name": "fn_801724C0",
+      "section": ".text",
+      "size": "0x3C",
+      "scope": "global"
+    },
+    {
+      "name": "PyOS_FiniInterrupts",
+      "address": "0x801abccc",
+      "original_name": "fn_801ABCCC",
+      "section": ".text",
+      "size": "0x20",
+      "scope": "global"
+    },
+    {
+      "name": "_PyCodecRegistry_Fini",
+      "address": "0x8017bb98",
+      "original_name": "fn_8017BB98",
+      "section": ".text",
+      "size": "0x94",
+      "scope": "global"
+    },
+    {
+      "name": "PyImport_Cleanup",
+      "address": "0x801990b4",
+      "original_name": "fn_801990B4",
+      "section": ".text",
+      "size": "0x490",
+      "scope": "global"
+    },
+    {
+      "name": "_PyImport_Fini",
+      "address": "0x80199544",
+      "original_name": "fn_80199544",
+      "section": ".text",
+      "size": "0x68",
+      "scope": "global"
+    },
+    {
+      "name": "fini_exceptions",
+      "address": "0x80191618",
+      "original_name": "fn_80191618",
+      "section": ".text",
+      "size": "0x11C",
+      "scope": "global"
+    },
+    {
+      "name": "PyGrammar_RemoveAccelerators",
+      "address": "0x801732a8",
+      "original_name": "fn_801732A8",
+      "section": ".text",
+      "size": "0x84",
+      "scope": "global"
+    },
+    {
+      "name": "getenv",
+      "address": "0x80129cec",
+      "original_name": "fn_80129CEC",
+      "section": ".text",
+      "size": "0x8",
+      "scope": "global"
+    },
+    {
+      "name": "_PyCodecRegistry_Init",
+      "address": "0x8017bc2c",
+      "original_name": "fn_8017BC2C",
+      "section": ".text",
+      "size": "0x6C",
+      "scope": "global"
+    },
+    {
+      "name": "_PyBuiltin_Init",
+      "address": "0x801a3cac",
+      "original_name": "fn_801A3CAC",
+      "section": ".text",
+      "size": "0x174",
+      "scope": "global"
+    },
+    {
+      "name": "_PyImport_FixupExtension",
+      "address": "0x80198f78",
+      "original_name": "fn_80198F78",
+      "section": ".text",
+      "size": "0x13C",
+      "scope": "global"
+    },
+    {
+      "name": "Py_GetPath",
+      "address": "0x801ac7b0",
+      "original_name": "fn_801AC7B0",
+      "section": ".text",
+      "size": "0x28",
+      "scope": "global"
+    },
+    {
+      "name": "_PyImport_Init",
+      "address": "0x801995ac",
+      "original_name": "fn_801995AC",
+      "section": ".text",
+      "size": "0x128",
+      "scope": "global"
+    },
+    {
+      "name": "init_exceptions",
+      "address": "0x80191734",
+      "original_name": "fn_80191734",
+      "section": ".text",
+      "size": "0x4DC",
+      "scope": "global"
+    },
+    {
+      "name": "PyOS_InitInterrupts",
+      "address": "0x801abcec",
+      "original_name": "fn_801ABCEC",
+      "section": ".text",
+      "size": "0x2C",
+      "scope": "global"
+    },
+    {
+      "name": "_PyParser_Grammar",
+      "address": "0x802e1e78",
+      "original_name": "lbl_802E1E78",
+      "section": ".data",
+      "size": "0x18",
+      "scope": "global"
+    }
+  ],
+  "splits": [
+    {
+      "section": ".text",
+      "start": "0x801a01c8",
+      "end": "0x801a2310"
+    },
+    {
+      "section": ".data",
+      "start": "0x802e3270",
+      "end": "0x802E36D4"
+    },
+    {
+      "section": ".sdata",
+      "start": "0x80376fc0",
+      "end": "0x80377038"
+    },
+    {
+      "section": ".bss",
+      "start": "0x8033e480",
+      "end": "0x8033e500"
+    },
+    {
+      "section": ".sbss",
+      "start": "0x80377f40",
+      "end": "0x80377f58"
+    }
+  ],
+  "functions": [
+    {
+      "name": "PyOS_setsig",
+      "original_name": "fn_801A01C8",
+      "address": "0x801a01c8",
+      "size": "0x20",
+      "scope": "global"
+    },
+    {
+      "name": "PyOS_getsig",
+      "original_name": "fn_801A01E8",
+      "address": "0x801a01e8",
+      "size": "0x4c",
+      "scope": "global"
+    },
+    {
+      "name": "Py_FatalError",
+      "original_name": "Py_FatalError",
+      "address": "0x801a0234",
+      "size": "0x40",
+      "scope": "global"
+    },
+    {
+      "name": "err_input",
+      "original_name": "fn_801A0274",
+      "address": "0x801a0274",
+      "size": "0x28c",
+      "scope": "local"
+    },
+    {
+      "name": "PyParser_SimpleParseFile",
+      "original_name": "PyParser_SimpleParseFile",
+      "address": "0x801a0500",
+      "size": "0x58",
+      "scope": "global"
+    },
+    {
+      "name": "Py_CompileStringFlags",
+      "original_name": "fn_801A0558",
+      "address": "0x801a0558",
+      "size": "0x90",
+      "scope": "global"
+    },
+    {
+      "name": "Py_CompileString",
+      "original_name": "fn_801A05E8",
+      "address": "0x801a05e8",
+      "size": "0x84",
+      "scope": "global"
+    },
+    {
+      "name": "PyRun_FileExFlags",
+      "original_name": "fn_801A066C",
+      "address": "0x801a066c",
+      "size": "0x104",
+      "scope": "global"
+    },
+    {
+      "name": "PyRun_FileFlags",
+      "original_name": "PyRun_FileFlags",
+      "address": "0x801a0770",
+      "size": "0xec",
+      "scope": "global"
+    },
+    {
+      "name": "PyRun_StringFlags",
+      "original_name": "PyRun_StringFlags",
+      "address": "0x801a085c",
+      "size": "0xf4",
+      "scope": "global"
+    },
+    {
+      "name": "PyRun_FileEx",
+      "original_name": "fn_801A0950",
+      "address": "0x801a0950",
+      "size": "0x100",
+      "scope": "global"
+    },
+    {
+      "name": "PyRun_File",
+      "original_name": "PyRun_File",
+      "address": "0x801a0a50",
+      "size": "0xf8",
+      "scope": "global"
+    },
+    {
+      "name": "PyRun_String",
+      "original_name": "PyRun_String",
+      "address": "0x801a0b48",
+      "size": "0xf0",
+      "scope": "global"
+    },
+    {
+      "name": "PyErr_Display",
+      "original_name": "PyErr_Display",
+      "address": "0x801a0c38",
+      "size": "0x35c",
+      "scope": "global"
+    },
+    {
+      "name": "PyErr_PrintEx",
+      "original_name": "fn_801A0F94",
+      "address": "0x801a0f94",
+      "size": "0x2c8",
+      "scope": "global"
+    },
+    {
+      "name": "handle_system_exit",
+      "original_name": "fn_801A125C",
+      "address": "0x801a125c",
+      "size": "0x6f8",
+      "scope": "local"
+    },
+    {
+      "name": "print_error_text",
+      "original_name": "fn_801A1954",
+      "address": "0x801a1954",
+      "size": "0x148",
+      "scope": "local"
+    },
+    {
+      "name": "PyErr_Print",
+      "original_name": "fn_801A1A9C",
+      "address": "0x801a1a9c",
+      "size": "0x24",
+      "scope": "global"
+    },
+    {
+      "name": "parse_syntax_error",
+      "original_name": "fn_801A1AC0",
+      "address": "0x801a1ac0",
+      "size": "0x2ac",
+      "scope": "local"
+    },
+    {
+      "name": "Py_Finalize",
+      "original_name": "fn_801A1D6C",
+      "address": "0x801a1d6c",
+      "size": "0x198",
+      "scope": "global"
+    },
+    {
+      "name": "Py_Initialize",
+      "original_name": "fn_801A1F04",
+      "address": "0x801a1f04",
+      "size": "0x404",
+      "scope": "global"
+    },
+    {
+      "name": "Py_IsInitialized",
+      "original_name": "Py_IsInitialized",
+      "address": "0x801a2308",
+      "size": "0x8",
+      "scope": "global"
+    }
+  ],
+  "unlinked_functions": [
+    {
+      "name": "call_sys_exitfunc",
+      "size": "0xd0"
+    },
+    {
+      "name": "initsite",
+      "size": "0x94"
+    },
+    {
+      "name": "initmain",
+      "size": "0x110"
+    },
+    {
+      "name": "PyRun_SimpleString",
+      "size": "0x158"
+    }
+  ],
+  "data_symbols": [
+    {
+      "name": "exitfuncs",
+      "original_name": "lbl_8033E480",
+      "address": "0x8033e480",
+      "size": "0x80",
+      "scope": "local",
+      "section": ".bss"
+    },
+    {
+      "name": "Py_UnicodeFlag",
+      "original_name": "Py_UnicodeFlag",
+      "address": "0x80377f40",
+      "size": "0x4",
+      "scope": "global",
+      "section": ".sbss"
+    },
+    {
+      "name": "initialized",
+      "original_name": "lbl_80377F44",
+      "address": "0x80377f44",
+      "size": "0x4",
+      "scope": "local",
+      "section": ".sbss"
+    },
+    {
+      "name": "nexitfuncs",
+      "original_name": "lbl_80377F48",
+      "address": "0x80377f48",
+      "size": "0x4",
+      "scope": "local",
+      "section": ".sbss"
+    },
+    {
+      "name": "Py_NoSiteFlag",
+      "original_name": "lbl_80377F4C",
+      "address": "0x80377f4c",
+      "size": "0x4",
+      "scope": "global",
+      "section": ".sbss"
+    },
+    {
+      "name": "Py_VerboseFlag",
+      "original_name": "Py_VerboseFlag",
+      "address": "0x80377f50",
+      "size": "0x4",
+      "scope": "global",
+      "section": ".sbss"
+    },
+    {
+      "name": "Py_DebugFlag",
+      "original_name": "lbl_80377F54",
+      "address": "0x80377f54",
+      "size": "0x4",
+      "scope": "global",
+      "section": ".sbss"
+    }
+  ],
+  "compiler_local_symbols": [
+    {
+      "name": "@508",
+      "original_name": "jumptable_802E33F0",
+      "address": "0x802e33f0",
+      "size": "0x2c",
+      "scope": "local",
+      "section": ".data"
+    }
+  ],
+  "status": "integrated-byte-match",
+  "split_notes": [
+    "The original linked TU has 22 functions at 0x801A01C8..0x801A2310. The following four functions at 0x801A2310..0x801A26A8 belong to the symbol-table object TU, not pythonrun.",
+    "Four ordinary C function bodies must be discarded by the linker: call_sys_exitfunc, initsite, initmain, and PyRun_SimpleString. Their emitted bodies total 972 bytes. Their shared literals retain the original order; no object patching or artificial byte arrays are used.",
+    "The verifier maps each retained ELF function to its recovered linked address, applies every retained relocation, verifies complete linked text coverage, and asserts no retained relocation refers to one of the four discarded functions. Those four bodies are not counted as matching source functions.",
+    "Py_UnicodeFlag, initialized, nexitfuncs, Py_NoSiteFlag, Py_VerboseFlag, and Py_DebugFlag occupy six consecutive four-byte SBSS objects at 0x80377F40..0x80377F58.",
+    "The 11-entry jump table at 0x802E33F0..0x802E341C is generated by the err_input C switch. Initialized data ends at 0x802E36D4, followed by four zero padding bytes.",
+    "Py_UseClassExceptionsFlag, Py_FrozenFlag, and Py_InteractiveFlag are not linked from this TU and are omitted. The source otherwise retains required interpreter startup, finalization, parser/compiler wrappers, exception display, and signal wrappers."
+  ],
+  "validation": {
+    "text_bytes": 8520,
+    "data_bytes": 1124,
+    "data_padding_bytes": 4,
+    "sdata_bytes": 120,
+    "bss_bytes": 128,
+    "sbss_bytes": 24,
+    "relocations_applied": 665,
+    "unlinked_function_count": 4,
+    "unlinked_text_bytes": 972,
+    "unlinked_relocations": 73,
+    "retained_section_byte_differences": 0,
+    "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "f493bb4d647d579e2704380e195cb65dc7d95b34f387ad205d6b8618570925cd",
+    "object_sha256": "694e4f675ee323380ff7be874f4de44778f0df1a7f6c7e9dff58607557273759",
+    "verification_script": "scratch/pythonrun/verify.py",
+    "integration_status": "verified full-DOL and objdiff"
+  },
+  "notes": "docs/notes/pythonrun.md",
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "f493bb4d647d579e2704380e195cb65dc7d95b34f387ad205d6b8618570925cd",
+    "matched_code": 8520,
+    "matched_functions": 22,
+    "matched_data": 1396,
+    "complete_data": 1396,
+    "object_path": "build/GSQE78/src/Python/pythonrun.o",
+    "object_sha256": "694e4f675ee323380ff7be874f4de44778f0df1a7f6c7e9dff58607557273759"
+  },
+  "external_padding": [
+    {
+      "source": "src/Python/pythonrun.c",
+      "unit": "main/Python/pythonrun",
+      "section": ".data",
+      "start": "0x802e36d4",
+      "end": "0x802e36d8",
+      "size": 4,
+      "alignment": 1,
+      "symbol": "gap_07_802E36D4_data",
+      "original_owner": "padding/source_extents/Python/pythonrun.s",
+      "source_section_start": "0x802e3270",
+      "source_section_bytes": 1124,
+      "previous_split_bytes": 1128,
+      "description": "Original linker alignment beyond emitted source section; no source credit."
+    }
+  ],
+  "source_extent_audit": {
+    "data_credit_correction": 4,
+    "evidence": "config/GSQE78/source_padding.json",
+    "description": "Source and original bytes unchanged; trailing original padding moved to NonMatching ownership."
+  }
+}

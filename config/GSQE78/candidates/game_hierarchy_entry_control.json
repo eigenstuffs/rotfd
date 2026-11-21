@@ -1,0 +1,200 @@
+{
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-lang c++",
+    "-proc gekko",
+    "-fp hardware",
+    "-enum int",
+    "-str reuse",
+    "-common off",
+    "-O4,p",
+    "-inline auto",
+    "-Cpp_exceptions off",
+    "-use_lmw_stmw on"
+  ],
+  "source": "src/Game/hierarchy_entry_control.cpp",
+  "status": "integrated-byte-match",
+  "scope": "Two adjacent hierarchy entry-control methods, with their complete naturally emitted conversion literal pool. Original complete TU boundary unestablished.",
+  "splits": [
+    {
+      "section": ".text",
+      "start": "0x80206b44",
+      "end": "0x80206e28"
+    },
+    {
+      "section": ".sdata2",
+      "start": "0x8037a958",
+      "end": "0x8037a968"
+    }
+  ],
+  "functions": [
+    {
+      "name": "fn_80206B44",
+      "original_name": "fn_80206B44",
+      "address": "0x80206b44",
+      "size": "0x110",
+      "scope": "global"
+    },
+    {
+      "name": "fn_80206C54",
+      "original_name": "fn_80206C54",
+      "address": "0x80206c54",
+      "size": "0x1d4",
+      "scope": "global"
+    }
+  ],
+  "data_symbols": [
+    {
+      "name": "@25",
+      "original_name": "lbl_8037A958",
+      "address": "0x8037a958",
+      "size": "0x4",
+      "section": ".sdata2",
+      "scope": "local"
+    },
+    {
+      "name": "@27",
+      "original_name": "lbl_8037A960",
+      "address": "0x8037a960",
+      "size": "0x8",
+      "section": ".sdata2",
+      "scope": "local"
+    }
+  ],
+  "dependency_symbols": [
+    {
+      "name": "lbl_801E9D24",
+      "address": "0x801e9d24",
+      "section": ".text"
+    },
+    {
+      "name": "fn_802073E8",
+      "address": "0x802073e8",
+      "section": ".text"
+    },
+    {
+      "name": "fn_801FC26C",
+      "address": "0x801fc26c",
+      "section": ".text"
+    },
+    {
+      "name": "fn_802603E8",
+      "address": "0x802603e8",
+      "section": ".text"
+    },
+    {
+      "name": "fn_80260868",
+      "address": "0x80260868",
+      "section": ".text"
+    },
+    {
+      "name": "__ct__15Handle_801F7F10Fv",
+      "address": "0x801f7f04",
+      "section": ".text"
+    },
+    {
+      "name": "fn_801F86C8",
+      "address": "0x801f86c8",
+      "section": ".text"
+    },
+    {
+      "name": "__dt__15Handle_801F7F10Fv",
+      "address": "0x801f7f10",
+      "section": ".text"
+    },
+    {
+      "name": "fn_801F7EB8",
+      "address": "0x801f7eb8",
+      "section": ".text"
+    },
+    {
+      "name": "fn_8025D588",
+      "address": "0x8025d588",
+      "section": ".text"
+    },
+    {
+      "name": "__dl__FPv",
+      "address": "0x8011edd4",
+      "section": ".text"
+    }
+  ],
+  "notes": "docs/notes/game-hierarchy-entry-control.md",
+  "validation": {
+    "verification_script": "scratch/game_hierarchy_entry_control/verify.py",
+    "text_bytes": 740,
+    "data_bytes": 16,
+    "literal_object_bytes": 12,
+    "internal_alignment_bytes": 4,
+    "byte_differences": 0,
+    "original_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "integration_status": "verified full-DOL and objdiff",
+    "unlinked_function_count": 7,
+    "unlinked_text_bytes": 628,
+    "source_sha256": "c7566d2cbc45054abbd561b9355dd002725f07a754ab1d3cd61a3d3005248002",
+    "object_sha256": "66bf8d70a0dcfc2e31f76a7d4383b9c6ce9fc655820e7df6c0bb0983b2d870e0",
+    "relocations_applied": 27,
+    "unlinked_relocations": 14,
+    "literal_consumer_verifier": "scratch/game_hierarchy_entry_control/literal_consumers.py"
+  },
+  "unlinked_functions": [
+    {
+      "name": "__dt__14IdentityHandleFv",
+      "object_offset": "0x2e4",
+      "size": "0x54",
+      "binding": "weak",
+      "reason": "Unreferenced generated C++ handle destructor; ordinary linker dead stripping."
+    },
+    {
+      "name": "__dt__14ResourceHandleFv",
+      "object_offset": "0x338",
+      "size": "0x64",
+      "binding": "weak",
+      "reason": "Unreferenced generated C++ handle destructor; ordinary linker dead stripping."
+    },
+    {
+      "name": "__dt__13ZeroHandle<3>Fv",
+      "object_offset": "0x39c",
+      "size": "0x60",
+      "binding": "weak",
+      "reason": "Unreferenced generated C++ handle destructor; ordinary linker dead stripping."
+    },
+    {
+      "name": "__dt__13ZeroHandle<2>Fv",
+      "object_offset": "0x3fc",
+      "size": "0x5c",
+      "binding": "weak",
+      "reason": "Unreferenced generated C++ handle destructor; ordinary linker dead stripping."
+    },
+    {
+      "name": "__dt__13ZeroHandle<1>Fv",
+      "object_offset": "0x458",
+      "size": "0x58",
+      "binding": "weak",
+      "reason": "Unreferenced generated C++ handle destructor; ordinary linker dead stripping."
+    },
+    {
+      "name": "__dt__13ZeroHandle<0>Fv",
+      "object_offset": "0x4b0",
+      "size": "0x54",
+      "binding": "weak",
+      "reason": "Unreferenced generated C++ handle destructor; ordinary linker dead stripping."
+    },
+    {
+      "name": "__dt__14ReturnedHandleFv",
+      "object_offset": "0x504",
+      "size": "0x54",
+      "binding": "weak",
+      "reason": "Unreferenced generated C++ handle destructor; ordinary linker dead stripping."
+    }
+  ],
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "c7566d2cbc45054abbd561b9355dd002725f07a754ab1d3cd61a3d3005248002",
+    "matched_code": 740,
+    "matched_functions": 2,
+    "matched_data": 16,
+    "complete_data": 16,
+    "object_path": "build/GSQE78/src/Game/hierarchy_entry_control.o",
+    "object_sha256": "66bf8d70a0dcfc2e31f76a7d4383b9c6ce9fc655820e7df6c0bb0983b2d870e0"
+  }
+}

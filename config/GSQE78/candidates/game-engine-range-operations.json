@@ -1,0 +1,292 @@
+[
+  {
+    "source": "src/Game/engine_range_join.c",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,p",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "off",
+      "-i",
+      "include"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2149640212,
+        "end": 2149640368
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_8020E814",
+        "address": 2149640212,
+        "size": 156,
+        "scope": "global",
+        "kind": "range-operations",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "verified_text_bytes": 156,
+    "verified_data_bytes": 0,
+    "relocations": [],
+    "source_sha256": "39c65d50e73f9bb05652f3410cc2c65e3701219fd7874ed4d4aa57d32acab951",
+    "objects": [],
+    "unlinked_functions": [],
+    "headers": [
+      {
+        "path": "include/Game/engine_range_operations.h",
+        "sha256": "bc3e7dff10c78d7c2f1bdf6078210627fa880a6e8cc4ca4b5f366229f7d62f2c"
+      }
+    ],
+    "actual_relocations": []
+  },
+  {
+    "source": "src/Game/engine_range_release.c",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,p",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "off",
+      "-i",
+      "include"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2149640504,
+        "end": 2149640924
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_8020E938",
+        "address": 2149640504,
+        "size": 420,
+        "scope": "global",
+        "kind": "range-operations",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "verified_text_bytes": 420,
+    "verified_data_bytes": 0,
+    "relocations": [],
+    "source_sha256": "1171b9a60d873445cad333af3a3230347573159da61a7fabfeeb1615694aeaaa",
+    "objects": [],
+    "unlinked_functions": [],
+    "headers": [
+      {
+        "path": "include/Game/engine_range_operations.h",
+        "sha256": "bc3e7dff10c78d7c2f1bdf6078210627fa880a6e8cc4ca4b5f366229f7d62f2c"
+      }
+    ],
+    "actual_relocations": []
+  },
+  {
+    "source": "src/Game/engine_handle_ancestor.c",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,p",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "off",
+      "-i",
+      "include",
+      "-opt",
+      "nocse"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2149832920,
+        "end": 2149833144
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_8023D8D8",
+        "address": 2149832920,
+        "size": 224,
+        "scope": "global",
+        "kind": "range-operations",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "verified_text_bytes": 224,
+    "verified_data_bytes": 0,
+    "extra_cflags": [
+      "-opt",
+      "nocse"
+    ],
+    "relocations": [
+      {
+        "section": ".text",
+        "offset": 2,
+        "symbol": "lbl_801E9D24",
+        "target": "0x801e9d24",
+        "kind": 6
+      },
+      {
+        "section": ".text",
+        "offset": 10,
+        "symbol": "lbl_801E9D24",
+        "target": "0x801e9d24",
+        "kind": 4
+      }
+    ],
+    "source_sha256": "386a4da906079b42d34dfb51d0540d2572425ebc4dd689911a9bc07f351feeaf",
+    "objects": [],
+    "unlinked_functions": [],
+    "headers": [
+      {
+        "path": "include/Game/engine_range_operations.h",
+        "sha256": "bc3e7dff10c78d7c2f1bdf6078210627fa880a6e8cc4ca4b5f366229f7d62f2c"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 2,
+        "address": 2149832922,
+        "kind": 6,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 10,
+        "address": 2149832930,
+        "kind": 4,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      }
+    ]
+  },
+  {
+    "source": "src/Game/engine_handle_related_find.c",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,p",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "off",
+      "-i",
+      "include"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2149819868,
+        "end": 2149820120
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_8023A5DC",
+        "address": 2149819868,
+        "size": 252,
+        "scope": "global",
+        "kind": "range-operations",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "verified_text_bytes": 252,
+    "verified_data_bytes": 0,
+    "relocations": [
+      {
+        "section": ".text",
+        "offset": 2,
+        "symbol": "lbl_801E9D24",
+        "target": "0x801e9d24",
+        "kind": 6
+      },
+      {
+        "section": ".text",
+        "offset": 10,
+        "symbol": "lbl_801E9D24",
+        "target": "0x801e9d24",
+        "kind": 4
+      }
+    ],
+    "source_sha256": "553d7732d083c5bb45bfa2986fe121887f23f3fd9fdcce9ec529efa03c9bb5d8",
+    "objects": [],
+    "unlinked_functions": [],
+    "headers": [
+      {
+        "path": "include/Game/engine_range_operations.h",
+        "sha256": "bc3e7dff10c78d7c2f1bdf6078210627fa880a6e8cc4ca4b5f366229f7d62f2c"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 2,
+        "address": 2149819870,
+        "kind": 6,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 10,
+        "address": 2149819878,
+        "kind": 4,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      }
+    ]
+  }
+]

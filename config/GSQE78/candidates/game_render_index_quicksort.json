@@ -1,0 +1,112 @@
+[
+  {
+    "status": "isolated-retained-byte-match",
+    "source": "src/Game/render_index_quicksort.cpp",
+    "source_sha256": "047fd9d37e59835e4773aac4052db2d806cb1e41fa21bc787b43ddd01cee85a9",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,p",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "off",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-fp_contract",
+      "on",
+      "-i",
+      "include",
+      "-i",
+      "src/Game"
+    ],
+    "source_kind": "c++",
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2150047092,
+        "end": 2150048012,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_80271D74",
+        "address": 2150047092,
+        "size": 920,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [],
+    "unlinked_functions": [],
+    "headers": [
+      {
+        "path": "include/Game/render_index_quicksort.h",
+        "sha256": "d2b3b4af5f79415ca5b3dd44e9c340dd6c80203012951bb433a622f37d509eab"
+      }
+    ],
+    "dependency_symbols": [],
+    "validation": {
+      "relocations": 4,
+      "unlinked_relocations": 0,
+      "retained_text_bytes": 920,
+      "unlinked_text_bytes": 0,
+      "initialized_data_bytes": 0,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0
+    },
+    "verified_text_bytes": 920,
+    "verified_data_bytes": 0,
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 524,
+        "address": 2150047616,
+        "kind": 10,
+        "symbol": "fn_80271D74",
+        "target": 2150047092,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 552,
+        "address": 2150047644,
+        "kind": 10,
+        "symbol": "fn_80271D74",
+        "target": 2150047092,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 816,
+        "address": 2150047908,
+        "kind": 10,
+        "symbol": "fn_80271D74",
+        "target": 2150047092,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 844,
+        "address": 2150047936,
+        "kind": 10,
+        "symbol": "fn_80271D74",
+        "target": 2150047092,
+        "addend": 0
+      }
+    ]
+  }
+]

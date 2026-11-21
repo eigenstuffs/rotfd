@@ -1,0 +1,1490 @@
+{
+  "status": "accepted-standard-native-build",
+  "source": "src/Game/python_resource_callback_800201B0.cpp",
+  "source_sha256": "af1366e2beaee148af22ab3edad873040216b34c6f38a0852b2204fb87a9b96e",
+  "header_sha256": {},
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-proc",
+    "gekko",
+    "-fp",
+    "hardware",
+    "-enum",
+    "int",
+    "-str",
+    "reuse,readonly",
+    "-pool",
+    "on",
+    "-common",
+    "off",
+    "-O4,s",
+    "-inline",
+    "auto",
+    "-Cpp_exceptions",
+    "on",
+    "-RTTI",
+    "off",
+    "-use_lmw_stmw",
+    "on",
+    "-fp_contract",
+    "on"
+  ],
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2147615152,
+      "end": 2147615864,
+      "alignment": 4
+    },
+    {
+      "name": "extab",
+      "start": 2147506012,
+      "end": 2147506068,
+      "alignment": 4
+    },
+    {
+      "name": "extabindex",
+      "start": 2147573780,
+      "end": 2147573792,
+      "alignment": 4
+    }
+  ],
+  "functions": [
+    {
+      "name": "fn_800201B0",
+      "address": 2147615152,
+      "size": 712,
+      "scope": "global",
+      "section": ".text",
+      "object_offset": 0
+    }
+  ],
+  "objects": [
+    {
+      "name": "@81",
+      "address": 2147506012,
+      "size": 56,
+      "scope": "local",
+      "section": "extab",
+      "object_offset": 0
+    },
+    {
+      "name": "@82",
+      "address": 2147573780,
+      "size": 12,
+      "scope": "local",
+      "section": "extabindex",
+      "object_offset": 0
+    }
+  ],
+  "unlinked_functions": [
+    {
+      "name": "__dt__15Handle_80020478Fv",
+      "section": ".text",
+      "object_offset": 712,
+      "size": 112,
+      "raw_sha256": "b555f4c1e09736f0349654312a96b46128fc43d46bf4d21d2ff7d8294fc64a03",
+      "binding": "weak",
+      "scope": "weak",
+      "original_strong_definition": {
+        "canonical": "config/GSQE78/candidates/game_typed_handle_80020478.json",
+        "canonical_sha256": "91f6dd432a030c177ce9f1bcb187faeb61d8a0068a136a150d14a25ddebb3252",
+        "source": "src/Game/typed_handle_80020478.cpp",
+        "source_sha256": "6b57d6729d012c8e16bbcbb407e6fa29481c0fed5bfe90ba13d3d99c0bf61a89",
+        "address": 2147615864,
+        "size": 112
+      }
+    }
+  ],
+  "unlinked_objects": [
+    {
+      "name": "@91",
+      "section": "extab",
+      "object_offset": 56,
+      "size": 40,
+      "scope": "local",
+      "binding": "local",
+      "raw_sha256": "8ffb27e0963e4e1b0b33a1b5da00037858dee6a8867cd4847be13a787151ada8"
+    },
+    {
+      "name": "@92",
+      "section": "extabindex",
+      "object_offset": 12,
+      "size": 12,
+      "scope": "local",
+      "binding": "local",
+      "raw_sha256": "648dd13e43dbeaaa5d82272c7e8b4f0ca4e3e831658babb31fef229f4a1a8d1c"
+    }
+  ],
+  "weak_overrides": [
+    {
+      "name": "__dt__15Handle_80020478Fv",
+      "address": 2147615864,
+      "size": 112,
+      "binding": "global-strong",
+      "canonical_manifest": "config/GSQE78/candidates/game_typed_handle_80020478.json",
+      "canonical_manifest_sha256": "91f6dd432a030c177ce9f1bcb187faeb61d8a0068a136a150d14a25ddebb3252",
+      "source": "src/Game/typed_handle_80020478.cpp",
+      "source_sha256": "6b57d6729d012c8e16bbcbb407e6fa29481c0fed5bfe90ba13d3d99c0bf61a89",
+      "recursive_header_sha256": {
+        "src/Game/typed_handle_layers_internal.h": "389cd64734c1762e5c77f4eeee1a2d570f63be0c28f92cac50898f076e8e5f7e"
+      },
+      "production_object": "build/GSQE78/src/Game/typed_handle_80020478.o",
+      "production_object_sha256": "d2d55ca1d4837a6f332128e4b54cf7ec534608e49ef09286fee53791c03d1d71",
+      "recompiled_object": "scratch/resource_cache_callback_201B0_20261020/strong_80020478.o",
+      "recompiled_object_sha256": "d2d55ca1d4837a6f332128e4b54cf7ec534608e49ef09286fee53791c03d1d71",
+      "all_original_sections_exact": true,
+      "actual_relocations": [
+        {
+          "section": ".text",
+          "at": 36,
+          "address": 2147615900,
+          "kind": 10,
+          "symbol": "__dt__15Handle_801F7F10Fv",
+          "target": 2149547792,
+          "addend": 0
+        },
+        {
+          "section": ".text",
+          "at": 50,
+          "address": 2147615914,
+          "kind": 6,
+          "symbol": "lbl_801EF5C8",
+          "target": 2149512648,
+          "addend": 0
+        },
+        {
+          "section": ".text",
+          "at": 58,
+          "address": 2147615922,
+          "kind": 4,
+          "symbol": "lbl_801EF5C8",
+          "target": 2149512648,
+          "addend": 0
+        },
+        {
+          "section": ".text",
+          "at": 60,
+          "address": 2147615924,
+          "kind": 10,
+          "symbol": "fn_801EF610",
+          "target": 2149512720,
+          "addend": 0
+        },
+        {
+          "section": ".text",
+          "at": 72,
+          "address": 2147615936,
+          "kind": 10,
+          "symbol": "__unexpected",
+          "target": 2148663772,
+          "addend": 0
+        },
+        {
+          "section": "extabindex",
+          "at": 0,
+          "address": 2147573792,
+          "kind": 1,
+          "symbol": "__dt__15Handle_80020478Fv",
+          "target": 2147615864,
+          "addend": 0
+        },
+        {
+          "section": "extabindex",
+          "at": 8,
+          "address": 2147573800,
+          "kind": 1,
+          "symbol": "@18",
+          "target": 2147506068,
+          "addend": 0
+        }
+      ]
+    }
+  ],
+  "weak_override_audit": {
+    "primary": "fn_800201B0",
+    "retained_sections": [
+      {
+        "name": ".text",
+        "address": 2147615152,
+        "size": 712
+      },
+      {
+        "name": "extab",
+        "address": 2147506012,
+        "size": 56
+      },
+      {
+        "name": "extabindex",
+        "address": 2147573780,
+        "size": 12
+      }
+    ],
+    "emitted_sections": [
+      {
+        "name": ".text",
+        "size": 824,
+        "raw_sha256": "545f41178858d57f371677c6d1734d6ba908aa3d38a10aff006f7c67dc2cafd4"
+      },
+      {
+        "name": "extab",
+        "size": 96,
+        "raw_sha256": "d15ce3e91c9efa22f756fdb2797db3bc3661ef3dc29ee99099559218c9db7f1d"
+      },
+      {
+        "name": "extabindex",
+        "size": 24,
+        "raw_sha256": "03096c714df0cd098421e610037158107d589fcb1a46310a0b5187c92ef3757d"
+      }
+    ],
+    "allocated_inventory": [
+      {
+        "name": "@81",
+        "section": "extab",
+        "object_offset": 0,
+        "size": 56,
+        "binding": 0,
+        "type": 1,
+        "symbol_index": 6,
+        "role": "retained",
+        "raw_sha256": "04c0244780cc4bd94ee62da6fe4d8bb254c6c287b56f2540634db654dfff58fd"
+      },
+      {
+        "name": "@82",
+        "section": "extabindex",
+        "object_offset": 0,
+        "size": 12,
+        "binding": 0,
+        "type": 1,
+        "symbol_index": 7,
+        "role": "retained",
+        "raw_sha256": "9ff4bdfa7f90a0fe43460b88d1fac5143a616eab0d9311a6206673152a6eef72"
+      },
+      {
+        "name": "@91",
+        "section": "extab",
+        "object_offset": 56,
+        "size": 40,
+        "binding": 0,
+        "type": 1,
+        "symbol_index": 8,
+        "role": "linker-discarded-backup",
+        "raw_sha256": "8ffb27e0963e4e1b0b33a1b5da00037858dee6a8867cd4847be13a787151ada8"
+      },
+      {
+        "name": "@92",
+        "section": "extabindex",
+        "object_offset": 12,
+        "size": 12,
+        "binding": 0,
+        "type": 1,
+        "symbol_index": 9,
+        "role": "linker-discarded-backup",
+        "raw_sha256": "648dd13e43dbeaaa5d82272c7e8b4f0ca4e3e831658babb31fef229f4a1a8d1c"
+      },
+      {
+        "name": "fn_800201B0",
+        "section": ".text",
+        "object_offset": 0,
+        "size": 712,
+        "binding": 1,
+        "type": 2,
+        "symbol_index": 34,
+        "role": "retained",
+        "raw_sha256": "d063fda92ea9ee37ea6cc54147d2a9fb1263ab7fdb2b87c1e4405915b6181b0f"
+      },
+      {
+        "name": "__dt__15Handle_80020478Fv",
+        "section": ".text",
+        "object_offset": 712,
+        "size": 112,
+        "binding": 2,
+        "type": 2,
+        "symbol_index": 35,
+        "role": "linker-discarded-backup",
+        "raw_sha256": "b555f4c1e09736f0349654312a96b46128fc43d46bf4d21d2ff7d8294fc64a03"
+      }
+    ],
+    "groups": [
+      {
+        "function": "fn_800201B0",
+        "role": "retained",
+        "text": {
+          "name": "fn_800201B0",
+          "section": ".text",
+          "object_offset": 0,
+          "size": 712,
+          "binding": 1,
+          "type": 2,
+          "symbol_index": 34,
+          "role": "retained",
+          "raw_sha256": "d063fda92ea9ee37ea6cc54147d2a9fb1263ab7fdb2b87c1e4405915b6181b0f"
+        },
+        "extab": {
+          "name": "@81",
+          "section": "extab",
+          "object_offset": 0,
+          "size": 56,
+          "binding": 0,
+          "type": 1,
+          "symbol_index": 6,
+          "role": "retained",
+          "raw_sha256": "04c0244780cc4bd94ee62da6fe4d8bb254c6c287b56f2540634db654dfff58fd"
+        },
+        "extabindex": {
+          "name": "@82",
+          "section": "extabindex",
+          "object_offset": 0,
+          "size": 12,
+          "binding": 0,
+          "type": 1,
+          "symbol_index": 7,
+          "role": "retained",
+          "raw_sha256": "9ff4bdfa7f90a0fe43460b88d1fac5143a616eab0d9311a6206673152a6eef72"
+        }
+      },
+      {
+        "function": "__dt__15Handle_80020478Fv",
+        "role": "linker-discarded-backup",
+        "text": {
+          "name": "__dt__15Handle_80020478Fv",
+          "section": ".text",
+          "object_offset": 712,
+          "size": 112,
+          "binding": 2,
+          "type": 2,
+          "symbol_index": 35,
+          "role": "linker-discarded-backup",
+          "raw_sha256": "b555f4c1e09736f0349654312a96b46128fc43d46bf4d21d2ff7d8294fc64a03"
+        },
+        "extab": {
+          "name": "@91",
+          "section": "extab",
+          "object_offset": 56,
+          "size": 40,
+          "binding": 0,
+          "type": 1,
+          "symbol_index": 8,
+          "role": "linker-discarded-backup",
+          "raw_sha256": "8ffb27e0963e4e1b0b33a1b5da00037858dee6a8867cd4847be13a787151ada8"
+        },
+        "extabindex": {
+          "name": "@92",
+          "section": "extabindex",
+          "object_offset": 12,
+          "size": 12,
+          "binding": 0,
+          "type": 1,
+          "symbol_index": 9,
+          "role": "linker-discarded-backup",
+          "raw_sha256": "648dd13e43dbeaaa5d82272c7e8b4f0ca4e3e831658babb31fef229f4a1a8d1c"
+        }
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 20,
+        "kind": 109,
+        "symbol_index": 10,
+        "symbol": "lbl_80377F98",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "undefined-original",
+        "target": 2151120792
+      },
+      {
+        "section": ".text",
+        "at": 24,
+        "kind": 109,
+        "symbol_index": 12,
+        "symbol": "lbl_80377544",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "undefined-original",
+        "target": 2151118148
+      },
+      {
+        "section": ".text",
+        "at": 32,
+        "kind": 10,
+        "symbol_index": 19,
+        "symbol": "PyDict_Copy",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "undefined-original",
+        "target": 2148791228
+      },
+      {
+        "section": ".text",
+        "at": 36,
+        "kind": 109,
+        "symbol_index": 11,
+        "symbol": "lbl_80377540",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "undefined-original",
+        "target": 2151118144
+      },
+      {
+        "section": ".text",
+        "at": 44,
+        "kind": 10,
+        "symbol_index": 20,
+        "symbol": "PyInt_FromLong",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "undefined-original",
+        "target": 2148834204
+      },
+      {
+        "section": ".text",
+        "at": 52,
+        "kind": 109,
+        "symbol_index": 11,
+        "symbol": "lbl_80377540",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "undefined-original",
+        "target": 2151118144
+      },
+      {
+        "section": ".text",
+        "at": 60,
+        "kind": 10,
+        "symbol_index": 21,
+        "symbol": "PyDict_GetItem",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "undefined-original",
+        "target": 2148797300
+      },
+      {
+        "section": ".text",
+        "at": 68,
+        "kind": 10,
+        "symbol_index": 22,
+        "symbol": "PyString_AsString",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "undefined-original",
+        "target": 2148939864
+      },
+      {
+        "section": ".text",
+        "at": 76,
+        "kind": 10,
+        "symbol_index": 23,
+        "symbol": "strlen",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "undefined-original",
+        "target": 2148697592
+      },
+      {
+        "section": ".text",
+        "at": 92,
+        "kind": 109,
+        "symbol_index": 13,
+        "symbol": "lbl_803781D0",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "undefined-original",
+        "target": 2151121360
+      },
+      {
+        "section": ".text",
+        "at": 96,
+        "kind": 10,
+        "symbol_index": 24,
+        "symbol": "fn_8001FB04",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "undefined-original",
+        "target": 2147613444
+      },
+      {
+        "section": ".text",
+        "at": 112,
+        "kind": 10,
+        "symbol_index": 25,
+        "symbol": "PyObject_GetAttrString",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "undefined-original",
+        "target": 2148889920
+      },
+      {
+        "section": ".text",
+        "at": 284,
+        "kind": 10,
+        "symbol_index": 26,
+        "symbol": "PyObject_CallObject",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "undefined-original",
+        "target": 2148731252
+      },
+      {
+        "section": ".text",
+        "at": 296,
+        "kind": 109,
+        "symbol_index": 14,
+        "symbol": "lbl_8037754C",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "undefined-original",
+        "target": 2151118156
+      },
+      {
+        "section": ".text",
+        "at": 300,
+        "kind": 109,
+        "symbol_index": 15,
+        "symbol": "lbl_803781E4",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "undefined-original",
+        "target": 2151121380
+      },
+      {
+        "section": ".text",
+        "at": 308,
+        "kind": 10,
+        "symbol_index": 27,
+        "symbol": "PyObject_CallFunction",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "undefined-original",
+        "target": 2148730576
+      },
+      {
+        "section": ".text",
+        "at": 320,
+        "kind": 109,
+        "symbol_index": 16,
+        "symbol": "lbl_80377548",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "undefined-original",
+        "target": 2151118152
+      },
+      {
+        "section": ".text",
+        "at": 342,
+        "kind": 6,
+        "symbol_index": 17,
+        "symbol": "lbl_80299A94",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "undefined-original",
+        "target": 2150210196
+      },
+      {
+        "section": ".text",
+        "at": 350,
+        "kind": 4,
+        "symbol_index": 17,
+        "symbol": "lbl_80299A94",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "undefined-original",
+        "target": 2150210196
+      },
+      {
+        "section": ".text",
+        "at": 352,
+        "kind": 10,
+        "symbol_index": 28,
+        "symbol": "fn_801F948C",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "undefined-original",
+        "target": 2149553292
+      },
+      {
+        "section": ".text",
+        "at": 358,
+        "kind": 6,
+        "symbol_index": 18,
+        "symbol": "lbl_801E9D24",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "undefined-original",
+        "target": 2149489956
+      },
+      {
+        "section": ".text",
+        "at": 366,
+        "kind": 4,
+        "symbol_index": 18,
+        "symbol": "lbl_801E9D24",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "undefined-original",
+        "target": 2149489956
+      },
+      {
+        "section": ".text",
+        "at": 384,
+        "kind": 10,
+        "symbol_index": 29,
+        "symbol": "fn_80260868",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "undefined-original",
+        "target": 2149976168
+      },
+      {
+        "section": ".text",
+        "at": 392,
+        "kind": 10,
+        "symbol_index": 30,
+        "symbol": "fn_801F7EB8",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "undefined-original",
+        "target": 2149547704
+      },
+      {
+        "section": ".text",
+        "at": 412,
+        "kind": 10,
+        "symbol_index": 31,
+        "symbol": "__dt__15Handle_801F7F10Fv",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "undefined-original",
+        "target": 2149547792
+      },
+      {
+        "section": ".text",
+        "at": 416,
+        "kind": 10,
+        "symbol_index": 32,
+        "symbol": "PyErr_Print",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "undefined-original",
+        "target": 2149194396
+      },
+      {
+        "section": ".text",
+        "at": 426,
+        "kind": 6,
+        "symbol_index": 17,
+        "symbol": "lbl_80299A94",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "undefined-original",
+        "target": 2150210196
+      },
+      {
+        "section": ".text",
+        "at": 434,
+        "kind": 4,
+        "symbol_index": 17,
+        "symbol": "lbl_80299A94",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "undefined-original",
+        "target": 2150210196
+      },
+      {
+        "section": ".text",
+        "at": 436,
+        "kind": 10,
+        "symbol_index": 28,
+        "symbol": "fn_801F948C",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "undefined-original",
+        "target": 2149553292
+      },
+      {
+        "section": ".text",
+        "at": 442,
+        "kind": 6,
+        "symbol_index": 18,
+        "symbol": "lbl_801E9D24",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "undefined-original",
+        "target": 2149489956
+      },
+      {
+        "section": ".text",
+        "at": 450,
+        "kind": 4,
+        "symbol_index": 18,
+        "symbol": "lbl_801E9D24",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "undefined-original",
+        "target": 2149489956
+      },
+      {
+        "section": ".text",
+        "at": 468,
+        "kind": 10,
+        "symbol_index": 29,
+        "symbol": "fn_80260868",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "undefined-original",
+        "target": 2149976168
+      },
+      {
+        "section": ".text",
+        "at": 476,
+        "kind": 10,
+        "symbol_index": 30,
+        "symbol": "fn_801F7EB8",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "undefined-original",
+        "target": 2149547704
+      },
+      {
+        "section": ".text",
+        "at": 496,
+        "kind": 10,
+        "symbol_index": 31,
+        "symbol": "__dt__15Handle_801F7F10Fv",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "undefined-original",
+        "target": 2149547792
+      },
+      {
+        "section": ".text",
+        "at": 500,
+        "kind": 10,
+        "symbol_index": 32,
+        "symbol": "PyErr_Print",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "undefined-original",
+        "target": 2149194396
+      },
+      {
+        "section": ".text",
+        "at": 510,
+        "kind": 6,
+        "symbol_index": 17,
+        "symbol": "lbl_80299A94",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "undefined-original",
+        "target": 2150210196
+      },
+      {
+        "section": ".text",
+        "at": 518,
+        "kind": 4,
+        "symbol_index": 17,
+        "symbol": "lbl_80299A94",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "undefined-original",
+        "target": 2150210196
+      },
+      {
+        "section": ".text",
+        "at": 520,
+        "kind": 10,
+        "symbol_index": 28,
+        "symbol": "fn_801F948C",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "undefined-original",
+        "target": 2149553292
+      },
+      {
+        "section": ".text",
+        "at": 526,
+        "kind": 6,
+        "symbol_index": 18,
+        "symbol": "lbl_801E9D24",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "undefined-original",
+        "target": 2149489956
+      },
+      {
+        "section": ".text",
+        "at": 534,
+        "kind": 4,
+        "symbol_index": 18,
+        "symbol": "lbl_801E9D24",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "undefined-original",
+        "target": 2149489956
+      },
+      {
+        "section": ".text",
+        "at": 552,
+        "kind": 10,
+        "symbol_index": 29,
+        "symbol": "fn_80260868",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "undefined-original",
+        "target": 2149976168
+      },
+      {
+        "section": ".text",
+        "at": 560,
+        "kind": 10,
+        "symbol_index": 30,
+        "symbol": "fn_801F7EB8",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "undefined-original",
+        "target": 2149547704
+      },
+      {
+        "section": ".text",
+        "at": 580,
+        "kind": 10,
+        "symbol_index": 31,
+        "symbol": "__dt__15Handle_801F7F10Fv",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "undefined-original",
+        "target": 2149547792
+      },
+      {
+        "section": ".text",
+        "at": 584,
+        "kind": 10,
+        "symbol_index": 33,
+        "symbol": "PyErr_Occurred",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "undefined-original",
+        "target": 2149126540
+      },
+      {
+        "section": ".text",
+        "at": 596,
+        "kind": 10,
+        "symbol_index": 32,
+        "symbol": "PyErr_Print",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "undefined-original",
+        "target": 2149194396
+      },
+      {
+        "section": ".text",
+        "at": 748,
+        "kind": 10,
+        "symbol_index": 31,
+        "symbol": "__dt__15Handle_801F7F10Fv",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "discarded",
+        "resolution": "undefined-original",
+        "target": 2149547792
+      },
+      {
+        "section": ".text",
+        "at": 762,
+        "kind": 6,
+        "symbol_index": 36,
+        "symbol": "lbl_801EF5C8",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "discarded",
+        "resolution": "undefined-original",
+        "target": 2149512648
+      },
+      {
+        "section": ".text",
+        "at": 770,
+        "kind": 4,
+        "symbol_index": 36,
+        "symbol": "lbl_801EF5C8",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "discarded",
+        "resolution": "undefined-original",
+        "target": 2149512648
+      },
+      {
+        "section": ".text",
+        "at": 772,
+        "kind": 10,
+        "symbol_index": 37,
+        "symbol": "fn_801EF610",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "discarded",
+        "resolution": "undefined-original",
+        "target": 2149512720
+      },
+      {
+        "section": ".text",
+        "at": 784,
+        "kind": 10,
+        "symbol_index": 38,
+        "symbol": "__unexpected",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "discarded",
+        "resolution": "undefined-original",
+        "target": 2148663772
+      },
+      {
+        "section": "extab",
+        "at": 36,
+        "kind": 1,
+        "symbol_index": 35,
+        "symbol": "__dt__15Handle_80020478Fv",
+        "addend": 0,
+        "binding": 2,
+        "defined_section": ".text",
+        "defined_offset": 712,
+        "role": "retained",
+        "resolution": "original-global-strong",
+        "target": 2147615864
+      },
+      {
+        "section": "extab",
+        "at": 44,
+        "kind": 1,
+        "symbol_index": 35,
+        "symbol": "__dt__15Handle_80020478Fv",
+        "addend": 0,
+        "binding": 2,
+        "defined_section": ".text",
+        "defined_offset": 712,
+        "role": "retained",
+        "resolution": "original-global-strong",
+        "target": 2147615864
+      },
+      {
+        "section": "extab",
+        "at": 52,
+        "kind": 1,
+        "symbol_index": 35,
+        "symbol": "__dt__15Handle_80020478Fv",
+        "addend": 0,
+        "binding": 2,
+        "defined_section": ".text",
+        "defined_offset": 712,
+        "role": "retained",
+        "resolution": "original-global-strong",
+        "target": 2147615864
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "kind": 1,
+        "symbol_index": 34,
+        "symbol": "fn_800201B0",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": ".text",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "retained-local",
+        "target": 2147615152
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "kind": 1,
+        "symbol_index": 6,
+        "symbol": "@81",
+        "addend": 0,
+        "binding": 0,
+        "defined_section": "extab",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "retained-local",
+        "target": 2147506012
+      },
+      {
+        "section": "extabindex",
+        "at": 12,
+        "kind": 1,
+        "symbol_index": 35,
+        "symbol": "__dt__15Handle_80020478Fv",
+        "addend": 0,
+        "binding": 2,
+        "defined_section": ".text",
+        "defined_offset": 712,
+        "role": "discarded",
+        "resolution": "original-global-strong",
+        "target": 2147615864
+      },
+      {
+        "section": "extabindex",
+        "at": 20,
+        "kind": 1,
+        "symbol_index": 8,
+        "symbol": "@91",
+        "addend": 0,
+        "binding": 0,
+        "defined_section": "extab",
+        "defined_offset": 56,
+        "role": "discarded",
+        "resolution": "discarded-local"
+      }
+    ],
+    "retained_strong_overrides": [
+      {
+        "section": "extab",
+        "at": 36,
+        "kind": 1,
+        "symbol_index": 35,
+        "symbol": "__dt__15Handle_80020478Fv",
+        "addend": 0,
+        "binding": 2,
+        "defined_section": ".text",
+        "defined_offset": 712,
+        "role": "retained",
+        "resolution": "original-global-strong",
+        "target": 2147615864
+      },
+      {
+        "section": "extab",
+        "at": 44,
+        "kind": 1,
+        "symbol_index": 35,
+        "symbol": "__dt__15Handle_80020478Fv",
+        "addend": 0,
+        "binding": 2,
+        "defined_section": ".text",
+        "defined_offset": 712,
+        "role": "retained",
+        "resolution": "original-global-strong",
+        "target": 2147615864
+      },
+      {
+        "section": "extab",
+        "at": 52,
+        "kind": 1,
+        "symbol_index": 35,
+        "symbol": "__dt__15Handle_80020478Fv",
+        "addend": 0,
+        "binding": 2,
+        "defined_section": ".text",
+        "defined_offset": 712,
+        "role": "retained",
+        "resolution": "original-global-strong",
+        "target": 2147615864
+      }
+    ],
+    "metadata_relocations": [
+      {
+        "section": ".mwcats.text",
+        "at": 4,
+        "kind": 1,
+        "symbol_index": 34,
+        "symbol": "fn_800201B0",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": ".text",
+        "defined_offset": 0
+      },
+      {
+        "section": ".mwcats.text",
+        "at": 12,
+        "kind": 1,
+        "symbol_index": 35,
+        "symbol": "__dt__15Handle_80020478Fv",
+        "addend": 0,
+        "binding": 2,
+        "defined_section": ".text",
+        "defined_offset": 712
+      }
+    ],
+    "validation": {
+      "retained_text_bytes": 712,
+      "retained_data_bytes": 68,
+      "uncredited_backup_text_bytes": 112,
+      "uncredited_backup_data_bytes": 52,
+      "retained_relocations": 50,
+      "backup_relocations": 7,
+      "all_allocated_bytes_accounted": true,
+      "all_retained_original_bytes_exact": true
+    },
+    "schema": "production-defined-weak-eh-override-v1",
+    "fixture_source": "src/Game/python_resource_callback_800201B0.cpp",
+    "fixture_source_sha256": "af1366e2beaee148af22ab3edad873040216b34c6f38a0852b2204fb87a9b96e",
+    "fixture_object": "build/GSQE78/src/Game/python_resource_callback_800201B0.o",
+    "fixture_object_sha256": "a973c86dcca50f8abdd68a79d9f03a947d4f5f72e919672b38b13fc40c100b3b",
+    "strong_owners": [
+      {
+        "name": "__dt__15Handle_80020478Fv",
+        "address": 2147615864,
+        "size": 112,
+        "binding": "global-strong",
+        "canonical_manifest": "config/GSQE78/candidates/game_typed_handle_80020478.json",
+        "canonical_manifest_sha256": "91f6dd432a030c177ce9f1bcb187faeb61d8a0068a136a150d14a25ddebb3252",
+        "source": "src/Game/typed_handle_80020478.cpp",
+        "source_sha256": "6b57d6729d012c8e16bbcbb407e6fa29481c0fed5bfe90ba13d3d99c0bf61a89",
+        "recursive_header_sha256": {
+          "src/Game/typed_handle_layers_internal.h": "389cd64734c1762e5c77f4eeee1a2d570f63be0c28f92cac50898f076e8e5f7e"
+        },
+        "production_object": "build/GSQE78/src/Game/typed_handle_80020478.o",
+        "production_object_sha256": "d2d55ca1d4837a6f332128e4b54cf7ec534608e49ef09286fee53791c03d1d71",
+        "recompiled_object": "scratch/resource_cache_callback_201B0_20261020/strong_80020478.o",
+        "recompiled_object_sha256": "d2d55ca1d4837a6f332128e4b54cf7ec534608e49ef09286fee53791c03d1d71",
+        "all_original_sections_exact": true,
+        "actual_relocations": [
+          {
+            "section": ".text",
+            "at": 36,
+            "address": 2147615900,
+            "kind": 10,
+            "symbol": "__dt__15Handle_801F7F10Fv",
+            "target": 2149547792,
+            "addend": 0
+          },
+          {
+            "section": ".text",
+            "at": 50,
+            "address": 2147615914,
+            "kind": 6,
+            "symbol": "lbl_801EF5C8",
+            "target": 2149512648,
+            "addend": 0
+          },
+          {
+            "section": ".text",
+            "at": 58,
+            "address": 2147615922,
+            "kind": 4,
+            "symbol": "lbl_801EF5C8",
+            "target": 2149512648,
+            "addend": 0
+          },
+          {
+            "section": ".text",
+            "at": 60,
+            "address": 2147615924,
+            "kind": 10,
+            "symbol": "fn_801EF610",
+            "target": 2149512720,
+            "addend": 0
+          },
+          {
+            "section": ".text",
+            "at": 72,
+            "address": 2147615936,
+            "kind": 10,
+            "symbol": "__unexpected",
+            "target": 2148663772,
+            "addend": 0
+          },
+          {
+            "section": "extabindex",
+            "at": 0,
+            "address": 2147573792,
+            "kind": 1,
+            "symbol": "__dt__15Handle_80020478Fv",
+            "target": 2147615864,
+            "addend": 0
+          },
+          {
+            "section": "extabindex",
+            "at": 8,
+            "address": 2147573800,
+            "kind": 1,
+            "symbol": "@18",
+            "target": 2147506068,
+            "addend": 0
+          }
+        ]
+      }
+    ]
+  },
+  "unlinked_exception_groups": [
+    {
+      "function": "__dt__15Handle_80020478Fv",
+      "role": "linker-discarded-backup",
+      "text": {
+        "name": "__dt__15Handle_80020478Fv",
+        "section": ".text",
+        "object_offset": 712,
+        "size": 112,
+        "binding": 2,
+        "type": 2,
+        "symbol_index": 35,
+        "role": "linker-discarded-backup",
+        "raw_sha256": "b555f4c1e09736f0349654312a96b46128fc43d46bf4d21d2ff7d8294fc64a03"
+      },
+      "extab": {
+        "name": "@91",
+        "section": "extab",
+        "object_offset": 56,
+        "size": 40,
+        "binding": 0,
+        "type": 1,
+        "symbol_index": 8,
+        "role": "linker-discarded-backup",
+        "raw_sha256": "8ffb27e0963e4e1b0b33a1b5da00037858dee6a8867cd4847be13a787151ada8"
+      },
+      "extabindex": {
+        "name": "@92",
+        "section": "extabindex",
+        "object_offset": 12,
+        "size": 12,
+        "binding": 0,
+        "type": 1,
+        "symbol_index": 9,
+        "role": "linker-discarded-backup",
+        "raw_sha256": "648dd13e43dbeaaa5d82272c7e8b4f0ca4e3e831658babb31fef229f4a1a8d1c"
+      }
+    }
+  ],
+  "emitted_sections": [
+    {
+      "name": ".text",
+      "size": 824,
+      "raw_sha256": "545f41178858d57f371677c6d1734d6ba908aa3d38a10aff006f7c67dc2cafd4"
+    },
+    {
+      "name": "extab",
+      "size": 96,
+      "raw_sha256": "d15ce3e91c9efa22f756fdb2797db3bc3661ef3dc29ee99099559218c9db7f1d"
+    },
+    {
+      "name": "extabindex",
+      "size": 24,
+      "raw_sha256": "03096c714df0cd098421e610037158107d589fcb1a46310a0b5187c92ef3757d"
+    }
+  ],
+  "headers": [],
+  "original_metadata_audit": {
+    "extabindex_scan": [
+      2147573600,
+      2147611328,
+      12
+    ],
+    "matching_extabindex": [
+      {
+        "address": 2147573780,
+        "function": 2147615152,
+        "size": 712,
+        "extab": 2147506012
+      }
+    ],
+    "ctors_scan": [
+      2150209824,
+      2150209920,
+      4
+    ],
+    "dtors_scan": [
+      2150209920,
+      2150209952,
+      4
+    ],
+    "ctors": [],
+    "dtors": []
+  },
+  "verified_text_bytes": 712,
+  "verified_data_bytes": 68,
+  "validation": {
+    "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "object_sha256": "a973c86dcca50f8abdd68a79d9f03a947d4f5f72e919672b38b13fc40c100b3b",
+    "retained_text_bytes": 712,
+    "initialized_data_bytes": 68,
+    "bss_bytes": 0,
+    "owned_padding_bytes": 0,
+    "relocations": 50,
+    "unlinked_relocations": 7,
+    "uncredited_text_bytes": 112,
+    "uncredited_metadata_bytes": 52,
+    "all_emitted_allocated_bytes_accounted": true,
+    "zero_byte_differences": true,
+    "central_final_native_discard_required": false
+  },
+  "integration": {
+    "object_path": "build/GSQE78/src/Game/python_resource_callback_800201B0.o",
+    "object_sha256": "a973c86dcca50f8abdd68a79d9f03a947d4f5f72e919672b38b13fc40c100b3b",
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "all_retained_bytes_exact": true,
+    "retained_candidate_locals": [
+      {
+        "name": "@81",
+        "offset": 2147506012,
+        "size": 56,
+        "binding": 0,
+        "type": 1,
+        "section_index": 2,
+        "section": "extab"
+      },
+      {
+        "name": "@82",
+        "offset": 2147573780,
+        "size": 12,
+        "binding": 0,
+        "type": 1,
+        "section_index": 3,
+        "section": "extabindex"
+      }
+    ],
+    "selected_strong_provider": {
+      "name": "__dt__15Handle_80020478Fv",
+      "offset": 2147615864,
+      "size": 112,
+      "binding": 1,
+      "type": 2,
+      "section_index": 4,
+      "section": ".text"
+    },
+    "all_weak_backups_discarded": true,
+    "private_native_map_proof": "scratch/resource_cache_callback_201B0_20261020/native-discard-proof.json"
+  }
+}

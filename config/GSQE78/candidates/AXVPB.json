@@ -1,0 +1,286 @@
+{
+  "source": "src/dolphin/ax/AXVPB.c",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.2.5n",
+  "cflags": "-proc gekko -fp hardware -enum int -str reuse -common off -O4,p -inline auto -i src/dolphin/ax -Cpp_exceptions off",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2148544220,
+      "end": 2148548512
+    },
+    {
+      "name": ".data",
+      "start": 2150410744,
+      "end": 2150410956
+    },
+    {
+      "name": ".bss",
+      "start": 2150765952,
+      "end": 2150836608
+    },
+    {
+      "name": ".sbss",
+      "start": 2151119848,
+      "end": 2151119860
+    },
+    {
+      "name": ".sdata2",
+      "start": 2151127200,
+      "end": 2151127204
+    }
+  ],
+  "functions": [
+    {
+      "name": "__AXGetNumVoices",
+      "address": 2148544220,
+      "size": 8
+    },
+    {
+      "name": "__AXServiceVPB",
+      "address": 2148544228,
+      "size": 1788
+    },
+    {
+      "name": "__AXSyncPBs",
+      "address": 2148546016,
+      "size": 616
+    },
+    {
+      "name": "__AXGetPBs",
+      "address": 2148546632,
+      "size": 12
+    },
+    {
+      "name": "__AXSetPBDefault",
+      "address": 2148546644,
+      "size": 60
+    },
+    {
+      "name": "__AXVPBInit",
+      "address": 2148546704,
+      "size": 508
+    },
+    {
+      "name": "__AXVPBQuit",
+      "address": 2148547212,
+      "size": 4
+    },
+    {
+      "name": "AXSetVoiceSrcType",
+      "address": 2148547216,
+      "size": 196
+    },
+    {
+      "name": "AXSetVoiceState",
+      "address": 2148547412,
+      "size": 92
+    },
+    {
+      "name": "AXSetVoiceType",
+      "address": 2148547504,
+      "size": 76
+    },
+    {
+      "name": "AXSetVoiceAddr",
+      "address": 2148547580,
+      "size": 272
+    },
+    {
+      "name": "AXSetVoiceLoop",
+      "address": 2148547852,
+      "size": 76
+    },
+    {
+      "name": "AXSetVoiceAdpcm",
+      "address": 2148547928,
+      "size": 164
+    },
+    {
+      "name": "AXSetVoiceSrc",
+      "address": 2148548092,
+      "size": 152
+    },
+    {
+      "name": "AXSetVoiceSrcRatio",
+      "address": 2148548244,
+      "size": 152
+    },
+    {
+      "name": "AXSetVoiceAdpcmLoop",
+      "address": 2148548396,
+      "size": 108
+    },
+    {
+      "name": "AXGetMaxDspCycles",
+      "address": 2148548504,
+      "size": 8
+    }
+  ],
+  "objects": [
+    {
+      "name": "__AXSrcCycles",
+      "address": 2150410744,
+      "size": 20,
+      "section": ".data"
+    },
+    {
+      "name": "__AXMainMixCycles",
+      "address": 2150410764,
+      "size": 64,
+      "section": ".data"
+    },
+    {
+      "name": "__AXAuxMixCycles",
+      "address": 2150410828,
+      "size": 128,
+      "section": ".data"
+    },
+    {
+      "name": "__AXPB",
+      "address": 2150765952,
+      "size": 15104,
+      "section": ".bss"
+    },
+    {
+      "name": "__AXITD",
+      "address": 2150781056,
+      "size": 4096,
+      "section": ".bss"
+    },
+    {
+      "name": "__AXUpdates",
+      "address": 2150785152,
+      "size": 16384,
+      "section": ".bss"
+    },
+    {
+      "name": "__AXVPB",
+      "address": 2150801536,
+      "size": 35072,
+      "section": ".bss"
+    },
+    {
+      "name": "__AXMaxDspCycles",
+      "address": 2151119848,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "__AXRecDspCycles",
+      "address": 2151119852,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "__AXNumVoices",
+      "address": 2151119856,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "@179",
+      "address": 2151127200,
+      "size": 4,
+      "section": ".sdata2",
+      "scope": "local",
+      "compiler_assembly_name": "\"@179\"",
+      "data_kind": "float"
+    }
+  ],
+  "symbol_scopes": {
+    "__AXGetNumVoices": "global",
+    "__AXServiceVPB": "global",
+    "__AXSyncPBs": "global",
+    "__AXGetPBs": "global",
+    "__AXSetPBDefault": "global",
+    "__AXVPBInit": "global",
+    "__AXVPBQuit": "global",
+    "AXSetVoiceSrcType": "global",
+    "AXSetVoiceState": "global",
+    "AXSetVoiceType": "global",
+    "AXSetVoiceAddr": "global",
+    "AXSetVoiceLoop": "global",
+    "AXSetVoiceAdpcm": "global",
+    "AXSetVoiceSrc": "global",
+    "AXSetVoiceSrcRatio": "global",
+    "AXSetVoiceAdpcmLoop": "global",
+    "AXGetMaxDspCycles": "global",
+    "__AXSrcCycles": "local",
+    "__AXMainMixCycles": "local",
+    "__AXAuxMixCycles": "local",
+    "__AXPB": "local",
+    "__AXITD": "local",
+    "__AXUpdates": "local",
+    "__AXVPB": "local",
+    "__AXMaxDspCycles": "local",
+    "__AXRecDspCycles": "local",
+    "__AXNumVoices": "local",
+    "@179": "local"
+  },
+  "symbols": {
+    "__AXGetNumVoices": "0x80102edc",
+    "__AXServiceVPB": "0x80102ee4",
+    "__AXSyncPBs": "0x801035e0",
+    "__AXGetPBs": "0x80103848",
+    "__AXSetPBDefault": "0x80103854",
+    "__AXVPBInit": "0x80103890",
+    "__AXVPBQuit": "0x80103a8c",
+    "AXSetVoiceSrcType": "0x80103a90",
+    "AXSetVoiceState": "0x80103b54",
+    "AXSetVoiceType": "0x80103bb0",
+    "AXSetVoiceAddr": "0x80103bfc",
+    "AXSetVoiceLoop": "0x80103d0c",
+    "AXSetVoiceAdpcm": "0x80103d58",
+    "AXSetVoiceSrc": "0x80103dfc",
+    "AXSetVoiceSrcRatio": "0x80103e94",
+    "AXSetVoiceAdpcmLoop": "0x80103f2c",
+    "AXGetMaxDspCycles": "0x80103f98",
+    "__AXSrcCycles": "0x802ca9f8",
+    "__AXMainMixCycles": "0x802caa0c",
+    "__AXAuxMixCycles": "0x802caa4c",
+    "__AXPB": "0x80321580",
+    "__AXITD": "0x80325080",
+    "__AXUpdates": "0x80326080",
+    "__AXVPB": "0x8032a080",
+    "__AXMaxDspCycles": "0x80377be8",
+    "__AXRecDspCycles": "0x80377bec",
+    "__AXNumVoices": "0x80377bf0",
+    "DCInvalidateRange": "0x800f223c",
+    "__AXGetCommandListCycles": "0x80101c24",
+    "__AXGetStackHead": "0x801012d4",
+    "__AXDepopVoice": "0x80102e48",
+    "__AXPushCallbackStack": "0x801014e8",
+    "DCFlushRange": "0x800f2268",
+    "__AXPushFreeStack": "0x801014c8",
+    "OSDisableInterrupts": "0x800f362c",
+    "OSRestoreInterrupts": "0x800f3654",
+    "__cvt_fp2unsigned": "0x8011f4f4",
+    "@179": "0x803798a0"
+  },
+  "external_original_names": {
+    "DCInvalidateRange": "DCInvalidateRange",
+    "__AXGetCommandListCycles": "fn_80101C24",
+    "__AXGetStackHead": "fn_801012D4",
+    "__AXDepopVoice": "fn_80102E48",
+    "__AXPushCallbackStack": "fn_801014E8",
+    "DCFlushRange": "DCFlushRange",
+    "__AXPushFreeStack": "fn_801014C8",
+    "OSDisableInterrupts": "OSDisableInterrupts",
+    "OSRestoreInterrupts": "OSRestoreInterrupts",
+    "__cvt_fp2unsigned": "__cvt_fp2unsigned"
+  },
+  "verified_text_bytes": 4292,
+  "verified_data_bytes": 216,
+  "source_kind": "c",
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "ed4fbfb98549139503aded22d0d34ce7a92e2e9de55c1621e437483e62d7b520",
+    "matched_code": 4292,
+    "matched_functions": 17,
+    "matched_data": 70884,
+    "complete_data": 70884,
+    "object_path": "build/GSQE78/src/dolphin/ax/AXVPB.o",
+    "object_sha256": "df420a54900b18b4405056f06c78c095f6d17a0901458ca8369f7cdac43c82b0"
+  }
+}

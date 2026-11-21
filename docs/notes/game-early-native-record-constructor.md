@@ -1,0 +1,15 @@
+# Native record default construction
+
+Accepted matching source: the production build passes the original DOL hash,
+strict allocated-byte/extent and actual-relocation checks, baseline regression
+checks, generated progress verification and all 26 repository tests.
+
+`src/Game/early_native_record_constructor_800219a8.cpp` preserves root's ordinary native `Record_800218F8` default constructor reconstruction. The428-byte original entry at800219A8 initializes two layered Handle members at8C/90, scalar defaults, four vectors and an invalid index. It then assigns a zero Handle temporary to both members through the original retain/release operations. The recovered native identity is `__ct__15Record_800218F8Fv`.
+
+The isolated production object exactly matches428 code bytes,72-byte exception table80005AD0 and12-byte index8001611C under GC1.3.2 O4,s/exceptions flags. All26 retained actual relocations match. No compiler literal pool, BSS or padding is owned. Existing scalar constants and the shared zero vector stay external.
+
+The standard production-defined-weak-eh-override-v1 gate accounts for all emitted allocations. Retained EH has three references to the accepted strong120-byte `__dt__15Handle_80021B54Fv`; its canonical production object, source, recursive header and actual relocations were independently recompiled/reverified. The compiler's120-byte backup plus40EH/12index must be discarded. Two unique private zero-layer backups80/76 bytes plus8EH/12index each must also be discarded. Total uncredited backups:276 text+92 metadata,15 actual relocations. Only the retained428 text+84 metadata are claimed; all four nonallocated category relocations are inventoried.
+
+The full original exception index80015F60..8001F2C0 and constructor/destructor tables pass. The initialized-data pointer scan finds only the owned index. An independent scan of5519 active original ELF inputs and119086 actual relocations finds one old strong428-byte definition, no native constructor definition, and eight old-name references: seven callers plus its index. Ten existing source files across two canonical manifests mention the old entry; seven are unused local wrapper declarations and three emit calls. Private copies replacing only the external identifier pass complete original allocated-byte, symbol-extent and real relocation equivalence checks. Existing sources/canonicals remain unchanged for root integration. The SDK's new event caller already uses the native constructor declaration.
+
+The native symbol address is supplied only to the private verifier until root performs the concrete central identity migration from `fn_800219A8`. No linker/source alias is introduced and no matching credit applies before original-placement linking and full DOL acceptance. The frozen handoff and consumer inventories are `scratch/game_engine_batch153/HANDOFF.md` and `scratch/game_early_native_record_constructor/identity-inventory.json`; repeat strict proof with `python3 scratch/game_early_native_record_constructor/verify.py`.

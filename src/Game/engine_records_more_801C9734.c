@@ -1,0 +1,4 @@
+/* Original engine records and ownership loops.
+ * See docs/notes/game-engine-records-more.md. */
+extern void slot0C__12BaseObject_ZFUl(void *,void *);extern void *fn_801E9F40(void *,const void *,unsigned int);extern struct {char pad[0x118];void *manager;} lbl_801E9D24;extern void fn_801B41B8(void *,void *,void **);
+void fn_801C9734(void *object,void **stream) {slot0C__12BaseObject_ZFUl(object,stream);*stream=fn_801E9F40((char *)object+0xc,*stream,(unsigned int)((char *)object+0x70)-(unsigned int)((char *)object+0xc)+1);fn_801B41B8(lbl_801E9D24.manager,(char *)object+0x74,stream);fn_801B41B8(lbl_801E9D24.manager,(char *)object+0x78,stream);}

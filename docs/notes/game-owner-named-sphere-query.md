@@ -1,0 +1,13 @@
+# Named owner sphere query
+
+Frozen isolated matching proof for `fn_801C2B98` (`801C2B98..801C2F5C`,964 bytes). Production and independent recompilation match every retained text byte and all26 actual relocations. No data, EH, startup table, helper or discarded allocation is emitted. Root integration and full original DOL acceptance remain separate requirements.
+
+The routine selects one of three named bounds records for modes0,2,3, resolves the owner and selected object transforms, combines them, and transforms the resulting sphere into the output. The four-byte selected-record field follows the16-byte sphere. The owner virtual Handle getter is observed at slot9C with the vptr at8, and its parent Handle is observed at1A8.
+
+The native matrix product writes through its third pointer. A genuine inline value-returning product supplies the original64-byte local followed by the64-byte argument copy. Naming the first matrix pointer before the second Handle lookup reproduces the original resolver reload and scheduling. `fn_80099A00` is declared here with an aggregate Matrix argument and hidden Sphere return, matching the actual r3/r4/r5 contract and copy. Other incomplete units use a pointer partial view at this C entry; this is an observed same-layout ABI approximation, not a recovered complete original interface.
+
+All original C and GLOBAL data identities stay unchanged. `game_vec4_zero`, text storage label `lbl_801E9D24`, the three SDA objects at8037A3B0/B4/B8, and the9-byte string at802ACA78 remain borrowed and uncredited. The one original initialized entry pointer is at802EBB38. The full original+active union census scanned10,490 inputs,204,111 allocated relocations and501,416 initialized-data byte positions. It found no function interiors or borrowed literal interiors; all retained references are named with zero addends. Full original extabindex3144/ctors24/dtors8 slot scans find no ownership for this text range.
+
+The isolated real MWLD link retains the complete964-byte source function and resolves all26 actual relocations. It uses original SDA input and fixed original addresses for other borrowed dependencies; full game placement/hash remains root acceptance. Fresh strict guards reject70 source/header/identity/allocation/payload/relocation mutations. Two harness iterations are preserved: a HA addend needs explicit actual-record comparison even when its high16 payload is unchanged, and a .bss→.bss test was a no-op rather than a mutation. No verifier core changed.
+
+Production files and this historical proof note are frozen with the handoff; future acceptance status belongs in separate root records.

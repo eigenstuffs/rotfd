@@ -1,0 +1,117 @@
+{
+  "source": "src/Game/math_globals.cpp",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.3.2",
+  "cflags": "-proc gekko -fp hardware -fp_contract on -enum int -str reuse -common off -O4,p -inline auto -Cpp_exceptions off",
+  "splits": [
+    {
+      "section": ".text",
+      "start": "0x801f29e0",
+      "end": "0x801f2a4c"
+    },
+    {
+      "section": ".ctors",
+      "start": "0x80299954",
+      "end": "0x80299958"
+    },
+    {
+      "section": ".bss",
+      "start": "0x80340b48",
+      "end": "0x80340b80"
+    },
+    {
+      "section": ".sbss",
+      "start": "0x80377fd0",
+      "end": "0x80377fd8"
+    }
+  ],
+  "functions": [
+    {
+      "name": "__sinit_math_globals_cpp",
+      "section": ".text",
+      "address": "0x801f29e0",
+      "size": "0x6c",
+      "scope": "local",
+      "original_name": "fn_801F29E0"
+    }
+  ],
+  "data_symbols": [
+    {
+      "name": "game_int3_zero",
+      "section": ".bss",
+      "address": "0x80340b48",
+      "size": "0xc",
+      "scope": "global",
+      "original_name": "lbl_80340B48"
+    },
+    {
+      "name": "game_vec2_zero",
+      "section": ".sbss",
+      "address": "0x80377fd0",
+      "size": "0x8",
+      "scope": "global",
+      "original_name": "lbl_80377FD0"
+    },
+    {
+      "name": "game_vec3_zero",
+      "section": ".bss",
+      "address": "0x80340b54",
+      "size": "0xc",
+      "scope": "global",
+      "original_name": "lbl_80340B54"
+    },
+    {
+      "name": "game_vec4_zero",
+      "section": ".bss",
+      "address": "0x80340b60",
+      "size": "0x10",
+      "scope": "global",
+      "original_name": "lbl_80340B60"
+    },
+    {
+      "name": "game_quat_identity",
+      "section": ".bss",
+      "address": "0x80340b70",
+      "size": "0x10",
+      "scope": "global",
+      "original_name": "lbl_80340B70"
+    }
+  ],
+  "section_anchors": [],
+  "dependency_symbols": [
+    {
+      "name": "game_math_zero",
+      "address": "0x8037a6fc"
+    },
+    {
+      "name": "game_math_one",
+      "address": "0x8037a704"
+    }
+  ],
+  "notes": "docs/notes/game-scalar-math.md",
+  "split_notes": [
+    "Reconstructed partial game math unit; original names and full original translation-unit extent are not claimed. Native paired-single primitives and unresolved quaternion routines remain original fallback.",
+    "Ordinary C++ global constructors emit the exact initialization function, pooled BSS layout and .ctors pointer. Zero-sized ...bss.0 is an internal section anchor, not an independent object to register."
+  ],
+  "validation": {
+    "code_bytes": 108,
+    "emitted_data_bytes": 4,
+    "bss_layout_bytes": 64,
+    "relocations_applied": 7,
+    "byte_differences": 0,
+    "source_sha256": "ff982ff768a200a2fabd01fd6e5e6f5800e26373cb24bd9cf3101bee5d20902a",
+    "object_sha256": "01f4c08a198232db7fdfb2fb73a4862c43f498bb816c5e0390caa00e31e479e9",
+    "original_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "integration_status": "verified full-DOL and objdiff"
+  },
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "ff982ff768a200a2fabd01fd6e5e6f5800e26373cb24bd9cf3101bee5d20902a",
+    "matched_code": 108,
+    "matched_functions": 1,
+    "matched_data": 68,
+    "complete_data": 68,
+    "object_path": "build/GSQE78/src/Game/math_globals.o",
+    "object_sha256": "01f4c08a198232db7fdfb2fb73a4862c43f498bb816c5e0390caa00e31e479e9"
+  }
+}

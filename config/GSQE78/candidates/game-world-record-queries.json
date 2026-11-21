@@ -1,0 +1,150 @@
+{
+  "status": "integrated-byte-match",
+  "source": "src/Game/world_record_queries.cpp",
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-proc",
+    "gekko",
+    "-fp",
+    "hardware",
+    "-enum",
+    "int",
+    "-str",
+    "reuse",
+    "-common",
+    "off",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-Cpp_exceptions",
+    "off",
+    "-RTTI",
+    "off",
+    "-use_lmw_stmw",
+    "on",
+    "-i",
+    "src/Game",
+    "-i",
+    "include"
+  ],
+  "source_kind": "c++",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2149468396,
+      "end": 2149469268,
+      "alignment": 4
+    }
+  ],
+  "functions": [
+    {
+      "name": "fn_801E48EC",
+      "address": 2149468396,
+      "size": 200,
+      "scope": "global",
+      "section": ".text",
+      "object_offset": 0,
+      "sha256": "0f51ccdadc3a849098a3f647c4a584c685a231ccc84ca8a5a0f4aba1a820a97c"
+    },
+    {
+      "name": "fn_801E49B4",
+      "address": 2149468596,
+      "size": 80,
+      "scope": "global",
+      "section": ".text",
+      "object_offset": 200,
+      "sha256": "37a440bfc0d0e619b50235fffff1e1b4b33d9d192e45f582f3195372dc4682a1"
+    },
+    {
+      "name": "fn_801E4A04",
+      "address": 2149468676,
+      "size": 592,
+      "scope": "global",
+      "section": ".text",
+      "object_offset": 280,
+      "sha256": "708225098fdac905fe6603ee4e75b17afb0921ff0b7f524287170cbcae2fe202"
+    }
+  ],
+  "objects": [],
+  "unlinked_functions": [],
+  "dependency_symbols": [
+    {
+      "name": "fn_801F7154",
+      "address": 2149544276,
+      "scope": "global"
+    },
+    {
+      "name": "fn_801F7EB8",
+      "address": 2149547704,
+      "scope": "global"
+    },
+    {
+      "name": "lbl_801E9D24",
+      "address": 2149489956,
+      "scope": "global"
+    },
+    {
+      "name": "slot1C__12BaseObject_ZFv",
+      "address": 2149610324,
+      "scope": "global"
+    }
+  ],
+  "source_sha256": "e52cbb699b84fea229806b06720a8ae155cef99cf0c1bf42fc1843c22fac69f0",
+  "headers": [
+    {
+      "path": "src/Game/world_records_internal.h",
+      "sha256": "db3709c1901d1ac458c64b9b9ec46a788efa643a8e197208f96e70d6fe909d5d"
+    },
+    {
+      "path": "src/Game/world_curve_arrays_internal.h",
+      "sha256": "050e16c320d4842599d51bba0b0275eb60bf6d10d3e8dd0c39986012f31baf2c"
+    },
+    {
+      "path": "src/Game/objects_owner_internal.h",
+      "sha256": "f2f3ed38fa07c4439af53617df67a59cd5fa686733430f307e91fb0d8d8a7d3c"
+    }
+  ],
+  "validation": {
+    "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "object_sha256": "f0327dc8570096dafff9a49fdf4490fcd124436f8b7e2dfd345c77fe2a32bad7",
+    "retained_text_bytes": 872,
+    "emitted_text_bytes": 872,
+    "initialized_data_bytes": 0,
+    "bss_bytes": 0,
+    "unlinked_text_bytes": 0,
+    "weak_functions": 0,
+    "relocations": 9,
+    "unlinked_relocations": 0,
+    "zero_byte_differences": true,
+    "all_retained_allocated_bytes_verified": true,
+    "all_emitted_allocated_bytes_accounted": true,
+    "owned_padding_bytes": 0,
+    "verification_script": "scratch/game_world_record_queries/verify.py",
+    "integration_status": "verified full-DOL and objdiff"
+  },
+  "notes": "docs/notes/game-world-record-queries.md",
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "e52cbb699b84fea229806b06720a8ae155cef99cf0c1bf42fc1843c22fac69f0",
+    "matched_code": 872,
+    "matched_functions": 3,
+    "matched_data": 0,
+    "complete_data": 0,
+    "object_path": "build/GSQE78/src/Game/world_record_queries.o",
+    "object_sha256": "f0327dc8570096dafff9a49fdf4490fcd124436f8b7e2dfd345c77fe2a32bad7"
+  },
+  "memcard_native_identity_migration": {
+    "description": "Current canonical identities and hashes verified after native CGCMemCardManipulator/CFSM ownership integration; original evidence is retained in immutable backups and explicit previous receipts.",
+    "production_verification": "scratch/memcard_native_vtable_20261020_parallel/production-verification.json",
+    "production_verification_sha256": "96e50e874bd53c148cd6395f670c040416c34699787d56726d8cfb010c340f31",
+    "migration_object_audit": "scratch/memcard_native_vtable_20261020_parallel/migration_object_audit.json",
+    "migration_object_audit_sha256": "b809560bf7212a505b2ea749256bef5263b4784d066bb311015e10928e90db9d",
+    "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "unchanged_caller_objects": 344,
+    "native_objects": 6,
+    "native_actual_relocations": 281,
+    "previous_canonical_sha256": "1c642d51d8bcd85617b9633d2a04455a243d273782530ae28b095dfcadfacd9b",
+    "previous_canonical": "scratch/memcard_canonical_refresh_20261020_parallel/backups/config/GSQE78/candidates/game-world-record-queries.json",
+    "previous_entry_json_pointer": ""
+  }
+}

@@ -1,0 +1,224 @@
+{
+  "source": "src/dolphin/ar/arq.c",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.2.5n",
+  "cflags": "-proc gekko -fp hardware -enum int -str reuse -common off -O4,p -inline auto -i src/dolphin/ar -Cpp_exceptions off",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2148535952,
+      "end": 2148536932
+    },
+    {
+      "name": ".data",
+      "start": 2150410600,
+      "end": 2150410669
+    },
+    {
+      "name": ".sdata",
+      "start": 2151112040,
+      "end": 2151112044
+    },
+    {
+      "name": ".sbss",
+      "start": 2151119648,
+      "end": 2151119688
+    }
+  ],
+  "functions": [
+    {
+      "name": "__ARQServiceQueueLo",
+      "address": 2148535952,
+      "size": 256
+    },
+    {
+      "name": "__ARQCallbackHack",
+      "address": 2148536208,
+      "size": 4
+    },
+    {
+      "name": "__ARQInterruptServiceRoutine",
+      "address": 2148536212,
+      "size": 204
+    },
+    {
+      "name": "ARQInit",
+      "address": 2148536416,
+      "size": 112
+    },
+    {
+      "name": "ARQPostRequest",
+      "address": 2148536528,
+      "size": 348
+    },
+    {
+      "name": "ARQFlushQueue",
+      "address": 2148536876,
+      "size": 56
+    }
+  ],
+  "objects": [
+    {
+      "name": "__ARQVersion",
+      "address": 2151112040,
+      "size": 4,
+      "section": ".sdata"
+    },
+    {
+      "name": "__ARQRequestQueueHi",
+      "address": 2151119648,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "__ARQRequestTailHi",
+      "address": 2151119652,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "__ARQRequestQueueLo",
+      "address": 2151119656,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "__ARQRequestTailLo",
+      "address": 2151119660,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "__ARQRequestPendingHi",
+      "address": 2151119664,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "__ARQRequestPendingLo",
+      "address": 2151119668,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "__ARQCallbackHi",
+      "address": 2151119672,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "__ARQCallbackLo",
+      "address": 2151119676,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "__ARQChunkSize",
+      "address": 2151119680,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "__ARQ_init_flag",
+      "address": 2151119684,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "@1",
+      "address": 2150410600,
+      "size": 69,
+      "section": ".data",
+      "scope": "local",
+      "compiler_assembly_name": "\"@1\"",
+      "data_kind": "string"
+    }
+  ],
+  "symbol_scopes": {
+    "__ARQServiceQueueLo": "global",
+    "__ARQCallbackHack": "global",
+    "__ARQInterruptServiceRoutine": "global",
+    "ARQInit": "global",
+    "ARQPostRequest": "global",
+    "ARQFlushQueue": "global",
+    "__ARQVersion": "global",
+    "__ARQRequestQueueHi": "local",
+    "__ARQRequestTailHi": "local",
+    "__ARQRequestQueueLo": "local",
+    "__ARQRequestTailLo": "local",
+    "__ARQRequestPendingHi": "local",
+    "__ARQRequestPendingLo": "local",
+    "__ARQCallbackHi": "local",
+    "__ARQCallbackLo": "local",
+    "__ARQChunkSize": "local",
+    "__ARQ_init_flag": "local",
+    "@1": "local"
+  },
+  "symbols": {
+    "__ARQServiceQueueLo": "0x80100e90",
+    "__ARQCallbackHack": "0x80100f90",
+    "__ARQInterruptServiceRoutine": "0x80100f94",
+    "ARQInit": "0x80101060",
+    "ARQPostRequest": "0x801010d0",
+    "ARQFlushQueue": "0x8010122c",
+    "__ARQVersion": "0x80375d68",
+    "__ARQRequestQueueHi": "0x80377b20",
+    "__ARQRequestTailHi": "0x80377b24",
+    "__ARQRequestQueueLo": "0x80377b28",
+    "__ARQRequestTailLo": "0x80377b2c",
+    "__ARQRequestPendingHi": "0x80377b30",
+    "__ARQRequestPendingLo": "0x80377b34",
+    "__ARQCallbackHi": "0x80377b38",
+    "__ARQCallbackLo": "0x80377b3c",
+    "__ARQChunkSize": "0x80377b40",
+    "__ARQ_init_flag": "0x80377b44",
+    "ARStartDMA": "0x800ff468",
+    "OSRegisterVersion": "0x800f1898",
+    "ARRegisterDMACallback": "0x800ff424",
+    "OSDisableInterrupts": "0x800f362c",
+    "OSRestoreInterrupts": "0x800f3654",
+    "@1": "0x802ca968"
+  },
+  "external_original_names": {
+    "ARStartDMA": "fn_800FF468",
+    "OSRegisterVersion": "OSRegisterVersion",
+    "ARRegisterDMACallback": "fn_800FF424",
+    "OSDisableInterrupts": "OSDisableInterrupts",
+    "OSRestoreInterrupts": "OSRestoreInterrupts"
+  },
+  "verified_text_bytes": 980,
+  "verified_data_bytes": 76,
+  "source_kind": "c",
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "3aac148b668e0b7aefe8e8987740b7e0728a801ef41dd996c0497d06f173cb8f",
+    "matched_code": 980,
+    "matched_functions": 6,
+    "matched_data": 113,
+    "complete_data": 113,
+    "object_path": "build/GSQE78/src/dolphin/ar/arq.o",
+    "object_sha256": "996d8a15520639e840e298f458adccc6829306071c9d1cba50a211e209da005f"
+  },
+  "external_padding": [
+    {
+      "source": "src/dolphin/ar/arq.c",
+      "unit": "main/dolphin/ar/arq",
+      "section": ".data",
+      "start": "0x802ca9ad",
+      "end": "0x802ca9b0",
+      "size": 3,
+      "alignment": 1,
+      "symbol": "gap_07_802CA9AD_data",
+      "original_owner": "padding/source_extents/dolphin/ar/arq.s",
+      "source_section_start": "0x802ca968",
+      "source_section_bytes": 69,
+      "previous_split_bytes": 72,
+      "description": "Original linker alignment beyond emitted source section; no source credit."
+    }
+  ],
+  "source_extent_audit": {
+    "data_credit_correction": 3,
+    "evidence": "config/GSQE78/source_padding.json",
+    "description": "Source and original bytes unchanged; trailing original padding moved to NonMatching ownership."
+  }
+}

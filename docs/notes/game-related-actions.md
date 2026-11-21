@@ -1,0 +1,9 @@
+# Related-object forwarding methods
+
+`src/Game/related_actions.cpp` reconstructs nine consecutive 104-byte methods at `0x801FFEFC..0x802002A4`, totaling 936 code bytes. `scratch/game_related_actions/verify.py` confirms every allocated byte and emitted section alignment after applying all 27 ELF relocations. GC/1.3.2 with `-O4,p -inline deferred -use_lmw_stmw on` matches all nine. They own no data; whole-DOL byte equality, native objdiff checks and the original-source regression audit pass.
+
+Each method resolves the handle at receiver offset `+0xC0` through the 16-byte resource table, compares its signed eight-bit generation, and passes the resolved object to an original callee. Seven also forward an incoming handle pointer in `r4`. The method at `0x802001D4` forwards an additional flags word in `r5`. The last method forwards a name-word pointer and output handle pointer, and returns the result of `0x8022B5B0`.
+
+The extra arguments are required ABI information that the initial top-level Ghidra pseudocode omitted: the original lookup preserves `r4` or both `r4/r5`, and the callees read those parameters. For example, `0x8022B9F8` resolves the supplied handle while removing a matching list entry; `0x8022C6FC` reads the third flags argument; `0x8022B5B0` compares a name word and writes the selected handle through its output pointer. Recovering those prototypes also reproduces the original scratch-register allocation exactly.
+
+The private type names describe observed layouts rather than recovered original class identities. Null resolution and return-value propagation remain as in the original. No artificial assembly, volatile accesses, instruction patches or masked comparisons are used. The complete original source-file boundary is unestablished, and the following larger methods are outside this candidate. The original DOL SHA-1 remains `5da8295a79bf297ab62c620e6ac66210be1c6ef5`.

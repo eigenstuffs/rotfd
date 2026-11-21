@@ -1,0 +1,41 @@
+{
+  "source": "src/dolphin/dsp/dsp_debug.c",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.2.5n",
+  "cflags": "-proc gekko -fp hardware -enum int -str reuse -common off -O4,p -inline auto -i src/dolphin/dsp -Cpp_exceptions off",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2148557816,
+      "end": 2148557896
+    }
+  ],
+  "functions": [
+    {
+      "name": "__DSP_debug_printf",
+      "address": 2148557816,
+      "size": 80
+    }
+  ],
+  "objects": [],
+  "symbol_scopes": {
+    "__DSP_debug_printf": "global"
+  },
+  "symbols": {
+    "__DSP_debug_printf": "0x801063f8"
+  },
+  "external_original_names": {},
+  "verified_text_bytes": 80,
+  "verified_data_bytes": 0,
+  "source_kind": "c",
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "59beca4a541fdc5f83359cd234d00b86d2ddfe1e947dce18332a11dfdd25bb8b",
+    "matched_code": 80,
+    "matched_functions": 1,
+    "matched_data": 0,
+    "complete_data": 0,
+    "object_path": "build/GSQE78/src/dolphin/dsp/dsp_debug.o",
+    "object_sha256": "3bc4dd160597fca99f1172185587bc403a0668f43c16dae60c4f18291c3469e5"
+  }
+}

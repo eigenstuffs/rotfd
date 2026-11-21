@@ -1,0 +1,47 @@
+{
+  "source": "src/dolphin/os/OSTime.c",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.2.5n",
+  "cflags": "-proc gekko -fp hardware -enum int -str reuse -common off -O4,p -opt nopeephole -inline auto -i src/dolphin/os -Cpp_exceptions off",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2148494356,
+      "end": 2148494456
+    }
+  ],
+  "functions": [
+    {
+      "name": "__OSGetSystemTime",
+      "address": 2148494356,
+      "size": 100
+    }
+  ],
+  "objects": [],
+  "symbol_scopes": {
+    "__OSGetSystemTime": "global"
+  },
+  "symbols": {
+    "__OSGetSystemTime": "0x800f6c14",
+    "OSDisableInterrupts": "0x800f362c",
+    "OSGetTime": "0x800f6bf4",
+    "OSRestoreInterrupts": "0x800f3654"
+  },
+  "external_original_names": {
+    "OSDisableInterrupts": "OSDisableInterrupts",
+    "OSGetTime": "OSGetTime",
+    "OSRestoreInterrupts": "OSRestoreInterrupts"
+  },
+  "verified_text_bytes": 100,
+  "verified_data_bytes": 0,
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "2ff7dd44f5b8935729db53f8aeaee7502ae84d2d1f11cb8bf4138d23372dda32",
+    "matched_code": 100,
+    "matched_functions": 1,
+    "matched_data": 0,
+    "complete_data": 0,
+    "object_path": "build/GSQE78/src/dolphin/os/OSTime.o",
+    "object_sha256": "4302dbfa509ccf4fd1c643ddf132e3d227c8754366f95d7477bae0ab3222e0f3"
+  }
+}

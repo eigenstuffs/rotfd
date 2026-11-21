@@ -1,0 +1,58 @@
+{
+  "source": "src/Platform/python_io.c",
+  "status": "integrated-byte-match",
+  "compiler": "GC/2.0",
+  "cflags": "-proc gekko -fp hardware -enum int -str reuse -common off -opt level=4,nopeephole,speed -inline auto,deferred -pool off -Cpp_exceptions off",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2149238744,
+      "end": 2149238780
+    }
+  ],
+  "functions": [
+    {
+      "name": "unlink",
+      "address": 2149238744,
+      "size": 8
+    },
+    {
+      "name": "isatty",
+      "address": 2149238752,
+      "size": 24
+    },
+    {
+      "name": "fileno",
+      "address": 2149238776,
+      "size": 4
+    }
+  ],
+  "objects": [],
+  "symbol_scopes": {
+    "unlink": "global",
+    "isatty": "global",
+    "fileno": "global"
+  },
+  "symbols": {
+    "PyType_Type": "0x802d68fc",
+    "unlink": "0x801ac7d8",
+    "isatty": "0x801ac7e0",
+    "fileno": "0x801ac7f8",
+    "__files": "0x802cffb8"
+  },
+  "external_original_names": {
+    "__files": "__files"
+  },
+  "verified_text_bytes": 36,
+  "verified_data_bytes": 0,
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "89bf78eae25d13ab2e5cc7558afe2c7db7d21b888ea2d7edcfdf85a307a37f71",
+    "matched_code": 36,
+    "matched_functions": 3,
+    "matched_data": 0,
+    "complete_data": 0,
+    "object_path": "build/GSQE78/src/Platform/python_io.o",
+    "object_sha256": "109380719de6072f15af1f897b133f1886ce9c67efb915e52875826951b351b6"
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "source": "src/Game/factories_802612C8.cpp",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-proc",
+    "gekko",
+    "-fp",
+    "hardware",
+    "-enum",
+    "int",
+    "-str",
+    "reuse",
+    "-common",
+    "off",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-Cpp_exceptions",
+    "off",
+    "-i",
+    "include"
+  ],
+  "sections": {
+    ".text": [
+      2149978824,
+      2149978912
+    ]
+  },
+  "functions": [
+    {
+      "name": "fn_802612C8",
+      "address": 2149978824,
+      "size": 88,
+      "section": ".text",
+      "scope": "global"
+    }
+  ],
+  "objects": [],
+  "source_kind": "c++",
+  "factory_evidence": [
+    {
+      "address": 2149978824,
+      "name": "fn_802612C8",
+      "manager": "lbl_801EF5C8",
+      "label": "lbl_802AEE28",
+      "filename": "lbl_802AEE38",
+      "header": "ParticlesAgent_Z.h",
+      "size": 112,
+      "line": 10,
+      "alignment": 4,
+      "constructor": "__ct__23ContainerLayer_802EC6A0Fv"
+    }
+  ],
+  "notes": "docs/notes/game-factories.md",
+  "source_sha256": "4eb6f4db87bef6f0c6901ab3b68c05d106b4c22348813fcbf5ec9255c15759dc",
+  "validation": {
+    "relocations": 8,
+    "text_bytes": 88,
+    "initialized_data_bytes": 0,
+    "zero_byte_differences": true,
+    "integration_status": "verified full-DOL and objdiff"
+  },
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "4eb6f4db87bef6f0c6901ab3b68c05d106b4c22348813fcbf5ec9255c15759dc",
+    "matched_code": 88,
+    "matched_functions": 1,
+    "matched_data": 0,
+    "complete_data": 0,
+    "object_path": "build/GSQE78/src/Game/factories_802612C8.o",
+    "object_sha256": "7ac7ef15deb75befbdd8594ad18d459705f64d9c2d564e1dd079b1cb15efae8d"
+  },
+  "headers": [],
+  "actual_relocations": [
+    {
+      "section": ".text",
+      "at": 10,
+      "address": 2149978834,
+      "kind": 6,
+      "symbol": "lbl_801EF5C8",
+      "target": 2149512648,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 14,
+      "address": 2149978838,
+      "kind": 6,
+      "symbol": "lbl_802AEE28",
+      "target": 2150297128,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 18,
+      "address": 2149978842,
+      "kind": 6,
+      "symbol": "lbl_802AEE38",
+      "target": 2150297144,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 30,
+      "address": 2149978854,
+      "kind": 4,
+      "symbol": "lbl_801EF5C8",
+      "target": 2149512648,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 34,
+      "address": 2149978858,
+      "kind": 4,
+      "symbol": "lbl_802AEE28",
+      "target": 2150297128,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 38,
+      "address": 2149978862,
+      "kind": 4,
+      "symbol": "lbl_802AEE38",
+      "target": 2150297144,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 48,
+      "address": 2149978872,
+      "kind": 10,
+      "symbol": "fn_801EFA1C",
+      "target": 2149513756,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 60,
+      "address": 2149978884,
+      "kind": 10,
+      "symbol": "__ct__23ContainerLayer_802EC6A0Fv",
+      "target": 2149931068,
+      "addend": 0
+    }
+  ],
+  "identifier_migration_provenance": {
+    "proof": "scratch/continuation_20261010/layered-return-consumer-migration/proof.json",
+    "previous_canonical": "scratch/continuation_20261010/layered-return-consumer-migration/before/config/GSQE78/candidates/game_factories_802612C8.json",
+    "previous_canonical_sha256": "82bcc8f5dd6d81943e53553618428bf534760fdfb3ab2d2c51ad30b1734c6a67"
+  }
+}

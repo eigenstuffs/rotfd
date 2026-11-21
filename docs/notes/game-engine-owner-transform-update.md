@@ -1,0 +1,15 @@
+# Recursive owner transform update
+
+Accepted matching source: the production build passes the original DOL hash,
+strict allocated-byte/extent and actual-relocation checks, baseline regression
+checks, generated progress verification and all 26 repository tests.
+
+`src/Game/engine_owner_transform_update.cpp` reconstructs fn8023D9B8 at8023D9B8..8023DE28:1,136 retained text bytes. Isolated production compilation and strict verification pass with GC1.3.2, default Game flags plus `-use_lmw_stmw on`. All15 actual relocations resolve to original targets; the compiler emits only this strong text function. No data, BSS, alignment padding, weak backups, vtables, exception records or startup entries are owned.
+
+The function processes three pending flag cases. Flag4 selects the active matrix-pool page using the signed short index at12C, stores its matrix pointer at124, and computes the matrix with either a parent owner or the independent path. It sets0x60, resolves the primary and secondary hooks through generation-checked handles, calls the secondary hook at virtual slot24 and primary hook at slot30, marks each child for matrix recomputation, and recursively updates children. When a context is present it applies the post-update routine8023F90C; it then clears0x15. Flag0x10 repeats hook/child/context processing without matrix recomputation or marking children and clears0x11. Flag1 only visits children and clears1.
+
+The recovered owner view contains first-child handle10, next-sibling handle18, primary hook1C, secondary hook20, flags120, matrix124, inverse128 and signed matrix-pool index12C. These are partial layout views; broader type and flag names remain provisional. The hook view inherits an eight-byte storage prefix so its genuine C++ virtual pointer occupies08. Its two invoked slots have recovered argument counts. Empty slot declarations preserve the original table positions and emit no table allocation in this unit.
+
+The straightforward first ordinary C++ probe matched all1,136 bytes. Production types and inline resolver names use a dedicated TransformUpdate prefix, and formatting/layout assertions were recompiled with identical allocated bytes. The resolver reads signed24-bit index and signed8-bit generation, compares the indexed entry generation and returns either its object or null; this function's observed resolver does not perform bounds checks.
+
+The frozen handoff is `scratch/engine_owner_transform_update_20261011du/final_integration.json`. `verify.py` recompiles production source, verifies complete allocations/symbol extents and every real relocation, scans the complete original extabindex80015F60..8001F2C0, ctors80299920..80299980 and dtors80299980..802999A0, and checks frozen hashes. All checks pass. Context lbl801E9D24, external matrix helpers, post-update routine and all adjacent functions/data retain their original owners. This is a partial text split with the existing function identity unchanged; no consumer, symbol or shared configuration migration is required. Whole executable acceptance remains the root integrator's next step.

@@ -1,0 +1,47 @@
+{
+  "source": "src/Python/structmember.c",
+  "status": "integrated-byte-match",
+  "compiler": "GC/2.0",
+  "cflags": [
+    "-proc gekko",
+    "-fp hardware",
+    "-enum int",
+    "-str reuse",
+    "-common off",
+    "-opt level=4,nopeephole,speed",
+    "-inline auto,deferred",
+    "-pool off",
+    "-Cpp_exceptions off"
+  ],
+  "sections": {
+    ".text": [
+      "0x801AB66C",
+      "0x801ABCA0"
+    ],
+    ".data": [
+      "0x802E9648",
+      "0x802E970C"
+    ],
+    ".sdata2": [
+      "0x8037A1C0",
+      "0x8037A1D0"
+    ]
+  },
+  "symbols": {
+    "PyMember_Set": "0x801AB66C",
+    "PyMember_Get": "0x801ABA0C",
+    "PyLong_AsLong": "0x801550b4",
+    "PyString_Size": "0x80163974"
+  },
+  "symbol_scopes": {},
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "4b48a20b51e298c61a3ab0ea8f9942089b9cc76f13da54f25a3e818df3ff9d41",
+    "matched_code": 1588,
+    "matched_functions": 2,
+    "matched_data": 212,
+    "complete_data": 212,
+    "object_path": "build/GSQE78/src/Python/structmember.o",
+    "object_sha256": "10d093cd69c771eccde92295fc2bcaed05511007fe6ebec9fd284840cc6c0492"
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "compiler": "GC/1.3",
+  "cflags": [
+    "-proc gekko",
+    "-fp hardware",
+    "-enum int",
+    "-str reuse",
+    "-common off",
+    "-O4,p",
+    "-inline deferred",
+    "-pool off",
+    "-Cpp_exceptions off",
+    "-use_lmw_stmw on"
+  ],
+  "source": "src/MSL/strtoul.c",
+  "dependency_symbols": [
+    {
+      "name": "__StringRead",
+      "original_name": "fn_80127C8C",
+      "address": "0x80127c8c",
+      "size": "0x90",
+      "scope": "global",
+      "section": ".text"
+    }
+  ],
+  "splits": [
+    {
+      "section": ".text",
+      "start": "0x80129768",
+      "end": "0x80129ba0"
+    },
+    {
+      "section": ".data",
+      "start": "0x802d0958",
+      "end": "0x802d099c"
+    }
+  ],
+  "status": "integrated-byte-match",
+  "functions": [
+    {
+      "name": "atoi",
+      "original_name": "atoi",
+      "address": "0x80129768",
+      "size": "0xc0",
+      "scope": "global"
+    },
+    {
+      "name": "__strtoul",
+      "original_name": "fn_80129828",
+      "address": "0x80129828",
+      "size": "0x378",
+      "scope": "global"
+    }
+  ],
+  "data_symbols": [],
+  "compiler_local_symbols": [
+    {
+      "name": "@187",
+      "original_name": "jumptable_802D0958",
+      "address": "0x802d0958",
+      "size": "0x44",
+      "scope": "local",
+      "section": ".data"
+    }
+  ],
+  "split_notes": [
+    "The full linked strtoul.c text comprises atoi and __strtoul only. strtol is inline-only within atoi; strtoul has no linked call or standalone routine in this TU.",
+    "The 17-entry switch jump table at 0x802D0958 is compiler-generated data and the only owned data in this TU.",
+    "The following 0x80129BA0 routine is a console I/O unit, not part of integer conversion.",
+    "Leading whitespace is tracked separately from max_width. The source fetches whitespace, cancels its count increment, and accumulates spaces; successful chars_scanned is (count - 1) + spaces. This target behavior differs from the older Melee and SMS source references."
+  ],
+  "validation": {
+    "verification_script": "scratch/msl_strtoul/verify.py",
+    "text_bytes": 1080,
+    "data_bytes": 68,
+    "relocations_applied": 31,
+    "byte_differences": 0,
+    "original_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "9549870f0467e0d74a8e59170a403fda98fce42a3c0818315e811c777139276c",
+    "object_sha256": "6e7d76f8bf9bf688ba0d1ee9f9fe1ee421dd02d1921d3188ff833281ee2580b4",
+    "integration_status": "verified full-DOL and objdiff"
+  },
+  "notes": "docs/notes/msl-strtoul.md",
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "9549870f0467e0d74a8e59170a403fda98fce42a3c0818315e811c777139276c",
+    "matched_code": 1080,
+    "matched_functions": 2,
+    "matched_data": 68,
+    "complete_data": 68,
+    "object_path": "build/GSQE78/src/MSL/strtoul.o",
+    "object_sha256": "6e7d76f8bf9bf688ba0d1ee9f9fe1ee421dd02d1921d3188ff833281ee2580b4"
+  }
+}

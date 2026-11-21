@@ -1,0 +1,118 @@
+{
+  "source": "src/Game/memory_hooks.c",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-proc gekko",
+    "-fp hardware",
+    "-enum int",
+    "-str reuse",
+    "-common off",
+    "-O4,p",
+    "-inline auto",
+    "-Cpp_exceptions off"
+  ],
+  "sections": {
+    ".text": [
+      "0x801efc24",
+      "0x801efd30"
+    ],
+    ".ctors": [
+      "0x8029994c",
+      "0x80299950"
+    ]
+  },
+  "functions": [
+    {
+      "section": ".text",
+      "name": "__sys_free",
+      "address": "0x801efc24",
+      "size": "0x2c",
+      "scope": "global"
+    },
+    {
+      "section": ".text",
+      "name": "__sys_alloc",
+      "address": "0x801efc50",
+      "size": "0x6c",
+      "scope": "global"
+    },
+    {
+      "section": ".text",
+      "name": "fn_801EFCBC",
+      "address": "0x801efcbc",
+      "size": "0x14",
+      "scope": "global"
+    },
+    {
+      "section": ".text",
+      "name": "fn_801EFCD0",
+      "address": "0x801efcd0",
+      "size": "0x60",
+      "scope": "global"
+    }
+  ],
+  "objects": [
+    {
+      "section": ".ctors",
+      "name": "memory_manager_init_reference",
+      "address": "0x8029994c",
+      "size": "0x4",
+      "scope": "local"
+    }
+  ],
+  "dependency_symbols": [
+    {
+      "name": "fn_801EF610",
+      "address": "0x801ef610"
+    },
+    {
+      "name": "fn_801FA014",
+      "address": "0x801fa014"
+    },
+    {
+      "name": "fn_801EF860",
+      "address": "0x801ef860"
+    },
+    {
+      "name": "OSGetArenaLo",
+      "address": "0x800f1f7c"
+    },
+    {
+      "name": "OSGetArenaHi",
+      "address": "0x800f1f74"
+    },
+    {
+      "name": "fn_801EFAC4",
+      "address": "0x801efac4"
+    },
+    {
+      "name": "__register_global_object",
+      "address": "0x8011ed8c"
+    }
+  ],
+  "split_notes": [
+    "The two retained MSL backing hooks delegate to the game allocator. Field names are inferred; size, alignment and heap-size variadic diagnostic arguments are established by original format string and register usage.",
+    "The allocation pointer receives the observed12-byte offset; source preserves the fatal diagnostic and infinite loop on oversized requests. Surrounding allocator implementation and original constants remain fallback.",
+    "Extended through adjacent unsigned minimum helper and global memory-manager initializer. The initializer owns its4-byte constructor-table entry; manager storage and destructor registration block remain original."
+  ],
+  "notes": "docs/notes/game-memory-hooks.md",
+  "validation": {
+    "relocations": 26,
+    "text_bytes": 268,
+    "initialized_data_bytes": 4,
+    "zero_byte_differences": true,
+    "verification_script": "scratch/memory_hooks/verify_extended.py",
+    "integration_status": "verified full-DOL and objdiff"
+  },
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "be643b66bf0795465488ffc7b4a65b1029cf11549049834b67a6aeae6fbda154",
+    "matched_code": 268,
+    "matched_functions": 4,
+    "matched_data": 4,
+    "complete_data": 4,
+    "object_path": "build/GSQE78/src/Game/memory_hooks.o",
+    "object_sha256": "06e3e4ef888702ecd416ccf771e22bf2dfbe3539fd9c74435db26872d7bd8a38"
+  }
+}

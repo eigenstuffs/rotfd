@@ -1,0 +1,243 @@
+{
+  "status": "integrated-byte-match",
+  "source": "src/Game/platform_audio_load.cpp",
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-proc",
+    "gekko",
+    "-fp",
+    "hardware",
+    "-enum",
+    "int",
+    "-str",
+    "reuse",
+    "-common",
+    "off",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-Cpp_exceptions",
+    "off",
+    "-RTTI",
+    "off",
+    "-use_lmw_stmw",
+    "on",
+    "-i",
+    "src/Game",
+    "-i",
+    "include",
+    "-i",
+    "src/dolphin",
+    "-i",
+    "src/dolphin/ax"
+  ],
+  "source_kind": "c++",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2150133148,
+      "end": 2150133752,
+      "alignment": 4
+    },
+    {
+      "name": ".sdata2",
+      "start": 2151135424,
+      "end": 2151135432,
+      "alignment": 8
+    }
+  ],
+  "functions": [
+    {
+      "name": "fn_80286D9C",
+      "address": 2150133148,
+      "size": 604,
+      "scope": "global",
+      "section": ".text",
+      "object_offset": 0,
+      "sha256": "83935b737d2ca295edfb623b4c36c1456190ae68b432b2608b1aa24786c6e0d6"
+    }
+  ],
+  "objects": [
+    {
+      "name": "lbl_8037B8C0",
+      "address": 2151135424,
+      "size": 4,
+      "scope": "global",
+      "section": ".sdata2",
+      "object_offset": 0,
+      "sha256": "dc1c6343d5b5e04c88ef6e080d52bafdee3a2501f10aeb2ff258066ca3932f01"
+    },
+    {
+      "name": "lbl_8037B8C4",
+      "address": 2151135428,
+      "size": 4,
+      "scope": "global",
+      "section": ".sdata2",
+      "object_offset": 4,
+      "sha256": "392740def5a9f5e4b3a1e2f668f7ce926606563496ab009c7952a55c99260491"
+    }
+  ],
+  "unlinked_functions": [
+    {
+      "name": "__dt__11OwnerHandleFv",
+      "size": 84,
+      "object_offset": 604,
+      "section": ".text",
+      "binding": "weak"
+    }
+  ],
+  "dependency_symbols": [
+    {
+      "name": "__ct__15Handle_801F7F10Fv",
+      "address": 2149547780,
+      "scope": "global"
+    },
+    {
+      "name": "__dt__15Handle_801F7F10Fv",
+      "address": 2149547792,
+      "scope": "global"
+    },
+    {
+      "name": "fn_801F2A4C",
+      "address": 2149526092,
+      "scope": "global"
+    },
+    {
+      "name": "fn_801F4520",
+      "address": 2149532960,
+      "scope": "global"
+    },
+    {
+      "name": "fn_801F459C",
+      "address": 2149533084,
+      "scope": "global"
+    },
+    {
+      "name": "fn_801F86C8",
+      "address": 2149549768,
+      "scope": "global"
+    },
+    {
+      "name": "fn_801FA014",
+      "address": 2149556244,
+      "scope": "global"
+    },
+    {
+      "name": "fn_802077B4",
+      "address": 2149611444,
+      "scope": "global"
+    },
+    {
+      "name": "fn_8023B864",
+      "address": 2149824612,
+      "scope": "global"
+    },
+    {
+      "name": "fn_80289968",
+      "address": 2150144360,
+      "scope": "global"
+    },
+    {
+      "name": "fn_8028A31C",
+      "address": 2150146844,
+      "scope": "global"
+    },
+    {
+      "name": "lbl_801E9D24",
+      "address": 2149489956,
+      "scope": "global"
+    },
+    {
+      "name": "lbl_802AF448",
+      "address": 2150298696,
+      "scope": "global"
+    },
+    {
+      "name": "lbl_8037B898",
+      "address": 2151135384,
+      "scope": "global"
+    },
+    {
+      "name": "lbl_8037B89C",
+      "address": 2151135388,
+      "scope": "global"
+    },
+    {
+      "name": "strcat",
+      "address": 2148697296,
+      "scope": "global"
+    },
+    {
+      "name": "strlen",
+      "address": 2148697592,
+      "scope": "global"
+    }
+  ],
+  "source_sha256": "ae38ca8366e539e5bce1eff1f2f652645a38578add1124006b7831a3615e6f9c",
+  "headers": [
+    {
+      "path": "include/Game/platform_audio_update_internal.h",
+      "sha256": "0734d652daddc695eafd42420de307de6f7a095281963ae553a5fc72416e2fa5"
+    },
+    {
+      "path": "include/Game/platform_audio_internal.h",
+      "sha256": "5c94ef6913a873fda9338fa302d5dafe40f29c8b65563f7da2be001b3b9d7ce6"
+    },
+    {
+      "path": "src/Game/objects_owner_internal.h",
+      "sha256": "f2f3ed38fa07c4439af53617df67a59cd5fa686733430f307e91fb0d8d8a7d3c"
+    },
+    {
+      "path": "src/dolphin/ax/ax_abi.h",
+      "sha256": "6667cfbd1fb1bf12bacf4ec80d14b6c6c2f59d7d5a4634846727a3fe0700af6f"
+    },
+    {
+      "path": "src/dolphin/os/OSContext_abi.h",
+      "sha256": "d27524694f97e4142289604d71e0c8b41d3afa70274d8e17a53f048e8f368eb8"
+    }
+  ],
+  "validation": {
+    "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "object_sha256": "725d2b9559801e64d2d068b08ed80f3ba03b50d71fb12e575df5db9ffb5f436b",
+    "retained_text_bytes": 604,
+    "emitted_text_bytes": 688,
+    "initialized_data_bytes": 8,
+    "bss_bytes": 0,
+    "emitted_data_bytes": 8,
+    "unlinked_text_bytes": 84,
+    "weak_functions": 1,
+    "relocations": 30,
+    "unlinked_relocations": 2,
+    "zero_byte_differences": true,
+    "all_retained_allocated_bytes_verified": true,
+    "all_emitted_allocated_bytes_accounted": true,
+    "owned_padding_bytes": 0,
+    "verification_script": "scratch/game_platform_audio_load/verify.py",
+    "integration_status": "verified full-DOL and objdiff"
+  },
+  "notes": "docs/notes/game-platform-audio-load.md",
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "ae38ca8366e539e5bce1eff1f2f652645a38578add1124006b7831a3615e6f9c",
+    "matched_code": 604,
+    "matched_functions": 1,
+    "matched_data": 8,
+    "complete_data": 8,
+    "object_path": "build/GSQE78/src/Game/platform_audio_load.o",
+    "object_sha256": "725d2b9559801e64d2d068b08ed80f3ba03b50d71fb12e575df5db9ffb5f436b"
+  },
+  "memcard_native_identity_migration": {
+    "description": "Current canonical identities and hashes verified after native CGCMemCardManipulator/CFSM ownership integration; original evidence is retained in immutable backups and explicit previous receipts.",
+    "production_verification": "scratch/memcard_native_vtable_20261020_parallel/production-verification.json",
+    "production_verification_sha256": "96e50e874bd53c148cd6395f670c040416c34699787d56726d8cfb010c340f31",
+    "migration_object_audit": "scratch/memcard_native_vtable_20261020_parallel/migration_object_audit.json",
+    "migration_object_audit_sha256": "b809560bf7212a505b2ea749256bef5263b4784d066bb311015e10928e90db9d",
+    "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "unchanged_caller_objects": 344,
+    "native_objects": 6,
+    "native_actual_relocations": 281,
+    "previous_canonical_sha256": "3ecb1e57c40eb363f986d68da2a8761174ad73b1ae08fd3418ba8bb1baec6513",
+    "previous_canonical": "scratch/memcard_canonical_refresh_20261020_parallel/backups/config/GSQE78/candidates/game-platform-audio-load.json",
+    "previous_entry_json_pointer": ""
+  }
+}

@@ -1,0 +1,731 @@
+[
+  {
+    "status": "isolated-byte-match-parent-integration-pending",
+    "source": "src/Game/scalar_distance_query_8005EC08.cpp",
+    "source_sha256": "ed2c0674e770312b7299469e3ae97c7c26f2e89410f17c6e2241de97dc7fd413",
+    "headers": [],
+    "header_sha256": {},
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2147871752,
+        "end": 2147871820,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147528660,
+        "end": 2147528668,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147582780,
+        "end": 2147582792,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_8005EC08",
+        "address": 2147871752,
+        "size": 68,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@7",
+        "section": "extab",
+        "object_offset": 0,
+        "address": 2147528660,
+        "size": 8,
+        "scope": "local"
+      },
+      {
+        "name": "@8",
+        "section": "extabindex",
+        "object_offset": 0,
+        "address": 2147582780,
+        "size": 12,
+        "scope": "local"
+      }
+    ],
+    "unlinked_functions": [],
+    "verified_text_bytes": 68,
+    "verified_data_bytes": 20,
+    "notes": "docs/notes/game-scalar-distance-query-leafs.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 48,
+        "address": 2147871800,
+        "kind": 10,
+        "symbol": "fn_80284DD8",
+        "target": 2150125016,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147582780,
+        "kind": 1,
+        "symbol": "fn_8005EC08",
+        "target": 2147871752,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147582788,
+        "kind": 1,
+        "symbol": "@7",
+        "target": 2147528660,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "fn_80284DD8",
+        "section": ".text",
+        "address": 2150125016,
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "object_sha256": "a10dcde7ee9eab97d136b31e90af382302292b580f6917cc90a95123de859922",
+      "retained_text_bytes": 68,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 3,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match-parent-integration-pending",
+    "source": "src/Game/scalar_distance_query_800663FC.cpp",
+    "source_sha256": "0bfb6b16ce2d89cab2b3ac96b9ce018a8ba19a32a409b38998ca36659d7a53ea",
+    "headers": [],
+    "header_sha256": {},
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2147902460,
+        "end": 2147902548,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147531356,
+        "end": 2147531364,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147584580,
+        "end": 2147584592,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800663FC",
+        "address": 2147902460,
+        "size": 88,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@5",
+        "section": "extab",
+        "object_offset": 0,
+        "address": 2147531356,
+        "size": 8,
+        "scope": "local"
+      },
+      {
+        "name": "@6",
+        "section": "extabindex",
+        "object_offset": 0,
+        "address": 2147584580,
+        "size": 12,
+        "scope": "local"
+      }
+    ],
+    "unlinked_functions": [],
+    "verified_text_bytes": 88,
+    "verified_data_bytes": 20,
+    "notes": "docs/notes/game-scalar-distance-query-leafs.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 40,
+        "address": 2147902500,
+        "kind": 10,
+        "symbol": "fn_8005EB88",
+        "target": 2147871624,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 48,
+        "address": 2147902508,
+        "kind": 109,
+        "symbol": "lbl_80378770",
+        "target": 2151122800,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147584580,
+        "kind": 1,
+        "symbol": "fn_800663FC",
+        "target": 2147902460,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147584588,
+        "kind": 1,
+        "symbol": "@5",
+        "target": 2147531356,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "fn_8005EB88",
+        "section": ".text",
+        "address": 2147871624,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_80378770",
+        "section": ".sdata2",
+        "address": 2151122800,
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "object_sha256": "03d85185485655ec0b0870ff15d6ae9fc6f6c9728ae57611956cd0221bbae4fa",
+      "retained_text_bytes": 88,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 4,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match-parent-integration-pending",
+    "source": "src/Game/scalar_distance_query_80066454.cpp",
+    "source_sha256": "ff32aa76b878296c3990af5b447ff764bbda8546b1b7e43b5af414a8be9c9935",
+    "headers": [],
+    "header_sha256": {},
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2147902548,
+        "end": 2147902640,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147531364,
+        "end": 2147531372,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147584592,
+        "end": 2147584604,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_80066454",
+        "address": 2147902548,
+        "size": 92,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@5",
+        "section": "extab",
+        "object_offset": 0,
+        "address": 2147531364,
+        "size": 8,
+        "scope": "local"
+      },
+      {
+        "name": "@6",
+        "section": "extabindex",
+        "object_offset": 0,
+        "address": 2147584592,
+        "size": 12,
+        "scope": "local"
+      }
+    ],
+    "unlinked_functions": [],
+    "verified_text_bytes": 92,
+    "verified_data_bytes": 20,
+    "notes": "docs/notes/game-scalar-distance-query-leafs.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 44,
+        "address": 2147902592,
+        "kind": 10,
+        "symbol": "fn_8005EAC8",
+        "target": 2147871432,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 52,
+        "address": 2147902600,
+        "kind": 109,
+        "symbol": "lbl_80378770",
+        "target": 2151122800,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147584592,
+        "kind": 1,
+        "symbol": "fn_80066454",
+        "target": 2147902548,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147584600,
+        "kind": 1,
+        "symbol": "@5",
+        "target": 2147531364,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "fn_8005EAC8",
+        "section": ".text",
+        "address": 2147871432,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_80378770",
+        "section": ".sdata2",
+        "address": 2151122800,
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "object_sha256": "4711b8471f9bdd1c8c72a3607ceaa74f640f0d71adbe0fbebf4c8d1ef705d0ca",
+      "retained_text_bytes": 92,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 4,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match-parent-integration-pending",
+    "source": "src/Game/scalar_distance_query_80066FFC.cpp",
+    "source_sha256": "b3b5670e34e69d32e77d86b60c2ffc2db3f15d0f63b78faae6b6afa1a1126fbb",
+    "headers": [],
+    "header_sha256": {},
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2147905532,
+        "end": 2147905588,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_80066FFC",
+        "address": 2147905532,
+        "size": 56,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [],
+    "unlinked_functions": [],
+    "verified_text_bytes": 56,
+    "verified_data_bytes": 0,
+    "notes": "docs/notes/game-scalar-distance-query-leafs.md",
+    "actual_relocations": [],
+    "dependency_symbols": [],
+    "validation": {
+      "object_sha256": "7f758b12adb7c8bff7d8226890a174b7a5cd625790002cec4bc963e61d285b8f",
+      "retained_text_bytes": 56,
+      "initialized_data_bytes": 0,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 0,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match-parent-integration-pending",
+    "source": "src/Game/scalar_distance_query_8007D45C.cpp",
+    "source_sha256": "0b51afcdf8ed9196392c1c52cc83f79ceed724f90722f46a44434cf75c715009",
+    "headers": [],
+    "header_sha256": {},
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2147996764,
+        "end": 2147996852,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147538240,
+        "end": 2147538248,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147588024,
+        "end": 2147588036,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_8007D45C",
+        "address": 2147996764,
+        "size": 88,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@8",
+        "section": "extab",
+        "object_offset": 0,
+        "address": 2147538240,
+        "size": 8,
+        "scope": "local"
+      },
+      {
+        "name": "@9",
+        "section": "extabindex",
+        "object_offset": 0,
+        "address": 2147588024,
+        "size": 12,
+        "scope": "local"
+      }
+    ],
+    "unlinked_functions": [],
+    "verified_text_bytes": 88,
+    "verified_data_bytes": 20,
+    "notes": "docs/notes/game-scalar-distance-query-leafs.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 8,
+        "address": 2147996772,
+        "kind": 109,
+        "symbol": "lbl_80378A84",
+        "target": 2151123588,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 36,
+        "address": 2147996800,
+        "kind": 10,
+        "symbol": "pow",
+        "target": 2148719244,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147588024,
+        "kind": 1,
+        "symbol": "fn_8007D45C",
+        "target": 2147996764,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147588032,
+        "kind": 1,
+        "symbol": "@8",
+        "target": 2147538240,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "lbl_80378A84",
+        "section": ".sdata2",
+        "address": 2151123588,
+        "scope": "global"
+      },
+      {
+        "name": "pow",
+        "section": ".text",
+        "address": 2148719244,
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "object_sha256": "61fd46fed7c2d4376aefb06374818dd2181e98bd01f1367536f7d69d7bc27c47",
+      "retained_text_bytes": 88,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 4,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match-parent-integration-pending",
+    "source": "src/Game/scalar_distance_query_800B3E00.cpp",
+    "source_sha256": "1dcce037bd903507f4a7cf2b42cb2f24a1ab2fa6d941f4ccebe4ecf66a2cfa93",
+    "headers": [],
+    "header_sha256": {},
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148220416,
+        "end": 2148220504,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800B3E00",
+        "address": 2148220416,
+        "size": 88,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [],
+    "unlinked_functions": [],
+    "verified_text_bytes": 88,
+    "verified_data_bytes": 0,
+    "notes": "docs/notes/game-scalar-distance-query-leafs.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 30,
+        "address": 2148220446,
+        "kind": 6,
+        "symbol": "lbl_802F4208",
+        "target": 2150580744,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 34,
+        "address": 2148220450,
+        "kind": 4,
+        "symbol": "lbl_802F4208",
+        "target": 2150580744,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 74,
+        "address": 2148220490,
+        "kind": 6,
+        "symbol": "lbl_802A0460",
+        "target": 2150237280,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 78,
+        "address": 2148220494,
+        "kind": 4,
+        "symbol": "lbl_802A0460",
+        "target": 2150237280,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "lbl_802A0460",
+        "section": ".rodata",
+        "address": 2150237280,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_802F4208",
+        "section": ".bss",
+        "address": 2150580744,
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "object_sha256": "5da3bc6ab23010f54a5b4bbc4c6f062f1ac9f463557271bbb1f760fd508db664",
+      "retained_text_bytes": 88,
+      "initialized_data_bytes": 0,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 4,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  }
+]

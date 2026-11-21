@@ -1,0 +1,138 @@
+{
+  "status": "integrated-byte-match",
+  "source": "src/Game/platform_math_wrappers.cpp",
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-proc",
+    "gekko",
+    "-fp",
+    "hardware",
+    "-enum",
+    "int",
+    "-str",
+    "reuse",
+    "-common",
+    "off",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-Cpp_exceptions",
+    "off",
+    "-RTTI",
+    "off",
+    "-use_lmw_stmw",
+    "on",
+    "-i",
+    "src/Game",
+    "-i",
+    "include"
+  ],
+  "source_kind": "c++",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2150124976,
+      "end": 2150125108,
+      "alignment": 4
+    }
+  ],
+  "functions": [
+    {
+      "name": "fn_80284DB0",
+      "address": 2150124976,
+      "size": 4,
+      "scope": "global",
+      "section": ".text",
+      "object_offset": 0,
+      "sha256": "f332ea5b5437103cbb6f1508679da89eec9288ad775c96c439a17fccabe3de8e"
+    },
+    {
+      "name": "fn_80284DB4",
+      "address": 2150124980,
+      "size": 36,
+      "scope": "global",
+      "section": ".text",
+      "object_offset": 4,
+      "sha256": "144cabcf705acfcf76df798abae2829c20f567f763a780f9ce7e2e3128aef5fc"
+    },
+    {
+      "name": "fn_80284DD8",
+      "address": 2150125016,
+      "size": 92,
+      "scope": "global",
+      "section": ".text",
+      "object_offset": 40,
+      "sha256": "744d8dc9df1150f5bc5023bffd52feb53d817a44c4555258fdbccc9af7377b35"
+    }
+  ],
+  "objects": [],
+  "unlinked_functions": [],
+  "dependency_symbols": [
+    {
+      "name": "acos",
+      "address": 2148719020,
+      "scope": "global"
+    },
+    {
+      "name": "lbl_8037B840",
+      "address": 2151135296,
+      "scope": "global"
+    },
+    {
+      "name": "lbl_8037B860",
+      "address": 2151135328,
+      "scope": "global"
+    },
+    {
+      "name": "lbl_8037B864",
+      "address": 2151135332,
+      "scope": "global"
+    },
+    {
+      "name": "lbl_8037B868",
+      "address": 2151135336,
+      "scope": "global"
+    },
+    {
+      "name": "log",
+      "address": 2148719212,
+      "scope": "global"
+    }
+  ],
+  "source_sha256": "2680d775cc50175567d8c3b3c424f91490c913819fccca81b8afdd6c1f940a0a",
+  "headers": [
+    {
+      "path": "include/Game/platform_math_internal.h",
+      "sha256": "3905dba390798042206c9665343924fd581700c859d8940d07879780e888a7dd"
+    }
+  ],
+  "validation": {
+    "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "object_sha256": "d3765fc4b1340880be71b34141af19a2fca818955f156057b99054de51172551",
+    "retained_text_bytes": 132,
+    "emitted_text_bytes": 132,
+    "initialized_data_bytes": 0,
+    "bss_bytes": 0,
+    "emitted_data_bytes": 0,
+    "unlinked_text_bytes": 0,
+    "weak_functions": 0,
+    "relocations": 8,
+    "zero_byte_differences": true,
+    "all_retained_allocated_bytes_verified": true,
+    "all_emitted_allocated_bytes_accounted": true,
+    "owned_padding_bytes": 0,
+    "verification_script": "scratch/game_platform_math_wrappers/verify.py",
+    "integration_status": "verified full-DOL and objdiff"
+  },
+  "notes": "docs/notes/game-platform-math-wrappers.md",
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "2680d775cc50175567d8c3b3c424f91490c913819fccca81b8afdd6c1f940a0a",
+    "matched_code": 132,
+    "matched_functions": 3,
+    "matched_data": 0,
+    "complete_data": 0,
+    "object_path": "build/GSQE78/src/Game/platform_math_wrappers.o",
+    "object_sha256": "d3765fc4b1340880be71b34141af19a2fca818955f156057b99054de51172551"
+  }
+}

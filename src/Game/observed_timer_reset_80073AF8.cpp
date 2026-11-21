@@ -1,0 +1,2 @@
+/* Original observed timer and reset leaves; see docs/notes/game-observed-timer-reset-leafs.md. */
+struct Prefix{char opaque00[8];};struct Owner:Prefix{virtual void slot8();virtual void slotC();virtual void slot10();virtual void slot14();virtual void slot18();virtual void slot1C();virtual void slot20();virtual void slot24();virtual void slot28();virtual void slot2C();virtual void slot30();virtual void apply();char opaque0C[0x2C];unsigned long long flags;};extern "C"void fn_80073AF8(Owner*self){self->flags|=0x20000ULL;self->apply();}

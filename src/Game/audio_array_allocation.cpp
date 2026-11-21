@@ -1,0 +1,5 @@
+/* Audio record array allocation; see docs/notes/game-audio-array-allocation.md. */
+extern "C"{extern char lbl_801EF5C8[];extern const char lbl_802AF518[],lbl_802AF528[];void*fn_801EFA1C(void*,unsigned long,const char*,const char*,int,int);void fn_801C6968(void*);void fn_80287DF8(void*);void*__construct_new_array(void*,void(*)(void*),void(*)(void*),unsigned long,unsigned long);}
+struct Owner{char unknown00[0xD4];void*recordsD4;void*recordsD8;unsigned long countDC,countE0;void*voicesE4;void*voicesE8;unsigned long countEC,countF0;};
+inline void*allocate(unsigned long bytes,int line){return fn_801EFA1C(lbl_801EF5C8,bytes,lbl_802AF518,lbl_802AF528,line,4);}
+extern "C" void fn_80287CA8(Owner*self){self->recordsD4=__construct_new_array(allocate(0x2C10,5),fn_801C6968,0,0x2C,256);self->recordsD8=__construct_new_array(allocate(0x2C10,6),fn_801C6968,0,0x2C,256);self->countE0=0;self->countDC=0;self->voicesE4=__construct_new_array(allocate(0x3010,10),fn_80287DF8,0,0x30,256);self->voicesE8=__construct_new_array(allocate(0x3010,11),fn_80287DF8,0,0x30,256);self->countF0=0;self->countEC=0;}

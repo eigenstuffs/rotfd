@@ -1,0 +1,2 @@
+#include "Game/early_agent_profile_views.h"
+extern "C" void fn_8006FA04(AgentProfile*self){fn_8025A3C8(self,fn_801B52EC(lbl_801E9D24.manager,lbl_8029C7A8));self->flags&=~8ULL;fn_8002B780(self);self->slot21(0x85);self->slot22(0x85);self->flags|=1ULL<<44;self->flags|=1ULL<<48;resolveAgentProfile(self->controller)->speed=lbl_803788B4;resolveAgentProfile(self->controller)->acceleration=lbl_803788AC;resolveAgentProfile(self->controller)->deceleration=lbl_803788B8;resolveAgentProfile(self->controller)->scale=lbl_803788AC;resolveAgentProfile(self->controller)->radius=lbl_803788BC;}

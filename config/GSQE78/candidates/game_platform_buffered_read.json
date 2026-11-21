@@ -1,0 +1,226 @@
+[
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/platform_buffered_read.cpp",
+    "source_sha256": "9b4e237c82367b3e0c3728feacf42c7ea8c8e9e7d05997bc4fb6f47cbcad91ba",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,p",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "off",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "src/Game",
+      "-i",
+      "include"
+    ],
+    "headers": [],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2150154880,
+        "end": 2150155412,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_8028C280",
+        "address": 2150154880,
+        "size": 532,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "fn_8028EEEC",
+        "section": ".text",
+        "address": 2150166252,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_80378124",
+        "section": ".sbss",
+        "address": 2151121188,
+        "scope": "global"
+      },
+      {
+        "name": "memcpy",
+        "section": ".init",
+        "address": 2147505440,
+        "scope": "global"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 76,
+        "address": 2150154956,
+        "kind": 10,
+        "symbol": "memcpy",
+        "target": 2147505440,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 192,
+        "address": 2150155072,
+        "kind": 109,
+        "symbol": "lbl_80378124",
+        "target": 2151121188,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 208,
+        "address": 2150155088,
+        "kind": 10,
+        "symbol": "fn_8028EEEC",
+        "target": 2150166252,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 232,
+        "address": 2150155112,
+        "kind": 109,
+        "symbol": "lbl_80378124",
+        "target": 2151121188,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 236,
+        "address": 2150155116,
+        "kind": 10,
+        "symbol": "memcpy",
+        "target": 2147505440,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 264,
+        "address": 2150155144,
+        "kind": 10,
+        "symbol": "fn_8028EEEC",
+        "target": 2150166252,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 344,
+        "address": 2150155224,
+        "kind": 109,
+        "symbol": "lbl_80378124",
+        "target": 2151121188,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 360,
+        "address": 2150155240,
+        "kind": 10,
+        "symbol": "fn_8028EEEC",
+        "target": 2150166252,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 384,
+        "address": 2150155264,
+        "kind": 109,
+        "symbol": "lbl_80378124",
+        "target": 2151121188,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 388,
+        "address": 2150155268,
+        "kind": 10,
+        "symbol": "memcpy",
+        "target": 2147505440,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 424,
+        "address": 2150155304,
+        "kind": 10,
+        "symbol": "fn_8028EEEC",
+        "target": 2150166252,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 472,
+        "address": 2150155352,
+        "kind": 10,
+        "symbol": "fn_8028EEEC",
+        "target": 2150166252,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 504,
+        "address": 2150155384,
+        "kind": 10,
+        "symbol": "memcpy",
+        "target": 2147505440,
+        "addend": 0
+      }
+    ],
+    "notes": "docs/notes/game-platform-buffered-read.md",
+    "original_metadata_audit": {
+      "extabindex_scan": [
+        2147573600,
+        2147611328,
+        12
+      ],
+      "matching_extabindex": [],
+      "ctors_scan": [
+        2150209824,
+        2150209920,
+        4
+      ],
+      "dtors_scan": [
+        2150209920,
+        2150209952,
+        4
+      ],
+      "ctors": [],
+      "dtors": []
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "7fa50696c73bc3eba4a5300567fc6223424761610cf2bb6621f8c4f96d6e5876",
+      "retained_text_bytes": 532,
+      "initialized_data_bytes": 0,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 13,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  }
+]

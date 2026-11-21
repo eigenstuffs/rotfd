@@ -1,0 +1,180 @@
+[
+  {
+    "source": "src/Game/engine_matrix_tree.cpp",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,p",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "off",
+      "-i",
+      "include",
+      "-use_lmw_stmw",
+      "on",
+      "-opt",
+      "nocse"
+    ],
+    "extra_cflags": [
+      "-use_lmw_stmw",
+      "on",
+      "-opt",
+      "nocse"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2149892920,
+        "end": 2149893392
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_8024C338",
+        "address": 2149892920,
+        "size": 472,
+        "scope": "global",
+        "kind": "matrix-tree-traversal",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "verified_text_bytes": 472,
+    "verified_data_bytes": 0,
+    "relocations": [
+      {
+        "section": ".text",
+        "offset": 10,
+        "symbol": "lbl_801E9D24",
+        "target": "0x801e9d24",
+        "kind": 6
+      },
+      {
+        "section": ".text",
+        "offset": 22,
+        "symbol": "lbl_801E9D24",
+        "target": "0x801e9d24",
+        "kind": 4
+      },
+      {
+        "section": ".text",
+        "offset": 154,
+        "symbol": "lbl_801E9D24",
+        "target": "0x801e9d24",
+        "kind": 6
+      },
+      {
+        "section": ".text",
+        "offset": 162,
+        "symbol": "lbl_801E9D24",
+        "target": "0x801e9d24",
+        "kind": 4
+      },
+      {
+        "section": ".text",
+        "offset": 304,
+        "symbol": "lbl_80378010",
+        "target": "0x80378010",
+        "kind": 109
+      },
+      {
+        "section": ".text",
+        "offset": 324,
+        "symbol": "lbl_80378010",
+        "target": "0x80378010",
+        "kind": 109
+      },
+      {
+        "section": ".text",
+        "offset": 356,
+        "symbol": "fn_8027B508",
+        "target": "0x8027b508",
+        "kind": 10
+      }
+    ],
+    "source_sha256": "3a878b6360bb05c6fa5a08c1799e53b9248344b32d5486c107d7b705fdb26fb4",
+    "objects": [],
+    "unlinked_functions": [],
+    "headers": [
+      {
+        "path": "include/Game/engine_matrix_tree.h",
+        "sha256": "bd0ce7fbdd702ae695a68e0fe083d994c000437ca1a189e8a7c3855954ff7e70"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 10,
+        "address": 2149892930,
+        "kind": 6,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 22,
+        "address": 2149892942,
+        "kind": 4,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 154,
+        "address": 2149893074,
+        "kind": 6,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 162,
+        "address": 2149893082,
+        "kind": 4,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 304,
+        "address": 2149893224,
+        "kind": 109,
+        "symbol": "lbl_80378010",
+        "target": 2151120912,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 324,
+        "address": 2149893244,
+        "kind": 109,
+        "symbol": "lbl_80378010",
+        "target": 2151120912,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 356,
+        "address": 2149893276,
+        "kind": 10,
+        "symbol": "fn_8027B508",
+        "target": 2150085896,
+        "addend": 0
+      }
+    ]
+  }
+]

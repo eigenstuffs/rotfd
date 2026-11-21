@@ -1,0 +1,9 @@
+# Resource state forwarding
+
+`src/Game/resource_state_forward.cpp` reconstructs three 148-byte wrappers: `fn_80068FE4` (`80068FE4..80069078`), `fn_80069078` (`80069078..8006910C`), and `fn_80069218` (`80069218..800692AC`). Each calls the virtual resource getter at table offset `14`, resolves its generation-tagged handle at `58`, and forwards the original query object, resolved pointer, and input byte to `fn_80069CA8`, `fn_8006B220`, or `fn_8006B470`. The first two input bytes are signed, the last is unsigned; all return a signed byte, consistent with the existing Python caller declarations.
+
+The local type view expresses the getter as an ordinary virtual method after a four-byte prefix. No original table allocation is emitted or claimed. GC/1.3.2 requires per-file `-O4,s` and `-Cpp_exceptions on`; speed optimization uses separate register saves and adds eight bytes to each wrapper.
+
+The complete compiler allocation is 444 bytes of `.text`, 24 bytes of `extab`, and 36 bytes of `extabindex`. Exception allocations are `8000BD50..8000BD58`, `8000BD58..8000BD60`, and `8000BD90..8000BD98`; their entries are `80018C84..80018C90`, `80018C90..80018C9C`, and `80018CA8..80018CB4`. Intervening original bytes remain unclaimed.
+
+Run `python3 scratch/game_resource_state_forward/verify.py` for complete byte and extent verification of all 504 allocated bytes in nine ranges, nine actual text relocations, six actual EH-index relocations, and three nonallocated compiler metadata relocations. No weak functions, data pools, BSS, padding, or headers are emitted. The complete original extabindex (`80015F60..8001F2C0`), ctors (`80299920..80299980`), and dtors (`80299980..802999A0`) are audited; every original EH owner is reconstructed and there is no ctors/dtors ownership. The DOL SHA1 remains `5da8295a79bf297ab62c620e6ac66210be1c6ef5`. Central whole-DOL acceptance is pending.

@@ -1,0 +1,233 @@
+{
+  "source": "src/Objects/methodobject.c",
+  "status": "integrated-byte-match",
+  "compiler": "GC/2.0",
+  "cflags": [
+    "-proc gekko",
+    "-fp hardware",
+    "-enum int",
+    "-str reuse",
+    "-common off",
+    "-opt level=4,nopeephole,speed",
+    "-inline auto,deferred",
+    "-pool off",
+    "-Cpp_exceptions off"
+  ],
+  "splits": [
+    {
+      "section": ".text",
+      "start": "0x80155540",
+      "end": "0x80155c0c"
+    },
+    {
+      "section": ".data",
+      "start": "0x802d4148",
+      "end": "0x802d4280"
+    },
+    {
+      "section": ".sdata",
+      "start": "0x80376260",
+      "end": "0x8037626E"
+    },
+    {
+      "section": ".sbss",
+      "start": "0x80377e10",
+      "end": "0x80377e14"
+    }
+  ],
+  "functions": [
+    {
+      "name": "PyCFunction_Fini",
+      "original_name": "fn_80155540",
+      "address": "0x80155540",
+      "size": "0x38",
+      "scope": "global"
+    },
+    {
+      "name": "Py_FindMethod",
+      "original_name": "fn_80155578",
+      "address": "0x80155578",
+      "size": "0x1a0",
+      "scope": "global"
+    },
+    {
+      "name": "listmethodchain",
+      "original_name": "fn_80155718",
+      "address": "0x80155718",
+      "size": "0x11c",
+      "scope": "local"
+    },
+    {
+      "name": "meth_hash",
+      "original_name": "fn_80155834",
+      "address": "0x80155834",
+      "size": "0x8c",
+      "scope": "local"
+    },
+    {
+      "name": "meth_compare",
+      "original_name": "fn_801558C0",
+      "address": "0x801558c0",
+      "size": "0x80",
+      "scope": "local"
+    },
+    {
+      "name": "meth_repr",
+      "original_name": "fn_80155940",
+      "address": "0x80155940",
+      "size": "0x78",
+      "scope": "local"
+    },
+    {
+      "name": "meth_getattr",
+      "original_name": "fn_801559B8",
+      "address": "0x801559b8",
+      "size": "0x144",
+      "scope": "local"
+    },
+    {
+      "name": "meth_dealloc",
+      "original_name": "fn_80155AFC",
+      "address": "0x80155afc",
+      "size": "0x68",
+      "scope": "local"
+    },
+    {
+      "name": "PyCFunction_New",
+      "original_name": "fn_80155B64",
+      "address": "0x80155b64",
+      "size": "0xa8",
+      "scope": "global"
+    }
+  ],
+  "data_symbols": [
+    {
+      "name": "PyCFunction_Type",
+      "original_name": "lbl_802D4164",
+      "address": "0x802d4164",
+      "size": "0x6c",
+      "section": ".data",
+      "scope": "global"
+    },
+    {
+      "name": "free_list",
+      "original_name": "lbl_80377E10",
+      "address": "0x80377e10",
+      "size": "0x4",
+      "section": ".sbss",
+      "scope": "local"
+    }
+  ],
+  "dependency_symbols": [
+    {
+      "name": "PyList_New",
+      "original_name": "fn_8014EA58",
+      "address": "0x8014ea58",
+      "size": "0x1a8",
+      "section": ".text",
+      "scope": "global"
+    },
+    {
+      "name": "PyList_SetItem",
+      "original_name": "fn_8014E860",
+      "address": "0x8014e860",
+      "size": "0x114",
+      "section": ".text",
+      "scope": "global"
+    },
+    {
+      "name": "PyList_Sort",
+      "original_name": "fn_8014A4CC",
+      "address": "0x8014a4cc",
+      "size": "0xe4",
+      "section": ".text",
+      "scope": "global"
+    },
+    {
+      "name": "_Py_HashPointer",
+      "original_name": "fn_801576A8",
+      "address": "0x801576a8",
+      "size": "0x4",
+      "section": ".text",
+      "scope": "global"
+    },
+    {
+      "name": "PyErr_Occurred",
+      "original_name": "fn_8019118C",
+      "address": "0x8019118c",
+      "size": "0x24",
+      "section": ".text",
+      "scope": "global"
+    },
+    {
+      "name": "PyEval_GetRestricted",
+      "original_name": "fn_801762F0",
+      "address": "0x801762f0",
+      "size": "0x38",
+      "section": ".text",
+      "scope": "global"
+    },
+    {
+      "name": "Py_BuildValue",
+      "original_name": "fn_8019E940",
+      "address": "0x8019e940",
+      "size": "0x2f4",
+      "section": ".text",
+      "scope": "global"
+    },
+    {
+      "name": "PyExc_RuntimeError",
+      "original_name": "lbl_80377EC4",
+      "address": "0x80377ec4",
+      "size": "0x4",
+      "section": ".sbss",
+      "scope": "global"
+    }
+  ],
+  "validation": {
+    "text_bytes": 1740,
+    "data_bytes": 312,
+    "sdata_bytes": 14,
+    "sdata_padding_bytes": 2,
+    "sbss_bytes": 4,
+    "relocations_applied": 88,
+    "section_byte_differences": 0,
+    "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "4157a6593066bb3744789568e086f203b6d038d191672e1c5c9ef2e545d1ed54",
+    "object_sha256": "913669ae77228224a7b1ed159429f8934284c69015a28c3e6cd8cd1365fdfe87",
+    "integration_status": "verified full-DOL and objdiff"
+  },
+  "notes": "docs/notes/methodobject.md",
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "4157a6593066bb3744789568e086f203b6d038d191672e1c5c9ef2e545d1ed54",
+    "matched_code": 1740,
+    "matched_functions": 9,
+    "matched_data": 330,
+    "complete_data": 330,
+    "object_path": "build/GSQE78/src/Objects/methodobject.o",
+    "object_sha256": "913669ae77228224a7b1ed159429f8934284c69015a28c3e6cd8cd1365fdfe87"
+  },
+  "external_padding": [
+    {
+      "source": "src/Objects/methodobject.c",
+      "unit": "main/Objects/methodobject",
+      "section": ".sdata",
+      "start": "0x8037626e",
+      "end": "0x80376270",
+      "size": 2,
+      "alignment": 1,
+      "symbol": "gap_09_8037626E_sdata",
+      "original_owner": "padding/source_extents/Objects/methodobject.s",
+      "source_section_start": "0x80376260",
+      "source_section_bytes": 14,
+      "previous_split_bytes": 16,
+      "description": "Original linker alignment beyond emitted source section; no source credit."
+    }
+  ],
+  "source_extent_audit": {
+    "data_credit_correction": 2,
+    "evidence": "config/GSQE78/source_padding.json",
+    "description": "Source and original bytes unchanged; trailing original padding moved to NonMatching ownership."
+  }
+}

@@ -1,0 +1,369 @@
+[
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/early_actor_scoped_handle_80084830.cpp",
+    "source_sha256": "f58bd032d25b217c4b0e7decd0d672002c841c85c82136acf66b7a8cf92839a0",
+    "source_kind": "c++",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "src/Game",
+      "-i",
+      "include"
+    ],
+    "required_extra_cflags": [
+      "-O4,s",
+      "-Cpp_exceptions on"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/early_actor_scoped_handle_views.h",
+        "sha256": "54bba0ee28cb74506de13faaea6bbbf904350d8f66a42f2ed5369e95882215b1"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148026416,
+        "end": 2148026700,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147540048,
+        "end": 2147540088,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147589920,
+        "end": 2147589932,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_80084830",
+        "address": 2148026416,
+        "size": 284,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0,
+        "sha256": "98fecb69bd40bbd99c142379c9dbcd5a178afcce87245f0b45b2b861b8f4432f"
+      }
+    ],
+    "objects": [
+      {
+        "name": "@26",
+        "address": 2147540048,
+        "size": 40,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0,
+        "sha256": "34ecfeb2b605fe2e44af26f4c27a531a38b36ead44f1304461197cae0f2ddc88"
+      },
+      {
+        "name": "@27",
+        "address": 2147589920,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0,
+        "sha256": "d58fa977c43811053c291153fe3a8684f12460ca31f5a0070ec62c3d02158d56"
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "__dt__15Handle_801F7F10Fv",
+        "address": 2149547792,
+        "scope": "global"
+      },
+      {
+        "name": "fn_8007D6A0",
+        "address": 2147997344,
+        "scope": "global"
+      },
+      {
+        "name": "fn_80092844",
+        "address": 2148083780,
+        "scope": "global"
+      },
+      {
+        "name": "fn_80092DAC",
+        "address": 2148085164,
+        "scope": "global"
+      },
+      {
+        "name": "fn_801F7CB4",
+        "address": 2149547188,
+        "scope": "global"
+      },
+      {
+        "name": "fn_80224038",
+        "address": 2149728312,
+        "scope": "global"
+      },
+      {
+        "name": "fn_8025E50C",
+        "address": 2149967116,
+        "scope": "global"
+      },
+      {
+        "name": "fn_8025E9FC",
+        "address": 2149968380,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_801E9D24",
+        "address": 2149489956,
+        "scope": "global"
+      }
+    ],
+    "original_metadata_audit": {
+      "status": "all-original-table-ownership-retained",
+      "retained_ranges": [
+        {
+          "start": 2148026416,
+          "end": 2148026700
+        }
+      ],
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "entries": 3141,
+          "scanned_slots": 3144,
+          "references_to_retained_ranges": [
+            {
+              "entry_address": 2147589920,
+              "function": 2148026416,
+              "size": 284,
+              "extab": 2147540048,
+              "ownership": "retained-source"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "entries": 19,
+          "scanned_slots": 24,
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "entries": 3,
+          "scanned_slots": 8,
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "fe0cea1814439a1d11bb650b45ff69c1447f4b0122b8fa41dbc0f13edede1358",
+      "retained_text_bytes": 284,
+      "emitted_text_bytes": 284,
+      "exception_table_bytes": 52,
+      "initialized_data_bytes": 52,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "weak_functions": 0,
+      "unlinked_text_bytes": 0,
+      "relocations": 17,
+      "text_relocations": 13,
+      "exception_table_relocations": 4,
+      "unlinked_relocations": 0,
+      "nonallocated_metadata_relocations": 1,
+      "all_retained_allocated_bytes_verified": true,
+      "all_emitted_allocated_bytes_accounted": true,
+      "all_original_exception_ownership_retained": true,
+      "zero_byte_differences": true,
+      "verification_script": "/Users/brandenb/Downloads/rotfd/scratch/game_early_actor_scoped_handles/early_actor_scoped_handle_80084830/verify.py"
+    },
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 44,
+        "address": 2148026460,
+        "kind": 10,
+        "symbol": "fn_80092844",
+        "target": 2148083780,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 60,
+        "address": 2148026476,
+        "kind": 10,
+        "symbol": "fn_8007D6A0",
+        "target": 2147997344,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 72,
+        "address": 2148026488,
+        "kind": 10,
+        "symbol": "fn_8025E9FC",
+        "target": 2149968380,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 88,
+        "address": 2148026504,
+        "kind": 10,
+        "symbol": "fn_8025E50C",
+        "target": 2149967116,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 108,
+        "address": 2148026524,
+        "kind": 10,
+        "symbol": "fn_801F7CB4",
+        "target": 2149547188,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 120,
+        "address": 2148026536,
+        "kind": 10,
+        "symbol": "fn_801F7CB4",
+        "target": 2149547188,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 132,
+        "address": 2148026548,
+        "kind": 10,
+        "symbol": "__dt__15Handle_801F7F10Fv",
+        "target": 2149547792,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 138,
+        "address": 2148026554,
+        "kind": 6,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 146,
+        "address": 2148026562,
+        "kind": 4,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 216,
+        "address": 2148026632,
+        "kind": 10,
+        "symbol": "fn_80224038",
+        "target": 2149728312,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 232,
+        "address": 2148026648,
+        "kind": 10,
+        "symbol": "fn_8007D6A0",
+        "target": 2147997344,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 244,
+        "address": 2148026660,
+        "kind": 10,
+        "symbol": "__dt__15Handle_801F7F10Fv",
+        "target": 2149547792,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 256,
+        "address": 2148026672,
+        "kind": 10,
+        "symbol": "fn_80092DAC",
+        "target": 2148085164,
+        "addend": 0
+      },
+      {
+        "section": "extab",
+        "at": 28,
+        "address": 2147540076,
+        "kind": 1,
+        "symbol": "__dt__15Handle_801F7F10Fv",
+        "target": 2149547792,
+        "addend": 0
+      },
+      {
+        "section": "extab",
+        "at": 36,
+        "address": 2147540084,
+        "kind": 1,
+        "symbol": "__dt__15Handle_801F7F10Fv",
+        "target": 2149547792,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147589920,
+        "kind": 1,
+        "symbol": "fn_80084830",
+        "target": 2148026416,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147589928,
+        "kind": 1,
+        "symbol": "@26",
+        "target": 2147540048,
+        "addend": 0
+      }
+    ]
+  }
+]

@@ -1,0 +1,208 @@
+{
+  "source": "src/dolphin/os/OSContext_dump.c",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.2.5n",
+  "cflags": "-proc gekko -fp hardware -enum int -str reuse -common off -O4,p -opt nopeephole -inline auto -i src/dolphin/os -Cpp_exceptions off",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2148477876,
+      "end": 2148478556
+    },
+    {
+      "name": ".data",
+      "start": 2150407176,
+      "end": 2150407647
+    }
+  ],
+  "functions": [
+    {
+      "name": "OSDumpContext",
+      "address": 2148477876,
+      "size": 680
+    }
+  ],
+  "objects": [
+    {
+      "name": "OSContextInitMessage",
+      "address": 2150407612,
+      "size": 35,
+      "section": ".data"
+    },
+    {
+      "name": "@50",
+      "address": 2150407176,
+      "size": 68,
+      "section": ".data",
+      "scope": "local",
+      "compiler_assembly_name": "\"@50\""
+    },
+    {
+      "name": "@51",
+      "address": 2150407244,
+      "size": 48,
+      "section": ".data",
+      "scope": "local",
+      "compiler_assembly_name": "\"@51\""
+    },
+    {
+      "name": "@52",
+      "address": 2150407292,
+      "size": 47,
+      "section": ".data",
+      "scope": "local",
+      "compiler_assembly_name": "\"@52\""
+    },
+    {
+      "name": "@53",
+      "address": 2150407340,
+      "size": 47,
+      "section": ".data",
+      "scope": "local",
+      "compiler_assembly_name": "\"@53\""
+    },
+    {
+      "name": "@54",
+      "address": 2150407388,
+      "size": 17,
+      "section": ".data",
+      "scope": "local",
+      "compiler_assembly_name": "\"@54\""
+    },
+    {
+      "name": "@55",
+      "address": 2150407408,
+      "size": 33,
+      "section": ".data",
+      "scope": "local",
+      "compiler_assembly_name": "\"@55\""
+    },
+    {
+      "name": "@56",
+      "address": 2150407444,
+      "size": 18,
+      "section": ".data",
+      "scope": "local",
+      "compiler_assembly_name": "\"@56\""
+    },
+    {
+      "name": "@57",
+      "address": 2150407464,
+      "size": 25,
+      "section": ".data",
+      "scope": "local",
+      "compiler_assembly_name": "\"@57\""
+    },
+    {
+      "name": "@58",
+      "address": 2150407492,
+      "size": 18,
+      "section": ".data",
+      "scope": "local",
+      "compiler_assembly_name": "\"@58\""
+    },
+    {
+      "name": "@59",
+      "address": 2150407512,
+      "size": 29,
+      "section": ".data",
+      "scope": "local",
+      "compiler_assembly_name": "\"@59\""
+    },
+    {
+      "name": "@60",
+      "address": 2150407544,
+      "size": 38,
+      "section": ".data",
+      "scope": "local",
+      "compiler_assembly_name": "\"@60\""
+    },
+    {
+      "name": "@61",
+      "address": 2150407584,
+      "size": 28,
+      "section": ".data",
+      "scope": "local",
+      "compiler_assembly_name": "\"@61\""
+    }
+  ],
+  "symbol_scopes": {
+    "OSDumpContext": "global",
+    "OSContextInitMessage": "global",
+    "@50": "local",
+    "@51": "local",
+    "@52": "local",
+    "@53": "local",
+    "@54": "local",
+    "@55": "local",
+    "@56": "local",
+    "@57": "local",
+    "@58": "local",
+    "@59": "local",
+    "@60": "local",
+    "@61": "local"
+  },
+  "symbols": {
+    "PyType_Type": "0x802d68fc",
+    "OSDumpContext": "0x800f2bb4",
+    "OSContextInitMessage": "0x802c9dbc",
+    "OSReport": "0x800f2f28",
+    "OSDisableInterrupts": "0x800f362c",
+    "OSSetCurrentContext": "0x800f290c",
+    "__cvt_fp2unsigned": "0x8011f4f4",
+    "OSRestoreInterrupts": "0x800f3654",
+    "@50": "0x802c9c08",
+    "@51": "0x802c9c4c",
+    "@52": "0x802c9c7c",
+    "@53": "0x802c9cac",
+    "@54": "0x802c9cdc",
+    "@55": "0x802c9cf0",
+    "@56": "0x802c9d14",
+    "@57": "0x802c9d28",
+    "@58": "0x802c9d44",
+    "@59": "0x802c9d58",
+    "@60": "0x802c9d78",
+    "@61": "0x802c9da0"
+  },
+  "external_original_names": {
+    "OSReport": "OSReport",
+    "OSDisableInterrupts": "OSDisableInterrupts",
+    "OSSetCurrentContext": "OSSetCurrentContext",
+    "__cvt_fp2unsigned": "fn_8011F4F4",
+    "OSRestoreInterrupts": "OSRestoreInterrupts"
+  },
+  "verified_text_bytes": 680,
+  "verified_data_bytes": 471,
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "a1c498bdac7e51f444b06afd1f4c4e06f272156a82de39a6c86bbbd0ce62319e",
+    "matched_code": 680,
+    "matched_functions": 1,
+    "matched_data": 471,
+    "complete_data": 471,
+    "object_path": "build/GSQE78/src/dolphin/os/OSContext_dump.o",
+    "object_sha256": "6e212105b26b85e874ce12a074346ccd98cc87ffdbb9297cc5a172107ec45cf4"
+  },
+  "external_padding": [
+    {
+      "source": "src/dolphin/os/OSContext_dump.c",
+      "unit": "main/dolphin/os/OSContext_dump",
+      "section": ".data",
+      "start": "0x802c9ddf",
+      "end": "0x802c9de0",
+      "size": 1,
+      "alignment": 1,
+      "symbol": "gap_07_802C9DDF_data",
+      "original_owner": "padding/source_extents/dolphin/os/OSContext_dump.s",
+      "source_section_start": "0x802c9c08",
+      "source_section_bytes": 471,
+      "previous_split_bytes": 472,
+      "description": "Original linker alignment beyond emitted source section; no source credit."
+    }
+  ],
+  "source_extent_audit": {
+    "data_credit_correction": 1,
+    "evidence": "config/GSQE78/source_padding.json",
+    "description": "Source and original bytes unchanged; trailing original padding moved to NonMatching ownership."
+  }
+}

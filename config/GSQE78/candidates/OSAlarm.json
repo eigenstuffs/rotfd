@@ -1,0 +1,133 @@
+{
+  "source": "src/dolphin/os/OSAlarm.c",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.2.5n",
+  "cflags": "-proc gekko -fp hardware -enum int -str reuse -common off -O4,p -inline auto -Cpp_exceptions off",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2148473028,
+      "end": 2148474660
+    },
+    {
+      "name": ".sbss",
+      "start": 2151119104,
+      "end": 2151119112
+    }
+  ],
+  "functions": [
+    {
+      "name": "OSInitAlarm",
+      "address": 2148473028,
+      "size": 76,
+      "source_kind": "c"
+    },
+    {
+      "name": "OSCreateAlarm",
+      "address": 2148473104,
+      "size": 16,
+      "source_kind": "c"
+    },
+    {
+      "name": "InsertAlarm",
+      "address": 2148473120,
+      "size": 592,
+      "source_kind": "c"
+    },
+    {
+      "name": "OSSetAlarm",
+      "address": 2148473712,
+      "size": 104,
+      "source_kind": "c"
+    },
+    {
+      "name": "OSCancelAlarm",
+      "address": 2148473816,
+      "size": 284,
+      "source_kind": "c"
+    },
+    {
+      "name": "DecrementerExceptionCallback",
+      "address": 2148474100,
+      "size": 560,
+      "source_kind": "c"
+    }
+  ],
+  "objects": [
+    {
+      "name": "AlarmQueue",
+      "address": 2151119104,
+      "size": 8,
+      "section": ".sbss"
+    }
+  ],
+  "symbol_scopes": {
+    "OSInitAlarm": "global",
+    "OSCreateAlarm": "global",
+    "InsertAlarm": "local",
+    "OSSetAlarm": "global",
+    "OSCancelAlarm": "global",
+    "DecrementerExceptionCallback": "global",
+    "AlarmQueue": "local",
+    "DecrementerExceptionHandler": "global"
+  },
+  "symbols": {
+    "PyType_Type": "0x802d68fc",
+    "OSInitAlarm": "0x800f18c4",
+    "OSCreateAlarm": "0x800f1910",
+    "InsertAlarm": "0x800f1920",
+    "OSSetAlarm": "0x800f1b70",
+    "OSCancelAlarm": "0x800f1bd8",
+    "DecrementerExceptionCallback": "0x800f1cf4",
+    "AlarmQueue": "0x80377900",
+    "__OSGetExceptionHandler": "0x800f1744",
+    "DecrementerExceptionHandler": "0x800f1f24",
+    "__OSSetExceptionHandler": "0x800f1728",
+    "__OSGetSystemTime": "0x800f6c14",
+    "__div2i": "0x8011f76c",
+    "PPCMtdec": "0x800f0dd0",
+    "OSDisableInterrupts": "0x800f362c",
+    "OSRestoreInterrupts": "0x800f3654",
+    "OSLoadContext": "0x800f29f4",
+    "OSDisableScheduler": "0x800f5b10",
+    "OSClearContext": "0x800f2ad4",
+    "OSSetCurrentContext": "0x800f290c",
+    "OSEnableScheduler": "0x800f5b50",
+    "__OSReschedule": "0x800f606c"
+  },
+  "external_original_names": {
+    "__OSGetExceptionHandler": "__OSGetExceptionHandler",
+    "DecrementerExceptionHandler": "DecrementerExceptionHandler",
+    "__OSSetExceptionHandler": "__OSSetExceptionHandler",
+    "__OSGetSystemTime": "__OSGetSystemTime",
+    "__div2i": "fn_8011F76C",
+    "PPCMtdec": "PPCMtdec",
+    "OSDisableInterrupts": "OSDisableInterrupts",
+    "OSRestoreInterrupts": "OSRestoreInterrupts",
+    "OSLoadContext": "OSLoadContext",
+    "OSDisableScheduler": "OSDisableScheduler",
+    "OSClearContext": "OSClearContext",
+    "OSSetCurrentContext": "OSSetCurrentContext",
+    "OSEnableScheduler": "OSEnableScheduler",
+    "__OSReschedule": "__OSReschedule"
+  },
+  "verified_text_bytes": 1632,
+  "verified_data_bytes": 0,
+  "verified_c_text_bytes": 1632,
+  "verified_assembly_text_bytes": 0,
+  "notes": [
+    "Six C functions match all 1,632 compiled bytes.",
+    "The 80-byte DecrementerExceptionHandler remains an original fallback object and is excluded from this source split.",
+    "No initialized data. AlarmQueue owns eight zero-initialized bytes."
+  ],
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "08e07971c2088d48ed31311c3194a08b50ae04c7d338b33fc6f66ed4ac8be5f3",
+    "matched_code": 1632,
+    "matched_functions": 6,
+    "matched_data": 8,
+    "complete_data": 8,
+    "object_path": "build/GSQE78/src/dolphin/os/OSAlarm.o",
+    "object_sha256": "fd977da0c920e55013feb3950abfe1dc4b2370f8143f97f57f3c97e8d5552b68"
+  }
+}

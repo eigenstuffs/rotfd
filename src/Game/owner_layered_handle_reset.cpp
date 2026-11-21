@@ -1,0 +1,7 @@
+struct Handle_801F7F10{union{unsigned long value;struct{signed int generation:8;signed int index:24;}bits;};Handle_801F7F10();~Handle_801F7F10();};
+struct TransferObject{char unknown00[0x120];unsigned long flags;};struct TransferEntry{TransferObject*object;char unknown04[8];signed char generation;char unknown0D[3];};struct TransferManager{char unknown00[8];TransferEntry*entries;};extern "C"{extern struct{char unknown00[0x118];TransferManager*manager;}lbl_801E9D24;void fn_801F86C8(void*,const void*,int);}
+inline TransferObject*resolveTransfer(const Handle_801F7F10&h){TransferEntry*e=&lbl_801E9D24.manager->entries[h.bits.index];if(e->generation==h.bits.generation)return e->object;return 0;}
+struct LayeredResetHandle1:Handle_801F7F10{LayeredResetHandle1(){value=0;}};struct LayeredResetHandle2:LayeredResetHandle1{LayeredResetHandle2(){value=0;}};struct LayeredResetHandle3:LayeredResetHandle2{LayeredResetHandle3(){value=0;}};struct LayeredResetHandle4:LayeredResetHandle3{LayeredResetHandle4(){value=0;}};
+struct ResetOwner{char unknown00[0x180];Handle_801F7F10 first,second;};extern "C" void fn_8021E9F8(void*);
+inline void assignReset(Handle_801F7F10&dest,const Handle_801F7F10&input){fn_801F86C8(lbl_801E9D24.manager,&dest,-1);dest.value=input.value;fn_801F86C8(lbl_801E9D24.manager,&input,1);}
+extern "C" void fn_80228E0C(ResetOwner*self){fn_8021E9F8(self);LayeredResetHandle4 empty;assignReset(self->second,empty);const Handle_801F7F10*input=&self->second;assignReset(self->first,*input);}

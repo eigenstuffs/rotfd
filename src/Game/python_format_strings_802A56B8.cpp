@@ -1,0 +1,13 @@
+/* Original Python argument formats. See docs/notes/game-python-format-strings.md. */
+extern "C" const char lbl_802A56B8[18] = "O:RtcAgent_Z_Init";
+extern "C" const char lbl_802A56CC[21] = "O:RtcAgent_Z_Suspend";
+extern "C" const char lbl_802A56E4[21] = "O:RtcAgent_Z_Restore";
+extern "C" const char lbl_802A56FC[25] = "O:RtcAgent_Z_MarkHandles";
+extern "C" const char lbl_802A5718[21] = "OO:RtcAgent_Z_SetRtc";
+extern "C" const char lbl_802A5730[20] = "OO:RtcAgent_Z_Start";
+extern "C" const char lbl_802A5744[17] = "O:RtcAgent_Z_End";
+extern "C" const char lbl_802A5758[34] = "OOO:RtcAgent_Z_GlobalTrackMessage";
+extern "C" const char lbl_802A577C[27] = "OOO:RtcAgent_Z_NodeMessage";
+extern "C" const char lbl_802A5798[19] = "OO:RtcAgent_Z_Mark";
+extern "C" const char lbl_802A57AC[20] = "OOO:RtcAgent_Z_Goto";
+extern "C" const char lbl_802A57C0[34] = "OO|f:RtcAgent_Z_SendMessageToGame";

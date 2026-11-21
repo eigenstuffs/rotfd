@@ -1,0 +1,150 @@
+{
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-lang c++",
+    "-proc gekko",
+    "-fp hardware",
+    "-enum int",
+    "-str reuse,readonly",
+    "-common off",
+    "-O4,p",
+    "-schedule on",
+    "-inline deferred",
+    "-Cpp_exceptions off",
+    "-RTTI off",
+    "-use_lmw_stmw on",
+    "-i src/Game"
+  ],
+  "source": "src/Game/console_controls.cpp",
+  "status": "integrated-byte-match",
+  "scope": "Bounded adjacent console flag and display callbacks; original full source-file extent is unestablished.",
+  "splits": [
+    {
+      "section": ".text",
+      "start": "0x801fb4b0",
+      "end": "0x801fb84c"
+    }
+  ],
+  "functions": [
+    {
+      "name": "fn_801FB4B0",
+      "original_name": "fn_801FB4B0",
+      "address": "0x801fb4b0",
+      "size": "0x1c",
+      "scope": "global"
+    },
+    {
+      "name": "fn_801FB4CC",
+      "original_name": "fn_801FB4CC",
+      "address": "0x801fb4cc",
+      "size": "0x1c",
+      "scope": "global"
+    },
+    {
+      "name": "fn_801FB4E8",
+      "original_name": "fn_801FB4E8",
+      "address": "0x801fb4e8",
+      "size": "0x1c",
+      "scope": "global"
+    },
+    {
+      "name": "fn_801FB504",
+      "original_name": "fn_801FB504",
+      "address": "0x801fb504",
+      "size": "0x8",
+      "scope": "global"
+    },
+    {
+      "name": "fn_801FB50C",
+      "original_name": "fn_801FB50C",
+      "address": "0x801fb50c",
+      "size": "0x88",
+      "scope": "global"
+    },
+    {
+      "name": "fn_801FB594",
+      "original_name": "fn_801FB594",
+      "address": "0x801fb594",
+      "size": "0x48",
+      "scope": "global"
+    },
+    {
+      "name": "fn_801FB5DC",
+      "original_name": "fn_801FB5DC",
+      "address": "0x801fb5dc",
+      "size": "0xb0",
+      "scope": "global"
+    },
+    {
+      "name": "fn_801FB68C",
+      "original_name": "fn_801FB68C",
+      "address": "0x801fb68c",
+      "size": "0x88",
+      "scope": "global"
+    },
+    {
+      "name": "fn_801FB714",
+      "original_name": "fn_801FB714",
+      "address": "0x801fb714",
+      "size": "0x88",
+      "scope": "global"
+    },
+    {
+      "name": "fn_801FB79C",
+      "original_name": "fn_801FB79C",
+      "address": "0x801fb79c",
+      "size": "0xb0",
+      "scope": "global"
+    }
+  ],
+  "data_symbols": [],
+  "dependency_symbols": [
+    {
+      "name": "lbl_801E9D24",
+      "address": "0x801e9d24",
+      "section": ".text"
+    },
+    {
+      "name": "fn_801FA014",
+      "address": "0x801fa014",
+      "section": ".text"
+    },
+    {
+      "name": "lbl_802AD658",
+      "address": "0x802ad658",
+      "section": ".rodata"
+    },
+    {
+      "name": "lbl_802AD66C",
+      "address": "0x802ad66c",
+      "section": ".rodata"
+    },
+    {
+      "name": "lbl_8037A8A0",
+      "address": "0x8037a8a0",
+      "section": ".sdata2"
+    }
+  ],
+  "notes": "docs/notes/game-console-controls.md",
+  "validation": {
+    "verification_script": "scratch/game_console_controls/verify.py",
+    "text_bytes": 924,
+    "data_bytes": 0,
+    "byte_differences": 0,
+    "original_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "integration_status": "verified full-DOL and objdiff",
+    "source_sha256": "1df64fa69f61c809cb983a2fdec37f8d306e480db577c5f98ca154f5a14bdfd9",
+    "relocations_applied": 36,
+    "object_sha256": "6d3260f0d5717e1f0b53d7f31daf569fa70df623603c192a7475905a2d5d13b9"
+  },
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "1df64fa69f61c809cb983a2fdec37f8d306e480db577c5f98ca154f5a14bdfd9",
+    "matched_code": 924,
+    "matched_functions": 10,
+    "matched_data": 0,
+    "complete_data": 0,
+    "object_path": "build/GSQE78/src/Game/console_controls.o",
+    "object_sha256": "6d3260f0d5717e1f0b53d7f31daf569fa70df623603c192a7475905a2d5d13b9"
+  }
+}

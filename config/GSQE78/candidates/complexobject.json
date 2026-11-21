@@ -1,0 +1,399 @@
+{
+  "source": "src/Objects/complexobject.c",
+  "status": "integrated-byte-match",
+  "compiler": "GC/2.0",
+  "cflags": "-proc gekko -fp hardware -enum int -str reuse -common off -opt level=4,nopeephole,speed -inline auto,deferred -pool off -Cpp_exceptions off",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2148780140,
+      "end": 2148786508
+    },
+    {
+      "name": ".data",
+      "start": 2150441448,
+      "end": 2150442109
+    },
+    {
+      "name": ".sdata",
+      "start": 2151112728,
+      "end": 2151112774
+    },
+    {
+      "name": ".sdata2",
+      "start": 2151128872,
+      "end": 2151128896
+    }
+  ],
+  "functions": [
+    {
+      "name": "complex_getattr",
+      "address": 2148780140,
+      "size": 184
+    },
+    {
+      "name": "complex_conjugate",
+      "address": 2148780324,
+      "size": 160
+    },
+    {
+      "name": "complex_float",
+      "address": 2148780484,
+      "size": 48
+    },
+    {
+      "name": "complex_long",
+      "address": 2148780532,
+      "size": 48
+    },
+    {
+      "name": "complex_int",
+      "address": 2148780580,
+      "size": 48
+    },
+    {
+      "name": "complex_richcompare",
+      "address": 2148780628,
+      "size": 500
+    },
+    {
+      "name": "complex_coerce",
+      "address": 2148781128,
+      "size": 436
+    },
+    {
+      "name": "complex_nonzero",
+      "address": 2148781564,
+      "size": 44
+    },
+    {
+      "name": "complex_abs",
+      "address": 2148781608,
+      "size": 44
+    },
+    {
+      "name": "complex_pos",
+      "address": 2148781652,
+      "size": 16
+    },
+    {
+      "name": "complex_neg",
+      "address": 2148781668,
+      "size": 112
+    },
+    {
+      "name": "complex_pow",
+      "address": 2148781780,
+      "size": 596
+    },
+    {
+      "name": "complex_divmod",
+      "address": 2148782376,
+      "size": 728
+    },
+    {
+      "name": "complex_remainder",
+      "address": 2148783104,
+      "size": 520
+    },
+    {
+      "name": "complex_div",
+      "address": 2148783624,
+      "size": 368
+    },
+    {
+      "name": "complex_mul",
+      "address": 2148783992,
+      "size": 152
+    },
+    {
+      "name": "complex_sub",
+      "address": 2148784144,
+      "size": 136
+    },
+    {
+      "name": "complex_add",
+      "address": 2148784280,
+      "size": 136
+    },
+    {
+      "name": "complex_hash",
+      "address": 2148784416,
+      "size": 128
+    },
+    {
+      "name": "complex_str",
+      "address": 2148784544,
+      "size": 116
+    },
+    {
+      "name": "complex_repr",
+      "address": 2148784660,
+      "size": 116
+    },
+    {
+      "name": "complex_print",
+      "address": 2148784776,
+      "size": 192
+    },
+    {
+      "name": "complex_dealloc",
+      "address": 2148784968,
+      "size": 32
+    },
+    {
+      "name": "PyComplex_AsCComplex",
+      "address": 2148785000,
+      "size": 108
+    },
+    {
+      "name": "PyComplex_ImagAsDouble",
+      "address": 2148785108,
+      "size": 36
+    },
+    {
+      "name": "PyComplex_RealAsDouble",
+      "address": 2148785144,
+      "size": 60
+    },
+    {
+      "name": "PyComplex_FromDoubles",
+      "address": 2148785204,
+      "size": 96
+    },
+    {
+      "name": "PyComplex_FromCComplex",
+      "address": 2148785300,
+      "size": 100
+    },
+    {
+      "name": "c_powi",
+      "address": 2148785400,
+      "size": 1108
+    }
+  ],
+  "objects": [
+    {
+      "name": "c_1",
+      "address": 2150441448,
+      "size": 16,
+      "section": ".data"
+    },
+    {
+      "name": "complex_methods",
+      "address": 2150441476,
+      "size": 32,
+      "section": ".data"
+    },
+    {
+      "name": "complex_as_number",
+      "address": 2150441508,
+      "size": 136,
+      "section": ".data"
+    },
+    {
+      "name": "PyComplex_Type",
+      "address": 2150441644,
+      "size": 108,
+      "section": ".data"
+    }
+  ],
+  "symbol_scopes": {
+    "complex_getattr": "local",
+    "complex_conjugate": "local",
+    "complex_float": "local",
+    "complex_long": "local",
+    "complex_int": "local",
+    "complex_richcompare": "local",
+    "complex_coerce": "local",
+    "complex_nonzero": "local",
+    "complex_abs": "local",
+    "complex_pos": "local",
+    "complex_neg": "local",
+    "complex_pow": "local",
+    "complex_divmod": "local",
+    "complex_remainder": "local",
+    "complex_div": "local",
+    "complex_mul": "local",
+    "complex_sub": "local",
+    "complex_add": "local",
+    "complex_hash": "local",
+    "complex_str": "local",
+    "complex_repr": "local",
+    "complex_print": "local",
+    "complex_dealloc": "local",
+    "PyComplex_AsCComplex": "global",
+    "PyComplex_ImagAsDouble": "global",
+    "PyComplex_RealAsDouble": "global",
+    "PyComplex_FromDoubles": "global",
+    "PyComplex_FromCComplex": "global",
+    "c_powi": "local",
+    "c_1": "local",
+    "complex_methods": "local",
+    "complex_as_number": "local",
+    "PyComplex_Type": "global"
+  },
+  "symbols": {
+    "PyType_Type": "0x802d68fc",
+    "complex_getattr": "0x8013c86c",
+    "complex_conjugate": "0x8013c924",
+    "complex_float": "0x8013c9c4",
+    "complex_long": "0x8013c9f4",
+    "complex_int": "0x8013ca24",
+    "complex_richcompare": "0x8013ca54",
+    "complex_coerce": "0x8013cc48",
+    "complex_nonzero": "0x8013cdfc",
+    "complex_abs": "0x8013ce28",
+    "complex_pos": "0x8013ce54",
+    "complex_neg": "0x8013ce64",
+    "complex_pow": "0x8013ced4",
+    "complex_divmod": "0x8013d128",
+    "complex_remainder": "0x8013d400",
+    "complex_div": "0x8013d608",
+    "complex_mul": "0x8013d778",
+    "complex_sub": "0x8013d810",
+    "complex_add": "0x8013d898",
+    "complex_hash": "0x8013d920",
+    "complex_str": "0x8013d9a0",
+    "complex_repr": "0x8013da14",
+    "complex_print": "0x8013da88",
+    "complex_dealloc": "0x8013db48",
+    "PyComplex_AsCComplex": "0x8013db68",
+    "PyComplex_ImagAsDouble": "0x8013dbd4",
+    "PyComplex_RealAsDouble": "0x8013dbf8",
+    "PyComplex_FromDoubles": "0x8013dc34",
+    "PyComplex_FromCComplex": "0x8013dc94",
+    "c_powi": "0x8013dcf8",
+    "c_1": "0x802d21e8",
+    "complex_methods": "0x802d2204",
+    "complex_as_number": "0x802d2224",
+    "PyComplex_Type": "0x802d22ac",
+    "strcmp": "0x801283a8",
+    "PyFloat_FromDouble": "0x801458c0",
+    "Py_BuildValue": "0x8019e940",
+    "Py_FindMethod": "0x80155578",
+    "PyArg_ParseTuple": "0x801951b4",
+    "malloc": "0x8001f2c0",
+    "PyErr_NoMemory": "0x80190524",
+    "PyExc_TypeError": "0x80377ea0",
+    "PyErr_SetString": "0x801911b0",
+    "PyNumber_CoerceEx": "0x80156c5c",
+    "_Py_NotImplementedStruct": "0x80376298",
+    "_Py_TrueStruct": "0x802d3484",
+    "_Py_ZeroStruct": "0x802d3478",
+    "PyInt_Type": "0x802d3518",
+    "PyInt_AsLong": "0x80149a98",
+    "PyLong_Type": "0x802d3f64",
+    "PyLong_AsDouble": "0x80154fd8",
+    "PyFloat_Type": "0x802d2d20",
+    "PyFloat_AsDouble": "0x801454c4",
+    "hypot": "0x8012da4c",
+    "_savefpr_28": "0x8011f588",
+    "_Py_NoneStruct": "0x80376290",
+    "PyExc_ValueError": "0x80377e9c",
+    "errno": "0x80377d10",
+    "pow": "0x8012da8c",
+    "atan2": "0x8012d9ec",
+    "exp": "0x8012da0c",
+    "log": "0x8012da6c",
+    "cos": "0x8012d170",
+    "sin": "0x8012d85c",
+    "_restfpr_28": "0x8011f5d4",
+    "PyExc_ZeroDivisionError": "0x80377e98",
+    "floor": "0x8012d244",
+    "_Py_HashDouble": "0x801576ac",
+    "sprintf": "0x80125b10",
+    "PyString_FromString": "0x80163ab0",
+    "fputs": "0x80124184",
+    "free": "0x8001f35c"
+  },
+  "external_original_names": {
+    "strcmp": "strcmp",
+    "PyFloat_FromDouble": "fn_801458C0",
+    "Py_BuildValue": "Py_BuildValue",
+    "Py_FindMethod": "Py_FindMethod",
+    "PyArg_ParseTuple": "PyArg_ParseTuple",
+    "malloc": "malloc",
+    "PyErr_NoMemory": "PyErr_NoMemory",
+    "PyExc_TypeError": "PyExc_TypeError",
+    "PyErr_SetString": "PyErr_SetString",
+    "PyNumber_CoerceEx": "PyNumber_CoerceEx",
+    "_Py_NotImplementedStruct": "_Py_NotImplementedStruct",
+    "_Py_TrueStruct": "_Py_TrueStruct",
+    "_Py_ZeroStruct": "_Py_ZeroStruct",
+    "PyInt_Type": "lbl_802D3518",
+    "PyInt_AsLong": "PyInt_AsLong",
+    "PyLong_Type": "lbl_802D3F64",
+    "PyLong_AsDouble": "fn_80154FD8",
+    "PyFloat_Type": "lbl_802D2D20",
+    "PyFloat_AsDouble": "fn_801454C4",
+    "hypot": "fn_8012DA4C",
+    "_savefpr_28": "_savefpr_28",
+    "_Py_NoneStruct": "_Py_NoneStruct",
+    "PyExc_ValueError": "PyExc_ValueError",
+    "errno": "lbl_80377D10",
+    "pow": "fn_8012DA8C",
+    "atan2": "fn_8012D9EC",
+    "exp": "fn_8012DA0C",
+    "log": "fn_8012DA6C",
+    "cos": "fn_8012D170",
+    "sin": "fn_8012D85C",
+    "_restfpr_28": "_restfpr_28",
+    "PyExc_ZeroDivisionError": "lbl_80377E98",
+    "floor": "fn_8012D244",
+    "_Py_HashDouble": "_Py_HashDouble",
+    "sprintf": "sprintf",
+    "PyString_FromString": "PyString_FromString",
+    "fputs": "fn_80124184",
+    "free": "free"
+  },
+  "verified_text_bytes": 6368,
+  "verified_data_bytes": 731,
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "5611860620143d4b2c806c2b3d8be18f4cf0e797451b52468605fc574eae4927",
+    "matched_code": 6368,
+    "matched_functions": 29,
+    "matched_data": 731,
+    "complete_data": 731,
+    "object_path": "build/GSQE78/src/Objects/complexobject.o",
+    "object_sha256": "b648c391a9d976315b35f992e1582ead3fd5087e1b9a2744a31be66c70ce7d1e"
+  },
+  "external_padding": [
+    {
+      "source": "src/Objects/complexobject.c",
+      "unit": "main/Objects/complexobject",
+      "section": ".data",
+      "start": "0x802d247d",
+      "end": "0x802d2480",
+      "size": 3,
+      "alignment": 1,
+      "symbol": "gap_07_802D247D_data",
+      "original_owner": "padding/source_extents/Objects/complexobject.s",
+      "source_section_start": "0x802d21e8",
+      "source_section_bytes": 661,
+      "previous_split_bytes": 664,
+      "description": "Original linker alignment beyond emitted source section; no source credit."
+    },
+    {
+      "source": "src/Objects/complexobject.c",
+      "unit": "main/Objects/complexobject",
+      "section": ".sdata",
+      "start": "0x80376046",
+      "end": "0x80376048",
+      "size": 2,
+      "alignment": 1,
+      "symbol": "gap_09_80376046_sdata",
+      "original_owner": "padding/source_extents/Objects/complexobject.s",
+      "source_section_start": "0x80376018",
+      "source_section_bytes": 46,
+      "previous_split_bytes": 48,
+      "description": "Original linker alignment beyond emitted source section; no source credit."
+    }
+  ],
+  "source_extent_audit": {
+    "data_credit_correction": 5,
+    "evidence": "config/GSQE78/source_padding.json",
+    "description": "Source and original bytes unchanged; trailing original padding moved to NonMatching ownership."
+  }
+}

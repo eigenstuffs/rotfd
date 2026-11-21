@@ -1,0 +1,90 @@
+{
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-lang c++",
+    "-proc gekko",
+    "-fp hardware",
+    "-enum int",
+    "-str reuse,readonly",
+    "-common off",
+    "-O4,p",
+    "-schedule on",
+    "-inline deferred",
+    "-Cpp_exceptions off",
+    "-RTTI off",
+    "-use_lmw_stmw on",
+    "-i src/Game"
+  ],
+  "source": "src/Game/group_updates.cpp",
+  "status": "integrated-byte-match",
+  "scope": "Bounded group query/update fragment; intervening capacity helper and complete original translation-unit boundary are not claimed.",
+  "splits": [
+    {
+      "section": ".text",
+      "start": "0x801ffa58",
+      "end": "0x801ffc94"
+    }
+  ],
+  "functions": [
+    {
+      "name": "fn_801FFA58",
+      "original_name": "fn_801FFA58",
+      "address": "0x801ffa58",
+      "size": "0x158",
+      "scope": "global"
+    },
+    {
+      "name": "fn_801FFBB0",
+      "original_name": "fn_801FFBB0",
+      "address": "0x801ffbb0",
+      "size": "0xe4",
+      "scope": "global"
+    }
+  ],
+  "data_symbols": [],
+  "dependency_symbols": [
+    {
+      "name": "lbl_801E9D24",
+      "address": "0x801e9d24",
+      "section": ".text"
+    },
+    {
+      "name": "fn_801F7EB8",
+      "address": "0x801f7eb8",
+      "section": ".text"
+    },
+    {
+      "name": "fn_8023AAAC",
+      "address": "0x8023aaac",
+      "section": ".text"
+    },
+    {
+      "name": "fn_8020349C",
+      "address": "0x8020349c",
+      "section": ".text"
+    }
+  ],
+  "notes": "docs/notes/game-group-updates.md",
+  "validation": {
+    "verification_script": "scratch/game_group_updates/verify_group_updates.py",
+    "text_bytes": 572,
+    "data_bytes": 0,
+    "byte_differences": 0,
+    "original_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "integration_status": "verified full-DOL and objdiff",
+    "source_sha256": "d6afde567ca6df05366d1aada5b6bf7fc238fd524ac5d50e0c07aa61f1af60e4",
+    "header_sha256": "1ba4d2f9c740af16f37202e50bfaab376485368df177d73faabe5d8e1eb87189",
+    "relocations_applied": 11,
+    "object_sha256": "79c629e75b81c7b77b0a0d75211f64ba4e4074bf7222d85e6a343e3ddcc93f7a"
+  },
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "d6afde567ca6df05366d1aada5b6bf7fc238fd524ac5d50e0c07aa61f1af60e4",
+    "matched_code": 572,
+    "matched_functions": 2,
+    "matched_data": 0,
+    "complete_data": 0,
+    "object_path": "build/GSQE78/src/Game/group_updates.o",
+    "object_sha256": "79c629e75b81c7b77b0a0d75211f64ba4e4074bf7222d85e6a343e3ddcc93f7a"
+  }
+}

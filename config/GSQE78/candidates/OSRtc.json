@@ -1,0 +1,162 @@
+{
+  "source": "src/dolphin/os/OSRtc.c",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.2.5n",
+  "cflags": "-proc gekko -fp hardware -enum int -str reuse -common off -O4,p -inline auto -i src/dolphin/os -Cpp_exceptions off",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2148486868,
+      "end": 2148489196
+    },
+    {
+      "name": ".bss",
+      "start": 2150730560,
+      "end": 2150730644
+    }
+  ],
+  "functions": [
+    {
+      "name": "WriteSramCallback",
+      "address": 2148486868,
+      "size": 96
+    },
+    {
+      "name": "WriteSram",
+      "address": 2148486964,
+      "size": 280
+    },
+    {
+      "name": "__OSInitSram",
+      "address": 2148487244,
+      "size": 308
+    },
+    {
+      "name": "__OSLockSram",
+      "address": 2148487552,
+      "size": 92
+    },
+    {
+      "name": "__OSLockSramEx",
+      "address": 2148487644,
+      "size": 92
+    },
+    {
+      "name": "UnlockSram",
+      "address": 2148487736,
+      "size": 776
+    },
+    {
+      "name": "__OSUnlockSram",
+      "address": 2148488512,
+      "size": 36
+    },
+    {
+      "name": "__OSUnlockSramEx",
+      "address": 2148488548,
+      "size": 36
+    },
+    {
+      "name": "__OSSyncSram",
+      "address": 2148488584,
+      "size": 16
+    },
+    {
+      "name": "OSGetSoundMode",
+      "address": 2148488600,
+      "size": 128
+    },
+    {
+      "name": "OSSetSoundMode",
+      "address": 2148488728,
+      "size": 164
+    },
+    {
+      "name": "OSGetWirelessID",
+      "address": 2148488892,
+      "size": 132
+    },
+    {
+      "name": "OSSetWirelessID",
+      "address": 2148489024,
+      "size": 172
+    }
+  ],
+  "objects": [
+    {
+      "name": "Scb",
+      "address": 2150730560,
+      "size": 84,
+      "section": ".bss"
+    }
+  ],
+  "symbol_scopes": {
+    "WriteSramCallback": "local",
+    "WriteSram": "local",
+    "__OSInitSram": "global",
+    "__OSLockSram": "global",
+    "__OSLockSramEx": "global",
+    "UnlockSram": "local",
+    "__OSUnlockSram": "global",
+    "__OSUnlockSramEx": "global",
+    "__OSSyncSram": "global",
+    "OSGetSoundMode": "global",
+    "OSSetSoundMode": "global",
+    "OSGetWirelessID": "global",
+    "OSSetWirelessID": "global",
+    "Scb": "local"
+  },
+  "symbols": {
+    "WriteSramCallback": "0x800f4ed4",
+    "WriteSram": "0x800f4f34",
+    "__OSInitSram": "0x800f504c",
+    "__OSLockSram": "0x800f5180",
+    "__OSLockSramEx": "0x800f51dc",
+    "UnlockSram": "0x800f5238",
+    "__OSUnlockSram": "0x800f5540",
+    "__OSUnlockSramEx": "0x800f5564",
+    "__OSSyncSram": "0x800f5588",
+    "OSGetSoundMode": "0x800f5598",
+    "OSSetSoundMode": "0x800f5618",
+    "OSGetWirelessID": "0x800f56bc",
+    "OSSetWirelessID": "0x800f5740",
+    "Scb": "0x80318b40",
+    "EXILock": "0x8029776c",
+    "EXISelect": "0x8029701c",
+    "EXIUnlock": "0x80297860",
+    "EXIImm": "0x802964b4",
+    "EXISync": "0x8029689c",
+    "EXIImmEx": "0x80296710",
+    "EXIDeselect": "0x80297148",
+    "DCInvalidateRange": "0x800f223c",
+    "EXIDma": "0x802967b0",
+    "OSDisableInterrupts": "0x800f362c",
+    "OSRestoreInterrupts": "0x800f3654"
+  },
+  "external_original_names": {
+    "EXILock": "EXILock",
+    "EXISelect": "EXISelect",
+    "EXIUnlock": "EXIUnlock",
+    "EXIImm": "EXIImm",
+    "EXISync": "EXISync",
+    "EXIImmEx": "fn_80296710",
+    "EXIDeselect": "EXIDeselect",
+    "DCInvalidateRange": "DCInvalidateRange",
+    "EXIDma": "EXIDma",
+    "OSDisableInterrupts": "OSDisableInterrupts",
+    "OSRestoreInterrupts": "OSRestoreInterrupts"
+  },
+  "verified_text_bytes": 2328,
+  "verified_data_bytes": 0,
+  "source_kind": "c",
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "3b9be60babf6cad5a950b826310e0463a6815e5b5c6601d47bf9baf412903cb8",
+    "matched_code": 2328,
+    "matched_functions": 13,
+    "matched_data": 84,
+    "complete_data": 84,
+    "object_path": "build/GSQE78/src/dolphin/os/OSRtc.o",
+    "object_sha256": "3d9284bdcb1ae4c1904516addf745cd1d9436f445e37fe1daf592420fef23048"
+  }
+}

@@ -1,0 +1,2 @@
+/* Original control forwarding and predicates; see docs/notes/game-control-forward-leafs.md. */
+struct Control;struct Resource;struct Point2{float x,y;};extern "C"{Resource*fn_8005E9A0();void fn_8009F278(Control*,Resource*,Point2*);}extern "C"void fn_8009F518(Control*self,Point2*result){fn_8009F278(self,fn_8005E9A0(),result);}

@@ -1,0 +1,134 @@
+{
+  "source": "src/dolphin/card/CARDUnlock.c",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.2.5n",
+  "cflags": "-proc gekko -fp hardware -enum int -str reuse -common off -O4,p -inline auto -i src/dolphin/card -Cpp_exceptions off",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2148564996,
+      "end": 2148569700
+    },
+    {
+      "name": ".data",
+      "start": 2150429216,
+      "end": 2150429568
+    },
+    {
+      "name": ".sdata",
+      "start": 2151112080,
+      "end": 2151112084
+    }
+  ],
+  "functions": [
+    {
+      "name": "bitrev",
+      "address": 2148564996,
+      "size": 364
+    },
+    {
+      "name": "ReadArrayUnlock",
+      "address": 2148565360,
+      "size": 324
+    },
+    {
+      "name": "DummyLen",
+      "address": 2148565684,
+      "size": 196
+    },
+    {
+      "name": "__CARDUnlock",
+      "address": 2148565880,
+      "size": 2904
+    },
+    {
+      "name": "InitCallback",
+      "address": 2148568784,
+      "size": 112
+    },
+    {
+      "name": "DoneCallback",
+      "address": 2148568896,
+      "size": 804
+    }
+  ],
+  "objects": [
+    {
+      "name": "CardData",
+      "address": 2150429216,
+      "size": 352,
+      "section": ".data"
+    },
+    {
+      "name": "next",
+      "address": 2151112080,
+      "size": 4,
+      "section": ".sdata"
+    }
+  ],
+  "symbol_scopes": {
+    "bitrev": "local",
+    "ReadArrayUnlock": "local",
+    "DummyLen": "local",
+    "__CARDUnlock": "global",
+    "InitCallback": "local",
+    "DoneCallback": "local",
+    "CardData": "local",
+    "next": "local"
+  },
+  "symbols": {
+    "bitrev": "0x80108004",
+    "ReadArrayUnlock": "0x80108170",
+    "DummyLen": "0x801082b4",
+    "__CARDUnlock": "0x80108378",
+    "InitCallback": "0x80108ed0",
+    "DoneCallback": "0x80108f40",
+    "CardData": "0x802cf220",
+    "next": "0x80375d90",
+    "__CARDBlock": "0x80334180",
+    "EXISelect": "0x8029701c",
+    "memset": "0x80005434",
+    "EXIImmEx": "0x80296710",
+    "EXIDeselect": "0x80297148",
+    "OSGetTick": "0x800f6c0c",
+    "DCFlushRange": "0x800f2268",
+    "DCInvalidateRange": "0x800f223c",
+    "DSPAddTask": "0x801062c0",
+    "DSPSendMailToDSP": "0x80106148",
+    "DSPCheckMailToDSP": "0x80106110",
+    "EXIUnlock": "0x80297860",
+    "__CARDMountCallback": "0x8010b144",
+    "__CARDReadStatus": "0x801070e0",
+    "EXIProbe": "0x80296d20"
+  },
+  "external_original_names": {
+    "__CARDBlock": "lbl_80334180",
+    "EXISelect": "EXISelect",
+    "memset": "memset",
+    "EXIImmEx": "fn_80296710",
+    "EXIDeselect": "EXIDeselect",
+    "OSGetTick": "OSGetTick",
+    "DCFlushRange": "DCFlushRange",
+    "DCInvalidateRange": "DCInvalidateRange",
+    "DSPAddTask": "fn_801062C0",
+    "DSPSendMailToDSP": "fn_80106148",
+    "DSPCheckMailToDSP": "fn_80106110",
+    "EXIUnlock": "EXIUnlock",
+    "__CARDMountCallback": "fn_8010B144",
+    "__CARDReadStatus": "fn_801070E0",
+    "EXIProbe": "fn_80296D20"
+  },
+  "verified_text_bytes": 4704,
+  "verified_data_bytes": 356,
+  "source_kind": "c",
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "613b5416751ff64bb39ddf09b835d9044b992de1660a00de1ee3144c533610f4",
+    "matched_code": 4704,
+    "matched_functions": 6,
+    "matched_data": 356,
+    "complete_data": 356,
+    "object_path": "build/GSQE78/src/dolphin/card/CARDUnlock.o",
+    "object_sha256": "a06e716e93aa1e473bb4af3a44ce07fab0c58e094cbeff23e7263e95ec9ec0bd"
+  }
+}

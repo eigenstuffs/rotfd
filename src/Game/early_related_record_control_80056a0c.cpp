@@ -1,0 +1,2 @@
+#include "Game/early_related_record_control_views.h"
+extern "C"RelatedRecordItem*fn_80056A0C(RelatedRecordPool*self){if(!self->items[0])fn_8005686C(self);int i;RelatedRecordItem*fallback=0;for(i=0;i<5;++i){if(fn_8007D604((char*)resolveActor(self->items[i]->actor)+0x1F8,0))return self->items[i];if(fn_8007D604((char*)resolveActor(self->items[i]->actor)+0x1F8,2)&&!fallback)fallback=self->items[i];}return fallback;}

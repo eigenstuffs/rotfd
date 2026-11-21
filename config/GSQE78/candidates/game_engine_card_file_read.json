@@ -1,0 +1,700 @@
+[
+  {
+    "status": "isolated-retained-byte-match",
+    "source": "src/Game/engine_card_file_read.cpp",
+    "source_sha256": "dd23cccd3d39a22035f0b93a63dd6d7913020aae136df430151515c3ec89f3c0",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,p",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "include"
+    ],
+    "source_kind": "c++",
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2150074248,
+        "end": 2150075364,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_80278788",
+        "address": 2150074248,
+        "size": 1116,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [],
+    "unlinked_functions": [],
+    "headers": [
+      {
+        "path": "include/Game/engine_card_file_read.h",
+        "sha256": "dcdc64b3afa26148d16ae9ce2e3cf3d21ebc02dc74ba70ba97792c7f32a926e2"
+      }
+    ],
+    "dependency_symbols": [],
+    "validation": {
+      "relocations": 70,
+      "unlinked_relocations": 0,
+      "retained_text_bytes": 1116,
+      "unlinked_text_bytes": 0,
+      "initialized_data_bytes": 0,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0
+    },
+    "verified_text_bytes": 1116,
+    "verified_data_bytes": 0,
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 10,
+        "address": 2150074258,
+        "kind": 6,
+        "symbol": "lbl_80341038",
+        "target": 2150895672,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 14,
+        "address": 2150074262,
+        "kind": 6,
+        "symbol": "lbl_802AF158",
+        "target": 2150297944,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 22,
+        "address": 2150074270,
+        "kind": 4,
+        "symbol": "lbl_80341038",
+        "target": 2150895672,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 50,
+        "address": 2150074298,
+        "kind": 4,
+        "symbol": "lbl_802AF158",
+        "target": 2150297944,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 52,
+        "address": 2150074300,
+        "kind": 10,
+        "symbol": "OSResumeThread",
+        "target": 2148492640,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 60,
+        "address": 2150074308,
+        "kind": 10,
+        "symbol": "OSLockMutex",
+        "target": 2148483528,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 72,
+        "address": 2150074320,
+        "kind": 10,
+        "symbol": "fn_80277918",
+        "target": 2150070552,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 112,
+        "address": 2150074360,
+        "kind": 10,
+        "symbol": "CARDProbeEx",
+        "target": 2148576184,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 136,
+        "address": 2150074384,
+        "kind": 10,
+        "symbol": "CARDUnmount",
+        "target": 2148578560,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 154,
+        "address": 2150074402,
+        "kind": 6,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 158,
+        "address": 2150074406,
+        "kind": 4,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 160,
+        "address": 2150074408,
+        "kind": 10,
+        "symbol": "fn_801EF610",
+        "target": 2149512720,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 184,
+        "address": 2150074432,
+        "kind": 10,
+        "symbol": "OSUnlockMutex",
+        "target": 2148483748,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 190,
+        "address": 2150074438,
+        "kind": 6,
+        "symbol": "lbl_80341038",
+        "target": 2150895672,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 194,
+        "address": 2150074442,
+        "kind": 4,
+        "symbol": "lbl_80341038",
+        "target": 2150895672,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 196,
+        "address": 2150074444,
+        "kind": 10,
+        "symbol": "OSSuspendThread",
+        "target": 2148493288,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 216,
+        "address": 2150074464,
+        "kind": 10,
+        "symbol": "fn_80277918",
+        "target": 2150070552,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 232,
+        "address": 2150074480,
+        "kind": 10,
+        "symbol": "OSGetResetSwitchState",
+        "target": 2148486836,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 238,
+        "address": 2150074486,
+        "kind": 6,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 240,
+        "address": 2150074488,
+        "kind": 109,
+        "symbol": "lbl_80377FC9",
+        "target": 2151120841,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 246,
+        "address": 2150074494,
+        "kind": 4,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 260,
+        "address": 2150074508,
+        "kind": 10,
+        "symbol": "CARDOpen",
+        "target": 2148581404,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 272,
+        "address": 2150074520,
+        "kind": 10,
+        "symbol": "OSGetResetSwitchState",
+        "target": 2148486836,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 284,
+        "address": 2150074532,
+        "kind": 109,
+        "symbol": "lbl_80377FC9",
+        "target": 2151120841,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 308,
+        "address": 2150074556,
+        "kind": 10,
+        "symbol": "fn_801FA014",
+        "target": 2149556244,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 316,
+        "address": 2150074564,
+        "kind": 109,
+        "symbol": "lbl_80377FC0",
+        "target": 2151120832,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 320,
+        "address": 2150074568,
+        "kind": 10,
+        "symbol": "OSGetResetSwitchState",
+        "target": 2148486836,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 328,
+        "address": 2150074576,
+        "kind": 109,
+        "symbol": "lbl_80377FC9",
+        "target": 2151120841,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 352,
+        "address": 2150074600,
+        "kind": 10,
+        "symbol": "fn_801FA014",
+        "target": 2149556244,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 392,
+        "address": 2150074640,
+        "kind": 10,
+        "symbol": "fn_801FA014",
+        "target": 2149556244,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 436,
+        "address": 2150074684,
+        "kind": 10,
+        "symbol": "OSGetResetSwitchState",
+        "target": 2148486836,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 440,
+        "address": 2150074688,
+        "kind": 109,
+        "symbol": "lbl_80377FC9",
+        "target": 2151120841,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 456,
+        "address": 2150074704,
+        "kind": 10,
+        "symbol": "CARDGetStatus",
+        "target": 2148585768,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 468,
+        "address": 2150074716,
+        "kind": 10,
+        "symbol": "OSGetResetSwitchState",
+        "target": 2148486836,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 480,
+        "address": 2150074728,
+        "kind": 109,
+        "symbol": "lbl_80377FC9",
+        "target": 2151120841,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 504,
+        "address": 2150074752,
+        "kind": 10,
+        "symbol": "fn_801FA014",
+        "target": 2149556244,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 512,
+        "address": 2150074760,
+        "kind": 109,
+        "symbol": "lbl_80377FC0",
+        "target": 2151120832,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 516,
+        "address": 2150074764,
+        "kind": 10,
+        "symbol": "OSGetResetSwitchState",
+        "target": 2148486836,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 524,
+        "address": 2150074772,
+        "kind": 109,
+        "symbol": "lbl_80377FC9",
+        "target": 2151120841,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 548,
+        "address": 2150074796,
+        "kind": 10,
+        "symbol": "fn_801FA014",
+        "target": 2149556244,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 588,
+        "address": 2150074836,
+        "kind": 10,
+        "symbol": "fn_801FA014",
+        "target": 2149556244,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 634,
+        "address": 2150074882,
+        "kind": 6,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 642,
+        "address": 2150074890,
+        "kind": 4,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 656,
+        "address": 2150074904,
+        "kind": 10,
+        "symbol": "fn_801EFA1C",
+        "target": 2149513756,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 672,
+        "address": 2150074920,
+        "kind": 10,
+        "symbol": "OSGetResetSwitchState",
+        "target": 2148486836,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 676,
+        "address": 2150074924,
+        "kind": 109,
+        "symbol": "lbl_80377FC9",
+        "target": 2151120841,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 696,
+        "address": 2150074944,
+        "kind": 10,
+        "symbol": "CARDRead",
+        "target": 2148583864,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 708,
+        "address": 2150074956,
+        "kind": 10,
+        "symbol": "OSGetResetSwitchState",
+        "target": 2148486836,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 720,
+        "address": 2150074968,
+        "kind": 109,
+        "symbol": "lbl_80377FC9",
+        "target": 2151120841,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 744,
+        "address": 2150074992,
+        "kind": 10,
+        "symbol": "fn_801FA014",
+        "target": 2149556244,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 752,
+        "address": 2150075000,
+        "kind": 109,
+        "symbol": "lbl_80377FC0",
+        "target": 2151120832,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 756,
+        "address": 2150075004,
+        "kind": 10,
+        "symbol": "OSGetResetSwitchState",
+        "target": 2148486836,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 764,
+        "address": 2150075012,
+        "kind": 109,
+        "symbol": "lbl_80377FC9",
+        "target": 2151120841,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 788,
+        "address": 2150075036,
+        "kind": 10,
+        "symbol": "fn_801FA014",
+        "target": 2149556244,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 828,
+        "address": 2150075076,
+        "kind": 10,
+        "symbol": "fn_801FA014",
+        "target": 2149556244,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 878,
+        "address": 2150075126,
+        "kind": 6,
+        "symbol": "lbl_802ED780",
+        "target": 2150553472,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 882,
+        "address": 2150075130,
+        "kind": 4,
+        "symbol": "lbl_802ED780",
+        "target": 2150553472,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 976,
+        "address": 2150075224,
+        "kind": 10,
+        "symbol": "memcpy",
+        "target": 2147505440,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 994,
+        "address": 2150075242,
+        "kind": 6,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 1002,
+        "address": 2150075250,
+        "kind": 4,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 1004,
+        "address": 2150075252,
+        "kind": 10,
+        "symbol": "fn_801EF610",
+        "target": 2149512720,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 1020,
+        "address": 2150075268,
+        "kind": 10,
+        "symbol": "CARDClose",
+        "target": 2148581780,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 1036,
+        "address": 2150075284,
+        "kind": 10,
+        "symbol": "CARDUnmount",
+        "target": 2148578560,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 1054,
+        "address": 2150075302,
+        "kind": 6,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 1058,
+        "address": 2150075306,
+        "kind": 4,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 1060,
+        "address": 2150075308,
+        "kind": 10,
+        "symbol": "fn_801EF610",
+        "target": 2149512720,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 1076,
+        "address": 2150075324,
+        "kind": 10,
+        "symbol": "OSUnlockMutex",
+        "target": 2148483748,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 1082,
+        "address": 2150075330,
+        "kind": 6,
+        "symbol": "lbl_80341038",
+        "target": 2150895672,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 1086,
+        "address": 2150075334,
+        "kind": 4,
+        "symbol": "lbl_80341038",
+        "target": 2150895672,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 1088,
+        "address": 2150075336,
+        "kind": 10,
+        "symbol": "OSSuspendThread",
+        "target": 2148493288,
+        "addend": 0
+      }
+    ]
+  }
+]

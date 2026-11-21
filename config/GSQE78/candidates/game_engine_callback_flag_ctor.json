@@ -1,0 +1,186 @@
+{
+  "status": "isolated-retained-byte-match",
+  "source": "src/Game/engine_callback_flag_ctor.cpp",
+  "source_sha256": "075677e4d17f566f6717653755e9c4924ed0f785591ffb2fb56c179f3774bcb8",
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-proc",
+    "gekko",
+    "-fp",
+    "hardware",
+    "-enum",
+    "int",
+    "-str",
+    "reuse",
+    "-common",
+    "off",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-Cpp_exceptions",
+    "off",
+    "-i",
+    "include"
+  ],
+  "source_kind": "c++",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2149958836,
+      "end": 2149958944,
+      "alignment": 4
+    }
+  ],
+  "functions": [
+    {
+      "name": "__ct__21CallbackFlag_802ECD68Fv",
+      "original_symbol": "fn_8025C4B4",
+      "address": 2149958836,
+      "size": 108,
+      "scope": "global",
+      "section": ".text",
+      "object_offset": 0
+    }
+  ],
+  "objects": [],
+  "unlinked_functions": [
+    {
+      "name": "__dt__16LayerHandleThreeFv",
+      "section": ".text",
+      "object_offset": 108,
+      "size": 92,
+      "binding": "weak",
+      "raw_sha256": "1dc191d0563978ed38f7b2c78ac2b807d3ddfa53c98db4560ab0ced43640ab02"
+    },
+    {
+      "name": "__dt__14LayerHandleTwoFv",
+      "section": ".text",
+      "object_offset": 200,
+      "size": 88,
+      "binding": "weak",
+      "raw_sha256": "ee3203a188e9d7282273427bfc26c6917510fc7b7c574c24cca0331f00873d1f"
+    },
+    {
+      "name": "__dt__14LayerHandleOneFv",
+      "section": ".text",
+      "object_offset": 288,
+      "size": 84,
+      "binding": "weak",
+      "raw_sha256": "fdd9fcf5ab58f46f986c50b59ae57e9c65a7b53acdde19888e0e8987b285adb0"
+    }
+  ],
+  "headers": [
+    {
+      "path": "include/Game/engine_callback_flag_ctor.h",
+      "sha256": "675e60b5fb96fb423e7d2734c8d7d459e4f324e164f900d5265771608d16b0e5"
+    },
+    {
+      "path": "include/Game/engine_container_layer_ctor.h",
+      "sha256": "847f87adfb2cf3be7e570d2ed09a96b409a302919feda55f30c9c1ec20d56506"
+    }
+  ],
+  "dependency_symbols": [],
+  "validation": {
+    "relocations": 4,
+    "unlinked_relocations": 6,
+    "retained_text_bytes": 108,
+    "unlinked_text_bytes": 264,
+    "initialized_data_bytes": 0,
+    "bss_bytes": 0,
+    "owned_padding_bytes": 0
+  },
+  "verified_text_bytes": 108,
+  "verified_data_bytes": 0,
+  "actual_relocations": [
+    {
+      "section": ".text",
+      "at": 24,
+      "address": 2149958860,
+      "kind": 10,
+      "symbol": "__ct__22ContainerBase_802563CCFv",
+      "target": 2149934028,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 30,
+      "address": 2149958866,
+      "kind": 6,
+      "symbol": "lbl_802ECD68",
+      "target": 2150550888,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 38,
+      "address": 2149958874,
+      "kind": 4,
+      "symbol": "lbl_802ECD68",
+      "target": 2150550888,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 48,
+      "address": 2149958884,
+      "kind": 10,
+      "symbol": "__ct__15Handle_801F7F10Fv",
+      "target": 2149547780,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 152,
+      "address": 2149958988,
+      "kind": 10,
+      "symbol": "__dt__15Handle_801F7F10Fv",
+      "target": 2149547792,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 168,
+      "address": 2149959004,
+      "kind": 10,
+      "symbol": "__dl__FPv",
+      "target": 2148658644,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 240,
+      "address": 2149959076,
+      "kind": 10,
+      "symbol": "__dt__15Handle_801F7F10Fv",
+      "target": 2149547792,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 256,
+      "address": 2149959092,
+      "kind": 10,
+      "symbol": "__dl__FPv",
+      "target": 2148658644,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 324,
+      "address": 2149959160,
+      "kind": 10,
+      "symbol": "__dt__15Handle_801F7F10Fv",
+      "target": 2149547792,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 340,
+      "address": 2149959176,
+      "kind": 10,
+      "symbol": "__dl__FPv",
+      "target": 2148658644,
+      "addend": 0
+    }
+  ]
+}

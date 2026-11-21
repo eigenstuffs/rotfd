@@ -1,0 +1,17 @@
+# Scene handle event selector8003387C
+
+Accepted matching source: the production build passes the original DOL hash,
+strict allocated-byte/extent and actual-relocation checks, baseline regression
+checks, generated progress verification and all 26 repository tests.
+
+Isolated ordinary C++ source src/Game/early_scene_handle_event_selector_8003387C.cpp matches1772 text bytes at8003387C..80033F68,8-byte extab at8000761C,12-byte extabindex at80016C80, and88-byte data at802B1B30..802B1B88. All51 actual relocations resolve to original targets. GC1.3.2 processor750/O4,s/exceptions-on/use_lmw_stmw produces no weak helpers, literals, BSS or padding. Production acceptance remains pending.
+
+The entry implements callback events and generation-checked handle selection. Events0..6 manage member callbacks, read status bits or return the callback index. Later events reset shared callback state, select the matching current/previous/state/mode/group handle, dispatch transitions and notify the scene owner. The ordinary inline equality helper resolves its first Handle into a named Node pointer before resolving the second; this preserves the original scratch-register lifetimes throughout the comparison chain. The root research probes remain unchanged at scratch/game_scene_handle_event_selector_8003387c.
+
+Five complete original {0,0x84,8} member-pointer records occupy the genuine60-byte GLOBAL lbl_802B1B30 array. The sole compiler-local28-byte switch table @318 follows at original4-aligned802B1B6C. Together they produce the required88-byte .data section with actual alignment8. The broader original lbl_802B1918 remains external; the selector uses that original base plus218 to read these records. The original global record identity must be force_active because those base-relative references do not directly reference its compiler symbol. No data alias or invented padding is used.
+
+The complete active original census covers5539 objects,119086 actual relocations and777360 initialized DOL words. It finds exactly the original60-byte record and28-byte local switch definitions; only the selector's two jump-table references enter the owned data range. There are no other aliases, source overlaps or initialized pointers into that range. All16 actual broader-pool references and existing source consumers are inventoried and preserved. Exactly one original GLOBAL function definition and eight initialized function references remain: seven owned switch entries and the unchanged external callback lbl_802B1C74+84 at802B1CF8. No existing source/header caller requires migration.
+
+Full original extabindex80015F60..8001F2C0 including its final descriptor, ctors80299920..80299980 and dtors80299980..802999A0 pass. Exactly one original EH/index entry belongs to this function. The initialized-word scan accounts for every pointer into the text range.
+
+Frozen batch182 is scratch/game_engine_batch182/HANDOFF.md. Repeat python3 scratch/game_early_scene_handle_event_selector/verify.py. Concrete split/config/symbol edits and native retention requirements are beside the manifest. Integration must retain original GLOBAL lbl_802B1B30 via force_active and prove its source-owned GLOBAL/native-map placement, the entire88-byte data extent and every other allocation in both native ELFs. Retire only original local jumptable_802B1B6C spelling. Preserve broader lbl_802B1918, all callers, original DOL hash and regression baseline. No shared metadata or accepted predecessor source was edited.

@@ -1,0 +1,391 @@
+[
+  {
+    "status": "isolated-byte-match",
+    "source": "src/Game/engine_scene_service_setup_800400BC.cpp",
+    "source_sha256": "2b47f1e353093c088c3fa7df0b650645331adc5f3424fcc582ccf02f15ada66c",
+    "header_sha256": {},
+    "headers": [],
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2147745980,
+        "end": 2147746300,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147518220,
+        "end": 2147518244,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147579240,
+        "end": 2147579252,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800400BC",
+        "address": 2147745980,
+        "size": 320,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@6",
+        "section": "extab",
+        "object_offset": 0,
+        "address": 2147518220,
+        "size": 24,
+        "scope": "local"
+      },
+      {
+        "name": "@7",
+        "section": "extabindex",
+        "object_offset": 0,
+        "address": 2147579240,
+        "size": 12,
+        "scope": "local"
+      }
+    ],
+    "unlinked_functions": [],
+    "verified_text_bytes": 320,
+    "verified_data_bytes": 36,
+    "notes": "docs/notes/game-engine-scene-service-setup.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 144,
+        "address": 2147746124,
+        "kind": 10,
+        "symbol": "fn_8002B780",
+        "target": 2147661696,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 150,
+        "address": 2147746130,
+        "kind": 6,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 154,
+        "address": 2147746134,
+        "kind": 6,
+        "symbol": "lbl_8029A9F8",
+        "target": 2150214136,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 158,
+        "address": 2147746138,
+        "kind": 4,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 162,
+        "address": 2147746142,
+        "kind": 4,
+        "symbol": "lbl_8029A9F8",
+        "target": 2150214136,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 172,
+        "address": 2147746152,
+        "kind": 10,
+        "symbol": "fn_801B52EC",
+        "target": 2149274348,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 184,
+        "address": 2147746164,
+        "kind": 10,
+        "symbol": "fn_8025A3C8",
+        "target": 2149950408,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 196,
+        "address": 2147746176,
+        "kind": 10,
+        "symbol": "__dt__15Handle_801F7F10Fv",
+        "target": 2149547792,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 202,
+        "address": 2147746182,
+        "kind": 6,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 210,
+        "address": 2147746190,
+        "kind": 4,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": "extab",
+        "at": 20,
+        "address": 2147518240,
+        "kind": 1,
+        "symbol": "__dt__15Handle_801F7F10Fv",
+        "target": 2149547792,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147579240,
+        "kind": 1,
+        "symbol": "fn_800400BC",
+        "target": 2147745980,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147579248,
+        "kind": 1,
+        "symbol": "@6",
+        "target": 2147518220,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "__dt__15Handle_801F7F10Fv",
+        "section": ".text",
+        "address": 2149547792,
+        "scope": "global"
+      },
+      {
+        "name": "fn_8002B780",
+        "section": ".text",
+        "address": 2147661696,
+        "scope": "global"
+      },
+      {
+        "name": "fn_801B52EC",
+        "section": ".text",
+        "address": 2149274348,
+        "scope": "global"
+      },
+      {
+        "name": "fn_8025A3C8",
+        "section": ".text",
+        "address": 2149950408,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_801E9D24",
+        "section": ".text",
+        "address": 2149489956,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_8029A9F8",
+        "section": ".rodata",
+        "address": 2150214136,
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "retained_text_bytes": 320,
+      "initialized_data_bytes": 36,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 13,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    },
+    "pending_compiled_consumer_migrations": []
+  },
+  {
+    "status": "isolated-byte-match",
+    "source": "src/Game/engine_scene_service_setup_80044494.cpp",
+    "source_sha256": "3ac5ff9806f2d9a71cb63fc129eef1ab088534736cc2adba839c43231b732ef5",
+    "header_sha256": {},
+    "headers": [],
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2147763348,
+        "end": 2147763492,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147519608,
+        "end": 2147519616,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147579864,
+        "end": 2147579876,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_80044494",
+        "address": 2147763348,
+        "size": 144,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@8",
+        "section": "extab",
+        "object_offset": 0,
+        "address": 2147519608,
+        "size": 8,
+        "scope": "local"
+      },
+      {
+        "name": "@9",
+        "section": "extabindex",
+        "object_offset": 0,
+        "address": 2147579864,
+        "size": 12,
+        "scope": "local"
+      }
+    ],
+    "unlinked_functions": [],
+    "verified_text_bytes": 144,
+    "verified_data_bytes": 20,
+    "notes": "docs/notes/game-engine-scene-service-setup.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 104,
+        "address": 2147763452,
+        "kind": 109,
+        "symbol": "lbl_80378560",
+        "target": 2151122272,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 120,
+        "address": 2147763468,
+        "kind": 10,
+        "symbol": "fn_802073E8",
+        "target": 2149610472,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147579864,
+        "kind": 1,
+        "symbol": "fn_80044494",
+        "target": 2147763348,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147579872,
+        "kind": 1,
+        "symbol": "@8",
+        "target": 2147519608,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "fn_802073E8",
+        "section": ".text",
+        "address": 2149610472,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_80378560",
+        "section": ".sdata2",
+        "address": 2151122272,
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "retained_text_bytes": 144,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 4,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    },
+    "pending_compiled_consumer_migrations": []
+  }
+]

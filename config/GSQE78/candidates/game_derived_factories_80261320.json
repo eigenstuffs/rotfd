@@ -1,0 +1,81 @@
+{
+  "source": "src/Game/derived_factories_80261320.cpp",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-proc",
+    "gekko",
+    "-fp",
+    "hardware",
+    "-enum",
+    "int",
+    "-str",
+    "reuse",
+    "-common",
+    "off",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-Cpp_exceptions",
+    "off",
+    "-i",
+    "include"
+  ],
+  "sections": {
+    ".text": [
+      2149978912,
+      2149979016
+    ]
+  },
+  "functions": [
+    {
+      "name": "fn_80261320",
+      "address": 2149978912,
+      "size": 104,
+      "section": ".text",
+      "scope": "global"
+    }
+  ],
+  "objects": [],
+  "source_kind": "c++",
+  "factory_evidence": [
+    {
+      "address": 2149978912,
+      "name": "fn_80261320",
+      "code_size": 104,
+      "manager": "lbl_801EF5C8",
+      "label": "lbl_802AEE28",
+      "filename": "lbl_802AEE4C",
+      "header": "VolumeAgent_Z.h",
+      "size": 96,
+      "line": 9,
+      "alignment": 4,
+      "constructor": "fn_802563CC",
+      "vtable": "lbl_802ECF88",
+      "vtable_offset": 8
+    }
+  ],
+  "notes": "docs/notes/game-factories.md",
+  "source_sha256": "57832a7ef5d5b485c64791df9c728933ba1337d43cecb51c98a250cc884df2ac",
+  "validation": {
+    "relocations": 10,
+    "text_bytes": 104,
+    "initialized_data_bytes": 0,
+    "zero_byte_differences": true,
+    "integration_status": "verified full-DOL and objdiff"
+  },
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "57832a7ef5d5b485c64791df9c728933ba1337d43cecb51c98a250cc884df2ac",
+    "matched_code": 104,
+    "matched_functions": 1,
+    "matched_data": 0,
+    "complete_data": 0,
+    "object_path": "build/GSQE78/src/Game/derived_factories_80261320.o",
+    "object_sha256": "71be930375fa45e63df6b4b27d1144dcfcc1295cdcfb25c34033f32ad489c333"
+  },
+  "source_hash_provenance": {
+    "previous_candidate": "scratch/native_objects_candidate_metadata_before/game_derived_factories_80261320.json",
+    "description": "Earlier isolated source/object hashes are retained in this snapshot. Current source hash and canonical object are verified by the complete DOL and native objdiff."
+  }
+}

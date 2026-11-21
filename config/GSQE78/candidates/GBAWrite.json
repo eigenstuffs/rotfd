@@ -1,0 +1,173 @@
+{
+  "source": "src/dolphin/gba/GBAWrite.c",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.2.5n",
+  "cflags": "-proc gekko -fp hardware -enum int -str reuse -common off -O4,p -inline auto -Cpp_exceptions off -i src/dolphin/gba",
+  "splits": [
+    {
+      "section": ".text",
+      "start": "0x8012f95c",
+      "end": "0x8012fae4"
+    }
+  ],
+  "functions": [
+    {
+      "name": "WriteProc",
+      "scope": "local",
+      "address": "0x8012f95c",
+      "size": "0x30",
+      "original_name": "fn_8012F95C"
+    },
+    {
+      "name": "GBAWriteAsync",
+      "scope": "global",
+      "address": "0x8012f98c",
+      "size": "0x94",
+      "original_name": "fn_8012F98C"
+    },
+    {
+      "name": "GBAWrite",
+      "scope": "global",
+      "address": "0x8012fa20",
+      "size": "0xc4",
+      "original_name": "fn_8012FA20"
+    }
+  ],
+  "data_symbols": [],
+  "compiler_local_symbols": [],
+  "discarded_functions": [],
+  "external_symbols": [
+    {
+      "name": "ShortCommandProc",
+      "address": "0x8012e588"
+    },
+    {
+      "name": "GBAGetStatusAsync",
+      "address": "0x8012e5dc"
+    },
+    {
+      "name": "GBAGetStatus",
+      "address": "0x8012e640"
+    },
+    {
+      "name": "GBAResetAsync",
+      "address": "0x8012e6d0"
+    },
+    {
+      "name": "GBAReset",
+      "address": "0x8012e734"
+    },
+    {
+      "name": "GBAGetProcessStatus",
+      "address": "0x8012e7c4"
+    },
+    {
+      "name": "GBAJoyBootAsync",
+      "address": "0x8012e938"
+    },
+    {
+      "name": "__GBAX01",
+      "address": "0x8012ed3c"
+    },
+    {
+      "name": "ReadProc",
+      "address": "0x8012f7fc"
+    },
+    {
+      "name": "GBAReadAsync",
+      "address": "0x8012f85c"
+    },
+    {
+      "name": "GBARead",
+      "address": "0x8012f8c8"
+    },
+    {
+      "name": "WriteProc",
+      "address": "0x8012f95c"
+    },
+    {
+      "name": "GBAWriteAsync",
+      "address": "0x8012f98c"
+    },
+    {
+      "name": "GBAWrite",
+      "address": "0x8012fa20"
+    },
+    {
+      "name": "__GBAHandler",
+      "address": "0x8012fae4"
+    },
+    {
+      "name": "__GBASyncCallback",
+      "address": "0x8012fbc0"
+    },
+    {
+      "name": "__GBASync",
+      "address": "0x8012fbf4"
+    },
+    {
+      "name": "TypeAndStatusCallback",
+      "address": "0x8012fc60"
+    },
+    {
+      "name": "__GBATransfer",
+      "address": "0x8012fd84"
+    },
+    {
+      "name": "__GBASetDelay",
+      "address": "0x8012fdf8"
+    },
+    {
+      "name": "__GBAX02",
+      "address": "0x8012ffa0"
+    },
+    {
+      "name": "__GBA",
+      "address": "0x8033d6e0"
+    },
+    {
+      "name": "__GBAReset",
+      "address": "0x80377d40"
+    },
+    {
+      "name": "SIGetTypeAsync",
+      "address": "0x8029956c"
+    },
+    {
+      "name": "DSPSendMailToDSP",
+      "address": "0x80106148"
+    },
+    {
+      "name": "DSPCheckMailToDSP",
+      "address": "0x80106110"
+    },
+    {
+      "name": "DSPAddTask",
+      "address": "0x801062c0"
+    }
+  ],
+  "validation": {
+    "code_bytes": 392,
+    "emitted_data_bytes": 0,
+    "bss_layout_bytes": 0,
+    "relocations_applied": 17,
+    "byte_differences": 0,
+    "source_sha256": "562518856d46de61a880d0b62dab3b78a95f9a03e017a0dc5f1ea5601b041828",
+    "header_sha256": "1eb4c00d16e32d3591233c0830b89be6e5e7d6eaef224ce6d37be2a8da655f5d",
+    "object_sha256": "e75f9113d7e4dfd7777ed75b4ef8b928c550a6655922de9ef74b54530aa1c04a",
+    "original_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "integration_status": "verified full-DOL and objdiff"
+  },
+  "notes": "docs/notes/gba.md",
+  "reference": "https://github.com/PrimeDecomp/prime/blob/5d513da690931c7fb46206559e9dda8fe776dc46/extern/sdk/dolphin/GBA/GBAWrite.c",
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "562518856d46de61a880d0b62dab3b78a95f9a03e017a0dc5f1ea5601b041828",
+    "matched_code": 392,
+    "matched_functions": 3,
+    "matched_data": 0,
+    "complete_data": 0,
+    "object_path": "build/GSQE78/src/dolphin/gba/GBAWrite.o",
+    "object_sha256": "e75f9113d7e4dfd7777ed75b4ef8b928c550a6655922de9ef74b54530aa1c04a"
+  }
+}

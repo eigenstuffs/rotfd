@@ -1,0 +1,80 @@
+{
+  "source": "src/dolphin/card/CARDDelete.c",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.2.5n",
+  "cflags": "-proc gekko -fp hardware -enum int -str reuse -common off -O4,p -inline auto -i src/dolphin/card -Cpp_exceptions off",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2148584756,
+      "end": 2148585264
+    }
+  ],
+  "functions": [
+    {
+      "name": "DeleteCallback",
+      "address": 2148584756,
+      "size": 164
+    },
+    {
+      "name": "CARDDeleteAsync",
+      "address": 2148584920,
+      "size": 272
+    },
+    {
+      "name": "CARDDelete",
+      "address": 2148585192,
+      "size": 72
+    }
+  ],
+  "objects": [],
+  "symbol_scopes": {
+    "DeleteCallback": "local",
+    "CARDDeleteAsync": "global",
+    "CARDDelete": "global"
+  },
+  "symbols": {
+    "DeleteCallback": "0x8010cd34",
+    "CARDDeleteAsync": "0x8010cdd8",
+    "CARDDelete": "0x8010cee8",
+    "__CARDBlock": "0x80334180",
+    "__CARDFreeBlock": "0x801097a0",
+    "__CARDPutControlBlock": "0x80107ce4",
+    "__CARDGetControlBlock": "0x80107c2c",
+    "__CARDGetFileNo": "0x8010becc",
+    "__CARDIsOpened": "0x8010c1e8",
+    "__CARDGetDirBlock": "0x801098e8",
+    "memset": "0x80005434",
+    "__CARDDefaultApiCallback": "0x80106ccc",
+    "__CARDUpdateDir": "0x80109a88",
+    "__CARDSyncCallback": "0x80106cd0",
+    "__CARDSync": "0x80107f1c"
+  },
+  "external_original_names": {
+    "__CARDBlock": "lbl_80334180",
+    "__CARDFreeBlock": "fn_801097A0",
+    "__CARDPutControlBlock": "fn_80107CE4",
+    "__CARDGetControlBlock": "fn_80107C2C",
+    "__CARDGetFileNo": "fn_8010BECC",
+    "__CARDIsOpened": "fn_8010C1E8",
+    "__CARDGetDirBlock": "fn_801098E8",
+    "memset": "memset",
+    "__CARDDefaultApiCallback": "fn_80106CCC",
+    "__CARDUpdateDir": "fn_80109A88",
+    "__CARDSyncCallback": "fn_80106CD0",
+    "__CARDSync": "fn_80107F1C"
+  },
+  "verified_text_bytes": 508,
+  "verified_data_bytes": 0,
+  "source_kind": "c",
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "e23cbd90c998f8bc6b919f37bf3e01bf9ac282c147f73a85032026e80a4c63dd",
+    "matched_code": 508,
+    "matched_functions": 3,
+    "matched_data": 0,
+    "complete_data": 0,
+    "object_path": "build/GSQE78/src/dolphin/card/CARDDelete.o",
+    "object_sha256": "a9831f2c22f773f70351cece696e4f4635dd37a6db86e7ad5c5acfede274426f"
+  }
+}

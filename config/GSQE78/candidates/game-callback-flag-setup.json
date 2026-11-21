@@ -1,0 +1,597 @@
+[
+  {
+    "status": "isolated-byte-match",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-O4,p",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "off",
+      "-RTTI",
+      "off",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "include"
+    ],
+    "source": "src/Game/callback_flag_setup_8025988c.cpp",
+    "source_sha256": "7b7a3b96d2ee7ea5dce116aadd22dbdec2669ec594ff71fe3868f9024a808264",
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2149947532,
+        "end": 2149947636,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "__ct__17LodAgent_802EC8A8Fv",
+        "address": 2149947532,
+        "size": 104,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [],
+    "unlinked_functions": [
+      {
+        "name": "__dt__24CallbackControl_802ECC00Fv",
+        "section": ".text",
+        "object_offset": 104,
+        "size": 232,
+        "binding": "weak",
+        "raw_sha256": "a71cf1b2f71a084b434cbbc46b690b31479653eef847daca4686c8fa62cb104d"
+      }
+    ],
+    "headers": [
+      {
+        "path": "include/Game/engine_callback_variant_ctors.h",
+        "sha256": "7eaaef93265675b4072601367aeafcf0aa3034e6935b380e2bc0b1a21cc061a8"
+      },
+      {
+        "path": "include/Game/engine_callback_control_ctor.h",
+        "sha256": "2718ace6e95c96f695a9f05e5ee6f06633b25e80d5d319b5e9080127a15ea9d9"
+      },
+      {
+        "path": "include/Game/engine_callback_single_ctor.h",
+        "sha256": "3dd6705fc364e07747760523b5773cf0f46591c71ccbfa7be5d82420961b1809"
+      },
+      {
+        "path": "include/Game/engine_container_layer_ctor.h",
+        "sha256": "847f87adfb2cf3be7e570d2ed09a96b409a302919feda55f30c9c1ec20d56506"
+      }
+    ],
+    "notes": "docs/notes/game-callback-flag-setup.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 20,
+        "address": 2149947552,
+        "kind": 10,
+        "symbol": "__ct__24CallbackControl_802ECC00Fv",
+        "target": 2149956700,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 26,
+        "address": 2149947558,
+        "kind": 6,
+        "symbol": "lbl_802EC8A8",
+        "target": 2150549672,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 34,
+        "address": 2149947566,
+        "kind": 4,
+        "symbol": "lbl_802EC8A8",
+        "target": 2150549672,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 172,
+        "address": 2149947704,
+        "kind": 10,
+        "symbol": "__dt__15Handle_801F7F10Fv",
+        "target": 2149547792,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 186,
+        "address": 2149947718,
+        "kind": 6,
+        "symbol": "lbl_802EC798",
+        "target": 2150549400,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 194,
+        "address": 2149947726,
+        "kind": 4,
+        "symbol": "lbl_802EC798",
+        "target": 2150549400,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 228,
+        "address": 2149947760,
+        "kind": 10,
+        "symbol": "__dt__15Handle_801F7F10Fv",
+        "target": 2149547792,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 256,
+        "address": 2149947788,
+        "kind": 10,
+        "symbol": "__dt__15Handle_801F7F10Fv",
+        "target": 2149547792,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 270,
+        "address": 2149947802,
+        "kind": 6,
+        "symbol": "lbl_802ED000",
+        "target": 2150551552,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 278,
+        "address": 2149947810,
+        "kind": 4,
+        "symbol": "lbl_802ED000",
+        "target": 2150551552,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 288,
+        "address": 2149947820,
+        "kind": 10,
+        "symbol": "__dt__22ContainerBase_802563CCFv",
+        "target": 2147671840,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 304,
+        "address": 2149947836,
+        "kind": 10,
+        "symbol": "__dl__FPv",
+        "target": 2148658644,
+        "addend": 0
+      }
+    ],
+    "validation": {
+      "relocations": 3,
+      "unlinked_relocations": 9,
+      "retained_text_bytes": 104,
+      "unlinked_text_bytes": 232,
+      "initialized_data_bytes": 0,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0
+    },
+    "source_refinement_provenance": {
+      "proof": "scratch/continuation_20261010/callback-native-refinement-v3/proof.json",
+      "new_code_credit_bytes": 0,
+      "proposal_source": "src/Game/engine_callback_lod_ctor.cpp"
+    }
+  },
+  {
+    "status": "isolated-byte-match",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-O4,p",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "off",
+      "-RTTI",
+      "off",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "include"
+    ],
+    "source": "src/Game/callback_flag_setup_80259968.cpp",
+    "source_sha256": "19e01b33e8e7682fdfc32e2761b9309f89269d76106b96e46e6675311cd3d65c",
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2149947752,
+        "end": 2149947856,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "__ct__24LodDynamicAgent_802EC958Fv",
+        "address": 2149947752,
+        "size": 104,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [],
+    "unlinked_functions": [
+      {
+        "name": "__dt__21CallbackPair_802EC798Fv",
+        "section": ".text",
+        "object_offset": 104,
+        "size": 184,
+        "binding": "weak",
+        "raw_sha256": "7f4e8c796ef62a7c8f4fd6f071d68da121fda053b87178b487c18efaa9972318"
+      }
+    ],
+    "headers": [
+      {
+        "path": "include/Game/engine_callback_variant_ctors.h",
+        "sha256": "7eaaef93265675b4072601367aeafcf0aa3034e6935b380e2bc0b1a21cc061a8"
+      },
+      {
+        "path": "include/Game/engine_callback_control_ctor.h",
+        "sha256": "2718ace6e95c96f695a9f05e5ee6f06633b25e80d5d319b5e9080127a15ea9d9"
+      },
+      {
+        "path": "include/Game/engine_callback_single_ctor.h",
+        "sha256": "3dd6705fc364e07747760523b5773cf0f46591c71ccbfa7be5d82420961b1809"
+      },
+      {
+        "path": "include/Game/engine_container_layer_ctor.h",
+        "sha256": "847f87adfb2cf3be7e570d2ed09a96b409a302919feda55f30c9c1ec20d56506"
+      }
+    ],
+    "notes": "docs/notes/game-callback-flag-setup.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 20,
+        "address": 2149947772,
+        "kind": 10,
+        "symbol": "__ct__21CallbackPair_802EC798Fv",
+        "target": 2149943456,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 26,
+        "address": 2149947778,
+        "kind": 6,
+        "symbol": "lbl_802EC958",
+        "target": 2150549848,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 34,
+        "address": 2149947786,
+        "kind": 4,
+        "symbol": "lbl_802EC958",
+        "target": 2150549848,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 138,
+        "address": 2149947890,
+        "kind": 6,
+        "symbol": "lbl_802EC798",
+        "target": 2150549400,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 146,
+        "address": 2149947898,
+        "kind": 4,
+        "symbol": "lbl_802EC798",
+        "target": 2150549400,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 180,
+        "address": 2149947932,
+        "kind": 10,
+        "symbol": "__dt__15Handle_801F7F10Fv",
+        "target": 2149547792,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 208,
+        "address": 2149947960,
+        "kind": 10,
+        "symbol": "__dt__15Handle_801F7F10Fv",
+        "target": 2149547792,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 222,
+        "address": 2149947974,
+        "kind": 6,
+        "symbol": "lbl_802ED000",
+        "target": 2150551552,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 230,
+        "address": 2149947982,
+        "kind": 4,
+        "symbol": "lbl_802ED000",
+        "target": 2150551552,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 240,
+        "address": 2149947992,
+        "kind": 10,
+        "symbol": "__dt__22ContainerBase_802563CCFv",
+        "target": 2147671840,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 256,
+        "address": 2149948008,
+        "kind": 10,
+        "symbol": "__dl__FPv",
+        "target": 2148658644,
+        "addend": 0
+      }
+    ],
+    "identifier_migration_provenance": {
+      "proof": "scratch/continuation_20261010/layered-return-consumer-migration/proof.json",
+      "previous_canonical": "scratch/continuation_20261010/layered-return-consumer-migration/before/config/GSQE78/candidates/game-callback-flag-setup.json",
+      "previous_canonical_sha256": "f511a44f0f4538c7ce4698be455ffab44b1f242292295b27f4ead783c72d523f"
+    },
+    "validation": {
+      "relocations": 3,
+      "unlinked_relocations": 8,
+      "retained_text_bytes": 104,
+      "unlinked_text_bytes": 184,
+      "initialized_data_bytes": 0,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0
+    },
+    "source_refinement_provenance": {
+      "proof": "scratch/continuation_20261010/callback-native-refinement-v3/proof.json",
+      "new_code_credit_bytes": 0,
+      "proposal_source": "src/Game/engine_callback_lod_dynamic_ctor.cpp"
+    }
+  },
+  {
+    "status": "isolated-byte-match",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-O4,p",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "off",
+      "-RTTI",
+      "off",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "include"
+    ],
+    "source": "src/Game/callback_flag_setup_8025ac88.cpp",
+    "source_sha256": "d967052b409a3a7ec6a3312e3fda9eb10af8d7317e9a92e95335c2e0c21ffa3c",
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2149952648,
+        "end": 2149952752,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "__ct__18SkinAgent_802ECAF8Fv",
+        "address": 2149952648,
+        "size": 104,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [],
+    "unlinked_functions": [
+      {
+        "name": "__dt__21CallbackPair_802EC798Fv",
+        "section": ".text",
+        "object_offset": 104,
+        "size": 184,
+        "binding": "weak",
+        "raw_sha256": "7f4e8c796ef62a7c8f4fd6f071d68da121fda053b87178b487c18efaa9972318"
+      }
+    ],
+    "headers": [
+      {
+        "path": "include/Game/engine_callback_variant_ctors.h",
+        "sha256": "7eaaef93265675b4072601367aeafcf0aa3034e6935b380e2bc0b1a21cc061a8"
+      },
+      {
+        "path": "include/Game/engine_callback_control_ctor.h",
+        "sha256": "2718ace6e95c96f695a9f05e5ee6f06633b25e80d5d319b5e9080127a15ea9d9"
+      },
+      {
+        "path": "include/Game/engine_callback_single_ctor.h",
+        "sha256": "3dd6705fc364e07747760523b5773cf0f46591c71ccbfa7be5d82420961b1809"
+      },
+      {
+        "path": "include/Game/engine_container_layer_ctor.h",
+        "sha256": "847f87adfb2cf3be7e570d2ed09a96b409a302919feda55f30c9c1ec20d56506"
+      }
+    ],
+    "notes": "docs/notes/game-callback-flag-setup.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 20,
+        "address": 2149952668,
+        "kind": 10,
+        "symbol": "__ct__21CallbackPair_802EC798Fv",
+        "target": 2149943456,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 26,
+        "address": 2149952674,
+        "kind": 6,
+        "symbol": "lbl_802ECAF8",
+        "target": 2150550264,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 34,
+        "address": 2149952682,
+        "kind": 4,
+        "symbol": "lbl_802ECAF8",
+        "target": 2150550264,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 138,
+        "address": 2149952786,
+        "kind": 6,
+        "symbol": "lbl_802EC798",
+        "target": 2150549400,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 146,
+        "address": 2149952794,
+        "kind": 4,
+        "symbol": "lbl_802EC798",
+        "target": 2150549400,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 180,
+        "address": 2149952828,
+        "kind": 10,
+        "symbol": "__dt__15Handle_801F7F10Fv",
+        "target": 2149547792,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 208,
+        "address": 2149952856,
+        "kind": 10,
+        "symbol": "__dt__15Handle_801F7F10Fv",
+        "target": 2149547792,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 222,
+        "address": 2149952870,
+        "kind": 6,
+        "symbol": "lbl_802ED000",
+        "target": 2150551552,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 230,
+        "address": 2149952878,
+        "kind": 4,
+        "symbol": "lbl_802ED000",
+        "target": 2150551552,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 240,
+        "address": 2149952888,
+        "kind": 10,
+        "symbol": "__dt__22ContainerBase_802563CCFv",
+        "target": 2147671840,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 256,
+        "address": 2149952904,
+        "kind": 10,
+        "symbol": "__dl__FPv",
+        "target": 2148658644,
+        "addend": 0
+      }
+    ],
+    "identifier_migration_provenance": {
+      "proof": "scratch/continuation_20261010/layered-return-consumer-migration/proof.json",
+      "previous_canonical": "scratch/continuation_20261010/layered-return-consumer-migration/before/config/GSQE78/candidates/game-callback-flag-setup.json",
+      "previous_canonical_sha256": "f511a44f0f4538c7ce4698be455ffab44b1f242292295b27f4ead783c72d523f"
+    },
+    "validation": {
+      "relocations": 3,
+      "unlinked_relocations": 8,
+      "retained_text_bytes": 104,
+      "unlinked_text_bytes": 184,
+      "initialized_data_bytes": 0,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0
+    },
+    "source_refinement_provenance": {
+      "proof": "scratch/continuation_20261010/callback-native-refinement-v3/proof.json",
+      "new_code_credit_bytes": 0,
+      "proposal_source": "src/Game/engine_callback_skin_ctor.cpp"
+    }
+  }
+]

@@ -1,0 +1,391 @@
+[
+  {
+    "status": "isolated-retained-byte-match",
+    "source": "src/Game/audio_voice_buffer_apply.cpp",
+    "source_sha256": "ded40cbe91fac0cc6819bdd4475fbf37b0eed63a2f1a4ae45deb8af22df7abca",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,p",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "off",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-fp_contract",
+      "on",
+      "-i",
+      "include",
+      "-i",
+      "src/Game"
+    ],
+    "source_kind": "c++",
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2150137416,
+        "end": 2150138384,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_80287E48",
+        "address": 2150137416,
+        "size": 968,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [],
+    "unlinked_functions": [],
+    "headers": [
+      {
+        "path": "include/Game/audio_voice_buffer_apply.h",
+        "sha256": "a0fa1b860c6ba9a34c14327c1127ff7fe7c66ccb754670b48f58ab9705bd2c50"
+      }
+    ],
+    "dependency_symbols": [],
+    "validation": {
+      "relocations": 35,
+      "unlinked_relocations": 0,
+      "retained_text_bytes": 968,
+      "unlinked_text_bytes": 0,
+      "initialized_data_bytes": 0,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0
+    },
+    "verified_text_bytes": 968,
+    "verified_data_bytes": 0,
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 62,
+        "address": 2150137478,
+        "kind": 6,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 66,
+        "address": 2150137482,
+        "kind": 4,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 80,
+        "address": 2150137496,
+        "kind": 10,
+        "symbol": "fn_8028531C",
+        "target": 2150126364,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 128,
+        "address": 2150137544,
+        "kind": 10,
+        "symbol": "fn_80287E0C",
+        "target": 2150137356,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 164,
+        "address": 2150137580,
+        "kind": 10,
+        "symbol": "fn_80287E0C",
+        "target": 2150137356,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 176,
+        "address": 2150137592,
+        "kind": 10,
+        "symbol": "DCStoreRange",
+        "target": 2148475544,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 204,
+        "address": 2150137620,
+        "kind": 10,
+        "symbol": "fn_8028533C",
+        "target": 2150126396,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 240,
+        "address": 2150137656,
+        "kind": 10,
+        "symbol": "fn_8028533C",
+        "target": 2150126396,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 316,
+        "address": 2150137732,
+        "kind": 10,
+        "symbol": "AXSetVoiceAddr",
+        "target": 2148547580,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 392,
+        "address": 2150137808,
+        "kind": 10,
+        "symbol": "AXSetVoiceAddr",
+        "target": 2148547580,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 404,
+        "address": 2150137820,
+        "kind": 10,
+        "symbol": "AXSetVoiceType",
+        "target": 2148547504,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 416,
+        "address": 2150137832,
+        "kind": 10,
+        "symbol": "AXSetVoiceType",
+        "target": 2148547504,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 464,
+        "address": 2150137880,
+        "kind": 10,
+        "symbol": "AXSetVoiceSrcType",
+        "target": 2148547216,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 476,
+        "address": 2150137892,
+        "kind": 10,
+        "symbol": "AXSetVoiceSrc",
+        "target": 2148548092,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 484,
+        "address": 2150137900,
+        "kind": 109,
+        "symbol": "lbl_8037B8E0",
+        "target": 2151135456,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 488,
+        "address": 2150137904,
+        "kind": 10,
+        "symbol": "AXSetVoiceSrcRatio",
+        "target": 2148548244,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 500,
+        "address": 2150137916,
+        "kind": 10,
+        "symbol": "AXSetVoiceSrcType",
+        "target": 2148547216,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 512,
+        "address": 2150137928,
+        "kind": 10,
+        "symbol": "AXSetVoiceSrc",
+        "target": 2148548092,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 520,
+        "address": 2150137936,
+        "kind": 109,
+        "symbol": "lbl_8037B8E0",
+        "target": 2151135456,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 524,
+        "address": 2150137940,
+        "kind": 10,
+        "symbol": "AXSetVoiceSrcRatio",
+        "target": 2148548244,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 588,
+        "address": 2150138004,
+        "kind": 10,
+        "symbol": "fn_80287E0C",
+        "target": 2150137356,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 600,
+        "address": 2150138016,
+        "kind": 10,
+        "symbol": "DCStoreRange",
+        "target": 2148475544,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 618,
+        "address": 2150138034,
+        "kind": 6,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 622,
+        "address": 2150138038,
+        "kind": 6,
+        "symbol": "lbl_802AF548",
+        "target": 2150298952,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 626,
+        "address": 2150138042,
+        "kind": 4,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 630,
+        "address": 2150138046,
+        "kind": 4,
+        "symbol": "lbl_802AF548",
+        "target": 2150298952,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 640,
+        "address": 2150138056,
+        "kind": 10,
+        "symbol": "fn_801FA014",
+        "target": 2149556244,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 656,
+        "address": 2150138072,
+        "kind": 10,
+        "symbol": "memset",
+        "target": 2147505204,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 684,
+        "address": 2150138100,
+        "kind": 10,
+        "symbol": "memset",
+        "target": 2147505204,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 712,
+        "address": 2150138128,
+        "kind": 10,
+        "symbol": "fn_8028533C",
+        "target": 2150126396,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 752,
+        "address": 2150138168,
+        "kind": 10,
+        "symbol": "fn_8028533C",
+        "target": 2150126396,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 816,
+        "address": 2150138232,
+        "kind": 10,
+        "symbol": "fn_80287E0C",
+        "target": 2150137356,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 828,
+        "address": 2150138244,
+        "kind": 10,
+        "symbol": "DCStoreRange",
+        "target": 2148475544,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 860,
+        "address": 2150138276,
+        "kind": 10,
+        "symbol": "fn_8028533C",
+        "target": 2150126396,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 908,
+        "address": 2150138324,
+        "kind": 10,
+        "symbol": "fn_8028533C",
+        "target": 2150126396,
+        "addend": 0
+      }
+    ]
+  }
+]

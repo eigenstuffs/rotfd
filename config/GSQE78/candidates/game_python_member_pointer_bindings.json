@@ -1,0 +1,1797 @@
+[
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/python_member_pointer_binding_800CE1B4.cpp",
+    "source_sha256": "38b0800c2dfc49edaa1b085a22ae12b35baa05d8a64b01b6b0ee1937c9950c1f",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "include"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/python_indexed_pointer_encoding.h",
+        "sha256": "3dd4b8dc2829683d929a0218efa9c2c5ec2c172ee89486bc92241745e344d459"
+      },
+      {
+        "path": "include/Game/python_scalar_bindings.h",
+        "sha256": "da4256555d2d970654f3ecaf9b9acfead7467b6eb2506f3b7c350553e339e166"
+      },
+      {
+        "path": "include/Game/python_owner_factories.h",
+        "sha256": "8d06b6d2211fc18a8d911f3483da4ac122467ddc9f96d62031c730c08547e32b"
+      }
+    ],
+    "sections": [
+      {
+        "name": "extab",
+        "start": 2147563560,
+        "end": 2147563568,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147603480,
+        "end": 2147603492,
+        "alignment": 4
+      },
+      {
+        "name": ".text",
+        "start": 2148327860,
+        "end": 2148328164,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800CE1B4",
+        "address": 2148327860,
+        "size": 304,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@51",
+        "address": 2147563560,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@52",
+        "address": 2147603480,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "PyArg_ParseTuple",
+        "section": ".text",
+        "address": 2149142964,
+        "scope": "global"
+      },
+      {
+        "name": "PyString_FromString",
+        "section": ".text",
+        "address": 2148940464,
+        "scope": "global"
+      },
+      {
+        "name": "_Py_NoneStruct",
+        "section": ".sdata",
+        "address": 2151113360,
+        "scope": "global"
+      },
+      {
+        "name": "fn_800CD864",
+        "section": ".text",
+        "address": 2148325476,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_802A2C38",
+        "section": ".rodata",
+        "address": 2150247480,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_802C1EE4",
+        "section": ".data",
+        "address": 2150375140,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_80318988",
+        "section": ".bss",
+        "address": 2150730120,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_80379704",
+        "section": ".sdata2",
+        "address": 2151126788,
+        "scope": "global"
+      },
+      {
+        "name": "strcpy",
+        "section": ".text",
+        "address": 2148697408,
+        "scope": "global"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 10,
+        "address": 2148327870,
+        "kind": 6,
+        "symbol": "lbl_802A2C38",
+        "target": 2150247480,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 30,
+        "address": 2148327890,
+        "kind": 4,
+        "symbol": "lbl_802A2C38",
+        "target": 2150247480,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 44,
+        "address": 2148327904,
+        "kind": 10,
+        "symbol": "PyArg_ParseTuple",
+        "target": 2149142964,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 66,
+        "address": 2148327926,
+        "kind": 6,
+        "symbol": "lbl_80318988",
+        "target": 2150730120,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 74,
+        "address": 2148327934,
+        "kind": 4,
+        "symbol": "lbl_80318988",
+        "target": 2150730120,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 88,
+        "address": 2148327948,
+        "kind": 10,
+        "symbol": "fn_800CD864",
+        "target": 2148325476,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 114,
+        "address": 2148327974,
+        "kind": 6,
+        "symbol": "lbl_80318988",
+        "target": 2150730120,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 118,
+        "address": 2148327978,
+        "kind": 4,
+        "symbol": "lbl_80318988",
+        "target": 2150730120,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 132,
+        "address": 2148327992,
+        "kind": 109,
+        "symbol": "_Py_NoneStruct",
+        "target": 2151113360,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 136,
+        "address": 2148327996,
+        "kind": 109,
+        "symbol": "_Py_NoneStruct",
+        "target": 2151113360,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 144,
+        "address": 2148328004,
+        "kind": 109,
+        "symbol": "_Py_NoneStruct",
+        "target": 2151113360,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 170,
+        "address": 2148328030,
+        "kind": 6,
+        "symbol": "lbl_802C1EE4",
+        "target": 2150375140,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 174,
+        "address": 2148328034,
+        "kind": 4,
+        "symbol": "lbl_802C1EE4",
+        "target": 2150375140,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 264,
+        "address": 2148328124,
+        "kind": 10,
+        "symbol": "strcpy",
+        "target": 2148697408,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 272,
+        "address": 2148328132,
+        "kind": 109,
+        "symbol": "lbl_80379704",
+        "target": 2151126788,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 276,
+        "address": 2148328136,
+        "kind": 10,
+        "symbol": "strcpy",
+        "target": 2148697408,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 284,
+        "address": 2148328144,
+        "kind": 10,
+        "symbol": "PyString_FromString",
+        "target": 2148940464,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147603480,
+        "kind": 1,
+        "symbol": "fn_800CE1B4",
+        "target": 2148327860,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147603488,
+        "kind": 1,
+        "symbol": "@51",
+        "target": 2147563560,
+        "addend": 0
+      }
+    ],
+    "notes": "docs/notes/game-python-member-pointer-bindings.md",
+    "original_metadata_audit": {
+      "extabindex_scan": [
+        2147573600,
+        2147611328,
+        12
+      ],
+      "matching_extabindex": [
+        {
+          "address": 2147603480,
+          "function": 2148327860,
+          "size": 304,
+          "extab": 2147563560
+        }
+      ],
+      "ctors_scan": [
+        2150209824,
+        2150209920,
+        4
+      ],
+      "dtors_scan": [
+        2150209920,
+        2150209952,
+        4
+      ],
+      "ctors": [],
+      "dtors": []
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "aa735b49d3276f9117e0371d38de0cd96357468659c09732ecb3072abb058588",
+      "retained_text_bytes": 304,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 19,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/python_member_pointer_binding_800CE2E4.cpp",
+    "source_sha256": "b36f4697a0d498f3e6517452b1dcf620f3ac459b5c2ece05a549fafcac040228",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "include"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/python_indexed_pointer_encoding.h",
+        "sha256": "3dd4b8dc2829683d929a0218efa9c2c5ec2c172ee89486bc92241745e344d459"
+      },
+      {
+        "path": "include/Game/python_scalar_bindings.h",
+        "sha256": "da4256555d2d970654f3ecaf9b9acfead7467b6eb2506f3b7c350553e339e166"
+      },
+      {
+        "path": "include/Game/python_owner_factories.h",
+        "sha256": "8d06b6d2211fc18a8d911f3483da4ac122467ddc9f96d62031c730c08547e32b"
+      }
+    ],
+    "sections": [
+      {
+        "name": "extab",
+        "start": 2147563568,
+        "end": 2147563576,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147603492,
+        "end": 2147603504,
+        "alignment": 4
+      },
+      {
+        "name": ".text",
+        "start": 2148328164,
+        "end": 2148328468,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800CE2E4",
+        "address": 2148328164,
+        "size": 304,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@51",
+        "address": 2147563568,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@52",
+        "address": 2147603492,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "PyArg_ParseTuple",
+        "section": ".text",
+        "address": 2149142964,
+        "scope": "global"
+      },
+      {
+        "name": "PyString_FromString",
+        "section": ".text",
+        "address": 2148940464,
+        "scope": "global"
+      },
+      {
+        "name": "_Py_NoneStruct",
+        "section": ".sdata",
+        "address": 2151113360,
+        "scope": "global"
+      },
+      {
+        "name": "fn_800CD864",
+        "section": ".text",
+        "address": 2148325476,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_802A2C54",
+        "section": ".rodata",
+        "address": 2150247508,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_802C1EE4",
+        "section": ".data",
+        "address": 2150375140,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_80318988",
+        "section": ".bss",
+        "address": 2150730120,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_80379704",
+        "section": ".sdata2",
+        "address": 2151126788,
+        "scope": "global"
+      },
+      {
+        "name": "strcpy",
+        "section": ".text",
+        "address": 2148697408,
+        "scope": "global"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 10,
+        "address": 2148328174,
+        "kind": 6,
+        "symbol": "lbl_802A2C54",
+        "target": 2150247508,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 30,
+        "address": 2148328194,
+        "kind": 4,
+        "symbol": "lbl_802A2C54",
+        "target": 2150247508,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 44,
+        "address": 2148328208,
+        "kind": 10,
+        "symbol": "PyArg_ParseTuple",
+        "target": 2149142964,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 66,
+        "address": 2148328230,
+        "kind": 6,
+        "symbol": "lbl_80318988",
+        "target": 2150730120,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 74,
+        "address": 2148328238,
+        "kind": 4,
+        "symbol": "lbl_80318988",
+        "target": 2150730120,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 88,
+        "address": 2148328252,
+        "kind": 10,
+        "symbol": "fn_800CD864",
+        "target": 2148325476,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 114,
+        "address": 2148328278,
+        "kind": 6,
+        "symbol": "lbl_80318988",
+        "target": 2150730120,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 118,
+        "address": 2148328282,
+        "kind": 4,
+        "symbol": "lbl_80318988",
+        "target": 2150730120,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 132,
+        "address": 2148328296,
+        "kind": 109,
+        "symbol": "_Py_NoneStruct",
+        "target": 2151113360,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 136,
+        "address": 2148328300,
+        "kind": 109,
+        "symbol": "_Py_NoneStruct",
+        "target": 2151113360,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 144,
+        "address": 2148328308,
+        "kind": 109,
+        "symbol": "_Py_NoneStruct",
+        "target": 2151113360,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 170,
+        "address": 2148328334,
+        "kind": 6,
+        "symbol": "lbl_802C1EE4",
+        "target": 2150375140,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 174,
+        "address": 2148328338,
+        "kind": 4,
+        "symbol": "lbl_802C1EE4",
+        "target": 2150375140,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 264,
+        "address": 2148328428,
+        "kind": 10,
+        "symbol": "strcpy",
+        "target": 2148697408,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 272,
+        "address": 2148328436,
+        "kind": 109,
+        "symbol": "lbl_80379704",
+        "target": 2151126788,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 276,
+        "address": 2148328440,
+        "kind": 10,
+        "symbol": "strcpy",
+        "target": 2148697408,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 284,
+        "address": 2148328448,
+        "kind": 10,
+        "symbol": "PyString_FromString",
+        "target": 2148940464,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147603492,
+        "kind": 1,
+        "symbol": "fn_800CE2E4",
+        "target": 2148328164,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147603500,
+        "kind": 1,
+        "symbol": "@51",
+        "target": 2147563568,
+        "addend": 0
+      }
+    ],
+    "notes": "docs/notes/game-python-member-pointer-bindings.md",
+    "original_metadata_audit": {
+      "extabindex_scan": [
+        2147573600,
+        2147611328,
+        12
+      ],
+      "matching_extabindex": [
+        {
+          "address": 2147603492,
+          "function": 2148328164,
+          "size": 304,
+          "extab": 2147563568
+        }
+      ],
+      "ctors_scan": [
+        2150209824,
+        2150209920,
+        4
+      ],
+      "dtors_scan": [
+        2150209920,
+        2150209952,
+        4
+      ],
+      "ctors": [],
+      "dtors": []
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "a053c474498b73b0fef5bcac4b7b17c09f58cdcd44317388361d07055347ce07",
+      "retained_text_bytes": 304,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 19,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/python_member_pointer_binding_800CEC94.cpp",
+    "source_sha256": "b5fd82493a542c68a98db1fd0ce3d8fd3d9ee1a8d8ab5ea8ebfae3962fbbdaba",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "include"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/python_indexed_pointer_encoding.h",
+        "sha256": "3dd4b8dc2829683d929a0218efa9c2c5ec2c172ee89486bc92241745e344d459"
+      },
+      {
+        "path": "include/Game/python_scalar_bindings.h",
+        "sha256": "da4256555d2d970654f3ecaf9b9acfead7467b6eb2506f3b7c350553e339e166"
+      },
+      {
+        "path": "include/Game/python_owner_factories.h",
+        "sha256": "8d06b6d2211fc18a8d911f3483da4ac122467ddc9f96d62031c730c08547e32b"
+      }
+    ],
+    "sections": [
+      {
+        "name": "extab",
+        "start": 2147563664,
+        "end": 2147563672,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147603636,
+        "end": 2147603648,
+        "alignment": 4
+      },
+      {
+        "name": ".text",
+        "start": 2148330644,
+        "end": 2148330948,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800CEC94",
+        "address": 2148330644,
+        "size": 304,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@51",
+        "address": 2147563664,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@52",
+        "address": 2147603636,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "PyArg_ParseTuple",
+        "section": ".text",
+        "address": 2149142964,
+        "scope": "global"
+      },
+      {
+        "name": "PyString_FromString",
+        "section": ".text",
+        "address": 2148940464,
+        "scope": "global"
+      },
+      {
+        "name": "_Py_NoneStruct",
+        "section": ".sdata",
+        "address": 2151113360,
+        "scope": "global"
+      },
+      {
+        "name": "fn_800CD864",
+        "section": ".text",
+        "address": 2148325476,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_802A2D60",
+        "section": ".rodata",
+        "address": 2150247776,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_802C1EE4",
+        "section": ".data",
+        "address": 2150375140,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_80318988",
+        "section": ".bss",
+        "address": 2150730120,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_80379704",
+        "section": ".sdata2",
+        "address": 2151126788,
+        "scope": "global"
+      },
+      {
+        "name": "strcpy",
+        "section": ".text",
+        "address": 2148697408,
+        "scope": "global"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 10,
+        "address": 2148330654,
+        "kind": 6,
+        "symbol": "lbl_802A2D60",
+        "target": 2150247776,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 30,
+        "address": 2148330674,
+        "kind": 4,
+        "symbol": "lbl_802A2D60",
+        "target": 2150247776,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 44,
+        "address": 2148330688,
+        "kind": 10,
+        "symbol": "PyArg_ParseTuple",
+        "target": 2149142964,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 66,
+        "address": 2148330710,
+        "kind": 6,
+        "symbol": "lbl_80318988",
+        "target": 2150730120,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 74,
+        "address": 2148330718,
+        "kind": 4,
+        "symbol": "lbl_80318988",
+        "target": 2150730120,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 88,
+        "address": 2148330732,
+        "kind": 10,
+        "symbol": "fn_800CD864",
+        "target": 2148325476,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 114,
+        "address": 2148330758,
+        "kind": 6,
+        "symbol": "lbl_80318988",
+        "target": 2150730120,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 118,
+        "address": 2148330762,
+        "kind": 4,
+        "symbol": "lbl_80318988",
+        "target": 2150730120,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 132,
+        "address": 2148330776,
+        "kind": 109,
+        "symbol": "_Py_NoneStruct",
+        "target": 2151113360,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 136,
+        "address": 2148330780,
+        "kind": 109,
+        "symbol": "_Py_NoneStruct",
+        "target": 2151113360,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 144,
+        "address": 2148330788,
+        "kind": 109,
+        "symbol": "_Py_NoneStruct",
+        "target": 2151113360,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 170,
+        "address": 2148330814,
+        "kind": 6,
+        "symbol": "lbl_802C1EE4",
+        "target": 2150375140,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 174,
+        "address": 2148330818,
+        "kind": 4,
+        "symbol": "lbl_802C1EE4",
+        "target": 2150375140,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 264,
+        "address": 2148330908,
+        "kind": 10,
+        "symbol": "strcpy",
+        "target": 2148697408,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 272,
+        "address": 2148330916,
+        "kind": 109,
+        "symbol": "lbl_80379704",
+        "target": 2151126788,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 276,
+        "address": 2148330920,
+        "kind": 10,
+        "symbol": "strcpy",
+        "target": 2148697408,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 284,
+        "address": 2148330928,
+        "kind": 10,
+        "symbol": "PyString_FromString",
+        "target": 2148940464,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147603636,
+        "kind": 1,
+        "symbol": "fn_800CEC94",
+        "target": 2148330644,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147603644,
+        "kind": 1,
+        "symbol": "@51",
+        "target": 2147563664,
+        "addend": 0
+      }
+    ],
+    "notes": "docs/notes/game-python-member-pointer-bindings.md",
+    "original_metadata_audit": {
+      "extabindex_scan": [
+        2147573600,
+        2147611328,
+        12
+      ],
+      "matching_extabindex": [
+        {
+          "address": 2147603636,
+          "function": 2148330644,
+          "size": 304,
+          "extab": 2147563664
+        }
+      ],
+      "ctors_scan": [
+        2150209824,
+        2150209920,
+        4
+      ],
+      "dtors_scan": [
+        2150209920,
+        2150209952,
+        4
+      ],
+      "ctors": [],
+      "dtors": []
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "7d34c8690766eecd12af00a7003bcd138e72f5e0e4c97fc6222f511ae5cf0823",
+      "retained_text_bytes": 304,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 19,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/python_member_pointer_binding_800DF5EC.cpp",
+    "source_sha256": "68d346c3162f3460a438083cefd930830d19c179187e7222b04807450a4e91fa",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "include"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/python_indexed_pointer_encoding.h",
+        "sha256": "3dd4b8dc2829683d929a0218efa9c2c5ec2c172ee89486bc92241745e344d459"
+      },
+      {
+        "path": "include/Game/python_scalar_bindings.h",
+        "sha256": "da4256555d2d970654f3ecaf9b9acfead7467b6eb2506f3b7c350553e339e166"
+      },
+      {
+        "path": "include/Game/python_owner_factories.h",
+        "sha256": "8d06b6d2211fc18a8d911f3483da4ac122467ddc9f96d62031c730c08547e32b"
+      }
+    ],
+    "sections": [
+      {
+        "name": "extab",
+        "start": 2147566528,
+        "end": 2147566536,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147607788,
+        "end": 2147607800,
+        "alignment": 4
+      },
+      {
+        "name": ".text",
+        "start": 2148398572,
+        "end": 2148398876,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800DF5EC",
+        "address": 2148398572,
+        "size": 304,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@51",
+        "address": 2147566528,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@52",
+        "address": 2147607788,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "PyArg_ParseTuple",
+        "section": ".text",
+        "address": 2149142964,
+        "scope": "global"
+      },
+      {
+        "name": "PyString_FromString",
+        "section": ".text",
+        "address": 2148940464,
+        "scope": "global"
+      },
+      {
+        "name": "_Py_NoneStruct",
+        "section": ".sdata",
+        "address": 2151113360,
+        "scope": "global"
+      },
+      {
+        "name": "fn_800CD864",
+        "section": ".text",
+        "address": 2148325476,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_802A5A58",
+        "section": ".rodata",
+        "address": 2150259288,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_802C1EE4",
+        "section": ".data",
+        "address": 2150375140,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_80318988",
+        "section": ".bss",
+        "address": 2150730120,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_80379704",
+        "section": ".sdata2",
+        "address": 2151126788,
+        "scope": "global"
+      },
+      {
+        "name": "strcpy",
+        "section": ".text",
+        "address": 2148697408,
+        "scope": "global"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 10,
+        "address": 2148398582,
+        "kind": 6,
+        "symbol": "lbl_802A5A58",
+        "target": 2150259288,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 30,
+        "address": 2148398602,
+        "kind": 4,
+        "symbol": "lbl_802A5A58",
+        "target": 2150259288,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 44,
+        "address": 2148398616,
+        "kind": 10,
+        "symbol": "PyArg_ParseTuple",
+        "target": 2149142964,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 66,
+        "address": 2148398638,
+        "kind": 6,
+        "symbol": "lbl_80318988",
+        "target": 2150730120,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 74,
+        "address": 2148398646,
+        "kind": 4,
+        "symbol": "lbl_80318988",
+        "target": 2150730120,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 88,
+        "address": 2148398660,
+        "kind": 10,
+        "symbol": "fn_800CD864",
+        "target": 2148325476,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 114,
+        "address": 2148398686,
+        "kind": 6,
+        "symbol": "lbl_80318988",
+        "target": 2150730120,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 118,
+        "address": 2148398690,
+        "kind": 4,
+        "symbol": "lbl_80318988",
+        "target": 2150730120,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 132,
+        "address": 2148398704,
+        "kind": 109,
+        "symbol": "_Py_NoneStruct",
+        "target": 2151113360,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 136,
+        "address": 2148398708,
+        "kind": 109,
+        "symbol": "_Py_NoneStruct",
+        "target": 2151113360,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 144,
+        "address": 2148398716,
+        "kind": 109,
+        "symbol": "_Py_NoneStruct",
+        "target": 2151113360,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 170,
+        "address": 2148398742,
+        "kind": 6,
+        "symbol": "lbl_802C1EE4",
+        "target": 2150375140,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 174,
+        "address": 2148398746,
+        "kind": 4,
+        "symbol": "lbl_802C1EE4",
+        "target": 2150375140,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 264,
+        "address": 2148398836,
+        "kind": 10,
+        "symbol": "strcpy",
+        "target": 2148697408,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 272,
+        "address": 2148398844,
+        "kind": 109,
+        "symbol": "lbl_80379704",
+        "target": 2151126788,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 276,
+        "address": 2148398848,
+        "kind": 10,
+        "symbol": "strcpy",
+        "target": 2148697408,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 284,
+        "address": 2148398856,
+        "kind": 10,
+        "symbol": "PyString_FromString",
+        "target": 2148940464,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147607788,
+        "kind": 1,
+        "symbol": "fn_800DF5EC",
+        "target": 2148398572,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147607796,
+        "kind": 1,
+        "symbol": "@51",
+        "target": 2147566528,
+        "addend": 0
+      }
+    ],
+    "notes": "docs/notes/game-python-member-pointer-bindings.md",
+    "original_metadata_audit": {
+      "extabindex_scan": [
+        2147573600,
+        2147611328,
+        12
+      ],
+      "matching_extabindex": [
+        {
+          "address": 2147607788,
+          "function": 2148398572,
+          "size": 304,
+          "extab": 2147566528
+        }
+      ],
+      "ctors_scan": [
+        2150209824,
+        2150209920,
+        4
+      ],
+      "dtors_scan": [
+        2150209920,
+        2150209952,
+        4
+      ],
+      "ctors": [],
+      "dtors": []
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "ba3f62777008d6cd66a6c7354ed910745be1ac7b5236e7c00d5515d18a094aae",
+      "retained_text_bytes": 304,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 19,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/python_member_pointer_binding_800DFD2C.cpp",
+    "source_sha256": "1b76dce283a324e2796429e3b425dfae1347e29f6fdef52469250321e3b6967e",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "include"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/python_indexed_pointer_encoding.h",
+        "sha256": "3dd4b8dc2829683d929a0218efa9c2c5ec2c172ee89486bc92241745e344d459"
+      },
+      {
+        "path": "include/Game/python_scalar_bindings.h",
+        "sha256": "da4256555d2d970654f3ecaf9b9acfead7467b6eb2506f3b7c350553e339e166"
+      },
+      {
+        "path": "include/Game/python_owner_factories.h",
+        "sha256": "8d06b6d2211fc18a8d911f3483da4ac122467ddc9f96d62031c730c08547e32b"
+      }
+    ],
+    "sections": [
+      {
+        "name": "extab",
+        "start": 2147566608,
+        "end": 2147566616,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147607908,
+        "end": 2147607920,
+        "alignment": 4
+      },
+      {
+        "name": ".text",
+        "start": 2148400428,
+        "end": 2148400732,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800DFD2C",
+        "address": 2148400428,
+        "size": 304,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@51",
+        "address": 2147566608,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@52",
+        "address": 2147607908,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "PyArg_ParseTuple",
+        "section": ".text",
+        "address": 2149142964,
+        "scope": "global"
+      },
+      {
+        "name": "PyString_FromString",
+        "section": ".text",
+        "address": 2148940464,
+        "scope": "global"
+      },
+      {
+        "name": "_Py_NoneStruct",
+        "section": ".sdata",
+        "address": 2151113360,
+        "scope": "global"
+      },
+      {
+        "name": "fn_800CD864",
+        "section": ".text",
+        "address": 2148325476,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_802A5B90",
+        "section": ".rodata",
+        "address": 2150259600,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_802C1EE4",
+        "section": ".data",
+        "address": 2150375140,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_80318988",
+        "section": ".bss",
+        "address": 2150730120,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_80379704",
+        "section": ".sdata2",
+        "address": 2151126788,
+        "scope": "global"
+      },
+      {
+        "name": "strcpy",
+        "section": ".text",
+        "address": 2148697408,
+        "scope": "global"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 10,
+        "address": 2148400438,
+        "kind": 6,
+        "symbol": "lbl_802A5B90",
+        "target": 2150259600,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 30,
+        "address": 2148400458,
+        "kind": 4,
+        "symbol": "lbl_802A5B90",
+        "target": 2150259600,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 44,
+        "address": 2148400472,
+        "kind": 10,
+        "symbol": "PyArg_ParseTuple",
+        "target": 2149142964,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 66,
+        "address": 2148400494,
+        "kind": 6,
+        "symbol": "lbl_80318988",
+        "target": 2150730120,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 74,
+        "address": 2148400502,
+        "kind": 4,
+        "symbol": "lbl_80318988",
+        "target": 2150730120,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 88,
+        "address": 2148400516,
+        "kind": 10,
+        "symbol": "fn_800CD864",
+        "target": 2148325476,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 114,
+        "address": 2148400542,
+        "kind": 6,
+        "symbol": "lbl_80318988",
+        "target": 2150730120,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 118,
+        "address": 2148400546,
+        "kind": 4,
+        "symbol": "lbl_80318988",
+        "target": 2150730120,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 132,
+        "address": 2148400560,
+        "kind": 109,
+        "symbol": "_Py_NoneStruct",
+        "target": 2151113360,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 136,
+        "address": 2148400564,
+        "kind": 109,
+        "symbol": "_Py_NoneStruct",
+        "target": 2151113360,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 144,
+        "address": 2148400572,
+        "kind": 109,
+        "symbol": "_Py_NoneStruct",
+        "target": 2151113360,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 170,
+        "address": 2148400598,
+        "kind": 6,
+        "symbol": "lbl_802C1EE4",
+        "target": 2150375140,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 174,
+        "address": 2148400602,
+        "kind": 4,
+        "symbol": "lbl_802C1EE4",
+        "target": 2150375140,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 264,
+        "address": 2148400692,
+        "kind": 10,
+        "symbol": "strcpy",
+        "target": 2148697408,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 272,
+        "address": 2148400700,
+        "kind": 109,
+        "symbol": "lbl_80379704",
+        "target": 2151126788,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 276,
+        "address": 2148400704,
+        "kind": 10,
+        "symbol": "strcpy",
+        "target": 2148697408,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 284,
+        "address": 2148400712,
+        "kind": 10,
+        "symbol": "PyString_FromString",
+        "target": 2148940464,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147607908,
+        "kind": 1,
+        "symbol": "fn_800DFD2C",
+        "target": 2148400428,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147607916,
+        "kind": 1,
+        "symbol": "@51",
+        "target": 2147566608,
+        "addend": 0
+      }
+    ],
+    "notes": "docs/notes/game-python-member-pointer-bindings.md",
+    "original_metadata_audit": {
+      "extabindex_scan": [
+        2147573600,
+        2147611328,
+        12
+      ],
+      "matching_extabindex": [
+        {
+          "address": 2147607908,
+          "function": 2148400428,
+          "size": 304,
+          "extab": 2147566608
+        }
+      ],
+      "ctors_scan": [
+        2150209824,
+        2150209920,
+        4
+      ],
+      "dtors_scan": [
+        2150209920,
+        2150209952,
+        4
+      ],
+      "ctors": [],
+      "dtors": []
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "500244d402ff683beb53099e86b2ecd367170fd037546ece67d71ca5a4f88dfd",
+      "retained_text_bytes": 304,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 19,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  }
+]

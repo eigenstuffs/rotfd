@@ -1,0 +1,528 @@
+[
+  {
+    "status": "isolated-byte-match-native-link-acceptance-pending",
+    "source": "src/Game/scene_callback_control_extended_800E20BC.cpp",
+    "source_sha256": "9fc5e0a5aaa04d6cc44e4b06e37457d7498a0856554cdd9338d9f5c454773fef",
+    "header_sha256": {},
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": "extab",
+        "start": 2147567500,
+        "end": 2147567508,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147608352,
+        "end": 2147608364,
+        "alignment": 4
+      },
+      {
+        "name": ".text",
+        "start": 2148409532,
+        "end": 2148409812,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800E20BC",
+        "address": 2148409532,
+        "size": 280,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@25",
+        "address": 2147567500,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@26",
+        "address": 2147608352,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "unlinked_objects": [],
+    "weak_overrides": [],
+    "unlinked_exception_groups": [],
+    "emitted_sections": [
+      {
+        "name": ".text",
+        "size": 280,
+        "raw_sha256": "8244f197a45d65cfccc38cbd4cb314294d5141b0648b1e087406a971800a83e7"
+      },
+      {
+        "name": "extab",
+        "size": 8,
+        "raw_sha256": "ece3a8b3f8b3a0d857991f277beec8085837772db66766084799cab7d27c632b"
+      },
+      {
+        "name": "extabindex",
+        "size": 12,
+        "raw_sha256": "263a73251cd3e834c1deabd87b4d8b049c282f3038d61bda40f915428c8723e7"
+      }
+    ],
+    "headers": [],
+    "notes": "docs/notes/game-scene-vector-draw-controls.md",
+    "original_metadata_audit": {
+      "function": "fn_800E20BC",
+      "original_ranges": [
+        {
+          "name": "extab",
+          "start": 2147567500,
+          "end": 2147567508
+        },
+        {
+          "name": "extabindex",
+          "start": 2147608352,
+          "end": 2147608364
+        },
+        {
+          "name": ".text",
+          "start": 2148409532,
+          "end": 2148409812
+        }
+      ],
+      "extabindex_scan": [
+        2147573600,
+        2147611328,
+        12
+      ],
+      "matching_extabindex": [
+        {
+          "address": 2147608352,
+          "function": 2148409532,
+          "size": 280,
+          "extab": 2147567500
+        }
+      ],
+      "ctors_scan": [
+        2150209824,
+        2150209920,
+        4
+      ],
+      "dtors_scan": [
+        2150209920,
+        2150209952,
+        4
+      ],
+      "ctors": [],
+      "dtors": [],
+      "initialized_data_word_references": [
+        {
+          "address": 2147608352,
+          "section_number": 1
+        },
+        {
+          "address": 2150401552,
+          "section_number": 5
+        }
+      ],
+      "callable_tables": [],
+      "compiled_source_consumers_unchanged": []
+    },
+    "verified_text_bytes": 280,
+    "verified_data_bytes": 20,
+    "pending_compiled_consumer_migrations": [],
+    "dependency_symbols": [
+      {
+        "name": "lbl_80379784",
+        "address": 2151126916,
+        "section": ".sdata2",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_80379788",
+        "address": 2151126920,
+        "section": ".sdata2",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_80379794",
+        "address": 2151126932,
+        "section": ".sdata2",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_80379798",
+        "address": 2151126936,
+        "section": ".sdata2",
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "af4f57f42654245637ca231b8e918ee9d5e3608e003c58e6858070a16a008717",
+      "retained_text_bytes": 280,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 7,
+      "unlinked_relocations": 0,
+      "uncredited_text_bytes": 0,
+      "uncredited_metadata_bytes": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true,
+      "central_final_native_discard_required": false
+    },
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 68,
+        "address": 2148409600,
+        "kind": 109,
+        "symbol": "lbl_80379784",
+        "target": 2151126916,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 72,
+        "address": 2148409604,
+        "kind": 109,
+        "symbol": "lbl_80379794",
+        "target": 2151126932,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 80,
+        "address": 2148409612,
+        "kind": 109,
+        "symbol": "lbl_80379788",
+        "target": 2151126920,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 140,
+        "address": 2148409672,
+        "kind": 109,
+        "symbol": "lbl_80379788",
+        "target": 2151126920,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 148,
+        "address": 2148409680,
+        "kind": 109,
+        "symbol": "lbl_80379798",
+        "target": 2151126936,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147608352,
+        "kind": 1,
+        "symbol": "fn_800E20BC",
+        "target": 2148409532,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147608360,
+        "kind": 1,
+        "symbol": "@25",
+        "target": 2147567500,
+        "addend": 0
+      }
+    ]
+  },
+  {
+    "status": "isolated-byte-match-native-link-acceptance-pending",
+    "source": "src/Game/scene_callback_control_extended_800E2F84.cpp",
+    "source_sha256": "f4038cf0099fbf9d13e964a5af3ac266a8303fa2df4180163784e179e82f8e86",
+    "header_sha256": {},
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "750",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": "extab",
+        "start": 2147567860,
+        "end": 2147567868,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147608568,
+        "end": 2147608580,
+        "alignment": 4
+      },
+      {
+        "name": ".text",
+        "start": 2148413316,
+        "end": 2148413588,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800E2F84",
+        "address": 2148413316,
+        "size": 272,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@17",
+        "address": 2147567860,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@18",
+        "address": 2147608568,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "unlinked_objects": [],
+    "weak_overrides": [],
+    "unlinked_exception_groups": [],
+    "emitted_sections": [
+      {
+        "name": ".text",
+        "size": 272,
+        "raw_sha256": "a221c3ec179d83bd9352a49ef490da5967456ae02673d2c92ac36224ef37aca2"
+      },
+      {
+        "name": "extab",
+        "size": 8,
+        "raw_sha256": "c60efe9431955491cc4357ff26ec0685a3c0c9ccdb9b2d9d029f4aab60a48868"
+      },
+      {
+        "name": "extabindex",
+        "size": 12,
+        "raw_sha256": "d56beba3541322a8eccc1398c72300cdf301ecccd4fc978d1f343141a63d4b86"
+      }
+    ],
+    "headers": [],
+    "notes": "docs/notes/game-scene-vector-draw-controls.md",
+    "original_metadata_audit": {
+      "function": "fn_800E2F84",
+      "original_ranges": [
+        {
+          "name": "extab",
+          "start": 2147567860,
+          "end": 2147567868
+        },
+        {
+          "name": "extabindex",
+          "start": 2147608568,
+          "end": 2147608580
+        },
+        {
+          "name": ".text",
+          "start": 2148413316,
+          "end": 2148413588
+        }
+      ],
+      "extabindex_scan": [
+        2147573600,
+        2147611328,
+        12
+      ],
+      "matching_extabindex": [
+        {
+          "address": 2147608568,
+          "function": 2148413316,
+          "size": 272,
+          "extab": 2147567860
+        }
+      ],
+      "ctors_scan": [
+        2150209824,
+        2150209920,
+        4
+      ],
+      "dtors_scan": [
+        2150209920,
+        2150209952,
+        4
+      ],
+      "ctors": [],
+      "dtors": [],
+      "initialized_data_word_references": [
+        {
+          "address": 2147608568,
+          "section_number": 1
+        },
+        {
+          "address": 2150401900,
+          "section_number": 5
+        }
+      ],
+      "callable_tables": [],
+      "compiled_source_consumers_unchanged": []
+    },
+    "verified_text_bytes": 272,
+    "verified_data_bytes": 20,
+    "pending_compiled_consumer_migrations": [],
+    "dependency_symbols": [
+      {
+        "name": "fn_8007D604",
+        "address": 2147997188,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_8007DCF8",
+        "address": 2147998968,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_8022993C",
+        "address": 2149751100,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_801E9D24",
+        "address": 2149489956,
+        "section": ".text",
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "7a9d606e6aa5ff459cec72e9b5053445ea3779648c69cc6cfb352e4f0ed7c3f4",
+      "retained_text_bytes": 272,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 7,
+      "unlinked_relocations": 0,
+      "uncredited_text_bytes": 0,
+      "uncredited_metadata_bytes": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true,
+      "central_final_native_discard_required": false
+    },
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 52,
+        "address": 2148413368,
+        "kind": 10,
+        "symbol": "fn_8007D604",
+        "target": 2147997188,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 68,
+        "address": 2148413384,
+        "kind": 10,
+        "symbol": "fn_8007DCF8",
+        "target": 2147998968,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 138,
+        "address": 2148413454,
+        "kind": 6,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 146,
+        "address": 2148413462,
+        "kind": 4,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 244,
+        "address": 2148413560,
+        "kind": 10,
+        "symbol": "fn_8022993C",
+        "target": 2149751100,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147608568,
+        "kind": 1,
+        "symbol": "fn_800E2F84",
+        "target": 2148413316,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147608576,
+        "kind": 1,
+        "symbol": "@17",
+        "target": 2147567860,
+        "addend": 0
+      }
+    ]
+  }
+]

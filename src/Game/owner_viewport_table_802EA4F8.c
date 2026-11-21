@@ -1,0 +1,25 @@
+#include "Game/owner_viewport_interface_tables.h"
+extern struct RecordArraysDestroyOwner * fn_801CFE40(struct RecordArraysDestroyOwner *, int);
+extern void fn_801D0650(struct GroupArrayStreamOwner *, struct GroupArrayInputStream *);
+extern void fn_801D05D8(void *);
+extern void fn_801D0518(struct HandleRebindOwner_801D0518 *);
+extern void fn_801CAB28(void *);
+extern signed char fn_80249BA8(struct ActivateOwner *);
+extern void fn_801CFC8C(void *);
+extern void fn_801CAB2C(void *);
+extern void fn_80248CAC(struct EnginePropertyOwner *, float);
+extern float fn_80248C58(const void *);
+extern void fn_801CAB3C(void *);
+extern void fn_801CAB40(void *);
+extern int fn_801CAB44(void *);
+extern int fn_801CAB4C(void *);
+extern int fn_801CAB54(void *);
+extern int fn_801BD948(void *);
+extern int fn_801CAB5C(void *);
+extern int fn_801CAB64(void *);
+extern int fn_8024890C(struct SphereCollectOwner *, struct SphereCollectObject *, const struct SphereCollectSphere *, const void *, struct SphereCollectResult *, int, unsigned long long);
+extern int fn_801CFAA8(void *);
+extern void fn_801CF5A4(void *);
+extern void fn_801CF5A8(void *);
+RecordArrayOwnerOperationsTable lbl_802EA4F8 = { 0, 0, fn_801CFE40, fn_801D0650, fn_801D05D8, fn_801D0518, fn_801CAB28, fn_80249BA8, fn_801CFC8C, fn_801CAB2C, fn_80248CAC, fn_80248C58, fn_801CAB3C, fn_801CAB40, fn_801CAB44, fn_801CAB4C, fn_801CAB54, fn_801BD948, fn_801CAB5C, fn_801CAB64, fn_8024890C, fn_801CFAA8, fn_801CF5A4, fn_801CF5A8 };
+typedef char CheckTableSize[sizeof(RecordArrayOwnerOperationsTable) == 96 ? 1 : -1];

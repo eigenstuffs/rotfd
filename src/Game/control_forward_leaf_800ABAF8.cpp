@@ -1,0 +1,2 @@
+/* Original control forwarding and predicates; see docs/notes/game-control-forward-leafs.md. */
+struct Controller;struct Control{char opaque00[0xC];Controller*controller;};extern "C"{signed char fn_8025E9FC(Controller*,int);void fn_8007350C(Controller*);}extern "C"void fn_800ABAF8(Control*self){if(fn_8025E9FC(self->controller,0x84))fn_8007350C(self->controller);}

@@ -1,0 +1,485 @@
+{
+  "status": "isolated-retained-byte-match",
+  "source": "src/Game/owner_motion_start.cpp",
+  "source_sha256": "3096ffa79a21f5102ef15de2bc3bfbafccfb67fa7c5e79ab39e075ae55f35375",
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-proc",
+    "gekko",
+    "-fp",
+    "hardware",
+    "-enum",
+    "int",
+    "-str",
+    "reuse",
+    "-common",
+    "off",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-Cpp_exceptions",
+    "off",
+    "-RTTI",
+    "off",
+    "-use_lmw_stmw",
+    "on",
+    "-i",
+    "src/Game",
+    "-i",
+    "include"
+  ],
+  "source_kind": "c++",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2149730440,
+      "end": 2149730832,
+      "alignment": 4
+    }
+  ],
+  "functions": [
+    {
+      "name": "fn_80224888",
+      "address": 2149730440,
+      "size": 392,
+      "scope": "global",
+      "section": ".text",
+      "object_offset": 0,
+      "sha256": "23d7a37ba8378c6742c121352a6b220937c18d634a8f88a288bb02e614c21cf6"
+    }
+  ],
+  "objects": [],
+  "unlinked_functions": [
+    {
+      "name": "__dt__16MotionStartCopy3Fv",
+      "object_offset": 392,
+      "size": 96,
+      "scope": "weak",
+      "section": ".text",
+      "binding": "weak",
+      "raw_sha256": "4f6332623785bae9625330c6c92b1c477538430a6387c5a5d24433f5957a05d7",
+      "reason": "unreferenced inline destructor backup; must be absent from final ELF"
+    },
+    {
+      "name": "__dt__18MotionStartHandle5Fv",
+      "object_offset": 488,
+      "size": 100,
+      "scope": "weak",
+      "section": ".text",
+      "binding": "weak",
+      "raw_sha256": "862fac6710ad3ee15a80b6007ada7069e851db7ee4936b505b0733556ab78494",
+      "reason": "unreferenced inline destructor backup; must be absent from final ELF"
+    },
+    {
+      "name": "__dt__18MotionStartHandle4Fv",
+      "object_offset": 588,
+      "size": 96,
+      "scope": "weak",
+      "section": ".text",
+      "binding": "weak",
+      "raw_sha256": "4f6332623785bae9625330c6c92b1c477538430a6387c5a5d24433f5957a05d7",
+      "reason": "unreferenced inline destructor backup; must be absent from final ELF"
+    },
+    {
+      "name": "__dt__18MotionStartHandle3Fv",
+      "object_offset": 684,
+      "size": 92,
+      "scope": "weak",
+      "section": ".text",
+      "binding": "weak",
+      "raw_sha256": "1dc191d0563978ed38f7b2c78ac2b807d3ddfa53c98db4560ab0ced43640ab02",
+      "reason": "unreferenced inline destructor backup; must be absent from final ELF"
+    },
+    {
+      "name": "__dt__18MotionStartHandle2Fv",
+      "object_offset": 776,
+      "size": 88,
+      "scope": "weak",
+      "section": ".text",
+      "binding": "weak",
+      "raw_sha256": "ee3203a188e9d7282273427bfc26c6917510fc7b7c574c24cca0331f00873d1f",
+      "reason": "unreferenced inline destructor backup; must be absent from final ELF"
+    },
+    {
+      "name": "__dt__18MotionStartHandle1Fv",
+      "object_offset": 864,
+      "size": 84,
+      "scope": "weak",
+      "section": ".text",
+      "binding": "weak",
+      "raw_sha256": "fdd9fcf5ab58f46f986c50b59ae57e9c65a7b53acdde19888e0e8987b285adb0",
+      "reason": "unreferenced inline destructor backup; must be absent from final ELF"
+    }
+  ],
+  "dependency_symbols": [
+    {
+      "name": "__ct__15Handle_801F7F10Fv",
+      "address": 2149547780,
+      "scope": "global"
+    },
+    {
+      "name": "__dt__15Handle_801F7F10Fv",
+      "address": 2149547792,
+      "scope": "global"
+    },
+    {
+      "name": "fn_801F86C8",
+      "address": 2149549768,
+      "scope": "global"
+    },
+    {
+      "name": "fn_80224038",
+      "address": 2149728312,
+      "scope": "global"
+    },
+    {
+      "name": "fn_80229098",
+      "address": 2149748888,
+      "scope": "global"
+    },
+    {
+      "name": "fn_80229EE0",
+      "address": 2149752544,
+      "scope": "global"
+    },
+    {
+      "name": "game_vec3_zero",
+      "address": 2150894420,
+      "scope": "global"
+    },
+    {
+      "name": "lbl_801E9D24",
+      "address": 2149489956,
+      "scope": "global"
+    }
+  ],
+  "headers": [],
+  "notes": "docs/notes/game-owner-motion-start.md",
+  "original_metadata_audit": {
+    "status": "no-original-table-ownership",
+    "retained_ranges": [
+      {
+        "start": 2149730440,
+        "end": 2149730832
+      }
+    ],
+    "tables": [
+      {
+        "section": "extabindex",
+        "start": 2147573600,
+        "end": 2147611324,
+        "sha256": "64f3b619f96f16f327bc2805af02977009d3270075a236e9bed2e7b960641585",
+        "entries": 3141,
+        "references_to_retained_ranges": []
+      },
+      {
+        "section": ".ctors",
+        "start": 2150209824,
+        "end": 2150209904,
+        "sha256": "c535bceb8aef25702ac3b853c78b5499ab00b445fb657e84883dc324ab71e9df",
+        "entries": 19,
+        "references_to_retained_ranges": []
+      },
+      {
+        "section": ".dtors",
+        "start": 2150209920,
+        "end": 2150209936,
+        "sha256": "f9aca20c726bf82fc897d6a1cfdb6e48dea8a9b97d3a9e68694a58dd94646195",
+        "entries": 3,
+        "references_to_retained_ranges": []
+      }
+    ]
+  },
+  "validation": {
+    "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "object_sha256": "4b8f912da73975bde7e11c60a53672ca75ff1a18e2a9e97b777c5b87f9d94572",
+    "retained_text_bytes": 392,
+    "emitted_text_bytes": 948,
+    "unlinked_text_bytes": 556,
+    "weak_functions": 6,
+    "relocations": 18,
+    "unlinked_relocations": 12,
+    "nonallocated_metadata_relocations": 7,
+    "zero_byte_differences": true,
+    "all_retained_allocated_bytes_verified": true,
+    "all_emitted_allocated_bytes_accounted": true,
+    "no_retained_references_to_discarded_helpers": true,
+    "owned_padding_bytes": 0,
+    "initialized_data_bytes": 0,
+    "bss_bytes": 0,
+    "verification_script": "scratch/game_owner_motion_start/verify.py",
+    "central_final_elf_absence_required": true
+  },
+  "actual_relocations": [
+    {
+      "section": ".text",
+      "at": 32,
+      "address": 2149730472,
+      "kind": 10,
+      "symbol": "__ct__15Handle_801F7F10Fv",
+      "target": 2149547780,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 60,
+      "address": 2149730500,
+      "kind": 10,
+      "symbol": "__ct__15Handle_801F7F10Fv",
+      "target": 2149547780,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 96,
+      "address": 2149730536,
+      "kind": 10,
+      "symbol": "__ct__15Handle_801F7F10Fv",
+      "target": 2149547780,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 106,
+      "address": 2149730546,
+      "kind": 6,
+      "symbol": "lbl_801E9D24",
+      "target": 2149489956,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 114,
+      "address": 2149730554,
+      "kind": 4,
+      "symbol": "lbl_801E9D24",
+      "target": 2149489956,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 144,
+      "address": 2149730584,
+      "kind": 10,
+      "symbol": "fn_801F86C8",
+      "target": 2149549768,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 156,
+      "address": 2149730596,
+      "kind": 10,
+      "symbol": "fn_80229098",
+      "target": 2149748888,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 168,
+      "address": 2149730608,
+      "kind": 10,
+      "symbol": "__dt__15Handle_801F7F10Fv",
+      "target": 2149547792,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 180,
+      "address": 2149730620,
+      "kind": 10,
+      "symbol": "fn_80224038",
+      "target": 2149728312,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 188,
+      "address": 2149730628,
+      "kind": 10,
+      "symbol": "fn_80229EE0",
+      "target": 2149752544,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 202,
+      "address": 2149730642,
+      "kind": 6,
+      "symbol": "game_vec3_zero",
+      "target": 2150894420,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 218,
+      "address": 2149730658,
+      "kind": 4,
+      "symbol": "game_vec3_zero",
+      "target": 2150894420,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 260,
+      "address": 2149730700,
+      "kind": 10,
+      "symbol": "__ct__15Handle_801F7F10Fv",
+      "target": 2149547780,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 288,
+      "address": 2149730728,
+      "kind": 10,
+      "symbol": "fn_801F86C8",
+      "target": 2149549768,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 312,
+      "address": 2149730752,
+      "kind": 10,
+      "symbol": "fn_801F86C8",
+      "target": 2149549768,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 324,
+      "address": 2149730764,
+      "kind": 10,
+      "symbol": "__dt__15Handle_801F7F10Fv",
+      "target": 2149547792,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 348,
+      "address": 2149730788,
+      "kind": 10,
+      "symbol": "__dt__15Handle_801F7F10Fv",
+      "target": 2149547792,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 360,
+      "address": 2149730800,
+      "kind": 10,
+      "symbol": "__dt__15Handle_801F7F10Fv",
+      "target": 2149547792,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 440,
+      "address": 2149730880,
+      "kind": 10,
+      "symbol": "__dt__15Handle_801F7F10Fv",
+      "target": 2149547792,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 456,
+      "address": 2149730896,
+      "kind": 10,
+      "symbol": "__dl__FPv",
+      "target": 2148658644,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 540,
+      "address": 2149730980,
+      "kind": 10,
+      "symbol": "__dt__15Handle_801F7F10Fv",
+      "target": 2149547792,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 556,
+      "address": 2149730996,
+      "kind": 10,
+      "symbol": "__dl__FPv",
+      "target": 2148658644,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 636,
+      "address": 2149731076,
+      "kind": 10,
+      "symbol": "__dt__15Handle_801F7F10Fv",
+      "target": 2149547792,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 652,
+      "address": 2149731092,
+      "kind": 10,
+      "symbol": "__dl__FPv",
+      "target": 2148658644,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 728,
+      "address": 2149731168,
+      "kind": 10,
+      "symbol": "__dt__15Handle_801F7F10Fv",
+      "target": 2149547792,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 744,
+      "address": 2149731184,
+      "kind": 10,
+      "symbol": "__dl__FPv",
+      "target": 2148658644,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 816,
+      "address": 2149731256,
+      "kind": 10,
+      "symbol": "__dt__15Handle_801F7F10Fv",
+      "target": 2149547792,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 832,
+      "address": 2149731272,
+      "kind": 10,
+      "symbol": "__dl__FPv",
+      "target": 2148658644,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 900,
+      "address": 2149731340,
+      "kind": 10,
+      "symbol": "__dt__15Handle_801F7F10Fv",
+      "target": 2149547792,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 916,
+      "address": 2149731356,
+      "kind": 10,
+      "symbol": "__dl__FPv",
+      "target": 2148658644,
+      "addend": 0
+    }
+  ]
+}

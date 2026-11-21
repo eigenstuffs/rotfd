@@ -1,0 +1,330 @@
+{
+  "compiler": "GC/1.3",
+  "cflags": [
+    "-proc gekko",
+    "-fp hardware",
+    "-enum int",
+    "-str reuse,pool,readonly",
+    "-common off",
+    "-O4,p",
+    "-inline deferred",
+    "-pool off",
+    "-Cpp_exceptions off",
+    "-use_lmw_stmw off",
+    "-i src/MSL",
+    "-char signed"
+  ],
+  "source": "src/MSL/ansi_fp.c",
+  "status": "integrated-byte-match",
+  "dependency_symbols": [
+    {
+      "name": "__float_huge",
+      "address": "0x80375e4c",
+      "original_name": "__float_huge"
+    },
+    {
+      "name": "__ctype_map",
+      "address": "0x802d0260",
+      "original_name": "__ctype_map"
+    },
+    {
+      "name": "__lower_map",
+      "address": "0x802d0360",
+      "original_name": "__lower_map"
+    },
+    {
+      "name": "__double_max",
+      "address": "0x80375e58",
+      "original_name": "__double_max"
+    },
+    {
+      "name": "copysign",
+      "address": "0x8012d148",
+      "original_name": "fn_8012D148"
+    },
+    {
+      "name": "pow",
+      "address": "0x8012da8c",
+      "original_name": "pow"
+    },
+    {
+      "name": "ldexp",
+      "address": "0x8012d418",
+      "original_name": "ldexp"
+    },
+    {
+      "name": "nextafter",
+      "address": "0x8012d6d8",
+      "original_name": "fn_8012D6D8"
+    },
+    {
+      "name": "frexp",
+      "address": "0x8012d38c",
+      "original_name": "frexp"
+    },
+    {
+      "name": "modf",
+      "address": "0x8012d5dc",
+      "original_name": "modf"
+    },
+    {
+      "name": "__cvt_dbl_usll",
+      "address": "0x8011f9f8",
+      "original_name": "fn_8011F9F8"
+    },
+    {
+      "name": "__mod2u",
+      "address": "0x8011f8a4",
+      "original_name": "__mod2u"
+    },
+    {
+      "name": "__div2u",
+      "address": "0x8011f680",
+      "original_name": "__div2u"
+    }
+  ],
+  "splits": [
+    {
+      "section": ".text",
+      "start": "0x801221ec",
+      "end": "0x80123e58"
+    },
+    {
+      "section": ".rodata",
+      "start": "0x802abaf0",
+      "end": "0x802ABBCD"
+    },
+    {
+      "section": ".data",
+      "start": "0x802d00f8",
+      "end": "0x802D025C"
+    },
+    {
+      "section": ".sdata2",
+      "start": "0x80379948",
+      "end": "0x80379978"
+    }
+  ],
+  "functions": [
+    {
+      "name": "__dec2num",
+      "original_name": "__dec2num",
+      "address": "0x801221ec",
+      "size": "0x954",
+      "scope": "global"
+    },
+    {
+      "name": "__num2dec",
+      "original_name": "fn_80122B40",
+      "address": "0x80122b40",
+      "size": "0x1a4",
+      "scope": "global"
+    },
+    {
+      "name": "__num2dec_internal",
+      "original_name": "fn_80122CE4",
+      "address": "0x80122ce4",
+      "size": "0x23c",
+      "scope": "local"
+    },
+    {
+      "name": "__minus_dec",
+      "original_name": "fn_80122F20",
+      "address": "0x80122f20",
+      "size": "0x4fc",
+      "scope": "local"
+    },
+    {
+      "name": "__less_dec",
+      "original_name": "fn_8012341C",
+      "address": "0x8012341c",
+      "size": "0xf8",
+      "scope": "local"
+    },
+    {
+      "name": "__equals_dec",
+      "original_name": "fn_80123514",
+      "address": "0x80123514",
+      "size": "0x10c",
+      "scope": "local"
+    },
+    {
+      "name": "__two_exp",
+      "original_name": "fn_80123620",
+      "address": "0x80123620",
+      "size": "0x340",
+      "scope": "local"
+    },
+    {
+      "name": "__str2dec",
+      "original_name": "fn_80123960",
+      "address": "0x80123960",
+      "size": "0xec",
+      "scope": "local"
+    },
+    {
+      "name": "__timesdec",
+      "original_name": "fn_80123A4C",
+      "address": "0x80123a4c",
+      "size": "0x28c",
+      "scope": "local"
+    },
+    {
+      "name": "__ull2dec",
+      "original_name": "fn_80123CD8",
+      "address": "0x80123cd8",
+      "size": "0x110",
+      "scope": "local"
+    },
+    {
+      "name": "__count_trailing_zerol",
+      "original_name": "fn_80123DE8",
+      "address": "0x80123de8",
+      "size": "0x70",
+      "scope": "local"
+    }
+  ],
+  "data_symbols": [],
+  "compiler_local_symbols": [
+    {
+      "name": "pow_10$392",
+      "original_name": "lbl_802D00F8",
+      "address": "0x802d00f8",
+      "size": "0x40",
+      "scope": "local",
+      "section": ".data"
+    },
+    {
+      "name": "@597",
+      "original_name": "lbl_80379948",
+      "address": "0x80379948",
+      "size": "0x8",
+      "scope": "local",
+      "section": ".sdata2"
+    },
+    {
+      "name": "@598",
+      "original_name": "lbl_80379950",
+      "address": "0x80379950",
+      "size": "0x8",
+      "scope": "local",
+      "section": ".sdata2"
+    },
+    {
+      "name": "@599",
+      "original_name": "lbl_80379958",
+      "address": "0x80379958",
+      "size": "0x8",
+      "scope": "local",
+      "section": ".sdata2"
+    },
+    {
+      "name": "@600",
+      "original_name": "lbl_80379960",
+      "address": "0x80379960",
+      "size": "0x8",
+      "scope": "local",
+      "section": ".sdata2"
+    },
+    {
+      "name": "@stringBase0",
+      "original_name": "lbl_802ABAF0",
+      "address": "0x802abaf0",
+      "size": "0xdd",
+      "scope": "local",
+      "section": ".rodata"
+    },
+    {
+      "name": "@602",
+      "original_name": "lbl_80379968",
+      "address": "0x80379968",
+      "size": "0x8",
+      "scope": "local",
+      "section": ".sdata2"
+    },
+    {
+      "name": "@603",
+      "original_name": "lbl_80379970",
+      "address": "0x80379970",
+      "size": "0x8",
+      "scope": "local",
+      "section": ".sdata2"
+    },
+    {
+      "name": "@881",
+      "original_name": "jumptable_802D0138",
+      "address": "0x802d0138",
+      "size": "0x124",
+      "scope": "local",
+      "section": ".data"
+    }
+  ],
+  "notes": "docs/notes/msl-ansi-fp.md",
+  "split_notes": [
+    "The complete retained ansi_fp TU has eleven routines at0x801221EC..0x80123E58. The two subsequent16-byte abs/labs routines belong to a separate arithmetic unit.",
+    "The pooled decimal strings occupy221 bytes at0x802ABAF0; shrink original lbl_802ABAF0 from0xE0 to0xDD and preserve three zero alignment bytes.",
+    "pow_10 occupies64 data bytes at0x802D00F8; __two_exp owns a73-entry switch table292 bytes at0x802D0138. Preserve four trailing alignment bytes through0x802D0260.",
+    "Six compiler-local double constants own48 sdata2 bytes at0x80379948..0x80379978. No BSS is owned."
+  ],
+  "validation": {
+    "verification_script": "scratch/msl_ansi_fp/verify.py",
+    "text_bytes": 7276,
+    "rodata_bytes": 221,
+    "data_bytes": 356,
+    "sdata2_bytes": 48,
+    "alignment_padding_bytes": 7,
+    "relocations_applied": 223,
+    "byte_differences": 0,
+    "original_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "6b44223b0458c7ac57cca7d1dabfe37443b469d2324e910990a66770caa4bc60",
+    "object_sha256": "ff0c17f36cea72034d6cc5732329f258c443c96356084762753e8a387198cd8f",
+    "integration_status": "verified full-DOL and objdiff"
+  },
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "6b44223b0458c7ac57cca7d1dabfe37443b469d2324e910990a66770caa4bc60",
+    "matched_code": 7276,
+    "matched_functions": 11,
+    "matched_data": 625,
+    "complete_data": 625,
+    "object_path": "build/GSQE78/src/MSL/ansi_fp.o",
+    "object_sha256": "ff0c17f36cea72034d6cc5732329f258c443c96356084762753e8a387198cd8f"
+  },
+  "external_padding": [
+    {
+      "source": "src/MSL/ansi_fp.c",
+      "unit": "main/MSL/ansi_fp",
+      "section": ".rodata",
+      "start": "0x802abbcd",
+      "end": "0x802abbd0",
+      "size": 3,
+      "alignment": 1,
+      "symbol": "gap_06_802ABBCD_rodata",
+      "original_owner": "padding/source_extents/MSL/ansi_fp.s",
+      "source_section_start": "0x802abaf0",
+      "source_section_bytes": 221,
+      "previous_split_bytes": 224,
+      "description": "Original linker alignment beyond emitted source section; no source credit."
+    },
+    {
+      "source": "src/MSL/ansi_fp.c",
+      "unit": "main/MSL/ansi_fp",
+      "section": ".data",
+      "start": "0x802d025c",
+      "end": "0x802d0260",
+      "size": 4,
+      "alignment": 1,
+      "symbol": "gap_07_802D025C_data",
+      "original_owner": "padding/source_extents/MSL/ansi_fp.s",
+      "source_section_start": "0x802d00f8",
+      "source_section_bytes": 356,
+      "previous_split_bytes": 360,
+      "description": "Original linker alignment beyond emitted source section; no source credit."
+    }
+  ],
+  "source_extent_audit": {
+    "data_credit_correction": 7,
+    "evidence": "config/GSQE78/source_padding.json",
+    "description": "Source and original bytes unchanged; trailing original padding moved to NonMatching ownership."
+  }
+}

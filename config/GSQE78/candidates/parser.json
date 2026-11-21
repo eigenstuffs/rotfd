@@ -1,0 +1,141 @@
+{
+  "source": "src/Parser/parser.c",
+  "status": "integrated-byte-match",
+  "compiler": "GC/2.0",
+  "cflags": [
+    "-proc gekko",
+    "-fp hardware",
+    "-enum int",
+    "-str reuse",
+    "-common off",
+    "-opt level=4,nopeephole,speed",
+    "-inline auto,deferred",
+    "-pool off",
+    "-Cpp_exceptions off"
+  ],
+  "sections": {
+    ".text": [
+      "0x8017269c",
+      "0x80172b44"
+    ],
+    ".data": [
+      "0x802db218",
+      "0x802DB24B"
+    ]
+  },
+  "functions": [
+    {
+      "name": "PyParser_AddToken",
+      "address": "0x8017269c",
+      "size": "0x370",
+      "scope": "global"
+    },
+    {
+      "name": "PyParser_Delete",
+      "address": "0x80172a0c",
+      "size": "0x38",
+      "scope": "global"
+    },
+    {
+      "name": "PyParser_New",
+      "address": "0x80172a44",
+      "size": "0x100",
+      "scope": "global"
+    }
+  ],
+  "objects": [],
+  "dependency_symbols": [
+    {
+      "name": "_savegpr_21",
+      "address": "0x8011f604"
+    },
+    {
+      "name": "strcmp",
+      "address": "0x801283a8"
+    },
+    {
+      "name": "PyGrammar_FindDFA",
+      "address": "0x80171e7c"
+    },
+    {
+      "name": "printf",
+      "address": "0x80125e18"
+    },
+    {
+      "name": "abort",
+      "address": "0x8012107c"
+    },
+    {
+      "name": "PyNode_AddChild",
+      "address": "0x801724fc"
+    },
+    {
+      "name": "fprintf",
+      "address": "0x80125d54"
+    },
+    {
+      "name": "_restgpr_21",
+      "address": "0x8011f650"
+    },
+    {
+      "name": "PyNode_Free",
+      "address": "0x801724c0"
+    },
+    {
+      "name": "free",
+      "address": "0x8001f35c"
+    },
+    {
+      "name": "PyGrammar_AddAccelerators",
+      "address": "0x8017332c"
+    },
+    {
+      "name": "malloc",
+      "address": "0x8001f2c0"
+    },
+    {
+      "name": "PyNode_New",
+      "address": "0x80172640"
+    }
+  ],
+  "validation": {
+    "relocations": 31,
+    "text_bytes": 1192,
+    "initialized_data_bytes": 51,
+    "zero_byte_differences": true,
+    "data_tail_padding_bytes": 5,
+    "integration_status": "verified full-DOL and objdiff"
+  },
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "1d7e4f3977e21fdf1bcd1d447ce7a8a048e7ec30b5790574bdea373c131521d5",
+    "matched_code": 1192,
+    "matched_functions": 3,
+    "matched_data": 51,
+    "complete_data": 51,
+    "object_path": "build/GSQE78/src/Parser/parser.o",
+    "object_sha256": "b4399ca3bcd035c0d3902b34658c9e4ff47c8d2540f1f45d4cdf10a0936f5b9c"
+  },
+  "external_padding": [
+    {
+      "source": "src/Parser/parser.c",
+      "unit": "main/Parser/parser",
+      "section": ".data",
+      "start": "0x802db24b",
+      "end": "0x802db250",
+      "size": 5,
+      "alignment": 1,
+      "symbol": "gap_07_802DB24B_data",
+      "original_owner": "padding/source_extents/Parser/parser.s",
+      "source_section_start": "0x802db218",
+      "source_section_bytes": 51,
+      "previous_split_bytes": 56,
+      "description": "Original linker alignment beyond emitted source section; no source credit."
+    }
+  ],
+  "source_extent_audit": {
+    "data_credit_correction": 5,
+    "evidence": "config/GSQE78/source_padding.json",
+    "description": "Source and original bytes unchanged; trailing original padding moved to NonMatching ownership."
+  }
+}

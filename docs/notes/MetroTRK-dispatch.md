@@ -1,0 +1,5 @@
+# MetroTRK command dispatch — pending
+
+The original dispatcher and initializer occupy 0x80119044..0x801190E0 (156 code bytes). Its 34-entry callback table occupies 0x802CFD60..0x802CFDE8 (136 bytes). The initialized dispatch size is 32; the table has two trailing null entries. Unlike the Melee reference, index 23 is TRKDoSetOption at 0x801190E0. Callback identities are corroborated by the recovered command handlers. The global size word is at 0x8033AA70 with original extent 4, followed by 4 bytes of external alignment padding.
+
+The readable C candidate in src/MetroTRK/dispatch.c is not configured. GC/1.3.2 with the normal TRK auto,deferred options produces both exact function sizes and all initialized table bytes, but three instructions use a different register for the command byte. The 144/156 positional byte equality is diagnostic only, not recovered progress. Scratch probes record ordinary signedness, indexing and compiler-option experiments. The verifier emits a candidate manifest only when the complete code matches. Source reference: https://github.com/doldecomp/melee/blob/master/src/MetroTRK/dispatch.c.

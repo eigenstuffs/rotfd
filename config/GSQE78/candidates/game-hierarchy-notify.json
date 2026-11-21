@@ -1,0 +1,77 @@
+{
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-lang c++",
+    "-proc gekko",
+    "-fp hardware",
+    "-enum int",
+    "-str reuse,readonly",
+    "-common off",
+    "-O4,p",
+    "-schedule on",
+    "-inline deferred",
+    "-Cpp_exceptions off",
+    "-RTTI off",
+    "-use_lmw_stmw on",
+    "-i src/Game"
+  ],
+  "source": "src/Game/hierarchy_notify.cpp",
+  "status": "integrated-byte-match",
+  "scope": "Single hierarchy notification method; neighboring larger routines and original full translation-unit boundary are not claimed.",
+  "splits": [
+    {
+      "section": ".text",
+      "start": "0x801fd3ec",
+      "end": "0x801fd4ec"
+    }
+  ],
+  "functions": [
+    {
+      "name": "fn_801FD3EC",
+      "original_name": "fn_801FD3EC",
+      "address": "0x801fd3ec",
+      "size": "0x100",
+      "scope": "global"
+    }
+  ],
+  "data_symbols": [],
+  "dependency_symbols": [
+    {
+      "name": "lbl_801E9D24",
+      "address": "0x801e9d24",
+      "section": ".text"
+    },
+    {
+      "name": "fn_80240120",
+      "address": "0x80240120",
+      "section": ".text"
+    },
+    {
+      "name": "fn_80269FE0",
+      "address": "0x80269fe0",
+      "section": ".text"
+    }
+  ],
+  "notes": "docs/notes/game-hierarchy-notify.md",
+  "validation": {
+    "verification_script": "scratch/game_hierarchy_notify/verify.py",
+    "text_bytes": 256,
+    "data_bytes": 0,
+    "byte_differences": 0,
+    "original_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "integration_status": "verified full-DOL and objdiff",
+    "source_sha256": "79b9b0a27da77567ee8084443f7a40058b142a1bbc0c45b4ac79d423babd7dbd",
+    "relocations_applied": 4,
+    "object_sha256": "8dcf06b62a53387e1c2771f2c95ea79fc3e82538dcd78174246ea3a8906a1296"
+  },
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "79b9b0a27da77567ee8084443f7a40058b142a1bbc0c45b4ac79d423babd7dbd",
+    "matched_code": 256,
+    "matched_functions": 1,
+    "matched_data": 0,
+    "complete_data": 0,
+    "object_path": "build/GSQE78/src/Game/hierarchy_notify.o",
+    "object_sha256": "8dcf06b62a53387e1c2771f2c95ea79fc3e82538dcd78174246ea3a8906a1296"
+  }
+}

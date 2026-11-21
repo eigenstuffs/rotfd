@@ -1,0 +1,119 @@
+{
+  "status": "isolated-byte-match",
+  "source": "src/Game/platform_heap_resize.cpp",
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-proc",
+    "gekko",
+    "-fp",
+    "hardware",
+    "-enum",
+    "int",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-Cpp_exceptions",
+    "off",
+    "-RTTI",
+    "off",
+    "-str",
+    "reuse",
+    "-common",
+    "off",
+    "-use_lmw_stmw",
+    "on",
+    "-i",
+    "include"
+  ],
+  "source_kind": "c++",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2150169332,
+      "end": 2150169936,
+      "alignment": 4
+    }
+  ],
+  "functions": [
+    {
+      "name": "fn_8028FAF4",
+      "address": 2150169332,
+      "size": 604,
+      "scope": "global",
+      "section": ".text",
+      "object_offset": 0,
+      "sha256": "22b40cbb66339b64cadedf509f9d553ea7a92a7ff83d98c1c8837d09fe3dffb4"
+    }
+  ],
+  "objects": [],
+  "unlinked_functions": [],
+  "source_sha256": "6c1de7be8929b02f1748effb615573955898842cc0dc5638a3a6852ec0f3cc0e",
+  "headers": [
+    {
+      "path": "include/Game/platform_heap_pools_internal.h",
+      "sha256": "ca329273212a6186fbc566853d2d9d0fa847586655a54f3c01a223875237eee9"
+    }
+  ],
+  "notes": "docs/notes/game-platform-heap-resize.md",
+  "dependency_symbols": [
+    {
+      "name": "lbl_801EF5C8",
+      "address": 2149512648,
+      "scope": "global"
+    },
+    {
+      "name": "lbl_802AFB58",
+      "address": 2150300504,
+      "scope": "global"
+    },
+    {
+      "name": "lbl_802AFB68",
+      "address": 2150300520,
+      "scope": "global"
+    },
+    {
+      "name": "fn_801EF83C",
+      "address": 2149513276,
+      "scope": "global"
+    },
+    {
+      "name": "fn_8028FF24",
+      "address": 2150170404,
+      "scope": "global"
+    },
+    {
+      "name": "memcpy",
+      "address": 2147505440,
+      "scope": "global"
+    },
+    {
+      "name": "fn_801EF610",
+      "address": 2149512720,
+      "scope": "global"
+    },
+    {
+      "name": "fn_8029091C",
+      "address": 2150172956,
+      "scope": "global"
+    }
+  ],
+  "validation": {
+    "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "object_sha256": "2dbc232f2f3cc925be06ee393e468c6b64336fae4d106ef1faabe964de099684",
+    "retained_text_bytes": 604,
+    "emitted_text_bytes": 604,
+    "initialized_data_bytes": 0,
+    "bss_bytes": 0,
+    "emitted_data_bytes": 0,
+    "unlinked_text_bytes": 0,
+    "weak_functions": 0,
+    "relocations": 14,
+    "nonallocated_compiler_metadata_relocations": 1,
+    "zero_byte_differences": true,
+    "all_retained_allocated_bytes_verified": true,
+    "all_emitted_allocated_bytes_accounted": true,
+    "owned_padding_bytes": 0,
+    "verification_script": "scratch/game_heap_resize/verify.py",
+    "verification_helper": "scratch/continuation_20261010/elf_verify.py"
+  }
+}

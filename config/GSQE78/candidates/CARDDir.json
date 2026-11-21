@@ -1,0 +1,77 @@
+{
+  "source": "src/dolphin/card/CARDDir.c",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.2.5n",
+  "cflags": "-proc gekko -fp hardware -enum int -str reuse -common off -O4,p -inline auto -i src/dolphin/card -Cpp_exceptions off",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2148571368,
+      "end": 2148571980
+    }
+  ],
+  "functions": [
+    {
+      "name": "__CARDGetDirBlock",
+      "address": 2148571368,
+      "size": 8
+    },
+    {
+      "name": "WriteCallback",
+      "address": 2148571376,
+      "size": 208
+    },
+    {
+      "name": "EraseCallback",
+      "address": 2148571584,
+      "size": 200
+    },
+    {
+      "name": "__CARDUpdateDir",
+      "address": 2148571784,
+      "size": 196
+    }
+  ],
+  "objects": [],
+  "symbol_scopes": {
+    "__CARDGetDirBlock": "global",
+    "WriteCallback": "local",
+    "EraseCallback": "local",
+    "__CARDUpdateDir": "global"
+  },
+  "symbols": {
+    "__CARDGetDirBlock": "0x801098e8",
+    "WriteCallback": "0x801098f0",
+    "EraseCallback": "0x801099c0",
+    "__CARDUpdateDir": "0x80109a88",
+    "__CARDBlock": "0x80334180",
+    "memcpy": "0x80005520",
+    "__CARDPutControlBlock": "0x80107ce4",
+    "__CARDWrite": "0x80109480",
+    "__CARDCheckSum": "0x80109b4c",
+    "DCStoreRange": "0x800f2298",
+    "__CARDEraseSector": "0x80107a60"
+  },
+  "external_original_names": {
+    "__CARDBlock": "lbl_80334180",
+    "memcpy": "memcpy",
+    "__CARDPutControlBlock": "fn_80107CE4",
+    "__CARDWrite": "fn_80109480",
+    "__CARDCheckSum": "fn_80109B4C",
+    "DCStoreRange": "fn_800F2298",
+    "__CARDEraseSector": "fn_80107A60"
+  },
+  "verified_text_bytes": 612,
+  "verified_data_bytes": 0,
+  "source_kind": "c",
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "27746d03f49e5397cd0fac60e6f11eff37767a684ca49fc0ebe7f2f5b280e8c8",
+    "matched_code": 612,
+    "matched_functions": 4,
+    "matched_data": 0,
+    "complete_data": 0,
+    "object_path": "build/GSQE78/src/dolphin/card/CARDDir.o",
+    "object_sha256": "f4e3d514ef08f55b699520a2466aeea7eb5c468dd6cc7273a424bfa3fbbbdfd1"
+  }
+}

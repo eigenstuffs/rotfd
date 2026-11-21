@@ -1,0 +1,194 @@
+{
+  "source": "src/Python/codecs.c",
+  "status": "integrated-byte-match",
+  "compiler": "GC/2.0",
+  "cflags": "-proc gekko -fp hardware -enum int -str reuse -common off -opt level=4,nopeephole,speed -inline auto,deferred -pool off -Cpp_exceptions off",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2149039000,
+      "end": 2149041656
+    },
+    {
+      "name": ".data",
+      "start": 2150481776,
+      "end": 2150482126
+    },
+    {
+      "name": ".sbss",
+      "start": 2151120488,
+      "end": 2151120500
+    }
+  ],
+  "functions": [
+    {
+      "name": "_PyCodecRegistry_Fini",
+      "address": 2149039000,
+      "size": 148
+    },
+    {
+      "name": "_PyCodecRegistry_Init",
+      "address": 2149039148,
+      "size": 108
+    },
+    {
+      "name": "PyCodec_Decode",
+      "address": 2149039256,
+      "size": 620
+    },
+    {
+      "name": "PyCodec_Encode",
+      "address": 2149039876,
+      "size": 584
+    },
+    {
+      "name": "_PyCodec_Lookup",
+      "address": 2149040460,
+      "size": 960
+    },
+    {
+      "name": "PyCodec_Register",
+      "address": 2149041420,
+      "size": 236
+    }
+  ],
+  "objects": [
+    {
+      "name": "import_encodings_called",
+      "address": 2151120488,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "_PyCodec_SearchCache",
+      "address": 2151120492,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "_PyCodec_SearchPath",
+      "address": 2151120496,
+      "size": 4,
+      "section": ".sbss"
+    }
+  ],
+  "symbol_scopes": {
+    "_PyCodecRegistry_Fini": "global",
+    "_PyCodecRegistry_Init": "global",
+    "PyCodec_Decode": "global",
+    "PyCodec_Encode": "global",
+    "_PyCodec_Lookup": "global",
+    "PyCodec_Register": "global",
+    "import_encodings_called": "local",
+    "_PyCodec_SearchCache": "local",
+    "_PyCodec_SearchPath": "local"
+  },
+  "symbols": {
+    "PyType_Type": "0x802d68fc",
+    "_PyCodecRegistry_Fini": "0x8017bb98",
+    "_PyCodecRegistry_Init": "0x8017bc2c",
+    "PyCodec_Decode": "0x8017bc98",
+    "PyCodec_Encode": "0x8017bf04",
+    "_PyCodec_Lookup": "0x8017c14c",
+    "PyCodec_Register": "0x8017c50c",
+    "import_encodings_called": "0x80377e68",
+    "_PyCodec_SearchCache": "0x80377e6c",
+    "_PyCodec_SearchPath": "0x80377e70",
+    "PyList_New": "0x8014ea58",
+    "PyDict_New": "0x80141230",
+    "Py_FatalError": "0x801a0234",
+    "_savegpr_27": "0x8011f61c",
+    "PyTuple_New": "0x80164d2c",
+    "PyString_FromString": "0x80163ab0",
+    "PyEval_CallObjectWithKeywords": "0x80176120",
+    "PyTuple_Type": "0x802d67d8",
+    "PyExc_TypeError": "0x80377ea0",
+    "PyErr_SetString": "0x801911b0",
+    "_restgpr_27": "0x8011f668",
+    "PyErr_BadArgument": "0x80190718",
+    "PyExc_SystemError": "0x80377eb0",
+    "PyImport_ImportModule": "0x80197758",
+    "PyExc_ImportError": "0x80377ee0",
+    "PyErr_ExceptionMatches": "0x80190d5c",
+    "PyErr_Clear": "0x80190870",
+    "strlen": "0x801285f8",
+    "PyExc_OverflowError": "0x80377ec8",
+    "PyString_FromStringAndSize": "0x80163c18",
+    "__lower_map": "0x802d0360",
+    "PyString_InternInPlace": "0x8015afec",
+    "PyDict_GetItem": "0x80140b74",
+    "PyList_Size": "0x8014ea0c",
+    "PyExc_LookupError": "0x80377f00",
+    "PyList_GetItem": "0x8014e974",
+    "_Py_NoneStruct": "0x80376290",
+    "PyDict_SetItem": "0x80140948",
+    "PyCallable_Check": "0x80156994",
+    "PyList_Append": "0x8014e474"
+  },
+  "external_original_names": {
+    "PyList_New": "PyList_New",
+    "PyDict_New": "PyDict_New",
+    "Py_FatalError": "Py_FatalError",
+    "_savegpr_27": "_savegpr_27",
+    "PyTuple_New": "PyTuple_New",
+    "PyString_FromString": "PyString_FromString",
+    "PyEval_CallObjectWithKeywords": "PyEval_CallObjectWithKeywords",
+    "PyTuple_Type": "PyTuple_Type",
+    "PyExc_TypeError": "PyExc_TypeError",
+    "PyErr_SetString": "PyErr_SetString",
+    "_restgpr_27": "_restgpr_27",
+    "PyErr_BadArgument": "PyErr_BadArgument",
+    "PyExc_SystemError": "PyExc_SystemError",
+    "PyImport_ImportModule": "PyImport_ImportModule",
+    "PyExc_ImportError": "lbl_80377EE0",
+    "PyErr_ExceptionMatches": "PyErr_ExceptionMatches",
+    "PyErr_Clear": "PyErr_Clear",
+    "strlen": "strlen",
+    "PyExc_OverflowError": "PyExc_OverflowError",
+    "PyString_FromStringAndSize": "PyString_FromStringAndSize",
+    "__lower_map": "__lower_map",
+    "PyString_InternInPlace": "PyString_InternInPlace",
+    "PyDict_GetItem": "PyDict_GetItem",
+    "PyList_Size": "PyList_Size",
+    "PyExc_LookupError": "lbl_80377F00",
+    "PyList_GetItem": "PyList_GetItem",
+    "_Py_NoneStruct": "_Py_NoneStruct",
+    "PyDict_SetItem": "PyDict_SetItem",
+    "PyCallable_Check": "PyCallable_Check",
+    "PyList_Append": "PyList_Append"
+  },
+  "verified_text_bytes": 2656,
+  "verified_data_bytes": 352,
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "bd137605b7fc990a4b4e2669b6b0e81b2ee1b5131ff8b4ed205f4cfd01a08434",
+    "matched_code": 2656,
+    "matched_functions": 6,
+    "matched_data": 362,
+    "complete_data": 362,
+    "object_path": "build/GSQE78/src/Python/codecs.o",
+    "object_sha256": "40f5dca0ad79b3f8336ce7dbd375888788befc3ccf191797e9189db6e95389c1"
+  },
+  "external_padding": [
+    {
+      "source": "src/Python/codecs.c",
+      "unit": "main/Python/codecs",
+      "section": ".data",
+      "start": "0x802dc0ce",
+      "end": "0x802dc0d0",
+      "size": 2,
+      "alignment": 1,
+      "symbol": "gap_07_802DC0CE_data",
+      "original_owner": "padding/source_extents/Python/codecs.s",
+      "source_section_start": "0x802dbf70",
+      "source_section_bytes": 350,
+      "previous_split_bytes": 352,
+      "description": "Original linker alignment beyond emitted source section; no source credit."
+    }
+  ],
+  "source_extent_audit": {
+    "data_credit_correction": 2,
+    "evidence": "config/GSQE78/source_padding.json",
+    "description": "Source and original bytes unchanged; trailing original padding moved to NonMatching ownership."
+  }
+}

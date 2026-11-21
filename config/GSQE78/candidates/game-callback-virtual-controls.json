@@ -1,0 +1,307 @@
+{
+  "status": "isolated-byte-match",
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-proc",
+    "gekko",
+    "-fp",
+    "hardware",
+    "-enum",
+    "int",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-Cpp_exceptions",
+    "off",
+    "-RTTI",
+    "off",
+    "-str",
+    "reuse",
+    "-common",
+    "off",
+    "-use_lmw_stmw",
+    "on",
+    "-i",
+    "include"
+  ],
+  "source": "src/Game/callback_virtual_controls.cpp",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2149956372,
+      "end": 2149956804,
+      "alignment": 4
+    }
+  ],
+  "functions": [
+    {
+      "name": "fn_8025BB14",
+      "address": 2149956372,
+      "size": 84,
+      "scope": "global",
+      "section": ".text",
+      "object_offset": 0
+    },
+    {
+      "name": "fn_8025BB68",
+      "address": 2149956456,
+      "size": 64,
+      "scope": "global",
+      "section": ".text",
+      "object_offset": 84
+    },
+    {
+      "name": "fn_8025BBA8",
+      "address": 2149956520,
+      "size": 180,
+      "scope": "global",
+      "section": ".text",
+      "object_offset": 148
+    },
+    {
+      "name": "__ct__24CallbackControl_802ECC00Fv",
+      "address": 2149956700,
+      "size": 104,
+      "scope": "global",
+      "section": ".text",
+      "object_offset": 328
+    }
+  ],
+  "objects": [],
+  "unlinked_functions": [
+    {
+      "name": "__dt__23CallbackSingle_802ECA18Fv",
+      "section": ".text",
+      "object_offset": 432,
+      "size": 228,
+      "binding": "weak",
+      "raw_sha256": "0b89f8502f223e4d5e9f7609d7cfb4b4765169d9da2b4b650e4e8d1e1a5aaef5"
+    }
+  ],
+  "source_sha256": "f11d2866bfa0fa76cd285e9e29b9e38cffcbb9c0eba599e3d1c8dac029bfe59f",
+  "headers": [
+    {
+      "path": "include/Game/engine_callback_control_ctor.h",
+      "sha256": "2718ace6e95c96f695a9f05e5ee6f06633b25e80d5d319b5e9080127a15ea9d9"
+    },
+    {
+      "path": "include/Game/engine_callback_single_ctor.h",
+      "sha256": "3dd6705fc364e07747760523b5773cf0f46591c71ccbfa7be5d82420961b1809"
+    },
+    {
+      "path": "include/Game/engine_container_layer_ctor.h",
+      "sha256": "847f87adfb2cf3be7e570d2ed09a96b409a302919feda55f30c9c1ec20d56506"
+    }
+  ],
+  "notes": "docs/notes/game-callback-virtual-controls.md",
+  "actual_relocations": [
+    {
+      "section": ".text",
+      "at": 104,
+      "address": 2149956476,
+      "kind": 10,
+      "symbol": "fn_80258654",
+      "target": 2149942868,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 168,
+      "address": 2149956540,
+      "kind": 10,
+      "symbol": "fn_8025A48C",
+      "target": 2149950604,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 258,
+      "address": 2149956630,
+      "kind": 6,
+      "symbol": "lbl_801E9D24",
+      "target": 2149489956,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 262,
+      "address": 2149956634,
+      "kind": 6,
+      "symbol": "lbl_802AEC2C",
+      "target": 2150296620,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 266,
+      "address": 2149956638,
+      "kind": 4,
+      "symbol": "lbl_801E9D24",
+      "target": 2149489956,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 270,
+      "address": 2149956642,
+      "kind": 4,
+      "symbol": "lbl_802AEC2C",
+      "target": 2150296620,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 280,
+      "address": 2149956652,
+      "kind": 10,
+      "symbol": "fn_801B52EC",
+      "target": 2149274348,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 292,
+      "address": 2149956664,
+      "kind": 10,
+      "symbol": "fn_8025A3C8",
+      "target": 2149950408,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 304,
+      "address": 2149956676,
+      "kind": 10,
+      "symbol": "__dt__15Handle_801F7F10Fv",
+      "target": 2149547792,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 348,
+      "address": 2149956720,
+      "kind": 10,
+      "symbol": "__ct__23CallbackSingle_802ECA18Fv",
+      "target": 2149950860,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 354,
+      "address": 2149956726,
+      "kind": 6,
+      "symbol": "lbl_802ECC00",
+      "target": 2150550528,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 362,
+      "address": 2149956734,
+      "kind": 4,
+      "symbol": "lbl_802ECC00",
+      "target": 2150550528,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 496,
+      "address": 2149956868,
+      "kind": 10,
+      "symbol": "__dt__15Handle_801F7F10Fv",
+      "target": 2149547792,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 510,
+      "address": 2149956882,
+      "kind": 6,
+      "symbol": "lbl_802EC798",
+      "target": 2150549400,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 518,
+      "address": 2149956890,
+      "kind": 4,
+      "symbol": "lbl_802EC798",
+      "target": 2150549400,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 552,
+      "address": 2149956924,
+      "kind": 10,
+      "symbol": "__dt__15Handle_801F7F10Fv",
+      "target": 2149547792,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 580,
+      "address": 2149956952,
+      "kind": 10,
+      "symbol": "__dt__15Handle_801F7F10Fv",
+      "target": 2149547792,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 594,
+      "address": 2149956966,
+      "kind": 6,
+      "symbol": "lbl_802ED000",
+      "target": 2150551552,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 602,
+      "address": 2149956974,
+      "kind": 4,
+      "symbol": "lbl_802ED000",
+      "target": 2150551552,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 612,
+      "address": 2149956984,
+      "kind": 10,
+      "symbol": "__dt__22ContainerBase_802563CCFv",
+      "target": 2147671840,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 628,
+      "address": 2149957000,
+      "kind": 10,
+      "symbol": "__dl__FPv",
+      "target": 2148658644,
+      "addend": 0
+    }
+  ],
+  "identifier_migration_provenance": {
+    "proof": "scratch/continuation_20261010/camera-callback-consumer-migration/proof.json",
+    "previous_canonical": "scratch/continuation_20261010/camera-callback-consumer-migration/before/config/GSQE78/candidates/game-callback-virtual-controls.json",
+    "previous_canonical_sha256": "818a9a8e63cba087924962daac9f8e22f67beb81a9b2acd8c3e27c1bbcc36374"
+  },
+  "validation": {
+    "relocations": 12,
+    "unlinked_relocations": 9,
+    "retained_text_bytes": 104,
+    "unlinked_text_bytes": 228,
+    "initialized_data_bytes": 0,
+    "bss_bytes": 0,
+    "owned_padding_bytes": 0
+  },
+  "source_refinement_provenance": {
+    "proof": "scratch/continuation_20261010/callback-native-refinement-v3/proof.json",
+    "new_code_credit_bytes": 0,
+    "proposal_source": "src/Game/engine_callback_control_ctor.cpp"
+  }
+}

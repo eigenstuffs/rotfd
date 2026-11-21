@@ -1,0 +1,117 @@
+{
+  "source": "src/Game/hierarchy_resize7.cpp",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-proc",
+    "gekko",
+    "-fp",
+    "hardware",
+    "-enum",
+    "int",
+    "-str",
+    "reuse",
+    "-common",
+    "off",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-Cpp_exceptions",
+    "off",
+    "-use_lmw_stmw",
+    "on",
+    "-i",
+    "src/Game"
+  ],
+  "sections": {
+    ".text": [
+      2149593284,
+      2149593784
+    ]
+  },
+  "functions": [
+    {
+      "name": "fn_802030C4",
+      "address": 2149593284,
+      "size": 500,
+      "section": ".text",
+      "scope": "global"
+    }
+  ],
+  "objects": [],
+  "source_kind": "c++",
+  "dependency_symbols": [],
+  "notes": "docs/notes/game-hierarchy-resize.md",
+  "source_sha256": "4097373955ee4d854e2b40c4be2a2e2507d85fdb54feb19c2b0ebf0af9038bd4",
+  "validation": {
+    "relocations": 20,
+    "text_bytes": 500,
+    "initialized_data_bytes": 0,
+    "zero_byte_differences": true,
+    "unlinked_text_bytes": 564,
+    "unlinked_relocations": 12,
+    "verification_script": "scratch/game_hierarchy_resize/verify.py",
+    "private_header_sha256": "732e19a8eb51bc765550b6dd0aad13d67ed8bcb76f7a045a8f0d39415cb4dd5f",
+    "integration_status": "verified full-DOL and objdiff"
+  },
+  "unlinked_functions": [
+    {
+      "name": "__dt__24HierarchyResizeHandle<1>Fv",
+      "object_offset": 980,
+      "size": 84,
+      "binding": "weak",
+      "reason": "Unreferenced generated C++ wrapper destructor; ordinary linker dead stripping."
+    },
+    {
+      "name": "__dt__24HierarchyResizeHandle<2>Fv",
+      "object_offset": 892,
+      "size": 88,
+      "binding": "weak",
+      "reason": "Unreferenced generated C++ wrapper destructor; ordinary linker dead stripping."
+    },
+    {
+      "name": "__dt__24HierarchyResizeHandle<3>Fv",
+      "object_offset": 800,
+      "size": 92,
+      "binding": "weak",
+      "reason": "Unreferenced generated C++ wrapper destructor; ordinary linker dead stripping."
+    },
+    {
+      "name": "__dt__24HierarchyResizeHandle<4>Fv",
+      "object_offset": 704,
+      "size": 96,
+      "binding": "weak",
+      "reason": "Unreferenced generated C++ wrapper destructor; ordinary linker dead stripping."
+    },
+    {
+      "name": "__dt__24HierarchyResizeHandle<5>Fv",
+      "object_offset": 604,
+      "size": 100,
+      "binding": "weak",
+      "reason": "Unreferenced generated C++ wrapper destructor; ordinary linker dead stripping."
+    },
+    {
+      "name": "__dt__24HierarchyResizeHandle<6>Fv",
+      "object_offset": 500,
+      "size": 104,
+      "binding": "weak",
+      "reason": "Unreferenced generated C++ wrapper destructor; ordinary linker dead stripping."
+    }
+  ],
+  "private_headers": [
+    "src/Game/hierarchy_resize_internal.h"
+  ],
+  "symbol_scopes": {
+    "fn_802030C4": "global"
+  },
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "4097373955ee4d854e2b40c4be2a2e2507d85fdb54feb19c2b0ebf0af9038bd4",
+    "matched_code": 500,
+    "matched_functions": 1,
+    "matched_data": 0,
+    "complete_data": 0,
+    "object_path": "build/GSQE78/src/Game/hierarchy_resize7.o",
+    "object_sha256": "42fb0f0311e54ed643bbdafdff6891c00857b31519994664d1f4e586f7d37ada"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "source": "src/dolphin/db/db_query.c",
+  "status": "integrated-byte-match",
+  "source_kind": "c",
+  "compiler": "GC/1.2.5n",
+  "cflags": "-proc gekko -fp hardware -enum int -str reuse -common off -O4,p -schedule on -inline auto -Cpp_exceptions off -i src/dolphin/os -i src/dolphin/db",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2148470544,
+      "end": 2148470652
+    }
+  ],
+  "functions": [
+    {
+      "name": "__DBIsExceptionMarked",
+      "address": 2148470544,
+      "size": 28
+    },
+    {
+      "name": "DBPrintf",
+      "address": 2148470572,
+      "size": 80
+    }
+  ],
+  "objects": [],
+  "symbol_scopes": {
+    "__DBIsExceptionMarked": "global",
+    "DBPrintf": "global"
+  },
+  "symbols": {
+    "__DBIsExceptionMarked": "0x800f0f10",
+    "DBPrintf": "0x800f0f2c",
+    "__DBInterface": "0x803778c8"
+  },
+  "external_original_names": {
+    "__DBInterface": "__DBInterface"
+  },
+  "verified_text_bytes": 108,
+  "verified_data_bytes": 0,
+  "section_alignments": {
+    ".text": 4
+  },
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "b1da1f44128b9027ac2749ad55784fcd0b62df8f183b9939d8a3d6a6f9a557fb",
+    "matched_code": 108,
+    "matched_functions": 2,
+    "matched_data": 0,
+    "complete_data": 0,
+    "object_path": "build/GSQE78/src/dolphin/db/db_query.o",
+    "object_sha256": "0aadb4905cd2e11411e5f1d603566f32a545a0d185fe0779621c6eb8bd062b55"
+  }
+}

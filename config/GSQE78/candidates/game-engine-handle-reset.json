@@ -1,0 +1,477 @@
+[
+  {
+    "source": "src/Game/engine_handle_reset_801B4230.cpp",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,p",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "off"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2149270064,
+        "end": 2149270352
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_801B4230",
+        "address": 2149270064,
+        "size": 288,
+        "scope": "global",
+        "kind": "Reset dynamic native handle arrays and owner control",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "verified_text_bytes": 288,
+    "verified_data_bytes": 0,
+    "unlinked_functions": [],
+    "objects": [],
+    "unlinked_relocations": [],
+    "validation": {
+      "relocations": 9,
+      "unlinked_relocations": 0,
+      "retained_text_bytes": 288,
+      "unlinked_text_bytes": 0,
+      "emitted_text_bytes": 288,
+      "initialized_data_bytes": 0,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "all_emitted_allocated_bytes_accounted": true
+    },
+    "relocations": [
+      {
+        "section": ".text",
+        "offset": 66,
+        "symbol": "lbl_8028F698",
+        "target": "0x8028f698",
+        "kind": 6
+      },
+      {
+        "section": ".text",
+        "offset": 74,
+        "symbol": "lbl_8028F698",
+        "target": "0x8028f698",
+        "kind": 4
+      },
+      {
+        "section": ".text",
+        "offset": 76,
+        "symbol": "fn_8028FD50",
+        "target": "0x8028fd50",
+        "kind": 10
+      },
+      {
+        "section": ".text",
+        "offset": 120,
+        "symbol": "__ct__15Handle_801F7F10Fv",
+        "target": "0x801f7f04",
+        "kind": 10
+      },
+      {
+        "section": ".text",
+        "offset": 180,
+        "symbol": "__dt__15Handle_801F7F10Fv",
+        "target": "0x801f7f10",
+        "kind": 10
+      },
+      {
+        "section": ".text",
+        "offset": 224,
+        "symbol": "fn_802086C8",
+        "target": "0x802086c8",
+        "kind": 10
+      },
+      {
+        "section": ".text",
+        "offset": 236,
+        "symbol": "fn_80208768",
+        "target": "0x80208768",
+        "kind": 10
+      },
+      {
+        "section": ".text",
+        "offset": 248,
+        "symbol": "fn_801E9F8C",
+        "target": "0x801e9f8c",
+        "kind": 10
+      },
+      {
+        "section": ".text",
+        "offset": 256,
+        "symbol": "lbl_80377F90",
+        "target": "0x80377f90",
+        "kind": 109
+      }
+    ],
+    "source_sha256": "2fda9e947215e45f0f358794f40809ef69e1e357d9e1bdcde3469930d552062c",
+    "header_sha256": {},
+    "dependency_symbols": [
+      {
+        "name": "__ct__15Handle_801F7F10Fv",
+        "address": 2149547780,
+        "section": ".text"
+      },
+      {
+        "name": "__dt__15Handle_801F7F10Fv",
+        "address": 2149547792,
+        "section": ".text"
+      },
+      {
+        "name": "fn_801E9F8C",
+        "address": 2149490572,
+        "section": ".text"
+      },
+      {
+        "name": "fn_802086C8",
+        "address": 2149615304,
+        "section": ".text"
+      },
+      {
+        "name": "fn_80208768",
+        "address": 2149615464,
+        "section": ".text"
+      },
+      {
+        "name": "fn_8028FD50",
+        "address": 2150169936,
+        "section": ".text"
+      },
+      {
+        "name": "lbl_8028F698",
+        "address": 2150168216,
+        "section": ".text"
+      },
+      {
+        "name": "lbl_80377F90",
+        "address": 2151120784,
+        "section": ".sbss"
+      }
+    ],
+    "headers": [],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 66,
+        "address": 2149270130,
+        "kind": 6,
+        "symbol": "lbl_8028F698",
+        "target": 2150168216,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 74,
+        "address": 2149270138,
+        "kind": 4,
+        "symbol": "lbl_8028F698",
+        "target": 2150168216,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 76,
+        "address": 2149270140,
+        "kind": 10,
+        "symbol": "fn_8028FD50",
+        "target": 2150169936,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 120,
+        "address": 2149270184,
+        "kind": 10,
+        "symbol": "__ct__15Handle_801F7F10Fv",
+        "target": 2149547780,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 180,
+        "address": 2149270244,
+        "kind": 10,
+        "symbol": "__dt__15Handle_801F7F10Fv",
+        "target": 2149547792,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 224,
+        "address": 2149270288,
+        "kind": 10,
+        "symbol": "fn_802086C8",
+        "target": 2149615304,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 236,
+        "address": 2149270300,
+        "kind": 10,
+        "symbol": "fn_80208768",
+        "target": 2149615464,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 248,
+        "address": 2149270312,
+        "kind": 10,
+        "symbol": "fn_801E9F8C",
+        "target": 2149490572,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 256,
+        "address": 2149270320,
+        "kind": 109,
+        "symbol": "lbl_80377F90",
+        "target": 2151120784,
+        "addend": 0
+      }
+    ]
+  },
+  {
+    "source": "src/Game/engine_handle_reset_801B4350.cpp",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,p",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "off"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2149270352,
+        "end": 2149270676
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_801B4350",
+        "address": 2149270352,
+        "size": 324,
+        "scope": "global",
+        "kind": "Reset dynamic native handle arrays and owner control",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "verified_text_bytes": 324,
+    "verified_data_bytes": 0,
+    "unlinked_functions": [],
+    "objects": [],
+    "unlinked_relocations": [],
+    "validation": {
+      "relocations": 8,
+      "unlinked_relocations": 0,
+      "retained_text_bytes": 324,
+      "unlinked_text_bytes": 0,
+      "emitted_text_bytes": 324,
+      "initialized_data_bytes": 0,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "all_emitted_allocated_bytes_accounted": true
+    },
+    "relocations": [
+      {
+        "section": ".text",
+        "offset": 36,
+        "symbol": "fn_802086C8",
+        "target": "0x802086c8",
+        "kind": 10
+      },
+      {
+        "section": ".text",
+        "offset": 60,
+        "symbol": "fn_801F7EB8",
+        "target": "0x801f7eb8",
+        "kind": 10
+      },
+      {
+        "section": ".text",
+        "offset": 134,
+        "symbol": "lbl_8028F698",
+        "target": "0x8028f698",
+        "kind": 6
+      },
+      {
+        "section": ".text",
+        "offset": 142,
+        "symbol": "lbl_8028F698",
+        "target": "0x8028f698",
+        "kind": 4
+      },
+      {
+        "section": ".text",
+        "offset": 144,
+        "symbol": "fn_8028FD50",
+        "target": "0x8028fd50",
+        "kind": 10
+      },
+      {
+        "section": ".text",
+        "offset": 188,
+        "symbol": "__ct__15Handle_801F7F10Fv",
+        "target": "0x801f7f04",
+        "kind": 10
+      },
+      {
+        "section": ".text",
+        "offset": 248,
+        "symbol": "__dt__15Handle_801F7F10Fv",
+        "target": "0x801f7f10",
+        "kind": 10
+      },
+      {
+        "section": ".text",
+        "offset": 284,
+        "symbol": "fn_80208768",
+        "target": "0x80208768",
+        "kind": 10
+      }
+    ],
+    "source_sha256": "e458075e27fd3193adcb165d2b538ac918a0ca030f13b09c16686b0d12872ed7",
+    "header_sha256": {},
+    "dependency_symbols": [
+      {
+        "name": "__ct__15Handle_801F7F10Fv",
+        "address": 2149547780,
+        "section": ".text"
+      },
+      {
+        "name": "__dt__15Handle_801F7F10Fv",
+        "address": 2149547792,
+        "section": ".text"
+      },
+      {
+        "name": "fn_801F7EB8",
+        "address": 2149547704,
+        "section": ".text"
+      },
+      {
+        "name": "fn_802086C8",
+        "address": 2149615304,
+        "section": ".text"
+      },
+      {
+        "name": "fn_80208768",
+        "address": 2149615464,
+        "section": ".text"
+      },
+      {
+        "name": "fn_8028FD50",
+        "address": 2150169936,
+        "section": ".text"
+      },
+      {
+        "name": "lbl_8028F698",
+        "address": 2150168216,
+        "section": ".text"
+      }
+    ],
+    "headers": [],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 36,
+        "address": 2149270388,
+        "kind": 10,
+        "symbol": "fn_802086C8",
+        "target": 2149615304,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 60,
+        "address": 2149270412,
+        "kind": 10,
+        "symbol": "fn_801F7EB8",
+        "target": 2149547704,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 134,
+        "address": 2149270486,
+        "kind": 6,
+        "symbol": "lbl_8028F698",
+        "target": 2150168216,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 142,
+        "address": 2149270494,
+        "kind": 4,
+        "symbol": "lbl_8028F698",
+        "target": 2150168216,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 144,
+        "address": 2149270496,
+        "kind": 10,
+        "symbol": "fn_8028FD50",
+        "target": 2150169936,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 188,
+        "address": 2149270540,
+        "kind": 10,
+        "symbol": "__ct__15Handle_801F7F10Fv",
+        "target": 2149547780,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 248,
+        "address": 2149270600,
+        "kind": 10,
+        "symbol": "__dt__15Handle_801F7F10Fv",
+        "target": 2149547792,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 284,
+        "address": 2149270636,
+        "kind": 10,
+        "symbol": "fn_80208768",
+        "target": 2149615464,
+        "addend": 0
+      }
+    ]
+  }
+]

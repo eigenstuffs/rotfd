@@ -1,0 +1,266 @@
+{
+  "status": "isolated-retained-byte-match",
+  "source": "src/Game/engine_callback_single_ctor.cpp",
+  "source_sha256": "09fb491e412e27101064a29202bd553487d654ce8cf4ec3f8bd9a6ceae329a3a",
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-proc",
+    "gekko",
+    "-fp",
+    "hardware",
+    "-enum",
+    "int",
+    "-str",
+    "reuse",
+    "-common",
+    "off",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-Cpp_exceptions",
+    "off",
+    "-i",
+    "include"
+  ],
+  "source_kind": "c++",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2149950860,
+      "end": 2149950968,
+      "alignment": 4
+    }
+  ],
+  "functions": [
+    {
+      "name": "__ct__23CallbackSingle_802ECA18Fv",
+      "original_symbol": "fn_8025A58C",
+      "address": 2149950860,
+      "size": 108,
+      "scope": "global",
+      "section": ".text",
+      "object_offset": 0
+    }
+  ],
+  "objects": [],
+  "unlinked_functions": [
+    {
+      "name": "__dt__16LayerHandleThreeFv",
+      "section": ".text",
+      "object_offset": 108,
+      "size": 92,
+      "binding": "weak",
+      "raw_sha256": "1dc191d0563978ed38f7b2c78ac2b807d3ddfa53c98db4560ab0ced43640ab02"
+    },
+    {
+      "name": "__dt__14LayerHandleTwoFv",
+      "section": ".text",
+      "object_offset": 200,
+      "size": 88,
+      "binding": "weak",
+      "raw_sha256": "ee3203a188e9d7282273427bfc26c6917510fc7b7c574c24cca0331f00873d1f"
+    },
+    {
+      "name": "__dt__14LayerHandleOneFv",
+      "section": ".text",
+      "object_offset": 288,
+      "size": 84,
+      "binding": "weak",
+      "raw_sha256": "fdd9fcf5ab58f46f986c50b59ae57e9c65a7b53acdde19888e0e8987b285adb0"
+    },
+    {
+      "name": "__dt__21CallbackPair_802EC798Fv",
+      "section": ".text",
+      "object_offset": 372,
+      "size": 184,
+      "binding": "weak",
+      "raw_sha256": "7f4e8c796ef62a7c8f4fd6f071d68da121fda053b87178b487c18efaa9972318"
+    }
+  ],
+  "headers": [
+    {
+      "path": "include/Game/engine_callback_single_ctor.h",
+      "sha256": "3dd6705fc364e07747760523b5773cf0f46591c71ccbfa7be5d82420961b1809"
+    },
+    {
+      "path": "include/Game/engine_container_layer_ctor.h",
+      "sha256": "847f87adfb2cf3be7e570d2ed09a96b409a302919feda55f30c9c1ec20d56506"
+    }
+  ],
+  "dependency_symbols": [],
+  "validation": {
+    "relocations": 4,
+    "unlinked_relocations": 14,
+    "retained_text_bytes": 108,
+    "unlinked_text_bytes": 448,
+    "initialized_data_bytes": 0,
+    "bss_bytes": 0,
+    "owned_padding_bytes": 0
+  },
+  "verified_text_bytes": 108,
+  "verified_data_bytes": 0,
+  "actual_relocations": [
+    {
+      "section": ".text",
+      "at": 24,
+      "address": 2149950884,
+      "kind": 10,
+      "symbol": "__ct__21CallbackPair_802EC798Fv",
+      "target": 2149943456,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 30,
+      "address": 2149950890,
+      "kind": 6,
+      "symbol": "lbl_802ECA18",
+      "target": 2150550040,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 38,
+      "address": 2149950898,
+      "kind": 4,
+      "symbol": "lbl_802ECA18",
+      "target": 2150550040,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 48,
+      "address": 2149950908,
+      "kind": 10,
+      "symbol": "__ct__15Handle_801F7F10Fv",
+      "target": 2149547780,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 152,
+      "address": 2149951012,
+      "kind": 10,
+      "symbol": "__dt__15Handle_801F7F10Fv",
+      "target": 2149547792,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 168,
+      "address": 2149951028,
+      "kind": 10,
+      "symbol": "__dl__FPv",
+      "target": 2148658644,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 240,
+      "address": 2149951100,
+      "kind": 10,
+      "symbol": "__dt__15Handle_801F7F10Fv",
+      "target": 2149547792,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 256,
+      "address": 2149951116,
+      "kind": 10,
+      "symbol": "__dl__FPv",
+      "target": 2148658644,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 324,
+      "address": 2149951184,
+      "kind": 10,
+      "symbol": "__dt__15Handle_801F7F10Fv",
+      "target": 2149547792,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 340,
+      "address": 2149951200,
+      "kind": 10,
+      "symbol": "__dl__FPv",
+      "target": 2148658644,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 406,
+      "address": 2149951266,
+      "kind": 6,
+      "symbol": "lbl_802EC798",
+      "target": 2150549400,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 414,
+      "address": 2149951274,
+      "kind": 4,
+      "symbol": "lbl_802EC798",
+      "target": 2150549400,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 448,
+      "address": 2149951308,
+      "kind": 10,
+      "symbol": "__dt__15Handle_801F7F10Fv",
+      "target": 2149547792,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 476,
+      "address": 2149951336,
+      "kind": 10,
+      "symbol": "__dt__15Handle_801F7F10Fv",
+      "target": 2149547792,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 490,
+      "address": 2149951350,
+      "kind": 6,
+      "symbol": "lbl_802ED000",
+      "target": 2150551552,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 498,
+      "address": 2149951358,
+      "kind": 4,
+      "symbol": "lbl_802ED000",
+      "target": 2150551552,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 508,
+      "address": 2149951368,
+      "kind": 10,
+      "symbol": "__dt__22ContainerBase_802563CCFv",
+      "target": 2147671840,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 524,
+      "address": 2149951384,
+      "kind": 10,
+      "symbol": "__dl__FPv",
+      "target": 2148658644,
+      "addend": 0
+    }
+  ]
+}

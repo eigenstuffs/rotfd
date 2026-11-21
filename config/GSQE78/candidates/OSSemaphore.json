@@ -1,0 +1,65 @@
+{
+  "source": "src/dolphin/os/OSSemaphore.c",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.2.5n",
+  "cflags": "-proc gekko -fp hardware -enum int -str reuse -common off -O4,p -inline auto -i src/dolphin/os -Cpp_exceptions off",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2148489196,
+      "end": 2148489492
+    }
+  ],
+  "functions": [
+    {
+      "name": "OSInitSemaphore",
+      "address": 2148489196,
+      "size": 88
+    },
+    {
+      "name": "OSWaitSemaphore",
+      "address": 2148489284,
+      "size": 112
+    },
+    {
+      "name": "OSSignalSemaphore",
+      "address": 2148489396,
+      "size": 96
+    }
+  ],
+  "objects": [],
+  "symbol_scopes": {
+    "OSInitSemaphore": "global",
+    "OSWaitSemaphore": "global",
+    "OSSignalSemaphore": "global"
+  },
+  "symbols": {
+    "OSInitSemaphore": "0x800f57ec",
+    "OSWaitSemaphore": "0x800f5844",
+    "OSSignalSemaphore": "0x800f58b4",
+    "OSDisableInterrupts": "0x800f362c",
+    "OSInitThreadQueue": "0x800f5af4",
+    "OSRestoreInterrupts": "0x800f3654",
+    "OSSleepThread": "0x800f6958",
+    "OSWakeupThread": "0x800f6a44"
+  },
+  "external_original_names": {
+    "OSDisableInterrupts": "OSDisableInterrupts",
+    "OSInitThreadQueue": "OSInitThreadQueue",
+    "OSRestoreInterrupts": "OSRestoreInterrupts",
+    "OSSleepThread": "fn_800F6958",
+    "OSWakeupThread": "fn_800F6A44"
+  },
+  "verified_text_bytes": 296,
+  "verified_data_bytes": 0,
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "d3e6bbb25e14c480d98e635f1ae266e4baced7fc7fb9f4895c1e4861ee52a603",
+    "matched_code": 296,
+    "matched_functions": 3,
+    "matched_data": 0,
+    "complete_data": 0,
+    "object_path": "build/GSQE78/src/dolphin/os/OSSemaphore.o",
+    "object_sha256": "f68226ca1fc592c449e37b28805f6e5ccbedb36abd4bd8bd2e7452962086d5ad"
+  }
+}

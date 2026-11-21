@@ -1,0 +1,11 @@
+/* Scene vector update and related draw callback; see docs/notes/game-scene-vector-draw-controls.md. */
+typedef unsigned long Word;
+struct Handle_801F7F10{signed int generation:8,index:24;Handle_801F7F10();~Handle_801F7F10();};
+struct Manager;
+struct Prefix{Word unknown00,unknown04;};
+struct Controller{virtual void slot08();virtual void slot0C();virtual void slot10();virtual void slot14();virtual void slot18(void*,void*,void*,void*,float);};
+struct Handle{signed int generation:8,index:24;};struct Resource{char unknown00[0x120];Word flags;};struct Entry{Resource*object;char unknown04[8];signed char generation;char unknown0D[3];};struct Manager{int count,capacity;Entry*entries;};extern "C" struct Context{char unknown00[0x118];Manager*manager;}lbl_801E9D24;
+struct Owner:Prefix{virtual void slot08();virtual void slot0C();virtual void slot10();virtual void slot14();virtual void slot18();virtual void slot1C();virtual void slot20();virtual void slot24();virtual void slot28();virtual void slot2C();virtual void slot30();virtual void slot34();virtual void slot38();virtual void slot3C();virtual void slot40();virtual void slot44();virtual void slot48();virtual void slot4C();virtual void slot50();virtual void slot54();virtual void slot58();virtual void slot5C();virtual void slot60();virtual void slot64();virtual void slot68();virtual void slot6C();virtual void slot70();virtual void slot74();virtual void slot78();virtual void slot7C();virtual void slot80();virtual void slot84();virtual void slot88();virtual void slot8C();virtual void slot90();virtual void slot94();virtual void slot98();virtual const Handle&slot9C(int);char unknown0C[0x1F8-0xC];char component[1];};
+inline Resource*resolve(const Handle&h){Entry*entry=lbl_801E9D24.manager->entries+h.index;return entry->generation==h.generation?entry->object:0;}
+extern "C"{signed char fn_8007D604(void*,int);Controller*fn_8007DCF8(void*);void fn_8022993C(Owner*,void*,void*,void*,void*,float);}
+extern "C" void fn_800E2F84(Owner*self,void*a,void*b,void*c,void*d,float t){if(fn_8007D604(self->component,1))fn_8007DCF8(self->component)->slot18(a,b,c,d,t);else if(!(resolve(self->slot9C(0))->flags&4))fn_8022993C(self,a,b,c,d,t);}

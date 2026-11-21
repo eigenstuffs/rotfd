@@ -1,0 +1,51 @@
+struct InterpolateHandle{signed int generation:8;signed int index:24;};struct InterpolatePoint{float x,y,z;};struct InterpolateRotation{float w,x,y,z;InterpolateRotation&operator=(const InterpolateRotation&v){w=v.w;x=v.x;y=v.y;z=v.z;return *this;}};struct InterpolateStorage{char unknown00[8];};struct InterpolateOwner:InterpolateStorage{
+virtual void slot8();
+virtual void slotC();
+virtual void slot10();
+virtual void slot14();
+virtual void slot18();
+virtual void slot1C();
+virtual void slot20();
+virtual void slot24();
+virtual void slot28();
+virtual void slot2C();
+virtual void slot30();
+virtual void slot34();
+virtual void slot38();
+virtual void slot3C();
+virtual void slot40();
+virtual void slot44();
+virtual void slot48();
+virtual void slot4C();
+virtual void slot50();
+virtual void slot54();
+virtual void slot58();
+virtual void slot5C();
+virtual void slot60();
+virtual void slot64();
+virtual void slot68();
+virtual void slot6C();
+virtual void slot70();
+virtual void slot74();
+virtual void slot78();
+virtual void slot7C();
+virtual void slot80();
+virtual void slot84();
+virtual void slot88();
+virtual void slot8C();
+virtual void slot90();
+virtual void slot94();
+virtual void slot98();
+virtual const InterpolateHandle*getHandle(int);
+virtual void slotA0();
+virtual void slotA4();
+virtual void slotA8();
+virtual void slotAC();
+virtual void slotB0();
+virtual void slotB4();
+virtual void slotB8();
+virtual void setPosition(const InterpolatePoint*,int);
+char unknown0C[0x17C];InterpolateRotation current,target;float phase;};
+struct InterpolateEntry{char*object;char unknown04[8];signed char generation;char unknown0D[3];signed char getGeneration()const{return generation;}};struct InterpolateManager{char unknown00[8];InterpolateEntry*entries;};extern "C"{extern struct{char unknown00[0x118];InterpolateManager*manager;}lbl_801E9D24;extern const float lbl_8037B17C,lbl_8037B144;float fn_800AA53C(float,float);InterpolateRotation fn_8008D420(const InterpolateRotation&,const InterpolateRotation&,float);}
+inline char*resolveInterpolate(const InterpolateHandle&h){int index=h.index;InterpolateManager*m=lbl_801E9D24.manager;int generation=m->entries[index].getGeneration();if(generation==h.generation)return m->entries[index].object;return 0;}
+extern "C" void fn_8022993C(InterpolateOwner*self,const InterpolatePoint*first,const InterpolatePoint*second,const InterpolatePoint*third,int index,float delta){self->setPosition(second,0);float fraction=fn_800AA53C(self->phase,lbl_8037B17C)/lbl_8037B17C;if(fraction<lbl_8037B144){self->current=fn_8008D420(self->current,self->target,fraction);*(InterpolateRotation*)(resolveInterpolate(*self->getHandle(index))+0xC8)=self->current;self->phase+=delta;}}

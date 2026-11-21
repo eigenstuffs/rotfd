@@ -1,0 +1,130 @@
+{
+  "status": "strict-isolated-byte-and-relocation-match",
+  "source": "src/Game/engine_owner_position_apply.cpp",
+  "source_sha256": "657c4da5d45817be5d56c3c43b588ff8447cde9b8c42a82845f3f756a92dc370",
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-proc",
+    "gekko",
+    "-fp",
+    "hardware",
+    "-enum",
+    "int",
+    "-str",
+    "reuse",
+    "-common",
+    "off",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-Cpp_exceptions",
+    "off",
+    "-i",
+    "include"
+  ],
+  "source_kind": "c++",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2149831256,
+      "end": 2149831680,
+      "alignment": 4
+    }
+  ],
+  "functions": [
+    {
+      "name": "fn_8023D258",
+      "address": 2149831256,
+      "size": 424,
+      "section": ".text",
+      "scope": "global",
+      "object_offset": 0
+    }
+  ],
+  "objects": [],
+  "unlinked_functions": [],
+  "headers": [
+    {
+      "path": "include/Game/engine_owner_position_apply.h",
+      "sha256": "315ede4bf5d5f7a41c32aa5ae7754fd363582c6e7c42042f06d4a17d5a6fe1ac"
+    }
+  ],
+  "dependency_symbols": [],
+  "validation": {
+    "retained_text_bytes": 424,
+    "unlinked_text_bytes": 0,
+    "initialized_data_bytes": 0,
+    "bss_bytes": 0,
+    "owned_padding_bytes": 0,
+    "relocations": 7,
+    "unlinked_relocations": 0,
+    "object_sha256": "a05686eb78517ca12db1ee0087021220d5262632847b82b8397e3ae424780695"
+  },
+  "verified_text_bytes": 424,
+  "verified_data_bytes": 0,
+  "actual_relocations": [
+    {
+      "section": ".text",
+      "at": 76,
+      "address": 2149831332,
+      "kind": 109,
+      "symbol": "lbl_8037B334",
+      "target": 2151134004,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 118,
+      "address": 2149831374,
+      "kind": 6,
+      "symbol": "lbl_801E9D24",
+      "target": 2149489956,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 126,
+      "address": 2149831382,
+      "kind": 4,
+      "symbol": "lbl_801E9D24",
+      "target": 2149489956,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 202,
+      "address": 2149831458,
+      "kind": 6,
+      "symbol": "lbl_801E9D24",
+      "target": 2149489956,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 210,
+      "address": 2149831466,
+      "kind": 4,
+      "symbol": "lbl_801E9D24",
+      "target": 2149489956,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 248,
+      "address": 2149831504,
+      "kind": 10,
+      "symbol": "fn_801F230C",
+      "target": 2149524236,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 392,
+      "address": 2149831648,
+      "kind": 10,
+      "symbol": "fn_8023D648",
+      "target": 2149832264,
+      "addend": 0
+    }
+  ]
+}

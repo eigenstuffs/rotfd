@@ -1,0 +1,111 @@
+{
+  "source": "src/MetroTRK/mslsupp.c",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.3.2",
+  "cflags": "-proc gekko -fp hardware -enum int -str reuse -common off -O4,p -inline auto,deferred -sdata 0 -sdata2 0 -pool off -use_lmw_stmw on -rostr -i src/MetroTRK -Cpp_exceptions off",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2148656712,
+      "end": 2148658300
+    }
+  ],
+  "functions": [
+    {
+      "name": "convertFileMode",
+      "address": 2148656712,
+      "size": 192
+    },
+    {
+      "name": "__position_file",
+      "address": 2148656904,
+      "size": 220
+    },
+    {
+      "name": "__close_file",
+      "address": 2148657124,
+      "size": 132
+    },
+    {
+      "name": "__open_file",
+      "address": 2148657256,
+      "size": 176
+    },
+    {
+      "name": "__write_file",
+      "address": 2148657432,
+      "size": 180
+    },
+    {
+      "name": "__read_file",
+      "address": 2148657612,
+      "size": 180
+    },
+    {
+      "name": "__close_console",
+      "address": 2148657792,
+      "size": 132
+    },
+    {
+      "name": "__TRK_write_console",
+      "address": 2148657924,
+      "size": 188
+    },
+    {
+      "name": "__read_console",
+      "address": 2148658112,
+      "size": 188
+    }
+  ],
+  "objects": [],
+  "symbol_scopes": {
+    "convertFileMode": "local",
+    "__position_file": "global",
+    "__close_file": "global",
+    "__open_file": "global",
+    "__write_file": "global",
+    "__read_file": "global",
+    "__close_console": "global",
+    "__TRK_write_console": "global",
+    "__read_console": "global"
+  },
+  "symbols": {
+    "TRKAccessFile": "0x8011dc50",
+    "TRKOpenFile": "0x8011dc58",
+    "TRKCloseFile": "0x8011dc60",
+    "TRKPositionFile": "0x8011dc68",
+    "convertFileMode": "0x8011e648",
+    "__position_file": "0x8011e708",
+    "__close_file": "0x8011e7e4",
+    "__open_file": "0x8011e868",
+    "__write_file": "0x8011e918",
+    "__read_file": "0x8011e9cc",
+    "__close_console": "0x8011ea80",
+    "__TRK_write_console": "0x8011eb04",
+    "__read_console": "0x8011ebc0",
+    "GetTRKConnected": "0x8011b930",
+    "GetUseSerialIO": "0x8011e62c"
+  },
+  "external_original_names": {
+    "GetTRKConnected": "fn_8011B930",
+    "GetUseSerialIO": "fn_8011E62C",
+    "TRKAccessFile": "fn_8011DC50",
+    "TRKOpenFile": "fn_8011DC58",
+    "TRKCloseFile": "fn_8011DC60",
+    "TRKPositionFile": "fn_8011DC68"
+  },
+  "verified_text_bytes": 1588,
+  "verified_data_bytes": 0,
+  "source_kind": "c",
+  "notes": "Full linked C unit. The four native support-trap stubs remain fallback. Existing MSL FILE/mode header is consumed without changes.",
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "a3f39181cbd468dc6bc4aff3c718922545d21d855a5ecd47bcaacc582a8e6b9c",
+    "matched_code": 1588,
+    "matched_functions": 9,
+    "matched_data": 0,
+    "complete_data": 0,
+    "object_path": "build/GSQE78/src/MetroTRK/mslsupp.o",
+    "object_sha256": "12c7fa877bb774a6e4d1dde2e1e14b585f8b8e103756e6cbb0b86e0cd57a6b0e"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "source": "src/dolphin/os/OS_version.c",
+  "status": "integrated-byte-match",
+  "source_kind": "c",
+  "compiler": "GC/1.2.5n",
+  "cflags": "-proc gekko -fp hardware -enum int -str reuse -common off -O4,p -opt nopeephole -inline auto -Cpp_exceptions off -i src/dolphin/os -i src/dolphin/dvd",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2148472964,
+      "end": 2148473028
+    }
+  ],
+  "functions": [
+    {
+      "name": "__OSGetDIConfig",
+      "address": 2148472964,
+      "size": 20
+    },
+    {
+      "name": "OSRegisterVersion",
+      "address": 2148472984,
+      "size": 44
+    }
+  ],
+  "objects": [],
+  "symbol_scopes": {
+    "__OSGetDIConfig": "global",
+    "OSRegisterVersion": "global"
+  },
+  "symbols": {
+    "__OSGetDIConfig": "0x800f1884",
+    "OSRegisterVersion": "0x800f1898",
+    "OSVersionFormat": "0x80375ccc",
+    "OSReport": "0x800f2f28"
+  },
+  "external_original_names": {
+    "OSVersionFormat": "lbl_80375CCC",
+    "OSReport": "OSReport"
+  },
+  "verified_text_bytes": 64,
+  "verified_data_bytes": 0,
+  "section_alignments": {
+    ".text": 4
+  },
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "c9e3101d8c458a9b0a307fafe8129ae036831446b9eb5175c6e4554f388400f2",
+    "matched_code": 64,
+    "matched_functions": 2,
+    "matched_data": 0,
+    "complete_data": 0,
+    "object_path": "build/GSQE78/src/dolphin/os/OS_version.o",
+    "object_sha256": "2728d088959236542b5a47a11613fb5696d3f981f2cd295b46e4e96837923dd1"
+  }
+}

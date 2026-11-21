@@ -1,0 +1,213 @@
+{
+  "status": "isolated-byte-match",
+  "source": "src/Game/owner_handle_array_init.cpp",
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-proc",
+    "gekko",
+    "-fp",
+    "hardware",
+    "-enum",
+    "int",
+    "-str",
+    "reuse",
+    "-common",
+    "off",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-Cpp_exceptions",
+    "off",
+    "-RTTI",
+    "off",
+    "-use_lmw_stmw",
+    "on",
+    "-i",
+    "src/Game",
+    "-i",
+    "include"
+  ],
+  "source_kind": "c++",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2149856684,
+      "end": 2149856832,
+      "alignment": 4
+    }
+  ],
+  "functions": [
+    {
+      "name": "fn_802435AC",
+      "address": 2149856684,
+      "size": 148,
+      "scope": "global",
+      "section": ".text",
+      "object_offset": 0,
+      "sha256": "dc4e617245065a86f81f488504994124907df9dff0e990c1cf4e77db45aa55e7"
+    }
+  ],
+  "objects": [],
+  "unlinked_functions": [],
+  "dependency_symbols": [
+    {
+      "name": "fn_80243F28",
+      "address": 2149859112,
+      "scope": "global"
+    },
+    {
+      "name": "lbl_802EA1D8",
+      "address": 2150539736,
+      "scope": "global"
+    },
+    {
+      "name": "__ct__15Handle_80020B90Fv",
+      "address": 2149652948,
+      "scope": "global"
+    },
+    {
+      "name": "__dt__15Handle_80020B90Fv",
+      "address": 2147617680,
+      "scope": "global"
+    },
+    {
+      "name": "__construct_array",
+      "address": 2148658924,
+      "scope": "global"
+    }
+  ],
+  "source_sha256": "96a325669bf599c2b6c78cd2a3a1056053867d88fac5ab4338056cee05eaa2c2",
+  "headers": [],
+  "validation": {
+    "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "object_sha256": "29eb7ffca0b2aa46415eb34870dc94bfafcc27791a4c351fe8e5e9019f407a5c",
+    "retained_text_bytes": 148,
+    "emitted_text_bytes": 148,
+    "initialized_data_bytes": 0,
+    "bss_bytes": 0,
+    "emitted_data_bytes": 0,
+    "unlinked_text_bytes": 0,
+    "weak_functions": 0,
+    "relocations": 8,
+    "zero_byte_differences": true,
+    "all_retained_allocated_bytes_verified": true,
+    "all_emitted_allocated_bytes_accounted": true,
+    "owned_padding_bytes": 0,
+    "verification_script": "scratch/game_owner_handle_array_init/verify.py"
+  },
+  "notes": "docs/notes/game-owner-handle-array-init.md",
+  "original_metadata_audit": {
+    "status": "no-original-table-ownership",
+    "retained_ranges": [
+      {
+        "start": 2149856684,
+        "end": 2149856832
+      }
+    ],
+    "tables": [
+      {
+        "section": "extabindex",
+        "start": 2147573600,
+        "end": 2147611324,
+        "sha256": "64f3b619f96f16f327bc2805af02977009d3270075a236e9bed2e7b960641585",
+        "entries": 3141,
+        "references_to_retained_ranges": []
+      },
+      {
+        "section": ".ctors",
+        "start": 2150209824,
+        "end": 2150209904,
+        "sha256": "c535bceb8aef25702ac3b853c78b5499ab00b445fb657e84883dc324ab71e9df",
+        "entries": 19,
+        "references_to_retained_ranges": []
+      },
+      {
+        "section": ".dtors",
+        "start": 2150209920,
+        "end": 2150209936,
+        "sha256": "f9aca20c726bf82fc897d6a1cfdb6e48dea8a9b97d3a9e68694a58dd94646195",
+        "entries": 3,
+        "references_to_retained_ranges": []
+      }
+    ]
+  },
+  "actual_relocations": [
+    {
+      "section": ".text",
+      "at": 20,
+      "address": 2149856704,
+      "kind": 10,
+      "symbol": "fn_80243F28",
+      "target": 2149859112,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 26,
+      "address": 2149856710,
+      "kind": 6,
+      "symbol": "lbl_802EA1D8",
+      "target": 2150539736,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 30,
+      "address": 2149856714,
+      "kind": 6,
+      "symbol": "__ct__15Handle_80020B90Fv",
+      "target": 2149652948,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 34,
+      "address": 2149856718,
+      "kind": 4,
+      "symbol": "lbl_802EA1D8",
+      "target": 2150539736,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 50,
+      "address": 2149856734,
+      "kind": 6,
+      "symbol": "__dt__15Handle_80020B90Fv",
+      "target": 2147617680,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 54,
+      "address": 2149856738,
+      "kind": 4,
+      "symbol": "__ct__15Handle_80020B90Fv",
+      "target": 2149652948,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 62,
+      "address": 2149856746,
+      "kind": 4,
+      "symbol": "__dt__15Handle_80020B90Fv",
+      "target": 2147617680,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 80,
+      "address": 2149856764,
+      "kind": 10,
+      "symbol": "__construct_array",
+      "target": 2148658924,
+      "addend": 0
+    }
+  ],
+  "identifier_migration_provenance": {
+    "proof": "scratch/continuation_20261010/viewport-native-consumer-migration/proof.json",
+    "previous_canonical": "scratch/continuation_20261010/viewport-native-consumer-migration/before/config/GSQE78/candidates/game-owner-handle-array-init.json",
+    "previous_canonical_sha256": "fa6988f917de381ddf5e7b6e7fb4228994e30a321ad68ebbb994d401ffdb2d8a"
+  }
+}

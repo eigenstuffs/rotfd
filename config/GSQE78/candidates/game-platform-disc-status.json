@@ -1,0 +1,117 @@
+{
+  "status": "integrated-byte-match",
+  "source": "src/Game/platform_disc_status.c",
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-proc",
+    "gekko",
+    "-fp",
+    "hardware",
+    "-enum",
+    "int",
+    "-str",
+    "reuse",
+    "-common",
+    "off",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-Cpp_exceptions",
+    "off",
+    "-RTTI",
+    "off",
+    "-use_lmw_stmw",
+    "on",
+    "-fp_contract",
+    "on",
+    "-i",
+    "src/Game",
+    "-i",
+    "include",
+    "-i",
+    "src/dolphin",
+    "-i",
+    "src/dolphin/ax"
+  ],
+  "source_kind": "c",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2150167732,
+      "end": 2150167768,
+      "alignment": 4
+    },
+    {
+      "name": ".sbss",
+      "start": 2151121256,
+      "end": 2151121260,
+      "alignment": 8
+    }
+  ],
+  "functions": [
+    {
+      "name": "fn_8028F4B4",
+      "address": 2150167732,
+      "size": 36,
+      "scope": "global",
+      "section": ".text",
+      "object_offset": 0,
+      "sha256": "3561231944c48340883ac718bd0ad83ad4ae7c8188c1adbc5968c92430e0e419"
+    }
+  ],
+  "objects": [
+    {
+      "name": "lbl_80378168",
+      "address": 2151121256,
+      "size": 4,
+      "scope": "global",
+      "section": ".sbss",
+      "object_offset": 0,
+      "sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119"
+    }
+  ],
+  "unlinked_functions": [],
+  "dependency_symbols": [
+    {
+      "name": "DVDGetDriveStatus",
+      "address": 2148509228,
+      "scope": "global"
+    }
+  ],
+  "source_sha256": "523f37f428812d6b7a8223cc69297b562606194916a1c9e6aa8e04c30f75bdeb",
+  "headers": [
+    {
+      "path": "include/Game/platform_disc_status.h",
+      "sha256": "d4cdaa60f78753f186a4addd883f27a891abd8dfdb834bcb8f3bd4b3e20d8910"
+    }
+  ],
+  "validation": {
+    "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "object_sha256": "426326eb23d3c0af20ac1ea57c6871740d94b509ee906aba1d9bb808204ac560",
+    "retained_text_bytes": 36,
+    "emitted_text_bytes": 36,
+    "initialized_data_bytes": 0,
+    "bss_bytes": 4,
+    "emitted_data_bytes": 4,
+    "unlinked_text_bytes": 0,
+    "weak_functions": 0,
+    "relocations": 2,
+    "zero_byte_differences": true,
+    "all_retained_allocated_bytes_verified": true,
+    "all_emitted_allocated_bytes_accounted": true,
+    "owned_padding_bytes": 0,
+    "verification_script": "scratch/game_disc_status/verify.py",
+    "integration_status": "verified full-DOL and objdiff"
+  },
+  "notes": "docs/notes/game-platform-disc-status.md",
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "523f37f428812d6b7a8223cc69297b562606194916a1c9e6aa8e04c30f75bdeb",
+    "matched_code": 36,
+    "matched_functions": 1,
+    "matched_data": 4,
+    "complete_data": 4,
+    "object_path": "build/GSQE78/src/Game/platform_disc_status.o",
+    "object_sha256": "426326eb23d3c0af20ac1ea57c6871740d94b509ee906aba1d9bb808204ac560"
+  }
+}

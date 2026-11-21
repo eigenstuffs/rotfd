@@ -1,0 +1,5 @@
+# Pairwise transformed-sphere collector research
+
+Private, uncredited reconstruction of `fn_8028B03C` (`8028B03C..8028B33C`, 768 bytes) is preserved in `scratch/engine_sphere_pair_collect_20261011jm`. Its best ordinary C++ probe matches the original extent, frame, register allocation, matrix copy, sphere arithmetic, and all five actual relocations. Two instructions remain scheduled in the opposite order: the flag-byte store at offset 0xF4 and the third center-component load at 0xFC.
+
+The structural finding is the genuine subtraction temporary: binding the returned vector to a const reference restores the original three stores and 0x160-byte frame. Radius initialization order and ordinary array/flag member accessors then recover the original operand allocation. All bounded failed probes and complete original table/current ownership evidence remain preserved. No production unit is registered and no code or data receives matching credit. See the directory's `FINDINGS.md` and frozen private report for details.

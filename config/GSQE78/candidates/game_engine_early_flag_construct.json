@@ -1,0 +1,900 @@
+[
+  {
+    "status": "isolated-byte-match",
+    "source": "src/Game/engine_early_flag_construct_8002CF70.cpp",
+    "source_sha256": "aa52808e5f10a06779444a6c39e17736f4621e2c4587603cd8db985e454eca47",
+    "header_sha256": {},
+    "headers": [],
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": "extab",
+        "start": 2147511092,
+        "end": 2147511100,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147576492,
+        "end": 2147576504,
+        "alignment": 4
+      },
+      {
+        "name": ".text",
+        "start": 2147667824,
+        "end": 2147667916,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "__ct__14Agent_8002CF70Fv",
+        "address": 2147667824,
+        "size": 92,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@5",
+        "section": "extab",
+        "object_offset": 0,
+        "address": 2147511092,
+        "size": 8,
+        "scope": "local"
+      },
+      {
+        "name": "@6",
+        "section": "extabindex",
+        "object_offset": 0,
+        "address": 2147576492,
+        "size": 12,
+        "scope": "local"
+      }
+    ],
+    "unlinked_functions": [],
+    "verified_text_bytes": 92,
+    "verified_data_bytes": 20,
+    "notes": "docs/notes/game-engine-early-flag-construct.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 20,
+        "address": 2147667844,
+        "kind": 10,
+        "symbol": "__ct__21CallbackFlag_802ECD68Fv",
+        "target": 2149958836,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 26,
+        "address": 2147667850,
+        "kind": 6,
+        "symbol": "lbl_802B1884",
+        "target": 2150307972,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 34,
+        "address": 2147667858,
+        "kind": 4,
+        "symbol": "lbl_802B1884",
+        "target": 2150307972,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147576492,
+        "kind": 1,
+        "symbol": "__ct__14Agent_8002CF70Fv",
+        "target": 2147667824,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147576500,
+        "kind": 1,
+        "symbol": "@5",
+        "target": 2147511092,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "__ct__21CallbackFlag_802ECD68Fv",
+        "address": 2149958836,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_802B1884",
+        "address": 2150307972,
+        "section": ".data",
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "retained_text_bytes": 92,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 5,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    },
+    "identifier_migration_provenance": {
+      "proof": "scratch/continuation_20261010/refined-callback-consumer-migration-v3/proof.json",
+      "previous_canonical": "scratch/continuation_20261010/refined-callback-consumer-migration-v3/before/config/GSQE78/candidates/game_engine_early_flag_construct.json",
+      "previous_canonical_sha256": "1019f6a5893c3339cd1914e8cbde71bf8beebdcbae7831041f0f3e7b325ba1c1"
+    }
+  },
+  {
+    "status": "isolated-byte-match",
+    "source": "src/Game/engine_early_flag_construct_80035294.cpp",
+    "source_sha256": "b244b1d3e6c5096c31cb1aa1ac3afee7895ec2678bf0b0e0067565b3377c6302",
+    "header_sha256": {},
+    "headers": [],
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": "extab",
+        "start": 2147514072,
+        "end": 2147514080,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147577020,
+        "end": 2147577032,
+        "alignment": 4
+      },
+      {
+        "name": ".text",
+        "start": 2147701396,
+        "end": 2147701524,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "__ct__14Agent_80035294Fv",
+        "address": 2147701396,
+        "size": 128,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@5",
+        "section": "extab",
+        "object_offset": 0,
+        "address": 2147514072,
+        "size": 8,
+        "scope": "local"
+      },
+      {
+        "name": "@6",
+        "section": "extabindex",
+        "object_offset": 0,
+        "address": 2147577020,
+        "size": 12,
+        "scope": "local"
+      }
+    ],
+    "unlinked_functions": [],
+    "verified_text_bytes": 128,
+    "verified_data_bytes": 20,
+    "notes": "docs/notes/game-engine-early-flag-construct.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 20,
+        "address": 2147701416,
+        "kind": 10,
+        "symbol": "__ct__24CallbackControl_802ECC00Fv",
+        "target": 2149956700,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 26,
+        "address": 2147701422,
+        "kind": 6,
+        "symbol": "lbl_802B29D0",
+        "target": 2150312400,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 34,
+        "address": 2147701430,
+        "kind": 4,
+        "symbol": "lbl_802B29D0",
+        "target": 2150312400,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147577020,
+        "kind": 1,
+        "symbol": "__ct__14Agent_80035294Fv",
+        "target": 2147701396,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147577028,
+        "kind": 1,
+        "symbol": "@5",
+        "target": 2147514072,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "__ct__24CallbackControl_802ECC00Fv",
+        "address": 2149956700,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_802B29D0",
+        "address": 2150312400,
+        "section": ".data",
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "retained_text_bytes": 128,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 5,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    },
+    "identifier_migration_provenance": {
+      "proof": "scratch/continuation_20261010/refined-callback-consumer-migration-v3/proof.json",
+      "previous_canonical": "scratch/continuation_20261010/refined-callback-consumer-migration-v3/before/config/GSQE78/candidates/game_engine_early_flag_construct.json",
+      "previous_canonical_sha256": "1019f6a5893c3339cd1914e8cbde71bf8beebdcbae7831041f0f3e7b325ba1c1"
+    }
+  },
+  {
+    "status": "isolated-byte-match",
+    "source": "src/Game/engine_early_flag_construct_8003CD88.cpp",
+    "source_sha256": "5c40e109130793bc3050147f09b691c979f1838cecea2ba2bc9d904186237129",
+    "header_sha256": {},
+    "headers": [],
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": "extab",
+        "start": 2147516784,
+        "end": 2147516792,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147578688,
+        "end": 2147578700,
+        "alignment": 4
+      },
+      {
+        "name": ".text",
+        "start": 2147732872,
+        "end": 2147732988,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "__ct__14Agent_8003CD88Fv",
+        "address": 2147732872,
+        "size": 116,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@5",
+        "section": "extab",
+        "object_offset": 0,
+        "address": 2147516784,
+        "size": 8,
+        "scope": "local"
+      },
+      {
+        "name": "@6",
+        "section": "extabindex",
+        "object_offset": 0,
+        "address": 2147578688,
+        "size": 12,
+        "scope": "local"
+      }
+    ],
+    "unlinked_functions": [],
+    "verified_text_bytes": 116,
+    "verified_data_bytes": 20,
+    "notes": "docs/notes/game-engine-early-flag-construct.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 20,
+        "address": 2147732892,
+        "kind": 10,
+        "symbol": "__ct__22CallbackClock_802ECEC0Fv",
+        "target": 2149963700,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 26,
+        "address": 2147732898,
+        "kind": 6,
+        "symbol": "lbl_802B2B60",
+        "target": 2150312800,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 34,
+        "address": 2147732906,
+        "kind": 4,
+        "symbol": "lbl_802B2B60",
+        "target": 2150312800,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147578688,
+        "kind": 1,
+        "symbol": "__ct__14Agent_8003CD88Fv",
+        "target": 2147732872,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147578696,
+        "kind": 1,
+        "symbol": "@5",
+        "target": 2147516784,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "__ct__22CallbackClock_802ECEC0Fv",
+        "address": 2149963700,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_802B2B60",
+        "address": 2150312800,
+        "section": ".data",
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "retained_text_bytes": 116,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 5,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    },
+    "identifier_migration_provenance": {
+      "proof": "scratch/continuation_20261010/refined-callback-consumer-migration-v3/proof.json",
+      "previous_canonical": "scratch/continuation_20261010/refined-callback-consumer-migration-v3/before/config/GSQE78/candidates/game_engine_early_flag_construct.json",
+      "previous_canonical_sha256": "1019f6a5893c3339cd1914e8cbde71bf8beebdcbae7831041f0f3e7b325ba1c1"
+    }
+  },
+  {
+    "status": "isolated-byte-match",
+    "source": "src/Game/engine_early_flag_construct_80061AC0.cpp",
+    "source_sha256": "e6b9968b4165c851282b6fd646b6f5950df72870b1b0c7155065fc7f807f6081",
+    "header_sha256": {},
+    "headers": [],
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": "extab",
+        "start": 2147529356,
+        "end": 2147529444,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147583320,
+        "end": 2147583332,
+        "alignment": 4
+      },
+      {
+        "name": ".text",
+        "start": 2147883712,
+        "end": 2147883900,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "__ct__14Agent_80061AC0Fv",
+        "address": 2147883712,
+        "size": 188,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@21",
+        "section": "extab",
+        "object_offset": 0,
+        "address": 2147529356,
+        "size": 88,
+        "scope": "local"
+      },
+      {
+        "name": "@22",
+        "section": "extabindex",
+        "object_offset": 0,
+        "address": 2147583320,
+        "size": 12,
+        "scope": "local"
+      }
+    ],
+    "unlinked_functions": [],
+    "verified_text_bytes": 188,
+    "verified_data_bytes": 100,
+    "notes": "docs/notes/game-engine-early-flag-construct.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 20,
+        "address": 2147883732,
+        "kind": 10,
+        "symbol": "__ct__22ContainerBase_802563CCFv",
+        "target": 2149934028,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 28,
+        "address": 2147883740,
+        "kind": 10,
+        "symbol": "__ct__15Object_8005E258Fv",
+        "target": 2147868884,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 34,
+        "address": 2147883746,
+        "kind": 6,
+        "symbol": "lbl_802B6140",
+        "target": 2150326592,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 42,
+        "address": 2147883754,
+        "kind": 4,
+        "symbol": "lbl_802B6140",
+        "target": 2150326592,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 76,
+        "address": 2147883788,
+        "kind": 10,
+        "symbol": "__ct__15Handle_801F7F10Fv",
+        "target": 2149547780,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 104,
+        "address": 2147883816,
+        "kind": 10,
+        "symbol": "__ct__15Handle_801F7F10Fv",
+        "target": 2149547780,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 124,
+        "address": 2147883836,
+        "kind": 10,
+        "symbol": "__ct__15Handle_801F7F10Fv",
+        "target": 2149547780,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 164,
+        "address": 2147883876,
+        "kind": 109,
+        "symbol": "lbl_803776B8",
+        "target": 2151118520,
+        "addend": 0
+      },
+      {
+        "section": "extab",
+        "at": 48,
+        "address": 2147529404,
+        "kind": 1,
+        "symbol": "__dt__15Handle_8002B67CFv",
+        "target": 2147661436,
+        "addend": 0
+      },
+      {
+        "section": "extab",
+        "at": 60,
+        "address": 2147529416,
+        "kind": 1,
+        "symbol": "__dt__15Handle_80021B54Fv",
+        "target": 2147621716,
+        "addend": 0
+      },
+      {
+        "section": "extab",
+        "at": 72,
+        "address": 2147529428,
+        "kind": 1,
+        "symbol": "__dt__15Object_8005E258Fv",
+        "target": 2147869272,
+        "addend": 0
+      },
+      {
+        "section": "extab",
+        "at": 84,
+        "address": 2147529440,
+        "kind": 1,
+        "symbol": "__dt__22ContainerBase_802563CCFv",
+        "target": 2147671840,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147583320,
+        "kind": 1,
+        "symbol": "__ct__14Agent_80061AC0Fv",
+        "target": 2147883712,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147583328,
+        "kind": 1,
+        "symbol": "@21",
+        "target": 2147529356,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "__ct__15Handle_801F7F10Fv",
+        "address": 2149547780,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "__ct__22ContainerBase_802563CCFv",
+        "address": 2149934028,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "__dt__15Handle_80021B54Fv",
+        "address": 2147621716,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "__dt__15Handle_8002B67CFv",
+        "address": 2147661436,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "__dt__15Object_8005E258Fv",
+        "address": 2147869272,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "__dt__22ContainerBase_802563CCFv",
+        "address": 2147671840,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "__ct__15Object_8005E258Fv",
+        "address": 2147868884,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_802B6140",
+        "address": 2150326592,
+        "section": ".data",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_803776B8",
+        "address": 2151118520,
+        "section": ".sbss",
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "retained_text_bytes": 188,
+      "initialized_data_bytes": 100,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 14,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    },
+    "identifier_migration_provenance": {
+      "proof": "scratch/continuation_20261010/scene-controller-constructor-consumers/proof.json",
+      "previous_canonical": "scratch/continuation_20261010/scene-controller-constructor-consumers/before/config/GSQE78/candidates/game_engine_early_flag_construct.json",
+      "previous_canonical_sha256": "6944b948c59090f6e93886e087659232508c2ab9f9c786cf063c3402639b6257"
+    }
+  },
+  {
+    "status": "isolated-byte-match",
+    "source": "src/Game/engine_early_flag_construct_800737D8.cpp",
+    "source_sha256": "f05ec10e4579b3a0516344cffabba8cb742227252f72ab3f3209b6ef9e2fd731",
+    "header_sha256": {},
+    "headers": [],
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": "extab",
+        "start": 2147535128,
+        "end": 2147535136,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147586884,
+        "end": 2147586896,
+        "alignment": 4
+      },
+      {
+        "name": ".text",
+        "start": 2147956696,
+        "end": 2147956820,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "__ct__14Agent_800737D8Fv",
+        "address": 2147956696,
+        "size": 124,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@5",
+        "section": "extab",
+        "object_offset": 0,
+        "address": 2147535128,
+        "size": 8,
+        "scope": "local"
+      },
+      {
+        "name": "@6",
+        "section": "extabindex",
+        "object_offset": 0,
+        "address": 2147586884,
+        "size": 12,
+        "scope": "local"
+      }
+    ],
+    "unlinked_functions": [],
+    "verified_text_bytes": 124,
+    "verified_data_bytes": 20,
+    "notes": "docs/notes/game-engine-early-flag-construct.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 20,
+        "address": 2147956716,
+        "kind": 10,
+        "symbol": "__ct__24CallbackControl_802ECC00Fv",
+        "target": 2149956700,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 26,
+        "address": 2147956722,
+        "kind": 6,
+        "symbol": "lbl_802B7E38",
+        "target": 2150334008,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 34,
+        "address": 2147956730,
+        "kind": 4,
+        "symbol": "lbl_802B7E38",
+        "target": 2150334008,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147586884,
+        "kind": 1,
+        "symbol": "__ct__14Agent_800737D8Fv",
+        "target": 2147956696,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147586892,
+        "kind": 1,
+        "symbol": "@5",
+        "target": 2147535128,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "__ct__24CallbackControl_802ECC00Fv",
+        "address": 2149956700,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_802B7E38",
+        "address": 2150334008,
+        "section": ".data",
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "retained_text_bytes": 124,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 5,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    },
+    "identifier_migration_provenance": {
+      "proof": "scratch/continuation_20261010/refined-callback-consumer-migration-v3/proof.json",
+      "previous_canonical": "scratch/continuation_20261010/refined-callback-consumer-migration-v3/before/config/GSQE78/candidates/game_engine_early_flag_construct.json",
+      "previous_canonical_sha256": "1019f6a5893c3339cd1914e8cbde71bf8beebdcbae7831041f0f3e7b325ba1c1"
+    }
+  }
+]

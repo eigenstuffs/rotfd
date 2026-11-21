@@ -1,0 +1,11 @@
+# Grid record stream reader
+
+Isolated ordinary C++ proof: fn802668E0 at 802668E0..80266C78, 920 retained text bytes. Production source and declarations are src/Game/engine_grid_record_stream.cpp and include/Game/engine_grid_record_stream.h. This frozen handoff awaits full central DOL acceptance.
+
+The reader loads the grid's first 40 bytes, resizes and reads its `columns * rows` cell-head array, then reads a count and resizes a 20-byte record array. Each record receives its four index fields in one 16-byte read and its context word in a separate four-byte read. The growth constructor clears that context word before the reads. The initial 24-byte raw field span remains an uninterpreted layout view; the later fields correspond to the established cell-head/record helpers.
+
+The same ordinary signed-index template resize used in the packed-geometry reader reproduces the trivial empty loops, reverse destruction and reserve logic. Separate indexed expressions for the two record reads retain the original backing-pointer reload after the first call. GC/1.3.2 standard O4,p/exceptions-off flags produce exactly one 920-byte global C function with 41 real relocations. No helper functions, data, BSS, literals or exception/constructor/destructor tables are emitted. The unchanged strict verifier checks every allocation and actual target.
+
+Full original extabindex80015F60..8001F2C0, ctors80299920..80299980 and dtors80299980..802999A0 scans, including descriptors, padding and trailing zero slots, show no associated metadata. The active census scans 9,758 ELFs and records the two original assembly objects. A bytewise original initialized-data scan finds no pointers into this routine. There are no external interior branch targets. Accepted 802667F0 and unowned 80266C78 remain unchanged. Existing loader research only calls this entry externally; it has no body ownership. Original C and borrowed allocator/stream identities are preserved.
+
+Frozen proposal: scratch/engine_grid_record_stream_20261011hl/final_integration.json. The first exact probe, production recompile, complete allocation/relocation inventory, original tables and consumer evidence are preserved alongside it. No shared configuration, accepted sources or global builds were changed by this agent.

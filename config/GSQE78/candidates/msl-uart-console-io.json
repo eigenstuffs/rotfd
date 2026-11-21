@@ -1,0 +1,117 @@
+{
+  "compiler": "GC/1.3",
+  "cflags": [
+    "-proc gekko",
+    "-fp hardware",
+    "-enum int",
+    "-str reuse",
+    "-common off",
+    "-O4,p",
+    "-inline deferred",
+    "-pool off",
+    "-Cpp_exceptions off",
+    "-use_lmw_stmw off",
+    "-i src/MSL"
+  ],
+  "source": "src/MSL/uart_console_io.c",
+  "status": "integrated-byte-match",
+  "dependency_symbols": [
+    {
+      "name": "InitializeUART",
+      "address": "0x80297d2c"
+    },
+    {
+      "name": "WriteUARTN",
+      "address": "0x80297d9c"
+    },
+    {
+      "name": "__TRK_write_console",
+      "address": "0x8011eb04"
+    }
+  ],
+  "splits": [
+    {
+      "section": ".text",
+      "start": "0x80129ba0",
+      "end": "0x80129c64"
+    },
+    {
+      "section": ".sbss",
+      "start": "0x80377d18",
+      "end": "0x80377D1C"
+    }
+  ],
+  "functions": [
+    {
+      "name": "__write_console",
+      "original_name": "__write_console",
+      "address": "0x80129ba0",
+      "size": "0xc4",
+      "scope": "global"
+    }
+  ],
+  "data_symbols": [],
+  "compiler_local_symbols": [
+    {
+      "name": "initialized$11",
+      "original_name": "lbl_80377D18",
+      "address": "0x80377d18",
+      "size": "0x4",
+      "scope": "local",
+      "section": ".sbss"
+    }
+  ],
+  "notes": "docs/notes/msl-uart-console-io.md",
+  "split_notes": [
+    "The complete retained source unit has one function.",
+    "The inline UART initializer emits no separate body; its function-local initialized variable owns four sbss bytes at 0x80377D18, followed by four zero alignment bytes.",
+    "The trivial __close_console reference stub is not retained in this TU; the original executable uses a separate MetroTRK close callback outside this range."
+  ],
+  "validation": {
+    "verification_script": "scratch/msl_uart_console_io/verify.py",
+    "text_bytes": 196,
+    "sbss_bytes": 4,
+    "alignment_padding_bytes": 4,
+    "relocations_applied": 5,
+    "byte_differences": 0,
+    "original_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "128e4cb9c4a834809d6337e07e24976191c859e6b83706a8fedf45f8346d29ce",
+    "object_sha256": "ffaa11f18638e5157662b1d2f7e041ef8a7daab95c992b93483de673042cadf1",
+    "headers": {
+      "src/MSL/stdio_internal.h": "89a6c064868fa0bd2130698ef125bf434f9a42793f992600bc0dca237d4f5b36"
+    },
+    "integration_status": "verified full-DOL and objdiff"
+  },
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "128e4cb9c4a834809d6337e07e24976191c859e6b83706a8fedf45f8346d29ce",
+    "matched_code": 196,
+    "matched_functions": 1,
+    "matched_data": 4,
+    "complete_data": 4,
+    "object_path": "build/GSQE78/src/MSL/uart_console_io.o",
+    "object_sha256": "ffaa11f18638e5157662b1d2f7e041ef8a7daab95c992b93483de673042cadf1"
+  },
+  "external_padding": [
+    {
+      "source": "src/MSL/uart_console_io.c",
+      "unit": "main/MSL/uart_console_io",
+      "section": ".sbss",
+      "start": "0x80377d1c",
+      "end": "0x80377d20",
+      "size": 4,
+      "alignment": 1,
+      "symbol": "pad_source_extent_80377D1C",
+      "original_owner": "padding/source_extents/MSL/uart_console_io.s",
+      "source_section_start": "0x80377d18",
+      "source_section_bytes": 4,
+      "previous_split_bytes": 8,
+      "description": "Original linker alignment beyond emitted source section; no source credit."
+    }
+  ],
+  "source_extent_audit": {
+    "data_credit_correction": 4,
+    "evidence": "config/GSQE78/source_padding.json",
+    "description": "Source and original bytes unchanged; trailing original padding moved to NonMatching ownership."
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "compiler": "GC/1.3",
+  "cflags": [
+    "-proc gekko",
+    "-fp hardware",
+    "-enum int",
+    "-common off",
+    "-O4,p",
+    "-inline deferred",
+    "-Cpp_exceptions on",
+    "-RTTI on",
+    "-use_lmw_stmw on",
+    "-char signed",
+    "-str reuse,readonly",
+    "-pool off",
+    "-i src/Runtime"
+  ],
+  "source": "src/Runtime/Exception_destructor.cpp",
+  "source_kind": "cpp",
+  "status": "integrated-byte-match",
+  "splits": [
+    {
+      "section": ".text",
+      "start": "0x8011ee20",
+      "end": "0x8011ee68",
+      "alignment": 4
+    },
+    {
+      "section": "extab",
+      "start": "0x80015e80",
+      "end": "0x80015e88",
+      "alignment": 4
+    },
+    {
+      "section": "extabindex",
+      "start": "0x8001f1dc",
+      "end": "0x8001f1e8",
+      "alignment": 4
+    },
+    {
+      "section": ".data",
+      "start": "0x802cfeb0",
+      "end": "0x802cfec0",
+      "alignment": 8
+    },
+    {
+      "section": ".sdata",
+      "start": "0x80375e10",
+      "end": "0x80375e18",
+      "alignment": 8
+    }
+  ],
+  "functions": [
+    {
+      "name": "__dt__Q23std9exceptionFv",
+      "original_name": "__dt__Q23std9exceptionFv",
+      "address": "0x8011ee20",
+      "size": "0x48",
+      "scope": "weak"
+    }
+  ],
+  "data_symbols": [
+    {
+      "name": "@9",
+      "original_name": "@etb_80015E80",
+      "address": "0x80015e80",
+      "size": "0x8",
+      "section": "extab",
+      "scope": "local",
+      "data_kind": "exception_table"
+    },
+    {
+      "name": "@10",
+      "original_name": "@eti_8001F1DC",
+      "address": "0x8001f1dc",
+      "size": "0xc",
+      "section": "extabindex",
+      "scope": "local",
+      "data_kind": "exception_index"
+    },
+    {
+      "name": "__vt__Q23std9exception",
+      "original_name": "__vt__Q23std9exception",
+      "address": "0x802cfeb0",
+      "size": "0x10",
+      "section": ".data",
+      "scope": "global",
+      "data_kind": "vtable"
+    },
+    {
+      "name": "__RTTI__Q23std9exception",
+      "original_name": "lbl_80375E10",
+      "address": "0x80375e10",
+      "size": "0x8",
+      "section": ".sdata",
+      "scope": "global",
+      "data_kind": "rtti",
+      "original_scope": "local",
+      "scope_reason": "Explicit recovered RTTI record used by the compiler-generated vtable; name and contents unchanged."
+    }
+  ],
+  "symbol_scopes": {
+    "__dt__Q23std9exceptionFv": "weak",
+    "@9": "local",
+    "@10": "local",
+    "__vt__Q23std9exception": "global",
+    "__RTTI__Q23std9exception": "global",
+    "std_exception_type_name": "global",
+    "what__Q23std9exceptionCFv": "weak"
+  },
+  "dependency_symbols": [
+    {
+      "name": "__dl__FPv",
+      "original_name": "__dl__FPv",
+      "address": "0x8011edd4"
+    },
+    {
+      "name": "what__Q23std9exceptionCFv",
+      "original_name": "what__Q23std9exceptionCFv",
+      "address": "0x8011ee68",
+      "scope": "weak"
+    },
+    {
+      "name": "std_exception_type_name",
+      "original_name": "lbl_802AB9EC",
+      "address": "0x802ab9ec"
+    }
+  ],
+  "notes": "docs/notes/runtime-exception.md",
+  "shared_original_data": [
+    {
+      "name": "std_exception_type_name",
+      "original_name": "lbl_802AB9EC",
+      "section": ".rodata",
+      "start": "0x802ab9ec",
+      "end": "0x802ab9fb",
+      "size": 15,
+      "scope": "global",
+      "data_kind": "string",
+      "description": "External class name in shared original allocation-runtime string pool; not owned source data."
+    }
+  ],
+  "validation": {
+    "verification_script": "scratch/runtime_exception/verify_destructor.py",
+    "text_bytes": 72,
+    "initialized_data_bytes": 44,
+    "relocations_applied": 9,
+    "byte_differences": 0,
+    "source_sha256": "4c93420b823111bfd7211c8d9994042fa75bd683edf6bca66af0b6cd72896bca",
+    "object_sha256": "20e76a6c51330a5129d8a733ce00c9bdc0ff18ca13c7c52cf74925c0ac24e7e1",
+    "original_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "integration_status": "verified full-DOL and objdiff"
+  },
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "4c93420b823111bfd7211c8d9994042fa75bd683edf6bca66af0b6cd72896bca",
+    "matched_code": 72,
+    "matched_functions": 1,
+    "matched_data": 44,
+    "complete_data": 44,
+    "object_path": "build/GSQE78/src/Runtime/Exception_destructor.o",
+    "object_sha256": "20e76a6c51330a5129d8a733ce00c9bdc0ff18ca13c7c52cf74925c0ac24e7e1"
+  }
+}

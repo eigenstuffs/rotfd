@@ -1,0 +1,15 @@
+# Owner contact events
+
+Accepted matching source: the production build passes the original DOL hash,
+strict allocated-byte/extent and actual-relocation checks, baseline regression
+checks, generated progress verification and all 26 repository tests.
+
+**Isolated exact handoff, awaiting central acceptance.** Ordinary C++ `fn_8021E454`, `8021E454..8021E8B8`, matches all 1,124 original text bytes and 26 actual retained relocations. Source is `src/Game/engine_owner_contact_events.cpp`; its dedicated partial declarations are in `include/Game/engine_owner_contact_events.h`. GC1.3.2 uses the standard Game flags plus `-use_lmw_stmw on`.
+
+The routine resolves the owner's resource handle and inspects the incoming 64-bit contact flags. A qualifying related object propagates two state bits between the owner and its active object. Two virtual queries can supply event numbers, followed by fixed events 57 and conditionally 62. Each dispatch resolves an ordinary full-expression copied handle, retains the original handle through the reference manager and destroys the copy after the call. The fallback paths dispatch events 57 or 58 directly to the resource owner. The two incoming position pointers are unused by the original body.
+
+Named const references to the actual source members before each temporary copy preserve the original saved source-pointer lifetime and complete prologue. This source form follows the independently verified SDK handle-copy pattern. A staged integer-return resolver reads the entry generation through an ordinary getter and casts its result to the final pointer argument. The established DC/DD source shape removes the remaining argument-register differences. Typed and byte-addressed manager views preserve the original separate entry-base loads. No register directives, assembly, aliases or object patching are used.
+
+The compiler emits one trailing unused weak `ContactCopy` destructor, 84 bytes with two real relocations. It is fully inventoried, has no retained references and remains unlinked. No initialized data, BSS, exception, startup or padding allocation is claimed. The complete original extabindex `80015F60..8001F2C0`, constructor table `80299920..80299980` and destructor table `80299980..802999A0` were audited, including descriptors, padding and trailing zeros; none refers to the retained function. The external manager, float zero, handle lifecycle routines, event dispatcher, virtual tables and adjacent routines retain their existing owners.
+
+The frozen complete manifest is `scratch/engine_owner_contact_events_20261011di/final_integration.json`. `verify.py` recompiles production source, verifies every allocated section and symbol, compares all retained bytes using actual relocation targets, inventories the unused weak emission, repeats the complete original-table audit and checks frozen source/header/evidence hashes. The existing entry identity is unchanged and no consumer migration is required. Root registration begins NonMatching; original DOL hash and regression acceptance remain required before credit. All ordinary source alternatives are preserved in the new isolated directory.

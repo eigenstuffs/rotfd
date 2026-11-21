@@ -1,0 +1,7 @@
+# MetroTRK event queue
+
+`src/MetroTRK/nubevent.c` recovers five C functions and 552 code bytes at 0x80117C3C..0x80117E64: TRKDestructEvent, TRKConstructEvent, TRKPostEvent, TRKGetNextEvent and TRKInitializeEventQueue. The [Melee reference](https://github.com/doldecomp/melee/blob/master/src/MetroTRK/nubevent.c) supplies the two-slot queue, event IDs starting at 0x100 and buffer lifecycle. Functions are in target link order, and the event-copy helper is static inline because no separate copy is linked. Source-level state transitions are unchanged.
+
+The global gTRKEventQueue occupies .bss:0x80339078..0x803390A0 (40 bytes, alignment 8). Its fields are a 4-byte mutex slot, signed count and first index, two 12-byte events, and a 32-bit event ID. There is no padding after this object before the following gTRKBigEndian object, and no initialized data is owned.
+
+GC/1.3.2 with `-proc gekko -fp hardware -enum int -str reuse -common off -O4,p -inline on,noauto -sdata 0 -sdata2 0 -pool off -use_lmw_stmw on -rostr -i src/MetroTRK -Cpp_exceptions off` reproduces all 552 code bytes after relocation against the original DOL. Calls independently identify the mutex and release-buffer helpers and the TRK_memcpy wrapper in .init at 0x800033D8. Compile and verification scripts are under `scratch/MetroTRK`, and all symbols/scopes are in the candidate manifest. No native assembly is introduced. Full-DOL and native objdiff remain integration checks.

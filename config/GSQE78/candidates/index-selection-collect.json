@@ -1,0 +1,84 @@
+{
+  "status": "isolated-byte-match",
+  "source": "src/Game/index_selection_collect.cpp",
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-proc",
+    "gekko",
+    "-fp",
+    "hardware",
+    "-enum",
+    "int",
+    "-str",
+    "reuse",
+    "-common",
+    "off",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-Cpp_exceptions",
+    "off",
+    "-RTTI",
+    "off",
+    "-use_lmw_stmw",
+    "on",
+    "-i",
+    "src/Game",
+    "-i",
+    "include"
+  ],
+  "source_kind": "c++",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2149995752,
+      "end": 2149995924,
+      "alignment": 4
+    }
+  ],
+  "functions": [
+    {
+      "name": "fn_802654E8",
+      "address": 2149995752,
+      "size": 172,
+      "scope": "global",
+      "section": ".text",
+      "object_offset": 0,
+      "sha256": "a1f206b98714310183ddce8b73926e31f533b70686b001d0885cd07a65897d0d"
+    }
+  ],
+  "objects": [],
+  "unlinked_functions": [],
+  "dependency_symbols": [
+    {
+      "name": "fn_80207B94",
+      "address": 2149612436,
+      "scope": "global"
+    }
+  ],
+  "source_sha256": "74bcc360a3e1c642c259740aaa98de9195ffdfe012536e10e0f0f33e5658fb0d",
+  "headers": [
+    {
+      "path": "include/Game/bitset_internal.h",
+      "sha256": "b0ab26d39217844709a6cc151a0dac64ee30b8414f4b8b7d017051414be3aaf1"
+    }
+  ],
+  "validation": {
+    "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "object_sha256": "86a7271c558add3655b85b79896c7032a0729871ee034696f75d2bc5539d67a8",
+    "retained_text_bytes": 172,
+    "emitted_text_bytes": 172,
+    "initialized_data_bytes": 0,
+    "bss_bytes": 0,
+    "emitted_data_bytes": 0,
+    "unlinked_text_bytes": 0,
+    "weak_functions": 0,
+    "relocations": 1,
+    "zero_byte_differences": true,
+    "all_retained_allocated_bytes_verified": true,
+    "all_emitted_allocated_bytes_accounted": true,
+    "owned_padding_bytes": 0,
+    "verification_script": "scratch/game_index_selection_collect/verify.py"
+  },
+  "notes": "docs/notes/game-index-selection-collect.md"
+}

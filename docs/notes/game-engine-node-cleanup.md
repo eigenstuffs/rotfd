@@ -1,0 +1,13 @@
+# Node cleanup entry
+
+Isolated matching source: full executable acceptance remains with the root integrator.
+
+`src/Game/engine_node_cleanup.cpp` reconstructs the original C destruction entry fn80241344 at 80241344..802417BC, all 1,144 retained text bytes. GC 1.3.2 with the default Game flags reproduces every retained instruction and all 61 actual relocation targets. Existing entry and external table/native dependency identities are unchanged. No consumer migration is required.
+
+The entry installs the existing Node table, clears its related Handle at130 through a copied zero Handle, then clears handles0C,18,14,10, the two existing relation setters, and handles24,28. It returns two signed-short indices12C/12E to the optional matrix pool134 and clears matrix pointers124/128. It then destroys ten layered Handle members in reverse order, installs the Resource table, calls the existing Root destructor with flag zero, conditionally frees the object for a positive signed-short flag, and returns its original pointer.
+
+The dedicated header is a partial 0x138-byte Node storage view. Empty derived Handle layers reproduce the original zero stores and nested member null checks. The inline copied-assignment helper creates a named local copy while binding the caller temporary by const reference. This gives the original stack+8 copy and descending remaining temporary slots; a directly nested copy expression cyclically shifts those slots. This is the same ordinary lifetime shape established in the earlier private Node constructor investigation, which remains unmodified and uncredited.
+
+The compiler emits 1,496 allocated text bytes: the retained 1,144-byte entry plus four unused weak helper destructors of92,88,88 and84 bytes, with eight additional actual relocations. Their names, offsets, exact raw hashes and all relocations are inventoried; no retained code refers to them. There are no allocated data, BSS, exception, vtable, startup or padding sections.
+
+The frozen proposal is scratch/engine_node_cleanup_20261011fu/final_integration.json. Its verifier recompiles production source and checks every allocated byte, exact symbol extent, all actual relocation targets and frozen hashes. The complete original extabindex80015F60..8001F2C0, ctors80299920..80299980 and dtors80299980..802999A0 scan includes descriptors, padding and terminators and finds no references into this retained range. Original translation-unit tables/data, adjacent routines and all referenced native functions remain with their existing owners. Central registration should begin NonMatching and be promoted only after the full original DOL hash and standard acceptance checks pass.

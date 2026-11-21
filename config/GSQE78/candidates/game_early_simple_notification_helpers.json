@@ -1,0 +1,1715 @@
+[
+  {
+    "status": "integrated-original-dol-match",
+    "description": "Native compiler-emitted MemCard/CFSM provider, including every allocated section and real relocation.",
+    "source": "src/Game/early_simple_notification_helpers_8007D8F4.cpp",
+    "source_sha256": "5f9258d8a18962b5f86f42ce87b99531fbd4189c16783217bdaba9fa7beab4b2",
+    "source_kind": "c++",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-lang=c++",
+      "-i",
+      "include"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/cfsm_native.h",
+        "sha256": "cf25f54399725ddd3dbe3e1fca17507859166da66eb098aebf0e9535c660eafa"
+      }
+    ],
+    "notes": "docs/notes/game-memory-card-native-hierarchy.md",
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2147997940,
+        "end": 2147998036,
+        "size": 96,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147538320,
+        "end": 2147538328,
+        "size": 8,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147588096,
+        "end": 2147588108,
+        "size": 12,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "configure__4CFSMFi",
+        "address": 2147997940,
+        "size": 96,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@5",
+        "address": 2147538320,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@6",
+        "address": 2147588096,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 72,
+        "address": 2147998012,
+        "kind": 10,
+        "symbol": "fn_8007DCDC",
+        "target": 2147998940,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147588096,
+        "kind": 1,
+        "symbol": "configure__4CFSMFi",
+        "target": 2147997940,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147588104,
+        "kind": 1,
+        "symbol": "@5",
+        "target": 2147538320,
+        "addend": 0
+      }
+    ],
+    "validation": {
+      "object_path": "build/GSQE78/src/Game/early_simple_notification_helpers_8007D8F4.o",
+      "object_sha256": "bf68e763122675d18dc3b3290b75fd434c4ab70c2ff1a11421f99d375dec4c38",
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "zero_byte_differences": true,
+      "all_emitted_allocated_bytes_accounted": true,
+      "real_relocations": 3,
+      "production_verification": "scratch/memcard_native_vtable_20261020_parallel/production-verification.json",
+      "production_verification_sha256": "96e50e874bd53c148cd6395f670c040416c34699787d56726d8cfb010c340f31"
+    },
+    "memcard_native_identity_migration": {
+      "description": "Current canonical identities and hashes verified after native CGCMemCardManipulator/CFSM ownership integration; original evidence is retained in immutable backups and explicit previous receipts.",
+      "production_verification": "scratch/memcard_native_vtable_20261020_parallel/production-verification.json",
+      "production_verification_sha256": "96e50e874bd53c148cd6395f670c040416c34699787d56726d8cfb010c340f31",
+      "migration_object_audit": "scratch/memcard_native_vtable_20261020_parallel/migration_object_audit.json",
+      "migration_object_audit_sha256": "b809560bf7212a505b2ea749256bef5263b4784d066bb311015e10928e90db9d",
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "unchanged_caller_objects": 344,
+      "native_objects": 6,
+      "native_actual_relocations": 281
+    },
+    "previous_provider_receipt": {
+      "status": "isolated-byte-match-parent-full-native-acceptance-pending",
+      "source": "src/Game/early_simple_notification_helpers_8007D8F4.cpp",
+      "source_sha256": "0458a8d682c30b7f644ea59d8b32d6415e6f60983f48e463ad335b5a765d5d0e",
+      "compiler": "GC/1.3.2",
+      "cflags": [
+        "-proc",
+        "gekko",
+        "-fp",
+        "hardware",
+        "-enum",
+        "int",
+        "-str",
+        "reuse",
+        "-common",
+        "off",
+        "-O4,s",
+        "-inline",
+        "auto",
+        "-Cpp_exceptions",
+        "on",
+        "-use_lmw_stmw",
+        "on"
+      ],
+      "sections": [
+        {
+          "name": ".text",
+          "start": 2147997940,
+          "end": 2147998036,
+          "alignment": 4
+        },
+        {
+          "name": "extab",
+          "start": 2147538320,
+          "end": 2147538328,
+          "alignment": 4
+        },
+        {
+          "name": "extabindex",
+          "start": 2147588096,
+          "end": 2147588108,
+          "alignment": 4
+        }
+      ],
+      "functions": [
+        {
+          "name": "fn_8007D8F4",
+          "address": 2147997940,
+          "size": 96,
+          "section": ".text",
+          "scope": "global",
+          "object_offset": 0
+        }
+      ],
+      "objects": [
+        {
+          "name": "@5",
+          "address": 2147538320,
+          "size": 8,
+          "section": "extab",
+          "scope": "local",
+          "object_offset": 0
+        },
+        {
+          "name": "@6",
+          "address": 2147588096,
+          "size": 12,
+          "section": "extabindex",
+          "scope": "local",
+          "object_offset": 0
+        }
+      ],
+      "unlinked_functions": [],
+      "headers": [],
+      "header_sha256": {},
+      "notes": "docs/notes/game-early-simple-notification-helpers.md",
+      "actual_relocations": [
+        {
+          "section": ".text",
+          "at": 72,
+          "address": 2147998012,
+          "kind": 10,
+          "symbol": "fn_8007DCDC",
+          "target": 2147998940,
+          "addend": 0
+        },
+        {
+          "section": "extabindex",
+          "at": 0,
+          "address": 2147588096,
+          "kind": 1,
+          "symbol": "fn_8007D8F4",
+          "target": 2147997940,
+          "addend": 0
+        },
+        {
+          "section": "extabindex",
+          "at": 8,
+          "address": 2147588104,
+          "kind": 1,
+          "symbol": "@5",
+          "target": 2147538320,
+          "addend": 0
+        }
+      ],
+      "dependency_symbols": [
+        {
+          "name": "fn_8007DCDC",
+          "section": ".text",
+          "address": 2147998940,
+          "scope": "global"
+        }
+      ],
+      "validation": {
+        "object_sha256": "ee5bfe6cff86d837f5f0d1926f95e93b22a652d3bf03c230db10fdd4876eba84",
+        "retained_text_bytes": 96,
+        "initialized_data_bytes": 20,
+        "bss_bytes": 0,
+        "owned_padding_bytes": 0,
+        "relocations": 3,
+        "unlinked_relocations": 0,
+        "all_emitted_allocated_bytes_accounted": true,
+        "zero_byte_differences": true
+      }
+    },
+    "canonical_manifest": "config/GSQE78/candidates/game_early_simple_notification_helpers_8007D8F4.json"
+  },
+  {
+    "status": "isolated-byte-match-parent-full-native-acceptance-pending",
+    "source": "src/Game/early_simple_notification_helpers_80083B18.cpp",
+    "source_sha256": "99db67a2a1babdc7eb336928ca013663c12948cb033d1dab99d350857f87d009",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148023064,
+        "end": 2148023160,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147539816,
+        "end": 2147539824,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147589620,
+        "end": 2147589632,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_80083B18",
+        "address": 2148023064,
+        "size": 96,
+        "section": ".text",
+        "scope": "global",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@9",
+        "address": 2147539816,
+        "size": 8,
+        "section": "extab",
+        "scope": "local",
+        "object_offset": 0
+      },
+      {
+        "name": "@10",
+        "address": 2147589620,
+        "size": 12,
+        "section": "extabindex",
+        "scope": "local",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "headers": [],
+    "header_sha256": {},
+    "notes": "docs/notes/game-early-simple-notification-helpers.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 36,
+        "address": 2148023100,
+        "kind": 10,
+        "symbol": "fn_80257828",
+        "target": 2149939240,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 40,
+        "address": 2148023104,
+        "kind": 109,
+        "symbol": "lbl_803776B8",
+        "target": 2151118520,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 72,
+        "address": 2148023136,
+        "kind": 10,
+        "symbol": "fn_8006803C",
+        "target": 2147909692,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147589620,
+        "kind": 1,
+        "symbol": "fn_80083B18",
+        "target": 2148023064,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147589628,
+        "kind": 1,
+        "symbol": "@9",
+        "target": 2147539816,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "fn_8006803C",
+        "section": ".text",
+        "address": 2147909692,
+        "scope": "global"
+      },
+      {
+        "name": "fn_80257828",
+        "section": ".text",
+        "address": 2149939240,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_803776B8",
+        "section": ".sbss",
+        "address": 2151118520,
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "object_sha256": "28014cb215dc3b43601613d0ac5cdb4865532737adafc8236ca4c2749b987304",
+      "retained_text_bytes": 96,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 5,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match-parent-full-native-acceptance-pending",
+    "source": "src/Game/early_simple_notification_helpers_80083E50.cpp",
+    "source_sha256": "619e025858576c1465368389c2388ea078faf78ab2a5575bc4abe843fc0f4003",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148023888,
+        "end": 2148023984,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147539880,
+        "end": 2147539888,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147589716,
+        "end": 2147589728,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_80083E50",
+        "address": 2148023888,
+        "size": 96,
+        "section": ".text",
+        "scope": "global",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@9",
+        "address": 2147539880,
+        "size": 8,
+        "section": "extab",
+        "scope": "local",
+        "object_offset": 0
+      },
+      {
+        "name": "@10",
+        "address": 2147589716,
+        "size": 12,
+        "section": "extabindex",
+        "scope": "local",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "headers": [],
+    "header_sha256": {},
+    "notes": "docs/notes/game-early-simple-notification-helpers.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 36,
+        "address": 2148023924,
+        "kind": 10,
+        "symbol": "fn_80257828",
+        "target": 2149939240,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 40,
+        "address": 2148023928,
+        "kind": 109,
+        "symbol": "lbl_803776B8",
+        "target": 2151118520,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 72,
+        "address": 2148023960,
+        "kind": 10,
+        "symbol": "fn_8006803C",
+        "target": 2147909692,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147589716,
+        "kind": 1,
+        "symbol": "fn_80083E50",
+        "target": 2148023888,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147589724,
+        "kind": 1,
+        "symbol": "@9",
+        "target": 2147539880,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "fn_8006803C",
+        "section": ".text",
+        "address": 2147909692,
+        "scope": "global"
+      },
+      {
+        "name": "fn_80257828",
+        "section": ".text",
+        "address": 2149939240,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_803776B8",
+        "section": ".sbss",
+        "address": 2151118520,
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "object_sha256": "abc1151c9fbd694a2579caaec7f1bbeb180f1ec193371d7d4be6caff37ee41fa",
+      "retained_text_bytes": 96,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 5,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match-parent-full-native-acceptance-pending",
+    "source": "src/Game/early_simple_notification_helpers_80083F90.cpp",
+    "source_sha256": "7bcba6dc7fc60583dca64b93eafeadaa99e8b14412980bd2c648be543abc4d10",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148024208,
+        "end": 2148024304,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147539912,
+        "end": 2147539920,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147589764,
+        "end": 2147589776,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_80083F90",
+        "address": 2148024208,
+        "size": 96,
+        "section": ".text",
+        "scope": "global",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@9",
+        "address": 2147539912,
+        "size": 8,
+        "section": "extab",
+        "scope": "local",
+        "object_offset": 0
+      },
+      {
+        "name": "@10",
+        "address": 2147589764,
+        "size": 12,
+        "section": "extabindex",
+        "scope": "local",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "headers": [],
+    "header_sha256": {},
+    "notes": "docs/notes/game-early-simple-notification-helpers.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 36,
+        "address": 2148024244,
+        "kind": 10,
+        "symbol": "fn_80257828",
+        "target": 2149939240,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 40,
+        "address": 2148024248,
+        "kind": 109,
+        "symbol": "lbl_803776B8",
+        "target": 2151118520,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 72,
+        "address": 2148024280,
+        "kind": 10,
+        "symbol": "fn_8006803C",
+        "target": 2147909692,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147589764,
+        "kind": 1,
+        "symbol": "fn_80083F90",
+        "target": 2148024208,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147589772,
+        "kind": 1,
+        "symbol": "@9",
+        "target": 2147539912,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "fn_8006803C",
+        "section": ".text",
+        "address": 2147909692,
+        "scope": "global"
+      },
+      {
+        "name": "fn_80257828",
+        "section": ".text",
+        "address": 2149939240,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_803776B8",
+        "section": ".sbss",
+        "address": 2151118520,
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "object_sha256": "c42ef9dc8136b1efca70cca4962d6edd36e4705117a231796e2899508e64f0d3",
+      "retained_text_bytes": 96,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 5,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match-parent-full-native-acceptance-pending",
+    "source": "src/Game/early_simple_notification_helpers_800844CC.cpp",
+    "source_sha256": "e72c12d78eb6f4be30815cf70ab16b32acf81b5376ef77c72c887aeac73420b1",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148025548,
+        "end": 2148025644,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147539992,
+        "end": 2147540000,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147589860,
+        "end": 2147589872,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800844CC",
+        "address": 2148025548,
+        "size": 96,
+        "section": ".text",
+        "scope": "global",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@9",
+        "address": 2147539992,
+        "size": 8,
+        "section": "extab",
+        "scope": "local",
+        "object_offset": 0
+      },
+      {
+        "name": "@10",
+        "address": 2147589860,
+        "size": 12,
+        "section": "extabindex",
+        "scope": "local",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "headers": [],
+    "header_sha256": {},
+    "notes": "docs/notes/game-early-simple-notification-helpers.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 36,
+        "address": 2148025584,
+        "kind": 10,
+        "symbol": "fn_80257828",
+        "target": 2149939240,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 40,
+        "address": 2148025588,
+        "kind": 109,
+        "symbol": "lbl_803776B8",
+        "target": 2151118520,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 72,
+        "address": 2148025620,
+        "kind": 10,
+        "symbol": "fn_8006803C",
+        "target": 2147909692,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147589860,
+        "kind": 1,
+        "symbol": "fn_800844CC",
+        "target": 2148025548,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147589868,
+        "kind": 1,
+        "symbol": "@9",
+        "target": 2147539992,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "fn_8006803C",
+        "section": ".text",
+        "address": 2147909692,
+        "scope": "global"
+      },
+      {
+        "name": "fn_80257828",
+        "section": ".text",
+        "address": 2149939240,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_803776B8",
+        "section": ".sbss",
+        "address": 2151118520,
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "object_sha256": "3e74989855f29ca83b645499eddd88b4c1b52a29ab175178940968b9c6b353e4",
+      "retained_text_bytes": 96,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 5,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match-parent-full-native-acceptance-pending",
+    "source": "src/Game/early_simple_notification_helpers_80087CA4.cpp",
+    "source_sha256": "cdbcf5924532f3792396fd20790bdbf40b73144aa56e4a3a76450cad5adf566e",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148039844,
+        "end": 2148039940,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147540864,
+        "end": 2147540872,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147590568,
+        "end": 2147590580,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_80087CA4",
+        "address": 2148039844,
+        "size": 96,
+        "section": ".text",
+        "scope": "global",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@9",
+        "address": 2147540864,
+        "size": 8,
+        "section": "extab",
+        "scope": "local",
+        "object_offset": 0
+      },
+      {
+        "name": "@10",
+        "address": 2147590568,
+        "size": 12,
+        "section": "extabindex",
+        "scope": "local",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "headers": [],
+    "header_sha256": {},
+    "notes": "docs/notes/game-early-simple-notification-helpers.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 36,
+        "address": 2148039880,
+        "kind": 10,
+        "symbol": "fn_80257828",
+        "target": 2149939240,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 40,
+        "address": 2148039884,
+        "kind": 109,
+        "symbol": "lbl_803776B8",
+        "target": 2151118520,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 72,
+        "address": 2148039916,
+        "kind": 10,
+        "symbol": "fn_8006803C",
+        "target": 2147909692,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147590568,
+        "kind": 1,
+        "symbol": "fn_80087CA4",
+        "target": 2148039844,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147590576,
+        "kind": 1,
+        "symbol": "@9",
+        "target": 2147540864,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "fn_8006803C",
+        "section": ".text",
+        "address": 2147909692,
+        "scope": "global"
+      },
+      {
+        "name": "fn_80257828",
+        "section": ".text",
+        "address": 2149939240,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_803776B8",
+        "section": ".sbss",
+        "address": 2151118520,
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "object_sha256": "810e3f4a7b1708b89f76c2a1225b94ef0a27ebf45393e212c34d1c6f4a129ab5",
+      "retained_text_bytes": 96,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 5,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match-parent-full-native-acceptance-pending",
+    "source": "src/Game/early_simple_notification_helpers_80088758.cpp",
+    "source_sha256": "6ca82b517bcc4c30720463f90e41d95407d4a8570f320af6255204c99fac3262",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148042584,
+        "end": 2148042680,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147541120,
+        "end": 2147541128,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147590808,
+        "end": 2147590820,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_80088758",
+        "address": 2148042584,
+        "size": 96,
+        "section": ".text",
+        "scope": "global",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@9",
+        "address": 2147541120,
+        "size": 8,
+        "section": "extab",
+        "scope": "local",
+        "object_offset": 0
+      },
+      {
+        "name": "@10",
+        "address": 2147590808,
+        "size": 12,
+        "section": "extabindex",
+        "scope": "local",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "headers": [],
+    "header_sha256": {},
+    "notes": "docs/notes/game-early-simple-notification-helpers.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 36,
+        "address": 2148042620,
+        "kind": 10,
+        "symbol": "fn_80257828",
+        "target": 2149939240,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 40,
+        "address": 2148042624,
+        "kind": 109,
+        "symbol": "lbl_803776B8",
+        "target": 2151118520,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 72,
+        "address": 2148042656,
+        "kind": 10,
+        "symbol": "fn_8006803C",
+        "target": 2147909692,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147590808,
+        "kind": 1,
+        "symbol": "fn_80088758",
+        "target": 2148042584,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147590816,
+        "kind": 1,
+        "symbol": "@9",
+        "target": 2147541120,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "fn_8006803C",
+        "section": ".text",
+        "address": 2147909692,
+        "scope": "global"
+      },
+      {
+        "name": "fn_80257828",
+        "section": ".text",
+        "address": 2149939240,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_803776B8",
+        "section": ".sbss",
+        "address": 2151118520,
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "object_sha256": "f6c75eec4083c1139fd118437e4ead2622d90eeaa70eed2e9fdddc4cc61dcfd0",
+      "retained_text_bytes": 96,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 5,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match-parent-full-native-acceptance-pending",
+    "source": "src/Game/early_simple_notification_helpers_800A5C98.cpp",
+    "source_sha256": "efacec25a91d6172df7c705e9c2b6ecf594966c491035bb76cadd00099ba8aa4",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148162712,
+        "end": 2148162808,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147551100,
+        "end": 2147551108,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147596964,
+        "end": 2147596976,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800A5C98",
+        "address": 2148162712,
+        "size": 96,
+        "section": ".text",
+        "scope": "global",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@9",
+        "address": 2147551100,
+        "size": 8,
+        "section": "extab",
+        "scope": "local",
+        "object_offset": 0
+      },
+      {
+        "name": "@10",
+        "address": 2147596964,
+        "size": 12,
+        "section": "extabindex",
+        "scope": "local",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "headers": [],
+    "header_sha256": {},
+    "notes": "docs/notes/game-early-simple-notification-helpers.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 44,
+        "address": 2148162756,
+        "kind": 10,
+        "symbol": "strcpy",
+        "target": 2148697408,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 56,
+        "address": 2148162768,
+        "kind": 109,
+        "symbol": "lbl_80378F70",
+        "target": 2151124848,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 60,
+        "address": 2148162772,
+        "kind": 10,
+        "symbol": "strcat",
+        "target": 2148697296,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 72,
+        "address": 2148162784,
+        "kind": 10,
+        "symbol": "strcat",
+        "target": 2148697296,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147596964,
+        "kind": 1,
+        "symbol": "fn_800A5C98",
+        "target": 2148162712,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147596972,
+        "kind": 1,
+        "symbol": "@9",
+        "target": 2147551100,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "lbl_80378F70",
+        "section": ".sdata2",
+        "address": 2151124848,
+        "scope": "global"
+      },
+      {
+        "name": "strcat",
+        "section": ".text",
+        "address": 2148697296,
+        "scope": "global"
+      },
+      {
+        "name": "strcpy",
+        "section": ".text",
+        "address": 2148697408,
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "object_sha256": "426ebac7abf92e745e9b74e06e6fdb817192b74e8e01890071b8e3ff35d98422",
+      "retained_text_bytes": 96,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 6,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match-parent-full-native-acceptance-pending",
+    "source": "src/Game/early_simple_notification_helpers_800AB29C.cpp",
+    "source_sha256": "3f894c98d98634e7e60755d70fe852428c02253fd74f454bb249886e9c42f98e",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148184732,
+        "end": 2148184828,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147552432,
+        "end": 2147552440,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147597444,
+        "end": 2147597456,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800AB29C",
+        "address": 2148184732,
+        "size": 96,
+        "section": ".text",
+        "scope": "global",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@8",
+        "address": 2147552432,
+        "size": 8,
+        "section": "extab",
+        "scope": "local",
+        "object_offset": 0
+      },
+      {
+        "name": "@9",
+        "address": 2147597444,
+        "size": 12,
+        "section": "extabindex",
+        "scope": "local",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "headers": [],
+    "header_sha256": {},
+    "notes": "docs/notes/game-early-simple-notification-helpers.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 40,
+        "address": 2148184772,
+        "kind": 10,
+        "symbol": "fn_8007256C",
+        "target": 2147951980,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 54,
+        "address": 2148184786,
+        "kind": 6,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 58,
+        "address": 2148184790,
+        "kind": 6,
+        "symbol": "lbl_8029EF38",
+        "target": 2150231864,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 62,
+        "address": 2148184794,
+        "kind": 4,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 66,
+        "address": 2148184798,
+        "kind": 4,
+        "symbol": "lbl_8029EF38",
+        "target": 2150231864,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 76,
+        "address": 2148184808,
+        "kind": 10,
+        "symbol": "fn_801FA014",
+        "target": 2149556244,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147597444,
+        "kind": 1,
+        "symbol": "fn_800AB29C",
+        "target": 2148184732,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147597452,
+        "kind": 1,
+        "symbol": "@8",
+        "target": 2147552432,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "fn_8007256C",
+        "section": ".text",
+        "address": 2147951980,
+        "scope": "global"
+      },
+      {
+        "name": "fn_801FA014",
+        "section": ".text",
+        "address": 2149556244,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_801E9D24",
+        "section": ".text",
+        "address": 2149489956,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_8029EF38",
+        "section": ".rodata",
+        "address": 2150231864,
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "object_sha256": "3781e719a5baee290d8b9d9518ce702a07b8f6ce57109dd791657d2f4cb594c4",
+      "retained_text_bytes": 96,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 8,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match-parent-full-native-acceptance-pending",
+    "source": "src/Game/early_simple_notification_helpers_800B1610.cpp",
+    "source_sha256": "c8335fcd124fbdfb62f4656f8fb78ce916f331b2b2e7d2dbe8132750948b4386",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148210192,
+        "end": 2148210288,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147554084,
+        "end": 2147554092,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147598140,
+        "end": 2147598152,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800B1610",
+        "address": 2148210192,
+        "size": 96,
+        "section": ".text",
+        "scope": "global",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@9",
+        "address": 2147554084,
+        "size": 8,
+        "section": "extab",
+        "scope": "local",
+        "object_offset": 0
+      },
+      {
+        "name": "@10",
+        "address": 2147598140,
+        "size": 12,
+        "section": "extabindex",
+        "scope": "local",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "headers": [],
+    "header_sha256": {},
+    "notes": "docs/notes/game-early-simple-notification-helpers.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 44,
+        "address": 2148210236,
+        "kind": 10,
+        "symbol": "strcpy",
+        "target": 2148697408,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 56,
+        "address": 2148210248,
+        "kind": 109,
+        "symbol": "lbl_803791C8",
+        "target": 2151125448,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 60,
+        "address": 2148210252,
+        "kind": 10,
+        "symbol": "strcat",
+        "target": 2148697296,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 72,
+        "address": 2148210264,
+        "kind": 10,
+        "symbol": "strcat",
+        "target": 2148697296,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147598140,
+        "kind": 1,
+        "symbol": "fn_800B1610",
+        "target": 2148210192,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147598148,
+        "kind": 1,
+        "symbol": "@9",
+        "target": 2147554084,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "lbl_803791C8",
+        "section": ".sdata2",
+        "address": 2151125448,
+        "scope": "global"
+      },
+      {
+        "name": "strcat",
+        "section": ".text",
+        "address": 2148697296,
+        "scope": "global"
+      },
+      {
+        "name": "strcpy",
+        "section": ".text",
+        "address": 2148697408,
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "object_sha256": "84973a576e5559f32c0f1cc5a910bc4f1b109c825f24847f7fa2de16af610700",
+      "retained_text_bytes": 96,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 6,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  }
+]

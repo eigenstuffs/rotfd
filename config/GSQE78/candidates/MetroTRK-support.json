@@ -1,0 +1,98 @@
+{
+  "source": "src/MetroTRK/support.c",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.3.2",
+  "cflags": "-proc gekko -fp hardware -enum int -str reuse -common off -O4,p -inline auto,deferred -sdata 0 -sdata2 0 -pool off -use_lmw_stmw on -rostr -i src/MetroTRK -Cpp_exceptions off",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2148645184,
+      "end": 2148647388
+    }
+  ],
+  "functions": [
+    {
+      "name": "HandlePositionFileSupportRequest",
+      "address": 2148645184,
+      "size": 364
+    },
+    {
+      "name": "HandleCloseFileSupportRequest",
+      "address": 2148645548,
+      "size": 288
+    },
+    {
+      "name": "HandleOpenFileSupportRequest",
+      "address": 2148645836,
+      "size": 424
+    },
+    {
+      "name": "TRKRequestSend",
+      "address": 2148646260,
+      "size": 420
+    },
+    {
+      "name": "TRKSuppAccessFile",
+      "address": 2148646680,
+      "size": 708
+    }
+  ],
+  "objects": [],
+  "symbol_scopes": {
+    "HandlePositionFileSupportRequest": "global",
+    "HandleCloseFileSupportRequest": "global",
+    "HandleOpenFileSupportRequest": "global",
+    "TRKRequestSend": "global",
+    "TRKSuppAccessFile": "global"
+  },
+  "symbols": {
+    "TRKReadBuffer1_ui16": "0x801184f8",
+    "TRKReadBuffer_ui8": "0x801182b0",
+    "HandlePositionFileSupportRequest": "0x8011b940",
+    "HandleCloseFileSupportRequest": "0x8011baac",
+    "HandleOpenFileSupportRequest": "0x8011bbcc",
+    "TRKRequestSend": "0x8011bd74",
+    "TRKSuppAccessFile": "0x8011bf18",
+    "TRKGetFreeBuffer": "0x80118ab0",
+    "TRKAppendBuffer1_ui32": "0x801187c8",
+    "TRKGetBuffer": "0x80118a84",
+    "TRKSetBufferPosition": "0x801189b0",
+    "TRKReadBuffer1_ui8": "0x801185b0",
+    "TRKReleaseBuffer": "0x80118a20",
+    "strlen": "0x801285f8",
+    "TRKAppendBuffer1_ui16": "0x8011882c",
+    "TRKAppendBuffer_ui8": "0x801186d8",
+    "TRKReadBuffer1_ui32": "0x80118430",
+    "TRKMessageSend": "0x80117fe4",
+    "TRKTestForPacket": "0x80118d00",
+    "TRKProcessInput": "0x80118c18"
+  },
+  "external_original_names": {
+    "TRKGetFreeBuffer": "fn_80118AB0",
+    "TRKAppendBuffer1_ui32": "fn_801187C8",
+    "TRKGetBuffer": "TRKGetBuffer",
+    "TRKSetBufferPosition": "fn_801189B0",
+    "TRKReadBuffer1_ui8": "fn_801185B0",
+    "TRKReleaseBuffer": "fn_80118A20",
+    "strlen": "strlen",
+    "TRKAppendBuffer1_ui16": "fn_8011882C",
+    "TRKAppendBuffer_ui8": "fn_801186D8",
+    "TRKReadBuffer1_ui32": "fn_80118430",
+    "TRKMessageSend": "fn_80117FE4",
+    "TRKTestForPacket": "fn_80118D00",
+    "TRKProcessInput": "fn_80118C18"
+  },
+  "verified_text_bytes": 2204,
+  "verified_data_bytes": 0,
+  "source_kind": "c",
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "9cc96344072ebdb9ab73962568b8eb57e91afbe03155fafaa2438857b44a5145",
+    "matched_code": 2204,
+    "matched_functions": 5,
+    "matched_data": 0,
+    "complete_data": 0,
+    "object_path": "build/GSQE78/src/MetroTRK/support.o",
+    "object_sha256": "e92708caaaebb81178c5d0a7f8bea73790bb5a74d77e814e4d35535823909181"
+  }
+}

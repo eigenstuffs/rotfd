@@ -1,0 +1,112 @@
+{
+  "source": "src/Objects/frameobject.c",
+  "status": "integrated-byte-match",
+  "compiler": "GC/2.0",
+  "cflags": [
+    "-proc gekko",
+    "-fp hardware",
+    "-enum int",
+    "-str reuse",
+    "-common off",
+    "-opt level=4,nopeephole,speed",
+    "-inline auto,deferred",
+    "-pool off",
+    "-Cpp_exceptions off"
+  ],
+  "sections": {
+    ".text": [
+      "0x8014597C",
+      "0x801467C8"
+    ],
+    ".data": [
+      "0x802D2F80",
+      "0x802D317A"
+    ],
+    ".sdata": [
+      "0x80376170",
+      "0x8037619D"
+    ],
+    ".sbss": [
+      "0x80377DF0",
+      "0x80377DF8"
+    ]
+  },
+  "symbols": {
+    "PyFrame_Type": "0x802D30B8",
+    "frame_memberlist": "0x802D2FE8",
+    "free_list": "0x80377DF0",
+    "builtin_object$99": "0x80377DF4",
+    "PyFrame_Fini": "0x8014597c",
+    "PyFrame_LocalsToFast": "0x801459b4",
+    "PyFrame_FastToLocals": "0x80145cd4",
+    "PyFrame_BlockPop": "0x80145fb0",
+    "PyFrame_BlockSetup": "0x80146008",
+    "PyFrame_New": "0x80146090",
+    "frame_dealloc": "0x80146474",
+    "frame_setattr": "0x8014672c",
+    "frame_getattr": "0x80146760",
+    "PyErr_Fetch": "0x80190948",
+    "PyErr_Restore": "0x801914f4"
+  },
+  "symbol_scopes": {
+    "frame_memberlist": "local",
+    "free_list": "local",
+    "builtin_object$99": "local",
+    "PyFrame_Fini": "global",
+    "PyFrame_LocalsToFast": "global",
+    "PyFrame_FastToLocals": "global",
+    "PyFrame_BlockPop": "global",
+    "PyFrame_BlockSetup": "global",
+    "PyFrame_New": "global",
+    "frame_dealloc": "local",
+    "frame_setattr": "local",
+    "frame_getattr": "local"
+  },
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "5609422f82ab0711ad4d514f66e87ddad068ef04840030a94a576d98141e2cc2",
+    "matched_code": 3660,
+    "matched_functions": 9,
+    "matched_data": 559,
+    "complete_data": 559,
+    "object_path": "build/GSQE78/src/Objects/frameobject.o",
+    "object_sha256": "6d3e314f09451d13b01b07b7e7c65ea49976d6a5352752b7b8e8e9d15a386097"
+  },
+  "external_padding": [
+    {
+      "source": "src/Objects/frameobject.c",
+      "unit": "main/Objects/frameobject",
+      "section": ".data",
+      "start": "0x802d317a",
+      "end": "0x802d317c",
+      "size": 2,
+      "alignment": 1,
+      "symbol": "gap_07_802D317A_data",
+      "original_owner": "padding/source_extents/Objects/frameobject.s",
+      "source_section_start": "0x802d2f80",
+      "source_section_bytes": 506,
+      "previous_split_bytes": 508,
+      "description": "Original linker alignment beyond emitted source section; no source credit."
+    },
+    {
+      "source": "src/Objects/frameobject.c",
+      "unit": "main/Objects/frameobject",
+      "section": ".sdata",
+      "start": "0x8037619d",
+      "end": "0x803761a0",
+      "size": 3,
+      "alignment": 1,
+      "symbol": "gap_09_8037619D_sdata",
+      "original_owner": "padding/source_extents/Objects/frameobject.s",
+      "source_section_start": "0x80376170",
+      "source_section_bytes": 45,
+      "previous_split_bytes": 48,
+      "description": "Original linker alignment beyond emitted source section; no source credit."
+    }
+  ],
+  "source_extent_audit": {
+    "data_credit_correction": 5,
+    "evidence": "config/GSQE78/source_padding.json",
+    "description": "Source and original bytes unchanged; trailing original padding moved to NonMatching ownership."
+  }
+}

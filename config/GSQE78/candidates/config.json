@@ -1,0 +1,86 @@
+{
+  "source": "src/Modules/config.c",
+  "status": "integrated-byte-match",
+  "sections": {
+    ".data": [
+      "0x802E95D0",
+      "0x802E9644"
+    ],
+    ".sdata": [
+      "0x80377468",
+      "0x8037748C"
+    ]
+  },
+  "extra_cflags": [
+    "-inline auto,deferred",
+    "-pool off"
+  ],
+  "symbols": {
+    "_PyImport_Inittab": 2150536692
+  },
+  "symbol_sizes": {
+    "_PyImport_Inittab": 80
+  },
+  "symbol_scopes": {
+    "_PyImport_Inittab": "global"
+  },
+  "validation": {
+    "functions": 0,
+    "text_bytes": 0,
+    "data_bytes_emitted": 116,
+    "sdata_bytes_emitted": 36,
+    "relocations_resolved": 14,
+    "mismatching_initialized_bytes": 0,
+    "source_sha256": "970ac0d882312242a701b3dfb007c8ac5c15de93c6295c2b3f179acf9e554776",
+    "command": "python3 scratch/config/check_object.py",
+    "integration_status": "verified full-DOL and objdiff"
+  },
+  "reference": "reference/cpython-2.1/Modules/config.c.in",
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "970ac0d882312242a701b3dfb007c8ac5c15de93c6295c2b3f179acf9e554776",
+    "matched_code": 0,
+    "matched_functions": 0,
+    "matched_data": 152,
+    "complete_data": 152,
+    "object_path": "build/GSQE78/src/Modules/config.o",
+    "object_sha256": "149307c9e7032bd38bd27e179eaabea59f6ed726ff86dff8323d169a7a653676"
+  },
+  "external_padding": [
+    {
+      "source": "src/Modules/config.c",
+      "unit": "main/Modules/config",
+      "section": ".data",
+      "start": "0x802e9644",
+      "end": "0x802e9648",
+      "size": 4,
+      "alignment": 1,
+      "symbol": "gap_07_802E9644_data",
+      "original_owner": "padding/source_extents/Modules/config.s",
+      "source_section_start": "0x802e95d0",
+      "source_section_bytes": 116,
+      "previous_split_bytes": 120,
+      "description": "Original linker alignment beyond emitted source section; no source credit."
+    },
+    {
+      "source": "src/Modules/config.c",
+      "unit": "main/Modules/config",
+      "section": ".sdata",
+      "start": "0x8037748c",
+      "end": "0x80377490",
+      "size": 4,
+      "alignment": 1,
+      "symbol": "gap_09_8037748C_sdata",
+      "original_owner": "padding/source_extents/Modules/config.s",
+      "source_section_start": "0x80377468",
+      "source_section_bytes": 36,
+      "previous_split_bytes": 40,
+      "description": "Original linker alignment beyond emitted source section; no source credit."
+    }
+  ],
+  "source_extent_audit": {
+    "data_credit_correction": 8,
+    "evidence": "config/GSQE78/source_padding.json",
+    "description": "Source and original bytes unchanged; trailing original padding moved to NonMatching ownership."
+  }
+}

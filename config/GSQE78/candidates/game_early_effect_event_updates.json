@@ -1,0 +1,350 @@
+[
+  {
+    "source_kind": "c++",
+    "required_extra_cflags": [
+      "-proc gekko",
+      "-O4,s",
+      "-Cpp_exceptions on",
+      "-use_lmw_stmw on"
+    ],
+    "status": "isolated-byte-match-native-link-acceptance-pending",
+    "source": "src/Game/early_damage_volume_events_800C94A8.cpp",
+    "source_sha256": "61784f2e0da14658c892102b56c9d38bf4e98fb9a51c23dd887d48ee58e4f218",
+    "header_sha256": {},
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": "extab",
+        "start": 2147562368,
+        "end": 2147562376,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147602724,
+        "end": 2147602736,
+        "alignment": 4
+      },
+      {
+        "name": ".text",
+        "start": 2148308136,
+        "end": 2148308704,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800C94A8",
+        "address": 2148308136,
+        "size": 568,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@37",
+        "address": 2147562368,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@38",
+        "address": 2147602724,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "unlinked_objects": [],
+    "weak_overrides": [],
+    "unlinked_exception_groups": [],
+    "emitted_sections": [
+      {
+        "name": ".text",
+        "size": 568,
+        "raw_sha256": "efe79ae0a931920247ad3c087f07d3e94e81d1f6d6d259305e3fe3fe6f4278b6"
+      },
+      {
+        "name": "extab",
+        "size": 8,
+        "raw_sha256": "30227103b698c388db95a6db806697b933ea772f988f7b4f39303d952b917f2a"
+      },
+      {
+        "name": "extabindex",
+        "size": 12,
+        "raw_sha256": "b5e8f63d9ab4293a4842b816e1219a1ce51fe71eddaa7e4432240e276f6e6225"
+      }
+    ],
+    "headers": [],
+    "notes": "docs/notes/game-early-damage-volume-events.md",
+    "original_metadata_audit": {
+      "function": "fn_800C94A8",
+      "original_ranges": [
+        {
+          "name": "extab",
+          "start": 2147562368,
+          "end": 2147562376
+        },
+        {
+          "name": "extabindex",
+          "start": 2147602724,
+          "end": 2147602736
+        },
+        {
+          "name": ".text",
+          "start": 2148308136,
+          "end": 2148308704
+        }
+      ],
+      "extabindex_scan": [
+        2147573600,
+        2147611328,
+        12
+      ],
+      "matching_extabindex": [
+        {
+          "address": 2147602724,
+          "function": 2148308136,
+          "size": 568,
+          "extab": 2147562368
+        }
+      ],
+      "ctors_scan": [
+        2150209824,
+        2150209920,
+        4
+      ],
+      "dtors_scan": [
+        2150209920,
+        2150209952,
+        4
+      ],
+      "ctors": [],
+      "dtors": [],
+      "initialized_data_word_references": [
+        {
+          "address": 2147602724,
+          "section_number": 1
+        },
+        {
+          "address": 2150372740,
+          "section_number": 5
+        }
+      ],
+      "callable_tables": [
+        {
+          "symbol": "lbl_802C14FC",
+          "section": ".data",
+          "address": 2150372604,
+          "size": 148,
+          "entry_address": 2150372740,
+          "entry_target": 2148308136,
+          "ownership": "original assembly remains unchanged"
+        }
+      ],
+      "compiled_source_consumers_unchanged": []
+    },
+    "verified_text_bytes": 568,
+    "verified_data_bytes": 20,
+    "pending_compiled_consumer_migrations": [],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 24,
+        "address": 2148308160,
+        "kind": 10,
+        "symbol": "fn_8025E9FC",
+        "target": 2149968380,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 38,
+        "address": 2148308174,
+        "kind": 6,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 46,
+        "address": 2148308182,
+        "kind": 4,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 196,
+        "address": 2148308332,
+        "kind": 109,
+        "symbol": "lbl_80379644",
+        "target": 2151126596,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 212,
+        "address": 2148308348,
+        "kind": 10,
+        "symbol": "fn_802073E8",
+        "target": 2149610472,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 224,
+        "address": 2148308360,
+        "kind": 109,
+        "symbol": "lbl_80379644",
+        "target": 2151126596,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 236,
+        "address": 2148308372,
+        "kind": 10,
+        "symbol": "fn_802073BC",
+        "target": 2149610428,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 292,
+        "address": 2148308428,
+        "kind": 10,
+        "symbol": "fn_8025E9FC",
+        "target": 2149968380,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 306,
+        "address": 2148308442,
+        "kind": 6,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 314,
+        "address": 2148308450,
+        "kind": 4,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 504,
+        "address": 2148308640,
+        "kind": 10,
+        "symbol": "fn_80286058",
+        "target": 2150129752,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147602724,
+        "kind": 1,
+        "symbol": "fn_800C94A8",
+        "target": 2148308136,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147602732,
+        "kind": 1,
+        "symbol": "@37",
+        "target": 2147562368,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "fn_802073BC",
+        "address": 2149610428,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_802073E8",
+        "address": 2149610472,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_8025E9FC",
+        "address": 2149968380,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "fn_80286058",
+        "address": 2150129752,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_801E9D24",
+        "address": 2149489956,
+        "section": ".text",
+        "scope": "global"
+      },
+      {
+        "name": "lbl_80379644",
+        "address": 2151126596,
+        "section": ".sdata2",
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "1f8070544aeda45b62422fea3a44a4fd4fdfd922739a0b79b5ecee6b8b7393fc",
+      "retained_text_bytes": 568,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 13,
+      "unlinked_relocations": 0,
+      "uncredited_text_bytes": 0,
+      "uncredited_metadata_bytes": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true,
+      "central_final_native_discard_required": false
+    }
+  }
+]

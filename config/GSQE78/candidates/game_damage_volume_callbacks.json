@@ -1,0 +1,104 @@
+{
+  "source": "src/Game/damage_volume_callbacks.cpp",
+  "status": "superseded by integrated DamageVolume lifetime unit",
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-proc",
+    "gekko",
+    "-fp",
+    "hardware",
+    "-enum",
+    "int",
+    "-str",
+    "reuse",
+    "-common",
+    "off",
+    "-O4,s",
+    "-inline",
+    "auto",
+    "-Cpp_exceptions",
+    "on",
+    "-use_lmw_stmw",
+    "on"
+  ],
+  "source_kind": "c++",
+  "sections": {
+    ".text": [
+      2148307868,
+      2148307972
+    ],
+    "extab": [
+      2147562344,
+      2147562360
+    ],
+    "extabindex": [
+      2147602688,
+      2147602712
+    ]
+  },
+  "functions": [
+    {
+      "name": "fn_800C939C",
+      "address": 2148307868,
+      "size": 72,
+      "scope": "global"
+    },
+    {
+      "name": "fn_800C93E4",
+      "address": 2148307940,
+      "size": 32,
+      "scope": "global"
+    }
+  ],
+  "objects": [
+    {
+      "name": "@6",
+      "address": 2147602688,
+      "size": 12,
+      "section": "extabindex",
+      "scope": "local"
+    },
+    {
+      "name": "@5",
+      "address": 2147562344,
+      "size": 8,
+      "section": "extab",
+      "scope": "local"
+    },
+    {
+      "name": "@12",
+      "address": 2147602700,
+      "size": 12,
+      "section": "extabindex",
+      "scope": "local"
+    },
+    {
+      "name": "@11",
+      "address": 2147562352,
+      "size": 8,
+      "section": "extab",
+      "scope": "local"
+    }
+  ],
+  "notes": "docs/notes/game-damage-volume-callbacks.md",
+  "validation": {
+    "verification_script": "scratch/game_damage_volume_callbacks/verify.py",
+    "relocations": 6,
+    "text_bytes": 104,
+    "initialized_data_bytes": 40,
+    "zero_byte_differences": true,
+    "weak_duplicates_verified": {},
+    "source_sha256": "abb165abd2cb6c32e4bc159eda9d34704de4733da8084db1b5bb6c8ce1d668e4",
+    "integration_status": "verified full-DOL and objdiff"
+  },
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "abb165abd2cb6c32e4bc159eda9d34704de4733da8084db1b5bb6c8ce1d668e4",
+    "matched_code": 104,
+    "matched_functions": 2,
+    "matched_data": 40,
+    "complete_data": 40
+  },
+  "superseded_by": "config/GSQE78/candidates/game_damage_volume_lifetime.json",
+  "superseded_source": "src/Game/damage_volume_lifetime.cpp"
+}

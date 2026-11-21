@@ -1,0 +1,6 @@
+#ifndef GAME_ENGINE_SKIN_CALLBACK_STARTUP_H
+#define GAME_ENGINE_SKIN_CALLBACK_STARTUP_H
+
+extern "C" void fn_8025B158();
+
+#endif

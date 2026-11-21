@@ -1,0 +1,94 @@
+{
+  "source": "src/Game/hierarchy_batch_assign.cpp",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-proc",
+    "gekko",
+    "-fp",
+    "hardware",
+    "-enum",
+    "int",
+    "-str",
+    "reuse",
+    "-common",
+    "off",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-Cpp_exceptions",
+    "off",
+    "-use_lmw_stmw",
+    "on",
+    "-i",
+    "src/Game"
+  ],
+  "sections": {
+    ".text": [
+      2149589164,
+      2149589756
+    ]
+  },
+  "functions": [
+    {
+      "name": "fn_802020AC",
+      "address": 2149589164,
+      "size": 592,
+      "section": ".text",
+      "scope": "global"
+    }
+  ],
+  "objects": [],
+  "source_kind": "c++",
+  "dependency_symbols": [],
+  "notes": "docs/notes/game-hierarchy-batch-actions.md",
+  "source_sha256": "508e9806621a7e5758826777f693a5d9d34e28f2fbe9d8ec49f126da8fa991ad",
+  "validation": {
+    "relocations": 10,
+    "text_bytes": 592,
+    "initialized_data_bytes": 0,
+    "zero_byte_differences": true,
+    "unlinked_text_bytes": 172,
+    "unlinked_relocations": 4,
+    "verification_script": "scratch/game_hierarchy_batch_actions/verify_batch_assign.py",
+    "private_header_sha256": {
+      "src/Game/group_runtime_internal.h": "1ba4d2f9c740af16f37202e50bfaab376485368df177d73faabe5d8e1eb87189",
+      "src/Game/hierarchy_batch_internal.h": "0639f54e6b24a450b6b6f1c374999779c2576addb9dd2269a818dd13fe174ee9"
+    },
+    "integration_status": "verified full-DOL and objdiff"
+  },
+  "unlinked_functions": [
+    {
+      "name": "__dt__15BatchZeroHandleFv",
+      "object_offset": 680,
+      "size": 84,
+      "binding": "weak",
+      "reason": "Unreferenced generated C++ wrapper destructor; ordinary linker dead stripping."
+    },
+    {
+      "name": "__dt__16BatchOwnedHandleFv",
+      "object_offset": 592,
+      "size": 88,
+      "binding": "weak",
+      "reason": "Unreferenced generated C++ wrapper destructor; ordinary linker dead stripping."
+    }
+  ],
+  "private_headers": [
+    "src/Game/group_runtime_internal.h",
+    "src/Game/hierarchy_batch_internal.h"
+  ],
+  "symbol_scopes": {
+    "fn_802020AC": "global"
+  },
+  "external_padding": [],
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "508e9806621a7e5758826777f693a5d9d34e28f2fbe9d8ec49f126da8fa991ad",
+    "matched_code": 592,
+    "matched_functions": 1,
+    "matched_data": 0,
+    "complete_data": 0,
+    "object_path": "build/GSQE78/src/Game/hierarchy_batch_assign.o",
+    "object_sha256": "108629b435a5712caa51d244d6df21f2f6d38d45e9b9193fe98715a640fe0edb"
+  }
+}

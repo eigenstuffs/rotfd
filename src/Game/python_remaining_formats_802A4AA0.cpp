@@ -1,0 +1,19 @@
+/* Original Python argument formats. See docs/notes/game-additional-python-format-strings.md. */
+extern "C" const char lbl_802A4AA0[28] = "OO:Agent_Z_RegisterWithGame";
+extern "C" const char lbl_802A4ABC[30] = "OO:Agent_Z_UnRegisterFromGame";
+extern "C" const char lbl_802A4ADC[37] = "OOO:Agent_Z_AuthorizeInteractionWith";
+extern "C" const char lbl_802A4B04[33] = "OO:Agent_Z_GetCollisionMessageIn";
+extern "C" const char lbl_802A4B28[34] = "OO:Agent_Z_GetCollisionMessageOut";
+extern "C" const char lbl_802A4B4C[44] = "OO:Agent_Z_GetCollisionMessageContactActive";
+extern "C" const char lbl_802A4B78[45] = "OO:Agent_Z_GetCollisionMessageContactPassive";
+extern "C" const char lbl_802A4BA8[44] = "OO:Agent_Z_SetCollisionMessageContactActive";
+extern "C" const char lbl_802A4BD4[45] = "OO:Agent_Z_SetCollisionMessageContactPassive";
+extern "C" const char lbl_802A4C04[37] = "OO:Agent_Z_GetCollisionMessageAction";
+extern "C" const char lbl_802A4C2C[37] = "OO:Agent_Z_SetCollisionMessageAction";
+extern "C" const char lbl_802A4C54[34] = "OO:Agent_Z_IsNonResetableCategory";
+extern "C" const char lbl_802A4C78[35] = "OO:Agent_Z_AddNonResetableCategory";
+extern "C" const char lbl_802A4C9C[38] = "OO:Agent_Z_RemoveNonResetableCategory";
+extern "C" const char lbl_802A4CC4[38] = "O:Agent_Z_ClearNonResetableCategories";
+extern "C" const char lbl_802A4CEC[35] = "OO:Agent_Z_SetNonResetableCategory";
+extern "C" const char lbl_802A4D10[26] = "O:Agent_Z_GetClassSoundId";
+extern "C" const char lbl_802A4D2C[18] = "O:Agent_Z_GetNode";

@@ -1,0 +1,185 @@
+[
+  {
+    "status": "strict-isolated-match-root-integration-pending",
+    "source": "src/Game/remaining_curve_record_reset_801B3A24.cpp",
+    "source_sha256": "6bdd7bb89f0c87ff378b1a85e17e405976e957ee4ada9d2700f113907d97474f",
+    "headers": [
+      {
+        "path": "src/Game/objects_owner_internal.h",
+        "sha256": "f2f3ed38fa07c4439af53617df67a59cd5fa686733430f307e91fb0d8d8a7d3c"
+      },
+      {
+        "path": "src/Game/world_curve_arrays_internal.h",
+        "sha256": "050e16c320d4842599d51bba0b0275eb60bf6d10d3e8dd0c39986012f31baf2c"
+      }
+    ],
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "off",
+      "-RTTI",
+      "off",
+      "-i",
+      "src/Game",
+      "-i",
+      "include"
+    ],
+    "source_kind": "c++",
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2149268004,
+        "end": 2149268008,
+        "alignment": 4
+      },
+      {
+        "name": ".data",
+        "start": 2150538760,
+        "end": 2150538772,
+        "alignment": 8
+      }
+    ],
+    "functions": [
+      {
+        "name": "reset__24CurveRecordBase_802E9E08Fv",
+        "address": 2149268004,
+        "size": 4,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "__vt__24CurveRecordBase_802E9E08",
+        "address": 2150538760,
+        "size": 12,
+        "scope": "global",
+        "section": ".data",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [],
+    "verified_text_bytes": 4,
+    "verified_data_bytes": 12,
+    "notes": "docs/notes/game-native-empty-methods.md",
+    "actual_relocations": [
+      {
+        "section": ".data",
+        "at": 8,
+        "address": 2150538768,
+        "kind": 1,
+        "symbol": "reset__24CurveRecordBase_802E9E08Fv",
+        "target": 2149268004,
+        "addend": 0
+      }
+    ],
+    "validation": {
+      "object_sha256": "e48451b4409e28285663ac967a9ed6879b5c7e405608c48b0e7818c2b31bafd8",
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "zero_byte_differences": true,
+      "all_emitted_allocated_bytes_accounted": true,
+      "relocations": 1,
+      "unlinked_relocations": 0,
+      "metadata_relocations": 1
+    },
+    "memcard_native_identity_migration": {
+      "description": "Current canonical identities and hashes verified after native CGCMemCardManipulator/CFSM ownership integration; original evidence is retained in immutable backups and explicit previous receipts.",
+      "production_verification": "scratch/memcard_native_vtable_20261020_parallel/production-verification.json",
+      "production_verification_sha256": "96e50e874bd53c148cd6395f670c040416c34699787d56726d8cfb010c340f31",
+      "migration_object_audit": "scratch/memcard_native_vtable_20261020_parallel/migration_object_audit.json",
+      "migration_object_audit_sha256": "b809560bf7212a505b2ea749256bef5263b4784d066bb311015e10928e90db9d",
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "unchanged_caller_objects": 344,
+      "native_objects": 6,
+      "native_actual_relocations": 281,
+      "previous_canonical_sha256": "98a4c6ba56aaadbf8c723b291eab50d401d29df532c9438391ed2d35d7cd0110",
+      "previous_canonical": "scratch/memcard_canonical_refresh_20261020_parallel/backups/config/GSQE78/candidates/game_native_empty_methods_20261011.json",
+      "previous_entry_json_pointer": "/0"
+    }
+  },
+  {
+    "status": "strict-isolated-match-root-integration-pending",
+    "source": "src/Game/remaining_vector_default_801D5330.cpp",
+    "source_sha256": "fdc08ce6eb9ad4aaddebab3047408bc7c9f81251577b99602fe82ac836dec140",
+    "headers": [
+      {
+        "path": "include/Game/engine_mesh_scratch_startup.h",
+        "sha256": "a486b6feef8433290b4a3678cea61de0a87821b8cb340aee154e8f84a6d48c30"
+      }
+    ],
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "off",
+      "-RTTI",
+      "off",
+      "-i",
+      "src/Game",
+      "-i",
+      "include"
+    ],
+    "source_kind": "c++",
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2149405488,
+        "end": 2149405492,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "__ct__16Vector3_801D5330Fv",
+        "address": 2149405488,
+        "size": 4,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [],
+    "unlinked_functions": [],
+    "dependency_symbols": [],
+    "verified_text_bytes": 4,
+    "verified_data_bytes": 0,
+    "notes": "docs/notes/game-native-empty-methods.md",
+    "actual_relocations": [],
+    "validation": {
+      "object_sha256": "9f0ea47a6bba4d5a6c542cdba4b940c16fa943a9c81814b3af0c28c99bb0d3b2",
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "zero_byte_differences": true,
+      "all_emitted_allocated_bytes_accounted": true,
+      "relocations": 0,
+      "unlinked_relocations": 0,
+      "metadata_relocations": 1
+    }
+  }
+]

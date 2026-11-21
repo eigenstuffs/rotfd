@@ -1,0 +1,89 @@
+{
+  "source": "src/dolphin/os/OSArena.c",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.2.5n",
+  "cflags": "-proc gekko -fp hardware -enum int -str reuse -common off -O4,p -inline auto -Cpp_exceptions off",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2148474740,
+      "end": 2148474772
+    },
+    {
+      "name": ".sdata",
+      "start": 2151111888,
+      "end": 2151111892
+    },
+    {
+      "name": ".sbss",
+      "start": 2151119112,
+      "end": 2151119116
+    }
+  ],
+  "functions": [
+    {
+      "name": "OSGetArenaHi",
+      "address": 2148474740,
+      "size": 8
+    },
+    {
+      "name": "OSGetArenaLo",
+      "address": 2148474748,
+      "size": 8
+    },
+    {
+      "name": "OSSetArenaHi",
+      "address": 2148474756,
+      "size": 8
+    },
+    {
+      "name": "OSSetArenaLo",
+      "address": 2148474764,
+      "size": 8
+    }
+  ],
+  "objects": [
+    {
+      "name": "__OSArenaLo",
+      "address": 2151111888,
+      "size": 4,
+      "section": ".sdata"
+    },
+    {
+      "name": "__OSArenaHi",
+      "address": 2151119112,
+      "size": 4,
+      "section": ".sbss"
+    }
+  ],
+  "symbol_scopes": {
+    "OSGetArenaHi": "global",
+    "OSGetArenaLo": "global",
+    "OSSetArenaHi": "global",
+    "OSSetArenaLo": "global",
+    "__OSArenaLo": "local",
+    "__OSArenaHi": "local"
+  },
+  "symbols": {
+    "PyType_Type": "0x802d68fc",
+    "OSGetArenaHi": "0x800f1f74",
+    "OSGetArenaLo": "0x800f1f7c",
+    "OSSetArenaHi": "0x800f1f84",
+    "OSSetArenaLo": "0x800f1f8c",
+    "__OSArenaLo": "0x80375cd0",
+    "__OSArenaHi": "0x80377908"
+  },
+  "external_original_names": {},
+  "verified_text_bytes": 32,
+  "verified_data_bytes": 4,
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "b353afe282341a777a064f6856b3d9087994bc9923cdbd399ea73123bc5e6554",
+    "matched_code": 32,
+    "matched_functions": 4,
+    "matched_data": 8,
+    "complete_data": 8,
+    "object_path": "build/GSQE78/src/dolphin/os/OSArena.o",
+    "object_sha256": "2aad71eb09f072b06c32171b265bba7ec2cfb503a01b5f3f70da3c6a2e43c980"
+  }
+}

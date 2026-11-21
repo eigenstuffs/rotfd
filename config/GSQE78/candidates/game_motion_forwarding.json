@@ -1,0 +1,4717 @@
+[
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/motion_forwarding_8009A930.cpp",
+    "source_sha256": "64aa94e88aacfc020ede6bfc16e1ec54146cdb47129b7c664430b244d5e6a390",
+    "source_kind": "c++",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "src/Game",
+      "-i",
+      "include",
+      "-i",
+      "/Users/brandenb/Downloads/rotfd/scratch/game_motion_forwarding"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/motion_forwarding.h",
+        "sha256": "6b34d0d78954b80f7eee06834582edfb0055c2cb7a55dfae2082ea6422eb16c5"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148116784,
+        "end": 2148116816,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147547288,
+        "end": 2147547296,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147594216,
+        "end": 2147594228,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_8009A930",
+        "address": 2148116784,
+        "size": 32,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@5",
+        "address": 2147547288,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@6",
+        "address": 2147594216,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "fn_8009AB58",
+        "section": ".text",
+        "address": 2148117336,
+        "scope": "global"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 12,
+        "address": 2148116796,
+        "kind": 10,
+        "symbol": "fn_8009AB58",
+        "target": 2148117336,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147594216,
+        "kind": 1,
+        "symbol": "fn_8009A930",
+        "target": 2148116784,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147594224,
+        "kind": 1,
+        "symbol": "@5",
+        "target": 2147547288,
+        "addend": 0
+      }
+    ],
+    "notes": "docs/notes/game-motion-forwarding.md",
+    "original_metadata_audit": {
+      "status": "all-original-table-ownership-retained",
+      "retained_ranges": [
+        {
+          "start": 2148116784,
+          "end": 2148116816
+        }
+      ],
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "entries": 3141,
+          "scanned_slots": 3144,
+          "references_to_retained_ranges": [
+            {
+              "entry_address": 2147594216,
+              "function": 2148116784,
+              "size": 32,
+              "extab": 2147547288,
+              "ownership": "retained-source"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "entries": 19,
+          "scanned_slots": 24,
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "entries": 3,
+          "scanned_slots": 8,
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "33708bb22ab97142a4ae48ae636d4b18fba48715f4420b788dee4f12250e3b58",
+      "retained_text_bytes": 32,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 3,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/motion_forwarding_8009A950.cpp",
+    "source_sha256": "1a06574ba5b713f27ea9c143ca09d5acfd6997718d850d2d2a828097a70a13b3",
+    "source_kind": "c++",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "src/Game",
+      "-i",
+      "include",
+      "-i",
+      "/Users/brandenb/Downloads/rotfd/scratch/game_motion_forwarding"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/motion_forwarding.h",
+        "sha256": "6b34d0d78954b80f7eee06834582edfb0055c2cb7a55dfae2082ea6422eb16c5"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148116816,
+        "end": 2148116868,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147547296,
+        "end": 2147547304,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147594228,
+        "end": 2147594240,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_8009A950",
+        "address": 2148116816,
+        "size": 52,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@5",
+        "address": 2147547296,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@6",
+        "address": 2147594228,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "fn_8007DCDC",
+        "section": ".text",
+        "address": 2147998940,
+        "scope": "global"
+      },
+      {
+        "name": "fn_8009BEE8",
+        "section": ".text",
+        "address": 2148122344,
+        "scope": "global"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 20,
+        "address": 2148116836,
+        "kind": 10,
+        "symbol": "fn_8009BEE8",
+        "target": 2148122344,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 28,
+        "address": 2148116844,
+        "kind": 10,
+        "symbol": "fn_8007DCDC",
+        "target": 2147998940,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147594228,
+        "kind": 1,
+        "symbol": "fn_8009A950",
+        "target": 2148116816,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147594236,
+        "kind": 1,
+        "symbol": "@5",
+        "target": 2147547296,
+        "addend": 0
+      }
+    ],
+    "notes": "docs/notes/game-motion-forwarding.md",
+    "original_metadata_audit": {
+      "status": "all-original-table-ownership-retained",
+      "retained_ranges": [
+        {
+          "start": 2148116816,
+          "end": 2148116868
+        }
+      ],
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "entries": 3141,
+          "scanned_slots": 3144,
+          "references_to_retained_ranges": [
+            {
+              "entry_address": 2147594228,
+              "function": 2148116816,
+              "size": 52,
+              "extab": 2147547296,
+              "ownership": "retained-source"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "entries": 19,
+          "scanned_slots": 24,
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "entries": 3,
+          "scanned_slots": 8,
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "9a98e27d74c498d700043f1f593f7eefdb9dd9f66818a25d255024741945e634",
+      "retained_text_bytes": 52,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 4,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/motion_forwarding_8009A984.cpp",
+    "source_sha256": "1cf739cedc08a481e09eca813d69a1642e3841e529a385c307e30368a4e7b59b",
+    "source_kind": "c++",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "src/Game",
+      "-i",
+      "include",
+      "-i",
+      "/Users/brandenb/Downloads/rotfd/scratch/game_motion_forwarding"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/motion_forwarding.h",
+        "sha256": "6b34d0d78954b80f7eee06834582edfb0055c2cb7a55dfae2082ea6422eb16c5"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148116868,
+        "end": 2148116900,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147547304,
+        "end": 2147547312,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147594240,
+        "end": 2147594252,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_8009A984",
+        "address": 2148116868,
+        "size": 32,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@5",
+        "address": 2147547304,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@6",
+        "address": 2147594240,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "fn_8009ACBC",
+        "section": ".text",
+        "address": 2148117692,
+        "scope": "global"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 12,
+        "address": 2148116880,
+        "kind": 10,
+        "symbol": "fn_8009ACBC",
+        "target": 2148117692,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147594240,
+        "kind": 1,
+        "symbol": "fn_8009A984",
+        "target": 2148116868,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147594248,
+        "kind": 1,
+        "symbol": "@5",
+        "target": 2147547304,
+        "addend": 0
+      }
+    ],
+    "notes": "docs/notes/game-motion-forwarding.md",
+    "original_metadata_audit": {
+      "status": "all-original-table-ownership-retained",
+      "retained_ranges": [
+        {
+          "start": 2148116868,
+          "end": 2148116900
+        }
+      ],
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "entries": 3141,
+          "scanned_slots": 3144,
+          "references_to_retained_ranges": [
+            {
+              "entry_address": 2147594240,
+              "function": 2148116868,
+              "size": 32,
+              "extab": 2147547304,
+              "ownership": "retained-source"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "entries": 19,
+          "scanned_slots": 24,
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "entries": 3,
+          "scanned_slots": 8,
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "25804b37216ced17e5faea46c506906c48d3750e05ddc1e38f717f661e6d272b",
+      "retained_text_bytes": 32,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 3,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/motion_forwarding_8009A9A4.cpp",
+    "source_sha256": "5eceab5b3f559e1286039021a1e8a60a907246351f84277635fc8a786ce0f20b",
+    "source_kind": "c++",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "src/Game",
+      "-i",
+      "include",
+      "-i",
+      "/Users/brandenb/Downloads/rotfd/scratch/game_motion_forwarding"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/motion_forwarding.h",
+        "sha256": "6b34d0d78954b80f7eee06834582edfb0055c2cb7a55dfae2082ea6422eb16c5"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148116900,
+        "end": 2148116932,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147547312,
+        "end": 2147547320,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147594252,
+        "end": 2147594264,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_8009A9A4",
+        "address": 2148116900,
+        "size": 32,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@5",
+        "address": 2147547312,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@6",
+        "address": 2147594252,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "fn_8009AEA4",
+        "section": ".text",
+        "address": 2148118180,
+        "scope": "global"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 12,
+        "address": 2148116912,
+        "kind": 10,
+        "symbol": "fn_8009AEA4",
+        "target": 2148118180,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147594252,
+        "kind": 1,
+        "symbol": "fn_8009A9A4",
+        "target": 2148116900,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147594260,
+        "kind": 1,
+        "symbol": "@5",
+        "target": 2147547312,
+        "addend": 0
+      }
+    ],
+    "notes": "docs/notes/game-motion-forwarding.md",
+    "original_metadata_audit": {
+      "status": "all-original-table-ownership-retained",
+      "retained_ranges": [
+        {
+          "start": 2148116900,
+          "end": 2148116932
+        }
+      ],
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "entries": 3141,
+          "scanned_slots": 3144,
+          "references_to_retained_ranges": [
+            {
+              "entry_address": 2147594252,
+              "function": 2148116900,
+              "size": 32,
+              "extab": 2147547312,
+              "ownership": "retained-source"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "entries": 19,
+          "scanned_slots": 24,
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "entries": 3,
+          "scanned_slots": 8,
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "a78f32c5aa0ab037d0b378eff9e4793a24d501a9a271a4f115ea6c51cd22ae5f",
+      "retained_text_bytes": 32,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 3,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/motion_forwarding_8009BEE8.cpp",
+    "source_sha256": "1d295e40baf4e6d426e6bba9f48e785d13a86483ec132f2386dc302e10afcab3",
+    "source_kind": "c++",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "src/Game",
+      "-i",
+      "include",
+      "-i",
+      "/Users/brandenb/Downloads/rotfd/scratch/game_motion_forwarding"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/motion_forwarding.h",
+        "sha256": "6b34d0d78954b80f7eee06834582edfb0055c2cb7a55dfae2082ea6422eb16c5"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148122344,
+        "end": 2148122376,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147547488,
+        "end": 2147547496,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147594408,
+        "end": 2147594420,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_8009BEE8",
+        "address": 2148122344,
+        "size": 32,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@5",
+        "address": 2147547488,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@6",
+        "address": 2147594408,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "fn_80224888",
+        "section": ".text",
+        "address": 2149730440,
+        "scope": "global"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 12,
+        "address": 2148122356,
+        "kind": 10,
+        "symbol": "fn_80224888",
+        "target": 2149730440,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147594408,
+        "kind": 1,
+        "symbol": "fn_8009BEE8",
+        "target": 2148122344,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147594416,
+        "kind": 1,
+        "symbol": "@5",
+        "target": 2147547488,
+        "addend": 0
+      }
+    ],
+    "notes": "docs/notes/game-motion-forwarding.md",
+    "original_metadata_audit": {
+      "status": "all-original-table-ownership-retained",
+      "retained_ranges": [
+        {
+          "start": 2148122344,
+          "end": 2148122376
+        }
+      ],
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "entries": 3141,
+          "scanned_slots": 3144,
+          "references_to_retained_ranges": [
+            {
+              "entry_address": 2147594408,
+              "function": 2148122344,
+              "size": 32,
+              "extab": 2147547488,
+              "ownership": "retained-source"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "entries": 19,
+          "scanned_slots": 24,
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "entries": 3,
+          "scanned_slots": 8,
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "3c465fda3323c9d569e82bf8797331185db096cbca766548412c61b13aba0919",
+      "retained_text_bytes": 32,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 3,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/motion_forwarding_8009FF54.cpp",
+    "source_sha256": "a214232f41ce9ef5ee09bcf23932192ea5fe531ae6552a72b7ef16b3470d8c48",
+    "source_kind": "c++",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "src/Game",
+      "-i",
+      "include",
+      "-i",
+      "/Users/brandenb/Downloads/rotfd/scratch/game_motion_forwarding"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/motion_forwarding.h",
+        "sha256": "6b34d0d78954b80f7eee06834582edfb0055c2cb7a55dfae2082ea6422eb16c5"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148138836,
+        "end": 2148138868,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147548400,
+        "end": 2147548408,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147595080,
+        "end": 2147595092,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_8009FF54",
+        "address": 2148138836,
+        "size": 32,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@5",
+        "address": 2147548400,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@6",
+        "address": 2147595080,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "fn_800A4DF0",
+        "section": ".text",
+        "address": 2148158960,
+        "scope": "global"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 12,
+        "address": 2148138848,
+        "kind": 10,
+        "symbol": "fn_800A4DF0",
+        "target": 2148158960,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147595080,
+        "kind": 1,
+        "symbol": "fn_8009FF54",
+        "target": 2148138836,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147595088,
+        "kind": 1,
+        "symbol": "@5",
+        "target": 2147548400,
+        "addend": 0
+      }
+    ],
+    "notes": "docs/notes/game-motion-forwarding.md",
+    "original_metadata_audit": {
+      "status": "all-original-table-ownership-retained",
+      "retained_ranges": [
+        {
+          "start": 2148138836,
+          "end": 2148138868
+        }
+      ],
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "entries": 3141,
+          "scanned_slots": 3144,
+          "references_to_retained_ranges": [
+            {
+              "entry_address": 2147595080,
+              "function": 2148138836,
+              "size": 32,
+              "extab": 2147548400,
+              "ownership": "retained-source"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "entries": 19,
+          "scanned_slots": 24,
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "entries": 3,
+          "scanned_slots": 8,
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "d00e46e4072e13373405cc25eb6e4a2ab0485b4299ea9fca0a689270ddf10c05",
+      "retained_text_bytes": 32,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 3,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/motion_forwarding_800A0C68.cpp",
+    "source_sha256": "34b40844e34e8e53ae440399ff2baff2558680f0c3afacab5ee33d4f321e4df0",
+    "source_kind": "c++",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "src/Game",
+      "-i",
+      "include",
+      "-i",
+      "/Users/brandenb/Downloads/rotfd/scratch/game_motion_forwarding"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/motion_forwarding.h",
+        "sha256": "6b34d0d78954b80f7eee06834582edfb0055c2cb7a55dfae2082ea6422eb16c5"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148142184,
+        "end": 2148142216,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147548528,
+        "end": 2147548536,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147595272,
+        "end": 2147595284,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800A0C68",
+        "address": 2148142184,
+        "size": 32,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@5",
+        "address": 2147548528,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@6",
+        "address": 2147595272,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "fn_800A4E50",
+        "section": ".text",
+        "address": 2148159056,
+        "scope": "global"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 12,
+        "address": 2148142196,
+        "kind": 10,
+        "symbol": "fn_800A4E50",
+        "target": 2148159056,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147595272,
+        "kind": 1,
+        "symbol": "fn_800A0C68",
+        "target": 2148142184,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147595280,
+        "kind": 1,
+        "symbol": "@5",
+        "target": 2147548528,
+        "addend": 0
+      }
+    ],
+    "notes": "docs/notes/game-motion-forwarding.md",
+    "original_metadata_audit": {
+      "status": "all-original-table-ownership-retained",
+      "retained_ranges": [
+        {
+          "start": 2148142184,
+          "end": 2148142216
+        }
+      ],
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "entries": 3141,
+          "scanned_slots": 3144,
+          "references_to_retained_ranges": [
+            {
+              "entry_address": 2147595272,
+              "function": 2148142184,
+              "size": 32,
+              "extab": 2147548528,
+              "ownership": "retained-source"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "entries": 19,
+          "scanned_slots": 24,
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "entries": 3,
+          "scanned_slots": 8,
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "4f702d53c2fe0a7ca2e7894db185ab885b7abc9a501c8a87d8a4cd09ba56efaf",
+      "retained_text_bytes": 32,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 3,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/motion_forwarding_800A1798.cpp",
+    "source_sha256": "11adcb363b169a70f3695225584d68c06bf548cb4f2c84d387f05949d647ada3",
+    "source_kind": "c++",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "src/Game",
+      "-i",
+      "include",
+      "-i",
+      "/Users/brandenb/Downloads/rotfd/scratch/game_motion_forwarding"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/motion_forwarding.h",
+        "sha256": "6b34d0d78954b80f7eee06834582edfb0055c2cb7a55dfae2082ea6422eb16c5"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148145048,
+        "end": 2148145080,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147548744,
+        "end": 2147548752,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147595596,
+        "end": 2147595608,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800A1798",
+        "address": 2148145048,
+        "size": 32,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@5",
+        "address": 2147548744,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@6",
+        "address": 2147595596,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "fn_800A4DF0",
+        "section": ".text",
+        "address": 2148158960,
+        "scope": "global"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 12,
+        "address": 2148145060,
+        "kind": 10,
+        "symbol": "fn_800A4DF0",
+        "target": 2148158960,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147595596,
+        "kind": 1,
+        "symbol": "fn_800A1798",
+        "target": 2148145048,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147595604,
+        "kind": 1,
+        "symbol": "@5",
+        "target": 2147548744,
+        "addend": 0
+      }
+    ],
+    "notes": "docs/notes/game-motion-forwarding.md",
+    "original_metadata_audit": {
+      "status": "all-original-table-ownership-retained",
+      "retained_ranges": [
+        {
+          "start": 2148145048,
+          "end": 2148145080
+        }
+      ],
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "entries": 3141,
+          "scanned_slots": 3144,
+          "references_to_retained_ranges": [
+            {
+              "entry_address": 2147595596,
+              "function": 2148145048,
+              "size": 32,
+              "extab": 2147548744,
+              "ownership": "retained-source"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "entries": 19,
+          "scanned_slots": 24,
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "entries": 3,
+          "scanned_slots": 8,
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "5e9051c025a9442101abeecb734beff60d3037c85a396f1e52e88e89b143ac1a",
+      "retained_text_bytes": 32,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 3,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/motion_forwarding_800A371C.cpp",
+    "source_sha256": "10eb687189092497b5360cb89c548834bd669e1a589f3bd5ffe712f54accd807",
+    "source_kind": "c++",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "src/Game",
+      "-i",
+      "include",
+      "-i",
+      "/Users/brandenb/Downloads/rotfd/scratch/game_motion_forwarding"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/motion_forwarding.h",
+        "sha256": "6b34d0d78954b80f7eee06834582edfb0055c2cb7a55dfae2082ea6422eb16c5"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148153116,
+        "end": 2148153148,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147549888,
+        "end": 2147549896,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147596148,
+        "end": 2147596160,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800A371C",
+        "address": 2148153116,
+        "size": 32,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@7",
+        "address": 2147549888,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@8",
+        "address": 2147596148,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "fn_8009E640",
+        "section": ".text",
+        "address": 2148132416,
+        "scope": "global"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 12,
+        "address": 2148153128,
+        "kind": 10,
+        "symbol": "fn_8009E640",
+        "target": 2148132416,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147596148,
+        "kind": 1,
+        "symbol": "fn_800A371C",
+        "target": 2148153116,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147596156,
+        "kind": 1,
+        "symbol": "@7",
+        "target": 2147549888,
+        "addend": 0
+      }
+    ],
+    "notes": "docs/notes/game-motion-forwarding.md",
+    "original_metadata_audit": {
+      "status": "all-original-table-ownership-retained",
+      "retained_ranges": [
+        {
+          "start": 2148153116,
+          "end": 2148153148
+        }
+      ],
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "entries": 3141,
+          "scanned_slots": 3144,
+          "references_to_retained_ranges": [
+            {
+              "entry_address": 2147596148,
+              "function": 2148153116,
+              "size": 32,
+              "extab": 2147549888,
+              "ownership": "retained-source"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "entries": 19,
+          "scanned_slots": 24,
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "entries": 3,
+          "scanned_slots": 8,
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "7a64cce99f6b8c740698df0750b4981fefeb2df122d3363ee94e1e94d4516255",
+      "retained_text_bytes": 32,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 3,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/motion_forwarding_800A42E4.cpp",
+    "source_sha256": "0d5961bc0bcfc5cf4cfe2bce1172e73534b715e5bff874902fcc665c9f4a6ee6",
+    "source_kind": "c++",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "src/Game",
+      "-i",
+      "include",
+      "-i",
+      "/Users/brandenb/Downloads/rotfd/scratch/game_motion_forwarding"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/motion_forwarding.h",
+        "sha256": "6b34d0d78954b80f7eee06834582edfb0055c2cb7a55dfae2082ea6422eb16c5"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148156132,
+        "end": 2148156164,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147550344,
+        "end": 2147550352,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147596436,
+        "end": 2147596448,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800A42E4",
+        "address": 2148156132,
+        "size": 32,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@5",
+        "address": 2147550344,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@6",
+        "address": 2147596436,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "fn_8009DF78",
+        "section": ".text",
+        "address": 2148130680,
+        "scope": "global"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 12,
+        "address": 2148156144,
+        "kind": 10,
+        "symbol": "fn_8009DF78",
+        "target": 2148130680,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147596436,
+        "kind": 1,
+        "symbol": "fn_800A42E4",
+        "target": 2148156132,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147596444,
+        "kind": 1,
+        "symbol": "@5",
+        "target": 2147550344,
+        "addend": 0
+      }
+    ],
+    "notes": "docs/notes/game-motion-forwarding.md",
+    "original_metadata_audit": {
+      "status": "all-original-table-ownership-retained",
+      "retained_ranges": [
+        {
+          "start": 2148156132,
+          "end": 2148156164
+        }
+      ],
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "entries": 3141,
+          "scanned_slots": 3144,
+          "references_to_retained_ranges": [
+            {
+              "entry_address": 2147596436,
+              "function": 2148156132,
+              "size": 32,
+              "extab": 2147550344,
+              "ownership": "retained-source"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "entries": 19,
+          "scanned_slots": 24,
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "entries": 3,
+          "scanned_slots": 8,
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "60efabffc091014cd5b92889a6ee8cddcf2095ff6391675736135e9b1c7c00cf",
+      "retained_text_bytes": 32,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 3,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/motion_forwarding_800A4304.cpp",
+    "source_sha256": "cb365db2be3646c6ec14fb9e08cdd3d2b25ce95e883bfbe88915074ef4177c7e",
+    "source_kind": "c++",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "src/Game",
+      "-i",
+      "include",
+      "-i",
+      "/Users/brandenb/Downloads/rotfd/scratch/game_motion_forwarding"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/motion_forwarding.h",
+        "sha256": "6b34d0d78954b80f7eee06834582edfb0055c2cb7a55dfae2082ea6422eb16c5"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148156164,
+        "end": 2148156196,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147550352,
+        "end": 2147550360,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147596448,
+        "end": 2147596460,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800A4304",
+        "address": 2148156164,
+        "size": 32,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@7",
+        "address": 2147550352,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@8",
+        "address": 2147596448,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "fn_8009E640",
+        "section": ".text",
+        "address": 2148132416,
+        "scope": "global"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 12,
+        "address": 2148156176,
+        "kind": 10,
+        "symbol": "fn_8009E640",
+        "target": 2148132416,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147596448,
+        "kind": 1,
+        "symbol": "fn_800A4304",
+        "target": 2148156164,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147596456,
+        "kind": 1,
+        "symbol": "@7",
+        "target": 2147550352,
+        "addend": 0
+      }
+    ],
+    "notes": "docs/notes/game-motion-forwarding.md",
+    "original_metadata_audit": {
+      "status": "all-original-table-ownership-retained",
+      "retained_ranges": [
+        {
+          "start": 2148156164,
+          "end": 2148156196
+        }
+      ],
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "entries": 3141,
+          "scanned_slots": 3144,
+          "references_to_retained_ranges": [
+            {
+              "entry_address": 2147596448,
+              "function": 2148156164,
+              "size": 32,
+              "extab": 2147550352,
+              "ownership": "retained-source"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "entries": 19,
+          "scanned_slots": 24,
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "entries": 3,
+          "scanned_slots": 8,
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "408857647b490fedbb3dd6cbfca43112ca5733ff8dbb950c6ef7811b00712e4e",
+      "retained_text_bytes": 32,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 3,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/motion_forwarding_800A4CA0.cpp",
+    "source_sha256": "a9b4ecb5b8627348c18733e6fe6960c3245cb940ebb9c00416721692a0affec0",
+    "source_kind": "c++",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "src/Game",
+      "-i",
+      "include",
+      "-i",
+      "/Users/brandenb/Downloads/rotfd/scratch/game_motion_forwarding"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/motion_forwarding.h",
+        "sha256": "6b34d0d78954b80f7eee06834582edfb0055c2cb7a55dfae2082ea6422eb16c5"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148158624,
+        "end": 2148158656,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147550736,
+        "end": 2147550744,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147596676,
+        "end": 2147596688,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800A4CA0",
+        "address": 2148158624,
+        "size": 32,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@5",
+        "address": 2147550736,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@6",
+        "address": 2147596676,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "fn_8009DF78",
+        "section": ".text",
+        "address": 2148130680,
+        "scope": "global"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 12,
+        "address": 2148158636,
+        "kind": 10,
+        "symbol": "fn_8009DF78",
+        "target": 2148130680,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147596676,
+        "kind": 1,
+        "symbol": "fn_800A4CA0",
+        "target": 2148158624,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147596684,
+        "kind": 1,
+        "symbol": "@5",
+        "target": 2147550736,
+        "addend": 0
+      }
+    ],
+    "notes": "docs/notes/game-motion-forwarding.md",
+    "original_metadata_audit": {
+      "status": "all-original-table-ownership-retained",
+      "retained_ranges": [
+        {
+          "start": 2148158624,
+          "end": 2148158656
+        }
+      ],
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "entries": 3141,
+          "scanned_slots": 3144,
+          "references_to_retained_ranges": [
+            {
+              "entry_address": 2147596676,
+              "function": 2148158624,
+              "size": 32,
+              "extab": 2147550736,
+              "ownership": "retained-source"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "entries": 19,
+          "scanned_slots": 24,
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "entries": 3,
+          "scanned_slots": 8,
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "29bf4e589263f9670619f705801dfacdc208e1c74b948f2b716691bfbd5c3082",
+      "retained_text_bytes": 32,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 3,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/motion_forwarding_800A4CC0.cpp",
+    "source_sha256": "4ccb1c93b05116808c6c0668c8eb183e598216c3826f52f3eed0c7670cf8d7f0",
+    "source_kind": "c++",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "src/Game",
+      "-i",
+      "include",
+      "-i",
+      "/Users/brandenb/Downloads/rotfd/scratch/game_motion_forwarding"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/motion_forwarding.h",
+        "sha256": "6b34d0d78954b80f7eee06834582edfb0055c2cb7a55dfae2082ea6422eb16c5"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148158656,
+        "end": 2148158688,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147550744,
+        "end": 2147550752,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147596688,
+        "end": 2147596700,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800A4CC0",
+        "address": 2148158656,
+        "size": 32,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@7",
+        "address": 2147550744,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@8",
+        "address": 2147596688,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "fn_8009E640",
+        "section": ".text",
+        "address": 2148132416,
+        "scope": "global"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 12,
+        "address": 2148158668,
+        "kind": 10,
+        "symbol": "fn_8009E640",
+        "target": 2148132416,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147596688,
+        "kind": 1,
+        "symbol": "fn_800A4CC0",
+        "target": 2148158656,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147596696,
+        "kind": 1,
+        "symbol": "@7",
+        "target": 2147550744,
+        "addend": 0
+      }
+    ],
+    "notes": "docs/notes/game-motion-forwarding.md",
+    "original_metadata_audit": {
+      "status": "all-original-table-ownership-retained",
+      "retained_ranges": [
+        {
+          "start": 2148158656,
+          "end": 2148158688
+        }
+      ],
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "entries": 3141,
+          "scanned_slots": 3144,
+          "references_to_retained_ranges": [
+            {
+              "entry_address": 2147596688,
+              "function": 2148158656,
+              "size": 32,
+              "extab": 2147550744,
+              "ownership": "retained-source"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "entries": 19,
+          "scanned_slots": 24,
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "entries": 3,
+          "scanned_slots": 8,
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "03792064b275157f52fd3d1f40717825e1d87d69426f868678412bd8082a1f0a",
+      "retained_text_bytes": 32,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 3,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/motion_forwarding_800A4D2C.cpp",
+    "source_sha256": "5055bd5421db4a87726aeb10110c64f64f4260267f167e11ed96f2754087cbab",
+    "source_kind": "c++",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "src/Game",
+      "-i",
+      "include",
+      "-i",
+      "/Users/brandenb/Downloads/rotfd/scratch/game_motion_forwarding"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/motion_forwarding.h",
+        "sha256": "6b34d0d78954b80f7eee06834582edfb0055c2cb7a55dfae2082ea6422eb16c5"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148158764,
+        "end": 2148158796,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147550760,
+        "end": 2147550768,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147596712,
+        "end": 2147596724,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800A4D2C",
+        "address": 2148158764,
+        "size": 32,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@5",
+        "address": 2147550760,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@6",
+        "address": 2147596712,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "fn_800A3798",
+        "section": ".text",
+        "address": 2148153240,
+        "scope": "global"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 12,
+        "address": 2148158776,
+        "kind": 10,
+        "symbol": "fn_800A3798",
+        "target": 2148153240,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147596712,
+        "kind": 1,
+        "symbol": "fn_800A4D2C",
+        "target": 2148158764,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147596720,
+        "kind": 1,
+        "symbol": "@5",
+        "target": 2147550760,
+        "addend": 0
+      }
+    ],
+    "notes": "docs/notes/game-motion-forwarding.md",
+    "original_metadata_audit": {
+      "status": "all-original-table-ownership-retained",
+      "retained_ranges": [
+        {
+          "start": 2148158764,
+          "end": 2148158796
+        }
+      ],
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "entries": 3141,
+          "scanned_slots": 3144,
+          "references_to_retained_ranges": [
+            {
+              "entry_address": 2147596712,
+              "function": 2148158764,
+              "size": 32,
+              "extab": 2147550760,
+              "ownership": "retained-source"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "entries": 19,
+          "scanned_slots": 24,
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "entries": 3,
+          "scanned_slots": 8,
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "5cd0bad871ff845627cb50038acd66a167a34d14d929be8fc160c61188624403",
+      "retained_text_bytes": 32,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 3,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/motion_forwarding_800A4D4C.cpp",
+    "source_sha256": "eb0590c35d526cecddf41ab2df9221bac809fd6ff97bdb652816823747515409",
+    "source_kind": "c++",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "src/Game",
+      "-i",
+      "include",
+      "-i",
+      "/Users/brandenb/Downloads/rotfd/scratch/game_motion_forwarding"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/motion_forwarding.h",
+        "sha256": "6b34d0d78954b80f7eee06834582edfb0055c2cb7a55dfae2082ea6422eb16c5"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148158796,
+        "end": 2148158828,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147550768,
+        "end": 2147550776,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147596724,
+        "end": 2147596736,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800A4D4C",
+        "address": 2148158796,
+        "size": 32,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@5",
+        "address": 2147550768,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@6",
+        "address": 2147596724,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "fn_800A379C",
+        "section": ".text",
+        "address": 2148153244,
+        "scope": "global"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 12,
+        "address": 2148158808,
+        "kind": 10,
+        "symbol": "fn_800A379C",
+        "target": 2148153244,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147596724,
+        "kind": 1,
+        "symbol": "fn_800A4D4C",
+        "target": 2148158796,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147596732,
+        "kind": 1,
+        "symbol": "@5",
+        "target": 2147550768,
+        "addend": 0
+      }
+    ],
+    "notes": "docs/notes/game-motion-forwarding.md",
+    "original_metadata_audit": {
+      "status": "all-original-table-ownership-retained",
+      "retained_ranges": [
+        {
+          "start": 2148158796,
+          "end": 2148158828
+        }
+      ],
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "entries": 3141,
+          "scanned_slots": 3144,
+          "references_to_retained_ranges": [
+            {
+              "entry_address": 2147596724,
+              "function": 2148158796,
+              "size": 32,
+              "extab": 2147550768,
+              "ownership": "retained-source"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "entries": 19,
+          "scanned_slots": 24,
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "entries": 3,
+          "scanned_slots": 8,
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "7993781f4be0d8cc198a7d010f29957d7351769f83709d0d386dcb7a4a7f735e",
+      "retained_text_bytes": 32,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 3,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/motion_forwarding_800A4D6C.cpp",
+    "source_sha256": "b036024226228d69ea950ae5239ba3537c4fd5d11184476899086ca3849df4b7",
+    "source_kind": "c++",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "src/Game",
+      "-i",
+      "include",
+      "-i",
+      "/Users/brandenb/Downloads/rotfd/scratch/game_motion_forwarding"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/motion_forwarding.h",
+        "sha256": "6b34d0d78954b80f7eee06834582edfb0055c2cb7a55dfae2082ea6422eb16c5"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148158828,
+        "end": 2148158860,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147550776,
+        "end": 2147550784,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147596736,
+        "end": 2147596748,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800A4D6C",
+        "address": 2148158828,
+        "size": 32,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@5",
+        "address": 2147550776,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@6",
+        "address": 2147596736,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "fn_800A37D0",
+        "section": ".text",
+        "address": 2148153296,
+        "scope": "global"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 12,
+        "address": 2148158840,
+        "kind": 10,
+        "symbol": "fn_800A37D0",
+        "target": 2148153296,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147596736,
+        "kind": 1,
+        "symbol": "fn_800A4D6C",
+        "target": 2148158828,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147596744,
+        "kind": 1,
+        "symbol": "@5",
+        "target": 2147550776,
+        "addend": 0
+      }
+    ],
+    "notes": "docs/notes/game-motion-forwarding.md",
+    "original_metadata_audit": {
+      "status": "all-original-table-ownership-retained",
+      "retained_ranges": [
+        {
+          "start": 2148158828,
+          "end": 2148158860
+        }
+      ],
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "entries": 3141,
+          "scanned_slots": 3144,
+          "references_to_retained_ranges": [
+            {
+              "entry_address": 2147596736,
+              "function": 2148158828,
+              "size": 32,
+              "extab": 2147550776,
+              "ownership": "retained-source"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "entries": 19,
+          "scanned_slots": 24,
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "entries": 3,
+          "scanned_slots": 8,
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "a87de836d39136c2f73c7c84c13bbe52c273e9a9215a7711520a54fe7a3f86c1",
+      "retained_text_bytes": 32,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 3,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/motion_forwarding_800A4D8C.cpp",
+    "source_sha256": "01c5ff1434d02db7817c01010cfd8cca8265aac4a17c3e1c1c6e4683bd9ed869",
+    "source_kind": "c++",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "src/Game",
+      "-i",
+      "include",
+      "-i",
+      "/Users/brandenb/Downloads/rotfd/scratch/game_motion_forwarding"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/motion_forwarding.h",
+        "sha256": "6b34d0d78954b80f7eee06834582edfb0055c2cb7a55dfae2082ea6422eb16c5"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148158860,
+        "end": 2148158892,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147550784,
+        "end": 2147550792,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147596748,
+        "end": 2147596760,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800A4D8C",
+        "address": 2148158860,
+        "size": 32,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@5",
+        "address": 2147550784,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@6",
+        "address": 2147596748,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "fn_800A386C",
+        "section": ".text",
+        "address": 2148153452,
+        "scope": "global"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 12,
+        "address": 2148158872,
+        "kind": 10,
+        "symbol": "fn_800A386C",
+        "target": 2148153452,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147596748,
+        "kind": 1,
+        "symbol": "fn_800A4D8C",
+        "target": 2148158860,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147596756,
+        "kind": 1,
+        "symbol": "@5",
+        "target": 2147550784,
+        "addend": 0
+      }
+    ],
+    "notes": "docs/notes/game-motion-forwarding.md",
+    "original_metadata_audit": {
+      "status": "all-original-table-ownership-retained",
+      "retained_ranges": [
+        {
+          "start": 2148158860,
+          "end": 2148158892
+        }
+      ],
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "entries": 3141,
+          "scanned_slots": 3144,
+          "references_to_retained_ranges": [
+            {
+              "entry_address": 2147596748,
+              "function": 2148158860,
+              "size": 32,
+              "extab": 2147550784,
+              "ownership": "retained-source"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "entries": 19,
+          "scanned_slots": 24,
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "entries": 3,
+          "scanned_slots": 8,
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "15f4df6334a618c6bc6764cd684467eb0faacf87b014d6c35acd85bc50bf15f9",
+      "retained_text_bytes": 32,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 3,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/motion_forwarding_800A4DF0.cpp",
+    "source_sha256": "8f238eb1c1e502a7e940414af56a5a289843cd628f617d1f78241a7cdf0267e4",
+    "source_kind": "c++",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "src/Game",
+      "-i",
+      "include",
+      "-i",
+      "/Users/brandenb/Downloads/rotfd/scratch/game_motion_forwarding"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/motion_forwarding.h",
+        "sha256": "6b34d0d78954b80f7eee06834582edfb0055c2cb7a55dfae2082ea6422eb16c5"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148158960,
+        "end": 2148158992,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147550800,
+        "end": 2147550808,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147596772,
+        "end": 2147596784,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800A4DF0",
+        "address": 2148158960,
+        "size": 32,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@5",
+        "address": 2147550800,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@6",
+        "address": 2147596772,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "fn_800A3798",
+        "section": ".text",
+        "address": 2148153240,
+        "scope": "global"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 12,
+        "address": 2148158972,
+        "kind": 10,
+        "symbol": "fn_800A3798",
+        "target": 2148153240,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147596772,
+        "kind": 1,
+        "symbol": "fn_800A4DF0",
+        "target": 2148158960,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147596780,
+        "kind": 1,
+        "symbol": "@5",
+        "target": 2147550800,
+        "addend": 0
+      }
+    ],
+    "notes": "docs/notes/game-motion-forwarding.md",
+    "original_metadata_audit": {
+      "status": "all-original-table-ownership-retained",
+      "retained_ranges": [
+        {
+          "start": 2148158960,
+          "end": 2148158992
+        }
+      ],
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "entries": 3141,
+          "scanned_slots": 3144,
+          "references_to_retained_ranges": [
+            {
+              "entry_address": 2147596772,
+              "function": 2148158960,
+              "size": 32,
+              "extab": 2147550800,
+              "ownership": "retained-source"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "entries": 19,
+          "scanned_slots": 24,
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "entries": 3,
+          "scanned_slots": 8,
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "7ab74bbe098fada461acc4734fbf42b33da7de1c9669bb12d3099c2e81105c69",
+      "retained_text_bytes": 32,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 3,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/motion_forwarding_800A4E10.cpp",
+    "source_sha256": "27d2039acc61d995f833eb8790ef12feb402ac88d333dd2de37f2774fb76b0e2",
+    "source_kind": "c++",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "src/Game",
+      "-i",
+      "include",
+      "-i",
+      "/Users/brandenb/Downloads/rotfd/scratch/game_motion_forwarding"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/motion_forwarding.h",
+        "sha256": "6b34d0d78954b80f7eee06834582edfb0055c2cb7a55dfae2082ea6422eb16c5"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148158992,
+        "end": 2148159024,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147550808,
+        "end": 2147550816,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147596784,
+        "end": 2147596796,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800A4E10",
+        "address": 2148158992,
+        "size": 32,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@5",
+        "address": 2147550808,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@6",
+        "address": 2147596784,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "fn_800A379C",
+        "section": ".text",
+        "address": 2148153244,
+        "scope": "global"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 12,
+        "address": 2148159004,
+        "kind": 10,
+        "symbol": "fn_800A379C",
+        "target": 2148153244,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147596784,
+        "kind": 1,
+        "symbol": "fn_800A4E10",
+        "target": 2148158992,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147596792,
+        "kind": 1,
+        "symbol": "@5",
+        "target": 2147550808,
+        "addend": 0
+      }
+    ],
+    "notes": "docs/notes/game-motion-forwarding.md",
+    "original_metadata_audit": {
+      "status": "all-original-table-ownership-retained",
+      "retained_ranges": [
+        {
+          "start": 2148158992,
+          "end": 2148159024
+        }
+      ],
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "entries": 3141,
+          "scanned_slots": 3144,
+          "references_to_retained_ranges": [
+            {
+              "entry_address": 2147596784,
+              "function": 2148158992,
+              "size": 32,
+              "extab": 2147550808,
+              "ownership": "retained-source"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "entries": 19,
+          "scanned_slots": 24,
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "entries": 3,
+          "scanned_slots": 8,
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "e7dd8bc831c5f31d9b71c522f37f04387f372be4236e166ac1cea1364be8c2c2",
+      "retained_text_bytes": 32,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 3,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/motion_forwarding_800A4E30.cpp",
+    "source_sha256": "f8126391ababc333d968b0bca6bc2026db72b87147cb34dd57c363df912f6ec0",
+    "source_kind": "c++",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "src/Game",
+      "-i",
+      "include",
+      "-i",
+      "/Users/brandenb/Downloads/rotfd/scratch/game_motion_forwarding"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/motion_forwarding.h",
+        "sha256": "6b34d0d78954b80f7eee06834582edfb0055c2cb7a55dfae2082ea6422eb16c5"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148159024,
+        "end": 2148159056,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147550816,
+        "end": 2147550824,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147596796,
+        "end": 2147596808,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800A4E30",
+        "address": 2148159024,
+        "size": 32,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@5",
+        "address": 2147550816,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@6",
+        "address": 2147596796,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "fn_800A37D0",
+        "section": ".text",
+        "address": 2148153296,
+        "scope": "global"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 12,
+        "address": 2148159036,
+        "kind": 10,
+        "symbol": "fn_800A37D0",
+        "target": 2148153296,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147596796,
+        "kind": 1,
+        "symbol": "fn_800A4E30",
+        "target": 2148159024,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147596804,
+        "kind": 1,
+        "symbol": "@5",
+        "target": 2147550816,
+        "addend": 0
+      }
+    ],
+    "notes": "docs/notes/game-motion-forwarding.md",
+    "original_metadata_audit": {
+      "status": "all-original-table-ownership-retained",
+      "retained_ranges": [
+        {
+          "start": 2148159024,
+          "end": 2148159056
+        }
+      ],
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "entries": 3141,
+          "scanned_slots": 3144,
+          "references_to_retained_ranges": [
+            {
+              "entry_address": 2147596796,
+              "function": 2148159024,
+              "size": 32,
+              "extab": 2147550816,
+              "ownership": "retained-source"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "entries": 19,
+          "scanned_slots": 24,
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "entries": 3,
+          "scanned_slots": 8,
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "7eed7947701cf99da9e7efe3ede95e7d7cff13e6737d9b5529f3d7b6b2b895be",
+      "retained_text_bytes": 32,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 3,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/motion_forwarding_800A4E50.cpp",
+    "source_sha256": "0394ba2fdf1521790ef995967d25cad4059f4e35e121afd0cb5c0bd607e5dbe0",
+    "source_kind": "c++",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "src/Game",
+      "-i",
+      "include",
+      "-i",
+      "/Users/brandenb/Downloads/rotfd/scratch/game_motion_forwarding"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/motion_forwarding.h",
+        "sha256": "6b34d0d78954b80f7eee06834582edfb0055c2cb7a55dfae2082ea6422eb16c5"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148159056,
+        "end": 2148159088,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147550824,
+        "end": 2147550832,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147596808,
+        "end": 2147596820,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800A4E50",
+        "address": 2148159056,
+        "size": 32,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@5",
+        "address": 2147550824,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@6",
+        "address": 2147596808,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "fn_800A386C",
+        "section": ".text",
+        "address": 2148153452,
+        "scope": "global"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 12,
+        "address": 2148159068,
+        "kind": 10,
+        "symbol": "fn_800A386C",
+        "target": 2148153452,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147596808,
+        "kind": 1,
+        "symbol": "fn_800A4E50",
+        "target": 2148159056,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147596816,
+        "kind": 1,
+        "symbol": "@5",
+        "target": 2147550824,
+        "addend": 0
+      }
+    ],
+    "notes": "docs/notes/game-motion-forwarding.md",
+    "original_metadata_audit": {
+      "status": "all-original-table-ownership-retained",
+      "retained_ranges": [
+        {
+          "start": 2148159056,
+          "end": 2148159088
+        }
+      ],
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "entries": 3141,
+          "scanned_slots": 3144,
+          "references_to_retained_ranges": [
+            {
+              "entry_address": 2147596808,
+              "function": 2148159056,
+              "size": 32,
+              "extab": 2147550824,
+              "ownership": "retained-source"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "entries": 19,
+          "scanned_slots": 24,
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "entries": 3,
+          "scanned_slots": 8,
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "d3fa3d55b52340b8970d72aee12e8289751949fc560028937c0b670adadb7a33",
+      "retained_text_bytes": 32,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 3,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/motion_forwarding_800A4EAC.cpp",
+    "source_sha256": "57ba0250653555b7f3d73241e64f0602477f6c68c6a136af03c32297b9a076bf",
+    "source_kind": "c++",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "src/Game",
+      "-i",
+      "include",
+      "-i",
+      "/Users/brandenb/Downloads/rotfd/scratch/game_motion_forwarding"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/motion_forwarding.h",
+        "sha256": "6b34d0d78954b80f7eee06834582edfb0055c2cb7a55dfae2082ea6422eb16c5"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148159148,
+        "end": 2148159180,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147550840,
+        "end": 2147550848,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147596832,
+        "end": 2147596844,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800A4EAC",
+        "address": 2148159148,
+        "size": 32,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@5",
+        "address": 2147550840,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@6",
+        "address": 2147596832,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "fn_800A3798",
+        "section": ".text",
+        "address": 2148153240,
+        "scope": "global"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 12,
+        "address": 2148159160,
+        "kind": 10,
+        "symbol": "fn_800A3798",
+        "target": 2148153240,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147596832,
+        "kind": 1,
+        "symbol": "fn_800A4EAC",
+        "target": 2148159148,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147596840,
+        "kind": 1,
+        "symbol": "@5",
+        "target": 2147550840,
+        "addend": 0
+      }
+    ],
+    "notes": "docs/notes/game-motion-forwarding.md",
+    "original_metadata_audit": {
+      "status": "all-original-table-ownership-retained",
+      "retained_ranges": [
+        {
+          "start": 2148159148,
+          "end": 2148159180
+        }
+      ],
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "entries": 3141,
+          "scanned_slots": 3144,
+          "references_to_retained_ranges": [
+            {
+              "entry_address": 2147596832,
+              "function": 2148159148,
+              "size": 32,
+              "extab": 2147550840,
+              "ownership": "retained-source"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "entries": 19,
+          "scanned_slots": 24,
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "entries": 3,
+          "scanned_slots": 8,
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "22deb448b2ba9a3662dc92c6109193153a251dc5f770a287fc7816369f39c641",
+      "retained_text_bytes": 32,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 3,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/motion_forwarding_800A4ECC.cpp",
+    "source_sha256": "7fd6228ff6bf3de763b48e28e0196c6b89f00940556f787b4ac0604533a99099",
+    "source_kind": "c++",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "src/Game",
+      "-i",
+      "include",
+      "-i",
+      "/Users/brandenb/Downloads/rotfd/scratch/game_motion_forwarding"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/motion_forwarding.h",
+        "sha256": "6b34d0d78954b80f7eee06834582edfb0055c2cb7a55dfae2082ea6422eb16c5"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148159180,
+        "end": 2148159212,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147550848,
+        "end": 2147550856,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147596844,
+        "end": 2147596856,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800A4ECC",
+        "address": 2148159180,
+        "size": 32,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@5",
+        "address": 2147550848,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@6",
+        "address": 2147596844,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "fn_800A379C",
+        "section": ".text",
+        "address": 2148153244,
+        "scope": "global"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 12,
+        "address": 2148159192,
+        "kind": 10,
+        "symbol": "fn_800A379C",
+        "target": 2148153244,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147596844,
+        "kind": 1,
+        "symbol": "fn_800A4ECC",
+        "target": 2148159180,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147596852,
+        "kind": 1,
+        "symbol": "@5",
+        "target": 2147550848,
+        "addend": 0
+      }
+    ],
+    "notes": "docs/notes/game-motion-forwarding.md",
+    "original_metadata_audit": {
+      "status": "all-original-table-ownership-retained",
+      "retained_ranges": [
+        {
+          "start": 2148159180,
+          "end": 2148159212
+        }
+      ],
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "entries": 3141,
+          "scanned_slots": 3144,
+          "references_to_retained_ranges": [
+            {
+              "entry_address": 2147596844,
+              "function": 2148159180,
+              "size": 32,
+              "extab": 2147550848,
+              "ownership": "retained-source"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "entries": 19,
+          "scanned_slots": 24,
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "entries": 3,
+          "scanned_slots": 8,
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "6fe6a216f0317fe70db5018c6a8aa2e4e1e49e2fd4f54424dae315c669bafbe6",
+      "retained_text_bytes": 32,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 3,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/motion_forwarding_800A4EEC.cpp",
+    "source_sha256": "abc13be9d8fd263c780f70e38b3750487c9553bffe5cf2acc176639bec76bb34",
+    "source_kind": "c++",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "src/Game",
+      "-i",
+      "include",
+      "-i",
+      "/Users/brandenb/Downloads/rotfd/scratch/game_motion_forwarding"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/motion_forwarding.h",
+        "sha256": "6b34d0d78954b80f7eee06834582edfb0055c2cb7a55dfae2082ea6422eb16c5"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148159212,
+        "end": 2148159244,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147550856,
+        "end": 2147550864,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147596856,
+        "end": 2147596868,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800A4EEC",
+        "address": 2148159212,
+        "size": 32,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@5",
+        "address": 2147550856,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@6",
+        "address": 2147596856,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "fn_800A37D0",
+        "section": ".text",
+        "address": 2148153296,
+        "scope": "global"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 12,
+        "address": 2148159224,
+        "kind": 10,
+        "symbol": "fn_800A37D0",
+        "target": 2148153296,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147596856,
+        "kind": 1,
+        "symbol": "fn_800A4EEC",
+        "target": 2148159212,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147596864,
+        "kind": 1,
+        "symbol": "@5",
+        "target": 2147550856,
+        "addend": 0
+      }
+    ],
+    "notes": "docs/notes/game-motion-forwarding.md",
+    "original_metadata_audit": {
+      "status": "all-original-table-ownership-retained",
+      "retained_ranges": [
+        {
+          "start": 2148159212,
+          "end": 2148159244
+        }
+      ],
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "entries": 3141,
+          "scanned_slots": 3144,
+          "references_to_retained_ranges": [
+            {
+              "entry_address": 2147596856,
+              "function": 2148159212,
+              "size": 32,
+              "extab": 2147550856,
+              "ownership": "retained-source"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "entries": 19,
+          "scanned_slots": 24,
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "entries": 3,
+          "scanned_slots": 8,
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "6f3e41b90f339f31b39f42c74e8a9f258ccb5f16b86cd213a4e9cbeb9042a3e9",
+      "retained_text_bytes": 32,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 3,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-complete-allocated-byte-match",
+    "source": "src/Game/motion_forwarding_800A4F0C.cpp",
+    "source_sha256": "b9bb4726aa95483ea725d48348422622a1d28148a0ab7a07ceaa6984653dc32c",
+    "source_kind": "c++",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-RTTI",
+      "off",
+      "-use_lmw_stmw",
+      "on",
+      "-i",
+      "src/Game",
+      "-i",
+      "include",
+      "-i",
+      "/Users/brandenb/Downloads/rotfd/scratch/game_motion_forwarding"
+    ],
+    "headers": [
+      {
+        "path": "include/Game/motion_forwarding.h",
+        "sha256": "6b34d0d78954b80f7eee06834582edfb0055c2cb7a55dfae2082ea6422eb16c5"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148159244,
+        "end": 2148159276,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147550864,
+        "end": 2147550872,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147596868,
+        "end": 2147596880,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800A4F0C",
+        "address": 2148159244,
+        "size": 32,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@5",
+        "address": 2147550864,
+        "size": 8,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@6",
+        "address": 2147596868,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "dependency_symbols": [
+      {
+        "name": "fn_800A386C",
+        "section": ".text",
+        "address": 2148153452,
+        "scope": "global"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 12,
+        "address": 2148159256,
+        "kind": 10,
+        "symbol": "fn_800A386C",
+        "target": 2148153452,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147596868,
+        "kind": 1,
+        "symbol": "fn_800A4F0C",
+        "target": 2148159244,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147596876,
+        "kind": 1,
+        "symbol": "@5",
+        "target": 2147550864,
+        "addend": 0
+      }
+    ],
+    "notes": "docs/notes/game-motion-forwarding.md",
+    "original_metadata_audit": {
+      "status": "all-original-table-ownership-retained",
+      "retained_ranges": [
+        {
+          "start": 2148159244,
+          "end": 2148159276
+        }
+      ],
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "entries": 3141,
+          "scanned_slots": 3144,
+          "references_to_retained_ranges": [
+            {
+              "entry_address": 2147596868,
+              "function": 2148159244,
+              "size": 32,
+              "extab": 2147550864,
+              "ownership": "retained-source"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "entries": 19,
+          "scanned_slots": 24,
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "entries": 3,
+          "scanned_slots": 8,
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "e930340a674fb6901fcbc53defd35d0505cc41d897fd17e349b1d61daecbf0d9",
+      "retained_text_bytes": 32,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 3,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  }
+]

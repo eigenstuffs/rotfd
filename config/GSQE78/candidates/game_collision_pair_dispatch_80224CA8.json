@@ -1,0 +1,141 @@
+{
+  "source": "src/Game/collision_pair_dispatch_80224CA8.cpp",
+  "production_source": "src/Game/collision_pair_dispatch_80224CA8.cpp",
+  "source_sha256": "4bdc791eb0b7de7d7b85022b9eed544b6a7a655298d498f91f95a2763472fda9",
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-proc",
+    "gekko",
+    "-fp",
+    "hardware",
+    "-enum",
+    "int",
+    "-str",
+    "reuse",
+    "-common",
+    "off",
+    "-O4,s",
+    "-inline",
+    "auto",
+    "-Cpp_exceptions",
+    "off",
+    "-RTTI",
+    "off",
+    "-use_lmw_stmw",
+    "on",
+    "-fp_contract",
+    "on"
+  ],
+  "headers": [],
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2149731496,
+      "end": 2149733972,
+      "alignment": 4
+    },
+    {
+      "name": ".sdata2",
+      "start": 2151133472,
+      "end": 2151133488,
+      "alignment": 8
+    }
+  ],
+  "functions": [
+    {
+      "name": "fn_80224CA8",
+      "section": ".text",
+      "address": 2149731496,
+      "object_offset": 0,
+      "size": 2476,
+      "scope": "global"
+    }
+  ],
+  "objects": [
+    {
+      "name": "@446",
+      "section": ".sdata2",
+      "address": 2151133472,
+      "object_offset": 0,
+      "size": 4,
+      "scope": "local"
+    },
+    {
+      "name": "@449",
+      "section": ".sdata2",
+      "address": 2151133480,
+      "object_offset": 8,
+      "size": 8,
+      "scope": "local"
+    }
+  ],
+  "unlinked_functions": [
+    {
+      "name": "__dt__13CollisionCopyFv",
+      "section": ".text",
+      "object_offset": 2476,
+      "size": 76,
+      "binding": "weak",
+      "raw_sha256": "44922a4b051c2b271cd493dd589d65b21582604ff326c020361fa4f0f6a8d0ae"
+    },
+    {
+      "name": "__dt__17CollisionZeroCopyFv",
+      "section": ".text",
+      "object_offset": 2552,
+      "size": 80,
+      "binding": "weak",
+      "raw_sha256": "2ca29b3f1887d9352cdf6b0df668b3c3a0a79623a536dab168a9dc786a672557"
+    },
+    {
+      "name": "__dt__13CollisionZeroFv",
+      "section": ".text",
+      "object_offset": 2632,
+      "size": 76,
+      "binding": "weak",
+      "raw_sha256": "44922a4b051c2b271cd493dd589d65b21582604ff326c020361fa4f0f6a8d0ae"
+    }
+  ],
+  "validation": {
+    "object": "/Users/brandenb/Downloads/rotfd/scratch/collision_pair_dispatch_80224CA8_20261020/collision_pair_dispatch_80224CA8.o",
+    "object_sha256": "e6e66812904842cb2020da684d95b0dd8fe73694d0a23acbba3258113dbc8336",
+    "retained_allocated_bytes": 2492,
+    "emitted_allocated_bytes": 2724,
+    "relocations": 57,
+    "unlinked_relocations": 6,
+    "metadata_relocations": 4,
+    "native_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5"
+  },
+  "credit": {
+    "new_code_bytes": 2476,
+    "new_scalar_bytes": 12,
+    "existing_scalar_bytes_preserved": 4
+  },
+  "ownership_audit": "/Users/brandenb/Downloads/rotfd/scratch/collision_pair_dispatch_80224CA8_20261020/ownership-audit.json",
+  "integration_plan": "/Users/brandenb/Downloads/rotfd/scratch/collision_pair_dispatch_80224CA8_20261020/integration-plan.json",
+  "native_discard_proof": "/Users/brandenb/Downloads/rotfd/scratch/collision_pair_dispatch_80224CA8_20261020/native-discard-proof.json",
+  "abi_dependency": {
+    "source_overlay": "scratch/collision_pair_dispatch_80224CA8_20261020/abi_overlay/root_base.cpp",
+    "canonical_overlay": "scratch/collision_pair_dispatch_80224CA8_20261020/abi_overlay/game-root-base.json",
+    "audit": "scratch/collision_pair_dispatch_80224CA8_20261020/abi_overlay/abi-audit.json",
+    "entire_object_byte_identical": true
+  },
+  "natural_padding": [
+    {
+      "section": ".sdata2",
+      "start": 2151133476,
+      "end": 2151133480,
+      "reason": "Native alignment before compiler-local signed conversion bias; no explicit padding declaration."
+    }
+  ],
+  "historical_obligations": "scratch/collision_pair_dispatch_80224CA8_20261020/historical-obligations.json",
+  "tool_inputs": {
+    "scratch/game_engine_callback_dispatch_family_continuation/elf_verify.py": "e4334f90bc51f757f1d3a21d4e4556c4f63aa6338ef197fa5974b5a2db7971f8",
+    "build/compilers/GC/1.3.2/mwcceppc.exe": "7cbae0a5bd81e07d7fa8975bbc4e969b5dea265cc29c5ee6bae0453a6e25f225",
+    "build/compilers/GC/1.3.2/mwldeppc.exe": "db65216a7ed5a457bca8b1c1e28bdf64bb085deb4f90dbaa0a83c79abfd61ea4",
+    "tools/dtk": "a33363725a323c5226d2efe183a2430b0247ea55298d6a19a347a8692b3ae870",
+    "build/tools/wibo": "bfb53e13706506fef31c331a1b4312af84a5c71af451f0cafe42c5511b2acbe4"
+  },
+  "status": "Matching",
+  "evidence_manifest": "scratch/collision_pair_dispatch_80224CA8_20261020/manifest.json",
+  "evidence_manifest_sha256": "a5fcf12992f2c06c2727d18a4eeea5a62335e9789bf18d37ce52b1854892f13a"
+}

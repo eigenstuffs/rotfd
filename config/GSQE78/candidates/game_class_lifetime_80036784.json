@@ -1,0 +1,107 @@
+{
+  "source": "src/Game/class_lifetime_80036784.cpp",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-proc",
+    "gekko",
+    "-fp",
+    "hardware",
+    "-enum",
+    "int",
+    "-str",
+    "reuse",
+    "-common",
+    "off",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-Cpp_exceptions",
+    "on",
+    "-use_lmw_stmw",
+    "on",
+    "-i",
+    "src/Game"
+  ],
+  "sections": {
+    "extab": [
+      2147514524,
+      2147514540
+    ],
+    "extabindex": [
+      2147577356,
+      2147577380
+    ],
+    ".text": [
+      2147706756,
+      2147706848
+    ]
+  },
+  "functions": [
+    {
+      "name": "fn_800367C0",
+      "address": 2147706816,
+      "size": 32,
+      "section": ".text",
+      "scope": "global"
+    },
+    {
+      "name": "fn_80036784",
+      "address": 2147706756,
+      "size": 60,
+      "section": ".text",
+      "scope": "global"
+    }
+  ],
+  "objects": [
+    {
+      "name": "@5",
+      "address": 2147514524,
+      "size": 8,
+      "section": "extab",
+      "scope": "local"
+    },
+    {
+      "name": "@6",
+      "address": 2147577356,
+      "size": 12,
+      "section": "extabindex",
+      "scope": "local"
+    },
+    {
+      "name": "@11",
+      "address": 2147514532,
+      "size": 8,
+      "section": "extab",
+      "scope": "local"
+    },
+    {
+      "name": "@12",
+      "address": 2147577368,
+      "size": 12,
+      "section": "extabindex",
+      "scope": "local"
+    }
+  ],
+  "source_kind": "c++",
+  "dependency_symbols": [],
+  "notes": "docs/notes/game-class-registry.md",
+  "source_sha256": "e7c8391f1901f38dcbaee616e616003be02b4529c497e28dfb808aae0c941dd2",
+  "validation": {
+    "relocations": 9,
+    "text_bytes": 92,
+    "initialized_data_bytes": 40,
+    "zero_byte_differences": true,
+    "integration_status": "verified full-DOL and objdiff"
+  },
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "e7c8391f1901f38dcbaee616e616003be02b4529c497e28dfb808aae0c941dd2",
+    "matched_code": 92,
+    "matched_functions": 2,
+    "matched_data": 40,
+    "complete_data": 40,
+    "object_path": "build/GSQE78/src/Game/class_lifetime_80036784.o",
+    "object_sha256": "c471d62ba366f3583c984de304be26803bb9cffe31ec95702a6bf12ab23be496"
+  }
+}

@@ -1,0 +1,2557 @@
+[
+  {
+    "status": "isolated-byte-match-parent-integration-pending",
+    "source": "src/Game/logged_timed_control_80062A68.cpp",
+    "source_sha256": "f118a968e66a1db8dfb1e8fd89ee16fdea07d413a77eb9219e7e879137e543c5",
+    "headers": [],
+    "header_sha256": {},
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2147887720,
+        "end": 2147887776,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147529936,
+        "end": 2147529944,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147583488,
+        "end": 2147583500,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_80062A68",
+        "address": 2147887720,
+        "size": 56,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@5",
+        "section": "extab",
+        "object_offset": 0,
+        "address": 2147529936,
+        "size": 8,
+        "scope": "local"
+      },
+      {
+        "name": "@6",
+        "section": "extabindex",
+        "object_offset": 0,
+        "address": 2147583488,
+        "size": 12,
+        "scope": "local"
+      }
+    ],
+    "unlinked_functions": [],
+    "verified_text_bytes": 56,
+    "verified_data_bytes": 20,
+    "notes": "docs/notes/game-logged-timed-control-delegates.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 10,
+        "address": 2147887730,
+        "kind": 6,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 14,
+        "address": 2147887734,
+        "kind": 6,
+        "symbol": "lbl_8029BACC",
+        "target": 2150218444,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 22,
+        "address": 2147887742,
+        "kind": 4,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 26,
+        "address": 2147887746,
+        "kind": 4,
+        "symbol": "lbl_8029BACC",
+        "target": 2150218444,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 36,
+        "address": 2147887756,
+        "kind": 10,
+        "symbol": "fn_801FA014",
+        "target": 2149556244,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147583488,
+        "kind": 1,
+        "symbol": "fn_80062A68",
+        "target": 2147887720,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147583496,
+        "kind": 1,
+        "symbol": "@5",
+        "target": 2147529936,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "fn_801FA014",
+        "section": ".text",
+        "address": 2149556244,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_801E9D24",
+        "section": ".text",
+        "address": 2149489956,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_8029BACC",
+        "section": ".rodata",
+        "address": 2150218444,
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "object_sha256": "7977faae94df1fdf920c2d4d9d784b50286eeb8445eef0cc8d95404080f0eb5b",
+      "retained_text_bytes": 56,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 7,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match-parent-integration-pending",
+    "source": "src/Game/logged_timed_control_80062AA0.cpp",
+    "source_sha256": "2c40ad9526c5cf3f1c630280e80b3ad7844c13a5b70b95fa5884819eee793ef5",
+    "headers": [],
+    "header_sha256": {},
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2147887776,
+        "end": 2147887832,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147529944,
+        "end": 2147529952,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147583500,
+        "end": 2147583512,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_80062AA0",
+        "address": 2147887776,
+        "size": 56,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@5",
+        "section": "extab",
+        "object_offset": 0,
+        "address": 2147529944,
+        "size": 8,
+        "scope": "local"
+      },
+      {
+        "name": "@6",
+        "section": "extabindex",
+        "object_offset": 0,
+        "address": 2147583500,
+        "size": 12,
+        "scope": "local"
+      }
+    ],
+    "unlinked_functions": [],
+    "verified_text_bytes": 56,
+    "verified_data_bytes": 20,
+    "notes": "docs/notes/game-logged-timed-control-delegates.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 10,
+        "address": 2147887786,
+        "kind": 6,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 14,
+        "address": 2147887790,
+        "kind": 6,
+        "symbol": "lbl_8029BAFC",
+        "target": 2150218492,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 22,
+        "address": 2147887798,
+        "kind": 4,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 26,
+        "address": 2147887802,
+        "kind": 4,
+        "symbol": "lbl_8029BAFC",
+        "target": 2150218492,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 36,
+        "address": 2147887812,
+        "kind": 10,
+        "symbol": "fn_801FA014",
+        "target": 2149556244,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147583500,
+        "kind": 1,
+        "symbol": "fn_80062AA0",
+        "target": 2147887776,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147583508,
+        "kind": 1,
+        "symbol": "@5",
+        "target": 2147529944,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "fn_801FA014",
+        "section": ".text",
+        "address": 2149556244,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_801E9D24",
+        "section": ".text",
+        "address": 2149489956,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_8029BAFC",
+        "section": ".rodata",
+        "address": 2150218492,
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "object_sha256": "21c881c98fbdb1a91934e2737a73d072906eab1205a26eaa36e336bf523d9eef",
+      "retained_text_bytes": 56,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 7,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match-parent-integration-pending",
+    "source": "src/Game/logged_timed_control_80062AD8.cpp",
+    "source_sha256": "68f6e32e17ab591f38fda8a954c19dbc92d01f2a488b2502f9f9250c723a7aeb",
+    "headers": [],
+    "header_sha256": {},
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2147887832,
+        "end": 2147887888,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147529952,
+        "end": 2147529960,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147583512,
+        "end": 2147583524,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_80062AD8",
+        "address": 2147887832,
+        "size": 56,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@5",
+        "section": "extab",
+        "object_offset": 0,
+        "address": 2147529952,
+        "size": 8,
+        "scope": "local"
+      },
+      {
+        "name": "@6",
+        "section": "extabindex",
+        "object_offset": 0,
+        "address": 2147583512,
+        "size": 12,
+        "scope": "local"
+      }
+    ],
+    "unlinked_functions": [],
+    "verified_text_bytes": 56,
+    "verified_data_bytes": 20,
+    "notes": "docs/notes/game-logged-timed-control-delegates.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 10,
+        "address": 2147887842,
+        "kind": 6,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 14,
+        "address": 2147887846,
+        "kind": 6,
+        "symbol": "lbl_8029BB2C",
+        "target": 2150218540,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 22,
+        "address": 2147887854,
+        "kind": 4,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 26,
+        "address": 2147887858,
+        "kind": 4,
+        "symbol": "lbl_8029BB2C",
+        "target": 2150218540,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 36,
+        "address": 2147887868,
+        "kind": 10,
+        "symbol": "fn_801FA014",
+        "target": 2149556244,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147583512,
+        "kind": 1,
+        "symbol": "fn_80062AD8",
+        "target": 2147887832,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147583520,
+        "kind": 1,
+        "symbol": "@5",
+        "target": 2147529952,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "fn_801FA014",
+        "section": ".text",
+        "address": 2149556244,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_801E9D24",
+        "section": ".text",
+        "address": 2149489956,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_8029BB2C",
+        "section": ".rodata",
+        "address": 2150218540,
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "object_sha256": "6933cbdae4b62df6f2a16fe654d2bcadde07efc7addef1f0467bb911d656f837",
+      "retained_text_bytes": 56,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 7,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match-parent-integration-pending",
+    "source": "src/Game/logged_timed_control_80062BBC.cpp",
+    "source_sha256": "7abfdd4dd7f41ed2570fe0eec7c39578578d47d789071f8fb7589461747f0546",
+    "headers": [],
+    "header_sha256": {},
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2147888060,
+        "end": 2147888120,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147530004,
+        "end": 2147530012,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147583536,
+        "end": 2147583548,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_80062BBC",
+        "address": 2147888060,
+        "size": 60,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@5",
+        "section": "extab",
+        "object_offset": 0,
+        "address": 2147530004,
+        "size": 8,
+        "scope": "local"
+      },
+      {
+        "name": "@6",
+        "section": "extabindex",
+        "object_offset": 0,
+        "address": 2147583536,
+        "size": 12,
+        "scope": "local"
+      }
+    ],
+    "unlinked_functions": [],
+    "verified_text_bytes": 60,
+    "verified_data_bytes": 20,
+    "notes": "docs/notes/game-logged-timed-control-delegates.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 10,
+        "address": 2147888070,
+        "kind": 6,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 14,
+        "address": 2147888074,
+        "kind": 6,
+        "symbol": "lbl_8029BB58",
+        "target": 2150218584,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 22,
+        "address": 2147888082,
+        "kind": 4,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 26,
+        "address": 2147888086,
+        "kind": 4,
+        "symbol": "lbl_8029BB58",
+        "target": 2150218584,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 36,
+        "address": 2147888096,
+        "kind": 10,
+        "symbol": "fn_801FA014",
+        "target": 2149556244,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147583536,
+        "kind": 1,
+        "symbol": "fn_80062BBC",
+        "target": 2147888060,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147583544,
+        "kind": 1,
+        "symbol": "@5",
+        "target": 2147530004,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "fn_801FA014",
+        "section": ".text",
+        "address": 2149556244,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_801E9D24",
+        "section": ".text",
+        "address": 2149489956,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_8029BB58",
+        "section": ".rodata",
+        "address": 2150218584,
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "object_sha256": "20aa3e17ba11de92c4049b78cf76afed78b89e85ba244f833cf2aa9385da4cbd",
+      "retained_text_bytes": 60,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 7,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match-parent-integration-pending",
+    "source": "src/Game/logged_timed_control_80062BF8.cpp",
+    "source_sha256": "60c793abf578bd928211f3f30749a4dbd284a05ce912267e4310aa0703820059",
+    "headers": [],
+    "header_sha256": {},
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2147888120,
+        "end": 2147888180,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147530012,
+        "end": 2147530020,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147583548,
+        "end": 2147583560,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_80062BF8",
+        "address": 2147888120,
+        "size": 60,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@5",
+        "section": "extab",
+        "object_offset": 0,
+        "address": 2147530012,
+        "size": 8,
+        "scope": "local"
+      },
+      {
+        "name": "@6",
+        "section": "extabindex",
+        "object_offset": 0,
+        "address": 2147583548,
+        "size": 12,
+        "scope": "local"
+      }
+    ],
+    "unlinked_functions": [],
+    "verified_text_bytes": 60,
+    "verified_data_bytes": 20,
+    "notes": "docs/notes/game-logged-timed-control-delegates.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 10,
+        "address": 2147888130,
+        "kind": 6,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 14,
+        "address": 2147888134,
+        "kind": 6,
+        "symbol": "lbl_8029BB88",
+        "target": 2150218632,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 22,
+        "address": 2147888142,
+        "kind": 4,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 26,
+        "address": 2147888146,
+        "kind": 4,
+        "symbol": "lbl_8029BB88",
+        "target": 2150218632,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 36,
+        "address": 2147888156,
+        "kind": 10,
+        "symbol": "fn_801FA014",
+        "target": 2149556244,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147583548,
+        "kind": 1,
+        "symbol": "fn_80062BF8",
+        "target": 2147888120,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147583556,
+        "kind": 1,
+        "symbol": "@5",
+        "target": 2147530012,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "fn_801FA014",
+        "section": ".text",
+        "address": 2149556244,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_801E9D24",
+        "section": ".text",
+        "address": 2149489956,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_8029BB88",
+        "section": ".rodata",
+        "address": 2150218632,
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "object_sha256": "9db77ee46cefe5cdad1d5b64676a999dd6e221b4838790da88d6fde43862515d",
+      "retained_text_bytes": 60,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 7,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match-parent-integration-pending",
+    "source": "src/Game/logged_timed_control_80062C34.cpp",
+    "source_sha256": "6cd30b63ca56d08277459dab0c3a2ee93692bdce72396fe485ae2df2a1397c5c",
+    "headers": [],
+    "header_sha256": {},
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2147888180,
+        "end": 2147888240,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147530020,
+        "end": 2147530028,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147583560,
+        "end": 2147583572,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_80062C34",
+        "address": 2147888180,
+        "size": 60,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@5",
+        "section": "extab",
+        "object_offset": 0,
+        "address": 2147530020,
+        "size": 8,
+        "scope": "local"
+      },
+      {
+        "name": "@6",
+        "section": "extabindex",
+        "object_offset": 0,
+        "address": 2147583560,
+        "size": 12,
+        "scope": "local"
+      }
+    ],
+    "unlinked_functions": [],
+    "verified_text_bytes": 60,
+    "verified_data_bytes": 20,
+    "notes": "docs/notes/game-logged-timed-control-delegates.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 10,
+        "address": 2147888190,
+        "kind": 6,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 14,
+        "address": 2147888194,
+        "kind": 6,
+        "symbol": "lbl_8029BBB8",
+        "target": 2150218680,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 22,
+        "address": 2147888202,
+        "kind": 4,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 26,
+        "address": 2147888206,
+        "kind": 4,
+        "symbol": "lbl_8029BBB8",
+        "target": 2150218680,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 36,
+        "address": 2147888216,
+        "kind": 10,
+        "symbol": "fn_801FA014",
+        "target": 2149556244,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147583560,
+        "kind": 1,
+        "symbol": "fn_80062C34",
+        "target": 2147888180,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147583568,
+        "kind": 1,
+        "symbol": "@5",
+        "target": 2147530020,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "fn_801FA014",
+        "section": ".text",
+        "address": 2149556244,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_801E9D24",
+        "section": ".text",
+        "address": 2149489956,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_8029BBB8",
+        "section": ".rodata",
+        "address": 2150218680,
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "object_sha256": "0130e37704eabeb73a6a803f6f0194f3e46baa5b0ff197ac4b38c0b7cd1e4f2e",
+      "retained_text_bytes": 60,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 7,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match-parent-integration-pending",
+    "source": "src/Game/logged_timed_control_80064848.cpp",
+    "source_sha256": "f6053b0df81be891dd3052a34f89503870610217163767843a157ce77e237653",
+    "headers": [],
+    "header_sha256": {},
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2147895368,
+        "end": 2147895456,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147530724,
+        "end": 2147530732,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147583920,
+        "end": 2147583932,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_80064848",
+        "address": 2147895368,
+        "size": 88,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@6",
+        "section": "extab",
+        "object_offset": 0,
+        "address": 2147530724,
+        "size": 8,
+        "scope": "local"
+      },
+      {
+        "name": "@7",
+        "section": "extabindex",
+        "object_offset": 0,
+        "address": 2147583920,
+        "size": 12,
+        "scope": "local"
+      }
+    ],
+    "unlinked_functions": [],
+    "verified_text_bytes": 88,
+    "verified_data_bytes": 20,
+    "notes": "docs/notes/game-logged-timed-control-delegates.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 10,
+        "address": 2147895378,
+        "kind": 6,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 14,
+        "address": 2147895382,
+        "kind": 6,
+        "symbol": "lbl_8029BC90",
+        "target": 2150218896,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 22,
+        "address": 2147895390,
+        "kind": 4,
+        "symbol": "lbl_801E9D24",
+        "target": 2149489956,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 26,
+        "address": 2147895394,
+        "kind": 4,
+        "symbol": "lbl_8029BC90",
+        "target": 2150218896,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 52,
+        "address": 2147895420,
+        "kind": 10,
+        "symbol": "fn_801FA014",
+        "target": 2149556244,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 64,
+        "address": 2147895432,
+        "kind": 10,
+        "symbol": "fn_80257E04",
+        "target": 2149940740,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147583920,
+        "kind": 1,
+        "symbol": "fn_80064848",
+        "target": 2147895368,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147583928,
+        "kind": 1,
+        "symbol": "@6",
+        "target": 2147530724,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "fn_801FA014",
+        "section": ".text",
+        "address": 2149556244,
+        "scope": "global"
+      },
+      {
+        "name": "fn_80257E04",
+        "section": ".text",
+        "address": 2149940740,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_801E9D24",
+        "section": ".text",
+        "address": 2149489956,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_8029BC90",
+        "section": ".rodata",
+        "address": 2150218896,
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "object_sha256": "cb495d53595b01876717ddc1eff5bbd9784cc70af63c6d23a7b65b8f2a34d5e1",
+      "retained_text_bytes": 88,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 8,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match-parent-integration-pending",
+    "source": "src/Game/logged_timed_control_8007F860.cpp",
+    "source_sha256": "2b3c98a8244818b9fbd043072e4d9536503aec74b5a9416f268b5181218b7ec9",
+    "headers": [],
+    "header_sha256": {},
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "750",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148005984,
+        "end": 2148006056,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147538888,
+        "end": 2147538896,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147588732,
+        "end": 2147588744,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_8007F860",
+        "address": 2148005984,
+        "size": 72,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@5",
+        "section": "extab",
+        "object_offset": 0,
+        "address": 2147538888,
+        "size": 8,
+        "scope": "local"
+      },
+      {
+        "name": "@6",
+        "section": "extabindex",
+        "object_offset": 0,
+        "address": 2147588732,
+        "size": 12,
+        "scope": "local"
+      }
+    ],
+    "unlinked_functions": [],
+    "verified_text_bytes": 72,
+    "verified_data_bytes": 20,
+    "notes": "docs/notes/game-logged-timed-control-delegates.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 32,
+        "address": 2148006016,
+        "kind": 10,
+        "symbol": "fn_8007DA74",
+        "target": 2147998324,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 44,
+        "address": 2148006028,
+        "kind": 10,
+        "symbol": "fn_80229A78",
+        "target": 2149751416,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147588732,
+        "kind": 1,
+        "symbol": "fn_8007F860",
+        "target": 2148005984,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147588740,
+        "kind": 1,
+        "symbol": "@5",
+        "target": 2147538888,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "fn_8007DA74",
+        "section": ".text",
+        "address": 2147998324,
+        "scope": "global"
+      },
+      {
+        "name": "fn_80229A78",
+        "section": ".text",
+        "address": 2149751416,
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "object_sha256": "0b4d6c7c9e0349cc3f2ab389e2e91d610cef09219a595f4bed4dffdfa0a2097c",
+      "retained_text_bytes": 72,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 4,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match-parent-integration-pending",
+    "source": "src/Game/logged_timed_control_800AF6A4.cpp",
+    "source_sha256": "15da50a83bf3691e3a4b561eb8e45d9f40944524caf01335c571b2241fc4fcc0",
+    "headers": [],
+    "header_sha256": {},
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "750",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148202148,
+        "end": 2148202216,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147553632,
+        "end": 2147553640,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147598008,
+        "end": 2147598020,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800AF6A4",
+        "address": 2148202148,
+        "size": 68,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@5",
+        "section": "extab",
+        "object_offset": 0,
+        "address": 2147553632,
+        "size": 8,
+        "scope": "local"
+      },
+      {
+        "name": "@6",
+        "section": "extabindex",
+        "object_offset": 0,
+        "address": 2147598008,
+        "size": 12,
+        "scope": "local"
+      }
+    ],
+    "unlinked_functions": [],
+    "verified_text_bytes": 68,
+    "verified_data_bytes": 20,
+    "notes": "docs/notes/game-logged-timed-control-delegates.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 28,
+        "address": 2148202176,
+        "kind": 10,
+        "symbol": "fn_80229A78",
+        "target": 2149751416,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 40,
+        "address": 2148202188,
+        "kind": 10,
+        "symbol": "fn_8007DA74",
+        "target": 2147998324,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147598008,
+        "kind": 1,
+        "symbol": "fn_800AF6A4",
+        "target": 2148202148,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147598016,
+        "kind": 1,
+        "symbol": "@5",
+        "target": 2147553632,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "fn_8007DA74",
+        "section": ".text",
+        "address": 2147998324,
+        "scope": "global"
+      },
+      {
+        "name": "fn_80229A78",
+        "section": ".text",
+        "address": 2149751416,
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "object_sha256": "247b7ad9e12a79c8a158fd4298e5cc1025ff757f56cc8f69f919ce05aad38e90",
+      "retained_text_bytes": 68,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 4,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match-parent-integration-pending",
+    "source": "src/Game/logged_timed_control_800E2F40.cpp",
+    "source_sha256": "b394a7101364b600436dcc2e7cd111eaf5dd61009b0d5bea5a0d0d3d4cc1ccb8",
+    "headers": [],
+    "header_sha256": {},
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "750",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148413248,
+        "end": 2148413316,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147567852,
+        "end": 2147567860,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147608556,
+        "end": 2147608568,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800E2F40",
+        "address": 2148413248,
+        "size": 68,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@5",
+        "section": "extab",
+        "object_offset": 0,
+        "address": 2147567852,
+        "size": 8,
+        "scope": "local"
+      },
+      {
+        "name": "@6",
+        "section": "extabindex",
+        "object_offset": 0,
+        "address": 2147608556,
+        "size": 12,
+        "scope": "local"
+      }
+    ],
+    "unlinked_functions": [],
+    "verified_text_bytes": 68,
+    "verified_data_bytes": 20,
+    "notes": "docs/notes/game-logged-timed-control-delegates.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 28,
+        "address": 2148413276,
+        "kind": 10,
+        "symbol": "fn_80229A78",
+        "target": 2149751416,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 40,
+        "address": 2148413288,
+        "kind": 10,
+        "symbol": "fn_8007DA74",
+        "target": 2147998324,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147608556,
+        "kind": 1,
+        "symbol": "fn_800E2F40",
+        "target": 2148413248,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147608564,
+        "kind": 1,
+        "symbol": "@5",
+        "target": 2147567852,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "fn_8007DA74",
+        "section": ".text",
+        "address": 2147998324,
+        "scope": "global"
+      },
+      {
+        "name": "fn_80229A78",
+        "section": ".text",
+        "address": 2149751416,
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "object_sha256": "25d7a827f0b940457ba4ffa2faff31c628e4afaf7b940f0c9dcd4e83f6cd1b8b",
+      "retained_text_bytes": 68,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 4,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match-parent-integration-pending",
+    "source": "src/Game/logged_timed_control_80083EB0.cpp",
+    "source_sha256": "4272f3cdaa459c245e2d9558e14ebf5de017de535c5e66430672a7575b9e67fe",
+    "headers": [],
+    "header_sha256": {},
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148023984,
+        "end": 2148024020,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147539888,
+        "end": 2147539896,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147589728,
+        "end": 2147589740,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_80083EB0",
+        "address": 2148023984,
+        "size": 36,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@5",
+        "section": "extab",
+        "object_offset": 0,
+        "address": 2147539888,
+        "size": 8,
+        "scope": "local"
+      },
+      {
+        "name": "@6",
+        "section": "extabindex",
+        "object_offset": 0,
+        "address": 2147589728,
+        "size": 12,
+        "scope": "local"
+      }
+    ],
+    "unlinked_functions": [],
+    "verified_text_bytes": 36,
+    "verified_data_bytes": 20,
+    "notes": "docs/notes/game-logged-timed-control-delegates.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 16,
+        "address": 2148024000,
+        "kind": 10,
+        "symbol": "fn_80092DAC",
+        "target": 2148085164,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147589728,
+        "kind": 1,
+        "symbol": "fn_80083EB0",
+        "target": 2148023984,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147589736,
+        "kind": 1,
+        "symbol": "@5",
+        "target": 2147539888,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "fn_80092DAC",
+        "section": ".text",
+        "address": 2148085164,
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "object_sha256": "160861e61654581c3e2ad15297d38e25e70e99b9cf840ae4f55a587338755bcf",
+      "retained_text_bytes": 36,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 3,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match-parent-integration-pending",
+    "source": "src/Game/logged_timed_control_80087BDC.cpp",
+    "source_sha256": "55d81c981a49e1292efd7506c2da9b459302da5af3a2c43e79d0a1582ef02283",
+    "headers": [],
+    "header_sha256": {},
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148039644,
+        "end": 2148039680,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147540840,
+        "end": 2147540848,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147590532,
+        "end": 2147590544,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_80087BDC",
+        "address": 2148039644,
+        "size": 36,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@5",
+        "section": "extab",
+        "object_offset": 0,
+        "address": 2147540840,
+        "size": 8,
+        "scope": "local"
+      },
+      {
+        "name": "@6",
+        "section": "extabindex",
+        "object_offset": 0,
+        "address": 2147590532,
+        "size": 12,
+        "scope": "local"
+      }
+    ],
+    "unlinked_functions": [],
+    "verified_text_bytes": 36,
+    "verified_data_bytes": 20,
+    "notes": "docs/notes/game-logged-timed-control-delegates.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 16,
+        "address": 2148039660,
+        "kind": 10,
+        "symbol": "fn_80092DAC",
+        "target": 2148085164,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147590532,
+        "kind": 1,
+        "symbol": "fn_80087BDC",
+        "target": 2148039644,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147590540,
+        "kind": 1,
+        "symbol": "@5",
+        "target": 2147540840,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "fn_80092DAC",
+        "section": ".text",
+        "address": 2148085164,
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "object_sha256": "da7645591315d75b75e051c8ed66aaf4b4a0fac6b0b36b03ba5e5d3e206fecdf",
+      "retained_text_bytes": 36,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 3,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match-parent-integration-pending",
+    "source": "src/Game/logged_timed_control_8008CF6C.cpp",
+    "source_sha256": "e86c2e88c2b529301f7c385b60f2d3fad66aa5420ef9c1fcb4d0f30868387f19",
+    "headers": [],
+    "header_sha256": {},
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148061036,
+        "end": 2148061072,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147542808,
+        "end": 2147542816,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147591636,
+        "end": 2147591648,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_8008CF6C",
+        "address": 2148061036,
+        "size": 36,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@5",
+        "section": "extab",
+        "object_offset": 0,
+        "address": 2147542808,
+        "size": 8,
+        "scope": "local"
+      },
+      {
+        "name": "@6",
+        "section": "extabindex",
+        "object_offset": 0,
+        "address": 2147591636,
+        "size": 12,
+        "scope": "local"
+      }
+    ],
+    "unlinked_functions": [],
+    "verified_text_bytes": 36,
+    "verified_data_bytes": 20,
+    "notes": "docs/notes/game-logged-timed-control-delegates.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 16,
+        "address": 2148061052,
+        "kind": 10,
+        "symbol": "fn_80092DAC",
+        "target": 2148085164,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147591636,
+        "kind": 1,
+        "symbol": "fn_8008CF6C",
+        "target": 2148061036,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147591644,
+        "kind": 1,
+        "symbol": "@5",
+        "target": 2147542808,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "fn_80092DAC",
+        "section": ".text",
+        "address": 2148085164,
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "object_sha256": "a5dd190177b444d36ec6ed4a22cd8cfa54aefe34503a70119850fa0f69f771f8",
+      "retained_text_bytes": 36,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 3,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match-parent-integration-pending",
+    "source": "src/Game/logged_timed_control_8008D110.cpp",
+    "source_sha256": "12bd9b020ebbb77e6557f3bcc904bf880f84cb881cb32916356403b351c8cc33",
+    "headers": [],
+    "header_sha256": {},
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148061456,
+        "end": 2148061492,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147542880,
+        "end": 2147542888,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147591696,
+        "end": 2147591708,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_8008D110",
+        "address": 2148061456,
+        "size": 36,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@5",
+        "section": "extab",
+        "object_offset": 0,
+        "address": 2147542880,
+        "size": 8,
+        "scope": "local"
+      },
+      {
+        "name": "@6",
+        "section": "extabindex",
+        "object_offset": 0,
+        "address": 2147591696,
+        "size": 12,
+        "scope": "local"
+      }
+    ],
+    "unlinked_functions": [],
+    "verified_text_bytes": 36,
+    "verified_data_bytes": 20,
+    "notes": "docs/notes/game-logged-timed-control-delegates.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 16,
+        "address": 2148061472,
+        "kind": 10,
+        "symbol": "fn_80092DAC",
+        "target": 2148085164,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147591696,
+        "kind": 1,
+        "symbol": "fn_8008D110",
+        "target": 2148061456,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147591704,
+        "kind": 1,
+        "symbol": "@5",
+        "target": 2147542880,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "fn_80092DAC",
+        "section": ".text",
+        "address": 2148085164,
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "object_sha256": "1e8217763c1501f8f9cf3ce336f19e6037a611e83bb9e7d25ae59c4b236c6e90",
+      "retained_text_bytes": 36,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 3,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match-parent-integration-pending",
+    "source": "src/Game/logged_timed_control_800E1224.cpp",
+    "source_sha256": "b807b6389cd86b12ce59c46482e2f7cc379b773da742b4727bc875e9eec99496",
+    "headers": [],
+    "header_sha256": {},
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148405796,
+        "end": 2148405832,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147567112,
+        "end": 2147567120,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147608088,
+        "end": 2147608100,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800E1224",
+        "address": 2148405796,
+        "size": 36,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@5",
+        "section": "extab",
+        "object_offset": 0,
+        "address": 2147567112,
+        "size": 8,
+        "scope": "local"
+      },
+      {
+        "name": "@6",
+        "section": "extabindex",
+        "object_offset": 0,
+        "address": 2147608088,
+        "size": 12,
+        "scope": "local"
+      }
+    ],
+    "unlinked_functions": [],
+    "verified_text_bytes": 36,
+    "verified_data_bytes": 20,
+    "notes": "docs/notes/game-logged-timed-control-delegates.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 16,
+        "address": 2148405812,
+        "kind": 10,
+        "symbol": "fn_8007DA74",
+        "target": 2147998324,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147608088,
+        "kind": 1,
+        "symbol": "fn_800E1224",
+        "target": 2148405796,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147608096,
+        "kind": 1,
+        "symbol": "@5",
+        "target": 2147567112,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "fn_8007DA74",
+        "section": ".text",
+        "address": 2147998324,
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "object_sha256": "96572531dbe5aa58d41dfbde0901f0298a93bea71fd6d6ab6932e36137331f2e",
+      "retained_text_bytes": 36,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 3,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match-parent-integration-pending",
+    "source": "src/Game/logged_timed_control_800E2BF8.cpp",
+    "source_sha256": "338b6559e87d933289d65cd09e2873e5ab0e9674a77b2d2f191de656f2024825",
+    "headers": [],
+    "header_sha256": {},
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148412408,
+        "end": 2148412444,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147567704,
+        "end": 2147567712,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147608472,
+        "end": 2147608484,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800E2BF8",
+        "address": 2148412408,
+        "size": 36,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@5",
+        "section": "extab",
+        "object_offset": 0,
+        "address": 2147567704,
+        "size": 8,
+        "scope": "local"
+      },
+      {
+        "name": "@6",
+        "section": "extabindex",
+        "object_offset": 0,
+        "address": 2147608472,
+        "size": 12,
+        "scope": "local"
+      }
+    ],
+    "unlinked_functions": [],
+    "verified_text_bytes": 36,
+    "verified_data_bytes": 20,
+    "notes": "docs/notes/game-logged-timed-control-delegates.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 16,
+        "address": 2148412424,
+        "kind": 10,
+        "symbol": "fn_8007DA74",
+        "target": 2147998324,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147608472,
+        "kind": 1,
+        "symbol": "fn_800E2BF8",
+        "target": 2148412408,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147608480,
+        "kind": 1,
+        "symbol": "@5",
+        "target": 2147567704,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "fn_8007DA74",
+        "section": ".text",
+        "address": 2147998324,
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "object_sha256": "586a20094c832baa02066586b43c4a9f527055134906e42c00c30b94a7a17f6d",
+      "retained_text_bytes": 36,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 3,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  },
+  {
+    "status": "isolated-byte-match-parent-integration-pending",
+    "source": "src/Game/logged_timed_control_800F0D6C.cpp",
+    "source_sha256": "23dc5d483203a2f46762fed2f8f10fba568eade60a46418e8e8169bad721d3d8",
+    "headers": [],
+    "header_sha256": {},
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148470124,
+        "end": 2148470160,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147573328,
+        "end": 2147573336,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147611076,
+        "end": 2147611088,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_800F0D6C",
+        "address": 2148470124,
+        "size": 36,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@5",
+        "section": "extab",
+        "object_offset": 0,
+        "address": 2147573328,
+        "size": 8,
+        "scope": "local"
+      },
+      {
+        "name": "@6",
+        "section": "extabindex",
+        "object_offset": 0,
+        "address": 2147611076,
+        "size": 12,
+        "scope": "local"
+      }
+    ],
+    "unlinked_functions": [],
+    "verified_text_bytes": 36,
+    "verified_data_bytes": 20,
+    "notes": "docs/notes/game-logged-timed-control-delegates.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 16,
+        "address": 2148470140,
+        "kind": 10,
+        "symbol": "fn_8007DA74",
+        "target": 2147998324,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147611076,
+        "kind": 1,
+        "symbol": "fn_800F0D6C",
+        "target": 2148470124,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147611084,
+        "kind": 1,
+        "symbol": "@5",
+        "target": 2147573328,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "fn_8007DA74",
+        "section": ".text",
+        "address": 2147998324,
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "object_sha256": "06b006339435f58e0b64451439be0b981ee6b86d3d26d8ea31841fa9f78e1e91",
+      "retained_text_bytes": 36,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 3,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    }
+  }
+]

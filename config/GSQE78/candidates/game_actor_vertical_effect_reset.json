@@ -1,0 +1,1366 @@
+[
+  {
+    "status": "isolated-byte-match-parent-full-native-acceptance-pending",
+    "source": "src/Game/actor_vertical_effect_reset_80082C18.cpp",
+    "source_sha256": "6d67c335324f13327f17a90ae6220a9a85cb74cb5d3eb050ebeeaabd00ebb5df",
+    "headers": [],
+    "header_sha256": {},
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-fp_contract",
+      "on",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148019224,
+        "end": 2148020000,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147539652,
+        "end": 2147539660,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147589428,
+        "end": 2147589440,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_80082C18",
+        "address": 2148019224,
+        "size": 776,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@77",
+        "section": "extab",
+        "object_offset": 0,
+        "size": 8,
+        "address": 2147539652,
+        "scope": "local"
+      },
+      {
+        "name": "@78",
+        "section": "extabindex",
+        "object_offset": 0,
+        "size": 12,
+        "address": 2147589428,
+        "scope": "local"
+      }
+    ],
+    "unlinked_functions": [
+      {
+        "name": "__dt__14Returned_82C18Fv",
+        "section": ".text",
+        "object_offset": 776,
+        "size": 76,
+        "scope": "weak",
+        "binding": "weak",
+        "raw_sha256": "44922a4b051c2b271cd493dd589d65b21582604ff326c020361fa4f0f6a8d0ae"
+      }
+    ],
+    "unlinked_objects": [
+      {
+        "name": "@81",
+        "section": "extab",
+        "object_offset": 8,
+        "size": 8,
+        "scope": "local",
+        "binding": "local",
+        "raw_sha256": "bcc0e7d554bfb67e6dfaa82a25ef2a617173bede4c2416a211eb9600a67e9e82"
+      },
+      {
+        "name": "@82",
+        "section": "extabindex",
+        "object_offset": 12,
+        "size": 12,
+        "scope": "local",
+        "binding": "local",
+        "raw_sha256": "571672201c6ed03c781e3e4b7f637ebc37b0e48ce66534b3dbfec4ba927b0e0b"
+      }
+    ],
+    "weak_overrides": [],
+    "weak_override_audit": {
+      "primary": "fn_80082C18",
+      "retained_sections": [
+        {
+          "name": ".text",
+          "address": 2148019224,
+          "size": 776
+        },
+        {
+          "name": "extab",
+          "address": 2147539652,
+          "size": 8
+        },
+        {
+          "name": "extabindex",
+          "address": 2147589428,
+          "size": 12
+        }
+      ],
+      "emitted_sections": [
+        {
+          "name": ".text",
+          "size": 852,
+          "raw_sha256": "71a1b853cc167bba678526381c99e0d058b0dadb09856d3f20c45e147656023f"
+        },
+        {
+          "name": "extab",
+          "size": 16,
+          "raw_sha256": "1b8d07beb9faa753891d3e72b4a3deab9e725048a087e6a8bdb7829e37b84c51"
+        },
+        {
+          "name": "extabindex",
+          "size": 24,
+          "raw_sha256": "7c52f7c5cc64bb8a5c453173e62870e8ca602b227ed798b05671dddee85a9def"
+        }
+      ],
+      "allocated_inventory": [
+        {
+          "name": "@77",
+          "section": "extab",
+          "object_offset": 0,
+          "size": 8,
+          "binding": 0,
+          "type": 1,
+          "symbol_index": 6,
+          "role": "retained",
+          "raw_sha256": "e9d3862c48179814d25de04167a505c536be9721599c1c2806125287773c69b4"
+        },
+        {
+          "name": "@78",
+          "section": "extabindex",
+          "object_offset": 0,
+          "size": 12,
+          "binding": 0,
+          "type": 1,
+          "symbol_index": 7,
+          "role": "retained",
+          "raw_sha256": "46df8ce97192e113f79f546ec0bb0695417d3c5c53ed59fc16289eb4e8190d52"
+        },
+        {
+          "name": "@81",
+          "section": "extab",
+          "object_offset": 8,
+          "size": 8,
+          "binding": 0,
+          "type": 1,
+          "symbol_index": 8,
+          "role": "linker-discarded-backup",
+          "raw_sha256": "bcc0e7d554bfb67e6dfaa82a25ef2a617173bede4c2416a211eb9600a67e9e82"
+        },
+        {
+          "name": "@82",
+          "section": "extabindex",
+          "object_offset": 12,
+          "size": 12,
+          "binding": 0,
+          "type": 1,
+          "symbol_index": 9,
+          "role": "linker-discarded-backup",
+          "raw_sha256": "571672201c6ed03c781e3e4b7f637ebc37b0e48ce66534b3dbfec4ba927b0e0b"
+        },
+        {
+          "name": "fn_80082C18",
+          "section": ".text",
+          "object_offset": 0,
+          "size": 776,
+          "binding": 1,
+          "type": 2,
+          "symbol_index": 24,
+          "role": "retained",
+          "raw_sha256": "6235057abf6ae81573efbf41da5fc7cdc8b9620a0a6b3214c2b4b7b5782a887f"
+        },
+        {
+          "name": "__dt__14Returned_82C18Fv",
+          "section": ".text",
+          "object_offset": 776,
+          "size": 76,
+          "binding": 2,
+          "type": 2,
+          "symbol_index": 26,
+          "role": "linker-discarded-backup",
+          "raw_sha256": "44922a4b051c2b271cd493dd589d65b21582604ff326c020361fa4f0f6a8d0ae"
+        }
+      ],
+      "groups": [
+        {
+          "function": "fn_80082C18",
+          "role": "retained",
+          "text": {
+            "name": "fn_80082C18",
+            "section": ".text",
+            "object_offset": 0,
+            "size": 776,
+            "binding": 1,
+            "type": 2,
+            "symbol_index": 24,
+            "role": "retained",
+            "raw_sha256": "6235057abf6ae81573efbf41da5fc7cdc8b9620a0a6b3214c2b4b7b5782a887f"
+          },
+          "extab": {
+            "name": "@77",
+            "section": "extab",
+            "object_offset": 0,
+            "size": 8,
+            "binding": 0,
+            "type": 1,
+            "symbol_index": 6,
+            "role": "retained",
+            "raw_sha256": "e9d3862c48179814d25de04167a505c536be9721599c1c2806125287773c69b4"
+          },
+          "extabindex": {
+            "name": "@78",
+            "section": "extabindex",
+            "object_offset": 0,
+            "size": 12,
+            "binding": 0,
+            "type": 1,
+            "symbol_index": 7,
+            "role": "retained",
+            "raw_sha256": "46df8ce97192e113f79f546ec0bb0695417d3c5c53ed59fc16289eb4e8190d52"
+          }
+        },
+        {
+          "function": "__dt__14Returned_82C18Fv",
+          "role": "linker-discarded-backup",
+          "text": {
+            "name": "__dt__14Returned_82C18Fv",
+            "section": ".text",
+            "object_offset": 776,
+            "size": 76,
+            "binding": 2,
+            "type": 2,
+            "symbol_index": 26,
+            "role": "linker-discarded-backup",
+            "raw_sha256": "44922a4b051c2b271cd493dd589d65b21582604ff326c020361fa4f0f6a8d0ae"
+          },
+          "extab": {
+            "name": "@81",
+            "section": "extab",
+            "object_offset": 8,
+            "size": 8,
+            "binding": 0,
+            "type": 1,
+            "symbol_index": 8,
+            "role": "linker-discarded-backup",
+            "raw_sha256": "bcc0e7d554bfb67e6dfaa82a25ef2a617173bede4c2416a211eb9600a67e9e82"
+          },
+          "extabindex": {
+            "name": "@82",
+            "section": "extabindex",
+            "object_offset": 12,
+            "size": 12,
+            "binding": 0,
+            "type": 1,
+            "symbol_index": 9,
+            "role": "linker-discarded-backup",
+            "raw_sha256": "571672201c6ed03c781e3e4b7f637ebc37b0e48ce66534b3dbfec4ba927b0e0b"
+          }
+        }
+      ],
+      "actual_relocations": [
+        {
+          "section": ".text",
+          "at": 8,
+          "kind": 109,
+          "symbol_index": 10,
+          "symbol": "lbl_80378AD0",
+          "addend": 0,
+          "binding": 1,
+          "defined_section": "",
+          "defined_offset": 0,
+          "role": "retained",
+          "resolution": "undefined-original",
+          "target": 2151123664
+        },
+        {
+          "section": ".text",
+          "at": 42,
+          "kind": 6,
+          "symbol_index": 11,
+          "symbol": "game_vec3_zero",
+          "addend": 0,
+          "binding": 1,
+          "defined_section": "",
+          "defined_offset": 0,
+          "role": "retained",
+          "resolution": "undefined-original",
+          "target": 2150894420
+        },
+        {
+          "section": ".text",
+          "at": 50,
+          "kind": 4,
+          "symbol_index": 11,
+          "symbol": "game_vec3_zero",
+          "addend": 0,
+          "binding": 1,
+          "defined_section": "",
+          "defined_offset": 0,
+          "role": "retained",
+          "resolution": "undefined-original",
+          "target": 2150894420
+        },
+        {
+          "section": ".text",
+          "at": 220,
+          "kind": 10,
+          "symbol_index": 16,
+          "symbol": "fn_80257828",
+          "addend": 0,
+          "binding": 1,
+          "defined_section": "",
+          "defined_offset": 0,
+          "role": "retained",
+          "resolution": "undefined-original",
+          "target": 2149939240
+        },
+        {
+          "section": ".text",
+          "at": 244,
+          "kind": 10,
+          "symbol_index": 17,
+          "symbol": "fn_80255D88",
+          "addend": 0,
+          "binding": 1,
+          "defined_section": "",
+          "defined_offset": 0,
+          "role": "retained",
+          "resolution": "undefined-original",
+          "target": 2149932424
+        },
+        {
+          "section": ".text",
+          "at": 250,
+          "kind": 6,
+          "symbol_index": 12,
+          "symbol": "lbl_8029D680",
+          "addend": 0,
+          "binding": 1,
+          "defined_section": "",
+          "defined_offset": 0,
+          "role": "retained",
+          "resolution": "undefined-original",
+          "target": 2150225536
+        },
+        {
+          "section": ".text",
+          "at": 258,
+          "kind": 4,
+          "symbol_index": 12,
+          "symbol": "lbl_8029D680",
+          "addend": 0,
+          "binding": 1,
+          "defined_section": "",
+          "defined_offset": 0,
+          "role": "retained",
+          "resolution": "undefined-original",
+          "target": 2150225536
+        },
+        {
+          "section": ".text",
+          "at": 260,
+          "kind": 10,
+          "symbol_index": 18,
+          "symbol": "fn_801F948C",
+          "addend": 0,
+          "binding": 1,
+          "defined_section": "",
+          "defined_offset": 0,
+          "role": "retained",
+          "resolution": "undefined-original",
+          "target": 2149553292
+        },
+        {
+          "section": ".text",
+          "at": 266,
+          "kind": 6,
+          "symbol_index": 13,
+          "symbol": "lbl_801E9D24",
+          "addend": 0,
+          "binding": 1,
+          "defined_section": "",
+          "defined_offset": 0,
+          "role": "retained",
+          "resolution": "undefined-original",
+          "target": 2149489956
+        },
+        {
+          "section": ".text",
+          "at": 274,
+          "kind": 4,
+          "symbol_index": 13,
+          "symbol": "lbl_801E9D24",
+          "addend": 0,
+          "binding": 1,
+          "defined_section": "",
+          "defined_offset": 0,
+          "role": "retained",
+          "resolution": "undefined-original",
+          "target": 2149489956
+        },
+        {
+          "section": ".text",
+          "at": 300,
+          "kind": 10,
+          "symbol_index": 19,
+          "symbol": "fn_80058778",
+          "addend": 0,
+          "binding": 1,
+          "defined_section": "",
+          "defined_offset": 0,
+          "role": "retained",
+          "resolution": "undefined-original",
+          "target": 2147846008
+        },
+        {
+          "section": ".text",
+          "at": 306,
+          "kind": 6,
+          "symbol_index": 13,
+          "symbol": "lbl_801E9D24",
+          "addend": 0,
+          "binding": 1,
+          "defined_section": "",
+          "defined_offset": 0,
+          "role": "retained",
+          "resolution": "undefined-original",
+          "target": 2149489956
+        },
+        {
+          "section": ".text",
+          "at": 314,
+          "kind": 4,
+          "symbol_index": 13,
+          "symbol": "lbl_801E9D24",
+          "addend": 0,
+          "binding": 1,
+          "defined_section": "",
+          "defined_offset": 0,
+          "role": "retained",
+          "resolution": "undefined-original",
+          "target": 2149489956
+        },
+        {
+          "section": ".text",
+          "at": 384,
+          "kind": 10,
+          "symbol_index": 20,
+          "symbol": "__dt__15Handle_801F7F10Fv",
+          "addend": 0,
+          "binding": 1,
+          "defined_section": "",
+          "defined_offset": 0,
+          "role": "retained",
+          "resolution": "undefined-original",
+          "target": 2149547792
+        },
+        {
+          "section": ".text",
+          "at": 452,
+          "kind": 10,
+          "symbol_index": 21,
+          "symbol": "fn_80254BB4",
+          "addend": 0,
+          "binding": 1,
+          "defined_section": "",
+          "defined_offset": 0,
+          "role": "retained",
+          "resolution": "undefined-original",
+          "target": 2149927860
+        },
+        {
+          "section": ".text",
+          "at": 460,
+          "kind": 10,
+          "symbol_index": 22,
+          "symbol": "fn_802554F4",
+          "addend": 0,
+          "binding": 1,
+          "defined_section": "",
+          "defined_offset": 0,
+          "role": "retained",
+          "resolution": "undefined-original",
+          "target": 2149930228
+        },
+        {
+          "section": ".text",
+          "at": 506,
+          "kind": 6,
+          "symbol_index": 14,
+          "symbol": "lbl_8029D690",
+          "addend": 0,
+          "binding": 1,
+          "defined_section": "",
+          "defined_offset": 0,
+          "role": "retained",
+          "resolution": "undefined-original",
+          "target": 2150225552
+        },
+        {
+          "section": ".text",
+          "at": 514,
+          "kind": 4,
+          "symbol_index": 14,
+          "symbol": "lbl_8029D690",
+          "addend": 0,
+          "binding": 1,
+          "defined_section": "",
+          "defined_offset": 0,
+          "role": "retained",
+          "resolution": "undefined-original",
+          "target": 2150225552
+        },
+        {
+          "section": ".text",
+          "at": 516,
+          "kind": 10,
+          "symbol_index": 18,
+          "symbol": "fn_801F948C",
+          "addend": 0,
+          "binding": 1,
+          "defined_section": "",
+          "defined_offset": 0,
+          "role": "retained",
+          "resolution": "undefined-original",
+          "target": 2149553292
+        },
+        {
+          "section": ".text",
+          "at": 548,
+          "kind": 10,
+          "symbol_index": 19,
+          "symbol": "fn_80058778",
+          "addend": 0,
+          "binding": 1,
+          "defined_section": "",
+          "defined_offset": 0,
+          "role": "retained",
+          "resolution": "undefined-original",
+          "target": 2147846008
+        },
+        {
+          "section": ".text",
+          "at": 624,
+          "kind": 10,
+          "symbol_index": 20,
+          "symbol": "__dt__15Handle_801F7F10Fv",
+          "addend": 0,
+          "binding": 1,
+          "defined_section": "",
+          "defined_offset": 0,
+          "role": "retained",
+          "resolution": "undefined-original",
+          "target": 2149547792
+        },
+        {
+          "section": ".text",
+          "at": 692,
+          "kind": 10,
+          "symbol_index": 21,
+          "symbol": "fn_80254BB4",
+          "addend": 0,
+          "binding": 1,
+          "defined_section": "",
+          "defined_offset": 0,
+          "role": "retained",
+          "resolution": "undefined-original",
+          "target": 2149927860
+        },
+        {
+          "section": ".text",
+          "at": 700,
+          "kind": 10,
+          "symbol_index": 22,
+          "symbol": "fn_802554F4",
+          "addend": 0,
+          "binding": 1,
+          "defined_section": "",
+          "defined_offset": 0,
+          "role": "retained",
+          "resolution": "undefined-original",
+          "target": 2149930228
+        },
+        {
+          "section": ".text",
+          "at": 720,
+          "kind": 109,
+          "symbol_index": 15,
+          "symbol": "lbl_803776B8",
+          "addend": 0,
+          "binding": 1,
+          "defined_section": "",
+          "defined_offset": 0,
+          "role": "retained",
+          "resolution": "undefined-original",
+          "target": 2151118520
+        },
+        {
+          "section": ".text",
+          "at": 752,
+          "kind": 10,
+          "symbol_index": 23,
+          "symbol": "fn_8006803C",
+          "addend": 0,
+          "binding": 1,
+          "defined_section": "",
+          "defined_offset": 0,
+          "role": "retained",
+          "resolution": "undefined-original",
+          "target": 2147909692
+        },
+        {
+          "section": ".text",
+          "at": 808,
+          "kind": 10,
+          "symbol_index": 20,
+          "symbol": "__dt__15Handle_801F7F10Fv",
+          "addend": 0,
+          "binding": 1,
+          "defined_section": "",
+          "defined_offset": 0,
+          "role": "discarded",
+          "resolution": "undefined-original",
+          "target": 2149547792
+        },
+        {
+          "section": ".text",
+          "at": 824,
+          "kind": 10,
+          "symbol_index": 25,
+          "symbol": "__dl__FPv",
+          "addend": 0,
+          "binding": 1,
+          "defined_section": "",
+          "defined_offset": 0,
+          "role": "discarded",
+          "resolution": "undefined-original",
+          "target": 2148658644
+        },
+        {
+          "section": "extabindex",
+          "at": 0,
+          "kind": 1,
+          "symbol_index": 24,
+          "symbol": "fn_80082C18",
+          "addend": 0,
+          "binding": 1,
+          "defined_section": ".text",
+          "defined_offset": 0,
+          "role": "retained",
+          "resolution": "retained-local",
+          "target": 2148019224
+        },
+        {
+          "section": "extabindex",
+          "at": 8,
+          "kind": 1,
+          "symbol_index": 6,
+          "symbol": "@77",
+          "addend": 0,
+          "binding": 0,
+          "defined_section": "extab",
+          "defined_offset": 0,
+          "role": "retained",
+          "resolution": "retained-local",
+          "target": 2147539652
+        },
+        {
+          "section": "extabindex",
+          "at": 12,
+          "kind": 1,
+          "symbol_index": 26,
+          "symbol": "__dt__14Returned_82C18Fv",
+          "addend": 0,
+          "binding": 2,
+          "defined_section": ".text",
+          "defined_offset": 776,
+          "role": "discarded",
+          "resolution": "discarded-local"
+        },
+        {
+          "section": "extabindex",
+          "at": 20,
+          "kind": 1,
+          "symbol_index": 8,
+          "symbol": "@81",
+          "addend": 0,
+          "binding": 0,
+          "defined_section": "extab",
+          "defined_offset": 8,
+          "role": "discarded",
+          "resolution": "discarded-local"
+        }
+      ],
+      "retained_strong_overrides": [],
+      "metadata_relocations": [
+        {
+          "section": ".mwcats.text",
+          "at": 4,
+          "kind": 1,
+          "symbol_index": 24,
+          "symbol": "fn_80082C18",
+          "addend": 0,
+          "binding": 1,
+          "defined_section": ".text",
+          "defined_offset": 0
+        },
+        {
+          "section": ".mwcats.text",
+          "at": 12,
+          "kind": 1,
+          "symbol_index": 26,
+          "symbol": "__dt__14Returned_82C18Fv",
+          "addend": 0,
+          "binding": 2,
+          "defined_section": ".text",
+          "defined_offset": 776
+        }
+      ],
+      "validation": {
+        "retained_text_bytes": 776,
+        "retained_data_bytes": 20,
+        "uncredited_backup_text_bytes": 76,
+        "uncredited_backup_data_bytes": 20,
+        "retained_relocations": 27,
+        "backup_relocations": 4,
+        "all_allocated_bytes_accounted": true,
+        "all_retained_original_bytes_exact": true
+      },
+      "schema": "production-defined-weak-eh-override-v1",
+      "fixture_source": "src/Game/actor_vertical_effect_reset_80082C18.cpp",
+      "fixture_source_sha256": "6d67c335324f13327f17a90ae6220a9a85cb74cb5d3eb050ebeeaabd00ebb5df",
+      "fixture_object": "/Users/brandenb/Downloads/rotfd/scratch/game_actor_vertical_effect_reset_80082c18/production.o",
+      "fixture_object_sha256": "265102df39fe0761ca875d9737105db9ba9c6104fc9bb0473c416070198d97f6",
+      "strong_owners": []
+    },
+    "unlinked_exception_groups": [
+      {
+        "function": "__dt__14Returned_82C18Fv",
+        "role": "linker-discarded-backup",
+        "text": {
+          "name": "__dt__14Returned_82C18Fv",
+          "section": ".text",
+          "object_offset": 776,
+          "size": 76,
+          "binding": 2,
+          "type": 2,
+          "symbol_index": 26,
+          "role": "linker-discarded-backup",
+          "raw_sha256": "44922a4b051c2b271cd493dd589d65b21582604ff326c020361fa4f0f6a8d0ae"
+        },
+        "extab": {
+          "name": "@81",
+          "section": "extab",
+          "object_offset": 8,
+          "size": 8,
+          "binding": 0,
+          "type": 1,
+          "symbol_index": 8,
+          "role": "linker-discarded-backup",
+          "raw_sha256": "bcc0e7d554bfb67e6dfaa82a25ef2a617173bede4c2416a211eb9600a67e9e82"
+        },
+        "extabindex": {
+          "name": "@82",
+          "section": "extabindex",
+          "object_offset": 12,
+          "size": 12,
+          "binding": 0,
+          "type": 1,
+          "symbol_index": 9,
+          "role": "linker-discarded-backup",
+          "raw_sha256": "571672201c6ed03c781e3e4b7f637ebc37b0e48ce66534b3dbfec4ba927b0e0b"
+        }
+      }
+    ],
+    "emitted_sections": [
+      {
+        "name": ".text",
+        "size": 852,
+        "raw_sha256": "71a1b853cc167bba678526381c99e0d058b0dadb09856d3f20c45e147656023f"
+      },
+      {
+        "name": "extab",
+        "size": 16,
+        "raw_sha256": "1b8d07beb9faa753891d3e72b4a3deab9e725048a087e6a8bdb7829e37b84c51"
+      },
+      {
+        "name": "extabindex",
+        "size": 24,
+        "raw_sha256": "7c52f7c5cc64bb8a5c453173e62870e8ca602b227ed798b05671dddee85a9def"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 8,
+        "kind": 109,
+        "symbol_index": 10,
+        "symbol": "lbl_80378AD0",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "undefined-original",
+        "target": 2151123664
+      },
+      {
+        "section": ".text",
+        "at": 42,
+        "kind": 6,
+        "symbol_index": 11,
+        "symbol": "game_vec3_zero",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "undefined-original",
+        "target": 2150894420
+      },
+      {
+        "section": ".text",
+        "at": 50,
+        "kind": 4,
+        "symbol_index": 11,
+        "symbol": "game_vec3_zero",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "undefined-original",
+        "target": 2150894420
+      },
+      {
+        "section": ".text",
+        "at": 220,
+        "kind": 10,
+        "symbol_index": 16,
+        "symbol": "fn_80257828",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "undefined-original",
+        "target": 2149939240
+      },
+      {
+        "section": ".text",
+        "at": 244,
+        "kind": 10,
+        "symbol_index": 17,
+        "symbol": "fn_80255D88",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "undefined-original",
+        "target": 2149932424
+      },
+      {
+        "section": ".text",
+        "at": 250,
+        "kind": 6,
+        "symbol_index": 12,
+        "symbol": "lbl_8029D680",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "undefined-original",
+        "target": 2150225536
+      },
+      {
+        "section": ".text",
+        "at": 258,
+        "kind": 4,
+        "symbol_index": 12,
+        "symbol": "lbl_8029D680",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "undefined-original",
+        "target": 2150225536
+      },
+      {
+        "section": ".text",
+        "at": 260,
+        "kind": 10,
+        "symbol_index": 18,
+        "symbol": "fn_801F948C",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "undefined-original",
+        "target": 2149553292
+      },
+      {
+        "section": ".text",
+        "at": 266,
+        "kind": 6,
+        "symbol_index": 13,
+        "symbol": "lbl_801E9D24",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "undefined-original",
+        "target": 2149489956
+      },
+      {
+        "section": ".text",
+        "at": 274,
+        "kind": 4,
+        "symbol_index": 13,
+        "symbol": "lbl_801E9D24",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "undefined-original",
+        "target": 2149489956
+      },
+      {
+        "section": ".text",
+        "at": 300,
+        "kind": 10,
+        "symbol_index": 19,
+        "symbol": "fn_80058778",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "undefined-original",
+        "target": 2147846008
+      },
+      {
+        "section": ".text",
+        "at": 306,
+        "kind": 6,
+        "symbol_index": 13,
+        "symbol": "lbl_801E9D24",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "undefined-original",
+        "target": 2149489956
+      },
+      {
+        "section": ".text",
+        "at": 314,
+        "kind": 4,
+        "symbol_index": 13,
+        "symbol": "lbl_801E9D24",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "undefined-original",
+        "target": 2149489956
+      },
+      {
+        "section": ".text",
+        "at": 384,
+        "kind": 10,
+        "symbol_index": 20,
+        "symbol": "__dt__15Handle_801F7F10Fv",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "undefined-original",
+        "target": 2149547792
+      },
+      {
+        "section": ".text",
+        "at": 452,
+        "kind": 10,
+        "symbol_index": 21,
+        "symbol": "fn_80254BB4",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "undefined-original",
+        "target": 2149927860
+      },
+      {
+        "section": ".text",
+        "at": 460,
+        "kind": 10,
+        "symbol_index": 22,
+        "symbol": "fn_802554F4",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "undefined-original",
+        "target": 2149930228
+      },
+      {
+        "section": ".text",
+        "at": 506,
+        "kind": 6,
+        "symbol_index": 14,
+        "symbol": "lbl_8029D690",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "undefined-original",
+        "target": 2150225552
+      },
+      {
+        "section": ".text",
+        "at": 514,
+        "kind": 4,
+        "symbol_index": 14,
+        "symbol": "lbl_8029D690",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "undefined-original",
+        "target": 2150225552
+      },
+      {
+        "section": ".text",
+        "at": 516,
+        "kind": 10,
+        "symbol_index": 18,
+        "symbol": "fn_801F948C",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "undefined-original",
+        "target": 2149553292
+      },
+      {
+        "section": ".text",
+        "at": 548,
+        "kind": 10,
+        "symbol_index": 19,
+        "symbol": "fn_80058778",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "undefined-original",
+        "target": 2147846008
+      },
+      {
+        "section": ".text",
+        "at": 624,
+        "kind": 10,
+        "symbol_index": 20,
+        "symbol": "__dt__15Handle_801F7F10Fv",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "undefined-original",
+        "target": 2149547792
+      },
+      {
+        "section": ".text",
+        "at": 692,
+        "kind": 10,
+        "symbol_index": 21,
+        "symbol": "fn_80254BB4",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "undefined-original",
+        "target": 2149927860
+      },
+      {
+        "section": ".text",
+        "at": 700,
+        "kind": 10,
+        "symbol_index": 22,
+        "symbol": "fn_802554F4",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "undefined-original",
+        "target": 2149930228
+      },
+      {
+        "section": ".text",
+        "at": 720,
+        "kind": 109,
+        "symbol_index": 15,
+        "symbol": "lbl_803776B8",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "undefined-original",
+        "target": 2151118520
+      },
+      {
+        "section": ".text",
+        "at": 752,
+        "kind": 10,
+        "symbol_index": 23,
+        "symbol": "fn_8006803C",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "undefined-original",
+        "target": 2147909692
+      },
+      {
+        "section": ".text",
+        "at": 808,
+        "kind": 10,
+        "symbol_index": 20,
+        "symbol": "__dt__15Handle_801F7F10Fv",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "discarded",
+        "resolution": "undefined-original",
+        "target": 2149547792
+      },
+      {
+        "section": ".text",
+        "at": 824,
+        "kind": 10,
+        "symbol_index": 25,
+        "symbol": "__dl__FPv",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": "",
+        "defined_offset": 0,
+        "role": "discarded",
+        "resolution": "undefined-original",
+        "target": 2148658644
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "kind": 1,
+        "symbol_index": 24,
+        "symbol": "fn_80082C18",
+        "addend": 0,
+        "binding": 1,
+        "defined_section": ".text",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "retained-local",
+        "target": 2148019224
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "kind": 1,
+        "symbol_index": 6,
+        "symbol": "@77",
+        "addend": 0,
+        "binding": 0,
+        "defined_section": "extab",
+        "defined_offset": 0,
+        "role": "retained",
+        "resolution": "retained-local",
+        "target": 2147539652
+      },
+      {
+        "section": "extabindex",
+        "at": 12,
+        "kind": 1,
+        "symbol_index": 26,
+        "symbol": "__dt__14Returned_82C18Fv",
+        "addend": 0,
+        "binding": 2,
+        "defined_section": ".text",
+        "defined_offset": 776,
+        "role": "discarded",
+        "resolution": "discarded-local"
+      },
+      {
+        "section": "extabindex",
+        "at": 20,
+        "kind": 1,
+        "symbol_index": 8,
+        "symbol": "@81",
+        "addend": 0,
+        "binding": 0,
+        "defined_section": "extab",
+        "defined_offset": 8,
+        "role": "discarded",
+        "resolution": "discarded-local"
+      }
+    ],
+    "notes": "docs/notes/game-actor-vertical-effect-reset.md",
+    "verified_text_bytes": 776,
+    "verified_data_bytes": 20,
+    "dependency_symbols": [
+      {
+        "name": "__dl__FPv",
+        "section": ".text",
+        "address": 2148658644,
+        "scope": "global"
+      },
+      {
+        "name": "__dt__15Handle_801F7F10Fv",
+        "section": ".text",
+        "address": 2149547792,
+        "scope": "global"
+      },
+      {
+        "name": "fn_80058778",
+        "section": ".text",
+        "address": 2147846008,
+        "scope": "global"
+      },
+      {
+        "name": "fn_8006803C",
+        "section": ".text",
+        "address": 2147909692,
+        "scope": "global"
+      },
+      {
+        "name": "fn_801F948C",
+        "section": ".text",
+        "address": 2149553292,
+        "scope": "global"
+      },
+      {
+        "name": "fn_80254BB4",
+        "section": ".text",
+        "address": 2149927860,
+        "scope": "global"
+      },
+      {
+        "name": "fn_802554F4",
+        "section": ".text",
+        "address": 2149930228,
+        "scope": "global"
+      },
+      {
+        "name": "fn_80255D88",
+        "section": ".text",
+        "address": 2149932424,
+        "scope": "global"
+      },
+      {
+        "name": "fn_80257828",
+        "section": ".text",
+        "address": 2149939240,
+        "scope": "global"
+      },
+      {
+        "name": "game_vec3_zero",
+        "section": ".bss",
+        "address": 2150894420,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_801E9D24",
+        "section": ".text",
+        "address": 2149489956,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_8029D680",
+        "section": ".rodata",
+        "address": 2150225536,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_8029D690",
+        "section": ".rodata",
+        "address": 2150225552,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_803776B8",
+        "section": ".sbss",
+        "address": 2151118520,
+        "scope": "global"
+      },
+      {
+        "name": "lbl_80378AD0",
+        "section": ".sdata2",
+        "address": 2151123664,
+        "scope": "global"
+      }
+    ],
+    "validation": {
+      "object_sha256": "265102df39fe0761ca875d9737105db9ba9c6104fc9bb0473c416070198d97f6",
+      "retained_text_bytes": 776,
+      "initialized_data_bytes": 20,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 27,
+      "unlinked_relocations": 4,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true,
+      "uncredited_text_bytes": 76,
+      "uncredited_metadata_bytes": 20
+    },
+    "canonical_manifest": "config/GSQE78/candidates/game_actor_vertical_effect_reset.json"
+  }
+]

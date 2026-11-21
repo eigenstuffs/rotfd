@@ -1,0 +1,94 @@
+{
+  "source": "src/MetroTRK/nubevent.c",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.3.2",
+  "cflags": "-proc gekko -fp hardware -enum int -str reuse -common off -O4,p -inline on,noauto -sdata 0 -sdata2 0 -pool off -use_lmw_stmw on -rostr -i src/MetroTRK -Cpp_exceptions off",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2148629564,
+      "end": 2148630116
+    },
+    {
+      "name": ".bss",
+      "start": 2150862968,
+      "end": 2150863008
+    }
+  ],
+  "functions": [
+    {
+      "name": "TRKDestructEvent",
+      "address": 2148629564,
+      "size": 36
+    },
+    {
+      "name": "TRKConstructEvent",
+      "address": 2148629600,
+      "size": 24
+    },
+    {
+      "name": "TRKPostEvent",
+      "address": 2148629624,
+      "size": 224
+    },
+    {
+      "name": "TRKGetNextEvent",
+      "address": 2148629848,
+      "size": 180
+    },
+    {
+      "name": "TRKInitializeEventQueue",
+      "address": 2148630028,
+      "size": 88
+    }
+  ],
+  "objects": [
+    {
+      "name": "gTRKEventQueue",
+      "address": 2150862968,
+      "size": 40,
+      "section": ".bss"
+    }
+  ],
+  "symbol_scopes": {
+    "TRKDestructEvent": "global",
+    "TRKConstructEvent": "global",
+    "TRKPostEvent": "global",
+    "TRKGetNextEvent": "global",
+    "TRKInitializeEventQueue": "global",
+    "gTRKEventQueue": "global"
+  },
+  "symbols": {
+    "TRKDestructEvent": "0x80117c3c",
+    "TRKConstructEvent": "0x80117c60",
+    "TRKPostEvent": "0x80117c78",
+    "TRKGetNextEvent": "0x80117d58",
+    "TRKInitializeEventQueue": "0x80117e0c",
+    "gTRKEventQueue": "0x80339078",
+    "TRKReleaseBuffer": "0x80118a20",
+    "TRKAcquireMutex": "0x8011c1e4",
+    "TRK_memcpy": "0x800033d8",
+    "TRKReleaseMutex": "0x8011c1dc",
+    "TRKInitializeMutex": "0x8011c1ec"
+  },
+  "external_original_names": {
+    "TRKReleaseBuffer": "fn_80118A20",
+    "TRKAcquireMutex": "fn_8011C1E4",
+    "TRK_memcpy": "fn_800033D8",
+    "TRKReleaseMutex": "fn_8011C1DC",
+    "TRKInitializeMutex": "fn_8011C1EC"
+  },
+  "verified_text_bytes": 552,
+  "verified_data_bytes": 0,
+  "source_kind": "c",
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "d5018409d9c9bc25a76ecfb883a23015ca1f162f86c03157acd6fa14e0c9f0a3",
+    "matched_code": 552,
+    "matched_functions": 5,
+    "matched_data": 40,
+    "complete_data": 40,
+    "object_path": "build/GSQE78/src/MetroTRK/nubevent.o",
+    "object_sha256": "a8b043b7ba31d173e73c05785d0568fc610cafa6e3d516b4aca4bfd90f9c42d2"
+  }
+}

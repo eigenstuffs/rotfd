@@ -1,0 +1,130 @@
+#include "Game/native_runtime_type_records_remaining.h"
+
+extern "C" {
+// Base hierarchy for ABC_Agent.
+NativeRuntimeBaseList<1> lbl_802C8470 = {
+    {
+        { &lbl_80375A28, 0 }, // BaseObject_Z
+    }, 0
+};
+
+// Base hierarchy for Agent_Z.
+NativeRuntimeBaseList<2> lbl_802C847C = {
+    {
+        { &lbl_80375A28, 0 }, // BaseObject_Z
+        { &lbl_80375A30, 0 }, // ABC_Agent
+    }, 0
+};
+
+// Base hierarchy for AnimatedMsgAgent_Z.
+NativeRuntimeBaseList<3> lbl_802C8490 = {
+    {
+        { &lbl_80375A28, 0 }, // BaseObject_Z
+        { &lbl_80375A30, 0 }, // ABC_Agent
+        { &lbl_80375A38, 0 }, // Agent_Z
+    }, 0
+};
+
+// Base hierarchy for AnimatedAgent_Z.
+NativeRuntimeBaseList<4> lbl_802C84AC = {
+    {
+        { &lbl_80375A28, 0 }, // BaseObject_Z
+        { &lbl_80375A30, 0 }, // ABC_Agent
+        { &lbl_80375A38, 0 }, // Agent_Z
+        { &lbl_80375A40, 0 }, // AnimatedMsgAgent_Z
+    }, 0
+};
+
+// Base hierarchy for MovingAgent_Z.
+NativeRuntimeBaseList<5> lbl_802C84D0 = {
+    {
+        { &lbl_80375A28, 0 }, // BaseObject_Z
+        { &lbl_80375A30, 0 }, // ABC_Agent
+        { &lbl_80375A38, 0 }, // Agent_Z
+        { &lbl_80375A40, 0 }, // AnimatedMsgAgent_Z
+        { &lbl_80375A48, 0 }, // AnimatedAgent_Z
+    }, 0
+};
+
+// Base hierarchy for WaterHelmet.
+NativeRuntimeBaseList<6> lbl_802C84FC = {
+    {
+        { &lbl_80375A28, 0 }, // BaseObject_Z
+        { &lbl_80375A30, 0 }, // ABC_Agent
+        { &lbl_80375A38, 0 }, // Agent_Z
+        { &lbl_80375A40, 0 }, // AnimatedMsgAgent_Z
+        { &lbl_80375A48, 0 }, // AnimatedAgent_Z
+        { &lbl_80375A50, 0 }, // MovingAgent_Z
+    }, 0
+};
+
+}
+
+// Adjacent native method and runtime-base records.
+extern "C" {
+void fn_80023928();
+void fn_8002392C();
+void fn_80023934();
+void fn_8002393C();
+void fn_80023944();
+void fn_80028D58();
+void fn_80028D60();
+void fn_80028D68();
+void fn_80028D6C();
+void fn_800E1378();
+void fn_800E13F4();
+void fn_800E1478();
+void fn_800E1498();
+void fn_800E15F0();
+void fn_800E15F8();
+void fn_800E1600();
+void fn_800E1674();
+void fn_80256028();
+void fn_80257C50();
+void fn_80257C58();
+void fn_80259F0C();
+void fn_80259FB4();
+void fn_8025A190();
+void fn_8025A244();
+void fn_8025A324();
+void fn_8025A5F8();
+void slot0C__12BaseObject_ZFUl();
+void slot10__12BaseObject_ZFv();
+void slot14__12BaseObject_ZFv();
+}
+
+extern "C" __declspec(section ".data") const void* const lbl_802C8530[32] __attribute__((aligned(4))) = {
+    &lbl_80375A58,
+    0,
+    (const void*)fn_800E1378,
+    (const void*)slot0C__12BaseObject_ZFUl,
+    (const void*)slot10__12BaseObject_ZFv,
+    (const void*)slot14__12BaseObject_ZFv,
+    (const void*)fn_800E13F4,
+    (const void*)fn_80259F0C,
+    (const void*)fn_800E15F0,
+    (const void*)fn_800E15F8,
+    (const void*)fn_800E1600,
+    (const void*)fn_800E1674,
+    (const void*)fn_8025A244,
+    (const void*)fn_8025A190,
+    (const void*)fn_800E1478,
+    (const void*)fn_8025A324,
+    (const void*)fn_800E1498,
+    (const void*)fn_80259FB4,
+    (const void*)fn_8002392C,
+    (const void*)fn_80023934,
+    (const void*)fn_8002393C,
+    (const void*)fn_80028D58,
+    (const void*)fn_80028D60,
+    (const void*)fn_80028D68,
+    (const void*)fn_80028D6C,
+    (const void*)fn_80257C58,
+    (const void*)fn_80257C50,
+    (const void*)fn_80256028,
+    (const void*)fn_80023944,
+    (const void*)fn_80023928,
+    (const void*)fn_8025A5F8,
+    0,
+};
+

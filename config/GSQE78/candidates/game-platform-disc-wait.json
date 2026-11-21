@@ -1,0 +1,280 @@
+{
+  "status": "integrated-byte-match",
+  "source": "src/Game/platform_disc_wait.cpp",
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-proc",
+    "gekko",
+    "-fp",
+    "hardware",
+    "-enum",
+    "int",
+    "-str",
+    "reuse",
+    "-common",
+    "off",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-Cpp_exceptions",
+    "off",
+    "-RTTI",
+    "off",
+    "-use_lmw_stmw",
+    "on",
+    "-fp_contract",
+    "on",
+    "-i",
+    "src/Game",
+    "-i",
+    "include",
+    "-i",
+    "src/dolphin",
+    "-i",
+    "src/dolphin/ax"
+  ],
+  "source_kind": "c++",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2150166404,
+      "end": 2150167732,
+      "alignment": 4
+    },
+    {
+      "name": ".data",
+      "start": 2150572800,
+      "end": 2150572904,
+      "alignment": 8
+    }
+  ],
+  "functions": [
+    {
+      "name": "fn_8028EF84",
+      "address": 2150166404,
+      "size": 792,
+      "scope": "global",
+      "section": ".text",
+      "object_offset": 0,
+      "sha256": "45682eaaa12b971ba330c6a03e262662c0db246891023225fdeee0ec55514e3b"
+    },
+    {
+      "name": "fn_8028F29C",
+      "address": 2150167196,
+      "size": 536,
+      "scope": "global",
+      "section": ".text",
+      "object_offset": 792,
+      "sha256": "833ee4c6cc579c4ff5c747e1858d66e264584560f8e17abbf4fc1c1590d5a4fa"
+    }
+  ],
+  "objects": [
+    {
+      "name": "@66",
+      "address": 2150572800,
+      "size": 52,
+      "scope": "local",
+      "section": ".data",
+      "object_offset": 0,
+      "compiler_local": true,
+      "sha256": "9a289d65f01bc6e04154f18823ccb172aaec4adf748642b4aec999c3d75c02ad"
+    },
+    {
+      "name": "@114",
+      "address": 2150572852,
+      "size": 52,
+      "scope": "local",
+      "section": ".data",
+      "object_offset": 52,
+      "compiler_local": true,
+      "sha256": "2ed5c02e0cdda6aa66882ddbfee48e41a0f0fee26a3172fcdb70375884900175"
+    }
+  ],
+  "unlinked_functions": [
+    {
+      "name": "__dt__14DiscWaitHandleFv",
+      "section": ".text",
+      "object_offset": 1328,
+      "size": 88,
+      "binding": "weak"
+    },
+    {
+      "name": "__dt__19DiscWaitHandleFirstFv",
+      "section": ".text",
+      "object_offset": 1416,
+      "size": 84,
+      "binding": "weak"
+    }
+  ],
+  "dependency_symbols": [
+    {
+      "name": "DVDGetDriveStatus",
+      "address": 2148509228,
+      "scope": "global"
+    },
+    {
+      "name": "DVDOpen",
+      "address": 2148499876,
+      "scope": "global"
+    },
+    {
+      "name": "DVDReadAsyncPrio",
+      "address": 2148500660,
+      "scope": "global"
+    },
+    {
+      "name": "OSYieldThread",
+      "address": 2148491420,
+      "scope": "global"
+    },
+    {
+      "name": "__ct__15Handle_801F7F10Fv",
+      "address": 2149547780,
+      "scope": "global"
+    },
+    {
+      "name": "__dt__15Handle_801F7F10Fv",
+      "address": 2149547792,
+      "scope": "global"
+    },
+    {
+      "name": "fn_801EBB9C",
+      "address": 2149497756,
+      "scope": "global"
+    },
+    {
+      "name": "fn_801FA014",
+      "address": 2149556244,
+      "scope": "global"
+    },
+    {
+      "name": "fn_8028F4D8",
+      "address": 2150167768,
+      "scope": "global"
+    },
+    {
+      "name": "lbl_801E9D24",
+      "address": 2149489956,
+      "scope": "global"
+    },
+    {
+      "name": "lbl_802AF908",
+      "address": 2150299912,
+      "scope": "global"
+    },
+    {
+      "name": "lbl_802AFB08",
+      "address": 2150300424,
+      "scope": "global"
+    },
+    {
+      "name": "lbl_80373100",
+      "address": 2151100672,
+      "scope": "global"
+    },
+    {
+      "name": "lbl_80377F90",
+      "address": 2151120784,
+      "scope": "global"
+    },
+    {
+      "name": "lbl_80378164",
+      "address": 2151121252,
+      "scope": "global"
+    },
+    {
+      "name": "lbl_80378168",
+      "address": 2151121256,
+      "scope": "global"
+    },
+    {
+      "name": "lbl_8037816C",
+      "address": 2151121260,
+      "scope": "global"
+    },
+    {
+      "name": "lbl_8037816D",
+      "address": 2151121261,
+      "scope": "global"
+    },
+    {
+      "name": "lbl_8037816E",
+      "address": 2151121262,
+      "scope": "global"
+    },
+    {
+      "name": "lbl_80378170",
+      "address": 2151121264,
+      "scope": "global"
+    },
+    {
+      "name": "lbl_80378174",
+      "address": 2151121268,
+      "scope": "global"
+    },
+    {
+      "name": "lbl_80378175",
+      "address": 2151121269,
+      "scope": "global"
+    },
+    {
+      "name": "lbl_80378176",
+      "address": 2151121270,
+      "scope": "global"
+    },
+    {
+      "name": "strcpy",
+      "address": 2148697408,
+      "scope": "global"
+    }
+  ],
+  "source_sha256": "c6b4509896ad3b67fac0a5e25126209da99697fc01985d630b750dce6c928534",
+  "headers": [
+    {
+      "path": "include/Game/platform_disc_poll_internal.h",
+      "sha256": "34463e02d98935445dcce1209d53dce874431647d0ca9de013b80d8af175dcc4"
+    },
+    {
+      "path": "include/Game/platform_disc_wait_internal.h",
+      "sha256": "acdb63e4a68a0e7101cadf0197b7921bd374573f41e464063b13a17dc4807812"
+    },
+    {
+      "path": "include/Game/platform_disc_read.h",
+      "sha256": "c15d9e442a60c5e788fd0a64fe7f33d88971fe3adb70a34a2ffd87c5f3950b54"
+    },
+    {
+      "path": "include/Game/platform_disc_status.h",
+      "sha256": "d4cdaa60f78753f186a4addd883f27a891abd8dfdb834bcb8f3bd4b3e20d8910"
+    }
+  ],
+  "validation": {
+    "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "object_sha256": "e9ec0a25f754bcee60d284fd66ef0fd61acd3f2852082d329be77f9853a5b8e5",
+    "retained_text_bytes": 1328,
+    "emitted_text_bytes": 1500,
+    "initialized_data_bytes": 104,
+    "bss_bytes": 0,
+    "emitted_data_bytes": 104,
+    "unlinked_text_bytes": 172,
+    "weak_functions": 2,
+    "relocations": 96,
+    "emitted_relocations": 100,
+    "zero_byte_differences": true,
+    "all_retained_allocated_bytes_verified": true,
+    "all_emitted_allocated_bytes_accounted": true,
+    "owned_padding_bytes": 0,
+    "verification_script": "scratch/game_disc_wait/verify_wait_poll.py",
+    "integration_status": "verified full-DOL and objdiff"
+  },
+  "notes": "docs/notes/game-platform-disc-wait.md",
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "c6b4509896ad3b67fac0a5e25126209da99697fc01985d630b750dce6c928534",
+    "matched_code": 1328,
+    "matched_functions": 2,
+    "matched_data": 104,
+    "complete_data": 104,
+    "object_path": "build/GSQE78/src/Game/platform_disc_wait.o",
+    "object_sha256": "e9ec0a25f754bcee60d284fd66ef0fd61acd3f2852082d329be77f9853a5b8e5"
+  }
+}

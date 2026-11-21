@@ -1,0 +1,217 @@
+{
+  "status": "accepted-standard-native-build",
+  "source": "src/Game/light_constructor_8024405C.cpp",
+  "source_sha256": "fc339e3e9db06bebdc4c73b7b3af1672bbc39af188969b528d315f8e665a00b4",
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-proc",
+    "gekko",
+    "-fp",
+    "hardware",
+    "-enum",
+    "int",
+    "-str",
+    "reuse",
+    "-common",
+    "off",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-Cpp_exceptions",
+    "off",
+    "-RTTI",
+    "off",
+    "-use_lmw_stmw",
+    "on",
+    "-fp_contract",
+    "on"
+  ],
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2149859420,
+      "end": 2149859624,
+      "alignment": 4
+    }
+  ],
+  "functions": [
+    {
+      "name": "__ct__14Light_8024405CFv",
+      "address": 2149859420,
+      "size": 204,
+      "scope": "global",
+      "section": ".text",
+      "object_offset": 0
+    }
+  ],
+  "objects": [],
+  "headers": [],
+  "dependency_symbols": [
+    {
+      "name": "fn_80243F28",
+      "section": ".text",
+      "address": 2149859112,
+      "scope": "global"
+    },
+    {
+      "name": "game_quat_identity",
+      "section": ".bss",
+      "address": 2150894448,
+      "scope": "global"
+    },
+    {
+      "name": "game_vec3_zero",
+      "section": ".bss",
+      "address": 2150894420,
+      "scope": "global"
+    },
+    {
+      "name": "lbl_802EA288",
+      "section": ".data",
+      "address": 2150539912,
+      "scope": "global"
+    },
+    {
+      "name": "lbl_8037B3A8",
+      "section": ".sdata2",
+      "address": 2151134120,
+      "scope": "global"
+    },
+    {
+      "name": "lbl_8037B3AC",
+      "section": ".sdata2",
+      "address": 2151134124,
+      "scope": "global"
+    }
+  ],
+  "actual_relocations": [
+    {
+      "section": ".text",
+      "at": 20,
+      "address": 2149859440,
+      "kind": 10,
+      "symbol": "fn_80243F28",
+      "target": 2149859112,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 26,
+      "address": 2149859446,
+      "kind": 6,
+      "symbol": "lbl_802EA288",
+      "target": 2150539912,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 30,
+      "address": 2149859450,
+      "kind": 6,
+      "symbol": "game_vec3_zero",
+      "target": 2150894420,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 34,
+      "address": 2149859454,
+      "kind": 4,
+      "symbol": "lbl_802EA288",
+      "target": 2150539912,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 38,
+      "address": 2149859458,
+      "kind": 6,
+      "symbol": "game_quat_identity",
+      "target": 2150894448,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 48,
+      "address": 2149859468,
+      "kind": 109,
+      "symbol": "lbl_8037B3AC",
+      "target": 2151134124,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 54,
+      "address": 2149859474,
+      "kind": 4,
+      "symbol": "game_vec3_zero",
+      "target": 2150894420,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 62,
+      "address": 2149859482,
+      "kind": 4,
+      "symbol": "game_quat_identity",
+      "target": 2150894448,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 64,
+      "address": 2149859484,
+      "kind": 109,
+      "symbol": "lbl_8037B3A8",
+      "target": 2151134120,
+      "addend": 0
+    }
+  ],
+  "original_metadata_audit": {
+    "extabindex_scan": [
+      2147573600,
+      2147611328,
+      12
+    ],
+    "extabindex_matches": [],
+    "ctors_scan": [
+      2150209824,
+      2150209920,
+      4
+    ],
+    "ctors_matches": [],
+    "dtors_scan": [
+      2150209920,
+      2150209952,
+      4
+    ],
+    "dtors_matches": []
+  },
+  "identity_migration": {
+    "previous": "fn_8024405C",
+    "current": "__ct__14Light_8024405CFv",
+    "address": 2149859420,
+    "size": 204
+  },
+  "validation": {
+    "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "object_sha256": "57a68b03663be806390aef4a71ff4e23b0b06cc4770aa34fc1ab090c009f238e",
+    "retained_text_bytes": 204,
+    "initialized_data_bytes": 0,
+    "bss_bytes": 0,
+    "owned_padding_bytes": 0,
+    "relocations": 9,
+    "unlinked_relocations": 0,
+    "metadata_relocations": 1,
+    "uncredited_text_bytes": 0,
+    "uncredited_metadata_bytes": 0,
+    "all_emitted_allocated_bytes_accounted": true,
+    "zero_retained_byte_differences": true
+  },
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "object_path": "build/GSQE78/src/Game/light_constructor_8024405C.o",
+    "object_sha256": "57a68b03663be806390aef4a71ff4e23b0b06cc4770aa34fc1ab090c009f238e",
+    "all_retained_bytes_exact": true
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "source": "src/Game/math_inverse.cpp",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.3.2",
+  "cflags": "-proc gekko -fp hardware -fp_contract on -enum int -str reuse -common off -O4,p -inline auto -Cpp_exceptions off",
+  "splits": [
+    {
+      "section": ".text",
+      "start": "0x801f230c",
+      "end": "0x801f25e8"
+    }
+  ],
+  "functions": [
+    {
+      "name": "fn_801F230C",
+      "section": ".text",
+      "address": "0x801f230c",
+      "size": "0x200",
+      "scope": "global",
+      "original_name": "fn_801F230C"
+    },
+    {
+      "name": "fn_801F250C",
+      "section": ".text",
+      "address": "0x801f250c",
+      "size": "0xdc",
+      "scope": "global",
+      "original_name": "fn_801F250C"
+    }
+  ],
+  "data_symbols": [],
+  "section_anchors": [],
+  "dependency_symbols": [
+    {
+      "name": "game_math_zero",
+      "address": "0x8037a6fc"
+    },
+    {
+      "name": "game_math_one",
+      "address": "0x8037a704"
+    }
+  ],
+  "notes": "docs/notes/game-scalar-math.md",
+  "split_notes": [
+    "Reconstructed partial game math unit; original names and full original translation-unit extent are not claimed. Native paired-single primitives and unresolved quaternion routines remain original fallback."
+  ],
+  "validation": {
+    "code_bytes": 732,
+    "emitted_data_bytes": 0,
+    "bss_layout_bytes": 0,
+    "relocations_applied": 5,
+    "byte_differences": 0,
+    "source_sha256": "71fa476590a5324afa3a8e9320ea42a8162048ae529454b10e4aeeaa161cf0f0",
+    "object_sha256": "874c5c9de0a8004c6629f3866c5ce56421cb27bec934a3f631fd9df007dc6c0d",
+    "original_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "integration_status": "verified full-DOL and objdiff"
+  },
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "71fa476590a5324afa3a8e9320ea42a8162048ae529454b10e4aeeaa161cf0f0",
+    "matched_code": 732,
+    "matched_functions": 2,
+    "matched_data": 0,
+    "complete_data": 0,
+    "object_path": "build/GSQE78/src/Game/math_inverse.o",
+    "object_sha256": "874c5c9de0a8004c6629f3866c5ce56421cb27bec934a3f631fd9df007dc6c0d"
+  }
+}

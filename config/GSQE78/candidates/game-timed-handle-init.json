@@ -1,0 +1,181 @@
+{
+  "status": "isolated-byte-match",
+  "source": "src/Game/timed_handle_init.cpp",
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-proc",
+    "gekko",
+    "-fp",
+    "hardware",
+    "-enum",
+    "int",
+    "-str",
+    "reuse",
+    "-common",
+    "off",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-Cpp_exceptions",
+    "off",
+    "-RTTI",
+    "off",
+    "-use_lmw_stmw",
+    "on",
+    "-i",
+    "src/Game",
+    "-i",
+    "include"
+  ],
+  "source_kind": "c++",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2149980152,
+      "end": 2149980272,
+      "alignment": 4
+    }
+  ],
+  "functions": [
+    {
+      "name": "fn_802617F8",
+      "address": 2149980152,
+      "size": 120,
+      "scope": "global",
+      "section": ".text",
+      "object_offset": 0,
+      "sha256": "7cb72c0f7e17d8b74a45b36c75dea85b47f560e4388613ab00823c7b7dc710cb"
+    }
+  ],
+  "objects": [],
+  "unlinked_functions": [],
+  "dependency_symbols": [
+    {
+      "name": "__ct__15Handle_801F7F10Fv",
+      "address": 2149547780,
+      "scope": "global"
+    },
+    {
+      "name": "fn_801F7914",
+      "address": 2149546260,
+      "scope": "global"
+    },
+    {
+      "name": "__dt__15Handle_801F7F10Fv",
+      "address": 2149547792,
+      "scope": "global"
+    },
+    {
+      "name": "lbl_8037B5A0",
+      "address": 2151134624,
+      "scope": "global"
+    },
+    {
+      "name": "lbl_8037B5A4",
+      "address": 2151134628,
+      "scope": "global"
+    }
+  ],
+  "source_sha256": "6bda999b123786437b229f32109d81de776dc278f6900f1e33784169a79cc4df",
+  "headers": [],
+  "validation": {
+    "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "object_sha256": "d1d3b29e04562596b64716cfe1741b5d41612dbf1205a24fa3eaa9a5bcc063c1",
+    "retained_text_bytes": 120,
+    "emitted_text_bytes": 120,
+    "initialized_data_bytes": 0,
+    "bss_bytes": 0,
+    "emitted_data_bytes": 0,
+    "unlinked_text_bytes": 0,
+    "weak_functions": 0,
+    "relocations": 5,
+    "zero_byte_differences": true,
+    "all_retained_allocated_bytes_verified": true,
+    "all_emitted_allocated_bytes_accounted": true,
+    "owned_padding_bytes": 0,
+    "verification_script": "scratch/game_timed_handle_init/verify.py"
+  },
+  "notes": "docs/notes/game-timed-handle-init.md",
+  "original_metadata_audit": {
+    "status": "no-original-table-ownership",
+    "retained_ranges": [
+      {
+        "start": 2149980152,
+        "end": 2149980272
+      }
+    ],
+    "tables": [
+      {
+        "section": "extabindex",
+        "start": 2147573600,
+        "end": 2147611324,
+        "sha256": "64f3b619f96f16f327bc2805af02977009d3270075a236e9bed2e7b960641585",
+        "entries": 3141,
+        "references_to_retained_ranges": []
+      },
+      {
+        "section": ".ctors",
+        "start": 2150209824,
+        "end": 2150209904,
+        "sha256": "c535bceb8aef25702ac3b853c78b5499ab00b445fb657e84883dc324ab71e9df",
+        "entries": 19,
+        "references_to_retained_ranges": []
+      },
+      {
+        "section": ".dtors",
+        "start": 2150209920,
+        "end": 2150209936,
+        "sha256": "f9aca20c726bf82fc897d6a1cfdb6e48dea8a9b97d3a9e68694a58dd94646195",
+        "entries": 3,
+        "references_to_retained_ranges": []
+      }
+    ]
+  },
+  "actual_relocations": [
+    {
+      "section": ".text",
+      "at": 20,
+      "address": 2149980172,
+      "kind": 10,
+      "symbol": "__ct__15Handle_801F7F10Fv",
+      "target": 2149547780,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 52,
+      "address": 2149980204,
+      "kind": 10,
+      "symbol": "fn_801F7914",
+      "target": 2149546260,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 64,
+      "address": 2149980216,
+      "kind": 10,
+      "symbol": "__dt__15Handle_801F7F10Fv",
+      "target": 2149547792,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 72,
+      "address": 2149980224,
+      "kind": 109,
+      "symbol": "lbl_8037B5A0",
+      "target": 2151134624,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 84,
+      "address": 2149980236,
+      "kind": 109,
+      "symbol": "lbl_8037B5A4",
+      "target": 2151134628,
+      "addend": 0
+    }
+  ]
+}

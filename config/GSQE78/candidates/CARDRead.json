@@ -1,0 +1,87 @@
+{
+  "source": "src/dolphin/card/CARDRead.c",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.2.5n",
+  "cflags": "-proc gekko -fp hardware -enum int -str reuse -common off -O4,p -inline auto -i src/dolphin/card -Cpp_exceptions off",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2148582792,
+      "end": 2148583936
+    }
+  ],
+  "functions": [
+    {
+      "name": "__CARDSeek",
+      "address": 2148582792,
+      "size": 440
+    },
+    {
+      "name": "ReadCallback",
+      "address": 2148583232,
+      "size": 304
+    },
+    {
+      "name": "CARDReadAsync",
+      "address": 2148583536,
+      "size": 328
+    },
+    {
+      "name": "CARDRead",
+      "address": 2148583864,
+      "size": 72
+    }
+  ],
+  "objects": [],
+  "symbol_scopes": {
+    "__CARDSeek": "global",
+    "ReadCallback": "local",
+    "CARDReadAsync": "global",
+    "CARDRead": "global"
+  },
+  "symbols": {
+    "__CARDSeek": "0x8010c588",
+    "ReadCallback": "0x8010c740",
+    "CARDReadAsync": "0x8010c870",
+    "CARDRead": "0x8010c9b8",
+    "__CARDGetControlBlock": "0x80107c2c",
+    "__CARDPutControlBlock": "0x80107ce4",
+    "__CARDGetDirBlock": "0x801098e8",
+    "__CARDGetFatBlock": "0x801094e4",
+    "__CARDBlock": "0x80334180",
+    "__CARDRead": "0x80109340",
+    "__CARDAccess": "0x8010be04",
+    "__CARDIsPublic": "0x8010be9c",
+    "DCInvalidateRange": "0x800f223c",
+    "__CARDDefaultApiCallback": "0x80106ccc",
+    "__CARDSyncCallback": "0x80106cd0",
+    "__CARDSync": "0x80107f1c"
+  },
+  "external_original_names": {
+    "__CARDGetControlBlock": "fn_80107C2C",
+    "__CARDPutControlBlock": "fn_80107CE4",
+    "__CARDGetDirBlock": "fn_801098E8",
+    "__CARDGetFatBlock": "fn_801094E4",
+    "__CARDBlock": "lbl_80334180",
+    "__CARDRead": "fn_80109340",
+    "__CARDAccess": "fn_8010BE04",
+    "__CARDIsPublic": "fn_8010BE9C",
+    "DCInvalidateRange": "DCInvalidateRange",
+    "__CARDDefaultApiCallback": "fn_80106CCC",
+    "__CARDSyncCallback": "fn_80106CD0",
+    "__CARDSync": "fn_80107F1C"
+  },
+  "verified_text_bytes": 1144,
+  "verified_data_bytes": 0,
+  "source_kind": "c",
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "7b3e129d7d66410df390c67d97d6a8ded5ff07ddf74a9a575cc1f80b5e720eea",
+    "matched_code": 1144,
+    "matched_functions": 4,
+    "matched_data": 0,
+    "complete_data": 0,
+    "object_path": "build/GSQE78/src/dolphin/card/CARDRead.o",
+    "object_sha256": "678acc024d257f372db335b904cf5e87270ebb31dcb9566a28d4a1b05d17da57"
+  }
+}

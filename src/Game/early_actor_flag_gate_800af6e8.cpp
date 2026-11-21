@@ -1,0 +1,3 @@
+/* Actor flag gate; see docs/notes/game-early-actor-flag-gate.md. */
+#include "Game/early_actor_flag_gate_views.h"
+extern "C"void fn_800AF6E8(GateOwner*self,void*a,void*b,void*c,void*d,float time){if(fn_8007D604(&self->record,1)){if(!fn_8007D604(&optionalActor(resolveGroup(*resolveSystemGroup(*lbl_801E9D24.system->handle)->next)->getActor())->record,0x2C)&&!fn_8007D604(&optionalActor(resolveGroup(*resolveSystemGroup(*lbl_801E9D24.system->handle)->next)->getActor())->record,0x2D)&&!fn_8007D604(&optionalActor(resolveGroup(*resolveSystemGroup(*lbl_801E9D24.system->handle)->next)->getActor())->record,0x2E)){self->flag=1;fn_8007D6A0(&self->record,0);}fn_800AEBE8(fn_8007DCF8(&self->record),a,b,c,d,time);}else fn_8022993C(self,a,b,c,d,time);}

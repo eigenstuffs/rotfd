@@ -1,0 +1,105 @@
+{
+  "compiler": "GC/1.3",
+  "cflags": [
+    "-proc gekko",
+    "-fp hardware",
+    "-enum int",
+    "-str reuse",
+    "-common off",
+    "-O4,p",
+    "-inline deferred",
+    "-pool off",
+    "-Cpp_exceptions off",
+    "-i src/MSL",
+    "-char signed",
+    "-use_lmw_stmw off"
+  ],
+  "source": "src/MSL/char_io.c",
+  "dependency_symbols": [
+    {
+      "name": "__load_buffer",
+      "address": "0x80124080",
+      "original_name": "__load_buffer"
+    }
+  ],
+  "splits": [
+    {
+      "section": ".text",
+      "start": "0x80124184",
+      "end": "0x801246b0"
+    }
+  ],
+  "status": "integrated-byte-match",
+  "functions": [
+    {
+      "name": "fputs",
+      "original_name": "fputs",
+      "address": "0x80124184",
+      "size": "0xc4",
+      "scope": "global"
+    },
+    {
+      "name": "fputc",
+      "original_name": "fputc",
+      "address": "0x80124248",
+      "size": "0x88",
+      "scope": "global"
+    },
+    {
+      "name": "__putc",
+      "original_name": "__putc",
+      "address": "0x801242d0",
+      "size": "0x1b8",
+      "scope": "global"
+    },
+    {
+      "name": "fgets",
+      "original_name": "fgets",
+      "address": "0x80124488",
+      "size": "0xf4",
+      "scope": "global"
+    },
+    {
+      "name": "__getc",
+      "original_name": "__getc",
+      "address": "0x8012457c",
+      "size": "0x134",
+      "scope": "global"
+    }
+  ],
+  "data_symbols": [],
+  "split_notes": [
+    "The complete retained char_io.c consists of fputs, fputc, __putc, fgets, and __getc at 0x80124184..0x801246B0 (1324 bytes), with no allocated data or padding.",
+    "The Strikers reference inlines the __getc path inside fgets; this target retains the helper and calls it from the slow input path. Buffer access remains ordinary C.",
+    "Target fputs promotes source bytes as signed char while input buffer and pushed-back character results are unsigned bytes. -char signed reproduces this distinction.",
+    "Use -use_lmw_stmw off for the original scalar register saves. Source-local FILE header and -i src/MSL are shared with the accepted stdio family.",
+    "The following 0x801246B0 routine is tolower and the next is isspace, separate ctype support. Neither is owned by this unit."
+  ],
+  "validation": {
+    "verification_script": "scratch/msl_char_io/verify.py",
+    "text_bytes": 1324,
+    "relocations_applied": 12,
+    "byte_differences": 0,
+    "original_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "571430291e55749f0adac060454a6ed908dcee2351476a49e55fbcf29a281984",
+    "object_sha256": "814a4024701620b36aeeb64dbf820d73025b2ffbcb2a1e2b51041c2e9d73ebe9",
+    "integration_status": "verified full-DOL and objdiff",
+    "headers": [
+      {
+        "path": "src/MSL/stdio_internal.h",
+        "sha256": "89a6c064868fa0bd2130698ef125bf434f9a42793f992600bc0dca237d4f5b36"
+      }
+    ]
+  },
+  "notes": "docs/notes/msl-char-io.md",
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "571430291e55749f0adac060454a6ed908dcee2351476a49e55fbcf29a281984",
+    "matched_code": 1324,
+    "matched_functions": 5,
+    "matched_data": 0,
+    "complete_data": 0,
+    "object_path": "build/GSQE78/src/MSL/char_io.o",
+    "object_sha256": "814a4024701620b36aeeb64dbf820d73025b2ffbcb2a1e2b51041c2e9d73ebe9"
+  }
+}

@@ -1,0 +1,2 @@
+#include "Game/owner_motion_control_views.h"
+extern "C" void fn_800A08D0(MotionControlAction*self,float delta){if(self->agent->timer>=lbl_80378E44){self->agent->timer=lbl_80378E40;fn_8009EEC4(self->agent);}MotionControlVec3 v=self->agent->direction;MotionControlVec2 v2;float distance=self->agent->distance;if(fn_8009F558(self->agent,&v2)>distance)v=MotionControlVec3(v2.x,lbl_80378E40,v2.y);applyMotionControl(self,delta,v);}

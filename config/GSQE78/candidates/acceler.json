@@ -1,0 +1,105 @@
+{
+  "source": "src/Parser/acceler.c",
+  "status": "integrated-byte-match",
+  "compiler": "GC/2.0",
+  "cflags": "-proc gekko -fp hardware -enum int -str reuse -common off -opt level=4,nopeephole,speed -inline auto,deferred -pool off -Cpp_exceptions off",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2149003048,
+      "end": 2149004204
+    },
+    {
+      "name": ".data",
+      "start": 2150478480,
+      "end": 2150478591
+    }
+  ],
+  "functions": [
+    {
+      "name": "fixstate",
+      "address": 2149003048,
+      "size": 896
+    },
+    {
+      "name": "PyGrammar_RemoveAccelerators",
+      "address": 2149003944,
+      "size": 132
+    },
+    {
+      "name": "PyGrammar_AddAccelerators",
+      "address": 2149004076,
+      "size": 128
+    }
+  ],
+  "objects": [],
+  "symbol_scopes": {
+    "fixstate": "local",
+    "PyGrammar_RemoveAccelerators": "global",
+    "PyGrammar_AddAccelerators": "global"
+  },
+  "symbols": {
+    "PyType_Type": "0x802d68fc",
+    "fixstate": "0x80172f28",
+    "PyGrammar_RemoveAccelerators": "0x801732a8",
+    "PyGrammar_AddAccelerators": "0x8017332c",
+    "_savegpr_22": "0x8011f608",
+    "malloc": "0x8001f2c0",
+    "printf": "0x80125e18",
+    "PyGrammar_FindDFA": "0x80171e7c",
+    "__files": "0x802cffb8",
+    "fprintf": "0x80125d54",
+    "exit": "0x80120fb0",
+    "free": "0x8001f35c",
+    "_restgpr_22": "0x8011f654",
+    "_savegpr_27": "0x8011f61c",
+    "_restgpr_27": "0x8011f668"
+  },
+  "external_original_names": {
+    "_savegpr_22": "_savegpr_22",
+    "malloc": "malloc",
+    "printf": "printf",
+    "PyGrammar_FindDFA": "PyGrammar_FindDFA",
+    "__files": "__files",
+    "fprintf": "fprintf",
+    "exit": "exit",
+    "free": "free",
+    "_restgpr_22": "_restgpr_22",
+    "_savegpr_27": "_savegpr_27",
+    "_restgpr_27": "_restgpr_27"
+  },
+  "verified_text_bytes": 1156,
+  "verified_data_bytes": 111,
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "b66ee0048ac58e9eee7454115b7814b54ad99588fd72810db1b6a73af12f8043",
+    "matched_code": 1156,
+    "matched_functions": 3,
+    "matched_data": 111,
+    "complete_data": 111,
+    "object_path": "build/GSQE78/src/Parser/acceler.o",
+    "object_sha256": "6f5b422ebd84df226d34e084c61206b289f1250c6349a44178ee2b50feaff9b7"
+  },
+  "external_padding": [
+    {
+      "source": "src/Parser/acceler.c",
+      "unit": "main/Parser/acceler",
+      "section": ".data",
+      "start": "0x802db2ff",
+      "end": "0x802db300",
+      "size": 1,
+      "alignment": 1,
+      "symbol": "gap_07_802DB2FF_data",
+      "original_owner": "padding/source_extents/Parser/acceler.s",
+      "source_section_start": "0x802db290",
+      "source_section_bytes": 111,
+      "previous_split_bytes": 112,
+      "description": "Original linker alignment beyond emitted source section; no source credit."
+    }
+  ],
+  "source_extent_audit": {
+    "data_credit_correction": 1,
+    "evidence": "config/GSQE78/source_padding.json",
+    "description": "Source and original bytes unchanged; trailing original padding moved to NonMatching ownership."
+  }
+}

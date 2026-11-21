@@ -1,0 +1,356 @@
+{
+  "source": "src/dolphin/card/CARDBios.c",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.2.5n",
+  "cflags": "-proc gekko -fp hardware -enum int -str reuse -common off -O4,p -inline auto -i src/dolphin/card -Cpp_exceptions off",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2148560076,
+      "end": 2148564996
+    },
+    {
+      "name": ".data",
+      "start": 2150429120,
+      "end": 2150429208
+    },
+    {
+      "name": ".bss",
+      "start": 2150842752,
+      "end": 2150843328
+    },
+    {
+      "name": ".sdata",
+      "start": 2151112072,
+      "end": 2151112076
+    },
+    {
+      "name": ".sbss",
+      "start": 2151119928,
+      "end": 2151119930
+    }
+  ],
+  "functions": [
+    {
+      "name": "__CARDDefaultApiCallback",
+      "address": 2148560076,
+      "size": 4
+    },
+    {
+      "name": "__CARDSyncCallback",
+      "address": 2148560080,
+      "size": 52
+    },
+    {
+      "name": "__CARDExtHandler",
+      "address": 2148560132,
+      "size": 216
+    },
+    {
+      "name": "__CARDExiHandler",
+      "address": 2148560348,
+      "size": 280
+    },
+    {
+      "name": "__CARDTxHandler",
+      "address": 2148560628,
+      "size": 168
+    },
+    {
+      "name": "__CARDUnlockedHandler",
+      "address": 2148560796,
+      "size": 132
+    },
+    {
+      "name": "__CARDEnableInterrupt",
+      "address": 2148560928,
+      "size": 192
+    },
+    {
+      "name": "__CARDReadStatus",
+      "address": 2148561120,
+      "size": 240
+    },
+    {
+      "name": "__CARDClearStatus",
+      "address": 2148561360,
+      "size": 172
+    },
+    {
+      "name": "TimeoutHandler",
+      "address": 2148561532,
+      "size": 164
+    },
+    {
+      "name": "Retry",
+      "address": 2148561696,
+      "size": 556
+    },
+    {
+      "name": "UnlockedCallback",
+      "address": 2148562252,
+      "size": 272
+    },
+    {
+      "name": "__CARDStart",
+      "address": 2148562524,
+      "size": 436
+    },
+    {
+      "name": "__CARDReadSegment",
+      "address": 2148562960,
+      "size": 308
+    },
+    {
+      "name": "__CARDWritePage",
+      "address": 2148563268,
+      "size": 284
+    },
+    {
+      "name": "__CARDEraseSector",
+      "address": 2148563552,
+      "size": 224
+    },
+    {
+      "name": "CARDInit",
+      "address": 2148563776,
+      "size": 172
+    },
+    {
+      "name": "__CARDGetFontEncode",
+      "address": 2148563948,
+      "size": 8
+    },
+    {
+      "name": "__CARDSetDiskID",
+      "address": 2148563956,
+      "size": 56
+    },
+    {
+      "name": "__CARDGetControlBlock",
+      "address": 2148564012,
+      "size": 184
+    },
+    {
+      "name": "__CARDPutControlBlock",
+      "address": 2148564196,
+      "size": 100
+    },
+    {
+      "name": "CARDFreeBlocks",
+      "address": 2148564296,
+      "size": 336
+    },
+    {
+      "name": "CARDGetSectorSize",
+      "address": 2148564632,
+      "size": 132
+    },
+    {
+      "name": "__CARDSync",
+      "address": 2148564764,
+      "size": 152
+    },
+    {
+      "name": "OnReset",
+      "address": 2148564916,
+      "size": 80
+    }
+  ],
+  "objects": [
+    {
+      "name": "ResetFunctionInfo",
+      "address": 2150429192,
+      "size": 16,
+      "section": ".data"
+    },
+    {
+      "name": "__CARDBlock",
+      "address": 2150842752,
+      "size": 544,
+      "section": ".bss"
+    },
+    {
+      "name": "__CARDDiskNone",
+      "address": 2150843296,
+      "size": 32,
+      "section": ".bss"
+    },
+    {
+      "name": "__CARDVersion",
+      "address": 2151112072,
+      "size": 4,
+      "section": ".sdata"
+    },
+    {
+      "name": "__CARDEncode",
+      "address": 2151119928,
+      "size": 2,
+      "section": ".sbss"
+    },
+    {
+      "name": "@3",
+      "address": 2150429120,
+      "size": 70,
+      "section": ".data",
+      "scope": "local",
+      "compiler_assembly_name": "\"@3\"",
+      "data_kind": "string"
+    }
+  ],
+  "symbol_scopes": {
+    "__CARDDefaultApiCallback": "global",
+    "__CARDSyncCallback": "global",
+    "__CARDExtHandler": "global",
+    "__CARDExiHandler": "global",
+    "__CARDTxHandler": "global",
+    "__CARDUnlockedHandler": "global",
+    "__CARDEnableInterrupt": "global",
+    "__CARDReadStatus": "global",
+    "__CARDClearStatus": "global",
+    "TimeoutHandler": "local",
+    "Retry": "local",
+    "UnlockedCallback": "local",
+    "__CARDStart": "local",
+    "__CARDReadSegment": "global",
+    "__CARDWritePage": "global",
+    "__CARDEraseSector": "global",
+    "CARDInit": "global",
+    "__CARDGetFontEncode": "global",
+    "__CARDSetDiskID": "global",
+    "__CARDGetControlBlock": "global",
+    "__CARDPutControlBlock": "global",
+    "CARDFreeBlocks": "global",
+    "CARDGetSectorSize": "global",
+    "__CARDSync": "global",
+    "OnReset": "local",
+    "ResetFunctionInfo": "local",
+    "__CARDBlock": "global",
+    "__CARDDiskNone": "global",
+    "__CARDVersion": "global",
+    "__CARDEncode": "local",
+    "@3": "local"
+  },
+  "symbols": {
+    "__CARDDefaultApiCallback": "0x80106ccc",
+    "__CARDSyncCallback": "0x80106cd0",
+    "__CARDExtHandler": "0x80106d04",
+    "__CARDExiHandler": "0x80106ddc",
+    "__CARDTxHandler": "0x80106ef4",
+    "__CARDUnlockedHandler": "0x80106f9c",
+    "__CARDEnableInterrupt": "0x80107020",
+    "__CARDReadStatus": "0x801070e0",
+    "__CARDClearStatus": "0x801071d0",
+    "TimeoutHandler": "0x8010727c",
+    "Retry": "0x80107320",
+    "UnlockedCallback": "0x8010754c",
+    "__CARDStart": "0x8010765c",
+    "__CARDReadSegment": "0x80107810",
+    "__CARDWritePage": "0x80107944",
+    "__CARDEraseSector": "0x80107a60",
+    "CARDInit": "0x80107b40",
+    "__CARDGetFontEncode": "0x80107bec",
+    "__CARDSetDiskID": "0x80107bf4",
+    "__CARDGetControlBlock": "0x80107c2c",
+    "__CARDPutControlBlock": "0x80107ce4",
+    "CARDFreeBlocks": "0x80107d48",
+    "CARDGetSectorSize": "0x80107e98",
+    "__CARDSync": "0x80107f1c",
+    "OnReset": "0x80107fb4",
+    "ResetFunctionInfo": "0x802cf208",
+    "__CARDBlock": "0x80334180",
+    "__CARDDiskNone": "0x803343a0",
+    "__CARDVersion": "0x80375d88",
+    "__CARDEncode": "0x80377c38",
+    "OSWakeupThread": "0x800f6a44",
+    "EXISetExiCallback": "0x80296b30",
+    "OSCancelAlarm": "0x800f1bd8",
+    "EXILock": "0x8029776c",
+    "EXIUnlock": "0x80297860",
+    "EXIDeselect": "0x80297148",
+    "EXIProbe": "0x80296d20",
+    "EXISelect": "0x8029701c",
+    "EXIImm": "0x802964b4",
+    "EXISync": "0x8029689c",
+    "OSSetAlarm": "0x800f1b70",
+    "EXIImmEx": "0x80296710",
+    "EXIDma": "0x802967b0",
+    "OSDisableInterrupts": "0x800f362c",
+    "OSRestoreInterrupts": "0x800f3654",
+    "OSGetFontEncode": "0x800f35d4",
+    "OSRegisterVersion": "0x800f1898",
+    "DSPInit": "0x8010615c",
+    "OSInitAlarm": "0x800f18c4",
+    "OSInitThreadQueue": "0x800f5af4",
+    "OSCreateAlarm": "0x800f1910",
+    "OSRegisterResetFunction": "0x800f4744",
+    "__CARDGetFatBlock": "0x801094e4",
+    "__CARDGetDirBlock": "0x801098e8",
+    "OSSleepThread": "0x800f6958",
+    "CARDUnmount": "0x8010b500",
+    "@3": "0x802cf1c0"
+  },
+  "external_original_names": {
+    "OSWakeupThread": "fn_800F6A44",
+    "EXISetExiCallback": "fn_80296B30",
+    "OSCancelAlarm": "OSCancelAlarm",
+    "EXILock": "EXILock",
+    "EXIUnlock": "EXIUnlock",
+    "EXIDeselect": "EXIDeselect",
+    "EXIProbe": "fn_80296D20",
+    "EXISelect": "EXISelect",
+    "EXIImm": "EXIImm",
+    "EXISync": "EXISync",
+    "OSSetAlarm": "OSSetAlarm",
+    "EXIImmEx": "fn_80296710",
+    "EXIDma": "EXIDma",
+    "OSDisableInterrupts": "OSDisableInterrupts",
+    "OSRestoreInterrupts": "OSRestoreInterrupts",
+    "OSGetFontEncode": "fn_800F35D4",
+    "OSRegisterVersion": "OSRegisterVersion",
+    "DSPInit": "fn_8010615C",
+    "OSInitAlarm": "OSInitAlarm",
+    "OSInitThreadQueue": "OSInitThreadQueue",
+    "OSCreateAlarm": "OSCreateAlarm",
+    "OSRegisterResetFunction": "OSRegisterResetFunction",
+    "__CARDGetFatBlock": "fn_801094E4",
+    "__CARDGetDirBlock": "fn_801098E8",
+    "OSSleepThread": "fn_800F6958",
+    "CARDUnmount": "fn_8010B500"
+  },
+  "verified_text_bytes": 4920,
+  "verified_data_bytes": 92,
+  "source_kind": "c",
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "e068051fc7fd503eb68b624011b24b9f13fca8c11e186ac3252b69b7e6d6c5d5",
+    "matched_code": 4920,
+    "matched_functions": 25,
+    "matched_data": 670,
+    "complete_data": 670,
+    "object_path": "build/GSQE78/src/dolphin/card/CARDBios.o",
+    "object_sha256": "9acded16bd666fd58280547eacafb23f1a8b7dbfc66475425f36fb44cbe1b935"
+  },
+  "external_padding": [
+    {
+      "source": "src/dolphin/card/CARDBios.c",
+      "unit": "main/dolphin/card/CARDBios",
+      "section": ".sbss",
+      "start": "0x80377c3a",
+      "end": "0x80377c3c",
+      "size": 2,
+      "alignment": 1,
+      "symbol": "gap_10_80377C3A_sbss",
+      "original_owner": "padding/source_extents/dolphin/card/CARDBios.s",
+      "source_section_start": "0x80377c38",
+      "source_section_bytes": 2,
+      "previous_split_bytes": 4,
+      "description": "Original linker alignment beyond emitted source section; no source credit."
+    }
+  ],
+  "source_extent_audit": {
+    "data_credit_correction": 2,
+    "evidence": "config/GSQE78/source_padding.json",
+    "description": "Source and original bytes unchanged; trailing original padding moved to NonMatching ownership."
+  }
+}

@@ -1,0 +1,12 @@
+struct SnapshotPoint{float x,y,z;SnapshotPoint&operator=(const SnapshotPoint&v){x=v.x;y=v.y;z=v.z;return *this;}};
+struct SnapshotRotation{float x,y,z,w;SnapshotRotation&operator=(const SnapshotRotation&v){x=v.x;y=v.y;z=v.z;w=v.w;return *this;}};
+struct PropertyHandle{signed int generation:8;signed int index:24;};
+struct PropertyStorage{char unknown00[8];};
+struct PropertyOwner:PropertyStorage{virtual void slot08();virtual void slot0C();virtual void slot10();virtual void slot14();virtual void slot18();virtual void slot1C();virtual void slot20();virtual void slot24();virtual void slot28();virtual void slot2C();virtual void slot30();virtual void slot34();virtual void slot38();virtual void slot3C();virtual void slot40();virtual void slot44();virtual void slot48();virtual void slot4C();virtual void slot50();virtual void slot54();virtual void slot58();virtual void slot5C();virtual void slot60();virtual void slot64();virtual void slot68();virtual void slot6C();virtual void slot70();virtual void slot74();virtual void slot78();virtual void slot7C();virtual void slot80();virtual void slot84();virtual void slot88();virtual void slot8C();virtual void slot90();virtual void slot94();virtual void slot98();virtual const PropertyHandle*getHandle(int);char unknown0C[0x34];SnapshotPoint*positions;char unknown44[8];SnapshotRotation*rotations;char unknown50[8];SnapshotPoint*scales;char unknown5C[8];PropertyHandle*handles;};
+struct PropertyEntry{struct SnapshotObject*object;char unknown04[8];signed char generation;char unknown0D[3];};
+struct PropertyManager{char unknown00[8];PropertyEntry*entries;};
+extern "C"{extern struct{char unknown00[0x118];PropertyManager*manager;}lbl_801E9D24;}
+static inline SnapshotObject*resolveProperty(const PropertyHandle&h){PropertyEntry*e=&lbl_801E9D24.manager->entries[h.index];if(e->generation==h.generation)return e->object;return 0;}
+struct SnapshotObject{char unknown00[0xC];PropertyHandle handle;char unknown10[0xA8];SnapshotPoint position;char unknownC4[4];SnapshotRotation rotation;SnapshotPoint scale;};
+extern "C" void fn_801F86C8(void*,const void*,int);
+extern "C" void fn_80220124(PropertyOwner*self,int index){SnapshotObject*object=resolveProperty(*self->getHandle(index));self->positions[index]=object->position;self->rotations[index]=object->rotation;self->scales[index]=object->scale;PropertyHandle*target=&self->handles[index];const PropertyHandle*input=&object->handle;fn_801F86C8(lbl_801E9D24.manager,target,-1);*target=*input;fn_801F86C8(lbl_801E9D24.manager,input,1);}

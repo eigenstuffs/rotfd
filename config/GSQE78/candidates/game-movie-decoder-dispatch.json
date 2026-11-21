@@ -1,0 +1,101 @@
+{
+  "status": "integrated-byte-match",
+  "source": "src/Game/movie_decoder_dispatch.cpp",
+  "compiler": "GC/1.2.5",
+  "cflags": [
+    "-proc",
+    "gekko",
+    "-fp",
+    "hardware",
+    "-enum",
+    "int",
+    "-str",
+    "reuse",
+    "-common",
+    "off",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-Cpp_exceptions",
+    "off",
+    "-RTTI",
+    "off",
+    "-use_lmw_stmw",
+    "on",
+    "-fp_contract",
+    "on",
+    "-i",
+    "include"
+  ],
+  "source_kind": "c++",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2150193632,
+      "end": 2150193668,
+      "alignment": 4
+    }
+  ],
+  "functions": [
+    {
+      "name": "fn_802959E0",
+      "address": 2150193632,
+      "size": 36,
+      "scope": "global",
+      "section": ".text",
+      "object_offset": 0,
+      "sha256": "a309f8154e8afb6c1497811e7ab81183768ed9dfd38ffbef532b1bb424714513"
+    }
+  ],
+  "objects": [],
+  "unlinked_functions": [],
+  "dependency_symbols": [
+    {
+      "name": "fn_80295A04",
+      "address": 2150193668,
+      "scope": "global"
+    }
+  ],
+  "source_sha256": "87d476d8ad510f7affd3998cee98f6883cb49bc6fea5b1bed82f6506b432684b",
+  "headers": [
+    {
+      "path": "include/Game/movie_decoder_dispatch.h",
+      "sha256": "5fafecc36ec111ee77f56000219a8397081224761ed70ebdbb1606ffc8b61671"
+    },
+    {
+      "path": "include/Game/movie_decoder_layout.h",
+      "sha256": "c45828ef85982eeaf08ee6f70dc5e6268f242f71499eb867c6239a2c27d4ed94"
+    }
+  ],
+  "validation": {
+    "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "object_sha256": "9c33fce24aa1f49c51ae3fd4d2f70607eed111f02448be562d8838650e16a581",
+    "retained_text_bytes": 36,
+    "emitted_text_bytes": 36,
+    "initialized_data_bytes": 0,
+    "bss_bytes": 0,
+    "emitted_data_bytes": 0,
+    "unlinked_text_bytes": 0,
+    "weak_functions": 0,
+    "relocations": 1,
+    "emitted_relocations": 1,
+    "zero_byte_differences": true,
+    "all_retained_allocated_bytes_verified": true,
+    "all_emitted_allocated_bytes_accounted": true,
+    "owned_padding_bytes": 0,
+    "nonallocated_compiler_metadata_relocations": 1,
+    "verification_script": "scratch/game_movie_platform/verify_decoder_dispatch.py",
+    "integration_status": "verified full-DOL and objdiff"
+  },
+  "notes": "docs/notes/game-movie-decoder-dispatch.md",
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "87d476d8ad510f7affd3998cee98f6883cb49bc6fea5b1bed82f6506b432684b",
+    "matched_code": 36,
+    "matched_functions": 1,
+    "matched_data": 0,
+    "complete_data": 0,
+    "object_path": "build/GSQE78/src/Game/movie_decoder_dispatch.o",
+    "object_sha256": "9c33fce24aa1f49c51ae3fd4d2f70607eed111f02448be562d8838650e16a581"
+  }
+}

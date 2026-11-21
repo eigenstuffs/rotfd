@@ -1,0 +1,33 @@
+// Native class, event, resource and diagnostic strings.
+// Pointer tables and boundary alignment retain their separate owners.
+extern "C" const char lbl_8029D0A8[] = "LoadingScreen.h";
+extern "C" const char lbl_8029D0B8[] = "ReticleDraw.h";
+extern "C" const char lbl_8029D0C8[] = "DisplayImage.h";
+extern "C" const char lbl_8029D0D8[] = "MessageBox.h";
+extern "C" const char lbl_8029D0E8[] = "TextBoxString.h";
+extern "C" const char lbl_8029D0F8[] = "ComplexMove.h";
+extern "C" const char lbl_8029D108[] = "MediumMove.h";
+extern "C" const char lbl_8029D118[] = "SimpleMove.h";
+extern "C" const char lbl_8029D128[] = "ScriptMove.h";
+extern "C" const char lbl_8029D138[] = "TreasureChestMove.h";
+extern "C" const char lbl_8029D14C[] = "ReefblowerObjectMove.h";
+extern "C" const char lbl_8029D164[] = "HookMove.h";
+extern "C" const char lbl_8029D170[] = "CollectableMove.h";
+extern "C" const char lbl_8029D184[] = "TileMove.h";
+extern "C" const char lbl_8029D190[] = "QSnailMove.h";
+extern "C" const char lbl_8029D1A0[] = "WildSnailMove.h";
+extern "C" const char lbl_8029D1B0[] = "RedJfishMove.h";
+extern "C" const char lbl_8029D1C0[] = "GreenJfishMove.h";
+extern "C" const char lbl_8029D1D4[] = "BlueJfishMove.h";
+extern "C" const char lbl_8029D1E4[] = "YellowJfishMove.h";
+extern "C" const char lbl_8029D1F8[] = "PinkJfishMove.h";
+extern "C" const char lbl_8029D208[] = "JellyfishMove.h";
+extern "C" const char lbl_8029D218[] = "WaterBallMove.h";
+extern "C" const char lbl_8029D228[] = "BombMove.h";
+extern "C" const char lbl_8029D234[] = "ProjectileMove.h";
+extern "C" const char lbl_8029D248[] = "SpongeBobMove.h";
+extern "C" const char lbl_8029D258[] = "ActorMove.h";
+extern "C" const char lbl_8029D264[] = "Menu2D.h";
+extern "C" const char lbl_8029D270[] = "NoCamDraw.h";
+extern "C" const char lbl_8029D27C[] = "HudData.h";
+extern "C" const char lbl_8029D288[] = "VoiceOverData.h";

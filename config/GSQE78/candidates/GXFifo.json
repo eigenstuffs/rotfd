@@ -1,0 +1,244 @@
+{
+  "source": "src/dolphin/gx/GXFifo.c",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.2.5n",
+  "cflags": "-proc gekko -fp hardware -enum int -str reuse -common off -O4,p -inline auto -i src/dolphin/gx -Cpp_exceptions off",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2148603112,
+      "end": 2148605148
+    },
+    {
+      "name": ".sbss",
+      "start": 2151120048,
+      "end": 2151120076
+    }
+  ],
+  "functions": [
+    {
+      "name": "GXCPInterruptHandler",
+      "address": 2148603112,
+      "size": 308
+    },
+    {
+      "name": "GXInitFifoBase",
+      "address": 2148603420,
+      "size": 108
+    },
+    {
+      "name": "GXInitFifoPtrs",
+      "address": 2148603528,
+      "size": 112
+    },
+    {
+      "name": "GXInitFifoLimits",
+      "address": 2148603640,
+      "size": 12
+    },
+    {
+      "name": "GXSetCPUFifo",
+      "address": 2148603652,
+      "size": 272
+    },
+    {
+      "name": "GXSetGPFifo",
+      "address": 2148603924,
+      "size": 376
+    },
+    {
+      "name": "GXSaveCPUFifo",
+      "address": 2148604300,
+      "size": 32
+    },
+    {
+      "name": "__GXSaveCPUFifoAux",
+      "address": 2148604332,
+      "size": 220
+    },
+    {
+      "name": "__GXFifoInit",
+      "address": 2148604552,
+      "size": 76
+    },
+    {
+      "name": "__GXFifoReadEnable",
+      "address": 2148604628,
+      "size": 36
+    },
+    {
+      "name": "__GXFifoReadDisable",
+      "address": 2148604664,
+      "size": 32
+    },
+    {
+      "name": "__GXFifoLink",
+      "address": 2148604696,
+      "size": 60
+    },
+    {
+      "name": "__GXWriteFifoIntEnable",
+      "address": 2148604756,
+      "size": 60
+    },
+    {
+      "name": "__GXWriteFifoIntReset",
+      "address": 2148604816,
+      "size": 60
+    },
+    {
+      "name": "__GXCleanGPFifo",
+      "address": 2148604876,
+      "size": 256
+    },
+    {
+      "name": "GXGetCPUFifo",
+      "address": 2148605132,
+      "size": 8
+    },
+    {
+      "name": "GXGetGPFifo",
+      "address": 2148605140,
+      "size": 8
+    }
+  ],
+  "objects": [
+    {
+      "name": "CPUFifo",
+      "address": 2151120048,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "GPFifo",
+      "address": 2151120052,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "__GXCurrentThread",
+      "address": 2151120056,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "CPGPLinked",
+      "address": 2151120060,
+      "size": 1,
+      "section": ".sbss"
+    },
+    {
+      "name": "GXOverflowSuspendInProgress",
+      "address": 2151120064,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "BreakPointCB",
+      "address": 2151120068,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "__GXOverflowCount",
+      "address": 2151120072,
+      "size": 4,
+      "section": ".sbss"
+    }
+  ],
+  "symbol_scopes": {
+    "GXCPInterruptHandler": "local",
+    "GXInitFifoBase": "global",
+    "GXInitFifoPtrs": "global",
+    "GXInitFifoLimits": "global",
+    "GXSetCPUFifo": "global",
+    "GXSetGPFifo": "global",
+    "GXSaveCPUFifo": "global",
+    "__GXSaveCPUFifoAux": "global",
+    "__GXFifoInit": "global",
+    "__GXFifoReadEnable": "local",
+    "__GXFifoReadDisable": "local",
+    "__GXFifoLink": "local",
+    "__GXWriteFifoIntEnable": "local",
+    "__GXWriteFifoIntReset": "local",
+    "__GXCleanGPFifo": "global",
+    "GXGetCPUFifo": "global",
+    "GXGetGPFifo": "global",
+    "CPUFifo": "local",
+    "GPFifo": "local",
+    "__GXCurrentThread": "local",
+    "CPGPLinked": "local",
+    "GXOverflowSuspendInProgress": "local",
+    "BreakPointCB": "local",
+    "__GXOverflowCount": "local"
+  },
+  "symbols": {
+    "GXCPInterruptHandler": "0x801114e8",
+    "GXInitFifoBase": "0x8011161c",
+    "GXInitFifoPtrs": "0x80111688",
+    "GXInitFifoLimits": "0x801116f8",
+    "GXSetCPUFifo": "0x80111704",
+    "GXSetGPFifo": "0x80111814",
+    "GXSaveCPUFifo": "0x8011198c",
+    "__GXSaveCPUFifoAux": "0x801119ac",
+    "__GXFifoInit": "0x80111a88",
+    "__GXFifoReadEnable": "0x80111ad4",
+    "__GXFifoReadDisable": "0x80111af8",
+    "__GXFifoLink": "0x80111b18",
+    "__GXWriteFifoIntEnable": "0x80111b54",
+    "__GXWriteFifoIntReset": "0x80111b90",
+    "__GXCleanGPFifo": "0x80111bcc",
+    "GXGetCPUFifo": "0x80111ccc",
+    "GXGetGPFifo": "0x80111cd4",
+    "CPUFifo": "0x80377cb0",
+    "GPFifo": "0x80377cb4",
+    "__GXCurrentThread": "0x80377cb8",
+    "CPGPLinked": "0x80377cbc",
+    "GXOverflowSuspendInProgress": "0x80377cc0",
+    "BreakPointCB": "0x80377cc4",
+    "__GXOverflowCount": "0x80377cc8",
+    "__cpReg": "0x80377ca4",
+    "gx": "0x803798a8",
+    "OSResumeThread": "0x800f6560",
+    "OSSuspendThread": "0x800f67e8",
+    "OSClearContext": "0x800f2ad4",
+    "OSSetCurrentContext": "0x800f290c",
+    "OSDisableInterrupts": "0x800f362c",
+    "OSRestoreInterrupts": "0x800f3654",
+    "__piReg": "0x80377ca0",
+    "PPCSync": "0x800f0dd8",
+    "GXFlush": "0x80113470",
+    "__OSSetInterruptHandler": "0x800f3678",
+    "__OSUnmaskInterrupts": "0x800f3a7c",
+    "OSGetCurrentThread": "0x800f5b04"
+  },
+  "external_original_names": {
+    "__cpReg": "__cpReg",
+    "gx": "gx",
+    "OSResumeThread": "fn_800F6560",
+    "OSSuspendThread": "fn_800F67E8",
+    "OSClearContext": "OSClearContext",
+    "OSSetCurrentContext": "OSSetCurrentContext",
+    "OSDisableInterrupts": "OSDisableInterrupts",
+    "OSRestoreInterrupts": "OSRestoreInterrupts",
+    "__piReg": "__piReg",
+    "PPCSync": "fn_800F0DD8",
+    "GXFlush": "fn_80113470",
+    "__OSSetInterruptHandler": "__OSSetInterruptHandler",
+    "__OSUnmaskInterrupts": "__OSUnmaskInterrupts",
+    "OSGetCurrentThread": "fn_800F5B04"
+  },
+  "verified_text_bytes": 2036,
+  "verified_data_bytes": 0,
+  "source_kind": "c",
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "3a980d70a0e4b6673e65e10fb661fac036ef7f69a576092e40db8e9f084fb354",
+    "matched_code": 2036,
+    "matched_functions": 17,
+    "matched_data": 28,
+    "complete_data": 28,
+    "object_path": "build/GSQE78/src/dolphin/gx/GXFifo.o",
+    "object_sha256": "acb0042de9129b8804f9841bc4c02151e4fc734de2ab19711585378e4c143263"
+  }
+}

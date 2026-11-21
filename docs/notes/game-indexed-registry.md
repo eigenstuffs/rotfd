@@ -1,0 +1,11 @@
+# Game indexed value registries
+
+`src/Game/indexed_registry.cpp` reconstructs the six contiguous functions at `801F4728..801F50B0`: two groups of indexed assignment, insert-if-absent and intern-returning-index. The entire 2,440-byte object and all 90 relocations match the original. No data or BSS is owned. Full-DOL SHA1 and native objdiff code/data integration pass; original class and method names and the full translation-unit boundary are not claimed.
+
+The recovered object contains paired arrays at offsets `0x80/0x8C` and `0x98/0xA4`. Each array contains signed size and capacity fields and a pointer. Value arrays compare four-byte unsigned values, grow capacity by 32 entries, and append using placement construction. The paired index arrays map a caller's logical index to an interned value. Shared templates reproduce the original allocation/reallocation/free operations and the empty initialization/destruction loops for primitive index elements. No artificial delay loops were added: they are emitted from ordinary placement construction and pseudo-destructor syntax.
+
+The public indexed-assignment argument is represented as signed long, while resize takes int. On this target both have four-byte width, but the compiler preserves their conversion boundary and keeps the new count in its own saved register. Treating both as int instead recomputes index-plus-one across allocator calls and changes the generated instructions. The second registry's assignment captures its destination reference before interning; the first resolves its index destination afterward. Those evaluation choices reproduce the original distinct pointer lifetimes.
+
+The two returning wrappers keep their search-and-append logic directly in the function body. Calling the shared inline intern method for the entire body produces different initial zero-register scheduling, while the non-returning wrappers and indexed assignments match with the shared method. The lower-level storage and resize templates remain shared.
+
+Use GC/1.3.2, O4,p, inline auto, scalar/default register saves with `-use_lmw_stmw on`, and `-bool off`. `scratch/game_file_io/verify.py indexed_registry` verifies all allocated sections and writes `config/GSQE78/candidates/game_indexed_registry.json`; the proof is `scratch/game_file_io/registry_verification.txt`. The original DOL is unchanged.

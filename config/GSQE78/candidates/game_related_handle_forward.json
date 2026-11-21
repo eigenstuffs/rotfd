@@ -1,0 +1,116 @@
+{
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-lang c++",
+    "-proc gekko",
+    "-fp hardware",
+    "-enum int",
+    "-str reuse",
+    "-common off",
+    "-O4,p",
+    "-inline auto",
+    "-Cpp_exceptions off",
+    "-use_lmw_stmw on",
+    "-i src/Game"
+  ],
+  "source": "src/Game/related_handle_forward.cpp",
+  "status": "integrated-byte-match",
+  "scope": "Four contiguous related-handle forwarding methods; complete original translation-unit boundary remains unestablished.",
+  "splits": [
+    {
+      "section": ".text",
+      "start": "0x8025cea4",
+      "end": "0x8025d054"
+    }
+  ],
+  "functions": [
+    {
+      "name": "fn_8025CEA4",
+      "original_name": "fn_8025CEA4",
+      "address": "0x8025cea4",
+      "size": "0x68",
+      "scope": "global"
+    },
+    {
+      "name": "fn_8025CF0C",
+      "original_name": "fn_8025CF0C",
+      "address": "0x8025cf0c",
+      "size": "0x78",
+      "scope": "global"
+    },
+    {
+      "name": "fn_8025CF84",
+      "original_name": "fn_8025CF84",
+      "address": "0x8025cf84",
+      "size": "0x68",
+      "scope": "global"
+    },
+    {
+      "name": "fn_8025CFEC",
+      "original_name": "fn_8025CFEC",
+      "address": "0x8025cfec",
+      "size": "0x68",
+      "scope": "global"
+    }
+  ],
+  "data_symbols": [],
+  "dependency_symbols": [
+    {
+      "name": "lbl_801E9D24",
+      "address": "0x801e9d24",
+      "section": ".text"
+    },
+    {
+      "name": "fn_801E48EC",
+      "address": "0x801e48ec",
+      "section": ".text"
+    },
+    {
+      "name": "fn_801FC26C",
+      "address": "0x801fc26c",
+      "section": ".text"
+    },
+    {
+      "name": "fn_801C4968",
+      "address": "0x801c4968",
+      "section": ".text"
+    },
+    {
+      "name": "fn_801C4B7C",
+      "address": "0x801c4b7c",
+      "section": ".text"
+    }
+  ],
+  "notes": "docs/notes/game-related-handle-forward.md",
+  "validation": {
+    "verification_script": "scratch/game_related_handle_forward/verify.py",
+    "text_bytes": 432,
+    "data_bytes": 0,
+    "byte_differences": 0,
+    "original_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "integration_status": "verified full-DOL and objdiff",
+    "unlinked_function_count": 0,
+    "unlinked_text_bytes": 0,
+    "source_sha256": "332a488ef1379d402210b46cdbbcc3efd67c5080861f67d4dbbe65d4e917cccf",
+    "object_sha256": "0ac4eae74dcfa0d48df9268d7ccc7123d2b4a3a336cf51d7ae945aa3e7c300ab",
+    "relocations_applied": 12,
+    "unlinked_relocations": 0
+  },
+  "unlinked_functions": [],
+  "headers": [
+    {
+      "path": "src/Game/related_handle_forward_internal.h",
+      "sha256": "5a79225e4238985598ec7066f11c892714320436c09e40dcb6a389f5d2852607"
+    }
+  ],
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "332a488ef1379d402210b46cdbbcc3efd67c5080861f67d4dbbe65d4e917cccf",
+    "matched_code": 432,
+    "matched_functions": 4,
+    "matched_data": 0,
+    "complete_data": 0,
+    "object_path": "build/GSQE78/src/Game/related_handle_forward.o",
+    "object_sha256": "0ac4eae74dcfa0d48df9268d7ccc7123d2b4a3a336cf51d7ae945aa3e7c300ab"
+  }
+}

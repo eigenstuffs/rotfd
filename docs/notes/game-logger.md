@@ -1,0 +1,13 @@
+# Game log buffer
+
+The observed group at `0x801F9D0C..0x801FA1F0` clears and appends to a 24 KB log buffer. The two variadic append entries format into a 1,024-byte stack array, discard complete old CRLF-delimited lines until space is available, and adjust the retained line index. The first append entry also records the new line's pointer and length. Both suppress logging when the shared flags at `0x801E9D24+0x104` contain bit `0x40` and dispatch the virtual refresh callback afterward. Names and the source class identity are inferred, not recovered original identifiers.
+
+`src/Game/logger_base.cpp` owns three verified routines at `0x801F9D0C..0x801F9D68`: the 84-byte clear method and two four-byte empty callbacks. The clear method zeros the buffer, resets the field at offset8, and performs the observed refresh dispatch. `logger_internal.h` describes the known storage prefix and a true C++ vtable at object offset `0xB10`; refresh occupies vtable slot `0x28`. Unknown virtual declarations are layout descriptions only and emit no invented implementation or vtable.
+
+GC/1.3.2 with `-O4,p -inline deferred -use_lmw_stmw on` reproduces all 92 code bytes. `python3 scratch/game_logger_base/verify.py` applies the single call relocation and compares the whole allocated text section against the protected original DOL. This bounded source portion owns no data. The base trio also passed full-game SHA-1, direct-byte and native objdiff integration.
+
+`src/Game/logger_append.cpp` now owns both append methods at `0x801F9D68..0x801FA1F0`, totaling 1,160 text bytes, and the three-byte CRLF literal at `0x8037A838..0x8037A83B`. The same GC/1.3.2 flags match this complete bounded source portion. `python3 scratch/game_logger_append/verify.py` applies all 35 relocations and verifies every allocated text/data byte against the protected original. The five-byte gap at `0x8037A83B..0x8037A840` belongs to an explicit original-padding split, outside this source. The empty base callbacks remain in their already-integrated source file. Both append methods also passed full-game SHA-1, direct-byte and native objdiff integration.
+
+Small inline C++ helpers separate deletion of the first text line, adjustment of line records, and measurement of a new record. These normal source operations reproduce the original register allocation without patched instructions, masked comparisons or register-binding assembly. The helpers emit no retained text of their own. Their names and factoring are reconstruction choices; the exact original source organization is not established.
+
+The adjacent 2,076-byte command parser at `0x801FA1F0..0x801FAA0C` is reconstructed separately in `logger_parser.cpp`; see [the parser notes](game-logger-parser.md).

@@ -1,0 +1,79 @@
+name: main
+object_base: orig/GSQE78
+object: main.dol
+hash: 5da8295a79bf297ab62c620e6ac66210be1c6ef5
+symbols: config/GSQE78/symbols.txt
+splits: config/GSQE78/splits.txt
+# CodeWarrior comment section version; 8 = GC 1.0+, adjust if link fails.
+mw_comment_version: 8
+quick_analysis: false
+# Dev build: original lcf used a 0x200000 db-stack offset (see ldscript.tpl).
+ldscript_template: config/GSQE78/ldscript.tpl
+detect_objects: true
+detect_strings: true
+write_asm: true
+
+# Dispatch records read through borrowed original pool bases.
+force_active:
+  - lbl_802B2DA4
+  - lbl_802B2DFC
+  - lbl_802B3834
+  - lbl_802C160C
+  - lbl_802B388C
+  - lbl_802B3A34
+  - lbl_802B376C
+  - lbl_802B2C9C
+  - lbl_802B2CF4
+  - lbl_802B2D4C
+  - lbl_802B2E54
+  - lbl_802B37DC
+  - lbl_802B3E1C
+  - lbl_802B3E74
+  - lbl_802C1664
+  - lbl_802B3C74
+  - lbl_802B3AE4
+  - lbl_802B3BAC
+  - lbl_802B3ECC
+  - lbl_802B3F94
+  - lbl_802B405C
+  - lbl_802C8ADC
+  - lbl_802B1998
+  - lbl_802B19F0
+  - lbl_802B1A48
+  - lbl_802B1ABC
+  - lbl_802B1B88
+  - lbl_802B39B8
+  - lbl_802B3DA0
+  - lbl_802C11CC
+  - lbl_802C8F40
+  - lbl_802B3C98
+  - lbl_802B3960
+  - lbl_802B3908
+  - lbl_802B1BE0
+  - lbl_802C8AE8
+  - lbl_802C8EE8
+  - lbl_802AFBB8
+  - lbl_802B3AF0
+  - lbl_802B3BB8
+  - lbl_802B3ED8
+  - lbl_802B3FA0
+  - lbl_802B4068
+  - lbl_802B6098
+  - lbl_802C1418
+  - lbl_802B38B0
+  - lbl_802B6040
+  - lbl_802AFC10
+  - lbl_802B3CF0
+  - lbl_802B3D48
+  - lbl_802B1B30
+  # Original audio diagnostics have no direct relocation consumer.
+  - lbl_802AF660
+  # Unreferenced Python agent strings in the original source block.
+  - lbl_802A2C00
+  - lbl_802A2C14
+  # Unreferenced binding names in the moving and throwable string block.
+  - lbl_802A52A4
+  - lbl_802A52DC
+  # Unreferenced original enum-map functions retain their natural switch tables.
+  - fn_80031CB0
+  - fn_80031D0C

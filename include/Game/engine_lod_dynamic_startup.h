@@ -1,0 +1,6 @@
+#ifndef GAME_ENGINE_LOD_DYNAMIC_STARTUP_H
+#define GAME_ENGINE_LOD_DYNAMIC_STARTUP_H
+
+extern "C" void fn_802599D0();
+
+#endif

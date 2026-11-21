@@ -1,0 +1,281 @@
+{
+  "status": "integrated-byte-match",
+  "source": "src/Game/platform_movie_display.cpp",
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-proc",
+    "gekko",
+    "-fp",
+    "hardware",
+    "-enum",
+    "int",
+    "-str",
+    "reuse",
+    "-common",
+    "off",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-Cpp_exceptions",
+    "off",
+    "-RTTI",
+    "off",
+    "-use_lmw_stmw",
+    "on",
+    "-fp_contract",
+    "on",
+    "-i",
+    "src/Game",
+    "-i",
+    "include",
+    "-i",
+    "src/dolphin",
+    "-i",
+    "src/dolphin/ax"
+  ],
+  "source_kind": "c++",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2150160572,
+      "end": 2150161208,
+      "alignment": 4
+    }
+  ],
+  "functions": [
+    {
+      "name": "fn_8028D8BC",
+      "address": 2150160572,
+      "size": 636,
+      "scope": "global",
+      "section": ".text",
+      "object_offset": 0,
+      "sha256": "19e9cefedc3edab5d2db59da881edfc23f18c2400e7936d31a2546175765ad0e"
+    }
+  ],
+  "objects": [],
+  "unlinked_functions": [],
+  "dependency_symbols": [
+    {
+      "name": "DCFlushRangeNoSync",
+      "address": 2148475592,
+      "scope": "global"
+    },
+    {
+      "name": "GXSetColorUpdate",
+      "address": 2148624480,
+      "scope": "global"
+    },
+    {
+      "name": "OSSignalSemaphore",
+      "address": 2148489396,
+      "scope": "global"
+    },
+    {
+      "name": "OSWaitSemaphore",
+      "address": 2148489284,
+      "scope": "global"
+    },
+    {
+      "name": "PPCSync",
+      "address": 2148470232,
+      "scope": "global"
+    },
+    {
+      "name": "VIFlush",
+      "address": 2148518764,
+      "scope": "global"
+    },
+    {
+      "name": "VISetBlack",
+      "address": 2148519176,
+      "scope": "global"
+    },
+    {
+      "name": "VISetNextFrameBuffer",
+      "address": 2148519068,
+      "scope": "global"
+    },
+    {
+      "name": "fn_8028DB38",
+      "address": 2150161208,
+      "scope": "global"
+    },
+    {
+      "name": "fn_802954D0",
+      "address": 2150192336,
+      "scope": "global"
+    },
+    {
+      "name": "fn_802959E0",
+      "address": 2150193632,
+      "scope": "global"
+    },
+    {
+      "name": "fn_80295A04",
+      "address": 2150193668,
+      "scope": "global"
+    },
+    {
+      "name": "lbl_801E9D24",
+      "address": 2149489956,
+      "scope": "global"
+    },
+    {
+      "name": "lbl_8036E9D0",
+      "address": 2151082448,
+      "scope": "global"
+    },
+    {
+      "name": "lbl_803780E8",
+      "address": 2151121128,
+      "scope": "global"
+    },
+    {
+      "name": "lbl_803780F0",
+      "address": 2151121136,
+      "scope": "global"
+    },
+    {
+      "name": "lbl_803780F8",
+      "address": 2151121144,
+      "scope": "global"
+    },
+    {
+      "name": "lbl_803780FC",
+      "address": 2151121148,
+      "scope": "global"
+    },
+    {
+      "name": "lbl_80378100",
+      "address": 2151121152,
+      "scope": "global"
+    },
+    {
+      "name": "lbl_80378104",
+      "address": 2151121156,
+      "scope": "global"
+    },
+    {
+      "name": "lbl_80378108",
+      "address": 2151121160,
+      "scope": "global"
+    },
+    {
+      "name": "lbl_8037810C",
+      "address": 2151121164,
+      "scope": "global"
+    },
+    {
+      "name": "lbl_80378110",
+      "address": 2151121168,
+      "scope": "global"
+    },
+    {
+      "name": "lbl_80378114",
+      "address": 2151121172,
+      "scope": "global"
+    },
+    {
+      "name": "lbl_80378118",
+      "address": 2151121176,
+      "scope": "global"
+    },
+    {
+      "name": "lbl_8037811C",
+      "address": 2151121180,
+      "scope": "global"
+    },
+    {
+      "name": "lbl_80378120",
+      "address": 2151121184,
+      "scope": "global"
+    },
+    {
+      "name": "lbl_80378128",
+      "address": 2151121192,
+      "scope": "global"
+    },
+    {
+      "name": "lbl_8037814C",
+      "address": 2151121228,
+      "scope": "global"
+    },
+    {
+      "name": "lbl_80378154",
+      "address": 2151121236,
+      "scope": "global"
+    },
+    {
+      "name": "lbl_80378158",
+      "address": 2151121240,
+      "scope": "global"
+    },
+    {
+      "name": "lbl_8037B91C",
+      "address": 2151135516,
+      "scope": "global"
+    }
+  ],
+  "source_sha256": "a4f81cb39b93575c5978e9182c2c44bdf7f735ce353e1a5c33d4ce6e40dc08b7",
+  "headers": [
+    {
+      "path": "include/Game/platform_movie_display_internal.h",
+      "sha256": "7abd800e5a867edc2d31c47aaa27b7fbb2de42baf0fde59e42fd0fdfe4447a5c"
+    },
+    {
+      "path": "include/Game/platform_movie_init_internal.h",
+      "sha256": "5976ccbc80193edc213fb19ce7cdf4e5c66f63caf160f4802b041fe21bc350ee"
+    },
+    {
+      "path": "include/Game/platform_video_pause_internal.h",
+      "sha256": "67d92c7bca6d099538006ec2f6e106f70eb658ff5460145730d095d7c243a341"
+    },
+    {
+      "path": "include/Game/platform_video_resume_internal.h",
+      "sha256": "1e7d9bbf62090be4bed2f7bf39fe343712e14414b1958466e42e4642b75b7943"
+    },
+    {
+      "path": "include/Game/platform_disc_wait_internal.h",
+      "sha256": "acdb63e4a68a0e7101cadf0197b7921bd374573f41e464063b13a17dc4807812"
+    },
+    {
+      "path": "include/Game/platform_disc_read.h",
+      "sha256": "c15d9e442a60c5e788fd0a64fe7f33d88971fe3adb70a34a2ffd87c5f3950b54"
+    },
+    {
+      "path": "include/Game/platform_disc_status.h",
+      "sha256": "d4cdaa60f78753f186a4addd883f27a891abd8dfdb834bcb8f3bd4b3e20d8910"
+    }
+  ],
+  "validation": {
+    "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "object_sha256": "88d64e7a3599b63762de500cf5dd60dea6cffc488585d5aae3cc1ca21e74466b",
+    "retained_text_bytes": 636,
+    "emitted_text_bytes": 636,
+    "initialized_data_bytes": 0,
+    "bss_bytes": 0,
+    "emitted_data_bytes": 0,
+    "unlinked_text_bytes": 0,
+    "weak_functions": 0,
+    "relocations": 64,
+    "emitted_relocations": 64,
+    "zero_byte_differences": true,
+    "all_retained_allocated_bytes_verified": true,
+    "all_emitted_allocated_bytes_accounted": true,
+    "owned_padding_bytes": 0,
+    "verification_script": "scratch/game_movie_platform/verify_display.py",
+    "integration_status": "verified full-DOL and objdiff"
+  },
+  "notes": "docs/notes/game-platform-movie-display.md",
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "a4f81cb39b93575c5978e9182c2c44bdf7f735ce353e1a5c33d4ce6e40dc08b7",
+    "matched_code": 636,
+    "matched_functions": 1,
+    "matched_data": 0,
+    "complete_data": 0,
+    "object_path": "build/GSQE78/src/Game/platform_movie_display.o",
+    "object_sha256": "88d64e7a3599b63762de500cf5dd60dea6cffc488585d5aae3cc1ca21e74466b"
+  }
+}

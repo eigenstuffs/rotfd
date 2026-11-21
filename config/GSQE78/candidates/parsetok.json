@@ -1,0 +1,156 @@
+{
+  "source": "src/Parser/parsetok.c",
+  "status": "integrated-byte-match",
+  "compiler": "GC/2.0",
+  "cflags": [
+    "-proc gekko",
+    "-fp hardware",
+    "-enum int",
+    "-str reuse",
+    "-common off",
+    "-opt level=4,nopeephole,speed",
+    "-inline auto,deferred",
+    "-pool off",
+    "-Cpp_exceptions off"
+  ],
+  "sections": {
+    ".text": [
+      "0x80172b44",
+      "0x80172f28"
+    ],
+    ".data": [
+      "0x802db250",
+      "0x802DB289"
+    ],
+    ".sbss": [
+      "0x80377e48",
+      "0x80377e4c"
+    ]
+  },
+  "functions": [
+    {
+      "name": "parsetok",
+      "address": "0x80172b44",
+      "size": "0x220",
+      "scope": "local"
+    },
+    {
+      "name": "PyParser_ParseFile",
+      "address": "0x80172d64",
+      "size": "0xe0",
+      "scope": "global"
+    },
+    {
+      "name": "PyParser_ParseString",
+      "address": "0x80172e44",
+      "size": "0xe4",
+      "scope": "global"
+    }
+  ],
+  "objects": [
+    {
+      "name": "Py_TabcheckFlag",
+      "address": "0x80377e48",
+      "size": "0x4",
+      "scope": "global"
+    }
+  ],
+  "dependency_symbols": [
+    {
+      "name": "_savegpr_25",
+      "address": "0x8011f614"
+    },
+    {
+      "name": "PyParser_New",
+      "address": "0x80172a44"
+    },
+    {
+      "name": "fprintf",
+      "address": "0x80125d54"
+    },
+    {
+      "name": "PyTokenizer_Get",
+      "address": "0x801707cc"
+    },
+    {
+      "name": "malloc",
+      "address": "0x8001f2c0"
+    },
+    {
+      "name": "strncpy",
+      "address": "0x801284fc"
+    },
+    {
+      "name": "PyParser_AddToken",
+      "address": "0x8017269c"
+    },
+    {
+      "name": "free",
+      "address": "0x8001f35c"
+    },
+    {
+      "name": "PyParser_Delete",
+      "address": "0x80172a0c"
+    },
+    {
+      "name": "PyTokenizer_Free",
+      "address": "0x80171c48"
+    },
+    {
+      "name": "_restgpr_25",
+      "address": "0x8011f660"
+    },
+    {
+      "name": "PyTokenizer_FromFile",
+      "address": "0x80171c94"
+    },
+    {
+      "name": "Py_VerboseFlag",
+      "address": "0x80377f50"
+    },
+    {
+      "name": "PyTokenizer_FromString",
+      "address": "0x80171db8"
+    }
+  ],
+  "validation": {
+    "relocations": 34,
+    "text_bytes": 996,
+    "initialized_data_bytes": 57,
+    "zero_byte_differences": true,
+    "data_tail_padding_bytes": 7,
+    "integration_status": "verified full-DOL and objdiff"
+  },
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "8a45c80b9d467083d6a8b913c0f1c7fefaf1abe997ed503e243b372bc81a1f1c",
+    "matched_code": 996,
+    "matched_functions": 3,
+    "matched_data": 61,
+    "complete_data": 61,
+    "object_path": "build/GSQE78/src/Parser/parsetok.o",
+    "object_sha256": "25096e96019c3a377ad6aa800ab2050fa87e111e7dae5f7816e06e6ca578bfe2"
+  },
+  "external_padding": [
+    {
+      "source": "src/Parser/parsetok.c",
+      "unit": "main/Parser/parsetok",
+      "section": ".data",
+      "start": "0x802db289",
+      "end": "0x802db290",
+      "size": 7,
+      "alignment": 1,
+      "symbol": "gap_07_802DB289_data",
+      "original_owner": "padding/source_extents/Parser/parsetok.s",
+      "source_section_start": "0x802db250",
+      "source_section_bytes": 57,
+      "previous_split_bytes": 64,
+      "description": "Original linker alignment beyond emitted source section; no source credit."
+    }
+  ],
+  "source_extent_audit": {
+    "data_credit_correction": 7,
+    "evidence": "config/GSQE78/source_padding.json",
+    "description": "Source and original bytes unchanged; trailing original padding moved to NonMatching ownership."
+  }
+}

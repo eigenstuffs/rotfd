@@ -1,0 +1,57 @@
+{
+  "source": "src/Runtime/__mem.c",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.3",
+  "cflags": [
+    "-proc gekko",
+    "-fp hardware",
+    "-enum int",
+    "-str reuse",
+    "-common off",
+    "-O4,p",
+    "-pool off",
+    "-Cpp_exceptions off"
+  ],
+  "sections": {
+    ".init": [
+      "0x80005434",
+      "0x80005570"
+    ]
+  },
+  "symbols": {
+    "__fill_mem": 2147505252,
+    "memset": 2147505204,
+    "memcpy": 2147505440
+  },
+  "symbol_sizes": {
+    "__fill_mem": 188,
+    "memset": 48,
+    "memcpy": 80
+  },
+  "symbol_scopes": {
+    "__fill_mem": "local",
+    "memset": "global",
+    "memcpy": "global"
+  },
+  "validation": {
+    "functions": 3,
+    "code_bytes": 316,
+    "init_bytes_emitted": 316,
+    "relocations_resolved": 1,
+    "mismatching_initialized_bytes": 0,
+    "source_sha256": "d46051e555254c72aea8b279e46140987e1fc1ce1bee09f26de221e8636dd6ae",
+    "command": "python3 scratch/runtime_mem/check_object.py",
+    "integration_status": "verified full-DOL and objdiff"
+  },
+  "reference": "https://github.com/doldecomp/melee/blob/ae5898ee0dfda41b34fdf846f7d680a33e14779d/src/Runtime/__mem.c",
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "d46051e555254c72aea8b279e46140987e1fc1ce1bee09f26de221e8636dd6ae",
+    "matched_code": 316,
+    "matched_functions": 3,
+    "matched_data": 0,
+    "complete_data": 0,
+    "object_path": "build/GSQE78/src/Runtime/__mem.o",
+    "object_sha256": "4e4669bbd41839ae6a8d2e9973a8c481790d3ea5299145641f7da0097b48b4c8"
+  }
+}

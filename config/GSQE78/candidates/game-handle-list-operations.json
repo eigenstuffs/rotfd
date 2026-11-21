@@ -1,0 +1,103 @@
+{
+  "status": "isolated-byte-match",
+  "source": "src/Game/handle_list_operations.cpp",
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-proc",
+    "gekko",
+    "-fp",
+    "hardware",
+    "-enum",
+    "int",
+    "-str",
+    "reuse",
+    "-common",
+    "off",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-Cpp_exceptions",
+    "off",
+    "-RTTI",
+    "off",
+    "-use_lmw_stmw",
+    "on",
+    "-i",
+    "src/Game",
+    "-i",
+    "include"
+  ],
+  "source_kind": "c++",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2150006732,
+      "end": 2150007188,
+      "alignment": 4
+    }
+  ],
+  "functions": [
+    {
+      "name": "fn_80267FCC",
+      "address": 2150006732,
+      "size": 180,
+      "scope": "global",
+      "section": ".text",
+      "object_offset": 0,
+      "sha256": "ca8222e4626a600dcb962ac32c9ec764d83275bf95c9c9ad0615c52c6536ebc4"
+    },
+    {
+      "name": "fn_80268080",
+      "address": 2150006912,
+      "size": 276,
+      "scope": "global",
+      "section": ".text",
+      "object_offset": 180,
+      "sha256": "8146caee031d90d4d0d620e3bb9cd50cfaf00699556f7aa76a796098ef2ca1ae"
+    }
+  ],
+  "objects": [],
+  "unlinked_functions": [],
+  "dependency_symbols": [
+    {
+      "name": "lbl_801E9D24",
+      "address": 2149489956,
+      "scope": "global"
+    },
+    {
+      "name": "fn_801F7EB8",
+      "address": 2149547704,
+      "scope": "global"
+    },
+    {
+      "name": "fn_801EE978",
+      "address": 2149509496,
+      "scope": "global"
+    }
+  ],
+  "source_sha256": "c60b8ad99f280e7297c97815dfa656bb3f8af808f3bc28d0c1cfb34ca3fa53e2",
+  "headers": [
+    {
+      "path": "include/Game/handle_list_operations_internal.h",
+      "sha256": "89af2a58ba630ce79354f24f398460b4ac48e29970221f6b31848d52994c68f0"
+    }
+  ],
+  "validation": {
+    "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "object_sha256": "9bbc9fb02d2a1896436f5549eedda5ee08ff6caafc934660a22a72cb1276f0e2",
+    "retained_text_bytes": 456,
+    "emitted_text_bytes": 456,
+    "initialized_data_bytes": 0,
+    "bss_bytes": 0,
+    "emitted_data_bytes": 0,
+    "unlinked_text_bytes": 0,
+    "weak_functions": 0,
+    "relocations": 6,
+    "zero_byte_differences": true,
+    "all_retained_allocated_bytes_verified": true,
+    "all_emitted_allocated_bytes_accounted": true,
+    "owned_padding_bytes": 0,
+    "verification_script": "scratch/game_handle_list_operations/verify.py"
+  },
+  "notes": "docs/notes/game-handle-list-operations.md"
+}

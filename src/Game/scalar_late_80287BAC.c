@@ -1,0 +1,5 @@
+/* Original scalar operations with private observed layouts.
+ * See docs/notes/game-scalar-late.md. */
+
+
+void fn_80287BAC(unsigned int *object) {unsigned int t;t=object[0xe4/4];object[0xe4/4]=object[0xe8/4];object[0xe8/4]=t;object[0xec/4]=object[0xf0/4];t=object[0xd4/4];object[0xd4/4]=object[0xd8/4];object[0xd8/4]=t;object[0xdc/4]=object[0xe0/4];object[0xf0/4]=0;object[0xe0/4]=0;}

@@ -1,0 +1,118 @@
+{
+  "source": "src/Game/menu2d_item_append.cpp",
+  "source_kind": "c++",
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-proc",
+    "gekko",
+    "-fp",
+    "hardware",
+    "-enum",
+    "int",
+    "-str",
+    "reuse",
+    "-common",
+    "off",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-Cpp_exceptions",
+    "off",
+    "-RTTI",
+    "off",
+    "-use_lmw_stmw",
+    "on",
+    "-i",
+    "src/Game"
+  ],
+  "status": "integrated-byte-match",
+  "sections": {
+    ".text": [
+      2149673536,
+      2149674108
+    ]
+  },
+  "section_alignments": {
+    ".text": 4
+  },
+  "functions": [
+    {
+      "name": "fn_80216A40",
+      "address": 2149673536,
+      "size": 572,
+      "object_offset": 0,
+      "section": ".text",
+      "scope": "global",
+      "sha256": "01813430327f888c0a190d9194e6654976df14e65e0bd5c18ee8c485670741dd"
+    }
+  ],
+  "objects": [],
+  "dependency_symbols": [
+    {
+      "name": "fn_8028FAF4",
+      "address": 2150169332,
+      "scope": "global"
+    },
+    {
+      "name": "fn_8028FD50",
+      "address": 2150169936,
+      "scope": "global"
+    },
+    {
+      "name": "fn_8028FF24",
+      "address": 2150170404,
+      "scope": "global"
+    },
+    {
+      "name": "lbl_8028F698",
+      "address": 2150168216,
+      "scope": "global"
+    }
+  ],
+  "headers": [
+    {
+      "path": "src/Game/menu2d_item_append_internal.h",
+      "sha256": "7305dae0060c4b143c18418da37f21a693fb112682dc2b6cef8784f4a44968c3"
+    }
+  ],
+  "source_sha256": "bc1edce7a813844fb16ba716e1362884ec71eb45c57af3cec2b7e1ed9549af67",
+  "notes": "docs/notes/game-menu2d-item-append.md",
+  "validation": {
+    "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "object_sha256": "666da91a7ea0326b94bb03f4fa358f9cee35318c21dec8572b9af6eca7c41392",
+    "retained_text_bytes": 572,
+    "emitted_text_bytes": 572,
+    "initialized_data_bytes": 0,
+    "bss_bytes": 0,
+    "relocations": 18,
+    "relocations_by_type": {
+      "6": 6,
+      "4": 6,
+      "10": 6
+    },
+    "unlinked_text_bytes": 0,
+    "unlinked_relocations": 0,
+    "weak_functions": 0,
+    "zero_byte_differences": true,
+    "all_allocated_sections_accounted": true,
+    "all_retained_allocated_bytes_verified": true,
+    "owned_padding_bytes": 0,
+    "verification_script": "scratch/game_menu_item_append/verify.py",
+    "integration_status": "verified full-DOL and objdiff"
+  },
+  "integration_notes": [
+    "These two adjacent original functions use separate ordinary C++ objects to preserve original order without changing compiler output. The combined template probe emits the 32-byte Root callback before the 572-byte append.",
+    "All original strings, tables, zero vectors and allocator storage remain external.",
+    "Append returns the index of the newly appended pointer in the array at +38; its caller may ignore that integer result."
+  ],
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "bc1edce7a813844fb16ba716e1362884ec71eb45c57af3cec2b7e1ed9549af67",
+    "matched_code": 572,
+    "matched_functions": 1,
+    "matched_data": 0,
+    "complete_data": 0,
+    "object_path": "build/GSQE78/src/Game/menu2d_item_append.o",
+    "object_sha256": "666da91a7ea0326b94bb03f4fa358f9cee35318c21dec8572b9af6eca7c41392"
+  }
+}

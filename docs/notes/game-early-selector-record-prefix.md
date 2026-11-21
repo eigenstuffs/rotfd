@@ -1,0 +1,15 @@
+# Early selector callback-record prefixes
+
+Accepted matching source: the production build passes the original DOL hash,
+strict allocated-byte/extent and actual-relocation checks, baseline regression
+checks, generated progress verification and all 26 repository tests.
+
+The isolated ordinary C++ refinements recover fn_8002264C (1064 bytes) and fn_8004BE1C (1380 bytes), together with their original five-record member-pointer arrays and seven-case switch tables. The source files are early_owner_event_selector_records_8002264C.cpp and early_related_record_selector_records_8004BE1C.cpp. The frozen evidence is scratch/game_early_selector_record_prefix, including candidate manifests, original metadata audits, all actual relocations, compiler objects and repeat verifiers.
+
+The earlier proposals in scratch/game_engine_batch174 and batch175 remain preserved and unaccepted. Their standalone28-byte compiler .data sections have actual alignment8, while original switch addresses802AFC4C and802B3D2C are only4-aligned. The refinements define genuine original60-byte records before each unchanged switch table. Their88-byte .data sections now begin at8-aligned802AFC10 and802B3CF0. These are five {0,0x9C,8} and five {0,0x94,8} member-pointer records, respectively; no invented padding or altered object payload is used.
+
+Fresh production compilation with GC1.3.2, processor750, O4,s, exceptions enabled and use_lmw_stmw matches2444 text bytes,176 data bytes and40 bytes of EH/index metadata. All69 actual allocated relocations resolve exactly. Before/after comparisons prove code, EH/index, switch bytes and nondata relocation targets unchanged. Neither unit emits helpers, literals, BSS or startup entries. Full original extabindex80015F60..8001F2C0 and ctor/dtor tables80299920..802999A0 are audited, including unchanged external callback tables.
+
+The full original-object/data ownership scan covers5530 objects,119086 actual relocations and777360 initialized DOL words. It finds exactly the original60-byte global and28-byte local switch definitions per range, only the selector's two switch relocations into each range, no additional aliases or overlapping source splits, and no initialized pointers into the ranges. Eighty actual references to the broader lbl_802AFBA0/lbl_802B3708 bases are preserved in the census. These bases and their first complete records remain external and unchanged.
+
+The record arrays keep their original GLOBAL identities lbl_802AFC10 and lbl_802B3CF0. Since the native code accesses them through an earlier borrowed base rather than a direct symbol relocation, both require explicit force_active retention, as in the accepted dispatch-pool ownership precedent. Root owns the two configuration additions and native integration. The independent optional verify_native.py checks exact FORCEACTIVE presence, GLOBAL ELF identities and native map placement, compiled production objects, all allocated original bytes, the two broader bases, absence of global jump aliases and optional original DOL hash. Dual native ELF/map proof, full DOL hash and no-regression acceptance remain pending; isolated matching is not acceptance credit.

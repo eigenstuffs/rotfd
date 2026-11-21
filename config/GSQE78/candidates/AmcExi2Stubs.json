@@ -1,0 +1,95 @@
+{
+  "source": "src/dolphin/amcstubs/AmcExi2Stubs.c",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.2.5",
+  "cflags": "-proc gekko -fp hardware -enum int -str reuse -common off -O4,p -inline auto -Cpp_exceptions off",
+  "splits": [
+    {
+      "section": ".text",
+      "start": "0x8012dad0",
+      "end": "0x8012db00"
+    }
+  ],
+  "functions": [
+    {
+      "name": "EXI2_Init",
+      "original_name": "fn_8012DAD0",
+      "address": "0x8012dad0",
+      "size": "0x4",
+      "scope": "global"
+    },
+    {
+      "name": "EXI2_EnableInterrupts",
+      "original_name": "fn_8012DAD4",
+      "address": "0x8012dad4",
+      "size": "0x4",
+      "scope": "global"
+    },
+    {
+      "name": "EXI2_Poll",
+      "original_name": "fn_8012DAD8",
+      "address": "0x8012dad8",
+      "size": "0x8",
+      "scope": "global"
+    },
+    {
+      "name": "EXI2_ReadN",
+      "original_name": "fn_8012DAE0",
+      "address": "0x8012dae0",
+      "size": "0x8",
+      "scope": "global"
+    },
+    {
+      "name": "EXI2_WriteN",
+      "original_name": "fn_8012DAE8",
+      "address": "0x8012dae8",
+      "size": "0x8",
+      "scope": "global"
+    },
+    {
+      "name": "EXI2_Reserve",
+      "original_name": "fn_8012DAF0",
+      "address": "0x8012daf0",
+      "size": "0x4",
+      "scope": "global"
+    },
+    {
+      "name": "EXI2_Unreserve",
+      "original_name": "fn_8012DAF4",
+      "address": "0x8012daf4",
+      "size": "0x4",
+      "scope": "global"
+    },
+    {
+      "name": "AMC_IsStub",
+      "original_name": "fn_8012DAF8",
+      "address": "0x8012daf8",
+      "size": "0x8",
+      "scope": "global"
+    }
+  ],
+  "data_symbols": [],
+  "discarded_functions": [],
+  "validation": {
+    "code_bytes": 48,
+    "emitted_data_bytes": 0,
+    "bss_layout_bytes": 0,
+    "relocations_applied": 0,
+    "byte_differences": 0,
+    "source_sha256": "d9e2740d947a3a3b0399a8b05a694f0c0dca04119623b378a42ccb625bae88c2",
+    "object_sha256": "64812b454325fd751a3c4b9deeb73fe87c94e17b6b27043526d40faaec2678e1",
+    "original_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "integration_status": "verified full-DOL and objdiff"
+  },
+  "notes": "docs/notes/debugger-driver.md",
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "d9e2740d947a3a3b0399a8b05a694f0c0dca04119623b378a42ccb625bae88c2",
+    "matched_code": 48,
+    "matched_functions": 8,
+    "matched_data": 0,
+    "complete_data": 0,
+    "object_path": "build/GSQE78/src/dolphin/amcstubs/AmcExi2Stubs.o",
+    "object_sha256": "64812b454325fd751a3c4b9deeb73fe87c94e17b6b27043526d40faaec2678e1"
+  }
+}

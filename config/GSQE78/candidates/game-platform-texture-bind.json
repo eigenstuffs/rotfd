@@ -1,0 +1,181 @@
+{
+  "status": "integrated-byte-match",
+  "source": "src/Game/platform_texture_bind.cpp",
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-proc",
+    "gekko",
+    "-fp",
+    "hardware",
+    "-enum",
+    "int",
+    "-str",
+    "reuse",
+    "-common",
+    "off",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-Cpp_exceptions",
+    "off",
+    "-RTTI",
+    "off",
+    "-use_lmw_stmw",
+    "on",
+    "-i",
+    "include",
+    "-i",
+    "src/Game",
+    "-i",
+    "src/dolphin/gx"
+  ],
+  "source_kind": "c++",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2150111280,
+      "end": 2150112216,
+      "alignment": 4
+    },
+    {
+      "name": ".data",
+      "start": 2150569128,
+      "end": 2150569188,
+      "alignment": 8
+    }
+  ],
+  "functions": [
+    {
+      "name": "fn_80281830",
+      "address": 2150111280,
+      "size": 936,
+      "scope": "global",
+      "section": ".text",
+      "object_offset": 0,
+      "sha256": "8c58bfca12b8a221550d39aec94573f86f40bf484ebd5ec95a8b3b307f16a0ba"
+    }
+  ],
+  "objects": [
+    {
+      "name": "@95",
+      "address": 2150569128,
+      "size": 60,
+      "scope": "local",
+      "section": ".data",
+      "object_offset": 0,
+      "compiler_local": true,
+      "sha256": "69ed4a2244d0c12652874e2c750964c879e72705a8e42d590af82b777db6330c"
+    }
+  ],
+  "unlinked_functions": [],
+  "dependency_symbols": [
+    {
+      "name": "GXInitTexObj",
+      "address": 2148617324,
+      "scope": "global"
+    },
+    {
+      "name": "GXInitTexObjCI",
+      "address": 2148617952,
+      "scope": "global"
+    },
+    {
+      "name": "GXInitTexObjLOD",
+      "address": 2148618024,
+      "scope": "global"
+    },
+    {
+      "name": "GXInitTexObjWrapMode",
+      "address": 2148618428,
+      "scope": "global"
+    },
+    {
+      "name": "GXInitTlutObj",
+      "address": 2148618968,
+      "scope": "global"
+    },
+    {
+      "name": "GXLoadTexObj",
+      "address": 2148618884,
+      "scope": "global"
+    },
+    {
+      "name": "GXLoadTlut",
+      "address": 2148619040,
+      "scope": "global"
+    },
+    {
+      "name": "fn_80281BD8",
+      "address": 2150112216,
+      "scope": "global"
+    },
+    {
+      "name": "lbl_8037B7E0",
+      "address": 2151135200,
+      "scope": "global"
+    }
+  ],
+  "source_sha256": "d2e0f48615a0831823d41e84ed5c1c2a3645de5c43b3433e548693f76a379ab5",
+  "headers": [
+    {
+      "path": "include/Game/platform_pool_internal.h",
+      "sha256": "eec136390750ca81fa5a9f020b42b2d12bd391f8fc3974bd56d29693bb813457"
+    },
+    {
+      "path": "include/Game/bitset_internal.h",
+      "sha256": "b0ab26d39217844709a6cc151a0dac64ee30b8414f4b8b7d017051414be3aaf1"
+    },
+    {
+      "path": "src/dolphin/gx/GXTexture.h",
+      "sha256": "00417380492711fa3031c6495bed7b022c7533701c1e997cd73f3fa3d476d935"
+    },
+    {
+      "path": "src/dolphin/gx/GXEnum.h",
+      "sha256": "ddb46172959ba47d7cf93e0fe88931db48108c4cff51b8d6fbf98fd15e5d1a8e"
+    },
+    {
+      "path": "src/dolphin/gx/GXStruct.h",
+      "sha256": "3639f077ec15b51068a7b42110d17f24d3d9c299c400dc95e10e0c6c0f12b77f"
+    },
+    {
+      "path": "src/dolphin/gx/types.h",
+      "sha256": "87ce631e8c0827fd0f66b12072a914132ceb3f934816c8988c0ee1ebdf0a3260"
+    },
+    {
+      "path": "src/dolphin/gx/vitypes.h",
+      "sha256": "e155b398bfbe234647030711e34dbd04394a58a3448154ec1c5f32bfeee7d8cd"
+    }
+  ],
+  "validation": {
+    "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "object_sha256": "3768f6c1b9bbc7ae12e722a3bcaf6b9eba994a8240fbe10fa1ec3ba247a9f92a",
+    "retained_text_bytes": 936,
+    "emitted_text_bytes": 936,
+    "initialized_data_bytes": 60,
+    "bss_bytes": 0,
+    "emitted_data_bytes": 60,
+    "unlinked_text_bytes": 0,
+    "weak_functions": 0,
+    "relocations": 36,
+    "zero_byte_differences": true,
+    "all_retained_allocated_bytes_verified": true,
+    "all_emitted_allocated_bytes_accounted": true,
+    "owned_padding_bytes": 0,
+    "verification_script": "scratch/game_platform_aram_lifetime/reprove_dependents.py",
+    "integration_status": "verified full-DOL and objdiff",
+    "source_sha256": "d2e0f48615a0831823d41e84ed5c1c2a3645de5c43b3433e548693f76a379ab5",
+    "unlinked_relocations": 0,
+    "uncredited_compiler_text_alignment": {}
+  },
+  "notes": "docs/notes/game-platform-texture-binding.md",
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "d2e0f48615a0831823d41e84ed5c1c2a3645de5c43b3433e548693f76a379ab5",
+    "matched_code": 936,
+    "matched_functions": 1,
+    "matched_data": 60,
+    "complete_data": 60,
+    "object_path": "build/GSQE78/src/Game/platform_texture_bind.o",
+    "object_sha256": "3768f6c1b9bbc7ae12e722a3bcaf6b9eba994a8240fbe10fa1ec3ba247a9f92a"
+  }
+}

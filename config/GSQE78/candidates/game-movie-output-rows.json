@@ -1,0 +1,119 @@
+{
+  "status": "isolated-byte-match",
+  "source": "src/Game/movie_output_rows.cpp",
+  "compiler": "GC/1.2.5",
+  "cflags": [
+    "-proc",
+    "gekko",
+    "-fp",
+    "hardware",
+    "-enum",
+    "int",
+    "-str",
+    "reuse",
+    "-common",
+    "off",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-Cpp_exceptions",
+    "off",
+    "-RTTI",
+    "off",
+    "-use_lmw_stmw",
+    "on",
+    "-fp_contract",
+    "on",
+    "-opt",
+    "noprop",
+    "-i",
+    "include"
+  ],
+  "source_kind": "c++",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2150180424,
+      "end": 2150181200,
+      "alignment": 4
+    }
+  ],
+  "functions": [
+    {
+      "name": "fn_80292648",
+      "address": 2150180424,
+      "size": 324,
+      "scope": "global",
+      "section": ".text",
+      "object_offset": 0,
+      "sha256": "ec445d5c07aee7b0cd12ee0366d370988fa82bfacda98209cefa1c2b4a6cc2f9"
+    },
+    {
+      "name": "fn_8029278C",
+      "address": 2150180748,
+      "size": 212,
+      "scope": "global",
+      "section": ".text",
+      "object_offset": 324,
+      "sha256": "ec2e8b911639a98bf1f1720c22d359c52962a8d204d41cc525e8d3f56b6ba144"
+    },
+    {
+      "name": "fn_80292860",
+      "address": 2150180960,
+      "size": 240,
+      "scope": "global",
+      "section": ".text",
+      "object_offset": 536,
+      "sha256": "8832e5423c78d358cee87ae7297c124721ed6d6295b354e13be6c2597fa4d4a4"
+    }
+  ],
+  "objects": [],
+  "unlinked_functions": [],
+  "dependency_symbols": [
+    {
+      "name": "fn_80291B88",
+      "address": 2150177672,
+      "scope": "global"
+    },
+    {
+      "name": "fn_80291D20",
+      "address": 2150178080,
+      "scope": "global"
+    }
+  ],
+  "source_sha256": "5b8069faabf0c6d747d71e2e99a660d3345f19891957e51dc315199faffd9777",
+  "headers": [
+    {
+      "path": "include/Game/movie_output_rows.h",
+      "sha256": "32e266b2df3be1d09b75983e437299b328ac440e16ac39ebf2030aac2974cf9e"
+    },
+    {
+      "path": "include/Game/movie_decoder_record.h",
+      "sha256": "84eaf5e524feaf9adbe2238084c84649196730be5c191d717510873ea73f3027"
+    },
+    {
+      "path": "include/Game/movie_decoder_layout.h",
+      "sha256": "c45828ef85982eeaf08ee6f70dc5e6268f242f71499eb867c6239a2c27d4ed94"
+    }
+  ],
+  "validation": {
+    "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "object_sha256": "2a1fd9260b2193b170899bd6d97576ccaa47689362ed9475ec4dad1161578e0a",
+    "retained_text_bytes": 776,
+    "emitted_text_bytes": 776,
+    "initialized_data_bytes": 0,
+    "bss_bytes": 0,
+    "emitted_data_bytes": 0,
+    "unlinked_text_bytes": 0,
+    "weak_functions": 0,
+    "relocations": 7,
+    "emitted_relocations": 7,
+    "zero_byte_differences": true,
+    "all_retained_allocated_bytes_verified": true,
+    "all_emitted_allocated_bytes_accounted": true,
+    "owned_padding_bytes": 0,
+    "nonallocated_compiler_metadata_relocations": 3,
+    "verification_script": "scratch/movie_worker_continuation/verify_output_rows.py"
+  },
+  "notes": "docs/notes/game-movie-output-rows.md"
+}

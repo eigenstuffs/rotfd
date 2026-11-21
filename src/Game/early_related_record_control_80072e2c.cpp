@@ -1,0 +1,2 @@
+#include "Game/early_related_record_control_views.h"
+extern "C"void fn_80072E2C(RelatedRecordActor*self,int value){fn_8002B824(self,value);const RelatedRecordVector&source=resolveActor(*resolveActor(self->actor)->slot37(0))->transform->position;RelatedRecordVector position(source.x,source.y,source.z);resolveActor(self->actor)->targetPosition=position;fn_8007D6A0((char*)resolveActor(self->actor)+0x168,4);}

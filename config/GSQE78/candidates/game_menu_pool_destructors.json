@@ -1,0 +1,656 @@
+[
+  {
+    "status": "isolated-byte-match",
+    "source": "src/Game/menu_pool_destructor_800B4F28.cpp",
+    "source_sha256": "a70cd185882bb8a7b8df95802cc548d8fbb4ee6b0fce147c827d1a3a01493eb5",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148224808,
+        "end": 2148225128,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147555248,
+        "end": 2147555288,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147598380,
+        "end": 2147598392,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "__dt__15Object_800B4F28Fv",
+        "original_symbol": "fn_800B4F28",
+        "address": 2148224808,
+        "size": 320,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@56",
+        "address": 2147555248,
+        "size": 40,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@57",
+        "address": 2147598380,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "headers": [],
+    "notes": "docs/notes/game-menu-pool-destructors.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 34,
+        "address": 2148224842,
+        "kind": 6,
+        "symbol": "__vt__15Object_800B4F28",
+        "target": 2150357080,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 42,
+        "address": 2148224850,
+        "kind": 4,
+        "symbol": "__vt__15Object_800B4F28",
+        "target": 2150357080,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 68,
+        "address": 2148224876,
+        "kind": 10,
+        "symbol": "__dt__15Handle_801F7F10Fv",
+        "target": 2149547792,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 140,
+        "address": 2148224948,
+        "kind": 10,
+        "symbol": "__dt__15Handle_801F7F10Fv",
+        "target": 2149547792,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 178,
+        "address": 2148224986,
+        "kind": 6,
+        "symbol": "lbl_8028F698",
+        "target": 2150168216,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 182,
+        "address": 2148224990,
+        "kind": 4,
+        "symbol": "lbl_8028F698",
+        "target": 2150168216,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 188,
+        "address": 2148224996,
+        "kind": 10,
+        "symbol": "fn_8028FD50",
+        "target": 2150169936,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 232,
+        "address": 2148225040,
+        "kind": 10,
+        "symbol": "__dt__15Handle_801F7F10Fv",
+        "target": 2149547792,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 244,
+        "address": 2148225052,
+        "kind": 10,
+        "symbol": "__dt__17MenuBase_8021D7E4Fv",
+        "target": 2149701604,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 258,
+        "address": 2148225066,
+        "kind": 6,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 266,
+        "address": 2148225074,
+        "kind": 4,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 268,
+        "address": 2148225076,
+        "kind": 10,
+        "symbol": "fn_801EF610",
+        "target": 2149512720,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 280,
+        "address": 2148225088,
+        "kind": 10,
+        "symbol": "__unexpected",
+        "target": 2148663772,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147598380,
+        "kind": 1,
+        "symbol": "__dt__15Object_800B4F28Fv",
+        "target": 2148224808,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147598388,
+        "kind": 1,
+        "symbol": "@56",
+        "target": 2147555248,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "__dt__15Handle_801F7F10Fv",
+        "address": 2149547792,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "__dt__17MenuBase_8021D7E4Fv",
+        "address": 2149701604,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "__unexpected",
+        "address": 2148663772,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "fn_801EF610",
+        "address": 2149512720,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "fn_8028FD50",
+        "address": 2150169936,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "lbl_801EF5C8",
+        "address": 2149512648,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "lbl_8028F698",
+        "address": 2150168216,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "__vt__15Object_800B4F28",
+        "address": 2150357080,
+        "scope": "global",
+        "section": ".data"
+      }
+    ],
+    "original_metadata_audit": {
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "references_to_retained_ranges": [
+            {
+              "address": 2147598380,
+              "target": 2148224808,
+              "words": "800b4f2800000140800117b0"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "504011efdd0c5d7f281e8706c75b34408157d53a08f4e7a784ec3f66828069d0",
+      "retained_text_bytes": 320,
+      "initialized_data_bytes": 52,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 15,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    },
+    "identifier_migration_provenance": {
+      "proof": "scratch/continuation_20261010/menu2d-constructor-consumer-migration/proof.json",
+      "previous_canonical": "scratch/continuation_20261010/menu2d-constructor-consumer-migration/before/config/GSQE78/candidates/game_menu_pool_destructors.json",
+      "previous_canonical_sha256": "662f91e6992b8d594dad33f4899163e89506f73161ed72cee3d6dece6ab5da60"
+    }
+  },
+  {
+    "status": "isolated-byte-match",
+    "source": "src/Game/menu_pool_destructor_800B5254.cpp",
+    "source_sha256": "3c41cc8445b1d0347890baa7def6070559299ff839f74d0b35d4efd2cc6f8ba6",
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,s",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "on",
+      "-use_lmw_stmw",
+      "on"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2148225620,
+        "end": 2148225956,
+        "alignment": 4
+      },
+      {
+        "name": "extab",
+        "start": 2147555356,
+        "end": 2147555396,
+        "alignment": 4
+      },
+      {
+        "name": "extabindex",
+        "start": 2147598440,
+        "end": 2147598452,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "__dt__15Object_800B5254Fv",
+        "original_symbol": "fn_800B5254",
+        "address": 2148225620,
+        "size": 336,
+        "scope": "global",
+        "section": ".text",
+        "object_offset": 0
+      }
+    ],
+    "objects": [
+      {
+        "name": "@64",
+        "address": 2147555356,
+        "size": 40,
+        "scope": "local",
+        "section": "extab",
+        "object_offset": 0
+      },
+      {
+        "name": "@65",
+        "address": 2147598440,
+        "size": 12,
+        "scope": "local",
+        "section": "extabindex",
+        "object_offset": 0
+      }
+    ],
+    "unlinked_functions": [],
+    "headers": [],
+    "notes": "docs/notes/game-menu-pool-destructors.md",
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 34,
+        "address": 2148225654,
+        "kind": 6,
+        "symbol": "lbl_802BD800",
+        "target": 2150356992,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 38,
+        "address": 2148225658,
+        "kind": 4,
+        "symbol": "lbl_802BD800",
+        "target": 2150356992,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 50,
+        "address": 2148225670,
+        "kind": 6,
+        "symbol": "__vt__15Object_800B4F28",
+        "target": 2150357080,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 58,
+        "address": 2148225678,
+        "kind": 4,
+        "symbol": "__vt__15Object_800B4F28",
+        "target": 2150357080,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 84,
+        "address": 2148225704,
+        "kind": 10,
+        "symbol": "__dt__15Handle_801F7F10Fv",
+        "target": 2149547792,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 156,
+        "address": 2148225776,
+        "kind": 10,
+        "symbol": "__dt__15Handle_801F7F10Fv",
+        "target": 2149547792,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 194,
+        "address": 2148225814,
+        "kind": 6,
+        "symbol": "lbl_8028F698",
+        "target": 2150168216,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 198,
+        "address": 2148225818,
+        "kind": 4,
+        "symbol": "lbl_8028F698",
+        "target": 2150168216,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 204,
+        "address": 2148225824,
+        "kind": 10,
+        "symbol": "fn_8028FD50",
+        "target": 2150169936,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 248,
+        "address": 2148225868,
+        "kind": 10,
+        "symbol": "__dt__15Handle_801F7F10Fv",
+        "target": 2149547792,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 260,
+        "address": 2148225880,
+        "kind": 10,
+        "symbol": "__dt__17MenuBase_8021D7E4Fv",
+        "target": 2149701604,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 274,
+        "address": 2148225894,
+        "kind": 6,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 282,
+        "address": 2148225902,
+        "kind": 4,
+        "symbol": "lbl_801EF5C8",
+        "target": 2149512648,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 284,
+        "address": 2148225904,
+        "kind": 10,
+        "symbol": "fn_801EF610",
+        "target": 2149512720,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 296,
+        "address": 2148225916,
+        "kind": 10,
+        "symbol": "__unexpected",
+        "target": 2148663772,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 0,
+        "address": 2147598440,
+        "kind": 1,
+        "symbol": "__dt__15Object_800B5254Fv",
+        "target": 2148225620,
+        "addend": 0
+      },
+      {
+        "section": "extabindex",
+        "at": 8,
+        "address": 2147598448,
+        "kind": 1,
+        "symbol": "@64",
+        "target": 2147555356,
+        "addend": 0
+      }
+    ],
+    "dependency_symbols": [
+      {
+        "name": "__dt__15Handle_801F7F10Fv",
+        "address": 2149547792,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "__dt__17MenuBase_8021D7E4Fv",
+        "address": 2149701604,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "__unexpected",
+        "address": 2148663772,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "fn_801EF610",
+        "address": 2149512720,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "fn_8028FD50",
+        "address": 2150169936,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "lbl_801EF5C8",
+        "address": 2149512648,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "lbl_8028F698",
+        "address": 2150168216,
+        "scope": "global",
+        "section": ".text"
+      },
+      {
+        "name": "lbl_802BD800",
+        "address": 2150356992,
+        "scope": "global",
+        "section": ".data"
+      },
+      {
+        "name": "__vt__15Object_800B4F28",
+        "address": 2150357080,
+        "scope": "global",
+        "section": ".data"
+      }
+    ],
+    "original_metadata_audit": {
+      "tables": [
+        {
+          "section": "extabindex",
+          "start": 2147573600,
+          "end": 2147611328,
+          "stride": 12,
+          "sha256": "0ef1c42c44afc4076478ad7fdd5eaa49b12c3eaf3114e86decc0f3aae41067b9",
+          "references_to_retained_ranges": [
+            {
+              "address": 2147598440,
+              "target": 2148225620,
+              "words": "800b5254000001508001181c"
+            }
+          ]
+        },
+        {
+          "section": ".ctors",
+          "start": 2150209824,
+          "end": 2150209920,
+          "stride": 4,
+          "sha256": "81031dcedb41171931b7559f0f56c92f94748e888fd7b1af7943c0bb17074416",
+          "references_to_retained_ranges": []
+        },
+        {
+          "section": ".dtors",
+          "start": 2150209920,
+          "end": 2150209952,
+          "stride": 4,
+          "sha256": "fc198727d517ce39a5ab3c6d2487ffa0444259a1142d5cdc4ff544c8336f5591",
+          "references_to_retained_ranges": []
+        }
+      ]
+    },
+    "validation": {
+      "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+      "object_sha256": "644f6db5f0dc00e5f9feea6e0e487aaad95ea1b179644d56b30bc634c3493bd7",
+      "retained_text_bytes": 336,
+      "initialized_data_bytes": 52,
+      "bss_bytes": 0,
+      "owned_padding_bytes": 0,
+      "relocations": 17,
+      "unlinked_relocations": 0,
+      "all_emitted_allocated_bytes_accounted": true,
+      "zero_byte_differences": true
+    },
+    "identifier_migration_provenance": {
+      "proof": "scratch/continuation_20261010/menu2d-constructor-consumer-migration/proof.json",
+      "previous_canonical": "scratch/continuation_20261010/menu2d-constructor-consumer-migration/before/config/GSQE78/candidates/game_menu_pool_destructors.json",
+      "previous_canonical_sha256": "662f91e6992b8d594dad33f4899163e89506f73161ed72cee3d6dece6ab5da60"
+    }
+  }
+]

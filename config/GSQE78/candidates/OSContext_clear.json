@@ -1,0 +1,41 @@
+{
+  "source": "src/dolphin/os/OSContext_clear.c",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.2.5n",
+  "cflags": "-proc gekko -fp hardware -enum int -str reuse -common off -O4,p -opt nopeephole -inline auto -i src/dolphin/os -Cpp_exceptions off",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2148477652,
+      "end": 2148477688
+    }
+  ],
+  "functions": [
+    {
+      "name": "OSClearContext",
+      "address": 2148477652,
+      "size": 36
+    }
+  ],
+  "objects": [],
+  "symbol_scopes": {
+    "OSClearContext": "global"
+  },
+  "symbols": {
+    "PyType_Type": "0x802d68fc",
+    "OSClearContext": "0x800f2ad4"
+  },
+  "external_original_names": {},
+  "verified_text_bytes": 36,
+  "verified_data_bytes": 0,
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "888fac1c374b73ee5f3f630453491de2f1319233b61c5e69c682634a4156c12a",
+    "matched_code": 36,
+    "matched_functions": 1,
+    "matched_data": 0,
+    "complete_data": 0,
+    "object_path": "build/GSQE78/src/dolphin/os/OSContext_clear.o",
+    "object_sha256": "70cbf1811be68d6324dd3453d371c7de8c7decf9f213f29b585a9169e2322046"
+  }
+}

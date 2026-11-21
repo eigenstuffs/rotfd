@@ -1,0 +1,432 @@
+{
+  "status": "isolated-retained-byte-match",
+  "source": "src/Game/engine_card_format_worker.cpp",
+  "source_sha256": "41069e8c0ecb4cddd496c6879e1ec658607874a36ca45adcf8d8983870cc507b",
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-proc",
+    "gekko",
+    "-fp",
+    "hardware",
+    "-enum",
+    "int",
+    "-str",
+    "reuse",
+    "-common",
+    "off",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-Cpp_exceptions",
+    "off",
+    "-i",
+    "include",
+    "-use_lmw_stmw",
+    "on"
+  ],
+  "source_kind": "c++",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2150071476,
+      "end": 2150072008,
+      "alignment": 4
+    }
+  ],
+  "functions": [
+    {
+      "name": "fn_80277CB4",
+      "address": 2150071476,
+      "size": 532,
+      "scope": "global",
+      "section": ".text",
+      "object_offset": 0
+    }
+  ],
+  "objects": [],
+  "unlinked_functions": [],
+  "headers": [
+    {
+      "path": "include/Game/engine_card_format_worker.h",
+      "sha256": "cbf4295b13a2afbc2a650d0c4b852c5c7f85b1a5f1f0b26f4d5e6d33317d2b26"
+    },
+    {
+      "path": "include/Game/memory_card_owner_internal.h",
+      "sha256": "dd0de73b39545979c0153057cbdc8b16a3863af0f3b9339867db43516e57848c"
+    }
+  ],
+  "dependency_symbols": [],
+  "validation": {
+    "relocations": 40,
+    "unlinked_relocations": 0,
+    "retained_text_bytes": 532,
+    "unlinked_text_bytes": 0,
+    "initialized_data_bytes": 0,
+    "bss_bytes": 0,
+    "owned_padding_bytes": 0
+  },
+  "verified_text_bytes": 532,
+  "verified_data_bytes": 0,
+  "actual_relocations": [
+    {
+      "section": ".text",
+      "at": 10,
+      "address": 2150071486,
+      "kind": 6,
+      "symbol": "lbl_80341038",
+      "target": 2150895672,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 14,
+      "address": 2150071490,
+      "kind": 6,
+      "symbol": "lbl_802AF158",
+      "target": 2150297944,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 22,
+      "address": 2150071498,
+      "kind": 4,
+      "symbol": "lbl_80341038",
+      "target": 2150895672,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 38,
+      "address": 2150071514,
+      "kind": 4,
+      "symbol": "lbl_802AF158",
+      "target": 2150297944,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 40,
+      "address": 2150071516,
+      "kind": 10,
+      "symbol": "OSResumeThread",
+      "target": 2148492640,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 48,
+      "address": 2150071524,
+      "kind": 10,
+      "symbol": "OSLockMutex",
+      "target": 2148483528,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 60,
+      "address": 2150071536,
+      "kind": 10,
+      "symbol": "fn_80277918",
+      "target": 2150070552,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 100,
+      "address": 2150071576,
+      "kind": 10,
+      "symbol": "CARDProbeEx",
+      "target": 2148576184,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 124,
+      "address": 2150071600,
+      "kind": 10,
+      "symbol": "CARDUnmount",
+      "target": 2148578560,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 142,
+      "address": 2150071618,
+      "kind": 6,
+      "symbol": "lbl_801EF5C8",
+      "target": 2149512648,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 146,
+      "address": 2150071622,
+      "kind": 4,
+      "symbol": "lbl_801EF5C8",
+      "target": 2149512648,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 148,
+      "address": 2150071624,
+      "kind": 10,
+      "symbol": "fn_801EF610",
+      "target": 2149512720,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 172,
+      "address": 2150071648,
+      "kind": 10,
+      "symbol": "OSUnlockMutex",
+      "target": 2148483748,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 178,
+      "address": 2150071654,
+      "kind": 6,
+      "symbol": "lbl_80341038",
+      "target": 2150895672,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 182,
+      "address": 2150071658,
+      "kind": 4,
+      "symbol": "lbl_80341038",
+      "target": 2150895672,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 184,
+      "address": 2150071660,
+      "kind": 10,
+      "symbol": "OSSuspendThread",
+      "target": 2148493288,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 204,
+      "address": 2150071680,
+      "kind": 109,
+      "symbol": "lbl_803780C0",
+      "target": 2151121088,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 212,
+      "address": 2150071688,
+      "kind": 10,
+      "symbol": "fn_80277918",
+      "target": 2150070552,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 244,
+      "address": 2150071720,
+      "kind": 10,
+      "symbol": "OSGetResetSwitchState",
+      "target": 2148486836,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 250,
+      "address": 2150071726,
+      "kind": 6,
+      "symbol": "lbl_801E9D24",
+      "target": 2149489956,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 252,
+      "address": 2150071728,
+      "kind": 109,
+      "symbol": "lbl_80377FC9",
+      "target": 2151120841,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 258,
+      "address": 2150071734,
+      "kind": 4,
+      "symbol": "lbl_801E9D24",
+      "target": 2149489956,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 264,
+      "address": 2150071740,
+      "kind": 10,
+      "symbol": "CARDFormat",
+      "target": 2148580680,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 276,
+      "address": 2150071752,
+      "kind": 10,
+      "symbol": "OSGetResetSwitchState",
+      "target": 2148486836,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 288,
+      "address": 2150071764,
+      "kind": 109,
+      "symbol": "lbl_80377FC9",
+      "target": 2151120841,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 312,
+      "address": 2150071788,
+      "kind": 10,
+      "symbol": "fn_801FA014",
+      "target": 2149556244,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 320,
+      "address": 2150071796,
+      "kind": 109,
+      "symbol": "lbl_80377FC0",
+      "target": 2151120832,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 324,
+      "address": 2150071800,
+      "kind": 10,
+      "symbol": "OSGetResetSwitchState",
+      "target": 2148486836,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 332,
+      "address": 2150071808,
+      "kind": 109,
+      "symbol": "lbl_80377FC9",
+      "target": 2151120841,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 356,
+      "address": 2150071832,
+      "kind": 10,
+      "symbol": "fn_801FA014",
+      "target": 2149556244,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 396,
+      "address": 2150071872,
+      "kind": 10,
+      "symbol": "fn_801FA014",
+      "target": 2149556244,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 444,
+      "address": 2150071920,
+      "kind": 10,
+      "symbol": "CARDUnmount",
+      "target": 2148578560,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 462,
+      "address": 2150071938,
+      "kind": 6,
+      "symbol": "lbl_801EF5C8",
+      "target": 2149512648,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 466,
+      "address": 2150071942,
+      "kind": 4,
+      "symbol": "lbl_801EF5C8",
+      "target": 2149512648,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 468,
+      "address": 2150071944,
+      "kind": 10,
+      "symbol": "fn_801EF610",
+      "target": 2149512720,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 488,
+      "address": 2150071964,
+      "kind": 109,
+      "symbol": "lbl_803780C0",
+      "target": 2151121088,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 492,
+      "address": 2150071968,
+      "kind": 10,
+      "symbol": "OSUnlockMutex",
+      "target": 2148483748,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 498,
+      "address": 2150071974,
+      "kind": 6,
+      "symbol": "lbl_80341038",
+      "target": 2150895672,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 502,
+      "address": 2150071978,
+      "kind": 4,
+      "symbol": "lbl_80341038",
+      "target": 2150895672,
+      "addend": 0
+    },
+    {
+      "section": ".text",
+      "at": 504,
+      "address": 2150071980,
+      "kind": 10,
+      "symbol": "OSSuspendThread",
+      "target": 2148493288,
+      "addend": 0
+    }
+  ]
+}

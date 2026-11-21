@@ -1,0 +1,78 @@
+{
+  "source": "src/dolphin/os/OSMutex.c",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.2.5n",
+  "cflags": "-proc gekko -fp hardware -enum int -str reuse -common off -O4,p -inline auto -i src/dolphin/os -Cpp_exceptions off",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2148483472,
+      "end": 2148484060
+    }
+  ],
+  "functions": [
+    {
+      "name": "OSInitMutex",
+      "address": 2148483472,
+      "size": 56
+    },
+    {
+      "name": "OSLockMutex",
+      "address": 2148483528,
+      "size": 220
+    },
+    {
+      "name": "OSUnlockMutex",
+      "address": 2148483748,
+      "size": 200
+    },
+    {
+      "name": "__OSUnlockAllMutex",
+      "address": 2148483948,
+      "size": 112
+    }
+  ],
+  "objects": [],
+  "symbol_scopes": {
+    "OSInitMutex": "global",
+    "OSLockMutex": "global",
+    "OSUnlockMutex": "global",
+    "__OSUnlockAllMutex": "global"
+  },
+  "symbols": {
+    "OSInitMutex": "0x800f4190",
+    "OSLockMutex": "0x800f41c8",
+    "OSUnlockMutex": "0x800f42a4",
+    "__OSUnlockAllMutex": "0x800f436c",
+    "OSInitThreadQueue": "0x800f5af4",
+    "OSDisableInterrupts": "0x800f362c",
+    "OSGetCurrentThread": "0x800f5b04",
+    "__OSPromoteThread": "0x800f5df4",
+    "OSSleepThread": "0x800f6958",
+    "OSRestoreInterrupts": "0x800f3654",
+    "__OSGetEffectivePriority": "0x800f5bf8",
+    "OSWakeupThread": "0x800f6a44"
+  },
+  "external_original_names": {
+    "OSInitThreadQueue": "OSInitThreadQueue",
+    "OSDisableInterrupts": "OSDisableInterrupts",
+    "OSGetCurrentThread": "fn_800F5B04",
+    "__OSPromoteThread": "fn_800F5DF4",
+    "OSSleepThread": "fn_800F6958",
+    "OSRestoreInterrupts": "OSRestoreInterrupts",
+    "__OSGetEffectivePriority": "fn_800F5BF8",
+    "OSWakeupThread": "fn_800F6A44"
+  },
+  "verified_text_bytes": 588,
+  "verified_data_bytes": 0,
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "4584b3b346318db49f2695d1b84433ca89358c5b1b14432086064583ec6ef50d",
+    "matched_code": 588,
+    "matched_functions": 4,
+    "matched_data": 0,
+    "complete_data": 0,
+    "object_path": "build/GSQE78/src/dolphin/os/OSMutex.o",
+    "object_sha256": "ef88b8591296e20f0e8527430602d1fe50db6976c04ab3d423e7762edf916b2b"
+  }
+}

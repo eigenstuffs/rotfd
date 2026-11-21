@@ -1,0 +1,102 @@
+{
+  "source": "src/Python/traceback.c",
+  "status": "integrated-byte-match",
+  "compiler": "GC/2.0",
+  "cflags": [
+    "-proc gekko",
+    "-fp hardware",
+    "-enum int",
+    "-str reuse",
+    "-common off",
+    "-opt level=4,nopeephole,speed",
+    "-inline auto,deferred",
+    "-pool off",
+    "-Cpp_exceptions off"
+  ],
+  "sections": {
+    ".text": [
+      "0x801733AC",
+      "0x80173A28"
+    ],
+    ".data": [
+      "0x802DB300",
+      "0x802DB44D"
+    ],
+    ".sdata": [
+      "0x803765d8",
+      "0x803765F6"
+    ]
+  },
+  "symbols": {
+    "PyTraceBack_Type": "0x802DB380",
+    "tb_memberlist": "0x802DB324",
+    "PyTraceBack_Print": "0x801733ac",
+    "tb_displayline": "0x80173520",
+    "PyTraceBack_Here": "0x801737f0",
+    "tb_dealloc": "0x80173924",
+    "tb_getattr": "0x801739fc",
+    "PySys_GetObject": "0x801a3830",
+    "PyFile_WriteString": "0x801412c8",
+    "PyCode_Addr2Line": "0x801808c0",
+    "fopen": "0x80125050",
+    "strrchr": "0x801282f0",
+    "fgets": "0x80124488",
+    "fclose": "0x801251d0",
+    "Py_OptimizeFlag": "0x80377e78"
+  },
+  "symbol_scopes": {
+    "tb_memberlist": "local",
+    "PyTraceBack_Print": "global",
+    "tb_displayline": "local",
+    "PyTraceBack_Here": "global",
+    "tb_dealloc": "local",
+    "tb_getattr": "local"
+  },
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "9adb706f99a0e82f790eaaa9abb0e6c3cf2f4ecec4e6123d46492880f3ed1b71",
+    "matched_code": 1660,
+    "matched_functions": 5,
+    "matched_data": 363,
+    "complete_data": 363,
+    "object_path": "build/GSQE78/src/Python/traceback.o",
+    "object_sha256": "8d72ee39c4d172ca4f5f40041fe33cef2cd411acb58a6146668e6e56de4f4904"
+  },
+  "external_padding": [
+    {
+      "source": "src/Python/traceback.c",
+      "unit": "main/Python/traceback",
+      "section": ".data",
+      "start": "0x802db44d",
+      "end": "0x802db450",
+      "size": 3,
+      "alignment": 1,
+      "symbol": "gap_07_802DB44D_data",
+      "original_owner": "padding/source_extents/Python/traceback.s",
+      "source_section_start": "0x802db300",
+      "source_section_bytes": 333,
+      "previous_split_bytes": 336,
+      "description": "Original linker alignment beyond emitted source section; no source credit."
+    },
+    {
+      "source": "src/Python/traceback.c",
+      "unit": "main/Python/traceback",
+      "section": ".sdata",
+      "start": "0x803765f6",
+      "end": "0x803765f8",
+      "size": 2,
+      "alignment": 1,
+      "symbol": "gap_09_803765F6_sdata",
+      "original_owner": "padding/source_extents/Python/traceback.s",
+      "source_section_start": "0x803765d8",
+      "source_section_bytes": 30,
+      "previous_split_bytes": 32,
+      "description": "Original linker alignment beyond emitted source section; no source credit."
+    }
+  ],
+  "source_extent_audit": {
+    "data_credit_correction": 5,
+    "evidence": "config/GSQE78/source_padding.json",
+    "description": "Source and original bytes unchanged; trailing original padding moved to NonMatching ownership."
+  }
+}

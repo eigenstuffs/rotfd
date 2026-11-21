@@ -1,0 +1,110 @@
+{
+  "status": "strict-isolated-byte-and-relocation-match",
+  "source": "src/Game/thin_virtual_forwarder_80064560.cpp",
+  "source_sha256": "86e356a9a79f0d62a068f0e45da78a20307a5e60c8728b6447b36372034b4bc3",
+  "headers": [],
+  "source_kind": "c++",
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-proc",
+    "750",
+    "-fp",
+    "hardware",
+    "-enum",
+    "int",
+    "-str",
+    "reuse",
+    "-common",
+    "off",
+    "-O4,s",
+    "-inline",
+    "auto",
+    "-Cpp_exceptions",
+    "on",
+    "-use_lmw_stmw",
+    "on",
+    "-Iinclude"
+  ],
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2147894624,
+      "end": 2147894668,
+      "alignment": 4
+    },
+    {
+      "name": "extab",
+      "start": 2147530620,
+      "end": 2147530628,
+      "alignment": 4
+    },
+    {
+      "name": "extabindex",
+      "start": 2147583836,
+      "end": 2147583848,
+      "alignment": 4
+    }
+  ],
+  "functions": [
+    {
+      "name": "fn_80064560",
+      "section": ".text",
+      "object_offset": 0,
+      "address": 2147894624,
+      "size": 44,
+      "scope": "global"
+    }
+  ],
+  "objects": [
+    {
+      "name": "@5",
+      "section": "extab",
+      "object_offset": 0,
+      "address": 2147530620,
+      "size": 8,
+      "scope": "local"
+    },
+    {
+      "name": "@6",
+      "section": "extabindex",
+      "object_offset": 0,
+      "address": 2147583836,
+      "size": 12,
+      "scope": "local"
+    }
+  ],
+  "unlinked_functions": [],
+  "dependency_symbols": [],
+  "verified_text_bytes": 44,
+  "verified_data_bytes": 20,
+  "actual_relocations": [
+    {
+      "section": "extabindex",
+      "at": 0,
+      "address": 2147583836,
+      "kind": 1,
+      "symbol": "fn_80064560",
+      "target": 2147894624,
+      "addend": 0
+    },
+    {
+      "section": "extabindex",
+      "at": 8,
+      "address": 2147583844,
+      "kind": 1,
+      "symbol": "@5",
+      "target": 2147530620,
+      "addend": 0
+    }
+  ],
+  "notes": "docs/notes/game-thin-virtual-forwarder-80064560.md",
+  "validation": {
+    "retained_text_bytes": 44,
+    "initialized_data_bytes": 20,
+    "bss_bytes": 0,
+    "owned_padding_bytes": 0,
+    "relocations": 2,
+    "unlinked_relocations": 0,
+    "object_sha256": "4f2619ad5793a8d5caed8626d1fce79859cc86538bec59a28329b014615abba3"
+  }
+}

@@ -1,0 +1,17 @@
+# Related motion forwarding
+
+Accepted matching source: the production build passes the original DOL hash,
+strict allocated-byte/extent and actual-relocation checks, baseline regression
+checks, generated progress verification and all 26 repository tests.
+
+Isolated exact ordinary C++ source, awaiting central original-DOL acceptance. `src/Game/engine_related_motion_forward.cpp` retains `fn_802217BC` at `802217BC..80221A0C`, all 592 original text bytes and nine retained actual relocations. Standard GC1.3.2 Game flags are supplemented by `-use_lmw_stmw on`.
+
+The routine resolves the related owner at offset `1AC` and conditionally forwards a motion operation when that owner's 64-bit flags contain bit `20`. An inline source-handle helper reads the property index through the global property context, resolves the source owner at offset `16C`, and selects a native Handle from its array. The temporary performs genuine base Handle construction, zero initialization, raw value copy and retention of the original source. Its scoped destruction invokes the native base destructor with nondeleting flag zero.
+
+The copied Handle resolves a matrix owner. Constructing the local position from the matrix's three translation scalars preserves the original float loading and arithmetic order. Ordinary nested vector addition and subtraction produce the three original stack temporaries and the native 96-byte frame. The related operation receives the position and `(position + offset) - point`, with flag `1000` set around the call and then cleared. The original operation is always forwarded to `self` afterward with the original six arguments. No input validation or alternative arithmetic was added.
+
+`Entry::getGeneration()` preserves the original manager and entry reload behavior. Moving the property-index/source-array selection into its own ordinary inline helper closes the last five scratch-register differences; no forced registers, assembly, volatile staging, compiler payload or alias is involved. All earlier bounded variants remain preserved in the isolated scratch directory.
+
+The object allocates only 764 `.text` bytes. The retained function accounts for 592 bytes. Two trailing unused weak destructors account for 88 and 84 bytes, with four actual relocations and no retained reference to either backup. Their raw bytes, exact symbols and complete allocations are inventoried for normal native linker discard. The source emits no initialized data, BSS, exception, constructor, destructor-table or other allocation. Full original extabindex, constructor and destructor tables, including descriptors and trailing zeros, contain no ownership references to this function. External functions, the global manager/property context, matrix storage and adjacent routines remain externally owned.
+
+The frozen manifest is `scratch/engine_related_motion_forward_20261011et/final_integration.json`. `verify.py` recompiles production source, compares every retained byte with real relocation targets, validates every emitted symbol and unused weak allocation, and repeats full original table and frozen source/header/evidence checks. The new header exposes only the retained C entry. No existing source, header, consumer, configuration, symbol, split or accepted verifier was edited. Root registers NonMatching and performs the complete original DOL hash/regression checks before assigning source credit.

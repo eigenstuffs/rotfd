@@ -1,0 +1,108 @@
+[
+  {
+    "status": "isolated-retained-byte-match",
+    "source": "src/Game/actor_matrix_offset_801bcd74.cpp",
+    "source_sha256": "bdfefae0f595ca9a3c16f46434b1fa316787ddeef24aaa28ff9c59bf8be4958f",
+    "headers": [
+      {
+        "path": "include/Game/actor_matrix_offset_801bcd74.h",
+        "sha256": "dce00ec75e638619ee2498e502dca4e71d02cb8689ef01f7d8fc5eca80390365"
+      }
+    ],
+    "compiler": "GC/1.3.2",
+    "cflags": [
+      "-proc",
+      "gekko",
+      "-fp",
+      "hardware",
+      "-enum",
+      "int",
+      "-str",
+      "reuse",
+      "-common",
+      "off",
+      "-O4,p",
+      "-use_lmw_stmw",
+      "on",
+      "-inline",
+      "auto",
+      "-Cpp_exceptions",
+      "off",
+      "-RTTI",
+      "off",
+      "-fp_contract",
+      "on",
+      "-i",
+      "include"
+    ],
+    "source_kind": "c++",
+    "sections": [
+      {
+        "name": ".text",
+        "start": 2149305716,
+        "end": 2149306412,
+        "alignment": 4
+      }
+    ],
+    "functions": [
+      {
+        "name": "fn_801BCD74",
+        "address": 2149305716,
+        "size": 696,
+        "section": ".text",
+        "scope": "global",
+        "object_offset": 0
+      }
+    ],
+    "objects": [],
+    "unlinked_functions": [],
+    "unlinked_objects": [],
+    "dependency_symbols": [
+      {
+        "name": "game_vec3_zero",
+        "address": 2150894420,
+        "section": ".bss",
+        "size": 12,
+        "scope": "global",
+        "kind": "object"
+      }
+    ],
+    "actual_relocations": [
+      {
+        "section": ".text",
+        "at": 134,
+        "address": 2149305850,
+        "kind": 6,
+        "symbol": "game_vec3_zero",
+        "target": 2150894420,
+        "addend": 0
+      },
+      {
+        "section": ".text",
+        "at": 138,
+        "address": 2149305854,
+        "kind": 4,
+        "symbol": "game_vec3_zero",
+        "target": 2150894420,
+        "addend": 0
+      }
+    ],
+    "validation": {
+      "text_bytes": 696,
+      "data_bytes": 0,
+      "relocations": 2,
+      "metadata_relocations": 1,
+      "object_sha256": "bdbcd4a42cae3000ab84b16c33535d71f4473c30cb78471c34dff6dc0a7f99ff",
+      "consumer_audit": "/Users/brandenb/Downloads/rotfd/scratch/engine_actor_matrix_offset_20261011li_consumer_final/consumer_audit.json",
+      "consumer_audit_sha256": "2a0a1e8932d7b8b4be81beddfb317e71f7aa697739c5db5417a7d882d97c8872",
+      "consumer_inputs": "/Users/brandenb/Downloads/rotfd/scratch/engine_actor_matrix_offset_20261011li_consumer_final/consumer-input-hashes.json",
+      "consumer_inputs_sha256": "131d8bbe4c54e40f88a1583d5dd71844341250ef4522ca84d825857200871a13",
+      "original_active_union_inputs": 10505,
+      "allocated_relocations_scanned": 204273,
+      "initialized_data_positions_scanned": 501416,
+      "all_entry_references_zero_addend": true,
+      "all_borrowed_data_references_preserved": true
+    },
+    "notes": "docs/notes/game-actor-matrix-offset.md"
+  }
+]

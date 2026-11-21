@@ -1,0 +1,173 @@
+{
+  "source": "src/Game/factories_800B9040.cpp",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-proc",
+    "gekko",
+    "-fp",
+    "hardware",
+    "-enum",
+    "int",
+    "-str",
+    "reuse",
+    "-common",
+    "off",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-Cpp_exceptions",
+    "on",
+    "-i",
+    "include"
+  ],
+  "sections": {
+    ".text": [
+      2148241472,
+      2148241736
+    ],
+    "extab": [
+      2147556224,
+      2147556248
+    ],
+    "extabindex": [
+      2147598788,
+      2147598824
+    ]
+  },
+  "functions": [
+    {
+      "name": "fn_800B9040",
+      "address": 2148241472,
+      "size": 88,
+      "section": ".text",
+      "scope": "global"
+    },
+    {
+      "name": "fn_800B9098",
+      "address": 2148241560,
+      "size": 88,
+      "section": ".text",
+      "scope": "global"
+    },
+    {
+      "name": "fn_800B90F0",
+      "address": 2148241648,
+      "size": 88,
+      "section": ".text",
+      "scope": "global"
+    }
+  ],
+  "objects": [
+    {
+      "name": "@7",
+      "address": 2147556224,
+      "size": 8,
+      "section": "extab",
+      "scope": "local"
+    },
+    {
+      "name": "@8",
+      "address": 2147598788,
+      "size": 12,
+      "section": "extabindex",
+      "scope": "local"
+    },
+    {
+      "name": "@15",
+      "address": 2147556232,
+      "size": 8,
+      "section": "extab",
+      "scope": "local"
+    },
+    {
+      "name": "@16",
+      "address": 2147598800,
+      "size": 12,
+      "section": "extabindex",
+      "scope": "local"
+    },
+    {
+      "name": "@23",
+      "address": 2147556240,
+      "size": 8,
+      "section": "extab",
+      "scope": "local"
+    },
+    {
+      "name": "@24",
+      "address": 2147598812,
+      "size": 12,
+      "section": "extabindex",
+      "scope": "local"
+    }
+  ],
+  "source_kind": "c++",
+  "factory_evidence": [
+    {
+      "address": 2148241472,
+      "name": "fn_800B9040",
+      "extab": 2147556224,
+      "extabindex": 2147598788,
+      "manager": "lbl_801EF5C8",
+      "label": "lbl_802A0E78",
+      "filename": "lbl_802A0E88",
+      "header": "SBPantsAgent.h",
+      "size": 136,
+      "line": 49,
+      "alignment": 4,
+      "constructor": "__ct__14Agent_800E3798Fv"
+    },
+    {
+      "address": 2148241560,
+      "name": "fn_800B9098",
+      "extab": 2147556232,
+      "extabindex": 2147598800,
+      "manager": "lbl_801EF5C8",
+      "label": "lbl_802A0E78",
+      "filename": "lbl_802A0E88",
+      "header": "SBPantsAgent.h",
+      "size": 120,
+      "line": 21,
+      "alignment": 4,
+      "constructor": "__ct__14Agent_800E3250Fv"
+    },
+    {
+      "address": 2148241648,
+      "name": "fn_800B90F0",
+      "extab": 2147556240,
+      "extabindex": 2147598812,
+      "manager": "lbl_801EF5C8",
+      "label": "lbl_802A0E78",
+      "filename": "lbl_802A0E98",
+      "header": "WaterHelmetAgent.h",
+      "size": 120,
+      "line": 11,
+      "alignment": 4,
+      "constructor": "fn_800E133C"
+    }
+  ],
+  "notes": "docs/notes/game-factories.md",
+  "source_sha256": "fa2299e9da1139e43e299df61c36deaa3a2e5474746f0490139739ca3d04187a",
+  "validation": {
+    "relocations": 30,
+    "text_bytes": 264,
+    "initialized_data_bytes": 60,
+    "zero_byte_differences": true,
+    "integration_status": "verified full-DOL and objdiff"
+  },
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "fa2299e9da1139e43e299df61c36deaa3a2e5474746f0490139739ca3d04187a",
+    "matched_code": 264,
+    "matched_functions": 3,
+    "matched_data": 60,
+    "complete_data": 60,
+    "object_path": "build/GSQE78/src/Game/factories_800B9040.o",
+    "object_sha256": "8c6023ba7808a0ae48c1deb84282d76009c09497afee01696d6e2d9903a2066e"
+  },
+  "source_hash_provenance": {
+    "previous_candidate": "scratch/native_objects_candidate_metadata_before/game_factories_800B9040.json",
+    "description": "Earlier isolated source/object hashes are retained in this snapshot. Current source hash and canonical object are verified by the complete DOL and native objdiff."
+  }
+}

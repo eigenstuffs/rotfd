@@ -1,0 +1,95 @@
+{
+  "source": "src/Game/derived_factories_8020A37C.cpp",
+  "status": "integrated-byte-match",
+  "compiler": "GC/1.3.2",
+  "cflags": [
+    "-proc",
+    "gekko",
+    "-fp",
+    "hardware",
+    "-enum",
+    "int",
+    "-str",
+    "reuse",
+    "-common",
+    "off",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-Cpp_exceptions",
+    "off",
+    "-i",
+    "include"
+  ],
+  "sections": {
+    ".text": [
+      2149622652,
+      2149622756
+    ]
+  },
+  "functions": [
+    {
+      "name": "fn_8020A37C",
+      "address": 2149622652,
+      "size": 104,
+      "section": ".text",
+      "scope": "global"
+    }
+  ],
+  "objects": [],
+  "source_kind": "c++",
+  "factory_evidence": [
+    {
+      "address": 2149622652,
+      "name": "fn_8020A37C",
+      "code_size": 104,
+      "manager": "lbl_801EF5C8",
+      "label": "lbl_802AE024",
+      "filename": "lbl_802AE19C",
+      "header": "CameraUser_Z.h",
+      "size": 48,
+      "line": 18,
+      "alignment": 4,
+      "constructor": "fn_80213EBC",
+      "vtable": "lbl_802EB000",
+      "vtable_offset": 8
+    }
+  ],
+  "notes": "docs/notes/game-factories.md",
+  "source_sha256": "7ef7563d7be6679b84af3d013c7f5c32e423436eec5174f9713ba83bbfe71ef4",
+  "validation": {
+    "relocations": 10,
+    "text_bytes": 104,
+    "initialized_data_bytes": 0,
+    "zero_byte_differences": true,
+    "integration_status": "verified full-DOL and objdiff"
+  },
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "7ef7563d7be6679b84af3d013c7f5c32e423436eec5174f9713ba83bbfe71ef4",
+    "matched_code": 104,
+    "matched_functions": 1,
+    "matched_data": 0,
+    "complete_data": 0,
+    "object_path": "build/GSQE78/src/Game/derived_factories_8020A37C.o",
+    "object_sha256": "d2e386d81f5cabd3c2342e28cb5f1ab6ea331a3d46a952d3a08f092c950327c2"
+  },
+  "source_hash_provenance": {
+    "previous_candidate": "scratch/native_objects_candidate_metadata_before/game_derived_factories_8020A37C.json",
+    "description": "Earlier isolated source/object hashes are retained in this snapshot. Current source hash and canonical object are verified by the complete DOL and native objdiff."
+  },
+  "memcard_native_identity_migration": {
+    "description": "Current canonical identities and hashes verified after native CGCMemCardManipulator/CFSM ownership integration; original evidence is retained in immutable backups and explicit previous receipts.",
+    "production_verification": "scratch/memcard_native_vtable_20261020_parallel/production-verification.json",
+    "production_verification_sha256": "96e50e874bd53c148cd6395f670c040416c34699787d56726d8cfb010c340f31",
+    "migration_object_audit": "scratch/memcard_native_vtable_20261020_parallel/migration_object_audit.json",
+    "migration_object_audit_sha256": "b809560bf7212a505b2ea749256bef5263b4784d066bb311015e10928e90db9d",
+    "original_dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "unchanged_caller_objects": 344,
+    "native_objects": 6,
+    "native_actual_relocations": 281,
+    "previous_canonical_sha256": "a5ac6e1796ed2781226dc0e34e3194f4f6e8037574185a2c5fb23435056f5e12",
+    "previous_canonical": "scratch/memcard_canonical_refresh_20261020_parallel/backups/config/GSQE78/candidates/game_derived_factories_8020A37C.json",
+    "previous_entry_json_pointer": ""
+  }
+}

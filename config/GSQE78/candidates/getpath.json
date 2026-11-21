@@ -1,0 +1,127 @@
+{
+  "source": "src/Modules/getpath.c",
+  "status": "integrated-byte-match",
+  "compiler": "GC/2.0",
+  "cflags": "-proc gekko -fp hardware -enum int -str reuse -common off -opt level=4,nopeephole,speed -inline auto,deferred -pool off -Cpp_exceptions off",
+  "sections": [
+    {
+      "name": ".text",
+      "start": 2149238584,
+      "end": 2149238744
+    },
+    {
+      "name": ".sdata",
+      "start": 2151118064,
+      "end": 2151118065
+    },
+    {
+      "name": ".sbss",
+      "start": 2151120768,
+      "end": 2151120784
+    }
+  ],
+  "functions": [
+    {
+      "name": "Py_GetProgramFullPath",
+      "address": 2149238584,
+      "size": 40
+    },
+    {
+      "name": "Py_GetExecPrefix",
+      "address": 2149238624,
+      "size": 40
+    },
+    {
+      "name": "Py_GetPrefix",
+      "address": 2149238664,
+      "size": 40
+    },
+    {
+      "name": "Py_GetPath",
+      "address": 2149238704,
+      "size": 40
+    }
+  ],
+  "objects": [
+    {
+      "name": "module_search_path",
+      "address": 2151120768,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "progpath",
+      "address": 2151120772,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "exec_prefix",
+      "address": 2151120776,
+      "size": 4,
+      "section": ".sbss"
+    },
+    {
+      "name": "prefix",
+      "address": 2151120780,
+      "size": 4,
+      "section": ".sbss"
+    }
+  ],
+  "symbol_scopes": {
+    "Py_GetProgramFullPath": "global",
+    "Py_GetExecPrefix": "global",
+    "Py_GetPrefix": "global",
+    "Py_GetPath": "global",
+    "module_search_path": "local",
+    "progpath": "local",
+    "exec_prefix": "local",
+    "prefix": "local"
+  },
+  "symbols": {
+    "PyType_Type": "0x802d68fc",
+    "Py_GetProgramFullPath": "0x801ac738",
+    "Py_GetExecPrefix": "0x801ac760",
+    "Py_GetPrefix": "0x801ac788",
+    "Py_GetPath": "0x801ac7b0",
+    "module_search_path": "0x80377f80",
+    "progpath": "0x80377f84",
+    "exec_prefix": "0x80377f88",
+    "prefix": "0x80377f8c"
+  },
+  "external_original_names": {},
+  "verified_text_bytes": 160,
+  "verified_data_bytes": 4,
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "7768bb2fcdf5528de807cf4ed422fa676c83b029c26016a0f46ff7aaed5d1ccc",
+    "matched_code": 160,
+    "matched_functions": 4,
+    "matched_data": 17,
+    "complete_data": 17,
+    "object_path": "build/GSQE78/src/Modules/getpath.o",
+    "object_sha256": "36a6291327ac11b7ad130163849feea916e83e1770dd7997faedc5d4b5494f36"
+  },
+  "external_padding": [
+    {
+      "source": "src/Modules/getpath.c",
+      "unit": "main/Modules/getpath",
+      "section": ".sdata",
+      "start": "0x803774f1",
+      "end": "0x803774f4",
+      "size": 3,
+      "alignment": 1,
+      "symbol": "gap_09_803774F1_sdata",
+      "original_owner": "padding/source_extents/Modules/getpath.s",
+      "source_section_start": "0x803774f0",
+      "source_section_bytes": 1,
+      "previous_split_bytes": 4,
+      "description": "Original linker alignment beyond emitted source section; no source credit."
+    }
+  ],
+  "source_extent_audit": {
+    "data_credit_correction": 3,
+    "evidence": "config/GSQE78/source_padding.json",
+    "description": "Source and original bytes unchanged; trailing original padding moved to NonMatching ownership."
+  }
+}

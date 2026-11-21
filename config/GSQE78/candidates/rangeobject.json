@@ -1,0 +1,78 @@
+{
+  "source": "src/Objects/rangeobject.c",
+  "status": "integrated-byte-match",
+  "sections": {
+    ".text": [
+      "0x8015987C",
+      "0x8015A80C"
+    ],
+    ".data": [
+      "0x802D4730",
+      "0x802D495D"
+    ],
+    ".sdata": [
+      "0x803762C8",
+      "0x803762F8"
+    ]
+  },
+  "symbols": {
+    "PyInt_AsLong": 2148833944,
+    "PyErr_Occurred": 2149126540,
+    "PyInt_FromLong": 2148834204,
+    "PyInt_GetMax": 2148834500,
+    "PyNumber_Multiply": 2148743464,
+    "PyErr_ExceptionMatches": 2149125468,
+    "PyExc_OverflowError": 2151120584,
+    "PyArg_ParseTuple": 2149142964,
+    "PyList_New": 2148854360,
+    "PyList_SetItem": 2148853856,
+    "Py_FindMethod": 2148881784,
+    "PyMember_Get": 2149235212,
+    "range_contains": 2148898940,
+    "range_getattr": 2148899188,
+    "range_tolist": 2148899340,
+    "range_slice": 2148899568,
+    "range_compare": 2148900304,
+    "range_repeat": 2148900392,
+    "range_concat": 2148901812,
+    "range_repr": 2148901860,
+    "range_length": 2148902112,
+    "range_item": 2148902184,
+    "range_dealloc": 2148902304,
+    "PyRange_New": 2148902336,
+    "range_as_sequence": 2150451148,
+    "PyRange_Type": 2150451188
+  },
+  "integration": {
+    "dol_sha1": "5da8295a79bf297ab62c620e6ac66210be1c6ef5",
+    "source_sha256": "bdff18e61cae34efdcd6df2b6c960c057f8ac9f34e66dddca55e9e59d6e13e2c",
+    "matched_code": 3984,
+    "matched_functions": 12,
+    "matched_data": 605,
+    "complete_data": 605,
+    "object_path": "build/GSQE78/src/Objects/rangeobject.o",
+    "object_sha256": "71b73a7a20c058ad9ae9c252cfb06caa2da0132f8c8c74788b5e78bc770cb5bb"
+  },
+  "external_padding": [
+    {
+      "source": "src/Objects/rangeobject.c",
+      "unit": "main/Objects/rangeobject",
+      "section": ".data",
+      "start": "0x802d495d",
+      "end": "0x802d4960",
+      "size": 3,
+      "alignment": 1,
+      "symbol": "gap_07_802D495D_data",
+      "original_owner": "padding/source_extents/Objects/rangeobject.s",
+      "source_section_start": "0x802d4730",
+      "source_section_bytes": 557,
+      "previous_split_bytes": 560,
+      "description": "Original linker alignment beyond emitted source section; no source credit."
+    }
+  ],
+  "source_extent_audit": {
+    "data_credit_correction": 3,
+    "evidence": "config/GSQE78/source_padding.json",
+    "description": "Source and original bytes unchanged; trailing original padding moved to NonMatching ownership."
+  }
+}
