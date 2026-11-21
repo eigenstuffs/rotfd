@@ -3291,7 +3291,7 @@ Game/scalar_constant_80378588.c:
 	.sdata2     start:0x80378588 end:0x8037858C
 
 original/float_remaining_fragment_8037858C.s:
-	.sdata2     start:0x8037858C end:0x803785A0 align:1
+	.sdata2     start:0x8037858C end:0x80378598 align:1
 
 Game/early_scene_resource_event_controls_80047470.cpp:
 	extab       start:0x80008FEC end:0x80009060
@@ -4125,36 +4125,17 @@ Game/event_counter_update.cpp:
 	.text       start:0x80055DC0 end:0x80056144
 
 Game/recovered/tu_80056144.cpp:
-	extab       start:0x80009F04 end:0x8000A2F0
-	extabindex  start:0x80017FD0 end:0x8001809C
-	.text       start:0x80056144 end:0x80058F40
+	extab       start:0x80009F04 end:0x8000A620
+	extabindex  start:0x80017FD0 end:0x800180C0
+	.text       start:0x80056144 end:0x80059AA4
 	.data       start:0x802B4BE0 end:0x802B4C0C
-	.sdata2     start:0x803785A0 end:0x80378610
+	.sdata2     start:0x80378598 end:0x80378610
 
 Game/scalar_constant_80378610.c:
 	.sdata2     start:0x80378610 end:0x80378618
 
 original/native_rtti_neighbor_802B4C0C.s:
 	.data       start:0x802B4C0C end:0x802B4C48 align:1
-
-Game/early_lazy_member_lookup_80058F40.cpp:
-	extab       start:0x8000A2F0 end:0x8000A4D4
-	extabindex  start:0x8001809C end:0x800180A8
-	.text       start:0x80058F40 end:0x80059340
-
-Game/early_scene_member_dispatch_80059340.cpp:
-	extab       start:0x8000A4D4 end:0x8000A5F4
-	extabindex  start:0x800180A8 end:0x800180B4
-	.text       start:0x80059340 end:0x800596BC
-
-Game/leaf_extended_800596BC.c:
-	.text       start:0x800596BC end:0x800596E4
-
-Game/scene_selection_key_pack_800596E4.cpp:
-	.text       start:0x800596E4 end:0x800596F4
-
-Game/scalar_early_800596F4.c:
-	.text       start:0x800596F4 end:0x8005970C
 
 Game/actor_available_handle_query_80059AA4.cpp:
 	extab       start:0x8000A620 end:0x8000A63C
