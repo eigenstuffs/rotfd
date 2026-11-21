@@ -11911,25 +11911,7 @@ Game/recovered/tu_800B3344.cpp:
 	.sdata2     start:0x80379330 end:0x80379350
 
 Game/early_actor_retained_constants.c:
-	.sdata2     start:0x80379350 end:0x8037936C
-
-original/float_remaining_fragment_8037936C.s:
-	.sdata2     start:0x8037936C end:0x80379378 align:1
-
-Game/scalar_constant_80379378.c:
-	.sdata2     start:0x80379378 end:0x80379388
-
-Game/scalar_constant_80379388.c:
-	.sdata2     start:0x80379388 end:0x80379390
-
-Game/scalar_constant_80379390.c:
-	.sdata2     start:0x80379390 end:0x80379394
-
-original/scene_reset_prefix_80379394.s:
-	.sdata2     start:0x80379394 end:0x803793A0 align:1
-
-Game/scene_resource_token_names_803793A0.c:
-	.sdata2     start:0x803793A0 end:0x803794C8
+	.sdata2     start:0x80379350 end:0x80379368
 
 Game/native_rtti_base_lists_802BD740.cpp:
 	.data       start:0x802BD740 end:0x802BD8B0
@@ -12054,22 +12036,18 @@ Game/early_actor_index_control_800b6374.cpp:
 	extabindex  start:0x8001C0F8 end:0x8001C104
 	.text       start:0x800B6374 end:0x800B63E4
 
-Game/leaf_800B6B68.c:
-	.text       start:0x800B6B68 end:0x800B6B70
+Game/recovered/tu_800B63E4.cpp:
+	extab       start:0x80011A14 end:0x80011A70
+	extabindex  start:0x8001C104 end:0x8001C170
+	.text       start:0x800B63E4 end:0x800B79A4
+	.data       start:0x802BD8B0 end:0x802BD914
+	.sdata2     start:0x80379368 end:0x803793A0
 
-Game/early_record_service_array_800b6b70.cpp:
-	extab       start:0x80011A24 end:0x80011A2C
-	extabindex  start:0x8001C11C end:0x8001C128
-	.text       start:0x800B6B70 end:0x800B6C84
+Game/scene_resource_token_names_803793A0.c:
+	.sdata2     start:0x803793A0 end:0x803794C8
 
-Game/controller_mode_diagnostic_800B6C84.cpp:
-	extab       start:0x80011A2C end:0x80011A34
-	extabindex  start:0x8001C128 end:0x8001C134
-	.text       start:0x800B6C84 end:0x800B6DA8
-	.data       start:0x802BD8B0 end:0x802BD8D4
-
-original/native_rtti_neighbor_802BD8D4.s:
-	.data       start:0x802BD8D4 end:0x802BD920 align:1
+original/native_rtti_neighbor_802BD914.s:
+	.data       start:0x802BD914 end:0x802BD920 align:1
 
 Game/native_runtime_method_table_802BD920.cpp:
 	.data       start:0x802BD920 end:0x802BD930
@@ -12124,24 +12102,6 @@ Game/native_owner_tables_802BF2C8.cpp:
 
 Game/native_rtti_base_lists_802BF5E8.cpp:
 	.data       start:0x802BF5E8 end:0x802BF618
-
-Game/recovered/fn_800B6DA8.cpp:
-	extab       start:0x80011A34 end:0x80011A50
-	extabindex  start:0x8001C134 end:0x8001C140
-	.text       start:0x800B6DA8 end:0x800B6F70
-
-Game/record_service_handle_remove_800B6F70.cpp:
-	extab       start:0x80011A50 end:0x80011A58
-	extabindex  start:0x8001C140 end:0x8001C14C
-	.text       start:0x800B6F70 end:0x800B70AC
-
-Game/record_slot_handle_erase_800B70AC.cpp:
-	extab       start:0x80011A58 end:0x80011A60
-	extabindex  start:0x8001C14C end:0x8001C158
-	.text       start:0x800B70AC end:0x800B720C
-
-Game/leaf_800B720C.c:
-	.text       start:0x800B720C end:0x800B7214
 
 Game/engine_scene_owner_construct_800B79A4.cpp:
 	extab       start:0x80011A70 end:0x80011AAC
