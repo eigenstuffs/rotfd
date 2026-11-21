@@ -4458,7 +4458,6 @@ config.libs = [
             Object(Matching, "Game/audio_method_table_802F1550.cpp", mw_version="GC/1.3.2", cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,p', '-inline', 'auto', '-Cpp_exceptions', 'off', '-RTTI', 'off', '-use_lmw_stmw', 'on']),
             Object(Matching, "Game/native_runtime_method_table_802BD468.cpp", mw_version="GC/1.3.2", cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,p', '-inline', 'auto', '-Cpp_exceptions', 'off', '-RTTI', 'off', '-use_lmw_stmw', 'on', '-i', 'include']),
             Object(Matching, "Game/native_runtime_method_table_802BD920.cpp", mw_version="GC/1.3.2", cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,p', '-inline', 'auto', '-Cpp_exceptions', 'off', '-RTTI', 'off', '-use_lmw_stmw', 'on', '-i', 'include']),
-            Object(Matching, "Game/callback_member_records_802C8F40.cpp", mw_version="GC/1.3.2", cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,p', '-inline', 'auto', '-Cpp_exceptions', 'off', '-RTTI', 'off', '-use_lmw_stmw', 'on', '-i', 'include']),
             Object(Matching, "Game/callback_member_records_802AFBA0.cpp", mw_version="GC/1.3.2", cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,p', '-inline', 'auto', '-Cpp_exceptions', 'off', '-RTTI', 'off', '-use_lmw_stmw', 'on', '-i', 'include']),
             Object(Matching, "Game/callback_member_records_802B1B88.cpp", mw_version="GC/1.3.2", cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,p', '-inline', 'auto', '-Cpp_exceptions', 'off', '-RTTI', 'off', '-use_lmw_stmw', 'on', '-i', 'include']),
             Object(Matching, "Game/callback_member_records_802B39B8.cpp", mw_version="GC/1.3.2", cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,p', '-inline', 'auto', '-Cpp_exceptions', 'off', '-RTTI', 'off', '-use_lmw_stmw', 'on', '-i', 'include']),
@@ -6303,6 +6302,7 @@ config.libs = [
             Object(Matching, 'Game/recovered/tu_802461E0.cpp', mw_version='GC/1.3.2', cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-inline', 'auto', '-use_lmw_stmw', 'on', '-i', 'include', '-i', 'src/Game', '-O4,p', '-Cpp_exceptions', 'off', '-RTTI', 'off', '-fp_contract', 'on']),
             Object(Matching, 'Game/recovered/math_globals.cpp', mw_version='GC/1.3.2', cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-inline', 'auto', '-use_lmw_stmw', 'on', '-i', 'include', '-i', 'src/Game', '-O4,p', '-Cpp_exceptions', 'off', '-RTTI', 'off', '-fp_contract', 'on']),
             Object(Matching, 'Game/recovered/unit_8028B03C.cpp', mw_version='GC/1.3.2', cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-inline', 'auto', '-use_lmw_stmw', 'on', '-i', 'include', '-i', 'src/Game', '-O4,p', '-Cpp_exceptions', 'off', '-RTTI', 'off', '-fp_contract', 'off']),
+            Object(Matching, 'Game/recovered/fn_800E7A74.cpp', mw_version='GC/1.3.2', cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-inline', 'auto', '-use_lmw_stmw', 'on', '-i', 'include', '-i', 'src/Game', '-O4,s', '-Cpp_exceptions', 'on', '-RTTI', 'off', '-fp_contract', 'on']),
         ],
     },
     {
@@ -6806,7 +6806,6 @@ config.libs.append({
         Object(NonMatching, "original/native_rtti_neighbor_80375308.s"),
         Object(NonMatching, "padding/native_rtti_state_tail_80374BFC.s"),
         Object(NonMatching, "original/native_rtti_neighbor_80374498.s"),
-        Object(NonMatching, "original/native_rtti_neighbor_802C8F40.s"),
         Object(Matching, "Game/native_agent_tables_802C8C80.cpp", mw_version="GC/1.3.2", cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,s', '-inline', 'auto', '-Cpp_exceptions', 'off', '-RTTI', 'off', '-use_lmw_stmw', 'on', '-sdata', '8', '-i', 'include']),
         Object(NonMatching, "original/native_rtti_neighbor_802C88EC.s"),
         Object(NonMatching, "original/native_rtti_neighbor_802C8330.s"),
