@@ -22298,27 +22298,6 @@ Game/scalar_constant_8037B178.c:
 Game/scalar_constant_8037B180.c:
 	.sdata2     start:0x8037B180 end:0x8037B188
 
-Game/scalar_constant_8037B188.c:
-	.sdata2     start:0x8037B188 end:0x8037B190
-
-Game/scalar_constant_8037B190.c:
-	.sdata2     start:0x8037B190 end:0x8037B198
-
-Game/scalar_constant_8037B198.c:
-	.sdata2     start:0x8037B198 end:0x8037B1B4
-
-original/float_remaining_fragment_8037B1B4.s:
-	.sdata2     start:0x8037B1B4 end:0x8037B1B8 align:1
-
-Game/scalar_constant_8037B1B8.c:
-	.sdata2     start:0x8037B1B8 end:0x8037B1C0
-
-Game/scalar_constant_8037B1C0.c:
-	.sdata2     start:0x8037B1C0 end:0x8037B1D0
-
-Game/animation_cursor_scalar_constants.c:
-	.sdata2     start:0x8037B1D0 end:0x8037B1E8
-
 Game/owner_layered_handle_reset.cpp:
 	.text       start:0x80228E0C end:0x80228ECC
 
@@ -22421,41 +22400,18 @@ Game/engine_owner_wrapper_8022D264.c:
 Game/engine_owner_lists_destructor.cpp:
 	.text       start:0x8022D2B0 end:0x8022D618
 
-Game/owner_related_scaled_transform_8022D618.cpp:
-	.text       start:0x8022D618 end:0x8022DC80
+Game/recovered/tu_8022D618.cpp:
+	.text       start:0x8022D618 end:0x8022F474
+	.sdata2     start:0x8037B188 end:0x8037B1B8
 
-Game/owner_related_transform_apply.cpp:
-	.text       start:0x8022DC80 end:0x8022DEB0
+Game/scalar_constant_8037B1B8.c:
+	.sdata2     start:0x8037B1B8 end:0x8037B1C0
 
-Game/owner_related_position_apply.cpp:
-	.text       start:0x8022DEB0 end:0x8022E158
+Game/scalar_constant_8037B1C0.c:
+	.sdata2     start:0x8037B1C0 end:0x8037B1D0
 
-Game/owner_composed_orientation.cpp:
-	.text       start:0x8022E158 end:0x8022E2AC
-
-Game/owner_relative_scale_get_8022E2AC.cpp:
-	.text       start:0x8022E2AC end:0x8022E488
-
-Game/owner_relative_position_get.cpp:
-	.text       start:0x8022E488 end:0x8022E63C
-
-Game/scalar_late_8022E63C.c:
-	.text       start:0x8022E63C end:0x8022E68C
-
-Game/owner_record_property_dispatch.cpp:
-	.text       start:0x8022E9D8 end:0x8022EBAC
-
-Game/owner_conditional_notify.cpp:
-	.text       start:0x8022EBAC end:0x8022EC14
-
-Game/engine_small_owner_8022EC14.cpp:
-	.text       start:0x8022EC14 end:0x8022EC40
-
-Game/owner_playback_reset.cpp:
-	.text       start:0x8022EC40 end:0x8022ED80
-
-Game/owner_record_respawn_8022ED80.cpp:
-	.text       start:0x8022ED80 end:0x8022F474
+Game/animation_cursor_scalar_constants.c:
+	.sdata2     start:0x8037B1D0 end:0x8037B1E8
 
 Game/engine_small_owner_8022F474.cpp:
 	.text       start:0x8022F474 end:0x8022F49C
@@ -24961,9 +24917,6 @@ Game/platform_trig.cpp:
 Game/platform_trig_pool_constants.c:
 	.sdata2     start:0x8037B880 end:0x8037B898
 
-Game/platform_audio_constants.cpp:
-	.sdata2     start:0x8037B898 end:0x8037B8C0
-
 Game/platform_aram_flush.cpp:
 	.text       start:0x8028531C end:0x8028533C
 
@@ -25045,49 +24998,9 @@ Game/object_list_group_remove.cpp:
 Game/object_list_group_helpers.cpp:
 	.text       start:0x80286158 end:0x80286288
 
-Game/platform_audio_reset.cpp:
-	.text       start:0x80286288 end:0x80286398
-
-Game/platform_audio_update.cpp:
-	.text       start:0x80286398 end:0x80286738
-
-Game/platform_audio_channel_cleanup.cpp:
-	.text       start:0x80286738 end:0x80286830
-
-Game/platform_audio_paths.cpp:
-	.text       start:0x80286CD8 end:0x80286D9C
-
-Game/platform_audio_load.cpp:
-	.text       start:0x80286D9C end:0x80286FF8
-	.sdata2     start:0x8037B8C0 end:0x8037B8C8
-
-Game/audio_start_constants.c:
-	.sdata2     start:0x8037B8C8 end:0x8037B8D8
-
-Game/platform_audio_stream_flush.cpp:
-	.text       start:0x80286FF8 end:0x8028701C
-
-Game/platform_audio_stream_path.cpp:
-	.text       start:0x8028701C end:0x80287080
-
-Game/platform_audio_fade.cpp:
-	.text       start:0x80287080 end:0x80287178
-
-Game/platform_audio_levels.cpp:
-	.text       start:0x80287454 end:0x80287554
-
-Game/platform_audio_mute.cpp:
-	.text       start:0x80287554 end:0x802876AC
-
-Game/platform_audio_sound_mode.cpp:
-	.text       start:0x802876AC end:0x80287718
-
-Game/audio_voice_shutdown.cpp:
-	.text       start:0x80287718 end:0x802877DC
-
-Game/audio_system_start.cpp:
-	.text       start:0x802877DC end:0x80287A48
-	.sdata2     start:0x8037B8D8 end:0x8037B8E0
+Game/recovered/tu_80286288.cpp:
+	.text       start:0x80286288 end:0x80287A48
+	.sdata2     start:0x8037B898 end:0x8037B8E0
 
 Game/audio_source_rate_constants.c:
 	.sdata2     start:0x8037B8E0 end:0x8037B8E8
