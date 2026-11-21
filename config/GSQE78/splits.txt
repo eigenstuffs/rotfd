@@ -24684,18 +24684,6 @@ Game/texture_coordinate_constants.c:
 Game/texture_blend_constants.c:
 	.sdata2     start:0x8037B800 end:0x8037B808
 
-Game/particle_strip_constants.c:
-	.sdata2     start:0x8037B810 end:0x8037B820
-
-Game/particle_color_constants.c:
-	.sdata2     start:0x8037B828 end:0x8037B838
-
-Game/platform_math_trig_constants.c:
-	.sdata2     start:0x8037B838 end:0x8037B874
-
-padding/math-trig-constants_8037B874.s:
-	.sdata2     start:0x8037B874 end:0x8037B878 align:1
-
 Game/engine_renderer_rectangle_controls.cpp:
 	.text       start:0x8027F178 end:0x8027F994
 
@@ -24766,22 +24754,23 @@ Game/platform_draw_helpers.cpp:
 Game/audio_method_table_802F1550.cpp:
 	.data       start:0x802F1550 end:0x802F15C0
 
-Game/recovered/unit_80283160.cpp:
-	.text       start:0x80283160 end:0x80283954
-
-Game/platform_record_access.cpp:
-	.text       start:0x80283954 end:0x80283AA0
-
-Game/platform_record_growth.cpp:
-	.text       start:0x80283AA0 end:0x80283D5C
-
-Game/platform_record_selection.cpp:
-	.text       start:0x80283D5C end:0x80283E5C
-
-Game/sprite_corner_startup_80283E5C.cpp:
-	.text       start:0x80283E5C end:0x80283EB8
+Game/recovered/sprite_corner_startup_80283E5C.cpp:
+	.text       start:0x80283160 end:0x80283EB8
 	.ctors      start:0x80299960 end:0x80299964
 	.bss        start:0x8035D360 end:0x8035D3A0
+	.sdata2     start:0x8037B810 end:0x8037B824
+
+original/float_pad_8037B824.s:
+	.sdata2     start:0x8037B824 end:0x8037B828 align:1
+
+Game/particle_color_constants.c:
+	.sdata2     start:0x8037B828 end:0x8037B838
+
+Game/platform_math_trig_constants.c:
+	.sdata2     start:0x8037B838 end:0x8037B874
+
+padding/math-trig-constants_8037B874.s:
+	.sdata2     start:0x8037B874 end:0x8037B878 align:1
 
 Game/platform_trig_tables.cpp:
 	.bss        start:0x8035D3A0 end:0x8035D524

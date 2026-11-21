@@ -1,3 +1,6 @@
+#include "Game/platform_record_access_internal.h"
+#include "Game/platform_index_lists_internal.h"
+namespace billboard {
 // Billboard particle batch builder (fn_80283160).
 typedef unsigned int u32;typedef unsigned short u16;typedef unsigned char u8;
 struct Vec3{float x,y,z;Vec3(){}Vec3(float a,float b,float c):x(a),y(b),z(c){}};
@@ -66,7 +69,6 @@ struct Emitter{char unknown00[0x20];int index20;int count24;int capacity28;Group
 struct System{char unknown00[0xB4];u32 flagsB4;char unknownB8[0xD0];Handle material188;};
 struct MaterialC{char unknown00[0xC];ColorF color0C;};
 extern "C"{
-extern const float lbl_8037B810,lbl_8037B814,lbl_8037B818;
 extern Vec2 lbl_8035D360[4];
 extern Vec2 lbl_8035D380[4];
 extern char lbl_8028F698[];
@@ -98,6 +100,7 @@ inline bool feq(float a,float b){return a==b;}
 #define ZERO 0.0f
 #define ONE 1.0f
 #define C255 255.0f
+struct EmitBarrier1;
 extern "C" void fn_80283160(Emitter*self,Renderer*r){
     Matrix m;int tmp;Color8 amb;System*sys;Resource*res;Particle*base;Vec3*eye;Context*ctx;int cr;int cg;int cb;int ca;Group*g;int count;int n;int i;short idx;signed char check;MaterialC*mat;DisplayList*dl;signed char changed;
     int id=self->index20;
@@ -199,4 +202,111 @@ extern "C" void fn_80283160(Emitter*self,Renderer*r){
     dl->size=GXEndDisplayList();
     DCStoreRange(dl->data,dl->capacity);
     fn_8027210C(ctx,r,dl,r->xA8+r->xAC);
+}
+}
+struct EmitBarrier2;
+extern "C" PlatformRecord18* fn_80283954(PlatformArrays_802EA884*self,const PlatformRecordIndex&key){
+ int i=key.index;
+ if(i==-1)return 0;
+ if(i>=self->records.count)return 0;
+ PlatformRecord18*entry=&self->records.data[i];
+ if(entry->status!=0)return 0;
+ entry->value14=self->value10;
+ entry->unknown00=(unsigned long)self->indices.data;
+ return entry;
+}
+struct EmitBarrier3;
+extern "C" PlatformRecord18* fn_802839B4(PlatformArrays_802EA884*self,const PlatformRecordIndex&key,signed char*changed){
+ int i=key.index;
+ if(i==-1)return 0;
+ if(i>=self->records.count)return 0;
+ PlatformRecord18*entry=&self->records.data[i];
+ if(changed)*changed=0;
+ if(entry->status==1)return 0;
+ if(entry->status==2){
+  if(!fn_80283AA0(self,entry,short(entry->count0C+entry->count12)))return 0;
+  if(changed)*changed=1;
+ }
+ entry->value14=self->value10;
+ entry->unknown00=(unsigned long)self->indices.data;
+ return entry;
+}
+template<class T> inline void storageLinks(WorldCurveArray<T>*self,int count){
+ if(count){
+  if(self->data)self->data=(T*)fn_8028FAF4(lbl_8028F698,self->data,self->capacity*sizeof(T),count*sizeof(T));
+  else self->data=(T*)fn_8028FF24(lbl_8028F698,count*sizeof(T));
+ }else if(self->data){fn_8028FD50(lbl_8028F698,self->data,self->capacity*sizeof(T));self->data=0;}
+ self->capacity=count;
+}
+inline void resizeLinks(WorldCurveArray<PlatformLink>*self,int count){
+ if(count>self->count){
+  storageLinks(self,count);
+  for(int i=self->count;i<count;++i)new(self->data+i)PlatformLink;
+  self->count=count;
+ }else if(count<self->count){
+  for(int i=self->count-1;i>=count;--i)self->data[i].~PlatformLink();
+  storageLinks(self,count);self->count=count;
+ }
+}
+struct EmitBarrier4;
+extern "C" signed char fn_80283AA0(PlatformArrays_802EA884*self,PlatformRecord18*record,short amount){
+ if(!record)return 0;
+ if(record->status!=2)return 0;
+ if(amount==0)return 0;
+ if(self->freeIndices.count<amount)fn_80283D5C(self,amount);
+ if(self->freeIndices.count<amount){
+  int old=self->indices.count;
+  int extra=amount+16;
+  int count=old+extra;
+  if(count>32000)return 0;
+  resizeLinks(&self->indices,old+extra);
+  PlatformIndexList list=fn_801ECA54(self,old,extra);
+  self->freeIndices=fn_8026EBE8(self,self->freeIndices,list);
+ }
+ record->status=0;record->count0C=0;
+ record->unknown08=-1;record->unknown0A=-1;
+ record->count12=amount;
+ record->unknown0E=self->freeIndices.first;
+ self->freeIndices.count-=amount;
+ while(amount--){
+  record->unknown10=self->freeIndices.first;
+  self->freeIndices.first=platformLink(self,self->freeIndices.first)->next;
+ }
+ platformLink(self,record->unknown10)->next=-1;
+ if(self->freeIndices.count==0)self->freeIndices.first=self->freeIndices.last=-1;
+ return 1;
+}
+struct EmitBarrier5;
+extern "C" void fn_80283D5C(PlatformArrays_802EA884* self,short remaining) {
+    while(remaining>0) {
+        PlatformRecordIndex chosen=fn_80283DE4(self,self->value14);
+        if(chosen.index==-1)break;
+        PlatformRecord18* entry=&self->records.data[chosen.index];
+        remaining-=short(entry->count0C+entry->count12);
+        fn_8026EB34(self,entry,2);
+    }
+}
+
+struct EmitBarrier6;
+extern "C" PlatformRecordIndex fn_80283DE4(PlatformArrays_802EA884* self,float threshold) {
+    int result=-1;
+    for(int i=0;i<self->records.count;++i) {
+        PlatformRecord18* entry=platformRecordAt(self,i);
+        if(entry->status==0) {
+            float age=self->value10-entry->value14;
+            if(!(age<=threshold)) {
+                result=i;
+                threshold=age;
+            }
+        }
+    }
+    if(result!=-1)return PlatformRecordIndex(result);
+    return PlatformRecordIndex();
+}
+
+struct EmitBarrier0;
+struct SpriteVec2 {float x,y;SpriteVec2(float a,float b):x(a),y(b){}};
+extern "C" {
+SpriteVec2 lbl_8035D360[4]={SpriteVec2(-0.5f,-0.5f),SpriteVec2(0.5f,-0.5f),SpriteVec2(0.5f,0.5f),SpriteVec2(-0.5f,0.5f)};
+SpriteVec2 lbl_8035D380[4]={SpriteVec2(0.0f,1.0f),SpriteVec2(1.0f,1.0f),SpriteVec2(1.0f,0.0f),SpriteVec2(0.0f,0.0f)};
 }
