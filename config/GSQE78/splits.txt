@@ -24675,20 +24675,11 @@ Game/platform_audio_stream_globals.cpp:
 	.bss        start:0x8035E958 end:0x8035E970
 	.sbss       start:0x803780D0 end:0x803780D4
 
-Game/platform_movie_shared_storage.c:
-	.sbss       start:0x803780F0 end:0x80378130
-
 Game/platform_audio_stream_file_globals.cpp:
 	.bss        start:0x8035E970 end:0x8036E9CC
 
 padding/audio_stream_cache.s:
 	.bss        start:0x8036E9CC end:0x8036E9D0 align:1
-
-Game/platform_movie_storage.c:
-	.bss        start:0x8036E9D0 end:0x80373100
-
-Game/disc_read_buffer_80373100.c:
-	.bss        start:0x80373100 end:0x80373120
 
 Game/platform_aram_pool_destructor.cpp:
 	.text       start:0x80285B78 end:0x80285C74
@@ -24815,30 +24806,6 @@ Game/collider_pair_record_update_8028B33C.cpp:
 	.rodata     start:0x802AF6B8 end:0x802AF6D8
 	.sdata2     start:0x8037B900 end:0x8037B908
 
-Game/scalar_constant_8037B908.c:
-	.sdata2     start:0x8037B908 end:0x8037B914
-
-original/float_remaining_fragment_8037B914.s:
-	.sdata2     start:0x8037B914 end:0x8037B918 align:1
-
-Game/scalar_constant_8037B918.c:
-	.sdata2     start:0x8037B918 end:0x8037B930
-
-Game/scalar_constant_8037B930.c:
-	.sdata2     start:0x8037B930 end:0x8037B938
-
-Game/scalar_constant_8037B938.c:
-	.sdata2     start:0x8037B938 end:0x8037B940
-
-Game/ground_collision_constants.c:
-	.sdata2     start:0x8037B940 end:0x8037B964
-
-padding/ground_collision_constants.s:
-	.sdata2     start:0x8037B964 end:0x8037B968 align:1
-
-Game/native_readable_pools_802AF6D8.cpp:
-	.rodata     start:0x802AF6D8 end:0x802AF908
-
 Game/platform_record_handle_release.cpp:
 	.text       start:0x8028BFA4 end:0x8028BFC8
 
@@ -24861,6 +24828,31 @@ Game/audio_level_gain_curve_802F15D0.c:
 Game/platform_audio_method_table_802F16D0.cpp:
 	.data       start:0x802F16D0 end:0x802F1700
 
+Game/recovered/tu_8028C1E8.cpp:
+	.text       start:0x8028C1E8 end:0x8028DB38
+	.rodata     start:0x802AF6D8 end:0x802AF8E6
+	.bss        start:0x8036E9D0 end:0x80373100
+	.sbss       start:0x803780E8 end:0x8037815C
+	.sdata2     start:0x8037B908 end:0x8037B930
+
+Game/scalar_constant_8037B930.c:
+	.sdata2     start:0x8037B930 end:0x8037B938
+
+Game/scalar_constant_8037B938.c:
+	.sdata2     start:0x8037B938 end:0x8037B940
+
+Game/ground_collision_constants.c:
+	.sdata2     start:0x8037B940 end:0x8037B964
+
+padding/ground_collision_constants.s:
+	.sdata2     start:0x8037B964 end:0x8037B968 align:1
+
+original/sbss_pad_8037815C.s:
+	.sbss       start:0x8037815C end:0x80378160 align:1
+
+Game/disc_read_buffer_80373100.c:
+	.bss        start:0x80373100 end:0x80373120
+
 Game/platform_disc_font.cpp:
 	.data       start:0x802F1700 end:0x802F2300
 	.bss        start:0x80373120 end:0x80373140
@@ -24869,32 +24861,11 @@ Game/platform_disc_font.cpp:
 original/platform_disc_projection_padding.s:
 	.sdata2     start:0x8037B97C end:0x8037B980 align:4
 
-Game/platform_owner_destructor.cpp:
-	.text       start:0x8028C1E8 end:0x8028C280
+original/str_pad_802AF8E6.s:
+	.rodata     start:0x802AF8E6 end:0x802AF8E8 align:1
 
-Game/platform_buffered_read.cpp:
-	.text       start:0x8028C280 end:0x8028C494
-
-Game/platform_buffer_close.cpp:
-	.text       start:0x8028C494 end:0x8028C4E4
-
-Game/platform_video_resume.cpp:
-	.text       start:0x8028D4CC end:0x8028D568
-
-Game/platform_video_pause.cpp:
-	.text       start:0x8028D568 end:0x8028D6FC
-
-Game/platform_video_cleanup.cpp:
-	.text       start:0x8028D6FC end:0x8028D76C
-
-Game/platform_movie_init.cpp:
-	.text       start:0x8028D76C end:0x8028D814
-
-Game/platform_movie_record_lookup_8028D814.cpp:
-	.text       start:0x8028D814 end:0x8028D8BC
-
-Game/platform_movie_display.cpp:
-	.text       start:0x8028D8BC end:0x8028DB38
+Game/native_readable_pools_802AF8E8.cpp:
+	.rodata     start:0x802AF8E8 end:0x802AF908
 
 Game/platform_movie_yuv_to_xfb_8028DB38.cpp:
 	.text       start:0x8028DB38 end:0x8028DD18
