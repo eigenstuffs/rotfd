@@ -20101,6 +20101,9 @@ Game/engine_loop_801D7DE8.c:
 Game/scalar_middle_801D7EFC.c:
 	.text       start:0x801D7EFC end:0x801D8068
 
+Game/recovered/unit_801D8068.cpp:
+	.text       start:0x801D8068 end:0x801D8458
+
 Game/scalar_middle_more_801D8458.c:
 	.text       start:0x801D8458 end:0x801D8580
 
@@ -21483,18 +21486,6 @@ Game/scalar_constant_8037AAE8.c:
 original/float_remaining_fragment_8037AAEC.s:
 	.sdata2     start:0x8037AAEC end:0x8037AAF8 align:1
 
-Game/scalar_constant_8037AAF8.c:
-	.sdata2     start:0x8037AAF8 end:0x8037AB00
-
-Game/scalar_constant_8037AB00.c:
-	.sdata2     start:0x8037AB00 end:0x8037AB30
-
-Game/input_glyph_constants.c:
-	.sdata2     start:0x8037AB30 end:0x8037ABAC
-
-original/scalar_more_fragment_8037ABAC.s:
-	.sdata2     start:0x8037ABAC end:0x8037ABD0 align:1
-
 Game/leaf_late_8020C5B8.c:
 	.text       start:0x8020C5B8 end:0x8020C5BC
 
@@ -21563,6 +21554,19 @@ Game/engine_range_reset.c:
 
 Game/engine_small_owner_8020EF78.cpp:
 	.text       start:0x8020EF78 end:0x8020EFB0
+
+Game/recovered/unit_8020EFB0.cpp:
+	.text       start:0x8020EFB0 end:0x8020F488
+	.sdata2     start:0x8037AAF8 end:0x8037AB10
+
+Game/scalar_constant_8037AB10.c:
+	.sdata2     start:0x8037AB10 end:0x8037AB30
+
+Game/input_glyph_constants.c:
+	.sdata2     start:0x8037AB30 end:0x8037ABAC
+
+original/scalar_more_fragment_8037ABAC.s:
+	.sdata2     start:0x8037ABAC end:0x8037ABD0 align:1
 
 Game/engine_input_glyphs.cpp:
 	.text       start:0x8020F488 end:0x8020FFF0
@@ -24754,6 +24758,9 @@ Game/vector_record_reset.cpp:
 
 Game/renderer_model_light_draw_8027C4D8.cpp:
 	.text       start:0x8027C4D8 end:0x8027C720
+
+Game/recovered/unit_8027C720.cpp:
+	.text       start:0x8027C720 end:0x8027D6B8
 
 Game/platform_cache_bind.cpp:
 	.text       start:0x8027D6B8 end:0x8027D850
