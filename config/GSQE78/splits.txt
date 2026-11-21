@@ -11156,44 +11156,49 @@ Game/menu_record_parameter_tokens_80378F60.c:
 original/menu_parameter_tail_80378F70.s:
 	.sdata2     start:0x80378F70 end:0x80378F78 align:1
 
-Game/actor_token_text_scalar_constants.c:
-	.sdata2     start:0x80378F78 end:0x80378F84
+Game/scene_leaf_more_control_800A5750.cpp:
+	extab       start:0x80010720 end:0x80010728
+	extabindex  start:0x8001BA68 end:0x8001BA74
+	.text       start:0x800A5750 end:0x800A5774
 
-original/float_remaining_fragment_80378F84.s:
-	.sdata2     start:0x80378F84 end:0x80378F98 align:1
+Game/early_menu_record_control_800a5774.cpp:
+	extab       start:0x80010728 end:0x80010744
+	extabindex  start:0x8001BA74 end:0x8001BA80
+	.text       start:0x800A5774 end:0x800A595C
 
-Game/scalar_constant_80378F98.c:
-	.sdata2     start:0x80378F98 end:0x80378FB0
+Game/typed_handle_800A595C.cpp:
+	extab       start:0x80010744 end:0x8001076C
+	extabindex  start:0x8001BA80 end:0x8001BA8C
+	.text       start:0x800A595C end:0x800A59D4
 
-Game/scalar_constant_80378FB0.c:
-	.sdata2     start:0x80378FB0 end:0x80378FB8
+Game/name_default_constructor.cpp:
+	.text       start:0x800A59D4 end:0x800A59E0
 
-Game/scalar_constant_80378FB8.c:
-	.sdata2     start:0x80378FB8 end:0x80378FC0
+Game/early_actor_token_parser_800a59e0.cpp:
+	extab       start:0x8001076C end:0x80010774
+	extabindex  start:0x8001BA8C end:0x8001BA98
+	.text       start:0x800A59E0 end:0x800A5BEC
 
-Game/scalar_constant_80378FC0.c:
-	.sdata2     start:0x80378FC0 end:0x80378FC8
+Game/early_actor_token_parser_800a5bec.cpp:
+	extab       start:0x80010774 end:0x8001077C
+	extabindex  start:0x8001BA98 end:0x8001BAA4
+	.text       start:0x800A5BEC end:0x800A5C98
 
-Game/scalar_constant_80378FC8.c:
-	.sdata2     start:0x80378FC8 end:0x80378FD0
+Game/early_simple_notification_helpers_800A5C98.cpp:
+	extab       start:0x8001077C end:0x80010784
+	extabindex  start:0x8001BAA4 end:0x8001BAB0
+	.text       start:0x800A5C98 end:0x800A5CF8
 
-Game/scalar_constant_80378FD0.c:
-	.sdata2     start:0x80378FD0 end:0x80378FD8
+Game/early_actor_token_control_800a5cf8.cpp:
+	extab       start:0x80010784 end:0x8001078C
+	extabindex  start:0x8001BAB0 end:0x8001BABC
+	.text       start:0x800A5CF8 end:0x800A5D68
 
-Game/scalar_constant_80378FD8.c:
-	.sdata2     start:0x80378FD8 end:0x80378FE0
-
-Game/scalar_constant_80378FE0.c:
-	.sdata2     start:0x80378FE0 end:0x80378FE8
-
-Game/scalar_constant_80378FE8.c:
-	.sdata2     start:0x80378FE8 end:0x80378FF0
-
-Game/scalar_constant_80378FF0.c:
-	.sdata2     start:0x80378FF0 end:0x80378FF8
-
-Game/scalar_constant_80378FF8.c:
-	.sdata2     start:0x80378FF8 end:0x80379000
+Game/recovered/tu_800A6528.cpp:
+	extab       start:0x8001078C end:0x80010ABC
+	extabindex  start:0x8001BABC end:0x8001BB88
+	.text       start:0x800A5D68 end:0x800A8E8C
+	.sdata2     start:0x80378F78 end:0x80379000
 
 Game/early_vector_800A8EB4_constants.c:
 	.sdata2     start:0x80379000 end:0x80379008
@@ -11239,130 +11244,6 @@ Game/record_event_scalar_constants_800AB8C8.c:
 
 original/float_remaining_fragment_803790B4.s:
 	.sdata2     start:0x803790B4 end:0x803790C8 align:1
-
-Game/scene_leaf_more_control_800A5750.cpp:
-	extab       start:0x80010720 end:0x80010728
-	extabindex  start:0x8001BA68 end:0x8001BA74
-	.text       start:0x800A5750 end:0x800A5774
-
-Game/early_menu_record_control_800a5774.cpp:
-	extab       start:0x80010728 end:0x80010744
-	extabindex  start:0x8001BA74 end:0x8001BA80
-	.text       start:0x800A5774 end:0x800A595C
-
-Game/typed_handle_800A595C.cpp:
-	extab       start:0x80010744 end:0x8001076C
-	extabindex  start:0x8001BA80 end:0x8001BA8C
-	.text       start:0x800A595C end:0x800A59D4
-
-Game/name_default_constructor.cpp:
-	.text       start:0x800A59D4 end:0x800A59E0
-
-Game/early_actor_token_parser_800a59e0.cpp:
-	extab       start:0x8001076C end:0x80010774
-	extabindex  start:0x8001BA8C end:0x8001BA98
-	.text       start:0x800A59E0 end:0x800A5BEC
-
-Game/early_actor_token_parser_800a5bec.cpp:
-	extab       start:0x80010774 end:0x8001077C
-	extabindex  start:0x8001BA98 end:0x8001BAA4
-	.text       start:0x800A5BEC end:0x800A5C98
-
-Game/early_simple_notification_helpers_800A5C98.cpp:
-	extab       start:0x8001077C end:0x80010784
-	extabindex  start:0x8001BAA4 end:0x8001BAB0
-	.text       start:0x800A5C98 end:0x800A5CF8
-
-Game/early_actor_token_control_800a5cf8.cpp:
-	extab       start:0x80010784 end:0x8001078C
-	extabindex  start:0x8001BAB0 end:0x8001BABC
-	.text       start:0x800A5CF8 end:0x800A5D68
-
-Game/named_resource_construct_800A5D68.cpp:
-	extab       start:0x8001078C end:0x80010838
-	extabindex  start:0x8001BABC end:0x8001BAC8
-	.text       start:0x800A5D68 end:0x800A5F20
-
-Game/leaf_800A5F20.c:
-	.text       start:0x800A5F20 end:0x800A5F24
-
-Game/engine_array_eh_800A5F24.cpp:
-	extab       start:0x80010838 end:0x80010860
-	extabindex  start:0x8001BAC8 end:0x8001BAD4
-	.text       start:0x800A5F24 end:0x800A6004
-
-Game/engine_agent_routes_800A6004.cpp:
-	extab       start:0x80010860 end:0x80010888
-	extabindex  start:0x8001BAD4 end:0x8001BAE0
-	.text       start:0x800A6004 end:0x800A6090
-
-Game/engine_fn_eh_800A6090.cpp:
-	extab       start:0x80010888 end:0x800108B0
-	extabindex  start:0x8001BAE0 end:0x8001BAEC
-	.text       start:0x800A6090 end:0x800A6234
-
-Game/record_key_visibility_flags_800A6234.cpp:
-	extab       start:0x800108B0 end:0x800108B8
-	extabindex  start:0x8001BAEC end:0x8001BAF8
-	.text       start:0x800A6234 end:0x800A64E0
-
-Game/scalar_early_800A64E0.c:
-	.text       start:0x800A64E0 end:0x800A6504
-
-Game/scene_leaf_more_control_800A6504.cpp:
-	extab       start:0x800108B8 end:0x800108C0
-	extabindex  start:0x8001BAF8 end:0x8001BB04
-	.text       start:0x800A6504 end:0x800A6528
-
-Game/record_timer_scene_update_800A6D90.cpp:
-	extab       start:0x800108C8 end:0x800108F4
-	extabindex  start:0x8001BB10 end:0x8001BB1C
-	.text       start:0x800A6D90 end:0x800A7510
-
-Game/early_text_record_format_800a7510.cpp:
-	extab       start:0x800108F4 end:0x800108FC
-	extabindex  start:0x8001BB1C end:0x8001BB28
-	.text       start:0x800A7510 end:0x800A7798
-
-Game/early_actor_retained_control_800a7798.cpp:
-	extab       start:0x800108FC end:0x80010928
-	extabindex  start:0x8001BB28 end:0x8001BB34
-	.text       start:0x800A7798 end:0x800A7840
-
-Game/early_record_index_dispatch_800a7840.cpp:
-	extab       start:0x80010928 end:0x80010954
-	extabindex  start:0x8001BB34 end:0x8001BB40
-	.text       start:0x800A7840 end:0x800A78E4
-
-Game/record_key_search_800A78E4.cpp:
-	.text       start:0x800A78E4 end:0x800A7930
-
-Game/leaf_800A81FC.c:
-	.text       start:0x800A81FC end:0x800A8204
-
-Game/typed_handle_800A8204.cpp:
-	extab       start:0x80010980 end:0x800109A8
-	extabindex  start:0x8001BB4C end:0x8001BB58
-	.text       start:0x800A8204 end:0x800A8278
-
-Game/leaf_800A8464.c:
-	.text       start:0x800A8464 end:0x800A846C
-
-Game/scalar_early_more_800A846C.c:
-	.text       start:0x800A846C end:0x800A84D8
-
-Game/scalar_early_800A84D8.c:
-	.text       start:0x800A84D8 end:0x800A8520
-
-Game/early_actor_token_control_800a8520.cpp:
-	extab       start:0x800109C0 end:0x800109C8
-	extabindex  start:0x8001BB64 end:0x8001BB70
-	.text       start:0x800A8520 end:0x800A85AC
-
-Game/early_random_record_grid_800a85ac.cpp:
-	extab       start:0x800109C8 end:0x800109F0
-	extabindex  start:0x8001BB70 end:0x8001BB7C
-	.text       start:0x800A85AC end:0x800A882C
 
 Game/scalar_clamp_800A8E8C.cpp:
 	.text       start:0x800A8E8C end:0x800A8EB4
