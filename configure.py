@@ -286,8 +286,11 @@ def MatchingFor(*versions):
 
 config.warn_missing_config = True
 config.warn_missing_source = False
-# Keep the raw original storage object required by MWLD. Native objdiff uses
-# an identical-payload copy correcting only DTK's synthetic function metadata.
+# The 44-byte heap storage at 0x801EF5C8 (.text) is defined in
+# Game/heap_manager_storage_801EF5C8.c. MWLD links the compiled object; native
+# objdiff compares it against an identical-payload copy of DTK's target object
+# in which only DTK's synthetic pad function becomes a zero-sized marker, so the
+# storage is not counted as a recovered function.
 config.split_postprocess = "$python tools/normalize_text_storage_v3.py $out_dir"
 config.split_postprocess_deps = [
     Path("tools/normalize_text_storage.py"),
@@ -296,7 +299,7 @@ config.split_postprocess_deps = [
     Path("config/GSQE78/text_storage.json"),
 ]
 config.objdiff_target_overrides = {
-    "auto_03_801EF5C8_text": config.out_path() / "obj-report/auto_03_801EF5C8_text.o",
+    "Game/heap_manager_storage_801EF5C8.c": config.out_path() / "obj-report/heap_manager_storage_801EF5C8.o",
 }
 config.split_postprocess_outputs = list(config.objdiff_target_overrides.values())
 config.libs = [
@@ -445,6 +448,7 @@ config.libs = [
                 "-Cpp_exceptions on", "-RTTI on", "-use_lmw_stmw on", "-char signed",
                 "-i src/Runtime",
             ], extab_padding=[0x25, 0x00]),
+            Object(Matching, "Runtime/exception_type_names_802AB9B8.c", mw_version="GC/1.3.2", cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,p', '-inline', 'auto', '-sdata', '8', '-sdata2', '8', '-Cpp_exceptions', 'off']),
         ],
     },
     {
@@ -639,6 +643,9 @@ config.libs = [
             Object(Matching, "dolphin/gba/GBAWrite.c", extra_cflags=["-i src/dolphin/gba"]),
             Object(Matching, "dolphin/gba/GBAXfer.c", extra_cflags=["-i src/dolphin/gba"]),
             Object(Matching, "dolphin/gba/GBAKey.c", extra_cflags=["-i src/dolphin/gba"]),
+            Object(Matching, "dolphin/si/si_type_strings_802F3300.c", mw_version="GC/1.3.2", cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,p', '-inline', 'auto', '-sdata', '8', '-sdata2', '8', '-Cpp_exceptions', 'off']),
+            Object(Matching, "dolphin/exi/exi_type_strings_802F31D0.c", mw_version="GC/1.3.2", cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,p', '-inline', 'auto', '-sdata', '8', '-sdata2', '8', '-Cpp_exceptions', 'off']),
+            Object(Matching, "dolphin/dsp/dsp_debug_string_802CF190.c", mw_version="GC/1.3.2", cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,p', '-inline', 'auto', '-sdata', '8', '-sdata2', '8', '-Cpp_exceptions', 'off']),
         ],
     },
     {
@@ -5678,6 +5685,7 @@ config.libs = [
             Object(Matching, "Game/factories_80261388.cpp"),
             Object(Matching, "Game/factories_802617A0.cpp"),
             Object(Matching, "Game/allocator.c", cflags=['-proc gekko', '-fp hardware', '-enum int', '-str reuse,readonly', '-common off', '-O4,p', '-inline deferred', '-Cpp_exceptions off', '-RTTI off', '-use_lmw_stmw on', '-i src/Game']),
+            Object(Matching, "Game/heap_manager_storage_801EF5C8.c", cflags=['-proc gekko', '-fp hardware', '-enum int', '-str reuse,readonly', '-common off', '-O4,p', '-inline deferred', '-Cpp_exceptions off', '-RTTI off', '-use_lmw_stmw on', '-i src/Game']),
             Object(Matching, "Game/factories_8007E160.cpp", extra_cflags=["-Cpp_exceptions on"]),
             Object(Matching, "Game/factories_800B9040.cpp", extra_cflags=["-Cpp_exceptions on"]),
             Object(Matching, "Game/factories_800B9934.cpp", extra_cflags=["-Cpp_exceptions on"]),
@@ -6122,6 +6130,30 @@ config.libs = [
             Object(Matching, 'Game/recovered/tu_800A8EB4.cpp', mw_version='GC/1.3.2', cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,s', '-inline', 'auto', '-Cpp_exceptions', 'on', '-RTTI', 'off', '-use_lmw_stmw', 'on', '-fp_contract', 'on', '-i', 'include', '-i', 'src/Game']),
             Object(Matching, 'Game/recovered/unit_801DCCE8.cpp', mw_version='GC/1.3.2', cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-inline', 'auto', '-use_lmw_stmw', 'on', '-i', 'include', '-i', 'src/Game', '-O4,p', '-Cpp_exceptions', 'off', '-RTTI', 'off', '-fp_contract', 'on']),
             Object(Matching, 'Game/recovered/tu_80279558.cpp', mw_version='GC/1.3.2', cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,p', '-inline', 'auto', '-Cpp_exceptions', 'off', '-RTTI', 'off', '-use_lmw_stmw', 'on', '-fp_contract', 'on', '-i', 'include']),
+            Object(Matching, "Game/data/data_803781C0_sdata2.c", mw_version="GC/1.3.2", cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,p', '-inline', 'auto', '-sdata', '8', '-sdata2', '8', '-Cpp_exceptions', 'off']),
+            Object(Matching, "Game/data/data_803775B8_sbss.c", mw_version="GC/1.3.2", cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,p', '-inline', 'auto', '-sdata', '8', '-sdata2', '8', '-Cpp_exceptions', 'off']),
+            Object(Matching, "Game/data/data_803777D0_sbss.c", mw_version="GC/1.3.2", cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,p', '-inline', 'auto', '-sdata', '8', '-sdata2', '8', '-Cpp_exceptions', 'off']),
+            Object(Matching, "Game/data/data_80377868_sbss.c", mw_version="GC/1.3.2", cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,p', '-inline', 'auto', '-sdata', '8', '-sdata2', '8', '-Cpp_exceptions', 'off']),
+            Object(Matching, "Game/data/data_802EAA70_data.c", mw_version="GC/1.3.2", cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,p', '-inline', 'auto', '-sdata', '8', '-sdata2', '8', '-Cpp_exceptions', 'off']),
+            Object(Matching, "Game/data/data_8037A820_sdata2.c", mw_version="GC/1.3.2", cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,p', '-inline', 'auto', '-sdata', '8', '-sdata2', '8', '-Cpp_exceptions', 'off']),
+            Object(Matching, "Game/data/data_8037A938_sdata2.c", mw_version="GC/1.3.2", cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,p', '-inline', 'auto', '-sdata', '8', '-sdata2', '8', '-Cpp_exceptions', 'off']),
+            Object(Matching, "Game/data/data_80378010_sbss.c", mw_version="GC/1.3.2", cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,p', '-inline', 'auto', '-sdata', '8', '-sdata2', '8', '-Cpp_exceptions', 'off']),
+            Object(Matching, "Game/data/data_803780A8_sbss.c", mw_version="GC/1.3.2", cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,p', '-inline', 'auto', '-sdata', '8', '-sdata2', '8', '-Cpp_exceptions', 'off']),
+            Object(Matching, "Game/data/data_8037B558_sdata2.c", mw_version="GC/1.3.2", cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,p', '-inline', 'auto', '-sdata', '8', '-sdata2', '8', '-Cpp_exceptions', 'off']),
+            Object(Matching, "Game/data/data_8037B5F0_sdata2.c", mw_version="GC/1.3.2", cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,p', '-inline', 'auto', '-sdata', '8', '-sdata2', '8', '-Cpp_exceptions', 'off']),
+            Object(Matching, "Game/data/data_8037B620_sdata2.c", mw_version="GC/1.3.2", cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,p', '-inline', 'auto', '-sdata', '8', '-sdata2', '8', '-Cpp_exceptions', 'off']),
+            Object(Matching, "Game/data/data_8037B648_sdata2.c", mw_version="GC/1.3.2", cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,p', '-inline', 'auto', '-sdata', '8', '-sdata2', '8', '-Cpp_exceptions', 'off']),
+            Object(Matching, "Game/data/data_8037B660_sdata2.c", mw_version="GC/1.3.2", cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,p', '-inline', 'auto', '-sdata', '8', '-sdata2', '8', '-Cpp_exceptions', 'off']),
+            Object(Matching, "Game/data/data_8037B6A0_sdata2.c", mw_version="GC/1.3.2", cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,p', '-inline', 'auto', '-sdata', '8', '-sdata2', '8', '-Cpp_exceptions', 'off']),
+            Object(Matching, "Game/data/data_8037B738_sdata2.c", mw_version="GC/1.3.2", cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,p', '-inline', 'auto', '-sdata', '8', '-sdata2', '8', '-Cpp_exceptions', 'off']),
+            Object(Matching, "Game/data/data_8037B758_sdata2.c", mw_version="GC/1.3.2", cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,p', '-inline', 'auto', '-sdata', '8', '-sdata2', '8', '-Cpp_exceptions', 'off']),
+            Object(Matching, "Game/data/data_8037B7A8_sdata2.c", mw_version="GC/1.3.2", cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,p', '-inline', 'auto', '-sdata', '8', '-sdata2', '8', '-Cpp_exceptions', 'off']),
+            Object(Matching, "Game/data/data_8037B7E0_sdata2.c", mw_version="GC/1.3.2", cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,p', '-inline', 'auto', '-sdata', '8', '-sdata2', '8', '-Cpp_exceptions', 'off']),
+            Object(Matching, "Game/data/data_8037B7F8_sdata2.c", mw_version="GC/1.3.2", cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,p', '-inline', 'auto', '-sdata', '8', '-sdata2', '8', '-Cpp_exceptions', 'off']),
+            Object(Matching, "Game/data/data_8037B808_sdata2.c", mw_version="GC/1.3.2", cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,p', '-inline', 'auto', '-sdata', '8', '-sdata2', '8', '-Cpp_exceptions', 'off']),
+            Object(Matching, "Game/data/data_80378160_sbss.c", mw_version="GC/1.3.2", cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,p', '-inline', 'auto', '-sdata', '8', '-sdata2', '8', '-Cpp_exceptions', 'off']),
+            Object(Matching, "Game/data/data_80377578_sbss.c", mw_version="GC/1.3.2", cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,p', '-inline', 'auto', '-sdata', '8', '-sdata2', '8', '-Cpp_exceptions', 'off']),
+            Object(Matching, "Game/data/data_80377F90_sbss.c", mw_version="GC/1.3.2", cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,p', '-inline', 'auto', '-sdata', '8', '-sdata2', '8', '-Cpp_exceptions', 'off']),
         ],
     },
     {
@@ -6341,6 +6373,7 @@ config.libs = [
             Object(Matching, "Objects/unicodeobject.c", extra_cflags=[
                 "-inline auto,deferred", "-pool off",
             ]),
+            Object(Matching, "Python/frozen_phello_802DE6F8.c", mw_version="GC/1.3.2", cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,p', '-inline', 'auto', '-sdata', '8', '-sdata2', '8', '-Cpp_exceptions', 'off']),
         ],
     },
 ]
@@ -6382,6 +6415,7 @@ config.libs.append({
             Object(Matching, 'MetroTRK/msg_send.c', cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,p', '-inline', 'auto,deferred', '-sdata', '0', '-sdata2', '0', '-pool', 'off', '-use_lmw_stmw', 'on', '-rostr', '-i', 'src/MetroTRK', '-Cpp_exceptions', 'off']),
             Object(Matching, "MetroTRK/nubinit.c", cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,p', '-inline', 'on,noauto', '-sdata', '0', '-sdata2', '0', '-pool', 'off', '-use_lmw_stmw', 'on', '-rostr', '-i', 'src/MetroTRK', '-Cpp_exceptions', 'off']),
             Object(Matching, "MetroTRK/nubevent.c", cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,p', '-inline', 'on,noauto', '-sdata', '0', '-sdata2', '0', '-pool', 'off', '-use_lmw_stmw', 'on', '-rostr', '-i', 'src/MetroTRK', '-Cpp_exceptions', 'off']),
+            Object(Matching, "MetroTRK/targimpl_state_8033AA80.c", mw_version="GC/1.3.2", cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,p', '-inline', 'auto,deferred', '-sdata', '0', '-sdata2', '0', '-pool', 'off', '-use_lmw_stmw', 'on', '-rostr', '-i', 'src/MetroTRK', '-Cpp_exceptions', 'off']),
     ],
 })
 
@@ -6829,6 +6863,10 @@ config.libs.append({
         Object(NonMatching, "padding/source_extents/Game/scalar_constant_80378D28.s"),
         Object(NonMatching, "padding/trk_nubinit.s"),
         Object(NonMatching, "original/game_registry_string_tail_8029D0A6.s"),
+        Object(NonMatching, "padding/source_extents/Game/data/data_803781C0_sdata2_803781E6.s"),
+        Object(NonMatching, "padding/source_extents/Python/frozen_phello_802DE6F8_802DE75E.s"),
+        Object(NonMatching, "padding/source_extents/Runtime/exception_type_names_802AB9B8_802ABA06.s"),
+        Object(NonMatching, "padding/source_extents/Game/data/data_80377F90_sbss_80377FCA.s"),
     ],
 })
 

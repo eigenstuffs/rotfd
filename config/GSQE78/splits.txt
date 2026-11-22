@@ -12,6 +12,12 @@ Sections:
 	.sbss       type:bss align:32
 	.sdata2     type:rodata align:16
 
+Game/data/data_803781C0_sdata2.c:
+	.sdata2     start:0x803781C0 end:0x803781E6
+
+padding/source_extents/Game/data/data_803781C0_sdata2_803781E6.s:
+	.sdata2     start:0x803781E6 end:0x803781E8 align:1
+
 Game/early_record_activation_constants.c:
 	.sdata2     start:0x803781E8 end:0x80378228
 
@@ -42,11 +48,17 @@ Game/callback_group_storage_80377558.c:
 padding/sdk-state-leaf_80377574.s:
 	.sbss       start:0x80377574 end:0x80377578 align:1
 
+Game/data/data_80377578_sbss.c:
+	.sbss       start:0x80377578 end:0x80377588
+
 Game/callback_group_storage_80377588.c:
 	.sbss       start:0x80377588 end:0x803775B4
 
 padding/callback_state_803775B4.s:
 	.sbss       start:0x803775B4 end:0x803775B8 align:1
+
+Game/data/data_803775B8_sbss.c:
+	.sbss       start:0x803775B8 end:0x803775E8
 
 Game/callback_group_storage_803775E8.c:
 	.sbss       start:0x803775E8 end:0x80377614
@@ -96,8 +108,14 @@ original/actor_motion_state_suffix_8037776C.s:
 Game/service_slot_shared_storage.c:
 	.sbss       start:0x803777A8 end:0x803777D0
 
+Game/data/data_803777D0_sbss.c:
+	.sbss       start:0x803777D0 end:0x80377828
+
 Game/scene_callback_shared_storage.c:
 	.sbss       start:0x80377828 end:0x80377868
+
+Game/data/data_80377868_sbss.c:
+	.sbss       start:0x80377868 end:0x803778C8
 
 Game/runtime_type_records_80373E40.cpp:
 	.sdata      start:0x80373E40 end:0x80373E90
@@ -17508,6 +17526,9 @@ dolphin/dsp/dsp_task.c:
 padding/source_extents/dolphin/dsp/dsp_task.s:
 	.data       start:0x802CF18D end:0x802CF190 align:1
 
+dolphin/dsp/dsp_debug_string_802CF190.c:
+	.data       start:0x802CF190 end:0x802CF1C0
+
 dolphin/card/CARDBios.c:
 	.text       start:0x80106CCC end:0x80108004
 	.data       start:0x802CF1C0 end:0x802CF218
@@ -17769,6 +17790,9 @@ MetroTRK/msghndlr_control.c:
 padding/trk_msghndlr.s:
 	.bss        start:0x8033AA7C end:0x8033AA80 align:4
 
+MetroTRK/targimpl_state_8033AA80.c:
+	.bss        start:0x8033AA80 end:0x8033AB28
+
 MetroTRK/targimpl_state.c:
 	.bss        start:0x8033AB28 end:0x8033AFFC
 
@@ -17803,6 +17827,12 @@ MetroTRK/targimpl_step_retry.c:
 MetroTRK/targimpl_access.c:
 	.text       start:0x8011CCEC end:0x8011DC50
 	.rodata     start:0x802AB930 end:0x802AB9B8
+
+Runtime/exception_type_names_802AB9B8.c:
+	.rodata     start:0x802AB9B8 end:0x802ABA06
+
+padding/source_extents/Runtime/exception_type_names_802AB9B8_802ABA06.s:
+	.rodata     start:0x802ABA06 end:0x802ABA08 align:1
 
 MetroTRK/target_startup.c:
 	.text       start:0x8011DC50 end:0x8011DD04
@@ -18568,6 +18598,12 @@ padding/source_extents/Python/exceptions.s:
 	.data       start:0x802DE6F3 end:0x802DE6F8 align:1
 	.sdata      start:0x803767B9 end:0x803767C0 align:1
 
+Python/frozen_phello_802DE6F8.c:
+	.data       start:0x802DE6F8 end:0x802DE75E
+
+padding/source_extents/Python/frozen_phello_802DE6F8_802DE75E.s:
+	.data       start:0x802DE75E end:0x802DE760 align:1
+
 Python/frozen_registry.c:
 	.data       start:0x802DE760 end:0x802DE7AC
 	.sdata      start:0x803767C0 end:0x803767C4
@@ -18818,6 +18854,12 @@ Modules/getpath.c:
 	.text       start:0x801AC738 end:0x801AC7D8
 	.sdata      start:0x803774F0 end:0x803774F1
 	.sbss       start:0x80377F80 end:0x80377F90
+
+Game/data/data_80377F90_sbss.c:
+	.sbss       start:0x80377F90 end:0x80377FCA
+
+padding/source_extents/Game/data/data_80377F90_sbss_80377FCA.s:
+	.sbss       start:0x80377FCA end:0x80377FD0 align:1
 
 padding/source_extents/Modules/getpath.s:
 	.sdata      start:0x803774F1 end:0x803774F4 align:1
@@ -20350,6 +20392,9 @@ Game/recovered/tu_801ECC98.cpp:
 original/scalar_single_fragment_8037A670.s:
 	.sdata2     start:0x8037A670 end:0x8037A698 align:1
 
+Game/heap_manager_storage_801EF5C8.c:
+	.text       start:0x801EF5C8 end:0x801EF5F4
+
 Game/allocator_copy.c:
 	.text       start:0x801EF5F4 end:0x801EF610
 
@@ -20397,6 +20442,9 @@ Game/resource_method_tables_802EA908.cpp:
 
 Game/geometry_box_topology_data_802EA9B0.cpp:
 	.data       start:0x802EA9B0 end:0x802EAA70
+
+Game/data/data_802EAA70_data.c:
+	.data       start:0x802EAA70 end:0x802EAA80
 
 Game/native_table_802EAA80.c:
 	.data       start:0x802EAA80 end:0x802EAA94
@@ -20557,6 +20605,9 @@ Game/resource_channels.cpp:
 
 padding/resource_channels.s:
 	.sdata2     start:0x8037A81C end:0x8037A820 align:4
+
+Game/data/data_8037A820_sdata2.c:
+	.sdata2     start:0x8037A820 end:0x8037A838
 
 Game/recovered/native_handle_assignment_prefix_801F7914.cpp:
 	.text       start:0x801F7914 end:0x801F7CB4
@@ -20807,6 +20858,9 @@ Game/hierarchy_rtc_resource.cpp:
 Game/hierarchy_position_overlay_80203d98.cpp:
 	.text       start:0x80203D98 end:0x80204000
 	.sdata2     start:0x8037A930 end:0x8037A938
+
+Game/data/data_8037A938_sdata2.c:
+	.sdata2     start:0x8037A938 end:0x8037A958
 
 Game/hierarchy_command_parameter.cpp:
 	.text       start:0x80204000 end:0x80204184
@@ -21316,6 +21370,9 @@ padding/source_extents/Game/ingame_manipulator_update.s:
 	.sbss       start:0x8037800D end:0x80378010 align:1
 	.sdata2     start:0x8037AC4C end:0x8037AC50 align:1
 
+Game/data/data_80378010_sbss.c:
+	.sbss       start:0x80378010 end:0x80378088
+
 Game/callback_dispatch_storage.c:
 	.sbss       start:0x80378088 end:0x80378098
 
@@ -21324,6 +21381,9 @@ Game/worker_request_storage.c:
 
 Game/frame_timing_storage.c:
 	.sbss       start:0x803780A0 end:0x803780A8
+
+Game/data/data_803780A8_sbss.c:
+	.sbss       start:0x803780A8 end:0x803780D0
 
 Game/ingame_manipulator_destructor.cpp:
 	.text       start:0x802127F4 end:0x802128A0
@@ -23425,6 +23485,9 @@ Game/callback_index_dispatch.cpp:
 	.text       start:0x8025D054 end:0x8025D1C8
 	.sdata2     start:0x8037B550 end:0x8037B558
 
+Game/data/data_8037B558_sdata2.c:
+	.sdata2     start:0x8037B558 end:0x8037B578
+
 Game/callback_time_constants.c:
 	.sdata2     start:0x8037B578 end:0x8037B580
 
@@ -23671,6 +23734,9 @@ Game/context_font_resource_labels.c:
 padding/late-typed-constants_8037B5EE.s:
 	.sdata2     start:0x8037B5EE end:0x8037B5F0 align:1
 
+Game/data/data_8037B5F0_sdata2.c:
+	.sdata2     start:0x8037B5F0 end:0x8037B5F8
+
 Game/handle_member_dispatch_04.cpp:
 	.text       start:0x80262180 end:0x80262210
 
@@ -23748,6 +23814,9 @@ Game/recovered/tu_80264CCC.cpp:
 	.text       start:0x80264CCC end:0x80266758
 	.sdata2     start:0x8037B5F8 end:0x8037B620
 
+Game/data/data_8037B620_sdata2.c:
+	.sdata2     start:0x8037B620 end:0x8037B628
+
 Game/index_grid_init.cpp:
 	.text       start:0x80266758 end:0x802667F0
 
@@ -23771,8 +23840,14 @@ original/float_pad_8037B63C.s:
 Game/handle_list_action_constants.c:
 	.sdata2     start:0x8037B640 end:0x8037B648
 
+Game/data/data_8037B648_sdata2.c:
+	.sdata2     start:0x8037B648 end:0x8037B650
+
 Game/spatial_handle_action_constants.c:
 	.sdata2     start:0x8037B650 end:0x8037B660
+
+Game/data/data_8037B660_sdata2.c:
+	.sdata2     start:0x8037B660 end:0x8037B668
 
 Game/six_handle_resource_status.cpp:
 	.text       start:0x80267E2C end:0x80267EFC
@@ -23887,6 +23962,9 @@ Game/platform_spatial_resource_init.cpp:
 Game/recovered/tu_8026C1C0.cpp:
 	.text       start:0x8026C1C0 end:0x8026D834
 	.sdata2     start:0x8037B668 end:0x8037B6A0
+
+Game/data/data_8037B6A0_sdata2.c:
+	.sdata2     start:0x8037B6A0 end:0x8037B6A8
 
 Game/render_slot_constants.c:
 	.sdata2     start:0x8037B6A8 end:0x8037B6BC
@@ -24117,6 +24195,9 @@ Game/recovered/tu_80272F14.cpp:
 	.data       start:0x802ED540 end:0x802ED6E8
 	.sdata2     start:0x8037B6F0 end:0x8037B738
 
+Game/data/data_8037B738_sdata2.c:
+	.sdata2     start:0x8037B738 end:0x8037B740
+
 Game/platform_native_method_tables_802ED6E8.cpp:
 	.data       start:0x802ED6E8 end:0x802ED6F8
 
@@ -24345,6 +24426,9 @@ Game/recovered/tu_80279558.cpp:
 	.text       start:0x80279558 end:0x8027B2E4
 	.sdata2     start:0x8037B740 end:0x8037B758
 
+Game/data/data_8037B758_sdata2.c:
+	.sdata2     start:0x8037B758 end:0x8037B760
+
 Game/render_transform_copy.cpp:
 	.text       start:0x8027B2E4 end:0x8027B508
 
@@ -24354,6 +24438,9 @@ Game/render_transform_parent.cpp:
 Game/recovered/tu_8027B790.cpp:
 	.text       start:0x8027B790 end:0x8027C40C
 	.sdata2     start:0x8037B760 end:0x8037B7A8
+
+Game/data/data_8037B7A8_sdata2.c:
+	.sdata2     start:0x8037B7A8 end:0x8037B7B0
 
 Game/vector_record_reset.cpp:
 	.text       start:0x8027C40C end:0x8027C4D8
@@ -24375,11 +24462,20 @@ Game/recovered/tu_8027D850.cpp:
 Game/text_color_constants_8037B7D0.c:
 	.sdata2     start:0x8037B7D0 end:0x8037B7E0
 
+Game/data/data_8037B7E0_sdata2.c:
+	.sdata2     start:0x8037B7E0 end:0x8037B7E8
+
 Game/texture_coordinate_constants.c:
 	.sdata2     start:0x8037B7E8 end:0x8037B7F8
 
+Game/data/data_8037B7F8_sdata2.c:
+	.sdata2     start:0x8037B7F8 end:0x8037B800
+
 Game/texture_blend_constants.c:
 	.sdata2     start:0x8037B800 end:0x8037B808
+
+Game/data/data_8037B808_sdata2.c:
+	.sdata2     start:0x8037B808 end:0x8037B810
 
 Game/engine_renderer_rectangle_controls.cpp:
 	.text       start:0x8027F178 end:0x8027F994
@@ -24711,6 +24807,9 @@ padding/ground_collision_constants.s:
 original/sbss_pad_8037815C.s:
 	.sbss       start:0x8037815C end:0x80378160 align:1
 
+Game/data/data_80378160_sbss.c:
+	.sbss       start:0x80378160 end:0x80378168
+
 Game/disc_read_buffer_80373100.c:
 	.bss        start:0x80373100 end:0x80373120
 
@@ -24906,6 +25005,9 @@ padding/EXIBios.s:
 	.sdata      start:0x8037751C end:0x80377520 align:4
 	.sbss       start:0x8037818C end:0x80378190 align:4
 
+dolphin/exi/exi_type_strings_802F31D0.c:
+	.data       start:0x802F31D0 end:0x802F3298
+
 dolphin/exi/EXIUart.c:
 	.text       start:0x80297D2C end:0x80297FB8
 	.sbss       start:0x80378190 end:0x803781A0
@@ -24919,6 +25021,9 @@ dolphin/si/SIBios.c:
 
 padding/SIBios.s:
 	.sbss       start:0x803781AC end:0x803781B0 align:4
+
+dolphin/si/si_type_strings_802F3300.c:
+	.data       start:0x802F3300 end:0x802F33B0
 
 dolphin/si/SISamplingRate.c:
 	.text       start:0x80299818 end:0x80299920

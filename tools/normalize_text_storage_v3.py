@@ -22,10 +22,10 @@ def main():
     parser.add_argument("--contract", type=Path, default=Path("config/GSQE78/text_storage.json"))
     args = parser.parse_args()
     contract = json.loads(args.contract.read_text())
-    if contract["unit"] != "auto_03_801EF5C8_text":
+    if contract["unit"] not in ("auto_03_801EF5C8_text", "Game/heap_manager_storage_801EF5C8.c"):
         raise ValueError("Unsupported storage reporting co-output")
     normalize_main()
-    target = args.build_dir / "obj-report/auto_03_801EF5C8_text.o"
+    target = args.build_dir / "obj-report" / (Path(contract["unit"]).stem + ".o")
     target.touch()
 
 
