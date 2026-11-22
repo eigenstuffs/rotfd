@@ -23908,19 +23908,10 @@ Game/render_gizmo_constants.c:
 	.sdata2     start:0x8037B668 end:0x8037B6A0
 
 Game/render_slot_constants.c:
-	.sdata2     start:0x8037B6A8 end:0x8037B6C8
+	.sdata2     start:0x8037B6A8 end:0x8037B6BC
 
-Game/display_list_uv_constants.c:
-	.sdata2     start:0x8037B6C8 end:0x8037B6D0
-
-Game/screen_registration_constants.c:
-	.sdata2     start:0x8037B6D0 end:0x8037B6E7
-
-padding/late-typed-constants_8037B6E7.s:
-	.sdata2     start:0x8037B6E7 end:0x8037B6E8 align:1
-
-Game/cached_color_constants.c:
-	.sdata2     start:0x8037B6E8 end:0x8037B6F0
+original/float_pad_8037B6BC.s:
+	.sdata2     start:0x8037B6BC end:0x8037B6C0 align:1
 
 Game/six_handle_resource_status.cpp:
 	.text       start:0x80267E2C end:0x80267EFC
@@ -24148,6 +24139,22 @@ Game/render_index_reset.cpp:
 
 Game/engine_screen_arrays_readback.cpp:
 	.text       start:0x8027024C end:0x80270564
+
+Game/recovered/unit_80270564.cpp:
+	.text       start:0x80270564 end:0x80270F34
+	.sdata2     start:0x8037B6C0 end:0x8037B6C8
+
+Game/display_list_uv_constants.c:
+	.sdata2     start:0x8037B6C8 end:0x8037B6D0
+
+Game/screen_registration_constants.c:
+	.sdata2     start:0x8037B6D0 end:0x8037B6E7
+
+padding/late-typed-constants_8037B6E7.s:
+	.sdata2     start:0x8037B6E7 end:0x8037B6E8 align:1
+
+Game/cached_color_constants.c:
+	.sdata2     start:0x8037B6E8 end:0x8037B6F0
 
 Game/scalar_late_80270F34.c:
 	.text       start:0x80270F34 end:0x80270F78
