@@ -22265,7 +22265,49 @@ Game/scalar_constant_8037B2E0.c:
 	.sdata2     start:0x8037B2E0 end:0x8037B2E4
 
 original/float_remaining_fragment_8037B2E4.s:
-	.sdata2     start:0x8037B2E4 end:0x8037B2F8 align:1
+	.sdata2     start:0x8037B2E4 end:0x8037B2E8 align:1
+
+padding/source_extents/Game/camera_bitmap_capture_80235D54.s:
+	.rodata     start:0x802AEA99 end:0x802AEAA0 align:1
+
+Game/camera_capture_owner_update_80236BF4.cpp:
+	.text       start:0x80236BF4 end:0x802377B4
+
+Game/engine_record_dispatch_802377B4.cpp:
+	.text       start:0x802377B4 end:0x80237924
+
+Game/engine_owner_child_reset.cpp:
+	.text       start:0x80237924 end:0x80237BC8
+
+Game/owner_child_handle_copy_80237BC8.cpp:
+	.text       start:0x80237BC8 end:0x80237C40
+
+Game/engine_buffer_record_80237C40.cpp:
+	.text       start:0x80237C40 end:0x80237CA0
+
+Game/engine_bitmap_convert.cpp:
+	.text       start:0x80237CA0 end:0x80238180
+	.data       start:0x802EBF00 end:0x802EBF38
+
+Game/raster_line_draw_80238180.c:
+	.text       start:0x80238180 end:0x80238310
+
+Game/engine_raster_span_80238310.c:
+	.text       start:0x80238310 end:0x802383D8
+
+Game/engine_raster_span_802383D8.c:
+	.text       start:0x802383D8 end:0x802385C0
+
+Game/engine_raster_span_802385C0.c:
+	.text       start:0x802385C0 end:0x802386BC
+
+Game/recovered/unit_802386BC.cpp:
+	.text       start:0x802386BC end:0x80238D28
+	.data       start:0x802EBF38 end:0x802EBFD8
+	.sdata2     start:0x8037B2E8 end:0x8037B2F0
+
+original/float_remaining_fragment_8037B2F0.s:
+	.sdata2     start:0x8037B2F0 end:0x8037B2F8 align:1
 
 Game/basis_resource_scalar_constants.c:
 	.sdata2     start:0x8037B2F8 end:0x8037B308
@@ -22294,31 +22336,6 @@ Game/scalar_constant_8037B348.c:
 Game/scalar_constant_8037B350.c:
 	.sdata2     start:0x8037B350 end:0x8037B358
 
-padding/source_extents/Game/camera_bitmap_capture_80235D54.s:
-	.rodata     start:0x802AEA99 end:0x802AEAA0 align:1
-
-Game/camera_capture_owner_update_80236BF4.cpp:
-	.text       start:0x80236BF4 end:0x802377B4
-
-Game/engine_record_dispatch_802377B4.cpp:
-	.text       start:0x802377B4 end:0x80237924
-
-Game/engine_owner_child_reset.cpp:
-	.text       start:0x80237924 end:0x80237BC8
-
-Game/owner_child_handle_copy_80237BC8.cpp:
-	.text       start:0x80237BC8 end:0x80237C40
-
-Game/engine_buffer_record_80237C40.cpp:
-	.text       start:0x80237C40 end:0x80237CA0
-
-Game/engine_bitmap_convert.cpp:
-	.text       start:0x80237CA0 end:0x80238180
-	.data       start:0x802EBF00 end:0x802EBF38
-
-original/native_method_prefix_802EBF38.s:
-	.data       start:0x802EBF38 end:0x802EBFD8 align:1
-
 Game/basis_material_method_tables_802EBFD8.cpp:
 	.data       start:0x802EBFD8 end:0x802EC020
 
@@ -22336,18 +22353,6 @@ original/native_method_prefix_802EC09C.s:
 
 Game/spatial_binding_method_tables_802EC0A0.cpp:
 	.data       start:0x802EC0A0 end:0x802EC3D8
-
-Game/raster_line_draw_80238180.c:
-	.text       start:0x80238180 end:0x80238310
-
-Game/engine_raster_span_80238310.c:
-	.text       start:0x80238310 end:0x802383D8
-
-Game/engine_raster_span_802383D8.c:
-	.text       start:0x802383D8 end:0x802385C0
-
-Game/engine_raster_span_802385C0.c:
-	.text       start:0x802385C0 end:0x802386BC
 
 Game/engine_buffer_record_80238D28.cpp:
 	.text       start:0x80238D28 end:0x80238ED8
