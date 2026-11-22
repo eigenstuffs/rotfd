@@ -1,9 +1,0 @@
-# LoadingScreen base destructor
-
-`src/Game/screen_base_destructor.cpp` is a bounded source recovery. The native C++ destructor at `0x800B9368..0x800B940C` restores its external descriptor, destroys its typed handle member at `0x48`, invokes the native base destructor, then performs the observed custom deletion when called as a deleting destructor. Three handle inheritance layers reproduce the original nested null checks. An explicitly described descriptor field at object offset eight keeps the original vtable external while ordinary member/base destruction supplies the native ABI and cleanup flow.
-
-Isolated verification matches every allocated compiler byte: 164 retained instruction bytes, 52 exception/index bytes, and 10 retained relocations. GC/1.3.2 uses `-O4,s -inline auto -Cpp_exceptions on -use_lmw_stmw on`, with the standard Gekko hardware-FP flags. Original DOL SHA1 is checked before each comparison. There is no raw instruction encoding, assembly, or binary patching. The central build passes the original DOL SHA-1, direct byte comparison, and complete native objdiff code/data matching.
-
-Reproduce with `python3 scratch/game_screen_base_destructor/verify.py`. The script checks section coverage, complete symbol sizes, all relocations, exception actions, and the exact source hash; transcript: `scratch/game_screen_base_destructor/verification.txt`. The manifest is `config/GSQE78/candidates/game_screen_base_destructor.json`.
-
-The retained destructor has strong global linkage. Earlier setup verification also proves the equivalent compiler-generated weak duplicate; this standalone unit now owns the original destructor and its exception/index ranges for progress credit. Address-suffixed class names and opaque fields express observed layout rather than claiming original identifiers.

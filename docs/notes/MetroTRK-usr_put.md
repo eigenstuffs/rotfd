@@ -1,7 +1,0 @@
-# MetroTRK console output
-
-`src/MetroTRK/usr_put.c` recovers both linked C functions at 0x80118FB8..0x80119044: the original empty release initializer (4 bytes) and usr_puts_serial (136 bytes). No initialized data or BSS is owned.
-
-The [Pikmin 2 reference](https://github.com/projectPiki/pikmin2/blob/main/src/Dolphin/TRK_MINNOW_DOLPHIN/usr_put.c) supplies the complete algorithm: output one character at a time through OSReport, temporarily clearing and then restoring TRK connection state. Only the two original linked functions are included. The original calls use a nonvariadic OSReport declaration, avoiding a variadic-call condition-register instruction. SetTRKConnected and GetTRKConnected are independently identified at 0x8011B924 and 0x8011B930 from their shared connection-state access.
-
-GC/1.3.2 with `-proc gekko -fp hardware -enum int -str reuse -common off -O4,p -inline auto,deferred -sdata 0 -sdata2 0 -pool off -use_lmw_stmw on -rostr -i src/MetroTRK -Cpp_exceptions off` reproduces all 140 code bytes after relocation. The shared usr_puts_serial declaration now reflects its actual bool return. All earlier TRK source units (mainloop, nubevent, nubinit, msgbuf and serpoll) were recompiled and retain complete isolated equality with this declaration. Complete-game SHA and native objdiff are integration checks. Scripts are under scratch/MetroTRK, with source provenance hashes under reference.

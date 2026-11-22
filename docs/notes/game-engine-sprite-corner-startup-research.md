@@ -1,9 +1,0 @@
-# Sprite corner startup: bounded ordinary source research
-
-Private and uncredited. The fresh genuine C++ Vec2-array probe preserves the original 92-byte startup extent, four-byte constructor pointer, and two global 32-byte BSS arrays at 8035D360 and 8035D380. Named external constants preserve every resolved relocation target but rotate 20 floating-point instruction operands. Constructor-body, const-reference parameter, extern-declaration ordering, and O4,s/O3/O2 variants do not close those differences.
-
-The source describes four centered square corners and four UV corners. The original constants occupy 8037B814..8037B828, including four final original zero bytes. Full active-ELF census found nine actual SDA references: four in this startup and five in fn80283160. Neither BSS array has original initialized-data pointers; the BSS census found eight actual references and both original global definitions. The startup has the sole constructor pointer at 80299960 and no exception-index or destructor references. All original tables were scanned through their complete descriptor/padding ranges.
-
-Natural literal-array construction has the previously documented pool-order conflict: negative-half, positive-half, zero, one versus original one, zero, negative-half, positive-half. Existing manual/literal research in scratch/game_platform_sprite_tables and game-platform-sprite-draw.md remains unchanged. Wrapper-array constructors also add a construct-array call and an unwanted weak default constructor, so those variants are not candidates.
-
-Artifacts, resolved diagnostics, full active reference census and original table proof are preserved in scratch/engine_sprite_corner_startup_20261011hf. No production source, accepted header, shared symbol, split, configuration, pool ownership or progress change is proposed. This is numeric research only; no matching-source credit is claimed.

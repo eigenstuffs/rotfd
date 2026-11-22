@@ -1,9 +1,0 @@
-# Sphere against transformed box: collect face hits
-
-The isolated ordinary C++ reconstruction of `fn_801DFE90` covers all 760 original code bytes. It transforms eight borrowed cube vertices, tests six borrowed quadrilateral faces and appends each successful query to the existing fixed 256-record collection. At capacity it replaces record 255. The original record constructor clears the word at offset 0x1C; placement-new null checks, point/normal/distance copies and the 64-bit mask at offset 0x20 are preserved.
-
-The shared partial geometry declarations are in `include/Game/sphere_box_first_hit_801dfbc4.h`. The collection header models the independently observed 40-byte record and count at 0x2800. The native query output is 48 bytes because the original downstream query writes through offset 0x2C, as verified for the adjacent first-hit routine and accepted grid sweep. These declarations preserve observed ABI/layout; descriptive type and member names do not establish original C++ names. The routine returns the accumulated 0/1 state; signed-char is a compatible partial return declaration.
-
-The source is unregistered and adds no progress yet. A fresh production object contains only 760 text bytes, alignment 4, six actual relocations and one compiler category relocation. Every relocated byte matches. A private actual MWLD link verifies retained code and all assigned target addresses; full-game original-placement acceptance and a current complete consumer census remain pending. Complete original exception/startup tables contain no ownership. The cube BSS, face data, float and query callee remain borrowed with zero storage credit.
-
-Private evidence and the first exact probe are preserved in `scratch/game_sphere_box_hit_collect_801dfe90/`. The first-hit source and frozen reviews remain unchanged.

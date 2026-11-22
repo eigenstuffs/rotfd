@@ -1,5 +1,0 @@
-# Context-derived vector output at 80076D98
-
-Exact isolated source, full checkpoint pending. The 428-byte C entry uses the owner mode to select a stored local vector (subtracting the owner height from y) or follow two context Handle links, validate the selected actor, query its virtual Handle and copy the resolved transform position. Constructing an ordinary three-component vector value reproduces the original complete coordinate loads before output stores. The accepted scalar helper retains its original ABI and all context, manager, Handle and virtual table data remain borrowed.
-
-GC1.3.2/O4,s with exceptions and load/store-multiple enabled emits exactly 428 text bytes, 8 exception bytes and a 12-byte index, with all six real relocations and no extra helper or data allocation. Two fresh production recompiles preserve raw object hashes, all symbols and every allocation. Full original exception/startup tables and every initialized-data byte offset preserve the sole external entry identity. This is a partial original translation unit; neighboring routines and all original context data remain with their existing owners.

@@ -1,2 +1,0 @@
-/* Original scalar distance and query leaves; see docs/notes/game-scalar-distance-query-leafs.md. */
-struct Record{char opaque00[0xC];char text[0x40];signed char active;char opaque4D[3];};extern "C"{extern Record lbl_802F4208[300];extern const char lbl_802A0460[];}extern "C"const char*fn_800B3E00(void*ignored,int index){Record*record=0;const char*text=0;if(index>=0&&index<300)record=&lbl_802F4208[index];if(record&&record->active)text=record->text;if(!text)text=lbl_802A0460;return text;}

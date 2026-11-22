@@ -6,10 +6,18 @@ import hashlib
 import mmap
 from pathlib import Path
 import struct
-import sys
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from gcm_extract import parse_dol
+
+
+def parse_dol(disc, offset):
+    """Return the DOL stored at offset: its header plus every section."""
+    header = disc[offset:offset + 0x100]
+    offsets = struct.unpack_from(">18I", header, 0)
+    sizes = struct.unpack_from(">18I", header, 0x90)
+    end = max([0x100] + [o + s for o, s in zip(offsets, sizes) if s])
+    if offset + end > len(disc):
+        raise ValueError("Disc executable is truncated")
+    return bytes(disc[offset:offset + end]), end
 
 
 def prepare(source, destination, expected):

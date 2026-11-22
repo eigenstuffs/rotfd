@@ -1,5 +1,0 @@
-# MSL absolute-value routines
-
-`src/MSL/arith.c` reconstructs two retained 16-byte routines: `labs` at `0x80123E58` and `abs` at `0x80123E68`. Both calculate signed 32-bit absolute value on this ABI. The naming follows the [pinned Wind Waker reference's declaration order](https://github.com/zeldaret/tww/blob/11d6aa597a6b6218a38eff2726c841a31f851a57/src/PowerPC_EABI_Support/MSL/MSL_C/MSL_Common/Src/arith.c) and GC/1.3's emitted function order. The original stripped bodies alone cannot distinguish the two C integer types. The unused division routine and newer reference's `llabs` are not retained in this unit.
-
-The unmodified Wind Waker and Strikers reference sources and their upstream notices are preserved in their respective reference directories. `python3 scratch/msl_arith/verify.py` compiles ordinary C with GC/1.3 and verifies the entire 32-byte section. There are no relocations or owned data. The candidate manifest records exact flags and hashes; parent integration checks the complete DOL separately.

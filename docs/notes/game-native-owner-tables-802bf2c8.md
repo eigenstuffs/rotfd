@@ -1,5 +1,0 @@
-# Paired native owner method tables at 0x802BF2C8
-
-`src/Game/native_owner_tables_802BF2C8.cpp` owns two complete 400-byte tables at `0x802BF2C8..0x802BF458` and `0x802BF458..0x802BF5E8`. Each table has 100 four-byte slots: a runtime type pointer, method pointers and an embedded secondary-table header with receiver adjustment `-0x318`. The two tables share most method targets but retain their distinct runtime type and override entries. The generic pointer storage describes only this observed ABI layout; it does not assert complete class signatures.
-
-GC/1.3.2 emits one eight-byte-aligned `.data` section of exactly 800 bytes. Native objdiff reports 100% data with all 196 actual `R_PPC_ADDR32` relocations. The central build passes the unchanged original DOL SHA-1, `ninja changes` reports the single new complete source unit without regressions, all 66 tests pass, and `tools/progress.py --check` succeeds. No code, exception records, BSS or adjacent data are claimed by this partial split. The original tables' external consumers keep their existing symbol addresses.

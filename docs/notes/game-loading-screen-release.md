@@ -1,7 +1,0 @@
-# LoadingScreen resource release
-
-`src/Game/loading_screen_release.cpp` is a bounded source recovery. `fn_800C5FB4` at `0x800C5FB4..0x800C6098` delegates base cleanup, releases the resolved resource when present, and removes a typed handle copy from the renderer collection. The packed handle uses the observed signed 8-bit generation and signed 24-bit index. Its temporary has two zero-initializing base layers and a reference-incrementing copy constructor. Three emitted weak handle destructor duplicates, including all exception records, also match canonical originals and receive no extra credit.
-
-Isolated verification matches every allocated compiler byte: 228 retained instruction bytes, 56 exception/index bytes, and 17 retained relocations. GC/1.3.2 uses `-O4,s -inline auto -Cpp_exceptions on -use_lmw_stmw on`, with the standard Gekko hardware-FP flags. Original DOL SHA1 is checked before each comparison. There is no raw instruction encoding, assembly, or binary patching. The central build passes the original DOL SHA-1, direct byte comparison, and complete native objdiff code/data matching.
-
-Reproduce with `python3 scratch/game_loading_screen_release/verify.py`. The script checks section coverage, complete symbol sizes, all relocations, exception actions, and the exact source hash; transcript: `scratch/game_loading_screen_release/verification.txt`. The manifest is `config/GSQE78/candidates/game_loading_screen_release.json`.

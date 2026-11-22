@@ -1,2 +1,0 @@
-/* Original control forwarding and predicates; see docs/notes/game-control-forward-leafs.md. */
-struct Point{float x,y,z;Point(float a,float b,float c):x(a),y(b),z(c){}};struct Transform{char opaque00[0x30];Point point;};struct Object{char opaque00[0x124];Transform*transform;};extern "C"{void fn_8023D100(Object*,const Point*);void fn_8023DE28(Object*);}extern "C"void fn_8006A7B8(void*ignored,Object*target,Object*source){Point p(source->transform->point.x,source->transform->point.y,source->transform->point.z);fn_8023D100(target,&p);fn_8023DE28(target);}

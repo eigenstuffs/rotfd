@@ -2006,10 +2006,10 @@ config.libs = [
             Object(Matching, 'Game/early_component_call_80096050.cpp', cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,s', '-inline', 'auto', '-Cpp_exceptions', 'on', '-RTTI', 'off', '-use_lmw_stmw', 'on', '-i', 'src/Game', '-i', 'include']),
             Object(Matching, 'Game/early_component_call_800964F4.cpp', cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,s', '-inline', 'auto', '-Cpp_exceptions', 'on', '-RTTI', 'off', '-use_lmw_stmw', 'on', '-i', 'src/Game', '-i', 'include']),
             Object(Matching, 'Game/early_component_call_80097504.cpp', cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,s', '-inline', 'auto', '-Cpp_exceptions', 'on', '-RTTI', 'off', '-use_lmw_stmw', 'on', '-i', 'src/Game', '-i', 'include']),
-            Object(Matching, 'Game/early_motion_flag_80090450.cpp', cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,s', '-inline', 'auto', '-Cpp_exceptions', 'on', '-RTTI', 'off', '-use_lmw_stmw', 'on', '-i', 'src/Game', '-i', 'include', '-i', 'scratch/game_early_motion_flags']),
-            Object(Matching, 'Game/early_motion_flag_800904B0.cpp', cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,s', '-inline', 'auto', '-Cpp_exceptions', 'on', '-RTTI', 'off', '-use_lmw_stmw', 'on', '-i', 'src/Game', '-i', 'include', '-i', 'scratch/game_early_motion_flags']),
-            Object(Matching, 'Game/early_motion_flag_80092E2C.cpp', cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,s', '-inline', 'auto', '-Cpp_exceptions', 'on', '-RTTI', 'off', '-use_lmw_stmw', 'on', '-i', 'src/Game', '-i', 'include', '-i', 'scratch/game_early_motion_flags']),
-            Object(Matching, 'Game/early_motion_flag_800927C0.cpp', cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,s', '-inline', 'auto', '-Cpp_exceptions', 'on', '-RTTI', 'off', '-use_lmw_stmw', 'on', '-i', 'src/Game', '-i', 'include', '-i', 'scratch/game_early_motion_flags']),
+            Object(Matching, 'Game/early_motion_flag_80090450.cpp', cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,s', '-inline', 'auto', '-Cpp_exceptions', 'on', '-RTTI', 'off', '-use_lmw_stmw', 'on', '-i', 'src/Game', '-i', 'include']),
+            Object(Matching, 'Game/early_motion_flag_800904B0.cpp', cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,s', '-inline', 'auto', '-Cpp_exceptions', 'on', '-RTTI', 'off', '-use_lmw_stmw', 'on', '-i', 'src/Game', '-i', 'include']),
+            Object(Matching, 'Game/early_motion_flag_80092E2C.cpp', cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,s', '-inline', 'auto', '-Cpp_exceptions', 'on', '-RTTI', 'off', '-use_lmw_stmw', 'on', '-i', 'src/Game', '-i', 'include']),
+            Object(Matching, 'Game/early_motion_flag_800927C0.cpp', cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,s', '-inline', 'auto', '-Cpp_exceptions', 'on', '-RTTI', 'off', '-use_lmw_stmw', 'on', '-i', 'src/Game', '-i', 'include']),
             Object(Matching, 'Game/engine_callback_control_completion_80044CCC.cpp', cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,s', '-inline', 'auto', '-Cpp_exceptions', 'on', '-use_lmw_stmw', 'on']),
             Object(Matching, 'Game/engine_callback_control_completion_80045BE8.cpp', cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,s', '-inline', 'auto', '-Cpp_exceptions', 'on', '-use_lmw_stmw', 'on']),
             Object(Matching, 'Game/engine_callback_control_completion_80046C94.cpp', cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,s', '-inline', 'auto', '-Cpp_exceptions', 'on', '-use_lmw_stmw', 'on']),
@@ -6210,8 +6210,7 @@ config.libs = [
     },
     {
         "lib": "CPython",
-        # GC/2.0 plus explicit speed optimization is verified against the
-        # module and tuple units. See docs/notes/ for per-unit flag evidence.
+        # GC/2.0 with speed optimization.
         "mw_version": os.environ.get("MWVER", "GC/2.0"),
         "cflags": [
             "-proc gekko",

@@ -1,7 +1,0 @@
-# Private scene route update
-
-Ordinary source for fn8006C6AC reproduces all224 code bytes, eight frame EH bytes, twelve index bytes and a compiler-local unsigned conversion bias. Nested group-member query matches the native argument routing; the separate local diagnostic adds one unnecessary MR. The byte argument and lower signed-byte group result check follow observed native narrowing, while the accepted group callee retains its existing int declaration.
-
-This is unregistered, uncredited research. The complete current allocated-relocation audit found three real original consumers of the eight-byte bias at803787F0: fn80069330 at offset56, fn8006C6AC at176 and fn8006C994 at296. Therefore the exclusive-local-pool adoption assertion correctly fails. Promoting this source alone would remove a provisional GLOBAL label still needed by two original functions. The shared pool and other bodies require an honest source/native ownership route first; no aliases, payload changes, extra credited constants or consumer exclusions were introduced.
-
-The original frame EH/index pair is established by the complete table census. All other source dependencies and original pointer-containing tables remain borrowed. Production.o is a private deterministic compilation only; src/Game/owner_route_update_8006C6AC.cpp is not registered as Matching. The failed ownership assertion, exact object, bounded alternatives and full census scripts are preserved in scratch/game_owner_route_update_8006c6ac. No matching credit is claimed.

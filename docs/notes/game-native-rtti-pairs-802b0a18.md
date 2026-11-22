@@ -1,5 +1,0 @@
-# Native method tables and RTTI base lists at 0x802B0A18
-
-`src/Game/native_rtti_pairs_802B0A18.cpp` reconstructs the complete 1,864-byte `.data` range `0x802B0A18..0x802B1160`. It contains eight alternating native method-table/runtime-base-list pairs followed by two method tables. Each method table is 132 bytes and each base list is 68 bytes. Four-byte alignment on the individual C++ objects preserves the original packed order inside the section's natural eight-byte alignment. The arrays preserve global symbol identities and symbolic function/runtime-type references. They are physical ABI views; full class method signatures and original translation-unit boundaries are not inferred.
-
-The GC/1.3.2 object has exactly 18 global data objects and no code, BSS or exception allocation. Native objdiff reports 100% for all 1,864 data bytes and 384 actual address relocations. The standard link passes the original DOL hash, `ninja changes` shows no regression, all 66 tests pass, and source extent/progress checks succeed. Adjacent original ranges retain their existing owners.

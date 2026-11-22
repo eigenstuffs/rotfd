@@ -1,9 +1,0 @@
-# Container layer constructor
-
-The complete 124-byte original entry fn8025583C is reconstructed as the genuine C++ constructor `ContainerLayer_802EC6A0::ContainerLayer_802EC6A0`. It calls the established native ContainerBase constructor, installs the existing lbl802EC6A0 table through the first scalar member constructor, initializes the three-stage handle at offset64, sets flag0x800 and clears words6C/68. The partial base view permits the compiler to reuse its tail padding at offset60, giving the original112-byte complete allocation. Declaring the existing native base destructor is necessary for the original self/member register allocation.
-
-The default GC1.3.2/O4,p flags reproduce all124 retained bytes with four actual resolved relocations. Three unused weak handle destructors emit264 additional text bytes and six relocations, fully inventoried and discarded; no retained code references them. No data, BSS, linker padding, exception table or startup slot is owned by this split. Complete original extabindex/.ctors/.dtors allocations were scanned with no references to the constructor. All original vtable/data identities and ownership stay in place.
-
-The only existing compiled entry consumers are factories802612C8.cpp and derived_factories800B94C8.cpp; there are no header references to the old entry. Their exact paths, hashes and declaration/call lines are retained in the frozen consumer inventory. Root owns the guarded identifier-only migration, original snapshots and unchanged-byte recompilation evidence. No consumer, central config, symbol or split was edited by the recovering agent.
-
-The isolated exact candidate and all probe evidence are frozen under scratch/engine_container_layer_ctor_20261010cn. Global build/hash/regression acceptance remains with the integrator; isolated equality alone does not count as accepted progress.

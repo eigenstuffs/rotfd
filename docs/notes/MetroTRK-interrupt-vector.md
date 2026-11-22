@@ -1,9 +1,0 @@
-# Original MetroTRK interrupt-vector image
-
-`gTRKInterruptVectorTable` occupies `0x800033FC..0x80005330` in `.init`: 7,988 bytes of original native exception-vector payload and layout. The recovered `__TRK_reset` copies selected 256-byte slots to runtime exception addresses. This image is not an ordinary callable C function and has no reconstructed-source credit.
-
-The block is explicitly owned by the NonMatching `MetroTRK/interrupt_vector.s` build unit. It remains original binary fallback. DTK 1.8.3 requires a function-kind symbol at the start of a code-section split and cannot render its native `Rel14` branches as data relocations. The local `TRKInterruptVectorImage` symbol therefore describes one native code block, while retaining the original global `gTRKInterruptVectorTable` boundary label and preserving those original relocations and the standard pinned toolkit. Its function-inventory entry is a provisional block boundary, not a newly discovered C API.
-
-Previously, the vector's start and end were only zero-size labels, and the native objdiff report omitted this extent. Isolating the adjacent C memory helpers exposed it as a fabricated `pad_00_800033FC_init` function. Recording the full named native image replaces that placeholder and increases the code denominator from 2,599,216 to 2,607,204 bytes and the provisional function denominator from 8,800 to 8,801. No bytes are credited as matching C/C++, and the data denominator stays unchanged. The preceding three C memory helpers remain independently exact and linked from source.
-
-The protected DOL, all vector bytes and expected hash remain unchanged. No generated instructions, reference bytes, relocation values, or tools were patched to obtain a match. The native assembly view is generated for research by the ordinary split step; the original fallback object supplies it to the link.

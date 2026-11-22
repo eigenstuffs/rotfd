@@ -1,9 +1,0 @@
-# Owner flagged dispatch
-
-Ordinary C++ `fn_80222B48` matches all 436 original bytes at `80222B48..80222CFC`, including 15 actual relocations. Source: `src/Game/owner_flagged_dispatch.cpp`. Verifier: `python3 scratch/game_owner_flagged_dispatch/verify.py`; standard GC/1.3.2 Game flags, no new headers/symbols/flags.
-
-The routine preserves fn_80227C30's result. Input flags28 bit10 sets bit50 in owner flags30 and its axis1B8 to the external zero/one/zero vector. It resolves the input object's parent130 and, when nonzero, dispatches key41 with the owner's related handle24 and an external scalar. Input bit80 retains a temporary copy of object handle4, forwards it to the service at context11C, then releases the copy.
-
-Returning resolved addresses as unsigned words and casting at the use sites preserves the original independent null branch and its register allocation. A pointer-return helper folds the failed generation branch into the null test, emits 432 bytes, and shifts all following instructions. The unsigned-word helper closes all original bytes without additional behavior or instructions.
-
-All 608 allocated text bytes are accounted: 436 retained plus two unreferenced weak destructor backups totaling 172. The verifier checks their complete raw bytes and actual relocation identities, verifies no retained helper references, and requires their final ELF absence. No data/BSS/padding is emitted. The complete original exception table allocation 80015F60..8001F2C0 (12-byte stride, including descriptor/padding), constructor table 80299920..80299980 and destructor table 80299980..802999A0 (4-byte strides) are audited directly with no ownership or references to retained ranges. Frozen evidence is in `scratch/game_owner_flagged_dispatch/`. Central full-DOL/native-objdiff, source extent, regression and weak helper absence checks establish final acceptance.

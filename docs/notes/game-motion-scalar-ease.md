@@ -1,5 +1,0 @@
-# Motion scalar easing at 80077A48
-
-Exact isolated source; full checkpoint pending. The404-byte C entry operates only in owner mode zero. It clears the active easing flag when the existing predicate returns one, eases the current scalar toward a borrowed target using a controller-dependent rate, and applies a borrowed minimum after the owner timer expires. Signed byte return/field semantics, the existing manager tag/index validation, and actual controller/query/setter ABIs reproduce the original instruction sequence in the first ordinary probe.
-
-GC1.3.2/O4,s with exceptions and load/store-multiple enabled emits404 text bytes plus8 exception and12 index bytes. All emitted allocated bytes, all actual relocations, native GLOBAL entry identity, and borrowed context/literal/table ownership are preserved. Two fresh production recompiles must preserve raw object hashes and every allocation. Full original exception/startup tables and every initialized-data byte offset are audited. This is a partial original translation unit; neighboring functions and original context/data remain under their current owners.
