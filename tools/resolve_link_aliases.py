@@ -34,9 +34,16 @@ import sys
 ALIAS = re.compile(r'^\s*([A-Za-z_.$][A-Za-z0-9_.$]*)\s*=\s*("([^"]+)"|([A-Za-z_.$@][A-Za-z0-9_.$@<>,]*))\s*;')
 
 
+def _write(path, data):
+    with open(path, "wb") as f:
+        f.write(data)
+
+
 def load_aliases(path):
     aliases = {}
-    for line in open(path):
+    with open(path) as f:
+        lines = f.read().split("\n")
+    for line in lines:
         line = line.split("//")[0]
         m = ALIAS.match(line)
         if not m:
@@ -49,7 +56,8 @@ def load_aliases(path):
 
 
 def resolve(src, out, aliases):
-    raw = open(src, "rb").read()
+    with open(src, "rb") as f:
+        raw = f.read()
     if raw[:4] != b"\x7fELF" or raw[4] != 1 or raw[5] != 2:
         raise SystemExit(f"{src}: expected a big-endian ELF32 object")
     (shoff,) = struct.unpack(">I", raw[0x20:0x24])
@@ -58,7 +66,7 @@ def resolve(src, out, aliases):
             for i in range(shnum)]
     symtab = next((i for i, h in enumerate(hdrs) if h[1] == 2), None)
     if symtab is None:
-        open(out, "wb").write(raw)
+        _write(out, raw)
         return 0
     strtab = hdrs[symtab][6]
     st_off, st_size = hdrs[strtab][4], hdrs[strtab][5]
@@ -80,7 +88,7 @@ def resolve(src, out, aliases):
         struct.pack_into(">I", syms, o, added[target])
         renamed += 1
     if not renamed:
-        open(out, "wb").write(raw)
+        _write(out, raw)
         return 0
     newdata = {symtab: bytes(syms), strtab: bytes(strdata)}
     # Rewrite: ELF header, section contents in header order, then section headers.
@@ -107,7 +115,7 @@ def resolve(src, out, aliases):
             struct.pack_into(">II", hdr, 16, h[4], h[5])
         body += hdr
     struct.pack_into(">I", body, 0x20, new_shoff)
-    open(out, "wb").write(bytes(body))
+    _write(out, bytes(body))
     return renamed
 
 
@@ -118,7 +126,9 @@ def main(argv):
     rest = argv[2:]
     n = 0
     if rest[0] == "--list":
-        for line in open(rest[1]):
+        with open(rest[1]) as f:
+            pairs = f.read().split("\n")
+        for line in pairs:
             parts = line.split()
             if len(parts) == 2:
                 n += resolve(parts[0], parts[1], aliases)
