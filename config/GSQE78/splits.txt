@@ -24493,15 +24493,6 @@ Game/recovered/sprite_corner_startup_80283E5C.cpp:
 original/float_pad_8037B824.s:
 	.sdata2     start:0x8037B824 end:0x8037B828 align:1
 
-Game/particle_color_constants.c:
-	.sdata2     start:0x8037B828 end:0x8037B838
-
-Game/platform_math_trig_constants.c:
-	.sdata2     start:0x8037B838 end:0x8037B874
-
-padding/math-trig-constants_8037B874.s:
-	.sdata2     start:0x8037B874 end:0x8037B878 align:1
-
 Game/platform_trig_tables.cpp:
 	.bss        start:0x8035D3A0 end:0x8035D524
 
@@ -24511,8 +24502,15 @@ padding/platform_trig_tables.s:
 Game/platform_aram_requests.cpp:
 	.bss        start:0x8035D528 end:0x8035DE28
 
-Game/sphere_marker_quad_display_list_80283EB8.cpp:
-	.text       start:0x80283EB8 end:0x8028437C
+Game/recovered/tu_80283EB8.cpp:
+	.text       start:0x80283EB8 end:0x80284D80
+	.sdata2     start:0x8037B828 end:0x8037B838
+
+Game/platform_math_trig_constants.c:
+	.sdata2     start:0x8037B838 end:0x8037B874
+
+padding/math-trig-constants_8037B874.s:
+	.sdata2     start:0x8037B874 end:0x8037B878 align:1
 
 Game/platform_draw_dispatch.cpp:
 	.text       start:0x80284D80 end:0x80284DB0
