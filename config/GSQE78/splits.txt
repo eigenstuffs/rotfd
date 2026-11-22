@@ -21287,15 +21287,6 @@ Game/engine_input_glyphs.cpp:
 original/float_remaining_fragment_8037ABD8.s:
 	.sdata2     start:0x8037ABD8 end:0x8037ABE0 align:1
 
-Game/scalar_constant_8037ABE0.c:
-	.sdata2     start:0x8037ABE0 end:0x8037ABF8
-
-Game/manipulator_constructor_scalar_constants.c:
-	.sdata2     start:0x8037ABF8 end:0x8037AC2C
-
-original/phase_float_fragment_8037AC2C.s:
-	.sdata2     start:0x8037AC2C end:0x8037AC30 align:1
-
 original/engine_input_glyphs_padding.s:
 	.rodata     start:0x802AE4CF end:0x802AE4D0 align:1
 
@@ -21319,6 +21310,16 @@ Game/engine_record_stream.cpp:
 
 Game/leaf_late_80210370.c:
 	.text       start:0x80210370 end:0x80210374
+
+Game/recovered/unit_80210374.cpp:
+	.text       start:0x80210374 end:0x80210FA4
+	.sdata2     start:0x8037ABE0 end:0x8037ABF8
+
+Game/manipulator_constructor_scalar_constants.c:
+	.sdata2     start:0x8037ABF8 end:0x8037AC2C
+
+original/phase_float_fragment_8037AC2C.s:
+	.sdata2     start:0x8037AC2C end:0x8037AC30 align:1
 
 Game/engine_small_owner_80210FA4.cpp:
 	.text       start:0x80210FA4 end:0x80210FD4
