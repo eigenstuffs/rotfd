@@ -20035,24 +20035,6 @@ Game/polynomial_root_solvers_801DE498.cpp:
 Game/late_reset_scalar_constants.c:
 	.sdata2     start:0x8037A588 end:0x8037A598
 
-Game/scalar_constant_8037A598.c:
-	.sdata2     start:0x8037A598 end:0x8037A5A0
-
-Game/scalar_constant_8037A5A0.c:
-	.sdata2     start:0x8037A5A0 end:0x8037A5BC
-
-original/float_remaining_fragment_8037A5BC.s:
-	.sdata2     start:0x8037A5BC end:0x8037A618 align:1
-
-Game/scalar_constant_8037A618.c:
-	.sdata2     start:0x8037A618 end:0x8037A630
-
-Game/scalar_constant_8037A630.c:
-	.sdata2     start:0x8037A630 end:0x8037A634
-
-original/float_remaining_fragment_8037A634.s:
-	.sdata2     start:0x8037A634 end:0x8037A638 align:1
-
 Game/grid_patch_nearest_hit_801DEF20.cpp:
 	.text       start:0x801DEF20 end:0x801DF498
 
@@ -20138,14 +20120,24 @@ Game/scalar_late_801E1AA8.c:
 	.text       start:0x801E1AA8 end:0x801E1AC4
 	.ctors      start:0x80299944 end:0x80299948
 
-Game/viewport_fit_on_object_801E1AC4.cpp:
-	.text       start:0x801E1AC4 end:0x801E1F3C
+Game/recovered/tu_801E1AC4.cpp:
+	.text       start:0x801E1AC4 end:0x801E2E04
+	.sdata2     start:0x8037A598 end:0x8037A5B0
 
-Game/viewport_slots.cpp:
-	.text       start:0x801E1F3C end:0x801E2370
+Game/scalar_constant_8037A5B0.c:
+	.sdata2     start:0x8037A5B0 end:0x8037A5BC
 
-Game/scalar_middle_more_801E2370.c:
-	.text       start:0x801E2370 end:0x801E23A0
+original/float_remaining_fragment_8037A5BC.s:
+	.sdata2     start:0x8037A5BC end:0x8037A618 align:1
+
+Game/scalar_constant_8037A618.c:
+	.sdata2     start:0x8037A618 end:0x8037A630
+
+Game/scalar_constant_8037A630.c:
+	.sdata2     start:0x8037A630 end:0x8037A634
+
+original/float_remaining_fragment_8037A634.s:
+	.sdata2     start:0x8037A634 end:0x8037A638 align:1
 
 Game/viewport_storage.cpp:
 	.text       start:0x801E2E04 end:0x801E30E4
