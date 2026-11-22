@@ -20431,6 +20431,15 @@ Game/recovered/math_globals.cpp:
 	.sbss       start:0x80377FD0 end:0x80377FD8
 	.sdata2     start:0x8037A6E0 end:0x8037A72C
 
+padding/source_extents/Game/recovered/math_globals_8037A72C.s:
+	.sdata2     start:0x8037A72C end:0x8037A730 align:1
+
+Game/data/data_8037A730_sdata2.c:
+	.sdata2     start:0x8037A730 end:0x8037A733
+
+padding/source_extents/Game/data/data_8037A730_sdata2_8037A733.s:
+	.sdata2     start:0x8037A733 end:0x8037A738 align:1
+
 Game/random_state.c:
 	.bss        start:0x80340B80 end:0x80340C00
 	.sbss       start:0x80377FD8 end:0x80377FE4
@@ -24558,7 +24567,7 @@ Game/audio_lookup_storage.c:
 
 Game/platform_audio_stream_globals.cpp:
 	.bss        start:0x8035E958 end:0x8035E970
-	.sbss       start:0x803780D0 end:0x803780D4
+	.sbss       start:0x803780D0 end:0x803780E8
 
 Game/platform_audio_stream_file_globals.cpp:
 	.bss        start:0x8035E970 end:0x8036E9CC
@@ -24772,7 +24781,7 @@ Game/debug_font_puts_8028E8E8.c:
 
 Game/platform_disc_display.cpp:
 	.text       start:0x8028EA98 end:0x8028EEEC
-	.rodata     start:0x802AF908 end:0x802AFA84
+	.rodata     start:0x802AF908 end:0x802AFB08
 	.sdata2     start:0x8037B980 end:0x8037B988
 
 Game/platform_disc_display_constants.c:

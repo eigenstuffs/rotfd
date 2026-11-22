@@ -6207,6 +6207,7 @@ config.libs = [
             Object(Matching, "Game/data/native_rtti_neighbor_802C1A90.c", mw_version="GC/1.3.2", cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,p', '-inline', 'auto', '-sdata', '8', '-sdata2', '8', '-Cpp_exceptions', 'off']),
             Object(Matching, "Game/data/native_rtti_neighbor_802C8330.c", mw_version="GC/1.3.2", cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,p', '-inline', 'auto', '-sdata', '8', '-sdata2', '8', '-Cpp_exceptions', 'off']),
             Object(Matching, "Game/data/frame_timing_flags_80377FE8.c", mw_version="GC/1.3.2", cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,p', '-inline', 'auto', '-sdata', '8', '-sdata2', '8', '-Cpp_exceptions', 'off']),
+            Object(Matching, "Game/data/data_8037A730_sdata2.c", mw_version="GC/1.3.2", cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,p', '-inline', 'auto', '-sdata', '8', '-sdata2', '8', '-Cpp_exceptions', 'off']),
         ],
     },
     {
@@ -6850,6 +6851,8 @@ config.libs.append({
         Object(NonMatching, "padding/source_extents/Game/data/scalar_more_fragment_8037B8F0_8037B8F7.s"),
         Object(NonMatching, "padding/source_extents/Game/data/readable_animation_prefix_802AEB50_802AEB7B.s"),
         Object(NonMatching, "padding/source_extents/Game/data/frame_timing_flags_80377FE8_80377FEA.s"),
+        Object(NonMatching, "padding/source_extents/Game/recovered/math_globals_8037A72C.s"),
+        Object(NonMatching, "padding/source_extents/Game/data/data_8037A730_sdata2_8037A733.s"),
     ],
 })
 

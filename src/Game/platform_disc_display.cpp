@@ -85,3 +85,7 @@ extern "C" void fn_8028EA98(int event)
     }
     game->slot1C();
 }
+
+/* Former DTK auto unit .rodata 0x802AFA84..0x802AFB08: unreferenced disc/memory-card report strings (no original symbol; DTK pad name kept). */
+static __declspec(section ".rodata") const char pad_06_802AFA84_rodata[132] = "Not ok on first try, restarting\0/USER.TSC\0\0\0Cannot open %s\0\0Cleaning after using Default Engine Report CB\0\0\0Reinitializing renderer";
+
