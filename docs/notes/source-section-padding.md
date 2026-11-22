@@ -1,5 +1,11 @@
 # Trailing source-section padding audit
 
+> Superseded: the `padding/source_extents/` units described below have all been
+> removed. Each tail was unreferenced zero (or BSS) alignment fill before an
+> aligned next section, so the splits, their gap symbols and configure entries
+> were deleted and the linker now produces the padding. Nothing is owned or
+> counted for these bytes.
+
 The compiler section extent, not the next original symbol's address, determines
 where a reconstructed source section ends. A successful full-DOL link can hide
 an oversized source split because the linker recreates the same zero alignment
@@ -10,8 +16,9 @@ pairs. It found 111 trailing data/BSS ranges in 82 units, totaling 366 bytes
 beyond the compiler-emitted section extents. Every initialized tail consists
 of zero bytes in the protected original DOL; every NOBITS tail lies in its
 zero-initialized BSS allocation. No central object overlaps these ranges.
-The full machine-readable range inventory is
-[`source_padding.json`](../../config/GSQE78/source_padding.json).
+The full machine-readable range inventory was
+`config/GSQE78/source_padding.json` (removed once the pads were dropped; see
+git history).
 
 Each corrected source split ends at its emitted extent and preserves the
 original source-section alignment. Its tail has a separate NonMatching unit
