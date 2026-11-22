@@ -66,7 +66,6 @@ class Object:
             "mw_version": None,
             "mw_asm": False,
             "report_strip_weak": False,
-            "report_link_aliases": False,
             "progress_category": None,
             "scratch_preset_id": None,
             "shift_jis": None,
@@ -465,22 +464,6 @@ def generate_build(config: ProjectConfig) -> None:
 def report_strip_weak_path(config: "ProjectConfig", obj: "Object") -> Path:
     """Report-only copy of a compiled object without linker-discarded weak copies."""
     return config.out_path() / "obj-report-base" / Path(obj.name).with_suffix(".o")
-
-
-def report_link_aliases_path(config: "ProjectConfig", obj: "Object") -> Path:
-    """Report-only copy of a compiled object with linker-script aliases resolved."""
-    return config.out_path() / "obj-report-alias" / Path(obj.name).with_suffix(".o")
-
-
-def report_base_path(config: "ProjectConfig", obj: "Object") -> Optional[Path]:
-    """Object that objdiff reports against for a source unit (after report-only steps)."""
-    if obj.src_obj_path is None:
-        return None
-    if obj.options.get("report_link_aliases"):
-        return report_link_aliases_path(config, obj)
-    if obj.options.get("report_strip_weak"):
-        return report_strip_weak_path(config, obj)
-    return obj.src_obj_path
 
 
 def generate_build_ninja(
@@ -1468,37 +1451,6 @@ def generate_build_ninja(
             )
             n.newline()
 
-        alias_pairs = []
-        for _obj in objects.values():
-            if _obj.options.get("report_link_aliases") and _obj.src_obj_path is not None \
-                    and _obj.src_path is not None and _obj.src_path.exists():
-                alias_in = (report_strip_weak_path(config, _obj)
-                            if _obj.options.get("report_strip_weak") else _obj.src_obj_path)
-                alias_pairs.append((alias_in, report_link_aliases_path(config, _obj)))
-        alias_outputs = [x[1] for x in alias_pairs]
-        if alias_pairs:
-            alias_file = config.out_path() / "report_link_aliases_pairs.txt"
-            alias_file.parent.mkdir(parents=True, exist_ok=True)
-            alias_text = "".join(f"{a} {b}\n" for a, b in alias_pairs)
-            if not alias_file.exists() or alias_file.read_text() != alias_text:
-                alias_file.write_text(alias_text)
-            for _, b in alias_pairs:
-                Path(b).parent.mkdir(parents=True, exist_ok=True)
-            ldscript_tpl = Path("config") / config.version / "ldscript.tpl"
-            n.comment("Report-only objects with linker-script aliases resolved")
-            n.rule(
-                name="link_aliases",
-                command=f"$python tools/resolve_link_aliases.py --ldscript {ldscript_tpl} --list $in",
-                description="LINKALIAS",
-            )
-            n.build(
-                outputs=alias_outputs,
-                rule="link_aliases",
-                inputs=alias_file,
-                implicit=[*[x[0] for x in alias_pairs], "tools/resolve_link_aliases.py", ldscript_tpl],
-            )
-            n.newline()
-
         n.comment("Generate progress report")
         n.rule(
             name="report",
@@ -1508,7 +1460,7 @@ def generate_build_ninja(
         n.build(
             outputs=report_path,
             rule="report",
-            implicit=[objdiff, "objdiff.json", "all_source", *config.objdiff_target_overrides.values(), *strip_outputs, *alias_outputs],
+            implicit=[objdiff, "objdiff.json", "all_source", *config.objdiff_target_overrides.values(), *strip_outputs],
             order_only="post-build",
         )
 
@@ -1535,7 +1487,7 @@ def generate_build_ninja(
         n.build(
             outputs=report_baseline_path,
             rule="report",
-            implicit=[objdiff, "all_source", "always", *config.objdiff_target_overrides.values(), *strip_outputs, *alias_outputs],
+            implicit=[objdiff, "all_source", "always", *config.objdiff_target_overrides.values(), *strip_outputs],
             order_only="post-build",
         )
         n.build(
@@ -1815,7 +1767,9 @@ def generate_objdiff_config(
 
         src_exists = obj.src_path is not None and obj.src_path.exists()
         if src_exists:
-            unit_config["base_path"] = report_base_path(config, obj)
+            unit_config["base_path"] = obj.src_obj_path
+            if obj.options.get("report_strip_weak"):
+                unit_config["base_path"] = report_strip_weak_path(config, obj)
             unit_config["metadata"]["source_path"] = obj.src_path
 
         # Filter out include directories
