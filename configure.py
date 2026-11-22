@@ -6193,6 +6193,7 @@ config.libs = [
             Object(Matching, "Game/data/native_rtti_neighbor_802C8330.c", mw_version="GC/1.3.2", cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,p', '-inline', 'auto', '-sdata', '8', '-sdata2', '8', '-Cpp_exceptions', 'off'], report_link_aliases=True),
             Object(Matching, "Game/data/frame_timing_flags_80377FE8.c", mw_version="GC/1.3.2", cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,p', '-inline', 'auto', '-sdata', '8', '-sdata2', '8', '-Cpp_exceptions', 'off']),
             Object(Matching, "Game/data/data_8037A730_sdata2.c", mw_version="GC/1.3.2", cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,p', '-inline', 'auto', '-sdata', '8', '-sdata2', '8', '-Cpp_exceptions', 'off']),
+            Object(Matching, "Game/data/data_802AC820_rodata.c", mw_version="GC/1.3.2", cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,p', '-inline', 'auto', '-sdata', '8', '-sdata2', '8', '-Cpp_exceptions', 'off']),
             Object(Matching, 'Game/recovered/tu_80283EB8.cpp', mw_version='GC/1.3.2', cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-inline', 'auto', '-use_lmw_stmw', 'on', '-i', 'include', '-i', 'src/Game', '-O4,p', '-Cpp_exceptions', 'off', '-RTTI', 'off', '-fp_contract', 'on']),
             Object(Matching, 'Game/recovered/unit_801BEB0C.cpp', mw_version='GC/1.3.2', cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-inline', 'auto', '-use_lmw_stmw', 'on', '-i', 'include', '-i', 'src/Game', '-O4,p', '-Cpp_exceptions', 'off', '-RTTI', 'off', '-fp_contract', 'on']),
             Object(Matching, 'Game/recovered/tu_802507E4.cpp', mw_version='GC/1.3.2', cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-inline', 'auto', '-use_lmw_stmw', 'on', '-i', 'include', '-i', 'src/Game', '-O4,p', '-Cpp_exceptions', 'off', '-RTTI', 'off', '-fp_contract', 'on']),
@@ -6251,6 +6252,9 @@ config.libs = [
                 "-inline auto,deferred", "-pool off",
             ]),
             Object(Matching, "Python/import.c", extra_cflags=[
+                "-inline auto,deferred", "-pool off",
+            ]),
+            Object(Matching, "Python/dynload_stub.c", extra_cflags=[
                 "-inline auto,deferred", "-pool off",
             ]),
             Object(Matching, "Python/getargs.c", extra_cflags=[
@@ -6586,7 +6590,6 @@ config.libs.append({
         Object(NonMatching, "padding/source_extents/Game/native_readable_pools_8029D298_8029D552.s"),
         Object(NonMatching, "original/readonly_pool_neighbor_8029A9F3.s"),
         Object(NonMatching, "padding/source_extents/Game/native_readonly_pools_8029A7A8_8029A91D.s"),
-        Object(NonMatching, "original/readonly_pool_neighbor_802AC820.s"),
         Object(NonMatching, "original/readable_pool_neighbor_802AF660.s"),
         Object(NonMatching, "original/readable_pool_neighbor_802AEF44.s"),
         Object(NonMatching, "original/readable_pool_neighbor_802AEF36.s"),
@@ -6830,6 +6833,8 @@ config.libs.append({
         Object(NonMatching, "padding/source_extents/Game/data/data_8037A730_sdata2_8037A733.s"),
         Object(NonMatching, "padding/group_record_literals.s"),
         Object(NonMatching, "padding/source_extents/Game/engine_menu_item_parser_802AE916.s"),
+        Object(NonMatching, "padding/source_extents/Python/import_802AC7BC.s"),
+        Object(NonMatching, "padding/source_extents/Python/dynload_stub_802AC7CC.s"),
     ],
 })
 

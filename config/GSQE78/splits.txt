@@ -18606,14 +18606,23 @@ padding/source_extents/Python/import.s:
 	.data       start:0x802E2C33 end:0x802E2C34 align:1
 	.sdata      start:0x80376F69 end:0x80376F6C align:1
 
+padding/source_extents/Python/import_802AC7BC.s:
+	.rodata     start:0x802AC7BC end:0x802AC7C0 align:1
+
+Python/dynload_stub.c:
+	.rodata     start:0x802AC7C0 end:0x802AC7CC
+
+padding/source_extents/Python/dynload_stub_802AC7CC.s:
+	.rodata     start:0x802AC7CC end:0x802AC7D0 align:1
+
 Game/engine_game_strings_802AC7D0.cpp:
 	.rodata     start:0x802AC7D0 end:0x802AC81E
 
 padding/engine_game_strings_802AC7D0.s:
 	.rodata     start:0x802AC81E end:0x802AC820 align:1
 
-original/readonly_pool_neighbor_802AC820.s:
-	.rodata     start:0x802AC820 end:0x802AC8D0 align:1
+Game/data/data_802AC820_rodata.c:
+	.rodata     start:0x802AC820 end:0x802AC8D0
 
 Game/native_readonly_pools_802AC8D0.cpp:
 	.rodata     start:0x802AC8D0 end:0x802AC938
