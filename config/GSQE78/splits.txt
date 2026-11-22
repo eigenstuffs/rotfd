@@ -21785,27 +21785,6 @@ Game/scalar_constant_8037B0D0.c:
 Game/scalar_constant_8037B0D8.c:
 	.sdata2     start:0x8037B0D8 end:0x8037B0E0
 
-Game/owner_facing_scalar_constants.c:
-	.sdata2     start:0x8037B0E0 end:0x8037B0F0
-
-Game/scalar_constant_8037B0F0.c:
-	.sdata2     start:0x8037B0F0 end:0x8037B0F8
-
-Game/scalar_constant_8037B0F8.c:
-	.sdata2     start:0x8037B0F8 end:0x8037B100
-
-Game/scalar_constant_8037B100.c:
-	.sdata2     start:0x8037B100 end:0x8037B108
-
-Game/scalar_constant_8037B108.c:
-	.sdata2     start:0x8037B108 end:0x8037B10C
-
-original/float_remaining_fragment_8037B10C.s:
-	.sdata2     start:0x8037B10C end:0x8037B118 align:1
-
-Game/scalar_constant_8037B118.c:
-	.sdata2     start:0x8037B118 end:0x8037B120
-
 Game/owner_property_snapshot.cpp:
 	.text       start:0x80220124 end:0x80220260
 
@@ -21833,29 +21812,12 @@ Game/engine_motion_collect_apply.cpp:
 Game/related_owner_tick_aim_select_80221EEC.cpp:
 	.text       start:0x80221EEC end:0x80222B48
 
-Game/owner_flagged_dispatch.cpp:
-	.text       start:0x80222B48 end:0x80222CFC
+Game/recovered/tu_80222B48.cpp:
+	.text       start:0x80222B48 end:0x80224888
+	.sdata2     start:0x8037B0E0 end:0x8037B118
 
-Game/owner_facing_dispatch.cpp:
-	.text       start:0x80222CFC end:0x80222E44
-
-Game/engine_small_owner_80222E44.cpp:
-	.text       start:0x80222E44 end:0x80222E64
-
-Game/owner_related_transform_dispatch.cpp:
-	.text       start:0x80222E64 end:0x8022312C
-
-Game/owner_related_position_set.cpp:
-	.text       start:0x8022312C end:0x80223448
-
-Game/owner_conditional_position.cpp:
-	.text       start:0x80223448 end:0x8022352C
-
-Game/owner_related_origin_set.cpp:
-	.text       start:0x80224038 end:0x80224294
-
-Game/owner_ground_place_face_target_80224294.cpp:
-	.text       start:0x80224294 end:0x80224888
+Game/scalar_constant_8037B118.c:
+	.sdata2     start:0x8037B118 end:0x8037B120
 
 Game/owner_motion_start.cpp:
 	.text       start:0x80224888 end:0x80224A10
