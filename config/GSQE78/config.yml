@@ -13,6 +13,13 @@ detect_objects: true
 detect_strings: true
 write_asm: true
 
+# fn_800E8130's extab DESTROYLOCAL action (type 17) is not decoded by dtk, so
+# declare the destructor pointer it carries.
+add_relocations:
+  - source: 0x80014FBC
+    type: abs
+    target: __dt__15Object_800E82C4Fv
+
 # Dispatch records read through borrowed original pool bases.
 force_active:
   - lbl_80378604  # unreferenced empty string in TU 80056144 .sdata2
