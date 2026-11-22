@@ -23866,15 +23866,6 @@ Game/handle_list_action_constants.c:
 Game/spatial_handle_action_constants.c:
 	.sdata2     start:0x8037B650 end:0x8037B660
 
-Game/render_gizmo_constants.c:
-	.sdata2     start:0x8037B668 end:0x8037B6A0
-
-Game/render_slot_constants.c:
-	.sdata2     start:0x8037B6A8 end:0x8037B6BC
-
-original/float_pad_8037B6BC.s:
-	.sdata2     start:0x8037B6BC end:0x8037B6C0 align:1
-
 Game/six_handle_resource_status.cpp:
 	.text       start:0x80267E2C end:0x80267EFC
 
@@ -23985,11 +23976,15 @@ Game/base_destructor_8026c10c.cpp:
 Game/platform_spatial_resource_init.cpp:
 	.text       start:0x8026C174 end:0x8026C1C0
 
-Game/engine_mesh_owner_ready.cpp:
-	.text       start:0x8026D150 end:0x8026D184
+Game/recovered/tu_8026C1C0.cpp:
+	.text       start:0x8026C1C0 end:0x8026D834
+	.sdata2     start:0x8037B668 end:0x8037B6A0
 
-Game/recovered/unit_8026D184.cpp:
-	.text       start:0x8026D184 end:0x8026D834
+Game/render_slot_constants.c:
+	.sdata2     start:0x8037B6A8 end:0x8037B6BC
+
+original/float_pad_8037B6BC.s:
+	.sdata2     start:0x8037B6BC end:0x8037B6C0 align:1
 
 Game/base_destructor_8026d834.cpp:
 	.text       start:0x8026D834 end:0x8026D89C
