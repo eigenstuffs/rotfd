@@ -4313,9 +4313,6 @@ Game/data/float_remaining_fragment_80378778.c:
 Game/python_event_names_80378780.c:
 	.sdata2     start:0x80378780 end:0x803787CC
 
-original/python_event_names_tail_803787CC.s:
-	.sdata2     start:0x803787CC end:0x803787D0 align:1
-
 Game/scalar_constant_803787D0.c:
 	.sdata2     start:0x803787D0 end:0x803787D8
 
@@ -4401,9 +4398,6 @@ padding/engine_game_strings_8029BDE0.s:
 
 Game/engine_game_strings_8029BE98.cpp:
 	.rodata     start:0x8029BE98 end:0x8029C5E5
-
-original/readable_script_diagnostics_tail_8029C5E5.s:
-	.rodata     start:0x8029C5E5 end:0x8029C5E8 align:1
 
 Game/engine_game_strings_8029C5E8.cpp:
 	.rodata     start:0x8029C5E8 end:0x8029C7B7
@@ -7004,9 +6998,6 @@ Game/game_type_registry.cpp:
 	extabindex  start:0x8001983C end:0x80019848
 	.text       start:0x8007DD84 end:0x8007E160
 	.rodata     start:0x8029CD70 end:0x8029D0A6
-
-original/game_registry_string_tail_8029D0A6.s:
-	.rodata     start:0x8029D0A6 end:0x8029D0A8 align:1
 
 Game/engine_game_strings_8029D0A8.cpp:
 	.rodata     start:0x8029D0A8 end:0x8029D298
@@ -16904,9 +16895,6 @@ Game/memcard_native_family_800F0664.cpp:
 	.sdata      start:0x80375CA0 end:0x80375CC8
 	.sdata2     start:0x80379878 end:0x8037987D
 
-original/memcard_string_residual_8037987D.s:
-	.sdata2     start:0x8037987D end:0x80379880 align:1
-
 dolphin/mtx/mtx_native_constants.c:
 	.sdata2     start:0x80379880 end:0x80379888
 
@@ -18665,19 +18653,13 @@ Game/engine_pool_resize_801B378C.cpp:
 
 Game/remaining_curve_record_reset_801B3A24.cpp:
 	.text       start:0x801B3A24 end:0x801B3A28
-	.data       start:0x802E9E08 end:0x802E9E14
-
-original/native_method_prefix_802E9E14.s:
-	.data       start:0x802E9E14 end:0x802E9E20 align:1
+	.data       start:0x802E9E08 end:0x802E9E20
 
 Game/text_resource_method_tables_802E9E20.cpp:
 	.data       start:0x802E9E20 end:0x802E9E70
 
 Game/path_owner_table_802E9E70.cpp:
 	.data       start:0x802E9E70 end:0x802E9E9C
-
-original/native_method_prefix_802E9E9C.s:
-	.data       start:0x802E9E9C end:0x802E9EA0 align:1
 
 Game/animation_draw_method_tables_802E9EA0.cpp:
 	.data       start:0x802E9EA0 end:0x802EA0C0
@@ -19927,10 +19909,7 @@ Game/data/float_remaining_fragment_8037A640.c:
 
 Game/platform_cache_base_bind.cpp:
 	.text       start:0x801EC748 end:0x801EC754
-	.data       start:0x802EA868 end:0x802EA874
-
-original/platform_cache_neighbor_tables.s:
-	.data       start:0x802EA874 end:0x802EA8A0 align:1
+	.data       start:0x802EA868 end:0x802EA8A0
 
 Game/platform_cleanup_table_802EA8A0.c:
 	.data       start:0x802EA8A0 end:0x802EA8AC
@@ -20800,9 +20779,6 @@ Game/engine_input_glyphs.cpp:
 
 Game/data/float_remaining_fragment_8037ABD8.c:
 	.sdata2     start:0x8037ABD8 end:0x8037ABDD
-
-original/engine_input_glyphs_padding.s:
-	.rodata     start:0x802AE4CF end:0x802AE4D0 align:1
 
 Game/draw_alignment_count_template_802AE4D0.cpp:
 	.rodata     start:0x802AE4D0 end:0x802AE538
@@ -21824,9 +21800,6 @@ padding/typed_table_802EC02C.s:
 Game/platform_table_802EC030.cpp:
 	.data       start:0x802EC030 end:0x802EC09C
 
-original/native_method_prefix_802EC09C.s:
-	.data       start:0x802EC09C end:0x802EC0A0 align:1
-
 Game/spatial_binding_method_tables_802EC0A0.cpp:
 	.data       start:0x802EC0A0 end:0x802EC3D8
 
@@ -22516,9 +22489,6 @@ Game/engine_late_screen_registration.cpp:
 	.text       start:0x80253850 end:0x80254A2C
 	.data       start:0x802EC3D8 end:0x802EC69C
 
-original/late_screen_neighbor_802EC69C.s:
-	.data       start:0x802EC69C end:0x802EC6A0 align:1
-
 Game/agent_container_method_tables_802EC6A0.cpp:
 	.data       start:0x802EC6A0 end:0x802EC9D0
 
@@ -22843,9 +22813,6 @@ Game/callback_control_select_8025B448.cpp:
 	.text       start:0x8025B448 end:0x8025B928
 	.rodata     start:0x802AEC00 end:0x802AEC38
 	.data       start:0x802ECBB8 end:0x802ECCD4
-
-original/callback_selector_tail_802ECCD4.s:
-	.data       start:0x802ECCD4 end:0x802ECCD8 align:1
 
 Game/engine_game_strings_802AEC38.cpp:
 	.rodata     start:0x802AEC38 end:0x802AECC1
@@ -23643,9 +23610,6 @@ Game/card_crc32_table_802ED780.c:
 Game/platform_table_802EDB80.cpp:
 	.data       start:0x802EDB80 end:0x802EDBE8
 
-original/renderer_string_tail_802AF0FA.s:
-	.rodata     start:0x802AF0FA end:0x802AF100 align:1
-
 Game/engine_game_strings_802AF100.cpp:
 	.rodata     start:0x802AF100 end:0x802AF154
 
@@ -23940,9 +23904,6 @@ Game/platform_texture_bind.cpp:
 	.text       start:0x80281830 end:0x80281BD8
 	.data       start:0x802F14A8 end:0x802F14E4
 
-original/native_method_prefix_802F14E4.s:
-	.data       start:0x802F14E4 end:0x802F14E8 align:1
-
 Game/render_buffer_method_table_802F14E8.cpp:
 	.data       start:0x802F14E8 end:0x802F1540
 
@@ -24231,9 +24192,6 @@ Game/platform_disc_font.cpp:
 	.bss        start:0x80373120 end:0x80373140
 	.sdata2     start:0x8037B968 end:0x8037B980
 
-original/str_pad_802AF8E6.s:
-	.rodata     start:0x802AF8E6 end:0x802AF8E8 align:1
-
 Game/native_readable_pools_802AF8E8.cpp:
 	.rodata     start:0x802AF8E8 end:0x802AF908
 
@@ -24289,9 +24247,6 @@ Game/movie_decode_state_80378180.c:
 Game/platform_disc_error.cpp:
 	.text       start:0x8028F4D8 end:0x8028F698
 	.data       start:0x802F2368 end:0x802F239C
-
-original/platform_movie_dpcm_padding.s:
-	.data       start:0x802F239C end:0x802F23A0 align:4
 
 Game/movie_dpcm_tables.c:
 	.data       start:0x802F23A0 end:0x802F3188
