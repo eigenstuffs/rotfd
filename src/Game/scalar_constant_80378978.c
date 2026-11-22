@@ -16,3 +16,10 @@ const float lbl_803789AC = 7.5f;
 const float lbl_803789B0 = -70.0f;
 const float lbl_803789B4 = 70.0f;
 const float lbl_803789B8 = 40.0f;
+
+/* Former original data .sdata2 0x803789BC..0x803789C0, appended to the unit it follows (its section starts 8-aligned only together with this one). */
+#pragma explicit_zero_data on
+#pragma force_active on
+__declspec(section ".sdata2") const float lbl_803789BC = 0.01f;
+
+#pragma force_active reset

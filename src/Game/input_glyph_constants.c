@@ -24,3 +24,13 @@ __declspec(section ".sdata2") const char lbl_8037ABA0[] __attribute__((aligned(4
 const float lbl_8037ABA8 = 255.0f;
 
 #pragma force_active reset
+
+/* Former original data .sdata2 0x8037ABAC..0x8037ABCA, appended to the unit it follows (its section starts 8-aligned only together with this one). */
+#pragma explicit_zero_data on
+#pragma force_active on
+__declspec(section ".sdata2") const char lbl_8037ABAC[] = "FONT";
+__declspec(section ".sdata2") const char lbl_8037ABB4[] = "_MASK";
+__declspec(section ".sdata2") const char lbl_8037ABBC[] = "CENTER";
+__declspec(section ".sdata2") const char lbl_8037ABC4[] = "SCALE";
+
+#pragma force_active reset

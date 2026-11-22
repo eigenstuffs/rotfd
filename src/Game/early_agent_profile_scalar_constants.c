@@ -10,3 +10,10 @@ const float lbl_803788C4 = 1.5f;
 const float lbl_803788C8 = 1.0f;
 const float lbl_803788CC = 0.8500000238418579f;
 const float lbl_803788D0 = 1.0499999523162842f;
+
+/* Former original data .sdata2 0x803788D4..0x803788DC, appended to the unit it follows (its section starts 8-aligned only together with this one). */
+#pragma explicit_zero_data on
+#pragma force_active on
+__declspec(section ".sdata2") const char lbl_803788D4[] = "Agent_Z";
+
+#pragma force_active reset

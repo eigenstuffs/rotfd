@@ -1,0 +1,8 @@
+/* Original .sdata2 data (0x18 bytes), reproduced byte- and relocation-identically. */
+#pragma explicit_zero_data on
+#pragma force_active on
+__declspec(section ".sdata2") const float lbl_8037B3E8[2] = { 0.75f, 0.0f };
+__declspec(section ".sdata2") const float lbl_8037B3F0[2] = { 0.0f, 0.0f };
+__declspec(section ".sdata2") const float lbl_8037B3F8[2] = { 0.0f, 0.0f };
+#pragma force_active reset
+

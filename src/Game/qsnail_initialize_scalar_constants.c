@@ -12,3 +12,10 @@ __declspec(section ".sdata2") const char lbl_8037961C[] __attribute__((aligned(4
 const float lbl_80379628 __attribute__((aligned(8))) = 0.5f;
 const float lbl_8037962C = 0.0f;
 const float lbl_80379630 = 1.0f;
+
+/* Former original data .sdata2 0x80379634..0x8037963C, appended to the unit it follows (its section starts 8-aligned only together with this one). */
+#pragma explicit_zero_data on
+#pragma force_active on
+__declspec(section ".sdata2") const char lbl_80379634[] = "Agent_Z";
+
+#pragma force_active reset

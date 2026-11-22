@@ -36,3 +36,15 @@ AnimationNameLookupEntry lbl_802BCFB8[33] = {
     { "anim_misc10", 163 }
 };
 typedef char AnimationNameLookupEntrySize[sizeof(AnimationNameLookupEntry) == 36 ? 1 : -1];
+
+/* Former original data .data 0x802BD45C..0x802BD468, appended to the unit it follows (its section starts 8-aligned only together with this one). */
+#pragma explicit_zero_data on
+#pragma force_active on
+extern char lbl_803753F0[];
+__declspec(section ".data") void* lbl_802BD45C[3] = {
+    (void*)lbl_803753F0,
+    0,
+    0,
+};
+
+#pragma force_active reset
