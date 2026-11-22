@@ -124,9 +124,12 @@ def markdown(summary):
         f"| Matched data | {m['matched_data']:,} / {m['total_data']:,} bytes ({m['matched_data_percent']:.4f}%) |",
         f"| Code linked from source | {m['complete_code']:,} / {m['total_code']:,} bytes ({m['complete_code_percent']:.4f}%) |",
         f"| Completed build units | {m['complete_units']:,} / {m['total_units']:,} |", "",
-        "The build still uses original assembly for unfinished units. A matching "
-        "DOL is the reconstruction baseline, not 100% source decompilation. "
-        "Generated build units are provisional splits, not recovered original files.", "",
+        ("The build still uses original assembly for unfinished units. A matching "
+         "DOL is the reconstruction baseline, not 100% source decompilation. "
+         if m["complete_units"] < m["total_units"] else
+         "Every build unit is matched and linked from source; no extracted "
+         "assembly is linked. ")
+        + "Generated build units are provisional splits, not recovered original files.", "",
         "## Coverage by assigned subsystem", "",
         "| Subsystem | Matched code / total bytes | Matched functions | Linked units |",
         "| --- | ---: | ---: | ---: |",
