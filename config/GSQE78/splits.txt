@@ -16675,9 +16675,6 @@ dolphin/os/OSCache.c:
 	.text       start:0x800F2228 end:0x800F26B8
 	.data       start:0x802C99D8 end:0x802C9C02
 
-padding/source_extents/dolphin/os/OSCache.s:
-	.data       start:0x802C9C02 end:0x802C9C04 align:1
-
 dolphin/os/OSContext_fpu.c:
 	.text       start:0x800F26B8 end:0x800F2968
 
@@ -16745,7 +16742,7 @@ dolphin/os/OSReboot_run.c:
 
 dolphin/os/OSReboot.c:
 	.text       start:0x800F43EC end:0x800F4744
-	.bss        start:0x80318B20 end:0x80318B40
+	.bss        start:0x80318B20 end:0x80318B40 align:32
 	.sbss       start:0x80377928 end:0x80377934
 
 dolphin/os/OSReset_register.c:
@@ -16910,21 +16907,18 @@ dolphin/ax/AXOut.c:
 
 dolphin/ax/AXSPB.c:
 	.text       start:0x80102A14 end:0x80102EDC
-	.bss        start:0x80321540 end:0x80321576
+	.bss        start:0x80321540 end:0x80321576 align:32
 	.sbss       start:0x80377BC0 end:0x80377BE4
-
-padding/source_extents/dolphin/ax/AXSPB.s:
-	.bss        start:0x80321576 end:0x80321578 align:1
 
 dolphin/ax/AXVPB.c:
 	.text       start:0x80102EDC end:0x80103FA0
 	.data       start:0x802CA9F8 end:0x802CAACC
-	.bss        start:0x80321580 end:0x80332980
+	.bss        start:0x80321580 end:0x80332980 align:32
 	.sbss       start:0x80377BE8 end:0x80377BF4
 	.sdata2     start:0x803798A0 end:0x803798A4
 
 dolphin/ax/AXComp.c:
-	.data       start:0x802CAAE0 end:0x802CC520
+	.data       start:0x802CAAE0 end:0x802CC520 align:32
 
 dolphin/ax/DSPCode.c:
 	.data       start:0x802CC520 end:0x802CE440
@@ -16965,7 +16959,7 @@ dolphin/card/CARDBios.c:
 
 dolphin/card/CARDUnlock.c:
 	.text       start:0x80108004 end:0x80109264
-	.data       start:0x802CF220 end:0x802CF380
+	.data       start:0x802CF220 end:0x802CF380 align:32
 	.sdata      start:0x80375D90 end:0x80375D94
 
 dolphin/card/CARDVendor.c:
@@ -17608,7 +17602,6 @@ Objects/cellobject.c:
 	.sdata      start:0x80375ED8 end:0x80375EDD
 
 padding/source_extents/Objects/cellobject.s:
-	.data       start:0x802D1551 end:0x802D1554 align:1
 	.sdata      start:0x80375EDD end:0x80375EE0 align:1
 
 Objects/classobject.c:
@@ -17656,7 +17649,6 @@ Objects/floatobject.c:
 	.sdata2     start:0x80379F40 end:0x80379F78
 
 padding/source_extents/Objects/floatobject.s:
-	.data       start:0x802D2F7A end:0x802D2F7C align:1
 	.sdata      start:0x80376169 end:0x8037616C align:1
 
 Objects/frameobject.c:
@@ -17666,7 +17658,6 @@ Objects/frameobject.c:
 	.sbss       start:0x80377DF0 end:0x80377DF8
 
 padding/source_extents/Objects/frameobject.s:
-	.data       start:0x802D317A end:0x802D317C align:1
 	.sdata      start:0x8037619D end:0x803761A0 align:1
 
 Objects/funcobject.c:
@@ -17705,9 +17696,6 @@ Objects/moduleobject.c:
 	.data       start:0x802D4280 end:0x802D4403
 	.sdata      start:0x80376270 end:0x80376284
 
-padding/source_extents/Objects/moduleobject.s:
-	.data       start:0x802D4403 end:0x802D4404 align:1
-
 Objects/object.c:
 	.text       start:0x80156580 end:0x8015987C
 	.data       start:0x802D4408 end:0x802D4730
@@ -17726,7 +17714,6 @@ Objects/sliceobject.c:
 	.sdata      start:0x803762F8 end:0x80376336
 
 padding/source_extents/Objects/sliceobject.s:
-	.data       start:0x802D4A59 end:0x802D4A5C align:1
 	.sdata      start:0x80376336 end:0x80376338 align:1
 
 Objects/stringobject.c:
@@ -17897,7 +17884,6 @@ Python/import.c:
 	.sbss       start:0x80377F10 end:0x80377F2C
 
 padding/source_extents/Python/import.s:
-	.data       start:0x802E2C33 end:0x802E2C34 align:1
 	.sdata      start:0x80376F69 end:0x80376F6C align:1
 
 Python/dynload_stub.c:
@@ -17991,9 +17977,6 @@ Modules/newmodule.c:
 	.text       start:0x801A90E0 end:0x801A96F4
 	.data       start:0x802E8BA8 end:0x802E9019
 	.sdata      start:0x80377438 end:0x8037744C
-
-padding/source_extents/Modules/newmodule.s:
-	.data       start:0x802E9019 end:0x802E901C align:1
 
 Modules/_codecsmodule.c:
 	.text       start:0x801A96F4 end:0x801AB66C
@@ -19284,9 +19267,6 @@ Game/six_handle_resource.cpp:
 	.text       start:0x801E7B98 end:0x801E7D1C
 	.data       start:0x802EA840 end:0x802EA864
 
-padding/six_handle_resource.s:
-	.data       start:0x802EA864 end:0x802EA868 align:1
-
 Game/render_object_dispatch.cpp:
 	.text       start:0x801E7D1C end:0x801E81AC
 
@@ -19732,9 +19712,6 @@ Game/logger_interpreter.cpp:
 Game/logger_callbacks.cpp:
 	.text       start:0x801FAFE8 end:0x801FB1E8
 	.rodata     start:0x802AD5F0 end:0x802AD622
-
-padding/logger_callbacks.s:
-	.rodata     start:0x802AD622 end:0x802AD624 align:2
 
 Game/console_lifecycle.cpp:
 	.text       start:0x801FB1E8 end:0x801FB4B0
