@@ -17096,9 +17096,6 @@ dolphin/gx/GXDisplayList.c:
 	.bss        start:0x80338B58 end:0x80339074
 	.sbss       start:0x80377CE8 end:0x80377CEC
 
-padding/gx_displaylist.s:
-	.sbss       start:0x80377CEC end:0x80377CF0 align:4
-
 dolphin/gx/GXTransform_projection.c:
 	.text       start:0x80116D38 end:0x80116EAC
 
@@ -17377,9 +17374,6 @@ MSL/printf.c:
 	.sdata      start:0x80375E38 end:0x80375E3A
 	.sdata2     start:0x80379980 end:0x80379988
 
-padding/source_extents/MSL/printf.s:
-	.sdata      start:0x80375E3A end:0x80375E40 align:1
-
 MSL/rand.c:
 	.text       start:0x80127C6C end:0x80127C8C
 	.sdata      start:0x80375E40 end:0x80375E44
@@ -17601,17 +17595,11 @@ Objects/cellobject.c:
 	.data       start:0x802D14A0 end:0x802D1551
 	.sdata      start:0x80375ED8 end:0x80375EDD
 
-padding/source_extents/Objects/cellobject.s:
-	.sdata      start:0x80375EDD end:0x80375EE0 align:1
-
 Objects/classobject.c:
 	.text       start:0x80135D2C end:0x8013C798
 	.data       start:0x802D1558 end:0x802D1FDA
 	.sdata      start:0x80375EE0 end:0x80376015
 	.sbss       start:0x80377D50 end:0x80377DD4
-
-padding/source_extents/Objects/classobject.s:
-	.sdata      start:0x80376015 end:0x80376018 align:1
 
 Objects/cobject.c:
 	.text       start:0x8013C798 end:0x8013C86C
@@ -17622,9 +17610,6 @@ Objects/complexobject.c:
 	.data       start:0x802D21E8 end:0x802D247D
 	.sdata      start:0x80376018 end:0x80376046
 	.sdata2     start:0x80379F28 end:0x80379F40
-
-padding/source_extents/Objects/complexobject.s:
-	.sdata      start:0x80376046 end:0x80376048 align:1
 
 Objects/dictobject.c:
 	.text       start:0x8013E14C end:0x801412C8
@@ -17656,9 +17641,6 @@ Objects/frameobject.c:
 	.data       start:0x802D2F80 end:0x802D317A
 	.sdata      start:0x80376170 end:0x8037619D
 	.sbss       start:0x80377DF0 end:0x80377DF8
-
-padding/source_extents/Objects/frameobject.s:
-	.sdata      start:0x8037619D end:0x803761A0 align:1
 
 Objects/funcobject.c:
 	.text       start:0x801467C8 end:0x80147184
@@ -17713,9 +17695,6 @@ Objects/sliceobject.c:
 	.data       start:0x802D4960 end:0x802D4A59
 	.sdata      start:0x803762F8 end:0x80376336
 
-padding/source_extents/Objects/sliceobject.s:
-	.sdata      start:0x80376336 end:0x80376338 align:1
-
 Objects/stringobject.c:
 	.text       start:0x8015AC30 end:0x80163D7C
 	.data       start:0x802D4A60 end:0x802D67AD
@@ -17723,9 +17702,6 @@ Objects/stringobject.c:
 	.sdata      start:0x80376338 end:0x80376463
 	.sbss       start:0x80377E28 end:0x80377E30
 	.sdata2     start:0x80379FE8 end:0x80379FF0
-
-padding/source_extents/Objects/stringobject.s:
-	.sdata      start:0x80376463 end:0x80376468 align:1
 
 Objects/tupleobject.c:
 	.text       start:0x80163D7C end:0x80164EF8
@@ -17788,9 +17764,6 @@ Python/traceback.c:
 	.data       start:0x802DB300 end:0x802DB44D
 	.sdata      start:0x803765D8 end:0x803765F6
 
-padding/source_extents/Python/traceback.s:
-	.sdata      start:0x803765F6 end:0x803765F8 align:1
-
 Python/ceval.c:
 	.text       start:0x80173A28 end:0x8017BB98
 	.data       start:0x802DB450 end:0x802DBF70
@@ -17811,25 +17784,16 @@ Python/compile.c:
 	.sbss       start:0x80377E78 end:0x80377E80
 	.sdata2     start:0x8037A188 end:0x8037A190
 
-padding/source_extents/Python/compile.s:
-	.sdata      start:0x803766EC end:0x803766F0 align:1
-
 Python/errors.c:
 	.text       start:0x8018EE70 end:0x80191618
 	.data       start:0x802DCFA0 end:0x802DD0C4
 	.sdata      start:0x803766F0 end:0x80376743
-
-padding/source_extents/Python/errors.s:
-	.sdata      start:0x80376743 end:0x80376748 align:1
 
 Python/exceptions.c:
 	.text       start:0x80191618 end:0x80193318
 	.data       start:0x802DD0C8 end:0x802DE6F3
 	.sdata      start:0x80376748 end:0x803767B9
 	.sbss       start:0x80377E80 end:0x80377F10
-
-padding/source_extents/Python/exceptions.s:
-	.sdata      start:0x803767B9 end:0x803767C0 align:1
 
 Python/frozen_phello_802DE6F8.c:
 	.data       start:0x802DE6F8 end:0x802DE75E
@@ -17842,9 +17806,6 @@ Python/future.c:
 	.text       start:0x80193318 end:0x8019376C
 	.data       start:0x802DE7B0 end:0x802DE954
 	.sdata      start:0x803767C8 end:0x803767CF
-
-padding/source_extents/Python/future.s:
-	.sdata      start:0x803767CF end:0x803767D0 align:1
 
 Python/getargs.c:
 	.text       start:0x8019376C end:0x801952BC
@@ -17868,9 +17829,6 @@ Python/getversion.c:
 	.data       start:0x802DF258 end:0x802DF26C
 	.bss        start:0x8033E380 end:0x8033E47A
 	.sdata      start:0x80376828 end:0x8037682C
-
-padding/source_extents/Python/getversion.s:
-	.sdata      start:0x8037682C end:0x80376830 align:1
 
 Python/graminit.c:
 	.data       start:0x802DF270 end:0x802E1E90
@@ -17909,9 +17867,6 @@ Python/marshal.c:
 	.data       start:0x802E2C38 end:0x802E2DCF
 	.sdata      start:0x80376F70 end:0x80376FB7
 
-padding/source_extents/Python/marshal.s:
-	.sdata      start:0x80376FB7 end:0x80376FB8 align:1
-
 Python/modsupport.c:
 	.text       start:0x8019E6A4 end:0x8019F914
 	.data       start:0x802E2DD0 end:0x802E30E8
@@ -17947,9 +17902,6 @@ Python/sysmodule.c:
 	.sdata      start:0x80377068 end:0x803770E2
 	.sbss       start:0x80377F58 end:0x80377F5C
 
-padding/source_extents/Python/sysmodule.s:
-	.sdata      start:0x803770E2 end:0x803770E8 align:1
-
 Python/bltinmodule.c:
 	.text       start:0x801A387C end:0x801A7628
 	.data       start:0x802E51D8 end:0x802E8935
@@ -17957,16 +17909,10 @@ Python/bltinmodule.c:
 	.sbss       start:0x80377F60 end:0x80377F64
 	.sdata2     start:0x8037A190 end:0x8037A1C0
 
-padding/source_extents/Python/bltinmodule.s:
-	.sdata      start:0x8037730E end:0x80377310 align:1
-
 Modules/errnomodule.c:
 	.text       start:0x801A7628 end:0x801A9090
 	.data       start:0x802E8938 end:0x802E8B76
 	.sdata      start:0x80377310 end:0x80377432
-
-padding/source_extents/Modules/errnomodule.s:
-	.sdata      start:0x80377432 end:0x80377438 align:1
 
 Modules/getbuildinfo.c:
 	.text       start:0x801A9090 end:0x801A90E0
@@ -17983,15 +17929,9 @@ Modules/_codecsmodule.c:
 	.data       start:0x802E9020 end:0x802E95CB
 	.sdata      start:0x80377450 end:0x80377464
 
-padding/source_extents/Modules/_codecsmodule.s:
-	.sdata      start:0x80377464 end:0x80377468 align:1
-
 Modules/config.c:
 	.data       start:0x802E95D0 end:0x802E9644
 	.sdata      start:0x80377468 end:0x8037748C
-
-padding/source_extents/Modules/config.s:
-	.sdata      start:0x8037748C end:0x80377490 align:1
 
 Python/structmember.c:
 	.text       start:0x801AB66C end:0x801ABCA0
@@ -19725,9 +19665,6 @@ Game/console_render.cpp:
 	.rodata     start:0x802AD628 end:0x802AD845
 	.sdata2     start:0x8037A8A0 end:0x8037A8C3
 
-padding/console_render.s:
-	.sdata2     start:0x8037A8C3 end:0x8037A8C8 align:1
-
 Game/data/float_remaining_fragment_8037A8C8.c:
 	.sdata2     start:0x8037A8C8 end:0x8037A8D5
 
@@ -20374,9 +20311,6 @@ Game/menu2d_parsers_80214544.cpp:
 	.text       start:0x80214544 end:0x80215870
 	.rodata     start:0x802AE588 end:0x802AE6EF
 	.sdata2     start:0x8037AC78 end:0x8037AD62
-
-padding/source_extents/Game/menu2d_parsers_80214544.s:
-	.sdata2     start:0x8037AD62 end:0x8037AD68 align:1
 
 Game/scalar_constant_8037AD68.c:
 	.sdata2     start:0x8037AD68 end:0x8037AD78
@@ -23734,10 +23668,6 @@ dolphin/exi/EXIBios.c:
 	.bss        start:0x80373B80 end:0x80373C40
 	.sdata      start:0x80377518 end:0x8037751C
 	.sbss       start:0x80378188 end:0x8037818C
-
-padding/EXIBios.s:
-	.sdata      start:0x8037751C end:0x80377520 align:4
-	.sbss       start:0x8037818C end:0x80378190 align:4
 
 dolphin/exi/exi_type_strings_802F31D0.c:
 	.data       start:0x802F31D0 end:0x802F3298
