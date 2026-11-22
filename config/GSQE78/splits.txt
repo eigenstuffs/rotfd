@@ -11085,23 +11085,20 @@ Game/recovered/tu_800A6528.cpp:
 	.text       start:0x800A5D68 end:0x800A8E8C
 	.sdata2     start:0x80378F78 end:0x80379000
 
-Game/early_vector_800A8EB4_constants.c:
-	.sdata2     start:0x80379000 end:0x80379008
+Game/scalar_clamp_800A8E8C.cpp:
+	.text       start:0x800A8E8C end:0x800A8EB4
 
-Game/scalar_constant_80379008.c:
-	.sdata2     start:0x80379008 end:0x80379010
+Game/recovered/tu_800A8EB4.cpp:
+	extab       start:0x80010ABC end:0x80010B3C
+	extabindex  start:0x8001BB88 end:0x8001BC00
+	.text       start:0x800A8EB4 end:0x800AA554
+	.sdata2     start:0x80379000 end:0x8037902C
 
-Game/scalar_constant_80379010.c:
-	.sdata2     start:0x80379010 end:0x80379018
-
-Game/scalar_constant_80379018.c:
-	.sdata2     start:0x80379018 end:0x80379020
-
-Game/scalar_constant_80379020.c:
-	.sdata2     start:0x80379020 end:0x80379028
+original/rtti_name_8037902C.s:
+	.sdata2     start:0x8037902C end:0x80379038 align:1
 
 Game/scalar_constant_80379028.c:
-	.sdata2     start:0x80379028 end:0x8037903C
+	.sdata2     start:0x80379038 end:0x8037903C
 
 original/float_remaining_fragment_8037903C.s:
 	.sdata2     start:0x8037903C end:0x80379048 align:1
@@ -11129,63 +11126,6 @@ Game/record_event_scalar_constants_800AB8C8.c:
 
 original/float_remaining_fragment_803790B4.s:
 	.sdata2     start:0x803790B4 end:0x803790C8 align:1
-
-Game/scalar_clamp_800A8E8C.cpp:
-	.text       start:0x800A8E8C end:0x800A8EB4
-
-Game/engine_early_vector_setup_800A8EB4.cpp:
-	extab       start:0x80010ABC end:0x80010AC4
-	extabindex  start:0x8001BB88 end:0x8001BB94
-	.text       start:0x800A8EB4 end:0x800A8F90
-
-Game/engine_small_eh_800A8F90.cpp:
-	extab       start:0x80010AC4 end:0x80010AEC
-	extabindex  start:0x8001BB94 end:0x8001BBA0
-	.text       start:0x800A8F90 end:0x800A901C
-
-Game/scene_leaf_more_control_800A901C.cpp:
-	extab       start:0x80010AEC end:0x80010AF4
-	extabindex  start:0x8001BBA0 end:0x8001BBAC
-	.text       start:0x800A901C end:0x800A903C
-
-Game/scene_leaf_more_control_800A903C.cpp:
-	extab       start:0x80010AF4 end:0x80010AFC
-	extabindex  start:0x8001BBAC end:0x8001BBB8
-	.text       start:0x800A903C end:0x800A905C
-
-Game/actor_frame_motion_update_800A905C.cpp:
-	extab       start:0x80010AFC end:0x80010B04
-	extabindex  start:0x8001BBB8 end:0x8001BBC4
-	.text       start:0x800A905C end:0x800A91D4
-
-Game/actor_spin_axis_facing_800A91D4.cpp:
-	extab       start:0x80010B04 end:0x80010B0C
-	extabindex  start:0x8001BBC4 end:0x8001BBD0
-	.text       start:0x800A91D4 end:0x800A93D8
-
-Game/actor_movement_step_800A9FA0.cpp:
-	extab       start:0x80010B24 end:0x80010B2C
-	extabindex  start:0x8001BBDC end:0x8001BBE8
-	.text       start:0x800A9FA0 end:0x800AA180
-
-Game/actor_velocity_integrate_800AA180.cpp:
-	extab       start:0x80010B2C end:0x80010B34
-	extabindex  start:0x8001BBE8 end:0x8001BBF4
-	.text       start:0x800AA180 end:0x800AA400
-
-Game/scalar_early_800AA400.c:
-	.text       start:0x800AA400 end:0x800AA440
-
-Game/early_motion_vector_control_800aa440.cpp:
-	extab       start:0x80010B34 end:0x80010B3C
-	extabindex  start:0x8001BBF4 end:0x8001BC00
-	.text       start:0x800AA440 end:0x800AA52C
-
-Game/leaf_extended_800AA52C.c:
-	.text       start:0x800AA52C end:0x800AA54C
-
-Game/adjustor_entry_800AA54C.c:
-	.text       start:0x800AA54C end:0x800AA554
 
 Game/engine_base_handle_construct_800AA554.cpp:
 	extab       start:0x80010B3C end:0x80010C0C
