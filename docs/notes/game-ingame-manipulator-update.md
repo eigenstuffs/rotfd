@@ -88,7 +88,8 @@ hoisted-load near result remain in the same scratch directory. The candidate
 manifest is `config/GSQE78/candidates/game-ingame-manipulator-update.json`.
 
 Integration evidence is `scratch/manipulator_checkpoint_full_build.log`;
-`config/GSQE78/ingame_manipulator_update_padding.json` records the two
-explicit uncredited original tails.
+The two original tails it once recorded in
+`config/GSQE78/ingame_manipulator_update_padding.json` are now ordinary
+linker alignment padding (no split or manifest).
 
 For current source, use `python3 scratch/game_ingame_manipulator_interface/verify.py --production`; the original command above applies to the preserved pre-interface snapshot.
