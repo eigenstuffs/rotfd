@@ -157,3 +157,15 @@ int fn_800C8060(Agent*self,int type,Event*event){
  fn_8025F620(event,lbl_80378090);return result;
 }
 }
+
+/* Former original data .data 0x802C1224..0x802C1260, appended to the unit it follows (its section starts 8-aligned only together with this one). */
+#pragma explicit_zero_data on
+#pragma force_active on
+extern "C" __declspec(section ".data") unsigned int lbl_802C1224[15] = {
+    0x00000000, 0x0000009C, 0x00000008, 0x00000000,
+    0x0000009C, 0x00000008, 0x00000000, 0x0000009C,
+    0x00000008, 0x00000000, 0x0000009C, 0x00000008,
+    0x00000000, 0x0000009C, 0x00000008
+};
+
+#pragma force_active reset

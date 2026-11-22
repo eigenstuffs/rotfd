@@ -1636,3 +1636,15 @@ extern "C" void fn_8005970C(Owner* self)
 }
 #undef MANAGER
 }
+
+/* Former original data .data 0x802B4C0C..0x802B4C48, appended to the unit it follows (its section starts 8-aligned only together with this one). */
+#pragma explicit_zero_data on
+#pragma force_active on
+extern "C" __declspec(section ".data") unsigned int lbl_802B4C0C[15] = {
+    0x00000000, 0x00000074, 0x00000008, 0x00000000,
+    0x00000074, 0x00000008, 0x00000000, 0x00000074,
+    0x00000008, 0x00000000, 0x00000074, 0x00000008,
+    0x00000000, 0x00000074, 0x00000008
+};
+
+#pragma force_active reset

@@ -177,3 +177,15 @@ int fn_800C8900(Agent*self,int type,Event*event){
  fn_8025F620(event,lbl_80378090);return result;
 }
 }
+
+/* Former original data .data 0x802C127C..0x802C1288, appended to the unit it follows (its section starts 8-aligned only together with this one). */
+#pragma explicit_zero_data on
+#pragma force_active on
+extern "C" char lbl_80375858[];
+extern "C" __declspec(section ".data") void* lbl_802C127C[3] = {
+    (void*)&lbl_80375858,
+    0,
+    0,
+};
+
+#pragma force_active reset

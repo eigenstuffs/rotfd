@@ -78,3 +78,11 @@ void fn_800C9404(DamageVolume* self) {
     self->mode = (unsigned char)fn_8025E268(self, 4);
 }
 }
+
+/* Former original data .sdata2 0x80379644..0x80379650, appended to the unit it follows (its section starts 8-aligned only together with this one). */
+#pragma explicit_zero_data on
+#pragma force_active on
+extern "C" __declspec(section ".sdata2") const float lbl_80379644 = -1612.0f;
+extern "C" __declspec(section ".sdata2") const char lbl_80379648[] = "Agent_Z";
+
+#pragma force_active reset

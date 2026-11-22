@@ -26,3 +26,9 @@ extern "C" const char lbl_8029A8DC[] =
     "LookPos%d\0\0\0" // +0x20
     "Start_Base\0"; // +0x2C
 
+/* Former original data .rodata 0x8029A914..0x8029A91D, appended to the unit it follows (its section starts 8-aligned only together with this one). */
+#pragma explicit_zero_data on
+#pragma force_active on
+extern "C" __declspec(section ".rodata") const char lbl_8029A914[] = "CHudData";
+
+#pragma force_active reset

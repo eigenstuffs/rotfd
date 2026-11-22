@@ -123,3 +123,10 @@ const float lbl_8037B978 = -100.0f;
 #undef GLYPH
 #undef I4_ROW
 #undef I4_PAIR
+
+/* Former original data .sdata2 0x8037B97C..0x8037B980, appended to the unit it follows (its section starts 8-aligned only together with this one). */
+#pragma explicit_zero_data on
+#pragma force_active on
+extern "C" __declspec(section ".sdata2") const unsigned int lbl_8037B97C = 0x00000000;
+
+#pragma force_active reset

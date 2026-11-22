@@ -654,3 +654,15 @@ extern const float lbl_80379390 = 0.015625f;
 extern const float lbl_80379394 = 0.0078125f;
 extern const float lbl_80379398[2] = {1.0f, 0.0f};
 }
+
+/* Former original data .data 0x802BD914..0x802BD920, appended to the unit it follows (its section starts 8-aligned only together with this one). */
+#pragma explicit_zero_data on
+#pragma force_active on
+extern "C" char lbl_803754A8[];
+extern "C" __declspec(section ".data") void* lbl_802BD914[3] = {
+    (void*)&lbl_803754A8,
+    0,
+    0,
+};
+
+#pragma force_active reset
