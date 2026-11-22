@@ -10,7 +10,6 @@ struct PlatformVideoTransition {
 extern "C" {
     extern void* lbl_80378120;
     extern u32 lbl_803780F0[2];
-    extern char lbl_8036E9D0[];
     void VIConfigure(void*);
     void VIFlush();
     void VIWaitForRetrace();
