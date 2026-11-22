@@ -1,5 +1,3 @@
-/* Original engine vector and scalar initialization with compiler-emitted exception metadata.
- * See docs/notes/game-engine-early-vector-setup.md. */
 extern "C" {
     void __ct__14Agent_8002B5F4Fv(void*);
     extern char lbl_802B753C[];

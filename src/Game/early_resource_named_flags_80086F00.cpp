@@ -1,4 +1,3 @@
-/* Copied resource array Name-match flags; see docs/notes/game-early-resource-named-flags.md. */
 typedef unsigned long Word;
 extern "C" const char lbl_80378B34[4];
 extern "C"{extern char lbl_801EF5C8[],lbl_8028F698[],lbl_8029D6D4[];void fn_801EF610(void*,void*);void fn_8028FD50(void*,void*,int);Word fn_801F948C(void*,const char*);}

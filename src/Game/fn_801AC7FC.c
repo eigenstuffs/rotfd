@@ -1,8 +1,3 @@
-/* Two related object routines, GSQE78 0x801AC7FC..0x801AC9B8.
- * Original class/function names and complete TU boundaries are unknown.
- * Curve and registry roles are inferred from the observed calls and fields.
- * See docs/notes/game-801ac7fc.md. */
-
 #include "game_curve.h"
 
 typedef struct {

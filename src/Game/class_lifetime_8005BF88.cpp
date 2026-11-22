@@ -1,5 +1,3 @@
-// Lifetime-only class registration; see docs/notes/game-class-registry.md.
-// JellyfishAgent.h factory establishes the 0x98-byte opaque object storage.
 extern "C" {
 extern unsigned long lbl_80377690;
 void fn_8002B58C();

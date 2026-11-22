@@ -1,4 +1,3 @@
-/* Original record resource lifecycle; see docs/notes/game-engine-record-dispatch.md. */
 typedef unsigned long u32;
 struct ServicePrefix{char opaque00[0x30];};
 struct Service:ServicePrefix{virtual void slot08();virtual void slot0C();virtual void slot10();virtual void slot14();virtual void slot18();virtual int slot1C(const char*,void*,unsigned long);virtual int slot20(const char*,void*,unsigned long);virtual int slot24(const char*);virtual void slot28();virtual void slot2C();virtual void slot30();virtual void slot34();virtual void slot38();virtual void slot3C();virtual int slot40();virtual int slot44();virtual void slot48(int*);virtual int slot4C(const char*);virtual int slot50();virtual int slot54();virtual void slot58();virtual void slot5C();virtual void slot60();virtual signed char slot64(int);};

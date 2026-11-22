@@ -1,6 +1,3 @@
-/* Original leaf operations. Provisional names and text-only ownership.
- * See docs/notes/game-leaf-continuation.md. */
-
 extern unsigned int lbl_8037780C;
 
 unsigned int fn_800BED40(void) { return lbl_8037780C; }

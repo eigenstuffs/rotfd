@@ -1,4 +1,3 @@
-/* Original small callback control operations; see docs/notes/game-engine-callback-small-controls.md. */
 typedef unsigned long u32;
 struct Handle{u32 word;};struct Object{char opaque00[0x58];Handle source58;char opaque5C[4];Handle target60;float value64;};
 extern "C"{extern struct Context{char opaque00[0x118];void*manager118;}lbl_801E9D24;void fn_801F86C8(void*,const Handle*,short);float fn_8025E268(Object*,int);}

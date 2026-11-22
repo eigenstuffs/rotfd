@@ -1,5 +1,3 @@
-/* Original engine dispatch and setup routines.
- * See docs/notes/game-engine-dispatch.md. */
 inline void *operator new(unsigned long,void *pointer){
     return pointer;
 }struct Vector_801C0B48{

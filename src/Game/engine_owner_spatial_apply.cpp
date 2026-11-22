@@ -1,5 +1,3 @@
-/* Original owner spatial transform, bounds and scalar application.
- * See docs/notes/game-engine-owner-spatial-apply.md. */
 #pragma fp_contract on
 #include "Game/engine_owner_spatial_apply.h"
 

@@ -1,5 +1,3 @@
-/* Group resource discovery, binding and scoped Handle arrays.
- * See docs/notes/game-engine-group-resource-setup.md. */
 #include "Game/engine_group_resource_setup.h"
 
 typedef unsigned long Word;

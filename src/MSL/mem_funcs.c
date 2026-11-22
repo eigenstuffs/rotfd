@@ -1,9 +1,3 @@
-/* Reconstructed GSQE78 memory runtime.
- * Adapted from doldecomp/melee src/MSL/mem_funcs.c at
- * ae5898ee0dfda41b34fdf846f7d680a33e14779d.
- * Source provenance and matching evidence: docs/notes/msl-memory.md.
- * Complete linked range: 0x80125810..0x80125AF0.
- */
 typedef unsigned long size_t;
 
 

@@ -1,4 +1,3 @@
-/* Actor resource-state/position dispatch; see docs/notes/game-early-actor-resource-state.md. */
 typedef unsigned long Word;
 struct Handle{union{Word value;struct{signed int tag:8,index:24;}bits;};};
 struct Vec3{float x,y,z;void set(float a,float b,float c){x=a;y=b;z=c;}Vec3&operator=(const Vec3&v){set(v.x,v.y,v.z);return*this;}};

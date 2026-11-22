@@ -1,4 +1,3 @@
-/* Void method binding; see docs/notes/game-python-void-bindings.md. */
 #include "Game/python_scalar_bindings.h"
 extern "C" const char lbl_802A51A8[];
 struct VoidPrefix_800DB2E8 { char unknown[8]; };

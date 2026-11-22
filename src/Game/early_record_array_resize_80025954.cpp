@@ -1,4 +1,3 @@
-/* Native record-array resize; see docs/notes/game-early-record-array-resize.md. */
 extern "C" {
 extern char lbl_8028F698[];
 void*fn_8028FAF4(void*,void*,int,int);

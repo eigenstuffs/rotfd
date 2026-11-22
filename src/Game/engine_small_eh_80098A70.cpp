@@ -1,6 +1,4 @@
 #include "Game/owner_cleanup_virtual_view_8009A8AC.h"
-/* Original engine destruction with compiler-emitted exception metadata.
- * See docs/notes/game-engine-small-eh.md. */
 typedef unsigned long u32;
 extern "C" {
     extern char lbl_801EF5C8[];

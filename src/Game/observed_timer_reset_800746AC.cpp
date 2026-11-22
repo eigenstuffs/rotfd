@@ -1,2 +1,1 @@
-/* Original observed timer and reset leaves; see docs/notes/game-observed-timer-reset-leafs.md. */
 struct Actor{char opaque00[0x1A8];float value1A8,value1AC;};struct Owner{char opaque00[8];Actor*actor;char opaque0C[4];float value10,value14,value18;};extern "C"{extern const float lbl_80378968,lbl_8037896C;float fn_801F1200();}extern "C"void fn_800746AC(Owner*self){Actor*actor=self->actor;actor->value1AC=lbl_80378968;self->value10=lbl_8037896C*fn_801F1200();self->value14=self->actor->value1AC;self->value18=self->actor->value1A8;}

@@ -1,6 +1,3 @@
-// Derived-agent lifetime hooks; factory storage is 0xA0 bytes.
-// The field at offset 8 is the original virtual-table pointer.
-// See docs/notes/game-class-registry.md.
 struct AgentView_8003FCDC {unsigned long prefix[2];const void *vtable;unsigned char opaque[0xA0-12];};
 extern "C" {
 extern unsigned long lbl_80377628;

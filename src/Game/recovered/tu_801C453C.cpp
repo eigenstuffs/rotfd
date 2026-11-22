@@ -132,7 +132,6 @@ extern "C" signed char fn_801C4968(Owner* self, Record* key, Event* out, signed 
 
 /* ---- Game/small_delegate_801C4B7C.cpp ---- */
 namespace small_delegate_801C4B7C {
-/* Original delegate; partial views documented in docs/notes/game-small-delegates-20261011b.md. */
 struct Record{int type;unsigned long value,extra;Record(){type=-1;extra=0;value=0;}};
 extern "C"signed char fn_801C4968(void*,Record*,void*,signed char);
 extern "C"signed char fn_801C4B7C(void*self,void*value){Record record;record.type=0x23;return fn_801C4968(self,&record,value,1);}
@@ -141,8 +140,6 @@ extern "C"signed char fn_801C4B7C(void*self,void*value){Record record;record.typ
 
 /* ---- Game/engine_record_output_801C4BC4.cpp ---- */
 namespace engine_record_output_801C4BC4 {
-/* Original engine record and output routines.
- * See docs/notes/game-engine-record-output.md. */
 typedef unsigned int u32;
 struct Globals_801C4BC4 {
     char unknown[0x114];
@@ -266,7 +263,6 @@ extern "C" void fn_801C4F7C(Self*self){
 }
 namespace owner_resource_action_reset_801C5180 {
 /* ---- Game/owner_resource_action_reset_801C5180.cpp ---- */
-/* Resource-owner reset and action sweep; see docs/notes/game-owner-resource-action-reset.md. */
 
 struct CollectionManager;
 struct Context {char unknown00[0x110];void*logger;char*actors;CollectionManager*manager;};
@@ -612,7 +608,6 @@ struct Flush801C5698;
 extern "C" void fn_801C6968(unsigned int *object) {object[2]=0;object[0]=~0U;object[1]=0;}
 /* ---- Game/timed_record_update_801C6980.cpp ---- */
 namespace timed_record_update_801C6980 {
-/* Timed action-record update and loop-boundary dispatch; see docs/notes/game-timed-record-update.md. */
 struct Handle { signed int tag:8; signed int index:24; };
 struct Target;
 struct Entry { Target*object;char unknown04[8];signed char tag;char unknown0D[3]; };
@@ -667,8 +662,6 @@ extern "C" void fn_801C6980(Owner*self,float delta){
 }
 /* ---- Game/engine_record_output_801C6C94.cpp ---- */
 namespace engine_record_output_801C6C94 {
-/* Original engine record and output routines.
- * See docs/notes/game-engine-record-output.md. */
 typedef unsigned int u32;
 struct Entry_801C6C94 {
     void*object;

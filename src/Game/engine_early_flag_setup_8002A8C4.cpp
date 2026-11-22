@@ -1,5 +1,3 @@
-/* Original engine flag setup fragments with compiler-emitted exception metadata.
- * See docs/notes/game-engine-early-flag-setup.md. */
 extern "C" {
     void fn_8002AE88(void*);
 }

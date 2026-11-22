@@ -1,5 +1,3 @@
-/* Python creation binding with native placement construction.
- * See docs/notes/game-python-owner-factories.md. */
 #include "Game/python_owner_factories.h"
 struct Agent_80052520 { char unknown[0x320]; Agent_80052520(); };
 extern "C" FactoryPyObject* fn_800D9418(FactoryPyObject*, FactoryPyObject* args) {

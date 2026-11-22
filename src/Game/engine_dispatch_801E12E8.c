@@ -1,5 +1,3 @@
-/* Original engine dispatch and setup routines.
- * See docs/notes/game-engine-dispatch.md. */
 struct State {
     char pad[0x860];
     int count;

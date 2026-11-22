@@ -1,4 +1,3 @@
-/* Dolphin GX TEV stage-count C fragment. See docs/notes/GXTev.md. */
 #include "gx_abi.h"
 
 void GXSetNumTevStages(u8 nStages)

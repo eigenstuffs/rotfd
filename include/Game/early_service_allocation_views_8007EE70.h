@@ -13,8 +13,6 @@ struct Array_800B5E10{int count,capacity;u32*data;Array_800B5E10():count(0),capa
 struct Array_800B5D58{int count,capacity;void*data;Array_800B5D58():count(0),capacity(0),data(0){}~Array_800B5D58();};
 struct Object_800B5EC8:Object_8007F3DC{unsigned char flag10;char unknown11[3];Array_800B5E10 first;Array_800B5D58 second;unsigned char flag2C,flag2D,flag2E;char unknown2F;PoolOwnerVector position30,position3C;float value;void*object;unsigned char flag50;char unknown51[3];int index;Object_800B5EC8();};
 
-/* Original scene owner construction with compiler-emitted exception metadata.
- * See docs/notes/game-engine-scene-owner-construct.md. */
 typedef unsigned long u32;
 extern "C" {void fn_80260FF8(void*);void fn_800B8308(void*);void fn_800BC8DC(void*);void fn_800BD0F8(void*);extern char lbl_802BEF98[];}
 struct Object_80260C7C {

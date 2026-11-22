@@ -1,8 +1,3 @@
-/* MSL allocator reconstructed for GSQE78 from pinned Strikers and TWW
- * matching source references, with original target layout and retained paths.
- * License/provenance: reference/strikers-msl/, reference/tww-msl/.
- * Original text: 0x80121104..0x80121EEC.
- */
 typedef unsigned long u32;
 typedef unsigned char u8;
 #define NULL 0

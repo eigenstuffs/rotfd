@@ -1,4 +1,3 @@
-/* Original owner flag controls and registry report; see docs/notes/game-engine-scene-owner-flags.md. */
 typedef unsigned long u32;
 struct Handle_801F7F10{union{u32 word;struct{signed int tag:8,index:24;}bits;};Handle_801F7F10();~Handle_801F7F10();};
 struct Prefix{char opaque00[8];};struct Node:Prefix{virtual void v08();virtual void v0C();virtual void v10();virtual void v14();virtual void v18();virtual void v1C();virtual void v20();virtual void v24();virtual void v28();virtual void v2C();virtual void v30();virtual void v34();virtual void v38();virtual void v3C();virtual void v40(int);char opaque0C[0x14];Handle_801F7F10 handle20;char opaque24[0xFC];u32 flags120;char opaque124[0x2F1];signed char flag415;};

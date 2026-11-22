@@ -1,6 +1,5 @@
 #ifndef GAME_CALLBACK_CYCLE_INTERNAL_H
 #define GAME_CALLBACK_CYCLE_INTERNAL_H
-// Private views of the observed linked callback state; field names are provisional.
 typedef unsigned long u32;
 struct CallbackCycle;
 struct DispatchNode {

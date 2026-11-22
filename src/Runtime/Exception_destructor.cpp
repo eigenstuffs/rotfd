@@ -1,4 +1,3 @@
-/* Retained std::exception lifetime metadata. See docs/notes/runtime-exception.md. */
 #pragma exceptions on
 #pragma internal on
 

@@ -1,5 +1,3 @@
-/* Registry object bindings reconstructed from GSQE78.
- * See docs/notes/game-registry-lookup.md for the observed ABI and verification. */
 typedef unsigned long u32;
 struct HashTable { int cursor,capacity,count; void**slots; };
 struct BitFlags { int size,capacity; u32*words; int bits; };

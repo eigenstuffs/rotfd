@@ -1,4 +1,3 @@
-/* Animation-frame member cleanup; see docs/notes/game-anim-frame-destroy.md. */
 typedef unsigned long Word;
 
 extern "C" {

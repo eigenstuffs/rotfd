@@ -1,5 +1,3 @@
-/* Original engine scalar setup and forwarding with compiler-emitted exception metadata.
- * See docs/notes/game-engine-early-scalar-setup.md. */
 extern "C" {
     void __ct__15Object_8009A9D8Fv(void*);
     extern char lbl_802BB6A4[];

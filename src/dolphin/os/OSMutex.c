@@ -1,7 +1,3 @@
-/* Dolphin SDK mutex C functions, GSQE78.
- * Adapted from the public doldecomp/melee SDK reconstruction;
- * see reference/melee-sdk/PROVENANCE.md and docs/notes/OSMutex.md.
- */
 #include "OSContext_abi.h"
 typedef signed long s32;
 typedef s32 OSPriority;

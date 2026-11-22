@@ -1,5 +1,3 @@
-/* Python creation binding with native placement construction.
- * See docs/notes/game-python-owner-factories.md. */
 #include "Game/python_owner_factories.h"
 struct Hierarchy_80200478 { char unknown[0xEC]; Hierarchy_80200478(); };
 extern "C" FactoryPyObject* fn_800D0E50(FactoryPyObject*, FactoryPyObject* args) {

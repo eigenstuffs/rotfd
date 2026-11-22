@@ -1,4 +1,3 @@
-/* Effect-array activation; see docs/notes/game-early-effect-array-activate.md. */
 struct Handle_801F7F10{union{unsigned long value;struct{signed int tag:8,index:24;}bits;};};
 struct EffectPrefix{char unknown00[8];};
 struct EffectNode:EffectPrefix{

@@ -1,4 +1,3 @@
-/* Record curve stream/application reconstruction; see docs/notes/game-record-curve-stream-family.md. */
 typedef unsigned long RecordCurve_801AE018_Word;
 struct RecordCurve_801AE018_Stream{void*position;};
 struct RecordCurve_801AE018_Curve{int unknown00,count;void*items;int unknown0C;};

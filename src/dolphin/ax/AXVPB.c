@@ -1,5 +1,3 @@
-/* AX voice parameter blocks. Copyright (c) 2019-2025 NWPlayer123.
- * MIT license: reference/ttyd-sdk/LICENSE. See docs/notes/AXVPB.md. */
 #include "ax_abi.h"
 
 

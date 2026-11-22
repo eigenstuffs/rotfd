@@ -1,4 +1,3 @@
-// Derived-agent initialization; see docs/notes/game-class-registry.md.
 struct AgentView {unsigned long prefix[2];const void *vtable;unsigned char opaque[0xb0-12];};
 extern "C" {
 extern unsigned long lbl_80377750;

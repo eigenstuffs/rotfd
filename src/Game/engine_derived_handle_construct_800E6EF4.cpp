@@ -1,5 +1,3 @@
-/* Original engine native construction with guarded consumer migration with compiler-emitted exception metadata.
- * See docs/notes/game-engine-derived-handle-construct.md. */
 typedef unsigned long u32;
 extern "C" {void __ct__13Manipulator_ZFv(void*);extern char __vt__24ManipulatorDraw_802BC9D0[],lbl_802C8E88[];extern const float lbl_80379800;}
 struct ObjectsRootView {u32 unknown00[2];void*vtable;char unknown0C[0x20-0xC];ObjectsRootView(){__ct__13Manipulator_ZFv(this);}~ObjectsRootView();};

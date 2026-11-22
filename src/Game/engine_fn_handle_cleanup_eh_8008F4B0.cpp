@@ -1,6 +1,4 @@
 #include "Game/state_native_operation_records_selected.h"
-/* Original engine destruction with compiler-emitted exception metadata.
- * See docs/notes/game-engine-fn-handle-cleanup-eh.md. */
 extern "C" {
     extern char lbl_801EF5C8[];
     void fn_801EF610(void*,void*);

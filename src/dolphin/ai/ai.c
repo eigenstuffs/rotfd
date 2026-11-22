@@ -1,5 +1,3 @@
-/* Dolphin AI C fragment; native callback stack switch remains original fallback.
- * See docs/notes/ai.md for source lineage and shared-state ownership. */
 #include "ai_abi.h"
 
 char* __AIVersion = "<< Dolphin SDK - AI\trelease build: Sep  5 2002 05:34:25 (0x2301) >>";

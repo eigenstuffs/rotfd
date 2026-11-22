@@ -1,4 +1,3 @@
-/* Dolphin GX pixel engine controls. See docs/notes/GXPixel.md. */
 #include "gx_abi.h"
 #define GX_BITFIELD(reg, size, shift, val) ((reg) = __rlwimi((reg), (val), (shift), 32-(shift)-(size), 31-(shift)))
 void GXSetFog(GXFogType type, f32 startz, f32 endz, f32 nearz, f32 farz, GXColor color)

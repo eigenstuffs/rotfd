@@ -1,6 +1,3 @@
-/* fn_801C109C (swept sphere move, leftover of node_flag_forward_801C0F34).
- * PARTIAL 99.859%: only FPR colouring in the slide-reflection block differs
- * (original dir.x/y -> f8/f7, normal.x/y -> f5/f3; candidate swapped pairs). */
 /* Two physics-node overrides from one original TU (vtables in
  * menu_object_native_method_tables_802EB240):
  *  - fn_801C0F34 forwards to the base handler fn_801BDEF8 while moving the

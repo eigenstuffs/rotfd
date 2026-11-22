@@ -1,5 +1,3 @@
-/* Dolphin TEV order fragment; the coordinate-enable mask preserves the
- * original invalid-coordinate update order. See docs/notes/GXTev.md. */
 #include "gx_abi.h"
 
 void GXSetTevOrder(GXTevStageID stage, GXTexCoordID coord, GXTexMapID map,

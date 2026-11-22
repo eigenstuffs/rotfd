@@ -1,4 +1,3 @@
-/* Dolphin SDK GXTransform C fragment. See docs/notes/GXTransform.md. */
 #include "gx_abi.h"
 
 void GXSetProjection(f32 mtx[4][4], GXProjectionType type)

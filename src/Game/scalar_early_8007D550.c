@@ -1,6 +1,3 @@
-/* Original scalar operations with private observed layouts.
- * See docs/notes/game-scalar-early.md. */
-
 struct State {const void *vtable;unsigned char enabled,mode;char pad6[2];unsigned int words[10];};
 
 extern const char lbl_802B8448[];

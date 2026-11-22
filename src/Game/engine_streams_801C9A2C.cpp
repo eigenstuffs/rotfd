@@ -1,5 +1,3 @@
-/* Original engine stream and record routines.
- * See docs/notes/game-engine-streams.md. */
 struct Storage_801C9A2C  {
     char pad[8];
 };

@@ -1,5 +1,3 @@
-/* Original reference-counted handle assignment with private observed layout.
- * See docs/notes/game-record-setup-late.md. */
 typedef unsigned int u32;
 extern struct {char unknown[0x118];void *manager;} lbl_801E9D24;
 extern void fn_801F86C8(void *manager,const u32 *handle,int adjustment);

@@ -1,5 +1,3 @@
-/* Original engine registry and handle stream routines.
- * See docs/notes/game-engine-handle-stream.md. */
 typedef unsigned int u32;
 extern "C" {
     extern char lbl_8028F698[];

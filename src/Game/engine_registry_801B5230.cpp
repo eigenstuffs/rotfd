@@ -1,5 +1,3 @@
-/* Original engine type registry and lookup routines.
- * See docs/notes/game-engine-registry.md. */
 extern "C" unsigned long fn_801F948C(void *,const char *);
 struct Key_801B5230  {
     unsigned int value;

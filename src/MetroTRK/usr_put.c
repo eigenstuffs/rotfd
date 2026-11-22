@@ -1,4 +1,3 @@
-/* MetroTRK debug output. See docs/notes/MetroTRK-usr_put.md. */
 #include "trk_abi.h"
 extern void SetTRKConnected(u32);
 extern u32 GetTRKConnected(void);

@@ -1,4 +1,3 @@
-/* Typed actor Handle-array assignment; see docs/notes/game-early-actor-handle-array-assign.md. */
 extern "C" {
 extern char lbl_8028F698[],lbl_801EF5C8[];
 void*fn_8028FAF4(void*,void*,int,int);void*fn_8028FF24(void*,int);void fn_8028FD50(void*,void*,int);

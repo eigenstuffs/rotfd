@@ -1,4 +1,3 @@
-/* Original scene resource scalar setup; see docs/notes/game-engine-scene-scalar-setup-more.md. */
 typedef unsigned long u32;
 struct Handle_801F7F10{signed int generation:8,index:24;Handle_801F7F10();~Handle_801F7F10();};
 struct Resource{char opaque00[0x348];float field348,field34C;char opaque350[0x20];float field370;char opaque374[0x68];float field3DC,field3E0,field3E4;u32 field3E8,field3EC;void setPair(float value){field370=value;field34C=value;}};

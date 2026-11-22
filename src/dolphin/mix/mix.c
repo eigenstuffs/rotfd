@@ -1,5 +1,3 @@
-/* Dolphin mixer. Copyright (c) 2019-2025 NWPlayer123.
- * MIT license: reference/ttyd-sdk/LICENSE. See docs/notes/mix.md. */
 #include "mix_abi.h"
 
 u16 __MIXVolumeTable[965] = {

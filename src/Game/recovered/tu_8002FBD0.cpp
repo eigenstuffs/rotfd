@@ -175,8 +175,6 @@ extern "C" char* fn_8002FBD0(Self* self, const NameHash* key) {
 /* ---- Game/leaf_800309F8.c ---- */
 namespace leaf_800309F8 {
 extern "C" {
-/* Original leaf operations. Provisional names and text-only ownership.
- * See docs/notes/game-leaf-continuation.md. */
 
 
 float fn_800309F8(void) { return 1.0f; }
@@ -229,8 +227,6 @@ extern "C" void fn_80030A08(Owner*self,const Handle_801F7F10&h,int selected){
 }
 /* ---- Game/early_scene_transition_controls_80030E9C.cpp ---- */
 namespace u_early_scene_transition_controls_80030E9C_cpp {
-/* Scene transition selection and native Handle lifetimes.
- * See docs/notes/game-early-scene-transition-controls.md. */
 
 extern "C"{extern char lbl_801EF5C8[];void fn_801EF610(void*,void*);}
 
@@ -271,7 +267,6 @@ extern "C" int fn_80030E9C(Owner*self,int selected,int mode){
 }
 /* ---- Game/short_control_delegate_8003125C.cpp ---- */
 namespace short_control_delegate_8003125C {
-/* Original short control delegates; see docs/notes/game-short-control-delegates.md. */
 struct Handle;struct Record{char opaque00[0x4C];};extern "C"void fn_801E2E04(Record*,const Handle&);extern "C"void fn_8003125C(Record*self,int index,const Handle&value){fn_801E2E04(&self[index],value);}
 
 }
@@ -279,8 +274,6 @@ struct Handle;struct Record{char opaque00[0x4C];};extern "C"void fn_801E2E04(Rec
 /* ---- Game/leaf_80031288.c ---- */
 namespace leaf_80031288 {
 extern "C" {
-/* Original leaf operations. Provisional names and text-only ownership.
- * See docs/notes/game-leaf-continuation.md. */
 
 void fn_80031288(void) { }
 
@@ -292,8 +285,6 @@ void fn_8003128C(void) { }
 
 /* ---- Game/engine_callback_forward_80031290.cpp ---- */
 namespace engine_callback_forward_80031290 {
-/* Original engine destruction with compiler-emitted exception metadata.
- * See docs/notes/game-engine-callback-forward.md. */
 extern "C" {
     void fn_8025ED38(void*, void*, void*);
     extern void* lbl_803775E0;
@@ -309,8 +300,6 @@ extern "C" void fn_80031290(void* self, void* value) {
 
 /* ---- Game/engine_handle_value_setup_800312D4.cpp ---- */
 namespace engine_handle_value_setup_800312D4 {
-/* Original engine Handle value construction with compiler-emitted exception metadata.
- * See docs/notes/game-engine-handle-value-setup.md. */
 typedef unsigned long u32;
 
 struct Manager;
@@ -333,8 +322,6 @@ extern "C" Copy fn_800312D4(const Owner*self){return Copy(self->handle60);}
 /* ---- Game/leaf_80031324.c ---- */
 namespace leaf_80031324 {
 extern "C" {
-/* Original leaf operations. Provisional names and text-only ownership.
- * See docs/notes/game-leaf-continuation.md. */
 
 void fn_80031324(void) { }
 
@@ -344,8 +331,6 @@ void fn_80031324(void) { }
 
 /* ---- Game/scene_resource_transition_80031328.cpp ---- */
 namespace u_scene_resource_transition_80031328_cpp {
-/* Scene resource transition and retained native handles.
- * See docs/notes/game-scene-resource-transition.md. */
 
 extern "C"{extern char lbl_801EF5C8[];void fn_801EF610(void*,void*);}
 
@@ -371,8 +356,6 @@ extern "C" int fn_80031328(Owner*self){
 /* ---- Game/leaf_80031650.c ---- */
 namespace leaf_80031650 {
 extern "C" {
-/* Original leaf operations. Provisional names and text-only ownership.
- * See docs/notes/game-leaf-continuation.md. */
 
 void fn_80031650(void) { }
 
@@ -490,7 +473,6 @@ extern "C" void fn_80031740(Owner* self) {
 struct EmitOrder_80031740;
 /* ---- Game/engine_scene_setup_more_80031CB0.cpp ---- */
 namespace engine_scene_setup_more_80031CB0 {
-/* Original scene setup and enum controls; see docs/notes/game-engine-scene-setup-more.md. */
 extern "C" unsigned int fn_80031CB0(void*,unsigned int value){switch(value){case 0:value=5;break;case 3:value=0;break;case 6:value=3;break;case 1:value=6;break;case 2:value=1;break;case 4:value=2;break;case 5:value=4;break;}return value;}
 extern "C" unsigned int fn_80031D0C(void*,unsigned int value){switch(value){case 0:value=3;break;case 3:value=6;break;case 6:value=1;break;case 1:value=2;break;case 2:value=4;break;case 4:value=5;break;case 5:value=0;break;}return value;}
 
@@ -923,7 +905,6 @@ extern "C" int fn_80032980(Node* self, int event, Callback* callback) {
 extern "C" void fn_80033038(void) { }
 extern "C" void fn_8003303C(void) { }
 namespace scene_setup_80033040 {
-/* Original scene setup and enum controls; see docs/notes/game-engine-scene-setup-more.md. */
 struct Owner{};struct Target{char opaque00[0x2EC];signed char enabled2EC;};struct Scene{char opaque00[0x15058];Target*first15058;};struct Prefix{char opaque00[0x1C];};struct Service:Prefix{virtual void v08();virtual void v0C();virtual void v10();virtual void v14();virtual void v18();virtual void v1C();virtual void v20();virtual void v24();virtual void v28();virtual void v2C();virtual void v30();virtual void v34(int,int);virtual void v38(int,int,int);};
 extern "C" struct Global{char opaque00[0x124];Scene*scene;char opaque128[0x2C];Service*service;}lbl_801E9D24;extern "C"{void fn_80059340(Target*,int);void fn_802073E8(Owner*,int,Owner*,float);extern const float lbl_80378414;}
 extern "C" void fn_80033040(Owner*self){Target*t=lbl_801E9D24.scene->first15058;signed char enabled=!t->enabled2EC;t->enabled2EC=enabled;lbl_801E9D24.service->v34(0,enabled);fn_80059340(lbl_801E9D24.scene->first15058,0x29);lbl_801E9D24.service->v38(0,0,0);if(enabled)fn_802073E8(self,0xE0,self,lbl_80378414);else fn_802073E8(self,0xCF,self,lbl_80378414);}

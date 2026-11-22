@@ -1,4 +1,3 @@
-/* Miscellaneous object binding; see docs/notes/game-python-misc-bindings.md. */
 #include "Game/python_scalar_bindings.h"
 extern "C" long PyInt_AsLong(FactoryPyObject*);
 extern "C" const char lbl_802A4924[];

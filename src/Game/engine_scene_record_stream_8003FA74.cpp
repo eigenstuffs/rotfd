@@ -1,4 +1,3 @@
-/* Original scene record stream controls; see docs/notes/game-engine-scene-record-stream.md. */
 struct Target{char opaque00[0x319];signed char state319;};struct Record{char opaque00[0x3B5C];};struct Backup{char opaque00[0xD4];Record recordD4;};struct Scene{char opaque00[0x15058];Target*first15058;Backup*second1505C;};struct Arguments{};
 struct RenderPrefix{char opaque00[0x7C];};struct Renderer:RenderPrefix{virtual void v08();virtual void v0C();virtual void v10();virtual void v14();virtual void v18();virtual void v1C();virtual void v20();virtual void v24();virtual void v28();virtual void v2C();virtual void v30(float);virtual float v34();virtual void v38(float);virtual float v3C();virtual void v40();virtual void v44();};
 extern "C" struct Global{char opaque00[0x110];Arguments*args;char opaque114[0x10];Scene*scene;char opaque128[0x30];Renderer*renderer;}lbl_801E9D24;

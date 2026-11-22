@@ -1,4 +1,3 @@
-/* Ordinary scene named mode switch; see docs/notes/game-scene-named-mode-switch.md. */
 typedef unsigned long Word;
 struct Handle_801F7F10{union{Word word;struct{signed int tag:8,index:24;}bits;};Handle_801F7F10();~Handle_801F7F10();};
 struct Node;struct Entry{Node*object;char unknown04[8];signed char tag;char unknown0D[3];signed char getTag()const{return tag;}};struct Manager{char unknown00[8];Entry*entries;};

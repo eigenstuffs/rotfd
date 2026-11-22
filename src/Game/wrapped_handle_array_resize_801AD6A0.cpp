@@ -1,4 +1,3 @@
-/* Wrapped Handle array resize reconstruction; see docs/notes/game-wrapped-handle-array-resize.md. */
 typedef unsigned long WrappedHandleResizeWord;
 extern "C"{extern char lbl_8028F698[];void*fn_8028FAF4(void*,void*,WrappedHandleResizeWord,WrappedHandleResizeWord);void*fn_8028FF24(void*,WrappedHandleResizeWord);void fn_8028FD50(void*,void*,WrappedHandleResizeWord);extern struct{char unknown00[0x118];void*manager;}lbl_801E9D24;void fn_801F86C8(void*,const void*,short);}
 inline void*operator new(unsigned long,void*p){return p;}

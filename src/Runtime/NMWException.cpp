@@ -1,4 +1,3 @@
-/* Retained CodeWarrior C++ support. See docs/notes/runtime-nmw-exception.md. */
 #pragma exceptions on
 #pragma internal on
 

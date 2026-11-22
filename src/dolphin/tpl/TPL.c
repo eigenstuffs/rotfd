@@ -1,4 +1,3 @@
-/* Texture-palette descriptor getter. See docs/notes/TPL.md for attribution. */
 typedef unsigned long u32;
 
 typedef struct TPLHeader TPLHeader;

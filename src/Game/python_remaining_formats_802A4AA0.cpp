@@ -1,4 +1,3 @@
-/* Original Python argument formats. See docs/notes/game-additional-python-format-strings.md. */
 extern "C" const char lbl_802A4AA0[28] = "OO:Agent_Z_RegisterWithGame";
 extern "C" const char lbl_802A4ABC[30] = "OO:Agent_Z_UnRegisterFromGame";
 extern "C" const char lbl_802A4ADC[37] = "OOO:Agent_Z_AuthorizeInteractionWith";

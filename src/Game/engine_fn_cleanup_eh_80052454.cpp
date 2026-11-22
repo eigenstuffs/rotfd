@@ -1,5 +1,3 @@
-/* Original engine destruction with compiler-emitted exception metadata.
- * See docs/notes/game-engine-fn-cleanup-eh.md. */
 extern "C" {
     extern char lbl_801EF5C8[];
     void fn_801EF610(void*,void*);

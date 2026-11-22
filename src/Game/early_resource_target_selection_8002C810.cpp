@@ -1,6 +1,3 @@
-/* Select two named resource targets and forward scene selection state.
- * Observed field views only; original strings, globals and tables remain external.
- * See docs/notes/game-early-resource-target-selection.md. */
 typedef unsigned long Word;
 struct Handle_C810{union{Word word;struct{signed int tag:8,index:24;}bits;};};
 extern "C"Word fn_801F948C(void*,const char*);

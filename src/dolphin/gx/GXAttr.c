@@ -1,4 +1,3 @@
-/* Dolphin GX vertex attributes. See docs/notes/GXAttr.md. */
 #include "gx_abi.h"
 
 #define CHECK_ATTRPTR(line, attrPtr) ASSERTMSGLINE(line, (attrPtr) != NULL, "GXSetVtxDescv: attrPtr is NULL")

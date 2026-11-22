@@ -1,8 +1,3 @@
-/* Named-resource mode dispatch with scoped native Handle copies.
- * Partial original translation unit; see docs/notes/game-early-named-resource-modes.md.
- * The two related-handle query views describe the same observed four-byte word.
- * Unobserved resource/node fields remain opaque; original string storage is external.
- */
 typedef unsigned long Word;
 struct Handle_801F7F10{union{Word word;
 struct{signed int tag:8,index:24;}bits;};Handle_801F7F10();~Handle_801F7F10();};

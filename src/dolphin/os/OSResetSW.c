@@ -1,7 +1,3 @@
-/* Dolphin SDK reset-switch C functions, GSQE78.
- * Adapted from the public doldecomp/melee SDK reconstruction;
- * see reference/melee-sdk/PROVENANCE.md and docs/notes/OSResetSW.md.
- */
 #include "OSContext_abi.h"
 typedef signed short __OSInterrupt;
 typedef unsigned long long u64;

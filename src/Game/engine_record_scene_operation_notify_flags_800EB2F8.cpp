@@ -2,8 +2,6 @@
  * adapted from engine_record_scene_operation_notify_800EA640.cpp.
  * The copied Handle is built directly from self->record0C->handle04 (no named reference), which fixes the
  * final Handle pointer register allocation. */
-/* Original scene/record Handle setup and cleanup; strict retained EH plus strong-owner backup audit.
- * See docs/notes/game-engine-scene-handle-setup.md. */
 typedef unsigned long u32;
 struct Handle_801F7F10 {union{u32 word;struct{signed int tag:8,index:24;}bits;};Handle_801F7F10();~Handle_801F7F10();};
 struct Entry{char*object;u32 key,opaque08;signed char generation;char opaque0D[3];};struct Manager{char opaque00[8];Entry*entries;};

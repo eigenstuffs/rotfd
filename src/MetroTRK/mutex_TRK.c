@@ -1,4 +1,3 @@
-/* MetroTRK mutex_TRK. See docs/notes/MetroTRK-mutex_TRK.md. */
 #include "trk_abi.h"
 
 DSError TRKInitializeMutex(void* p1)

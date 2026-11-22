@@ -1,7 +1,3 @@
-/* Dolphin SDK GXLight.c light load and channel colors, GSQE78.
- * GXLoadLightObjImm uses the SDK's inlined PushLight paired-single copy
- * (an asm block over register locals); see docs/notes/GXLight.md.
- */
 #include "gx_abi.h"
 
 typedef struct {

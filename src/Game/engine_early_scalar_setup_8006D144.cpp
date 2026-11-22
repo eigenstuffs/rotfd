@@ -1,5 +1,3 @@
-/* Original engine scalar setup and forwarding with compiler-emitted exception metadata.
- * See docs/notes/game-engine-early-scalar-setup.md. */
 struct View {
     char unknown00[0x1DC];
     unsigned char field1DC;

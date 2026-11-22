@@ -1,5 +1,3 @@
-/* Actor event control and related-object easing preparation.
- * See docs/notes/game-actor-transition-update.md. */
 typedef unsigned long Word;
 struct Handle_801F7F10 {union{Word word;struct{signed int tag:8,index:24;}bits;};Handle_801F7F10();~Handle_801F7F10();};
 struct Node;

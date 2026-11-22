@@ -1,4 +1,3 @@
-/* Original actor timed callback controls; see docs/notes/game-engine-actor-timed-controls.md. */
 struct Actor {
     char opaque00[0x30];
     unsigned long long flags30;

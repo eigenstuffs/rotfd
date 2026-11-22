@@ -1,6 +1,3 @@
-/* Original engine setup and record routines with private observed layouts.
- * See docs/notes/game-scalar-middle-more.md. */
-
 extern struct {char pad[0x110];void *logger;} lbl_801E9D24;
 
 extern const char lbl_802ACCA8[],lbl_802ACCB4[];

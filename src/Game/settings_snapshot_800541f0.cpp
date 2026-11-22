@@ -1,5 +1,3 @@
-/* Ordinary typed settings snapshot with inline record copies.
- * See docs/notes/game-settings-snapshot.md for the verified field layout. */
 typedef unsigned long Word;
 struct SourceRecord{char unknown00[8];Word first,second,third;unsigned char*name,*description,*tags;};
 struct SourceGroup{Word unknown00;Word first,second,third,fourth;char unknown14[12];unsigned char bytes[9];unsigned char a,b,c;SourceRecord*records;short values[50];};

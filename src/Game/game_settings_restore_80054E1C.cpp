@@ -1,7 +1,3 @@
-/* fn_80054E1C: restore game settings from a saved Output block (inverse of fn_800541F0).
- * Based on scratch/game_settings_restore_80054e1c/native_gekko.cpp. The flag setter takes its
- * arguments as (second, first) and binds the first value through a const reference, which keeps
- * the original load order (0x3900 then 0x3901) by blocking expression propagation. */
 typedef unsigned long Word;
 struct SourceRecord{char unknown00[8];Word first,second,third;unsigned char*name,*description,*tags;};
 struct SourceGroup{Word unknown00;Word first,second,third,fourth;char unknown14[12];unsigned char bytes[9];unsigned char a,b,c;SourceRecord*records;short values[50];};

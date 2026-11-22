@@ -1,6 +1,3 @@
-/* Actor event dispatcher fn_800410E4: selection/flag events, queued DD resource
- * events and event 57's time conversion, then the base event loop fn_8002BAB4.
- * Prior research: scratch/engine_actor_event_dispatch_20261011ks/FINDINGS.md. */
 typedef unsigned long Word;
 struct Handle_801F7F10{union{Word word;struct{signed int tag:8,index:24;}bits;};Handle_801F7F10();~Handle_801F7F10();};
 struct Name{Word word;Name(const char*);Name(const Name&n){word=n.word;}};

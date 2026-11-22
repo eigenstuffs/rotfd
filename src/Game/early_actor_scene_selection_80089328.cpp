@@ -1,4 +1,3 @@
-/* Native scene-effect selection; see docs/notes/game-early-actor-scene-selection.md. */
 #include "Game/early_actor_scene_selection_views.h"
 extern "C" void fn_80089328(SelectionOwner*self){
  const char*strings=lbl_8029D680;

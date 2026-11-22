@@ -4,8 +4,6 @@ template<int N>struct StringBuffer {
     operator const char*()const{return text;}
     char&operator[](int i){return text[i];}
 };
-/* Console command registration, reconstructed from GSQE78.
- * See docs/notes/game-console-commands.md. */
 typedef unsigned long u32;
 struct ConsoleCommand {
     char name[64],help[128];StringBuffer<16>alias;

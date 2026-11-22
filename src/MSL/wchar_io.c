@@ -1,5 +1,3 @@
-/* MSL stream orientation; reconstructed from the pinned zeldaret/tww
- * reference. See docs/notes/msl-wchar-io.md for provenance and proof. */
 #include "stdio_internal.h"
 
 int fwide(FILE* file, int mode)

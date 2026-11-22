@@ -1,5 +1,3 @@
-/* Original engine native construction with guarded consumer migration with compiler-emitted exception metadata.
- * See docs/notes/game-engine-base-handle-construct.md. */
 typedef unsigned long u32;
 extern "C" {void __ct__13Manipulator_ZFv(void*);extern char __vt__20ObjectsBase_802EB3F8[];void __ct__4CFSMFv(void*);extern char lbl_801EF5C8[];void*fn_801EFA1C(void*,int,void*,void*,int,int);extern float game_vec3_zero[3];}
 struct Manipulator_Z {u32 unknown00[2];void*vtable;char unknown0C[0x20-0xC];Manipulator_Z(){__ct__13Manipulator_ZFv(this);}~Manipulator_Z();};

@@ -1,4 +1,3 @@
-/* Original callback registration controls; see docs/notes/game-engine-callback-registration-controls.md. */
 typedef unsigned long u32;typedef unsigned long long u64;
 union Handle{u32 word;struct{signed int generation:8,index:24;}bits;};
 struct Prefix{u32 unknown00,unknown04;};

@@ -1,4 +1,3 @@
-/* Nested scene Handle return and state write; see docs/notes/game-early-scene-nested-state.md. */
 typedef unsigned long Word;
 struct Handle_801F7F10{union{Word word;struct{signed int tag:8,index:24;}bits;};Handle_801F7F10();~Handle_801F7F10();};
 struct StateNode{char unknown00[0x98];Handle_801F7F10*child;char unknown9C[0x140];unsigned char state;};

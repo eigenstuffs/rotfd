@@ -1,6 +1,3 @@
-/* GSQE78 retained MSL character I/O. Adapted from the pinned Strikers
- * reconstruction and original retained helper boundaries; see
- * docs/notes/msl-char-io.md. */
 #include "stdio_internal.h"
 extern int fwide(FILE*, int);
 extern int fseek(FILE*, long, int);

@@ -1,6 +1,3 @@
-/* Original indexed records, engine setup and allocation-header routines.
- * See docs/notes/game-engine-leaf.md. */
-
 extern void *OSGetArenaHi(void);
 
 extern unsigned int *lbl_80377FB0;

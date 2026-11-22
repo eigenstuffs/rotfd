@@ -1,6 +1,3 @@
-/* Original leaf operations. Provisional names and text-only ownership.
- * See docs/notes/game-leaf-continuation.md. */
-
 void fn_8002390C(void *object, unsigned int value) { *(unsigned int *)((char *)object + (120)) = value; }
 
 void fn_80023914(void *object, unsigned int value) { *(unsigned int *)((char *)object + (124)) = value; }

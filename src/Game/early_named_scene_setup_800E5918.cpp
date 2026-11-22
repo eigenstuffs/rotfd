@@ -1,5 +1,3 @@
-/* Named scene actor queries, setup and virtual forwarding.
- * See docs/notes/game-early-named-scene-setup.md. */
 typedef unsigned long Word;
 struct Handle_801F7F10{union{Word word;struct{signed int tag:8,index:24;}bits;};Handle_801F7F10();~Handle_801F7F10();};
 struct Returned_E5918:Handle_801F7F10{Returned_E5918();~Returned_E5918(){}};

@@ -1,5 +1,3 @@
-/* Original record setup with observed private scalar fields.
- * See docs/notes/game-record-setup-late.md. */
 #include "Game/owner_viewport_interface_tables.h"
 extern void fn_801CFAB0(void *object);
 void *fn_80249CDC(void *object) {

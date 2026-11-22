@@ -1,9 +1,3 @@
-/* Reconstructed GSQE78 memory runtime.
- * Adapted from doldecomp/melee src/Runtime/__mem.c at
- * ae5898ee0dfda41b34fdf846f7d680a33e14779d.
- * Source provenance and matching evidence: docs/notes/msl-memory.md.
- * Complete linked range: 0x80005434..0x80005570.
- */
 #define SECTION_INIT __declspec(section ".init")
 #pragma ANSI_strict off
 

@@ -301,7 +301,6 @@ extern "C" void fn_801BDEF8(Self*self,void*world,const Vec3*a,const Vec3*b,int i
 
 }
 /* ---- 801BE188 ---- */
-/* Resource motion-event dispatch; see docs/notes/game-resource-motion-event-dispatch.md. */
 typedef unsigned long Word;typedef unsigned long long Wide;
 struct Handle_801F7F10 {union{Word word;struct{signed int tag:8;signed int index:24;}bits;};Handle_801F7F10();~Handle_801F7F10();};
 struct ResourceEventZero2_801BE188;

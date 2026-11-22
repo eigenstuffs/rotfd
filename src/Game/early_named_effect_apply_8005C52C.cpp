@@ -1,4 +1,3 @@
-/* Named effect apply; see docs/notes/game-early-named-effect-apply.md. */
 typedef unsigned long Word;
 extern "C" {Word fn_801F948C(void*,const char*);extern const char lbl_80378608[6];}
 struct TargetName {Word word;TargetName(const char*s){word=fn_801F948C(this,s);}};

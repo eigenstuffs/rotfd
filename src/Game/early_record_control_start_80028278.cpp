@@ -1,4 +1,3 @@
-/* Record control startup; see docs/notes/game-early-record-control-start.md. */
 struct Handle_801F7F10{union{unsigned long value;struct{signed int tag:8,index:24;}bits;};};
 struct ControlResource;
 struct ControlPrefix{char unknown00[8];};

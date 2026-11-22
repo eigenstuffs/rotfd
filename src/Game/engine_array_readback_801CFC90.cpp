@@ -1,5 +1,3 @@
-/* Original engine dynamic-array readback and reset.
- * See docs/notes/game-engine-array-readback.md. */
 extern "C" {
     extern char lbl_8028F698[];
     void*fn_8028FAF4(void*,void*,int,int);

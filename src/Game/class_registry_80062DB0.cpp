@@ -1,5 +1,3 @@
-// Recovered callback registration; see docs/notes/game-class-registry.md.
-// ActorScriptAgent.h factory proves a 0x200-byte object; fields remain opaque.
 struct Agent_80062E18 {
     // Stack placement proves eight-byte alignment; this union only expresses storage.
     union { double alignment; unsigned char storage[0x200]; };

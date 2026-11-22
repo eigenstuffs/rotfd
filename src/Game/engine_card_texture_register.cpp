@@ -1,5 +1,3 @@
-// Texture-file registration for memory-card images.
-// See docs/notes/game-engine-card-texture-register.md.
 #include "Game/engine_card_texture_register.h"
 
 typedef unsigned int Word;

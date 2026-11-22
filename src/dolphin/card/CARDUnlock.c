@@ -1,4 +1,3 @@
-/* Dolphin CARD unlock handshake. See docs/notes/CARDUnlock.md and reference provenance. */
 #include "card_abi.h"
 typedef unsigned int uint;
 #define ATTRIBUTE_ALIGN(x) __attribute__((aligned(x)))

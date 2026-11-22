@@ -1,4 +1,3 @@
-/* Scalar method binding; see docs/notes/game-python-scalar-bindings.md. */
 #include "Game/python_scalar_bindings.h"
 extern "C" const char lbl_802A3ACC[];
 struct ScalarView_800D38D4;

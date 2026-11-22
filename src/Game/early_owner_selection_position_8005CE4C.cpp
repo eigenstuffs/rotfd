@@ -1,4 +1,3 @@
-/* Owner selection and position setup; see docs/notes/game-early-owner-selection-position.md. */
 typedef unsigned long Word;
 struct Handle{union{Word value;struct{signed int tag:8,index:24;}bits;};};
 struct Vec3{float x,y,z;Vec3(float a,float b,float c):x(a),y(b),z(c){}Vec3&operator=(const Vec3&v){x=v.x;y=v.y;z=v.z;return*this;}};

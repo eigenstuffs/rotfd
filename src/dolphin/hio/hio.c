@@ -1,4 +1,3 @@
-/* Dolphin host I/O. See docs/notes/hio.md. */
 #include "../os/OSContext_abi.h"
 typedef signed long s32;
 typedef void (*HIOCallback)(void);

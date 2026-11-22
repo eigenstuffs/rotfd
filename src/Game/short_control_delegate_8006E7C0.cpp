@@ -1,2 +1,1 @@
-/* Original short control delegates; see docs/notes/game-short-control-delegates.md. */
 struct Mode;struct World{char opaque00[0x15058];Mode*mode;};struct Context{char opaque00[0x124];World*world;};extern "C"{extern Context lbl_801E9D24;void fn_8005AD94(Mode*);}extern "C"void fn_8006E7C0(void*ignored,unsigned char ignoredValue){fn_8005AD94(lbl_801E9D24.world->mode);}

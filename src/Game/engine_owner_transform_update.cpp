@@ -1,5 +1,3 @@
-/* Recursive owner matrix and hook update.
- * See docs/notes/game-engine-owner-transform-update.md. */
 #include "Game/engine_owner_transform_update.h"
 
 extern "C" void fn_8023D9B8(TransformUpdateOwner* self, void* context,

@@ -1,5 +1,3 @@
-/* Actor mode setup with retained child-handle actions.
- * See docs/notes/game-actor-mode-prepare.md. */
 typedef unsigned long Word;
 struct Handle_801F7F10{union{Word word;struct{signed int tag:8,index:24;}bits;};Handle_801F7F10();~Handle_801F7F10();};
 struct Node;struct Entry{Node*object;char unknown04[8];signed char tag;char unknown0D[3];signed char getTag()const{return tag;}};struct Manager{int count,capacity;Entry*entries;};

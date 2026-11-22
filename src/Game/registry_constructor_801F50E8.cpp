@@ -1,12 +1,3 @@
-/* auto_03_801F50E8_text (s4), constructor-only split 0x801F50E8..0x801F551C. fn_801F50E8 -> __ct__17Registry_801F50E8Fv is
- * EXACT as the real C++ constructor Registry_801F50E8::Registry_801F50E8()
- * (flags of registry_destructor.cpp: -O4,p, -Cpp_exceptions off, -bool off).
- * fn_801F551C (Pool<HandleArray> dtor) 98.99%: the original has a second
- * `beq` on the element this-check CR (add.; beq; beq) that every nested /
- * explicit-check spelling turns into a separate cmplwi.
- * fn_801F56A8 (RegistryBase dtor) 99.40%: i / word-offset volatile registers
- * (r7/r5) swapped in the two leaf Pool<u32> loops.
- * The original header comment of the session-2 file follows. */
 /* Variant of final.cpp in which fn_801F50E8 is written as the real C++
  * constructor Registry_801F50E8::Registry_801F50E8() (mangled
  * __ct__17Registry_801F50E8Fv). Its code and relocations are identical to

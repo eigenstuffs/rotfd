@@ -1,5 +1,3 @@
-/* Retained GSQE78 MSL UTF-8 output conversion; pinned Wind Waker
- * reference and proof: docs/notes/msl-mbstring.md. */
 typedef unsigned long size_t;
 typedef unsigned short wchar_t;
 extern char* strncpy(char*, const char*, size_t);

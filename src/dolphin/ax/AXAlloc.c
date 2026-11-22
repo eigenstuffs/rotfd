@@ -1,4 +1,3 @@
-/* Dolphin AX voice allocation. See docs/notes/AXAlloc.md. */
 #include "ax_abi.h"
 static inline void __AXInitVoiceStacks(void);
 static inline AXVPB *__AXPopFreeStack(void);

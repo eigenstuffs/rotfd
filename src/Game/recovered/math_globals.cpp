@@ -147,10 +147,6 @@ extern "C" void fn_801F14E0(const Vec3* a, const Vec3* b, Quat* out)
 extern "C" { double __fabs(double); }
 
 namespace part_801F18D0 {
-// Partial text split: fn_801F18D0 (basis matrix from direction/up) and
-// fn_801F1AAC (fast quaternion normalization). fn_801F14E0 (99.66%) before
-// them and fn_801F1B1C/fn_801F1BB0 (~95.5%) after them remain original code;
-// full draft: scratch/claude_match/auto_03_801F14E0_text/final.cpp.
 /* Engine quaternion/basis helpers at 0x801F14E0..0x801F1C64 (part of the
    original math translation unit that follows random.cpp).
    - fn_801F14E0: quaternion turning the forward axis (0,0,1) onto direction a
@@ -446,10 +442,6 @@ extern "C" void fn_801F1E78(Quat *q, const Matrix3 *m)
 }
 
 namespace part_quaternion_matrix_assign {
-/* Scalar game math reconstructed from GSQE78.
- * Original names and full translation-unit extent are not established.
- * See docs/notes/game-scalar-math.md.
- */
 struct Vec3 { float x,y,z; };
 struct Quat { float w; Vec3 v; };
 struct Matrix3 { float m[3][3]; };
@@ -493,10 +485,6 @@ void fn_801F223C(Matrix3 *self,const Matrix3 *right) { multiply(self,self,right)
 }
 
 namespace part_math_inverse {
-/* Scalar game math reconstructed from GSQE78.
- * Original names and full translation-unit extent are not established.
- * See docs/notes/game-scalar-math.md.
- */
 struct Vec3 { float x,y,z; };
 struct Vec4 { float x,y,z,w; };
 struct Matrix4 { float m[4][4]; };
@@ -549,10 +537,6 @@ extern "C" void fn_801F25E8(Matrix4* dst, const Vec3* p, const Quat* q, const Ve
 }
 
 namespace part_math_multiply_assign {
-/* Scalar game math reconstructed from GSQE78.
- * Original names and full translation-unit extent are not established.
- * See docs/notes/game-scalar-math.md.
- */
 struct Vec3 { float x,y,z; };
 struct Vec4 { float x,y,z,w; };
 struct Matrix4 { float m[4][4]; };
@@ -603,10 +587,6 @@ extern "C" Quat* fn_801F27BC(Quat* q, const Vec3* u, const Vec3* v) {
 }
 
 namespace part_math_transform {
-/* Scalar game math reconstructed from GSQE78.
- * Original names and full translation-unit extent are not established.
- * See docs/notes/game-scalar-math.md.
- */
 struct Vec3 { float x,y,z; };
 struct Vec4 { float x,y,z,w; };
 struct Matrix4 { float m[4][4]; };
@@ -622,10 +602,6 @@ void fn_801F295C(Vec4 *dst,const Matrix4 *m,const Vec3 *v)
 }
 
 namespace part_math_globals {
-/* Scalar game math reconstructed from GSQE78.
- * Original names and full translation-unit extent are not established.
- * See docs/notes/game-scalar-math.md.
- */
 struct Int3 { int x,y,z; Int3(int a,int b,int c):x(a),y(b),z(c){} };
 struct Vec2 { float x,y; Vec2(float a,float b):x(a),y(b){} };
 struct Vec3 { float x,y,z; Vec3(float a,float b,float c):x(a),y(b),z(c){} };

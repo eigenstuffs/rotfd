@@ -1,7 +1,6 @@
 #ifndef GAME_ENGINE_STREAM_LAYERS_H
 #define GAME_ENGINE_STREAM_LAYERS_H
 
-// Partial view of the fixed stream blocks; names are provisional.
 struct EngineStreamLayerView {
     char unknown00[0x0C];
     char field0C[4];

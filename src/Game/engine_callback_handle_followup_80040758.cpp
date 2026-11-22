@@ -1,4 +1,3 @@
-/* Original callback setup/notification lifetime; see docs/notes/game-engine-callback-handle-followup.md. */
 typedef unsigned long u32;
 struct Handle_801F7F10{u32 word;Handle_801F7F10();~Handle_801F7F10();};
 struct Context{char unknown00[0x118];void*manager;char unknown11C[0x164-0x11C];void*service;};

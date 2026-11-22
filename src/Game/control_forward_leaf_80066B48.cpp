@@ -1,2 +1,1 @@
-/* Original control forwarding and predicates; see docs/notes/game-control-forward-leafs.md. */
 struct Resource;struct Prefix{char opaque00[4];};struct Control:Prefix{virtual void slot08();virtual void slot0C();virtual void slot10();virtual Resource*get();};extern "C"float fn_8005EC4C(Resource*,Resource*);extern "C"float fn_80066B48(Control*self,Resource*other){return fn_8005EC4C(self->get(),other);}

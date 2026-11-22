@@ -1,7 +1,3 @@
-/* Dolphin SDK FAT allocation C unit, GSQE78.
- * Adapted from doldecomp/melee; see reference/melee-sdk/PROVENANCE.md
- * and docs/notes/CARDBlock.md.
- */
 #include "card_abi.h"
 extern void *memcpy(void*, const void*, unsigned long);
 extern void DCStoreRange(void*, u32);

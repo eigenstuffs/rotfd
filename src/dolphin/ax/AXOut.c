@@ -1,4 +1,3 @@
-/* Dolphin AX output and DSP scheduling. See docs/notes/AXOut.md. */
 #include "ax_out_abi.h"
 
 

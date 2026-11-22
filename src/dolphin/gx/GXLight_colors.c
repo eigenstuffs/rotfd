@@ -1,4 +1,3 @@
-/* Dolphin GX lighting C fragment. See docs/notes/GXLight.md. */
 #include "gx_abi.h"
 void GXSetChanAmbColor(GXChannelID chan, GXColor amb_color)
 {

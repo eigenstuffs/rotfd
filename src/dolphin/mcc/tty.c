@@ -1,4 +1,3 @@
-/* Dolphin TTY output. See docs/notes/tty.md. */
 #include "mcc_abi.h"
 #define OSRoundUp32B(x) (((u32)(x) + 31) & ~31)
 typedef struct { char gpr; char fpr; char reserved[2]; char *input_arg_area; char *reg_save_area; } va_list[1];

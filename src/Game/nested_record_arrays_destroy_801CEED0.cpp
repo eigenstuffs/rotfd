@@ -1,4 +1,3 @@
-/* Nested record array owner destruction; see docs/notes/game-nested-record-arrays-destroy.md. */
 typedef unsigned long NestedRecordDestroyWord;
 extern "C"{
  extern char lbl_8028F698[],lbl_801EF5C8[],lbl_802EA388[],lbl_802EA498[];

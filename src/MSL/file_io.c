@@ -1,5 +1,3 @@
-/* GSQE78 retained MSL file_io.c. Adapted from pinned Strikers/TWW
- * references; recovered retained paths are documented in docs/notes/msl-file-io.md. */
 #include "stdio_internal.h"
 extern int fseek(FILE*, long, int);
 extern void __stdio_atexit(void);

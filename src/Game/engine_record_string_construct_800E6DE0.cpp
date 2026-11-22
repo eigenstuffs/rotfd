@@ -1,4 +1,3 @@
-/* Original record/string native construction; see docs/notes/game-engine-record-string-construct.md. */
 typedef unsigned long u32;
 extern "C" { extern char lbl_802C8E18[];extern const char lbl_803797F8[5]; int sprintf(char*,const char*,...); }
 struct Record_800E6A58 {char opaque[0x3B5C]; Record_800E6A58(); ~Record_800E6A58();};

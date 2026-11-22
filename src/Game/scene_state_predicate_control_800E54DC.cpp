@@ -1,4 +1,3 @@
-/* Scene state predicate control; see docs/notes/game-scene-state-predicate-control.md. */
 struct Handle { signed int generation:8,index:24; };
 struct Entry { void* object; char unknown04[8]; signed char generation; char unknown0D[3]; };
 struct Manager { int count,capacity; Entry* entries; };

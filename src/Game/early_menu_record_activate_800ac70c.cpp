@@ -1,4 +1,3 @@
-/* Menu record activation; see docs/notes/game-early-menu-record-activate.md. */
 #include "Game/early_menu_record_activate_views.h"
 extern "C" void fn_800AC70C(ActivateOwner*self,signed char force){ActivateMenuRecord*record=self->find(self->selected);if(record&&self->active==-1&&self->time<=lbl_803790B8&&(record->key<0x238C||force)){
 record->saved=record->current;lbl_801E9D24.device->set((char*)self+0x28);fn_801FA014(lbl_801E9D24.logger,lbl_8029EFF8,record->key);fn_800AD54C(self);self->selected=-1;if(record->next>-1)fn_800AC2B4(self,record->next);if(self->selected==-1){self->active=-1;if(record->flag)fn_800A64E0(resolveActivate(lbl_801E9D24.scene->owner->handle),0);

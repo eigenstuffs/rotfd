@@ -1,4 +1,3 @@
-/* Original checked context callback; see docs/notes/game-context-callback-leafs.md. */
 typedef unsigned long Word;
 struct Node{char opaque00[0x320];void* data320;char opaque324[0xE8];unsigned char resetFlag;};
 struct Owner{Word opaque00[2];Node*node;void*callback;};

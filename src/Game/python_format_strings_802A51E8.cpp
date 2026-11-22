@@ -1,4 +1,3 @@
-/* Original Python argument formats. See docs/notes/game-python-format-strings.md. */
 extern "C" const char lbl_802A51E8[21] = "O:MovingAgent_Z_Init";
 extern "C" const char lbl_802A5200[22] = "O:MovingAgent_Z_Reset";
 extern "C" const char lbl_802A5218[25] = "OO:MovingAgent_Z_UseNode";

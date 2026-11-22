@@ -724,10 +724,6 @@ __declspec(section ".sdata2") extern const char lbl_803787E4[] __attribute__((al
 
 /* ---- part_80069330 ---- */
 namespace part_80069330 {
-/* Dispatches event 0xAA with an unsigned-short value converted to float to
-   the object selected by the owning actor. The conversion bias double is the
-   shared lbl_803787F0 (also used by fn_8006C6AC and fn_8006C994). Based on
-   scratch/game_actor_event_80069330. */
 struct ActorEventPrefix_80069330 {
     char opaque00[4];
 };
@@ -767,8 +763,6 @@ extern "C" void fn_80069464(ResourceUpdateQuery* self, signed char state)
 /* ---- Game/scalar_early_800694E8.c ---- */
 namespace scalar_early_800694E8 {
 extern "C" {
-/* Original scalar operations with private observed layouts.
- * See docs/notes/game-scalar-early.md. */
 
 struct TimedRecord {unsigned char enabled;char pad[3];float value;char tail[4];};
 
@@ -793,7 +787,6 @@ extern "C" signed char fn_8006954C(StateObject*self,short state,short value){Sta
 
 /* ---- Game/actor_state_transition_80069654.cpp ---- */
 namespace actor_state_transition_80069654 {
-/* Original actor state-transition control; see docs/notes/game-actor-state-transition.md. */
 struct StateActor;
 struct StateHandle{union{unsigned long value;struct{signed int tag:8;signed int index:24;}bits;};};
 struct StateEntry{StateActor*object;char unknown04[8];signed char tag;char unknown0D[3];};
@@ -874,8 +867,6 @@ return 1;
 /* ---- Game/scalar_early_80069AEC.c ---- */
 namespace scalar_early_80069AEC {
 extern "C" {
-/* Original scalar operations with private observed layouts.
- * See docs/notes/game-scalar-early.md. */
 
 void fn_80069AEC(void *object,unsigned char index,short value) {((int *)((char *)object+0x4c))[index]=value;}
 
@@ -901,7 +892,6 @@ void fn_80069B58(void *object,unsigned char index,short value) {slots()->stats14
 
 /* ---- Game/scene_mode_scalar_delegate_80069B7C.cpp ---- */
 namespace scene_mode_scalar_delegate_80069B7C {
-/* Original scene-mode scalar forwarding; see docs/notes/game-scene-mode-scalar-delegate.md. */
 typedef unsigned long Word;
 struct Mode{char opaque00[0xF0];int selected;};
 struct World{char opaque00[0x15058];Mode*mode;};
@@ -913,7 +903,6 @@ extern "C" void fn_80069B7C(void*ignoredSelf,int value){fn_80055EE4(lbl_801E9D24
 
 /* ---- Game/scene_mode_scalar_delegate_80069BB4.cpp ---- */
 namespace scene_mode_scalar_delegate_80069BB4 {
-/* Original scene-mode scalar forwarding; see docs/notes/game-scene-mode-scalar-delegate.md. */
 typedef unsigned long Word;
 struct Mode{char opaque00[0xF0];int selected;};
 struct World{char opaque00[0x15058];Mode*mode;};
@@ -926,8 +915,6 @@ extern "C" void fn_80069BB4(void*ignoredSelf,int value){fn_80056014(lbl_801E9D24
 /* ---- Game/scalar_early_80069BEC.c ---- */
 namespace scalar_early_80069BEC {
 extern "C" {
-/* Original scalar operations with private observed layouts.
- * See docs/notes/game-scalar-early.md. */
 
 void fn_80069BEC(void *object,unsigned char index,short amount) {((int *)((char *)object+0x4c))[index]+=amount;}
 
@@ -1114,8 +1101,6 @@ extern "C" signed char fn_80069CA8(void*self,Related*related,signed char mode)
 /* ---- Game/scalar_early_8006A710.c ---- */
 namespace scalar_early_8006A710 {
 extern "C" {
-/* Original scalar operations with private observed layouts.
- * See docs/notes/game-scalar-early.md. */
 
 void fn_8006A710(struct FourRecords *object) {int i;for(i=0;i<4;++i){object->records[i].value=lbl_803787D4;object->records[i].flags&=0xffe9;}}
 
@@ -1131,7 +1116,6 @@ void fn_8006A710(struct FourRecords *object) {int i;for(i=0;i<4;++i){object->rec
 
 /* ---- Game/control_forward_leaf_8006A7B8.cpp ---- */
 namespace control_forward_leaf_8006A7B8 {
-/* Original control forwarding and predicates; see docs/notes/game-control-forward-leafs.md. */
 struct Point{float x,y,z;Point(float a,float b,float c):x(a),y(b),z(c){}};struct Transform{char opaque00[0x30];Point point;};struct Object{char opaque00[0x124];Transform*transform;};extern "C"{void fn_8023D100(Object*,const Point*);void fn_8023DE28(Object*);}extern "C"void fn_8006A7B8(void*ignored,Object*target,Object*source){Point p(source->transform->point.x,source->transform->point.y,source->transform->point.z);fn_8023D100(target,&p);fn_8023DE28(target);}
 
 }
@@ -1196,7 +1180,6 @@ if(self->pending)fn_80067808(self);
 
 /* ---- Game/short_control_delegate_8006AE5C.cpp ---- */
 namespace short_control_delegate_8006AE5C {
-/* Original short control delegates; see docs/notes/game-short-control-delegates.md. */
 struct Control;extern "C"void fn_800384DC(Control*);extern "C"void fn_8006AE5C(void*ignored,Control*object,float ignoredFirst,float ignoredSecond){fn_800384DC(object);}
 
 }
@@ -1321,8 +1304,6 @@ extern "C" signed char fn_8006B470(void*self,Node*related,unsigned char mode)
 /* ---- Game/leaf_8006B930.c ---- */
 namespace leaf_8006B930 {
 extern "C" {
-/* Original leaf operations. Provisional names and text-only ownership.
- * See docs/notes/game-leaf-continuation.md. */
 
 int fn_8006B930(void) { return 0; }
 
@@ -1334,7 +1315,6 @@ int fn_8006B938(void) { return 0; }
 
 /* ---- Game/short_control_delegate_8006B940.cpp ---- */
 namespace short_control_delegate_8006B940 {
-/* Original short control delegates; see docs/notes/game-short-control-delegates.md. */
 struct Control;struct Object;extern "C"signed char fn_8006BA70(Control*,Object*);extern "C"signed char fn_8006B940(Control*self,unsigned char ignored){fn_8006BA70(self,0);return 1;}
 
 }
@@ -1364,8 +1344,6 @@ extern "C" void fn_8006B9D4(ResourceModeQuery* self, unsigned char mode)
 /* ---- Game/leaf_8006BA68.c ---- */
 namespace leaf_8006BA68 {
 extern "C" {
-/* Original leaf operations. Provisional names and text-only ownership.
- * See docs/notes/game-leaf-continuation.md. */
 
 void fn_8006BA68(void *object, unsigned short value) { *(unsigned short *)((char *)object + (342)) = value; }
 
@@ -1619,8 +1597,6 @@ if(owner)actor->available=1;return 1;
 /* ---- Game/scalar_early_8006C4C0.c ---- */
 namespace scalar_early_8006C4C0 {
 extern "C" {
-/* Original scalar operations with private observed layouts.
- * See docs/notes/game-scalar-early.md. */
 
 extern short lbl_8037757A;
 
@@ -1668,7 +1644,6 @@ extern "C" void fn_8006C620(void*, int value, Owner* owner)
 
 /* ---- part_8006C6AC ---- */
 namespace part_8006C6AC {
-/* Partial scene route views; see docs/notes/game-owner-route-update.md. */
 typedef unsigned long Word;
 struct Handle{union{Word value;struct{signed int tag:8,index:24;}bits;};};
 struct Object;

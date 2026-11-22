@@ -1,5 +1,3 @@
-/* Original record setup with observed private scalar fields.
- * See docs/notes/game-record-setup-late.md. */
 extern float game_vec4_zero[];
 extern const float lbl_8037B3A0;
 extern const unsigned char __vt__17Resource_802E9E20[];

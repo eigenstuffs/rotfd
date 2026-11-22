@@ -1,8 +1,3 @@
-/* Dolphin SDK system-call installation C fragment, GSQE78.
- * Adapted from the public doldecomp/melee SDK reconstruction;
- * see reference/melee-sdk/PROVENANCE.md and docs/notes/OSSync.md.
- * The system-call vector itself remains original fallback assembly.
- */
 typedef unsigned long u32;
 extern void __OSSystemCallVectorStart(void), __OSSystemCallVectorEnd(void);
 extern void *memcpy(void *, const void *, unsigned long);

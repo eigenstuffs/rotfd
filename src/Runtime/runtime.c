@@ -1,7 +1,3 @@
-/* Constants used by the native __cvt_fp2unsigned primitive.
- * The helpers themselves are asm functions, as in the original runtime.
- * IEEE-754 doubles: 0, 2^32, and 2^31, stored as PPC word pairs.
- * See docs/notes/runtime-native.md. */
 const unsigned int __cvt_fp2unsigned_constants[] = {
     0x00000000, 0x00000000,
     0x41F00000, 0x00000000,

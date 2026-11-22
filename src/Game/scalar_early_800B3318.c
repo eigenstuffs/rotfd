@@ -1,6 +1,3 @@
-/* Original scalar operations with private observed layouts.
- * See docs/notes/game-scalar-early.md. */
-
 extern unsigned char lbl_80377788,lbl_80377794;
 
 extern unsigned int lbl_80377790;

@@ -1,4 +1,3 @@
-/* Original record capacity/module-cache control; see docs/notes/game-early-capacity-module-controls.md. */
 extern "C" {
 #include "Game/engine_record_buffers.h"
 void fn_80025954(EngineRecordBufferItems*,int,int);

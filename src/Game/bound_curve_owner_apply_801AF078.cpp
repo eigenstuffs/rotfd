@@ -1,4 +1,3 @@
-/* Bound curve owner stream/application reconstruction; see docs/notes/game-bound-curve-owner-apply.md. */
 typedef unsigned long BoundCurve_801AF078_Word;
 struct BoundCurve_801AF078_Curve{int unknown00,count;void*items;int unknown0C;};
 struct BoundCurve_801AF078_Owner{char unknown00[0xC];BoundCurve_801AF078_Curve vector,first,second;};

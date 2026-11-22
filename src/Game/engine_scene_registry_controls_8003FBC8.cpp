@@ -1,4 +1,3 @@
-/* Original scene registry and record controls; see docs/notes/game-engine-scene-registry-controls.md. */
 typedef unsigned long u32;
 struct Target{};
 struct Record{int first,second;char opaque08[0x3B54];};

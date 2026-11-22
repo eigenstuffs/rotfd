@@ -1,4 +1,3 @@
-/* Checked actor event dispatch and state byte update; see docs/notes/game-early-checked-actor-events.md. */
 typedef unsigned long Word;
 struct Handle{union{Word word;struct{signed int tag:8,index:24;}bits;};};
 struct NodePrefix{Word unknown00,unknown04;};

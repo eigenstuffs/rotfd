@@ -1,4 +1,3 @@
-/* Original notification, virtual setup and string helpers; see docs/notes/game-early-simple-notification-helpers.md. */
 struct Actor { char opaque[0x320]; int token320; };
 struct Owner { char opaque[8]; Actor* actor8; void* controlC; };
 struct Monitor { char opaque[0x130]; void* active130; };

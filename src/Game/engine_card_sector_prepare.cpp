@@ -1,5 +1,3 @@
-// Memory-card sector validation and free-space query.
-// See docs/notes/game-engine-card-sector-prepare.md.
 #include "Game/engine_card_sector_prepare.h"
 #include "Game/memory_card_owner_internal.h"
 extern "C" {

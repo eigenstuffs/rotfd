@@ -1,4 +1,3 @@
-/* Original notification, virtual setup and string helpers; see docs/notes/game-early-simple-notification-helpers.md. */
 struct Resource { char opaque[0x70];char field70,field71; };
 struct Service { char opaque[0x94];Resource* resource94; };
 struct Owner { char opaque[0xC];Service* serviceC; };

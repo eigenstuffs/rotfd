@@ -1,5 +1,3 @@
-/* Original callback-registration lifetime; all retained sections and actual relocations verified.
- * See docs/notes/game-engine-callback-registration.md. */
 typedef unsigned long u32;
 extern "C"{extern char lbl_801EF5C8[],lbl_8028F698[],lbl_802EC720[],__vt__23ContainerLayer_80044168[],lbl_802B4B50[];void fn_801EF610(void*,void*);void fn_8028FD50(void*,void*,int);void fn_8025E31C();void fn_8025E714(void*,const struct MemberPointer&);}
 struct Handle_801F7F10{u32 word;~Handle_801F7F10();};struct H1:Handle_801F7F10{};struct H2:H1{};

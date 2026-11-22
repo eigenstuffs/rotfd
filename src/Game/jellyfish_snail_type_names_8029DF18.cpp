@@ -1,4 +1,3 @@
-/* Jellyfish and snail reflected type/state names; see docs/notes/game-jellyfish-snail-type-names.md. */
 extern "C" const char lbl_8029DF18[14] = "Anonymous New";
 extern "C" const char lbl_8029DF28[19] = "GreenJfishMove.cpp";
 extern "C" const char lbl_8029DF3C[16] = "CGreenJfishMove";

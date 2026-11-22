@@ -1,7 +1,3 @@
-// Partial text split: fn_801BE6F4 and fn_801BE900 (flag 0x4000 <-> 0x40000
-// transfer on three resolved objects). fn_801BE4D0 before them (99.7%) and
-// fn_801BEB0C/fn_801BF5A4 after them remain original code; drafts in
-// scratch/claude_match/auto_03_801BE4D0_text/.
 /* fn_801BE6F4, fn_801BE900 (exact run 0x801BE6F4..0x801BEB0C); originally (tail of the 0x801BCB78.. translation
    unit; constants are that TU's pooled literals, reached through extern labels). */
 typedef unsigned long Word;

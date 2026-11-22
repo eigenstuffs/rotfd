@@ -1,4 +1,3 @@
-/* Scene effects and native typed Handle temporaries; see docs/notes/game-early-actor-scene-effects.md. */
 #include "Game/early_actor_scene_effect_views.h"
 extern "C" void fn_80089B74(EffectOwner*self){
  const char*strings=lbl_8029D680;

@@ -1,5 +1,3 @@
-/* Timed actor event and state/flag control with native Handle lifetimes.
- * See docs/notes/game-timed-actor-event-control.md. */
 typedef unsigned long Word;
 struct Handle_801F7F10{union{Word word;struct{signed int tag:8,index:24;}bits;};Handle_801F7F10();~Handle_801F7F10();};
 struct Node{char opaque00[0x38];unsigned long long flags;};

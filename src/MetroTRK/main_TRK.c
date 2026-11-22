@@ -1,4 +1,3 @@
-/* MetroTRK main entry; see docs/notes/MetroTRK-main_TRK.md. */
 #include "trk_abi.h"
 extern DSError TRKInitializeNub(void), TRKTerminateNub(void);
 extern void TRKNubWelcome(void), TRKNubMainLoop(void);

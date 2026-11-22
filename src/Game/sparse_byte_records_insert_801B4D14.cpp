@@ -1,4 +1,3 @@
-/* Sparse byte-record insertion reconstruction; see docs/notes/game-sparse-byte-records-insert.md. */
 typedef unsigned long SparseByteRecordWord;
 
 extern "C" {

@@ -1,5 +1,3 @@
-/* Original engine native construction with guarded consumer migration with compiler-emitted exception metadata.
- * See docs/notes/game-engine-layered-construct.md. */
 typedef unsigned long u32;
 struct Handle_801F7F10 {u32 word;Handle_801F7F10();~Handle_801F7F10();};
 struct Zero1:Handle_801F7F10 {Zero1(){word=0;}~Zero1();};

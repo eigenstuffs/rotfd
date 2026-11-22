@@ -1,5 +1,3 @@
-/* Record activation, randomized setup and event dispatch; private layout views.
- * See docs/notes/game-early-record-activation.md. */
 typedef unsigned long Word;
 extern "C" {extern char lbl_801EF5C8[];void fn_801EF610(void*,void*);extern const float lbl_803781E8,lbl_803781EC,lbl_803781F0,lbl_803781F4,lbl_803781F8,lbl_803781FC,lbl_80378200;}
 struct Handle_801F7F10 {union{Word value;struct{signed int tag:8,index:24;}bits;};~Handle_801F7F10();};

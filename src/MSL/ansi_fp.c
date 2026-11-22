@@ -1,4 +1,3 @@
-/* MSL decimal conversion reconstruction. See docs/notes/msl-ansi-fp.md. */
 #define CHAR_BIT 8
 #define DBL_MANT_DIG 53
 #define SIGDIGLEN 36

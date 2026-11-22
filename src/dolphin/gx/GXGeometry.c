@@ -1,4 +1,3 @@
-/* Dolphin GX geometry setup. See docs/notes/GXGeometry.md. */
 #include "gx_abi.h"
 extern void __GXCalculateVLim(void);
 void __GXSetDirtyState(void)

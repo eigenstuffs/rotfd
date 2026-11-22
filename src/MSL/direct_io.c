@@ -1,5 +1,3 @@
-/* GSQE78 retained MSL direct_io.c. Based on the pinned Strikers
- * reconstruction; see docs/notes/msl-direct-io.md for provenance and proof. */
 #include "stdio_internal.h"
 extern int fwide(FILE*, int);
 extern int fseek(FILE*, long, int);

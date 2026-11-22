@@ -1,4 +1,3 @@
-/* Cached render color update; see docs/notes/game-render-cached-color-update.md. */
 extern "C" {double __fabs(double);extern const float lbl_8037B6E8,lbl_8037B6EC;}
 struct CachedRenderVec3 {float x,y,z;};
 struct CachedRenderColor {unsigned char r,g,b,a;};

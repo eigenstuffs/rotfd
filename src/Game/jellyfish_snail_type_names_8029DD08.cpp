@@ -1,4 +1,3 @@
-/* Jellyfish and snail reflected type/state names; see docs/notes/game-jellyfish-snail-type-names.md. */
 extern "C" const char lbl_8029DD08[30] = "PFX_Jellyfish_collect_Bubbles";
 extern "C" const char lbl_8029DD28[28] = "PFX_Jellyfish_Collect_Pixie";
 extern "C" const char lbl_8029DD44[17] = "CStateJFDefeated";

@@ -1,2 +1,1 @@
-/* Original control forwarding and predicates; see docs/notes/game-control-forward-leafs.md. */
 struct Node;struct Control{char opaque00[0x6A];short count;};extern "C"{int fn_80072468(Control*,const Node*);signed char fn_80071904(Control*,Node*);}extern "C"void fn_800718B4(Control*self,Node*node){if((signed char)fn_80072468(self,node)){fn_80071904(self,node);++self->count;}}

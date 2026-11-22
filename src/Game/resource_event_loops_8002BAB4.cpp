@@ -1,6 +1,3 @@
-/* Three queued resource events; see docs/notes/game-resource-event-loops.md. */
-/* Three queued resource events; original callback data remains external.
- * See docs/notes/game-resource-event-loops.md. */
 typedef unsigned long Word;
 struct Handle_801F7F10{union{Word word;struct{signed int tag:8,index:24;}bits;};Handle_801F7F10();~Handle_801F7F10();};
 template<int D>struct ResourceEventLayer_8002BAB4:ResourceEventLayer_8002BAB4<D-1>{~ResourceEventLayer_8002BAB4(){}};template<>struct ResourceEventLayer_8002BAB4<1>:Handle_801F7F10{~ResourceEventLayer_8002BAB4(){}};struct Return_8002BAB4:ResourceEventLayer_8002BAB4<1>{~Return_8002BAB4(){}};

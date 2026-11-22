@@ -1,4 +1,3 @@
-/* Dolphin GX framebuffer controls. See docs/notes/GXFrameBuf.md. */
 #include "gx_abi.h"
 #define ASSERTMSGLINEV(line, condition, message, argument) ((void)0)
 

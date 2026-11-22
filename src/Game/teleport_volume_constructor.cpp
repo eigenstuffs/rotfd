@@ -1,5 +1,3 @@
-// Native TeleportVolume constructor and the observed prefix/member layout.
-// The virtual table and undefined methods remain original fallback; see unit notes.
 typedef unsigned long u32;
 struct Prefix {u32 unknown00[2];};
 struct Agent_80044118:Prefix {

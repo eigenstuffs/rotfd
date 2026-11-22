@@ -1,4 +1,3 @@
-/* Native indexed pointer wrapper; see docs/notes/game-python-global-pointer-binding.md. */
 #include "Game/python_indexed_pointer_encoding.h"
 extern "C" void* volatile lbl_80377548;
 extern "C" const char lbl_802A2B64[];

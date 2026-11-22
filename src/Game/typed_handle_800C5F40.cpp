@@ -1,4 +1,3 @@
-// Typed reference-handle cleanup; see docs/notes/game-typed-handle-layers.md.
 #include "typed_handle_layers_internal.h"
 struct Handle_800C5F40:TypedHandleLayer<1> {
     ~Handle_800C5F40();

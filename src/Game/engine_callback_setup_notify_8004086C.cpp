@@ -1,4 +1,3 @@
-/* Original callback setup/notification lifetime; see docs/notes/game-engine-callback-setup-notify.md. */
 typedef unsigned long u32;
 struct Handle_801F7F10{u32 word;};
 

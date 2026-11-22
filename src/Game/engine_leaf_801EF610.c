@@ -1,6 +1,3 @@
-/* Original free-list coalescing and allocation-header unlink.
- * See docs/notes/game-engine-leaf.md. */
-
 struct Used {
     unsigned int size;
     struct Used *prev, *next;

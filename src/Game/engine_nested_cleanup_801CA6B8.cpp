@@ -1,5 +1,3 @@
-/* Original engine lifetime and record routines.
- * See docs/notes/game-engine-nested-cleanup.md. */
 extern "C" {
     extern char lbl_8028F698[],lbl_801EF5C8[],lbl_802EA5B0[],lbl_802EA558[];
     void fn_8028FD50(void*,void*,int);

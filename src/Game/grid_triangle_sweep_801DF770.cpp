@@ -1,4 +1,3 @@
-/* Grid triangle collision sweep and fixed hit append; see docs/notes/game-grid-triangle-sweep.md. */
 typedef unsigned long Word;
 struct Vec3 {float x,y,z;Vec3&operator=(const Vec3&v){x=v.x;y=v.y;z=v.z;return *this;}};
 struct Vec4 {float x,y,z,w;};

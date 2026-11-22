@@ -1,4 +1,3 @@
-/* Original memory-card state names. See docs/notes/game-memory-card-state-names.md. */
 extern "C" const char lbl_802AB638[21] = "CStateDeleteComplete";
 extern "C" const char lbl_802AB650[24] = "CStateDeleteCorruptFile";
 extern "C" const char lbl_802AB668[26] = "CStateCardCorruptUserData";

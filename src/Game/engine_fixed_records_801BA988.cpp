@@ -1,5 +1,3 @@
-/* Original fixed-capacity engine record routines.
- * See docs/notes/game-engine-fixed-records.md. */
 typedef unsigned int u32;
 inline void*operator new(unsigned long,void*p) {
     return p;

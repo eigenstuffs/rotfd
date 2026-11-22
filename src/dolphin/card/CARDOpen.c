@@ -1,4 +1,3 @@
-/* Dolphin CARD open and access support. See docs/notes/CARDOpen.md. */
 #include "card_abi.h"
 
 extern int memcmp(const void *, const void *, unsigned long);

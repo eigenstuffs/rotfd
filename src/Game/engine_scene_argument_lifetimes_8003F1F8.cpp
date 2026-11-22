@@ -1,4 +1,3 @@
-/* Original scene argument Handle lifetimes; see docs/notes/game-engine-scene-argument-lifetimes.md. */
 typedef unsigned long u32;struct Handle_801F7F10{union{u32 word;struct{signed int tag:8,index:24;}bits;};Handle_801F7F10();~Handle_801F7F10();};
 extern "C"{extern char lbl_801EF5C8[];void fn_801EF610(void*,void*);}
 struct Arguments{char opaque00[0x8A5];signed char present8A5;char opaque8A6[0x12];float number8B8;};struct Target{char opaque00[0x210];short state210;};struct Scene{char opaque00[0x15058];Target*first15058;Target*second1505C;};struct Service{char opaque00[0x50];signed char flag50;};struct Entry{Target*object;u32 opaque04,opaque08;signed char generation0C;char opaque0D[3];};struct Manager{char opaque00[8];Entry*entries;};extern "C" struct Global{char opaque00[0x110];Arguments*args;char opaque114[4];Manager*manager;char opaque11C[8];Scene*scene;char opaque128[0x3C];Service*service;}lbl_801E9D24;

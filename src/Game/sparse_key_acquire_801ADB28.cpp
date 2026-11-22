@@ -1,4 +1,3 @@
-/* Sparse key refcount acquisition; see docs/notes/game-sparse-key-acquire-801adb28.md. */
 typedef unsigned long SparseAcquireWord;
 
 struct SparseAcquireRow {

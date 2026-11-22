@@ -1,6 +1,3 @@
-/* Original engine setup and record routines with private observed layouts.
- * See docs/notes/game-scalar-middle-more.md. */
-
 extern void *__ct__13Manipulator_ZFv(void *);
 
 extern const char lbl_802EA040[];

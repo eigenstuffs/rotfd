@@ -1,6 +1,3 @@
-/* Game file I/O and text parsing, reconstructed from GSQE78.
- * Original class names and full source-unit boundary are not established.
- * See docs/notes/game-file-io.md. */
 typedef unsigned long u32;
 typedef signed long s32;
 struct File;

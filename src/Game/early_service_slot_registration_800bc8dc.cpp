@@ -1,4 +1,3 @@
-/* Service slot key registrations; see docs/notes/game-early-service-slot-registration.md. */
 struct ServiceSlotContext{char unknown00[0x164];void*service;};
 extern "C"{
 extern ServiceSlotContext lbl_801E9D24;

@@ -1,4 +1,3 @@
-/* Actor transform curve application reconstruction; see docs/notes/game-actor-transform-curve-apply.md. */
 typedef unsigned long ActorCurve_801AEE70_Word;
 struct ActorCurve_801AEE70_Curve{int unknown00,count;void*items;int unknown0C;};
 struct ActorCurve_801AEE70_Owner{char unknown00[0xC];ActorCurve_801AEE70_Curve position,rotation,scale,actions;};

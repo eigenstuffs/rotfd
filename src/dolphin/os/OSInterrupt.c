@@ -1,8 +1,3 @@
-/* Dolphin SDK interrupt dispatch C functions, GSQE78.
- * Adapted from the public doldecomp/melee SDK reconstruction;
- * see reference/melee-sdk/PROVENANCE.md and docs/notes/OSInterrupt.md.
- * The processor-state primitives and exception entry remain original fallback.
- */
 #include "OSContext_abi.h"
 typedef signed short __OSInterrupt;
 typedef signed long long OSTime;

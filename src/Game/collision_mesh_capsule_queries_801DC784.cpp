@@ -1,7 +1,3 @@
-// Partial text split: fn_801DC784 and fn_801DC8B4 of the collision-mesh
-// capsule query unit. The following fn_801DCCE8 (95.9%) and fn_801DD9E0
-// (99.1%) remain original code, fn_801DDB3C is collision_capsule_query_801DDB3C.cpp;
-// the full five-function draft is scratch/claude_match/auto_03_801DC784_text/final.cpp.
 /* auto_03_801DC784_text: collision-geometry helpers between
    fn_801DC5E8 (record_object_space_transform) and fn_801DDBFC
    (box_collision_nearest_hit); same original TU and flags as the latter

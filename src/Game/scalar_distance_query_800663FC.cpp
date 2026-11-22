@@ -1,2 +1,1 @@
-/* Original scalar distance and query leaves; see docs/notes/game-scalar-distance-query-leafs.md. */
 struct Resource;struct Prefix{char opaque00[4];};struct Owner:Prefix{virtual void slot08();virtual void slot0C();virtual void slot10();virtual Resource*getResource();};extern "C"{float fn_8005EB88(Resource*,Resource*);float fn_8005EAC8(Resource*,Resource*);double __fabs(double);extern const double lbl_80378770;}extern "C"signed char fn_800663FC(Owner*self,Resource*other){signed char result=__fabs(fn_8005EB88(self->getResource(),other))<lbl_80378770;return result;}

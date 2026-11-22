@@ -1,4 +1,3 @@
-/* Original actor quaternion/action control; see docs/notes/game-actor-quaternion-action.md. */
 struct Handle {union{unsigned long value;struct{signed int tag:8,index:24;}bits;};};struct Matrix {float values[9];};struct Entity {char unknown0[0x2C];float angle;Matrix basis;};struct Entry {Entity*object;char unknown4[8];signed char tag;char unknownD[3];int getTag()const{return tag;}};struct Manager {int count,capacity;Entry*entries;};extern "C" struct Context {char unknown0[0x118];Manager*manager;}lbl_801E9D24;
 inline Entity*resolve(const Handle&h){int index=h.bits.index;Manager*m=lbl_801E9D24.manager;int tag=m->entries[index].getTag();return tag==h.bits.tag?m->entries[index].object:0;}
 inline unsigned long resolveWord(const Handle&h){int index=h.bits.index;Manager*m=lbl_801E9D24.manager;int tag=m->entries[index].getTag();return tag==h.bits.tag?(unsigned long)m->entries[index].object:0;}

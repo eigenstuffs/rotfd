@@ -1,4 +1,3 @@
-/* Actor action selection; see docs/notes/game-actor-action-flag-selection.md. */
 typedef unsigned long Word;
 typedef unsigned long long Flags;
 extern "C" void fn_801F7CB4(void*,const void*);

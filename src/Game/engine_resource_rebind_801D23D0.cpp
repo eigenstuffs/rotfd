@@ -1,5 +1,3 @@
-/* Original engine keyed child and resource rebinding.
- * See docs/notes/game-engine-resource-rebind.md. */
 typedef unsigned int u32;
 struct Handle_801D23D0 {
     u32 word;

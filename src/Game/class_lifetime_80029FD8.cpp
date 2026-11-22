@@ -1,5 +1,3 @@
-// Lifetime-only class registration; see docs/notes/game-class-registry.md.
-// TreasureChestAgent.h factory establishes the 0x78-byte opaque object storage.
 extern "C" {
 extern unsigned long lbl_803775B0;
 void fn_8025A930();

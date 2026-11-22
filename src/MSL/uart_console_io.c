@@ -1,5 +1,3 @@
-/* MSL UART console output; reconstructed from the pinned zeldaret/tww
- * reference. See docs/notes/msl-uart-console-io.md for provenance and proof. */
 #include "stdio_internal.h"
 
 extern int InitializeUART(unsigned long baud_rate);

@@ -1,6 +1,3 @@
-/* Original engine array and lifetime routines with private observed layouts.
- * See docs/notes/game-engine-loops.md. */
-
 extern const char lbl_801EF5C8[];
 
 extern void fn_801EF610(const void *,void *);

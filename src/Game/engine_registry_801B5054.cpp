@@ -1,5 +1,3 @@
-/* Original engine type registry and lookup routines.
- * See docs/notes/game-engine-registry.md. */
 struct Key_801B5054  {
     unsigned int value;
     bool operator==(const Key_801B5054&other)const {

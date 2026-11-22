@@ -1,5 +1,3 @@
-// Test the inherited 64-bit flag field against a caller-supplied mask.
-// Text-only split; class names and surrounding data remain provisional.
 struct ObjectFlags_800280B4 {
     unsigned char prefix[0x30];
     unsigned long long flags;

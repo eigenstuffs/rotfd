@@ -1,5 +1,3 @@
-/* Original native engine flag and member construction with compiler-emitted exception metadata.
- * See docs/notes/game-engine-early-flag-construct.md. */
 typedef unsigned long u32;
 extern "C" {void __ct__15Object_8005E258Fv(void*);extern char lbl_802B6140[];}
 struct Handle_801F7F10 {u32 word;Handle_801F7F10();~Handle_801F7F10();};

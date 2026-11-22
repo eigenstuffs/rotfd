@@ -1,5 +1,3 @@
-/* Typed resource and multiple-base cleanup with original exception metadata.
- * See docs/notes/game-complex-owner-destructors.md. */
 typedef unsigned long u32;
 extern "C"{extern char lbl_801EF5C8[],lbl_802BF6B0[],__vt__24ManipulatorDraw_802BC9D0[],__vt__13Manipulator_Z[];void fn_801EF610(void*,void*);}
 struct Handle_801F7F10{u32 word;~Handle_801F7F10();};

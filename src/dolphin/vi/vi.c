@@ -1,5 +1,3 @@
-/* Dolphin SDK VI driver, reconstructed from public SDK decompilations.
- * GSQE78-specific source differences and provenance: docs/notes/vi.md. */
 #include "vi_abi.h"
 
 // Useful macros.

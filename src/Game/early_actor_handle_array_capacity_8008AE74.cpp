@@ -1,4 +1,3 @@
-/* Typed actor Handle-array capacity; see docs/notes/game-early-actor-handle-array-capacity.md. */
 extern "C" {
 extern char lbl_8028F698[];
 void* fn_8028FAF4(void*, void*, int, int);

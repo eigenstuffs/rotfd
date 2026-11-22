@@ -1,4 +1,3 @@
-/* SWIG native type conversions. See docs/notes/game-leaf-continuation.md. */
 #include "Game/python_swig_type_arrays.h"
 
 void *fn_800E004C(void *object) { return object; }

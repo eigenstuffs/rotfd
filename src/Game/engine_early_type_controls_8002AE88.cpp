@@ -1,4 +1,3 @@
-/* Original early type and virtual controls; see docs/notes/game-engine-early-type-controls.md. */
 typedef unsigned long long u64;
 struct Handle_801F7F10{unsigned long word;Handle_801F7F10();~Handle_801F7F10();};
 struct Owner{char opaque00[0x38];u64 flags38;};

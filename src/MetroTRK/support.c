@@ -1,4 +1,3 @@
-/* MetroTRK host file support. See docs/notes/MetroTRK-support.md. */
 #include "msghndlr_abi.h"
 enum { kParameterError=2, kWaitACKError=0x800 };
 /* Both protocol replies contain ACK, error, I/O result and a 16-bit count. */

@@ -1,6 +1,3 @@
-/* Original leaf operations. Provisional names and text-only ownership.
- * See docs/notes/game-leaf-late-continuation.md. */
-
 extern const float lbl_8037A588;
 
 void fn_801E0EBC(void) { }

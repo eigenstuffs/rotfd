@@ -1,8 +1,3 @@
-/* World handle loader fn_801E8E2C (801E8E2C..801E9A24).
- * Root load, entry-pool resize, dynamic two-layer handle arrays at C/24/18,
- * handle 30, three index structures, one-layer handles C100, five-layer fixed
- * arrays C110/C140, three-layer dynamic handles C134 and final handles C164/C168.
- * See docs/notes/game-world-handle-loader.md. */
 typedef unsigned long u32;
 struct Manager;
 struct Globals { char unknown0[0x118]; Manager* manager; };

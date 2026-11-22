@@ -1,9 +1,3 @@
-/* Dolphin SDK GXTransform.c immediate matrix loads, GSQE78.
- * Follows the SDK structure: the C wrappers write the transform-unit load
- * command and the inlined WriteMTXPS* helpers copy the matrix through the
- * write-gather pipe with paired-single loads and stores, as in the SDK
- * (see docs/notes/GXTransform.md).
- */
 typedef unsigned char u8;
 typedef unsigned long u32;
 typedef float f32;

@@ -1,4 +1,3 @@
-/* Jellyfish and snail reflected type/state names; see docs/notes/game-jellyfish-snail-type-names.md. */
 extern "C" const char lbl_8029E1A0[18] = "CStateRedJFReturn";
 extern "C" const char lbl_8029E1B4[13] = "CStateJFBase";
 extern "C" const char lbl_8029E1C4[17] = "CStateRedJFChase";

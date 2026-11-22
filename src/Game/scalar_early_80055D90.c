@@ -1,6 +1,3 @@
-/* Original scalar operations with private observed layouts.
- * See docs/notes/game-scalar-early.md. */
-
 struct Record {char pad[16];unsigned int value;char tail[0x80];};
 
 struct RecordObject {char pad[0xf0];int selected;char tail[0x44];struct Record *records;};

@@ -1,4 +1,3 @@
-/* Transform record snapshot and array append; see docs/notes/game-transform-record-append.md. */
 typedef unsigned int u32;
 extern "C" { extern char lbl_8028F698[]; void*fn_8028FAF4(void*,void*,int,int);void*fn_8028FF24(void*,int);void fn_8028FD50(void*,void*,int); }
 inline void*operator new(unsigned long,void*p){return p;}

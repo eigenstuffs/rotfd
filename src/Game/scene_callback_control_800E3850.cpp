@@ -1,4 +1,3 @@
-/* Scene callback and native Handle control; see docs/notes/game-scene-native-callback-controls.md. */
 typedef unsigned long Word;
 struct Handle_801F7F10{signed int generation:8,index:24;Handle_801F7F10();~Handle_801F7F10();};
 struct Manager;

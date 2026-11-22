@@ -1,4 +1,3 @@
-/* Dolphin CARD formatting. See docs/notes/CARDFormat.md and reference provenance. */
 #include "card_abi.h"
 typedef struct OSSram {
     unsigned short checkSum;

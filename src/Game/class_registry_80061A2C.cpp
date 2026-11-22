@@ -1,5 +1,3 @@
-// 2 callback registrations; see docs/notes/game-class-registry.md.
-// Factory LevelAgent.h proves the 0x200-byte object extent.
 struct Agent_80061AC0 {
     union { double alignment; unsigned char storage[0x200]; };
     Agent_80061AC0();

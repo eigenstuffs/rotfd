@@ -1,5 +1,3 @@
-/* Typed scene resource and retained Handle setup; verified private layout views.
- * See docs/notes/game-early-typed-scene-handle-setup.md. */
 typedef unsigned long Word;
 extern "C" {extern char lbl_801EF5C8[];void fn_801EF610(void*,void*);void fn_801F86C8(void*,const void*,int);}
 struct Globals_8002D2F8{char unknown00[0x118];void*manager;char unknown11C[0x48];void*service;};extern "C" Globals_8002D2F8 lbl_801E9D24;

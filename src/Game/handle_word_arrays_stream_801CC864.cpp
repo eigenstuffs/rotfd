@@ -1,4 +1,3 @@
-/* Handle and word array stream reconstruction; see docs/notes/game-handle-word-arrays-stream.md. */
 typedef unsigned long HandleStreamWord;
 struct Handle_801F7F10{HandleStreamWord value;Handle_801F7F10();~Handle_801F7F10();};
 struct HandleArrayStream{void*position;};

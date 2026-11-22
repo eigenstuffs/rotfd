@@ -1,8 +1,3 @@
-// Partial text split: fn_8027C4D8 and fn_8027C600. fn_8027C720 after them
-// (98.5%: byte-offset light loops and saved-register colouring) remains
-// original code; best full draft: scratch/claude_match/auto_03_8027C4D8_text/full_best.cpp.
-/* auto_03_8027C4D8_text: exact contiguous run fn_8027C4D8 + fn_8027C600 (0x8027C4D8..0x8027C720).
-   fn_8027C720 stays external (best attempt 98.5% in full_best.cpp). */
 typedef unsigned int u32;typedef unsigned short u16;typedef unsigned char u8;
 inline float fastSqrt(register float x,register float zero){register float r=zero;if(x!=r){asm{frsqrte f4,x
  fres r,f4}}return r;}

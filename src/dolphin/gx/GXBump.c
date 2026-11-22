@@ -1,4 +1,3 @@
-/* Dolphin GX indirect texture state. See docs/notes/GXBump.md. */
 #include "gx_abi.h"
 #if DEBUG
 #define GX_WRITE_SOME_REG5(a, b)                                              \

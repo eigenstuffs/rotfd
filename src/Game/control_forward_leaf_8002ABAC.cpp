@@ -1,2 +1,1 @@
-/* Original control forwarding and predicates; see docs/notes/game-control-forward-leafs.md. */
 struct Mode;struct World{char opaque00[0x15058];Mode*mode;};struct Context{char opaque00[0x124];World*world;};struct Control{char opaque00[0x8C];unsigned int index;};extern "C"{extern Context lbl_801E9D24;unsigned char fn_800565F4(Mode*,unsigned int);}extern "C"signed char fn_8002ABAC(Control*self){return !(signed char)fn_800565F4(lbl_801E9D24.world->mode,self->index);}

@@ -1,2 +1,1 @@
-/* Original logged and timed control delegates; see docs/notes/game-logged-timed-control-delegates.md. */
 struct Handle{unsigned long word;};struct Context{char opaque00[0x110];void*logger;};extern "C"{extern Context lbl_801E9D24;extern const char lbl_8029BC90[];void fn_801FA014(void*,const char*,...);void fn_80257E04(void*,const Handle*);}extern "C"void fn_80064848(void*self,const Handle*value){fn_801FA014(lbl_801E9D24.logger,lbl_8029BC90);fn_80257E04(self,value);}

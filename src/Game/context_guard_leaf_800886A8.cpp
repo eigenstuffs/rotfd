@@ -1,4 +1,3 @@
-/* Original checked context forwarding; see docs/notes/game-context-guard-leafs.md. */
 typedef unsigned long Word;
 struct Node{char opaque00[0x320];void* data320;};
 struct Owner{Word opaque00[2];Node*node;void*callback;char opaque10[0x30];float reset40;};

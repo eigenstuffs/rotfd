@@ -1,4 +1,3 @@
-/* Mixed object/scalar binding; see docs/notes/game-python-mixed-object-bindings.md. */
 #include "Game/python_scalar_bindings.h"
 extern "C" long PyInt_AsLong(FactoryPyObject*);
 extern "C" const char lbl_802A4CEC[];

@@ -1,5 +1,3 @@
-/* Partial text reconstruction. The original action-17 exception record and
- * exception index remain original-owned and receive no source credit. */
 typedef unsigned long RegistrationWord;
 struct RegistrationMemberPointer {
     RegistrationWord delta, vslot, tableOffset;

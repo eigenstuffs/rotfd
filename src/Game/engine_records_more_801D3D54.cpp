@@ -1,5 +1,3 @@
-/* Original engine records and ownership loops.
- * See docs/notes/game-engine-records-more.md. */
 struct Record_801D3D54 {unsigned int resource;char tail[12];};struct Array_801D3D54 {int count,capacity;Record_801D3D54 *data;Record_801D3D54 &operator[](int i){return data[i];}};struct View_801D3D54 {char pad[0x74];Array_801D3D54 array;};extern "C" {
 extern struct {char pad[0x118];void *handles;char gap[0x28];void *resources;} lbl_801E9D24;extern void fn_801B3FC8(void *,unsigned int,unsigned int *);extern unsigned int fn_801F4F8C(void *,unsigned int *);
 void fn_801D3D54(View_801D3D54 *object) {unsigned int key=0;int i;for(i=0;i<object->array.count;++i){fn_801B3FC8(lbl_801E9D24.handles,object->array[i].resource,&key);object->array[i].resource=fn_801F4F8C(lbl_801E9D24.resources,&key);}}

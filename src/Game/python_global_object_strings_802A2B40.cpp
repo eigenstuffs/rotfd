@@ -1,4 +1,3 @@
-/* Original Python global-object strings. See docs/notes/game-python-global-object-strings.md. */
 extern "C" const char lbl_802A2B40[34] = "O:PythonInterpreter_Z_StoreObject";
 extern "C" const char lbl_802A2B64[37] = ":PythonInterpreter_Z_GetStoredObject";
 extern "C" const char lbl_802A2B8C[34] = "s:PythonInterpreter_Z_LookupAgent";

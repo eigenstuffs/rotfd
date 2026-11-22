@@ -1,4 +1,3 @@
-/* Original member registration retries; see docs/notes/game-engine-registration-retry.md. */
 typedef unsigned long u32;
 struct Object_8003FD34;
 typedef void(Object_8003FD34::*MemberFunction)();

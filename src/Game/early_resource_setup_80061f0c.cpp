@@ -1,4 +1,3 @@
-/* Retained native handle controls; see docs/notes/game-early-resource-setup.md. */
 #include "Game/early_resource_setup_views.h"
 extern "C" void fn_80061F0C(SetupObject*self,const Handle_801F7F10&input){
 fn_802001D4(resolveSetup(input),Handle_80021B54(self->resource),0);

@@ -1,5 +1,3 @@
-/* Registry slot allocation reconstructed from GSQE78.
- * See docs/notes/game-registry-lookup.md. */
 typedef unsigned long u32;
 extern "C" {
 extern char lbl_8028F698[];

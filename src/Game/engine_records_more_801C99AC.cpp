@@ -1,5 +1,3 @@
-/* Original engine records and resource lifetime routines.
- * See docs/notes/game-engine-records-more.md. */
 struct ObjectStorage_801C99AC {char pad[8];};struct Object_801C99AC:ObjectStorage_801C99AC {virtual void slot08();virtual void slot0C();virtual void slot10();};
 #include "Game/service_interface_tables.h"
 extern "C" {

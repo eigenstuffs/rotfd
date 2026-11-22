@@ -192,8 +192,6 @@ extern "C" {
     signed char fn_8024A040(OwnerEmptyScanOwner*);
 }
 #endif
-/* Original accumulated-length segment lookup.
- * See docs/notes/game-engine-owner-small-loops.md. */
 
 extern "C" int fn_8024D9FC(CurveSegmentFindOwner* self, float value) {
     float target = self->scale * value;

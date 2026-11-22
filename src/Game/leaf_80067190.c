@@ -1,6 +1,3 @@
-/* Original leaf operations. Provisional names and text-only ownership.
- * See docs/notes/game-leaf-continuation.md. */
-
 extern unsigned short lbl_803776C4;
 extern unsigned short lbl_803776C2;
 

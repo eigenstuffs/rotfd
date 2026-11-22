@@ -1,4 +1,3 @@
-/* Retained allocation release; see docs/notes/runtime-new.md. */
 #pragma exceptions on
 #pragma internal on
 #include "exception_internal.h"

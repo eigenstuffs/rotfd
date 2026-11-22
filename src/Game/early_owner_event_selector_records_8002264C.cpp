@@ -1,4 +1,3 @@
-/* Owner event selector; see docs/notes/game-early-selector-record-prefix.md. */
 typedef unsigned long Word;
 struct MemberPointer{Word a,b,c;};
 struct Callback{char unknown00[0x28];unsigned short flags;short index;};

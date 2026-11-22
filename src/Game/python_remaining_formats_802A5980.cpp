@@ -1,4 +1,3 @@
-/* Original Python argument formats. See docs/notes/game-additional-python-format-strings.md. */
 extern "C" const char lbl_802A5980[24] = "O:ParticlesAgent_Z_Init";
 extern "C" const char lbl_802A5998[28] = "OO:ParticlesAgent_Z_UseNode";
 extern "C" const char lbl_802A59B4[27] = "O:ParticlesAgent_Z_Suspend";

@@ -1,4 +1,3 @@
-/* Original game/GC type registration; see docs/notes/game-type-registry.md. */
 struct Globals {char unknown[0x110];void*logger;void*unknown114;void*registry;};
 extern "C" {
 extern Globals lbl_801E9D24;

@@ -1,6 +1,3 @@
-/* Original engine setup and record routines with private observed layouts.
- * See docs/notes/game-scalar-middle-more.md. */
-
 struct Record {unsigned int key,parent;char pad[8];};
 
 struct Lookup {char pad[0x28];int count;char tail[4];struct Record *records;};

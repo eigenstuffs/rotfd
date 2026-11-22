@@ -170,8 +170,6 @@ extern "C" void fn_800B65C8(Service*self){
 
 }
 extern "C" {
-/* Original leaf operations. Provisional names and text-only ownership.
- * See docs/notes/game-leaf-continuation.md. */
 
 int fn_800B6B68(void) { return -1; }
 
@@ -502,8 +500,6 @@ extern "C" void fn_800B70AC(Owner* self, const Handle_801F7F10* handle, int slot
 
 }
 extern "C" {
-/* Original leaf operations. Provisional names and text-only ownership.
- * See docs/notes/game-leaf-continuation.md. */
 
 void fn_800B720C(void *object, unsigned char value) { *(unsigned char *)((char *)object + (44)) = value; }
 

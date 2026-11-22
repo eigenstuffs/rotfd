@@ -1,5 +1,3 @@
-// 2 callback registrations; see docs/notes/game-class-registry.md.
-// Factory DamageVolume.h proves the 0x80-byte object extent.
 struct Agent_800C92D4 {
     union { double alignment; unsigned char storage[0x80]; };
     Agent_800C92D4();

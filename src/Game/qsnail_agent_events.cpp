@@ -1,5 +1,3 @@
-// QSnail callback registration queries and event dispatch.
-// The shared six-descriptor member-function pool remains original data.
 typedef unsigned long u32;
 struct Prefix {u32 unknown[2];};
 struct Agent:Prefix {

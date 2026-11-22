@@ -1,4 +1,3 @@
-/* Dolphin CARD support. See docs/notes/CARDDir.md and reference provenance. */
 #include "card_abi.h"
 extern void *memcpy(void *, const void *, unsigned long);
 extern void DCStoreRange(void *, u32);

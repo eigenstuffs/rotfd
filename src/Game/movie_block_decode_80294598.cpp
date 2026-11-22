@@ -1,11 +1,3 @@
-/* auto_03_80293158_text retry2 (best: 94.858% .text; final.cpp unchanged).
- * Flags: GC/1.2.5, -inline auto,level=2 (as movie_intra_basis_dc_decode_80291334).
- * Findings: the 80291334-style readBit/treeOf/decodeHuff shapes give the
- * original frame sizes (eliminated inline copies keep stack slots); the
- * reader block at 0x60D8 is dcValues[3], dcRuns[3], acValues[3],
- * basisCounts[2], basisRuns[2] (State layout of 80291334); fn_80294598 shows
- * the TU declared outer locals at function top in order (callee-saved
- * registers are handed out from r31 in declaration order). */
 struct MovieDecoderBitReader {
     unsigned int* data;
     unsigned int bits;

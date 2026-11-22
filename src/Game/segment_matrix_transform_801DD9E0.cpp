@@ -1,6 +1,3 @@
-// Partial text split: fn_801DD9E0 only (segment transformed by a matrix and
-// renormalised). fn_801DCCE8 before it (capsule vs capped cylinder, 95.9%)
-// remains original code; full draft: scratch/claude_match/auto_03_801DCCE8_text/final.cpp.
 /* fn_801DD9E0 alone (tail of auto_03_801DCCE8_text, 0x801DD9E0..0x801DDB3C):
    transform a segment by a matrix (start with translation, direction by the
    3x3 part), renormalise the direction and scale length and radius by the

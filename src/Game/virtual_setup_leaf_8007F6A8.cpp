@@ -1,4 +1,3 @@
-/* Original virtual setup and flag updates; see docs/notes/game-virtual-setup-leafs.md. */
 typedef unsigned long Word;
 typedef unsigned long long Flags;
 struct Point{float x,y,z;Point&operator=(const Point&p){x=p.x;y=p.y;z=p.z;return *this;}};

@@ -1,5 +1,3 @@
-/* Original engine record and output routines.
- * See docs/notes/game-engine-record-output.md. */
 typedef unsigned int u32;
 typedef unsigned long long u64;
 struct Vec3_801C0E40 {

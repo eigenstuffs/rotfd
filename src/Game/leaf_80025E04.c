@@ -1,6 +1,3 @@
-/* Original leaf operations. Provisional names and text-only ownership.
- * See docs/notes/game-leaf-continuation.md. */
-
 void fn_80025E04(void) { }
 
 void fn_80025E08(void) { }

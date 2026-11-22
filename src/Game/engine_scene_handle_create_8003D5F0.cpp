@@ -1,4 +1,3 @@
-/* Original scene Handle lookup, creation and retention; see docs/notes/game-engine-scene-handle-create.md. */
 typedef unsigned long u32;inline void*operator new(unsigned long,void*p){return p;}
 struct Handle_801F7F10{union{u32 word;struct{signed int tag:8,index:24;}bits;};Handle_801F7F10();~Handle_801F7F10();};
 extern "C"{extern char lbl_801EF5C8[],lbl_8028F698[];void fn_801EF610(void*,void*);void fn_8028FD50(void*,void*,int);void*fn_8028FAF4(void*,void*,int,int);void*fn_8028FF24(void*,int);void fn_801F86C8(void*,const Handle_801F7F10*,int);u32 fn_801F948C(void*,const char*);}

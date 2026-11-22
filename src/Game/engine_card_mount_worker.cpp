@@ -1,5 +1,3 @@
-// Memory-card mount retry and result normalization.
-// See docs/notes/game-engine-card-mount-worker.md.
 #include "Game/engine_card_mount_worker.h"
 #include "Game/memory_card_owner_internal.h"
 extern "C" {

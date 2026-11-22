@@ -1,5 +1,3 @@
-/* Original engine lifetime and record routines.
- * See docs/notes/game-engine-curve-resize.md. */
 extern "C" {
     extern char lbl_8028F698[],lbl_801EF5C8[],__vt__24CurveRecordBase_802E9E08[];
     void *fn_8028FAF4(void*,void*,int,int);

@@ -1,4 +1,3 @@
-/* Original nested Handle return flag operations; see docs/notes/game-engine-scene-return-flags.md. */
 typedef unsigned long u32;
 struct Handle_801F7F10{union{u32 word;struct{signed int tag:8,index:24;}bits;};Handle_801F7F10();~Handle_801F7F10();};
 struct ReturnHandle_80041F30:Handle_801F7F10{~ReturnHandle_80041F30(){}};

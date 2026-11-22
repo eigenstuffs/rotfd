@@ -1,4 +1,3 @@
-/* Original actor launch/reset control; see docs/notes/game-actor-launch-reset.md. */
 struct Vec3 {float x,y,z;Vec3(float a,float b,float c):x(a),y(b),z(c){}Vec3&operator=(const Vec3&b){x=b.x;y=b.y;z=b.z;return*this;}Vec3&operator+=(const Vec3&b){x+=b.x;y+=b.y;z+=b.z;return*this;}};
 struct Actor {char unknown0[0x30];unsigned long long flags;char unknown38[0x110];float field148;char unknown14C[0x14];float field160;char unknown164[0x318-0x164];char controller;char unknown319[7];int record;char unknown324[0x34];Vec3 acceleration;char unknown364[0x88];volatile float speed; signed char hasFlags(unsigned long long mask)const {if(flags&mask)return 1;return 0;}};
 struct Controller {char unknown0[0x84];int mode;char unknown88[0x14];signed char flag;};

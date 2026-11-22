@@ -1,4 +1,3 @@
-/* Dolphin GX lighting C fragment. See docs/notes/GXLight.md. */
 #include "gx_abi.h"
 // GXLightObj private data
 struct __GXLightObjInt_struct {

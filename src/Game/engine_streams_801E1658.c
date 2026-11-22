@@ -1,5 +1,3 @@
-/* Original engine stream and record routines.
- * See docs/notes/game-engine-streams.md. */
 extern void fn_801E2E94(void *,int,int,int,int);
 void fn_801E1658(void *object,int mode)  {
     switch(mode) {

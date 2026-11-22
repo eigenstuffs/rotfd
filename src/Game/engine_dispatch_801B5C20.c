@@ -1,5 +1,3 @@
-/* Original engine dispatch and setup routines.
- * See docs/notes/game-engine-dispatch.md. */
 #include "Game/path_owner_operations_table.h"
 extern void fn_801F9420(void *);
 extern void __ct__15BitSet_80207EE8Fv(void *);

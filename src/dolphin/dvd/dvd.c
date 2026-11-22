@@ -1,6 +1,3 @@
-/* Dolphin SDK DVD command state machine, GSQE78.
- * Adapted from public Pikmin 2 and Melee reconstructions; see docs/notes/dvd.md.
- */
 #include "dvd_state_abi.h"
 
 const char* __DVDVersion = "<< Dolphin SDK - DVD\trelease build: Oct 29 2002 09:56:49 (0x2301) >>";

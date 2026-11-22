@@ -1,5 +1,3 @@
-/* Original engine stream and record routines.
- * See docs/notes/game-engine-streams.md. */
 extern void slot0C__12BaseObject_ZFUl(void *,void **);
 extern void *fn_801E9F40(void *,void *,unsigned int);
 extern struct  {

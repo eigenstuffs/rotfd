@@ -1,4 +1,3 @@
-/* MetroTRK MSL file/console bridge; see docs/notes/MetroTRK-mslsupp.md. */
 #include "msghndlr_abi.h"
 #include "../MSL/stdio_internal.h"
 

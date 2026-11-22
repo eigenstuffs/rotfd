@@ -1,5 +1,3 @@
-/* Original record setup with observed private scalar fields.
- * See docs/notes/game-record-setup-late.md. */
 extern const float lbl_8037B3E8;
 extern const unsigned char lbl_802EC210[];
 extern void fn_80243F28(void *object);

@@ -1,5 +1,3 @@
-/* Original engine record and output routines.
- * See docs/notes/game-engine-record-output.md. */
 typedef unsigned int u32;
 struct File_801C932C {
     u32 words[23];

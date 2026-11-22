@@ -1,4 +1,3 @@
-/* Dolphin GX texture state. See docs/notes/GXTexture.md. */
 #include "gx_abi.h"
 extern void *memset(void *, int, unsigned long);
 // GXTexObj internal data

@@ -1,4 +1,3 @@
-/* Sphere record array stream reconstruction; see docs/notes/game-sphere-record-array-stream.md. */
 typedef unsigned long SphereRecordStreamWord;
 extern "C"{
  extern char lbl_8028F698[];

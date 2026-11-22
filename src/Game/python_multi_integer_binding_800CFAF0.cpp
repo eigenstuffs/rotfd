@@ -1,4 +1,3 @@
-/* Multiple integer/object argument binding; see docs/notes/game-python-multi-integer-bindings.md. */
 #include "Game/python_scalar_bindings.h"
 extern "C" long PyInt_AsLong(FactoryPyObject*);
 extern "C" const char lbl_802A2F18[];

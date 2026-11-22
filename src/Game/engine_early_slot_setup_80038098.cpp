@@ -1,3 +1,2 @@
-/* Original Handle assignment and allocator slot setup; see docs/notes/game-engine-early-slot-setup.md. */
 typedef unsigned long u32;struct Handle{u32 word;};struct Owner{char opaque00[0x28];Handle handle28;};struct Manager;extern "C"{extern struct Global{char opaque00[0x118];Manager*manager;}lbl_801E9D24;void fn_801F86C8(Manager*,const Handle*,int);}
 extern "C" void fn_80038098(Owner*self,const Handle&value){const Global*global=&lbl_801E9D24;fn_801F86C8(global->manager,&self->handle28,-1);self->handle28.word=value.word;fn_801F86C8(global->manager,&value,1);}

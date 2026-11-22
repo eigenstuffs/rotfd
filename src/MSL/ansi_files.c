@@ -1,5 +1,3 @@
-/* GSQE78 retained MSL ansi_files.c. Adapted from pinned Strikers and
- * Wind Waker reconstructions; see docs/notes/msl-ansi-files.md. */
 #include "stdio_internal.h"
 
 static unsigned char stdin_buff[0x100];

@@ -1,5 +1,3 @@
-/* Original engine lifetime and record routines.
- * See docs/notes/game-engine-reset-poll.md. */
 extern "C" {
     extern char lbl_801E9D24[],lbl_801EF5C8[],platform_type_registry_End_Frame_required_a_SoftReset[],lbl_802AD16C[],lbl_802AD1AC[],lbl_80340A90[];
     extern int*lbl_80377FB0;

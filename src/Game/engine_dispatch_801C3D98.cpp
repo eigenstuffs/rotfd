@@ -1,5 +1,3 @@
-/* Original engine dispatch and setup routines.
- * See docs/notes/game-engine-dispatch.md. */
 struct Storage_801C3D98 {
     char pad[8];
 };

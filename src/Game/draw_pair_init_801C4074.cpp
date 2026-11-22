@@ -1,4 +1,3 @@
-/* Native DrawPair construction; see docs/notes/game-draw-pair-init.md. */
 typedef unsigned long Word;
 struct Manager;
 extern "C"struct Context {char prefix[0x118];Manager*manager;}lbl_801E9D24;

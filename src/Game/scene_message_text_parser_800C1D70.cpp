@@ -1,4 +1,3 @@
-/* Scene message text parser; see docs/notes/game-scene-message-text-parser.md. */
 typedef unsigned long Word;
 
 struct Name {

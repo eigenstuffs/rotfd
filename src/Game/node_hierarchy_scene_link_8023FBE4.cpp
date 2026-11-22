@@ -1,28 +1,3 @@
-// Partial text split: fn_8023FBE4 and fn_80240120. fn_802408BC after them
-// (99.7%, one inlined handle lookup colours r4 instead of r6) remains
-// original code; full draft: scratch/claude_match/auto_03_8023FBE4_text/final.cpp.
-/* Node hierarchy helpers at 0x8023FBE4..0x80240E50:
-   - fn_8023FBE4: stores a scene index in a node and (optionally) its whole
-     child/next subtree (recursion inlined by the compiler up to depth 3).
-   - fn_80240120: detaches a node from its parent (world TRS captured from the
-     world matrix), optionally re-parenting its children to the old parent,
-     and removes it from the scene's spatial grids.
-   - fn_802408BC: attaches a child handle under a node, optionally keeping the
-     child's world transform.
-   Matching notes (GC/1.3.2, -O4,p, no exceptions, neighbor flags):
-   - the fn_8023C* handle helpers are the extern "C" inline chain of
-     engine_owner_matrix_sync.cpp; the (signed char) cast on the generation
-     and the int scene parameter keep fn_8023FBE4 within the default inline
-     budget so its self-recursion expands to the original depth;
-   - handle sources are passed through Node accessors and setters (argument
-     evaluated before the destination, address kept in a saved register);
-   - the scene grid lookup goes through sceneOf(const Node*), whose pointer
-     parameter keeps the original second load of the scene index;
-   - getScale() is an inline helper (its by-value row temporaries get the
-     original ascending stack slots) with three read forms of the pooled 0.0.
-   fn_8023FBE4 and fn_80240120 match exactly; fn_802408BC differs only in
-   register choice of its first handle resolve (99.71%); u1.cpp has a
-   hand-expanded first resolve at 99.97% (cmpw operand order only). */
 typedef unsigned long Word;
 inline void* operator new(unsigned long, void* p) { return p; }
 

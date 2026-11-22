@@ -1,5 +1,3 @@
-/* Typed resource and multiple-base cleanup with original exception metadata.
- * See docs/notes/game-resource-owner-destructors.md. */
 typedef unsigned long u32;
 extern "C"{extern char lbl_801EF5C8[],lbl_8028F698[],lbl_802BD468[];void fn_801EF610(void*,void*);void fn_8028FD50(void*,void*,int);}
 struct BaseObject_Z{u32 unknown00[2];const void*vtable;~BaseObject_Z();};

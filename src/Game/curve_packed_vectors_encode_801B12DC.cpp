@@ -1,4 +1,3 @@
-/* Curve Handle action and packed encoding reconstruction; see docs/notes/game-curve-handle-encoding.md. */
 struct CurvePackedVectorsKey {
     short time;
     short first[3];

@@ -1,7 +1,3 @@
-/* Dispatches event 0xAA with an unsigned-short value converted to float to
-   the object selected by the owning actor. The conversion bias double is the
-   shared lbl_803787F0 (also used by fn_8006C6AC and fn_8006C994). Based on
-   scratch/game_actor_event_80069330. */
 struct ActorEventPrefix_80069330 {
     char opaque00[4];
 };

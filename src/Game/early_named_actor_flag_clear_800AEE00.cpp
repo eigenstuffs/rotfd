@@ -1,4 +1,3 @@
-/* Named actor flag clear; see docs/notes/game-early-named-actor-flag-clear.md. */
 typedef unsigned long Word;
 extern "C" {Word fn_801F948C(void*,const char*);extern const char lbl_802A0178[];}
 struct FlagName {Word word;FlagName(const char*s){word=fn_801F948C(this,s);}};

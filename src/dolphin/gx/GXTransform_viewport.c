@@ -1,4 +1,3 @@
-/* Dolphin SDK GXTransform C fragment. See docs/notes/GXTransform.md. */
 #include "gx_abi.h"
 
 void GXSetViewportJitter(f32 left, f32 top, f32 wd, f32 ht, f32 nearz,

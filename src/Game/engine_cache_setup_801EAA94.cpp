@@ -1,5 +1,3 @@
-/* Original engine lifetime and record routines.
- * See docs/notes/game-engine-cache-setup.md. */
 extern "C" {
     extern char lbl_801EF5C8[],__vt__18CacheBase_802EA868[],__vt__16Cache10_802F1490[],__vt__17Cache900_802F149C[];
     extern char platform_type_registry_Anonymous_Alloc[],platform_type_registry_SurfaceGCCache_Z_h[];

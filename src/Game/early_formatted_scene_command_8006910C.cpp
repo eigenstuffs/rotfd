@@ -1,5 +1,3 @@
-/* Scene command formatting and scoped native handles.
- * See docs/notes/game-early-formatted-scene-command.md. */
 typedef unsigned long Word;
 struct Handle_801F7F10 {Word word;Handle_801F7F10();~Handle_801F7F10();};
 extern "C"{extern char lbl_801EF5C8[];void fn_801EF610(void*,void*);}

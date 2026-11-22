@@ -1,5 +1,3 @@
-/* Retained GSQE78 MSL ctype routines and maps. Pinned Strikers source
- * and target validation: docs/notes/msl-ctype.md. */
 #define __control_char 0x01
 #define __motion_char  0x02
 #define __space_char   0x04

@@ -1,6 +1,3 @@
-/* Original scalar operations with private observed layouts.
- * See docs/notes/game-scalar-early.md. */
-
 struct Handle {signed int tag:8;signed int index:24;};
 
 struct HandleEntry {void *object;char pad[8];signed char tag;char tail[3];};

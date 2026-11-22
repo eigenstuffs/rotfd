@@ -1,6 +1,3 @@
-// TeleportVolume destruction using the observed ABI prefix and typed members.
-// The vptr is explicit here; its full RTTI/virtual interface remains original data.
-// See docs/notes/game-teleport-volume.md for the native constructor view.
 typedef unsigned long u32;
 struct Registry;struct Globals{char unknown[0x118];Registry*registry;};
 extern "C" {extern Globals lbl_801E9D24;extern char lbl_801EF5C8[];void fn_801EF610(void*,void*);}

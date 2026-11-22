@@ -1,4 +1,3 @@
-/* Retained std::exception diagnostic. See docs/notes/runtime-exception.md. */
 #pragma exceptions on
 #pragma internal on
 

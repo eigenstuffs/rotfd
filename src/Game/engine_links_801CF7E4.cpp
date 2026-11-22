@@ -1,5 +1,3 @@
-/* Original engine lifetime and record routines.
-* See docs/notes/game-engine-links.md. */
 typedef unsigned short U16;
 typedef struct Handle{
     signed int tag:8;

@@ -1,4 +1,3 @@
-/* MetroTRK serial framing and event input. See docs/notes/MetroTRK-serpoll.md. */
 #include "trk_abi.h"
 
 typedef enum ReceiverState { kWaitFlag, kFoundFlag, kInFrame, kFrameOverflow } ReceiverState;

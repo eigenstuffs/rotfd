@@ -1,6 +1,3 @@
-/* Original scalar operations with private observed layouts.
- * See docs/notes/game-scalar-early.md. */
-
 extern float lbl_802F4198[3],game_vec3_zero[3];
 
 static inline void set3(float *out,float x,float y,float z) {out[0]=x;out[1]=y;out[2]=z;}

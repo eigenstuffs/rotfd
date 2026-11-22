@@ -1,6 +1,3 @@
-// Partial text split: fn_802453B4 only (uses its own 0.0f label, so a
-// separate original unit from fn_80244C00). fn_80245250 before it (96.4%)
-// remains original code; full draft: scratch/claude_match/auto_03_80244C00_text/final.cpp.
 /* Partial split candidate: fn_802453B4 only (0x802453B4..0x802457B8).
  * auto_03_80244C00_text: masked ray/sphere queries of the spatial binding node
  * (vtable lbl_802EC210 / lbl_802ED1C4 slots 0x3C and 0x50) plus the ray

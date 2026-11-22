@@ -1,5 +1,3 @@
-// Lifetime-only class registration; see docs/notes/game-class-registry.md.
-// ProjectileAgent.h factory establishes the 0x88-byte opaque object storage.
 extern "C" {
 extern unsigned long lbl_8037760C;
 void fn_80039DD8();

@@ -1,5 +1,3 @@
-// Lifetime-only class registration; see docs/notes/game-class-registry.md.
-// RedJfishAgent.h factory establishes the 0x98-byte opaque object storage.
 extern "C" {
 extern unsigned long lbl_803776E8;
 void fn_8005BF88();

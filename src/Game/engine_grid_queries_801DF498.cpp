@@ -1,5 +1,3 @@
-/* Original engine lifetime and record routines.
- * See docs/notes/game-engine-grid-queries.md. */
 struct Vector_801DF498 {
     float x,y,z;
     Vector_801DF498() {

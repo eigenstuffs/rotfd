@@ -1,5 +1,3 @@
-/* Actor vertical motion reset and named effect preparation.
- * See docs/notes/game-actor-vertical-effect-reset.md. */
 typedef unsigned long Word;typedef unsigned long long Wide;
 struct Handle_801F7F10{union{Word word;struct{signed int tag:8,index:24;}bits;};Handle_801F7F10();~Handle_801F7F10();};
 struct Point{float x,y,z;Point(){}Point(float a,float b,float c):x(a),y(b),z(c){}void set(float a,float b,float c){x=a;y=b;z=c;}Point&operator=(const Point&p){x=p.x;y=p.y;z=p.z;return *this;}Point&operator+=(const Point&p){x+=p.x;y+=p.y;z+=p.z;return *this;}};

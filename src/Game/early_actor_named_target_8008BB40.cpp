@@ -1,4 +1,3 @@
-/* Named actor target; see docs/notes/game-early-actor-named-target.md. */
 typedef unsigned long Word;
 extern "C" {Word fn_801F948C(void*,const char*);extern const char lbl_80378B64[7];}
 struct TargetName {Word word;TargetName(const char*s){word=fn_801F948C(this,s);}};

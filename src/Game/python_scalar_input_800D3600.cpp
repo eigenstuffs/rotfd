@@ -1,4 +1,3 @@
-/* Scalar argument binding; see docs/notes/game-python-scalar-inputs.md. */
 #include "Game/python_scalar_bindings.h"
 extern "C" const char lbl_802A3A1C[];
 struct InputView_800D3600;

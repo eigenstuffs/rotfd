@@ -1,4 +1,3 @@
-/* Related controller/name mode; see docs/notes/game-early-related-controller-mode.md. */
 typedef unsigned long Word;
 struct Handle{union{Word value;struct{signed int tag:8,index:24;}bits;};};
 struct Controller{char unknown00;};

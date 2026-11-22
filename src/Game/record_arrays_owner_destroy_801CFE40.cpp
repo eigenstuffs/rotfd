@@ -1,4 +1,3 @@
-/* Record array owner destruction; see docs/notes/game-record-arrays-owner-destroy.md. */
 #include "Game/owner_viewport_interface_tables.h"
 typedef unsigned long RecordArraysDestroyWord;
 extern "C"{

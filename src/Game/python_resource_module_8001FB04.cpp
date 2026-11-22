@@ -1,5 +1,3 @@
-/* Python module import through native resource/File lifetimes.
- * See docs/notes/game-python-resource-module.md. */
 /* Private ordinary module loader; native File identities remain pending adoption. */
 typedef unsigned long Word;
 struct PyObject;

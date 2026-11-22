@@ -1,4 +1,3 @@
-/* Python creation binding; see docs/notes/game-python-native-factory-expanded.md. */
 #include "Game/python_owner_factories.h"
 #include "Game/engine_container_layer_ctor.h"
 extern "C" FactoryPyObject* fn_800DEF34(FactoryPyObject*,FactoryPyObject* args) {

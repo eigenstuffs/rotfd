@@ -1,4 +1,3 @@
-/* Original record Handle controls; see docs/notes/game-engine-record-handle-controls.md. */
 typedef unsigned long u32;
 struct Manager; struct Handle_8002F6B0;
 struct Globals { char opaque00[0x114]; char*lists114; Manager*manager118; char opaque11C[0x30]; void*scope14C; };

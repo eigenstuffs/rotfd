@@ -1,4 +1,3 @@
-/* Original small callback control operations; see docs/notes/game-engine-callback-small-controls.md. */
 typedef unsigned long u32;
 struct Prefix{u32 unknown00;};
 struct Observer:Prefix{virtual void slot08();virtual void slot0C();virtual void slot10();virtual void*slot14();};

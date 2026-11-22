@@ -1,4 +1,3 @@
-/* Actor type and action event dispatch; see docs/notes/game-actor-type-event-dispatch.md. */
 typedef unsigned char Byte;
 struct Actor{Byte unknown00[0x24];void* related;signed char enabled;Byte unknown29[3];int type;Byte unknown30[0x574-0x30];int state;};
 struct Context{Byte unknown00[0x124];void*events;};

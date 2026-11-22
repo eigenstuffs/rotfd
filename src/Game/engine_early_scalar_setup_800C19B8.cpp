@@ -1,5 +1,3 @@
-/* Original engine scalar setup and forwarding with compiler-emitted exception metadata.
- * See docs/notes/game-engine-early-scalar-setup.md. */
 extern "C" {
     unsigned long fn_801F948C(void*, const char*);
     extern const char lbl_803794F8[8];

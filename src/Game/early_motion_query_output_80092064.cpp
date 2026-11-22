@@ -1,4 +1,3 @@
-/* Actor motion query output; see docs/notes/game-early-motion-query-output.md. */
 #pragma fp_contract on
 typedef unsigned long Word;
 struct Vec3{float x,y,z;Vec3(){}Vec3(float a,float b,float c):x(a),y(b),z(c){}Vec3&operator=(const Vec3&v){x=v.x;y=v.y;z=v.z;return*this;}Vec3 operator+(const Vec3&v)const{return Vec3(x+v.x,y+v.y,z+v.z);}Vec3 operator-(const Vec3&v)const{return Vec3(x-v.x,y-v.y,z-v.z);}Vec3&operator-=(const Vec3&v){x-=v.x;y-=v.y;z-=v.z;return*this;}};

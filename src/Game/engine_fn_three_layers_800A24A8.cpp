@@ -1,5 +1,3 @@
-/* Original engine destruction with compiler-emitted exception metadata.
- * See docs/notes/game-engine-fn-three-layers.md. */
 typedef unsigned long u32;
 extern "C" {
     extern char lbl_801EF5C8[],lbl_802BB9DC[],lbl_802BC8C8[],lbl_802BC04C[];

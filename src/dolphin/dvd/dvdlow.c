@@ -1,6 +1,3 @@
-/* Dolphin SDK DVD low-level commands, GSQE78.
- * Adapted from the public Melee reconstruction; see docs/notes/dvdlow.md.
- */
 #include "dvd_abi.h"
 
 typedef void (*DVDLowCallback)(u32);

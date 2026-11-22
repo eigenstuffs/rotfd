@@ -1,4 +1,3 @@
-/* Dolphin CARD mount/probe. See docs/notes/CARDMount.md and reference provenance. */
 #include "card_abi.h"
 typedef struct OSSramEx {
     unsigned char flashID[2][12];

@@ -1,4 +1,3 @@
-/* Python integer-object input; see docs/notes/game-python-long-inputs.md. */
 #include "Game/python_scalar_bindings.h"
 extern "C" long PyInt_AsLong(FactoryPyObject*);
 extern "C" FactoryPyObject* PyFloat_FromDouble(double);

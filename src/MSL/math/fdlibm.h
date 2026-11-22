@@ -1,9 +1,3 @@
-/* Reconstructed MSL math interfaces for GSQE78.
- * fdlibm declarations: reference/tp-msl/math/fdlibm.h (Sun notice below).
- * PPC sqrt/fabs helpers: reference/sms-msl/math.h.
- * Floating classification: reference/mkdd-msl/math_api.h.
- * Provenance and target verification: docs/notes/msl-math.md.
- */
 #ifndef FDLIBM_H
 #define FDLIBM_H
 

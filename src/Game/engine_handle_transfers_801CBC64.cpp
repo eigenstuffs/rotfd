@@ -1,5 +1,3 @@
-/* Original engine lifetime and record routines.
- * See docs/notes/game-engine-handle-transfers.md. */
 typedef unsigned int u32;
 struct Entry_801CBC64 {
     void*object;

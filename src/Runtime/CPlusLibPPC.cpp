@@ -1,4 +1,3 @@
-/* CodeWarrior byte-copy helper; see docs/notes/runtime-cpluslib.md. */
 typedef unsigned long size_t;
 
 

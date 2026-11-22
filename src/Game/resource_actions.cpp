@@ -1,5 +1,3 @@
-/* Indexed resource actions reconstructed from GSQE78.
- * See docs/notes/game-resource-actions.md. */
 typedef unsigned long u32;
 struct ActionPrefix {u32 unknown;short id,flags;};
 struct RefEntry {int type;u32 reference,unknown;};

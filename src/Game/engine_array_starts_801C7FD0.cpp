@@ -1,5 +1,3 @@
-/* Original engine lifetime and record routines.
- * See docs/notes/game-engine-array-starts.md. */
 typedef unsigned int u32;
 struct Handle_801C7FD0 {
     signed int generation:8;

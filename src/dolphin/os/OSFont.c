@@ -1,7 +1,3 @@
-/* Dolphin SDK font-encoding query, GSQE78.
- * Adapted from the public doldecomp/melee SDK reconstruction;
- * see reference/melee-sdk/PROVENANCE.md and docs/notes/OSFont.md.
- */
 typedef unsigned short u16;
 volatile u16 __VIRegs[59] : 0xCC002000;
 #define VI_DTV_STAT 55

@@ -1,5 +1,3 @@
-/* Original engine native construction with guarded consumer migration with compiler-emitted exception metadata.
- * See docs/notes/game-engine-guarded-native-construct.md. */
 typedef unsigned long u32;
 extern "C" char lbl_802BF7DC[];
 struct ObjectsRoot_80213EBC {u32 unknown00[2];void*vtable;char unknown0C[0x2C-0xC];ObjectsRoot_80213EBC();~ObjectsRoot_80213EBC();};

@@ -1,5 +1,3 @@
-/* Typed pool cleanup with original compiler exception metadata.
- * See docs/notes/game-container-more-destructors.md. */
 typedef unsigned long u32;
 extern "C" {
 extern char lbl_801EF5C8[],lbl_8028F698[],lbl_802EC720[],lbl_802EC6A0[],__vt__23ContainerLayer_80044168[],lbl_802B4B50[],lbl_802B4AB4[];

@@ -1,5 +1,3 @@
-/* Original scene/record Handle setup and cleanup; strict retained EH plus strong-owner backup audit.
- * See docs/notes/game-engine-scene-handle-setup.md. */
 typedef unsigned long u32;
 struct Handle_801F7F10 {u32 word;Handle_801F7F10();~Handle_801F7F10();};
 struct Manager;

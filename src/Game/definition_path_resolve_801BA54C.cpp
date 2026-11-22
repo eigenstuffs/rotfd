@@ -1,6 +1,3 @@
-// Partial text split: fn_801BA54C only. fn_801B9318..fn_801BA38C before it
-// (sphere/capsule collision queries, 89.6-99.6%) remain original code; full
-// draft: scratch/claude_match/auto_03_801B9318_text/final.cpp.
 /* auto_03_801B9318_text, partial run fn_801BA54C: resolve a relative
    definition-file path against a base path (strip "..\" components from the
    base, skip a leading ".\"); absolute paths ("X:" or "\\") are copied.

@@ -1,4 +1,3 @@
-/* Related event state and native Handle scale; see docs/notes/game-early-related-event-scale.md. */
 typedef unsigned long Word;typedef unsigned long long Wide;
 struct Handle_801F7F10{union{Word value;struct{signed int tag:8,index:24;}bits;};Handle_801F7F10();~Handle_801F7F10();};
 struct Node;

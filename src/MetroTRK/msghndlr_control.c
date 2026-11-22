@@ -1,4 +1,3 @@
-/* MetroTRK exact command-handler fragment. See docs/notes/MetroTRK-msghndlr.md. */
 #include "msghndlr_helpers.h"
 
 extern void __TRK_reset(void);

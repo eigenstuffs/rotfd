@@ -1,5 +1,3 @@
-/* Scene-owner shutdown; the layout is a recovered partial view.
- * See docs/notes/game-engine-scene-owner-shutdown.md. */
 #include "Game/engine_scene_owner_shutdown.h"
 
 struct SceneOwnerShutdownGlobals {

@@ -1,4 +1,3 @@
-/* Original record Handle controls; see docs/notes/game-engine-record-handle-controls.md. */
 typedef unsigned long u32;
 struct Manager; struct Handle_8002F6B0;
 struct LoggerPrefix{char opaque00[0xB10];};struct Logger:LoggerPrefix{virtual void slot0();virtual void slot1();virtual void slot2();virtual void slot3();virtual void slot4();virtual void control(int);virtual void finish(int);};

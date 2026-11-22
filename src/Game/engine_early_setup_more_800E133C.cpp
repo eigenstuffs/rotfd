@@ -1,5 +1,3 @@
-/* Original engine destruction with compiler-emitted exception metadata.
- * See docs/notes/game-engine-early-setup-more.md. */
 extern "C" {
     void __ct__23CallbackSingle_802ECA18Fv(void*);
     extern char lbl_802C8530[];

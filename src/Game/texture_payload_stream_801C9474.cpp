@@ -1,4 +1,3 @@
-/* Texture payload stream reconstruction; see docs/notes/game-texture-payload-stream.md. */
 #include "Game/texture_payload_stream.h"
 
 extern "C" {

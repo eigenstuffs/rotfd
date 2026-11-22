@@ -1,11 +1,3 @@
-/* Reconstructed MSL floating conversion for GSQE78.
- * The parser follows doldecomp/mkdd strtold.c at
- * 2a9eb75fefd75c649c0488742db931571cbd7812. The retained atof/strtod
- * wrappers and discarded NaN payload are recovered from the target.
- * Original text: 0x80128614..0x80129768.
- * Provenance and preserved repository notices: reference/mkdd-msl/
- * and reference/tp-msl/. See docs/notes/msl-strtold.md.
- */
 #define NULL 0
 #define INT_MAX 0x7fffffff
 #define SHRT_MIN (-32767-1)

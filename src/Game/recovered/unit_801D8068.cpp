@@ -1,6 +1,3 @@
-/* Bezier patch control-point assembly from edge records (fn_801D8068).
- * STATUS: not yet matching (54 instruction diffs, all scheduling/regalloc
- * in the float tail + 4 int reg swaps). */
 struct Vec3 {
     float x, y, z;
     Vec3() {}

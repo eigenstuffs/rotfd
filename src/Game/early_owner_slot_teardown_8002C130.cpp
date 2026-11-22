@@ -1,4 +1,3 @@
-/* Paired owner-slot teardown and actor reset; see docs/notes/game-early-owner-slot-teardown.md. */
 typedef unsigned long Word;
 struct SlotHandle{union{Word word;struct{signed int tag:8,index:24;}bits;};};
 struct SlotActor{char unknown00[0x390];signed char active;char unknown391[0x33];Word state;};

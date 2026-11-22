@@ -1,6 +1,3 @@
-/* Pointer and integer hash keys reconstructed from GSQE78.
- * Typed storage views preserve observed virtual-table writes.
- * See docs/notes/game-hash-table.md. */
 #include "Game/hash_key_tables.h"
 typedef unsigned long u32;
 typedef signed long s32;

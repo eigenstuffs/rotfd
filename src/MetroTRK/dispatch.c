@@ -1,4 +1,3 @@
-/* MetroTRK command dispatch. See docs/notes/MetroTRK-dispatch.md. */
 #include "trk_abi.h"
 #define kDispatchError 0x500
 extern DSError TRKSetBufferPosition(MessageBuffer*, u32);

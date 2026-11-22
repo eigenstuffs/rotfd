@@ -1,4 +1,3 @@
-/* Dolphin GX miscellaneous controls. See docs/notes/GXMisc.md. */
 #include "gx_abi.h"
 typedef struct OSContext
 {

@@ -1,4 +1,3 @@
-/* Original Python argument formats. See docs/notes/game-additional-python-format-strings.md. */
 extern "C" const char lbl_802A3088[38] = "OO:Game_Z_DeclareParticlesManipulator";
 extern "C" const char lbl_802A30B0[33] = "OO:Game_Z_DeclareNodeManipulator";
 extern "C" const char lbl_802A30D4[28] = "OO:Game_Z_DeclareOtherAgent";

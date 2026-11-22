@@ -1,5 +1,3 @@
-/* Original engine normalized string lookup.
- * See docs/notes/game-engine-cache-records.md. */
 typedef unsigned int u32;
 struct Bitset_801B4C30 {
     int count,capacity;

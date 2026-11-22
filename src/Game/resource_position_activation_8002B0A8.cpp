@@ -1,4 +1,3 @@
-/* Resource position and activation; see docs/notes/game-resource-position-activation.md. */
 typedef unsigned long Word;
 typedef unsigned long long Flags;
 struct Handle_801F7F10{union{Word word;struct{signed int tag:8,index:24;}bits;};Handle_801F7F10();~Handle_801F7F10();};

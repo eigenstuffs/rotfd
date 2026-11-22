@@ -1,4 +1,3 @@
-/* Original record resource lifecycle; see docs/notes/game-engine-record-lifecycle.md. */
 typedef unsigned long u32;
 struct Service{char opaque00[0x15058];void*field15058;};
 extern "C" {extern struct{char opaque00[0x124];Service*service124;}lbl_801E9D24;float fn_8025E268(void*,int);}

@@ -1,7 +1,3 @@
-/* Dolphin SDK C startup fragment, GSQE78.
- * Adapted from the public Melee reconstruction; see docs/notes/ppc_eabi_init.md.
- * The hardware and cache entry points are CodeWarrior asm functions in .init.
- */
 __declspec(section ".ctors") extern void (*_ctors[])(void);
 extern void PPCHalt(void);
 static void __init_cpp(void);

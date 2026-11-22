@@ -1,4 +1,3 @@
-/* Resource path and registry startup; see docs/notes/game-resource-registry-paths.md. */
 typedef unsigned long Word;
 struct Name {Word word;Name(const char*);bool operator!=(const Name&n)const{return word!=n.word;}};
 struct Handle {union{Word word;struct{signed int tag:8;signed int index:24;}bits;};};

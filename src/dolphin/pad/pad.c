@@ -1,4 +1,3 @@
-/* Dolphin SDK controller driver. See docs/notes/pad.md for target differences and provenance. */
 #include "pad_abi.h"
 
 const char* __PADVersion = "<< Dolphin SDK - PAD\trelease build: Sep  5 2002 05:34:02 (0x2301) >>";

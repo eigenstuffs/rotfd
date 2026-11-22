@@ -1,5 +1,3 @@
-// Lifetime-only class registration; see docs/notes/game-class-registry.md.
-// YellowJfishAgent.h factory establishes the 0x98-byte opaque object storage.
 extern "C" {
 extern unsigned long lbl_803776A0;
 void fn_8005BF88();

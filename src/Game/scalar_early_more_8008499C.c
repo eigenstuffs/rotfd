@@ -1,6 +1,3 @@
-/* Original array and scalar routines with private observed layouts.
- * See docs/notes/game-scalar-early-more.md. */
-
 extern const float lbl_80378AD0;
 
 extern const unsigned char lbl_802B8F04[];

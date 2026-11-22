@@ -1,5 +1,3 @@
-/* Resource-owner array and sparse-slot cleanup.
- * See docs/notes/game-engine-resource-owner-teardown.md. */
 #include "Game/engine_resource_owner_teardown.h"
 
 extern "C" ResourceOwnerTeardown* fn_8026A710(

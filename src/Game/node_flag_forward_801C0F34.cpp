@@ -1,6 +1,3 @@
-// Partial text split: fn_801C0F34. The following swept-sphere move fn_801C109C
-// (99.86%, one FPR swap) remains original code; full draft in
-// scratch/claude_match/auto_03_801C0F34_text/final.cpp.
 /* Two physics-node overrides from one original TU (vtables in
  * menu_object_native_method_tables_802EB240):
  *  - fn_801C0F34 forwards to the base handler fn_801BDEF8 while moving the

@@ -1,4 +1,3 @@
-/* Dolphin GX initialization. See docs/notes/GXInit.md. */
 #include "gx_abi.h"
 extern GXRenderModeObj GXEurgb60Hz480IntDf;
 

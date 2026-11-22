@@ -1,5 +1,3 @@
-/* Original masked sphere/geometry dispatch.
- * See docs/notes/game-engine-sphere-mask-dispatch.md. */
 #include "Game/engine_sphere_mask_dispatch.h"
 static inline bool overlaps(const MaskSphere& a,const MaskSphere& b) { float radius=a.radius+b.radius; const MaskSpherePoint& delta=a.center-b.center; return delta.lengthSquared()<radius*radius; }
 #define MASK(x) (MaskSphereFlags(x)<<32)

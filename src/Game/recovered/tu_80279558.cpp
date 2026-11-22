@@ -198,25 +198,6 @@ done:
 
 } /* namespace ns9558 */
 
-// Partial text split: fn_80279D64 (capsule vs triangle with a given plane)
-// and fn_8027A180 (sphere vs triangle with a given plane). fn_80279558 before
-// them and fn_8027A410..fn_8027B140 after them (95.8-99.3%) remain original
-// code; full draft: scratch/claude_match/auto_03_80279558_text/retry2/final.cpp.
-/* auto_03_80279558_text (0x80279558..0x8027B2E4): collision primitive
-   queries of one engine translation unit -- segment vs grid quad
-   (fn_80279558), capsule vs triangle with a precomputed plane (fn_80279D64),
-   sphere vs triangle with a precomputed plane (fn_8027A180), capsule vs
-   triangle (fn_8027A410), sphere vs triangle (fn_8027AA38), segment vs
-   triangle (fn_8027AD94) and sphere vs segment edge (fn_8027B140).
-   This file holds: fn_80279D64, fn_8027A180.
-   GC/1.3.2, -O4,p, fp_contract on, C++ without exceptions (no extab); the
-   unit owns no data.  The float literals are the pooled labels
-   -1.0f..-1.0e-4f owned by Game/render_transform_constants.c.
-   Each function keeps its own private struct views in a namespace (the
-   functions are extern "C", so the namespaces do not change symbol names);
-   fn_8027B140 is declared once with the nsB140 types and callers cast.
-   The K* spellings are distinct read forms of one extern label
-   (pooled-literal emulation, scratch/claude_match/GUIDE.md). */
 
 namespace ns9D64 {
 /* fn_80279D64: swept sphere (capsule) vs triangle with a precomputed plane.
@@ -343,21 +324,6 @@ extern "C" signed char fn_8027A180(Sphere*self,const Point4*a,const Point4*b,con
 #undef K4
 #undef K5
 
-/* auto_03_80279558_text (0x80279558..0x8027B2E4): collision primitive
-   queries of one engine translation unit -- segment vs grid quad
-   (fn_80279558), capsule vs triangle with a precomputed plane (fn_80279D64),
-   sphere vs triangle with a precomputed plane (fn_8027A180), capsule vs
-   triangle (fn_8027A410), sphere vs triangle (fn_8027AA38), segment vs
-   triangle (fn_8027AD94) and sphere vs segment edge (fn_8027B140).
-   This file holds: fn_8027A410, fn_8027AA38.
-   GC/1.3.2, -O4,p, fp_contract on, C++ without exceptions (no extab); the
-   unit owns no data.  The float literals are the pooled labels
-   -1.0f..-1.0e-4f owned by Game/render_transform_constants.c.
-   Each function keeps its own private struct views in a namespace (the
-   functions are extern "C", so the namespaces do not change symbol names);
-   fn_8027B140 is declared once with the nsB140 types and callers cast.
-   The K* spellings are distinct read forms of one extern label
-   (pooled-literal emulation, scratch/claude_match/GUIDE.md). */
 
 namespace nsA410 {
 #define K0(l) (l)
@@ -543,25 +509,6 @@ extern "C" signed char fn_8027AA38(Sphere*self,const Point4&a,const Point4&b,con
 #undef K4
 #undef K5
 
-// Partial text split: fn_8027AD94 (segment vs triangle) and fn_8027B140
-// (sphere vs segment edge). fn_8027A410 (99.3%) and fn_8027AA38 (95.8%)
-// before them remain original code; full draft:
-// scratch/claude_match/auto_03_80279558_text/retry2/final_8027A410.cpp.
-/* auto_03_80279558_text (0x80279558..0x8027B2E4): collision primitive
-   queries of one engine translation unit -- segment vs grid quad
-   (fn_80279558), capsule vs triangle with a precomputed plane (fn_80279D64),
-   sphere vs triangle with a precomputed plane (fn_8027A180), capsule vs
-   triangle (fn_8027A410), sphere vs triangle (fn_8027AA38), segment vs
-   triangle (fn_8027AD94) and sphere vs segment edge (fn_8027B140).
-   This file holds: fn_8027AD94, fn_8027B140.
-   GC/1.3.2, -O4,p, fp_contract on, C++ without exceptions (no extab); the
-   unit owns no data.  The float literals are the pooled labels
-   -1.0f..-1.0e-4f owned by Game/render_transform_constants.c.
-   Each function keeps its own private struct views in a namespace (the
-   functions are extern "C", so the namespaces do not change symbol names);
-   fn_8027B140 is declared once with the nsB140 types and callers cast.
-   The K* spellings are distinct read forms of one extern label
-   (pooled-literal emulation, scratch/claude_match/GUIDE.md). */
 
 namespace nsAD94 {
 

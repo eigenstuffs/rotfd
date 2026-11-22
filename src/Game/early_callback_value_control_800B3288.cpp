@@ -1,4 +1,3 @@
-/* Early quaternion callback and indexed record controls; see docs/notes/game-early-callback-value-controls.md. */
 struct Record{float first,second,third,fourth,fifth;};
 struct Owner{char unknown0[0xC0];Record records[1];};
 extern "C"{float fn_801F1200();extern const float lbl_80379304,lbl_80379308,lbl_8037930C,lbl_80379310,lbl_803792FC,lbl_80379314;}

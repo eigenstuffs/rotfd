@@ -1,6 +1,5 @@
 #ifndef GAME_WORLD_LIFETIME_INTERNAL_H
 #define GAME_WORLD_LIFETIME_INTERNAL_H
-// Native lifetime layout. Names remain provisional; the factory references Rtc_Z.h.
 #include "world_records_internal.h"
 #include "world_curve50_internal.h"
 struct Resource_802E9E20 : BaseObject_Z {

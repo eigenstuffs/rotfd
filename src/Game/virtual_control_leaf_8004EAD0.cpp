@@ -1,4 +1,3 @@
-/* Original virtual control forwarding; see docs/notes/game-virtual-control-leafs.md. */
 typedef unsigned long Word;
 struct Prefix{char opaque00[0x8];};
 struct Control:Prefix{

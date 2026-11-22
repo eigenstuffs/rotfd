@@ -1,5 +1,4 @@
 #include "Game/agent_cleanup_virtual_view_8006590C.h"
-// Lifetime-only class registration; see docs/notes/game-class-registry.md.
 // SimpleAgent.h factory establishes the 0x200-byte opaque object storage.
 extern "C" {
 extern unsigned long lbl_80377720;

@@ -1,5 +1,3 @@
-/* Selected hierarchy traversal reconstructed from GSQE78.
- * See docs/notes/game-hierarchy-apply.md. */
 typedef unsigned long u32;
 struct Handle {signed int generation:8;signed int index:24;};
 struct HandleList {int count,capacity;Handle*data;};

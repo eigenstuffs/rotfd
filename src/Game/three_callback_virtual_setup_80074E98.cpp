@@ -18,5 +18,4 @@ FactoryCallback*p2=(FactoryCallback*)fn_801EFA1C(lbl_801EF5C8,36,lbl_8029CB88,lb
 fn_8007D8EC(&static_cast<CallbackControllerVirtualView&>(*self),self->callbacks);configure(3);
 }
 extern "C" void fn_80074FB0(){}
-/* Original controller and owner forwarding leaves; see docs/notes/game-controller-owner-forward-leafs.md. */
 struct Controller{virtual void v08();virtual void v0C();virtual void v10();virtual void v14();virtual void v18(void*,void*,void*,void*,float);};struct Component{char opaque00[8];int state08;};struct Owner{char opaque00[0x168];Component component;};extern "C"{Controller*fn_8007DCF8(Component*);void fn_8021F568(Owner*,void*,const void*);}extern "C"void fn_80074FB4(Owner*self,void*a,void*b,void*c,void*d,float elapsed){if(self->component.state08>=0)fn_8007DCF8(&self->component)->v18(a,b,c,d,elapsed);else fn_8021F568(self,a,b);}

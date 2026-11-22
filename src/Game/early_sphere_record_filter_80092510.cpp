@@ -1,4 +1,3 @@
-/* Sphere query record filter; see docs/notes/game-early-sphere-record-filter.md. */
 typedef unsigned long Word;
 extern "C"{extern char lbl_801EF5C8[];void fn_801EF610(void*,void*);}
 struct Handle_801F7F10{union{Word value;struct{signed int tag:8,index:24;}bits;};Handle_801F7F10();~Handle_801F7F10();};

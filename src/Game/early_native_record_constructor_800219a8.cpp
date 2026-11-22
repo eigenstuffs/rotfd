@@ -1,4 +1,3 @@
-/* Native record defaults; see docs/notes/game-early-native-record-constructor.md. */
 #include "Game/early_native_record_constructor_views.h"
 Record_800218F8::Record_800218F8(){
  f00=lbl_80378204;f04=lbl_80378208;f28=lbl_8037820C;f2C=lbl_803781F0;

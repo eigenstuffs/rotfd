@@ -1,8 +1,6 @@
 #include "game_controller.h"
 #include "Game/service_interface_tables.h"
 
-/* Reconstructed destructor ABI and controller/output storage views.
- * See docs/notes/game-controller-cleanup.md. */
 extern "C" {
 extern unsigned char lbl_8028F698[16];
 extern unsigned char lbl_801EF5C8[32];

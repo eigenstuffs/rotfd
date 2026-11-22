@@ -1,6 +1,3 @@
-// Partial text split: fn_80282234 only. fn_802820B4 before it (98.8%:
-// FPR colouring in the plane near-equality block) remains original code;
-// best full draft: scratch/claude_match/auto_03_802820B4_text/best_full.cpp.
 /* fn_80282234: shading plane of a projected-light owner.  When the owner's
    view (+0x18) is active, the node's cached world matrix (refreshed from its
    frame when flag 0x20 is set) is multiplied by the view matrix; the plane

@@ -1,4 +1,3 @@
-/* Original scalar flag and fixed-record operations; see docs/notes/game-engine-scalar-last.md. */
 typedef unsigned long u32;
 union Handle{u32 word;struct{signed int generation:8,index:24;}bits;};
 struct Node{char unknown00[0x38];unsigned long long flags38;};struct Entry{Node*object;u32 unknown04,unknown08;signed char generation;char unknown0D[3];};struct Manager{char unknown00[8];Entry*entries;};

@@ -3,8 +3,6 @@
  * lbl_802AB3B8 (+0xAC/+0xC0/+0xD4) through a local pool pointer. The scene service is read before the saved
  * state word is stored; the named reference to the early state pointer keeps its load ahead of the service
  * read (it blocks forward propagation), which fixes the r6/r7 allocation. */
-/* Original scene/record Handle setup and cleanup; strict retained EH plus strong-owner backup audit.
- * See docs/notes/game-engine-scene-handle-setup.md. */
 typedef unsigned long u32;
 struct Handle_801F7F10 {union{u32 word;struct{signed int tag:8,index:24;}bits;};Handle_801F7F10();~Handle_801F7F10();};
 struct Entry{char*object;u32 key,opaque08;signed char generation;char opaque0D[3];};struct Manager{char opaque00[8];Entry*entries;};

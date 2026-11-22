@@ -1,5 +1,3 @@
-/* Original typed Handle allocation and copy; supported exception alignment cleanup and strict original strong-owner audit.
- * See docs/notes/game-python-handle-allocation-binding.md. */
 #include "Game/python_scalar_bindings.h"
 struct Handle_801F7F10{unsigned long word;Handle_801F7F10();~Handle_801F7F10();};
 extern "C" struct{char unknown[0x118];void*manager;}lbl_801E9D24;

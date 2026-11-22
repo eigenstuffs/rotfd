@@ -1,4 +1,3 @@
-/* Named actor targets and controller setup; see docs/notes/game-early-actor-named-targets-setup.md. */
 typedef unsigned long Word;
 struct Handle_801F7F10{union{Word value;struct{signed int tag:8,index:24;}bits;};Handle_801F7F10();~Handle_801F7F10();};
 struct Return_80085C14:Handle_801F7F10{Return_80085C14();~Return_80085C14(){}};

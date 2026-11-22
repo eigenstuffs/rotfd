@@ -1,4 +1,3 @@
-/* Resource parent binding; see docs/notes/game-early-resource-parent-bind.md. */
 struct Handle_801F7F10{union{unsigned long value;struct{signed int tag:8,index:24;}bits;};};
 struct BindNode{char unknown00[0xC];Handle_801F7F10 parent;char unknown10[0x110];unsigned long flags;signed char active()const{return(flags>>7)&1;}};
 struct BindEntry{BindNode*object;char unknown04[8];signed char tag;char unknown0D[3];signed char getTag()const{return tag;}};

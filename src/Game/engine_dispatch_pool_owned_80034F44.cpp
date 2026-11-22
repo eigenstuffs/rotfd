@@ -1,11 +1,7 @@
-/* Original record resource lifecycle; see docs/notes/game-engine-callback-dispatch-family.md. */
 typedef unsigned long u32;
 struct MemberPointer{u32 a,b,c;};
 struct Callback{char opaque00[0x28];unsigned short flags28;short index2A;};
 extern "C" {extern const struct Pool{char opaque00[0x2C8];MemberPointer entries[5];}lbl_802B1918;extern u32 lbl_8037808C,lbl_80378090;extern int lbl_80378094;void fn_8025EF34(void*,MemberPointer,int);void fn_8025EEB4(void*,MemberPointer);void fn_8025EB70(void*,MemberPointer);Callback*fn_8025F074(void*,MemberPointer);void fn_8025F658(Callback*,int);void fn_8025F694(Callback*,u32);void fn_8025F620(Callback*,u32);void fn_80031740(void*);}
-/* Five complete original member-pointer records used by this dispatcher.
- * The earlier registration record and broader borrowed pool base retain original ownership.
- * See docs/notes/game-dispatch-pool-ownership.md. */
 extern "C" MemberPointer lbl_802B1BE0[5] = {
     {0,0x8C,8},
     {0,0x8C,8},

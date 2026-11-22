@@ -1,5 +1,3 @@
-/* Record default settings and Handle assignment; verified private layout views.
- * See docs/notes/game-early-record-default-settings.md. */
 typedef unsigned long Word;
 extern "C" {void fn_801EF610(void*,void*);extern char lbl_801EF5C8[];void fn_801F86C8(void*,const void*,int);extern const float lbl_80378204,lbl_80378208,lbl_8037820C,lbl_803781F0,lbl_80378210,lbl_80378214,lbl_80378218,lbl_8037821C,lbl_80378220,lbl_80378228,lbl_8037822C,lbl_80378230,lbl_80378234;}
 struct Globals_800221DC{char unknown00[0x118];void*manager;};extern "C" Globals_800221DC lbl_801E9D24;

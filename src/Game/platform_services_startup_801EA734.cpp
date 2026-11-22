@@ -1,4 +1,3 @@
-/* Platform service allocation and startup; see docs/notes/game-platform-services-startup.md. */
 #include "Game/service_interface_tables.h"
 typedef unsigned long Word;
 struct EmptyService {void* unknown;};

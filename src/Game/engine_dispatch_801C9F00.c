@@ -1,5 +1,3 @@
-/* Original engine dispatch and setup routines.
- * See docs/notes/game-engine-dispatch.md. */
 struct Object {
     void *matrices[2];
     char bitset[0x10];

@@ -1,5 +1,3 @@
-// Recovered callback registration; see docs/notes/game-class-registry.md.
-// ProjectileAgent.h factory proves a 0x88-byte object; fields remain opaque.
 struct Agent_80035294 {
     // Stack placement proves eight-byte alignment; this union only expresses storage.
     union { double alignment; unsigned char storage[0x88]; };

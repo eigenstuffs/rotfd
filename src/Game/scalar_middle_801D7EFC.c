@@ -1,5 +1,3 @@
-/* Original scalar operations with private observed layouts.
- * See docs/notes/game-scalar-middle.md. */
 static inline void set3(float *out,float x,float y,float z) {out[0]=x;out[1]=y;out[2]=z;}
 
 void fn_801D7EFC(float *out,const float *source,float scale) {float x=source[0]*scale;float y=source[1]*scale;out[0]=x;out[1]=y;}

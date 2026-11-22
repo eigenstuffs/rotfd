@@ -1,4 +1,3 @@
-/* Original scene-mode scalar forwarding; see docs/notes/game-scene-mode-scalar-delegate.md. */
 typedef unsigned long Word;
 struct Mode{char opaque00[0xF0];int selected;};
 struct World{char opaque00[0x15058];Mode*mode;};

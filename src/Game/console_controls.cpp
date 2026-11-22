@@ -1,5 +1,3 @@
-/* Console flag and display callbacks reconstructed from GSQE78.
- * See docs/notes/game-console-controls.md. */
 typedef unsigned long u32;
 struct Console {char unknown[0x860];int argc;char*argv[16];signed char numeric[16];float values[16];};
 struct GameStorage {char unknown[0x278];};

@@ -1,4 +1,2 @@
-/* Original engine records and resource lifetime routines.
- * See docs/notes/game-engine-records-more.md. */
 extern const char lbl_8028F698[];extern void fn_8028FD50(const void *,void *,unsigned int);static inline void release_storage(void *object) {void *buffer=*(void **)((char *)object+0x3c);if(buffer){fn_8028FD50(lbl_8028F698,buffer,*(unsigned int *)((char *)object+0x38)*32);*(void **)((char *)object+0x3c)=0;}*(int *)((char *)object+0x38)=0;}
 void fn_801C3780(void *object) {int count=*(int *)((char *)object+0x34);int i;if(count<0){release_storage(object);for(i=*(int *)((char *)object+0x34);i<0;++i){}*(int *)((char *)object+0x34)=0;}else if(count>0){for(i=count-1;i>=0;--i){}release_storage(object);*(int *)((char *)object+0x34)=0;}}

@@ -1,5 +1,3 @@
-/* Dolphin AX command-list construction. Copyright (c) 2019-2025 NWPlayer123.
- * MIT license: reference/ttyd-sdk/LICENSE. Target changes: docs/notes/AXCL.md. */
 #include "ax_abi.h"
 static inline void __AXWriteToCommandList(u16);
 

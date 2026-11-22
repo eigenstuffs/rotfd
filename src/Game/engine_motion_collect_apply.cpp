@@ -1,5 +1,3 @@
-/* Motion owner sphere collection and position application.
- * See docs/notes/game-engine-motion-collect-apply.md. */
 #pragma fp_contract on
 #include "Game/engine_motion_collect_apply.h"
 

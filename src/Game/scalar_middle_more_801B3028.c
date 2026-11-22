@@ -1,6 +1,3 @@
-/* Original engine setup and record routines with private observed layouts.
- * See docs/notes/game-scalar-middle-more.md. */
-
 struct Array50 {char pad[80];};
 
 struct Array8C {char pad[140];};

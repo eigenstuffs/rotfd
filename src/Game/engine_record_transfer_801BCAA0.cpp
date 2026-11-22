@@ -1,5 +1,3 @@
-/* Original engine lifetime and record routines.
- * See docs/notes/game-engine-record-transfer.md. */
 typedef unsigned int u32;
 typedef unsigned long long u64;
 struct Vec3_801BCAA0 {

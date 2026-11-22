@@ -1,6 +1,3 @@
-/* Original indexed records, engine setup and allocation-header routines.
- * See docs/notes/game-engine-leaf.md. */
-
 extern const char lbl_801EF5C8[];
 
 extern void fn_801EF610(const void *,void *);

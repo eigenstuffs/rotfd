@@ -1,4 +1,3 @@
-/* Ordinary menu record parser; see docs/notes/game-menu-record-parser.md. */
 typedef unsigned long Word;
 struct Manager;
 struct Handle_801F7F10{Word word;Handle_801F7F10();~Handle_801F7F10();};

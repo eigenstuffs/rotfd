@@ -1,6 +1,3 @@
-// Partial text split: fn_802917E4 and fn_80291B88. fn_80291D20 (71.5%) and
-// fn_80292258 (99.4%) after them remain original code; full draft:
-// scratch/claude_match/auto_03_802917E4_text/final.cpp.
 typedef unsigned char Byte;
 typedef unsigned short U16;
 

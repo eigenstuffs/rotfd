@@ -1,4 +1,3 @@
-/* Scene timed state transition; see docs/notes/game-scene-timed-state-transition.md. */
 typedef unsigned long Word;
 struct Vector { float x,y,z; Vector(float a,float b,float c):x(a),y(b),z(c){} void operator=(Vector v){x=v.x;y=v.y;z=v.z;} void operator+=(Vector v){x+=v.x;y+=v.y;z+=v.z;} };
 struct Actor { char unknown00[0x30];unsigned long long flags;char unknown38[0x10C];Vector value;char unknown150[0xA8];char component[1]; };

@@ -1,5 +1,3 @@
-/* Original engine Handle value construction with compiler-emitted exception metadata.
- * See docs/notes/game-engine-handle-value-setup.md. */
 typedef unsigned long u32;
 struct Handle_801F7F10 {u32 word;Handle_801F7F10();~Handle_801F7F10();};
 struct Manager;

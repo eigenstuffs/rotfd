@@ -1,4 +1,3 @@
-/* Private observed console command layout; see docs/notes/game-console-commands.md. */
 #ifndef GAME_LOGGER_COMMANDS_INTERNAL_H
 #define GAME_LOGGER_COMMANDS_INTERNAL_H
 typedef unsigned long u32;

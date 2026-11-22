@@ -1,4 +1,3 @@
-/* Original callback resolved-Handle chain; see docs/notes/game-engine-callback-resolved-chain.md. */
 typedef unsigned long u32;typedef unsigned long long u64;
 struct MemberPointer{u32 a,b,c;};
 struct Callback{char opaque00[0x28];unsigned short flags28;short index2A;};

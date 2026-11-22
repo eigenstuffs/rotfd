@@ -1,6 +1,3 @@
-// Partial text split: fn_801DE080 (swept sphere vs sphere). The following
-// ray/torus quartic setup fn_801DE350 (90.8%) remains original code; full
-// draft: scratch/claude_match/auto_03_801DE080_text/final.cpp.
 typedef unsigned long long Mask;
 
 extern "C" {

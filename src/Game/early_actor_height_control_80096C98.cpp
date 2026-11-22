@@ -1,4 +1,3 @@
-/* Actor height and control state transitions; see docs/notes/game-early-actor-height-control.md. */
 typedef unsigned long Word;
 struct Handle{union{Word value;struct{signed int tag:8,index:24;}bits;};};
 struct Vec3{float x,y,z;};struct Geometry{char unknown0[0x30];Vec3 position;};struct Prefix{char unknown0[8];};

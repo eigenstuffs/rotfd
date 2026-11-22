@@ -1,2 +1,1 @@
-/* Scene callback setup and nested Handle control; see docs/notes/game-scene-native-callback-controls-more.md. */
 typedef unsigned long Word;struct Record{Word flags;char unknown04[0x20];};extern "C"{extern int lbl_803777E0;extern Record lbl_80317F98[4];signed char fn_800C0908(Record*);void fn_800C0B1C(Record*);}extern "C" void fn_800C0874(){if(lbl_803777E0>-1&&!fn_800C0908(&lbl_80317F98[lbl_803777E0])){lbl_80317F98[lbl_803777E0].flags=0;lbl_803777E0=-1;}for(int i=0;i<4;++i)fn_800C0B1C(&lbl_80317F98[i]);}

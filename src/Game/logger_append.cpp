@@ -1,4 +1,3 @@
-/* Recovered variadic log append methods; see docs/notes/game-logger.md. */
 #include "logger_internal.h"
 
 extern "C" {

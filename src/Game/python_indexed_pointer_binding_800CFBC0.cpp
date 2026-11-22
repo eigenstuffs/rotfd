@@ -1,4 +1,3 @@
-/* Native indexed pointer wrapper; see docs/notes/game-python-indexed-pointer-bindings.md. */
 #include "Game/python_indexed_pointer_encoding.h"
 extern "C" const char lbl_802A2F2C[];
 extern "C" long PyInt_AsLong(FactoryPyObject*);

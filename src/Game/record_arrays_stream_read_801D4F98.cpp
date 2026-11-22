@@ -1,4 +1,3 @@
-/* Serialized vector and fixed-record arrays; see docs/notes/game-record-arrays-stream-read.md. */
 typedef unsigned long StreamRecordWordType;
 extern "C" {
 extern char lbl_8028F698[];

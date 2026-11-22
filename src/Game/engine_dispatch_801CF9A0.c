@@ -1,5 +1,3 @@
-/* Original engine dispatch and setup routines.
- * See docs/notes/game-engine-dispatch.md. */
 extern void __ct__13Root_80207414Fv(void *);
 extern char __vt__17Resource_802E9E20[],__vt__20SpatialBase_802EC118[],lbl_802EA440[];
 extern const float lbl_8037A468;

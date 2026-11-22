@@ -1,4 +1,3 @@
-/* Audio record array cleanup; see docs/notes/game-audio-array-cleanup.md. */
 extern "C"{extern char lbl_801EF5C8[];void fn_801EF610(void*,void*);}
 struct Record{char unknown00[0x2C];Record();static void operator delete[](void*p){fn_801EF610(lbl_801EF5C8,p);}};
 struct Voice{char unknown00[0x30];Voice();static void operator delete[](void*p){fn_801EF610(lbl_801EF5C8,p);}};

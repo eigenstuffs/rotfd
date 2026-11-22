@@ -483,8 +483,6 @@ static PyObject *__bases__ = NULL;
 
 #define PyList_SET_ITEM(op, i, v) (((PyListObject *)(op))->ob_item[i] = (v))
 #define PyType_Check(op) ((op)->ob_type == &PyType_Type)
-/* Named diagnostic literals preserve the recovered data order. See
- * docs/notes/abstract.md; these names are reconstruction identifiers. */
 static char abstract_class_attribute[] = "PyAbstract__class__";
 static char abstract_isinstance_class[] = "isinstance() arg 2 must be a class or type";
 static char abstract_bases_attribute[] = "PyAbstract__bases__";

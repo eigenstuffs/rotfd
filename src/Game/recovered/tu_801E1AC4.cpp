@@ -158,8 +158,6 @@ typedef char CheckViewportSize[sizeof(Viewport_801E300C)==0x4C?1:-1];
 typedef char CheckViewportRecordSize[sizeof(ViewportRecord_801E2EA8)==0x1C4?1:-1];
 
 struct EngineBase { unsigned char prefix[0x278]; };
-/* Unknown virtual declarations preserve the observed notify slot at 0xAC.
- * These are layout placeholders, not reconstructed function bodies. */
 struct Engine : EngineBase {
     virtual void unknown_00();
     virtual void unknown_01();

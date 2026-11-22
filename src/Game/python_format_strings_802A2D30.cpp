@@ -1,4 +1,3 @@
-/* Original Python argument formats. See docs/notes/game-python-format-strings.md. */
 extern "C" const char lbl_802A2D30[21] = "O:Game_Z_MarkHandles";
 extern "C" const char lbl_802A2D48[22] = "O:Game_Z_TryToSuspend";
 extern "C" const char lbl_802A2D60[22] = "O:Game_Z_GetGameWorld";

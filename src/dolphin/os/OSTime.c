@@ -1,8 +1,3 @@
-/* Dolphin SDK system-time C fragment, GSQE78.
- * Adapted from the public doldecomp/melee SDK reconstruction;
- * see reference/melee-sdk/PROVENANCE.md and docs/notes/OSTime.md.
- * Timebase readers remain original fallback assembly.
- */
 extern int OSDisableInterrupts(void), OSRestoreInterrupts(int);
 extern long long OSGetTime(void);
 

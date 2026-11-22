@@ -1,17 +1,3 @@
-/* auto_03_801BEB0C_text: character collision move (fn_801BEB0C, vtable slot
-   0x164 of the mover: ground ray, sphere push-out, floor/wall flags, final
-   ground ray) and fn_801BF5A4 (the stepped mover that builds the sphere list
-   and calls slot 0x164 per step, with carrier/rider attachment).
-   GC/1.3.2, -O4,p, -fp_contract on (same flags as
-   related_flag_transfer_801BE6F4 / physics_node_swept_sphere_move_801C109C).
-   Status: full drafts, not exact (see results w9_801BEB0C.json).
-   The original used float/double literals; the compiled .sdata2 pool is in
-   the same order as the target 0x8037A310..0x8037A350, so this unit owns
-   that range.  Literals matter: Vec3(x,0.0f,z).length() folds 0*0.
-   The Ray origin temporary is materialised via get() (the original stores
-   the from+offset sum to a stack temporary before copying it into the ray);
-   the sphere loop indexes through a char* offset so the base+offset add
-   stays in the loop as in the original. */
 typedef unsigned long Word;
 typedef unsigned long long Wide;
 extern "C" {

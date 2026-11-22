@@ -1,5 +1,3 @@
-/* Original owner sphere-overlap collection.
- * See docs/notes/game-engine-owner-sphere-collect.md. */
 #include "Game/engine_owner_sphere_collect.h"
 
 extern "C" int fn_8024890C(SphereCollectOwner* self,

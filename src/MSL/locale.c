@@ -1,4 +1,3 @@
-/* Retained MSL C-locale data. See docs/notes/msl-locale.md. */
 struct lconv {
   char* decimal_point;
   char* thousands_sep;

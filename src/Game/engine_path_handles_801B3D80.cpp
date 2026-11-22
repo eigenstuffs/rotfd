@@ -1,5 +1,3 @@
-/* Original engine keyed handle selection.
- * See docs/notes/game-engine-path-handles.md. */
 typedef unsigned int u32;
 struct Handle_801B3D80 {
     signed int generation:8;

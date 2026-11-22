@@ -1,7 +1,3 @@
-/* Record-array type selection and flag reset; observed private layout views.
- * See docs/notes/game-early-record-type-flag-reset.md. */
-/* Copied record-array flags and virtual dispatch; verified private layout views.
- * See docs/notes/game-early-record-array-dispatch.md. */
 extern "C" {extern char lbl_801EF5C8[],lbl_8028F698[];void fn_801EF610(void*,void*);void fn_8028FD50(void*,void*,int);}
 struct Handle_801F7F10 {union{unsigned long value;struct{signed int tag:8,index:24;}bits;};Handle_801F7F10();~Handle_801F7F10();};
 struct CopyHandleLayer1_800CCFA4:Handle_801F7F10 {CopyHandleLayer1_800CCFA4(){value=0;}~CopyHandleLayer1_800CCFA4(){}};

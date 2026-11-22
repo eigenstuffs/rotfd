@@ -1,5 +1,3 @@
-/* Typed pool cleanup with original compiler exception metadata.
- * See docs/notes/game-menu-pool-destructors.md. */
 typedef unsigned long u32;
 extern "C" {
 extern char lbl_801EF5C8[],lbl_8028F698[],__vt__15Object_800B4F28[],lbl_802BD800[];

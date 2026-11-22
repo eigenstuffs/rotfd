@@ -1,6 +1,4 @@
 #include "Game/state_native_operation_records.h"
-/* Original engine vector and scalar initialization with compiler-emitted exception metadata.
- * See docs/notes/game-engine-early-vector-setup.md. */
 extern "C" {
     void fn_80090084(void*);
     

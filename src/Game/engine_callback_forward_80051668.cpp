@@ -1,5 +1,3 @@
-/* Original engine destruction with compiler-emitted exception metadata.
- * See docs/notes/game-engine-callback-forward.md. */
 extern "C" {
     void fn_8025ED38(void*, void*, void*);
     extern void* lbl_80377680;

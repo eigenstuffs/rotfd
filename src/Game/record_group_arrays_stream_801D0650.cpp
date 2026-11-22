@@ -1,4 +1,3 @@
-/* Group record array stream reconstruction; see docs/notes/game-record-group-arrays-stream.md. */
 typedef unsigned long GroupArrayStreamWord;
 struct Handle_801F7F10{GroupArrayStreamWord value;Handle_801F7F10();~Handle_801F7F10();};
 struct GroupArrayInputStream{void*position;};

@@ -1,4 +1,3 @@
-/* Observed scalar operations; offsets and identities remain provisional. */
 
 signed char fn_8023C798(const void *o){return *(const signed char*)o;}
 

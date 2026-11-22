@@ -1,5 +1,1 @@
-/* Original scalar operations with private observed layouts.
- * See docs/notes/game-scalar-middle.md. */
-
-
 int fn_801C1744(const void *object,int index) {if(index<0||index>=*(const int *)((const char *)object+0x19c))return 0;return ((1U<<(index&31))&(*(unsigned int *const *)((const char *)object+0x194))[index>>5])!=0;}

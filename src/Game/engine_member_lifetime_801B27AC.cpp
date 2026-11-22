@@ -1,5 +1,3 @@
-/* Original engine lifetime and record routines.
-* See docs/notes/game-engine-member-lifetime.md. */
 #include "Game/registry_abi_tables.h"
 extern "C" {
     extern char lbl_8028F698[],lbl_801EF5C8[];

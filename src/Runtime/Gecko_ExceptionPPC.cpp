@@ -1,4 +1,3 @@
-/* Retained CodeWarrior unwinder. See docs/notes/runtime-gecko-exception.md. */
 #pragma exceptions on
 #pragma internal on
 

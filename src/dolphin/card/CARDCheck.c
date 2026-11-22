@@ -1,4 +1,3 @@
-/* Dolphin CARD verification. See docs/notes/CARDCheck.md and reference provenance. */
 #include "card_abi.h"
 typedef struct OSSramEx {
     unsigned char flashID[2][12];

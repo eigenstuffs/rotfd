@@ -1,4 +1,3 @@
-/* Render display list call; see docs/notes/game-render-display-list-call.md. */
 struct SavedVertexDescriptor {int attribute,type;};
 struct DisplayListView {char unknown00[0x110];void*displayList;unsigned long present,bytes;};
 struct DisplayVertexOwner {char unknown00[0xBDC];void*positions;};

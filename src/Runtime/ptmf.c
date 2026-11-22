@@ -1,6 +1,3 @@
-/* CodeWarrior member-function-pointer runtime, GSQE78.
- * The three PPC routines are asm functions, as in the original runtime.
- * See docs/notes/runtime-native.md. */
 typedef struct __ptmf {
     long this_delta;
     long v_offset;

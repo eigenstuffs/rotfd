@@ -1,4 +1,3 @@
-/* Dolphin CARDRead. See docs/notes/CARDRead.md for provenance and verification. */
 #include "card_abi.h"
 #define OSTicksToSeconds(ticks) ((ticks) / (__OSBusClock / 4))
 extern OSTime OSGetTime(void);

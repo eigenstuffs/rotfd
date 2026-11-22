@@ -1,4 +1,3 @@
-/* Native record event lifetime; see docs/notes/game-scene-event-aggregate-owner-adoption.md. */
 typedef unsigned long Word;
 extern "C" {extern char lbl_801EF5C8[];void fn_801EF610(void*,void*);extern const float lbl_80379784,lbl_80379790;}
 struct Handle_801F7F10 { Word value;~Handle_801F7F10(); };

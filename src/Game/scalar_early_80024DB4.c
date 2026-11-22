@@ -1,6 +1,3 @@
-/* Original scalar operations with private observed layouts.
- * See docs/notes/game-scalar-early.md. */
-
 extern float lbl_802F40F8[3];
 
 extern const float lbl_80378240,lbl_8037824C;

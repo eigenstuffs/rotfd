@@ -1,5 +1,3 @@
-/* Original engine lifetime and record routines.
- * See docs/notes/game-engine-lifecycle-more.md. */
 struct Handle_801C3854{
     signed int tag:8;
     signed int index:24;

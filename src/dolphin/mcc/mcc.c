@@ -1,4 +1,3 @@
-/* Dolphin multi-channel host communication. See docs/notes/mcc.md. */
 #include "mcc_abi.h"
 #define ATTRIBUTE_ALIGN(n) __attribute__((aligned(n)))
 extern u32 __OSBusClock : 0x800000F8;

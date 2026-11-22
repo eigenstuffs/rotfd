@@ -1,5 +1,3 @@
-// Destructor ABI view: the native table is retained in its original later owner.
-// The complete native-interface probe is preserved in scratch/game_manipulator_destructor.
 typedef unsigned long u32;
 extern "C" {
 extern char __vt__13Manipulator_Z[], lbl_801EF5C8[];

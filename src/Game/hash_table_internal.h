@@ -1,4 +1,3 @@
-/* Observed hash-table and key ABI; see docs/notes/game-hash-table.md. */
 #ifndef GAME_HASH_TABLE_INTERNAL_H
 #define GAME_HASH_TABLE_INTERNAL_H
 struct Prefix { unsigned long unknown; };

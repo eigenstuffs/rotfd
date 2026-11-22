@@ -1,7 +1,3 @@
-/* Dolphin SDK thread scheduling C functions, GSQE78.
- * Adapted from the public projectPiki/pikmin2 SDK reconstruction;
- * see reference/pikmin2-sdk/PROVENANCE.md and docs/notes/OSThread.md.
- */
 #include "OSThread_abi.h"
 
 static vu32 RunQueueBits;

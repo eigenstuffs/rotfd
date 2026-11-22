@@ -1,4 +1,3 @@
-/* Dolphin audio RAM DMA queues. See docs/notes/arq.md for provenance and verification. */
 #include "ar_abi.h"
 
 const char* __ARQVersion = "<< Dolphin SDK - ARQ\trelease build: Sep  5 2002 05:34:29 (0x2301) >>";

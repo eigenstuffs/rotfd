@@ -1,4 +1,3 @@
-/* Record selection and related scene controls; see docs/notes/game-record-selection.md. */
 typedef unsigned long Word;
 struct Handle{union{Word word;struct{signed int tag:8,index:24;}bits;};};
 struct Node{char unknown00[0x48];void*field48;float field4C;char unknown50[0x20];Handle actor;char unknown74[0x3C];Handle*child;char unknownB4[0x264];char actions[4];};

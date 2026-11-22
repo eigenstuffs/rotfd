@@ -1,5 +1,3 @@
-/* Original engine type registry and lookup routines.
- * See docs/notes/game-engine-registry.md. */
 extern "C" int fn_80207B94(void *,int,int);
 struct Record_801B57F8  {
     char data[128];

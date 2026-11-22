@@ -1,5 +1,4 @@
 
-/* Original Python argument formats. See docs/notes/game-additional-python-format-strings.md. */
 extern "C" const char lbl_802A2E28[31] = "OO:Game_Z_GetPlayerManipulator";
 extern "C" const char lbl_802A2E48[25] = "OO:Game_Z_GetCameraAgent";
 extern "C" const char lbl_802A2E64[27] = "OOO|O:Game_Z_AddGamePlayer";
@@ -31,7 +30,6 @@ extern "C" const char lbl_802A303C[] =
 extern "C" const char lbl_802A3064[] =
     "OO:Game_Z_DeclareSkelManipulator"; // +0x0
 
-/* Original Python argument formats. See docs/notes/game-additional-python-format-strings.md. */
 extern "C" const char lbl_802A3088[38] = "OO:Game_Z_DeclareParticlesManipulator";
 extern "C" const char lbl_802A30B0[33] = "OO:Game_Z_DeclareNodeManipulator";
 extern "C" const char lbl_802A30D4[28] = "OO:Game_Z_DeclareOtherAgent";

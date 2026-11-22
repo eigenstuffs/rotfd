@@ -1,4 +1,3 @@
-/* Original virtual callback reset; see docs/notes/game-repeated-virtual-resets.md. */
 struct Prefix{unsigned long unknown00[2];};
 struct Object_80048748:Prefix{
  virtual void slot08();

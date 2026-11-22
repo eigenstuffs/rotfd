@@ -1,6 +1,3 @@
-// Partial text split: fn_801DDB3C, the last function of the collision-mesh
-// capsule query unit (see collision_mesh_capsule_queries_801DC784.cpp); the
-// preceding fn_801DCCE8 and fn_801DD9E0 remain original code.
 /* auto_03_801DC784_text: collision-geometry helpers between
    fn_801DC5E8 (record_object_space_transform) and fn_801DDBFC
    (box_collision_nearest_hit); same original TU and flags as the latter

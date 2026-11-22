@@ -1,4 +1,3 @@
-/* MetroTRK event loop. See docs/notes/MetroTRK-mainloop.md. */
 #include "trk_abi.h"
 
 static inline void TRKHandleRequestEvent(NubEvent* ev)

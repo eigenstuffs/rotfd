@@ -1,4 +1,3 @@
-/* Two-object binding; see docs/notes/game-python-two-object-bindings.md. */
 #include "Game/python_scalar_bindings.h"
 extern "C" FactoryPyObject* PyFloat_FromDouble(double);
 extern "C" const char lbl_802A38B8[];

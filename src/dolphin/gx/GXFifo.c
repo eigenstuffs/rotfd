@@ -1,4 +1,3 @@
-/* Dolphin GX FIFO management. See docs/notes/GXFifo.md. */
 #include "gx_abi.h"
 typedef struct OSContext
 {

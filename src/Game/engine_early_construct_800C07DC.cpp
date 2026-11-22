@@ -1,5 +1,3 @@
-/* Original engine destruction with compiler-emitted exception metadata.
- * See docs/notes/game-engine-early-construct.md. */
 extern "C" {
     void __ct__15Handle_801F7F10Fv(void*);
 }

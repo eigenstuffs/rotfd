@@ -404,7 +404,6 @@ struct Flush10;
 
 /* ---- Game/curve_handle_actions_801B0E28.cpp ---- */
 namespace curve_handle_actions_801B0E28 {
-/* Curve Handle action and packed encoding reconstruction; see docs/notes/game-curve-handle-encoding.md. */
 typedef unsigned long CurveActionWord;
 
 struct CurveActionNodeStorage {
@@ -508,7 +507,6 @@ struct Flush17;
 
 /* ---- Game/curve_packed_quaternion_encode_801B115C.cpp ---- */
 namespace curve_packed_quaternion_encode_801B115C {
-/* Curve Handle action and packed encoding reconstruction; see docs/notes/game-curve-handle-encoding.md. */
 struct CurvePackedQuaternionComponent {
     signed short value : 12;
     unsigned short unused : 4;

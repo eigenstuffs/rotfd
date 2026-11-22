@@ -1,4 +1,3 @@
-/* Early quaternion callback and indexed record controls; see docs/notes/game-early-callback-value-controls.md. */
 struct Vector4{float x,y,z,w;};
 struct Prefix{char unknown0[8];};
 struct Actor:Prefix{

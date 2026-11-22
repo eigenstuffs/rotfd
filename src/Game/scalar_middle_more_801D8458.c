@@ -1,6 +1,3 @@
-/* Original engine setup and record routines with private observed layouts.
- * See docs/notes/game-scalar-middle-more.md. */
-
 extern void *memcpy(void *,const void *,unsigned int);
 
 void *fn_801D8458(void *object,void *node,void *out) {return memcpy(out,*(char **)((char *)object+0xe8)+*(int *)((char *)node+0x8c)*192,192);}

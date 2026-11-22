@@ -1,5 +1,3 @@
-/* Console lifetime and resource callbacks reconstructed from GSQE78.
- * See docs/notes/game-console-lifecycle.md for layout and verification. */
 typedef unsigned long u32;
 struct ConsoleVTable {void*typeInfo;void*baseOffset;void(*methods[10])();};
 extern "C" {extern char lbl_8028F698[],lbl_801EF5C8[];extern ConsoleVTable lbl_802EAF10;void fn_8028FD50(void*,void*,u32);void fn_801EF610(void*,void*);}

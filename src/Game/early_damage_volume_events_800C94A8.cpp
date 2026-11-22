@@ -1,4 +1,3 @@
-/* Damage-volume event update; see docs/notes/game-early-damage-volume-events.md. */
 typedef unsigned long Word;
 struct Handle{union{Word value;struct{signed int tag:8,index:24;}bits;};};
 struct Prefix{char unknown0[8];};

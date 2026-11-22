@@ -1,6 +1,3 @@
-/* Dolphin SDK DVD filesystem C functions, GSQE78.
- * Adapted from the public Melee reconstruction; see docs/notes/dvdfs.md.
- */
 #include "dvdfs_abi.h"
 
 struct FSTEntry {

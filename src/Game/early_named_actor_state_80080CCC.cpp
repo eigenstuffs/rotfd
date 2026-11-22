@@ -1,4 +1,3 @@
-/* Named actor state update; see docs/notes/game-early-named-actor-state.md. */
 typedef unsigned long Word;
 extern "C"Word fn_801F948C(void*,const char*);struct Name{Word value;Name(const char*s){value=fn_801F948C(this,s);}bool operator==(const Name&n)const{return value==n.value;}};
 struct Handle{union{Word value;struct{signed int tag:8,index:24;}bits;};};struct Vec3{float x,y,z;float squared()const{return x*x+y*y+z*z;}};

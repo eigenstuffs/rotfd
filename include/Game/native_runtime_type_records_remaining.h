@@ -1652,7 +1652,7 @@ extern NativeRuntimeBaseList<6> lbl_802BFF18; // Throwable_Z
 extern NativeRuntimeBaseList<7> lbl_802BFF4C; // LodAgent_Z
 extern NativeRuntimeBaseList<8> lbl_802BFF88; // CActorAgent
 extern NativeRuntimeBaseList<9> lbl_802BFFCC; // CRBObjBaseAgent
-extern NativeRuntimeBaseList<10> lbl_802C0018; // QSnailBase; only the observed list prefix is declared, storage remains original
+extern NativeRuntimeBaseList<10> lbl_802C0018; // QSnailBase
 extern NativeRuntimeBaseList<1> lbl_802C127C; // ABC_Agent
 extern NativeRuntimeBaseList<2> lbl_802C1288; // Agent_Z
 extern NativeRuntimeBaseList<3> lbl_802C129C; // VolumeAgent_Z

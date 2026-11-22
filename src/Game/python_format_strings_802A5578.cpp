@@ -1,5 +1,4 @@
 
-/* Original Python argument formats. See docs/notes/game-python-format-strings.md. */
 extern "C" const char lbl_802A5578[18] = "O:LodAgent_Z_Init";
 extern "C" const char lbl_802A558C[26] = "OO:LodAgent_Z_SetPlayerId";
 extern "C" const char lbl_802A55A8[24] = "OO:LodAgent_Z_SetTeamId";
@@ -20,7 +19,6 @@ extern "C" const char lbl_802A5614[] =
 extern "C" const char lbl_802A56A4[] =
     "O:RtcAgent_Z_Reset"; // +0x0
 
-/* Original Python argument formats. See docs/notes/game-python-format-strings.md. */
 extern "C" const char lbl_802A56B8[18] = "O:RtcAgent_Z_Init";
 extern "C" const char lbl_802A56CC[21] = "O:RtcAgent_Z_Suspend";
 extern "C" const char lbl_802A56E4[21] = "O:RtcAgent_Z_Restore";
@@ -49,7 +47,6 @@ extern "C" const char lbl_802A583C[] =
 extern "C" const char lbl_802A5854[] =
     "OO:CameraAgent_Z_RegisterWithGame"; // +0x0
 
-/* Original Python argument formats. See docs/notes/game-additional-python-format-strings.md. */
 extern "C" const char lbl_802A5878[39] = "O|O:CameraAgent_Z_GetCameraManipulator";
 extern "C" const char lbl_802A58A0[29] = "OO:CameraAgent_Z_SetViewport";
 extern "C" const char lbl_802A58C0[28] = "O:CameraAgent_Z_GetViewport";

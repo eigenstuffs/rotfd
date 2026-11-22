@@ -1,6 +1,3 @@
-/* Original engine setup and record routines with private observed layouts.
- * See docs/notes/game-scalar-middle-more.md. */
-
 extern void *__ct__12BaseObject_ZFv(void *);
 
 extern const char __vt__17Resource_802E9E20[],lbl_802EA128[];

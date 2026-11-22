@@ -1,5 +1,3 @@
-/* Reconstructed key-array loading templates; original names are unknown.
- * See docs/notes/game-curves.md. */
 #ifndef GSQE78_GAME_CURVE_LOAD_H
 #define GSQE78_GAME_CURVE_LOAD_H
 

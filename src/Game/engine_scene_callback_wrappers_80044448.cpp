@@ -1,2 +1,1 @@
-/* Original scene callback registration and lookup wrappers; see docs/notes/game-engine-scene-callback-wrappers.md. */
 struct Owner{char opaque00[0x38];unsigned long long flags38;char opaque40[0x28];signed char active68;};extern "C" void fn_8025ECB4(Owner*);extern "C" void fn_80044448(Owner*self){if(!(self->flags38&0x20000ULL)){self->active68=0;fn_8025ECB4(self);}}

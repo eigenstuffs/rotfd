@@ -384,8 +384,6 @@ extern "C" void fn_801ED468(ActTimer* self, Node* node)
 
 namespace leaf_801ED9FC {
 extern "C" {
-/* Original indexed records, engine setup and allocation-header routines.
- * See docs/notes/game-engine-leaf.md. */
 
 extern void fn_801EDB54(void *);
 
@@ -401,8 +399,6 @@ void fn_801EDA54(void *object) {if(*(unsigned short *)((char *)object+0xbc)&1){f
 
 namespace links_801EDAAC {
 extern "C" {
-/* Original engine lifetime and record routines.
-* See docs/notes/game-engine-links.md. */
 typedef struct Object{
     char pad[0xbc];
     unsigned short flags;
@@ -428,8 +424,6 @@ void fn_801EDAAC(Object*self,float first,float second,float third){
 }
 
 namespace timer_801EDB54 {
-/* Timer advancement and callback dispatch through the observed partial view.
- * See docs/notes/game-engine-timer-dispatch.md. */
 typedef unsigned long Word;
 
 struct Handle_EDB54 {
@@ -704,8 +698,6 @@ extern "C" void fn_801EDD8C(AnimFrame*self){
 
 namespace scalar_801EE760 {
 extern "C" {
-/* Original scalar operations with private observed layouts.
- * See docs/notes/game-scalar-late.md. */
 
 
 void fn_801EE760(float *object, const float *source) { object[29]=source[0]; object[30]=source[1]; object[31]=source[2]; }
@@ -917,7 +909,6 @@ extern "C" void fn_801EE978(AnimFrame*self){
 
 }
 
-/* Native animation frame construction; see docs/notes/game-anim-frame-init.md. */
 typedef unsigned long Word;
 extern "C" {extern char lbl_802E9D98[];}
 struct Manipulator_Z {Word unknown00[2];void*table;char unknown0C[0x20-0xC];Manipulator_Z();~Manipulator_Z();};

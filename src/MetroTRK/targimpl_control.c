@@ -1,4 +1,3 @@
-/* MetroTRK target C fragment; see docs/notes/MetroTRK-targimpl.md. */
 #include "targimpl_helpers.h"
 
 u32 TRKTargetGetPC(void)

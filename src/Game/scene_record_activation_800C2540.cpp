@@ -1,4 +1,3 @@
-/* Scene record activation and removal; see docs/notes/game-scene-record-activation.md. */
 typedef unsigned long Word;
 struct Handle_801F7F10{union{Word word;struct{signed int tag:8,index:24;}bits;};Handle_801F7F10();~Handle_801F7F10();static void operator delete(void*p)throw();};
 struct Node;struct Entry{Node*object;char gap04[8];signed char tag;char gap0D[3];signed char getTag()const{return tag;}};struct Manager{char gap00[8];Entry*entries;};

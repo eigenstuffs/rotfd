@@ -1,5 +1,3 @@
-/* Console callbacks and buffer lifecycle reconstructed from GSQE78.
- * See docs/notes/game-console-callbacks.md. */
 typedef unsigned long u32;
 struct ConsoleCommand {char name[64],help[128],alias[16];signed char(*callback)();ConsoleCommand*next,*prev;};
 struct InterpreterStorage {u32 unknown[2];};

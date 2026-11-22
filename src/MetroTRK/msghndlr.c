@@ -1,4 +1,3 @@
-/* MetroTRK message command handlers. See docs/notes/MetroTRK-msghndlr.md. */
 #include "msghndlr_abi.h"
 static bool IsTRKConnected;
 bool GetTRKConnected(void) { return IsTRKConnected; }

@@ -1,4 +1,3 @@
-/* Actor Handle pair and counter control; see docs/notes/game-actor-handle-pair-controls.md. */
 typedef unsigned long Word;typedef unsigned long long Wide;
 struct Handle_801F7F10{union{Word word;struct{signed int tag:8,index:24;}bits;};Handle_801F7F10();~Handle_801F7F10();};
 struct Context{char unknown0[0x118];void*manager;};extern "C"{extern Context lbl_801E9D24;extern char lbl_801EF5C8[];void fn_801EF610(void*,void*);void fn_801F86C8(void*,const Handle_801F7F10*,int);Word fn_801F7EB8(const Handle_801F7F10*);}

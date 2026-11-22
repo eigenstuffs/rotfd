@@ -1,5 +1,3 @@
-/* Original scalar operations; provisional text-only ownership.
- * See docs/notes/game-leaf-extended.md. */
 extern short lbl_8037757A;
 extern short lbl_80377578;
 

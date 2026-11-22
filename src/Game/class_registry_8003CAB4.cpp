@@ -1,5 +1,3 @@
-// Recovered callback registration; see docs/notes/game-class-registry.md.
-// RtcInGameAgent_Z.h factory proves a 0x180-byte object; fields remain opaque.
 struct Agent_8003CD88 {
     // Stack placement proves eight-byte alignment; this union only expresses storage.
     union { double alignment; unsigned char storage[0x180]; };

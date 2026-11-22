@@ -1,4 +1,3 @@
-/* Dolphin audio RAM driver. See docs/notes/ar.md for provenance and verification. */
 #include "ar_abi.h"
 
 char* __ARVersion = "<< Dolphin SDK - AR\trelease build: Sep  5 2002 05:34:27 (0x2301) >>";

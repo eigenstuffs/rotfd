@@ -1,5 +1,3 @@
-/* Retained GSQE78 MSL misc_io.c. Pinned Strikers source and proof:
- * docs/notes/msl-misc-io.md. */
 #include "stdio_internal.h"
 extern void (*__stdio_exit)(void);
 

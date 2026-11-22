@@ -1,4 +1,3 @@
-/* Dolphin host file I/O. See docs/notes/fio.md. */
 #include "mcc_abi.h"
 typedef signed char s8;
 extern u32 __OSBusClock : 0x800000F8;

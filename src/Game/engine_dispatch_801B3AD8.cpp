@@ -1,5 +1,3 @@
-/* Original engine dispatch and setup routines.
- * See docs/notes/game-engine-dispatch.md. */
 extern "C" unsigned int fn_801F948C(void *,const char *);
 struct Key_801B3AD8 {
     unsigned int value;

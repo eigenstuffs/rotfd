@@ -1,5 +1,3 @@
-// 2 callback registrations; see docs/notes/game-class-registry.md.
-// Factory Game_Breakable_Agents.h proves the 0xc0-byte object extent.
 struct Agent_80021260 {
     union { double alignment; unsigned char storage[0xc0]; };
     Agent_80021260();

@@ -1,5 +1,3 @@
-/* Original engine destruction with compiler-emitted exception metadata.
- * See docs/notes/game-engine-virtual-setup.md. */
 struct Prefix{char unknown00[8];};
 struct View:Prefix{
 virtual void slot08();

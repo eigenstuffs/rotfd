@@ -1,6 +1,4 @@
 #include "Game/state_native_operation_records_selected.h"
-/* Original name-backed Handle construction; strict retained EH plus strong-owner backup audit.
- * See docs/notes/game-engine-name-handle-construct.md. */
 typedef unsigned long u32;
 struct Handle_801F7F10 {u32 word;Handle_801F7F10();~Handle_801F7F10();};
 struct Manager;

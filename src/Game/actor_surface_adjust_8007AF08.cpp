@@ -1,5 +1,3 @@
-/* Actor surface query, copied-handle resolution and correction state.
- * See docs/notes/game-actor-surface-adjust.md. */
 typedef unsigned long Word;
 struct Handle_801F7F10 { union {Word word;struct {signed int tag:8,index:24;}bits;};Handle_801F7F10();~Handle_801F7F10();};
 struct Node;struct Entry{Node*object;Word unknown04,unknown08;signed char tag;char unknown0D[3];signed char getTag()const{return tag;}};struct Manager{int count,capacity;Entry*entries;};

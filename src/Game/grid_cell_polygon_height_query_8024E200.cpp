@@ -1,23 +1,3 @@
-/* fn_8024E200: grid-cell polygon height query.  Converts the query x/z into a
- * cell of the owner's uniform grid, walks the faces listed in that cell, runs
- * an even/odd crossing test on each face's outline (vertex position chosen per
- * edge by the face's flag bits) and returns the closest face above the point
- * (height - y > 1e-6), writing its index to *out.
- *
- * Owns its whole literal pool .sdata2 0x8037B470..0x8037B488
- * (1e11f, 0.999999f, 0.0f, 1e-6f, signed int->float bias); fn_8024E200 is
- * the only reference to these labels.  Flags as for
- * curve_bezier_sampling_8024DA4C.cpp (-O4,p, exceptions off).
- *
- * Matching notes (base: scratch/game_grid_coordinate_bounds_8024e200_20261011mi
- * outer_edge_locals.cpp, 97.0%):
- * - the inner loop reads face.indices through `*(U16**)&face.indices`, a
- *   different CSE expression from getIndex(0) before the loop, so the base is
- *   reloaded each iteration instead of strength-reduced into a pointer;
- * - int mask tested as `flags & (U16)mask`;
- * - `if (dz)` gives fcmpu dz,0 operand order;
- * - crossings declared at function scope (assigned 0 per face) puts it in r12
- *   and the cell count in r31 like the original. */
 typedef unsigned short U16;
 struct Point { float x,y,z; };
 struct Output {int index;};

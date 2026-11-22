@@ -1,5 +1,3 @@
-/* Original engine native construction with guarded consumer migration with compiler-emitted exception metadata.
- * See docs/notes/game-engine-camera-construct.md. */
 typedef unsigned long u32;
 extern "C" {void __ct__15Object_80075C2CFv(void*);extern char lbl_802B83EC[];extern float game_vec3_zero[3];extern const float lbl_8037899C,lbl_803789A4,lbl_803789A8,lbl_803789AC,lbl_803789B0,lbl_803789B4,lbl_803789B8;}
 struct Object_80075AF8 {u32 unknown00[2];void*vtable;char unknown0C[0xC4-0xC];Object_80075AF8(){__ct__15Object_80075C2CFv(this);}~Object_80075AF8();};

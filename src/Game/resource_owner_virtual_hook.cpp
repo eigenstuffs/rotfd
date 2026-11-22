@@ -1,6 +1,3 @@
-/* Partial virtual interface for the owner whose secondary base begins at 0x318.
- * Original vtables stay external; no data ownership is claimed by this view.
- * See docs/notes/continuation-2026-10-12-native-owner-hook.md. */
 namespace ResourceOwnerLayout_80027A08 {
 struct Prefix { unsigned long unknown00[2]; };
 struct Primary : Prefix { virtual ~Primary(); char unknown0C[0x30C]; };

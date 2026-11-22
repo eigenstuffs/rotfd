@@ -1,5 +1,3 @@
-/* Original transformed query result builder.
- * See docs/notes/game-engine-transform-build.md. */
 typedef unsigned int u32;
 typedef unsigned long long u64;
 struct Vec3_801BCB78 {

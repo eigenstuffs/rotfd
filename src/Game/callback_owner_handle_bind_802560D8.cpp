@@ -1,17 +1,3 @@
-/* fn_802560D8: bind a callback owner to an incoming handle.
- * Stores `incoming` in owner->handle58 (counted assignment), hands the owner's
- * identity handle (+0x04) to the incoming object's owner slot (+0x130), and
- * when owner flag 0x4000 is set registers the bound object's related handle
- * (+0x1C) with the registry at lbl_801E9D24+0x158, output word at +0x54.
- * Compiled without exceptions (no extab); the Handle_801F7F10 ctor/dtor are
- * out-of-line (__ct__/__dt__15Handle_801F7F10Fv).
- *
- * EXACT-WEAK (retry2): the resolve uses an entry pointer
- * (`Entry*e=&m->entries[index]; if(e->tag==(signed char)h.tag)`) and the
- * registry key reads the generation through an explicit (signed char) cast;
- * together they colour the temporaries of the copy's resolve like the
- * original (previous indexed form stalled at 99.76%).
- * Flags: -O4,p -Cpp_exceptions off -RTTI off -use_lmw_stmw on, GC/1.3.2. */
 typedef unsigned long Word;
 struct Handle_801F7F10{union{Word value;struct{signed int tag:8,index:24;}bits;};Handle_801F7F10();~Handle_801F7F10();};
 struct Object;

@@ -1,5 +1,3 @@
-/* Original engine lifetime and record routines.
-* See docs/notes/game-engine-links.md. */
 typedef unsigned long U32;
 extern "C" {
     extern char lbl_802E9F98[],__vt__13Manipulator_Z[],lbl_801EF5C8[],lbl_8028F698[];

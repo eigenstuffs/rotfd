@@ -1,4 +1,3 @@
-/* MetroTRK target C fragment; see docs/notes/MetroTRK-targimpl.md. */
 #include "targimpl_helpers.h"
 typedef struct memRange { u8* start; u8* end; bool readable; bool writeable; } memRange;
 const memRange gTRKMemMap[] = { { (u8*)0, (u8*)0xFFFFFFFF, true, true } };

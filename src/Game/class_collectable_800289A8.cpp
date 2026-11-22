@@ -1,6 +1,3 @@
-// Collectable variant registration and reset methods.
-// All opaque object extents are 0x98 bytes, as established by their factories.
-// See docs/notes/game-class-registry.md.
 struct AgentView_800289A8 {unsigned long prefix[2];const void *vtable;unsigned char unknown0C[0x38-12]; unsigned long flags; unsigned char unknown3C[0x90-0x3C]; unsigned long state; unsigned long unknown94;};
 extern "C" {
 extern unsigned long lbl_803775A8,lbl_80377588;

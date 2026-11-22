@@ -1,6 +1,3 @@
-/* Retained GSQE78 error-string unit, reconstructed from original control
- * flow, switch targets, and message data. The original object filename and
- * helper spelling are not preserved; see docs/notes/msl-strerror.md. */
 extern char* strcpy(char*, const char*);
 extern int sprintf(char*, const char*, ...);
 static char* strerror_impl(int, char*);

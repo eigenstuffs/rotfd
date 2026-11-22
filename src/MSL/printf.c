@@ -1,4 +1,3 @@
-/* MSL formatted output reconstruction. See docs/notes/msl-printf.md. */
 #include "stdio_internal.h"
 typedef double f64;
 #define LDBL_MAX_EXP 1024

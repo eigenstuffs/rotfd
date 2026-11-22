@@ -1,6 +1,4 @@
 extern "C" {
-/* Original leaf operations. Provisional names and text-only ownership.
- * See docs/notes/game-leaf-continuation.md. */
 }
 
 /* Inferred partial virtual view; original full tables retain ownership. */

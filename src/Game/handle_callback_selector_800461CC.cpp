@@ -1,4 +1,3 @@
-/* Handle callback selectors and original member records; see docs/notes/game-handle-callback-selector-pair.md. */
 typedef unsigned long u32;
 typedef unsigned long long u64;
 struct MemberPointer{u32 a,b,c;};

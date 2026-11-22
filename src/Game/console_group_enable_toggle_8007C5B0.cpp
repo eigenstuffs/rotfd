@@ -1,7 +1,3 @@
-/* Console-selected service group enable toggle (fn_8007C5B0). Based on the earlier
- * scratch/sdk_scene_actor_group_toggle_8007c5b0 reconstruction; the resolve helper uses the
- * ActorIndex/matchesTag form from owner_handle_selection_80030A08.cpp, which fixes the
- * register coloring of the CSE'd owner lookups in the loop conditions. */
 typedef unsigned long Word;
 struct Handle_801F7F10{union{Word word;struct{signed int tag:8,index:24;}bits;};Handle_801F7F10();~Handle_801F7F10();};
 struct Point{float x,y,z;void set(float a,float b,float c){x=a;y=b;z=c;}Point(const Point&p){set(p.x,p.y,p.z);}};

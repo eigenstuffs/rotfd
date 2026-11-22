@@ -1,4 +1,3 @@
-/* CodeWarrior varargs access; see docs/notes/runtime-va-arg.md. */
 typedef int s32;
 typedef unsigned int u32;
 typedef struct __va_list_struct {

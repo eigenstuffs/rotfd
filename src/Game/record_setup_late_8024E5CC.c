@@ -1,5 +1,3 @@
-/* Original record setup with observed private scalar fields.
- * See docs/notes/game-record-setup-late.md. */
 extern const unsigned char lbl_802EA5B0[];
 extern void fn_8024E18C(void *object);
 void *__ct__19SplineZone_8024E5CCFv(void *object) {

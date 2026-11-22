@@ -1,5 +1,3 @@
-/* Scene Handle assignment and classification; verified private layout views.
- * See docs/notes/game-early-scene-handle-classify.md. */
 typedef unsigned long Word;
 extern "C"{extern char lbl_801EF5C8[];void fn_801EF610(void*,void*);void fn_801F86C8(void*,const void*,int);void*fn_801F7EB8(const void*);}
 extern "C" struct ClassifyGlobal{char unknown00[0x118];void*manager;}lbl_801E9D24;

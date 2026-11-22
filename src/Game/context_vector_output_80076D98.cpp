@@ -1,4 +1,3 @@
-/* Original context-derived vector output; see docs/notes/game-context-vector-output.md. */
 #include "Game/early_actor_record_dispatch_views.h"
 struct VectorOutputOwner {
     char unknown00[0xD0];

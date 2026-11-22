@@ -1,8 +1,3 @@
-/* Dolphin SDK reboot C functions, GSQE78.
- * Adapted from the public projectPiki/pikmin2 SDK reconstruction;
- * see reference/pikmin2-sdk/PROVENANCE.md and docs/notes/OSReboot.md.
- * The processor entry routine remains original fallback assembly.
- */
 #include "OSContext_abi.h"
 typedef signed long s32;
 typedef signed long long OSTime;

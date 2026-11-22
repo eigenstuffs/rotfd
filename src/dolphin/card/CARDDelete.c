@@ -1,4 +1,3 @@
-/* Dolphin CARDDelete. See docs/notes/CARDDelete.md. */
 #include "card_abi.h"
 #define OSTicksToSeconds(ticks) ((ticks) / (__OSBusClock / 4))
 extern OSTime OSGetTime(void);

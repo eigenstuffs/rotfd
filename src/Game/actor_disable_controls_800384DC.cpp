@@ -1,4 +1,3 @@
-/* Actor disable/reset actions; see docs/notes/game-actor-disable-controls.md. */
 typedef unsigned long Word;
 struct Handle_801F7F10{union{Word word;struct{signed int tag:8,index:24;}bits;};Handle_801F7F10();~Handle_801F7F10();};
 struct Point{float x,y,z;Point(float a,float b,float c):x(a),y(b),z(c){}};struct Prefix{char unknown00[8];};

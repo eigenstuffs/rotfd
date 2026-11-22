@@ -1,5 +1,3 @@
-/* Registry destructor reconstructed from GSQE78.
- * See docs/notes/game-registry-lookup.md. */
 typedef unsigned long u32;
 #include "Game/registry_abi_tables.h"
 extern "C" {extern char lbl_8028F698[],lbl_801EF5C8[];void fn_8028FD50(void*,void*,u32);void fn_801EF610(void*,void*);void fn_80287BEC(void*);void fn_801F551C(void*,short);void fn_801F56A8(void*,short);}

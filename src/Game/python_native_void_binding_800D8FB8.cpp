@@ -1,4 +1,3 @@
-/* Native void binding; see docs/notes/game-python-native-void-bindings.md. */
 #include "Game/python_scalar_bindings.h"
 extern "C" const char lbl_802A4CC4[];
 struct NativeVoidView_800D8FB8;

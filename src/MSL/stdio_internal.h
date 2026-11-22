@@ -1,5 +1,3 @@
-/* Recovered MSL FILE layout; see docs/notes/msl-ansi-files.md and
- * reference/tww-msl/PROVENANCE.md for source and license attribution. */
 #ifndef ROTFD_MSL_STDIO_INTERNAL_H
 #define ROTFD_MSL_STDIO_INTERNAL_H
 

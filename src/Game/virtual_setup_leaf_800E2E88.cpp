@@ -1,4 +1,3 @@
-/* Original virtual setup and flag updates; see docs/notes/game-virtual-setup-leafs.md. */
 typedef unsigned long Word;
 typedef unsigned long long Flags;
 struct Control{char opaque00[0x30];Flags flags;};

@@ -1,5 +1,3 @@
-// Recovered callback registration; see docs/notes/game-class-registry.md.
-// QSnailAgent.h factory proves a 0xa8-byte object; fields remain opaque.
 #include "qsnail_agent_internal.h"
 typedef void (Agent_800C61B8::*MemberFunction)();
 extern "C" {

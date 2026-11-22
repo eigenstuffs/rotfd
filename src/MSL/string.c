@@ -1,12 +1,3 @@
-/* Reconstructed MSL string routines for GSQE78.
- * Adapted from doldecomp/melee src/MSL/string.c at
- * ae5898ee0dfda41b34fdf846f7d680a33e14779d and doldecomp/sms
- * src/PowerPC_EABI_Support/Msl/MSL_C/MSL_Common/string.c at
- * c44637d42e09ec81973c4579e13ece8d0b0f5f58.
- * References and license/provenance records: reference/melee-msl/,
- * reference/sms-msl/, docs/notes/msl-string.md.
- * Original text: 0x80128288..0x80128614.
- */
 static const unsigned int K1 = 0x80808080UL;
 static const unsigned int K2 = 0xfefefeffUL;
 

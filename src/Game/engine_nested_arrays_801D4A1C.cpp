@@ -1,5 +1,3 @@
-/* Original engine nested-array resize and cleanup.
- * See docs/notes/game-engine-nested-arrays.md. */
 extern "C" {
     extern char lbl_8028F698[],lbl_801EF5C8[];
     void*fn_8028FAF4(void*,void*,int,int);

@@ -1,5 +1,3 @@
-/* System actor nested Handle query and retained native lifetimes.
- * See docs/notes/game-system-actor-handle-query.md. */
 typedef unsigned long Word;
 struct Handle_801F7F10{union{Word word;struct{signed int tag:8,index:24;}bits;};Handle_801F7F10();~Handle_801F7F10();};
 struct Node;struct Entry{Node*object;char opaque04[8];signed char tag;char opaque0D[3];signed char getTag()const{return tag;}};struct Manager{char opaque00[8];Entry*entries;};struct Service{char opaque00[0x1C];const Handle_801F7F10*owner;};

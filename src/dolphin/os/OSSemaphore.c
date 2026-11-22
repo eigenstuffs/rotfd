@@ -1,7 +1,3 @@
-/* Dolphin SDK semaphore C functions, GSQE78.
- * Adapted from the public zeldaret/tp SDK reconstruction;
- * see reference/tp-sdk/PROVENANCE.md and docs/notes/OSSemaphore.md.
- */
 #include "OSContext_abi.h"
 typedef signed long s32;
 struct OSThread;

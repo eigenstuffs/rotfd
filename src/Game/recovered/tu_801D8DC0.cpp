@@ -189,7 +189,6 @@ struct FlushDummy;
 
 /* ---- Game/bicubic_grid_sample_801D9304.cpp ---- */
 namespace bicubic_grid_sample_801D9304 {
-/* Bicubic grid value and tangent reconstruction; see docs/notes/game-bicubic-grid-sample.md. */
 struct Vec3 {
     float x, y, z;
 };

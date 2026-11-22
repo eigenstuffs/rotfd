@@ -1,7 +1,3 @@
-/* Dolphin GBA SDK, GSQE78.
- * Adapted from the pinned PrimeDecomp reconstruction.
- * See docs/notes/gba.md and reference/prime-sdk/PROVENANCE.md.
- */
 #include "GBA_abi.h"
 
 /* Retained unit scope: GBAInit, its reset hook, and its private

@@ -1,7 +1,3 @@
-/* Dolphin OdemuExi2 debugger transport, GSQE78.
- * Adapted from the pinned public Melee SDK reconstruction.
- * See docs/notes/debugger-driver.md for provenance and validation.
- */
 typedef unsigned char u8;
 typedef unsigned long u32;
 typedef signed long s32;

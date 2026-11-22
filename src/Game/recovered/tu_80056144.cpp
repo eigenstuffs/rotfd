@@ -205,8 +205,6 @@ __declspec(section ".sdata2") extern const char lbl_80378608[8] __attribute__((a
 /* ---- Game/leaf_80056434.c ---- */
 namespace leaf_80056434 {
 extern "C" {
-/* Original leaf operations. Provisional names and text-only ownership.
- * See docs/notes/game-leaf-continuation.md. */
 
 void fn_80056434(void *object, unsigned int value) { *(unsigned int *)((char *)object + (260)) = value; }
 
@@ -216,8 +214,6 @@ void fn_80056434(void *object, unsigned int value) { *(unsigned int *)((char *)o
 /* ---- Game/scalar_early_8005643C.c ---- */
 namespace scalar_early_8005643C {
 extern "C" {
-/* Original scalar operations with private observed layouts.
- * See docs/notes/game-scalar-early.md. */
 
 struct Subrecord {char pad[20];unsigned char *bytes14,*bytes18,*bytes1c;};
 
@@ -234,14 +230,10 @@ unsigned char fn_8005643C(struct RecordObject *object,int *out) {if(object->coun
 /* ---- Game/leaf_extended_80056490.c ---- */
 namespace leaf_extended_80056490 {
 extern "C" {
-/* Original scalar operations; provisional text-only ownership.
- * See docs/notes/game-leaf-extended.md. */
 struct Entry_80056490 { char pad[24]; unsigned char *bytes; char tail[4]; }; struct Record_80056490 { char pad[44]; struct Entry_80056490 *entries; char tail[100]; };
 
 void fn_80056490(void *object, unsigned int index) { (*(struct Record_80056490 **)((char *)object + 0x138))[*(int *)((char *)object + 0xf0)].entries[*(unsigned int *)((char *)object + 0xf4)].bytes[index] = 0; }
 
-/* Original scalar operations; provisional text-only ownership.
- * See docs/notes/game-leaf-extended.md. */
 struct Entry_800564C0 { char pad[24]; unsigned char *bytes; char tail[4]; }; struct Record_800564C0 { char pad[44]; struct Entry_800564C0 *entries; char tail[100]; };
 
 unsigned char fn_800564C0(void *object, unsigned int index) { return (*(struct Record_800564C0 **)((char *)object + 0x138))[*(int *)((char *)object + 0xf0)].entries[*(unsigned int *)((char *)object + 0xf4)].bytes[index]; }
@@ -252,8 +244,6 @@ unsigned char fn_800564C0(void *object, unsigned int index) { return (*(struct R
 /* ---- Game/scalar_early_800564EC.c ---- */
 namespace scalar_early_800564EC {
 extern "C" {
-/* Original scalar operations with private observed layouts.
- * See docs/notes/game-scalar-early.md. */
 
 struct Subrecord {char pad[20];unsigned char *bytes14,*bytes18,*bytes1c;};
 
@@ -270,8 +260,6 @@ unsigned char fn_800564EC(struct RecordObject *object,int *out) {if(object->coun
 /* ---- Game/leaf_extended_80056540.c ---- */
 namespace leaf_extended_80056540 {
 extern "C" {
-/* Original scalar operations; provisional text-only ownership.
- * See docs/notes/game-leaf-extended.md. */
 struct Entry_80056540 { char pad[28]; unsigned char *bytes; char tail[0]; }; struct Record_80056540 { char pad[44]; struct Entry_80056540 *entries; char tail[100]; };
 
 void fn_80056540(void *object, unsigned int index) { (*(struct Record_80056540 **)((char *)object + 0x138))[*(int *)((char *)object + 0xf0)].entries[*(unsigned int *)((char *)object + 0xf4)].bytes[index] = 0; }
@@ -282,8 +270,6 @@ void fn_80056540(void *object, unsigned int index) { (*(struct Record_80056540 *
 /* ---- Game/scalar_early_80056570.c ---- */
 namespace scalar_early_80056570 {
 extern "C" {
-/* Original scalar operations with private observed layouts.
- * See docs/notes/game-scalar-early.md. */
 
 struct Subrecord {char pad[20];unsigned char *bytes14,*bytes18,*bytes1c;};
 
@@ -300,26 +286,18 @@ unsigned char fn_80056570(struct RecordObject *object,int *out) {if(object->coun
 /* ---- Game/leaf_extended_800565C4.c ---- */
 namespace leaf_extended_800565C4 {
 extern "C" {
-/* Original scalar operations; provisional text-only ownership.
- * See docs/notes/game-leaf-extended.md. */
 struct Entry_800565C4 { char pad[20]; unsigned char *bytes; char tail[8]; }; struct Record_800565C4 { char pad[44]; struct Entry_800565C4 *entries; char tail[100]; };
 
 void fn_800565C4(void *object, unsigned int index) { (*(struct Record_800565C4 **)((char *)object + 0x138))[*(int *)((char *)object + 0xf0)].entries[*(unsigned int *)((char *)object + 0xf4)].bytes[index] = 0; }
 
-/* Original scalar operations; provisional text-only ownership.
- * See docs/notes/game-leaf-extended.md. */
 struct Entry_800565F4 { char pad[20]; unsigned char *bytes; char tail[8]; }; struct Record_800565F4 { char pad[44]; struct Entry_800565F4 *entries; char tail[100]; };
 
 unsigned char fn_800565F4(void *object, unsigned int index) { return (*(struct Record_800565F4 **)((char *)object + 0x138))[*(int *)((char *)object + 0xf0)].entries[*(unsigned int *)((char *)object + 0xf4)].bytes[index]; }
 
-/* Original scalar operations; provisional text-only ownership.
- * See docs/notes/game-leaf-extended.md. */
 struct Record_80056620 { char pad[32]; unsigned char bytes[8]; char tail[108]; };
 
 unsigned char fn_80056620(void *object, unsigned int index) { ++*(unsigned int *)((char *)object + 0x124); return (*(struct Record_80056620 **)((char *)object + 0x138))[*(int *)((char *)object + 0xf0)].bytes[index]; }
 
-/* Original scalar operations; provisional text-only ownership.
- * See docs/notes/game-leaf-extended.md. */
 struct Record_80056648 { char pad[32]; unsigned char bytes[8]; char tail[108]; };
 
 void fn_80056648(void *object, unsigned int index) { (*(struct Record_80056648 **)((char *)object + 0x138))[*(int *)((char *)object + 0xf0)].bytes[index] = 0; }
@@ -453,8 +431,6 @@ extern "C"signed char fn_80056668(NestedSelection*self,NestedNode*node,const Nes
 /* ---- Game/scalar_early_800567F0.c ---- */
 namespace scalar_early_800567F0 {
 extern "C" {
-/* Original scalar operations with private observed layouts.
- * See docs/notes/game-scalar-early.md. */
 
 struct Record {char pad[0x2a];unsigned char enabled;char tail[0x69];};
 
@@ -471,8 +447,6 @@ void fn_800567F0(struct Object *object) {object->records[object->selected].enabl
 /* ---- Game/scalar_early_80056828.c ---- */
 namespace scalar_early_80056828 {
 extern "C" {
-/* Original scalar operations with private observed layouts.
- * See docs/notes/game-scalar-early.md. */
 
 unsigned char fn_80056828(void *object) {unsigned char count=0;int i;for(i=0;i<8;++i)if(*(signed char *)((char *)*(void **)((char *)object+0x138)+i*0x94+0x2a)==1)++count;return count;}
 
@@ -779,8 +753,6 @@ extern "C" char* fn_80056B44(CounterOwner* self, const Key& key)
 }
 /* ---- Game/early_token_selection_start_80057100.cpp ---- */
 namespace early_token_selection_start_80057100 {
-/* Token selection start and native Handle cleanup; verified private layout views.
- * See docs/notes/game-early-token-selection-start.md. */
 extern "C" { extern char lbl_801EF5C8[]; void fn_801EF610(void*,void*); }
 struct TokenStartPrefix { char unknown00[0x7C]; };
 struct TokenStartManager:TokenStartPrefix {
@@ -842,8 +814,6 @@ extern "C" void fn_80057100(TokenStartActor* self,int requested)
 /* ---- Game/leaf_8005728C.c ---- */
 namespace leaf_8005728C {
 extern "C" {
-/* Original leaf operations. Provisional names and text-only ownership.
- * See docs/notes/game-leaf-continuation.md. */
 
 int fn_8005728C(void) { return 0; }
 
@@ -1027,7 +997,6 @@ struct Point{float x,y,z;};
 struct Record_800218F8{char unknown00[0x5C];Point point;char unknown68[0x24];Handle_80021B54 first,second;Record_800218F8();~Record_800218F8(){}HDEL };
 namespace scene_selected_record_80057E40 {
 using handle_shared::lbl_801E9D24;
-/* Ordinary scene lifetime routine; see docs/notes/game-scene-selected-record.md. */
 typedef unsigned long Word;typedef unsigned long long Wide;
 struct Node;struct Entry{Node*object;char unknown04[8];signed char tag;char unknown0D[3];signed char getTag()const{return tag;}};struct Manager{char unknown00[8];Entry*entries;};
 struct Service{char unknown00[0x1C];Handle_801F7F10*handle;};
@@ -1306,8 +1275,6 @@ extern "C"Handle_80024844 fn_80058778(Owner*self,const Key&key,signed char enabl
 /* ---- Game/early_named_resource_callback_80058AB8.cpp ---- */
 namespace early_named_resource_callback_80058AB8 {
 using handle_shared::lbl_801E9D24;
-/* Named resource path setup and retained callback registration.
- * See docs/notes/game-early-named-resource-callback.md. */
 typedef unsigned long Word;
 struct Name{Word word;Name(const char*s);};
 struct Node{char opaque00[0x128];char name[1];};
@@ -1362,8 +1329,6 @@ extern "C" void fn_80058CB8(Owner*self,int key,Handle*target)
 
 /* ---- Game/early_lazy_member_lookup_80058F40.cpp ---- */
 namespace early_lazy_member_lookup_80058F40 {
-/* Lazy scene member lookup and retained native handles.
- * See docs/notes/game-early-lazy-member-lookup.md. */
 struct Manager;extern "C"{extern const char lbl_8029ACA8[];void*fn_801F7EB8(const Handle_801F7F10*);}
 using handle_shared::lbl_801E9D24;
 struct ManagerPrefix{char opaque00[0x24];};struct Manager:ManagerPrefix{virtual void v08();virtual void v0C();virtual void v10();virtual void v14();virtual void v18();virtual void v1C();virtual void v20();virtual void v24();virtual Handle_801F7F10 lookup(const char*);};
@@ -1381,8 +1346,6 @@ self->entries[6]=Handle_8005287C(((Manager*)lbl_801E9D24.manager)->lookup((const
 
 /* ---- Game/early_scene_member_dispatch_80059340.cpp ---- */
 namespace early_scene_member_dispatch_80059340 {
-/* Scene member event dispatch and scoped native handles.
- * See docs/notes/game-early-scene-member-dispatch.md. */
 extern "C"{extern char lbl_801EF5C8[];void fn_801EF610(void*,void*);}
 struct ServicePrefix{char opaque00[0x7C];};
 struct Service:ServicePrefix{virtual void v08();virtual void v0C();virtual void v10();virtual void v14();virtual void v18();virtual void v1C();virtual void v20();virtual void v24();virtual void v28();virtual void v2C();virtual void v30();virtual void v34();virtual void v38();virtual void v3C();virtual void v40();virtual void v44();virtual void v48();virtual void v4C();virtual void v50();virtual void dispatch(const void*,int,const Handle_80020B90&,const Handle_80020B90&);};
@@ -1403,8 +1366,6 @@ extern "C"void fn_80059340(Owner*self,int kind){
 
 /* ---- Game/leaf_extended_800596BC.c ---- */
 extern "C" {
-/* Original scalar operations; provisional text-only ownership.
- * See docs/notes/game-leaf-extended.md. */
 
 
 void fn_800596BC(void *object, unsigned int index, unsigned int *first, unsigned int *second) { *first = *(unsigned int *)((char *)*(void **)((char *)object + 0xec) + (index << 4) + 12); *second = *(unsigned int *)((char *)*(void **)((char *)object + 0xec) + (index << 4) + 8); }
@@ -1422,8 +1383,6 @@ extern "C" int fn_800596E4(SceneMode*, short first, short second) {
 
 /* ---- Game/scalar_early_800596F4.c ---- */
 extern "C" {
-/* Original scalar operations with private observed layouts.
- * See docs/notes/game-scalar-early.md. */
 
 void fn_800596F4(void *object,const int *packed,short *high,short *low) {*low=(short)*packed;*high=(short)(*packed>>16);}
 }

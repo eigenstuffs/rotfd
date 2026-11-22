@@ -1,4 +1,3 @@
-/* Python binding method-name strings. Type descriptors remain original-owned. */
 extern "C" const char lbl_802A5C38[] = "PythonInterpreter_Z_LookupAgent";
 extern "C" const char lbl_802A5C58[] = "PythonInterpreter_Z_LookupNode";
 extern "C" const char lbl_802A5C78[] = "PythonInterpreter_Z_RegisterPythonAgent";

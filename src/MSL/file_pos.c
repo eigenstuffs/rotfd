@@ -1,5 +1,3 @@
-/* GSQE78 retained MSL file-position support. Adapted from the pinned
- * Wind Waker reconstruction; see docs/notes/msl-file-pos.md. */
 #include "stdio_internal.h"
 extern int errno;
 extern int __flush_buffer(FILE*, size_t*);

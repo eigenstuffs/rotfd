@@ -1,6 +1,3 @@
-/* Original scalar operations with private observed layouts.
- * See docs/notes/game-scalar-early.md. */
-
 extern int lbl_803776D8;
 
 signed char fn_80067130(void *object,int value) {return value==lbl_803776D8;}

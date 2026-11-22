@@ -1,4 +1,3 @@
-/* GBA transfer polling state machine; see docs/notes/game-gba-transfer-poll.md. */
 typedef unsigned long Word;
 struct TransferRecord { int state; char gap04[8]; int timeout; Word readBuffer; Word gap14; Word writeBuffer; signed char channel; unsigned char status; unsigned char gap1E; unsigned char received; };
 struct Context { char gap00[0x110]; void* logger; };

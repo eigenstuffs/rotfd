@@ -1,4 +1,3 @@
-/* MetroTRK event queue. See docs/notes/MetroTRK-nubevent.md. */
 #include "trk_abi.h"
 
 typedef struct EventQueue {

@@ -1,5 +1,3 @@
-// Recovered resize and its two inlined call levels.
-// See docs/notes/game-hash-table.md for recursion and split boundaries.
 struct Prefix { unsigned long unknown; };
 struct HashKey : Prefix {
     virtual void dispose();

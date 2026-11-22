@@ -1,4 +1,3 @@
-/* Scene record setup and typed nested lookup; see docs/notes/game-early-scene-record-setup.md. */
 typedef unsigned long Word;
 struct Handle_8002A900{signed int generation:8,index:24;};
 struct SetupIntermediate_8002A900{char unknown00[0x20];Handle_8002A900 child;};

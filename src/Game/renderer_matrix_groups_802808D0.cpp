@@ -1,7 +1,3 @@
-// Partial text split: fn_802808D0 and fn_80280EC4 (renderer matrix groups).
-// fn_802802C8 before them (98.1%: saved-register colouring in the weight
-// transform) remains original code; best full draft:
-// scratch/claude_match/auto_03_802802C8_text/all3_best.cpp.
 typedef unsigned long Word;
 struct Matrix{Word words[16];};
 struct Matrix34{Word words[12];};

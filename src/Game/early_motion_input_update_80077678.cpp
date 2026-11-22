@@ -1,4 +1,3 @@
-/* Motion input and controlled direction update; see docs/notes/game-early-motion-input-update.md. */
 struct Handle{union{unsigned long value;struct{signed int tag:8,index:24;}bits;};};struct Vec3{float x,y,z;};
 struct Actor{char unknown0[0x318];char controller;};struct Entry{Actor*object;char unknown4[8];signed char tag;char unknownD[3];signed char getTag()const{return tag;}};struct Manager{int count,capacity;Entry*entries;};
 extern "C"struct Global{char unknown0[0x118];Manager*manager;char unknown11C[0x164-0x11C];void*settings;}lbl_801E9D24;

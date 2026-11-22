@@ -1,6 +1,3 @@
-/* Original indexed records, engine setup and allocation-header routines.
- * See docs/notes/game-engine-leaf.md. */
-
 struct Logger {char pad[0x860];int state;char gap[0x41];signed char enabled;char gap2[0x12];float value;};
 
 extern struct {char pad[0x110];struct Logger *logger;char gap[0x100];float value;} lbl_801E9D24;

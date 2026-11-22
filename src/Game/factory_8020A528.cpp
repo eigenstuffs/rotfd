@@ -1,5 +1,3 @@
-// Reconstructed factory and observed constructor initialization.
-// See docs/notes/game-factory-specials.md; opaque fields retain their offsets.
 extern "C" {
 extern char lbl_801EF5C8[];
 void *fn_801EFA1C(void *,unsigned long,const char *,const char *,int,int);

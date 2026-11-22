@@ -1,4 +1,3 @@
-/* Jellyfish and snail reflected type/state names; see docs/notes/game-jellyfish-snail-type-names.md. */
 extern "C" const char lbl_8029E338[9] = "CNPCMove";
 extern "C" const char lbl_8029E344[13] = "BaseObject_Z";
 extern "C" const char lbl_8029E354[12] = "Activable_Z";

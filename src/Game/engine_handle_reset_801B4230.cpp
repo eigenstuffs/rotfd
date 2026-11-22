@@ -1,5 +1,3 @@
-/* Original engine handle array reset routines.
- * See docs/notes/game-engine-handle-reset.md. */
 typedef unsigned int u32;
 extern "C" {
     extern char lbl_8028F698[];

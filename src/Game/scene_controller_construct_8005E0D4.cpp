@@ -1,4 +1,3 @@
-/* Native Object_8005E258 construction; see docs/notes/game-scene-controller-construction.md. */
 typedef unsigned long Word;
 struct Handle_801F7F10 {Word word;Handle_801F7F10();~Handle_801F7F10();};
 struct Zero_E0D4:Handle_801F7F10 {Zero_E0D4(){word=0;}~Zero_E0D4();};

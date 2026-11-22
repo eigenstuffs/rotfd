@@ -1,4 +1,3 @@
-/* MetroTRK notify. See docs/notes/MetroTRK-notify.md. */
 #include "msghndlr_abi.h"
 extern DSError TRKGetFreeBuffer(int*, MessageBuffer**);
 extern DSError TRKTargetAddStopInfo(MessageBuffer*);

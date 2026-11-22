@@ -1,6 +1,3 @@
-// Partial text split: fn_801E1038 (SetLodRender). The following
-// SetWorldToSplit fn_801E1108 (99.3%, saved-register rotation) remains
-// original code; full draft: scratch/claude_match/auto_03_801E1038_text/final.cpp.
 /* Viewport console commands: fn_801E1038 is SetLodRender (lod 1..3 stored in
  * the viewport set at +0x228), fn_801E1108 is SetWorldToSplit (looks up a
  * world by name and binds it to split index argument 2 via fn_8003125C).

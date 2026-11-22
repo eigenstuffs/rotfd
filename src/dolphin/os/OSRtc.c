@@ -1,7 +1,3 @@
-/* Dolphin SDK SRAM C services, GSQE78.
- * Adapted from the public doldecomp/melee SDK reconstruction;
- * see reference/melee-sdk/PROVENANCE.md and docs/notes/OSRtc.md.
- */
 #include "OSContext_abi.h"
 typedef signed long s32;
 #define ATTRIBUTE_ALIGN(n) __attribute__((aligned(n)))

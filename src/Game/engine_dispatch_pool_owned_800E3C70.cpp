@@ -1,4 +1,3 @@
-/* Original record resource lifecycle; see docs/notes/game-engine-callback-dispatch-family.md. */
 typedef unsigned long u32;
 struct MemberPointer{u32 a,b,c;};
 struct Callback{char opaque00[0x28];unsigned short flags28;short index2A;};
@@ -6,9 +5,6 @@ extern "C" {extern const struct Pool{char opaque00[0x70];MemberPointer entries[5
 
 struct Prefix{u32 unknown00,unknown04;};
 struct Object:Prefix{virtual void slot08();virtual void slot0C();virtual void slot10();virtual void slot14();virtual void slot18();virtual void slot1C();virtual void slot20();virtual void slot24();virtual void slot28();virtual void slot2C();virtual void slot30();virtual void slot34();virtual void slot38();virtual void slot3C();virtual void slot40();virtual void slot44();virtual void slot48();virtual void slot4C();virtual void slot50();virtual void slot54();virtual void slot58();virtual void slot5C();virtual void slot60();virtual void slot64();virtual void slot68();virtual void slot6C();virtual void slot70();virtual void slot74();virtual void slot78();virtual void slot7C();virtual void slot80();virtual void slot84();virtual void slot88();virtual void slot8C();virtual void slot90();virtual void slot94();virtual void slot98();};
-/* Five complete original member-pointer records used by this dispatcher.
- * The earlier registration record and broader borrowed pool base retain original ownership.
- * See docs/notes/game-dispatch-pool-ownership.md. */
 extern "C" MemberPointer lbl_802C8AE8[5] = {
     {0,0x94,8},
     {0,0x94,8},

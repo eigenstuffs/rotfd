@@ -1,4 +1,3 @@
-/* Scene binding and callback control; see docs/notes/game-scene-binding-controls.md. */
 struct Handle { signed int generation:8,index:24; };
 struct Entry { void* object; char unknown04[8]; signed char generation; char unknown0D[3]; };
 struct Manager { int count,capacity; Entry* entries; };

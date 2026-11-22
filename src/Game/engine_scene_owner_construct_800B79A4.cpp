@@ -1,5 +1,3 @@
-/* Original scene owner construction with compiler-emitted exception metadata.
- * See docs/notes/game-engine-scene-owner-construct.md. */
 typedef unsigned long u32;
 extern "C" {void fn_80260FF8(void*);void fn_800B8308(void*);void fn_800BC8DC(void*);void fn_800BD0F8(void*);extern char lbl_802BEF98[];}
 struct Object_80260C7C {

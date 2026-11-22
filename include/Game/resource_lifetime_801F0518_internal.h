@@ -1,6 +1,5 @@
 #ifndef GAME_RESOURCE_LIFETIME_801F0518_INTERNAL_H
 #define GAME_RESOURCE_LIFETIME_801F0518_INTERNAL_H
-// Observed private layout; class identity and unknown fields remain provisional.
 typedef unsigned long u32;
 struct ResourceLifetimeView {
  char unknown0[8]; void *vtable; char unknownC[0x68];

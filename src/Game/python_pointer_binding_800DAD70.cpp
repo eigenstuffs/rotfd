@@ -1,4 +1,3 @@
-/* Pointer object binding; see docs/notes/game-python-pointer-bindings.md. */
 #include "Game/python_scalar_bindings.h"
 inline FactoryPyObject* reversePointerObject(FactoryType* type, void* pointer) {
     if (!pointer) {

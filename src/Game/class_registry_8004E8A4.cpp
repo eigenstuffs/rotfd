@@ -1,5 +1,3 @@
-// Recovered callback registration; see docs/notes/game-class-registry.md.
-// VolumeAgents.h factory proves a 0x78-byte object; fields remain opaque.
 struct Agent_8004E90C {
     // Stack placement proves eight-byte alignment; this union only expresses storage.
     union { double alignment; unsigned char storage[0x78]; };

@@ -1,5 +1,3 @@
-/* Original engine child start loop.
- * See docs/notes/game-engine-handle-rebind.md. */
 typedef unsigned int u32;
 struct Handle_801D9ED0 {
     signed int generation:8;

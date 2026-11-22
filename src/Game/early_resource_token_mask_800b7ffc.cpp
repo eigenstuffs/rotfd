@@ -1,4 +1,3 @@
-/* Resource property token decoding; see docs/notes/game-early-resource-token-mask.md. */
 extern "C"{int strcmp(const char*,const char*);extern const char agent_type_registry_CMsgBoxManipulator[],lbl_803793A0[8],lbl_803793A8[8];}
 extern "C"unsigned long fn_800B7FFC(void*,const char*text){const char*pool=agent_type_registry_CMsgBoxManipulator;
 if(strcmp(text,pool+0x28)==0)return 0x800UL;

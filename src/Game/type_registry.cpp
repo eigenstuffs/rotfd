@@ -1,5 +1,3 @@
-/* Engine type registrations and enable/disable hooks from GSQE78.
- * See docs/notes/game-type-registry.md. */
 struct ConsoleState { char unknown[12]; char enabled; };
 struct ResourceState { char unknown[32]; char enabled; };
 struct RegistryGlobals {

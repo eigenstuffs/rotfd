@@ -1,5 +1,3 @@
-/* Original engine destruction with compiler-emitted exception metadata.
- * See docs/notes/game-engine-fn-inline-eh.md. */
 extern "C" {
     extern char lbl_801EF5C8[], lbl_802C959C[], lbl_802C95B4[], lbl_802C967C[];
     void fn_801EF610(void*,void*);

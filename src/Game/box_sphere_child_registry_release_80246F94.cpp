@@ -1,7 +1,3 @@
-// Checked child activation and owner destructor (partial text split).
-// The preceding bounding-sphere builder fn_80246E64 belongs to the same
-// original unit but remains original code (99.4%: one FPR swap); see
-// scratch/claude_match/auto_03_80246E64_text/final.cpp.
 extern "C" const float lbl_8037B3DC; // 1.0f
 extern "C" const float lbl_8037B3E0; // 0.0f
 extern "C" const float lbl_8037B3E4; // 0.5f

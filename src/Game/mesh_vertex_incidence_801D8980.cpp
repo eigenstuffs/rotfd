@@ -1,4 +1,3 @@
-/* Mesh vertex incidence collection reconstruction; see docs/notes/game-mesh-vertex-incidence.md. */
 typedef unsigned long MeshVertexIncidenceWord;
 extern "C"{
  extern char lbl_8028F698[];

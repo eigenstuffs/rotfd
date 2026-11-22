@@ -1,5 +1,3 @@
-/* Original engine nested handle query.
- * See docs/notes/game-engine-handle-flags.md. */
 typedef unsigned int u32;
 struct Entry_801D7CDC {
     void*object;

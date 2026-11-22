@@ -1,4 +1,3 @@
-/* Dolphin GX TEV state. See docs/notes/GXTev.md. */
 #include "gx_abi.h"
 #define GX_SET_REG_C(reg, val, start, end) SET_REG_FIELD(0, reg, (end)-(start)+1, 31-(end), val)
 #define GX_SET_REG(reg, val, start, end) ((reg) = __rlwimi((reg), (val), 31-(end), (start), (end)))

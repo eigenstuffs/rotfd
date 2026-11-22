@@ -1,4 +1,3 @@
-/* Original scene virtual Handle queries; see docs/notes/game-engine-scene-handle-query.md. */
 typedef unsigned long u32;
 struct Handle_801F7F10{union{u32 word;struct{signed int tag:8,index:24;}bits;};Handle_801F7F10();~Handle_801F7F10();};
 struct Target{};

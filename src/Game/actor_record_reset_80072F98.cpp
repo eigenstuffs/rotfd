@@ -1,5 +1,3 @@
-/* Actor reset and copied record-array flags; see docs/notes/game-actor-record-reset.md. */
-/* Copied resource array Name-match flags; see docs/notes/game-early-resource-named-flags.md. */
 typedef unsigned long Word;
 extern "C"{extern char lbl_801EF5C8[],lbl_8028F698[];void fn_801EF610(void*,void*);void fn_8028FD50(void*,void*,int);}
 struct Handle_801F7F10{union{Word value;struct{signed int tag:8,index:24;}bits;};Handle_801F7F10();~Handle_801F7F10();};

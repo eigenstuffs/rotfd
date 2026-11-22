@@ -1,4 +1,3 @@
-// Original queue operations; see docs/notes/game-engine-record-ops.md.
 #include "Game/engine_record_ops_queue.h"
 
 extern "C" void fn_80230CE8(EngineQueue *object,const unsigned int *source,int value) {

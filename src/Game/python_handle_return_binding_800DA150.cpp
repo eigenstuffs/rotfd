@@ -1,4 +1,3 @@
-/* Indexed native Handle return; see docs/notes/game-python-handle-return-bindings.md. */
 /* Native handle generation lookup from a virtual query. */
 #include "Game/python_scalar_bindings.h"
 struct Handle_801F7F10{union{unsigned long word;struct{signed int generation:8;signed int index:24;}bits;};Handle_801F7F10();~Handle_801F7F10();};

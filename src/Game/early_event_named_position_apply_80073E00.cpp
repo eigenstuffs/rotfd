@@ -1,4 +1,3 @@
-/* Event-driven named actor position apply; see docs/notes/game-early-event-named-position-apply.md. */
 typedef unsigned long Word;
 struct Handle_801F7F10{union{Word word;struct{signed int tag:8,index:24;}bits;};Handle_801F7F10();~Handle_801F7F10();};
 struct Return_80073E00:Handle_801F7F10{Return_80073E00();~Return_80073E00(){}};

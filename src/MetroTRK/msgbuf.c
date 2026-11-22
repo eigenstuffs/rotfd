@@ -1,4 +1,3 @@
-/* MetroTRK message buffers. See docs/notes/MetroTRK-msgbuf.md. */
 #include "trk_abi.h"
 
 static inline DSError TRKAppendBuffer1_ui8(MessageBuffer* buffer,

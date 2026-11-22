@@ -1,6 +1,3 @@
-/* Dolphin SDK projection matrices, GSQE78.
- * Adapted from the public Melee reconstruction; see docs/notes/mtx44.md.
- */
 typedef float f32;
 typedef f32 Mtx[4][4];
 extern f32 tanf(f32);

@@ -1,5 +1,3 @@
-// Lifetime-only class registration; see docs/notes/game-class-registry.md.
-// SpringboardAgent.h factory establishes the 0x78-byte opaque object storage.
 extern "C" {
 extern unsigned long lbl_80377714;
 void fn_80064D70();

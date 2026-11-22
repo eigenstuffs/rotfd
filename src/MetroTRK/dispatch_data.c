@@ -1,5 +1,3 @@
-/* MetroTRK dispatcher callback table and size. The dispatch loop remains
- * in original code; see docs/notes/MetroTRK-dispatch.md. */
 #include "trk_abi.h"
 extern DSError TRKDoUnsupported(MessageBuffer*);
 extern DSError TRKDoConnect(MessageBuffer*);

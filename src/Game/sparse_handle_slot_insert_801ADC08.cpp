@@ -1,4 +1,3 @@
-/* Sparse Handle slot insertion reconstruction; see docs/notes/game-sparse-handle-slot-insert.md. */
 typedef unsigned long SparseHandleSlotWord;
 extern "C"{extern char lbl_8028F698[];void*fn_8028FAF4(void*,void*,SparseHandleSlotWord,SparseHandleSlotWord);void*fn_8028FF24(void*,SparseHandleSlotWord);void fn_8028FD50(void*,void*,SparseHandleSlotWord);}
 inline void*operator new(unsigned long,void*p){return p;}

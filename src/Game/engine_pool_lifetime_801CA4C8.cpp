@@ -1,5 +1,3 @@
-/* Original engine lifetime and record routines.
-* See docs/notes/game-engine-pool-lifetime.md. */
 extern "C" {
     extern char lbl_8028F698[],lbl_801EF5C8[];
     void fn_8028FD50(void*,void*,int);

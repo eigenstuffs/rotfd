@@ -1,5 +1,3 @@
-/* Handle event gating and temporary flag query; verified private layout views.
- * See docs/notes/game-early-handle-event-gates.md. */
 typedef unsigned long Word;
 struct Manager;
 extern "C"struct Globals{char unknown00[0x118];Manager*manager;}lbl_801E9D24;

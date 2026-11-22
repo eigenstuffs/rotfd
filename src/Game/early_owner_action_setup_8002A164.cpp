@@ -1,4 +1,3 @@
-/* Related owner action setup; see docs/notes/game-early-owner-action-setup.md. */
 typedef unsigned long Word;
 struct Handle{union{Word value;struct{signed int tag:8,index:24;}bits;};};
 struct Vec3{float x,y,z;Vec3(float a,float b,float c):x(a),y(b),z(c){}};struct Geometry{char unknown0[0x30];Vec3 position;};

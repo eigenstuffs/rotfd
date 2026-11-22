@@ -1,4 +1,3 @@
-/* Copied resource array Name-match flags (0x20 variant of fn_80086958); see docs/notes/game-early-resource-named-flags.md. */
 typedef unsigned long Word;
 extern "C"{extern char lbl_801EF5C8[],lbl_8028F698[],lbl_8029D6D4[],lbl_80378B34[];void fn_801EF610(void*,void*);void fn_8028FD50(void*,void*,int);Word fn_801F948C(void*,const char*);}
 struct Handle_801F7F10{union{Word value;struct{signed int tag:8,index:24;}bits;};Handle_801F7F10();~Handle_801F7F10();};

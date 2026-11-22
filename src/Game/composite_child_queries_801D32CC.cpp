@@ -1,7 +1,3 @@
-// Partial text split: fn_801D32CC, fn_801D345C, fn_801D3614 (composite node
-// child forwarding slots). The following vertex re-skin fn_801D38A4 (99.77%,
-// two volatile-register swaps) remains original code; full draft in
-// scratch/claude_match/auto_03_801D32CC_text/final.cpp.
 /* Source order note: CodeWarrior emits these deferred functions in reverse
  * definition order (callers before the shared fn_801D38A4), so the three slot
  * functions are defined 3614, 345C, 32CC to reproduce 32CC, 345C, 3614, 38A4.

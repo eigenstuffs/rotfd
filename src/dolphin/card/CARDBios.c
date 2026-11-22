@@ -1,4 +1,3 @@
-/* Dolphin CARD BIOS. See docs/notes/CARDBios.md and reference provenance. */
 #include "card_abi.h"
 
 const char* __CARDVersion = "<< Dolphin SDK - CARD\trelease build: Sep  5 2002 05:35:20 (0x2301) >>";

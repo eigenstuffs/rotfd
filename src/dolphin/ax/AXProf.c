@@ -1,5 +1,3 @@
-/* AX profile ring accessor. Copyright (c) 2019-2025 NWPlayer123.
- * MIT license: reference/ttyd-sdk/LICENSE. See docs/notes/AXProf.md. */
 #include "ax_abi.h"
 
 static AXPROFILE* __AXProfile;

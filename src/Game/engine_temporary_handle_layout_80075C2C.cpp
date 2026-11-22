@@ -1,5 +1,3 @@
-/* Original temporary Handle construction; strict retained EH plus strong-owner backup audit.
- * See docs/notes/game-engine-temporary-handle-layout.md. */
 typedef unsigned long u32;
 struct Handle_801F7F10 {u32 word;Handle_801F7F10();~Handle_801F7F10();};
 struct Manager;struct Context {char unknown00[0x118];Manager*manager;};

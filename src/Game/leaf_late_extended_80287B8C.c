@@ -1,4 +1,3 @@
-/* Observed scalar operations; offsets and identities remain provisional. */
 
 void *fn_80287B8C(void *o,int index){return (char*)*(void**)((char*)o+0xE4)+index*48;}
 

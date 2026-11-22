@@ -1,5 +1,3 @@
-// Recovered callback registration; see docs/notes/game-class-registry.md.
-// WaterBallAgent.h factory proves a 0x90-byte object; fields remain opaque.
 struct Agent_800737D8 {
     // Stack placement proves eight-byte alignment; this union only expresses storage.
     union { double alignment; unsigned char storage[0x90]; };

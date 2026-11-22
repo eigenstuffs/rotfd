@@ -1,5 +1,3 @@
-// Memory-card format retry worker.
-// See docs/notes/game-engine-card-format-worker.md.
 #include "Game/engine_card_format_worker.h"
 #include "Game/memory_card_owner_internal.h"
 extern "C" {

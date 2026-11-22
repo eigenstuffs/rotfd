@@ -1,5 +1,3 @@
-/* Original engine destruction with compiler-emitted exception metadata.
- * See docs/notes/game-engine-early-construct.md. */
 extern "C" {
     void fn_80090084(void*);
     extern char lbl_802B8184[];

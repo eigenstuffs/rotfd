@@ -1,5 +1,3 @@
-/* Original scalar operations; provisional text-only ownership.
- * See docs/notes/game-leaf-extended.md. */
 extern unsigned int lbl_803777D0;
 
 void fn_800C0850(void) { lbl_803777D0 = 0; }

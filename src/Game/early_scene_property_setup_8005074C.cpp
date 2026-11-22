@@ -1,4 +1,3 @@
-/* Scene property conversion and retained Handle assignments; see docs/notes/game-early-scene-property-setup.md. */
 typedef unsigned long Word;
 extern "C" struct PropertyGlobals{char unknown00[0x118];void*manager;}lbl_801E9D24;
 extern "C" void fn_801F86C8(void*,const void*,int);

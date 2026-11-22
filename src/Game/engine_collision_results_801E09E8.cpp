@@ -1,5 +1,3 @@
-/* Original engine lifetime and record routines.
- * See docs/notes/game-engine-collision-results.md. */
 struct Vec3_801E09E8 {
     float x,y,z;
     void operator=(const Vec3_801E09E8&v) {

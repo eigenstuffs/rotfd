@@ -1,4 +1,3 @@
-/* Dolphin GX DisplayList support. See docs/notes/GXDisplayList.md. */
 #include "gx_abi.h"
 extern void *memcpy(void *, const void *, unsigned long);
 extern BOOL OSDisableInterrupts(void), OSRestoreInterrupts(BOOL);

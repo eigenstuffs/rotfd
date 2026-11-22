@@ -1,6 +1,4 @@
 #include "Game/state_native_operation_records_selected.h"
-/* Original array and scalar routines with private observed layouts.
- * See docs/notes/game-scalar-early-more.md. */
 
 extern const float lbl_80378AD0;
 

@@ -1,4 +1,3 @@
-/* Dolphin GX performance counters. See docs/notes/GXPerf.md. */
 #include "gx_abi.h"
 
 void GXSetGPMetric(GXPerf0 perf0, GXPerf1 perf1)

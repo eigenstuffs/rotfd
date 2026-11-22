@@ -1,4 +1,3 @@
-/* Original scene registry and record controls; see docs/notes/game-engine-scene-registry-controls.md. */
 typedef unsigned long u32;
 struct Arguments{char opaque00[0x860];int count860;};
 struct Object{char opaque00[0xC];unsigned char flags0C;};

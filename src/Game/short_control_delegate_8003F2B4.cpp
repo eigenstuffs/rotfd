@@ -1,2 +1,1 @@
-/* Original short control delegates; see docs/notes/game-short-control-delegates.md. */
 struct Service;struct World{char opaque00[0x1505C];Service*service;};struct Context{char opaque00[0x124];World*world;};extern "C"Context lbl_801E9D24;extern "C"void fn_800E8880(Service*,int);extern "C"int fn_8003F2B4(){fn_800E8880(lbl_801E9D24.world->service,1);return 1;}

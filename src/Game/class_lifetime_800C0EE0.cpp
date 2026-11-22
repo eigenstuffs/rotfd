@@ -1,5 +1,3 @@
-// Lifetime-only class registration; see docs/notes/game-class-registry.md.
-// ExtraHealthAgent.h factory establishes the 0x98-byte opaque object storage.
 extern "C" {
 extern unsigned long lbl_803777E8;
 void fn_8002AD5C();

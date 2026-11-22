@@ -243,9 +243,6 @@ extern "C" int fn_8024222C(Mesh* self, const Vec3* pos, const Vec3* from, const 
 
 // ---- fn_80242A24 (was Game/collision_contact_blend_tail_80242A24.cpp) ----
 namespace blend_tail {
-// Partial text split: fn_80242A24 only. fn_8024222C before it (96.9%:
-// register colouring in its colour-blend loops) remains original code;
-// full draft: scratch/claude_match/auto_03_8024222C_text/final.cpp.
 typedef unsigned long Word;
 extern "C" {
 }

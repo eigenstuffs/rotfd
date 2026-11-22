@@ -1,5 +1,3 @@
-/* Native indexed pointer wrapper; see docs/notes/game-python-member-pointer-bindings.md. */
-/* Pointer object binding; see docs/notes/game-python-pointer-bindings.md. */
 #include "Game/python_indexed_pointer_encoding.h"
 extern "C" const char lbl_802A5A58[];
 

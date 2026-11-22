@@ -1,4 +1,3 @@
-/* Original record/string native construction; see docs/notes/game-engine-record-string-construct.md. */
 typedef unsigned long u32;
 extern "C" {extern char lbl_802C9160[],lbl_801EF5C8[],lbl_802AB274[],lbl_802AB284[];extern const char *lbl_80375BA0,*lbl_80375BA8,*lbl_803778B8,*lbl_80375BA4;char*strncpy(char*,const char*,u32);void*fn_801EFA1C(void*,u32,const char*,const char*,int,int);void fn_800E863C(void*);}
 struct ContainerBase_802563CC {u32 unknown00[2];void*vtable;char opaque0C[0x60-0xC];ContainerBase_802563CC();~ContainerBase_802563CC();};

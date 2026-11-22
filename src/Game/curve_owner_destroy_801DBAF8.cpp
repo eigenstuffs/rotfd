@@ -1,4 +1,3 @@
-/* Thirteen-curve owner cleanup; see docs/notes/game-curve-owner-destroy.md. */
 #include "Game/curve_owner_operations_table.h"
 typedef unsigned long Word;
 extern "C" {extern char lbl_8028F698[],lbl_801EF5C8[];void fn_8028FD50(void*,void*,unsigned long);void fn_801EF610(void*,void*);void fn_80243E90(void*,int);}

@@ -1,7 +1,3 @@
-/* Dolphin SDK memory-protection C fragment, GSQE78.
- * Adapted from the public doldecomp/melee SDK reconstruction;
- * see reference/melee-sdk/PROVENANCE.md and docs/notes/OSMemory.md.
- */
 #include "OSMemory_abi.h"
 
 static OSResetFunctionInfo ResetFunctionInfo = {

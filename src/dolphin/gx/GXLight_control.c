@@ -1,4 +1,3 @@
-/* Dolphin GX lighting C fragment. See docs/notes/GXLight.md. */
 #include "gx_abi.h"
 void GXSetNumChans(u8 nChans)
 {

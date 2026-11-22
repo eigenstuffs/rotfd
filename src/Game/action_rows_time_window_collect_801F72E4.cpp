@@ -1,7 +1,3 @@
-/* Timed action query over frame-keyed action rows, reconstructed from GSQE78.
- * Collects every action entry whose row frame lies in [start, end] into a
- * caller-provided 44-byte event buffer; a wrapped interval (end < start) is
- * split into [start, length] and [0, end]. See docs/notes/game-resource-actions.md. */
 typedef unsigned long u32;
 struct RefEntry {int type;u32 reference,unknown;};
 /* Event record (stride 44). Its copy constructor clears the third entry word

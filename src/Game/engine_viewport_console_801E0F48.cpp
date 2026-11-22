@@ -1,5 +1,3 @@
-/* Original engine lifetime and record routines.
- * See docs/notes/game-engine-viewport-console.md. */
 typedef unsigned int u32;
 struct Console_801E0F48 {
     char unknown000[0x860];

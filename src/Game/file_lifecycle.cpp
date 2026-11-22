@@ -1,6 +1,3 @@
-/* Game file object lifecycle, reconstructed from GSQE78.
- * Original class names and full source-unit boundary are not established.
- * See docs/notes/game-file-io.md. */
 typedef unsigned long u32;
 typedef signed long s32;
 struct File_801F3E1C;

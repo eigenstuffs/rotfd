@@ -1,17 +1,5 @@
 struct Handle_801F7F10{unsigned long word;Handle_801F7F10();~Handle_801F7F10();};
 namespace p_sphere {
-// Partial text split: fn_80283EB8 only. fn_8028437C after it (97.8%:
-// callee-saved FPR order and induction registers) remains original code;
-// its draft: scratch/claude_match/auto_03_80283EB8_text/wip_fn_8028437C_both.cpp.
-// Sphere-marker quad builder (fn_80283EB8): for each enabled item, place a
-// world matrix from the item's direction and radius and record a four-vertex
-// GX display list. Only fn_80283EB8 of this original unit is reconstructed;
-// fn_8028437C (the following function) is still outside this source.
-//
-// The 0.0/1.0/0.01 constants are referenced through their existing labels.
-// They are declared without const so that each display-list write reloads
-// them after the preceding volatile FIFO store, which reproduces the original
-// literal-pool loads; the fastSqrt default reads through a const view.
 typedef unsigned long Word;
 typedef unsigned char Byte;
 typedef unsigned short Half;

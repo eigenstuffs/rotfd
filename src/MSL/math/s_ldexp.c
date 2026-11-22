@@ -1,4 +1,3 @@
-/* GSQE78 retained MSL unit; provenance: docs/notes/msl-math.md. */
 /* @(#)s_ldexp.c 1.2 95/01/04 */
 /* $Id: s_ldexp.c,v 1.3.14.1 2002/01/31 15:24:14 ceciliar Exp $ */
 /*

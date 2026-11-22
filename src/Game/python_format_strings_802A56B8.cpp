@@ -1,4 +1,3 @@
-/* Original Python argument formats. See docs/notes/game-python-format-strings.md. */
 extern "C" const char lbl_802A56B8[18] = "O:RtcAgent_Z_Init";
 extern "C" const char lbl_802A56CC[21] = "O:RtcAgent_Z_Suspend";
 extern "C" const char lbl_802A56E4[21] = "O:RtcAgent_Z_Restore";

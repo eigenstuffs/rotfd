@@ -1,4 +1,3 @@
-/* Actor-state and reflected type names; see docs/notes/game-actor-state-type-names.md. */
 extern "C" const char lbl_8029D7F0[16] = "CStateCelebrate";
 extern "C" const char lbl_8029D800[13] = "CStateSBBase";
 extern "C" const char lbl_8029D810[24] = "CStateFaceCameraForIdle";

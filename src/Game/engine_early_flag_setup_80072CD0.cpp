@@ -1,5 +1,3 @@
-/* Original engine flag setup fragments with compiler-emitted exception metadata.
- * See docs/notes/game-engine-early-flag-setup.md. */
 extern "C" {
     void __ct__14Agent_8002B5F4Fv(void*);
     extern char lbl_802B7C24[];

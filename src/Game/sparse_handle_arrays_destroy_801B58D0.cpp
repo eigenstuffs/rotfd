@@ -1,4 +1,3 @@
-/* Sparse Handle and record array owner destruction reconstruction; see docs/notes/game-sparse-handle-arrays-destroy.md. */
 #include "Game/path_owner_operations_table.h"
 typedef unsigned long SparseHandleDestroyWord;
 extern "C"{

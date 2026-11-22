@@ -1,4 +1,3 @@
-/* Late callback readiness; see docs/notes/game-callback-late-readiness.md. */
 struct LateCallbackHandle {union{unsigned long word;struct{signed int tag:8,index:24;}bits;};};
 struct LateCallbackPrefix{char unknown00[8];};
 struct LateCallback:LateCallbackPrefix{

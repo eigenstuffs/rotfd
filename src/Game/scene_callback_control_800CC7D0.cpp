@@ -1,4 +1,3 @@
-/* Scene callback and native Handle control; see docs/notes/game-scene-native-callback-controls.md. */
 typedef unsigned long Word;
 struct Group{virtual void slot08();virtual void slot0C();virtual void slot10(int);char unknown04[0x28];void**entries;};
 struct Owner{char unknown00[0x318];Group group;};

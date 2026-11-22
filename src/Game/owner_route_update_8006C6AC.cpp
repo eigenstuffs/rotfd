@@ -1,4 +1,3 @@
-/* Partial scene route views; see docs/notes/game-owner-route-update.md. */
 typedef unsigned long Word;
 struct Handle{union{Word value;struct{signed int tag:8,index:24;}bits;};};
 struct Object;

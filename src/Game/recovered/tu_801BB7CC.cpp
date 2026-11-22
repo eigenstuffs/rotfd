@@ -200,8 +200,6 @@ extern "C" Vec3_801BBB74 fn_801BBB74(Owner_801BBB74* self, Vec3_801BBB74 pos);
 
 
 
-/* Original engine lifetime and record routines.
-* See docs/notes/game-engine-member-lifetime.md. */
 typedef unsigned long U32;
 extern "C" {
     extern char lbl_802E9F48[],__vt__13Manipulator_Z[],lbl_801EF5C8[];
@@ -275,8 +273,6 @@ void fn_801BB958(void* self, void* object)
 }
 }
 
-/* Original fixed-capacity engine record routines.
- * See docs/notes/game-engine-fixed-records.md. */
 
 
 struct Vec3_801BB960 {
@@ -373,8 +369,6 @@ extern "C" void fn_801BB960(Owner_801BB960*self,const Sphere_801BB960*sphere,flo
 }
 
 extern "C" {
-/* Original indexed records, engine setup and allocation-header routines.
- * See docs/notes/game-engine-leaf.md. */
 
 static inline int append_801BBAF4(void *object) {if(*(int *)((char *)object+0xb90)>=8)return 7;++*(int *)((char *)object+0xb90);return *(int *)((char *)object+0xb90)-1;}
 
@@ -514,8 +508,6 @@ extern "C" void fn_801BBDC8(Owner_801BBB74* self, int idx, float dt)
     obj->rotation = it.quat;
 }
 
-/* Original fixed-capacity engine record routines.
- * See docs/notes/game-engine-fixed-records.md. */
 
 
 struct Vec3_801BC2B4 {
@@ -660,8 +652,6 @@ extern "C" void fn_801BC408(APOwner_801BC408*self,APInput_801BC408*input){
 }
 
 extern "C" {
-/* Original indexed records, engine setup and allocation-header routines.
- * See docs/notes/game-engine-leaf.md. */
 
 
 
@@ -681,8 +671,6 @@ void fn_801BC7DC(void *object) {struct Record_801BC7DC *records=(struct Record_8
 }
 
 extern "C" {
-/* Original engine array and lifetime routines with private observed layouts.
- * See docs/notes/game-engine-loops.md. */
 
 
 
@@ -695,8 +683,6 @@ extern void __dt__11Activable_ZFv(void *,int);
 static inline void destroy_base(void *object) {if(object){*(void **)((char *)object+8)=(void *)__vt__13Manipulator_Z;__dt__11Activable_ZFv(object,0);}}
 
 void *fn_801BC8A8(void *object,short release) {if(object){*(void **)((char *)object+8)=(void *)lbl_802E9F48;destroy_base(object);if(release>0)fn_801EF610(lbl_801EF5C8,object);}return object;}
-/* Original engine setup and record routines with private observed layouts.
- * See docs/notes/game-scalar-middle-more.md. */
 
 extern signed char slot1C__12BaseObject_ZFv(void *);
 

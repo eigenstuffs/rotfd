@@ -70,7 +70,6 @@ extern "C" int fn_8003E258(){
 }
 
 namespace unit_8003E444 {
-/* Original scene numeric argument selection; see docs/notes/game-engine-scene-argument-setup.md. */
 extern "C"{u32 fn_801F948C(void*,const char*);}
 struct Key{u32 word;Key(const char*s){word=fn_801F948C(this,s);}};
 struct Arguments{char opaque00[0x860];int count860;char opaque864[4];const char*argument868;char opaque86C[0x39];signed char present8A5;char opaque8A6[0x12];float number8B8;};struct Target{};struct Scene{char opaque00[0x15058];Target*first15058;Target*second1505C;Target*first(){return first15058;}void*third15060;void*fourth15064;};struct Service{char opaque00[0x14];int count14;int capacity18;Handle_801F7F10*handles1C;};struct Input{char opaque00[0x4C];void*object4C;};struct Entry{Target*object;u32 opaque04,opaque08;signed char generation0C;char opaque0D[3];};struct Manager{char opaque00[8];Entry*entries;};
@@ -130,7 +129,6 @@ extern "C"int fn_8003E56C(){if(lbl_801E9D24.dispatch->mode!=2){fn_801FA014(lbl_8
 }
 
 namespace unit_8003E5D0 {
-/* Original scene record stream controls; see docs/notes/game-engine-scene-record-stream.md. */
 struct Target{};struct Scene{char opaque00[0x15058];Target*first15058;};extern "C" struct Global{char opaque00[0x124];Scene*scene;}lbl_801E9D24;extern "C"{void fn_80056144(Target*);void fn_80056648(Target*,int);}
 extern "C" int fn_8003E5D0(){Target*t=lbl_801E9D24.scene->first15058;for(int i=0;i<9;i++){fn_80056144(t);fn_80056648(t,i);}return 1;}
 }
@@ -222,8 +220,6 @@ extern "C" int fn_8003E630(){
 }
 
 namespace unit_8003ED18 {
-/* Lazy named-handle binding; verified temporary and node assignment lifetimes.
- * See docs/notes/game-early-lazy-handle-binding.md. */
 struct Node;
 struct Entry{Node*object;char opaque4[8];signed char tag;char opaqueD[3];};
 struct Manager{int count,capacity;Entry*entries;};

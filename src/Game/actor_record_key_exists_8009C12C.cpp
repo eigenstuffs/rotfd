@@ -1,4 +1,3 @@
-/* Actor record-key existence query; see docs/notes/game-actor-record-key-exists.md. */
 typedef unsigned long Word;
 struct Handle_801F7F10 {union{Word value;struct{signed int tag:8,index:24;}bits;};Handle_801F7F10();~Handle_801F7F10();int getIndex()const{return bits.index;}int getTag()const{return bits.tag;}};
 struct Entry {void*object;char prefix[8];signed char tag;char tail[3];int getTag()const{return tag;}};

@@ -1,6 +1,3 @@
-/* Original engine setup and record routines with private observed layouts.
- * See docs/notes/game-scalar-middle-more.md. */
-
 extern void fn_801E2E94(void *,int,int,int,int);
 
 extern float lbl_80377FA8;

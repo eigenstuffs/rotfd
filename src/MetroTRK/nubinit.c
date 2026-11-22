@@ -1,4 +1,3 @@
-/* MetroTRK initialization. See docs/notes/MetroTRK-nubinit.md. */
 #include "trk_abi.h"
 
 bool gTRKBigEndian;

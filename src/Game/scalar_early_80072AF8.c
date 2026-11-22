@@ -1,6 +1,3 @@
-/* Original scalar operations with private observed layouts.
- * See docs/notes/game-scalar-early.md. */
-
 struct State {short index;char pad[2];void *pointer;float vector[3];};
 
 extern float game_vec3_zero[3];

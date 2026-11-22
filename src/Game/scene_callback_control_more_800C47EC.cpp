@@ -1,4 +1,3 @@
-/* Scene callback setup and nested Handle control; see docs/notes/game-scene-native-callback-controls-more.md. */
 typedef unsigned long Word;struct Handle{signed int generation:8,index:24;};struct Entry{void*object;char unknown04[8];signed char generation;char unknown0D[3];};struct Manager{int count,capacity;Entry*entries;};struct Scene{char unknown00[0x15058];void*mode;};
 struct Context{char unknown00[0x110];void*logger;char unknown114[4];Manager*manager;char unknown11C[8];Scene*scene;};extern "C" Context lbl_801E9D24;
 template<class T>inline T*resolve(const Handle&h){Entry*entry=lbl_801E9D24.manager->entries+h.index;return entry->generation==h.generation?(T*)entry->object:0;}

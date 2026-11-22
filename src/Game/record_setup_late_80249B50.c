@@ -1,5 +1,3 @@
-/* Original record setup with observed private scalar fields.
- * See docs/notes/game-record-setup-late.md. */
 extern const unsigned char lbl_802EC268[];
 extern void __ct__22SpatialRecord_802EA440Fv(void *object);
 void *fn_80249B50(void *object) {

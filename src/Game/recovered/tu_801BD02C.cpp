@@ -1,7 +1,5 @@
 namespace pool_head { extern "C" { extern const float lbl_8037A2F0 = 1e-6f; } }
 namespace part_801BD02C {
-// Partial text split: fn_801BD02C only. fn_801BD2F8 after it (95.9%) remains
-// original code; full draft: scratch/claude_match/auto_03_801BD02C_text/retry2/best.cpp.
 typedef unsigned long Word_801BD02C;
 
 inline float fastSqrt(register float x)
@@ -236,7 +234,6 @@ struct Collider_801BD02C : Storage_801BD02C {
 
 extern "C" void fn_80268CCC(Pool_801BD02C*, Pool_801BD02C*);
 
-/* fn_801BD2F8 (collider probe) remains original code. */
 
 }
 namespace part_801BD2F8 {
@@ -411,7 +408,6 @@ extern "C" signed char fn_801BD2F8(Collider_801BD02C* self, Handle_801BD02C* han
 }
 extern "C" {
 /* Partial original text: only observed empty hooks and scalar results. */
-/* Original provisional entry identities are preserved; class identities remain unknown. */
 
 int fn_801BD948(void* receiver) { (void)receiver; return 0; }
 

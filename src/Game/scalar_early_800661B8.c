@@ -1,6 +1,3 @@
-/* Original scalar operations with private observed layouts.
- * See docs/notes/game-scalar-early.md. */
-
 struct SlotRecord {char pad[0x30];short stats[50];};
 
 struct Slots {char pad[0xf0];int selected;char padf4[0x44];struct SlotRecord *records;char pad13c[12];short stats148[50],stats1ac[50];};

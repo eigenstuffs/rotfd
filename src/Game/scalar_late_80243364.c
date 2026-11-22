@@ -1,7 +1,3 @@
-/* Original scalar operations with private observed layouts.
- * See docs/notes/game-scalar-late.md. */
-
-
 int fn_80243364(const void *object,int *out) { int value=*(const int *)((const char *)object+132); if (value==0) return 0; *out=value; return 1; }
 
 int fn_80243384(const void *object,int *out) { int value=*(const int *)((const char *)object+128); if (value==0) return 0; *out=value; return 1; }

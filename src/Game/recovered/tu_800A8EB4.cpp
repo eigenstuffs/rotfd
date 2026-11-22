@@ -15,8 +15,6 @@ struct Object_8007A280 {
     p93d8::Contact* data() { return (p93d8::Contact*)storage; }
 };
 namespace p8eb4 {
-/* Original engine vector and scalar initialization with compiler-emitted exception metadata.
- * See docs/notes/game-engine-early-vector-setup.md. */
 extern "C" {
     void __ct__15Object_8009A9D8Fv(void*);
     extern char lbl_802BCB24[];
@@ -79,8 +77,6 @@ extern "C" View* fn_800A8EB4(View* self) {
 }
 
 }
-/* Original engine destruction with compiler-emitted exception metadata.
- * See docs/notes/game-engine-small-eh.md. */
 typedef unsigned long u32;
 extern "C" {
     extern char lbl_801EF5C8[];

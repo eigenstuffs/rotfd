@@ -1,4 +1,3 @@
-/* Original Python argument formats. See docs/notes/game-script-animation-format-strings.md. */
 extern "C" const char lbl_802A3228[39] = "Oh:CScriptAgent_ScriptGlobalComparison";
 extern "C" const char lbl_802A3250[41] = "Oh:CScriptAgent_ScriptWorldVarComparison";
 extern "C" const char lbl_802A327C[41] = "Oh:CScriptAgent_ScriptLevelVarComparison";

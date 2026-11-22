@@ -1,4 +1,3 @@
-/* Nested Handle record array resize reconstruction; see docs/notes/game-nested-handle-records-resize.md. */
 typedef unsigned long NestedHandleResizeWord;
 extern "C"{extern char lbl_8028F698[];void*fn_8028FAF4(void*,void*,NestedHandleResizeWord,NestedHandleResizeWord);void*fn_8028FF24(void*,NestedHandleResizeWord);void fn_8028FD50(void*,void*,NestedHandleResizeWord);}
 inline void*operator new(unsigned long,void*p){return p;}

@@ -1,5 +1,3 @@
-/* GSQE78 retained MSL buffer_io.c. Pinned Strikers/TWW source and
- * target adaptations are recorded in docs/notes/msl-buffer-io.md. */
 #include "stdio_internal.h"
 enum { __align_buffer, __dont_align_buffer };
 

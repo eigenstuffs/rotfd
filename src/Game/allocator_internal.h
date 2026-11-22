@@ -1,4 +1,3 @@
-/* Recovered arena allocator layout; see docs/notes/game-allocator.md. */
 #ifndef GAME_ALLOCATOR_INTERNAL_H
 #define GAME_ALLOCATOR_INTERNAL_H
 

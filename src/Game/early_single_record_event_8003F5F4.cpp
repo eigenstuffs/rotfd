@@ -1,5 +1,3 @@
-/* Single collected record event dispatch; private layout views.
- * See docs/notes/game-early-single-record-event.md. */
 typedef unsigned long Word;
 struct Handle_801F7F10{union{Word word;struct{signed int tag:8,index:24;}bits;};~Handle_801F7F10();};
 struct NestedEHHandle1:Handle_801F7F10{};struct NestedEHHandle2:NestedEHHandle1{};

@@ -1,4 +1,3 @@
-/* Python creation binding; see docs/notes/game-python-refined-native-factories.md. */
 #include "Game/python_owner_factories.h"
 #include "Game/engine_callback_variant_ctors.h"
 extern "C" FactoryPyObject* fn_800DCCF4(FactoryPyObject*,FactoryPyObject* args) {

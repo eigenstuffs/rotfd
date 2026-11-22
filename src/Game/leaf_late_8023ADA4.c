@@ -1,6 +1,3 @@
-/* Original leaf operations. Provisional names and text-only ownership.
- * See docs/notes/game-leaf-late-continuation.md. */
-
 void fn_8023ADA4(void) { }
 
 void fn_8023ADA8(void) { }

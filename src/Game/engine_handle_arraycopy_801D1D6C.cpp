@@ -1,5 +1,3 @@
-/* Original engine native-handle array capacity.
- * See docs/notes/game-engine-handle-arraycopy.md. */
 typedef unsigned int u32;
 extern "C" {
     extern char lbl_8028F698[];

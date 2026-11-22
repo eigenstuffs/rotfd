@@ -1,5 +1,3 @@
-/* Python creation binding with native placement construction.
- * See docs/notes/game-python-owner-factories.md. */
 #include "Game/python_owner_factories.h"
 struct BaseObject_Z { char unknown[0xC]; BaseObject_Z(); };
 extern "C" FactoryPyObject* fn_800CDFEC(FactoryPyObject*, FactoryPyObject* args) {

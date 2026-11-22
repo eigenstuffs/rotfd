@@ -1,2 +1,1 @@
-/* Original scene argument controls; see docs/notes/game-engine-scene-argument-controls.md. */
 typedef unsigned long u32;struct Handle{u32 word;};struct Owner{char opaque00[0x60];Handle handle60;};extern "C" struct Global{char opaque00[0x118];void*manager118;}lbl_801E9D24;extern "C" void fn_801F86C8(void*,const Handle*,int);extern "C" void fn_8003DCBC(Owner*self,const Handle&h){fn_801F86C8(lbl_801E9D24.manager118,&self->handle60,-1);self->handle60.word=h.word;fn_801F86C8(lbl_801E9D24.manager118,&h,1);}

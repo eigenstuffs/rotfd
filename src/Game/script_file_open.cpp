@@ -1,5 +1,3 @@
-/* Script-file interpreter loading, reconstructed from GSQE78.
- * Partial class ABI; see docs/notes/game-script-files.md. */
 typedef unsigned long u32;
 struct DVDCommandBlock {u32 words[12];};
 struct DVDFileInfo {DVDCommandBlock block;u32 start,length;void*callback;};

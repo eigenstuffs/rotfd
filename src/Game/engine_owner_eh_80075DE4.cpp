@@ -1,5 +1,3 @@
-/* Original engine destruction with compiler-emitted exception metadata.
- * See docs/notes/game-engine-owner-eh.md. */
 typedef unsigned long u32;
 extern "C" {
     extern char lbl_801EF5C8[],lbl_802EBE80[],lbl_802EBE28[],__vt__13Manipulator_Z[];

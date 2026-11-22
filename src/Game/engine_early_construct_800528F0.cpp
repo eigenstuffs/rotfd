@@ -1,6 +1,3 @@
-/* Out-of-line copy of the inline Handle_80024844 default constructor that the
- * linker kept from the Agent translation unit; __ct__14Agent_80052520Fv passes
- * its address to __construct_array. See docs/notes/game-engine-early-construct.md. */
 typedef unsigned long u32;
 
 struct Handle_801F7F10 {

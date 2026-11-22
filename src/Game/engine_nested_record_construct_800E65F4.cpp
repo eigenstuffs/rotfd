@@ -1,4 +1,3 @@
-/* Original record/string native construction; see docs/notes/game-engine-nested-record-construct.md. */
 typedef unsigned long u32;
 extern "C" {void __construct_array(void*,void*,void*,u32,u32);void fn_800E5F40(void*);void fn_800E6A48(void*);void __dt__15Record_800E5F90Fv(void*,int);void __dt__15Record_800E69E4Fv(void*,int);}
 struct Object_800E5FF4 {u32 word0,word4,opaque8,wordC;unsigned char flags10[9],flag19,flag1A,flag1B;unsigned short indices1C[50];Object_800E5FF4(){word0=0;word4=0;wordC=0;flag19=0;flag1A=0;flag1B=0;for(int i=0;i<50;i++)indices1C[i]=0;for(int i=0;i<9;i++)flags10[i]=1;}~Object_800E5FF4();};

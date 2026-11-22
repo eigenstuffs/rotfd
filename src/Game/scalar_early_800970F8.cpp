@@ -1,7 +1,3 @@
-/* Accumulates a scaled vector into the owner's velocity (offset 0x358); the
- * scale is the float at offset 0x374. The method is the first virtual of the
- * object's class defined in this unit, so its virtual table and the
- * secondary-base destructor adjustor follow it. See docs/notes/game-scalar-early.md. */
 namespace ObjectLayout_800969F0 {
 struct Prefix {unsigned long unknown00[2];};
 struct Primary:Prefix {virtual ~Primary();char unknown0C[0x30C];};

@@ -1,8 +1,3 @@
-/* Dolphin SDK reset C fragment, GSQE78.
- * Adapted from the public doldecomp/melee SDK reconstruction;
- * see reference/melee-sdk/PROVENANCE.md and docs/notes/OSReset.md.
- * Processor reset assembly remains original fallback.
- */
 #include "OSReset_abi.h"
 
 static inline int CallResetFunctions(int final) {

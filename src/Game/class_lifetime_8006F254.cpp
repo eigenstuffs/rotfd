@@ -1,5 +1,3 @@
-// Lifetime-only class registration; see docs/notes/game-class-registry.md.
-// ReefblowerObjectAgent.h factory establishes the 0xa0-byte opaque object storage.
 extern "C" {
 extern unsigned long lbl_80377730;
 void fn_8002B58C();

@@ -3,7 +3,6 @@
    .sdata2 is entirely compiler-pooled float literals in first-use order:
    0 (fn_801B5D50), -1, 1, -1e10, 1e10, 1e-6 (fn_801B602C), -1e-4 (fn_801B6430), -1e-6 (fn_801B7C18). */
 namespace p_5D50 {
-/* Projected quad rejection reconstruction; see docs/notes/game-projected-quad-test.md. */
 struct ProjectedQuadVector {
     float x, y, z;
 };
@@ -127,9 +126,6 @@ extern "C" signed char fn_801B5D50(ProjectedQuadQuery* self,
 
 }
 namespace p_602C {
-// Partial text split: fn_801B602C, fn_801B6338, fn_801B6430 of the segment/shape
-// collision query unit; the following functions up to fn_801B70DC remain original
-// (full 20-function draft: scratch/claude_match/auto_03_801B602C_text/final.cpp).
 /* auto_03_801B602C_text: segment/sphere collision queries against boxes,
    walls, quads, triangles and capsules (GC/1.3.2, -O4,p, fp_contract on,
    C++ without exceptions; same flags as projected_quad_test_801B5D50).
@@ -513,9 +509,6 @@ extern "C" bool fn_801B679C(const WallSegment* self, SegmentBoxVertex* a, Segmen
 
 }
 namespace p_6DD4 {
-// Partial text split: fn_801B6DD4 only. fn_801B679C before it (97.9%: FPR
-// colouring in the in-range block) remains original code; full draft:
-// scratch/claude_match/auto_03_801B679C_text/final.cpp.
 /* auto_03_801B602C_text: segment/sphere collision queries against boxes,
    walls, quads, triangles and capsules (GC/1.3.2, -O4,p, fp_contract on,
    C++ without exceptions; same flags as projected_quad_test_801B5D50).
@@ -645,8 +638,6 @@ extern "C" signed char fn_801B6DD4(const SegmentBoxQuery*self,const SegmentBoxVe
 
 }
 namespace p_70DC {
-// Partial text split: fn_801B70DC of the segment/shape collision query unit;
-// its neighbours remain original (see scratch/claude_match/auto_03_801B602C_text).
 /* auto_03_801B602C_text: segment/sphere collision queries against boxes,
    walls, quads, triangles and capsules (GC/1.3.2, -O4,p, fp_contract on,
    C++ without exceptions; same flags as projected_quad_test_801B5D50).
@@ -858,9 +849,6 @@ extern "C"{
 
 }
 namespace p_74D8 {
-// Partial text split: fn_801B74D8 and fn_801B7C18. fn_801B80B0, fn_801B85B0
-// and fn_801B8B20 after them (92.8-97.0%) remain original code; full draft:
-// scratch/claude_match/auto_03_801B74D8_text/final.cpp.
 /* auto_03_801B602C_text: segment/sphere collision queries against boxes,
    walls, quads, triangles and capsules (GC/1.3.2, -O4,p, fp_contract on,
    C++ without exceptions; same flags as projected_quad_test_801B5D50).
@@ -1241,9 +1229,6 @@ extern "C" signed char fn_801B8B20(const SegmentBoxSphere*self,SegmentBoxVertex*
 
 }
 namespace p_9108 {
-// Partial text split: fn_801B9108 (triangle-strip query) of the segment/shape
-// collision query unit; its neighbours remain original (see
-// scratch/claude_match/auto_03_801B602C_text).
 /* auto_03_801B602C_text: segment/sphere collision queries against boxes,
    walls, quads, triangles and capsules (GC/1.3.2, -O4,p, fp_contract on,
    C++ without exceptions; same flags as projected_quad_test_801B5D50).

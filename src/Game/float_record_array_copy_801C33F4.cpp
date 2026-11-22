@@ -1,4 +1,3 @@
-/* Float record array copy assignment; see docs/notes/game-float-record-array-copy.md. */
 typedef unsigned long FloatRecordWordType;
 extern "C" {
 extern char lbl_8028F698[];

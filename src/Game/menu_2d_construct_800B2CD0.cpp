@@ -1,5 +1,3 @@
-/* Native Menu2D construction; full observed factory extent 0x1A4.
- * See docs/notes/game-menu-2d-construction.md. */
 typedef unsigned long Word;
 struct Prefix {Word unknown00[2];};
 struct MenuBase_8021D7E4:Prefix {

@@ -1,4 +1,3 @@
-/* Original Python argument formats. See docs/notes/game-script-animation-format-strings.md. */
 extern "C" const char lbl_802A4DC0[23] = "O:AnimatedAgent_Z_Init";
 extern "C" const char lbl_802A4DD8[24] = "O:AnimatedAgent_Z_Reset";
 extern "C" const char lbl_802A4DF0[27] = "OO:AnimatedAgent_Z_UseNode";
