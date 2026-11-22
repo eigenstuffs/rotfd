@@ -58,10 +58,7 @@ Game/data/data_803775B8_sbss.c:
 	.sbss       start:0x803775B8 end:0x803775E8
 
 Game/callback_group_storage_803775E8.c:
-	.sbss       start:0x803775E8 end:0x80377614
-
-original/callback_neighbor_80377614.s:
-	.sbss       start:0x80377614 end:0x80377618 align:1
+	.sbss       start:0x803775E8 end:0x80377618
 
 Game/callback_registry_keys_80377618.c:
 	.sbss       start:0x80377618 end:0x80377620
@@ -97,10 +94,7 @@ Game/data/actor_motion_state_prefix_803776E8.c:
 	.sbss       start:0x803776E8 end:0x80377768
 
 Game/actor_motion_elapsed_80377768.c:
-	.sbss       start:0x80377768 end:0x8037776C
-
-original/actor_motion_state_suffix_8037776C.s:
-	.sbss       start:0x8037776C end:0x803777A8 align:1
+	.sbss       start:0x80377768 end:0x803777A8
 
 Game/service_slot_shared_storage.c:
 	.sbss       start:0x803777A8 end:0x803777D0
@@ -4853,8 +4847,8 @@ Game/engine_dispatch_pool_backlog_800626A0.cpp:
 Game/native_rtti_base_lists_802B6108.cpp:
 	.data       start:0x802B60F0 end:0x802B6140
 
-original/native_rtti_neighbor_802B6140.s:
-	.data       start:0x802B6140 end:0x802B6270 align:1
+Game/data/native_rtti_neighbor_802B6140.c:
+	.data       start:0x802B6140 end:0x802B6270
 
 Game/actor_script_member_records_802B6270.cpp:
 	.data       start:0x802B6270 end:0x802B62B8
@@ -4959,8 +4953,8 @@ Game/engine_callback_dispatch_variant_80063FF4.cpp:
 Game/native_rtti_base_lists_802B62E0.cpp:
 	.data       start:0x802B62E0 end:0x802B6468
 
-original/native_rtti_neighbor_802B6468.s:
-	.data       start:0x802B6468 end:0x802B65D0 align:1
+Game/data/native_rtti_neighbor_802B6468.c:
+	.data       start:0x802B6468 end:0x802B65D0
 
 Game/agent_callback_member_records_802B65D0.cpp:
 	.data       start:0x802B65D0 end:0x802B6618
@@ -5033,20 +5027,20 @@ Game/native_rtti_base_lists_802B6640.cpp:
 Game/native_rtti_base_lists_802B67F8.cpp:
 	.data       start:0x802B67F8 end:0x802B69E8
 
-original/native_rtti_neighbor_802B69E8.s:
-	.data       start:0x802B69E8 end:0x802B6B50 align:1
+Game/data/native_rtti_neighbor_802B69E8.c:
+	.data       start:0x802B69E8 end:0x802B6B50
 
 Game/native_rtti_base_lists_802B6B50.cpp:
 	.data       start:0x802B6B50 end:0x802B6D40
 
-original/native_rtti_neighbor_802B6D40.s:
-	.data       start:0x802B6D40 end:0x802B6EA8 align:1
+Game/data/native_rtti_neighbor_802B6D40.c:
+	.data       start:0x802B6D40 end:0x802B6EA8
 
 Game/native_rtti_base_lists_802B6EA8.cpp:
 	.data       start:0x802B6EA8 end:0x802B7098
 
-original/native_rtti_neighbor_802B7098.s:
-	.data       start:0x802B7098 end:0x802B7200 align:1
+Game/data/native_rtti_neighbor_802B7098.c:
+	.data       start:0x802B7098 end:0x802B7200
 
 Game/class_lifetime_80064CB8.cpp:
 	extab       start:0x8000B804 end:0x8000B80C
@@ -6145,8 +6139,8 @@ Game/native_rtti_base_lists_802B7ED8.cpp:
 Game/native_rtti_base_lists_802B7F90.cpp:
 	.data       start:0x802B7F90 end:0x802B7FF8
 
-original/native_rtti_neighbor_802B7FF8.s:
-	.data       start:0x802B7FF8 end:0x802B8138 align:1
+Game/data/native_rtti_neighbor_802B7FF8.c:
+	.data       start:0x802B7FF8 end:0x802B8138
 
 Game/native_rtti_base_lists_802B8138.cpp:
 	.data       start:0x802B8138 end:0x802B8170
@@ -6157,8 +6151,8 @@ Game/native_rtti_base_lists_802B8170.cpp:
 Game/native_rtti_base_lists_802B81B8.cpp:
 	.data       start:0x802B81B8 end:0x802B8220
 
-original/native_rtti_neighbor_802B8220.s:
-	.data       start:0x802B8220 end:0x802B8360 align:1
+Game/data/native_rtti_neighbor_802B8220.c:
+	.data       start:0x802B8220 end:0x802B8360
 
 Game/native_rtti_base_lists_802B8360.cpp:
 	.data       start:0x802B8360 end:0x802B8470
@@ -6322,8 +6316,8 @@ original/native_rtti_neighbor_802BA84C.s:
 Game/native_rtti_base_lists_802BA9F8.cpp:
 	.data       start:0x802BA9F8 end:0x802BAB50
 
-original/native_rtti_neighbor_802BAB50.s:
-	.data       start:0x802BAB50 end:0x802BACF8 align:1
+Game/data/native_rtti_neighbor_802BAB50.c:
+	.data       start:0x802BAB50 end:0x802BACF8
 
 Game/native_rtti_base_lists_802BACF8.cpp:
 	.data       start:0x802BACF8 end:0x802BAE04
@@ -6421,8 +6415,8 @@ Game/native_rtti_base_lists_802BBD08.cpp:
 Game/native_rtti_base_lists_802BBD40.cpp:
 	.data       start:0x802BBD40 end:0x802BBE98
 
-original/native_rtti_neighbor_802BBE98.s:
-	.data       start:0x802BBE98 end:0x802BC040 align:1
+Game/data/native_rtti_neighbor_802BBE98.c:
+	.data       start:0x802BBE98 end:0x802BC040
 
 Game/native_rtti_base_lists_802BC040.cpp:
 	.data       start:0x802BC040 end:0x802BC068
@@ -6442,8 +6436,8 @@ Game/native_rtti_base_lists_802BC130.cpp:
 Game/native_rtti_base_lists_802BC168.cpp:
 	.data       start:0x802BC168 end:0x802BC2C0
 
-original/native_rtti_neighbor_802BC2C0.s:
-	.data       start:0x802BC2C0 end:0x802BC468 align:1
+Game/data/native_rtti_neighbor_802BC2C0.c:
+	.data       start:0x802BC2C0 end:0x802BC468
 
 Game/native_rtti_base_lists_802BC468.cpp:
 	.data       start:0x802BC468 end:0x802BC4C0
@@ -6460,8 +6454,8 @@ Game/native_rtti_base_lists_802BC530.cpp:
 Game/native_rtti_base_lists_802BC568.cpp:
 	.data       start:0x802BC568 end:0x802BC6C0
 
-original/native_rtti_neighbor_802BC6C0.s:
-	.data       start:0x802BC6C0 end:0x802BC868 align:1
+Game/data/native_rtti_neighbor_802BC6C0.c:
+	.data       start:0x802BC6C0 end:0x802BC868
 
 Game/native_rtti_base_lists_802BC868.cpp:
 	.data       start:0x802BC868 end:0x802BC8A8
@@ -6481,8 +6475,8 @@ Game/native_rtti_base_lists_802BCA18.cpp:
 Game/native_rtti_base_lists_802BCCC8.cpp:
 	.data       start:0x802BCCC8 end:0x802BCD30
 
-original/native_rtti_neighbor_802BCD30.s:
-	.data       start:0x802BCD30 end:0x802BCE70 align:1
+Game/data/native_rtti_neighbor_802BCD30.c:
+	.data       start:0x802BCD30 end:0x802BCE70
 
 Game/native_rtti_base_lists_802BCE70.cpp:
 	.data       start:0x802BCE70 end:0x802BCFB8
@@ -13202,8 +13196,8 @@ Game/native_rtti_base_lists_802C1850.cpp:
 Game/native_rtti_base_lists_802C1938.cpp:
 	.data       start:0x802C1938 end:0x802C1A90
 
-original/native_rtti_neighbor_802C1A90.s:
-	.data       start:0x802C1A90 end:0x802C1C38 align:1
+Game/data/native_rtti_neighbor_802C1A90.c:
+	.data       start:0x802C1A90 end:0x802C1C38
 
 Game/native_rtti_base_lists_802C1C38.cpp:
 	.data       start:0x802C1C38 end:0x802C1E78
@@ -15607,8 +15601,8 @@ Game/native_rtti_base_lists_802C8240.cpp:
 Game/native_rtti_base_lists_802C82C8.cpp:
 	.data       start:0x802C82C8 end:0x802C8330
 
-original/native_rtti_neighbor_802C8330.s:
-	.data       start:0x802C8330 end:0x802C8470 align:1
+Game/data/native_rtti_neighbor_802C8330.c:
+	.data       start:0x802C8330 end:0x802C8470
 
 Game/native_rtti_base_lists_802C8470.cpp:
 	.data       start:0x802C8470 end:0x802C85B0
@@ -20441,8 +20435,14 @@ Game/random_state.c:
 	.bss        start:0x80340B80 end:0x80340C00
 	.sbss       start:0x80377FD8 end:0x80377FE4
 
-original/frame_timing_prefix_80377FE4.s:
-	.sbss       start:0x80377FE4 end:0x80377FF0 align:4
+padding/frame_timing_prefix_80377FE4.s:
+	.sbss       start:0x80377FE4 end:0x80377FE8 align:1
+
+Game/data/frame_timing_flags_80377FE8.c:
+	.sbss       start:0x80377FE8 end:0x80377FEA
+
+padding/source_extents/Game/data/frame_timing_flags_80377FE8_80377FEA.s:
+	.sbss       start:0x80377FEA end:0x80377FF0 align:1
 
 Game/frame_timing_state_80377FF0.c:
 	.sbss       start:0x80377FF0 end:0x80378000
@@ -24796,10 +24796,10 @@ Game/platform_disc_wait.cpp:
 
 Game/platform_disc_status.c:
 	.text       start:0x8028F4B4 end:0x8028F4D8
-	.sbss       start:0x80378168 end:0x8037816C
+	.sbss       start:0x80378168 end:0x8037816F
 
-original/platform_disc_flags.s:
-	.sbss       start:0x8037816C end:0x80378170 align:4
+padding/source_extents/Game/platform_disc_status_8037816F.s:
+	.sbss       start:0x8037816F end:0x80378170 align:1
 
 Game/disc_poll_state_80378170.c:
 	.sbss       start:0x80378170 end:0x8037817C
