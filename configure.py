@@ -6465,10 +6465,10 @@ config.libs.append({
 })
 
 
-# Original alignment gaps remain fallback data, with no source-completion credit.
+# Game native vtable / RTTI / method tables reconstructed as C++ data units.
 config.libs.append({
-    "lib": "OriginalPadding", "mw_version": "GC/1.3.2",
-    "cflags": cflags_rel, "progress_category": "unclassified",
+    "lib": "GameNativeTables", "mw_version": "GC/1.3.2",
+    "cflags": cflags_rel, "progress_category": "game",
     "objects": [
         Object(Matching, "Game/native_agent_tables_802C8C80.cpp", mw_version="GC/1.3.2", cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,s', '-inline', 'auto', '-Cpp_exceptions', 'off', '-RTTI', 'off', '-use_lmw_stmw', 'on', '-sdata', '8', '-i', 'include']),
         Object(Matching, "Game/native_base_pool_802C0018.cpp", mw_version="GC/1.3.2", cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,s', '-inline', 'auto', '-Cpp_exceptions', 'off', '-RTTI', 'off', '-use_lmw_stmw', 'on', '-sdata', '8', '-i', 'include']),
