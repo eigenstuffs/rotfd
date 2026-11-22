@@ -1547,7 +1547,7 @@ config.libs = [
             Object(Matching, 'Game/early_actor_flag_gate_800af6e8.cpp', cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,s', '-inline', 'auto', '-Cpp_exceptions', 'on', '-RTTI', 'off', '-use_lmw_stmw', 'on', '-i', 'src/Game', '-i', 'include']),
             Object(Matching, 'Game/early_record_array_dispatch_80025418.cpp', cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,s', '-inline', 'auto', '-Cpp_exceptions', 'on', '-use_lmw_stmw', 'on'], report_strip_weak=True),
             Object(Matching, 'Game/early_pool_owner_constructor_800b5b6c.cpp', cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,s', '-inline', 'auto', '-Cpp_exceptions', 'on', '-RTTI', 'off', '-use_lmw_stmw', 'on', '-i', 'src/Game', '-i', 'include']),
-            Object(Matching, 'Game/engine_group_record_parser.cpp', cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,p', '-use_lmw_stmw', 'on', '-inline', 'auto', '-Cpp_exceptions', 'off', '-i', 'include']),
+            Object(Matching, 'Game/engine_group_record_parser.cpp', cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,p', '-use_lmw_stmw', 'on', '-inline', 'auto', '-Cpp_exceptions', 'off', '-i', 'include'], report_strip_weak=True),
             Object(Matching, 'Game/early_record_array_resize_80025954.cpp', cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,s', '-inline', 'auto', '-Cpp_exceptions', 'on', '-use_lmw_stmw', 'on'], report_strip_weak=True),
             Object(Matching, 'Game/early_native_record_constructor_800219a8.cpp', cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,s', '-inline', 'auto', '-Cpp_exceptions', 'on', '-use_lmw_stmw', 'on', '-i', 'src/Game', '-i', 'include'], report_strip_weak=True),
             Object(Matching, 'Game/scene_record_event_800E1B94.cpp', cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,s', '-inline', 'auto', '-Cpp_exceptions', 'on', '-use_lmw_stmw', 'on'], report_strip_weak=True),
@@ -5911,7 +5911,6 @@ config.libs = [
             Object(Matching, 'Game/resource_owner_factory_8020AEB4.cpp', mw_version='GC/1.3.2', cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,p', '-inline', 'auto', '-Cpp_exceptions', 'off', '-i', 'include'], report_strip_weak=True),
             Object(Matching, 'Game/engine_startup_services_8020B908.cpp', mw_version='GC/1.3.2', cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,p', '-inline', 'auto', '-Cpp_exceptions', 'off', '-i', 'include']),
             Object(Matching, 'Game/hierarchy_switch_camera_user_80204F80.cpp', mw_version='GC/1.3.2', cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,p', '-inline', 'auto', '-Cpp_exceptions', 'off', '-use_lmw_stmw', 'on'], report_strip_weak=True),
-            Object(Matching, 'Game/menu_file_loader_8021A7AC.cpp', mw_version='GC/1.3.2', cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,p', '-inline', 'auto', '-Cpp_exceptions', 'off', '-RTTI', 'off', '-use_lmw_stmw', 'on', '-i', 'include'], report_strip_weak=True),
             Object(Matching, 'Game/entry_ground_probe_callback_8021E018.cpp', mw_version='GC/1.3.2', cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,p', '-use_lmw_stmw', 'on', '-inline', 'auto', '-Cpp_exceptions', 'off', '-RTTI', 'off', '-fp_contract', 'on', '-i', 'include']),
             Object(Matching, 'Game/path_follower_step_8021EC10.cpp', mw_version='GC/1.3.2', cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,p', '-use_lmw_stmw', 'on', '-inline', 'auto', '-Cpp_exceptions', 'off', '-RTTI', 'off', '-fp_contract', 'on', '-i', 'include'], report_strip_weak=True),
             Object(Matching, 'Game/file_exists_open_801F3814.cpp', mw_version='GC/1.3.2', cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,p', '-inline', 'auto', '-Cpp_exceptions', 'off', '-use_lmw_stmw', 'on', '-i', 'include']),
@@ -6507,7 +6506,6 @@ config.libs.append({
         Object(NonMatching, "padding/source_extents/Objects/cellobject.s"),
         Object(NonMatching, "padding/source_extents/MSL/printf.s"),
         Object(NonMatching, "padding/source_extents/Game/menu2d_parsers_80214544.s"),
-        Object(NonMatching, "padding/group_record_literals.s"),
     ],
 })
 

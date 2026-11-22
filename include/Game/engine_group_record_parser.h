@@ -4,7 +4,12 @@
 typedef unsigned long Word;
 
 struct Handle_801F7F10 {
-    Word word;
+    union{
+        Word word;
+        struct{
+            signed int tag:8,index:24;
+        } bits;
+    };
     Handle_801F7F10();
     ~Handle_801F7F10();
 };
