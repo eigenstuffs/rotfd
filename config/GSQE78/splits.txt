@@ -22705,9 +22705,6 @@ Game/worker_float_colors_startup_80269A30.cpp:
 	.ctors      start:0x80299958 end:0x8029995C
 	.bss        start:0x80340D00 end:0x80341350
 
-padding/typed_storage_80341350.s:
-	.bss        start:0x80341350 end:0x80341360 align:1
-
 Game/node_segment_hit_query_80269A64.cpp:
 	.text       start:0x80269A64 end:0x80269C94
 
@@ -23289,7 +23286,7 @@ Game/renderer_matrix_groups_802808D0.cpp:
 Game/engine_mesh_scratch_startup.cpp:
 	.text       start:0x80281674 end:0x802816D0
 	.ctors      start:0x8029995C end:0x80299960
-	.bss        start:0x80341360 end:0x80359360
+	.bss        start:0x80341360 end:0x80359360 align:32
 
 Game/engine_mesh_render_scratch.cpp:
 	.bss        start:0x80359360 end:0x8035D360

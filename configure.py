@@ -6482,7 +6482,6 @@ config.libs.append({
         Object(Matching, "Game/native_volume_tables_802B2B60.cpp", mw_version="GC/1.3.2", cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,s', '-inline', 'auto', '-Cpp_exceptions', 'off', '-use_lmw_stmw', 'on']),
         Object(Matching, "Game/native_root_method_pair_802B2518.cpp", mw_version="GC/1.3.2", cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,s', '-inline', 'auto', '-Cpp_exceptions', 'off', '-RTTI', 'off', '-use_lmw_stmw', 'on', '-sdata', '8']),
         Object(Matching, "Game/native_rtti_pairs_802B0A18.cpp", mw_version="GC/1.3.2", cflags=['-proc', 'gekko', '-fp', 'hardware', '-enum', 'int', '-str', 'reuse', '-common', 'off', '-O4,s', '-inline', 'auto', '-Cpp_exceptions', 'off', '-use_lmw_stmw', 'on']),
-        Object(NonMatching, "padding/typed_storage_80341350.s"),
         Object(NonMatching, "padding/EXIBios.s"),
         Object(NonMatching, "padding/source_extents/Modules/config.s"),
         Object(NonMatching, "padding/source_extents/Modules/_codecsmodule.s"),
