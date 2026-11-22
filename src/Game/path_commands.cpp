@@ -111,3 +111,10 @@ extern "C" u32 fn_802074F4()
     manager->write = !manager->read;
     return 1;
 }
+
+/* Former original/path_prefix data 0x8037A97C..0x8037A980 (.sdata2), referenced as part of this unit; it starts mid-line (not 8-aligned), so it can only follow the data above. The zero alignment bytes before it (padding/path_commands.s) are now internal alignment of this unit. */
+#pragma explicit_zero_data on
+#pragma force_active on
+extern "C" __declspec(section ".sdata2") const char lbl_8037A97C[] = "DB:";
+
+#pragma force_active reset

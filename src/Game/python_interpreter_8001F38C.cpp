@@ -245,7 +245,7 @@ struct Node{};
 inline PyObject*toInteger(const Name&n){PyObject*object=PyInt_FromLong(n.value);return object;}
 inline void decref(PyObject*p){if(p&&!--p->references)p->type->destroy(p);}
 }
-extern "C"{extern Name*lbl_80377F98;PyObject*PyDict_GetItem(PyObject*,PyObject*);unsigned long strlen(const char*);PyObject*PyObject_CallObject(PyObject*,PyObject*);PyObject*PyObject_CallFunction(PyObject*,const char*,...);PyObject*PyErr_Occurred();Handle_80020478 fn_80260868(Scene*,const Name&,int);extern const char lbl_803781E4[2];extern char lbl_80299A94[];}
+extern "C"{extern Name*lbl_80377F98;PyObject*PyDict_GetItem(PyObject*,PyObject*);unsigned long strlen(const char*);PyObject*PyObject_CallObject(PyObject*,PyObject*);PyObject*PyObject_CallFunction(PyObject*,const char*,...);PyObject*PyErr_Occurred();Handle_80020478 fn_80260868(Scene*,const Name&,int);extern const char lbl_803781E4[2];extern const char lbl_80299A94[];}
 namespace callback {
 inline PyObject*lookupCallable(const char*name){if(strlen(name)){PyObject*module=fn_8001FB04(name,lbl_803781D0);if(module){PyObject*callable=PyObject_GetAttrString(module,name);decref(module);if(callable)return callable;}}return 0;}
 inline PyObject*copyDictionaryAndBoxName(Word selected){lbl_80377540=PyDict_Copy(lbl_80377544);PyObject*object=PyInt_FromLong(selected);return object;}
@@ -323,3 +323,10 @@ return node;
 }
 return cached;
 }
+
+/* Former original/readable_pool_neighbor_80299A91 data 0x80299A91..0x80299A9F (.rodata), referenced as part of this unit; it starts mid-line (not 8-aligned), so it can only follow the data above. */
+#pragma explicit_zero_data on
+#pragma force_active on
+extern "C" __declspec(section ".rodata") const char lbl_80299A94[] = "LodAgent_Z";
+
+#pragma force_active reset

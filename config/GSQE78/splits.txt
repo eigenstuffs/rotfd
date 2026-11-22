@@ -172,7 +172,7 @@ Game/python_interpreter_8001F38C.cpp:
 	extabindex  start:0x80015F84 end:0x80016080
 	.text       start:0x8001F38C end:0x80020DC4
 	.ctors      start:0x80299924 end:0x80299928
-	.rodata     start:0x802999A0 end:0x80299A91
+	.rodata     start:0x802999A0 end:0x80299A9F
 	.bss        start:0x802F3460 end:0x802F40F8
 
 Game/scene_vector_storage_802F40F8.c:
@@ -190,8 +190,8 @@ Game/scene_vector_storage_802F4198.c:
 padding/sdk-state-leaf_802F41A4.s:
 	.bss        start:0x802F41A4 end:0x802F41A8 align:1
 
-original/readable_pool_neighbor_80299A91.s:
-	.rodata     start:0x80299A91 end:0x80299AA0 align:1
+padding/source_extents/Game/python_interpreter_8001F38C_80299A9F.s:
+	.rodata     start:0x80299A9F end:0x80299AA0 align:1
 
 Game/native_readable_pools_80299AA0.cpp:
 	.rodata     start:0x80299AA0 end:0x80299AC8
@@ -7078,10 +7078,10 @@ Game/engine_game_strings_8029D0A8.cpp:
 	.rodata     start:0x8029D0A8 end:0x8029D298
 
 Game/native_readable_pools_8029D298.cpp:
-	.rodata     start:0x8029D298 end:0x8029D541
+	.rodata     start:0x8029D298 end:0x8029D552
 
-original/readonly_pool_neighbor_8029D541.s:
-	.rodata     start:0x8029D541 end:0x8029D558 align:1
+padding/source_extents/Game/native_readable_pools_8029D298_8029D552.s:
+	.rodata     start:0x8029D552 end:0x8029D558 align:1
 
 Game/native_readonly_pools_8029D558.cpp:
 	.rodata     start:0x8029D558 end:0x8029D566
@@ -11053,10 +11053,10 @@ Game/recovered/tu_800A8EB4.cpp:
 	extab       start:0x80010ABC end:0x80010B3C
 	extabindex  start:0x8001BB88 end:0x8001BC00
 	.text       start:0x800A8EB4 end:0x800AA554
-	.sdata2     start:0x80379000 end:0x8037902C
+	.sdata2     start:0x80379000 end:0x80379031
 
-original/rtti_name_8037902C.s:
-	.sdata2     start:0x8037902C end:0x80379038 align:1
+padding/source_extents/Game/recovered/tu_800A8EB4_80379031.s:
+	.sdata2     start:0x80379031 end:0x80379038 align:1
 
 Game/scalar_constant_80379028.c:
 	.sdata2     start:0x80379038 end:0x80379041
@@ -20857,14 +20857,10 @@ Game/draw_manipulator_method_tables_802EB000.cpp:
 Game/path_commands.cpp:
 	.text       start:0x802074F4 end:0x802077B4
 	.rodata     start:0x802ADCC8 end:0x802ADCEF
-	.sdata2     start:0x8037A968 end:0x8037A97A
+	.sdata2     start:0x8037A968 end:0x8037A980
 
 padding/path_commands.s:
 	.rodata     start:0x802ADCEF end:0x802ADCF0 align:1
-	.sdata2     start:0x8037A97A end:0x8037A97C align:2
-
-original/path_prefix.s:
-	.sdata2     start:0x8037A97C end:0x8037A980 align:4
 
 Game/native_readable_pools_802ADCF0.cpp:
 	.rodata     start:0x802ADCF0 end:0x802ADD1E
@@ -21512,10 +21508,10 @@ Game/engine_menu_array_ctor.cpp:
 
 Game/engine_menu_item_parser.cpp:
 	.text       start:0x8021C7F4 end:0x8021CB30
-	.rodata     start:0x802AE8D8 end:0x802AE90A
+	.rodata     start:0x802AE8D8 end:0x802AE916
 
-padding/engine_menu_item_parser.s:
-	.rodata     start:0x802AE90A end:0x802AE90C align:2
+padding/source_extents/Game/engine_menu_item_parser_802AE916.s:
+	.rodata     start:0x802AE916 end:0x802AE918 align:1
 
 Game/engine_game_strings_802AE918.cpp:
 	.rodata     start:0x802AE918 end:0x802AE9B1
@@ -23264,17 +23260,11 @@ Game/callback_lists_8025B388.c:
 
 Game/callback_control_select_8025B448.cpp:
 	.text       start:0x8025B448 end:0x8025B928
-	.rodata     start:0x802AEC00 end:0x802AEC2B
+	.rodata     start:0x802AEC00 end:0x802AEC38
 	.data       start:0x802ECBB8 end:0x802ECCD4
 
 original/callback_selector_tail_802ECCD4.s:
 	.data       start:0x802ECCD4 end:0x802ECCD8 align:1
-
-padding/callback_selector_tail_802AEC2B.s:
-	.rodata     start:0x802AEC2B end:0x802AEC2C align:1
-
-original/callback_category_neighbor_802AEC2C.s:
-	.rodata     start:0x802AEC2C end:0x802AEC38 align:1
 
 Game/engine_game_strings_802AEC38.cpp:
 	.rodata     start:0x802AEC38 end:0x802AECC1

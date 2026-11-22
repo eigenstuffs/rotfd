@@ -175,3 +175,10 @@ default:result=2;break;
 }
 fn_8025F620(callback,lbl_80378090);return result;
 }
+
+/* Former original/callback_category_neighbor_802AEC2C data 0x802AEC2C..0x802AEC38 (.rodata), referenced as part of this unit; it starts mid-line (not 8-aligned), so it can only follow the data above. The zero alignment bytes before it (padding/callback_selector_tail_802AEC2B.s) are now internal alignment of this unit. */
+#pragma explicit_zero_data on
+#pragma force_active on
+extern "C" __declspec(section ".rodata") const char lbl_802AEC2C[] = "ObjectThrow";
+
+#pragma force_active reset

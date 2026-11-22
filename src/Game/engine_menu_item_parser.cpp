@@ -57,3 +57,10 @@ extern "C" void fn_8021C7F4(void* self, void* stream) {
     record.flags = flags;
     fn_8021C558(self, &record);
 }
+
+/* Former auto_06_802AE90C_rodata data 0x802AE90C..0x802AE916 (.rodata), referenced as part of this unit; it starts mid-line (not 8-aligned), so it can only follow the data above. The zero alignment bytes before it (padding/engine_menu_item_parser.s) are now internal alignment of this unit. */
+#pragma explicit_zero_data on
+#pragma force_active on
+extern "C" __declspec(section ".rodata") const char lbl_802AE90C[] = "MENU_LOOP";
+
+#pragma force_active reset

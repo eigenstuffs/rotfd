@@ -826,3 +826,10 @@ extern "C" asm void fn_800AA54C() {
     subi r3, r3, 0x318
     b __dt__15Object_800A8F90Fv
 }
+
+/* Former original/rtti_name_8037902C data 0x8037902C..0x80379031 (.sdata2), referenced as part of this unit; it starts mid-line (not 8-aligned), so it can only follow the data above. */
+#pragma explicit_zero_data on
+#pragma force_active on
+extern "C" __declspec(section ".sdata2") const char lbl_8037902C[] = "CFSM";
+
+#pragma force_active reset

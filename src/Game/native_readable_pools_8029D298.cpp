@@ -41,3 +41,9 @@ extern "C" const char lbl_8029D298[] =
 extern "C" const char lbl_8029D524[] =
     "SpongeBob : GameProgramClose"; // +0x0
 
+/* Former original/readonly_pool_neighbor_8029D541 data 0x8029D541..0x8029D552 (.rodata), referenced as part of this unit; it starts mid-line (not 8-aligned), so it can only follow the data above. */
+#pragma explicit_zero_data on
+#pragma force_active on
+extern "C" __declspec(section ".rodata") const char lbl_8029D544[] = "InputEngine_Z";
+
+#pragma force_active reset
