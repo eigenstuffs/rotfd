@@ -65,7 +65,7 @@ struct DefaultRecord {
     char unknown68[0x24];
     DefaultHandle handle8C,handle90;
 };
-extern "C" void fn_8025B928(void*,DefaultRecord*self){
+extern "C" void slot90__11Throwable_ZFv(void*,DefaultRecord*self){
     self->value00=lbl_8037B528;
     self->value04=lbl_8037B52C;
     self->value28=lbl_8037B530;

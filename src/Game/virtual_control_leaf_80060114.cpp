@@ -26,4 +26,4 @@ virtual void slot5C();
 virtual long apply();
 };
 extern "C" Control*lbl_803776B8;
-extern "C" long fn_80060114(void*ignoredSelf){return lbl_803776B8->apply();}
+extern "C" long script60__12CScriptAgentFv(void*ignoredSelf){return lbl_803776B8->apply();}

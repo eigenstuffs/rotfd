@@ -28,8 +28,8 @@ void *__ct__14Agent_8004E90CFv(void *);
 void *fn_8004F2BC(void *);
 void *__ct__14Agent_8004FAE8Fv(void *);
 void *__ct__15Object_800504F4Fv(void *);
-void *__ct__14Agent_80061AC0Fv(void *);
-void *__ct__14Agent_80062E18Fv(void *);
+void *__ct__11CLevelAgentFv(void *);
+void *__ct__17CActorScriptAgentFv(void *);
 void *__ct__15Object_8006565CFv(void *);
 void *__ct__15Object_8006590CFv(void *);
 void *__ct__15Object_80065C60Fv(void *);
@@ -139,7 +139,7 @@ void *fn_800BA314()
     void *object = fn_801EFA1C(lbl_801EF5C8, 0x200, lbl_802A0E78,
                               lbl_802A0F60, 101, 4);
     if (object)
-        object = __ct__14Agent_80062E18Fv(object);
+        object = __ct__17CActorScriptAgentFv(object);
     return object;
 }
 
@@ -149,7 +149,7 @@ void *fn_800BA36C()
     void *object = fn_801EFA1C(lbl_801EF5C8, 0x200, lbl_802A0E78,
                               lbl_802A0F74, 68, 4);
     if (object)
-        object = __ct__14Agent_80061AC0Fv(object);
+        object = __ct__11CLevelAgentFv(object);
     return object;
 }
 

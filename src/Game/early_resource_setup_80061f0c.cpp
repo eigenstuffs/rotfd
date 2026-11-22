@@ -1,5 +1,5 @@
 #include "Game/early_resource_setup_views.h"
-extern "C" void fn_80061F0C(SetupObject*self,const Handle_801F7F10&input){
+extern "C" void slot40__11CLevelAgentFi(SetupObject*self,const Handle_801F7F10&input){
 fn_802001D4(resolveSetup(input),Handle_80021B54(self->resource),0);
 resolveSetup(Handle_80021B54(self->resource))->ownerBind(self->owner);
 clearSetupFlags(Handle_80021B54(self->resource));

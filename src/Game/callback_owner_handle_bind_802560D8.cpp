@@ -30,7 +30,7 @@ struct Object{
  void setOwner(const Handle_801F7F10&h){owner130=OneCopy(h);}
 };
 struct Owner{Word unknown00;Handle_801F7F10 identity;char unknown08[0x30];unsigned long long flags;char unknown40[0x14];Word output54;Stored handle58;};
-extern "C" void fn_802560D8(Owner*self,const Handle_801F7F10&incoming){
+extern "C" void slot3C__7Agent_ZFv(Owner*self,const Handle_801F7F10&incoming){
  self->handle58=incoming;
  const Handle_801F7F10&id=self->identity;
  resolve(incoming)->setOwner(DirectCopy(id));

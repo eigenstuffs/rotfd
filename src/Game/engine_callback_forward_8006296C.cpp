@@ -4,7 +4,7 @@ extern "C" {
     extern void* lbl_80378028;
 }
 
-extern "C" void fn_8006296C(void* self, void* value) {
+extern "C" void slot28__11CLevelAgentFPv(void* self, void* value) {
     fn_8025ED38(self, value, lbl_80377700);
     fn_8025ED38(self, value, lbl_80378028);
 }

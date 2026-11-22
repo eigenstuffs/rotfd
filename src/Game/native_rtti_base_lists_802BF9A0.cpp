@@ -40,16 +40,16 @@ NativeRuntimeBaseList<4> lbl_802BF9DC = {
 // Adjacent native method and runtime-base records.
 extern "C" {
 void __dt__15Object_800C4E04Fv();
-void fn_8002392C();
-void fn_80023934();
-void fn_8002393C();
-void fn_80023944();
-void fn_80028D58();
-void fn_80028D60();
-void fn_80028D68();
-void fn_80028D6C();
-void fn_8002DADC();
-void fn_8002DAE4();
+void slot48__7Agent_ZFv();
+void slot4C__7Agent_ZFv();
+void slot50__7Agent_ZFv();
+void slot70__7Agent_ZFv();
+void slot54__7Agent_ZFv();
+void slot58__7Agent_ZFv();
+void slot5C__7Agent_ZFv();
+void slot60__7Agent_ZFv();
+void slot64__7Agent_ZFv();
+void slot68__7Agent_ZFv();
 void fn_800C4CD0();
 void fn_800C4D20();
 void fn_800C4D28();
@@ -64,7 +64,7 @@ void fn_8025529C();
 void fn_802553C8();
 void fn_802556CC();
 void fn_80255750();
-void fn_80256028();
+void slot6C__7Agent_ZFv();
 void slot0C__12BaseObject_ZFUl();
 void slot10__12BaseObject_ZFv();
 void slot14__12BaseObject_ZFv();
@@ -89,17 +89,17 @@ extern "C" __declspec(section ".data") const void* const lbl_802BFA00[32] __attr
     (const void*)fn_80254F70,
     (const void*)fn_800C4CD0,
     (const void*)fn_80254E90,
-    (const void*)fn_8002392C,
-    (const void*)fn_80023934,
-    (const void*)fn_8002393C,
-    (const void*)fn_80028D58,
-    (const void*)fn_80028D60,
-    (const void*)fn_80028D68,
-    (const void*)fn_80028D6C,
-    (const void*)fn_8002DADC,
-    (const void*)fn_8002DAE4,
-    (const void*)fn_80256028,
-    (const void*)fn_80023944,
+    (const void*)slot48__7Agent_ZFv,
+    (const void*)slot4C__7Agent_ZFv,
+    (const void*)slot50__7Agent_ZFv,
+    (const void*)slot54__7Agent_ZFv,
+    (const void*)slot58__7Agent_ZFv,
+    (const void*)slot5C__7Agent_ZFv,
+    (const void*)slot60__7Agent_ZFv,
+    (const void*)slot64__7Agent_ZFv,
+    (const void*)slot68__7Agent_ZFv,
+    (const void*)slot6C__7Agent_ZFv,
+    (const void*)slot70__7Agent_ZFv,
     (const void*)fn_80254C74,
     (const void*)fn_80254E5C,
     0,

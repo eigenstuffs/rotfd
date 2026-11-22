@@ -6,7 +6,7 @@ extern "C" {extern const struct Pool{char opaque00[0x18];MemberPointer entries[5
 extern "C" {signed char fn_8025E9FC(void*,int);void fn_8005EED4(void*);float fn_8025E268(void*,int);}
 struct Prefix{u32 unknown00,unknown04;};
 struct Object:Prefix{virtual void slot08();};
-extern "C" int fn_800623FC(Object*self,int event,Callback*callback){
+extern "C" int slotD8__11CLevelAgentFv(Object*self,int event,Callback*callback){
 const Pool*members=&lbl_802B6028;int result=1;
 switch(event){
 case 0:fn_8025EF34(self,members->entries[0],-1);return 1;

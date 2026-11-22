@@ -1,5 +1,5 @@
-/* fn_80063290: Agent_80062E18 activation helper (called by
- * ObjectCleanupVirtualView_8006565C::slot_040). Selects kind 0x86, checks the
+/* slot40__17CActorScriptAgentFi: CActorScriptAgent activation helper (called by
+ * CMediumAgent::slot_040). Selects kind 0x86, checks the
  * related owner's parent and flag 0x800, looks up a named child, then (when
  * registered) prepares the resource handle, binds identity and actor, sets
  * mode 31, calls the base handler and copies the queried body's matrix
@@ -88,7 +88,7 @@ extern "C" {
 int fn_8024A86C(Node*,const Name&);Handle_801F7F10 fn_801B52EC(Manager*,const char*);void fn_802001D4(Node*,const Handle_80062EA0*,int);
 void fn_8022F624(Node*,const Handle_80025BF4&);void fn_8002B824(Agent*,const Handle_801F7F10&);void fn_8007D6A0(void*,int);
 }
-extern "C" void fn_80063290(Agent*self,const Handle_801F7F10&other){
+extern "C" void slot40__17CActorScriptAgentFi(Agent*self,const Handle_801F7F10&other){
  self->setKind(0x86);
  int found=-1;
  if(resolve(resolvePrefix(((ParentView*)self)->related)->parent)&&(resolve(self->related)->flags&0x800)){

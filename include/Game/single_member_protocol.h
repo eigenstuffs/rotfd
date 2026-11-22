@@ -125,7 +125,7 @@ void fn_8025F694(ResolvedIndexCallback*, ResolvedIndexWord);
 void fn_8025F620(ResolvedIndexCallback*, ResolvedIndexWord);
 signed char fn_8025E9FC(void*, int);
 void*fn_801F7EB8(const ResolvedIndexHandle*);
-int fn_8025A5F8(ResolvedIndexOwner*, int, ResolvedIndexCallback*);
+int slot78__13MovingAgent_ZFv(ResolvedIndexOwner*, int, ResolvedIndexCallback*);
 }
 typedef char ResolvedIndexValueOffset[sizeof(ResolvedIndexOwner)==0x74?1:-1];
 #endif

@@ -89,16 +89,16 @@ NativeRuntimeBaseList<8> lbl_802B04CC = {
 
 // Adjacent native hook method and base-list records.
 extern "C" {
-void fn_8002390C();
-void fn_80023914();
-void fn_8002391C();
-void fn_80023920();
-void fn_80023924();
-void fn_80023928();
-void fn_8002392C();
-void fn_80023934();
-void fn_8002393C();
-void fn_80023944();
+void slot5C__11Throwable_ZFv();
+void slot60__11Throwable_ZFv();
+void slot84__11Throwable_ZFv();
+void slot88__11Throwable_ZFv();
+void slot8C__11Throwable_ZFv();
+void slot74__15AnimatedAgent_ZFv();
+void slot48__7Agent_ZFv();
+void slot4C__7Agent_ZFv();
+void slot50__7Agent_ZFv();
+void slot70__7Agent_ZFv();
 void fn_80024ECC();
 void fn_80024F50();
 void fn_80024FD4();
@@ -107,26 +107,26 @@ void fn_80025C70();
 void fn_80025C78();
 void fn_80025C80();
 void fn_80025D14();
-void fn_80025E04();
-void fn_80025E08();
-void fn_80025E0C();
-void fn_80025E10();
-void fn_80025E18();
-void fn_80025E1C();
-void fn_80256028();
-void fn_80257C50();
-void fn_80257C58();
-void fn_80259F0C();
+void slot94__10LodAgent_ZFv();
+void slot98__10LodAgent_ZFv();
+void slot9C__10LodAgent_ZFv();
+void slotA0__10LodAgent_ZFv();
+void slotA4__10LodAgent_ZFv();
+void slotA8__10LodAgent_ZFv();
+void slot6C__7Agent_ZFv();
+void slot68__15AnimatedAgent_ZFv();
+void slot64__15AnimatedAgent_ZFv();
+void slot1C__13MovingAgent_ZFv();
 void fn_80259FB4();
 void fn_8025A190();
 void fn_8025A244();
 void fn_8025A324();
-void fn_8025A5F8();
-void fn_8025B448();
-void fn_8025B928();
-void fn_8025BAD4();
-void fn_8025BAF4();
-void fn_8025BB14();
+void slot78__13MovingAgent_ZFv();
+void slot7C__11Throwable_ZFv();
+void slot90__11Throwable_ZFv();
+void slot58__11Throwable_ZFv();
+void slot54__11Throwable_ZFv();
+void slot80__11Throwable_ZFv();
 void slot0C__12BaseObject_ZFUl();
 void slot10__12BaseObject_ZFv();
 void slot14__12BaseObject_ZFv();
@@ -140,7 +140,7 @@ extern "C" __declspec(section ".data") const void* const lbl_802B0510[44] __attr
     (const void*)slot10__12BaseObject_ZFv,
     (const void*)slot14__12BaseObject_ZFv,
     (const void*)fn_80024F50,
-    (const void*)fn_80259F0C,
+    (const void*)slot1C__13MovingAgent_ZFv,
     (const void*)fn_80025C70,
     (const void*)fn_80025C78,
     (const void*)fn_80025C80,
@@ -151,30 +151,30 @@ extern "C" __declspec(section ".data") const void* const lbl_802B0510[44] __attr
     (const void*)fn_8025A324,
     (const void*)fn_80024FF4,
     (const void*)fn_80259FB4,
-    (const void*)fn_8002392C,
-    (const void*)fn_80023934,
-    (const void*)fn_8002393C,
-    (const void*)fn_8025BAF4,
-    (const void*)fn_8025BAD4,
-    (const void*)fn_8002390C,
-    (const void*)fn_80023914,
-    (const void*)fn_80257C58,
-    (const void*)fn_80257C50,
-    (const void*)fn_80256028,
-    (const void*)fn_80023944,
-    (const void*)fn_80023928,
-    (const void*)fn_8025A5F8,
-    (const void*)fn_8025B448,
-    (const void*)fn_8025BB14,
-    (const void*)fn_8002391C,
-    (const void*)fn_80023920,
-    (const void*)fn_80023924,
-    (const void*)fn_8025B928,
-    (const void*)fn_80025E04,
-    (const void*)fn_80025E08,
-    (const void*)fn_80025E0C,
-    (const void*)fn_80025E10,
-    (const void*)fn_80025E18,
-    (const void*)fn_80025E1C,
+    (const void*)slot48__7Agent_ZFv,
+    (const void*)slot4C__7Agent_ZFv,
+    (const void*)slot50__7Agent_ZFv,
+    (const void*)slot54__11Throwable_ZFv,
+    (const void*)slot58__11Throwable_ZFv,
+    (const void*)slot5C__11Throwable_ZFv,
+    (const void*)slot60__11Throwable_ZFv,
+    (const void*)slot64__15AnimatedAgent_ZFv,
+    (const void*)slot68__15AnimatedAgent_ZFv,
+    (const void*)slot6C__7Agent_ZFv,
+    (const void*)slot70__7Agent_ZFv,
+    (const void*)slot74__15AnimatedAgent_ZFv,
+    (const void*)slot78__13MovingAgent_ZFv,
+    (const void*)slot7C__11Throwable_ZFv,
+    (const void*)slot80__11Throwable_ZFv,
+    (const void*)slot84__11Throwable_ZFv,
+    (const void*)slot88__11Throwable_ZFv,
+    (const void*)slot8C__11Throwable_ZFv,
+    (const void*)slot90__11Throwable_ZFv,
+    (const void*)slot94__10LodAgent_ZFv,
+    (const void*)slot98__10LodAgent_ZFv,
+    (const void*)slot9C__10LodAgent_ZFv,
+    (const void*)slotA0__10LodAgent_ZFv,
+    (const void*)slotA4__10LodAgent_ZFv,
+    (const void*)slotA8__10LodAgent_ZFv,
     0,
 };

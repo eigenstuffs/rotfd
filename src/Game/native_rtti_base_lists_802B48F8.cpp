@@ -17,17 +17,17 @@ NativeRuntimeBaseList<5> lbl_802B48F8 = {
 // Native volume method table after the existing base hierarchy.
 extern "C" {
 void __dt__15Object_80046B70Fv();
-void fn_8002392C();
-void fn_80023934();
-void fn_8002393C();
-void fn_80023944();
-void fn_80028D58();
-void fn_80028D60();
-void fn_80028D68();
-void fn_80028D6C();
+void slot48__7Agent_ZFv();
+void slot4C__7Agent_ZFv();
+void slot50__7Agent_ZFv();
+void slot70__7Agent_ZFv();
+void slot54__7Agent_ZFv();
+void slot58__7Agent_ZFv();
+void slot5C__7Agent_ZFv();
+void slot60__7Agent_ZFv();
 void fn_8002DAD8();
-void fn_8002DADC();
-void fn_8002DAE4();
+void slot64__7Agent_ZFv();
+void slot68__7Agent_ZFv();
 void fn_800443B4();
 void fn_80044448();
 void fn_80044494();
@@ -46,7 +46,7 @@ void fn_8005207C();
 void fn_80052084();
 void fn_8005208C();
 void fn_800520F0();
-void fn_80256028();
+void slot6C__7Agent_ZFv();
 void fn_8025E11C();
 void fn_8025E2FC();
 void slot0C__12BaseObject_ZFUl();
@@ -74,17 +74,17 @@ extern "C" __declspec(section ".data") const void* const lbl_802B4924[39] __attr
     (const void*)fn_8025E2FC,
     (const void*)fn_800443B4,
     (const void*)fn_8002DAD8,
-    (const void*)fn_8002392C,
-    (const void*)fn_80023934,
-    (const void*)fn_8002393C,
-    (const void*)fn_80028D58,
-    (const void*)fn_80028D60,
-    (const void*)fn_80028D68,
-    (const void*)fn_80028D6C,
-    (const void*)fn_8002DADC,
-    (const void*)fn_8002DAE4,
-    (const void*)fn_80256028,
-    (const void*)fn_80023944,
+    (const void*)slot48__7Agent_ZFv,
+    (const void*)slot4C__7Agent_ZFv,
+    (const void*)slot50__7Agent_ZFv,
+    (const void*)slot54__7Agent_ZFv,
+    (const void*)slot58__7Agent_ZFv,
+    (const void*)slot5C__7Agent_ZFv,
+    (const void*)slot60__7Agent_ZFv,
+    (const void*)slot64__7Agent_ZFv,
+    (const void*)slot68__7Agent_ZFv,
+    (const void*)slot6C__7Agent_ZFv,
+    (const void*)slot70__7Agent_ZFv,
     (const void*)fn_8025E11C,
     (const void*)fn_80044578,
     (const void*)fn_80044904,

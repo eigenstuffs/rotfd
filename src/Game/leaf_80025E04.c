@@ -1,11 +1,11 @@
-void fn_80025E04(void) { }
+void slot94__10LodAgent_ZFv(void) { }
 
-void fn_80025E08(void) { }
+void slot98__10LodAgent_ZFv(void) { }
 
-void fn_80025E0C(void) { }
+void slot9C__10LodAgent_ZFv(void) { }
 
-int fn_80025E10(void) { return 0; }
+int slotA0__10LodAgent_ZFv(void) { return 0; }
 
-void fn_80025E18(void) { }
+void slotA4__10LodAgent_ZFv(void) { }
 
-int fn_80025E1C(void) { return 0; }
+int slotA8__10LodAgent_ZFv(void) { return 0; }

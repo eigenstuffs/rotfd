@@ -18,17 +18,17 @@ NativeRuntimeBaseList<5> lbl_802B4780 = {
 extern "C" {
 void __dt__15Object_80048624Fv();
 void __dt__15Object_800490F0Fv();
-void fn_8002392C();
-void fn_80023934();
-void fn_8002393C();
-void fn_80023944();
-void fn_80028D58();
-void fn_80028D60();
-void fn_80028D68();
-void fn_80028D6C();
+void slot48__7Agent_ZFv();
+void slot4C__7Agent_ZFv();
+void slot50__7Agent_ZFv();
+void slot70__7Agent_ZFv();
+void slot54__7Agent_ZFv();
+void slot58__7Agent_ZFv();
+void slot5C__7Agent_ZFv();
+void slot60__7Agent_ZFv();
 void fn_8002DAD8();
-void fn_8002DADC();
-void fn_8002DAE4();
+void slot64__7Agent_ZFv();
+void slot68__7Agent_ZFv();
 void fn_800443B4();
 void fn_80044448();
 void fn_80044494();
@@ -53,7 +53,7 @@ void fn_80051F6C();
 void fn_80051F74();
 void fn_80051F7C();
 void fn_80051FE0();
-void fn_80256028();
+void slot6C__7Agent_ZFv();
 void fn_8025E11C();
 void fn_8025E2FC();
 void slot0C__12BaseObject_ZFUl();
@@ -81,17 +81,17 @@ extern "C" __declspec(section ".data") const void* const lbl_802B47AC[36] __attr
     (const void*)fn_8025E2FC,
     (const void*)fn_800492B0,
     (const void*)fn_8002DAD8,
-    (const void*)fn_8002392C,
-    (const void*)fn_80023934,
-    (const void*)fn_8002393C,
-    (const void*)fn_80028D58,
-    (const void*)fn_80028D60,
-    (const void*)fn_80028D68,
-    (const void*)fn_80028D6C,
-    (const void*)fn_8002DADC,
-    (const void*)fn_8002DAE4,
-    (const void*)fn_80256028,
-    (const void*)fn_80023944,
+    (const void*)slot48__7Agent_ZFv,
+    (const void*)slot4C__7Agent_ZFv,
+    (const void*)slot50__7Agent_ZFv,
+    (const void*)slot54__7Agent_ZFv,
+    (const void*)slot58__7Agent_ZFv,
+    (const void*)slot5C__7Agent_ZFv,
+    (const void*)slot60__7Agent_ZFv,
+    (const void*)slot64__7Agent_ZFv,
+    (const void*)slot68__7Agent_ZFv,
+    (const void*)slot6C__7Agent_ZFv,
+    (const void*)slot70__7Agent_ZFv,
     (const void*)fn_8025E11C,
     (const void*)fn_80044578,
     (const void*)fn_80044904,
@@ -130,17 +130,17 @@ extern "C" __declspec(section ".data") const void* const lbl_802B4868[36] __attr
     (const void*)fn_8025E2FC,
     (const void*)fn_800443B4,
     (const void*)fn_8002DAD8,
-    (const void*)fn_8002392C,
-    (const void*)fn_80023934,
-    (const void*)fn_8002393C,
-    (const void*)fn_80028D58,
-    (const void*)fn_80028D60,
-    (const void*)fn_80028D68,
-    (const void*)fn_80028D6C,
-    (const void*)fn_8002DADC,
-    (const void*)fn_8002DAE4,
-    (const void*)fn_80256028,
-    (const void*)fn_80023944,
+    (const void*)slot48__7Agent_ZFv,
+    (const void*)slot4C__7Agent_ZFv,
+    (const void*)slot50__7Agent_ZFv,
+    (const void*)slot54__7Agent_ZFv,
+    (const void*)slot58__7Agent_ZFv,
+    (const void*)slot5C__7Agent_ZFv,
+    (const void*)slot60__7Agent_ZFv,
+    (const void*)slot64__7Agent_ZFv,
+    (const void*)slot68__7Agent_ZFv,
+    (const void*)slot6C__7Agent_ZFv,
+    (const void*)slot70__7Agent_ZFv,
     (const void*)fn_8025E11C,
     (const void*)fn_80044578,
     (const void*)fn_80044904,

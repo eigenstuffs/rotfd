@@ -33,17 +33,17 @@ extern "C" char fn_80044D3C[];
 extern "C" char fn_8025E2FC[];
 extern "C" char fn_800443B4[];
 extern "C" char fn_8002DAD8[];
-extern "C" char fn_8002392C[];
-extern "C" char fn_80023934[];
-extern "C" char fn_8002393C[];
-extern "C" char fn_80028D58[];
-extern "C" char fn_80028D60[];
-extern "C" char fn_80028D68[];
-extern "C" char fn_80028D6C[];
-extern "C" char fn_8002DADC[];
-extern "C" char fn_8002DAE4[];
-extern "C" char fn_80256028[];
-extern "C" char fn_80023944[];
+extern "C" char slot48__7Agent_ZFv[];
+extern "C" char slot4C__7Agent_ZFv[];
+extern "C" char slot50__7Agent_ZFv[];
+extern "C" char slot54__7Agent_ZFv[];
+extern "C" char slot58__7Agent_ZFv[];
+extern "C" char slot5C__7Agent_ZFv[];
+extern "C" char slot60__7Agent_ZFv[];
+extern "C" char slot64__7Agent_ZFv[];
+extern "C" char slot68__7Agent_ZFv[];
+extern "C" char slot6C__7Agent_ZFv[];
+extern "C" char slot70__7Agent_ZFv[];
 extern "C" char fn_8025E11C[];
 extern "C" char fn_80044578[];
 extern "C" char fn_80044904[];
@@ -80,17 +80,17 @@ extern "C" __declspec(section ".data") void* lbl_802B4AB4[39] = {
     (void*)&fn_8025E2FC,
     (void*)&fn_800443B4,
     (void*)&fn_8002DAD8,
-    (void*)&fn_8002392C,
-    (void*)&fn_80023934,
-    (void*)&fn_8002393C,
-    (void*)&fn_80028D58,
-    (void*)&fn_80028D60,
-    (void*)&fn_80028D68,
-    (void*)&fn_80028D6C,
-    (void*)&fn_8002DADC,
-    (void*)&fn_8002DAE4,
-    (void*)&fn_80256028,
-    (void*)&fn_80023944,
+    (void*)&slot48__7Agent_ZFv,
+    (void*)&slot4C__7Agent_ZFv,
+    (void*)&slot50__7Agent_ZFv,
+    (void*)&slot54__7Agent_ZFv,
+    (void*)&slot58__7Agent_ZFv,
+    (void*)&slot5C__7Agent_ZFv,
+    (void*)&slot60__7Agent_ZFv,
+    (void*)&slot64__7Agent_ZFv,
+    (void*)&slot68__7Agent_ZFv,
+    (void*)&slot6C__7Agent_ZFv,
+    (void*)&slot70__7Agent_ZFv,
     (void*)&fn_8025E11C,
     (void*)&fn_80044578,
     (void*)&fn_80044904,
@@ -121,17 +121,17 @@ extern "C" __declspec(section ".data") void* lbl_802B4B50[36] = {
     (void*)&fn_8025E2FC,
     (void*)&fn_800443B4,
     (void*)&fn_8002DAD8,
-    (void*)&fn_8002392C,
-    (void*)&fn_80023934,
-    (void*)&fn_8002393C,
-    (void*)&fn_80028D58,
-    (void*)&fn_80028D60,
-    (void*)&fn_80028D68,
-    (void*)&fn_80028D6C,
-    (void*)&fn_8002DADC,
-    (void*)&fn_8002DAE4,
-    (void*)&fn_80256028,
-    (void*)&fn_80023944,
+    (void*)&slot48__7Agent_ZFv,
+    (void*)&slot4C__7Agent_ZFv,
+    (void*)&slot50__7Agent_ZFv,
+    (void*)&slot54__7Agent_ZFv,
+    (void*)&slot58__7Agent_ZFv,
+    (void*)&slot5C__7Agent_ZFv,
+    (void*)&slot60__7Agent_ZFv,
+    (void*)&slot64__7Agent_ZFv,
+    (void*)&slot68__7Agent_ZFv,
+    (void*)&slot6C__7Agent_ZFv,
+    (void*)&slot70__7Agent_ZFv,
     (void*)&fn_8025E11C,
     (void*)&fn_80044578,
     (void*)&fn_80044904,

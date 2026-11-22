@@ -6,7 +6,7 @@ extern "C" {extern const struct Pool{char opaque00[0x70];MemberPointer entries[5
 extern "C" {signed char fn_8025E9FC(void*,int);void fn_80286058(void*,int);void fn_8025E8F8(void*);void fn_80021724(void*);}
 struct Prefix{u32 unknown00,unknown04;};
 struct Object:Prefix{virtual void slot08();virtual void slot0C();virtual void slot10();virtual void slot14();virtual void slot18();virtual void slot1C();virtual void slot20();virtual void slot24();virtual void slot28();virtual void slot2C();virtual void slot30();virtual void slot34();char opaque0C[0x38-0xC];unsigned long long flags38;};
-extern "C" int fn_800626A0(Object*self,int event,Callback*callback){
+extern "C" int slotDC__11CLevelAgentFv(Object*self,int event,Callback*callback){
 const Pool*members=&lbl_802B6028;int result=1;
 switch(event){
 case 0:fn_8025EF34(self,members->entries[0],-1);return 1;

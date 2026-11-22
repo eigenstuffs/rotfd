@@ -29,18 +29,18 @@ void fn_80258654();
 void fn_80257FF0();
 void fn_80257E04();
 void fn_80257D20();
-void fn_8002392C();
-void fn_80023934();
-void fn_8002393C();
-void fn_80028D58();
-void fn_80028D60();
-void fn_80028D68();
-void fn_80028D6C();
-void fn_80257C58();
-void fn_80257C50();
-void fn_80256028();
-void fn_80023944();
-void fn_80023928();
+void slot48__7Agent_ZFv();
+void slot4C__7Agent_ZFv();
+void slot50__7Agent_ZFv();
+void slot54__7Agent_ZFv();
+void slot58__7Agent_ZFv();
+void slot5C__7Agent_ZFv();
+void slot60__7Agent_ZFv();
+void slot64__15AnimatedAgent_ZFv();
+void slot68__15AnimatedAgent_ZFv();
+void slot6C__7Agent_ZFv();
+void slot70__7Agent_ZFv();
+void slot74__15AnimatedAgent_ZFv();
 SkinActionVtable lbl_802ECAF8 = {0,0,{
     (SkinActionVirtualSlot)__dt__23CallbackTailOwnerSecondFv,
     (SkinActionVirtualSlot)slot0C__13Root_80207414FUl,
@@ -58,18 +58,18 @@ SkinActionVtable lbl_802ECAF8 = {0,0,{
     (SkinActionVirtualSlot)fn_80257FF0,
     (SkinActionVirtualSlot)fn_80257E04,
     (SkinActionVirtualSlot)fn_80257D20,
-    (SkinActionVirtualSlot)fn_8002392C,
-    (SkinActionVirtualSlot)fn_80023934,
-    (SkinActionVirtualSlot)fn_8002393C,
-    (SkinActionVirtualSlot)fn_80028D58,
-    (SkinActionVirtualSlot)fn_80028D60,
-    (SkinActionVirtualSlot)fn_80028D68,
-    (SkinActionVirtualSlot)fn_80028D6C,
-    (SkinActionVirtualSlot)fn_80257C58,
-    (SkinActionVirtualSlot)fn_80257C50,
-    (SkinActionVirtualSlot)fn_80256028,
-    (SkinActionVirtualSlot)fn_80023944,
-    (SkinActionVirtualSlot)fn_80023928,
+    (SkinActionVirtualSlot)slot48__7Agent_ZFv,
+    (SkinActionVirtualSlot)slot4C__7Agent_ZFv,
+    (SkinActionVirtualSlot)slot50__7Agent_ZFv,
+    (SkinActionVirtualSlot)slot54__7Agent_ZFv,
+    (SkinActionVirtualSlot)slot58__7Agent_ZFv,
+    (SkinActionVirtualSlot)slot5C__7Agent_ZFv,
+    (SkinActionVirtualSlot)slot60__7Agent_ZFv,
+    (SkinActionVirtualSlot)slot64__15AnimatedAgent_ZFv,
+    (SkinActionVirtualSlot)slot68__15AnimatedAgent_ZFv,
+    (SkinActionVirtualSlot)slot6C__7Agent_ZFv,
+    (SkinActionVirtualSlot)slot70__7Agent_ZFv,
+    (SkinActionVirtualSlot)slot74__15AnimatedAgent_ZFv,
     (SkinActionVirtualSlot)fn_8025ACF0
 }};
 }

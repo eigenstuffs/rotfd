@@ -9,11 +9,11 @@ struct ParentTransferVirtual:ParentTransferVirtualStorage {
 struct ParentTransferParent {char unknown0[0x1C];CallbackRelatedHandle handle1C;};
 struct ParentTransferOwner {char unknown0[0x60];unsigned long word60;};
 extern "C" {
-    void fn_802560D8(void*);
+    void slot3C__7Agent_ZFv(void*);
     void fn_801F86C8(void*,const void*,int);
 }
 extern "C" void fn_80254F70(CallbackTransferOwner*self,const CallbackRelatedHandle&value){
-    fn_802560D8(self);
+    slot3C__7Agent_ZFv(self);
     fn_801F86C8(lbl_801E9D24.manager,&self->handle58,-1);
     *(unsigned long*)&self->handle58=*(const unsigned long*)&value;
     fn_801F86C8(lbl_801E9D24.manager,&value,1);

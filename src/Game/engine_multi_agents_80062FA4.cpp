@@ -65,22 +65,22 @@ struct Object_8005E258 {
     char unknown08[0x160-8];
     ~Object_8005E258();
 };
-extern "C" char lbl_802B6468[];
+extern "C" char __vt__17CActorScriptAgent[];
 struct Agent_8002B5F4 {
     u32 unknown00[2];
     void*vtable;
     char unknownC[0x90-0xC];
     ~Agent_8002B5F4();
 };
-struct Agent_80062E18:Agent_8002B5F4,Object_8005E258 {
+struct CActorScriptAgent:Agent_8002B5F4,Object_8005E258 {
     u32 unknown1F0;
     H6 handle1F4;
-    ~Agent_80062E18();
+    ~CActorScriptAgent();
     static void operator delete(void*p)throw() {
         fn_801EF610(lbl_801EF5C8,p);
     }
 };
-Agent_80062E18::~Agent_80062E18() {
-    vtable=lbl_802B6468;
-    secondaryVtable=lbl_802B6468+0xB4;
+CActorScriptAgent::~CActorScriptAgent() {
+    vtable=__vt__17CActorScriptAgent;
+    secondaryVtable=__vt__17CActorScriptAgent+0xB4;
 }

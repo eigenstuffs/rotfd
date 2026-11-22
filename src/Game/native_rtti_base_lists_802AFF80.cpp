@@ -30,16 +30,16 @@ void fn_80022384();
 void fn_8002264C();
 void fn_80023068();
 void fn_80023288();
-void fn_8002390C();
-void fn_80023914();
-void fn_8002391C();
-void fn_80023920();
-void fn_80023924();
-void fn_80023928();
-void fn_8002392C();
-void fn_80023934();
-void fn_8002393C();
-void fn_80023944();
+void slot5C__11Throwable_ZFv();
+void slot60__11Throwable_ZFv();
+void slot84__11Throwable_ZFv();
+void slot88__11Throwable_ZFv();
+void slot8C__11Throwable_ZFv();
+void slot74__15AnimatedAgent_ZFv();
+void slot48__7Agent_ZFv();
+void slot4C__7Agent_ZFv();
+void slot50__7Agent_ZFv();
+void slot70__7Agent_ZFv();
 void fn_80023B18();
 void fn_80023B20();
 void fn_80023B28();
@@ -48,19 +48,19 @@ void fn_80023CD8();
 void fn_80023CE0();
 void fn_80023CE8();
 void fn_80023D8C();
-void fn_80256028();
-void fn_80257C50();
-void fn_80257C58();
+void slot6C__7Agent_ZFv();
+void slot68__15AnimatedAgent_ZFv();
+void slot64__15AnimatedAgent_ZFv();
 void fn_80258C74();
 void fn_80258D48();
 void fn_80258E48();
 void fn_80258F60();
 void fn_80259FB4();
-void fn_8025A5F8();
-void fn_8025B448();
-void fn_8025BAD4();
-void fn_8025BAF4();
-void fn_8025BB14();
+void slot78__13MovingAgent_ZFv();
+void slot7C__11Throwable_ZFv();
+void slot58__11Throwable_ZFv();
+void slot54__11Throwable_ZFv();
+void slot80__11Throwable_ZFv();
 void slot0C__12BaseObject_ZFUl();
 void slot10__12BaseObject_ZFv();
 void slot14__12BaseObject_ZFv();
@@ -85,24 +85,24 @@ extern "C" __declspec(section ".data") const void* const lbl_802AFFCC[40] __attr
     (const void*)fn_80258E48,
     (const void*)fn_80021CB4,
     (const void*)fn_80259FB4,
-    (const void*)fn_8002392C,
-    (const void*)fn_80023934,
-    (const void*)fn_8002393C,
-    (const void*)fn_8025BAF4,
-    (const void*)fn_8025BAD4,
-    (const void*)fn_8002390C,
-    (const void*)fn_80023914,
-    (const void*)fn_80257C58,
-    (const void*)fn_80257C50,
-    (const void*)fn_80256028,
-    (const void*)fn_80023944,
-    (const void*)fn_80023928,
-    (const void*)fn_8025A5F8,
-    (const void*)fn_8025B448,
-    (const void*)fn_8025BB14,
-    (const void*)fn_8002391C,
-    (const void*)fn_80023920,
-    (const void*)fn_80023924,
+    (const void*)slot48__7Agent_ZFv,
+    (const void*)slot4C__7Agent_ZFv,
+    (const void*)slot50__7Agent_ZFv,
+    (const void*)slot54__11Throwable_ZFv,
+    (const void*)slot58__11Throwable_ZFv,
+    (const void*)slot5C__11Throwable_ZFv,
+    (const void*)slot60__11Throwable_ZFv,
+    (const void*)slot64__15AnimatedAgent_ZFv,
+    (const void*)slot68__15AnimatedAgent_ZFv,
+    (const void*)slot6C__7Agent_ZFv,
+    (const void*)slot70__7Agent_ZFv,
+    (const void*)slot74__15AnimatedAgent_ZFv,
+    (const void*)slot78__13MovingAgent_ZFv,
+    (const void*)slot7C__11Throwable_ZFv,
+    (const void*)slot80__11Throwable_ZFv,
+    (const void*)slot84__11Throwable_ZFv,
+    (const void*)slot88__11Throwable_ZFv,
+    (const void*)slot8C__11Throwable_ZFv,
     (const void*)fn_800221DC,
     (const void*)fn_80021348,
     (const void*)fn_80022384,
@@ -142,24 +142,24 @@ extern "C" __declspec(section ".data") const void* const lbl_802B00B8[40] __attr
     (const void*)fn_80258E48,
     (const void*)fn_80021CB4,
     (const void*)fn_80259FB4,
-    (const void*)fn_8002392C,
-    (const void*)fn_80023934,
-    (const void*)fn_8002393C,
-    (const void*)fn_8025BAF4,
-    (const void*)fn_8025BAD4,
-    (const void*)fn_8002390C,
-    (const void*)fn_80023914,
-    (const void*)fn_80257C58,
-    (const void*)fn_80257C50,
-    (const void*)fn_80256028,
-    (const void*)fn_80023944,
-    (const void*)fn_80023928,
-    (const void*)fn_8025A5F8,
-    (const void*)fn_8025B448,
-    (const void*)fn_8025BB14,
-    (const void*)fn_8002391C,
-    (const void*)fn_80023920,
-    (const void*)fn_80023924,
+    (const void*)slot48__7Agent_ZFv,
+    (const void*)slot4C__7Agent_ZFv,
+    (const void*)slot50__7Agent_ZFv,
+    (const void*)slot54__11Throwable_ZFv,
+    (const void*)slot58__11Throwable_ZFv,
+    (const void*)slot5C__11Throwable_ZFv,
+    (const void*)slot60__11Throwable_ZFv,
+    (const void*)slot64__15AnimatedAgent_ZFv,
+    (const void*)slot68__15AnimatedAgent_ZFv,
+    (const void*)slot6C__7Agent_ZFv,
+    (const void*)slot70__7Agent_ZFv,
+    (const void*)slot74__15AnimatedAgent_ZFv,
+    (const void*)slot78__13MovingAgent_ZFv,
+    (const void*)slot7C__11Throwable_ZFv,
+    (const void*)slot80__11Throwable_ZFv,
+    (const void*)slot84__11Throwable_ZFv,
+    (const void*)slot88__11Throwable_ZFv,
+    (const void*)slot8C__11Throwable_ZFv,
     (const void*)fn_800221DC,
     (const void*)fn_80021348,
     (const void*)fn_80022384,

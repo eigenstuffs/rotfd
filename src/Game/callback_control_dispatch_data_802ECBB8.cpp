@@ -28,7 +28,7 @@ void slot0C__13Root_80207414FUl(void*);
 void slot10__13Root_80207414Fv(void*);
 void slot14__13Root_80207414Fv(void*);
 void fn_8025BBA8(void*);
-void fn_80259F0C(void*);
+void slot1C__13MovingAgent_ZFv(void*);
 void fn_8025B2FC(void*);
 void fn_8025B304(void*);
 void fn_8025B30C(void*);
@@ -39,25 +39,25 @@ void fn_8025BB68(void*);
 void fn_8025A324(void*);
 void fn_8025A0A4(void*);
 void fn_80259FB4(void*);
-void fn_8002392C(void*);
-void fn_80023934(void*);
-void fn_8002393C(void*);
-void fn_8025BAF4(void*);
-void fn_8025BAD4(void*);
-void fn_8002390C(void*);
-void fn_80023914(void*);
-void fn_80257C58(void*);
-void fn_80257C50(void*);
-void fn_80256028(void*);
-void fn_80023944(void*);
-void fn_80023928(void*);
-void fn_8025A5F8(void*);
-int fn_8025B448(CallbackControlOwner*, int, CallbackControlRecord*);
-void fn_8025BB14(void*);
-void fn_8002391C(void*);
-void fn_80023920(void*);
-void fn_80023924(void*);
-void fn_8025B928(void*);
+void slot48__7Agent_ZFv(void*);
+void slot4C__7Agent_ZFv(void*);
+void slot50__7Agent_ZFv(void*);
+void slot54__11Throwable_ZFv(void*);
+void slot58__11Throwable_ZFv(void*);
+void slot5C__11Throwable_ZFv(void*);
+void slot60__11Throwable_ZFv(void*);
+void slot64__15AnimatedAgent_ZFv(void*);
+void slot68__15AnimatedAgent_ZFv(void*);
+void slot6C__7Agent_ZFv(void*);
+void slot70__7Agent_ZFv(void*);
+void slot74__15AnimatedAgent_ZFv(void*);
+void slot78__13MovingAgent_ZFv(void*);
+int slot7C__11Throwable_ZFv(CallbackControlOwner*, int, CallbackControlRecord*);
+void slot80__11Throwable_ZFv(void*);
+void slot84__11Throwable_ZFv(void*);
+void slot88__11Throwable_ZFv(void*);
+void slot8C__11Throwable_ZFv(void*);
+void slot90__11Throwable_ZFv(void*);
 struct CallbackControlDispatchTable {
 const void* typeInfo;
 long displacement;
@@ -105,7 +105,7 @@ slot0C__13Root_80207414FUl,
 slot10__13Root_80207414Fv,
 slot14__13Root_80207414Fv,
 fn_8025BBA8,
-fn_80259F0C,
+slot1C__13MovingAgent_ZFv,
 fn_8025B2FC,
 fn_8025B304,
 fn_8025B30C,
@@ -116,25 +116,25 @@ fn_8025BB68,
 fn_8025A324,
 fn_8025A0A4,
 fn_80259FB4,
-fn_8002392C,
-fn_80023934,
-fn_8002393C,
-fn_8025BAF4,
-fn_8025BAD4,
-fn_8002390C,
-fn_80023914,
-fn_80257C58,
-fn_80257C50,
-fn_80256028,
-fn_80023944,
-fn_80023928,
-fn_8025A5F8,
-fn_8025B448,
-fn_8025BB14,
-fn_8002391C,
-fn_80023920,
-fn_80023924,
-fn_8025B928
+slot48__7Agent_ZFv,
+slot4C__7Agent_ZFv,
+slot50__7Agent_ZFv,
+slot54__11Throwable_ZFv,
+slot58__11Throwable_ZFv,
+slot5C__11Throwable_ZFv,
+slot60__11Throwable_ZFv,
+slot64__15AnimatedAgent_ZFv,
+slot68__15AnimatedAgent_ZFv,
+slot6C__7Agent_ZFv,
+slot70__7Agent_ZFv,
+slot74__15AnimatedAgent_ZFv,
+slot78__13MovingAgent_ZFv,
+slot7C__11Throwable_ZFv,
+slot80__11Throwable_ZFv,
+slot84__11Throwable_ZFv,
+slot88__11Throwable_ZFv,
+slot8C__11Throwable_ZFv,
+slot90__11Throwable_ZFv
 };
 }
 

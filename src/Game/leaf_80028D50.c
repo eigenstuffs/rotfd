@@ -2,13 +2,13 @@ extern unsigned int lbl_803775A8;
 
 int fn_80028D50(void) { return 0; }
 
-int fn_80028D58(void) { return 0; }
+int slot54__7Agent_ZFv(void) { return 0; }
 
-int fn_80028D60(void) { return 0; }
+int slot58__7Agent_ZFv(void) { return 0; }
 
-void fn_80028D68(void) { }
+void slot5C__7Agent_ZFv(void) { }
 
-void fn_80028D6C(void) { }
+void slot60__7Agent_ZFv(void) { }
 
 unsigned int fn_80028D70(void) { return lbl_803775A8; }
 

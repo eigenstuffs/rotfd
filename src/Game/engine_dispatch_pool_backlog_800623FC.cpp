@@ -14,7 +14,7 @@ extern "C" MemberPointer lbl_802B6040[5] = {
     {0,0xD8,8},
 };
 
-extern "C" int fn_800623FC(Object*self,int event,Callback*callback){
+extern "C" int slotD8__11CLevelAgentFv(Object*self,int event,Callback*callback){
 const Pool*members=&lbl_802B6028;int result=1;
 switch(event){
 case 0:fn_8025EF34(self,members->entries[0],-1);return 1;

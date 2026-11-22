@@ -180,7 +180,7 @@ struct Owner {
 };
 extern "C" {
     extern const Pool lbl_802AEB80;
-    void fn_802560D8(void*);
+    void slot3C__7Agent_ZFv(void*);
     NameHandle fn_801B52EC(Manager*,const char*);
     void fn_80230F7C(void*,const Handle*);
     void fn_802585E8(void*,ValueHandle);
@@ -212,7 +212,7 @@ inline void dispatchPrimary(Owner*self){
 extern "C" void fn_80257FF0(Owner*self,const Handle*incoming){
     const Pool*const pool=&lbl_802AEB80;
     unsigned long key;
-    fn_802560D8(self);
+    slot3C__7Agent_ZFv(self);
     if(!(self->flags&0x80ULL))return;
     if(!(((Incoming*)resolve(*incoming))->flags120&0x800))return;
     assignHandle(self->handle64,HandleCopy(fn_801B52EC(lbl_801E9D24.manager,pool->playAnim)));

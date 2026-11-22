@@ -4,7 +4,7 @@
 // No constructor, destructor, complete class identity or RTTI ownership is claimed.
 // Inferred partial observed interface only; complete inheritance/type/key provenance unknown.
 struct Handle_80062E18 {signed int tag:8;signed int index:24;};
-struct OpaqueHandle;
+struct OpaqueHandle;struct Handle_801F7F10;
 struct PrimaryPrefix_80062E18 {unsigned long unknown00[2];};
 struct PrimaryView_80062E18:PrimaryPrefix_80062E18 {
  virtual ~PrimaryView_80062E18();
@@ -13,16 +13,16 @@ struct PrimaryView_80062E18:PrimaryPrefix_80062E18 {
  virtual void slot_014();
  virtual void slot_018();
  virtual void slot_01C();
- virtual void slot_020();
- virtual void slot_024();
- virtual void slot_028();
- virtual void slot_02C();
+ virtual void slot20();
+ virtual void slot24();
+ virtual void slot28();
+ virtual void slot2C();
  virtual void slot_030();
  virtual void slot_034();
  virtual void slot_038();
  virtual void slot_03C();
- virtual void slot_040();
- virtual void slot_044();
+ virtual void slot40();
+ virtual void slot44();
  virtual void slot_048();
  virtual void slot_04C();
  virtual void slot_050();
@@ -49,7 +49,7 @@ struct PrimaryView_80062E18:PrimaryPrefix_80062E18 {
  virtual void slot_0A4();
  virtual void slot_0A8();
  virtual void slot_0AC();
- virtual void slot_0B0();
+ virtual void slotB0();
  virtual void slot_0B4();
  virtual void slot_0B8();
  virtual void slot_0BC();
@@ -101,48 +101,48 @@ struct PrimaryView_80062E18:PrimaryPrefix_80062E18 {
 struct SecondaryPrefix_80062E18 {unsigned long unknown00;};
 struct SecondaryView_80062E18:SecondaryPrefix_80062E18 {
  virtual ~SecondaryView_80062E18();
- virtual void method_80063074();
- virtual void method_8006311C();
- virtual void method_80064638();
- virtual void*method_800645EC();
- virtual float method_800645E4();
- virtual void method_800645C4();
- virtual int method_800645A4(int);
- virtual void*method_80024DAC();
- virtual unsigned long method_8006459C();
- virtual unsigned char method_80064594();
- virtual unsigned short method_8006458C();
- virtual void method_80064560();
- virtual void method_80064540(const OpaqueHandle&);
- virtual void method_8006451C(int,int);
- virtual void method_800644FC(int,void*);
- virtual void method_80064470(int);
- virtual void method_80064468(unsigned long);
- virtual void method_80064460(unsigned char);
- virtual void method_80064458(unsigned short);
+ virtual void slot18();
+ virtual void script10();
+ virtual void script14();
+ virtual void*script18();
+ virtual float script1C();
+ virtual void script20();
+ virtual int script24(int);
+ virtual void*script28();
+ virtual unsigned long GetHealth();
+ virtual unsigned char GetWeaponType();
+ virtual unsigned short GetWeaponDamage();
+ virtual void script38();
+ virtual void script3C(const Handle_801F7F10&);
+ virtual void script40(int,int);
+ virtual void script44(int,void*);
+ virtual void script48(int);
+ virtual void SetHealth(unsigned long);
+ virtual void SetWeaponType(unsigned char);
+ virtual void SetWeaponDamage(unsigned short);
  char unknown08[0x15D-8];signed char registered;char unknown15E[2];
 };
-struct Agent_80062E18:PrimaryView_80062E18,SecondaryView_80062E18 {
- virtual void method_80064458(unsigned short);
- virtual void method_80064460(unsigned char);
- virtual void method_80064468(unsigned long);
- virtual void method_80064470(int);
- virtual void method_800644FC(int,void*);
- virtual void method_8006451C(int,int);
- virtual void method_80064540(const OpaqueHandle&);
- virtual void method_80064560();
- virtual unsigned short method_8006458C();
- virtual unsigned char method_80064594();
- virtual unsigned long method_8006459C();
- virtual void*method_80024DAC();
- virtual int method_800645A4(int);
- virtual void method_800645C4();
- virtual float method_800645E4();
- virtual void*method_800645EC();
- virtual void method_80064638();
- virtual void method_8006311C();
- virtual void method_80063074();
- virtual ~Agent_80062E18();
+struct CActorScriptAgent:PrimaryView_80062E18,SecondaryView_80062E18 {
+ virtual void SetWeaponDamage(unsigned short);
+ virtual void SetWeaponType(unsigned char);
+ virtual void SetHealth(unsigned long);
+ virtual void script48(int);
+ virtual void script44(int,void*);
+ virtual void script40(int,int);
+ virtual void script3C(const Handle_801F7F10&);
+ virtual void script38();
+ virtual unsigned short GetWeaponDamage();
+ virtual unsigned char GetWeaponType();
+ virtual unsigned long GetHealth();
+ virtual void*script28();
+ virtual int script24(int);
+ virtual void script20();
+ virtual float script1C();
+ virtual void*script18();
+ virtual void script14();
+ virtual void script10();
+ virtual void slot18();
+ virtual ~CActorScriptAgent();
  unsigned long unknown1F0;Handle_80062E18 resource;unsigned char enabled;
 };
 
@@ -154,6 +154,6 @@ extern "C" Context_80062E18 lbl_801E9D24;
 static inline void*resolve(const Handle_80062E18*h){HandleEntry_80062E18*entry=&lbl_801E9D24.manager->entries[h->index];if(entry->tag==h->tag)return entry->object;return 0;}
 typedef char CheckPrimarySize[(sizeof(PrimaryView_80062E18)==0x90)?1:-1];
 typedef char CheckSecondarySize[(sizeof(SecondaryView_80062E18)==0x160)?1:-1];
-typedef char CheckOwnerSize[(sizeof(Agent_80062E18)==0x200)?1:-1];
+typedef char CheckOwnerSize[(sizeof(CActorScriptAgent)==0x200)?1:-1];
 
 #endif

@@ -27,7 +27,7 @@ struct StateContext {
 
 extern "C" {
 extern StateContext lbl_801E9D24;
-void fn_80063290(void*, int);
+void slot40__17CActorScriptAgentFi(void*, int);
 unsigned long fn_8009F170(void*);
 }
 

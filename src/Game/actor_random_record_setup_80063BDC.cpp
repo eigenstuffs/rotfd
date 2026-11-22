@@ -12,7 +12,7 @@ struct Returned_63BDC:Handle_801F7F10{Returned_63BDC();~Returned_63BDC(){}};
 struct Name{Word value;Name(const char*);};extern "C"Word fn_801F948C(Name*,const char*);inline Name::Name(const char*s){value=fn_801F948C(this,s);}
 extern "C"{void fn_8022F49C(Node*,const Record_800218F8*);void fn_80213A18(Node*);void fn_80255D88(Self*,void*,int,int,int);Returned_63BDC fn_80058778(Controller*,const Name&,int);void fn_802554F4(Node*);void fn_80254BB4(Node*,const Point*);}
 inline Node*resolve(const Handle_801F7F10&h){int index=h.bits.index;Manager*m=lbl_801E9D24.manager;int tag=m->entries[index].getTag();return tag==h.bits.tag?m->entries[index].object:0;}
-extern "C"void fn_80063BDC(Self*self){
+extern "C"void slot118__17CActorScriptAgentFv(Self*self){
  int eligible=0;Controller*c=lbl_801E9D24.panel->controller;int mode=c->mode,state=c->state;
  if((mode==1&&state==6)||(mode==4&&state==0)||(mode==0&&state==4)||(mode==0&&state==7))eligible=1;
  signed char special=eligible;Record_800218F8 record;record.f18=lbl_80378704;record.f0C=lbl_80378708*(lbl_8037870C*fn_801F1200());record.f10=lbl_80378714*fn_801F1200()+lbl_80378710;record.f14=lbl_80378718;record.f20=lbl_803786F8;

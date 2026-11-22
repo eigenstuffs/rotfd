@@ -42,7 +42,7 @@ extern "C" {extern char lbl_802AEC2C[],lbl_801E9D24[];void fn_8025A48C(void*);vo
 
 
 
-extern "C" void fn_8025BB14(CallbackVirtualControl*self) {self->slot5C(0);self->slot60(0);}
+extern "C" void slot80__11Throwable_ZFv(CallbackVirtualControl*self) {self->slot5C(0);self->slot60(0);}
 extern "C" void fn_8025BB68(CallbackVirtualControl*self) {fn_80258654(self);self->slot80();}
 extern "C" void fn_8025BBA8(CallbackVirtualControl*self) {
  fn_8025A48C(self);self->slot80();self->slot28(0);

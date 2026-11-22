@@ -149,16 +149,16 @@ typedef char ObjectSize[(sizeof(ObjectVirtualView_80065C60)==0x200)?1:-1];
 
 extern "C" {
  extern void*lbl_80377728;
- void fn_8006311C(void*);void fn_80063290(void*,int);
- void fn_80063F98(void*,const OpaqueHandle&);void fn_80063FB8(void*);
- void fn_8025ED38(void*,void*,void*);void fn_800642A8(void*,void*);
- int fn_8025E70C(void*,void*,void*);int fn_8006434C(void*,void*);
+ void fn_8006311C(void*);void slot40__17CActorScriptAgentFi(void*,int);
+ void slot44__17CActorScriptAgentFRC12OpaqueHandle(void*,const OpaqueHandle&);void slotB0__17CActorScriptAgentFv(void*);
+ void fn_8025ED38(void*,void*,void*);void slot28__17CActorScriptAgentFPv(void*,void*);
+ int fn_8025E70C(void*,void*,void*);int slot2C__17CActorScriptAgentFPv(void*,void*);
 }
 void ObjectVirtualView_80065C60::method_8006311C(){fn_8006311C(this);}
-void ObjectVirtualView_80065C60::slot_040(int argument){fn_80063290(this,argument);}
-void ObjectVirtualView_80065C60::slot_044(const OpaqueHandle&value){fn_80063F98(this,value);}
-void ObjectVirtualView_80065C60::slot_0B0(){fn_80063FB8(this);}
+void ObjectVirtualView_80065C60::slot_040(int argument){slot40__17CActorScriptAgentFi(this,argument);}
+void ObjectVirtualView_80065C60::slot_044(const OpaqueHandle&value){slot44__17CActorScriptAgentFRC12OpaqueHandle(this,value);}
+void ObjectVirtualView_80065C60::slot_0B0(){slotB0__17CActorScriptAgentFv(this);}
 unsigned long ObjectVirtualView_80065C60::slot_020(){return reinterpret_cast<unsigned long>(lbl_80377728);}
 void ObjectVirtualView_80065C60::slot_024(unsigned long value){lbl_80377728=reinterpret_cast<void*>(value);}
-void ObjectVirtualView_80065C60::slot_028(void*value){fn_8025ED38(this,value,lbl_80377728);fn_800642A8(this,value);}
-int ObjectVirtualView_80065C60::slot_02C(void*value){int result=fn_8025E70C(this,value,lbl_80377728);if(result!=-1)return result;return fn_8006434C(this,value);}
+void ObjectVirtualView_80065C60::slot_028(void*value){fn_8025ED38(this,value,lbl_80377728);slot28__17CActorScriptAgentFPv(this,value);}
+int ObjectVirtualView_80065C60::slot_02C(void*value){int result=fn_8025E70C(this,value,lbl_80377728);if(result!=-1)return result;return slot2C__17CActorScriptAgentFPv(this,value);}

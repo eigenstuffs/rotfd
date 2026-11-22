@@ -14,17 +14,17 @@ NativeRuntimeBaseList<2> lbl_802C9130 = {
 // Adjacent native method and runtime-base records.
 extern "C" {
 void __dt__15Object_800E82C4Fv();
-void fn_8002392C();
-void fn_80023934();
-void fn_8002393C();
-void fn_80023944();
-void fn_80028D58();
-void fn_80028D60();
-void fn_80028D68();
-void fn_80028D6C();
+void slot48__7Agent_ZFv();
+void slot4C__7Agent_ZFv();
+void slot50__7Agent_ZFv();
+void slot70__7Agent_ZFv();
+void slot54__7Agent_ZFv();
+void slot58__7Agent_ZFv();
+void slot5C__7Agent_ZFv();
+void slot60__7Agent_ZFv();
 void fn_8002DAD8();
-void fn_8002DADC();
-void fn_8002DAE4();
+void slot64__7Agent_ZFv();
+void slot68__7Agent_ZFv();
 void fn_80035220();
 void fn_80035224();
 void fn_80035228();
@@ -36,8 +36,8 @@ void fn_800E94A8();
 void fn_800E94B0();
 void fn_800E94B8();
 void fn_800E94FC();
-void fn_80256028();
-void fn_802560D8();
+void slot6C__7Agent_ZFv();
+void slot3C__7Agent_ZFv();
 void slot0C__12BaseObject_ZFUl();
 void slot10__12BaseObject_ZFv();
 void slot14__12BaseObject_ZFv();
@@ -68,20 +68,20 @@ extern "C" __declspec(section ".data") const void* const lbl_802C9160[34] __attr
     (const void*)fn_80035224,
     (const void*)fn_80035228,
     (const void*)fn_800E85E0,
-    (const void*)fn_802560D8,
+    (const void*)slot3C__7Agent_ZFv,
     (const void*)fn_80035220,
     (const void*)fn_8002DAD8,
-    (const void*)fn_8002392C,
-    (const void*)fn_80023934,
-    (const void*)fn_8002393C,
-    (const void*)fn_80028D58,
-    (const void*)fn_80028D60,
-    (const void*)fn_80028D68,
-    (const void*)fn_80028D6C,
-    (const void*)fn_8002DADC,
-    (const void*)fn_8002DAE4,
-    (const void*)fn_80256028,
-    (const void*)fn_80023944,
+    (const void*)slot48__7Agent_ZFv,
+    (const void*)slot4C__7Agent_ZFv,
+    (const void*)slot50__7Agent_ZFv,
+    (const void*)slot54__7Agent_ZFv,
+    (const void*)slot58__7Agent_ZFv,
+    (const void*)slot5C__7Agent_ZFv,
+    (const void*)slot60__7Agent_ZFv,
+    (const void*)slot64__7Agent_ZFv,
+    (const void*)slot68__7Agent_ZFv,
+    (const void*)slot6C__7Agent_ZFv,
+    (const void*)slot70__7Agent_ZFv,
     (const void*)fn_800E9240,
     0,
     0,

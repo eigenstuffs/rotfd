@@ -6,20 +6,20 @@ struct NativeBaseList6 { NativeBase bases[6]; u32 terminator; };
 extern "C" {
 void __dt__14Agent_800E3250Fv();
 void __dt__14Agent_800E3798Fv();
-void fn_8002390C();
-void fn_80023914();
-void fn_8002391C();
-void fn_80023920();
-void fn_80023924();
-void fn_80023928();
-void fn_8002392C();
-void fn_80023934();
-void fn_8002393C();
-void fn_80023944();
-void fn_80028D58();
-void fn_80028D60();
-void fn_80028D68();
-void fn_80028D6C();
+void slot5C__11Throwable_ZFv();
+void slot60__11Throwable_ZFv();
+void slot84__11Throwable_ZFv();
+void slot88__11Throwable_ZFv();
+void slot8C__11Throwable_ZFv();
+void slot74__15AnimatedAgent_ZFv();
+void slot48__7Agent_ZFv();
+void slot4C__7Agent_ZFv();
+void slot50__7Agent_ZFv();
+void slot70__7Agent_ZFv();
+void slot54__7Agent_ZFv();
+void slot58__7Agent_ZFv();
+void slot5C__7Agent_ZFv();
+void slot60__7Agent_ZFv();
 void fn_800E3308();
 void fn_800E33A8();
 void fn_800E3424();
@@ -37,25 +37,25 @@ void fn_800E4078();
 void fn_800E4080();
 void fn_800E4088();
 void fn_800E40FC();
-void fn_80256028();
-void fn_80257C50();
-void fn_80257C58();
+void slot6C__7Agent_ZFv();
+void slot68__15AnimatedAgent_ZFv();
+void slot64__15AnimatedAgent_ZFv();
 void fn_80258654();
 void fn_80258C74();
 void fn_80258D48();
 void fn_80258E48();
 void fn_80258F60();
-void fn_80259F0C();
+void slot1C__13MovingAgent_ZFv();
 void fn_80259FB4();
 void fn_8025A190();
 void fn_8025A244();
 void fn_8025A324();
-void fn_8025A5F8();
-void fn_8025B448();
-void fn_8025B928();
-void fn_8025BAD4();
-void fn_8025BAF4();
-void fn_8025BB14();
+void slot78__13MovingAgent_ZFv();
+void slot7C__11Throwable_ZFv();
+void slot90__11Throwable_ZFv();
+void slot58__11Throwable_ZFv();
+void slot54__11Throwable_ZFv();
+void slot80__11Throwable_ZFv();
 extern char lbl_80375AD8;
 extern char lbl_80375AE0;
 extern char lbl_80375AE8;
@@ -88,25 +88,25 @@ extern "C" __declspec(section ".data") const void* const lbl_802C8C80[39] __attr
     (const void*)fn_80258E48,
     (const void*)fn_800E39F0,
     (const void*)fn_80259FB4,
-    (const void*)fn_8002392C,
-    (const void*)fn_80023934,
-    (const void*)fn_8002393C,
-    (const void*)fn_8025BAF4,
-    (const void*)fn_8025BAD4,
-    (const void*)fn_8002390C,
-    (const void*)fn_80023914,
-    (const void*)fn_80257C58,
-    (const void*)fn_80257C50,
-    (const void*)fn_80256028,
-    (const void*)fn_80023944,
-    (const void*)fn_80023928,
-    (const void*)fn_8025A5F8,
-    (const void*)fn_8025B448,
-    (const void*)fn_8025BB14,
-    (const void*)fn_8002391C,
-    (const void*)fn_80023920,
-    (const void*)fn_80023924,
-    (const void*)fn_8025B928,
+    (const void*)slot48__7Agent_ZFv,
+    (const void*)slot4C__7Agent_ZFv,
+    (const void*)slot50__7Agent_ZFv,
+    (const void*)slot54__11Throwable_ZFv,
+    (const void*)slot58__11Throwable_ZFv,
+    (const void*)slot5C__11Throwable_ZFv,
+    (const void*)slot60__11Throwable_ZFv,
+    (const void*)slot64__15AnimatedAgent_ZFv,
+    (const void*)slot68__15AnimatedAgent_ZFv,
+    (const void*)slot6C__7Agent_ZFv,
+    (const void*)slot70__7Agent_ZFv,
+    (const void*)slot74__15AnimatedAgent_ZFv,
+    (const void*)slot78__13MovingAgent_ZFv,
+    (const void*)slot7C__11Throwable_ZFv,
+    (const void*)slot80__11Throwable_ZFv,
+    (const void*)slot84__11Throwable_ZFv,
+    (const void*)slot88__11Throwable_ZFv,
+    (const void*)slot8C__11Throwable_ZFv,
+    (const void*)slot90__11Throwable_ZFv,
     (const void*)fn_800E3C70,
     (const void*)fn_800E3B30,
 };
@@ -131,7 +131,7 @@ extern "C" __declspec(section ".data") const void* const lbl_802C8D50[34] __attr
     (const void*)slot10__12BaseObject_ZFv,
     (const void*)slot14__12BaseObject_ZFv,
     (const void*)fn_800E3308,
-    (const void*)fn_80259F0C,
+    (const void*)slot1C__13MovingAgent_ZFv,
     (const void*)fn_800E4078,
     (const void*)fn_800E4080,
     (const void*)fn_800E4088,
@@ -142,19 +142,19 @@ extern "C" __declspec(section ".data") const void* const lbl_802C8D50[34] __attr
     (const void*)fn_8025A324,
     (const void*)fn_800E33A8,
     (const void*)fn_80259FB4,
-    (const void*)fn_8002392C,
-    (const void*)fn_80023934,
-    (const void*)fn_8002393C,
-    (const void*)fn_80028D58,
-    (const void*)fn_80028D60,
-    (const void*)fn_80028D68,
-    (const void*)fn_80028D6C,
-    (const void*)fn_80257C58,
-    (const void*)fn_80257C50,
-    (const void*)fn_80256028,
-    (const void*)fn_80023944,
-    (const void*)fn_80023928,
-    (const void*)fn_8025A5F8,
+    (const void*)slot48__7Agent_ZFv,
+    (const void*)slot4C__7Agent_ZFv,
+    (const void*)slot50__7Agent_ZFv,
+    (const void*)slot54__7Agent_ZFv,
+    (const void*)slot58__7Agent_ZFv,
+    (const void*)slot5C__7Agent_ZFv,
+    (const void*)slot60__7Agent_ZFv,
+    (const void*)slot64__15AnimatedAgent_ZFv,
+    (const void*)slot68__15AnimatedAgent_ZFv,
+    (const void*)slot6C__7Agent_ZFv,
+    (const void*)slot70__7Agent_ZFv,
+    (const void*)slot74__15AnimatedAgent_ZFv,
+    (const void*)slot78__13MovingAgent_ZFv,
     (const void*)fn_800E34BC,
     (const void*)fn_800E3424,
     0,

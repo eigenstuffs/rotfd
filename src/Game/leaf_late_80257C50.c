@@ -1,1 +1,1 @@
-void fn_80257C50(void *object, unsigned int value) { *(unsigned int *)((char *)object + (108)) = value; }
+void slot68__15AnimatedAgent_ZFv(void *object, unsigned int value) { *(unsigned int *)((char *)object + (108)) = value; }

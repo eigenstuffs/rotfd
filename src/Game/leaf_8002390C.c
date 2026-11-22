@@ -1,19 +1,19 @@
-void fn_8002390C(void *object, unsigned int value) { *(unsigned int *)((char *)object + (120)) = value; }
+void slot5C__11Throwable_ZFv(void *object, unsigned int value) { *(unsigned int *)((char *)object + (120)) = value; }
 
-void fn_80023914(void *object, unsigned int value) { *(unsigned int *)((char *)object + (124)) = value; }
+void slot60__11Throwable_ZFv(void *object, unsigned int value) { *(unsigned int *)((char *)object + (124)) = value; }
 
-void fn_8002391C(void) { }
+void slot84__11Throwable_ZFv(void) { }
 
-void fn_80023920(void) { }
+void slot88__11Throwable_ZFv(void) { }
 
-void fn_80023924(void) { }
+void slot8C__11Throwable_ZFv(void) { }
 
-void fn_80023928(void) { }
+void slot74__15AnimatedAgent_ZFv(void) { }
 
-int fn_8002392C(void) { return 1; }
+int slot48__7Agent_ZFv(void) { return 1; }
 
-int fn_80023934(void) { return 0; }
+int slot4C__7Agent_ZFv(void) { return 0; }
 
-int fn_8002393C(void) { return 0; }
+int slot50__7Agent_ZFv(void) { return 0; }
 
-int fn_80023944(void) { return 65535; }
+int slot70__7Agent_ZFv(void) { return 65535; }

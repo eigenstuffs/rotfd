@@ -119,7 +119,7 @@ struct ResolvedIndexGlobals {char unknown00[0x118];ResolvedIndexManager*manager;
 extern "C" ResolvedIndexGlobals lbl_801E9D24;
 static inline ResolvedIndexTarget*resolve(ResolvedIndexManager*m,const ResolvedIndexHandle&h){ResolvedIndexEntry*e=&m->entries[h.bits.index];return e->generation==h.bits.tag?e->object:0;}
 
-extern "C" int fn_8025A5F8(ResolvedIndexOwner* self, int event, ResolvedIndexCallback* callback) {
+extern "C" int slot78__13MovingAgent_ZFv(ResolvedIndexOwner* self, int event, ResolvedIndexCallback* callback) {
     int result = 1;
     switch (event) {
     case 0:
@@ -193,7 +193,7 @@ void slot0C__12BaseObject_ZFUl();
 void slot10__12BaseObject_ZFv();
 void slot14__12BaseObject_ZFv();
 void fn_8025A48C();
-void fn_80259F0C();
+void slot1C__13MovingAgent_ZFv();
 void fn_80259DEC();
 void fn_80259DF4();
 void fn_80259DFC();
@@ -204,25 +204,25 @@ void fn_80258654();
 void fn_8025A324();
 void fn_8025A0A4();
 void fn_80259FB4();
-void fn_8002392C();
-void fn_80023934();
-void fn_8002393C();
-void fn_80028D58();
-void fn_80028D60();
-void fn_80028D68();
-void fn_80028D6C();
-void fn_80257C58();
-void fn_80257C50();
-void fn_80256028();
-void fn_80023944();
-void fn_80023928();
+void slot48__7Agent_ZFv();
+void slot4C__7Agent_ZFv();
+void slot50__7Agent_ZFv();
+void slot54__7Agent_ZFv();
+void slot58__7Agent_ZFv();
+void slot5C__7Agent_ZFv();
+void slot60__7Agent_ZFv();
+void slot64__15AnimatedAgent_ZFv();
+void slot68__15AnimatedAgent_ZFv();
+void slot6C__7Agent_ZFv();
+void slot70__7Agent_ZFv();
+void slot74__15AnimatedAgent_ZFv();
 ResolvedIndexVtable lbl_802ECA18 = {0,0,{
     (ResolvedIndexVirtualSlot)__dt__15Object_80021064Fv,
     (ResolvedIndexVirtualSlot)slot0C__12BaseObject_ZFUl,
     (ResolvedIndexVirtualSlot)slot10__12BaseObject_ZFv,
     (ResolvedIndexVirtualSlot)slot14__12BaseObject_ZFv,
     (ResolvedIndexVirtualSlot)fn_8025A48C,
-    (ResolvedIndexVirtualSlot)fn_80259F0C,
+    (ResolvedIndexVirtualSlot)slot1C__13MovingAgent_ZFv,
     (ResolvedIndexVirtualSlot)fn_80259DEC,
     (ResolvedIndexVirtualSlot)fn_80259DF4,
     (ResolvedIndexVirtualSlot)fn_80259DFC,
@@ -233,19 +233,19 @@ ResolvedIndexVtable lbl_802ECA18 = {0,0,{
     (ResolvedIndexVirtualSlot)fn_8025A324,
     (ResolvedIndexVirtualSlot)fn_8025A0A4,
     (ResolvedIndexVirtualSlot)fn_80259FB4,
-    (ResolvedIndexVirtualSlot)fn_8002392C,
-    (ResolvedIndexVirtualSlot)fn_80023934,
-    (ResolvedIndexVirtualSlot)fn_8002393C,
-    (ResolvedIndexVirtualSlot)fn_80028D58,
-    (ResolvedIndexVirtualSlot)fn_80028D60,
-    (ResolvedIndexVirtualSlot)fn_80028D68,
-    (ResolvedIndexVirtualSlot)fn_80028D6C,
-    (ResolvedIndexVirtualSlot)fn_80257C58,
-    (ResolvedIndexVirtualSlot)fn_80257C50,
-    (ResolvedIndexVirtualSlot)fn_80256028,
-    (ResolvedIndexVirtualSlot)fn_80023944,
-    (ResolvedIndexVirtualSlot)fn_80023928,
-    (ResolvedIndexVirtualSlot)fn_8025A5F8
+    (ResolvedIndexVirtualSlot)slot48__7Agent_ZFv,
+    (ResolvedIndexVirtualSlot)slot4C__7Agent_ZFv,
+    (ResolvedIndexVirtualSlot)slot50__7Agent_ZFv,
+    (ResolvedIndexVirtualSlot)slot54__7Agent_ZFv,
+    (ResolvedIndexVirtualSlot)slot58__7Agent_ZFv,
+    (ResolvedIndexVirtualSlot)slot5C__7Agent_ZFv,
+    (ResolvedIndexVirtualSlot)slot60__7Agent_ZFv,
+    (ResolvedIndexVirtualSlot)slot64__15AnimatedAgent_ZFv,
+    (ResolvedIndexVirtualSlot)slot68__15AnimatedAgent_ZFv,
+    (ResolvedIndexVirtualSlot)slot6C__7Agent_ZFv,
+    (ResolvedIndexVirtualSlot)slot70__7Agent_ZFv,
+    (ResolvedIndexVirtualSlot)slot74__15AnimatedAgent_ZFv,
+    (ResolvedIndexVirtualSlot)slot78__13MovingAgent_ZFv
 }};
 }
 typedef char ResolvedIndexVtableSize[sizeof(ResolvedIndexVtable)==124?1:-1];

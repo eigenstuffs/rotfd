@@ -9,7 +9,7 @@ int fn_8025E70C(void*,void*,void*);
 void fn_80287B8C(void*,int);
 void fn_80287B9C(void*,unsigned char);
 void fn_80256370(void*);
-void fn_802560D8(void*);
+void slot3C__7Agent_ZFv(void*);
 }
 struct Global {char unknown0[0x144];void *target;};
 struct Parameter {char unknown0[0x2C];float value;};

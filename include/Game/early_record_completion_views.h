@@ -56,6 +56,6 @@ struct CompletionRecord{short id;CompletionAgent*node;float position[3];};
 struct CompletionOwner{char unknown00[0x6A];short count;char unknown6C[8];CompletionRecord records[8];char unknown114[4];void*object;char unknown11C[0x270];int state;};
 struct CompletionQueryPrefix{char unknown00[4];};
 struct CompletionQuery:CompletionQueryPrefix{virtual void slot0();virtual void slot1();virtual void slot2();virtual void*getResource();};
-extern "C"{Handle_801F7F10 fn_801B52EC(CompletionManager*,const char*);void fn_8025A3C8(CompletionAgent*,const Handle_801F7F10&);void fn_8002B780(CompletionAgent*);void fn_8025BBA8(CompletionAgent*);signed char fn_80259F0C(CompletionAgent*);unsigned long fn_801F7EB8(const CompletionHandle*);void fn_800732B8(void*);void fn_802073E8(void*,int,void*,float);extern CompletionQuery*lbl_803776B8;extern const char lbl_8029C9B8[],lbl_8029CA48[];extern const float lbl_8037890C,lbl_80378938,lbl_8037893C,lbl_80378940,lbl_80378944,lbl_80378948;}
+extern "C"{Handle_801F7F10 fn_801B52EC(CompletionManager*,const char*);void fn_8025A3C8(CompletionAgent*,const Handle_801F7F10&);void fn_8002B780(CompletionAgent*);void fn_8025BBA8(CompletionAgent*);signed char slot1C__13MovingAgent_ZFv(CompletionAgent*);unsigned long fn_801F7EB8(const CompletionHandle*);void fn_800732B8(void*);void fn_802073E8(void*,int,void*,float);extern CompletionQuery*lbl_803776B8;extern const char lbl_8029C9B8[],lbl_8029CA48[];extern const float lbl_8037890C,lbl_80378938,lbl_8037893C,lbl_80378940,lbl_80378944,lbl_80378948;}
 
 #endif

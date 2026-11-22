@@ -105,7 +105,7 @@ struct SecondaryView_80062E18:SecondaryPrefix_80062E18 {
  virtual void method_80064458(unsigned short);
  char unknown08[0x160-8];
 };
-struct Agent_80062E18:PrimaryView_80062E18,SecondaryView_80062E18 {
+struct CActorScriptAgent:PrimaryView_80062E18,SecondaryView_80062E18 {
  virtual void method_80064458(unsigned short);
  virtual void method_80064460(unsigned char);
  virtual void method_80064468(unsigned long);
@@ -125,7 +125,7 @@ struct Agent_80062E18:PrimaryView_80062E18,SecondaryView_80062E18 {
  virtual void method_80064638();
  virtual void method_8006311C();
  virtual void method_80063074();
- virtual ~Agent_80062E18();
+ virtual ~CActorScriptAgent();
 };
 
 struct Handle_80062E18 {signed int tag:8;signed int index:24;};
@@ -134,22 +134,22 @@ struct Manager_80062E18 {char pad[8];HandleEntry_80062E18*entries;};
 struct Context_80062E18 {char pad[0x118];Manager_80062E18*manager;};
 extern "C" {extern Context_80062E18 lbl_801E9D24;void fn_8007D6A0(void*,int);void fn_8025795C(void*,int,void*);void fn_80257828(void*,int,int,int);void fn_8025A3C8(void*,const OpaqueHandle&);int fn_8025E9FC(void*,int);void fn_8025E50C(void*);}
 static inline void*resolve(const Handle_80062E18*h){HandleEntry_80062E18*entry=&lbl_801E9D24.manager->entries[h->index];if(entry->tag==h->tag)return entry->object;return 0;}
-void Agent_80062E18::method_80064458(unsigned short value){value8A=value;}
-void Agent_80062E18::method_80064460(unsigned char value){value88=value;}
-void Agent_80062E18::method_80064468(unsigned long value){value84=value;}
-void Agent_80062E18::method_80064470(int index){fn_8007D6A0((char*)resolve(getControllerHandle())+0x318,index);}
-void Agent_80062E18::method_800644FC(int index,void*argument){fn_8025795C(this,index,argument);}
-void Agent_80062E18::method_8006451C(int first,int second){fn_80257828(this,first,second,0);}
-void Agent_80062E18::method_80064540(const OpaqueHandle&value){fn_8025A3C8(this,value);}
-void Agent_80062E18::method_80064560(){slot_068();}
-unsigned short Agent_80062E18::method_8006458C(){return value8A;}
-unsigned char Agent_80062E18::method_80064594(){return value88;}
-unsigned long Agent_80062E18::method_8006459C(){return value84;}
-int Agent_80062E18::method_800645A4(int index){return fn_8025E9FC(this,index);}
-void Agent_80062E18::method_800645C4(){fn_8025E50C(this);}
-float Agent_80062E18::method_800645E4(){return scalar2C;}
-void*Agent_80062E18::method_800645EC(){return resolve((const Handle_80062E18*)&actor28);}
-void Agent_80062E18::method_80064638(){}
+void CActorScriptAgent::method_80064458(unsigned short value){value8A=value;}
+void CActorScriptAgent::method_80064460(unsigned char value){value88=value;}
+void CActorScriptAgent::method_80064468(unsigned long value){value84=value;}
+void CActorScriptAgent::method_80064470(int index){fn_8007D6A0((char*)resolve(getControllerHandle())+0x318,index);}
+void CActorScriptAgent::method_800644FC(int index,void*argument){fn_8025795C(this,index,argument);}
+void CActorScriptAgent::method_8006451C(int first,int second){fn_80257828(this,first,second,0);}
+void CActorScriptAgent::method_80064540(const OpaqueHandle&value){fn_8025A3C8(this,value);}
+void CActorScriptAgent::method_80064560(){slot_068();}
+unsigned short CActorScriptAgent::method_8006458C(){return value8A;}
+unsigned char CActorScriptAgent::method_80064594(){return value88;}
+unsigned long CActorScriptAgent::method_8006459C(){return value84;}
+int CActorScriptAgent::method_800645A4(int index){return fn_8025E9FC(this,index);}
+void CActorScriptAgent::method_800645C4(){fn_8025E50C(this);}
+float CActorScriptAgent::method_800645E4(){return scalar2C;}
+void*CActorScriptAgent::method_800645EC(){return resolve((const Handle_80062E18*)&actor28);}
+void CActorScriptAgent::method_80064638(){}
 
 typedef char CheckPrimarySize[(sizeof(PrimaryView_80062E18)==0x90)?1:-1];
 typedef char CheckSecondarySize[(sizeof(SecondaryView_80062E18)==0x160)?1:-1];

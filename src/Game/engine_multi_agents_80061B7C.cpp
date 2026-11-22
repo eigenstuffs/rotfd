@@ -66,26 +66,26 @@ struct Object_8005E258 {
     ~Object_8005E258();
 };
 extern "C" {
-    extern char lbl_802B6140[];
+    extern char __vt__11CLevelAgent[];
     extern void*lbl_803776B8;
 }
 struct Owned {
     virtual ~Owned();
 };
-struct Agent_80061AC0:Base,Object_8005E258 {
+struct CLevelAgent:Base,Object_8005E258 {
     char unknown1C0[0x2C];
     H3 handle1EC;
     H1 handle1F0;
     H2 handle1F4;
     Owned*owned1F8;
-    ~Agent_80061AC0();
+    ~CLevelAgent();
     static void operator delete(void*p)throw() {
         fn_801EF610(lbl_801EF5C8,p);
     }
 };
-Agent_80061AC0::~Agent_80061AC0() {
-    vtable=lbl_802B6140;
-    secondaryVtable=lbl_802B6140+0x74;
+CLevelAgent::~CLevelAgent() {
+    vtable=__vt__11CLevelAgent;
+    secondaryVtable=__vt__11CLevelAgent+0x74;
     lbl_803776B8=0;
     if(owned1F8)delete owned1F8;
 }

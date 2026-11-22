@@ -15,7 +15,7 @@ struct CallbackTransferOwner {
     CallbackRelatedHandle handle80;
 };
 extern "C" {
-    signed char fn_80259F0C(void*);
+    signed char slot1C__13MovingAgent_ZFv(void*);
     void fn_8025BB68(void*);
     void fn_801FFFCC(void*,const CallbackRelatedHandle*);
     void fn_8020009C(void*,const CallbackRelatedHandle*);

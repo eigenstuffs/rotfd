@@ -6,7 +6,7 @@ extern "C" {extern const struct Pool{char opaque00[0xC];MemberPointer entries[5]
 extern "C" {signed char fn_8025E9FC(void*,int);void fn_8005EED4(void*);float fn_8025E268(void*,int);}
 struct Prefix{u32 unknown00,unknown04;};
 struct Object:Prefix{virtual void slot08();virtual void slot0C();virtual void slot10();virtual void slot14();virtual void slot18();virtual void slot1C();virtual void slot20();virtual void slot24();virtual void slot28();virtual void slot2C();virtual void slot30();virtual void slot34();virtual void slot38();virtual void slot3C();virtual void slot40();virtual void slot44();virtual void slot48();virtual void slot4C();virtual void slot50();virtual void slot54();virtual void slot58();virtual void slot5C();virtual void slot60();virtual void slot64();virtual void slot68();virtual void slot6C();virtual void slot70();virtual void slot74();virtual void slot78();virtual void slot7C();virtual void slot80();virtual void slot84();virtual void slot88();virtual void slot8C();virtual void slot90(int,int);virtual void slot94();virtual void slot98();virtual void slot9C();virtual void slotA0();virtual void slotA4();virtual void slotA8();virtual void slotAC();virtual void slotB0();};
-extern "C" int fn_8002BE80(Object*self,int event,Callback*callback){
+extern "C" int slotAC__11CActorAgentFv(Object*self,int event,Callback*callback){
 const Pool*members=&lbl_802B1568;int result=1;
 switch(event){
 case 0:fn_8025EF34(self,members->entries[0],-1);return 1;

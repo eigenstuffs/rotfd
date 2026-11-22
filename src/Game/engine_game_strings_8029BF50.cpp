@@ -1,18 +1,6 @@
 
 // Native class, event, resource and diagnostic strings.
 // Pointer tables and boundary alignment retain their separate owners.
-extern "C" const char lbl_8029BE98[] = "CComplexMove";
-extern "C" const char lbl_8029BEA8[] = "CComplexAgent";
-extern "C" const char lbl_8029BEB8[] = "CScriptAgent";
-extern "C" const char lbl_8029BEC8[] = "BaseObject_Z";
-extern "C" const char lbl_8029BED8[] = "ABC_Agent";
-extern "C" const char lbl_8029BEE4[] = "AnimatedMsgAgent_Z";
-extern "C" const char lbl_8029BEF8[] = "AnimatedAgent_Z";
-extern "C" const char lbl_8029BF08[] = "MovingAgent_Z";
-extern "C" const char lbl_8029BF18[] = "Throwable_Z";
-extern "C" const char lbl_8029BF24[] = "LodAgent_Z";
-extern "C" const char lbl_8029BF30[] = "CActorAgent";
-extern "C" const char lbl_8029BF3C[] = "CActorScriptAgent";
 extern "C" const char lbl_8029BF50[] = "An error occured in: Init Please check stderr.txt for more information";
 extern "C" const char lbl_8029BF98[] = "CScriptAgent: Unable to acquire method Init";
 extern "C" const char lbl_8029BFC4[] = "An error occured in: ScriptMessage Please check stderr.txt for more information";

@@ -1,1 +1,1 @@
-int fn_80063FEC(void) { return 0; }
+int slot48__17CActorScriptAgentFv(void) { return 0; }
