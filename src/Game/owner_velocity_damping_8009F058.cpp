@@ -148,7 +148,7 @@ extern const float lbl_80378DD8; /* 0.0f, shared */
 extern const float lbl_80378E2C; /* 0.9f */
 }
 
-extern "C" void fn_8009F058(Agent* self, float delta)
+extern "C" void slot198__11CScriptMoveFf(Agent* self, float delta)
 {
     if (!(resolve(*self->getHandle(0))->flags & 0x10000)) {
         if (lbl_80378DD8 != self->blend) self->updateVelocity(delta);

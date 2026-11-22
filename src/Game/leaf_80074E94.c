@@ -1,1 +1,1 @@
-void fn_80074E94(void) { }
+void slot34__16CCollectableMoveFv(void) { }

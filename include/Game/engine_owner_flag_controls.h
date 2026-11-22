@@ -54,10 +54,10 @@ char unknown0C[0x24];unsigned long long flags;};
 
 struct IndexedFlagControls;
 
-extern "C" void fn_8021F208(OwnerFlagControls*);
+extern "C" void slotF8__12ObjectMove_ZFv(OwnerFlagControls*);
 extern "C" signed char fn_8021F2D0(const OwnerFlagControls*);
 extern "C" signed char fn_8021F308(const OwnerFlagControls*);
-extern "C" void fn_8021F568(OwnerFlagControls*, void*, const void*);
+extern "C" void slot40__12ObjectMove_ZFPC4Vec3PC4Vec3PC4Vec3if(OwnerFlagControls*, void*, const void*);
 extern "C" void fn_80224B7C(IndexedFlagControls*, unsigned long long, int);
 extern "C" signed char fn_80224BB4(const IndexedFlagControls*, unsigned long long, int);
 

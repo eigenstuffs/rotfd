@@ -1,5 +1,5 @@
-/* fn_800916AC: actor facing update (controller move hook, same argument list as
-   the forwarding fn_80074FB4: a, position, target, d, delta).
+/* slot40__14CSpongeBobMoveFPC4Vec3PC4Vec3PC4Vec3if: actor facing update (controller move hook, same argument list as
+   the forwarding slot40__16CCollectableMoveFPC4Vec3PC4Vec3PC4Vec3if: a, position, target, d, delta).
 
    - Control states 6/0x31/0x32/0x2F: face along the current planar forward axis
      (basis * (0,0,1) with y cleared, normalized), i.e. a yaw quaternion about
@@ -101,7 +101,7 @@ inline Vec3 planarForward(Owner*self){
  f.x*=inv;f.y*=inv;f.z*=inv;
  return f;
 }
-extern "C" void fn_800916AC(Owner*self,void*a,const Vec3*position,const Vec3*target,void*d,float delta){
+extern "C" void slot40__14CSpongeBobMoveFPC4Vec3PC4Vec3PC4Vec3if(Owner*self,void*a,const Vec3*position,const Vec3*target,void*d,float delta){
  if(fn_8007D604(self->controller,6)||fn_8007D604(self->controller,0x31)||fn_8007D604(self->controller,0x32)||fn_8007D604(self->controller,0x2F)){
   Vec3 forward=planarForward(self);
   float yaw=fn_80285124(forward.x,forward.z);

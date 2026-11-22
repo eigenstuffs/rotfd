@@ -133,7 +133,7 @@ struct MotionOwnerReset : Activable_Z {
     MotionResetPoint movement, velocity;
 };
 
-extern "C" void fn_80220754(MotionOwnerReset* self)
+extern "C" void slot18__12ObjectMove_ZFv(MotionOwnerReset* self)
 {
     self->Activable_Z::slot18();
     self->movement = game_vec3_zero;

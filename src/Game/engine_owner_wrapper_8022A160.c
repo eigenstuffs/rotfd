@@ -2,6 +2,6 @@
 
 void fn_8022A160(EngineOwnerWrapperFlags* self)
 {
-    fn_80220754(self);
+    slot18__12ObjectMove_ZFv(self);
     self->flags |= 0x23E00ULL;
 }

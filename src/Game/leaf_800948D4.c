@@ -1,5 +1,5 @@
-void fn_800948D4(void) { }
+void slot12C__14CSpongeBobMoveFv(void) { }
 
-void fn_800948D8(void) { }
+void slot14C__10CActorMoveFv(void) { }
 
-void fn_800948DC(void) { }
+void slot150__10CActorMoveFv(void) { }

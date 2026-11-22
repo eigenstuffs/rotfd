@@ -35,37 +35,37 @@ SECTIONS
     // C names for compiler adjustor thunks ("@N@target"), which C data cannot
     // spell; the native vtable tables in src/Game/data/native_rtti_neighbor_*.c
     // reference the thunks through these.
-    thunk360___dt__15Object_80074D40Fv = "@360@__dt__15Object_80074D40Fv";
-    thunk360___dt__15Object_80075618Fv = "@360@__dt__15Object_80075618Fv";
-    thunk360___dt__15Object_800AA6E0Fv = "@360@__dt__15Object_800AA6E0Fv";
-    thunk360___dt__15Object_800E102CFv = "@360@__dt__15Object_800E102CFv";
-    thunk360_hook_800E12EC__15Object_800E102CFv = "@360@hook_800E12EC__15Object_800E102CFv";
-    thunk360_setup__15Object_80074D40Fv = "@360@setup__15Object_80074D40Fv";
-    thunk360_setup__15Object_80075618Fv = "@360@setup__15Object_80075618Fv";
-    thunk360_setup__15Object_800AA6E0Fv = "@360@setup__15Object_800AA6E0Fv";
-    thunk792___dt__15Object_80090360Fv = "@792@__dt__15Object_80090360Fv";
-    thunk792___dt__15Object_800969F0Fv = "@792@__dt__15Object_800969F0Fv";
-    thunk792___dt__15Object_8009731CFv = "@792@__dt__15Object_8009731CFv";
-    thunk792___dt__15Object_8009798CFv = "@792@__dt__15Object_8009798CFv";
-    thunk792___dt__15Object_80098518Fv = "@792@__dt__15Object_80098518Fv";
-    thunk792___dt__15Object_80098A70Fv = "@792@__dt__15Object_80098A70Fv";
-    thunk792___dt__15Object_800A2EE0Fv = "@792@__dt__15Object_800A2EE0Fv";
-    thunk792___dt__15Object_800A402CFv = "@792@__dt__15Object_800A402CFv";
-    thunk792___dt__15Object_800A49E8Fv = "@792@__dt__15Object_800A49E8Fv";
-    thunk792___dt__15Object_800E2A8CFv = "@792@__dt__15Object_800E2A8CFv";
-    thunk792_cleanup__32OwnerCleanupVirtualView_80027A08Fi = "@792@cleanup__32OwnerCleanupVirtualView_80027A08Fi";
-    thunk792_cleanup__32OwnerCleanupVirtualView_80095F4CFi = "@792@cleanup__32OwnerCleanupVirtualView_80095F4CFi";
-    thunk792_cleanup__32OwnerCleanupVirtualView_8009A8ACFi = "@792@cleanup__32OwnerCleanupVirtualView_8009A8ACFi";
-    thunk792_cleanup__32OwnerCleanupVirtualView_800CC6CCFi = "@792@cleanup__32OwnerCleanupVirtualView_800CC6CCFi";
-    thunk792_configureCallbacks__32OwnerCleanupVirtualView_80027A08Fv = "@792@configureCallbacks__32OwnerCleanupVirtualView_80027A08Fv";
-    thunk792_hook_800949CC__15Object_80090360Fv = "@792@hook_800949CC__15Object_80090360Fv";
-    thunk792_hook_80096518__32OwnerCleanupVirtualView_80095F4CFv = "@792@hook_80096518__32OwnerCleanupVirtualView_80095F4CFv";
-    thunk792_hook_800CCED8__32OwnerCleanupVirtualView_800CC6CCFv = "@792@hook_800CCED8__32OwnerCleanupVirtualView_800CC6CCFv";
-    thunk792_hook_800E31C4__15Object_800E2A8CFv = "@792@hook_800E31C4__15Object_800E2A8CFv";
-    thunk792_hook__32OwnerCleanupVirtualView_8009A8ACFv = "@792@hook__32OwnerCleanupVirtualView_8009A8ACFv";
-    thunk792_setup__15Object_800A2EE0Fv = "@792@setup__15Object_800A2EE0Fv";
-    thunk792_setup__15Object_800A402CFv = "@792@setup__15Object_800A402CFv";
-    thunk792_setup__15Object_800A49E8Fv = "@792@setup__15Object_800A49E8Fv";
+    thunk360___dt__16CCollectableMoveFv = "@360@__dt__16CCollectableMoveFv";
+    thunk360___dt__18CTreasureChestMoveFv = "@360@__dt__18CTreasureChestMoveFv";
+    thunk360___dt__9CTileMoveFv = "@360@__dt__9CTileMoveFv";
+    thunk360___dt__15WaterHelmetMoveFv = "@360@__dt__15WaterHelmetMoveFv";
+    thunk360_hook_800E12EC__15WaterHelmetMoveFv = "@360@configureCallbacks__15WaterHelmetMoveFv";
+    thunk360_setup__16CCollectableMoveFv = "@360@configureCallbacks__16CCollectableMoveFv";
+    thunk360_setup__18CTreasureChestMoveFv = "@360@configureCallbacks__18CTreasureChestMoveFv";
+    thunk360_setup__9CTileMoveFv = "@360@configureCallbacks__9CTileMoveFv";
+    thunk792___dt__14CSpongeBobMoveFv = "@792@__dt__14CSpongeBobMoveFv";
+    thunk792___dt__15CGreenJfishMoveFv = "@792@__dt__15CGreenJfishMoveFv";
+    thunk792___dt__14CPinkJfishMoveFv = "@792@__dt__14CPinkJfishMoveFv";
+    thunk792___dt__13CRedJfishMoveFv = "@792@__dt__13CRedJfishMoveFv";
+    thunk792___dt__14CBlueJfishMoveFv = "@792@__dt__14CBlueJfishMoveFv";
+    thunk792___dt__14CJellyfishMoveFv = "@792@__dt__14CJellyfishMoveFv";
+    thunk792___dt__11CSimpleMoveFv = "@792@__dt__11CSimpleMoveFv";
+    thunk792___dt__11CMediumMoveFv = "@792@__dt__11CMediumMoveFv";
+    thunk792___dt__12CComplexMoveFv = "@792@__dt__12CComplexMoveFv";
+    thunk792___dt__12CSBPantsMoveFv = "@792@__dt__12CSBPantsMoveFv";
+    thunk792_cleanup__9CHookMoveFi = "@792@__dt__9CHookMoveFv";
+    thunk792_cleanup__32OwnerCleanupVirtualView_80095F4CFi = "@792@__dt__16CYellowJfishMoveFv";
+    thunk792_cleanup__8CNPCMoveFi = "@792@__dt__8CNPCMoveFv";
+    thunk792_cleanup__11CQSnailMoveFi = "@792@__dt__11CQSnailMoveFv";
+    thunk792_configureCallbacks__9CHookMoveFv = "@792@configureCallbacks__9CHookMoveFv";
+    thunk792_hook_800949CC__14CSpongeBobMoveFv = "@792@configureCallbacks__14CSpongeBobMoveFv";
+    thunk792_hook_80096518__32OwnerCleanupVirtualView_80095F4CFv = "@792@configureCallbacks__14CJellyfishMoveFv";
+    thunk792_hook_800CCED8__11CQSnailMoveFv = "@792@configureCallbacks__11CQSnailMoveFv";
+    thunk792_hook_800E31C4__12CSBPantsMoveFv = "@792@configureCallbacks__12CSBPantsMoveFv";
+    thunk792_hook__8CNPCMoveFv = "@792@configureCallbacks__8CNPCMoveFv";
+    thunk792_setup__11CSimpleMoveFv = "@792@configureCallbacks__11CSimpleMoveFv";
+    thunk792_setup__11CMediumMoveFv = "@792@configureCallbacks__11CMediumMoveFv";
+    thunk792_setup__12CComplexMoveFv = "@792@configureCallbacks__12CComplexMoveFv";
 
 }
 

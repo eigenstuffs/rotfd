@@ -5,4 +5,4 @@ extern "C"{extern struct{char unknown00[0x118];FindEraseManager*manager;}lbl_801
 static inline void*resolveFindErase(const FindEraseHandle&h){FindEraseEntry*e=&lbl_801E9D24.manager->entries[h.index];if(e->generation==h.generation)return e->object;return 0;}
 struct FindEraseOwner{char unknown00[0x16C];FindEraseHandle handle;};
 extern "C" void fn_8024A6B4(void*);
-extern "C" void fn_80229B4C(FindEraseOwner*self){void*object=resolveFindErase(self->handle);if(object)fn_8024A6B4(object);}
+extern "C" void slot12C__13ObjectThrow_ZFv(FindEraseOwner*self){void*object=resolveFindErase(self->handle);if(object)fn_8024A6B4(object);}

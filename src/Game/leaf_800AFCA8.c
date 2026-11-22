@@ -1,3 +1,3 @@
-void fn_800AFCA8(void) { }
+void slot130__13ObjectThrow_ZFv(void) { }
 
-void fn_800AFCAC(void) { }
+void slot134__13ObjectThrow_ZFv(void) { }

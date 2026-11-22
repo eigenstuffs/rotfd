@@ -1,3 +1,3 @@
 #include "Game/early_component_calls.h"
 
-extern "C" void fn_80097504(ComponentOwner*self){fn_80098CB0(self);}
+extern "C" void slot38__14CPinkJfishMoveFf(ComponentOwner*self){slot38__14CJellyfishMoveFf(self);}

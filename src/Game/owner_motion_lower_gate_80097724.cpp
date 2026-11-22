@@ -5,7 +5,7 @@ extern "C" void fn_80097724(MotionGateAction* self,float delta)
     float distance;
     MotionGateVector vector;
     fn_8009A270(self->agent,&distance);
-    planarDirection_8009A6D4__15Object_80098A70FP4Vec3(self->agent,&vector);
+    planarDirection_8009A6D4__14CJellyfishMoveFP4Vec3(self->agent,&vector);
     if(distance<lowerGateLimit(self->agent))fn_8007D6A0(&self->agent->controls,5);
     else self->agent->apply(&vector,delta);
 }

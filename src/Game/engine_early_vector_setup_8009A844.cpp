@@ -1,6 +1,6 @@
 extern "C" {
     void __ct__15Object_8009A9D8Fv(void*);
-    extern char lbl_802BAE04[];
+    extern char __vt__8CNPCMove[];
     extern const float lbl_80378D48;
 }
 
@@ -21,8 +21,8 @@ struct View {
 
 extern "C" View* fn_8009A844(View* self) {
     __ct__15Object_8009A9D8Fv(self);
-    self->field08 = lbl_802BAE04;
-    self->field318 = lbl_802BAE04 + 0x170;
+    self->field08 = __vt__8CNPCMove;
+    self->field318 = __vt__8CNPCMove + 0x170;
     self->field390 = 0;
     self->field394 = lbl_80378D48;
     self->field398 = lbl_80378D48;

@@ -1,4 +1,4 @@
-/* Actor contact friction force (fn_8009B674): sibling of fn_800822D0 without
+/* Actor contact friction force (slot190__10CActorMoveFv): sibling of fn_800822D0 without
  * the controller-record step. Builds the net force (+0x358, plus -1 * mass
  * (+0x354) on y while flag bit 0x8000000000 is set), takes its component
  * along the contact normal (+0x1B8) as the pressure, and projects the
@@ -26,7 +26,7 @@ struct Vec3{float x,y,z;Vec3(){}Vec3(float a,float b,float c):x(a),y(b),z(c){}
 struct Actor{char unknown00[0x30];unsigned long long flags;char unknown38[0x124];Vec3 velocity;char unknown168[0x50];Vec3 normal;
  char unknown1C4[0x190];float mass;Vec3 force;float scale;float threshold;};
 #pragma opt_common_subs off
-extern "C" void fn_8009B674(Actor*actor){
+extern "C" void slot190__10CActorMoveFv(Actor*actor){
  Vec3 force=actor->force;
  if(actor->flags&0x8000000000ULL){float gravity=lbl_80378D64*actor->mass;force.y+=gravity;}
  float ny=actor->normal.y;float nx=actor->normal.x;float nz=actor->normal.z;

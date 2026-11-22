@@ -4,18 +4,18 @@ struct ForwardVector{float x,y,z;};
 struct ForwardActor{char unknown00[0x318];char component[1];};
 struct ForwardAction;
 extern "C"{
-void fn_8009AB58(ForwardActor* self);
-void fn_8009ACBC(ForwardActor* self,float delta);
-void fn_8009AEA4(void);
-void fn_80224888(ForwardActor* self);
+void slot18__10CActorMoveFv(ForwardActor* self);
+void slot38__10CActorMoveFf(ForwardActor* self,float delta);
+void slot40__10CActorMoveFPC4Vec3PC4Vec3PC4Vec3if(void);
+void slot34__9LodMove_ZFv(ForwardActor* self);
 void fn_800A4DF0(ForwardAction* self,float delta);
 void fn_800A4E50(ForwardAction* self);
-void fn_8009E640(ForwardActor* self,const ForwardVector* first,const ForwardVector* second,float delta);
-void fn_8009DF78(ForwardActor* self,float delta);
+void slot40__11CScriptMoveFPC4Vec3PC4Vec3PC4Vec3if(ForwardActor* self,const ForwardVector* first,const ForwardVector* second,float delta);
+void slot38__11CScriptMoveFf(ForwardActor* self,float delta);
 void fn_800A3798(void);
 void fn_800A379C(ForwardAction* self,void* value);
 void fn_800A37D0(ForwardAction* self);
 void fn_800A386C(ForwardAction* self);
-void fn_8009BEE8(ForwardActor*);void fn_8007DCDC(void*);
+void slot34__10CActorMoveFv(ForwardActor*);void fn_8007DCDC(void*);
 }
 #endif

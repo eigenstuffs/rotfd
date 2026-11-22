@@ -88,4 +88,4 @@ virtual void slot150();
 virtual void apply();
 };
 extern "C" void fn_8022A160(Control*);
-extern "C" void fn_800AF478(Control*self){fn_8022A160(self);self->apply();}
+extern "C" void slot18__14CWaterBallMoveFv(Control*self){fn_8022A160(self);self->apply();}

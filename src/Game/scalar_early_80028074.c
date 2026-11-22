@@ -1,1 +1,1 @@
-void fn_80028074(void *object,unsigned long long mask) {*(unsigned long long *)((char *)object+0x30)|=mask;}
+void slotDC__12ObjectMove_ZFv(void *object,unsigned long long mask) {*(unsigned long long *)((char *)object+0x30)|=mask;}

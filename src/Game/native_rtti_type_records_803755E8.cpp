@@ -133,14 +133,6 @@ extern const char lbl_802AAF54[];
 extern const char lbl_802AAF64[];
 extern const char lbl_802AAF78[];
 extern const char lbl_802AAF90[];
-extern const char lbl_802AAFC8[];
-extern const char lbl_802AAFDC[];
-extern const char lbl_802AAFEC[];
-extern const char lbl_802AAFF8[];
-extern const char lbl_802AB008[];
-extern const char lbl_802AB018[];
-extern const char lbl_802AB028[];
-extern const char lbl_802AB038[];
 extern const char lbl_802AB06C[];
 extern const char lbl_802AB078[];
 extern const char lbl_802AB088[];
@@ -179,7 +171,6 @@ extern const char lbl_80379764[];
 extern const char lbl_80379770[];
 extern const char lbl_80379778[];
 extern const char lbl_803797A8[];
-extern const char lbl_803797B0[];
 extern const char lbl_803797B8[];
 extern const char lbl_803797C0[];
 extern const char lbl_803797EC[];
@@ -503,235 +494,81 @@ NativeRuntimeTypeInfo lbl_80375928 = { lbl_802A2950, lbl_802C18BC.entries };
 // CStateQSIdle
 NativeRuntimeTypeInfo lbl_80375930 = { lbl_802A2960, lbl_802C18EC.entries };
 
-// CFSM
-NativeRuntimeTypeInfo lbl_80375938 = { lbl_803796CC, 0 };
 
-// BaseObject_Z
-NativeRuntimeTypeInfo lbl_80375940 = { lbl_802A299C, 0 };
 
-// Activable_Z
-NativeRuntimeTypeInfo lbl_80375948 = { lbl_802A29AC, lbl_802C1938.entries };
 
-// Manipulator_Z
-NativeRuntimeTypeInfo lbl_80375950 = { lbl_802A29B8, lbl_802C1944.entries };
 
-// ObjectMove_Z
-NativeRuntimeTypeInfo lbl_80375958 = { lbl_802A29C8, lbl_802C1958.entries };
 
-// ObjectThrow_Z
-NativeRuntimeTypeInfo lbl_80375960 = { lbl_802A29D8, lbl_802C1974.entries };
 
-// LodMove_Z
-NativeRuntimeTypeInfo lbl_80375968 = { lbl_802A29E8, lbl_802C1998.entries };
 
-// CActorMove
-NativeRuntimeTypeInfo lbl_80375970 = { lbl_802A29F4, lbl_802C19C4.entries };
 
-// CRBObjBaseMove
-NativeRuntimeTypeInfo lbl_80375978 = { lbl_802A2A00, lbl_802C1A00.entries };
 
-// CQSnailMove
-NativeRuntimeTypeInfo lbl_80375980 = { lbl_802A2990, lbl_802C1A44.entries };
 
-// BaseObject_Z
-NativeRuntimeTypeInfo lbl_80375988 = { lbl_802A2A28, 0 };
 
-// ABC_Agent
-NativeRuntimeTypeInfo lbl_80375990 = { lbl_802A2A38, lbl_802C1C38.entries };
 
-// Agent_Z
-NativeRuntimeTypeInfo lbl_80375998 = { lbl_803796E8, lbl_802C1C44.entries };
 
-// AnimatedMsgAgent_Z
-NativeRuntimeTypeInfo lbl_803759A0 = { lbl_802A2A44, lbl_802C1C58.entries };
 
-// AnimatedAgent_Z
-NativeRuntimeTypeInfo lbl_803759A8 = { lbl_802A2A58, lbl_802C1C74.entries };
 
-// MovingAgent_Z
-NativeRuntimeTypeInfo lbl_803759B0 = { lbl_802A2A68, lbl_802C1C98.entries };
 
-// Throwable_Z
-NativeRuntimeTypeInfo lbl_803759B8 = { lbl_802A2A78, lbl_802C1CC4.entries };
 
-// LodAgent_Z
-NativeRuntimeTypeInfo lbl_803759C0 = { lbl_802A2A84, lbl_802C1CF8.entries };
 
-// CActorAgent
-NativeRuntimeTypeInfo lbl_803759C8 = { lbl_802A2A90, lbl_802C1D34.entries };
 
-// DamageAgent
-NativeRuntimeTypeInfo lbl_803759D0 = { lbl_802A2A1C, lbl_802C1D78.entries };
 
-// CState
-NativeRuntimeTypeInfo lbl_803759D8 = { lbl_80379764, 0 };
 
-// CStateWaterHelmetBase
-NativeRuntimeTypeInfo lbl_803759E0 = { lbl_802AAE34, lbl_802C8240.entries };
 
-// CStateHelmetMoving
-NativeRuntimeTypeInfo lbl_803759E8 = { lbl_802AAE20, lbl_802C824C.entries };
 
-// CStateHelmetWaiting
-NativeRuntimeTypeInfo lbl_803759F0 = { lbl_802AAE4C, lbl_802C827C.entries };
 
-// CFSM
-NativeRuntimeTypeInfo lbl_803759F8 = { lbl_80379770, 0 };
 
-// BaseObject_Z
-NativeRuntimeTypeInfo lbl_80375A00 = { lbl_802AAE94, 0 };
 
-// Activable_Z
-NativeRuntimeTypeInfo lbl_80375A08 = { lbl_802AAEA4, lbl_802C82C8.entries };
 
-// Manipulator_Z
-NativeRuntimeTypeInfo lbl_80375A10 = { lbl_802AAEB0, lbl_802C82D4.entries };
 
-// ObjectMove_Z
-NativeRuntimeTypeInfo lbl_80375A18 = { lbl_802AAEC0, lbl_802C82E8.entries };
 
-// WaterHelmetMove
-NativeRuntimeTypeInfo lbl_80375A20 = { lbl_802AAE84, lbl_802C8304.entries };
 
-// BaseObject_Z
-NativeRuntimeTypeInfo lbl_80375A28 = { lbl_802AAEEC, 0 };
 
-// ABC_Agent
-NativeRuntimeTypeInfo lbl_80375A30 = { lbl_802AAEFC, lbl_802C8470.entries };
 
-// Agent_Z
-NativeRuntimeTypeInfo lbl_80375A38 = { lbl_80379778, lbl_802C847C.entries };
 
-// AnimatedMsgAgent_Z
-NativeRuntimeTypeInfo lbl_80375A40 = { lbl_802AAF08, lbl_802C8490.entries };
 
-// AnimatedAgent_Z
-NativeRuntimeTypeInfo lbl_80375A48 = { lbl_802AAF1C, lbl_802C84AC.entries };
 
-// MovingAgent_Z
-NativeRuntimeTypeInfo lbl_80375A50 = { lbl_802AAF2C, lbl_802C84D0.entries };
 
-// WaterHelmet
-NativeRuntimeTypeInfo lbl_80375A58 = { lbl_802AAEE0, lbl_802C84FC.entries };
 
-// CState
-NativeRuntimeTypeInfo lbl_80375A60 = { lbl_803797A8, 0 };
 
-// CStatePantsBase
-NativeRuntimeTypeInfo lbl_80375A68 = { lbl_802AAF54, lbl_802C85B0.entries };
 
-// CStatePantsBrkMove
-NativeRuntimeTypeInfo lbl_80375A70 = { lbl_802AAF40, lbl_802C85BC.entries };
 
-// CStatePantsAction
-NativeRuntimeTypeInfo lbl_80375A78 = { lbl_802AAF64, lbl_802C85EC.entries };
 
-// CStatePantsBrkAction
-NativeRuntimeTypeInfo lbl_80375A80 = { lbl_802AAF78, lbl_802C861C.entries };
 
-// CStatePantsHidden
-NativeRuntimeTypeInfo lbl_80375A88 = { lbl_802AAF90, lbl_802C864C.entries };
 
-// CFSM
-NativeRuntimeTypeInfo lbl_80375A90 = { lbl_803797B0, 0 };
 
-// BaseObject_Z
-NativeRuntimeTypeInfo lbl_80375A98 = { lbl_802AAFDC, 0 };
 
-// Activable_Z
-NativeRuntimeTypeInfo lbl_80375AA0 = { lbl_802AAFEC, lbl_802C8698.entries };
 
-// Manipulator_Z
-NativeRuntimeTypeInfo lbl_80375AA8 = { lbl_802AAFF8, lbl_802C86A4.entries };
 
-// ObjectMove_Z
-NativeRuntimeTypeInfo lbl_80375AB0 = { lbl_802AB008, lbl_802C86B8.entries };
 
-// ObjectThrow_Z
-NativeRuntimeTypeInfo lbl_80375AB8 = { lbl_802AB018, lbl_802C86D4.entries };
 
-// CSBPants_BRKMove
-NativeRuntimeTypeInfo lbl_80375AC0 = { lbl_802AAFC8, lbl_802C86F8.entries };
 
-// LodMove_Z
-NativeRuntimeTypeInfo lbl_80375AC8 = { lbl_802AB038, lbl_802C8884.entries };
 
-// CSBPantsMove
-NativeRuntimeTypeInfo lbl_80375AD0 = { lbl_802AB028, lbl_802C88B0.entries };
 
-// BaseObject_Z
-NativeRuntimeTypeInfo lbl_80375AD8 = { lbl_802AB078, 0 };
 
-// ABC_Agent
-NativeRuntimeTypeInfo lbl_80375AE0 = { lbl_802AB088, lbl_802C8B40.entries };
 
-// Agent_Z
-NativeRuntimeTypeInfo lbl_80375AE8 = { lbl_803797B8, lbl_802C8B4C.entries };
 
-// AnimatedMsgAgent_Z
-NativeRuntimeTypeInfo lbl_80375AF0 = { lbl_802AB094, lbl_802C8B60.entries };
 
-// AnimatedAgent_Z
-NativeRuntimeTypeInfo lbl_80375AF8 = { lbl_802AB0A8, lbl_802C8B7C.entries };
 
-// MovingAgent_Z
-NativeRuntimeTypeInfo lbl_80375B00 = { lbl_802AB0B8, lbl_802C8BA0.entries };
 
-// Throwable_Z
-NativeRuntimeTypeInfo lbl_80375B08 = { lbl_802AB0C8, lbl_802C8BCC.entries };
 
-// Breakable_Z
-NativeRuntimeTypeInfo lbl_80375B10 = { lbl_802AB0D4, lbl_802C8C00.entries };
 
-// SBPants_BRK
-NativeRuntimeTypeInfo lbl_80375B18 = { lbl_802AB06C, lbl_802C8C3C.entries };
 
-// SBPants
-NativeRuntimeTypeInfo lbl_80375B20 = { lbl_803797C0, lbl_802C8D1C.entries };
 
-// CState
-NativeRuntimeTypeInfo lbl_80375B28 = { lbl_803797EC, 0 };
 
-// CStateSBBase
-NativeRuntimeTypeInfo lbl_80375B30 = { lbl_802AB178, lbl_802C8DD8.entries };
 
-// CStatePlayGroundEffects
-NativeRuntimeTypeInfo lbl_80375B38 = { lbl_802AB160, lbl_802C8DE4.entries };
 
-// CSaveFile
-NativeRuntimeTypeInfo lbl_80375B40 = { lbl_802AB188, 0 };
 
-// BaseObject_Z
-NativeRuntimeTypeInfo lbl_80375B48 = { lbl_802AB1A4, 0 };
 
-// Activable_Z
-NativeRuntimeTypeInfo lbl_80375B50 = { lbl_802AB1B4, lbl_802C8E28.entries };
 
-// Manipulator_Z
-NativeRuntimeTypeInfo lbl_80375B58 = { lbl_802AB1C0, lbl_802C8E34.entries };
 
-// ManipulatorDraw_Z
-NativeRuntimeTypeInfo lbl_80375B60 = { lbl_802AB1D0, lbl_802C8E48.entries };
 
-// CNoCamDraw
-NativeRuntimeTypeInfo lbl_80375B68 = { lbl_802AB198, lbl_802C8E64.entries };
 
-// BaseObject_Z
-NativeRuntimeTypeInfo lbl_80375B70 = { lbl_802AB208, 0 };
 
-// ABC_Agent
-NativeRuntimeTypeInfo lbl_80375B78 = { lbl_802AB218, lbl_802C8F98.entries };
 
-// Agent_Z
-NativeRuntimeTypeInfo lbl_80375B80 = { lbl_80379820, lbl_802C8FA4.entries };
 
-// VolumeAgent_Z
-NativeRuntimeTypeInfo lbl_80375B88 = { lbl_802AB224, lbl_802C8FB8.entries };
 
-// Volume_ScriptAndDebug
-NativeRuntimeTypeInfo lbl_80375B90 = { lbl_802AB234, lbl_802C8FD4.entries };
 
-// Volume_BossDeath
-NativeRuntimeTypeInfo lbl_80375B98 = { lbl_802AB1F4, lbl_802C8FF8.entries };
 
 }

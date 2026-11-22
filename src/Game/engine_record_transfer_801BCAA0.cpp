@@ -47,7 +47,7 @@ extern "C" {
     void fn_8023EEF0(Child_801BCAA0*);
     void fn_801D5DF8(Vec3_801BCAA0*,void*,void*,void*,const Vec2_801BCAA0*);
 }
-extern "C" void fn_801BCAA0(Owner_801BCAA0*self,void*input,const Vec3_801BCAA0*offset) {
+extern "C" void slot114__12ObjectMove_ZFv(Owner_801BCAA0*self,void*input,const Vec3_801BCAA0*offset) {
     Record_801BCAA0 result;
     fn_801BCB78(&result,input,offset);
     self->record=result;

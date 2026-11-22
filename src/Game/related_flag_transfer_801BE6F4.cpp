@@ -1,4 +1,4 @@
-/* fn_801BE6F4, fn_801BE900 (exact run 0x801BE6F4..0x801BEB0C); originally (tail of the 0x801BCB78.. translation
+/* slot50__12ObjectMove_ZFv, slot48__12ObjectMove_ZFv (exact run 0x801BE6F4..0x801BEB0C); originally (tail of the 0x801BCB78.. translation
    unit; constants are that TU's pooled literals, reached through extern labels). */
 typedef unsigned long Word;
 typedef unsigned long long Wide;
@@ -52,7 +52,7 @@ signed char fn_80269230(void*,const Ray&,Result*,Wide,Wide);
 ReturnedHandle fn_801BE46C(Owner*);
 }
 
-extern "C" void fn_801BE6F4(Owner*self,int index){
+extern "C" void slot50__12ObjectMove_ZFv(Owner*self,int index){
     Target*t=(Target*)resolve(*self->slot9C(index));
     t->orFlag(0x40000,t->testFlag(0x4000));t->clearFlag(0x4000);
     t=(Target*)resolve(self->related);
@@ -62,7 +62,7 @@ extern "C" void fn_801BE6F4(Owner*self,int index){
     t->orFlag(0x40000,t->testFlag(0x4000));t->clearFlag(0x4000);}
 }
 
-extern "C" void fn_801BE900(Owner*self,int index){
+extern "C" void slot48__12ObjectMove_ZFv(Owner*self,int index){
     Target*t=(Target*)resolve(*self->slot9C(index));
     t->orFlag(0x4000,t->testFlag(0x40000));t->clearFlag(0x40000);
     t=(Target*)resolve(self->related);

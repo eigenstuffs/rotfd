@@ -1,3 +1,3 @@
-void fn_80027DC8(void) { }
+void slot168__9LodMove_ZFv(void) { }
 
-void fn_80027DCC(void) { }
+void slot138__13ObjectThrow_ZFv(void) { }

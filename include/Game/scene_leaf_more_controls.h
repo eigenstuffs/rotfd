@@ -12,8 +12,8 @@ struct Record { Word unknown00[2]; Word value08; Word unknown0C[3]; Word value18
 extern "C" {
 int fn_800A5774(SceneLeafMore::Records*, const SceneLeafMore::InputRecord*);
 void fn_800A6528(SceneLeafMore::ArrayOwner*);
-void fn_8009AB58(void*);
-void fn_8009BEE8(void*);
+void slot18__10CActorMoveFv(void*);
+void slot34__10CActorMoveFv(void*);
 void fn_8007D6A0(void*, int);
 signed char slot1C__12BaseObject_ZFv(void*);
 void fn_800B3FC8(SceneLeafMore::KeyOwner*);

@@ -56,7 +56,7 @@ struct BasisMotionAgent:BasisMotionPrefix{
     char unknown150[0x1C8];char controls;char unknown319[0x53];float scale;
 };
 extern "C" {
-void fn_8009BEE8(BasisMotionAgent*);
+void slot34__10CActorMoveFv(BasisMotionAgent*);
 void fn_8007DCDC(void*);
 extern const float lbl_80378DD8,lbl_80378DDC;
 }

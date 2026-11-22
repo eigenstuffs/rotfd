@@ -1,4 +1,4 @@
-/* fn_8021E018: per-entry ground probe (sibling of fn_8028E4F8): ray-casts down from the
+/* fn_8021E018: per-entry ground probe (sibling of slot58__12ObjectMove_ZFv): ray-casts down from the
  * entry point, stores the hit height, notifies the owner and updates contact flags.
  * The owner handle resolve is an explicit if/else into the local (register choice). */
 // Partial native views: only observed fields and virtual slots are declared.

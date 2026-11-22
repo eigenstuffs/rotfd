@@ -59,7 +59,7 @@ struct Actor {
 
 extern "C" signed char fn_8007D604(void*, int);
 
-extern "C" void fn_80096FC8(Actor* self, float delta)
+extern "C" void slot198__15CGreenJfishMoveFf(Actor* self, float delta)
 {
     if (fn_8007D604(&self->control, 5) || fn_8007D604(&self->control, 6)) {
         self->motion = Vec3(lbl_80378C8C, lbl_80378C8C, lbl_80378C8C);

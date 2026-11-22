@@ -1,3 +1,3 @@
 struct OpaqueHandle;struct OpaquePoint;
-extern "C" void fn_80224888(void*self);
-extern "C" void fn_800E2BD8(void*self){fn_80224888(self);}
+extern "C" void slot34__9LodMove_ZFv(void*self);
+extern "C" void slot34__12CSBPantsMoveFv(void*self){slot34__9LodMove_ZFv(self);}

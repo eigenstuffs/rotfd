@@ -1,4 +1,4 @@
-/* fn_8021F5BC: clears motion flag bits, then either delegates to fn_8021EC10 (when any of
+/* slot44__12ObjectMove_ZFv: clears motion flag bits, then either delegates to fn_8021EC10 (when any of
  * flags 0x7E000000 is set) or steps next = position + velocity (+0x144) * delta and returns
  * the local z axis of the resolved object's basis (+0x30) in direction.
  * Matching notes: the original read pooled literals (0.0f at lbl_8037B080, 1.0f at
@@ -58,7 +58,7 @@ struct Actor : Header {
     Vec velocity;
 };
 extern "C" void fn_8021EC10(Actor*, const Vec*, Vec*, Vec*, float);
-extern "C" void fn_8021F5BC(Actor* self, const Vec* position, Vec* next, Vec* direction, int, float delta) {
+extern "C" void slot44__12ObjectMove_ZFv(Actor* self, const Vec* position, Vec* next, Vec* direction, int, float delta) {
     self->flags &= ~0xFFFFFFC0000001C0ULL;
     if (self->flags & 0x7E000000ULL) {
         fn_8021EC10(self, position, next, direction, delta);

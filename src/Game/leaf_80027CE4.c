@@ -1,3 +1,3 @@
-int fn_80027CE4(void) { return -1; }
+int slot140__9LodMove_ZFv(void) { return -1; }
 
-void fn_80027CEC(void) { }
+void slot144__9LodMove_ZFv(void) { }

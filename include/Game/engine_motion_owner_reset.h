@@ -2,6 +2,6 @@
 #define GAME_ENGINE_MOTION_OWNER_RESET_H
 
 struct MotionOwnerReset;
-extern "C" void fn_80220754(MotionOwnerReset* self);
+extern "C" void slot18__12ObjectMove_ZFv(MotionOwnerReset* self);
 
 #endif

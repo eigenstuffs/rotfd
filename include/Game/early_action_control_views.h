@@ -126,5 +126,5 @@ char unknown0C[0x2C];unsigned long long flags;
 struct ActionLowController{char unknown00[0x3C];unsigned long flags;};
 struct ActionOwner{char unknown00[8];ActionActor*actor;ActionController*controller;};
 struct ActionLowOwner{char unknown00[8];ActionActor*actor;ActionLowController*controller;};
-extern "C"{void fn_8007D7F4(void*,int);void fn_8007D6A0(void*,int);void fn_80257828(ActionController*,int,int,int);void fn_8025795C(ActionController*,int,int);void fn_80098AF4(ActionActor*);void fn_80098CD0(ActionActor*);void fn_80098CB0(ActionActor*);void fn_80099CB4(ActionActor*);void fn_8009AB58(ActionActor*);void fn_8009A984(ActionActor*);}
+extern "C"{void fn_8007D7F4(void*,int);void fn_8007D6A0(void*,int);void fn_80257828(ActionController*,int,int,int);void fn_8025795C(ActionController*,int,int);void slot18__14CJellyfishMoveFv(ActionActor*);void slot40__14CJellyfishMoveFPC4Vec3PC4Vec3PC4Vec3if(ActionActor*);void slot38__14CJellyfishMoveFf(ActionActor*);void slot198__14CJellyfishMoveFf(ActionActor*);void slot18__10CActorMoveFv(ActionActor*);void slot38__8CNPCMoveFf(ActionActor*);}
 #endif

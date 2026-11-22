@@ -63,5 +63,5 @@ struct TransitionControlScene{char unknown00[0x15058];TransitionControlStatus*st
 struct TransitionControlContext{char unknown00[0x114];TransitionControlWindow*window;TransitionControlManager*manager;char unknown11C[8];TransitionControlScene*scene;};
 extern "C"TransitionControlContext lbl_801E9D24;
 inline TransitionControlResource*resolveResource(const TransitionControlHandle&h){int index=h.index;TransitionControlManager*m=lbl_801E9D24.manager;int tag=m->entries[index].getTag();return tag==h.tag?m->entries[index].object:0;}
-extern "C"{TransitionControlBehavior*fn_8005EE10(TransitionControlResource*);void fn_800699A8(TransitionControlBehavior*,int);void fn_800A4DF0(TransitionControlOwner*,float);void fn_8009DBEC(TransitionControlActor*);signed char fn_8007D604(void*,int);void fn_8007D6A0(void*,int);void fn_8007DA74(void*,float);void fn_801EBB9C(void*);extern const TransitionControlVector game_vec3_zero;}
+extern "C"{TransitionControlBehavior*fn_8005EE10(TransitionControlResource*);void fn_800699A8(TransitionControlBehavior*,int);void fn_800A4DF0(TransitionControlOwner*,float);void slot34__11CScriptMoveFv(TransitionControlActor*);signed char fn_8007D604(void*,int);void fn_8007D6A0(void*,int);void fn_8007DA74(void*,float);void fn_801EBB9C(void*);extern const TransitionControlVector game_vec3_zero;}
 #endif

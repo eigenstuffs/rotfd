@@ -6,4 +6,4 @@ struct PropertyManager{char unknown00[8];PropertyEntry*entries;};
 extern "C"{extern struct{char unknown00[0x118];PropertyManager*manager;}lbl_801E9D24;}
 static inline char*resolveProperty(const PropertyHandle&h){PropertyEntry*e=&lbl_801E9D24.manager->entries[h.index];if(e->generation==h.generation)return e->object;return 0;}
 extern "C" {void fn_8023CFE4(void*,const void*,double);}
-extern "C" void fn_8021F858(PropertyOwner*self,const void*position,double value){fn_8023CFE4(resolveProperty(*self->getHandle(0)),position,value);}
+extern "C" void slotC4__12ObjectMove_ZFv(PropertyOwner*self,const void*position,double value){fn_8023CFE4(resolveProperty(*self->getHandle(0)),position,value);}

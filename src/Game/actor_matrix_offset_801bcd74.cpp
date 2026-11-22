@@ -1,6 +1,6 @@
 #include "Game/actor_matrix_offset_801bcd74.h"
 
-extern "C" ActorOffsetVec3 fn_801BCD74(ActorOffsetOwner*self,const ActorOffsetVec3&from,ActorOffsetVec3*delta,ActorOffsetVec3*point,int index){
+extern "C" ActorOffsetVec3 slot110__12ObjectMove_ZFv(ActorOffsetOwner*self,const ActorOffsetVec3&from,ActorOffsetVec3*delta,ActorOffsetVec3*point,int index){
  ActorOffsetVec3 first,second,third;
  ActorOffsetResource*resource=self->getVectors(&first,&second,&third,index);
  if(!resource)return game_vec3_zero;

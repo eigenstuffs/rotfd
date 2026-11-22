@@ -1,10 +1,10 @@
-/* Actor movement step (fn_8009BD18), sibling of fn_80091ECC without the
+/* Actor movement step (slot44__10CActorMoveFv), sibling of slot44__14CSpongeBobMoveFv without the
  * override direction: clears the transient flag bits (keeps
  * 0x1000003FFFFFFE3F); while any of 0x7E000000 is set the step is delegated to
  * fn_8021EC10. Otherwise the next position is position + velocity (+0x144) *
  * delta, and the direction is the local z axis (0, 0, 1) transformed by the
  * basis at +0x30 of the object whose handle virtual slot 0x9C returns.
- * Matching notes (as for fn_80091ECC): the basis was multiplied by pooled
+ * Matching notes (as for slot44__14CSpongeBobMoveFv): the basis was multiplied by pooled
  * literals (now lbl_80378D5C = 0.0f, lbl_80378D60 = 1.0f, owned by
  * actor_collision_events_8009AEA8.cpp); common subexpression elimination is
  * off for this function so the backend merges them into the original loads. */
@@ -65,7 +65,7 @@ struct Actor : Header {
 };
 extern "C" void fn_8021EC10(Actor*, const Vec*, Vec*, Vec*, float);
 #pragma opt_common_subs off
-extern "C" void fn_8009BD18(Actor* self, const Vec* position, Vec* next, Vec* direction, float delta) {
+extern "C" void slot44__10CActorMoveFv(Actor* self, const Vec* position, Vec* next, Vec* direction, float delta) {
     self->flags &= 0x1000003FFFFFFE3FULL;
     if (self->flags & 0x7E000000ULL) {
         fn_8021EC10(self, position, next, direction, delta);

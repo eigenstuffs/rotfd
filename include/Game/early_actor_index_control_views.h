@@ -97,5 +97,5 @@ struct IndexNumericActor{char unknown00[0x1A4];float a,b,c;};
 struct IndexNumericOwner{char unknown00[8];IndexNumericActor*actor;char unknown0C[4];float value,c;char unknown18[4];float b,a;};
 struct IndexHandleArray{char unknown00[0x14];IndexHandle*handles;};
 struct IndexArrayOwner{char unknown00[0x28];IndexHandleArray**arrays;};
-extern "C"{void fn_80257828(void*,int,int,int);void fn_80220754(IndexActor*);void fn_80090084(void*);void fn_80068158(IndexMonitor*,int);extern IndexMonitor*lbl_803776B8;extern const float lbl_80378D58,lbl_80378968,lbl_8037896C;extern char lbl_802C867C[],lbl_802C8600[];float fn_801F1200(IndexNumericActor*);void fn_801F86C8(IndexManager*,const IndexHandle*,int);}
+extern "C"{void fn_80257828(void*,int,int,int);void slot18__12ObjectMove_ZFv(IndexActor*);void fn_80090084(void*);void fn_80068158(IndexMonitor*,int);extern IndexMonitor*lbl_803776B8;extern const float lbl_80378D58,lbl_80378968,lbl_8037896C;extern char lbl_802C867C[],lbl_802C8600[];float fn_801F1200(IndexNumericActor*);void fn_801F86C8(IndexManager*,const IndexHandle*,int);}
 #endif

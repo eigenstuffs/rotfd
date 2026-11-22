@@ -1,3 +1,3 @@
-void fn_80027D1C(void) { }
+void slot14C__9LodMove_ZFv(void) { }
 
-void fn_80027D20(void) { }
+void slot150__9LodMove_ZFv(void) { }

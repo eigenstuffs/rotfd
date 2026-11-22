@@ -6,63 +6,63 @@ void __dt__15Menu2D_80216C9CFv();
 void __dt__15Menu3D_802193C0Fv();
 void __dt__15Object_80075AF8Fv();
 void __dt__15Object_80075DE4Fv();
-void __dt__16Objects_802EB518Fv();
-void __dt__16Objects_802EB7C0Fv();
-void __dt__16Objects_802EB940Fv();
+void __dt__9LodMove_ZFv();
+void __dt__13ObjectThrow_ZFv();
+void __dt__14VehiculeMove_ZFv();
 void __dt__17MenuBase_8021D7E4Fv();
-void __dt__20ObjectsBase_802EB3F8Fv();
-void fn_800261B4();
-void fn_80027CE4();
-void fn_80027CEC();
-void fn_80027CF0();
-void fn_80027D1C();
-void fn_80027D20();
-void fn_80027D24();
-void fn_80027D44();
-void fn_80027D64();
-void fn_80027D6C();
-void fn_80027DC8();
-void fn_80027DCC();
-void fn_80027DD0();
-void fn_80027DFC();
-void fn_80027E04();
-void fn_80027E0C();
-void fn_80027E10();
-void fn_80027E14();
-void fn_80027E18();
-void fn_80027E20();
-void fn_80027E28();
-void fn_80027E30();
-void fn_80027E38();
-void fn_80027ECC();
-void fn_80027F54();
-void fn_80027FE4();
-void fn_80028074();
-void fn_80028090();
-void fn_800280B4();
-void fn_800280E8();
-void fn_800280F8();
-void fn_80028100();
+void __dt__12ObjectMove_ZFv();
+void slot9C__12ObjectMove_ZFv();
+void slot140__9LodMove_ZFv();
+void slot144__9LodMove_ZFv();
+void slot148__9LodMove_ZFv();
+void slot14C__9LodMove_ZFv();
+void slot150__9LodMove_ZFv();
+void slot154__9LodMove_ZFv();
+void slot158__9LodMove_ZFv();
+void slot15C__9LodMove_ZFv();
+void slot160__9LodMove_ZFiPv();
+void slot168__9LodMove_ZFv();
+void slot138__13ObjectThrow_ZFv();
+void slot54__12ObjectMove_ZFv();
+void slot6C__12ObjectMove_ZFv();
+void slot70__12ObjectMove_ZFv();
+void slot74__12ObjectMove_ZFv();
+void slot78__12ObjectMove_ZFf();
+void slot7C__12ObjectMove_ZFv();
+void slot8C__12ObjectMove_ZFv();
+void slot90__12ObjectMove_ZFv();
+void slot94__12ObjectMove_ZFv();
+void slot98__12ObjectMove_ZFv();
+void slotA0__12ObjectMove_ZFv();
+void slotA4__12ObjectMove_ZFv();
+void slotA8__12ObjectMove_ZFv();
+void slotAC__12ObjectMove_ZFv();
+void slotDC__12ObjectMove_ZFv();
+void slotE0__12ObjectMove_ZFv();
+void slotE4__12ObjectMove_ZFv();
+void slotE8__12ObjectMove_ZFv();
+void slotEC__12ObjectMove_ZFv();
+void slotF0__12ObjectMove_ZFv();
 void fn_8002DAD4();
 void fn_8006A710();
-void fn_800AFCA8();
-void fn_800AFCAC();
-void fn_801BC98C();
-void fn_801BC99C();
-void fn_801BCAA0();
-void fn_801BCD74();
-void fn_801BD02C();
-void fn_801BD950();
-void fn_801BDCAC();
-void fn_801BDEF8();
-void fn_801BE188();
-void fn_801BE4D0();
-void fn_801BE6F4();
-void fn_801BE900();
-void fn_801BEB0C();
-void fn_801BF5A4();
-void fn_801C0BC4();
-void fn_801C0CC8();
+void slot130__13ObjectThrow_ZFv();
+void slot134__13ObjectThrow_ZFv();
+void slot118__12ObjectMove_ZFv();
+void slot11C__12ObjectMove_ZFv();
+void slot114__12ObjectMove_ZFv();
+void slot110__12ObjectMove_ZFv();
+void slot10C__12ObjectMove_ZFv();
+void slot88__12ObjectMove_ZFv();
+void slot68__12ObjectMove_ZFv();
+void slot104__12ObjectMove_ZFv();
+void slot100__12ObjectMove_ZFv();
+void slot4C__12ObjectMove_ZFv();
+void slot50__12ObjectMove_ZFv();
+void slot48__12ObjectMove_ZFv();
+void slot164__9LodMove_ZFv();
+void slot4C__9LodMove_ZFv();
+void slot50__9LodMove_ZFv();
+void slot48__9LodMove_ZFv();
 void fn_801C0DCC();
 void fn_801C0DE8();
 void fn_801C0E40();
@@ -73,10 +73,10 @@ void fn_801C1790();
 void fn_801C17C0();
 void fn_801C17DC();
 void fn_801C18F0();
-void fn_801C1A04();
-void fn_801C1CB4();
-void fn_801C234C();
-void fn_801C2520();
+void slot100__13ObjectThrow_ZFv();
+void slot4C__13ObjectThrow_ZFv();
+void slot50__13ObjectThrow_ZFv();
+void slot48__13ObjectThrow_ZFv();
 void fn_801C2714();
 void fn_801C2B58();
 void fn_801C2B98();
@@ -117,46 +117,46 @@ void fn_8021C740();
 void fn_8021CB30();
 void fn_8021D51C();
 void fn_8021D7AC();
-void fn_8021DA20();
+void slot108__12ObjectMove_ZFv();
 void fn_8021E018();
-void fn_8021E454();
-void fn_8021E8B8();
-void fn_8021E8FC();
-void fn_8021E9F8();
-void fn_8021F208();
-void fn_8021F340();
-void fn_8021F568();
+void slot64__12ObjectMove_ZFv();
+void slot60__12ObjectMove_ZFv();
+void slot5C__12ObjectMove_ZFv();
+void slotFC__12ObjectMove_ZFv();
+void slotF8__12ObjectMove_ZFv();
+void slot80__12ObjectMove_ZFv();
+void slot40__12ObjectMove_ZFPC4Vec3PC4Vec3PC4Vec3if();
 void fn_8021F59C();
-void fn_8021F5BC();
-void fn_8021F728();
-void fn_8021F7CC();
-void fn_8021F858();
-void fn_8021F8F4();
-void fn_8021F990();
-void fn_8021FA1C();
-void fn_8021FAB4();
-void fn_8021FB5C();
-void fn_8021FC00();
-void fn_80220124();
-void fn_80220260();
-void fn_802203A8();
-void fn_8022051C();
-void fn_80220608();
-void fn_80220754();
-void fn_80220D78();
-void fn_802217BC();
-void fn_80221A0C();
-void fn_80221EEC();
-void fn_80222138();
-void fn_802223EC();
-void fn_80222B48();
+void slot44__12ObjectMove_ZFv();
+void slotC8__12ObjectMove_ZFv();
+void slotCC__12ObjectMove_ZFv();
+void slotC4__12ObjectMove_ZFv();
+void slotC0__12ObjectMove_ZFv();
+void slotBC__12ObjectMove_ZFv();
+void slotB8__12ObjectMove_ZFv();
+void slotB4__12ObjectMove_ZFv();
+void slotB0__12ObjectMove_ZFv();
+void slotF4__12ObjectMove_ZFv();
+void slotD8__12ObjectMove_ZFv();
+void slotD4__12ObjectMove_ZFv();
+void slotD0__12ObjectMove_ZFv();
+void slot84__12ObjectMove_ZFv();
+void slot34__12ObjectMove_ZFv();
+void slot18__12ObjectMove_ZFv();
+void slot16C__9LodMove_ZFv();
+void slot108__9LodMove_ZFv();
+void slot118__9LodMove_ZFv();
+void slot58__9LodMove_ZFv();
+void slot134__9LodMove_ZFv();
+void slot130__9LodMove_ZFv();
+void slot5C__9LodMove_ZFv();
 void fn_80222CFC();
 void fn_80222E44();
-void fn_80222E64();
-void fn_8022312C();
-void fn_80223448();
-void fn_80224294();
-void fn_80224888();
+void slotC0__9LodMove_ZFv();
+void slotBC__9LodMove_ZFv();
+void slotB0__9LodMove_ZFv();
+void slot13C__9LodMove_ZFv();
+void slot34__9LodMove_ZFv();
 void fn_80224A10();
 void fn_80224B2C();
 void fn_80224B34();
@@ -187,18 +187,18 @@ void fn_80226AEC();
 void fn_802276C8();
 void fn_802279A0();
 void fn_80227A14();
-void fn_80227C30();
-void fn_80227F4C();
-void fn_80227F98();
-void fn_80227F9C();
-void fn_80228408();
-void fn_80228E0C();
-void fn_80228ECC();
+void slot5C__13ObjectThrow_ZFv();
+void slotF4__13ObjectThrow_ZFv();
+void slot124__13ObjectThrow_ZFv();
+void slot128__13ObjectThrow_ZFv();
+void slot64__13ObjectThrow_ZFv();
+void slotFC__13ObjectThrow_ZFv();
+void slot120__13ObjectThrow_ZFv();
 void fn_8022993C();
 void fn_80229A78();
-void fn_80229B4C();
-void fn_80229CA4();
-void fn_80229EE0();
+void slot12C__13ObjectThrow_ZFv();
+void slot84__13ObjectThrow_ZFv();
+void slot34__13ObjectThrow_ZFv();
 void fn_8022A160();
 void fn_8022A1A0();
 void fn_8022AE2C();
@@ -278,7 +278,7 @@ void fn_80237924();
 void fn_80237C40();
 void fn_80238D28();
 void fn_80238D98();
-void fn_8028E4F8();
+void slot58__12ObjectMove_ZFv();
 void slot0C__12BaseObject_ZFUl();
 void slot10__12BaseObject_ZFv();
 void slot14__12BaseObject_ZFv();
@@ -418,85 +418,85 @@ extern "C" __declspec(section ".data") const void* const __vt__17MenuBase_8021D7
     (const void*)fn_8021D51C,
 };
 
-extern "C" __declspec(section ".data") const void* const __vt__20ObjectsBase_802EB3F8[72] __attribute__((aligned(4))) = {
+extern "C" __declspec(section ".data") const void* const __vt__12ObjectMove_Z[72] __attribute__((aligned(4))) = {
     0,
     0,
-    (const void*)__dt__20ObjectsBase_802EB3F8Fv,
+    (const void*)__dt__12ObjectMove_ZFv,
     (const void*)slot0C__12BaseObject_ZFUl,
     (const void*)slot10__12BaseObject_ZFv,
     (const void*)slot14__12BaseObject_ZFv,
-    (const void*)fn_80220754,
+    (const void*)slot18__12ObjectMove_ZFv,
     (const void*)slot1C__12BaseObject_ZFv,
     (const void*)slot20__11Activable_ZFv,
     (const void*)slot24__11Activable_ZFv,
     (const void*)slot28__11Activable_ZFv,
     (const void*)slot2C__13Manipulator_ZFf,
     (const void*)slot30__13Manipulator_ZFv,
-    (const void*)fn_80220608,
+    (const void*)slot34__12ObjectMove_ZFv,
     (const void*)fn_8021F59C,
     (const void*)slot3C__13Manipulator_ZFv,
-    (const void*)fn_8021F568,
-    (const void*)fn_8021F5BC,
-    (const void*)fn_801BE900,
-    (const void*)fn_801BE4D0,
-    (const void*)fn_801BE6F4,
-    (const void*)fn_80027DD0,
-    (const void*)fn_8028E4F8,
-    (const void*)fn_8021E8FC,
-    (const void*)fn_8021E8B8,
-    (const void*)fn_8021E454,
-    (const void*)fn_801BDCAC,
-    (const void*)fn_80027DFC,
-    (const void*)fn_80027E04,
-    (const void*)fn_80027E0C,
-    (const void*)fn_80027E10,
-    (const void*)fn_80027E14,
-    (const void*)fn_8021F340,
-    (const void*)fn_8022051C,
-    (const void*)fn_801BD950,
-    (const void*)fn_80027E18,
-    (const void*)fn_80027E20,
-    (const void*)fn_80027E28,
-    (const void*)fn_80027E30,
-    (const void*)fn_800261B4,
-    (const void*)fn_80027E38,
-    (const void*)fn_80027ECC,
-    (const void*)fn_80027F54,
-    (const void*)fn_80027FE4,
-    (const void*)fn_8021FB5C,
-    (const void*)fn_8021FAB4,
-    (const void*)fn_8021FA1C,
-    (const void*)fn_8021F990,
-    (const void*)fn_8021F8F4,
-    (const void*)fn_8021F858,
-    (const void*)fn_8021F728,
-    (const void*)fn_8021F7CC,
-    (const void*)fn_802203A8,
-    (const void*)fn_80220260,
-    (const void*)fn_80220124,
-    (const void*)fn_80028074,
-    (const void*)fn_80028090,
-    (const void*)fn_800280B4,
-    (const void*)fn_800280E8,
-    (const void*)fn_800280F8,
-    (const void*)fn_80028100,
-    (const void*)fn_8021FC00,
-    (const void*)fn_8021F208,
-    (const void*)fn_8021E9F8,
-    (const void*)fn_801BE188,
-    (const void*)fn_801BDEF8,
-    (const void*)fn_8021DA20,
-    (const void*)fn_801BD02C,
-    (const void*)fn_801BCD74,
-    (const void*)fn_801BCAA0,
-    (const void*)fn_801BC98C,
-    (const void*)fn_801BC99C,
+    (const void*)slot40__12ObjectMove_ZFPC4Vec3PC4Vec3PC4Vec3if,
+    (const void*)slot44__12ObjectMove_ZFv,
+    (const void*)slot48__12ObjectMove_ZFv,
+    (const void*)slot4C__12ObjectMove_ZFv,
+    (const void*)slot50__12ObjectMove_ZFv,
+    (const void*)slot54__12ObjectMove_ZFv,
+    (const void*)slot58__12ObjectMove_ZFv,
+    (const void*)slot5C__12ObjectMove_ZFv,
+    (const void*)slot60__12ObjectMove_ZFv,
+    (const void*)slot64__12ObjectMove_ZFv,
+    (const void*)slot68__12ObjectMove_ZFv,
+    (const void*)slot6C__12ObjectMove_ZFv,
+    (const void*)slot70__12ObjectMove_ZFv,
+    (const void*)slot74__12ObjectMove_ZFv,
+    (const void*)slot78__12ObjectMove_ZFf,
+    (const void*)slot7C__12ObjectMove_ZFv,
+    (const void*)slot80__12ObjectMove_ZFv,
+    (const void*)slot84__12ObjectMove_ZFv,
+    (const void*)slot88__12ObjectMove_ZFv,
+    (const void*)slot8C__12ObjectMove_ZFv,
+    (const void*)slot90__12ObjectMove_ZFv,
+    (const void*)slot94__12ObjectMove_ZFv,
+    (const void*)slot98__12ObjectMove_ZFv,
+    (const void*)slot9C__12ObjectMove_ZFv,
+    (const void*)slotA0__12ObjectMove_ZFv,
+    (const void*)slotA4__12ObjectMove_ZFv,
+    (const void*)slotA8__12ObjectMove_ZFv,
+    (const void*)slotAC__12ObjectMove_ZFv,
+    (const void*)slotB0__12ObjectMove_ZFv,
+    (const void*)slotB4__12ObjectMove_ZFv,
+    (const void*)slotB8__12ObjectMove_ZFv,
+    (const void*)slotBC__12ObjectMove_ZFv,
+    (const void*)slotC0__12ObjectMove_ZFv,
+    (const void*)slotC4__12ObjectMove_ZFv,
+    (const void*)slotC8__12ObjectMove_ZFv,
+    (const void*)slotCC__12ObjectMove_ZFv,
+    (const void*)slotD0__12ObjectMove_ZFv,
+    (const void*)slotD4__12ObjectMove_ZFv,
+    (const void*)slotD8__12ObjectMove_ZFv,
+    (const void*)slotDC__12ObjectMove_ZFv,
+    (const void*)slotE0__12ObjectMove_ZFv,
+    (const void*)slotE4__12ObjectMove_ZFv,
+    (const void*)slotE8__12ObjectMove_ZFv,
+    (const void*)slotEC__12ObjectMove_ZFv,
+    (const void*)slotF0__12ObjectMove_ZFv,
+    (const void*)slotF4__12ObjectMove_ZFv,
+    (const void*)slotF8__12ObjectMove_ZFv,
+    (const void*)slotFC__12ObjectMove_ZFv,
+    (const void*)slot100__12ObjectMove_ZFv,
+    (const void*)slot104__12ObjectMove_ZFv,
+    (const void*)slot108__12ObjectMove_ZFv,
+    (const void*)slot10C__12ObjectMove_ZFv,
+    (const void*)slot110__12ObjectMove_ZFv,
+    (const void*)slot114__12ObjectMove_ZFv,
+    (const void*)slot118__12ObjectMove_ZFv,
+    (const void*)slot11C__12ObjectMove_ZFv,
 };
 
 extern "C" __declspec(section ".data") const void* const lbl_802EB518[92] __attribute__((aligned(4))) = {
     0,
     0,
-    (const void*)__dt__16Objects_802EB518Fv,
+    (const void*)__dt__9LodMove_ZFv,
     (const void*)slot0C__12BaseObject_ZFUl,
     (const void*)slot10__12BaseObject_ZFv,
     (const void*)slot14__12BaseObject_ZFv,
@@ -507,85 +507,85 @@ extern "C" __declspec(section ".data") const void* const lbl_802EB518[92] __attr
     (const void*)slot28__11Activable_ZFv,
     (const void*)slot2C__13Manipulator_ZFf,
     (const void*)slot30__13Manipulator_ZFv,
-    (const void*)fn_80224888,
+    (const void*)slot34__9LodMove_ZFv,
     (const void*)fn_80222E44,
     (const void*)slot3C__13Manipulator_ZFv,
     (const void*)fn_80222CFC,
-    (const void*)fn_8021F5BC,
-    (const void*)fn_801C0CC8,
-    (const void*)fn_801BF5A4,
-    (const void*)fn_801C0BC4,
-    (const void*)fn_80027DD0,
-    (const void*)fn_80221EEC,
-    (const void*)fn_80222B48,
-    (const void*)fn_8021E8B8,
-    (const void*)fn_80228408,
-    (const void*)fn_801BDCAC,
-    (const void*)fn_80027DFC,
-    (const void*)fn_80027E04,
-    (const void*)fn_80027E0C,
-    (const void*)fn_80027E10,
-    (const void*)fn_80027E14,
-    (const void*)fn_8021F340,
-    (const void*)fn_80229CA4,
-    (const void*)fn_801BD950,
-    (const void*)fn_80027E18,
-    (const void*)fn_80027E20,
-    (const void*)fn_80027E28,
-    (const void*)fn_80027E30,
-    (const void*)fn_800261B4,
-    (const void*)fn_80027E38,
-    (const void*)fn_80027ECC,
-    (const void*)fn_80027F54,
-    (const void*)fn_80027FE4,
-    (const void*)fn_80223448,
-    (const void*)fn_8021FAB4,
-    (const void*)fn_8021FA1C,
-    (const void*)fn_8022312C,
-    (const void*)fn_80222E64,
-    (const void*)fn_8021F858,
-    (const void*)fn_8021F728,
-    (const void*)fn_8021F7CC,
-    (const void*)fn_802203A8,
-    (const void*)fn_80220260,
-    (const void*)fn_80220124,
-    (const void*)fn_80028074,
-    (const void*)fn_80028090,
-    (const void*)fn_800280B4,
-    (const void*)fn_800280E8,
-    (const void*)fn_800280F8,
-    (const void*)fn_80028100,
-    (const void*)fn_80227F4C,
-    (const void*)fn_8021F208,
-    (const void*)fn_80228E0C,
-    (const void*)fn_801C1A04,
-    (const void*)fn_801BDEF8,
-    (const void*)fn_802217BC,
-    (const void*)fn_801BD02C,
-    (const void*)fn_801BCD74,
-    (const void*)fn_801BCAA0,
-    (const void*)fn_80221A0C,
-    (const void*)fn_801BC99C,
-    (const void*)fn_80228ECC,
-    (const void*)fn_80227F98,
-    (const void*)fn_80227F9C,
-    (const void*)fn_80229B4C,
-    (const void*)fn_802223EC,
-    (const void*)fn_80222138,
-    (const void*)fn_80027DCC,
-    (const void*)fn_80224294,
-    (const void*)fn_80027CE4,
-    (const void*)fn_80027CEC,
-    (const void*)fn_80027CF0,
-    (const void*)fn_80027D1C,
-    (const void*)fn_80027D20,
-    (const void*)fn_80027D24,
-    (const void*)fn_80027D44,
-    (const void*)fn_80027D64,
-    (const void*)fn_80027D6C,
-    (const void*)fn_801BEB0C,
-    (const void*)fn_80027DC8,
-    (const void*)fn_80220D78,
+    (const void*)slot44__12ObjectMove_ZFv,
+    (const void*)slot48__9LodMove_ZFv,
+    (const void*)slot4C__9LodMove_ZFv,
+    (const void*)slot50__9LodMove_ZFv,
+    (const void*)slot54__12ObjectMove_ZFv,
+    (const void*)slot58__9LodMove_ZFv,
+    (const void*)slot5C__9LodMove_ZFv,
+    (const void*)slot60__12ObjectMove_ZFv,
+    (const void*)slot64__13ObjectThrow_ZFv,
+    (const void*)slot68__12ObjectMove_ZFv,
+    (const void*)slot6C__12ObjectMove_ZFv,
+    (const void*)slot70__12ObjectMove_ZFv,
+    (const void*)slot74__12ObjectMove_ZFv,
+    (const void*)slot78__12ObjectMove_ZFf,
+    (const void*)slot7C__12ObjectMove_ZFv,
+    (const void*)slot80__12ObjectMove_ZFv,
+    (const void*)slot84__13ObjectThrow_ZFv,
+    (const void*)slot88__12ObjectMove_ZFv,
+    (const void*)slot8C__12ObjectMove_ZFv,
+    (const void*)slot90__12ObjectMove_ZFv,
+    (const void*)slot94__12ObjectMove_ZFv,
+    (const void*)slot98__12ObjectMove_ZFv,
+    (const void*)slot9C__12ObjectMove_ZFv,
+    (const void*)slotA0__12ObjectMove_ZFv,
+    (const void*)slotA4__12ObjectMove_ZFv,
+    (const void*)slotA8__12ObjectMove_ZFv,
+    (const void*)slotAC__12ObjectMove_ZFv,
+    (const void*)slotB0__9LodMove_ZFv,
+    (const void*)slotB4__12ObjectMove_ZFv,
+    (const void*)slotB8__12ObjectMove_ZFv,
+    (const void*)slotBC__9LodMove_ZFv,
+    (const void*)slotC0__9LodMove_ZFv,
+    (const void*)slotC4__12ObjectMove_ZFv,
+    (const void*)slotC8__12ObjectMove_ZFv,
+    (const void*)slotCC__12ObjectMove_ZFv,
+    (const void*)slotD0__12ObjectMove_ZFv,
+    (const void*)slotD4__12ObjectMove_ZFv,
+    (const void*)slotD8__12ObjectMove_ZFv,
+    (const void*)slotDC__12ObjectMove_ZFv,
+    (const void*)slotE0__12ObjectMove_ZFv,
+    (const void*)slotE4__12ObjectMove_ZFv,
+    (const void*)slotE8__12ObjectMove_ZFv,
+    (const void*)slotEC__12ObjectMove_ZFv,
+    (const void*)slotF0__12ObjectMove_ZFv,
+    (const void*)slotF4__13ObjectThrow_ZFv,
+    (const void*)slotF8__12ObjectMove_ZFv,
+    (const void*)slotFC__13ObjectThrow_ZFv,
+    (const void*)slot100__13ObjectThrow_ZFv,
+    (const void*)slot104__12ObjectMove_ZFv,
+    (const void*)slot108__9LodMove_ZFv,
+    (const void*)slot10C__12ObjectMove_ZFv,
+    (const void*)slot110__12ObjectMove_ZFv,
+    (const void*)slot114__12ObjectMove_ZFv,
+    (const void*)slot118__9LodMove_ZFv,
+    (const void*)slot11C__12ObjectMove_ZFv,
+    (const void*)slot120__13ObjectThrow_ZFv,
+    (const void*)slot124__13ObjectThrow_ZFv,
+    (const void*)slot128__13ObjectThrow_ZFv,
+    (const void*)slot12C__13ObjectThrow_ZFv,
+    (const void*)slot130__9LodMove_ZFv,
+    (const void*)slot134__9LodMove_ZFv,
+    (const void*)slot138__13ObjectThrow_ZFv,
+    (const void*)slot13C__9LodMove_ZFv,
+    (const void*)slot140__9LodMove_ZFv,
+    (const void*)slot144__9LodMove_ZFv,
+    (const void*)slot148__9LodMove_ZFv,
+    (const void*)slot14C__9LodMove_ZFv,
+    (const void*)slot150__9LodMove_ZFv,
+    (const void*)slot154__9LodMove_ZFv,
+    (const void*)slot158__9LodMove_ZFv,
+    (const void*)slot15C__9LodMove_ZFv,
+    (const void*)slot160__9LodMove_ZFiPv,
+    (const void*)slot164__9LodMove_ZFv,
+    (const void*)slot168__9LodMove_ZFv,
+    (const void*)slot16C__9LodMove_ZFv,
 };
 
 extern "C" __declspec(section ".data") const void* const __vt__11ObjectsMove[78] __attribute__((aligned(4))) = {
@@ -612,27 +612,27 @@ extern "C" __declspec(section ".data") const void* const __vt__11ObjectsMove[78]
     (const void*)fn_801C17DC,
     (const void*)fn_80225654,
     (const void*)fn_8021E018,
-    (const void*)fn_8021E8FC,
-    (const void*)fn_8021E8B8,
+    (const void*)slot5C__12ObjectMove_ZFv,
+    (const void*)slot60__12ObjectMove_ZFv,
     (const void*)fn_80224CA8,
-    (const void*)fn_801BDCAC,
-    (const void*)fn_80027DFC,
-    (const void*)fn_80027E04,
-    (const void*)fn_80027E0C,
-    (const void*)fn_80027E10,
+    (const void*)slot68__12ObjectMove_ZFv,
+    (const void*)slot6C__12ObjectMove_ZFv,
+    (const void*)slot70__12ObjectMove_ZFv,
+    (const void*)slot74__12ObjectMove_ZFv,
+    (const void*)slot78__12ObjectMove_ZFf,
     (const void*)fn_80224B2C,
     (const void*)fn_802276C8,
-    (const void*)fn_8022051C,
-    (const void*)fn_801BD950,
+    (const void*)slot84__12ObjectMove_ZFv,
+    (const void*)slot88__12ObjectMove_ZFv,
     (const void*)fn_801C1744,
     (const void*)fn_801C2B58,
     (const void*)fn_80224B34,
     (const void*)fn_802256BC,
     (const void*)fn_801C2F5C,
-    (const void*)fn_80027E38,
-    (const void*)fn_80027ECC,
-    (const void*)fn_80027F54,
-    (const void*)fn_80027FE4,
+    (const void*)slotA0__12ObjectMove_ZFv,
+    (const void*)slotA4__12ObjectMove_ZFv,
+    (const void*)slotA8__12ObjectMove_ZFv,
+    (const void*)slotAC__12ObjectMove_ZFv,
     (const void*)fn_80226924,
     (const void*)fn_80226880,
     (const void*)fn_802267E8,
@@ -641,9 +641,9 @@ extern "C" __declspec(section ".data") const void* const __vt__11ObjectsMove[78]
     (const void*)fn_80226624,
     (const void*)fn_802264F8,
     (const void*)fn_8022659C,
-    (const void*)fn_802203A8,
-    (const void*)fn_80220260,
-    (const void*)fn_80220124,
+    (const void*)slotD0__12ObjectMove_ZFv,
+    (const void*)slotD4__12ObjectMove_ZFv,
+    (const void*)slotD8__12ObjectMove_ZFv,
     (const void*)fn_801C1790,
     (const void*)fn_80224B7C,
     (const void*)fn_80224BB4,
@@ -651,13 +651,13 @@ extern "C" __declspec(section ".data") const void* const __vt__11ObjectsMove[78]
     (const void*)fn_80224BF8,
     (const void*)fn_80224C08,
     (const void*)fn_80224C1C,
-    (const void*)fn_8021F208,
-    (const void*)fn_8021E9F8,
-    (const void*)fn_801BE188,
+    (const void*)slotF8__12ObjectMove_ZFv,
+    (const void*)slotFC__12ObjectMove_ZFv,
+    (const void*)slot100__12ObjectMove_ZFv,
     (const void*)fn_801C0F34,
-    (const void*)fn_8021DA20,
-    (const void*)fn_801BD02C,
-    (const void*)fn_801BCD74,
+    (const void*)slot108__12ObjectMove_ZFv,
+    (const void*)slot10C__12ObjectMove_ZFv,
+    (const void*)slot110__12ObjectMove_ZFv,
     (const void*)fn_801C0E40,
     (const void*)fn_801C0DCC,
     (const void*)fn_801C0DE8,
@@ -672,7 +672,7 @@ extern "C" __declspec(section ".data") const void* const __vt__11ObjectsMove[78]
 extern "C" __declspec(section ".data") const void* const lbl_802EB7C0[80] __attribute__((aligned(4))) = {
     0,
     0,
-    (const void*)__dt__16Objects_802EB7C0Fv,
+    (const void*)__dt__13ObjectThrow_ZFv,
     (const void*)slot0C__12BaseObject_ZFUl,
     (const void*)slot10__12BaseObject_ZFv,
     (const void*)slot14__12BaseObject_ZFv,
@@ -683,72 +683,72 @@ extern "C" __declspec(section ".data") const void* const lbl_802EB7C0[80] __attr
     (const void*)slot28__11Activable_ZFv,
     (const void*)slot2C__13Manipulator_ZFf,
     (const void*)slot30__13Manipulator_ZFv,
-    (const void*)fn_80229EE0,
+    (const void*)slot34__13ObjectThrow_ZFv,
     (const void*)fn_80229A78,
     (const void*)slot3C__13Manipulator_ZFv,
     (const void*)fn_8022993C,
-    (const void*)fn_8021F5BC,
-    (const void*)fn_801C2520,
-    (const void*)fn_801C1CB4,
-    (const void*)fn_801C234C,
-    (const void*)fn_80027DD0,
-    (const void*)fn_8028E4F8,
-    (const void*)fn_80227C30,
-    (const void*)fn_8021E8B8,
-    (const void*)fn_80228408,
-    (const void*)fn_801BDCAC,
-    (const void*)fn_80027DFC,
-    (const void*)fn_80027E04,
-    (const void*)fn_80027E0C,
-    (const void*)fn_80027E10,
-    (const void*)fn_80027E14,
-    (const void*)fn_8021F340,
-    (const void*)fn_80229CA4,
-    (const void*)fn_801BD950,
-    (const void*)fn_80027E18,
-    (const void*)fn_80027E20,
-    (const void*)fn_80027E28,
-    (const void*)fn_80027E30,
-    (const void*)fn_800261B4,
-    (const void*)fn_80027E38,
-    (const void*)fn_80027ECC,
-    (const void*)fn_80027F54,
-    (const void*)fn_80027FE4,
-    (const void*)fn_8021FB5C,
-    (const void*)fn_8021FAB4,
-    (const void*)fn_8021FA1C,
-    (const void*)fn_8021F990,
-    (const void*)fn_8021F8F4,
-    (const void*)fn_8021F858,
-    (const void*)fn_8021F728,
-    (const void*)fn_8021F7CC,
-    (const void*)fn_802203A8,
-    (const void*)fn_80220260,
-    (const void*)fn_80220124,
-    (const void*)fn_80028074,
-    (const void*)fn_80028090,
-    (const void*)fn_800280B4,
-    (const void*)fn_800280E8,
-    (const void*)fn_800280F8,
-    (const void*)fn_80028100,
-    (const void*)fn_80227F4C,
-    (const void*)fn_8021F208,
-    (const void*)fn_80228E0C,
-    (const void*)fn_801C1A04,
-    (const void*)fn_801BDEF8,
-    (const void*)fn_8021DA20,
-    (const void*)fn_801BD02C,
-    (const void*)fn_801BCD74,
-    (const void*)fn_801BCAA0,
-    (const void*)fn_801BC98C,
-    (const void*)fn_801BC99C,
-    (const void*)fn_80228ECC,
-    (const void*)fn_80227F98,
-    (const void*)fn_80227F9C,
-    (const void*)fn_80229B4C,
-    (const void*)fn_800AFCA8,
-    (const void*)fn_800AFCAC,
-    (const void*)fn_80027DCC,
+    (const void*)slot44__12ObjectMove_ZFv,
+    (const void*)slot48__13ObjectThrow_ZFv,
+    (const void*)slot4C__13ObjectThrow_ZFv,
+    (const void*)slot50__13ObjectThrow_ZFv,
+    (const void*)slot54__12ObjectMove_ZFv,
+    (const void*)slot58__12ObjectMove_ZFv,
+    (const void*)slot5C__13ObjectThrow_ZFv,
+    (const void*)slot60__12ObjectMove_ZFv,
+    (const void*)slot64__13ObjectThrow_ZFv,
+    (const void*)slot68__12ObjectMove_ZFv,
+    (const void*)slot6C__12ObjectMove_ZFv,
+    (const void*)slot70__12ObjectMove_ZFv,
+    (const void*)slot74__12ObjectMove_ZFv,
+    (const void*)slot78__12ObjectMove_ZFf,
+    (const void*)slot7C__12ObjectMove_ZFv,
+    (const void*)slot80__12ObjectMove_ZFv,
+    (const void*)slot84__13ObjectThrow_ZFv,
+    (const void*)slot88__12ObjectMove_ZFv,
+    (const void*)slot8C__12ObjectMove_ZFv,
+    (const void*)slot90__12ObjectMove_ZFv,
+    (const void*)slot94__12ObjectMove_ZFv,
+    (const void*)slot98__12ObjectMove_ZFv,
+    (const void*)slot9C__12ObjectMove_ZFv,
+    (const void*)slotA0__12ObjectMove_ZFv,
+    (const void*)slotA4__12ObjectMove_ZFv,
+    (const void*)slotA8__12ObjectMove_ZFv,
+    (const void*)slotAC__12ObjectMove_ZFv,
+    (const void*)slotB0__12ObjectMove_ZFv,
+    (const void*)slotB4__12ObjectMove_ZFv,
+    (const void*)slotB8__12ObjectMove_ZFv,
+    (const void*)slotBC__12ObjectMove_ZFv,
+    (const void*)slotC0__12ObjectMove_ZFv,
+    (const void*)slotC4__12ObjectMove_ZFv,
+    (const void*)slotC8__12ObjectMove_ZFv,
+    (const void*)slotCC__12ObjectMove_ZFv,
+    (const void*)slotD0__12ObjectMove_ZFv,
+    (const void*)slotD4__12ObjectMove_ZFv,
+    (const void*)slotD8__12ObjectMove_ZFv,
+    (const void*)slotDC__12ObjectMove_ZFv,
+    (const void*)slotE0__12ObjectMove_ZFv,
+    (const void*)slotE4__12ObjectMove_ZFv,
+    (const void*)slotE8__12ObjectMove_ZFv,
+    (const void*)slotEC__12ObjectMove_ZFv,
+    (const void*)slotF0__12ObjectMove_ZFv,
+    (const void*)slotF4__13ObjectThrow_ZFv,
+    (const void*)slotF8__12ObjectMove_ZFv,
+    (const void*)slotFC__13ObjectThrow_ZFv,
+    (const void*)slot100__13ObjectThrow_ZFv,
+    (const void*)slot104__12ObjectMove_ZFv,
+    (const void*)slot108__12ObjectMove_ZFv,
+    (const void*)slot10C__12ObjectMove_ZFv,
+    (const void*)slot110__12ObjectMove_ZFv,
+    (const void*)slot114__12ObjectMove_ZFv,
+    (const void*)slot118__12ObjectMove_ZFv,
+    (const void*)slot11C__12ObjectMove_ZFv,
+    (const void*)slot120__13ObjectThrow_ZFv,
+    (const void*)slot124__13ObjectThrow_ZFv,
+    (const void*)slot128__13ObjectThrow_ZFv,
+    (const void*)slot12C__13ObjectThrow_ZFv,
+    (const void*)slot130__13ObjectThrow_ZFv,
+    (const void*)slot134__13ObjectThrow_ZFv,
+    (const void*)slot138__13ObjectThrow_ZFv,
     0,
 };
 
@@ -774,7 +774,7 @@ extern "C" __declspec(section ".data") const void* const __vt__20ObjectsGame_802
 extern "C" __declspec(section ".data") const void* const lbl_802EB940[92] __attribute__((aligned(4))) = {
     0,
     0,
-    (const void*)__dt__16Objects_802EB940Fv,
+    (const void*)__dt__14VehiculeMove_ZFv,
     (const void*)slot0C__12BaseObject_ZFUl,
     (const void*)slot10__12BaseObject_ZFv,
     (const void*)slot14__12BaseObject_ZFv,
@@ -789,81 +789,81 @@ extern "C" __declspec(section ".data") const void* const lbl_802EB940[92] __attr
     (const void*)fn_80222E44,
     (const void*)slot3C__13Manipulator_ZFv,
     (const void*)fn_80222CFC,
-    (const void*)fn_8021F5BC,
-    (const void*)fn_801C0CC8,
-    (const void*)fn_801BF5A4,
-    (const void*)fn_801C0BC4,
-    (const void*)fn_80027DD0,
-    (const void*)fn_80221EEC,
-    (const void*)fn_80222B48,
-    (const void*)fn_8021E8B8,
-    (const void*)fn_80228408,
-    (const void*)fn_801BDCAC,
-    (const void*)fn_80027DFC,
-    (const void*)fn_80027E04,
-    (const void*)fn_80027E0C,
-    (const void*)fn_80027E10,
-    (const void*)fn_80027E14,
-    (const void*)fn_8021F340,
-    (const void*)fn_80229CA4,
-    (const void*)fn_801BD950,
-    (const void*)fn_80027E18,
-    (const void*)fn_80027E20,
-    (const void*)fn_80027E28,
-    (const void*)fn_80027E30,
-    (const void*)fn_800261B4,
-    (const void*)fn_80027E38,
-    (const void*)fn_80027ECC,
-    (const void*)fn_80027F54,
-    (const void*)fn_80027FE4,
-    (const void*)fn_80223448,
-    (const void*)fn_8021FAB4,
-    (const void*)fn_8021FA1C,
-    (const void*)fn_8022312C,
-    (const void*)fn_80222E64,
-    (const void*)fn_8021F858,
-    (const void*)fn_8021F728,
-    (const void*)fn_8021F7CC,
-    (const void*)fn_802203A8,
-    (const void*)fn_80220260,
-    (const void*)fn_80220124,
-    (const void*)fn_80028074,
-    (const void*)fn_80028090,
-    (const void*)fn_800280B4,
-    (const void*)fn_800280E8,
-    (const void*)fn_800280F8,
-    (const void*)fn_80028100,
-    (const void*)fn_80227F4C,
-    (const void*)fn_8021F208,
-    (const void*)fn_80228E0C,
-    (const void*)fn_801C1A04,
-    (const void*)fn_801BDEF8,
-    (const void*)fn_802217BC,
-    (const void*)fn_801BD02C,
-    (const void*)fn_801BCD74,
-    (const void*)fn_801BCAA0,
-    (const void*)fn_80221A0C,
-    (const void*)fn_801BC99C,
-    (const void*)fn_80228ECC,
-    (const void*)fn_80227F98,
-    (const void*)fn_80227F9C,
-    (const void*)fn_80229B4C,
-    (const void*)fn_802223EC,
-    (const void*)fn_80222138,
-    (const void*)fn_80027DCC,
-    (const void*)fn_80224294,
-    (const void*)fn_80027CE4,
-    (const void*)fn_80027CEC,
-    (const void*)fn_80027CF0,
-    (const void*)fn_80027D1C,
-    (const void*)fn_80027D20,
-    (const void*)fn_80027D24,
-    (const void*)fn_80027D44,
-    (const void*)fn_80027D64,
-    (const void*)fn_80027D6C,
-    (const void*)fn_801BEB0C,
-    (const void*)fn_80027DC8,
-    (const void*)fn_80220D78,
+    (const void*)slot44__12ObjectMove_ZFv,
+    (const void*)slot48__9LodMove_ZFv,
+    (const void*)slot4C__9LodMove_ZFv,
+    (const void*)slot50__9LodMove_ZFv,
+    (const void*)slot54__12ObjectMove_ZFv,
+    (const void*)slot58__9LodMove_ZFv,
+    (const void*)slot5C__9LodMove_ZFv,
+    (const void*)slot60__12ObjectMove_ZFv,
+    (const void*)slot64__13ObjectThrow_ZFv,
+    (const void*)slot68__12ObjectMove_ZFv,
+    (const void*)slot6C__12ObjectMove_ZFv,
+    (const void*)slot70__12ObjectMove_ZFv,
+    (const void*)slot74__12ObjectMove_ZFv,
+    (const void*)slot78__12ObjectMove_ZFf,
+    (const void*)slot7C__12ObjectMove_ZFv,
+    (const void*)slot80__12ObjectMove_ZFv,
+    (const void*)slot84__13ObjectThrow_ZFv,
+    (const void*)slot88__12ObjectMove_ZFv,
+    (const void*)slot8C__12ObjectMove_ZFv,
+    (const void*)slot90__12ObjectMove_ZFv,
+    (const void*)slot94__12ObjectMove_ZFv,
+    (const void*)slot98__12ObjectMove_ZFv,
+    (const void*)slot9C__12ObjectMove_ZFv,
+    (const void*)slotA0__12ObjectMove_ZFv,
+    (const void*)slotA4__12ObjectMove_ZFv,
+    (const void*)slotA8__12ObjectMove_ZFv,
+    (const void*)slotAC__12ObjectMove_ZFv,
+    (const void*)slotB0__9LodMove_ZFv,
+    (const void*)slotB4__12ObjectMove_ZFv,
+    (const void*)slotB8__12ObjectMove_ZFv,
+    (const void*)slotBC__9LodMove_ZFv,
+    (const void*)slotC0__9LodMove_ZFv,
+    (const void*)slotC4__12ObjectMove_ZFv,
+    (const void*)slotC8__12ObjectMove_ZFv,
+    (const void*)slotCC__12ObjectMove_ZFv,
+    (const void*)slotD0__12ObjectMove_ZFv,
+    (const void*)slotD4__12ObjectMove_ZFv,
+    (const void*)slotD8__12ObjectMove_ZFv,
+    (const void*)slotDC__12ObjectMove_ZFv,
+    (const void*)slotE0__12ObjectMove_ZFv,
+    (const void*)slotE4__12ObjectMove_ZFv,
+    (const void*)slotE8__12ObjectMove_ZFv,
+    (const void*)slotEC__12ObjectMove_ZFv,
+    (const void*)slotF0__12ObjectMove_ZFv,
+    (const void*)slotF4__13ObjectThrow_ZFv,
+    (const void*)slotF8__12ObjectMove_ZFv,
+    (const void*)slotFC__13ObjectThrow_ZFv,
+    (const void*)slot100__13ObjectThrow_ZFv,
+    (const void*)slot104__12ObjectMove_ZFv,
+    (const void*)slot108__9LodMove_ZFv,
+    (const void*)slot10C__12ObjectMove_ZFv,
+    (const void*)slot110__12ObjectMove_ZFv,
+    (const void*)slot114__12ObjectMove_ZFv,
+    (const void*)slot118__9LodMove_ZFv,
+    (const void*)slot11C__12ObjectMove_ZFv,
+    (const void*)slot120__13ObjectThrow_ZFv,
+    (const void*)slot124__13ObjectThrow_ZFv,
+    (const void*)slot128__13ObjectThrow_ZFv,
+    (const void*)slot12C__13ObjectThrow_ZFv,
+    (const void*)slot130__9LodMove_ZFv,
+    (const void*)slot134__9LodMove_ZFv,
+    (const void*)slot138__13ObjectThrow_ZFv,
+    (const void*)slot13C__9LodMove_ZFv,
+    (const void*)slot140__9LodMove_ZFv,
+    (const void*)slot144__9LodMove_ZFv,
+    (const void*)slot148__9LodMove_ZFv,
+    (const void*)slot14C__9LodMove_ZFv,
+    (const void*)slot150__9LodMove_ZFv,
+    (const void*)slot154__9LodMove_ZFv,
+    (const void*)slot158__9LodMove_ZFv,
+    (const void*)slot15C__9LodMove_ZFv,
+    (const void*)slot160__9LodMove_ZFiPv,
+    (const void*)slot164__9LodMove_ZFv,
+    (const void*)slot168__9LodMove_ZFv,
+    (const void*)slot16C__9LodMove_ZFv,
 };
 
 extern "C" __declspec(section ".data") const void* const __vt__12ObjectsBreak[78] __attribute__((aligned(4))) = {
@@ -890,27 +890,27 @@ extern "C" __declspec(section ".data") const void* const __vt__12ObjectsBreak[78
     (const void*)fn_801C17DC,
     (const void*)fn_80225654,
     (const void*)fn_801C2714,
-    (const void*)fn_8021E8FC,
-    (const void*)fn_8021E8B8,
+    (const void*)slot5C__12ObjectMove_ZFv,
+    (const void*)slot60__12ObjectMove_ZFv,
     (const void*)fn_80224CA8,
-    (const void*)fn_801BDCAC,
-    (const void*)fn_80027DFC,
-    (const void*)fn_80027E04,
-    (const void*)fn_80027E0C,
-    (const void*)fn_80027E10,
+    (const void*)slot68__12ObjectMove_ZFv,
+    (const void*)slot6C__12ObjectMove_ZFv,
+    (const void*)slot70__12ObjectMove_ZFv,
+    (const void*)slot74__12ObjectMove_ZFv,
+    (const void*)slot78__12ObjectMove_ZFf,
     (const void*)fn_80224B2C,
     (const void*)fn_8022F868,
-    (const void*)fn_8022051C,
+    (const void*)slot84__12ObjectMove_ZFv,
     (const void*)fn_801C2B98,
     (const void*)fn_801C1744,
     (const void*)fn_801C2B58,
     (const void*)fn_80224B34,
     (const void*)fn_802256BC,
     (const void*)fn_801C2F5C,
-    (const void*)fn_80027E38,
-    (const void*)fn_80027ECC,
-    (const void*)fn_80027F54,
-    (const void*)fn_80027FE4,
+    (const void*)slotA0__12ObjectMove_ZFv,
+    (const void*)slotA4__12ObjectMove_ZFv,
+    (const void*)slotA8__12ObjectMove_ZFv,
+    (const void*)slotAC__12ObjectMove_ZFv,
     (const void*)fn_8022E488,
     (const void*)fn_8022E2AC,
     (const void*)fn_8022E158,
@@ -919,9 +919,9 @@ extern "C" __declspec(section ".data") const void* const __vt__12ObjectsBreak[78
     (const void*)fn_8022DA44,
     (const void*)fn_8022D618,
     (const void*)fn_8022D888,
-    (const void*)fn_802203A8,
+    (const void*)slotD0__12ObjectMove_ZFv,
     (const void*)fn_8022FDBC,
-    (const void*)fn_80220124,
+    (const void*)slotD8__12ObjectMove_ZFv,
     (const void*)fn_801C1790,
     (const void*)fn_80224B7C,
     (const void*)fn_80224BB4,
@@ -929,13 +929,13 @@ extern "C" __declspec(section ".data") const void* const __vt__12ObjectsBreak[78
     (const void*)fn_80224BF8,
     (const void*)fn_80224C08,
     (const void*)fn_80224C1C,
-    (const void*)fn_8021F208,
-    (const void*)fn_8021E9F8,
-    (const void*)fn_801BE188,
+    (const void*)slotF8__12ObjectMove_ZFv,
+    (const void*)slotFC__12ObjectMove_ZFv,
+    (const void*)slot100__12ObjectMove_ZFv,
     (const void*)fn_801C0F34,
-    (const void*)fn_8021DA20,
-    (const void*)fn_801BD02C,
-    (const void*)fn_801BCD74,
+    (const void*)slot108__12ObjectMove_ZFv,
+    (const void*)slot10C__12ObjectMove_ZFv,
+    (const void*)slot110__12ObjectMove_ZFv,
     (const void*)fn_801C0E40,
     (const void*)fn_801C0DCC,
     (const void*)fn_801C0DE8,
@@ -971,27 +971,27 @@ extern "C" __declspec(section ".data") const void* const __vt__13ObjectsBounce[7
     (const void*)fn_801C17DC,
     (const void*)fn_80225654,
     (const void*)fn_8021E018,
-    (const void*)fn_8021E8FC,
-    (const void*)fn_8021E8B8,
+    (const void*)slot5C__12ObjectMove_ZFv,
+    (const void*)slot60__12ObjectMove_ZFv,
     (const void*)fn_80224CA8,
-    (const void*)fn_801BDCAC,
-    (const void*)fn_80027DFC,
-    (const void*)fn_80027E04,
-    (const void*)fn_80027E0C,
-    (const void*)fn_80027E10,
+    (const void*)slot68__12ObjectMove_ZFv,
+    (const void*)slot6C__12ObjectMove_ZFv,
+    (const void*)slot70__12ObjectMove_ZFv,
+    (const void*)slot74__12ObjectMove_ZFv,
+    (const void*)slot78__12ObjectMove_ZFf,
     (const void*)fn_80224B2C,
     (const void*)fn_802276C8,
-    (const void*)fn_8022051C,
-    (const void*)fn_801BD950,
+    (const void*)slot84__12ObjectMove_ZFv,
+    (const void*)slot88__12ObjectMove_ZFv,
     (const void*)fn_801C1744,
     (const void*)fn_801C2B58,
     (const void*)fn_80224B34,
     (const void*)fn_802256BC,
     (const void*)fn_801C2F5C,
-    (const void*)fn_80027E38,
-    (const void*)fn_80027ECC,
-    (const void*)fn_80027F54,
-    (const void*)fn_80027FE4,
+    (const void*)slotA0__12ObjectMove_ZFv,
+    (const void*)slotA4__12ObjectMove_ZFv,
+    (const void*)slotA8__12ObjectMove_ZFv,
+    (const void*)slotAC__12ObjectMove_ZFv,
     (const void*)fn_80226924,
     (const void*)fn_80226880,
     (const void*)fn_802267E8,
@@ -1000,9 +1000,9 @@ extern "C" __declspec(section ".data") const void* const __vt__13ObjectsBounce[7
     (const void*)fn_80226624,
     (const void*)fn_802264F8,
     (const void*)fn_8022659C,
-    (const void*)fn_802203A8,
-    (const void*)fn_80220260,
-    (const void*)fn_80220124,
+    (const void*)slotD0__12ObjectMove_ZFv,
+    (const void*)slotD4__12ObjectMove_ZFv,
+    (const void*)slotD8__12ObjectMove_ZFv,
     (const void*)fn_801C1790,
     (const void*)fn_80224B7C,
     (const void*)fn_80224BB4,
@@ -1010,13 +1010,13 @@ extern "C" __declspec(section ".data") const void* const __vt__13ObjectsBounce[7
     (const void*)fn_80224BF8,
     (const void*)fn_80224C08,
     (const void*)fn_80224C1C,
-    (const void*)fn_8021F208,
-    (const void*)fn_8021E9F8,
-    (const void*)fn_801BE188,
+    (const void*)slotF8__12ObjectMove_ZFv,
+    (const void*)slotFC__12ObjectMove_ZFv,
+    (const void*)slot100__12ObjectMove_ZFv,
     (const void*)fn_801C0F34,
-    (const void*)fn_8021DA20,
-    (const void*)fn_801BD02C,
-    (const void*)fn_801BCD74,
+    (const void*)slot108__12ObjectMove_ZFv,
+    (const void*)slot10C__12ObjectMove_ZFv,
+    (const void*)slot110__12ObjectMove_ZFv,
     (const void*)fn_801C0E40,
     (const void*)fn_801C0DCC,
     (const void*)fn_801C0DE8,

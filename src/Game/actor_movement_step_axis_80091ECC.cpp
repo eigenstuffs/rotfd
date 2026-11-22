@@ -1,4 +1,4 @@
-/* Actor movement step (fn_80091ECC).
+/* Actor movement step (slot44__14CSpongeBobMoveFv).
  * Clears the transient flag bits (keeps 0x1000003FFFFFFE3F); while any of 0x7E000000 is set the
  * step is delegated to fn_8021EC10. Otherwise the next position is position + velocity (+0x144)
  * * delta, and the direction is either the override vector (+0x44C, when +0x448 == 1) or the
@@ -65,7 +65,7 @@ struct Actor : Header {
 };
 extern "C" void fn_8021EC10(Actor*, const Vec*, Vec*, Vec*, float);
 #pragma opt_common_subs off
-extern "C" void fn_80091ECC(Actor* self, const Vec* position, Vec* next, Vec* direction, float delta) {
+extern "C" void slot44__14CSpongeBobMoveFv(Actor* self, const Vec* position, Vec* next, Vec* direction, float delta) {
     self->flags &= 0x1000003FFFFFFE3FULL;
     if (self->flags & 0x7E000000ULL) {
         fn_8021EC10(self, position, next, direction, delta);

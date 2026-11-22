@@ -1,6 +1,6 @@
 #include "Game/event_state_notify_views.h"
 
-extern "C" void fn_80096F3C(StateNotifyOwner* self, int,
+extern "C" void slot40__15CGreenJfishMoveFPC4Vec3PC4Vec3PC4Vec3if(StateNotifyOwner* self, int,
                            const StateVector* position)
 {
     if (self->previous == 8 && self->state == 5)

@@ -1,3 +1,3 @@
 #include "Game/motion_forwarding.h"
 
-extern "C" void fn_800A4CA0(ForwardActor* self,float delta){fn_8009DF78(self,delta);}
+extern "C" void slot38__12CComplexMoveFf(ForwardActor* self,float delta){slot38__11CScriptMoveFf(self,delta);}

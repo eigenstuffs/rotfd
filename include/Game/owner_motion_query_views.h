@@ -123,6 +123,6 @@ void fn_8007D6A0(void*, int);
 void fn_80099F74(MotionQueryAgent*, float*);
 void fn_8009A270(MotionQueryAgent*, float*);
 void fn_8009A3CC(MotionQueryAgent*, MotionQueryVector*);
-void planarDirection_8009A6D4__15Object_80098A70FP4Vec3(MotionQueryAgent*, MotionQueryVector*);
+void planarDirection_8009A6D4__14CJellyfishMoveFP4Vec3(MotionQueryAgent*, MotionQueryVector*);
 }
 #endif

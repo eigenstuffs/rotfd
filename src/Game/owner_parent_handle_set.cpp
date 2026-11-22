@@ -7,4 +7,4 @@ extern "C"{extern struct{char unknown00[0x118];PropertyManager*manager;}lbl_801E
 static inline char*resolveProperty(const PropertyHandle&h){PropertyEntry*e=&lbl_801E9D24.manager->entries[h.index];if(e->generation==h.generation)return e->object;return 0;}
 extern "C" void fn_801F86C8(void*,const void*,int);
 inline void assignParent(PropertyHandle&dest,const PropertyHandle&input){fn_801F86C8(lbl_801E9D24.manager,&dest,-1);dest=input;fn_801F86C8(lbl_801E9D24.manager,&input,1);}
-extern "C" void fn_8022051C(PropertyOwner*self,const PropertyHandle*handle){assignParent(self->first,*handle);const PropertyHandle*parent=(const PropertyHandle*)(resolveProperty(*handle)+0x130);assignParent(self->second,*parent);self->reset(0);}
+extern "C" void slot84__12ObjectMove_ZFv(PropertyOwner*self,const PropertyHandle*handle){assignParent(self->first,*handle);const PropertyHandle*parent=(const PropertyHandle*)(resolveProperty(*handle)+0x130);assignParent(self->second,*parent);self->reset(0);}

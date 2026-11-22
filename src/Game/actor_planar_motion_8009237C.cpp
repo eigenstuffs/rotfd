@@ -20,7 +20,7 @@ struct PlanarMotionActor {
 
 extern "C" Vec3 game_vec3_zero;
 
-extern "C" void fn_8009237C(PlanarMotionActor* self) {
+extern "C" void slot198__14CSpongeBobMoveFf(PlanarMotionActor* self) {
     Vec3 sum = game_vec3_zero;
     sum += self->delta + self->pos;
     sum.y = self->pos.y;

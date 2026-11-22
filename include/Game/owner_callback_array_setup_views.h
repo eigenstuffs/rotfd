@@ -6,7 +6,7 @@ struct CallbackArrayOwner{char unknown00[0x318];CallbackArrayController controll
 extern "C" {
 extern unsigned char lbl_801EF5C8[];
 void*fn_801EFA1C(void*,unsigned int,const char*,const char*,int,int);
-void fn_80098B18(CallbackArrayOwner*,void*);
+void slot1A4__14CJellyfishMoveFv(CallbackArrayOwner*,void*);
 extern const char lbl_8029DE20[],lbl_8029DE30[];
 CallbackArrayEntry*fn_80094AB4(CallbackArrayEntry*,CallbackArrayOwner*,void*);
 CallbackArrayEntry*fn_80094DDC(CallbackArrayEntry*,CallbackArrayOwner*,void*);

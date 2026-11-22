@@ -1,5 +1,5 @@
 /* Length of the first matrix column (X-axis scale) of the object the
-   primary property handle resolves to (fn_8021FAB4).
+   primary property handle resolves to (slotB4__12ObjectMove_ZFv).
    The handle comes from virtual slot 0x9C of the property owner, as in the
    neighboring owner_primary_property_*_get.cpp units.
    The engine square root is the bare reciprocal of a reciprocal-square-root
@@ -32,7 +32,7 @@ inline float length(float x,float y,float z)
     return r;
 }
 
-extern "C" float fn_8021FAB4(PropertyOwner*self)
+extern "C" float slotB4__12ObjectMove_ZFv(PropertyOwner*self)
 {
     char*object=resolveProperty(*self->getHandle(0));
     float*matrix=*(float**)(object+0x124);

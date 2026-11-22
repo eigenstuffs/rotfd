@@ -1,7 +1,7 @@
 #pragma fp_contract on
 #include "Game/engine_motion_collect_apply.h"
 
-extern "C" int fn_80221A0C(MotionCollectOwner* self, signed char clear,
+extern "C" int slot118__9LodMove_ZFv(MotionCollectOwner* self, signed char clear,
                            void* context) {
     if (clear) {
         self->flags &= ~0x200000000ULL;

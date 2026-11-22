@@ -4,7 +4,7 @@
 struct CollisionHeightOwner_801BDCAC;
 struct CollisionHeightPoint_801BDCAC;
 
-extern "C" void fn_801BDCAC(CollisionHeightOwner_801BDCAC*, void*,
+extern "C" void slot68__12ObjectMove_ZFv(CollisionHeightOwner_801BDCAC*, void*,
                             CollisionHeightPoint_801BDCAC*, int);
 
 #endif

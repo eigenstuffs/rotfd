@@ -4,7 +4,7 @@
  * views that reference these entries by C name.  GC/1.3.2 has no sibling-call
  * optimisation, so this C view is built with GC/3.0a3, which emits the
  * identical eight-byte tail call. */
-extern void fn_8009DC5C(void *self);
-void fn_8009FE40(char *self) { fn_8009DC5C(self - 0x318); }
-extern void __dt__15Object_8009DAB0Fv(void *self, int flags);
-void fn_8009FE48(char *self, int flags) { __dt__15Object_8009DAB0Fv(self - 0x318, flags); }
+extern void configureCallbacks__11CScriptMoveFv(void *self);
+void fn_8009FE40(char *self) { configureCallbacks__11CScriptMoveFv(self - 0x318); }
+extern void __dt__11CScriptMoveFv(void *self, int flags);
+void fn_8009FE48(char *self, int flags) { __dt__11CScriptMoveFv(self - 0x318, flags); }

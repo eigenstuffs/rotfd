@@ -1,6 +1,6 @@
-/* Owner movement step with sphere sweep (fn_80098EDC).
-   Defers to fn_801BE4D0 when fn_8021F23C holds the owner or flag 0x40000 is
-   set, and to fn_801C1CB4 for flag 0x800000000. Otherwise, when flag 0x400 is
+/* Owner movement step with sphere sweep (slot4C__14CJellyfishMoveFv).
+   Defers to slot4C__12ObjectMove_ZFv when fn_8021F23C holds the owner or flag 0x40000 is
+   set, and to slot4C__13ObjectThrow_ZFv for flag 0x800000000. Otherwise, when flag 0x400 is
    set and the resource behind the handle at 0x168 has a primary sphere, the
    target-pos delta is tried through virtual tryMove (0x16C); failing that, the
    start is offset by virtual compute (0x10C), a fixed array of up to ten
@@ -242,21 +242,21 @@ struct Owner : Prefix {
 
 extern "C" {
 signed char fn_8021F23C(Owner*);
-void fn_801BE4D0(Owner*, World*, const Vec3*, Vec3*, Vec3*, const Vec3*, int, float);
-void fn_801C1CB4(Owner*, World*, const Vec3*, Vec3*, Vec3*, const Vec3*, int, float);
+void slot4C__12ObjectMove_ZFv(Owner*, World*, const Vec3*, Vec3*, Vec3*, const Vec3*, int, float);
+void slot4C__13ObjectThrow_ZFv(Owner*, World*, const Vec3*, Vec3*, Vec3*, const Vec3*, int, float);
 Sphere fn_80099A00(const Matrix*, const Sphere*);
 signed char fn_80269818(World*, const Ray&, Result*, Flags, Flags);
 }
 
-extern "C" void fn_80098EDC(Owner* self, World* world, const Vec3* pos, Vec3* target, Vec3* out,
+extern "C" void slot4C__14CJellyfishMoveFv(Owner* self, World* world, const Vec3* pos, Vec3* target, Vec3* out,
                             Vec3* vel, int index, float dt)
 {
     if (fn_8021F23C(self) || self->hasFlags(0x40000ULL)) {
-        fn_801BE4D0(self, world, pos, target, out, vel, index, dt);
+        slot4C__12ObjectMove_ZFv(self, world, pos, target, out, vel, index, dt);
         return;
     }
     if (self->flags & 0x800000000ULL) {
-        fn_801C1CB4(self, world, pos, target, out, vel, index, dt);
+        slot4C__13ObjectThrow_ZFv(self, world, pos, target, out, vel, index, dt);
         return;
     }
     Vec3 start = *pos;

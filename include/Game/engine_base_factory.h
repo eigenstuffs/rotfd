@@ -33,7 +33,7 @@ struct Manipulator_Z : FactoryBasePrefix {
     virtual ~Manipulator_Z();
     char unknown0C[0x20 - 0xC];
 };
-struct ObjectsBase_802EB3F8 : Manipulator_Z {
+struct ObjectMove_Z : Manipulator_Z {
     FactoryBaseHandle2 handle20, handle24;
     FactoryBaseHandle3 handle28;
     char unknown2C[0x38 - 0x2C];
@@ -44,11 +44,11 @@ struct ObjectsBase_802EB3F8 : Manipulator_Z {
     char unknown7C[0x12C - 0x7C];
     FactoryBaseHandle2 handle12C;
     char unknown130[0x168 - 0x130];
-    ObjectsBase_802EB3F8() {}
-    virtual ~ObjectsBase_802EB3F8();
+    ObjectMove_Z() {}
+    virtual ~ObjectMove_Z();
 };
 
-typedef char CheckFactoryBaseSize[sizeof(ObjectsBase_802EB3F8) == 0x168 ? 1 : -1];
-extern "C" ObjectsBase_802EB3F8 *fn_8020A1E4();
+typedef char CheckFactoryBaseSize[sizeof(ObjectMove_Z) == 0x168 ? 1 : -1];
+extern "C" ObjectMove_Z *fn_8020A1E4();
 
 #endif

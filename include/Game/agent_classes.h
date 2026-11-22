@@ -15,15 +15,16 @@ struct BaseObject_Z {
     virtual void slot1C();
 };
 struct ABC_Agent : BaseObject_Z {
+    virtual ~ABC_Agent();
     virtual unsigned long slot20();
     virtual void slot24(unsigned long);
     virtual void slot28(void*);
     virtual int slot2C(void*);
     virtual void slot30();
     virtual void slot34();
-    virtual ~ABC_Agent();
 };
 struct Agent_Z : ABC_Agent {
+    virtual ~Agent_Z();
     virtual void script10();
     virtual void slot3C();
     virtual void slot40(int);
@@ -43,7 +44,6 @@ struct Agent_Z : ABC_Agent {
     virtual void slot24(unsigned long);
     virtual void slot28(void*);
     virtual int slot2C(void*);
-    virtual ~Agent_Z();
     char pad_Agent_Z[0x54];
 };
 struct CScriptAgent {
@@ -112,21 +112,22 @@ struct AnimatedMsgAgent_Z : Agent_Z {
     virtual ~AnimatedMsgAgent_Z();
 };
 struct AnimatedAgent_Z : AnimatedMsgAgent_Z {
+    virtual ~AnimatedAgent_Z();
     virtual void slot74();
     virtual void slot64();
     virtual void slot68();
-    virtual ~AnimatedAgent_Z();
 };
 struct MovingAgent_Z : AnimatedAgent_Z {
+    virtual ~MovingAgent_Z();
     virtual void slot78();
     virtual void slot1C();
     virtual void slot30();
     virtual void slot34();
     virtual void slot3C();
     virtual void slot44(const OpaqueHandle&);
-    virtual ~MovingAgent_Z();
 };
 struct Throwable_Z : MovingAgent_Z {
+    virtual ~Throwable_Z();
     virtual void slot7C();
     virtual void slot80();
     virtual void slot84();
@@ -137,18 +138,18 @@ struct Throwable_Z : MovingAgent_Z {
     virtual void slot58();
     virtual void slot5C();
     virtual void slot60();
-    virtual ~Throwable_Z();
 };
 struct LodAgent_Z : Throwable_Z {
+    virtual ~LodAgent_Z();
     virtual void slot94();
     virtual void slot98();
     virtual void slot9C();
     virtual void slotA0();
     virtual void slotA4();
     virtual void slotA8();
-    virtual ~LodAgent_Z();
 };
 struct CActorAgent : LodAgent_Z {
+    virtual ~CActorAgent();
     virtual void slotAC();
     virtual void slotB0();
     virtual void script10();
@@ -161,7 +162,6 @@ struct CActorAgent : LodAgent_Z {
     virtual void slot44(const OpaqueHandle&);
     virtual void slot4C();
     virtual void slot50();
-    virtual ~CActorAgent();
     char pad_CActorAgent[0x30];
 };
 struct CActorScriptAgent : CActorAgent, CScriptAgent {

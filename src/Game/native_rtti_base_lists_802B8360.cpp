@@ -57,7 +57,7 @@ void fn_800761F0();
 void fn_8007B5AC();
 void configure__4CFSMFi();
 void reset__4CFSMFv();
-void fn_8007DD80();
+void configureCallbacks__4CFSMFv();
 void fn_8007F4A8();
 void fn_80235C28();
 void fn_80235D38();
@@ -109,7 +109,7 @@ extern "C" __declspec(section ".data") const void* const __vt__4CFSM[6] __attrib
     &lbl_80374998,
     0,
     (const void*)__dt__4CFSMFv,
-    (const void*)fn_8007DD80,
+    (const void*)configureCallbacks__4CFSMFv,
     (const void*)configure__4CFSMFi,
     (const void*)reset__4CFSMFv,
 };

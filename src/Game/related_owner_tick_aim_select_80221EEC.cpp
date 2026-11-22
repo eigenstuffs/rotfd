@@ -1,11 +1,11 @@
-/* Related-owner tick, aim and contact selection (fn_80221EEC, fn_80222138,
-   fn_802223EC); same engine TU as fn_802217BC/fn_80221A0C (-O4,p, no EH).
-   fn_80221EEC: flag 0x4000 of the primary resource propagates to 0x40000 as
+/* Related-owner tick, aim and contact selection (slot58__9LodMove_ZFv, slot134__9LodMove_ZFv,
+   slot130__9LodMove_ZFv); same engine TU as slot108__9LodMove_ZFv/slot118__9LodMove_ZFv (-O4,p, no EH).
+   slot58__9LodMove_ZFv: flag 0x4000 of the primary resource propagates to 0x40000 as
    a select (`test ? 0x40000 : 0`), which keeps the original operand order of
    the neg/and and both flag loads.
-   fn_80222138: normalized direction (fastSqrt) passed with two slot 0x88
+   slot134__9LodMove_ZFv: normalized direction (fastSqrt) passed with two slot 0x88
    points to slot 0x168; handle copies bind through reference accessors.
-   fn_802223EC: slot 0x48 takes a 64-bit mode (r5:r6 = 0:1/0:2); the peer
+   slot130__9LodMove_ZFv: slot 0x48 takes a 64-bit mode (r5:r6 = 0:1/0:2); the peer
    resolve uses if/return with an Entry reference (puts the stack mask stores
    inside it); the parent resolve returns a Word so its null is not merged
    with the flag-test zero. */
@@ -29,7 +29,7 @@ struct Vec3{float x,y,z;Vec3(){}Vec3(float a,float b,float c):x(a),y(b),z(c){}Ve
  void operator*=(float s){x*=s;y*=s;z*=s;}};
 extern "C" const Vec3 game_vec4_zero;
 
-/* ---- fn_80221EEC ---- */
+/* ---- slot58__9LodMove_ZFv ---- */
 namespace related_tick{
 struct Handle{union{Word value;struct{signed int generation:8,index:24;}bits;};};
 struct Storage{char unknown00[8];};
@@ -45,17 +45,17 @@ struct Owner:Storage{
 struct Resource{char unknown00[0x120];Word flags;void addFlags(Word mask){flags|=mask;}Word test(Word mask)const{Word loadedFlags=flags;return (loadedFlags&mask)!=0;}};
 inline Owner*resolve(const Handle&h){int index=h.bits.index;EngineManager*m=lbl_801E9D24.manager;int generation=m->entries[index].getGeneration();return generation==h.bits.generation?(Owner*)m->entries[index].object:0;}
 }
-extern "C" void fn_8028E4F8(related_tick::Owner*,void*,void*,float);
-extern "C" void fn_80221EEC(related_tick::Owner*self,void*context,void*argument,float value){
+extern "C" void slot58__12ObjectMove_ZFv(related_tick::Owner*,void*,void*,float);
+extern "C" void slot58__9LodMove_ZFv(related_tick::Owner*self,void*context,void*argument,float value){
  using namespace related_tick;
  Owner*owner=resolve(self->related);
  if(owner){unsigned long long flags=owner->getFlags();if(flags&0x18ULL){if(flags&8ULL)flags|=0x2000ULL;if(flags&16ULL)flags|=0x8000ULL;owner->flags|=flags;owner->tick(context,argument,value);owner->flags&=~0xA000ULL;}}
  owner=resolve(self->second);
  if(owner){owner->tick(context,argument,value);Resource*resource=(Resource*)resolve(*owner->getHandle(0));resource->addFlags(resource->test(0x4000)?0x40000:0);}
- fn_8028E4F8(self,context,argument,value);
+ slot58__12ObjectMove_ZFv(self,context,argument,value);
 }
 
-/* ---- fn_80222138 ---- */
+/* ---- slot134__9LodMove_ZFv ---- */
 namespace related_aim{
 struct Vec4:Vec3{float w;Vec4(const Vec3&v,float f):Vec3(v),w(f){}};
 struct Handle1:Handle_801F7F10{Handle1(){value=0;}};
@@ -80,7 +80,7 @@ struct Node:Prefix{
 };
 inline Node*resolve(const Handle_801F7F10&h){int index=h.bits.index;EngineManager*m=lbl_801E9D24.manager;int generation=m->entries[index].getGeneration();return generation==h.bits.generation?(Node*)m->entries[index].object:0;}
 }
-extern "C" void fn_80222138(related_aim::Node*self,void*context,const Vec3*from,const Vec3*to){
+extern "C" void slot134__9LodMove_ZFv(related_aim::Node*self,void*context,const Vec3*from,const Vec3*to){
  using namespace related_aim;
  Vec3 direction=*to-*from;
  float length=direction.length();
@@ -96,7 +96,7 @@ extern "C" void fn_80222138(related_aim::Node*self,void*context,const Vec3*from,
  self->aim(context,point,direction,scale);
 }
 
-/* ---- fn_802223EC ---- */
+/* ---- slot130__9LodMove_ZFv ---- */
 namespace related_select{
 struct Pair{float x,y;Pair(float a,float b):x(a),y(b){}};
 struct Sphere{Vec3 center;float radius;Sphere(const Vec3&p,float r):center(p),radius(r){}};
@@ -128,7 +128,7 @@ struct Context{char unknown00[0x80BC];Grid grid;Grid&getGrid(){return grid;}};
 inline Word isValid(const Handle_801F7F10&h){return fn_801F7EB8(&h)!=0;}
 }
 extern "C"{int fn_80266C78(void*,const related_select::Pair*,const related_select::Pair*);signed char fn_8021F308(related_select::Owner*);void fn_80229098(related_select::Owner*,const Handle_801F7F10&);}
-extern "C" void fn_802223EC(related_select::Owner*self,related_select::Context*context){
+extern "C" void slot130__9LodMove_ZFv(related_select::Owner*self,related_select::Context*context){
  using namespace related_select;
  Sphere sphere(game_vec4_zero,lbl_8037B0D8);
  if(!self->getSphere(&sphere,2,0))return;

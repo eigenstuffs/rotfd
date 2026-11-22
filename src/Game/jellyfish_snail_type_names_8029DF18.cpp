@@ -1,12 +1,1 @@
 extern "C" const char lbl_8029DF18[14] = "Anonymous New";
-extern "C" const char lbl_8029DF28[19] = "GreenJfishMove.cpp";
-extern "C" const char lbl_8029DF3C[16] = "CGreenJfishMove";
-extern "C" const char lbl_8029DF4C[13] = "BaseObject_Z";
-extern "C" const char lbl_8029DF5C[12] = "Activable_Z";
-extern "C" const char lbl_8029DF68[14] = "Manipulator_Z";
-extern "C" const char lbl_8029DF78[13] = "ObjectMove_Z";
-extern "C" const char lbl_8029DF88[14] = "ObjectThrow_Z";
-extern "C" const char lbl_8029DF98[10] = "LodMove_Z";
-extern "C" const char lbl_8029DFA4[11] = "CActorMove";
-extern "C" const char lbl_8029DFB0[9] = "CNPCMove";
-extern "C" const char lbl_8029DFBC[15] = "CJellyfishMove";

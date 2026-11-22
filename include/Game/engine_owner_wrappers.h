@@ -11,11 +11,11 @@ typedef struct EngineOwnerWrapperValues{char unknown00[0x170];float a,b,c,d;}Eng
 extern "C"{
 #endif
 extern const float lbl_8037B140,lbl_8037B154,lbl_8037B160,lbl_8037B164;
-void fn_8021FC00(void*,int);
-void fn_80220754(EngineOwnerWrapperFlags*);
+void slotF4__12ObjectMove_ZFv(void*,int);
+void slot18__12ObjectMove_ZFv(EngineOwnerWrapperFlags*);
 void slot18__11Activable_ZFv(EngineOwnerWrapperReset*);
 void fn_80213920(EngineOwnerWrapperReset*,int);
-void fn_80224888(EngineOwnerWrapperFlags*);
+void slot34__9LodMove_ZFv(EngineOwnerWrapperFlags*);
 void fn_80224A10(EngineOwnerWrapperFlags*);
 void fn_80227A14(EngineOwnerWrapperFlags*);
 void fn_80230978(EngineOwnerWrapperFlags*);
@@ -52,14 +52,14 @@ virtual void slot5C();
 virtual void slot60();
 virtual void slot64(void*,const EngineOwnerWrapperRecord*,unsigned long long,int);
 };
-extern "C" signed char fn_8021E8B8(EngineOwnerWrapperVirtual*,const EngineOwnerWrapperRecord*,int,int);
+extern "C" signed char slot60__12ObjectMove_ZFv(EngineOwnerWrapperVirtual*,const EngineOwnerWrapperRecord*,int,int);
 #endif
 
 #ifdef __cplusplus
 extern "C"{
 #endif
 int fn_80224B34(EngineOwnerWrapperFind*,int);
-void fn_80227F4C(EngineOwnerWrapperValues*,int);
+void slotF4__13ObjectThrow_ZFv(EngineOwnerWrapperValues*,int);
 void fn_8022A160(EngineOwnerWrapperFlags*);
 void fn_8022D1D8(EngineOwnerWrapperReset*);
 void fn_8022D218(EngineOwnerWrapperFlags*);

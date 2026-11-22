@@ -1,7 +1,7 @@
 // Original TU part 801BD950..801BE6F4: owner bounding sphere, collision height
 // control, hit-receiver impulse, motion-event dispatch and the ground-ray move.
 // These functions share the TU float literal pool .sdata2 0x8037A2F8..0x8037A30C
-// (0.0f, -1.0f, 20.0f, 1.3f, 5.0f in first-use order); fn_801BE4D0 needs the
+// (0.0f, -1.0f, 20.0f, 1.3f, 5.0f in first-use order); slot4C__12ObjectMove_ZFv needs the
 // pooled 0.0f as a literal, so every user of the pool lives in this object.
 // The TU continues before 801BD950 (fn_801BD2F8 and the pool entries below
 // 0x8037A2F8 are not matched yet and stay separate); 0x8037A30C..0x8037A310 is
@@ -17,7 +17,7 @@ extern "C" {extern Context lbl_801E9D24;}
 
 /* ---- 801BD950 ---- */
 namespace bounding_sphere_801BD950 {
-/* fn_801BD950: compute a world-space bounding sphere for the owner's object.
+/* slot88__12ObjectMove_ZFv: compute a world-space bounding sphere for the owner's object.
    Resource type 5 selects one of several local spheres by kind (0/1: scaled
    by the matrix x-axis length and translated, 4: transformed by
    fn_80099A00, 2: translated only, 3: fn_8024673C); other resource types
@@ -67,7 +67,7 @@ inline void*resolve(const Handle&h){int index=h.index;Manager*m=(Manager*)lbl_80
 struct Object{char unknown00[0x1C];Handle resource;char unknown20[0x124-0x20];Matrix*matrix;
 Resource*getResource()const{return static_cast<Resource*>(resolve(resource));}};
 extern "C"{Sphere fn_80099A00(const Matrix*,const Sphere*);signed char fn_8024673C(Resource*,Object*,Sphere*);}
-extern "C" int fn_801BD950(Owner*self,Sphere*out,unsigned short kind,int index){
+extern "C" int slot88__12ObjectMove_ZFv(Owner*self,Sphere*out,unsigned short kind,int index){
     Object*object=static_cast<Object*>(resolve(*self->getHandle(index)));
     Resource*resource=object->getResource();
     Matrix*matrix=object->matrix;
@@ -201,7 +201,7 @@ extern const float lbl_8037A2F0;
 double __fabs(double);
 }
 
-extern "C" void fn_801BDCAC(CollisionHeightOwner_801BDCAC* self, void* world,
+extern "C" void slot68__12ObjectMove_ZFv(CollisionHeightOwner_801BDCAC* self, void* world,
                             CollisionHeightPoint_801BDCAC* position, int index)
 {
     CollisionHeightPoint_801BDCAC origin = *position;
@@ -235,7 +235,7 @@ extern "C" void fn_801BDCAC(CollisionHeightOwner_801BDCAC* self, void* world,
 
 /* ---- 801BDEF8 ---- */
 namespace hit_receiver_801BDEF8 {
-/* fn_801BDEF8: ask the owner (vtable slot 0x88) for its bounding sphere,
+/* slot104__12ObjectMove_ZFv: ask the owner (vtable slot 0x88) for its bounding sphere,
    collect the colliders touching it (fn_80268918), and when the first hit's
    owner has state flag 0x80 forward the sphere and a speed-derived strength
    (20 * max(distance(a, b), radius)) to that owner's linked receiver
@@ -285,7 +285,7 @@ extern Vec3 game_vec4_zero;
 int fn_80268918(void*,const Sphere*,Results*,unsigned long long,unsigned long long);
 float fn_800AA52C(float,float); /* max */
 }
-extern "C" void fn_801BDEF8(Self*self,void*world,const Vec3*a,const Vec3*b,int index){
+extern "C" void slot104__12ObjectMove_ZFv(Self*self,void*world,const Vec3*a,const Vec3*b,int index){
     Sphere sphere(game_vec4_zero,lbl_8037A2E8);
     if(!self->slot88(&sphere,4,index))return;
     float dist=a->distance(*b);
@@ -382,7 +382,7 @@ char unknown0C[0x114];Word flags;char unknown124[0x20];Point point;};
 struct Entry {Owner*object;char unknown04[8];signed char tag;char unknown0D[3];};
 struct Manager {char unknown00[8];Entry*entries;inline Owner*get(const Handle_801F7F10&h){Entry*e=entries+h.bits.index;return e->tag==h.bits.tag?e->object:0;}};
 static inline Owner*resolve(const Handle_801F7F10&h){return ((Manager*)lbl_801E9D24.manager)->get(h);}
-extern "C" void fn_801BE188(Owner*self,void*other,Word first,Word unused,Word second,Word mode){
+extern "C" void slot100__12ObjectMove_ZFv(Owner*self,void*other,Word first,Word unused,Word second,Word mode){
  if(self->query(0x4000ULL,mode))self->dispatchFirst(other,first,second,mode);
  if(self->query(0x1000ULL,mode))self->dispatchSecond(other,first,second,mode,0);
  if(self->query(0x10000ULL,mode))self->move(other,second,mode);
@@ -405,7 +405,7 @@ extern "C" ResourceEventCopy2_801BE188 fn_801BE46C(void* object)
 }
 /* ---- 801BE4D0 ---- */
 namespace ground_ray_801BE4D0 {
-/* fn_801BE4D0. Notes: pos must be 'const Vec3*' (fixes the s.z / pos.z load
+/* slot4C__12ObjectMove_ZFv. Notes: pos must be 'const Vec3*' (fixes the s.z / pos.z load
  * schedule); the tail difference uses sub2 (no named locals) and a literal 0.0f
  * (an extern lbl_8037A2F8 is CSE'd by the frontend into a temp and changes the
  * float colouring); the literal must end up as lbl_8037A2F8. */
@@ -449,7 +449,7 @@ extern "C"{
 extern Vec3 game_vec4_zero;
 signed char fn_80269230(void*,const Ray&,Result*,Wide,Wide);
 }
-extern "C" void fn_801BE4D0(Owner*self,float dt,void*world,const Vec3*pos,Vec3*vel,Wide mask,int id){
+extern "C" void slot4C__12ObjectMove_ZFv(Owner*self,float dt,void*world,const Vec3*pos,Vec3*vel,Wide mask,int id){
     Sphere s(game_vec4_zero,lbl_8037A2E8);
     if(self->slot88(&s,0,id)){
         {float d[3];d[0]=s.center.x-pos->x;float dy=s.center.y-pos->y;float dz=s.center.z-pos->z;s.center.z=dz;s.center.x=d[0];s.center.y=dy;}

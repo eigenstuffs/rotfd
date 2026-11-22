@@ -66,6 +66,6 @@ inline GroundCollisionActor*GroundCollisionHandle::getActor()const {int i=index;
 inline GroundCollisionOwner*GroundCollisionHandle::getOwner()const {int i=index;GroundCollisionOwnerManager*m=lbl_801E9D24.ownerManager;int tag=m->entries[i].getGeneration();return tag==generation?m->entries[i].object:0;}
 inline GroundCollisionTypeObject*GroundCollisionHandle::getTypeObject()const {int i=index;GroundCollisionTypeManager*m=lbl_801E9D24.typeManager;int tag=m->entries[i].getGeneration();return tag==generation?m->entries[i].object:0;}
 
-extern "C" void fn_8028E4F8(GroundCollisionSelf*,void*,void*,float);
+extern "C" void slot58__12ObjectMove_ZFv(GroundCollisionSelf*,void*,void*,float);
 
 #endif

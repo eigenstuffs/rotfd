@@ -1,5 +1,5 @@
 /* Direction and target setup (counter at 0x1F8, record at 0x228); same shape as
- * fn_8007F990 without its flag updates. The unused owner resolve is dead code, but it
+ * slot18C__15CProjectileMoveFv without its flag updates. The unused owner resolve is dead code, but it
  * makes the compiler materialize lbl_801E9D24 into r31 at entry like the original.
  * The engine fast normalize uses a raw frsqrte estimate (no frsp), which no compiler
  * built-in emits, so the math helper uses a minimal inline asm statement. */
@@ -92,7 +92,7 @@ char unknown0C[0x18];Handle_801F7F10 owner24;char unknown28[0x48];Handle_801F7F1
 inline Node*resolve(const Handle_801F7F10&h){int index=h.bits.index;Manager*m=lbl_801E9D24.manager;int tag=m->entries[index].getTag();return tag==h.bits.tag?m->entries[index].object:0;}
 inline const Handle_801F7F10&getActorHandle(){return resolve(*resolve(*lbl_801E9D24.service->handle)->childB0)->actor70;}
 inline Node*getActor(){const Handle_801F7F10&h=getActorHandle();if(fn_801F7EB8(&h))return resolve(h);return 0;}
-extern "C"void fn_800AFA84(Node*self,const Vec3*v){
+extern "C"void slot158__14CWaterBallMoveFv(Node*self,const Vec3*v){
  Node*owner=resolve(self->owner24); /* unused; see header */
  Vec3 d;d.x=v->x;d.z=v->z;
  d.y=self->length2C4*fn_80284FA8(self->angle2C0);

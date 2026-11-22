@@ -80,5 +80,5 @@ virtual void slot130();
 virtual void slot134();
 virtual void apply();
 };
-extern "C" void fn_80220754(Control*);
-extern "C" void fn_800AA7D0(Control*self){fn_80220754(self);self->apply();}
+extern "C" void slot18__12ObjectMove_ZFv(Control*);
+extern "C" void slot18__9CTileMoveFv(Control*self){slot18__12ObjectMove_ZFv(self);self->apply();}

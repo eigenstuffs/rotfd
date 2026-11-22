@@ -18,5 +18,3 @@ const float lbl_80379758 = 0.05000000074505806f;
 /* Adjacent native token names and scalar constants; all symbol extents are retained. */
 __declspec(section ".sdata2") const char lbl_8037975C[] __attribute__((aligned(4))) = "chst";
 __declspec(section ".sdata2") const char lbl_80379764[] __attribute__((aligned(4))) = "CState";
-__declspec(section ".sdata2") const char lbl_80379770[] __attribute__((aligned(8))) = "CFSM";
-__declspec(section ".sdata2") const char lbl_80379778[] __attribute__((aligned(4))) = "Agent_Z";

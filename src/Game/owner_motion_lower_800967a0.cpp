@@ -5,7 +5,7 @@ extern "C" void fn_800967A0(MotionQueryAction* self, float delta)
     float distance;
     MotionQueryVector vector;
     fn_8009A270(self->agent, &distance);
-    planarDirection_8009A6D4__15Object_80098A70FP4Vec3(self->agent, &vector);
+    planarDirection_8009A6D4__14CJellyfishMoveFP4Vec3(self->agent, &vector);
     self->agent->apply(&vector, delta);
     if (distance < lowerLimit(self->agent))
         fn_8007D6A0(&self->agent->controls, 5);

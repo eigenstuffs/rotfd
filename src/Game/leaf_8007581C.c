@@ -1,1 +1,1 @@
-void fn_8007581C(void) { }
+void slot34__18CTreasureChestMoveFv(void) { }

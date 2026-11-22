@@ -1,3 +1,3 @@
-void *fn_800280F8(void *object) { return (char *)object + (324); }
+void *slotEC__12ObjectMove_ZFv(void *object) { return (char *)object + (324); }
 
-void *fn_80028100(void *object) { return (char *)object + (336); }
+void *slotF0__12ObjectMove_ZFv(void *object) { return (char *)object + (336); }

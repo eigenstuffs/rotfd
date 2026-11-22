@@ -3,7 +3,7 @@
    GC/1.3.2 -O4,s -Cpp_exceptions on -RTTI off -fp_contract on. */
 extern "C" float fn_800AA52C(float, float);
 extern "C" float fn_800AA53C(float, float);
-extern "C" void __dt__15Object_800A8F90Fv();
+extern "C" void __dt__14CRBObjBaseMoveFv();
 extern "C" { extern char lbl_801EF5C8[]; void fn_801EF610(void*, void*); }
 namespace p93d8 { struct Contact; }
 struct Object_8007A280 {
@@ -95,42 +95,42 @@ struct H3:H2 {
 struct H4:H3 {
 };
 extern "C" char lbl_802BCB24[];
-struct Object_8009AA98 {
+struct CActorMove {
     u32 unknown00[2];
     void*vtable;
     char unknown0C[0x318-0xC];
     void*secondaryVtable;
     char unknown31C[0x344-0x31C];
     u32 unknown344,unknown348;
-    ~Object_8009AA98();
+    ~CActorMove();
 };
-struct Object_800A8F90:Object_8009AA98 {
-    ~Object_800A8F90();
+struct CRBObjBaseMove:CActorMove {
+    ~CRBObjBaseMove();
     static void operator delete(void*p)throw() {
         fn_801EF610(lbl_801EF5C8,p);
     }
 };
-Object_800A8F90::~Object_800A8F90() {
+CRBObjBaseMove::~CRBObjBaseMove() {
     vtable=lbl_802BCB24;
     secondaryVtable=lbl_802BCB24+0x170;
     unknown344=0;
 }
 
 namespace p901c {
-extern "C" void fn_8009AB58(void*);
-extern "C" void fn_800A901C(void* self){fn_8009AB58(self);}
+extern "C" void slot18__10CActorMoveFv(void*);
+extern "C" void fn_800A901C(void* self){slot18__10CActorMoveFv(self);}
 
 }
 namespace p903c {
-extern "C" void fn_8009BEE8(void*);
-extern "C" void fn_800A903C(void* self){fn_8009BEE8(self);}
+extern "C" void slot34__10CActorMoveFv(void*);
+extern "C" void fn_800A903C(void* self){slot34__10CActorMoveFv(self);}
 
 }
 namespace p905c {
 /* Actor frame update (fn_800A905C): unless the actor's own resource (handle
  * from virtual slot 0x9C) has property bit 0x10000 set, saves velocity
  * (+0x144) as previous velocity (+0x15C), clears velocity, runs
- * fn_8009B50C and the update virtual (slot 0x198), clears the force
+ * slot188__10CActorMoveFv and the update virtual (slot 0x198), clears the force
  * accumulator (+0x358) and forwards the velocity to the actor's resource
  * (+0x24 handle, slot 0xB4). Always finishes with fn_80222E44(self, delta).
  * Matching note: the entry-pointer resolve form (as in
@@ -154,12 +154,12 @@ struct Actor:Prefix{virtual void v08();virtual void v0C();virtual void v10();vir
  virtual void update(float);
  char unknown0C[0x18];Handle resource;char unknown28[0x11C];Vec3 velocity;char unknown150[0xC];Vec3 previousVelocity;
  char unknown168[0x1F0];Vec3 force;};
-extern "C" {extern const Vec3 game_vec3_zero;void fn_8009B50C(Actor*);void fn_80222E44(Actor*,float);}
+extern "C" {extern const Vec3 game_vec3_zero;void slot188__10CActorMoveFv(Actor*);void fn_80222E44(Actor*,float);}
 extern "C" void fn_800A905C(Actor*self,float delta){
  if(!(resolve(*self->getHandle(0))->property&0x10000)){
   self->previousVelocity=self->velocity;
   self->velocity=game_vec3_zero;
-  fn_8009B50C(self);
+  slot188__10CActorMoveFv(self);
   self->update(delta);
   self->force=game_vec3_zero;
   resolve(self->resource)->setVelocity(self->velocity);
@@ -236,7 +236,7 @@ extern "C" void fn_800A91D4(Actor*self,void*unused,const Vec3&target,float delta
 
 }
 namespace p93d8 {
-/* fn_800A93D8: actor ground/sphere collision step (draft).
+/* slot164__14CRBObjBaseMoveFv: actor ground/sphere collision step (draft).
    GC/1.3.2 -O4,s -Cpp_exceptions on -fp_contract on. */
 typedef unsigned long Word;
 typedef unsigned long long Flags;
@@ -371,7 +371,7 @@ inline float neg(float a) { return -a; }
 struct FBox { float v; };
 
 struct Scalar { float v; Scalar() {} };
-extern "C" signed char fn_800A93D8(Owner* self, World* world, const Vec3* pos, const Vec3* vel,
+extern "C" signed char slot164__14CRBObjBaseMoveFv(Owner* self, World* world, const Vec3* pos, const Vec3* vel,
                                    Shape* shape, Contact* hit, Vec3* out)
 {
     signed char result = 0;
@@ -534,12 +534,12 @@ extern "C" signed char fn_800A93D8(Owner* self, World* world, const Vec3* pos, c
 
 }
 namespace p9fa0 {
-/* Actor movement step (fn_800A9FA0). Resolves the handle from virtual slot
+/* Actor movement step (slot44__14CRBObjBaseMoveFv). Resolves the handle from virtual slot
  * 0x9C; when the resolved object's word at +0x120 has bit 0x10000 set the
  * velocity (+0x144) is reset to game_vec3_zero. The 64-bit flags at +0x30 are
  * masked with 0x1000003FFFFFFE3F, next = position + velocity * delta and
  * direction = the local z axis transformed by the basis at +0x30 of the
- * re-resolved object. Same body shape as fn_8009DC60
+ * re-resolved object. Same body shape as slot44__11CScriptMoveFv
  * (actor_movement_step_pinned_8009DC60.cpp).
  * Matching notes: the original read pooled literals (0.0f at 0.0f,
  * 1.0f at 1.0f); each use in the axis transform takes a distinct read
@@ -596,7 +596,7 @@ struct Actor : Header {
     char unknown38[0x10C];
     Vec velocity;
 };
-extern "C" void fn_800A9FA0(Actor* self, const Vec* position, Vec* next, Vec* direction, float delta) {
+extern "C" void slot44__14CRBObjBaseMoveFv(Actor* self, const Vec* position, Vec* next, Vec* direction, float delta) {
     if (resolve(*self->getHandle(0))->flags & 0x10000) {
         self->velocity = game_vec3_zero;
     }
@@ -607,11 +607,11 @@ extern "C" void fn_800A9FA0(Actor* self, const Vec* position, Vec* next, Vec* di
 
 }
 namespace paa180 {
-/* Actor velocity integration step (fn_800AA180).
+/* Actor velocity integration step (slot198__14CRBObjBaseMoveFf).
  * Skipped while the resolved resource (virtual slot 0x9C) has property bit
  * 0x10000. Without the grounded flag (bit 0x8000000000) calls the gravity
  * virtual (slot 0x18C); otherwise clamps a downward base velocity (+0x15C)
- * to zero and applies contact friction (fn_8009B674). With the bounce flag
+ * to zero and applies contact friction (slot190__10CActorMoveFv). With the bounce flag
  * (bit 0x20000000000) reflects the base velocity about the contact normal
  * (+0x3A4) and scales it by the restitution (+0x3A0). Finally
  * velocity(+0x144) = base + (force(+0x358) / mass(+0x354)) * delta, clamped
@@ -708,18 +708,18 @@ struct Agent : Prefix {
     signed char hasFlag(unsigned long long mask) const { if (flags & mask) return 1; return 0; }
 };
 
-extern "C" void fn_8009B674(Agent*);
+extern "C" void slot190__10CActorMoveFv(Agent*);
 
-extern "C" void fn_800AA180(Agent* self, float delta)
+extern "C" void slot198__14CRBObjBaseMoveFf(Agent* self, float delta)
 {
     if (!(resolveResource(*self->slot37(0))->property & 0x10000)) {
         if (!self->hasFlag(0x8000000000ULL)) {
             self->applyGravity();
         } else if ((self->flags & 0x8000000000ULL) && self->base.y < 0.0f) {
             self->base = Vec3(self->base.x, 0.0f, self->base.z);
-            fn_8009B674(self);
+            slot190__10CActorMoveFv(self);
         } else if (self->flags & 0x8000000000ULL) {
-            fn_8009B674(self);
+            slot190__10CActorMoveFv(self);
         }
         if (self->flags & 0x20000000000ULL) {
             Vec3 b = vec3FromYXZ(self->base.y, self->base.x, self->base.z);
@@ -740,7 +740,7 @@ extern "C" void fn_800AA180(Agent* self, float delta)
 namespace paa400 {
 extern "C" const float lbl_80378D58;
 static inline void add3(float *out,float x,float y,float z) {out[0]+=x;out[1]+=y;out[2]+=z;}
-extern "C" void fn_800AA400(float *object) {add3(object+0x358/4,0.0f,20.0f*(lbl_80378D58*object[0x354/4]),0.0f);}
+extern "C" void slot18C__14CRBObjBaseMoveFv(float *object) {add3(object+0x358/4,0.0f,20.0f*(lbl_80378D58*object[0x354/4]),0.0f);}
 
 }
 namespace paa440 {
@@ -812,7 +812,7 @@ struct MotionVectorGroup{char unknown00[0x94];MotionVectorStatus*status;};
 struct MotionVectorTimed{char unknown00[8];MotionVectorActor*actor;MotionVectorGroup*group;char unknown10[4];float duration,time,rate;MotionVector velocity;};
 extern "C"{MotionVectorController*fn_8007DCF8(void*);float fn_80284FA8(float);MotionVector fn_800AB440(MotionVectorTimed*);void fn_8007D6A0(void*,int);extern const float lbl_80379038,lbl_80379048,lbl_8037907C,lbl_80379088,lbl_80378D68;}
 #endif
-extern "C" void fn_800AA440(MotionVectorActor*self,const MotionVector&input){if(!(resolveResource(*self->slot37(0))->property&0x10000)){self->saved=input;self->acceleration+=input*self->scale;}}
+extern "C" void slot19C__14CRBObjBaseMoveFv(MotionVectorActor*self,const MotionVector&input){if(!(resolveResource(*self->slot37(0))->property&0x10000)){self->saved=input;self->acceleration+=input*self->scale;}}
 
 }
 extern "C" float fn_800AA52C(float a, float b) { return a > b ? a : b; }
@@ -820,7 +820,7 @@ extern "C" float fn_800AA53C(float a, float b) { return a < b ? a : b; }
 extern "C" asm void fn_800AA54C() {
     nofralloc
     subi r3, r3, 0x318
-    b __dt__15Object_800A8F90Fv
+    b __dt__14CRBObjBaseMoveFv
 }
 
 /* Former original/rtti_name_8037902C data 0x8037902C..0x80379031 (.sdata2), referenced as part of this unit; it starts mid-line (not 8-aligned), so it can only follow the data above. */

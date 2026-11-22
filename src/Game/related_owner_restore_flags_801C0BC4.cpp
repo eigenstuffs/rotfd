@@ -1,4 +1,4 @@
-/* fn_801C0BC4 / fn_801C0CC8: after the base save/restore call, resolve the
+/* slot50__9LodMove_ZFv / slot48__9LodMove_ZFv: after the base save/restore call, resolve the
    owner handle at +0x1F8, ask it (vtable slot 0x9C) for a related handle and
    move one state flag of that object into the other (0x4000 <-> 0x40000). */
 struct Handle{union{unsigned long word;struct{signed int tag:8,index:24;}bits;};};
@@ -29,16 +29,16 @@ struct Manager{char unknown00[8];Entry*entries;};
 struct Global{char unknown00[0x118];Manager*manager;};
 extern "C" Global lbl_801E9D24;
 inline void*resolve(const Handle&h){Entry*e=lbl_801E9D24.manager->entries+h.bits.index;if(e->tag==h.bits.tag)return e->object;return 0;}
-extern "C"{void fn_801C234C(Self*);void fn_801C2520(Self*);}
-extern "C" void fn_801C0BC4(Self*self){
-fn_801C234C(self);
+extern "C"{void slot50__13ObjectThrow_ZFv(Self*);void slot48__13ObjectThrow_ZFv(Self*);}
+extern "C" void slot50__9LodMove_ZFv(Self*self){
+slot50__13ObjectThrow_ZFv(self);
 Owner*owner=(Owner*)resolve(self->owner);
 if(owner){Target*t=(Target*)resolve(*owner->slot9C(0));
 t->orFlag(0x40000,t->testFlag(0x4000));
 t->clearFlag(0x4000);}
 }
-extern "C" void fn_801C0CC8(Self*self){
-fn_801C2520(self);
+extern "C" void slot48__9LodMove_ZFv(Self*self){
+slot48__13ObjectThrow_ZFv(self);
 Owner*owner=(Owner*)resolve(self->owner);
 if(owner){Target*t=(Target*)resolve(*owner->slot9C(0));
 t->orFlag(0x4000,t->testFlag(0x40000));

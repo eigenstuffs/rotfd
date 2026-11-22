@@ -105,5 +105,5 @@ virtual void slot194();
 virtual void slot198();
 virtual void apply();
 };
-extern "C" void fn_8009AB58(Control*);
-extern "C" void fn_8009D264(Control*self){fn_8009AB58(self);self->apply();}
+extern "C" void slot18__10CActorMoveFv(Control*);
+extern "C" void slot18__14CWildSnailMoveFv(Control*self){slot18__10CActorMoveFv(self);self->apply();}

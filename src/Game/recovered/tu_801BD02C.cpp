@@ -157,7 +157,7 @@ inline bool differs_801BD02C(Owner_801BD02C* self, int index, const HitResult_80
 extern "C" signed char fn_80269230(void*, const Ray_801BD02C&, HitResult_801BD02C*, unsigned long long, unsigned long long);
 
 #pragma fp_contract off
-extern "C" Vec3_801BD02C fn_801BD02C(Owner_801BD02C* self, void* world, const Vec3_801BD02C& pos,
+extern "C" Vec3_801BD02C slot10C__12ObjectMove_ZFv(Owner_801BD02C* self, void* world, const Vec3_801BD02C& pos,
                                      const Vec3_801BD02C& offset, void* arg8, void* arg9, int index,
                                      signed char direct)
 {

@@ -3,7 +3,7 @@
 
 struct ForwardOwner;
 struct Point;
-extern "C" void fn_802217BC(ForwardOwner* owner, void* first,
+extern "C" void slot108__9LodMove_ZFv(ForwardOwner* owner, void* first,
     const Point* point, const Point* offset, void* fourth, int fifth);
 
 #endif

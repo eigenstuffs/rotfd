@@ -14,4 +14,4 @@ virtual void slot2C();
 virtual void slot30();
 virtual long apply();
 };
-extern "C" long fn_80027CF0(Control*self){return self->apply();}
+extern "C" long slot148__9LodMove_ZFv(Control*self){return self->apply();}

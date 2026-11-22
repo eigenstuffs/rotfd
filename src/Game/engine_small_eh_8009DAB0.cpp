@@ -16,22 +16,22 @@ struct H3:H2 {
 struct H4:H3 {
 };
 extern "C" char lbl_802BB6A4[];
-struct Object_8009AA98 {
+struct CActorMove {
     u32 unknown00[2];
     void*vtable;
     char unknown0C[0x318-0xC];
     void*secondaryVtable;
     char unknown31C[0x344-0x31C];
     u32 unknown344,unknown348;
-    ~Object_8009AA98();
+    ~CActorMove();
 };
-struct Object_8009DAB0:Object_8009AA98 {
-    ~Object_8009DAB0();
+struct CScriptMove:CActorMove {
+    ~CScriptMove();
     static void operator delete(void*p)throw() {
         fn_801EF610(lbl_801EF5C8,p);
     }
 };
-Object_8009DAB0::~Object_8009DAB0() {
+CScriptMove::~CScriptMove() {
     vtable=lbl_802BB6A4;
     secondaryVtable=lbl_802BB6A4+0x170;
 }

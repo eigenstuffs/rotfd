@@ -1,4 +1,4 @@
-/* Actor move input (fn_80099B8C): store the input vector at 0x3B8; when the
+/* Actor move input (slot1A0__14CJellyfishMoveFPCf): store the input vector at 0x3B8; when the
    planar (XZ) speed of the velocity at 0x15C is below the threshold at 0x3B4
    and neither control 0 nor 1 is active (fn_8007D604 query), stop controls 1
    and 2 (fn_8007D7F4) and start control 0 (fn_8007D6A0); while control 1 is
@@ -47,7 +47,7 @@ signed char fn_8007D604(void*, int);
 void fn_8007D7F4(void*, int);
 void fn_8007D6A0(void*, int);
 }
-extern "C" void fn_80099B8C(Node* self, const Vec3* v)
+extern "C" void slot1A0__14CJellyfishMoveFPCf(Node* self, const Vec3* v)
 {
     self->input = *v;
     float scale = self->scale;

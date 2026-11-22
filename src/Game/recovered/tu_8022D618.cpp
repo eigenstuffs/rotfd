@@ -1036,8 +1036,8 @@ struct PropertyEntry{char*object;char unknown04[8];signed char generation;char u
 struct PropertyManager{char unknown00[8];PropertyEntry*entries;};
 extern "C"{extern struct{char unknown00[0x118];PropertyManager*manager;}lbl_801E9D24;}
 static inline char*resolveProperty(const PropertyHandle&h){PropertyEntry*e=&lbl_801E9D24.manager->entries[h.index];if(e->generation==h.generation)return e->object;return 0;}
-extern "C" {void fn_8023C31C(void*,float,int);void fn_80220260(void*,int);}
-extern "C" void fn_8022FDBC(PropertyOwner*self,int index){char*object=resolveProperty(*self->getHandle(index));float*values=*(float**)((char*)self+0x1C0);fn_8023C31C(object,values[index],0);fn_80220260(self,index);}
+extern "C" {void fn_8023C31C(void*,float,int);void slotD4__12ObjectMove_ZFv(void*,int);}
+extern "C" void fn_8022FDBC(PropertyOwner*self,int index){char*object=resolveProperty(*self->getHandle(index));float*values=*(float**)((char*)self+0x1C0);fn_8023C31C(object,values[index],0);slotD4__12ObjectMove_ZFv(self,index);}
 
 }
 

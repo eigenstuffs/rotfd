@@ -1,4 +1,4 @@
-/* fn_80220D78: owner ground-follow step. Either blends toward the midpoint
+/* slot16C__9LodMove_ZFv: owner ground-follow step. Either blends toward the midpoint
  * of two related nodes (flag bit 33) or probes the ground below the midpoint
  * height, validates the hit edge and attaches to it (flag bit 32).
  * w13 shape notes: Hit is 0x48 bytes (stack objects are placed by size);
@@ -293,7 +293,7 @@ struct Owner : Prefix {
     Handle related;
     signed char test(Flags f) const { return (flags & f) ? 1 : 0; }
 };
-extern "C" int fn_80220D78(Owner* self, void* world, const Vec3* position, Vec3* out, Vec3* direction, void* arg, float dt)
+extern "C" int slot16C__9LodMove_ZFv(Owner* self, void* world, const Vec3* position, Vec3* out, Vec3* direction, void* arg, float dt)
 {
     if (!self->test(0x100000000ULL) && !(self->flags & 0x200000000ULL))
         return 0;

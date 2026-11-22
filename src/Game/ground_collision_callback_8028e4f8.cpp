@@ -1,6 +1,6 @@
 #include "Game/ground_collision_callback_8028e4f8.h"
 
-extern "C" void fn_8028E4F8(GroundCollisionSelf*self,void*context,void*,float delta){
+extern "C" void slot58__12ObjectMove_ZFv(GroundCollisionSelf*self,void*context,void*,float delta){
  GroundCollisionFlags flags=self->mode;
  if(flags&0xA000ULL){
   GroundCollisionVec4 point(game_vec4_zero,lbl_8037B940);

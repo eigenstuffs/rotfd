@@ -105,5 +105,5 @@ virtual void slot194();
 virtual void slot198();
 virtual void apply();
 };
-extern "C" void fn_8009DB34(Control*);
-extern "C" void fn_800A2FC4(Control*self){fn_8009DB34(self);self->apply();}
+extern "C" void slot18__11CScriptMoveFv(Control*);
+extern "C" void slot18__11CSimpleMoveFv(Control*self){slot18__11CScriptMoveFv(self);self->apply();}

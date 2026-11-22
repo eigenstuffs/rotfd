@@ -36,7 +36,7 @@ void fn_8021BD28(struct EngineOwnerSmallDispatch*,void*,int,void*);
 void fn_8021C248(struct EngineOwnerSmallChoice*);
 void fn_8021C030(struct EngineOwnerSmallChoice*);
 void fn_8021B860(struct EngineOwnerSmallChoice*);
-void fn_8021FC00(struct EngineOwnerSmallMaskOwner*,int);
+void slotF4__12ObjectMove_ZFv(struct EngineOwnerSmallMaskOwner*,int);
 void fn_8020CE5C(struct EngineOwnerSmallReset*);
 void fn_8020ED58(struct EngineOwnerSmallFlagOwner*);
 void fn_8020EE10(struct EngineOwnerSmallFlagOwner*);

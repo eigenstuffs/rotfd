@@ -1,7 +1,7 @@
 #include "Game/owner_motion_timing_views.h"
-extern "C" void fn_8009D42C(MotionTimingAgent*self,float delta)
+extern "C" void slot38__14CWildSnailMoveFf(MotionTimingAgent*self,float delta)
 {
-    fn_8009ACBC(self,delta);
+    slot38__10CActorMoveFf(self,delta);
     self->elapsed += delta;
     if(self->elapsed>=lbl_80378DC8 && (fn_8007D604(&self->controls,1)||fn_8007D604(&self->controls,0))) {
         self->elapsed=lbl_80378DA8;

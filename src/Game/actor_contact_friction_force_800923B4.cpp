@@ -1,4 +1,4 @@
-/* Actor contact friction force (fn_800923B4): companion of fn_800822D0 acting on the actor itself.
+/* Actor contact friction force (slot190__14CSpongeBobMoveFv): companion of fn_800822D0 acting on the actor itself.
  * Adds gravity (lbl_80378D58 * mass) to the net force y while flag 0x8000000000 is set, takes the
  * pressure along the contact normal, and adds the unit velocity tangent scaled by pressure * +0x364
  * (and by speedSq / threshold below the +0x368 threshold) to the force at +0x358.
@@ -19,7 +19,7 @@ struct Vec3{float x,y,z;Vec3(){}Vec3(float a,float b,float c):x(a),y(b),z(c){}
 struct Actor{char unknown00[0x30];unsigned long long flags;char unknown38[0x124];Vec3 velocity;char unknown168[0x50];Vec3 normal;
  char unknown1C4[0x190];float mass;Vec3 force;float scale;float threshold;};
 #pragma opt_common_subs off
-extern "C" void fn_800923B4(Actor*actor){
+extern "C" void slot190__14CSpongeBobMoveFv(Actor*actor){
  Vec3 force=actor->force;
  if(actor->flags&0x8000000000ULL){float gravity=lbl_80378D58*actor->mass;force.y+=gravity;}
  float ny=actor->normal.y;float nx=actor->normal.x;float nz=actor->normal.z;Vec3 normal(nx,ny,nz);

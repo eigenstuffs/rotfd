@@ -1,9 +1,9 @@
 /* Two physics-node overrides from one original TU (vtables in
  * menu_object_native_method_tables_802EB240):
- *  - fn_801C0F34 forwards to the base handler fn_801BDEF8 while moving the
+ *  - fn_801C0F34 forwards to the base handler slot104__12ObjectMove_ZFv while moving the
  *    resolved target's 0x40000 flag into 0x4000 (restored afterwards).
  *  - fn_801C109C is the swept sphere move: unless flag 0x40000 selects the
- *    base mover fn_801BE4D0, it takes the collision sphere, applies the
+ *    base mover slot4C__12ObjectMove_ZFv, it takes the collision sphere, applies the
  *    proposed move, then slides along up to six contacts (fn_80268FE8 sweep,
  *    0.707 floor/ceiling classification, 0.01 push-out, reflection of the
  *    remaining direction).
@@ -35,7 +35,7 @@ inline Node*resolve(const Handle&h){int index=h.index;Manager*m=lbl_801E9D24.man
     int tag=m->entries[index].getTag();return tag==h.tag?m->entries[index].object:0;}
 struct State{char unknown00[0x44];Handle handle;char unknown48[0x60];};
 struct Owner{char unknown00[0x188];State*states;};
-extern "C" void fn_801BDEF8(Owner*,void*,void*,void*,int);
+extern "C" void slot104__12ObjectMove_ZFv(Owner*,void*,void*,void*,int);
 extern "C" void fn_801C0F34(Owner*self,void*a,void*b,void*c,int index){
     const Handle&h=self->states[index].handle;
     int i=h.index;
@@ -48,7 +48,7 @@ extern "C" void fn_801C0F34(Owner*self,void*a,void*b,void*c,int index){
         target->flags=target->flags|((*(const Word*)&target->flags&0x40000)?0x4000:0);
         target->flags&=~0x40000;
     }
-    fn_801BDEF8(self,a,b,c,index);
+    slot104__12ObjectMove_ZFv(self,a,b,c,index);
     if(node){
         target->flags=target->flags|((*(const Word*)&target->flags&0x4000)?0x40000:0);
         target->flags&=~0x4000;

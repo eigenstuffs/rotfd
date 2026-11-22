@@ -1,3 +1,3 @@
 #include "Game/motion_forwarding.h"
 
-extern "C" void fn_8009A930(ForwardActor* self){fn_8009AB58(self);}
+extern "C" void slot18__8CNPCMoveFv(ForwardActor* self){slot18__10CActorMoveFv(self);}

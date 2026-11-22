@@ -1,4 +1,4 @@
-/* Actor spawn-info setup (fn_8009B868): runs the base setup fn_80222B48, maps
+/* Actor spawn-info setup (slot5C__10CActorMoveFv): runs the base setup slot5C__9LodMove_ZFv, maps
    the spawn info's 64-bit flag bits (+0x28) onto the actor flags (+0x30), and
    when the info selects a planar facing (0x800000000000 with any of
    0xE0000000000, or 0x10000000000 with any of 0xE000000000) and the info
@@ -61,7 +61,7 @@ extern "C" {
 extern const float lbl_80378D5C; /* 0.0f */
 extern const float lbl_80378D60; /* 1.0f */
 extern const float lbl_80378D88; /* 1e-5f */
-int fn_80222B48(Node*, Info*);
+int slot5C__9LodMove_ZFv(Node*, Info*);
 }
 inline float fastSqrt(register float x) {
     register float r;
@@ -80,8 +80,8 @@ inline float length2(float x, float z) {
     if (sq != r) r = fastSqrt(sq);
     return r;
 }
-extern "C" int fn_8009B868(Node* self, Info* info) {
-    int result = fn_80222B48(self, info);
+extern "C" int slot5C__10CActorMoveFv(Node* self, Info* info) {
+    int result = slot5C__9LodMove_ZFv(self, info);
     if (info->flags & 0x4000ULL) self->flags30 |= 0x0100000000000000ULL;
     if (info->flags & 0x800ULL) self->flags30 |= 0x0040000000000000ULL;
     if (info->flags & 0x1000ULL) self->flags30 |= 0x0080000000000000ULL;

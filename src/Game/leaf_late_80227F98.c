@@ -1,1 +1,1 @@
-void fn_80227F98(void) { }
+void slot124__13ObjectThrow_ZFv(void) { }

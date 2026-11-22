@@ -10,7 +10,7 @@ struct View {
     float field350;
 };
 
-extern "C" void fn_8009AB58(View* self) {
+extern "C" void slot18__10CActorMoveFv(View* self) {
     fn_80224A10(self);
     self->field22D = 1;
     self->field350 = lbl_80378D64;

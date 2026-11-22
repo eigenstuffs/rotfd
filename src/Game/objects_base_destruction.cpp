@@ -1,7 +1,7 @@
 // Native lifetime view; opaque gaps and original virtual tables remain external.
 typedef unsigned long u32;
 extern "C" {
-extern char __vt__20ObjectsBase_802EB3F8[],__vt__13Manipulator_Z[],lbl_801EF5C8[],lbl_8028F698[];
+extern char __vt__12ObjectMove_Z[],__vt__13Manipulator_Z[],lbl_801EF5C8[],lbl_8028F698[];
 void fn_801EF610(void*,void*);
 void fn_8028FD50(void*,void*,int);
 void __dt__11Activable_ZFv(void*,int);
@@ -19,7 +19,7 @@ struct ObjectsBaseRoot {
     u32 unknown00[2];void*vtable;char unknown0C[0x20-0xC];
     ~ObjectsBaseRoot(){vtable=__vt__13Manipulator_Z;__dt__11Activable_ZFv(this,0);}
 };
-struct ObjectsBase_802EB3F8:ObjectsBaseRoot {
+struct ObjectMove_Z:ObjectsBaseRoot {
     ObjectsBaseHandle2 handle20,handle24;
     ObjectsBaseHandle3 handle28;
     char unknown2C[0x38-0x2C];
@@ -33,10 +33,10 @@ struct ObjectsBase_802EB3F8:ObjectsBaseRoot {
     char unknown7C[0x12C-0x7C];
     ObjectsBaseHandle2 handle12C;
     char unknown130[0x168-0x130];
-    ~ObjectsBase_802EB3F8();
+    ~ObjectMove_Z();
     static void operator delete(void*memory)throw(){fn_801EF610(lbl_801EF5C8,memory);}
 };
 typedef char CheckObjectsBaseDtorRoot[sizeof(ObjectsBaseRoot)==0x20?1:-1];
-typedef char CheckObjectsBaseDtor[sizeof(ObjectsBase_802EB3F8)==0x168?1:-1];
+typedef char CheckObjectsBaseDtor[sizeof(ObjectMove_Z)==0x168?1:-1];
 
-ObjectsBase_802EB3F8::~ObjectsBase_802EB3F8(){vtable=__vt__20ObjectsBase_802EB3F8;}
+ObjectMove_Z::~ObjectMove_Z(){vtable=__vt__12ObjectMove_Z;}

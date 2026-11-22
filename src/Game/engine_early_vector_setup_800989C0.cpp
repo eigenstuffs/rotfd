@@ -1,6 +1,6 @@
 extern "C" {
     void fn_8009A844(void*);
-    extern char lbl_802BAB50[];
+    extern char __vt__14CJellyfishMove[];
     extern const float lbl_80378D10;
     extern const float lbl_80378D14;
     extern const float lbl_80378D18;
@@ -35,8 +35,8 @@ struct View {
 
 extern "C" View* fn_800989C0(View* self) {
     fn_8009A844(self);
-    self->field08 = lbl_802BAB50;
-    self->field318 = lbl_802BAB50 + 0x170;
+    self->field08 = __vt__14CJellyfishMove;
+    self->field318 = __vt__14CJellyfishMove + 0x170;
     self->field3B0 = lbl_80378D10;
     self->field3B4 = lbl_80378D10;
     self->field3B8 = game_vec3_zero[0];

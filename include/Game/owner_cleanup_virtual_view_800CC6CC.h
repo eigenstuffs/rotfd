@@ -7,7 +7,7 @@ namespace CleanupLayout_800CC6CC {
 struct Primary {u32 unknown00[2];virtual void*cleanup(int);char unknown0C[0x30c];};
 struct Secondary {virtual void*cleanup(int);virtual void hook_800CCED8();char unknown04[0x28];};
 }
-struct OwnerCleanupVirtualView_800CC6CC:CleanupLayout_800CC6CC::Primary,CleanupLayout_800CC6CC::Secondary {
+struct CQSnailMove:CleanupLayout_800CC6CC::Primary,CleanupLayout_800CC6CC::Secondary {
  virtual void hook_800CCED8();virtual void*cleanup(int);
  Resource_800CC6CC**resources;
 };

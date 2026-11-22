@@ -112,5 +112,5 @@ typedef char MotionCollectPointSize[sizeof(MotionCollectPoint)==12?1:-1];
 typedef char MotionCollectContactSize[sizeof(MotionCollectContact)==72?1:-1];
 typedef char MotionCollectCollectedSize[sizeof(MotionCollectCollected)==40?1:-1];
 typedef char MotionCollectResultsSize[sizeof(MotionCollectResults)==0x2804?1:-1];
-extern "C" int fn_80221A0C(MotionCollectOwner*,signed char,void*);
+extern "C" int slot118__9LodMove_ZFv(MotionCollectOwner*,signed char,void*);
 #endif

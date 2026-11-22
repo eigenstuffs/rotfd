@@ -66,7 +66,7 @@ extern "C" {
     extern const float lbl_8037B074;
     void fn_801F86C8(ContactManager*, const Handle_801F7F10*, short);
     void fn_802073E8(ContactObject*, int, ContactObject*, float);
-    void fn_8021E454(ContactOwner*, ContactObject*, const void*, const void*, ContactFlags);
+    void slot64__12ObjectMove_ZFv(ContactOwner*, ContactObject*, const void*, const void*, ContactFlags);
 }
 struct ContactCopy : Handle_801F7F10 {
     ContactCopy(const Handle_801F7F10& handle) {

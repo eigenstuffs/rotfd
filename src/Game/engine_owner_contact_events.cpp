@@ -18,7 +18,7 @@ static inline ContactWord resolveMessage(const Handle_801F7F10& handle) {
     return 0;
 }
 
-extern "C" void fn_8021E454(ContactOwner* self, ContactObject* subject,
+extern "C" void slot64__12ObjectMove_ZFv(ContactOwner* self, ContactObject* subject,
                            const void* position, const void* hit, ContactFlags flags) {
     ContactObject* owner = resolve(self->resource);
     if (flags & 0x800000000000ULL) {

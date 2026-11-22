@@ -32,12 +32,12 @@ struct MotionTimingAction {char unknown00[8];MotionTimingAgent* agent;};
 extern "C" {
 void fn_8025795C(void*,int,int);
 int fn_801F1224(int,int);
-void fn_8009ACBC(MotionTimingAgent*,float);
+void slot38__10CActorMoveFf(MotionTimingAgent*,float);
 signed char fn_8007D604(void*,int);
 void fn_8007D6A0(void*,int);
 void fn_8009D820(MotionTimingAgent*);
-void fn_8009B63C(MotionTimingAgent*);
-void fn_8009B674(MotionTimingAgent*);
+void slot18C__10CActorMoveFv(MotionTimingAgent*);
+void slot190__10CActorMoveFv(MotionTimingAgent*);
 extern const float lbl_80378DC8,lbl_80378DA8;
 }
 #endif

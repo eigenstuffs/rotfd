@@ -1,1 +1,1 @@
-void *fn_800261B4(void *object) { return (char *)object + (32); }
+void *slot9C__12ObjectMove_ZFv(void *object) { return (char *)object + (32); }

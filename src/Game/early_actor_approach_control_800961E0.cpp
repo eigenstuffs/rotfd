@@ -31,12 +31,12 @@ struct Entry{Node*object;char unknown4[8];signed char tag;char unknownD[3];signe
 struct RootEntry{RootNode*object;char unknown4[8];signed char tag;char unknownD[3];signed char getTag()const{return tag;}};struct RootManager{int count,capacity;RootEntry*entries;};
 struct Registry{char unknown0[0x1C];Handle*handle;};
 extern "C"struct Global{char unknown0[0x118];Manager*manager;char unknown11C[0x20];Registry*registry;}lbl_801E9D24;
-extern "C"{void fn_80098CB0(Node*);signed char fn_8007D604(void*,int);Node*fn_801F7EB8(const Handle*);void fn_80099F74(Node*,float*);void fn_8009A270(Node*,float*);void fn_8007D6A0(void*,int);int fn_801F1224(int,int);void fn_80099E40(Node*);}
+extern "C"{void slot38__14CJellyfishMoveFf(Node*);signed char fn_8007D604(void*,int);Node*fn_801F7EB8(const Handle*);void fn_80099F74(Node*,float*);void fn_8009A270(Node*,float*);void fn_8007D6A0(void*,int);int fn_801F1224(int,int);void fn_80099E40(Node*);}
 inline Node*resolve(const Handle&h){const Entry*entries=lbl_801E9D24.manager->entries;int index=h.bits.index;int tag=entries[index].getTag();return tag==h.bits.tag?entries[index].object:0;}
 inline RootNode*resolveRoot(const Handle&h){RootEntry*e=&((RootManager*)lbl_801E9D24.manager)->entries[h.bits.index];return e->tag==h.bits.tag?e->object:0;}
 inline Node*selected(){const Handle&h=resolve(*resolveRoot(*lbl_801E9D24.registry->handle)->related)->actor;if(fn_801F7EB8(&h))return resolve(h);return 0;}
-extern "C" void fn_800961E0(Node*self,float delta){
- fn_80098CB0(self);
+extern "C" void slot38__16CYellowJfishMoveFf(Node*self,float delta){
+ slot38__14CJellyfishMoveFf(self);
  if(fn_8007D604(&self->control,3)||fn_8007D604(&self->control,4))return;
  if(!self->ready){
   self->timer-=delta;

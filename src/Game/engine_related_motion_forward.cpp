@@ -10,12 +10,12 @@ struct Manager {Word unknown00[2];Entry*entries;};
 struct Property {char unknown00[0x24];Word index;};
 struct PropertyContext {char unknown00[0x94];Property*property;};
 struct Globals {char unknown00[0x118];Manager*manager;char unknown11C[0x28];PropertyContext*propertyContext;};
-extern "C" {extern Globals lbl_801E9D24;void fn_801F86C8(Manager*,const Handle_801F7F10*,short);void fn_8021DA20(ForwardOwner*,void*,const Point*,const Point*,void*,int);}
+extern "C" {extern Globals lbl_801E9D24;void fn_801F86C8(Manager*,const Handle_801F7F10*,short);void slot108__12ObjectMove_ZFv(ForwardOwner*,void*,const Point*,const Point*,void*,int);}
 static inline ForwardOwner*resolve(const Handle_801F7F10&h){int index=h.bits.index;Manager*m=lbl_801E9D24.manager;int generation=m->entries[index].getGeneration();return generation==h.bits.generation?m->entries[index].owner:0;}
 struct ForwardZeroHandle:Handle_801F7F10{ForwardZeroHandle(){value=0;}};
 struct ForwardCopiedHandle:ForwardZeroHandle{ForwardCopiedHandle(const Handle_801F7F10&h){value=h.value;fn_801F86C8(lbl_801E9D24.manager,&h,1);}~ForwardCopiedHandle(){}};
 static inline const Handle_801F7F10&getSource(ForwardOwner*self){Word index=lbl_801E9D24.propertyContext->property->index;return resolve(self->handle16C)->handles[index];}
-extern "C" void fn_802217BC(ForwardOwner*self,void*first,const Point*point,const Point*offset,void*fourth,int fifth){
+extern "C" void slot108__9LodMove_ZFv(ForwardOwner*self,void*first,const Point*point,const Point*offset,void*fourth,int fifth){
  ForwardOwner*related=resolve(self->related);
  if(related && (related->flags&32ULL)){
   const Handle_801F7F10&source=getSource(self);
@@ -24,8 +24,8 @@ extern "C" void fn_802217BC(ForwardOwner*self,void*first,const Point*point,const
   Point position(matrix->position.x,matrix->position.y,matrix->position.z);
   Point delta=position+*offset-*point;
   related->flags|=0x1000ULL;
-  fn_8021DA20(related,first,&position,&delta,fourth,0);
+  slot108__12ObjectMove_ZFv(related,first,&position,&delta,fourth,0);
   related->flags&=~0x1000ULL;
  }
- fn_8021DA20(self,first,point,offset,fourth,fifth);
+ slot108__12ObjectMove_ZFv(self,first,point,offset,fourth,fifth);
 }

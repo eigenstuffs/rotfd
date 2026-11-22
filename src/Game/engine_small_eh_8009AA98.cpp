@@ -16,25 +16,25 @@ struct H3:H2 {
 struct H4:H3 {
 };
 extern "C" char lbl_802BB070[];
-struct Objects_802EB518 {
+struct LodMove_Z {
     u32 unknown00[2];
     void*vtable;
     char unknown0C[0x318-0xC];
-    ~Objects_802EB518();
+    ~LodMove_Z();
 };
 struct CFSM {
     void*secondaryVtable;
     char unknown04[0x2C];
     ~CFSM();
 };
-struct Object_8009AA98:Objects_802EB518,CFSM {
+struct CActorMove:LodMove_Z,CFSM {
     H4 handle348;
-    ~Object_8009AA98();
+    ~CActorMove();
     static void operator delete(void*p)throw() {
         fn_801EF610(lbl_801EF5C8,p);
     }
 };
-Object_8009AA98::~Object_8009AA98() {
+CActorMove::~CActorMove() {
     vtable=lbl_802BB070;
     secondaryVtable=lbl_802BB070+0x170;
 }

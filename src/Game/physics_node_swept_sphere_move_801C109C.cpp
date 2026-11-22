@@ -1,9 +1,9 @@
 /* Two physics-node overrides from one original TU (vtables in
  * menu_object_native_method_tables_802EB240):
- *  - fn_801C0F34 forwards to the base handler fn_801BDEF8 while moving the
+ *  - fn_801C0F34 forwards to the base handler slot104__12ObjectMove_ZFv while moving the
  *    resolved target's 0x40000 flag into 0x4000 (restored afterwards).
  *  - fn_801C109C is the swept sphere move: unless flag 0x40000 selects the
- *    base mover fn_801BE4D0, it takes the collision sphere, applies the
+ *    base mover slot4C__12ObjectMove_ZFv, it takes the collision sphere, applies the
  *    proposed move, then slides along up to six contacts (fn_80268FE8 sweep,
  *    0.707 floor/ceiling classification, 0.01 push-out, reflection of the
  *    remaining direction).
@@ -85,14 +85,14 @@ struct Self:Prefix{
 extern "C"{
     extern const Vec3 game_vec4_zero;
     extern const float lbl_8037A350,lbl_8037A354,lbl_8037A358,lbl_8037A35C,lbl_8037A360,lbl_8037A364;
-    void fn_801BE4D0(Self*,void*,const Vec3*,Vec3*,int,int,int,float);
+    void slot4C__12ObjectMove_ZFv(Self*,void*,const Vec3*,Vec3*,int,int,int,float);
     signed char fn_80268FE8(void*,const Vec3&,const Vec3&,Result*,u64,u64,float);
 }
 extern "C" void fn_801C109C(Self*self,void*world,const Vec3*from,Vec3*to,float f,int p4,int p5,int which){
     float lo;
     u64 flags=self->getFlags(which);
     if(flags&0x40000){
-        fn_801BE4D0(self,world,from,to,p4,p5,which,f);
+        slot4C__12ObjectMove_ZFv(self,world,from,to,p4,p5,which,f);
         return;
     }
     Sphere sphere(game_vec4_zero,lbl_8037A350);

@@ -91,12 +91,12 @@ struct MoveDtorVirtual:MoveDtorPrefix {
     virtual void remove(int);
 };
 
-struct ObjectsBase_802EB3F8 {
+struct ObjectMove_Z {
     unsigned long unknown00[2]; MoveDtorInterface* vtable;
     char unknown0C[0x168-0xC];
-    ~ObjectsBase_802EB3F8();
+    ~ObjectMove_Z();
 };
-struct ObjectsMove:ObjectsBase_802EB3F8 {
+struct ObjectsMove:ObjectMove_Z {
     MoveDtorHandle1 handle168;
     unsigned long unknown16C;
     int mode170;
@@ -107,7 +107,7 @@ struct ObjectsMove:ObjectsBase_802EB3F8 {
     ~ObjectsMove();
     static void operator delete(void* memory){fn_801EF610(lbl_801EF5C8,memory);}
 };
-typedef char CheckMoveDtorBase[sizeof(ObjectsBase_802EB3F8)==0x168?1:-1];
+typedef char CheckMoveDtorBase[sizeof(ObjectMove_Z)==0x168?1:-1];
 typedef char CheckMoveDtorPool[sizeof(RecordPool_80209D30)==0x24?1:-1];
 typedef char CheckMoveDtorOwner[sizeof(ObjectsMove)==0x1A8?1:-1];
 

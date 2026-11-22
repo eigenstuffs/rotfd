@@ -90,7 +90,7 @@ char unknown0C[0x18];Handle_801F7F10 owner24;char unknown28[8];Wide flags30;Wide
 inline Node*resolve(const Handle_801F7F10&h){int index=h.bits.index;Manager*m=lbl_801E9D24.manager;int tag=m->entries[index].getTag();return tag==h.bits.tag?m->entries[index].object:0;}
 inline const Handle_801F7F10&getActorHandle(){return resolve(*resolve(*lbl_801E9D24.service->handle)->childB0)->actor70;}
 inline Node*getActor(){const Handle_801F7F10&h=getActorHandle();if(fn_801F7EB8(&h))return resolve(h);return 0;}
-extern "C"void fn_8007F990(Node*self,const Vec3*v){
+extern "C"void slot18C__15CProjectileMoveFv(Node*self,const Vec3*v){
  resolve(self->owner24)->flags38|=0x20000ULL;
  Vec3 d;d.x=v->x;d.z=v->z;
  d.y=self->length3E4*fn_80284FA8(self->angle3E0);

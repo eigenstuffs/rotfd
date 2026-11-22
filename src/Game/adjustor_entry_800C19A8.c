@@ -4,7 +4,7 @@
  * views that reference these entries by C name.  GC/1.3.2 has no sibling-call
  * optimisation, so this C view is built with GC/3.0a3, which emits the
  * identical eight-byte tail call. */
-extern void fn_800C14A8(void *self);
-void fn_800C19A8(char *self) { fn_800C14A8(self - 0x318); }
-extern void fn_800C18EC(void *self);
-void fn_800C19B0(char *self) { fn_800C18EC(self - 0x318); }
+extern void __dt__9CBombMoveFv(void *self);
+void fn_800C19A8(char *self) { __dt__9CBombMoveFv(self - 0x318); }
+extern void __dt__10CDBombMoveFv(void *self);
+void fn_800C19B0(char *self) { __dt__10CDBombMoveFv(self - 0x318); }

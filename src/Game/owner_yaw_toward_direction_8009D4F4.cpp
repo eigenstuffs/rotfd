@@ -1,10 +1,10 @@
-/* fn_8009D4F4: turns the owner toward its stored direction (0x39C) after
-   calling the empty leaf fn_8009AEA4. Same shape as fn_80098CD0: the current
+/* slot40__14CWildSnailMoveFPC4Vec3PC4Vec3PC4Vec3if: turns the owner toward its stored direction (0x39C) after
+   calling the empty leaf slot40__10CActorMoveFPC4Vec3PC4Vec3PC4Vec3if. Same shape as slot40__14CJellyfishMoveFPC4Vec3PC4Vec3PC4Vec3if: the current
    yaw comes from the resolved entity basis applied to the forward axis, both
    yaws become rotations about the up axis, and the slerp by rate (0x3B8) *
    delta is passed with the caller's position pointer (no copy) to the
    facing slot 0xC0. Shared pooled labels lbl_80378DA8/DB0/DBC are externs;
-   front-end CSE is disabled as in fn_80098CD0. */
+   front-end CSE is disabled as in slot40__14CJellyfishMoveFPC4Vec3PC4Vec3PC4Vec3if. */
 struct Handle{signed int generation:8;signed int index:24;};
 struct Vec3{
  float x,y,z;
@@ -12,7 +12,7 @@ struct Vec3{
  Vec3(float ax,float ay,float az):x(ax),y(ay),z(az){}
  Vec3(const Vec3&o):x(o.x),y(o.y),z(o.z){}
 };
-extern "C"{float fn_80285124(float,float);float fn_8028506C(float);float fn_80284FA8(float);void fn_8009AEA4(void);}
+extern "C"{float fn_80285124(float,float);float fn_8028506C(float);float fn_80284FA8(float);void slot40__10CActorMoveFPC4Vec3PC4Vec3PC4Vec3if(void);}
 extern "C" const float lbl_80378DA8; /* 0.0f */
 extern "C" const float lbl_80378DB0; /* 0.5f */
 extern "C" const float lbl_80378DBC; /* 1.0f */
@@ -44,8 +44,8 @@ struct Owner:Storage{
 };
 extern "C"{Rotation fn_8008D420(const Rotation&,const Rotation&,float);}
 #pragma opt_common_subs off
-extern "C" void fn_8009D4F4(Owner*self,const Vec3*first,const Vec3*second,float delta){
- fn_8009AEA4();
+extern "C" void slot40__14CWildSnailMoveFPC4Vec3PC4Vec3PC4Vec3if(Owner*self,const Vec3*first,const Vec3*second,float delta){
+ slot40__10CActorMoveFPC4Vec3PC4Vec3PC4Vec3if();
  Vec3 dir=self->direction;
  Vec3 forward=resolve(*self->getHandle(0))->basis.transform(lbl_80378DA8,lbl_80378DA8,lbl_80378DBC);
  float wanted=fn_80285124(dir.x,dir.z);

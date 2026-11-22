@@ -9,7 +9,7 @@ extern const char lbl_802AE120[];
 extern const char lbl_802AE12C[];
 extern const char lbl_802AE13C[];
 void *fn_8002722C(void *);
-void *__ct__16Objects_802EB518Fv(void *);
+void *__ct__9LodMove_ZFv(void *);
 void *__ct__15Object_800272F0Fv(void *);
 void *__ct__12ObjectsBreakFv(void *);
 
@@ -29,7 +29,7 @@ void *fn_80209968()
     void *object = fn_801EFA1C(lbl_801EF5C8, 0x318, lbl_802AE024,
                               lbl_802AE120, 124, 4);
     if (object)
-        object = __ct__16Objects_802EB518Fv(object);
+        object = __ct__9LodMove_ZFv(object);
     return object;
 }
 

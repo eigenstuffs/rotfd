@@ -8,7 +8,7 @@
    lbl_802F4148; their slerp (fn_8008D420) by 1.75*rate goes to the actor's
    facing slot 0xC0 with the target, and when the two rotations' w differ by
    less than 0.002 the actor counter (+0x318) is set to 0x35 (fn_8007D6A0).
-   Sibling of fn_8008E7AC (same TU; shapes shared) and fn_80098CD0.
+   Sibling of fn_8008E7AC (same TU; shapes shared) and slot40__14CJellyfishMoveFPC4Vec3PC4Vec3PC4Vec3if.
 
    lbl_80378AD0 (0.0f), lbl_80378ADC (1.0f) and lbl_80378AEC (0.5f) were pooled
    literals; the transform factors use the three read forms per component (as

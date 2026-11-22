@@ -10,7 +10,7 @@ namespace CleanupLayout_80027A08 {
 struct Primary {u32 unknown00[2];virtual void*cleanup(int);char unknown0C[0x30c];};
 struct Secondary {virtual void*cleanup(int);virtual void configureCallbacks();char unknown04[0x28];FactoryCallback**callbacks;};
 }
-struct OwnerCleanupVirtualView_80027A08:CleanupLayout_80027A08::Primary,CleanupLayout_80027A08::Secondary {
+struct CHookMove:CleanupLayout_80027A08::Primary,CleanupLayout_80027A08::Secondary {
  virtual void configureCallbacks();virtual void*cleanup(int);
 };
 typedef char CheckOwnerPrimary_80027A08[sizeof(CleanupLayout_80027A08::Primary)==0x318?1:-1];

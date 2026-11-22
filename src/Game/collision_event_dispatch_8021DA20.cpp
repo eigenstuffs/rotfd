@@ -54,7 +54,7 @@ namespace {
 inline Node*resolve(const Handle&h){Entry*e=&lbl_801E9D24.manager->entries[h.index];if(e->generation==h.generation)return e->object;return 0;}
 }
 
-extern "C"void fn_8021DA20(Node*self,void*world,const Vec3*origin,const Vec3*offset,int which,signed char moving){
+extern "C"void slot108__12ObjectMove_ZFv(Node*self,void*world,const Vec3*origin,const Vec3*offset,int which,signed char moving){
  Sphere sphere(game_vec4_zero,lbl_8037B040);
  if(self->getSphere(&sphere,2,which)){
   Vec3 to=(sphere.center-*origin)+*offset;

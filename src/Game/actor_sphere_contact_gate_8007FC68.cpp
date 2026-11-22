@@ -1,5 +1,5 @@
-/* Bounded contact gate on the related actor (fn_8007FC68, a virtual override
- * that forwards its six arguments to the base method fn_801BEB0C).
+/* Bounded contact gate on the related actor (slot164__15CProjectileMoveFv, a virtual override
+ * that forwards its six arguments to the base method slot164__9LodMove_ZFv).
  *
  * Captures whether neither controller slot 0 nor 1 of the counter at 0x318 is
  * busy, resolves the related actor (service +0x13C -> handle -> child ->
@@ -48,11 +48,11 @@ struct Manager{int count,capacity;Entry*entries;};
 struct Related{char unknown0[0x1C];Handle*handle;};
 extern "C"struct Global{char unknown0[0x118];Manager*manager;char unknown11C[0x20];Related*related;}lbl_801E9D24;
 inline Node*resolve(const Handle&h){int index=h.bits.index;Manager*m=lbl_801E9D24.manager;int tag=m->entries[index].getTag();return tag==h.bits.tag?m->entries[index].object:0;}
-extern "C"{Word fn_801F7EB8(const Handle*);signed char fn_8007D604(void*,int);Word fn_801BEB0C(Node*,void*,void*,void*,void*,void*,void*);}
+extern "C"{Word fn_801F7EB8(const Handle*);signed char fn_8007D604(void*,int);Word slot164__9LodMove_ZFv(Node*,void*,void*,void*,void*,void*,void*);}
 inline Node*relatedActor(){const Handle*h=&resolve(*resolve(*lbl_801E9D24.related->handle)->child)->actor;if(fn_801F7EB8(h))return resolve(*h);return 0;}
 inline signed char canRun(Node*self){signed char result=0;if(!fn_8007D604(&self->controller,0)&&!fn_8007D604(&self->controller,1))result=1;return result;}
 
-extern "C"Word fn_8007FC68(Node*self,void*a,void*b,void*c,void*d,void*e,void*f){
+extern "C"Word slot164__15CProjectileMoveFv(Node*self,void*a,void*b,void*c,void*d,void*e,void*f){
     Word result=0;
     int allowed=canRun(self);
     Node*other=relatedActor();
@@ -70,7 +70,7 @@ extern "C"Word fn_8007FC68(Node*self,void*a,void*b,void*c,void*d,void*e,void*f){
         resolve(other->query(0))->state&=~0x40000UL;
     }else other->flags|=0x200ULL;
     if(!(resolve(self->query(0))->state&0x10000)){
-        if((signed char)allowed)result=fn_801BEB0C(self,a,b,c,d,e,f);
+        if((signed char)allowed)result=slot164__9LodMove_ZFv(self,a,b,c,d,e,f);
         resolve(other->query(0))->state|=0x40000UL;
     }
     return result;

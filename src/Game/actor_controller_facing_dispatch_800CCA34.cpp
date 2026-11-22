@@ -1,12 +1,12 @@
-/* fn_800CCA34: actor-controller move/facing dispatch on the component at
+/* slot40__11CQSnailMoveFPC4Vec3PC4Vec3PC4Vec3if: actor-controller move/facing dispatch on the component at
    +0x318. State 2 forwards the three points, index and delta to fn_800A91D4
    and to the component controller (fn_8007DCF8, virtual slot 0x18). State 3
-   calls the empty hook fn_8009AEA4 with the same arguments, then turns the
+   calls the empty hook slot40__10CActorMoveFPC4Vec3PC4Vec3PC4Vec3if with the same arguments, then turns the
    actor toward its stored direction (0x390): the current yaw comes from the
    resolved entity basis applied to the forward axis (0,0,1), both yaws become
    rotations about the up axis and the slerp (fn_8008D420) by rate (0x39C) *
    delta is passed with the second point to the facing slot 0xC0. Otherwise
-   the second point goes to slot 0xBC. Same body shape as fn_8009D4F4
+   the second point goes to slot 0xBC. Same body shape as slot40__14CWildSnailMoveFPC4Vec3PC4Vec3PC4Vec3if
    (owner_yaw_toward_direction_8009D4F4.cpp); the pooled labels
    lbl_803796B0/B4/C0 are externs with front-end CSE disabled. */
 struct Handle{signed int generation:8;signed int index:24;};
@@ -51,14 +51,14 @@ struct Owner:Storage{
 extern "C"{Rotation fn_8008D420(const Rotation&,const Rotation&,float);
 signed char fn_8007D604(void*,int);Controller*fn_8007DCF8(void*);
 void fn_800A91D4(Owner*,const Vec3*,const Vec3*,const Vec3*,int,float);
-void fn_8009AEA4(Owner*,const Vec3*,const Vec3*,const Vec3*,int,float);}
+void slot40__10CActorMoveFPC4Vec3PC4Vec3PC4Vec3if(Owner*,const Vec3*,const Vec3*,const Vec3*,int,float);}
 #pragma opt_common_subs off
-extern "C" void fn_800CCA34(Owner*self,const Vec3*first,const Vec3*second,const Vec3*third,int index,float delta){
+extern "C" void slot40__11CQSnailMoveFPC4Vec3PC4Vec3PC4Vec3if(Owner*self,const Vec3*first,const Vec3*second,const Vec3*third,int index,float delta){
  if(fn_8007D604(self->component,2)){
   fn_800A91D4(self,first,second,third,index,delta);
   fn_8007DCF8(self->component)->update(first,second,third,index,delta);
  }else if(fn_8007D604(self->component,3)){
- fn_8009AEA4(self,first,second,third,index,delta);
+ slot40__10CActorMoveFPC4Vec3PC4Vec3PC4Vec3if(self,first,second,third,index,delta);
  Vec3 dir=self->direction;
  Vec3 forward=resolve(*self->getHandle(0))->basis.transform(lbl_803796B0,lbl_803796B0,lbl_803796C0);
  float wanted=fn_80285124(dir.x,dir.z);

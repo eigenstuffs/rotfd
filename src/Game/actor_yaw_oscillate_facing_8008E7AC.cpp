@@ -6,7 +6,7 @@
    guard lbl_80377770, initialized from lbl_80378B90 = 50.0f) is advanced by
    0.5 every call; the slerp (fn_8008D420) of the two rotations by
    static*rate is passed to the actor's facing slot 0xC0 with the target.
-   Sibling of fn_80098CD0 (owner_yaw_toward_direction_80098CD0.cpp) and
+   Sibling of slot40__14CJellyfishMoveFPC4Vec3PC4Vec3PC4Vec3if (owner_yaw_toward_direction_80098CD0.cpp) and
    fn_80084C50 (actor_related_yaw_transform_80084C50.cpp).
 
    lbl_80378AD0 (0.0f), lbl_80378ADC (1.0f) and lbl_80378AEC (0.5f) were pooled

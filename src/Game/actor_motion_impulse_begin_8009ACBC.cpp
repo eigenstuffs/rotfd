@@ -1,4 +1,4 @@
-/* Actor per-frame motion begin (fn_8009ACBC): saves the velocity (+0x144) as
+/* Actor per-frame motion begin (slot38__10CActorMoveFf): saves the velocity (+0x144) as
  * the previous velocity (+0x15C), clears velocity and the force accumulator
  * (+0x358), and when the resource's flag 0x40000000000 is set clears it and
  * adds the pending impulse (+0x384) * delta * 60 to the force. Then runs the
@@ -33,7 +33,7 @@ struct Actor:Prefix{virtual void v08();virtual void v0C();virtual void v10();vir
  char unknown0C[0x18];Handle resource;char unknown28[0x11C];Vec3 velocity;char unknown150[0xC];Vec3 previousVelocity;
  char unknown168[0x1B0];Record record;char unknown319[0x3F];Vec3 force;char unknown364[0x20];Vec3 impulse;};
 extern "C" {extern const Vec3 game_vec3_zero;signed char fn_8007DA74(Record*,float);void fn_80222E44(void*,float);}
-extern "C" void fn_8009ACBC(Actor*self,float delta){
+extern "C" void slot38__10CActorMoveFf(Actor*self,float delta){
  self->previousVelocity=self->velocity;
  self->velocity=game_vec3_zero;
  self->force=game_vec3_zero;

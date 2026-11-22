@@ -102,7 +102,7 @@ struct VirtualForward_8009B83C : VirtualForward_8009B83CPrefix {
     virtual void slot194();
 };
 
-extern "C" void fn_8009B83C(VirtualForward_8009B83C* self)
+extern "C" void slot198__10CActorMoveFf(VirtualForward_8009B83C* self)
 {
     self->slot194();
 }

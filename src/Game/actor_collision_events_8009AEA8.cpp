@@ -59,7 +59,7 @@ inline Node*resolve(const Handle&h){Entry*e=&lbl_801E9D24.manager->entries[h.ind
 inline const float& sphereRadius(){return lbl_80378D60;}
 inline const float& queryMinimum(){return lbl_80378D5C;}
 extern "C"{extern const float lbl_80378D58=-1.0f;extern const float lbl_80378D5C=0.0f;extern const float lbl_80378D60=1.0f;extern const float lbl_80378D64=-1.0f;extern const float lbl_80378D68=60.0f;}
-extern "C"void fn_8009AEA8(Node*self,void*world,const Vec3*origin,const Vec3*offset,int which,signed char moving){
+extern "C"void slot108__10CActorMoveFv(Node*self,void*world,const Vec3*origin,const Vec3*offset,int which,signed char moving){
  Sphere sphere(game_vec4_zero,sphereRadius());
  if(!self->getSphere(&sphere,2,which)){
   if(!(resolve(self->source24)->flags38&0x1000000000000ULL))return;

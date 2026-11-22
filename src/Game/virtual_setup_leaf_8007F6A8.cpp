@@ -104,4 +104,4 @@ virtual void apply();
 char opaque0C[0x150];Point point;
 };
 extern "C" void fn_80224A10(Control*);
-extern "C" void fn_8007F6A8(Control*self){fn_80224A10(self);self->apply();self->point=game_vec3_zero;}
+extern "C" void slot18__15CProjectileMoveFv(Control*self){fn_80224A10(self);self->apply();self->point=game_vec3_zero;}

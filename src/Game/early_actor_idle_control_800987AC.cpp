@@ -1,4 +1,4 @@
-/* Actor approach/idle control transitions (fn_800987AC): elapsed timer,
+/* Actor approach/idle control transitions (slot38__14CBlueJfishMoveFf): elapsed timer,
    height and distance limits and random idle choice; same shape as
    early_actor_approach_control_800961E0.cpp without the recharge timer and
    selected-target checks. */
@@ -22,9 +22,9 @@ struct Vec3 {
     }
 };
 struct Node{char unknown0[0x15C];Vec3 velocity;char unknown168[0x318-0x168];char control;char unknown319[0x394-0x319];float threshold;char unknown398[0x3B0-0x398];float elapsed;float range;char unknown3B8[0x3D0-0x3B8];float interval;char unknown3D4[4];float limit;};
-extern "C"{void fn_80098CB0(Node*);signed char fn_8007D604(void*,int);void fn_80099F74(Node*,float*);void fn_8009A270(Node*,float*);void fn_8007D6A0(void*,int);int fn_801F1224(int,int);void fn_80099E40(Node*);}
-extern "C" void fn_800987AC(Node*self,float delta){
- fn_80098CB0(self);
+extern "C"{void slot38__14CJellyfishMoveFf(Node*);signed char fn_8007D604(void*,int);void fn_80099F74(Node*,float*);void fn_8009A270(Node*,float*);void fn_8007D6A0(void*,int);int fn_801F1224(int,int);void fn_80099E40(Node*);}
+extern "C" void slot38__14CBlueJfishMoveFf(Node*self,float delta){
+ slot38__14CJellyfishMoveFf(self);
  if(fn_8007D604(&self->control,3)||fn_8007D604(&self->control,4))return;
  self->elapsed+=delta;
  float distance,height;

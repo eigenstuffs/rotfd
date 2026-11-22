@@ -1,19 +1,19 @@
 /* auto_03_801C17DC_text: seven physics-node methods (0x801C17DC..0x801C2B54).
  *  - fn_801C17DC / fn_801C18F0: after the base save/restore call
- *    (fn_801BE6F4 / fn_801BE900) resolve the record handle at
+ *    (slot50__12ObjectMove_ZFv / slot48__12ObjectMove_ZFv) resolve the record handle at
  *    records[index]+0x48, ask it (slot 0x9C) for a related handle and move one
  *    state flag of that object into the other (0x4000 <-> 0x40000).
- *  - fn_801C1A04: contact callback; if mode bit 0x2000000000 is set, query the
+ *  - slot100__13ObjectThrow_ZFv: contact callback; if mode bit 0x2000000000 is set, query the
  *    colliders touching the node's sphere (fn_80268918, 64-record buffer) and
  *    when nothing is touched detach, clear the mode bit and send event 61 with
  *    (float)index; then dispatch the two contact virtuals (0x134 / 0x130).
- *  - fn_801C1CB4: swept sphere move with up to "remaining length" sliding
+ *  - slot4C__13ObjectThrow_ZFv: swept sphere move with up to "remaining length" sliding
  *    (fn_80268FE8 sweep, 0.707 floor/ceiling classification, 0.01 push-out,
  *    reflection of the remaining direction).
- *  - fn_801C234C / fn_801C2520: same flag transfer for the handles at +0x1B0
- *    and +0x1AC (fn_801C2520 also advances the timer at +0x1B4).
+ *  - slot50__13ObjectThrow_ZFv / slot48__13ObjectThrow_ZFv: same flag transfer for the handles at +0x1B0
+ *    and +0x1AC (slot48__13ObjectThrow_ZFv also advances the timer at +0x1B4).
  *  - fn_801C2714: ground probe (fn_80269230 ray straight down in steps).
- * fn_801C1A04 and fn_801C1CB4 use real literals: their private .sdata2
+ * slot100__13ObjectThrow_ZFv and slot4C__13ObjectThrow_ZFv use real literals: their private .sdata2
  * (1.0f, pad, int->float bias, 0.0f, 1e-6f, 0.707f, 0.01f, 2.0f) is the
  * original pool 0x8037A368..0x8037A38C of this translation unit.
  * fn_801C2714 belongs to the next pool (0x8037A390..) and reads extern labels. */
@@ -35,7 +35,7 @@ inline float fastSqrt(register float x)
 struct Prefix{char unknown00[8];};
 extern "C" const struct ZeroVec4{float x,y,z,w;}game_vec4_zero;
 
-/* ---- flag transfer (fn_801C17DC, fn_801C18F0, fn_801C234C, fn_801C2520) ---- */
+/* ---- flag transfer (fn_801C17DC, fn_801C18F0, slot50__13ObjectThrow_ZFv, slot48__13ObjectThrow_ZFv) ---- */
 namespace flagnode{
 struct Target{
     char unknown00[0x120];Word flags;
@@ -60,13 +60,13 @@ struct Record{char unknown00[0x48];Handle handle;char unknown4C[0x5C];};
 struct Self{char unknown00[0x188];Record*records;char unknown18C[0x20];Handle owner;Handle child;float time;};
 }
 extern "C"{
-void fn_801BE6F4(flagnode::Self*,int);
-void fn_801BE900(flagnode::Self*,int,float);
+void slot50__12ObjectMove_ZFv(flagnode::Self*,int);
+void slot48__12ObjectMove_ZFv(flagnode::Self*,int,float);
 void*fn_801F7EB8(const Handle*);
 }
 extern "C" void fn_801C17DC(flagnode::Self*self,int index){
     using namespace flagnode;
-    fn_801BE6F4(self,index);
+    slot50__12ObjectMove_ZFv(self,index);
     Owner*owner=(Owner*)resolveEntry(self->records[index].handle);
     if(owner){Target*t=(Target*)resolveEntry(*owner->related(0));
         t->orFlag(0x40000,t->testFlag(0x4000));
@@ -74,14 +74,14 @@ extern "C" void fn_801C17DC(flagnode::Self*self,int index){
 }
 extern "C" void fn_801C18F0(flagnode::Self*self,int index,float f){
     using namespace flagnode;
-    fn_801BE900(self,index,f);
+    slot48__12ObjectMove_ZFv(self,index,f);
     Owner*owner=(Owner*)resolveEntry(self->records[index].handle);
     if(owner){Target*t=(Target*)resolveEntry(*owner->related(0));
         t->orFlag(0x4000,t->testFlag(0x40000));
         t->clearFlag(0x40000);}
 }
 
-/* ---- contact callback (fn_801C1A04) ---- */
+/* ---- contact callback (slot100__13ObjectThrow_ZFv) ---- */
 namespace contact{
 struct Vec3{float x,y,z;
     Vec3&operator+=(const Vec3&v){x+=v.x;y+=v.y;z+=v.z;return *this;}
@@ -117,13 +117,13 @@ struct Self:Prefix{
 };
 }
 extern "C"{
-void fn_801BE188(contact::Self*,void*,const contact::Vec3*,const contact::Vec3*,const contact::Vec3*,int);
+void slot100__12ObjectMove_ZFv(contact::Self*,void*,const contact::Vec3*,const contact::Vec3*,const contact::Vec3*,int);
 signed char fn_80268918(void*,const contact::Sphere*,contact::Results*,u64,u64);
 void fn_802073E8(void*,int,void*,float);
 }
-extern "C" void fn_801C1A04(contact::Self*self,void*world,const contact::Vec3*a,const contact::Vec3*b,const contact::Vec3*c,int index){
+extern "C" void slot100__13ObjectThrow_ZFv(contact::Self*self,void*world,const contact::Vec3*a,const contact::Vec3*b,const contact::Vec3*c,int index){
     using namespace contact;
-    fn_801BE188(self,world,a,b,c,index);
+    slot100__12ObjectMove_ZFv(self,world,a,b,c,index);
     u64 flags=self->mode;
     if(flags&0x0000002000000000ULL){
         Sphere sphere(*(const Vec3*)&game_vec4_zero,1.0f);
@@ -144,12 +144,12 @@ extern "C" void fn_801C1A04(contact::Self*self,void*world,const contact::Vec3*a,
     if(flags&0x80000000ULL)self->contactB(world,b,c);
 }
 
-/* ---- swept sphere move (fn_801C1CB4) ---- */
+/* ---- swept sphere move (slot4C__13ObjectThrow_ZFv) ---- */
 namespace sweep{
 struct Vec3{float x,y,z;
     Vec3(){}
     /* user-declared: the implicit operator= defers this function's emission
-       past fn_801C2520; it also makes `dir=dir` below a real self-copy */
+       past slot48__13ObjectThrow_ZFv; it also makes `dir=dir` below a real self-copy */
     Vec3&operator=(const Vec3&v){x=v.x;y=v.y;z=v.z;return *this;}
     Vec3(float a,float b,float c):x(a),y(b),z(c){}
     Vec3 operator-(const Vec3&v)const{return Vec3(x-v.x,y-v.y,z-v.z);}
@@ -197,7 +197,7 @@ struct Self:Prefix{
 };
 }
 extern "C" signed char fn_80268FE8(void*,const sweep::Vec3*,const sweep::Vec3*,sweep::Result*,u64,u64,float);
-extern "C" void fn_801C1CB4(sweep::Self*self,void*world,const sweep::Vec3*from,sweep::Vec3*to,int p4,int p5,int which,float f){
+extern "C" void slot4C__13ObjectThrow_ZFv(sweep::Self*self,void*world,const sweep::Vec3*from,sweep::Vec3*to,int p4,int p5,int which,float f){
     using namespace sweep;
     float lo;
     u64 flags=self->mode;
@@ -253,9 +253,9 @@ extern "C" void fn_801C1CB4(sweep::Self*self,void*world,const sweep::Vec3*from,s
     self->place(world,from,&target,to,which,f);
 }
 
-extern "C" void fn_801C234C(flagnode::Self*self,int index){
+extern "C" void slot50__13ObjectThrow_ZFv(flagnode::Self*self,int index){
     using namespace flagnode;
-    fn_801BE6F4(self,index);
+    slot50__12ObjectMove_ZFv(self,index);
     Owner*owner=(Owner*)resolveEntry(self->child);
     if(owner){Target*t=(Target*)resolveEntry(*owner->related(0));
         t->orFlag(0x40000,t->testFlag(0x4000));
@@ -264,9 +264,9 @@ extern "C" void fn_801C234C(flagnode::Self*self,int index){
         t->orFlag(0x40000,t->testFlag(0x4000));
         t->clearFlag(0x4000);}
 }
-extern "C" void fn_801C2520(flagnode::Self*self,int index,float f){
+extern "C" void slot48__13ObjectThrow_ZFv(flagnode::Self*self,int index,float f){
     using namespace flagnode;
-    fn_801BE900(self,index,f);
+    slot48__12ObjectMove_ZFv(self,index,f);
     Owner*owner=(Owner*)resolveEntry(self->child);
     if(owner){Target*t=(Target*)resolveEntry(*owner->related(0));
         t->orFlag(0x4000,t->testFlag(0x40000));

@@ -43,7 +43,7 @@ struct Manipulator_Z : Prefix {
     virtual ~Manipulator_Z();
     char unknown0C[0x20 - 0xC];
 };
-struct ObjectsBase_802EB3F8 : Manipulator_Z {
+struct ObjectMove_Z : Manipulator_Z {
     ObjectsConstructorHandle2 handle20, handle24;
     ObjectsConstructorHandle3 handle28;
     char unknown2C[0x38 - 0x2C];
@@ -54,10 +54,10 @@ struct ObjectsBase_802EB3F8 : Manipulator_Z {
     char unknown7C[0x12C - 0x7C];
     ObjectsConstructorHandle2 handle12C;
     char unknown130[0x168 - 0x130];
-    ObjectsBase_802EB3F8() {}
-    virtual ~ObjectsBase_802EB3F8();
+    ObjectMove_Z() {}
+    virtual ~ObjectMove_Z();
 };
-struct ObjectsMove : ObjectsBase_802EB3F8 {
+struct ObjectsMove : ObjectMove_Z {
     ObjectsConstructorHandle1 handle168;
     ObjectsConstructorZero field16C;
     int mode170;
@@ -81,7 +81,7 @@ struct ObjectsBreak : ObjectsBounce {
     ObjectsBreak();
     virtual ~ObjectsBreak();
 };
-typedef char CheckBase[sizeof(ObjectsBase_802EB3F8) == 0x168 ? 1 : -1];
+typedef char CheckBase[sizeof(ObjectMove_Z) == 0x168 ? 1 : -1];
 typedef char CheckMove[sizeof(ObjectsMove) == 0x1A8 ? 1 : -1];
 typedef char CheckBounce[sizeof(ObjectsBounce) == 0x1A8 ? 1 : -1];
 typedef char CheckBreak[sizeof(ObjectsBreak) == 0x1F0 ? 1 : -1];

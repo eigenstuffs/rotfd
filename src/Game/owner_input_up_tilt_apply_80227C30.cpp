@@ -1,4 +1,4 @@
-/* fn_80227C30: owner input apply (calls the base fn_8021E8FC first and returns
+/* slot5C__13ObjectThrow_ZFv: owner input apply (calls the base slot5C__12ObjectMove_ZFv first and returns
    its result). Below a pitch limit the input direction is replaced by the up
    axis tilted toward it: axis = normalize(up x direction) with a bare
    reciprocal-square-root estimate, a fixed-angle quaternion
@@ -98,7 +98,7 @@ struct Owner {
 };
 
 extern "C" {
-int fn_8021E8FC(Owner*, const Input*, const Input*, int);
+int slot5C__12ObjectMove_ZFv(Owner*, const Input*, const Input*, int);
 void fn_801D8FD0(Vec3*, void*, int, const Range*, const void*);
 signed char fn_801D8DC0(void*, int, const void*, Vec3*);
 }
@@ -113,9 +113,9 @@ inline void samplePoint(Vec3& dest, const Matrix* matrix, void* field, const Inp
     dest = matrix->rotate(point);
 }
 
-extern "C" int fn_80227C30(Owner* self, const Input* input, const Input* comparison, int index)
+extern "C" int slot5C__13ObjectThrow_ZFv(Owner* self, const Input* input, const Input* comparison, int index)
 {
-    int result = fn_8021E8FC(self, input, comparison, index);
+    int result = slot5C__12ObjectMove_ZFv(self, input, comparison, index);
     float y = input->direction.y;
     if (y < lbl_8037B13C) {
         Vec3 axis = Vec3(lbl_8037B140, lbl_8037B144, *(const float*)&lbl_8037B140).cross(input->direction).normalize();

@@ -1,3 +1,3 @@
 struct OpaqueHandle;struct OpaquePoint;
-extern "C" void fn_800C152C(void*self,float delta);
-extern "C" void fn_800C1988(void*self,float delta){fn_800C152C(self,delta);}
+extern "C" void slot38__9CBombMoveFf(void*self,float delta);
+extern "C" void slot38__10CDBombMoveFf(void*self,float delta){slot38__9CBombMoveFf(self,delta);}

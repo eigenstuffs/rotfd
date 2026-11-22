@@ -56,4 +56,4 @@ struct TimingOwner:TimingStorage {
  virtual void slotD8();
  virtual void enable(unsigned long long,int);
 };
-extern "C" int fn_8021E8FC(TimingOwner*self,const TimingInput*input,const TimingInput*comparison,int index){self->setup(input->field30,input,index,input->flags,index);if(input->flags&8ULL){self->enable(0x2000000000000ULL,index);self->duration(index,input->duration);self->change(index,input->duration-comparison->duration);}return 1;}
+extern "C" int slot5C__12ObjectMove_ZFv(TimingOwner*self,const TimingInput*input,const TimingInput*comparison,int index){self->setup(input->field30,input,index,input->flags,index);if(input->flags&8ULL){self->enable(0x2000000000000ULL,index);self->duration(index,input->duration);self->change(index,input->duration-comparison->duration);}return 1;}

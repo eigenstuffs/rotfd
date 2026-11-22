@@ -47,7 +47,7 @@ extern "C" {
     void fn_8023EEF0(Child_801BC99C*);
     void fn_801D5DF8(Vec3_801BC99C*,void*,void*,void*,const Vec2_801BC99C*);
 }
-extern "C" Child_801BC99C*fn_801BC99C(Owner_801BC99C*self,Vec3_801BC99C*first,Vec3_801BC99C*second,Vec3_801BC99C*third) {
+extern "C" Child_801BC99C*slot11C__12ObjectMove_ZFv(Owner_801BC99C*self,Vec3_801BC99C*first,Vec3_801BC99C*second,Vec3_801BC99C*third) {
     *first=self->record.vector04;
     *second=self->record.vector1C;
     *third=self->record.vector28;

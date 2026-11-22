@@ -1,10 +1,10 @@
-/* fn_80227F9C: owner contact response. The velocity (+0x144) is reflected
+/* slot128__13ObjectThrow_ZFv: owner contact response. The velocity (+0x144) is reflected
    off the contact normal when moving into it; on steep or flagged contacts
    it is scaled by +0x178, otherwise the owner's attached basis yields a yaw
    quaternion that is combined with the up->normal rotation, and the
    velocity is scaled by +0x170. A stop result (small speed or zero scale)
    releases the owner and may detach it (fn_8021FD9C).
-   fn_80228408: contact event dispatch between this owner, the other body's
+   slot64__13ObjectThrow_ZFv: contact event dispatch between this owner, the other body's
    owner and the related owners (+0x24, +0x180, +0x184): a contact record is
    pushed (fn_8021F518), an optional receiver (other owner +0x70, flag
    0x400000) supplies the event scale (int -> float, owns the bias double),
@@ -190,7 +190,7 @@ signed char fn_8021F308(Owner*);
 void fn_8021FD9C(Owner*, const Handle_801F7F10*, void*, int);
 }
 
-extern "C" signed char fn_80227F9C(Owner* self, const Input* info)
+extern "C" signed char slot128__13ObjectThrow_ZFv(Owner* self, const Input* info)
 {
     Vec3& v = self->velocity;
     float speed = v.length();
@@ -267,7 +267,7 @@ inline float queryScale(Receiver* receiver, Owner* other, Owner* self, const Vec
     rec2.velocity = self->velocity;
     return receiver->receive(&copy, &rec2);
 }
-extern "C" void fn_80228408(Owner* self, Owner* other, const Vec3& position, int unused, unsigned long long flags)
+extern "C" void slot64__13ObjectThrow_ZFv(Owner* self, Owner* other, const Vec3& position, int unused, unsigned long long flags)
 {
     Owner* a = (Owner*)resolve(other->handle130);
     Owner* b = (Owner*)resolve(self->handle184);

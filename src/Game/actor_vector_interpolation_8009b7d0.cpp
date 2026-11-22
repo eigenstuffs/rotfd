@@ -19,7 +19,7 @@ struct InterpolationActor {
     char unknown168[0x354-0x168]; float duration; InterpolationVector delta;
 };
 extern "C" const float lbl_80378D60;
-extern "C" void fn_8009B7D0(InterpolationActor* self,float elapsed)
+extern "C" void slot194__10CActorMoveFv(InterpolationActor* self,float elapsed)
 {
     InterpolationVector velocity=self->delta/self->duration;
     self->position=self->start+velocity*elapsed;

@@ -1,5 +1,5 @@
 extern "C" {
-    void __ct__16Objects_802EB518Fv(void*);
+    void __ct__9LodMove_ZFv(void*);
     extern char lbl_802EB940[];
 }
 
@@ -9,7 +9,7 @@ struct View {
 };
 
 extern "C" View* fn_8002722C(View* self) {
-    __ct__16Objects_802EB518Fv(self);
+    __ct__9LodMove_ZFv(self);
     self->field08 = lbl_802EB940;
     return self;
 }

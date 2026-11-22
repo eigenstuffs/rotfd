@@ -1,1 +1,1 @@
-struct Component;struct Control{char opaque00[0x168];};extern "C"signed char fn_8007DA74(Component*,float);extern "C"void fn_80075820(Control*self,float delta){fn_8007DA74((Component*)((char*)self+0x168),delta);}
+struct Component;struct Control{char opaque00[0x168];};extern "C"signed char fn_8007DA74(Component*,float);extern "C"void slot38__18CTreasureChestMoveFf(Control*self,float delta){fn_8007DA74((Component*)((char*)self+0x168),delta);}

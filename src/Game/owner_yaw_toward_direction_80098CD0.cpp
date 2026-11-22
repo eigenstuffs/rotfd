@@ -1,4 +1,4 @@
-/* Turns the owner toward its stored direction (fn_80098CD0): the current yaw
+/* Turns the owner toward its stored direction (slot40__14CJellyfishMoveFPC4Vec3PC4Vec3PC4Vec3if): the current yaw
    is taken from the resolved entity basis applied to the forward axis, both
    yaws become rotations about the up axis, and the slerp by rate*delta is
    passed to the owner's facing slot.
@@ -48,7 +48,7 @@ struct Owner:Storage{
 };
 extern "C"{Rotation fn_8008D420(const Rotation&,const Rotation&,float);}
 #pragma opt_common_subs off
-extern "C" void fn_80098CD0(Owner*self,const Vec3*first,const Vec3*second,float delta){
+extern "C" void slot40__14CJellyfishMoveFPC4Vec3PC4Vec3PC4Vec3if(Owner*self,const Vec3*first,const Vec3*second,float delta){
  Vec3 position=*second;
  Vec3 dir=self->direction;
  Vec3 forward=resolve(*self->getHandle(0))->basis.transform(lbl_80378D10,lbl_80378D10,lbl_80378D1C);

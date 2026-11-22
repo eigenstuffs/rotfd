@@ -10,4 +10,4 @@ static inline SnapshotObject*resolveProperty(const PropertyHandle&h){PropertyEnt
 struct SnapshotObject{char unknown00[0xC];PropertyHandle handle;char unknown10[0xA8];SnapshotPoint position;char unknownC4[4];SnapshotRotation rotation;SnapshotPoint scale;};
 extern "C" void fn_801F86C8(void*,const void*,int);
 extern "C"{extern SnapshotPoint game_vec3_zero;void fn_8023D648(void*);void fn_8023DE28(void*);}
-extern "C" void fn_80220260(PropertyOwner*self,int index){self->movement=game_vec3_zero;self->prepare(index);SnapshotObject*object=resolveProperty(*self->getHandle(index));object->position=self->positions[index];object->rotation=self->rotations[index];object->scale=self->scales[index];fn_8023D648(object);fn_8023DE28(object);}
+extern "C" void slotD4__12ObjectMove_ZFv(PropertyOwner*self,int index){self->movement=game_vec3_zero;self->prepare(index);SnapshotObject*object=resolveProperty(*self->getHandle(index));object->position=self->positions[index];object->rotation=self->rotations[index];object->scale=self->scales[index];fn_8023D648(object);fn_8023DE28(object);}

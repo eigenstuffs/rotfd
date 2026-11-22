@@ -1,3 +1,3 @@
 #include "Game/motion_forwarding.h"
 
-extern "C" void fn_8009A9A4(ForwardActor* self){fn_8009AEA4();}
+extern "C" void slot40__8CNPCMoveFPC4Vec3PC4Vec3PC4Vec3if(ForwardActor* self){slot40__10CActorMoveFPC4Vec3PC4Vec3PC4Vec3if();}

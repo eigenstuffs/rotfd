@@ -6,4 +6,4 @@ struct PropertyManager{char unknown00[8];PropertyEntry*entries;};
 extern "C"{extern struct{char unknown00[0x118];PropertyManager*manager;}lbl_801E9D24;}
 static inline char*resolveProperty(const PropertyHandle&h){PropertyEntry*e=&lbl_801E9D24.manager->entries[h.index];if(e->generation==h.generation)return e->object;return 0;}
 struct PropertyPoint{float x,y,z;PropertyPoint(float X,float Y,float Z):x(X),y(Y),z(Z){}};
-extern "C" PropertyPoint fn_8021FB5C(PropertyOwner*self){char*object=resolveProperty(*self->getHandle(0));float*matrix=*(float**)(object+0x124);return PropertyPoint(matrix[12],matrix[13],matrix[14]);}
+extern "C" PropertyPoint slotB0__12ObjectMove_ZFv(PropertyOwner*self){char*object=resolveProperty(*self->getHandle(0));float*matrix=*(float**)(object+0x124);return PropertyPoint(matrix[12],matrix[13],matrix[14]);}

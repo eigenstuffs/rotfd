@@ -1,5 +1,5 @@
-/* Actor motion control update (fn_8009E640), called through the forwarding
-   callbacks fn_800A371C / fn_800A4304 / fn_800A4CC0 as
+/* Actor motion control update (slot40__11CScriptMoveFPC4Vec3PC4Vec3PC4Vec3if), called through the forwarding
+   callbacks slot40__11CSimpleMoveFPC4Vec3PC4Vec3PC4Vec3if / slot40__11CMediumMoveFPC4Vec3PC4Vec3PC4Vec3if / slot40__12CComplexMoveFPC4Vec3PC4Vec3PC4Vec3if as
    (agent, previous position, next position, delta).
 
    Resolves the agent's actor (+0x24) and asks the frontend (lbl_803776B8,
@@ -18,7 +18,7 @@
    Finally, unless fn_8009FC1C reports a block, the current direction yaw and
    the resource's forward axis yaw ((0,0,1) through the basis at +0x30) become
    rotations about the up axis and the slerp (fn_8008D420) by scale*delta is
-   applied with fn_8021F8F4; otherwise fn_8021F990 just moves the agent.
+   applied with slotC0__12ObjectMove_ZFv; otherwise slotBC__12ObjectMove_ZFv just moves the agent.
 
    Constants are the original TU's pooled literals, now the shared labels
    lbl_80378DD8 (0.0f), lbl_80378DDC (1.0f), lbl_80378DE0, lbl_80378E18
@@ -26,7 +26,7 @@
    stays separate from the other zero reads, as the separately loaded literal
    was (fixes the f5/f6/f7 assignment). The first half angle is declared
    before the slerp fraction but assigned after it (as in the matched
-   fn_80098CD0), which fixes the f28/f29 assignment and the f0/f1 assignment
+   slot40__14CJellyfishMoveFPC4Vec3PC4Vec3PC4Vec3if), which fixes the f28/f29 assignment and the f0/f1 assignment
    of the 0.5 constant and the rate. */
 struct Handle_801F7F10 {
     union {
@@ -248,12 +248,12 @@ extern "C" {
 extern Frontend* lbl_803776B8;
 float fn_8009F518(Agent*, Point2*);
 int fn_8009FC1C(Agent*);
-void fn_8021F990(Agent*, const Vec*, int);
-void fn_8021F8F4(Agent*, const Vec*, const Quaternion*, int);
+void slotBC__12ObjectMove_ZFv(Agent*, const Vec*, int);
+void slotC0__12ObjectMove_ZFv(Agent*, const Vec*, const Quaternion*, int);
 Quaternion fn_8008D420(const Quaternion&, const Quaternion&, float);
 }
 
-extern "C" void fn_8009E640(Agent* self, const Vec* previous, const Vec* next, float delta)
+extern "C" void slot40__11CScriptMoveFPC4Vec3PC4Vec3PC4Vec3if(Agent* self, const Vec* previous, const Vec* next, float delta)
 {
     Owner* owner = static_cast<Owner*>(resolve(self->actor));
     OwnerPrefix* ownerFlags = reinterpret_cast<OwnerPrefix*>(owner);
@@ -316,11 +316,11 @@ extern "C" void fn_8009E640(Agent* self, const Vec* previous, const Vec* next, f
             Quaternion second(lbl_80378DD8, lbl_80378DDC, lbl_80378DD8, targetHalf);
             Quaternion result;
             result = fn_8008D420(second, first, fraction);
-            fn_8021F8F4(self, next, &result, 0);
+            slotC0__12ObjectMove_ZFv(self, next, &result, 0);
         } else {
-            fn_8021F990(self, next, 0);
+            slotBC__12ObjectMove_ZFv(self, next, 0);
         }
     } else {
-        fn_8021F990(self, next, 0);
+        slotBC__12ObjectMove_ZFv(self, next, 0);
     }
 }

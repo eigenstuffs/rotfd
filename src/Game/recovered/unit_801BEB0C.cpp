@@ -116,8 +116,8 @@ extern "C"{
 extern const Vec3 game_vec3_zero;
 extern signed char lbl_80377FA0;
 signed char fn_8021F23C(Owner*);
-void fn_801BE4D0(Owner*,void*,const Vec3*,Vec3*,Vec3*,const Vec3*,int,float);
-void fn_801C1CB4(Owner*,void*,const Vec3*,Vec3*,Vec3*,const Vec3*,int,float);
+void slot4C__12ObjectMove_ZFv(Owner*,void*,const Vec3*,Vec3*,Vec3*,const Vec3*,int,float);
+void slot4C__13ObjectThrow_ZFv(Owner*,void*,const Vec3*,Vec3*,Vec3*,const Vec3*,int,float);
 int fn_801C0B48(Shape*,const Sphere&);
 Sphere fn_80099A00(const Matrix*,const Sphere*);
 void fn_801F250C(const Matrix*,Matrix*);
@@ -137,7 +137,7 @@ float fn_800AA52C(float,float); /* max */
    extra coalesced node the target colouring needs (with floor.x=px). */
 struct FBox{float v;};
 inline float spdA(float sq){return sqrtOrZeroA(sq,0.0f);}
-extern "C" signed char fn_801BEB0C(Owner*self,void*world,const Vec3*from,const Vec3*move,Shape*shape,Result*res,Vec3*to){
+extern "C" signed char slot164__9LodMove_ZFv(Owner*self,void*world,const Vec3*from,const Vec3*move,Shape*shape,Result*res,Vec3*to){
     self->slot9C(0);
     Hits hits;
     int n;const Sphere*s;
@@ -260,14 +260,14 @@ inline void contactResponse(Owner*self,Result&res,const Vec3*velocity,int which)
 inline Vec3 rotate(const Quat&q,const Vec3&o){Vec3 r;fn_801F1B1C(&r,&q,&o);return r;}
 #define addSphere(list,m,s,cur) {Sphere local=fn_80099A00(m,s);local.center-=cur;fn_801C0B48(&list,local);}
 
-extern "C" void fn_801BF5A4(Owner*self,void*world,const Vec3*from,Vec3*to,Vec3*out,Vec3*velocity,int which,float dt){
+extern "C" void slot4C__9LodMove_ZFv(Owner*self,void*world,const Vec3*from,Vec3*to,Vec3*out,Vec3*velocity,int which,float dt){
     lbl_80377FA0=0;
     if(fn_8021F23C(self)||self->test(0x40000ULL)){
-        fn_801BE4D0(self,world,from,to,out,velocity,which,dt);
+        slot4C__12ObjectMove_ZFv(self,world,from,to,out,velocity,which,dt);
         return;
     }
     if(self->flags&0x800000000ULL){
-        fn_801C1CB4(self,world,from,to,out,velocity,which,dt);
+        slot4C__13ObjectThrow_ZFv(self,world,from,to,out,velocity,which,dt);
         return;
     }
     Vec3 start=*from;

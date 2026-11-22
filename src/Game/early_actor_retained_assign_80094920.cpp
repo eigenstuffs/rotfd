@@ -51,7 +51,7 @@ struct RetainedAssignOwner {
     char unknown00[0x348];
     Handle_801F7F10 handle;
 };
-extern "C" void fn_80094920(RetainedAssignOwner* self,
+extern "C" void slot144__10CActorMoveFv(RetainedAssignOwner* self,
                            Handle_801F7F10& value) {
     Handle_8002D49C retained(value);
     fn_801F86C8(lbl_801E9D24.manager, &self->handle, -1);
